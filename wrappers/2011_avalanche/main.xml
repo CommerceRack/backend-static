@@ -1,0 +1,746 @@
+<TEMPLATE ID="2011_avalanche" FORMAT="WRAPPER">
+
+
+<!-- ******* -->
+<ELEMENT FORMAT="WRAPPER" ID="DENBYMM" TYPE="CONFIG" EXPORT="0" CREATED="20110314" TITLE="Avalanche" SITEBUTTONS="default=2011_avalanche|png|140|45&amp;checkout=2011_avalanche|png|171|55" RELEASED="20110330"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+.zborder { border: 1px solid #f0f5f9; }
+.zbox { border: 1px solid #cee1f2; }
+.zbox_body { background-color: #FFFFFF; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.zbox_head { background-color: #cee1f2; color: #333333; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 13px; }
+.zcolor { background-color: #cee1f2; color: #666666; }
+.zcolor_contrast { background-color: #FF6600; color: #FFFFFF; }
+.zcolor_dark { background-color: #2f7abb; color: #ffffff; }
+.zcolor_light { background-color: #ffffff; color: #666666; }
+.zform_button { border: 1px solid #cee1f2; background-color: #ffffff; color: #2f7abb; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zform_select { border: 1px solid #cee1f2; background-color: #FFFFFF; color: #666666; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zform_textarea { border: 1px solid #cee1f2; background-color: #FFFFFF; color: #666666; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zform_textbox { border: 1px solid #cee1f2; background-color: #FFFFFF; color: #666666; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zhint { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.zlink { color: #2f7abb; }
+.zsmall { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.ztab0 { background-color: #cee1f2; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 11px; }
+.ztab1 { background-color: #ffffff; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 11px; font-weight: bold;}
+.ztabbody { background-color: #ffffff; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 11px; }
+.ztable_head { background-color: #cee1f2; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 13px; }
+.ztable_row {color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.ztable_row0 { background-color: #FFFFFF; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px;}
+.ztable_row1 { background-color: #f4f9ff; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px;}
+.ztable_row_small { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.ztable_row_title { font-weight: bold; color: #333333; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 14px; }
+.ztitle { font-weight: bold; color: #000000; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 15px; }
+.ztitle2 { font-weight: bold; color: #333333; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 14px; }
+.ztxt { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.zwarn { color: #FF0000; font-weight: bold; }]]></CSS>
+<THEME><![CDATA[alert_color=FF0000&content_background_color=ffffff&content_font_face=Calibri%2c+%22Helvetica+Neue%22%2c+helvetica%2c+sans%2dserif&content_font_size=1&content_text_color=666666&disclaimer_background_color=ffffff&disclaimer_font_face=Calibri%2c+%22Helvetica+Neue%22%2c+helvetica%2c+sans%2dserif&disclaimer_font_size=1&disclaimer_text_color=666666&link_active_text_color=2f7abb&link_text_color=2f7abb&link_visited_text_color=2f7abb&name=&pretty_name=&table_heading_background_color=cee1f2&table_heading_font_face=Calibri%2c+%22Helvetica+Neue%22%2c+helvetica%2c+sans%2dserif&table_heading_font_size=1&table_heading_text_color=666666&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=f4f9ff&table_listing_font_face=Calibri%2c+%22Helvetica+Neue%22%2c+helvetica%2c+sans%2dserif&table_listing_font_size=1&table_listing_text_color=666666]]></THEME>
+</ELEMENT>
+<ELEMENT ID="WRAP_WRAPPER_URL" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_FILES_URL" SUB="FILES_URL" TYPE="READONLY" LOAD="URL::FILES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_GRAPHICS_URL" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_IMAGE_URL" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_NONSECURE_URL" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CART_URL" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_PRIVACY_URL" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_RETURNS_URL" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_PASSWORD_URL" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CONTACT_URL" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_HOME_URL" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_ABOUT_URL" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_SEARCH_URL" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CATEGORY_URL" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_PRODUCT_URL" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_RESULTS_URL" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CONTINUE_URL" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CHECKOUT_URL" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CUSTOMER_URL" SUB="CUSTOMER_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAC" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WIKI_TITLE1_OPEN" SUB="title1" TYPE="HIDDEN"><DEFAULT><![CDATA[<h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE1_CLOSED" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[</h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE2_OPEN" SUB="title2" TYPE="HIDDEN"><DEFAULT><![CDATA[<h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE2_CLOSED" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE3_OPEN" SUB="title3" TYPE="HIDDEN"><DEFAULT><![CDATA[<span style="font-weight:bold;">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE3_CLOSED" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</span>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILIST" SUB="list" TYPE="HIDDEN"><DEFAULT><![CDATA[<ul class="wiki_list">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLIST" SUB="/list" TYPE="HIDDEN"><DEFAULT><![CDATA[</ul>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILISTITEM" SUB="listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[<li class="wiki_listitem">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLISTITEM" SUB="/listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[</li>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKISECTION" SUB="section" TYPE="HIDDEN"><DEFAULT><![CDATA[<div class="wiki_section">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDSECTION" SUB="/section" TYPE="HIDDEN"><DEFAULT><![CDATA[</div>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIHARDBREAK" SUB="hardbreak" TYPE="SPECL"><HTML><![CDATA[<div style='border-top:<% loadurp("CSS::zborder.border"); print(); %>; margin:5px 0px;'></div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKISOFTBREAK" SUB="softbreak" TYPE="SPECL"><HTML><![CDATA[<br />]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKITABLE" SUB="table" TYPE="HIDDEN"><DEFAULT><![CDATA[<table cellspacing="0" class="zborder">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLE" SUB="/table" TYPE="HIDDEN"><DEFAULT><![CDATA[</table>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEROW" SUB="tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[<tr class="ztablerow">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEROW" SUB="/tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[</tr>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLECELL" SUB="tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_row">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLECELL" SUB="/tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[</td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEHEAD" SUB="tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_head"><b>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="DENBYMN" TYPE="HIDDEN" OUTPUTSKIP="2048"><DEFAULT><![CDATA[
+
+
+<div class='warning'>
+
+<li>The tier 1 categories are listed horizontally and there is a finite amount of space allocated. If more text/links are present than what will 'fit', the aesthetic of the theme will break. This is not a bug, it was designed with the intent of having 1 single row of categories listed horizontally. Use shorter category names or have fewer visible categories if this occurs.</li>
+
+<li>The tier 2 and focus tier 3 categories will display on the left when the left column is present. If your specialty store has a root cat three levels deep, this feature will not work properly.</li>
+
+</div>
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="SET_CART_TIER_1AND2_CAT_VAR" TYPE="SPECL" OUTPUTFILTER="!FS=C,H,E" OUTPUTSKIP="1" MODE="LIST"><HTML><![CDATA[<%
+/* the subcategories listed on the left show tier 2 and, when appropriate, tier 3 for the tier 2 in focus. */
+/* specialty stores get handled slightly differently to take into account their root level categories are typically tier 2. */
+/* gets run on H and E pages to 'reset' the menu (will set to blank). on C pages, it actually sets the vars. */
+
+print("");
+
+/* the only way to get the individual categories is to put the entire category path into a stack and then to retrieve the content of spot 1, 2 and/or 3 */
+loadurp("SREF::_CWPATH");
+	pull(stack=>>$PATHSTACK,format=>"textlist",delimiter=>".",p1=>"TIER1",p2=>"TIER2",p3=>"TIER3");
+	pop(stack=>>$PATHSTACK,namespace=>"PATH");
+
+/* check the rootcat to see if it is anything other than .   If a specialty store is in focus, the rootcat will be longer. */
+	loadurp("profile:zoovy:site_rootcat"); default(".");
+
+	goto(label=>"SPECSTORE",ne=>".");
+
+/* this is a root level category store, only the top level cat is needed to set in the recent_category_tier1 var */	
+	load($PATH.TIER1);
+	element(TYPE=>"SET",SRC=>"CART::RECENT_CATEGORY_TIER1",DATA=>$_);
+	load($PATH.TIER2); default("");
+	goto(label=>"SETTIER2TOBLANK",eq=>"");
+		load($PATH.TIER1); format(posttext=>".");
+		format(posttext=>$PATH.TIER2);
+		element(TYPE=>"SET",SRC=>"CART::RECENT_CATEGORY_TIER2",DATA=>$_);
+		stop();
+	
+/* this is a specialty store. set recent_category_tier1 to two tiers deep. This is a 'most cases' solution */
+:SPECSTORE();
+	load($PATH.TIER1); format(posttext=>".");
+	format(posttext=>$PATH.TIER2);
+	element(TYPE=>"SET",SRC=>"CART::RECENT_CATEGORY_TIER1",DATA=>$_);
+	
+	load($PATH.TIER3); default("");
+	goto(label=>"SETTIER2TOBLANK",eq=>"");
+		load($PATH.TIER1); format(posttext=>".");
+		format(posttext=>$PATH.TIER2);
+		format(posttext=>".");
+		format(posttext=>$PATH.TIER3);
+		element(TYPE=>"SET",SRC=>"CART::RECENT_CATEGORY_TIER2",DATA=>$_);
+		stop();		
+	
+
+:SETTIER2TOBLANK();
+	element(TYPE=>"SET",SRC=>"CART::RECENT_CATEGORY_TIER2",DATA=>"");
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="TIER_2_AND_3_SUBCATS" SUB="WRAP_TIER_2_AND_3_CATS" TYPE="SUBCAT" NOROOT="1" SRC="." FORCECOLUMNS="1" OUTPUTSKIP="32768" MODE="LIST"><HTML><![CDATA[
+<div class='boxen'>
+	<div class='boxHead'>
+		<div class='floatLeft spritebg boxHeadLeft'></div>
+		<div class='floatRight boxHeadRight'></div>
+		<div class='floatLeft spritebg boxHeadText'>Subcategories</div>
+	</div>
+	<div id='tier2n3_dual_cats_displayed'>
+
+<ul class='top_cats'>
+<!-- ROW -->
+<!-- CATEGORY -->
+<li>
+<a href='<% print($cat_url); %>' title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>">
+<% print($cat_pretty); %>
+</a><%
+print("");
+loadurp("CART::RECENT_CATEGORY_TIER2"); default("");
+stop(unless=>$_);
+	goto(label=>"END",ne=>$cat_safe);
+
+:SHOWSUBS();
+	load($cat_safe); default(""); format(pretext=>"NAVCAT::.");
+	pull(stack=>>$CATSTACK,format=>"src",src=>$_);
+/* proceed only if there are subcategories */
+	count(stack=>>$CATSTACK);
+	goto(label=>"END",lt=>"1");	
+
+		print("	<ul class='sub_cats'>
+	");
+:LOOP();
+
+pop(stack=>>$CATSTACK,namespace=>"CAT");
+	load($CAT.safe);
+	stop(unless=>$_);
+		print("		<li>
+		<a href='%CATEGORY_URL%/");
+		load($CAT.safe); format(substring=>$_,pos=>"1",len=>"256"); /* strips preceding . from safe id */
+		print();
+		print("/'  title=&quot;");
+		load($CAT.pretty); default(""); format(encode=>"entity"); print(); 
+		print("&quot;>");
+		print($CAT.pretty);
+		print("</a>
+		</li>
+");
+
+/* keep looping till we have shown all the subcats */
+
+		goto(nb=>$CATSTACK,label=>"LOOP");
+		print("
+	</ul>");
+		
+
+:END();	
+%></li>
+<!-- /CATEGORY -->
+<!-- /ROW -->
+
+
+</ul>
+<div class='clearAll'></div>
+	</div>
+</div>
+]]></HTML>
+<INIT><![CDATA[<%
+/* set src to the most recent tier 1 so that tier 2 (and maybe a tier 3) will display */
+loadurp("CART::RECENT_CATEGORY_TIER1"); default($SRC); initset(SRC=>$_);
+%>]]></INIT>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_LOGO" HEIGHT="100" MINIMAL_MODE="0" WIDTH="250" SUB="WRAP_LOGO" BGCOLOR="TTTTTT" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="SEARCHED_KEYWORD" SUB="WRAP_KEYWORD" TYPE="READONLY" LOAD="VAR::keywords" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTFILTER="FS=H,P" OUTPUTSKIP="1"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
+<POSTTEXT><![CDATA[</h1>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="SET_CART_VAR_RECENTCATEGORY" TYPE="SPECL" OUTPUTFILTER="FS=P" OUTPUTSKIP="1" MODE="LIST"><HTML><![CDATA[<%
+print("");
+loadurp("SREF::_CWPATH"); default(""); 
+element(TYPE=>"SET",SRC=>"CART::RECENT_CATEGORY_PATH",DATA=>$_);
+%>]]></HTML>
+<HELPER><![CDATA[Sets the category path for use in the breadcrumb element. Only gets skipped on product pages, that way hitting the home or results pages resets the path.]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_BREADCRUMB" SUB="WRAP_BREADCRUMB" NOHOME="1" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C,P"><HTML><![CDATA[
+<div id='breadcrumb' class="breadcrumb">
+<a href='%HOME_URL%' rel='nofollow' title='home'>Home</a>
+<!-- CATEGORY -->
+ &#187; <a href='<% load($cat_url);  default("");  print(); %>' title='<% load($cat_pretty);  default(""); format(encode=>"entity"); print(); %>'><% load($cat_pretty);  default("");  print(); %></a>
+<!-- /CATEGORY -->
+</div>
+]]></HTML>
+<INIT><![CDATA[<%
+/* override the default INI values here. this gets preprocessed.  */
+loadurp("CART::RECENT_CATEGORY_PATH"); default($PATH); initset(PATH=>$_);
+%>]]></INIT>
+</ELEMENT>
+<ELEMENT ID="STORE_PHONE" SUB="WRAP_PHONE" TYPE="READONLY" LOAD="profile:zoovy:support_phone" RAW="1"><PRETEXT><![CDATA[<div class='phonePrompt'>Questions? Call</div><div class='phoneNumber'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DENBYMO" PROMPT="Store Hours" SUB="WRAP_STORE_HOURS" FONT="0" TYPE="TEXTBOX" DATA="profile:zoovy:store_hours"><PRETEXT><![CDATA[<div id='mhStoreHours'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT HEIGHT="60" ID="TOPRIGHT_HEADER_DECAL1" WIDTH="227" PROMPT="Header on right" SUB="WRAP_HEADER_DECAL" TYPE="DECAL" DATA="wrapper:ava_decal_header1"></ELEMENT>
+<ELEMENT ID="TOP_RIGHT_CORNER1" HEIGHT="100" MINIMAL="1" SUB="WRAP_HEADER_BANNER1" PROMPT="Banner: top next to logo (270x100)" WIDTH="248" BGCOLOR="TTTTTT" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:ava_banner_header1"></ELEMENT>
+<ELEMENT ID="TOP_RIGHT_CORNER2" HEIGHT="30" MINIMAL="1" SUB="WRAP_HEADER_BANNER2" PROMPT="Banner: top next to menu and minicart (180 x 30)" WIDTH="175" BGCOLOR="TTTTTT" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:ava_banner_header2"></ELEMENT>
+<ELEMENT ID="FACEBOOK_LINK" SUB="WRAP_LINK_FACEBOOK" PROMPT="URL: Facebook" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:facebook:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='visit us on facebook' onClick="window.open (']]></PRETEXT>
+<POSTTEXT><![CDATA[', 'facebooklet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-facebook','gfxloc: mastfoot | doc: 2011_avalanche | from: '+document.location.href); };">
+	<div class='icon facebookicon spritebg'></div>
+	<div class='bmPrompt'>Facebook</div>
+</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="TWITTER_LINK" SUB="WRAP_LINK_TWITTER" PROMPT="User Id: Twitter" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:twitter:userid"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='visit us on twitter' onClick="window.open ('http://twitter.com/]]></PRETEXT>
+<POSTTEXT><![CDATA[', 'twitter'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-twitter','gfxloc: mastfoot | doc: 2011_avalanche | from: '+document.location.href); };">
+	<div class='icon twittericon spritebg'></div>
+	<div class='bmPrompt'>Twitter</div>
+</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="BLOG_LINK" SUB="WRAP_LINK_BLOG" PROMPT="URL: Blog" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:blog:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='read our blog' onClick="window.open (']]></PRETEXT>
+<POSTTEXT><![CDATA[', 'bloglet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-blog','gfxloc: mastfoot | doc: 2011_avalanche | from: '+document.location.href); };">
+	<div class='icon blogicon spritebg'></div>
+	<div class='bmPrompt'>Blog</div>
+</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="RSS_LINK" SUB="WRAP_LINK_RSS" PROMPT="URL: RSS Feed" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:rss:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='subscribe to our rss feed' onClick="window.open (']]></PRETEXT>
+<POSTTEXT><![CDATA[', 'rsslet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-rss','gfxloc: mastfoot | doc: 2011_avalanche | from: '+document.location.href); };">
+	<div class='icon rssicon spritebg'></div>
+	<div class='bmPrompt'>RSS</div>
+</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="YOUTUBE_LINK" SUB="WRAP_LINK_YOUTUBE" PROMPT="URL: YouTube" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:youtube:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='visit our youtube page' onClick="window.open (']]></PRETEXT>
+<POSTTEXT><![CDATA[', 'youtubelet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-youtube','gfxloc: mastfoot | doc: 2011_avalanche | from: '+document.location.href); };">
+	<div class='icon youtubeicon spritebg'></div>
+	<div class='bmPrompt'>YouTube</div>
+</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_CUSTOM_FOOTER" SUB="WRAP_FOOTER" TYPE="FOOTER"><HTML><![CDATA[
+<div class='zsmall textAlignRight'>
+	
+	<div>Copyright &copy; <% load($year);  print(); %>.  All Rights Reserved.
+	<% load($zoovy_footer_html); print(); %></div>
+	<div><% load($buysafe_seal_html); print(); %></div>
+
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT FORMAT="CUSTOM" ID="MINICART" SUB="WRAP_MINICART" PROMPT="Shopping Cart" TYPE="CART" NOITEMS_SPEC="0"><HTML><![CDATA[<!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW --><% load($TOTALCOUNT);  default("");  print(); %>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DUALMENU_ONHOVER_USES_STACK" SUB="WRAP_DUALCATS_ONHOVER" TYPE="SUBCAT" SRC="." FORCECOLUMNS="15" OUTPUTSKIP="32768" MODE="LIST"><HTML><![CDATA[
+<ul id='nav'>
+<!-- ROW -->
+<!-- CATEGORY -->
+	<li>
+	<a href='<% print($cat_url); %>' title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>"><% print($cat_pretty); %></a><%
+print("");
+/* cat safe is used to generate the src of the stack   */
+
+load($cat_safe); default(""); format(pretext=>"NAVCAT::.");
+pull(stack=>>$CATSTACK,format=>"src",src=>$_);
+
+stop(unless=>$CATSTACK);
+
+print("	<ul>");
+
+:LOOP();
+
+pop(stack=>>$CATSTACK,namespace=>"CAT");
+
+print("
+		<li><a href='%CATEGORY_URL%/"); 
+load($CAT.safe);
+format(substring=>$_,pos=>"1",len=>"256"); /* strips preceding . from safe id */
+print();
+print("/' title=&quot;");
+load($CAT.pretty); default(""); format(encode=>"entity"); print();
+print("&quot;>");
+print($CAT.pretty);
+print("</a></li>");
+
+/* keep looping till we have shown all the subcats */
+goto(nb=>$CATSTACK,label=>"LOOP");
+
+print("
+		</ul>");
+
+:END();
+%>
+	</li>
+
+<!-- /CATEGORY -->
+<!-- /ROW -->
+</ul><!-- /nav -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT FORMAT="CUSTOM" ID="PRODLIST" PROMPT="Product List: Recently Viewed Items" SUB="WRAP_PRODLIST_RECENT" MAX="3" TYPE="PRODLIST" SHOWDEFAULT="0" SRC="SMART:VISITED" ALTERNATE="1" DATA="profile:zoovy:wrap_prodlist_recent" OUTPUTFILTER="FS=E" OUTPUTSKIP="32769" COLS="1"><HTML><![CDATA[
+
+
+<div class='boxen'>
+	<div class='boxHead'>
+		
+		<div class='floatLeft spritebg boxHeadLeft'></div>
+		
+		<div class='floatRight boxHeadRight'></div>
+		
+		<div class='floatLeft spritebg boxHeadText'>Recently Viewed items</div>
+		
+	</div>
+
+	<div id='recentlyViewedItems' class='boxContent'>
+
+<!-- ROW --><!-- PRODUCT -->
+
+<div class='ztable_row pointer' onClick="document.location = '<% load($PROD_URL);  default("");  print(); %>';" title="<% load($zoovy:prod_name); default(""); format(encode=>"entity"); print(); %>">
+
+	<div class='floatLeft prodListThumb'>
+	<% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"60",h=>"60",bg=>"F7FAFF",tag=>"1",alt=>$zoovy:prod_name;);  print(); %>
+	</div>
+
+	<div><% load($zoovy:prod_name); default("");  strip(length=>"55"); print(); %></div>
+
+	<div class='ztable_row_title'><% load($zoovy:base_price); default(""); format(money); print(); %></div>
+
+	<div class='ztable_row_small textAlignRight'>
+	view details
+	</div>
+
+</div>
+<div class='clearAll'></div>
+<!-- /PRODUCT --><!-- /ROW -->
+
+	</div>
+</div>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="LEFT_SIDE_1" WIDTH="194" PROMPT="Banner: left side 1 [194 by X]" SUB="WRAP_LEFTBANNER1" TYPE="BANNER" BGCOLOR="FFFFFF" EDITOR="INLINE" DATA="wrapper:ava_banner_left1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class='elementMargin'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="LEFT_SIDE_2" WIDTH="194" PROMPT="Banner: left side 2 [194 by X]" SUB="WRAP_LEFTBANNER2" TYPE="BANNER" BGCOLOR="FFFFFF" EDITOR="INLINE" DATA="wrapper:ava_banner_left2"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class='elementMargin'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="LEFT_SIDE_3" WIDTH="194" PROMPT="Banner: left side 3 [194 by X]" SUB="WRAP_LEFTBANNER3" TYPE="BANNER" BGCOLOR="FFFFFF" EDITOR="INLINE" DATA="wrapper:ava_banner_left3"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class='elementMargin'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="LEFT_SIDE_DECAL1" SUB="WRAP_LEFTDECAL1" PROMPT="Left side between banners" WIDTH="194" TYPE="DECAL" DATA="wrapper:ava_decal_left1"><PRETEXT><![CDATA[<div class='elementMargin leftSideDecal center' >]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_WIKINAV_FOOTER" WIKI="3" PROMPT="Wiki for footer nav links" SUB="WRAP_WIKIFOOTLINKS" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="profile:zoovy:wrap_nav_footlinks"><HELPER><![CDATA[
+Add up to eight wiki based links that will appear in the customer service section of the footer. A finite amount of space is allocated for each link and adding more text than what is allowed will result in cropping (text being cut off). HTML is not allowed. Each link will automatically be put on it's own line.
+]]></HELPER>
+</ELEMENT>
+<ELEMENT HEIGHT="100" ID="BOTTOMRIGHT_HEADER_DECAL1" WIDTH="100" PROMPT="Right side of footer" SUB="WRAP_FOOTER_DECAL1" TYPE="DECAL" DATA="wrapper:ava_decal_bottomright1"><PRETEXT><![CDATA[<div id='wrap_decal_1' style='overflow:hidden; height:100px; width:125px; margin-bottom:10px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_SIDEBAR_HORIZONTAL" PROMPT="Horizontal across bottom" SUB="WRAP_SIDEBAR_HORIZONTAL" TYPE="SIDEBAR" LINEPRETEXT=" " LINEPOSTTEXT=" " DATA="wrapper:sidebar_horizontal"><PRETEXT><![CDATA[<div id='horizontalSidebar'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DOCTYPE" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="DEFAULT_HEAD" TYPE="HEAD" HEADSKIP="1"></ELEMENT>
+<ELEMENT ID="END_HEAD_N_PRE_BODYELEMENT_HTML" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+
+<link rel="stylesheet" type="text/css" href="%WRAPPER_URL%/ava11_styles-20111110.css" />
+
+</head>
+
+<body>
+
+
+
+<div class='whiteness'>
+	<div class='themeWidth'>
+
+<div id='mastHead'>
+
+	<div id='mhLogo'><a href='%HOME_URL%'>%WRAP_LOGO%</a></div>
+
+	<div id='mhBigBanner'>%WRAP_HEADER_BANNER1%</div>
+
+	<div id='mhSmallBanner'>%WRAP_HEADER_BANNER2%</div>
+
+	<div id='mhDecal'>%WRAP_HEADER_DECAL%</div>
+
+	<div id='mhMenu' class='no_underline'><a href='%CUSTOMER_URL%' rel='nofollow' title='account information'>My Account</a> | <a href='%CHECKOUT_URL%' rel='nofollow' title='proceed to secure checkout'>Checkout</a></div>
+
+	<div id='mhMiniCart' onClick="document.location = '%CART_URL%';" class='pointer' title='your shopping cart'>
+
+<div id='mhMiniCartIcon' class='floatRight spritebg mhMiniCartIcon '></div>
+My Goods (%WRAP_MINICART%)
+
+	</div>
+
+	<div id='mhContact' onClick="document.location = '%CONTACT_URL%';" class='pointer' title='Contact us'>
+		%WRAP_PHONE%
+		%WRAP_STORE_HOURS%
+	</div>
+	
+	<div id='mhSearch'>
+
+<form action='%RESULTS_URL%' method='get'>
+<input type='hidden' name='catalog' value='' />
+<div class='floatLeft'><input type='text' name='keywords' value='%WRAP_KEYWORD%' class='zform_textbox' /></div>
+<div class='floatRight'><input type='submit' class='spritebg submit_arrow' value='search' /></div>
+</form>
+
+	</div>
+	
+	
+
+</div><!-- /masthead -->
+
+
+
+
+
+
+
+
+<!-- horizontal categories -->
+<div id='mhTopCats'>
+
+	<div class='floatLeft spritebg' id='horCatCapLeft'></div>
+
+	<div class='floatRight' id='horCatCapRight'></div>
+
+	<div class='floatLeft spritebg' id='dualcats_horz_onhover'>%WRAP_DUALCATS_ONHOVER%</div>
+
+</div><!-- /mhTopCats -->
+
+
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="NO_LEFT_COLUMN_DIV" TYPE="HIDDEN" OUTPUTFILTER="!PG=homepage,cart,*checkout" OUTPUTSKIP="1"><DEFAULT><![CDATA[
+
+<!--
+only gets output on pages with no left column.
+is used to override width on bodyContent div
+-->
+
+<div id='noLeftCol'>
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="BODY_CONTENT_DIV" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+<!-- main content area -->
+<div class='bodyContent'>
+
+
+%WRAP_TITLE%
+%WRAP_BREADCRUMB%
+
+
+<!--
+########################### BEGIN BODY 
+-->
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="THEBODY" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="CLOSE_BODY_CONTENT_DIV" TYPE="HIDDEN"><DEFAULT><![CDATA[
+<!--
+########################### END BODY 
+-->
+
+
+</div><!-- /bodyContent -->
+
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CLOSE_NO_LEFT_COLUMN_DIV" TYPE="HIDDEN" OUTPUTFILTER="!PG=homepage,cart,*checkout" OUTPUTSKIP="1"><DEFAULT><![CDATA[
+
+
+</div><!-- /noLeftCol -->
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="LEFT_COLUMN_HTML" TYPE="HIDDEN" OUTPUTFILTER="PG=homepage,cart,*checkout" OUTPUTSKIP="1"><DEFAULT><![CDATA[
+
+
+
+<!-- left column -->
+<div id='leftCol'>
+
+<!-- subcategories (tier 2 and 3 ) -->
+%WRAP_TIER_2_AND_3_CATS%
+<!-- /subcategories -->
+
+%WRAP_LEFTBANNER1%
+
+<!-- recently viewed items -->
+
+
+%WRAP_PRODLIST_RECENT%
+
+
+<!-- /recently viewed items -->
+
+
+
+%WRAP_LEFTBANNER2%
+
+
+%WRAP_LEFTDECAL1%
+
+%WRAP_LEFTBANNER3%
+
+
+
+
+</div><!-- /leftCol -->
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="MAST_FOOTER" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+
+
+<div class='clearAll' id='bodyFooterSplitter'></div>
+
+
+<div id='mastFooter'>
+
+	<div class='footSection no_underline' id='mfCustomerService'>
+
+<div class='header'>Customer Service</div>
+<a href='%ABOUT_URL%' rel='nofollow' title='learn more about us'>&#187; About Us</a>
+<a href='%CART_URL%' rel='nofollow' title='view/edit your cart contents'>&#187; Cart</a>
+<a href='%CONTACT_URL%' rel='nofollow' title='contact us'>&#187; Contact Us</a>
+<a href='%CHECKOUT_URL%' rel='nofollow' title='proceed to secure checkout'>&#187; Checkout</a>
+<a href='%RETURNS_URL%' rel='nofollow' title='frequently asked questions'>&#187; FAQ</a>
+<a href='%RETURNS_URL%' rel='nofollow' title='shipping, payment and return policies'>&#187; Policies</a>
+<a href='%CUSTOMER_URL%' rel='nofollow' title='account preferences and order history'>&#187; My Account</a>
+<a href='%PRIVACY_URL%' rel='nofollow' title='your privacy is important. click here to view our privacy statement'>&#187; Privacy</a>
+	
+	</div><!-- /mfCustomerSErvice -->
+
+	<div class='vertSplitter'></div>
+
+
+
+
+	<div class='footSection no_underline' id='mfUserDefined'>
+
+%WRAP_WIKIFOOTLINKS%
+
+	</div><!-- /mfUserDefined -->
+
+	<div class='vertSplitter'></div>
+
+
+
+
+	<div class='footSection no_underline' id='mfSocialNetworks'>
+
+<div class='header'>Social Networks</div>
+
+%WRAP_LINK_FACEBOOK%
+
+%WRAP_LINK_YOUTUBE%
+
+%WRAP_LINK_TWITTER%
+
+<!--
+%WRAP_LINK_PODCAST%
+<div class='bookmarklet pointer' onClick="window.open ('', 'podcastlet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-podcast','gfxloc: mastfoot | doc: 2011_avalanche | from: '+document.location.href); };">
+	<div class='icon podcasticon spritebg'></div>
+	<div class='bmPrompt'>Our Podcast</div>
+</div>
+
+-->
+
+%WRAP_LINK_BLOG%
+
+%WRAP_LINK_RSS%
+
+
+
+	</div><!-- /mfSocialNetworks -->
+
+	<div class='vertSplitter'></div>
+
+
+
+	<div class='footSection no_underline' id='mfSubscribe'>
+
+
+<div class='floatRight' id='phoneNumnDecal'>
+	%WRAP_FOOTER_DECAL1%
+	<div id='mfContact'>%WRAP_PHONE%</div>
+</div>
+
+
+<div id='mfSubscribeFrmContainer' class='floatLeft'>
+
+<div class='header'>Newsletter</div>
+<form action='%SUBSCRIBE_URL%' method='post' name='mfSubscribeFrm' id='mfSubscribeFrm'>
+<input type='hidden' name='check' value='1' />
+<label for='email'>Email:</label>
+<input type='text' class='zform_textbox' maxlength='50' size='10' id='email' name='email' value='' />
+
+<label for='fullname'>Name:</label>
+<input type='text' class='zform_textbox' maxlength='50' size='10' name='fullname' id='fullname' value=''  />
+
+<div class='submitContainer'><input type='submit' class='spritebg subscribe' value='Subscribe' /></div>
+
+</form>
+</div><!-- /subscribeFrmContainer -->
+
+	</div><!-- /mfSubscribe -->
+
+
+
+
+	<div class='clearAll'></div>
+
+</div><!-- /mastFooter -->
+
+
+
+
+%WRAP_SIDEBAR_HORIZONTAL%
+
+
+
+
+<div id='zFooter'>
+%WRAP_FOOTER%
+</div>
+
+<div class='clearAll'></div>
+
+	</div><!-- end themeWidth -->
+</div><!-- end whiteness -->
+
+
+
+<div id='bodyBgBottomLeft'></div>
+<div id='bodyBgBottomRight'></div>
+<div id='bodyBgTopRight'></div>
+<div id='bodyBgTopLeft'></div>
+
+
+
+
+
+
+<!--
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="FOR_TROUBLESHOOTING" TYPE="SPECL"><HTML><![CDATA[
+tier1 = <%
+loadurp("CART::RECENT_CATEGORY_TIER1"); default(""); print();
+%><br>
+tier2 = <%
+loadurp("CART::RECENT_CATEGORY_TIER2"); default(""); print();
+%><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CLOSE_BODY_N_HTML_TAGS" TYPE="HIDDEN"><DEFAULT><![CDATA[
+-->
+
+
+
+
+</body>
+</html>
+
+
+
+
+]]></DEFAULT>
+</ELEMENT>
+
+</TEMPLATE>

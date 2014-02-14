@@ -1,0 +1,124 @@
+<script language="JavaScript">
+<!--
+function zoom (url) {
+z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+z.document.close();
+z.focus(true);
+}
+//-->
+</script>
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr>
+<td background="http://static.zoovy.com/merchant/gkworld/section_bg.gif" width=174 valign="top"><ELEMENT TYPE="IMAGE" NAME="IMAGE6">
+PRETTY=Image1 174 x 73
+ABOUT=Please enter the first picture for your product.
+HEIGHT=73
+WIDTH=174
+SAVETO=product:zoovy:prod_image6
+DEFAULT=https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo
+ZOOM=0
+</ELEMENT></td>
+<td background="http://static.zoovy.com/merchant/gkworld/section_bg.gif" align="center" valign="top">
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=70 valign="top"><a href="http://gkworld.zoovy.com/category/consoles"><img src="http://static.zoovy.com/merchant/gkworld/sub_console_ps2.gif" width=70 height=64 border=0 alt="Consoles"></a></td>
+<td width=12></td>
+<td width=70 valign="top"><a href="http://gkworld.zoovy.com/category/control"><img src="http://static.zoovy.com/merchant/gkworld/sub_control_ps.gif" width=70 height=64 border=0 alt="Controllers"></a></td>
+<td width=12></td>
+<td width=70 valign="top"><a href="http://gkworld.zoovy.com/category/accessories"><img src="http://static.zoovy.com/merchant/gkworld/sub_accessory.gif" width=70 height=64 border=0 alt="Accessories"></a></td>
+<td width=12></td>
+<td width=70 valign="top"><a href="http://gkworld.zoovy.com/category/guides"><img src="http://static.zoovy.com/merchant/gkworld/sub_guides.gif" width=70 height=64 border=0 alt="Game Guides"></a></td>
+<td width=12></td>
+</tr></table></td>
+<td background="http://static.zoovy.com/merchant/gkworld/section_bg.gif" width=174 align="right" valign="top"><a href='http://server.iad.liveperson.net/hc/41523965/?cmd=file&file=visitorWantsToChat&site=41523965&byhref=1' target='chat41523965' onClick="javascript:window.open('http://server.iad.liveperson.net/hc/41523965/?cmd=file&file=visitorWantsToChat&site=41523965&referrer='+document.location,'chat41523965','width=472,height=320');return false;"><img src="http://static.zoovy.com/merchant/gkworld/chat_icon.gif" name="hcIcon" border="0" alt="Click here for Live Help"></a></td>
+</tr></table>
+<table cellspacing=0 cellpadding=4 border=0 width=740>
+<tr>
+	<td width=150 valign="top">
+	<table cellspacing=0 cellpadding=0 border=0>
+	<tr>
+		<td colspan=2><img src="http://static.zoovy.com/merchant/gkworld/cart_head.gif" width="150" height="20" alt="" border="0"></td>
+	</tr><tr>
+		<td width=74 class="desc" bgcolor="#e9eaec">Items:</td>
+		<td bgcolor="#e9eaec"><ELEMENT TYPE="MINICART" NAME="MINICART">
+CSSCLASS=desc
+ITEMSONLY=1
+</ELEMENT></td>
+	</tr><tr>
+		<td colspan=2 background="http://static.zoovy.com/merchant/gkworld/greydash.gif" height=1></td>
+	</tr><tr>
+		<td width=74 class="desc" bgcolor="#e9eaec">Subtotal:</td>
+		<td bgcolor="#e9eaec"><ELEMENT TYPE="MINICART" NAME="MINICART">
+CSSCLASS=desc
+SUBTOTALONLY=1
+</ELEMENT></td>
+	</tr><tr>
+		<td colspan=2><a href="/checkout.cgis"><img src="http://static.zoovy.com/merchant/gkworld/cart_checkout.gif" border=0></a></td>
+	</tr><tr>
+		<td colspan=2 background="http://static.zoovy.com/merchant/gkworld/greydash.gif" height=1></td>
+	</tr>
+	</table>
+<ELEMENT TYPE="PRODLIST" NAME="PRODLIST1">
+PRETTY=Product Listing
+ABOUT=You can add products to your homepage, when you do they will appear below.
+SAVETO=page:prodlist
+MULTIPAGE=1
+DEFAULT=THUMB,1,2,NONE
+</ELEMENT>
+</td>
+	<td valign="top"><!-- Main product Section goes here. -->
+<table cellspacing=0 cellpadding=2 width=590>
+<tr>
+	<td width=130 width=174 valign="top">
+<ELEMENT TYPE="IMAGE" NAME="IMAGE1">
+PRETTY=Image1 184 x 130
+ABOUT=Please enter the first picture for your product.
+HEIGHT=184
+WIDTH=130
+SAVETO=product:zoovy:prod_image1
+DEFAULT=https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo
+ZOOM=1
+</ELEMENT>		
+	</td>
+	<td width=460 valign="top">
+	<table cellspacing=0 cellpadding=2 width=460>
+	<tr>
+		<td valign="top"><span style="font-family: arial; font-size: 12px;"><strong><ELEMENT TYPE="TEXT" NAME="NAME">
+FONTCOLOR=#000000
+FONTFACE=arial
+FONTSIZE=2
+PRETTY=Name
+ABOUT=This is the product name.
+DEFAULT=
+SAVETO=product:zoovy:prod_name
+</ELEMENT></strong></span></td>
+		<td align="right" width=25 valign="top"><span style="font-family: arial; font-size: 12px;">$<ELEMENT TYPE="READONLY" NAME="PRICE">
+RAW=1
+FONTCOLOR=#000000
+FONTFACE=arial
+FONTSIZE=2
+LOAD=product:zoovy:base_price
+ERROR=Not Set!
+FORMAT=PLAINPRICE
+</ELEMENT></span></td>
+	</tr><tr>
+		<td colspan=2 valign="top">
+<ELEMENT TYPE="TEXT" NAME="ABOUT">
+FONTCOLOR=#000000
+FONTFACE=arial
+FONTSIZE=1
+PRETTY=Default Description (shared)
+ABOUT=This is the product description that will appear on your website.
+DEFAULT=This is a great product, you really MUST buy at least one!
+SAVETO=product:zoovy:prod_desc
+</ELEMENT></td>
+	</tr><tr>
+		<td colspan=2 align="right"><ELEMENT TYPE="ADDTOCART" NAME="ADDTOCART"></ELEMENT></td>
+	</tr>
+	</table>		
+	</td>
+	</tr>
+</table>
+	</td>
+</tr>
+</table>

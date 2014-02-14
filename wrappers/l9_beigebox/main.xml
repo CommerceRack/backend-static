@@ -1,0 +1,691 @@
+<TEMPLATE ID="l9_beigebox" FORMAT="WRAPPER">
+
+
+<!-- ******* -->
+<ELEMENT ID="CZWVJPF" FORMAT="WRAPPER" AUTHOR="Zoovy: JT" TYPE="CONFIG" V="2" TITLE="Beige Box (wide)" CREATED="00000000" RELEASED="00000000"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+.zborder { border: 1px solid #e9e7e3; }
+.zbox { border: 1px solid #fbf8f1; } 
+.zbox_body { background-color: #FFFFFF; color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 11px; }
+.zbox_head { background-color: #f8f6ee; color: #bebcb2; font-family: helvetica, tahoma, arial; font-size: 13px; }
+.zcolor { background-color: #e0dbcd; color: #6d6d6d; }
+.zcolor_contrast { background-color: #bbd32e; color: #FFFFFF; }
+.zcolor_dark { background-color: #bcb9b0; color: #ffffff; }
+.zcolor_light { background-color: #ffffff; color: #bcb9b0; }
+.zform_button { border: 1px solid #7e931d; background-color: #7e931d; color: #ffffff; font-size: 10px; font-family: helvetica, tahoma, arial; }
+.zform_select { border: 1px solid #bcb9b0; background-color: #FFFFFF; color: #000000; font-size: 11px; font-family: helvetica, tahoma, arial; }
+.zform_textarea { border: 1px solid #bcb9b0; background-color: #FFFFFF; color: #000000; font-size: 11px; font-family: helvetica, tahoma, arial; }
+.zform_textbox { border: 1px solid #bcb9b0; background-color: #FFFFFF; color: #000000; font-size: 11px; font-family: helvetica, tahoma, arial; }
+.zhint { color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 10px; }
+.zlink { color: #7d9bbd; }
+.zsmall { color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 10px; }
+.ztab0 { background-color: #f2f1ee; color: #7d9bbd; font-family: helvetica, tahoma, arial; font-size: 11px; }
+.ztab1 { background-color: #ffffff; color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 11px; font-weight: bold;}
+.ztabbody { background-color: #ffffff; color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 11px; }
+.ztable_head { background-color: #e1ded6; color: #FFFFFF; font-family: helvetica, tahoma, arial; font-size: 13px; }
+.ztable_row {color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 11px; }
+.ztable_row0 { background-color: #FFFFFF; color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 11px;}
+.ztable_row1 { background-color: #f2f1ee; color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 11px;}
+.ztable_row_small { color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 11px; }
+.ztable_row_title { font-weight: bold; color: #9db326; font-family: helvetica, tahoma, arial; font-size: 15px; }
+.ztitle { font-weight: bold; color: #a5a399; font-family: helvetica, tahoma, arial; font-size: 16px; }
+.ztitle2 { font-weight: bold; color: #9db326; font-family: helvetica, tahoma, arial; font-size: 14px; }
+.ztxt { color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 12px; }
+.zwarn { color: #CC0000; font-weight: bold; }]]></CSS>
+<THEME><![CDATA[alert_color=CC0000&content_background_color=ffffff&content_font_face=helvetica%2c+tahoma%2c+arial&content_font_size=1&content_text_color=6d6d6d&disclaimer_background_color=ffffff&disclaimer_font_face=helvetica%2c+tahoma%2c+arial&disclaimer_font_size=1&disclaimer_text_color=6d6d6d&link_active_text_color=7d9bbd&link_text_color=7d9bbd&link_visited_text_color=7d9bbd&name=&pretty_name=&table_heading_background_color=e1ded6&table_heading_font_face=helvetica%2c+tahoma%2c+arial&table_heading_font_size=1&table_heading_text_color=FFFFFF&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=f2f1ee&table_listing_font_face=helvetica%2c+tahoma%2c+arial&table_listing_font_size=1&table_listing_text_color=6d6d6d]]></THEME>
+<SITEBUTTONS><![CDATA[forward=l9_beigebox|png|102|34&add_to_cart=l9_beigebox|png|147|53&back=l9_beigebox|png|102|34&default=l9_beigebox|png|117|28&checkout=l9_beigebox|png|147|46]]></SITEBUTTONS>
+<OVERLOAD><![CDATA[defaultflow.h=h-20090617&defaultflow.c=c-20090617&defaultflow.e=e-20090617&flow.t=3010&flow.product=p-20090617]]></OVERLOAD>
+</ELEMENT>
+<ELEMENT ID="CPVRQCS" SUB="HOMECATEGORY_URL" TYPE="READONLY" LOAD="URL::HOMECATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCT" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCU" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCV" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCW" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCX" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_FUNCTION_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCY" SUB="SHIPQUOTE_URL" TYPE="READONLY" LOAD="URL::SHIPQUOTE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCZ" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDA" SUB="SITEBUTTON_URL" TYPE="READONLY" LOAD="URL::SITEBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDB" SUB="HOMEPAGE_URL" TYPE="READONLY" LOAD="URL::HOMEPAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDC" SUB="COUNTER_URL" TYPE="READONLY" LOAD="URL::COUNTER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDD" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDE" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDF" SUB="UPDATE_PAYMENT_URL" TYPE="READONLY" LOAD="URL::UPDATE_PAYMENT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDG" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDH" SUB="NAVBUTTON_URL" TYPE="READONLY" LOAD="URL::NAVBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDI" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDK" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDL" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDM" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDN" SUB="ABOUT_ZOOVY_URL" TYPE="READONLY" LOAD="URL::ABOUT_ZOOVY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDO" SUB="NEWS_URL" TYPE="READONLY" LOAD="URL::NEWS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDP" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDQ" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDR" SUB="USERBUTTON_URL" TYPE="READONLY" LOAD="URL::USERBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDS" SUB="FASTORDER_URL" TYPE="READONLY" LOAD="URL::FASTORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDT" SUB="CLOSED_URL" TYPE="READONLY" LOAD="URL::CLOSED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDU" SUB="MAIL_FORM_URL" TYPE="READONLY" LOAD="URL::MAIL_FORM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDV" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDW" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDX" SUB="CONTACTUS_URL" TYPE="READONLY" LOAD="URL::CONTACTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDY" SUB="DYNAMIC_URL" TYPE="READONLY" LOAD="URL::DYNAMIC_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDZ" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEA" SUB="CONTACT_US_URL" TYPE="READONLY" LOAD="URL::CONTACT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEB" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEC" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQED" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEE" SUB="MERCHANT_LOGIN_URL" TYPE="READONLY" LOAD="URL::MERCHANT_LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEF" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEG" SUB="ADULT_URL" TYPE="READONLY" LOAD="URL::ADULT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEH" SUB="CLAIM_URL" TYPE="READONLY" LOAD="URL::CLAIM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEI" SUB="CLAIM_MULTI_URL" TYPE="READONLY" LOAD="URL::CLAIM_MULTI_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEJ" SUB="ABOUT_US_URL" TYPE="READONLY" LOAD="URL::ABOUT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEK" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEL" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEM" SUB="REDIR_URL" TYPE="READONLY" LOAD="URL::REDIR_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEN" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEO" SUB="KILL_COOKIES_URL" TYPE="READONLY" LOAD="URL::KILL_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEP" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEQ" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQER" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQES" SUB="NO_COOKIES_URL" TYPE="READONLY" LOAD="URL::NO_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQET" SUB="PAYPAL_URL" TYPE="READONLY" LOAD="URL::PAYPAL_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEU" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEV" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEW" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQHREXQ" SUB="title1" TYPE="HIDDEN"><DEFAULT><![CDATA[<h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXR" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[</h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXS" SUB="title2" TYPE="HIDDEN"><DEFAULT><![CDATA[<h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXT" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXU" SUB="title3" TYPE="HIDDEN"><DEFAULT><![CDATA[<span style="font-weight:bold;">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXV" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</span>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILIST" SUB="list" TYPE="HIDDEN"><DEFAULT><![CDATA[<ul class="wiki_list">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLIST" SUB="/list" TYPE="HIDDEN"><DEFAULT><![CDATA[</ul>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILISTITEM" SUB="listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[<li class="wiki_listitem">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLISTITEM" SUB="/listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[</li>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKISECTION" SUB="section" TYPE="HIDDEN"><DEFAULT><![CDATA[<p class="wiki_section">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDSECTION" SUB="/section" TYPE="HIDDEN"><DEFAULT><![CDATA[</p>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIHARDBREAK" SUB="hardbreak" TYPE="SPECL"><HTML><![CDATA[<div style='border-top:<% loadurp("CSS:zborder.border"); print(); %>; margin:5px 0px;'></div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKISOFTBREAK" SUB="softbreak" TYPE="SPECL"><HTML><![CDATA[<br>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKITABLE" SUB="table" TYPE="HIDDEN"><DEFAULT><![CDATA[<table cellspacing="0" class="zborder">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLE" SUB="/table" TYPE="HIDDEN"><DEFAULT><![CDATA[</table>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEROW" SUB="tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[<tr class="ztablerow">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEROW" SUB="/tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[</tr>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLECELL" SUB="tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_row">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLECELL" SUB="/tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[</td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEHEAD" SUB="tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_head"><b>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT HEIGHT="350" ID="PROD_IMAGE1" WIDTH="350" SUB="WRAP_PRODIMAGE_META" BGCOLOR="FFFFFF" TYPE="IMAGE" READONLY="1" EDITOR="INLINE" DATA="product:zoovy:prod_image1" OUTPUTSKIP="1" OUTPUTFILTER="!FS=P" RAW="1"><POSTTEXT><![CDATA[" />]]></POSTTEXT>
+<PRETEXT><![CDATA[<link rel="image_src" href="]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNEEWE" SUB="THEME_DOCID" TYPE="READONLY" LOAD="FLOW::WRAPPER" RAW="1"></ELEMENT>
+<ELEMENT ID="CQPOIJQ" SUB="STORENAME" TYPE="READONLY" LOAD="FLOW::USERNAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CQPOIJP" SUB="SESSION_ID" TYPE="READONLY" LOAD="CART::ID" RAW="1"></ELEMENT>
+<ELEMENT ID="CRNEEWD" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD" RAW="1"></ELEMENT>
+<ELEMENT ID="ADDOVERLOAD" LINK="javascript:addToCart('%ID%','%SKU%');" BUTTON="add_to_cart" TYPE="OVERLOAD"></ELEMENT>
+<ELEMENT HEIGHT="70" ID="WRAPPER_LOGO" MINIMAL_MODE="1" SUB="WRAP_LOGO" WIDTH="300" TYPE="LOGO" BGCOLOR="TTTTTT"></ELEMENT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE"></ELEMENT>
+<ELEMENT ID="SEARCH_CATALOG_CHOOSER" SUB="SEARCHCATALOG" PROMPT="Search Catalog" HELPER="Be sure to set your catalog to all upper case.  Set to DEFAULT if you don't know what this is." TYPE="SELECT" FONT="0" EDITOR="INLINE" LIST="@SYSTEM.SEARCHCATALOGS" DATA="profile:zoovy:wrap_catalog"></ELEMENT>
+<ELEMENT ID="WRAPPER_BREADCRUMB" SUB="WRAP_BREADCRUMB" NOHOME="0" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C"><HTML><![CDATA[
+<div style='margin-bottom:4px; font-size:11px; color:#a5a399' class='breadcrumb'>
+<!-- CATEGORY -->
+<a href="<% load($cat_url);  default("");  print(); %>" class="zlink"><% load($cat_pretty);  default("");  print(); %></a>
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); runspec(" &#187; "); print(); %>
+<!-- /CATEGORY -->
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="VISIBLE_CART_ELEMENT" FORMAT="CUSTOM" PROMPT="Shopping Cart" SUB="WRAP_MINICART" TYPE="CART" NOITEMS_SPEC="0 Items"><HTML><![CDATA[<!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
+<% load($TOTALCOUNT);  default("");  print(); %> Items: <% load($SUBTOTAL);  default("");  format(money);  print(); %>
+]]></HTML>
+</ELEMENT>
+<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" SUB="WRAP_AJAX_MINICART" TYPE="CART" NOITEMS_SPEC="This cart is empty" OUTPUTSKIP="1" COLS="1" OUTPUTFILTER="FS=T"><HTML><![CDATA[
+<div style='height:320px; overflow:auto;'>
+<table cellpadding="2" cellspacing="0" width='100%'>
+<!-- ROW -->
+<!-- PRODUCT -->
+<tr>
+	<td style='border-bottom:1px dotted #c9c3b3; padding-top:4px;' class="ztable_row ztable_row<% print($row.alt); %>">
+<div style='float:left; margin-right:4px;'><%
+print();
+load($zoovy:prod_thumb); default(""); default($zoovy:prod_image1);
+image(w=>"60",h=>"80",tag=>"1",alt=>$zoovy:prod_name);
+print();
+%></div>
+
+<div style='margin-bottom:3px;'><strong><% load($prod_name);  default(""); strip(length=>"65",breaks=>"1",html=>"1");  print(); %></strong></div>
+
+<div class='ztable_row_small' style='margin-bottom:3px;'>
+<% load($QTY);  default("");  print(); %> @ <% load($PRICE);  default("");  format(money);  print(); %> = <% load($EXTENDED);  default("");  format(money);  print(); %>
+</div>
+
+<div class='ztable_row_small' style='margin-bottom:3px;'>
+Sku: <% load($SKU_LINK);  default("");  print(); %>
+</div>
+
+	</td>
+</tr>
+<!-- /PRODUCT -->
+<!-- /ROW -->
+</table>
+</div>
+
+<table width='100%' cellspacing='1' cellpadding='0'>
+<tr>
+	<td valign='top'>
+<table width="100%" cellspacing="1" cellpadding="0" ><tr>
+	<td class='ztable_row'><% load($TOTALCOUNT);  default("");  print(); %> Items: </td>
+	<td align="right" class='ztable_row'><% load($SUBTOTAL);  default("");  format(money);  print(); %></td>
+</tr>
+<% load($SURCHARGE_SPEC);  default("");  print(); %>
+<tr>
+	<td class='ztable_row'><strong>Total: </strong></td>
+	<td align="right" class='ztable_row'><strong><% load($GRANDTOTAL);  default("");  format(money);  print(); %></strong></td>
+</tr></table>
+	</td>
+	<td align='right'>
+<div style='padding-top:3px;'><a href='#' onclick="closePanel('panelCart'); return false;">
+<% element(TYPE=>"SITEBUTTON",BUTTON=>"continue_shopping"); print(); %>
+</a></div>
+	</td>
+</tr>
+</table>
+]]></HTML>
+<SURCHARGE_SPEC><![CDATA[
+<tr>
+	<td class='ztable_row'><% load($SURCHARGE); default(""); print(); %>:</td>
+	<td align="right" class='ztable_row'><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></td>
+</tr>
+]]></SURCHARGE_SPEC>
+<SURCHARGE_SHP_SPEC><![CDATA[
+<tr>
+	<td class='ztable_row'>Shipping:</td>
+	<td align="right" class='ztable_row'><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></td>
+</tr>
+]]></SURCHARGE_SHP_SPEC>
+</ELEMENT>
+<ELEMENT FORMAT="CUSTOM" ID="PRODLIST_SMART_ACCESSORIES" SIZE="5000" SUB="WRAP_PRODLIST_SMARTACCESSORIES" PROMPT="Smart Accessories" MAX="6" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="SMART:ACCESSORIES" ALTERNATE="0" MULTIPAGE="0" SHOWDEFAULT="0" DATA="page:prod_prodlist_style2" COLS="3"><HTML><![CDATA[
+
+<table border='0' cellpadding='0' cellspacing='5' align='center'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+
+	<td class='ztable_row ztable_row<% print($row.alt); %>' width='<% print($COLWIDTH); %>' valign='top' align='left' style='padding:6px 0;'>
+
+	<div style='margin-bottom:5px;'>
+	<a href='<% print($PROD_URL); %>' title="<% load($zoovy:prod_name); default(""); format(encode=>"entity"); print(); %>">
+	<% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"90",h=>"120",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a>
+	</div>
+	
+	<div class='no_underline'><a href='<% print($PROD_URL); %>'><% load($zoovy:prod_name); default(""); print(); %></a></div>
+	
+	<div class='ztable_row_small'><% load($zoovy:prod_mfg); default(""); format(pretext=>" by "); print(); %></div>
+	
+	<div style='margin-top:3px;'><% load($zoovy:base_price); default(""); format(hidezero); format(money); format(pretext=>"only <span class='ztable_row_title'>",posttext=>"</span>");  print(); %></div>
+
+	</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td class='ztable_row ztable_row<% print($row.alt); %>'></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+<DIVIDER><![CDATA[
+
+<td><img src='<% loadurp("URL::GRAPHICS_URL"); default(""); print(); %>/blank.gif' height='1' width='15' alt='' /></td>
+
+]]></DIVIDER>
+</ELEMENT>
+<ELEMENT HEIGHT="75" ID="TOP_RIGHT_CORNER1" WIDTH="300" PROMPT="Banner: top right corner" SUB="WRAP_BANNER_TOPRIGHT1" TYPE="BANNER" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="wrapper:l9bb_banner_topright1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style='margin-bottom:4px;'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT HEIGHT="75" ID="BOTTOM_LEFT1" WIDTH="488" PROMPT="Banner: below content on left" SUB="WRAP_BANNER_BOTTOMLEFT1" TYPE="BANNER" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="wrapper:l9bb_banner_bottomleft1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style='float:left; width:488px; text-align:left; margin:4px 0;'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT HEIGHT="75" ID="BOTTOM_LEFT1" WIDTH="488" PROMPT="Banner: below content on right" SUB="WRAP_BANNER_BOTTOMRIGHT1" TYPE="BANNER" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="wrapper:l9bb_banner_bottomright1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style='float:left; width:488px; text-align:left; margin:4px 0;'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="WRAPPERS_NEWSTEXT" WIKI="3" PROMPT="Short marketing text for newsletter (no html)" SUB="WRAP_NEWS_TEXT" TYPE="TEXT" FONT="0" DATA="profile:zoovy:wrap_newstext"><PRETEXT><![CDATA[<div style='width:200px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="SUBCATEGORIES" HOME="0" SUB="WRAP_CATEGORIES" TYPE="SUBCAT" SRC="." MODE="LIST"><HTML><![CDATA[
+<div class='top_cats'>
+<!-- CATEGORY -->
+<a href='<% print($cat_url); %>' title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>"><% print($cat_pretty); %></a>
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); print(" | "); %>
+<!-- /CATEGORY -->
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_CUSTOM_FOOTER" SUB="WRAP_FOOTER" TYPE="FOOTER"><HTML><![CDATA[
+<div style='font-size:11px; color:#a5a399;' class='no_underline'>
+	<div style='float:left;'>Copyright &copy; <% load($year);  print(); %>.  All Rights Reserved.</div>
+	<div style='float:right;'><a href='<% load($about_zoovy_url); print(); %>' target='_blank' style='color:#a5a399;'>e-commerce solution provided by Zoovy</a></div>
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_SIDEBAR_CUSTOM" SUB="WRAP_SIDEBAR" TYPE="SIDEBAR"><LINEPRETEXT><![CDATA[<td valign='middle'>]]></LINEPRETEXT>
+<LINEPOSTTEXT><![CDATA[</td>]]></LINEPOSTTEXT>
+<PRETEXT><![CDATA[<table cellspacing='5' cellpadding='0'><tr>]]></PRETEXT>
+<POSTTEXT><![CDATA[</tr></table>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="SPECLDUALCATS" SUB="WRAP_TIER2_CATS" TYPE="SPECL" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C"><HTML><![CDATA[
+<%
+
+print("");
+
+/* get the root level set of categories for the focus cat (ex:  cat.subcat.subsubcat would display the cats for .cat)
+print("");
+/* the only way to get the top level category is to put the entire category path into a stack and then to retrieve the content of spot 1 */
+loadurp("SREF::_CWPATH");
+	pull(stack=>>$PATHSTACK,format=>"textlist",delimiter=>".",p1=>"TOPCAT");
+	pop(stack=>>$PATHSTACK,namespace=>"PATH");
+	load($PATH.TOPCAT); 
+
+	element(TYPE=>"SUBCAT",HTML=>$CATHTML,MODE=>"LIST",SRC=>$_,DESCENDTREE=>"0");
+	pull(stack=>>$CATSTACK,format=>"textlist",delimiter=>"|",p0=>"CAT_SAFE",p1=>"CAT_PRETTY",p2=>"CAT_URL");
+
+:TOPICLOOP();
+stop(unless=>$CATSTACK);
+
+pop(stack=>>$CATSTACK,namespace=>"CATS");
+/* only print out the subcategories of the active category that we're in */
+loadurp("SREF::_CWPATH"); 
+pull(stack=>>$PATHSTACK,format=>"textlist",delimiter=>".",p1=>"TOPCAT");
+pop(stack=>>$PATHSTACK,namespace=>"PATH");
+load($PATH.TOPCAT);
+
+:TOPCAT_SET();
+
+	print("<div class='top_cat'><a href='");
+	print($CATS.CAT_URL); 
+	print("'>");
+	load($CATS.CAT_PRETTY); print();
+	print("</a></div>");
+	
+	
+	
+	element(TYPE=>"SUBCAT",SRC=>$CATS.CAT_SAFE,HTML=>$KITTENHTML,MODE=>"LIST");
+	print();
+	goto(nb=>$CATSTACK,label=>"TOPICLOOP");
+	stop();
+%>
+]]></HTML>
+<CATHTML><![CDATA[
+<!-- ROW -->
+<!-- CATEGORY --><% print($cat_safe); %>|<% print($cat_pretty); %>|<% print($cat_url); %><!-- /CATEGORY -->
+<!-- /ROW -->
+]]></CATHTML>
+<KITTENHTML><![CDATA[
+
+<div class='sub_cats'>
+<!-- ROW -->
+<!-- CATEGORY -->
+<a href="<% print($cat_url); %>"> &#187; <% print($cat_pretty); %></a>
+<!-- /CATEGORY -->
+<!-- /ROW -->
+</div>
+
+
+]]></KITTENHTML>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_DECAL1" HEIGHT="70" PROMPT="Header Decal Numero Uno" WIDTH="100" SUB="WRAP_DECAL1" TYPE="DECAL" HELP="This is the help text.  Isn't it helpful" DATA="wrapper:l9_beigebox_top_decal"></ELEMENT>
+<ELEMENT ID="WRAPPER_DECAL2" HEIGHT="200" PROMPT="Header Decal Numero Two" WIDTH="100" SUB="WRAP_DECAL2" TYPE="DECAL" HELP="This is the help text.  Isn't it helpful" DATA="wrapper:l9_beigebox_top_decal2"></ELEMENT>
+<ELEMENT ID="CZWVJPM" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CZWVJPN" TYPE="HEAD"></ELEMENT>
+<ELEMENT ID="CZWVJPO" TYPE="OUTPUT" OUTPUTSKIP="32768"><HTML><![CDATA[
+
+
+%WRAP_PRODIMAGE_META%
+
+
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.8.2/lib/prototype.js"></script>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.8.2/src/scriptaculous.js"></script>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.8.2/src/effects.js"></script>
+
+<script typ='text/javascript' src='%GRAPHICS_URL%/jslib/magiczoomplus-1.5/mzp-packed.js'></script>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/zoovy.js"></SCRIPT>
+
+<!--
+i don't think this one is needed
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.8.2/src/dragdrop.js"></script>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.8.2/src/slider.js"></script>
+-->
+
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/forms.js"></script>
+<script type="text/javascript" src="%WRAPPER_URL%/beigebox-20090916.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+//##### Vars for Zoovy Ajax
+var session_id = '%SESSION_ID%';
+var store = '%STORENAME%';
+var DOCID = '%THEME_DOCID%';
+
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="%GRAPHICS_URL%/jslib/magiczoomplus-1.5/magiczoomplus.css" />
+<link rel="stylesheet" type="text/css" href="%WRAPPER_URL%/beigebox_styles-20090916.css" />
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CZWVJPP" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+
+</head>
+
+
+
+
+
+
+<body style='font-family:Arial, Helvetica, sans-serif; color: #6d6d6d; margin:0px; background:url(%WRAPPER_URL%/l9a_body_bg-88x88.jpg) #ddd9ca;'>
+
+<div id='wrapper' style='position:relative;'>
+
+
+<table cellspacing='0' cellpadding='0' border='0' width='980' align='center'>
+<tr>
+	<td valign='top' style='background: url(%WRAPPER_URL%/l9a_titlecap_bg-1x24.gif) repeat-x; height:24px;'>
+
+<div style='float:left;'><img src='%WRAPPER_URL%/l9a_titlecap_left-7x24.gif' width='7' height='24' alt='' /></div>
+
+<div style='float:left; width:600px; height:24px; overflow:hidden;'><h1>%WRAP_TITLE%</h1></div>
+
+<div style='float:right;'><img src='%WRAPPER_URL%/l9a_titlecap_right-7x24.gif' width='7' height='24' alt='' /></div>
+
+<div style='float:right; font-size:11px; text-align:right; padding-top:5px; color:#a5a399;' class='no_underline menulinks'>
+<a href='%CONTACT_URL%'>contact</a> | 
+<a href='%CUSTOMER_MAIN_URL%'>my account</a> | 
+<a href='%RETURNS_URL%#faq'>faq</a> | 
+<a href='%CART_URL%' style='background:url(%WRAPPER_URL%/l9a_shoppingbag-15x19.png) 3px 3px no-repeat; padding-left:20px;'>shopping bag:</a>
+<div style='display:inline;' id='VISIBLE_CART'>%WRAP_MINICART%</div>
+</div>
+
+	</td>
+</tr>
+<tr>
+	<td style='background:url(%WRAPPER_URL%/l9a_dropshadow-1x3.png) repeat-x; padding:4px 0;'>
+
+<div style='float:left;'><a href='%HOME_URL%'>%WRAP_LOGO%</a></div>
+<div style='float:right;'>%WRAP_DECAL1%</div>
+<div style='float:right;'>%WRAP_DECAL2%</div>
+<div style='float:right;'>%WRAP_TOPRIGHT1%</div>	
+	</td>
+</tr>
+<tr>
+	<td style='background:url(%WRAPPER_URL%/l9a_catscap_bg-1x32.gif) repeat-x; height:32px;'>
+
+<div style='float:left;'><img src='%WRAPPER_URL%/l9a_catscap_left-7x32.gif' width='7' height='32' alt='' /></div>
+
+<div class='no_underline' style='float:left; width:720px; overflow:hidden; height:32px; color:#dad8cf' id='horizontal_cats'>%WRAP_CATEGORIES%</div>
+
+<div style='float:right;'><img src='%WRAPPER_URL%/l9a_catscap_right-7x32.gif' width='7' height='32' alt='' /></div>
+
+<div style='float:right; padding-top:5px;'>
+
+<form action='%RESULTS_URL%' method='get' style='margin:0px;'>
+<input type='hidden' name='catalog' value='%SEARCHCATALOG%' />
+<table cellspacing='0' cellpadding='0'>
+<tr>
+	<td><img src='%WRAPPER_URL%/l9a_head_search-39x11.gif' width='39' height='11' alt='search' /></td>
+	<td><input type='text' name='keywords' value='' class='zform_textbox' style='margin:0 4px;' /></td>
+	<td><input type='image' src='%WRAPPER_URL%/l9a_btn_search-23x22.gif' value='search' /></td>
+</tr>
+</table>
+</form>
+</div>
+
+	</td>
+</tr>
+<tr>
+	<td style='background:url(%WRAPPER_URL%/l9a_dropshadow-1x3.png) repeat-x #ffffff;'>
+	<table cellspacing='4' cellpadding='0' width='100%'>
+	<tr>
+
+
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CZWVJPQ" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C"><DEFAULT><![CDATA[
+
+<!-- left column hides on non-category pages -->
+
+
+		<td width='15%' valign='top' class='ztxt' style='border-right:1px solid #e9e7e3;'>
+
+		<div style='width:190px; '>
+
+<div id='dual_cats_displayed' class='no_underline'>
+%WRAP_TIER2_CATS%
+</div>
+
+		</div>
+		</td>
+
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CZWVJPR" TYPE="OUTPUT"><HTML><![CDATA[
+
+		<td class='ztxt' valign='top'>
+
+<div>%WRAP_BREADCRUMB%</div>
+
+<div id='content' style='position:relative;'>
+
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DAGVKQJ" TYPE="SPECL"><HTML><![CDATA[
+
+
+
+<!-- ajax cart -->
+
+
+<div id='panelCart' style='display: none; z-index:1000; position:absolute; top:30px; left:120px; width:700px;' class='zbox zbox_body'>
+	<div style='padding:1px;'>
+
+<table cellspacing='0' cellpadding='2' style='border-bottom:1px solid #fbf8f1;'>
+<tr>
+	<td class='zbox_head' width='30%'><b>Shopping bag:</b></td>
+	<td class='zbox_head' width='70%'><b>Similar items you will enjoy...</b></td>
+	<td class='zbox_head' align='right'><a href='#' onclick="closePanel('panelCart'); return false;"><img src='%WRAPPER_URL%/l9_btn_x-23x22.png' width='23' height='22' alt='close window' border='0' /></a></td>
+</tr>
+<tr>
+	<td valign='top'>
+
+<div id="PUTCARTHERE" style='width:320px;'>
+
+%WRAP_AJAX_MINICART%
+
+</div>
+
+	</td>
+
+	<td colspan='2' style='border-left:1px solid #fbf8f1;' valign='top'>
+	<div style='margin-left:20px;'>
+%WRAP_PRODLIST_SMARTACCESSORIES%
+	</div>
+	</td>
+
+</tr>
+</table>
+
+<div style='padding:4px; text-align:center;' class='zbox_head'>
+
+<a href='<% loadurp("URL::CHECKOUT_URL"); print(); %>'>
+<% element(TYPE=>"SITEBUTTON",BUTTON=>"checkout"); print(); %>
+</a>
+
+<% element(TYPE=>"SITEBUTTON",BUTTON=>"google"); print(); %>
+<% element(TYPE=>"SITEBUTTON",BUTTON=>"paypal"); print(); %>
+
+</div>
+
+	</div>
+</div> <!-- /ajax cart -->
+
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="THEBODY" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="CZWVJPS" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+
+
+
+
+</div>
+		
+		</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+
+%WRAP_BANNER_BOTTOMRIGHT1%
+
+%WRAP_BANNER_BOTTOMLEFT1%
+
+	</td>
+</tr>
+<tr>
+	<td>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr>
+	<td valign='top' style='background:url(%WRAPPER_URL%/l9a_catscap_bg-1x32.gif) repeat-x; height:32px;'>
+	<div style='float:left;'><img src='%WRAPPER_URL%/l9a_catscap_left-7x32.gif' width='7' height='32' alt='' /></div>
+	<div style='float:left; padding-top:10px;'><img src='%WRAPPER_URL%/l9a_head_cservice-101x11.gif' width='101' height='11' alt='' /></div>
+	</td>
+	<td valign='top' style='background:url(%WRAPPER_URL%/l9a_catscap_bg-1x32.gif) repeat-x; height:32px;' width='50%'>
+	<div style='float:left; padding-top:10px;'><img src='%WRAPPER_URL%/l9a_head_subscribe-117x11.gif' width='117' height='11' alt='' /></div>
+	<div style='float:right;'><img src='%WRAPPER_URL%/l9a_catscap_right-7x32.gif' width='7' height='32' alt='' /></div>
+	</td>
+</tr>
+<tr>
+	
+	<td style='background:url(%WRAPPER_URL%/l9a_dropshadow-1x3.png) repeat-x #ffffff; padding:4px 0;'>
+
+<div class='foot_links_group'>
+<a href='%CONTACT_URL%'>contact</a>
+<a href='%RETURNS_URL%#faq'>faq</a>
+<a href='%PRIVACY_URL%'>privacy</a>
+</div>
+
+<div class='foot_links_group'>
+<a href='%RETURNS_URL%#shipping'>shipping</a>
+<a href='%RETURNS_URL%#payment'>payment</a>
+<a href='%RETURNS_URL%#returns'>returns</a>
+</div>
+
+<div class='foot_links_group'>
+<a href='%ABOUT_URL%'>company info</a>
+<a href='%CUSTOMER_MAIN_URL%'>my account</a>
+<a href='%CUSTOMER_MAIN_URL%'>order history</a>
+</div>
+
+<div class='foot_links_group'>
+<a href='%HOME_URL%'>home</a>
+<a href='%CART_URL%'>shopping bag</a>
+<a href='%CHECKOUT_URL%'><strong>checkout</strong></a>
+</div>
+	</td>
+	
+	<td  style='background:url(%WRAPPER_URL%/l9a_dropshadow-1x3.png) repeat-x #ffffff; padding:4px 0;'>
+
+<table>
+<tr>
+	<td class='zsmall'>%WRAP_NEWS_TEXT%</td>
+	<td>
+	<div style='width:220px;'>
+
+<!-- Newsletter form -->
+<form action='%SUBSCRIBE_URL%' method='post'>
+<input type='hidden' name='check' value='1' />
+<div style='margin-bottom:2px;'><input type='text' class='zform_textbox' maxlength='50' name='email' value='email address' onFocus='clearText(this);' onblur='replaceText(this);' style='width:220px;' /></div>
+<div style='float:left;'><input type='text' class='zform_textbox' maxlength='50' name='fullname' style='width:150px;' value='Full name' onFocus='clearText(this);' onblur='replaceText(this);' /></div><div style='float:right;'><input type='image' src='%WRAPPER_URL%/l9a_btn_subscribe-66x22.gif' /></div>
+</form>
+<!-- /newsletter form -->
+
+	</div>
+	</td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+
+<div style='margin-top:4px;'>
+%WRAP_FOOTER%
+</div>
+
+	</td>
+</tr>
+</table>
+
+<div align='center'>%WRAP_SIDEBAR%</div>
+
+</div>
+
+</body>
+</html>
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

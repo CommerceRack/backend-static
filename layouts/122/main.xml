@@ -1,0 +1,52 @@
+<TEMPLATE ID="122" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMON" CREATED="00000000" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG"></ELEMENT>
+<ELEMENT ID="CPUKMOO" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+<center>
+<table width="540" border='0' cellspacing='0' cellpadding='0'>
+<tr><td width="180" align="center">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="180" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image1 180 x 180" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMOP" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+<tr><td colspan="3" valign="top"><font size=4>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" TYPE="READONLY" LOAD="product:zoovy:prod_name"></ELEMENT>
+<ELEMENT ID="CPUKMOQ" TYPE="OUTPUT"><HTML><![CDATA[</font>
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMOR" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKMOS" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKMOT" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr></table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

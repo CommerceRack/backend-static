@@ -1,0 +1,98 @@
+<TEMPLATE ID="1030" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNIM" SUMMARY="This layout contains 6 images, each with a caption, plus one big text block and a product list." CREATOR="STAFF: JT" IMAGES="0" PROPERTIES="1" SUBTYPE="C" FORMAT="LAYOUT" SHORT="Photo Gallery with captions, text block and a product list" TYPE="CONFIG" TITLE="Photo Gallery with captions" RELEASED="20041103"></ELEMENT>
+<ELEMENT ID="CPUKNHI" TYPE="OUTPUT"><HTML><![CDATA[<center>
+<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+<table cellspacing=0 cellpadding=2 width=100%> 
+        <tr>
+                <td align=left width="150" valign="top">
+<table cellspacing=0 cellpadding=3><tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="PIC1" HELP="Please select a very large picture for your site." ZOOM="1" DATA="page:picture1" WIDTH="150" PROMPT="large Picture" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNHJ" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr>
+<tr><td><p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CAPTION1" FONTSIZE="1" HELP="Please describe this image and why it is unique" DATA="page:caption1" PROMPT="Image 1 Caption" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[This area is for a caption of the image.  Keep it brief.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKNHK" TYPE="OUTPUT"><HTML><![CDATA[</p></td></tr><tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="PIC2" HELP="Please select a very large picture for your site." ZOOM="1" DATA="page:picture2" WIDTH="150" PROMPT="large Picture" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNHL" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr>
+<tr><td><p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CAPTION2" FONTSIZE="1" HELP="Please describe this image and why it is unique" DATA="page:caption2" PROMPT="Image 2 Caption" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[This area is for a caption of the image.  Keep it brief.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKNHM" TYPE="OUTPUT"><HTML><![CDATA[</p></td></tr><tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="PIC3" HELP="Please select a very large picture for your site." ZOOM="1" DATA="page:picture3" WIDTH="150" PROMPT="large Picture" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNHN" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr>
+<tr><td><p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CAPTION3" FONTSIZE="1" HELP="Please describe this image and why it is unique" DATA="page:caption3" PROMPT="Image 3 Caption" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[This area is for a caption of the image.  Keep it brief.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKNHO" TYPE="OUTPUT"><HTML><![CDATA[</p></td></tr><tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="PIC4" HELP="Please select a very large picture for your site." ZOOM="1" DATA="page:picture4" WIDTH="150" PROMPT="large Picture" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNHP" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr>
+<tr><td><p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CAPTION4" FONTSIZE="1" HELP="Please describe this image and why it is unique" DATA="page:caption4" PROMPT="Image 4 Caption" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[This area is for a caption of the image.  Keep it brief.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKNHQ" TYPE="OUTPUT"><HTML><![CDATA[</p></td></tr><tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="PIC5" HELP="Please select a very large picture for your site." ZOOM="1" DATA="page:picture5" WIDTH="150" PROMPT="large Picture" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNHR" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr>
+<tr><td><p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CAPTION5" FONTSIZE="1" HELP="Please describe this image and why it is unique" DATA="page:caption5" PROMPT="Image 5 Caption" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[This area is for a caption of the image.  Keep it brief.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKNHS" TYPE="OUTPUT"><HTML><![CDATA[</p></td></tr><tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="PIC6" HELP="Please select a very large picture for your site." ZOOM="1" DATA="page:picture6" WIDTH="150" PROMPT="large Picture" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNHT" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr>
+<tr><td><p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CAPTION6" FONTSIZE="1" HELP="Please describe this image and why it is unique" DATA="page:caption6" PROMPT="Image 6 Caption" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[This area is for a caption of the image.  Keep it brief.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKNHU" TYPE="OUTPUT"><HTML><![CDATA[</p></td></tr>
+</table>
+
+</td><td valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" DATA="page:description" HELPER="The image in this flow is very tall, so the text can be a bit longer" PROMPT="Category Description" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNHV" TYPE="OUTPUT"><HTML><![CDATA[
+<p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="500" ID="PRODLIST1" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" COLS="1" FORMAT="THUMB" PROMPT="Product Listing " TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKNHW" TYPE="OUTPUT"><HTML><![CDATA[</p>
+</TD></TR></table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

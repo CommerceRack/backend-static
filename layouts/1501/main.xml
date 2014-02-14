@@ -1,0 +1,19 @@
+<TEMPLATE ID="1501" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMOC" CREATOR="STAFF" IMAGES="0" CREATED="20010913" PROPERTIES="1" SUBTYPE="U" SERIES="2001" FORMAT="LAYOUT" SHORT="Includes a customizable description, and provides an email form." TYPE="CONFIG" TITLE="Custom" RELEASED="20010913"><SUMMARY><![CDATA[Contact Us Description
+Mail Form
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe how users can get in contact with you" DATA="page:description" HELPER="This is where you describe how to get in contact with you." PROMPT="Contact Us Description" TYPE="TEXT"><DEFAULT><![CDATA[Here you can send a message regarding this site or a particular order.  If you'd like to check the status of an order, (or cancel one that hasn't been processed), please go to the <a href="/customer_main.cgis">customer account</a> page.  You can also <a href="/subscribe.cgis">subscribe to our mailing list</a>.]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CPUKMOD" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MAILFORM" HELP="This is a form to allow users to send you email." DATA="page:mailform" REQORDER="1" PROMPT="Mail Form" TYPE="MAILFORM"></ELEMENT>
+
+</TEMPLATE>

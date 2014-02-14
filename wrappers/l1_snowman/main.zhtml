@@ -1,0 +1,92 @@
+<!-- CONFIG
+THEME=l1_snowman
+SITEBUTTONS=l1_snowman
+NARROW=TRUE
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- HEAD -->
+<map name="menu">
+	<area href="<!--CART_URL-->" shape="poly" coords="87,35,91,26,109,19,130,17,147,17,168,22,177,28,179,31,169,40,157,45,140,47,113,46,92,40,87,35,87,35" alt="Shopping Cart">
+	<area href="<!--ABOUT_URL-->" shape="poly" coords="85,74,89,65,107,58,128,56,145,56,166,61,175,67,177,70,167,79,155,84,138,86,111,85,90,79,85,74,85,74" alt="About Us">
+	<area href="<!--SEARCH_URL-->" shape="poly" coords="186,34,190,25,208,18,229,16,246,16,267,21,276,27,278,30,268,39,256,44,239,46,212,45,191,39,186,34,186,34" alt="Search">
+	<area href="<!--CONTACT_URL-->" shape="poly" coords="185,74,189,65,207,58,228,56,245,56,266,61,275,67,277,70,267,79,255,84,238,86,211,85,190,79,185,74,185,74" alt="Contact Us">
+</map>
+</head> 
+<body bgcolor="#FFFFFF" text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!--LINK_VISITED_TEXT_COLOR -->">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="<!-- WRAPPER_URL -->/top.jpg">
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="">
+				<tr>
+					<td width="320" height="10"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="320" height="10"></td>
+					<td width="300" height="140" align="center" valign="middle" rowspan="4"><img src="<!-- WRAPPER_URL -->/menu.gif" width="300" height="140" usemap="#menu" border="0"></td>
+				</tr>
+				<tr>
+					<td width="300" height="88" align="center" valign="middle"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=300
+HEIGHT=88
+--></a></td>
+				</tr>
+				<tr>
+					<td width="320" height="32" align="left" valign="bottom">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="20"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="20" height="1"></td>
+								<td width="300" align="left" valign="middle"><!-- BREADCRUMB
+BUTTONTYPE=l1_snowman_bc
+FORMAT=<a href="%URL%"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0"></a>&nbsp;
+--><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="1"></td>
+							</tr>
+						</table>
+					</td>
+				</tr> 
+				<tr>
+					<td width="320" height="10"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="320" height="1"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table> 		
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620">
+	<tr>
+		<td width="20" valign="top" background="<!-- WRAPPER_URL -->/border1.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="16" height="200"></td>
+		<td width="580" bgcolor="#FFFFFF" valign="top">
+			<table width="580" cellpadding="3" cellspacing="3" border="0" bgcolor="#FFFFFF">
+				<tr>
+					<td align="left" valign="middle" bgcolor="#2E2E50">
+						<font color="#FFFFFF" face="Arial, Helvetica"  size="4"><!-- TITLE --></font>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" bgcolor="#FFFFFF">
+<!-- MENU
+BEFORE=<div align="center">Categories:%BREAK%
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a>%BREAK%
+DIVIDER=|%BREAK%
+AFTER=</div>
+ONLYHOME=1
+NOHOME=1
+-->
+<!-- BODY -->
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="20" valign="top" background="<!-- WRAPPER_URL -->/border2.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="16" height="200"></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="80" background="<!-- WRAPPER_URL -->/bottom.jpg">
+	<tr>
+		<td width="620" height="80" align="center" valign="middle">
+<!-- FOOTER -->
+		</td>
+	</tr>
+</table>
+</center>
+</div>
+</body>
+</html>
+

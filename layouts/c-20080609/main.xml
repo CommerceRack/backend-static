@@ -1,0 +1,51 @@
+<TEMPLATE ID="c-20080609" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNJU" CREATOR="JT" IMAGES="0" CREATED="20080609" PROPERTIES="1" SERIES="Subcat Images" SUBTYPE="C" FORMAT="LAYOUT" SHORT="A 5 column list of subcategories, followed by a text block.  No product list present." TYPE="CONFIG" TITLE="5 Column Category Images (No Products)" RELEASED="20080609"><SUMMARY><![CDATA[This layout features a five column list of subcategories with a thumbnail and the name, followed by a short text block below the list. There is no product list present in this layout.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CXBKXZD" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div id='c-20080609'>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DESCENDTREE="0" DATA="page:subcat" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="5"><HTML><![CDATA[<table cellpadding='0' width='100%' cellspacing='10' align='center'>
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+<td width="20%" valign='top' align="left" class='ztable_row'>
+<div style='margin-bottom:5px;'><a href="<% print($cat_url); %>"><%
+/* get and set the body background color so the image can be output properly */
+loadurp("CSS::zbody.bgcolor"); default("FFFFFF");
+set($bgcolor=>$_);
+
+load($cat_thumb); default("");
+image(w=>"105",h=>"105",bg=>$bgcolor,tag=>"1",alt=>$cat_pretty);  print(); %></a></div>
+
+<div class='no_underline'><a href="<% load($cat_url);  default("");  print(); %>" class="zlink" title='<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>'><% load($cat_pretty);  default("");  print(); %></a></div>
+
+	</td>
+<!-- /CATEGORY -->
+<!-- BLANK -->
+<td></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Page Description" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Use wiki text to format your content.<br>
+Go to <a href="http://www.zoovydocs.com/doc-50590" target="webdoc">http://www.zoovydocs.com/doc-50590</a> for more information on how to properly set up your links.<br>
+]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='padding-bottom:5px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CXBKXZE" TYPE="OUTPUT"><HTML><![CDATA[
+
+</div>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

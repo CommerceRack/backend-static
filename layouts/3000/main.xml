@@ -1,0 +1,19 @@
+<TEMPLATE ID="3000" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMDU" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SERIES="2001" SUBTYPE="T" FORMAT="LAYOUT" SHORT="This is the default cart layout." TYPE="CONFIG" TITLE="Simple Cart" RELEASED="20010619"><SUMMARY><![CDATA[Shopping Cart
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMDV" TYPE="OUTPUT"><HTML><![CDATA[<center>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="300" ID="CART1" HELP="This is the contents of the user's shopping cart." WIDTH="560" PROMPT="Shopping Cart" TYPE="CART"></ELEMENT>
+<ELEMENT ID="CPUKMDW" TYPE="OUTPUT"><HTML><![CDATA[
+
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

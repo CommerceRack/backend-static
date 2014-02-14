@@ -1,0 +1,508 @@
+[
+   {
+      "catalog" : "APPAREL",
+		"amz-catalog" : "Shoes",
+      "amz-subcat" : null,
+      "subcat" : null,
+      "type" : "config",
+		"variation-themes" : "Size+Color,SizeColor,Size,Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "Clothing.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:size",
+		"vkey" : "Size",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Clothing.VariationData.Size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Clothing.VariationData.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "Clothing.VariationData.VariationTheme"
+   },
+   {
+      "PROMPT" : "APPAREL",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQVVN",
+      "xmlpath" : "Clothing.ClassificationData."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "SocksHosiery",
+            "v" : "SocksHosiery"
+         },
+         {
+            "p" : "Underwear",
+            "v" : "Underwear"
+         },
+         {
+            "p" : "Bra",
+            "v" : "Bra"
+         },
+         {
+            "p" : "Shoes",
+            "v" : "Shoes"
+         },
+         {
+            "p" : "Hat",
+            "v" : "Hat"
+         },
+         {
+            "p" : "Bag",
+            "v" : "Bag"
+         },
+         {
+            "p" : "Accessory",
+            "v" : "Accessory"
+         },
+         {
+            "p" : "Jewelry",
+            "v" : "Jewelry"
+         },
+         {
+            "p" : "Sleepwear",
+            "v" : "Sleepwear"
+         },
+         {
+            "p" : "Swimwear",
+            "v" : "Swimwear"
+         },
+         {
+            "p" : "PersonalBodyCare",
+            "v" : "PersonalBodyCare"
+         },
+         {
+            "p" : "HomeAccessory",
+            "v" : "HomeAccessory"
+         },
+         {
+            "p" : "NonApparelMisc",
+            "v" : "NonApparelMisc"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_clothingtype",
+      "title" : "Clothing Clothing Type",
+      "type" : "select",
+      "xmlpath" : "Clothing.ClassificationData.ClothingType",
+      "list" : "LIST_APPAREL_CLOTHING_CLOTHINGTYPE",
+		"mandatory" : "Y",
+		"amz-not-blank": "Y"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_dpt",
+      "type" : "textlist",
+      "title" : "Department",
+      "amz-max-length" : 49,
+      "xmlpath" : "Clothing.ClassificationData.Department",
+		"mandatory" : "Y"
+   },
+   {
+      "amz-attr" : "item-type",
+      "ns" : "product",
+      "title" : "Item Type",
+      "type" : "textbox",
+      "id" : "amz:prod_cloth_cd_itemtype"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "title" : "Style Keywords",
+      "id" : "amz:prod_cloth_cd_stylekwords",
+      "xmlpath" : "Clothing.ClassificationData.StyleKeywords",
+		"mandatory" : "Y"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_colormap",
+      "type" : "textbox",
+      "title" : "Color Map",
+      "xmlpath" : "Clothing.ClassificationData.ColorMap"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_matlandfabric",
+      "type" : "textlist",
+      "title" : "Material And Fabric",
+		"max-allowed-lines" : "4",
+      "xmlpath" : "Clothing.ClassificationData.MaterialAndFabric"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_innermaterial",
+      "type" : "textbox",
+      "title" : "Inner Material"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_outermaterial",
+      "type" : "textbox",
+      "title" : "Outer Material"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_solematerial",
+      "type" : "textbox",
+      "title" : "Sole Material"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_shoeclstype",
+      "type" : "textbox",
+      "title" : "Shoe Closure Type"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_occandlife",
+      "type" : "textlist",
+      "title" : "Occasion And Lifestyle",
+      "xmlpath" : "Clothing.ClassificationData.OccasionAndLifestyle"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_eventkwords",
+      "type" : "textlist",
+      "title" : "Event Keywords",
+      "xmlpath" : "Clothing.ClassificationData.EventKeywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Boolean",
+      "id" : "amz:prod_cloth_cd_iscstmz",
+      "type" : "checkbox",
+      "title" : "Is Customizable",
+      "xmlpath" : "Clothing.ClassificationData.IsCustomizable"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_stylename",
+      "type" : "textbox",
+      "title" : "Style Name"
+   },
+   {
+      "maxlength" : "2",
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_ctryoforgn",
+      "type" : "textbox",
+      "title" : "Country of Origin"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "XXXXX-Small",
+            "v" : "XXXXX-Small"
+         },
+         {
+            "p" : "XXXX-Small",
+            "v" : "XXXX-Small"
+         },
+         {
+            "p" : "XXX-Small",
+            "v" : "XXX-Small"
+         },
+         {
+            "p" : "XX-Small",
+            "v" : "XX-Small"
+         },
+         {
+            "p" : "X-Small",
+            "v" : "X-Small"
+         },
+         {
+            "p" : "Small",
+            "v" : "Small"
+         },
+         {
+            "p" : "Medium",
+            "v" : "Medium"
+         },
+         {
+            "p" : "Large",
+            "v" : "Large"
+         },
+         {
+            "p" : "X-Large",
+            "v" : "X-Large"
+         },
+         {
+            "p" : "XX-Large",
+            "v" : "XX-Large"
+         },
+         {
+            "p" : "XXX-Large",
+            "v" : "XXX-Large"
+         },
+         {
+            "p" : "XXXX-Large",
+            "v" : "XXXX-Large"
+         },
+         {
+            "p" : "XXXXX-Large",
+            "v" : "XXXXX-Large"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_sizemap",
+      "title" : "Clothing Size Map",
+      "type" : "select",
+      "xmlpath" : "Clothing.ClassificationData.SizeMap",
+      "list" : "LIST_APPAREL_CLOTHING_SIZEMAP"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_apparel-closure-type",
+      "type" : "textbox",
+      "title" : "apparel closure type"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_belt-style",
+      "type" : "textbox",
+      "title" : "belt style"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_bottom-style",
+      "type" : "textbox",
+      "title" : "bottom style"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_sleeve-type",
+      "type" : "textbox",
+      "title" : "sleeve type"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_collar-type",
+      "type" : "textbox",
+      "title" : "collar type"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_cloth_cd_waistsize",
+      "type" : "textbox",
+      "title" : "Waist Size",
+ 		"amz-uom" : "CM,IN",
+      "xmlpath" : "Clothing.ClassificationData.WaistSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_cloth_cd_inseamlength",
+      "type" : "textbox",
+      "title" : "Inseam Length",
+ 		"amz-uom" : "CM,IN",
+      "xmlpath" : "Clothing.ClassificationData.InseamLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_cloth_cd_sleevelength",
+      "type" : "textbox",
+      "title" : "Sleeve Length",
+ 		"amz-uom" : "CM,IN",
+      "xmlpath" : "Clothing.ClassificationData.SleeveLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_cloth_cd_necksize",
+      "type" : "textbox",
+      "title" : "Neck Size",
+ 		"amz-uom" : "CM,IN",
+      "xmlpath" : "Clothing.ClassificationData.NeckSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_cloth_cd_chestsize",
+      "type" : "textbox",
+      "title" : "Chest Size",
+ 		"amz-uom" : "CM,IN",
+      "xmlpath" : "Clothing.ClassificationData.ChestSize"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "A",
+            "v" : "A"
+         },
+         {
+            "p" : "B",
+            "v" : "B"
+         },
+         {
+            "p" : "C",
+            "v" : "C"
+         },
+         {
+            "p" : "D",
+            "v" : "D"
+         },
+         {
+            "p" : "DD",
+            "v" : "DD"
+         },
+         {
+            "p" : "DDD",
+            "v" : "DDD"
+         },
+         {
+            "p" : "E",
+            "v" : "E"
+         },
+         {
+            "p" : "F",
+            "v" : "F"
+         },
+         {
+            "p" : "FF",
+            "v" : "FF"
+         },
+         {
+            "p" : "G",
+            "v" : "G"
+         },
+         {
+            "p" : "H",
+            "v" : "H"
+         },
+         {
+            "p" : "I",
+            "v" : "I"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_cupsize",
+      "title" : "Clothing Cup Size",
+      "type" : "select",
+      "xmlpath" : "Clothing.ClassificationData.CupSize",
+      "list" : "LIST_APPAREL_CLOTHING_CUPSIZE"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_brabandsize",
+      "type" : "textbox",
+      "title" : "Bra Band Size"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "AAAA",
+            "v" : "AAAA"
+         },
+         {
+            "p" : "AAA",
+            "v" : "AAA"
+         },
+         {
+            "p" : "AA",
+            "v" : "AA"
+         },
+         {
+            "p" : "A",
+            "v" : "A"
+         },
+         {
+            "p" : "B",
+            "v" : "B"
+         },
+         {
+            "p" : "C",
+            "v" : "C"
+         },
+         {
+            "p" : "D",
+            "v" : "D"
+         },
+         {
+            "p" : "E",
+            "v" : "E"
+         },
+         {
+            "p" : "E",
+            "v" : "E"
+         },
+         {
+            "p" : "EE",
+            "v" : "EE"
+         },
+         {
+            "p" : "EEE",
+            "v" : "EEE"
+         },
+         {
+            "p" : "EEEE",
+            "v" : "EEEE"
+         },
+         {
+            "p" : "EEEEE",
+            "v" : "EEEEE"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_shoewidth",
+      "title" : "Clothing Shoe Width",
+      "type" : "select",
+      "xmlpath" : "Clothing.ClassificationData.ShoeWidth",
+      "list" : "LIST_APPAREL_CLOTHING_SHOEWIDTH"
+   }
+]

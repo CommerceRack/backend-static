@@ -1,0 +1,114 @@
+<TEMPLATE ID="h-20060922" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CSPDXOJ" CREATOR="Zoovy: JT" V="3" CREATED="20060922" SUBTYPE="H" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Circled Thumbnails"><SUMMARY><![CDATA[This layout puts a pretty heavy emphasis on your product pictures and some banners. At the top of this layout is a linkable 550x110 banner [5 x 1] followed by a header and an image only product list. After that is a 8 product, 4 column list with the product thumbnails appearing inside a circle with a shadow, followed by the product name.  Lastly are two 3x1 banners next to on another and then a text block.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="UIONLYINSTRUCTIONS" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
+<p><b>Multiple Product Lists:</b>  For instructions on how to select different product lists for each of the list elements, visit: <ul style="margin-top:4px;"> <a href="http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361" target="webdoc">http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361</a></ul></p>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDXOK" TYPE="OUTPUT"><HTML><![CDATA[
+<div align="center">
+<div style="margin:5px; text-align:left; width:590px; background-color:#FFFFFF;">
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+	<td align="left" width="99%" style="background-image:url(//static.zoovy.com/graphics/layouts/h-20060922/h_ps_box_top_bg-1x8.gif); background-repeat:repeat-x;"><img src="//static.zoovy.com/graphics/layouts/h-20060922/h_ps_box_ulc-12x8.gif" height="8" width="12" alt=""></td>
+	<td width="1%"><img src="//static.zoovy.com/graphics/layouts/h-20060922/h_ps_box_urc-12x8.gif" height="8" width="12" alt=""></td>
+</tr>
+<tr>
+	<td colspan="2" width="99%" style="border-left:1px solid #B3B3B3; background-image:url(//static.zoovy.com/graphics/layouts/h-20060922/h_ps_box_right_bg-4x1.gif); background-repeat:repeat-y; background-position:right; padding-right:4px; box-sizing: border-box; -moz-box-sizing: border-box;">
+
+<div align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDXOL" DATA="page:link_5x1" ZOOVYDOCID="50355" SUB="5X1_LINK" PROMPT="Link for 5 x 1 image" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CSPDXOM" HEIGHT="110" DATA="page:image_5x1" PROMPT="Image 1: 550 x 110 [5 x 1]" WIDTH="550" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:3px;"><a href="%5X1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPDXON" TYPE="OUTPUT"><HTML><![CDATA[</div>
+	<div style="width:auto; border-top:1px solid #CCCCCC; padding:5px;" class="ztitle zcolor_light">
+	]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDXOO" WIKI="3" LENGTH="50" DATA="page:prodlist_header" PROMPT="Product List 1 Header" DEFAULT="Featured Items" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CSPDXOP" TYPE="OUTPUT"><HTML><![CDATA[	
+	</div>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="5000" ID="LIST1" MAX="8" DATA="page:prodlist" COLS="4" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
+<!-- begin product list 1 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+	<td width="25%" align="center" class="ztable_row" valign="top">
+<div style="background-image:url(<% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"132",h=>"132",bg=>"ffffff",alt=>$zoovy:prod_name); print(); %>); background-repeat:no-repeat; height:132px; width:132px;">
+<a href="<% load($PROD_URL); print(); %>"><img src="//static.zoovy.com/graphics/layouts/h-20060922/circle_outline_white-132x132.gif" height="132" width="132" border="0" alt="<% load($zoovy:prod_name); default(); print(); %>"></a>
+</div>
+<div style="padding:3px;" class="ztable_row_small">
+<a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_name); strip(length=>"30",breaks=>"1",html=>"1"); print(); %></a>
+</div>
+</td>	
+<!-- /PRODUCT -->
+<!-- BLANK -->
+	<td></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table><!-- end product list 1 -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDXOQ" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+</tr>
+<tr>
+	<td style="background-image:url(//static.zoovy.com/graphics/layouts/h-20060922/h_ps_box_bottom_bg-12x1.gif); background-repeat:repeat-x;"><img src="//static.zoovy.com/graphics/layouts/h-20060922/h_ps_box_llc-12x12.gif" height="12" width="12" alt=""></td>
+	<td style="background-image:url(//static.zoovy.com/graphics/layouts/h-20060922/h_ps_box_bottom_bg-12x1.gif); background-repeat:repeat-x;" align="right"><img src="//static.zoovy.com/graphics/layouts/h-20060922/h_ps_box_lrc-12x12.gif" height="12" width="12" alt=""></td>
+</tr>
+</table>
+
+<table cellspacing="0" cellpadding="0" width="590" style="margin-top:5px;">
+<tr>
+	<td width="295" valign="top" align="left">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDXOR" DATA="page:link_3x1" ZOOVYDOCID="50355" SUB="3X1_LINK" PROMPT="Link for Banner A" DEFAULT="%CART%/search.cgi" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CSPDXOS" HEIGHT="97" MINIMAL="0" DATA="page:image_3x1" PROMPT="Banner A (3 x 1)" WIDTH="291" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%3X1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPDXOT" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	<td valign="top" align="left">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDXOU" DATA="page:link_3x1b" ZOOVYDOCID="50355" SUB="3X1B_LINK" PROMPT="Link for Banner B (3 x 1)" DEFAULT="%CART%/search.cgi" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CSPDXOV" HEIGHT="97" MINIMAL="0" DATA="page:image_3x1b" PROMPT="Banner B (3 x 1)" WIDTH="291" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%3X1B_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPDXOW" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+</table>
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" DATA="page:description" PROMPT="Text Description" TYPE="TEXT"><PRETEXT><![CDATA[<!-- begin text area -->
+<div style="margin:5px; width:590px; text-align:left;">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPDXOT2" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

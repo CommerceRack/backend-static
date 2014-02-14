@@ -1,0 +1,312 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "Binocular",
+      "subcat" : "binocular",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:Binocular",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWBH",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "binoculars",
+            "v" : "binoculars"
+         },
+         {
+            "p" : "monoculars",
+            "v" : "monoculars"
+         },
+         {
+            "p" : "laser-rangefinders",
+            "v" : "laser-rangefinders"
+         },
+         {
+            "p" : "spotting-scopes",
+            "v" : "spotting-scopes"
+         },
+         {
+            "p" : "night-vision",
+            "v" : "night-vision"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_binoculartype",
+      "title" : "Binocular Binocular Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.BinocularType",
+      "list" : "LIST_CAMERA_BINOCULAR_BINOCULARTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_focustype",
+      "type" : "textbox",
+      "title" : "Focus Type",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.FocusType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_prismtype",
+      "type" : "textbox",
+      "title" : "Prism Type",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.PrismType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_binc_objectivelensdiameter",
+      "type" : "number",
+      "title" : "ObjectiveLensDiameter",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.ObjectiveLensDiameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_binc_exitpupildiameter",
+      "type" : "number",
+      "title" : "ExitPupilDiameter",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.ExitPupilDiameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_fieldofview",
+      "type" : "number",
+      "title" : "FieldOfView",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.FieldOfView"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_apparentangleofview",
+      "type" : "textbox",
+      "title" : "Apparent Angle Of View",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.ApparentAngleOfView"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_realangleofview",
+      "type" : "textbox",
+      "title" : "Real Angle Of View",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.RealAngleOfView"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_eyerelief",
+      "type" : "number",
+      "title" : "EyeRelief",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.EyeRelief"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_diopteradjustmentrange",
+      "type" : "textbox",
+      "title" : "Diopter Adjustment Range",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.DiopterAdjustmentRange"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_coating",
+      "type" : "textbox",
+      "title" : "Coating",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.Coating"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_eyepiecelensconstrc",
+      "type" : "textbox",
+      "title" : "Eyepiece Lens Construction",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.EyepieceLensConstruction"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_objectivelensconstrc",
+      "type" : "textbox",
+      "title" : "Objective Lens Construction",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.ObjectiveLensConstruction"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_tripodready",
+      "type" : "checkbox",
+      "title" : "Tripod Ready",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.TripodReady"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "compact",
+            "v" : "compact"
+         },
+         {
+            "p" : "full-size",
+            "v" : "full-size"
+         },
+         {
+            "p" : "image-stabilizing",
+            "v" : "image-stabilizing"
+         },
+         {
+            "p" : "waterproof",
+            "v" : "waterproof"
+         },
+         {
+            "p" : "fogproof",
+            "v" : "fogproof"
+         },
+         {
+            "p" : "zoom",
+            "v" : "zoom"
+         },
+         {
+            "p" : "uv-protection",
+            "v" : "uv-protection"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_features",
+      "title" : "Binocular Features",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.Features",
+      "list" : "LIST_CAMERA_BINOCULAR_FEATURES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_magnification",
+      "type" : "textbox",
+      "title" : "Magnification",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.Magnification"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "tabletop",
+            "v" : "tabletop"
+         },
+         {
+            "p" : "travel",
+            "v" : "travel"
+         },
+         {
+            "p" : "hiking-and-outdoors",
+            "v" : "hiking-and-outdoors"
+         },
+         {
+            "p" : "hunting-and-shooting",
+            "v" : "hunting-and-shooting"
+         },
+         {
+            "p" : "sports",
+            "v" : "sports"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_binc_specificuses",
+      "title" : "Binocular Specific Uses",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Binocular.SpecificUses",
+      "list" : "LIST_CAMERA_BINOCULAR_SPECIFICUSES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+    {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+  {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

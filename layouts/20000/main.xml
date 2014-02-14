@@ -1,0 +1,34 @@
+<TEMPLATE ID="20000" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMUG" SUMMARY="" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SUBTYPE="Q" SERIES="2002" FORMAT="LAYOUT" SHORT="Generic Age Verification Page" TYPE="CONFIG" TITLE="Age Verification" RELEASED="20021205"></ELEMENT>
+<ELEMENT ID="CPUKMUH" TYPE="OUTPUT"><HTML><![CDATA[
+<p>The material on this site is not intended for minors.
+Access is made available only to those who accept the terms of the following agreement.</p>
+
+<font size="-1">
+By accepting this agreement, I certify the following:<br>
+<ol>
+<li>I do not find images of nude adults, adults engaged in sexual acts, or
+other sexual material to be offensive or objectionable. 
+<li>I am at least 18 years of age and have the legal right to possess adult
+material in my community. 
+<li>I understand the standards and laws of the community, location and
+computer to which I am transporting this material, and am solely responsible
+for my actions. 
+<li>If I use these services in violation of the above agreement, I understand
+I may be in violation of local and/or federal laws and am solely responsible
+for my actions. 
+<li>By logging on, I will have released and discharged the providers, owners
+and creators of this site from any and all liability, which might arise. 
+</ol>
+</font>
+<br>
+
+<a href="/adult.cgis?adult_content=yes&url=%REDIRECT_URL%">Yes, I certify am an adult meeting the above criteria.</a><br>
+<a href="http://www.yahooligans.com/">No, I do not wish to gain access to this site.</a><br>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

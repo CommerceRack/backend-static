@@ -1,0 +1,27 @@
+<TEMPLATE ID="10" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLRU" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SERIES="2002" SUBTYPE="A" FORMAT="LAYOUT" SHORT="This is the generic about us page. Nothing fancy." TYPE="CONFIG" TITLE="About Us" RELEASED="20020807"><SUMMARY><![CDATA[About Us Blurb
+IMAGE1 (250x250)
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKLRV" TYPE="OUTPUT"><HTML><![CDATA[<table cellspacing="0" cellpadding="0" border="0">
+<tr><td width="250" valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="250" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="merchant:zoovy:aboutus_image1" PROMPT="Company Picture 250x250" WIDTH="250" DEFAULT="https://static.zoovy.com/img/H250-W450-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKLRW" TYPE="OUTPUT"><HTML><![CDATA[
+</td><td valign="top">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BLURB" HELP="Please enter an About Us Blurb that will appear on your website" DATA="page:blurb" PROMPT="About Us Blurb" DEFAULT="We are a really great company, you should buy stuff from us and tell your friends! " TYPE="TEXT"><HELPER><![CDATA[&nbsp;&nbsp;&nbsp;It is important that you use your website as a tool to develop your Company Image. A good Company Image will increase the percieved value of your services, and also increase the likelihood the customer will remember your company in the future.<br><br>Recommended Topics:<li>What makes you unique?<li>Do you employ any experts?<li>Are you a leader in your field? (why?)<li>How long have you been in business?<li>Have you won any awards recently?<li>Do you have any dealer authorizations (make sure you have permission to use trademarks!)<li>Are there any special ingredients/components that go into your products?<br><br>&nbsp;&nbsp;&nbsp;Try to be concise, you should pick 2 or 3 topics and only cover those, remember if its too long most visitors will not read it!]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKLRX" TYPE="OUTPUT"><HTML><![CDATA[
+
+</td></tr></table>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

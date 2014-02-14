@@ -1,0 +1,41 @@
+<TEMPLATE ID="1004" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMFJ" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="This layout features a 560x300 graphic and short description (centered)." TYPE="CONFIG" TITLE="Big Picture" RELEASED="20020618"><SUMMARY><![CDATA[
+Category Description
+IMAGE1 (560x300)
+Product Listing 
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DATA="page:subcat" MODE="CHOOSER" TYPE="SUBCAT"></ELEMENT>
+<ELEMENT ID="CPUKMFK" TYPE="OUTPUT"><HTML><![CDATA[
+<center>
+<table> 
+        <tr>
+                <td align=center width="560">
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="300" ID="PIC1" HELP="Please select a wide picture for your site." DATA="page:picture1" WIDTH="560" PROMPT="Wide Picture" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMFL" TYPE="OUTPUT"><HTML><![CDATA[
+<p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Category Description" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMFM" TYPE="OUTPUT"><HTML><![CDATA[
+<p>
+ 
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing " DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKMFN" TYPE="OUTPUT"><HTML><![CDATA[
+
+	</TD>
+</TR>
+
+</table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

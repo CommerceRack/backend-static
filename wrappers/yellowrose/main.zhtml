@@ -1,0 +1,86 @@
+<!-- CONFIG
+THEME=yellowrose
+SITEBUTTONS=l2_orangelightning
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- HEAD -->
+<style type="text/css">
+body	{margin: 0px;}
+body, td, li, ol, ul, p {font-family: tahoma, Helvetica, sans-serif; color: #776969;}
+a	{color: #C26405;}
+a:hover	{color: #993333;}
+h1	{margin: 0px; font-size: 14pt; color: #D88B3D;}
+.menu	{font-size: 9pt; color: #8E5B02;}
+.cats	{font-size: 10pt; color: #993333;}
+
+.cat_bg	{background-color: #DAA59F;}
+.cat_stroke	{background-color: #B48282;}
+
+.formed	{border-style: solid; border-width: 1px; border-color: #D88B3D; background-color: #FFFFFF; color: #000000; font-family: tahoma, Helvetica, sans-serif; font-size: 9pt;}
+.button	{border-style: solid; border-width: 1px; border-color: #D88B3D; background-color: #F5D6B6; font-family: tahoma, Helvetica, sans-serif; font-size: 8pt; color: #A3611D;}
+</style>
+</head>
+
+<body>
+
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td background="<!-- WRAPPER_URL -->/menu_bg.gif" height=32 width="99%"><span class="menu">&nbsp;&nbsp;<a href="<!-- HOME_URL -->">Home</a>&nbsp;|&nbsp;<a href="<!-- ABOUT_URL -->">About Us</a>&nbsp;|&nbsp;<a href="<!-- CONTACT_URL -->">Contact Us</a>&nbsp;|&nbsp;<a href="<!-- CART_URL -->">Cart</a>&nbsp;|&nbsp;<a href="<!-- CHECKOUT_URL -->">Checkout</a>
+</span></td>
+	<td background="<!-- WRAPPER_URL -->/menu_bg.gif" width="1%"><table cellspacing=2 cellpadding=0><form action="<!-- RESULTS_URL -->" method="get"><input type="hidden" name="catalog" value=""><tr>
+		<td><input type="text" name="keywords" class="formed" value=""></td>
+		<td><input type="submit" value="Search" class="button"></td>
+	</tr></form></table></td>
+</tr></table>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td width="50%" align="left"><!-- LOGO
+HEIGHT=85
+WIDTH=300
+--></td>
+	<td width="50%" align="right"><img src="<!-- WRAPPER_URL -->/graphic.jpg" width="482" height="93"></td>
+</tr><tr>
+	<td height=1 colspan=2 class="cat_stroke"></td>
+</tr><tr>
+	<td height=18 colspan=2 class="cat_bg"><span class="menu">&nbsp;&nbsp;<!-- MENU
+FORMAT=<a href="%URL%" class="cats" target="%TARGET%">%MESSAGE%</a>
+DIVIDER=&nbsp;|&nbsp;
+NOHOME=1
+--></span></td>
+</tr><tr>
+	<td height=1 colspan=2 class="cat_stroke"></td>
+</tr><tr>
+	<td colspan=2 background="<!-- WRAPPER_URL -->/cats_shadow.gif"><img src="<!-- WRAPPER_URL -->/cats_shadow.gif" width="1" height="9"></td>
+</tr></table>
+<table width="100%"><tr><td valign="top" height=300>
+<h1><!-- TITLE --></h1>
+<!-- BODY -->
+</td></tr></table>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td background="<!-- WRAPPER_URL -->/menu_bg.gif" height=32 width="99%" NOWRAP><span class="menu">&nbsp;&nbsp;Items in Cart: <!-- MINICART
+ITEMSONLY=1
+-->&nbsp;&nbsp;|&nbsp;&nbsp;Subtotal:&nbsp;<!-- MINICART
+SUBTOTALONLY=1
+--></span></td>
+	<td background="<!-- WRAPPER_URL -->/menu_bg.gif" height=32 width="1%"><table cellspacing=2 cellpadding=0><tr><form action="<!-- LOGIN_URL -->" method="post" target="_self"><input type="hidden" name="mode" value="check"><input type="hidden" name="url" value="<!-- CUSTOMER_MAIN_URL -->">
+<td><span class="menu">Email:&nbsp;</span></td>
+<td><input type="text" size="14" maxlength="50" name="login" value="" class="formed"></td>
+<td><span class="menu">&nbsp;&nbsp;Password:&nbsp;</span></td>
+<td><input type="password" size="14" maxlength="50" name="password" value="" class="formed"></td>
+<td><input type="submit" name="submit" value="Login" class="button"></td>
+</form>
+	</tr></table></td>
+</tr><tr><td colspan=2 height=4></td></tr><tr>
+	<td height=1 colspan=2 class="cat_stroke"></td>
+</tr><tr>
+	<td height=18 colspan=2 class="cat_bg"><!-- FOOTER
+TRANSPARENT=TRUE
+--></td>
+</tr><tr>
+	<td height=1 colspan=2 class="cat_stroke"></td>
+</tr><tr>
+	<td colspan=2 background="<!-- WRAPPER_URL -->/cats_shadow.gif"><img src="<!-- WRAPPER_URL -->/cats_shadow.gif" width="1" height="9"></td>
+</tr></table>
+</body>
+</html>

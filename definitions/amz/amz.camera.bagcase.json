@@ -1,0 +1,323 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "BagCase",
+      "subcat" : "bagcase",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:BagCase",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQVZR",
+		"may-be-blank" : "Y",
+      "xmlpath" : "CameraPhoto.ProductType.BagCase."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "binocular-cases",
+            "v" : "binocular-cases"
+         },
+         {
+            "p" : "camcorder-cases",
+            "v" : "camcorder-cases"
+         },
+         {
+            "p" : "camera-cases",
+            "v" : "camera-cases"
+         },
+         {
+            "p" : "combination-cases",
+            "v" : "combination-cases"
+         },
+         {
+            "p" : "electronic-equipment-cases",
+            "v" : "electronic-equipment-cases"
+         },
+         {
+            "p" : "filter-cases",
+            "v" : "filter-cases"
+         },
+         {
+            "p" : "lens-cases",
+            "v" : "lens-cases"
+         },
+         {
+            "p" : "lighting-cases",
+            "v" : "lighting-cases"
+         },
+         {
+            "p" : "projection-cases",
+            "v" : "projection-cases"
+         },
+         {
+            "p" : "scope-cases",
+            "v" : "scope-cases"
+         },
+         {
+            "p" : "stand-cases",
+            "v" : "stand-cases"
+         },
+         {
+            "p" : "system-cases",
+            "v" : "system-cases"
+         },
+         {
+            "p" : "telescope-cases",
+            "v" : "telescope-cases"
+         },
+         {
+            "p" : "tripod-cases",
+            "v" : "tripod-cases"
+         },
+         {
+            "p" : "light-meter-cases",
+            "v" : "light-meter-cases"
+         },
+         {
+            "p" : "other-purpose-cases",
+            "v" : "other-purpose-cases"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_bagcase_bagcasetype",
+      "title" : "Bag Case Bag Case Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.BagCase.BagCaseType",
+      "list" : "LIST_CAMERA_BAGCASE_BAGCASETYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "backpacks",
+            "v" : "backpacks"
+         },
+         {
+            "p" : "beltpacks",
+            "v" : "beltpacks"
+         },
+         {
+            "p" : "briefcases",
+            "v" : "briefcases"
+         },
+         {
+            "p" : "holster-style-cases",
+            "v" : "holster-style-cases"
+         },
+         {
+            "p" : "portfolios",
+            "v" : "portfolios"
+         },
+         {
+            "p" : "print-cases",
+            "v" : "print-cases"
+         },
+         {
+            "p" : "roller-cases",
+            "v" : "roller-cases"
+         },
+         {
+            "p" : "vests",
+            "v" : "vests"
+         },
+         {
+            "p" : "wraps",
+            "v" : "wraps"
+         },
+         {
+            "p" : "waist-style-cases",
+            "v" : "waist-style-cases"
+         },
+         {
+            "p" : "compact-cases",
+            "v" : "compact-cases"
+         },
+         {
+            "p" : "pouches",
+            "v" : "pouches"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_bagcase_style",
+      "title" : "Bag Case Style",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.BagCase.Style",
+      "list" : "LIST_CAMERA_BAGCASE_STYLE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "hard",
+            "v" : "hard"
+         },
+         {
+            "p" : "soft",
+            "v" : "soft"
+         },
+         {
+            "p" : "air",
+            "v" : "air"
+         },
+         {
+            "p" : "plastic",
+            "v" : "plastic"
+         },
+         {
+            "p" : "metal",
+            "v" : "metal"
+         },
+         {
+            "p" : "cloth",
+            "v" : "cloth"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_bagcase_matltype",
+      "title" : "Bag Case Material Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.BagCase.MaterialType",
+      "list" : "LIST_CAMERA_BAGCASE_MATERIALTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "x-ray-protection",
+            "v" : "x-ray-protection"
+         },
+         {
+            "p" : "weatherproof",
+            "v" : "weatherproof"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_bagcase_features",
+      "title" : "Bag Case Features",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.BagCase.Features",
+      "list" : "LIST_CAMERA_BAGCASE_FEATURES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "travel",
+            "v" : "travel"
+         },
+         {
+            "p" : "hiking-and-outdoors",
+            "v" : "hiking-and-outdoors"
+         },
+         {
+            "p" : "hunting-and-shooting",
+            "v" : "hunting-and-shooting"
+         },
+         {
+            "p" : "sports",
+            "v" : "sports"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_bagcase_specificuses",
+      "title" : "Bag Case Specific Uses",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.BagCase.SpecificUses",
+      "list" : "LIST_CAMERA_BAGCASE_SPECIFICUSES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

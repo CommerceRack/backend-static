@@ -1,0 +1,74 @@
+<TEMPLATE ID="201" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMBY" CREATOR="STAFF" IMAGES="3" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Stacked Pics" RELEASED="20021121"><SUMMARY><![CDATA[Bold Welcome Message
+Detail Message
+IMAGE2 (150x150)
+IMAGE3 (150x150)
+IMAGEe (310x310)
+Product Listing
+Welcome Message
+]]></SUMMARY>
+<SHORT><![CDATA[Large photo on left with two smaller photos stacked on the right. Use the larger space to show people in action, and the smaller boxes for product display.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKMBZ" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+<center>
+<table width="310" height="310" border='0' cellspacing='0' cellpadding='0'>
+<tr><td rowspan="3">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="310" HELP="Please enter the first picture for your homepage." ZOOM="1" DATA="merchant:zoovy:homepage_picture" PROMPT="Image1 " WIDTH="310" DEFAULT="//static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMCA" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<td width="10" height="310" rowspan="3">
+<img src="//static.zoovy.com/graphics/general/blank.gif" width="10" height="310">
+</td>
+<td>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="150" HELP="Please enter the second picture for your homepage." ZOOM="1" DATA="page:image2" PROMPT="Image2" WIDTH="150" DEFAULT="//static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMCB" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr><tr>
+<td width="150" height="10">
+<img src="//static.zoovy.com/graphics/general/blank.gif" width="150" height="10">
+</td>
+
+</tr><tr>
+<td>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE3" HEIGHT="150" HELP="Please enter the third picture for your homepage." ZOOM="1" DATA="page:image3" PROMPT="Image3" WIDTH="150" DEFAULT="//static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMCC" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr></table>
+</center>
+<br>
+<b>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="COMPANYNAME" LENGTH="75" HELP="Please enter a single line greeting that will appear in bold." DATA="page:boldwelcome" PROMPT="Bold Welcome Message" DEFAULT="Welcome to our Website!" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CPUKMCD" TYPE="OUTPUT"><HTML><![CDATA[
+</b>
+<p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" HELP="Please enter a Welcome message that will appear on your front page" DATA="page:welcome_message" PROMPT="Welcome Message" DEFAULT="Hello, welcome to our wonderful website!" TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long, or not helpful visitors probably won't go any further. A lot of businesses talk about what makes their products unique, or their excellent customer service. If you have neither of those, then consider simply welcoming the customer.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKMCE" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist  " PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKMCF" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DETAIL" HELP="The detail message will typically describe the pictures above." DATA="page:detail" PROMPT="Detail Message" HELPER="Extra information if you need it." DEFAULT="Detailed information about policies or products" TYPE="TEXT"></ELEMENT>
+
+</TEMPLATE>

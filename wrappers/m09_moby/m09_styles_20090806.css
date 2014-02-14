@@ -1,0 +1,93 @@
+
+
+/* removes some default styling set by safari   */  
+  
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6{  
+    margin:0;  
+    padding:0;  
+     -webkit-text-size-adjust:none;  
+    }  
+
+/* end safari adjustments */
+
+form	{display:inline;}
+
+a	{color:#067ff1;} 
+a:hover	{color:#FF6600;}
+
+img	{border:0}
+
+/* Used for the page title element */
+h1  {
+	font-size:16px;
+    margin: 0;
+    font-weight: bold;
+    color: #4d4d70;
+    text-shadow: rgba(255, 255, 255, 0.75) 2px 2px 0;
+	} 
+
+/* used for the wiki header 1 & 2 */
+h2	{
+	font-size:14px;
+    margin: 0 0 4px 0;
+    font-weight: bold;
+    color: #4d4d70;
+    text-shadow: rgba(255, 255, 255, 0.75) 2px 2px 0;
+	}
+
+h3	{font-size:12px; color:#000000; margin:2px 0px 1px 0px; font-weight:bold;}
+h4	{font-size:11px; color:#FF6600; margin:2px 0px 1px 0px; font-weight:bold;}
+
+
+
+/* turns off underlining  */
+div.no_underline a	{text-decoration:none;}
+
+
+
+/* select list for shipping on cart page */
+#addtocartContainer	select	{width:150px;}
+#shipSelect	select	{width:100px;}
+
+div.headlink a	{color:#ffffff; font-size:9px; line-height:9px;}
+
+
+/* used for arrow bars, like on the product detail page attributes (description, accessories, etc) */
+.arrowbar_content	{border:1px solid #a0d7ec; border-top-width:0px; padding:5px; margin-bottom:10px; background:#ffffff;}
+
+
+
+#footer a	{color:#ffffff;}
+div.footerIcon	{width:75px; display:inline-block; text-align:center; padding-top:8px; font-size:10px; line-height:8px;}
+
+
+
+
+
+
+/* for the rounded corner border box around content. */
+.mypanel	{
+position: relative;
+    margin: 0 0 10px 0;
+    padding: 0;
+    background: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: 1px solid #999999;
+	}
+
+.prodpanel	{
+position: relative;
+    margin: 0 0 10px 0;
+    padding: 0;
+    background: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: 1px solid #999999;
+	}
+
+/*
+use in addition to mypanel for panels that have images in the left or right most column.
+keeps the image from covering up the rounded corner
+*/
+.paddedpanel	{padding:8px 0;}

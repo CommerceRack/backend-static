@@ -1,0 +1,398 @@
+<TEMPLATE ID="p-20060923" FORMAT="LAYOUT">
+<LIST ID="REVIEW_ICONS" TYPE="TEXT">
+<OPT T="Stars" V="stars"></OPT>
+<OPT T="Colored Stars" V="colored_stars"></OPT>
+<OPT T="Colored Glass" V="hal"></OPT>
+<OPT T="Smiley Faces" V="smiles"></OPT>
+</LIST>
+
+
+<!-- ******* -->
+<ELEMENT ID="P_20060923" CREATOR="Zoovy: JT" V="3" CREATED="00000000" SUBTYPE="P" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Single Picture with 2 Image Product Lists" OCREATED="20060923" RELEASED="20061018"><SUMMARY><![CDATA[
+<p>This layout features a product image on the left with; sku, price, review summary (opitonal) msrp, price, you save, and tell a friend.</p>
+<p>Add to cart - This layout looks for the presence of options and will display the add to cart button in a different location if they are/are not present. The buttons appear higher if no options are present, because less room is needed to display them.</p>
+<p>Images - this layout only features 1 image, but will look to see if you have more. If so, a 'view more images' link will appear that, when clicked, will open a popup with a javascript image viewer.</p>
+<p>Colors - The colors used in the layout are determined by the wrapper.  If you do not like the colors used, you can either select a different layout, or choose a different theme. The newer themes are more likely to have a better color pallette.</p>
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CAR_BORDER" RAW="1" SUB="ZBOX_BORDER" TYPE="READONLY" LOAD="CSS::zbox.border"></ELEMENT>
+<ELEMENT ID="VAR_USERNAME" DATA="FLOW::USERNAME" SUB="USERNAME" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="VAR_HOMEURL" DATA="URL::HOME_URL" SUB="HOME_URL" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="VAR_POPUPWRAPPER" RAW="1" SUB="POPUP_WRAPPER" TYPE="READONLY" LOAD="profile:zoovy:popup_wrapper"></ELEMENT>
+<ELEMENT ID="VAR_SKU" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
+<ELEMENT ID="VAR_DARK" RAW="1" SUB="ZTABLE_DARK_BG" TYPE="READONLY" LOAD="CSS::zcolor_dark.bgcolor"></ELEMENT>
+<ELEMENT ID="REVIEWS_ICON_CHOOSER" DATA="profile:zoovy:prod_reviews_icon" RAW="1" VALUE="colored_stars" PROMPT="Reviews Icon (global)" SUB="NOT_USED" DEFAULT="colored_stars" FONT="0" TYPE="SELECT" LIST="REVIEW_ICONS"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages.  'colored' implies that the icons adopt color properties from your store.]]></HELP>
+</ELEMENT>
+<ELEMENT ID="TAFOPTION" TRUE="On" FALSE="Off" DATA="profile:zoovy:wrap_tellafriend" SUB="ENABLE_TAF" PROMPT="Tell a friend" ON="1" DEFAULT="1" TYPE="CHECKBOX" OFF="0"><HELP><![CDATA[
+Tell a Friend or TAF is a feature that puts a contact form on your product pages so that your customers can send product specific information directly to an associate of theirs.  Your branding and product specific information are in the email sent, as well as a custom message set by your customer.<br>
+Enabling/disabling this feature is profile-wide.
+<br>This feature requires the XSELL bundle.
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="REVIEWSUMMARY" DATA="product:zoovy:prod_reviews" SUB="REVIEW_SUMMARY" TYPE="REVIEWS"><HTML><![CDATA[ <!-- Product review summary -->
+<!-- SUMMARY -->
+<!-- rating -->
+<table width="100%" cellspacing="4" cellpadding="0" style="border-bottom:1px solid <% loadurp("CSS::zcolor_light.bgcolor"); print(); %>;">
+<tr>
+	<td width="85%" class="ztxt">
+<%
+load($TOTAL_REVIEWS); default("");
+goto(ne=>"0",label=>"MULTIPLE");	
+	print("<span class="zsmall"><a href='javascript:openWindow(&quot;");
+	loadurp("URL::HOME_URL"); print();
+	print("popup.pl?verb=INIT_REVIEWS&pg=*taf&fl=pop_reviews_ajax&product=");
+	loadurp("FLOW::PROD"); print();
+	print("&quot;);' class='zlink'>Be the first person to review this product</a></span>");
+	stop();
+:MULTIPLE();
+	print("<a href='#reviews' class='zlink'>Reviewed ");
+	print($TOTAL_REVIEWS);
+	print(" times</a>");
+	%>	
+	</td>
+	<td align="left">
+<%
+/* load the profile review icon that is selected.  If not set, use default instead. */
+loadurp("CSS::zcolor.bgcolor");
+set($bgcolor=>$_);
+loadurp("profile:zoovy:prod_reviews_icon"); default("colored_stars"); format(pretext=>"stock/reviews/",posttext=>"/");
+set($image_loc=>$_);
+load($AVG_RATING); format(pretext=>$image_loc);
+image(src=>$_,library=>"proshop",h=>"25",w=>"110",bg=>$bgcolor,tag=>"1");
+print();	
+
+%>	
+	</td>
+</tr>
+</table>
+<!-- /rating -->	
+<!-- /SUMMARY -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="REVIEWOPTION" TRUE="%REVIEW_SUMMARY%" FALSE="" DATA="profile:zoovy:wrap_reviews" SUB="ENABLE_REVIEWS" PROMPT="Product Reviews" ON="1" DEFAULT="1" TYPE="CHECKBOX" OFF="0"><HELP><![CDATA[
+Product Reviews allows your customers to add their personal input about a specific product.  Once their review is submitted, it is entered into a queue for your approval.  You have the ability to add/remove/edit any specific review through the product editor.
+<br>Enabling/disabling this feature is profile-wide. 
+<br>This feature requires the CRM bundle.
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="PRICE" HIDEZERO="1" ERROR="" PRETEXT="$" RAW="1" FORMAT="PLAINPRICE" SUB="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="IMAGE1" ZOOM="1" DATA="product:zoovy:prod_image1" SUB="IMAGE1" WIDTH="150" PROMPT="Main image" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CSRQNGR" TYPE="OUTPUT"><HTML><![CDATA[
+
+<script type="text/javascript" language="javascript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+	}
+
+function openWindow(url) {
+	adviceWin = window.open(url,'advice','status=no,width=550,height=450,menubar=no,scrollbars=yes');
+	adviceWin.focus(true);
+	}
+//-->
+</script>
+
+
+<div align="center">
+<div style="margin:5px; width:590px; text-align:left; ">
+
+<table cellspacing="0" cellpadding="0" border="0" style="width:590px;box-sizing: border-box; -moz-box-sizing: border-box;">
+<tr>
+	
+	<td valign="top" class="zcolor" style="width:174px;">
+	<div style="background-color:#ffffff; border:1px solid #000000; padding:4px; margin:7px;">%IMAGE1%</div>
+	</td>
+	
+	<td valign="top" style="width:416px;" class="ztxt">
+	<div style="width:416px; margin-top:7px; padding-bottom:4px;" class="zcolor">
+	<table cellspacing="0" cellpadding="0" width="100%" style="margin:4px 4px 4px 0px;">
+	<tr>
+		<td align="left" class="ztxt zcolor">sku: <b>%SKU%</b></td>
+		<td align="right" class="ztitle zcolor"><div style="margin-right:4px;">%PRICE%</div></td>
+	</tr>
+	</table>
+	<div style="width:412px; margin:4px 4px 0px 0px;" class="zbody ztxt">
+	%ENABLE_REVIEWS%
+	<table cellspacing="4" cellpadding="0" width="100%">
+	<tr>
+		<td class="ztxt" style="line-height:130%;">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSRZRXM" TYPE="SPECL"><HTML><![CDATA[
+<%
+print("<div class='ztxt'>");
+loadurp("product:zoovy:base_price");
+	default("");
+	set($price=>$_);
+	format(hidezero); format(money); format(pretext=>"<b>Our Price: ",posttext=>"</b><br>"); print();
+	loadurp("product:zoovy:prod_msrp"); default(""); format(hidezero); format(money); format(pretext=>"Retail Price: ",posttext=>"<br>"); print();
+	loadurp("product:zoovy:prod_msrp");
+	math(op=>"subtract",var=>$price); format(hidezero); format(money); format(pretext=>"You Save: "); print();
+print("</div>");
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PROD_MFG" PRETEXT="Manufacturer: " DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" TYPE="TEXTBOX"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PROD_MFGID" PRETEXT="Mfg ID: " DATA="product:zoovy:prod_mfgid" PROMPT="Manufacturer's ID" TYPE="TEXTBOX"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSRPRZC" TYPE="SPECL"><HTML><![CDATA[<!-- SpecL image element -->
+<%
+print("");
+/* we're loading image2 to see if more than one image is present.  Different text and link functions are output accorgingly */
+loadurp("product:zoovy:prod_image2");
+default("");
+goto(ne=>"",label=>"MULTIPLE");
+	print("<div style='margin-top:5px;'><a href='javascript:zoom(&quot;");
+	loadurp("product:zoovy:prod_image1"); image(w=>"",h=>""); print();
+	print("&quot;)' class='zlink'>View Larger Image</a></div>");
+	stop();
+	
+:MULTIPLE();
+	print("<div style='margin-top:5px;'><a href='javascript:openWindow(&quot;");
+	loadurp("URL::PRODUCT_URL"); print();
+	print("/");
+	loadurp("FLOW::PROD"); print();
+	print("?fl=pop_prod_images&wrapper=plain&quot;)' class='zlink'>View More Images</a></div>");
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSRQNGS" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+		<td align='right' class="ztxt">
+	]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSRPWAS" TYPE="SPECL"><HTML><![CDATA[
+<%
+print("");
+loadurp("profile:zoovy:wrap_tellafriend");
+default("1");
+stop(unless=>$_); 
+	loadurp("CSS::zcolor_dark.bgcolor");
+	set($zcolor_dark_bgcolor=>$_);
+	set($image_loc=>"stock/layouts/p20060921/btn_tell_a_friend.gif");
+	print("<div style='margin-top:4px;'><a href='#' onclick=&quot;openWindow('%HOME_URL%/popup.pl?verb=INIT_TAF&pg=*taf&fl=pop_taf1&product=%SKU%&wrapper=%POPUP_WRAPPER%'); &quot;>");
+	image(src=>$image_loc,library=>"proshop",h=>"50",w=>"120",p=>"1",bg=>$zcolor_dark_bgcolor,tag=>"1");
+	print();
+	print("</a></div>");
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSRPWAS2" TYPE="SPECL"><HTML><![CDATA[
+<%
+print("");
+loadurp("product:zoovy:pogs");
+default("");
+goto(ne=>"",label=>"OPTIONS");
+	print("<!-- No options present -->");
+	element(TYPE=>"ADDTOCART",QUANTITY="qty: ");
+	print();
+	stop();
+:OPTIONS();
+	print("<!-- options present -->");
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSRQNGS" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+	</tr></table>
+
+		</div>
+	
+	</div></td>
+</tr>
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART2" TYPE="SPECL"><HTML><![CDATA[<!-- second potential add to cart button -->
+<%
+print("");
+loadurp("product:zoovy:pogs");
+default("");
+stop(unless=>$_);
+	print("<!-- Pogs are present --><div style='margin-left:175px;'>");
+	element(TYPE=>"ADDTOCART",ID="ADDTOCART");
+	print();
+	print("</div>");
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSRQNGS2" TYPE="OUTPUT"><HTML><![CDATA[
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-top:7px;">
+<tr>
+	<td valign="top" style="padding-right:7px;">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SPECL_DESC" TYPE="SPECL"><HTML><![CDATA[<!-- begin prod desc specl -->
+<%
+print("");
+loadurp("product:zoovy:prod_desc");
+default("");
+set($prod_details=>$_);
+stop(unless=>$_);
+	print("<div class='zcolor' style='padding:7px; margin-bottom:7px;'>");
+	loadurp("CSS::zcolor.bgcolor");
+	set($zcolor_bgcolor=>$_);
+	set($image_loc=>"stock/layouts/p20060923/head_description");
+	image(src=>$image_loc,library=>"proshop",h=>"22",w=>"86",p=>"1",bg=>$zcolor_bgcolor,tag=>"1");
+	print();
+	print("<div style='padding:4px; margin-top:4px;' class='zbody ztxt' id='prodDetailElement'>");
+	element(TYPE=>"TEXT",DATA=>"product:zoovy:prod_desc",FONT=>"0"); print();
+	print("</div>
+	</div>");
+%>
+<!-- end prod desc specl -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SPECL_DETAIL" TYPE="SPECL"><HTML><![CDATA[<!-- begin specl -->
+<%
+print("");
+loadurp("product:zoovy:prod_detail");
+default("");
+set($prod_details=>$_);
+stop(unless=>$_);
+	print("<div class='zcolor' style='padding:7px; margin-bottom:7px;'>");
+	loadurp("CSS::zcolor.bgcolor");
+	set($zcolor_bgcolor=>$_);
+	set($image_loc=>"stock/layouts/p20060923/head_specs");
+	image(src=>$image_loc,library=>"proshop",h=>"22",w=>"107",p=>"1",bg=>$zcolor_bgcolor,tag=>"1");
+	print();
+	print("<div style='padding:4px; margin-top:4px;' class='zbody ztxt' id='prodDetailElement'>");
+	element(TYPE=>"TEXT",DATA=>"product:zoovy:prod_detail",FONT=>"0"); print();
+	print("</div>
+	</div>");
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSZPTNH" TYPE="OUTPUT"><HTML><![CDATA[
+<a name="reviews"></a>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="REVIEWDETAILS" DATA="product:zoovy:prod_reviews" SUB="REVIEWS" TYPE="REVIEWS"><HTML><![CDATA[<!-- product reviews -->
+<!-- DETAIL -->
+<div class='zcolor' style='padding:7px; margin-bottom:7px;'>
+<table cellspacing="0" cellpadding="4" class="zbody">
+<tr>
+	<td class="zcolor">
+<%
+loadurp("CSS::zcolor.bgcolor");
+	set($zcolor_bgcolor=>$_);
+	set($image_loc=>"stock/layouts/p20060923/head_reviews");
+	image(src=>$image_loc,library=>"proshop",h=>"19",w=>"125",p=>"1",bg=>$zcolor_bgcolor,tag=>"1");
+	print();
+%>	
+	</td>
+	<td class="zcolor" align='right' NOWRAP ><span class="ztxt_small">  
+<a href="#reviews" onclick="openWindow('%HOME_URL%popup.pl?verb=INIT_REVIEWS&pg=*taf&fl=pop_reviews_ajax&product=%SKU%&wrapper=%POPUP_WRAPPER%');" class="zcolor">write a review</a> </span></td>
+</tr>
+<!-- ROW -->
+<!-- REVIEW -->
+<tr>
+	<td class="ztable_row"><strong><% print($CUSTOMER_NAME); %></strong> of <% load($LOCATION);  default("");  print(); %><br>
+	<% load($SUBJECT);  default("");  print(); %></td>
+	<td valign="top" align="right" class="ztable_row">
+<%
+/* load the profile review icon that is selected.  If not set, use default instead. */
+loadurp("CSS::zcolor.bgcolor");
+set($bgcolor=>$_);
+loadurp("profile:zoovy:prod_reviews_icon"); default("colored_stars"); format(pretext=>"stock/reviews/",posttext=>"/");
+set($image_loc=>$_);
+load($RATING); format(pretext=>$image_loc);
+image(src=>$_,library=>"proshop",h=>"25",w=>"110",bg=>$bgcolor,tag=>"1");
+print();	
+
+%>	
+	
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border-bottom:1px dotted <% loadurp("CSS::zcolor_light.bgcolor"); print(); %>;" class="ztable_row"><% load($MESSAGE);  default(""); strip(html=>"1"); print(); %></td>
+</tr>
+<!-- /REVIEW -->
+<!-- /ROW -->
+</table></div>
+<!-- /DETAIL -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNEEWH" TRUE="%REVIEWS%" TYPE="TRISTATE" LOAD="profile:zoovy:wrap_reviews" UNDEF="%REVIEWS%"><FALSE><![CDATA[<!-- reviews are turned off -->]]></FALSE>
+</ELEMENT>
+<ELEMENT ID="CSRQNGU" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+	<td valign="top" width="10%">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="5000" ID="LIST_RELATED" MAX="7" SHOWDEFAULT="0" ALTERNATE="3" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List - Related Items" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[<!-- related items column -->
+<div class="zcolor_light" style="padding:7px; width:160px;">
+	<div class="ztitle zcolor_light"><%
+loadurp("CSS::zcolor_light.bgcolor");
+set($bgcolor=>$_);
+set($image_loc=>"stock/layouts/p20060923/head_accessories");
+image(src=>$image_loc,library=>"proshop",h=>"19",w=>"102",p=>"1",bg=>$bgcolor,tag=>"1");
+print();	
+%></div>
+<table cellspacing="3" cellpadding="0" width="100%">
+<!-- PRODUCT -->
+<tr>
+	<td colspan="2"><hr noshade="noshade" size="1" style="padding:0px; margin:0px; color: <% loadurp("CSS::zcolor_dark.bgcolor"); print(); %>; background-color:<% loadurp("CSS::zcolor_dark.bgcolor"); print(); %>;" /></td>
+</tr>
+<tr>
+	<td valign="top" width="1%"><a href="<% load($PROD_URL); print(); %>"><%
+loadurp("CSS::zcolor_light.bgcolor");
+set($bgcolor=>$_);
+load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"45",h=>"45",tag=>"1",bg=>$bgcolor,alt=>$zoovy:prod_name); print(); %></a></td>
+	<td class="ztable_row_small" >
+<a href="<% load($PROD_URL); print(); %>" class="zlink"><% load($zoovy:prod_name); strip(length=>"40",breaks=>"1",html=>"1"); print(); %></a><br />
+<% load($zoovy:base_price); format(hidezero); format(money); format(pretext=>"only "); print(); %>
+	</td>
+</tr>
+<!-- /PRODUCT -->
+</table>
+</div>
+<!-- end related items column -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="5000" ID="LIST_ACCESSORIES" MAX="7" ALTERNATE="3" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List - Accessories" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[<!-- related items column -->
+<div class="zcolor_light" style="padding:7px; width:160px; margin-bottom:7px;">
+	<div class="ztitle zcolor_light"><%
+loadurp("CSS::zcolor_light.bgcolor");
+set($bgcolor=>$_);
+set($image_loc=>"stock/layouts/p20060923/head_similar");
+image(src=>$image_loc,library=>"proshop",h=>"19",w=>"102",p=>"1",bg=>$bgcolor,tag=>"1");
+print();	
+%></div>
+<table cellspacing="3" cellpadding="0" width="100%">
+<!-- PRODUCT -->
+<tr>
+	<td colspan="2"><hr noshade="noshade" size="1" style="padding:0px; margin:0px; color: <% loadurp("CSS::zcolor_dark.bgcolor"); print(); %>; background-color:<% loadurp("CSS::zcolor_dark.bgcolor"); print(); %>;" /></td>
+</tr>
+<tr>
+	<td valign="top" width="1%"><a href="<% load($PROD_URL); print(); %>"><%
+loadurp("CSS::zcolor_light.bgcolor");
+set($bgcolor=>$_);
+load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"45",h=>"45",tag=>"1",bg=>$bgcolor,alt=>$zoovy:prod_name); print(); %></a></td>
+	<td class="ztable_row_small" >
+<a href="<% load($PROD_URL); print(); %>" class="zlink"><% load($zoovy:prod_name); strip(length=>"40",breaks=>"1",html=>"1"); print(); %></a><br />
+<% load($zoovy:base_price); format(hidezero); format(money); format(pretext=>"only "); print(); %>
+	</td>
+</tr>
+<!-- /PRODUCT -->
+</table>
+</div>
+	 
+<!-- end related items column -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSRQNGV" TYPE="OUTPUT"><HTML><![CDATA[
+</td>
+	 
+</tr>
+</table>
+
+</div>
+</div>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

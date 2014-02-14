@@ -1,0 +1,165 @@
+<TEMPLATE ID="m09_h_20090727" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="DADBTCU" EXPORT="0" TYPE="CONFIG" CREATED="00000000" TITLE="Mobile: iphone 3.0" SUBTYPE="H"></ELEMENT>
+<ELEMENT ID="VAR_LAYOUT_URL" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="SUBCATEGORIES" TYPE="SUBCAT" SRC="." MODE="LIST"><HTML><![CDATA[
+<div class='mypanel paddedpanel'>
+<table cellspacing='0' cellpadding='0' width='100%'>
+
+<!-- CATEGORY -->
+<tr>
+
+	<td width='1%'>
+	<a href='<% print($cat_url); %>'  title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>">
+	<% load($cat_thumb); default(""); image(w=>"90",h=>"90",bg=>"ffffff",tag=>"1",alt=>$cat_pretty);  print(); %>
+	</a>
+	</td>
+
+
+	<td class='ztable_row'>
+
+<div style='margin-left:5px;' class='no_underline'>
+<a href='<% print($cat_url); %>' title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>" style='display:block;'>
+
+<div class='ztable_row_title'><b><% print($cat_pretty); %></b></div>
+
+<div class='ztable_row_small'><%
+load($cat_safe); format(pretext=>"PAGE[.",posttext=>"]::meta_description");
+/* the format encode below MUST be present to discourage html in the descriptions which will break the header of the store */
+loadurp($_); strip(length=>"90"); format(encode=>"entity");
+print();
+%></div>
+
+</a>
+	</div>
+	</td>
+
+
+	<td valign='middle' width='1%'>
+	<div style='margin:0 5px;'>
+	<a href='<% print($cat_url); %>'  title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>">
+	<img src='%LAYOUT_URL%/m09_btn_details-25x25.jpg' width='25' height='25' alt='more details'></img>
+	</a>
+	</div>
+	</td>
+
+</tr>
+<%
+/* if this isn't the last row, add a single row */
+print("");
+load($TOTALCOUNT);
+math(op=>"subtract",var=>$COUNT);
+math(op=>"subtract",var=>"1");
+stop(unless=>$_);
+print("
+<tr>
+	<td colspan='3'><div style='height:1px; background:#999999;'></div></td>
+</tr>
+");
+%>
+
+<!-- /CATEGORY -->
+</table>
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="10" ID="DADBTCV" FORMAT="CUSTOM" PROMPT="Product List" MAX="6" TYPE="PRODLIST" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="profile:zoovy:prodlist_mobile" INVENTORY="1" COLS="15"><HTML><![CDATA[
+<!-- cols is set to 'trick' divider into working. -->
+
+
+
+<h2>Featured Items</h2>
+
+<div class='mypanel paddedpanel'>
+
+<table cellspacing='0' cellpadding='0' width='100%'>
+<!-- ROW -->
+<!-- PRODUCT -->
+<tr>
+
+<td width='1%'><a href='<% print($PROD_URL); %>#noMastHead' title="<% load($zoovy:prod_name); default(""); format(encode=>"entity"); print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"90",h=>"90",tag=>"1",bg=>"ffffff",alt=>$zoovy:prod_name);  print(); %></a></td>
+
+	<td class='ztable_row' width='98%'>
+	<a href='<% print($PROD_URL); %>#noMastHead' style='display:block; text-decoration:none;'>
+	<div style='margin-left:5px;' class='no_underline ztable_row'>
+
+
+<div style='font-weight:bold; margin-bottom:3px;' class='zlink'><% load($zoovy:prod_seo_title); default($zoovy:prod_name); default(""); print(); %></div>
+
+<%
+print("");
+	
+/* if the msrp is greater than the price, compute the savings percentage. Otherwise, just show price */	
+load($zoovy:prod_msrp);
+goto(label=>"DISPLAY_SAVINGS",gt=>$zoovy:base_price);
+	load($zoovy:base_price);
+	format(hidezero);
+	format(money);
+	format(pretext=>"<div class='ztable_row_title'>",posttext=>"</div>");
+	print();
+	stop();
+
+:DISPLAY_SAVINGS();
+	load($zoovy:base_price);
+/* stop has to be here to handle products with a blank or 0 price */
+	stop(unless=>$_);
+	format(money);
+	format(pretext=>"<div class='ztable_row_title'>");
+	print();
+/* compute the savings and display it after the price. no need to check msrp because we did that above */
+	load($zoovy:base_price);
+	math(op=>"divide",var=>$zoovy:prod_msrp); 
+	math(op=>"subtract",var=>"1");
+	math(op=>"multiply",var=>"-100"); format(hidezero); format(convert=>"number",precision=>"0"); 
+	format(pretext=>"<span class='ztable_row'> (",posttext=>"%)</span></div>");
+	print();
+
+	load($zoovy:prod_msrp);
+	format(hidezero);
+	format(money);
+	format(pretext=>"<div>regular price: <span style='text-decoration:line-through;'>",posttext=>"</span></div>");
+	print();
+
+%>
+
+
+<div style='margin-top:3px;'>In Stock</div>
+	
+	</div>
+	</a>
+	</td>
+	
+	<td valign='middle' width='1%'>
+	<div style='margin:0 5px;'>
+
+<div><a href='<% print($PROD_URL); %>'><img src='%LAYOUT_URL%/m09_btn_details-25x25.jpg' width='25' height='25' alt='more details'></img></a></div>
+
+<%
+print("");
+/* if the item has pogs or no price set, don't show add to cart button. should default to some other button later. */
+load($zoovy:pogs);
+	stop(if=>$_);
+load($zoovy:base_price);
+	stop(unless=>$_);
+	print("<div style='margin-top:25px;'><a href='");
+	print($ADD_URL);
+	print("'><img src='%LAYOUT_URL%/m09_btn_add-25x25.jpg' width='25' height='25' alt='add to cart'></img></a></div>");
+%>
+	</div>
+	</td>
+</tr>
+<!-- /PRODUCT -->
+<!-- /ROW -->
+</table>
+</div>
+]]></HTML>
+<DIVIDER><![CDATA[
+<tr>
+	<td colspan='3'><div style='height:1px; background:#999999;'></div></td>
+</tr>
+]]></DIVIDER>
+</ELEMENT>
+
+</TEMPLATE>

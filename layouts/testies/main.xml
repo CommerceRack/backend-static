@@ -1,0 +1,47 @@
+<TEMPLATE ID="testies" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNAP" CREATED="00000000" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG"></ELEMENT>
+<ELEMENT ID="CPUKNAQ" TYPE="OUTPUT"><HTML><![CDATA[<table border='0' width="100%">
+	<tr>
+		<td valign="top" align="center">
+			<table border="3" bordercolor="#663366" cellpadding=0 cellspacing=0 width="450">
+			<tr bgcolor="#CC99CC"><td align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="" TYPE="SUBCAT"></ELEMENT>
+<ELEMENT ID="CPUKNAR" TYPE="OUTPUT"><HTML><![CDATA[
+			</td></tr>
+			<tr bgcolor="#CCCCFF"><td align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="250" ID="HOMEPAGE_PIC" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" WIDTH="450" PROMPT="Front Page Picture" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNAS" TYPE="OUTPUT"><HTML><![CDATA[
+			</td></tr>
+			<tr bgcolor="#CCCCFF">
+			<td colspan="2" cellpadding=5 cellspacing=5 valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" HELP="Please enter a Welcome message that will appear on your front page" DATA="page:welcome_message" PROMPT="Welcome Message" DEFAULT="Hello, welcome to our wonderful website!" TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long, or not helpful visitors probably won't go any further. A lot of businesses talk about what makes their products unique, or their excellent customer service. If you have neither of those, then consider simply welcoming the customer.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKNAT" TYPE="OUTPUT"><HTML><![CDATA[
+
+			</td></tr></table>
+		</td>
+		<td valign="top" align="center" width="100">
+			<table border="3" bordercolor="#663366" cellpadding=0 cellspacing=0 width="100"><tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="o" HELP="Your Products" DATA="page:prodlist" FORCEFORMAT="1" PROMPT="Product Listing" DEFAULT="THUMB,1,0,NONE" TYPE="PRODLIST" FORCECOLUMNS="1"></ELEMENT>
+<ELEMENT ID="CPUKNAU" TYPE="OUTPUT"><HTML><![CDATA[
+			</td></tr></table>
+
+		</td>
+	</tr>
+</table>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

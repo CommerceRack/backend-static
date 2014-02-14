@@ -1,0 +1,165 @@
+[
+   {
+      "catalog" : "HOME",
+		"amz-catalog" : "Home",
+      "amz-subcat" : "OutdoorLiving",
+      "subcat" : "outdoorliving",
+      "type" : "config",
+		"variation-themes" : "ItemPackageQuantity+Color,Size+Scent,ItemPackageQuantity+Size,Material+Size,Size+Color,ItemPackageQuantity,Material,Size,Color",
+		"parentage-values" : "variation-parent,base-product,base-product"
+   },
+   {
+      "PROMPT" : "Home:OutdoorLiving",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYBY",
+      "xmlpath" : "Home.ProductType.OutdoorLiving."
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "Home.ProductType.OutdoorLiving.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:itempackagequantity",
+		"vkey" : "ItemPackageQuantity",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Home.ProductType.OutdoorLiving.VariationData.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:material",
+		"vkey" : "Material",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Home.ProductType.OutdoorLiving.VariationData.Material"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:size",
+		"vkey" : "Size",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Home.ProductType.OutdoorLiving.VariationData.Size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Home.ProductType.OutdoorLiving.VariationData.Color"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_home_outdoorliving_wattage",
+      "type" : "number",
+      "title" : "Wattage",
+      "xmlpath" : "Home.ProductType.OutdoorLiving.Wattage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "Home.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_home_ctryprdin",
+      "type" : "textbox",
+      "title" : "Country Produced In",
+      "xmlpath" : "Home.CountryProducedIn"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_home_displaylength",
+      "type" : "number",
+      "title" : "DisplayLength",
+      "xmlpath" : "Home.DisplayLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_home_displaywidth",
+      "type" : "number",
+      "title" : "DisplayWidth",
+      "xmlpath" : "Home.DisplayWidth"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_home_displayheight",
+      "type" : "number",
+      "title" : "DisplayHeight",
+      "xmlpath" : "Home.DisplayHeight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_home_displaydepth",
+      "type" : "number",
+      "title" : "DisplayDepth",
+      "xmlpath" : "Home.DisplayDepth"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_home_displaydiameter",
+      "type" : "number",
+      "title" : "DisplayDiameter",
+      "xmlpath" : "Home.DisplayDiameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Weight",
+      "id" : "amz:prod_home_displaywt",
+      "type" : "number",
+      "title" : "DisplayWeight",
+      "xmlpath" : "Home.DisplayWeight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_home_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "Home.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_home_mnfgwarrantydscrpt",
+      "type" : "textbox",
+      "title" : "Home Manufacturer Warranty Description",
+      "xmlpath" : "Home.ManufacturerWarrantyDescription"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Volume",
+      "id" : "amz:prod_home_volumecapacity",
+      "type" : "textbox",
+      "title" : "Volume Capacity",
+      "xmlpath" : "Home.VolumeCapacity"
+   }
+]

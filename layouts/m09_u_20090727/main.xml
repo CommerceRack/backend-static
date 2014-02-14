@@ -1,0 +1,67 @@
+<TEMPLATE ID="m09_u_20090727" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="DADBPFD" CREATED="000000000" SUBTYPE="U" EXPORT="0" TYPE="CONFIG" TITLE="Mobile Contact: Contact info and form"></ELEMENT>
+<ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
+<ELEMENT ID="CONTACT_INFO" WIKI="3" DATA="profile:zoovy:contact" PROMPT="Contact Information" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
+<div class='ztxt' style='margin-bottom:20px;'>
+]]></PRETEXT>
+<POSTTEXT><![CDATA[
+</div>
+]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DADBPFE" TYPE="SPECL"><HTML><![CDATA[
+
+<div class='ztxt' style='margin-bottom:20px;'>
+
+<div style='float:right;'><%
+	
+/* if the call button is disabled OR no phone number is set, skip the display of the 'call us now' button */
+
+loadurp("profile:zoovy:wrap_disable_call"); default("0");
+goto(label=>"NOCALL",eq=>"1");
+	loadurp("profile:zoovy:support_phone"); default("");
+	goto(label=>"NOCALL",eq=>"");
+		format(pretext=>"<div style='float:left; margin-left:5px;'><a href='tel:");
+		format(posttext=>"' title='call us now'><img src='%LAYOUT_URL%/m09_u_callusnow-132x51.png' width='132' height='51' alt='call us now' border='0'></a></div>");	
+		print();
+
+:NOCALL();
+	print("<!-- call button disabled or no phone number present -->");
+
+%></div>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPZWXCM" RAW="1" TYPE="READONLY" LOAD="profile:zoovy:company_name"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPZWXCO" RAW="1" TYPE="READONLY" LOAD="profile:zoovy:address1"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPZWXCP" RAW="1" TYPE="READONLY" POSTTEXT=" " LOAD="profile:zoovy:city"></ELEMENT>
+<ELEMENT ID="CPZWXCQ" RAW="1" TYPE="READONLY" POSTTEXT=", " LOAD="profile:zoovy:state"></ELEMENT>
+<ELEMENT ID="CPZWXCR" RAW="1" TYPE="READONLY" LOAD="profile:zoovy:zip"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPZWXCS" PRETEXT="Phone: " RAW="1" TYPE="READONLY" LOAD="profile:zoovy:support_phone"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPZWXCT" PRETEXT="Fax: " RAW="1" TYPE="READONLY" LOAD="profile:zoovy:facsimile"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DADBPFF" DATA="profile:zoovy:store_hours" PROMPT="Store Hours" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="DADBPFG" TYPE="OUTPUT"><HTML><![CDATA[
+
+</div>
+
+<div class='zcolor_light ztxt' style='padding:10px;'>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MAILFORM" DATA="page:mailform" PROMPT="Mail Form" TYPE="MAILFORM"></ELEMENT>
+<ELEMENT ID="DADBPFH" TYPE="OUTPUT"><HTML><![CDATA[
+
+</div>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,401 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "PowerSupply",
+      "subcat" : "powersupply",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:PowerSupply",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXJQ",
+      "xmlpath" : "CameraPhoto.ProductType.PowerSupply."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cp_platinumkwords_10",
+      "type" : "textbox",
+      "title" : "Platinum Keywords_10"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "film-cameras",
+            "v" : "film-cameras"
+         },
+         {
+            "p" : "digital-cameras",
+            "v" : "digital-cameras"
+         },
+         {
+            "p" : "analog-camcorders-general",
+            "v" : "analog-camcorders-general"
+         },
+         {
+            "p" : "8mm-camcorders",
+            "v" : "8mm-camcorders"
+         },
+         {
+            "p" : "betacam-sp-camcorders",
+            "v" : "betacam-sp-camcorders"
+         },
+         {
+            "p" : "hi-8-camcorders",
+            "v" : "hi-8-camcorders"
+         },
+         {
+            "p" : "s-vhs-camcorders",
+            "v" : "s-vhs-camcorders"
+         },
+         {
+            "p" : "s-vhs-c-camcorders",
+            "v" : "s-vhs-c-camcorders"
+         },
+         {
+            "p" : "vhs-camcorders",
+            "v" : "vhs-camcorders"
+         },
+         {
+            "p" : "vhs-c-camcorders",
+            "v" : "vhs-c-camcorders"
+         },
+         {
+            "p" : "other-analog-formats-camcorders",
+            "v" : "other-analog-formats-camcorders"
+         },
+         {
+            "p" : "digital-camcorders-general",
+            "v" : "digital-camcorders-general"
+         },
+         {
+            "p" : "digital-betacam-camcorders",
+            "v" : "digital-betacam-camcorders"
+         },
+         {
+            "p" : "dv-camcorders",
+            "v" : "dv-camcorders"
+         },
+         {
+            "p" : "dvcam-camcorders",
+            "v" : "dvcam-camcorders"
+         },
+         {
+            "p" : "dvcpro-camcorders",
+            "v" : "dvcpro-camcorders"
+         },
+         {
+            "p" : "minidv-camcorders",
+            "v" : "minidv-camcorders"
+         },
+         {
+            "p" : "micromv-camcorders",
+            "v" : "micromv-camcorders"
+         },
+         {
+            "p" : "digital8-camcorders",
+            "v" : "digital8-camcorders"
+         },
+         {
+            "p" : "dvd-camcorders",
+            "v" : "dvd-camcorders"
+         },
+         {
+            "p" : "minidisc-camcorders",
+            "v" : "minidisc-camcorders"
+         },
+         {
+            "p" : "other-digital-formats-camcorders",
+            "v" : "other-digital-formats-camcorders"
+         },
+         {
+            "p" : "flashes",
+            "v" : "flashes"
+         },
+         {
+            "p" : "lighting",
+            "v" : "lighting"
+         },
+         {
+            "p" : "surveillence-products",
+            "v" : "surveillence-products"
+         },
+         {
+            "p" : "other-products",
+            "v" : "other-products"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_powersupply_forusewith",
+      "title" : "Power Supply For Use With",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PowerSupply.ForUseWith",
+      "list" : "LIST_CAMERA_POWERSUPPLY_FORUSEWITH"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "batteries-general",
+            "v" : "batteries-general"
+         },
+         {
+            "p" : "disposable-batteries",
+            "v" : "disposable-batteries"
+         },
+         {
+            "p" : "rechargeable-Batteries",
+            "v" : "rechargeable-Batteries"
+         },
+         {
+            "p" : "external-batteries",
+            "v" : "external-batteries"
+         },
+         {
+            "p" : "battery-packs-general",
+            "v" : "battery-packs-general"
+         },
+         {
+            "p" : "shoulder-battery-packs",
+            "v" : "shoulder-battery-packs"
+         },
+         {
+            "p" : "belt-battery-packs",
+            "v" : "belt-battery-packs"
+         },
+         {
+            "p" : "dedicated-battery-packs",
+            "v" : "dedicated-battery-packs"
+         },
+         {
+            "p" : "other-batteries-and-packs",
+            "v" : "other-batteries-and-packs"
+         },
+         {
+            "p" : "adapters-general",
+            "v" : "adapters-general"
+         },
+         {
+            "p" : "ac-adapters",
+            "v" : "ac-adapters"
+         },
+         {
+            "p" : "dc-adapters",
+            "v" : "dc-adapters"
+         },
+         {
+            "p" : "battery-chargers",
+            "v" : "battery-chargers"
+         },
+         {
+            "p" : "ac-power-supply",
+            "v" : "ac-power-supply"
+         },
+         {
+            "p" : "dc-power-supply",
+            "v" : "dc-power-supply"
+         },
+         {
+            "p" : "other-power-supplies",
+            "v" : "other-power-supplies"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_powersupply_camerapowersupplytype",
+      "title" : "Power Supply Camera Power Supply Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PowerSupply.CameraPowerSupplyType",
+      "list" : "LIST_CAMERA_POWERSUPPLY_CAMERAPOWERSUPPLYTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "lead-acid",
+            "v" : "lead-acid"
+         },
+         {
+            "p" : "lithium",
+            "v" : "lithium"
+         },
+         {
+            "p" : "lithium-ion",
+            "v" : "lithium-ion"
+         },
+         {
+            "p" : "nickel-metal-hydride",
+            "v" : "nickel-metal-hydride"
+         },
+         {
+            "p" : "nicd",
+            "v" : "nicd"
+         },
+         {
+            "p" : "silver-oxide",
+            "v" : "silver-oxide"
+         },
+         {
+            "p" : "alkaline",
+            "v" : "alkaline"
+         },
+         {
+            "p" : "other-battery-types",
+            "v" : "other-battery-types"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_powersupply_batterychemicaltype",
+      "title" : "Power Supply Battery Chemical Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PowerSupply.BatteryChemicalType",
+      "list" : "LIST_CAMERA_POWERSUPPLY_BATTERYCHEMICALTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "battery-holders",
+            "v" : "battery-holders"
+         },
+         {
+            "p" : "battery-testers",
+            "v" : "battery-testers"
+         },
+         {
+            "p" : "mounting-plates",
+            "v" : "mounting-plates"
+         },
+         {
+            "p" : "cables-general",
+            "v" : "cables-general"
+         },
+         {
+            "p" : "battery-power-cables",
+            "v" : "battery-power-cables"
+         },
+         {
+            "p" : "power-supply-cables",
+            "v" : "power-supply-cables"
+         },
+         {
+            "p" : "charger-cables",
+            "v" : "charger-cables"
+         },
+         {
+            "p" : "adapter-cables",
+            "v" : "adapter-cables"
+         },
+         {
+            "p" : "other-cables",
+            "v" : "other-cables"
+         },
+         {
+            "p" : "cigarette-connectors",
+            "v" : "cigarette-connectors"
+         },
+         {
+            "p" : "xlr-connectors",
+            "v" : "xlr-connectors"
+         },
+         {
+            "p" : "dc-couplers",
+            "v" : "dc-couplers"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_powersupply_powersupplyaccs",
+      "title" : "Power Supply Power Supply Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PowerSupply.PowerSupplyAccessories",
+      "list" : "LIST_CAMERA_POWERSUPPLY_POWERSUPPLYACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

@@ -1,0 +1,371 @@
+[
+   {
+      "catalog" : "JEWELRY",
+		"amz-catalog" : "Jewelry",
+      "amz-subcat" : "FineEarring",
+      "subcat" : "fineearring",
+      "type" : "config",
+		"variation-themes" : "MetalType-TotalDiamondWeight,MetalType-SizePerPearl,MetalType,SizePerPearl,TotalDiamondWeight",
+		"parentage-values" : "parent,child,child"
+   },
+   {
+      "PROMPT" : "Jewelry:FineEarring",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYGH",
+      "xmlpath" : "Jewelry.ProductType.FineEarring."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnearring_metaltype",
+      "type" : "textbox",
+      "title" : "Metal Type",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.VariationData.MetalType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:metaltype",
+		"vkey" : "MetalType",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.VariationData.MetalType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:sizeperpearl",
+		"vkey" : "SizePerPearl",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.VariationData.SizePerPearl"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:totaldiamondweight",
+		"vkey" : "TotalDiamondWeight",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.VariationData.TotalDiamondWeight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnearring_matl",
+      "type" : "textlist",
+      "title" : "Material",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.Material"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnearring_metalstamp",
+      "type" : "textbox",
+      "title" : "Metal Stamp",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.MetalStamp"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnearring_settingtype",
+      "type" : "textbox",
+      "title" : "Setting Type",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.SettingType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prltype",
+      "type" : "textbox",
+      "title" : "Pearl Type",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlminmcolor",
+      "type" : "textbox",
+      "title" : "Pearl Minimum Color",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlMinimumColor"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prllustre",
+      "type" : "textbox",
+      "title" : "Pearl Lustre",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlLustre"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlshape",
+      "type" : "textbox",
+      "title" : "Pearl Shape",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlShape"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prluniformity",
+      "type" : "textbox",
+      "title" : "Pearl Uniformity",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlUniformity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlsfcmblms",
+      "type" : "textbox",
+      "title" : "Pearl Surface Markings And Blemishes",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlSurfaceMarkingsAndBlemishes"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlstringingmethod",
+      "type" : "textbox",
+      "title" : "Pearl Stringing Method",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlStringingMethod"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_sizeperprl",
+      "type" : "textbox",
+      "title" : "Size Per Pearl",
+      "xmlpath" : "Jewelry.ProductType.Pearl.SizePerPearl"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnearring_totalgemwt",
+      "type" : "textbox",
+      "title" : "Total Gem Weight",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.TotalGemWeight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Weight",
+      "id" : "amz:prod_jly_fnearring_totalmetalwt",
+      "type" : "textbox",
+      "title" : "Total Metal Weight",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.TotalMetalWeight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fnearring_diameter",
+      "type" : "number",
+      "title" : "Diameter",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.Diameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fnearring_height",
+      "type" : "number",
+      "title" : "Height",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.Height"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fnearring_width",
+      "type" : "number",
+      "title" : "Width",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.Width"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fnearring_length",
+      "type" : "number",
+      "title" : "Length",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.Length"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnearring_backfinding",
+      "type" : "textbox",
+      "title" : "Back Finding",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.BackFinding"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnearring_estateperiod",
+      "type" : "textbox",
+      "title" : "Estate Period",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.EstatePeriod"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnearring_nbrofstones",
+      "type" : "number",
+      "title" : "NumberOfStones",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.NumberOfStones"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prltype",
+      "type" : "textbox",
+      "title" : "Pearl Type",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlminmcolor",
+      "type" : "textbox",
+      "title" : "Pearl Minimum Color",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlMinimumColor"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prllustre",
+      "type" : "textbox",
+      "title" : "Pearl Lustre",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlLustre"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlshape",
+      "type" : "textbox",
+      "title" : "Pearl Shape",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlShape"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prluniformity",
+      "type" : "textbox",
+      "title" : "Pearl Uniformity",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlUniformity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlsfcmblms",
+      "type" : "textbox",
+      "title" : "Pearl Surface Markings And Blemishes",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlSurfaceMarkingsAndBlemishes"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlstringingmethod",
+      "type" : "textbox",
+      "title" : "Pearl Stringing Method",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlStringingMethod"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Measurement",
+      "id" : "amz:prod_jly_prl_sizeperprl",
+      "type" : "textbox",
+      "title" : "Size Per Pearl",
+      "xmlpath" : "Jewelry.ProductType.Pearl.SizePerPearl"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnearring_nbrofprls",
+      "type" : "number",
+      "title" : "NumberOfPearls",
+      "xmlpath" : "Jewelry.ProductType.FineEarring.NumberOfPearls"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prltype",
+      "type" : "textbox",
+      "title" : "Pearl Type",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlminmcolor",
+      "type" : "textbox",
+      "title" : "Pearl Minimum Color",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlMinimumColor"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prllustre",
+      "type" : "textbox",
+      "title" : "Pearl Lustre",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlLustre"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlshape",
+      "type" : "textbox",
+      "title" : "Pearl Shape",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlShape"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prluniformity",
+      "type" : "textbox",
+      "title" : "Pearl Uniformity",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlUniformity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlsfcmblms",
+      "type" : "textbox",
+      "title" : "Pearl Surface Markings And Blemishes",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlSurfaceMarkingsAndBlemishes"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlstringingmethod",
+      "type" : "textbox",
+      "title" : "Pearl Stringing Method",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlStringingMethod"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Measurement",
+      "id" : "amz:prod_jly_prl_sizeperprl",
+      "type" : "textbox",
+      "title" : "Size Per Pearl",
+      "xmlpath" : "Jewelry.ProductType.Pearl.SizePerPearl"
+   }
+]

@@ -1,0 +1,117 @@
+<TEMPLATE ID="c-20070424" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNJS" CREATOR="JT" CREATED="20070424" IMAGES="1" PROPERTIES="1" SERIES="2007" SUBTYPE="C" FORMAT="LAYOUT" SHORT="Text, image, subcategories and products that fill the width of variable width themes" TYPE="CONFIG" TITLE="Variable width subcategories, products and text" RELEASED="20070501"><SUMMARY><![CDATA[This layout has a text area and linkable image at the top, as well as an additional text area at the bottom.  The subcategory list will show the thumbnail (90x90) and name (truncated) in a variable column format that will position the subcategories to take up as much width as is available.  The product list works in the same manner.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CUBEZEH" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
+<p><b>About this layout:</b><br>
+The layout contains many elements which you can populate.  You do not have to fill all of them. Populated elementswill shift up to fill vacancies. Add and link images that serve a specific purpose, such as linking to a specific product or category that is relevant to the main content on the page.
+</p>
+<p>Subcategories:<br />
+This layout is designed to display as many subcategories in a row that will fit within the theme, then start the next row. To accomplish this, the space allocated for each subcategory must be fixed to exact height/width.  That means only a limited number of characters can show up for each subcategory (3 lines) and some whitespace may appear below the name if the category names are short. Descend tree is turned off.  More information about categories and definitions of terms can be found at the link below:<br>
+<a href='http://webdoc.zoovy.com/index.cgi?VERB=DOC&DOCID=50325' target='webdoc'>http://webdoc.zoovy.com/doc/50325</a>
+</p>
+
+<p>Product<br />
+The product list on this layout behaves in a similar fashion to the subcategories.  Alternating row color is NOT an option and neither is forcing the number of column or enabling multipage.  The product list header will only show up if products are present.
+</p>
+<hr />
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CUBEZEI" TYPE="OUTPUT"><HTML><![CDATA[
+
+<table cellspacing='5' cellpadding='0' width='100%'>
+<tr>
+	<td align='top' width='1%'>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE_LINK" EDITOR="INLINE" DATA="page:link1" ZOOVYDOCID="50355" PROMPT="Link for image 1" SUB="LINK1" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT HEIGHT="125" ID="IMAGE1" EDITOR="INLINE" DATA="page:picture1" WIDTH="125" PROMPT="Image 1 ( 125 x 125 )" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%LINK1%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CUBEZEJ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	<td>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" EDITOR="INLINE" DATA="page:description" PROMPT="Text area for top of page (keep this short)" TYPE="TEXT"><HELP><![CDATA[Please enter a short description that will appear at the top of this page.  Use the text box at the bottom for longer text.]]></HELP>
+<PRETEXT><![CDATA[<div style='margin-bottom:5px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CUBEZEK" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+<tr>
+	<td colspan='2' class='ztxt' >
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DESCENDTREE="0" DATA="page:subcat" MODE="LIST" TYPE="SUBCAT"><HTML><![CDATA[
+<!-- ROW -->
+<!-- CATEGORY -->
+<div style='float:left; height:134px; width:92px; margin:0px 5px 5px 0px; overflow:hidden;'>
+
+<div class='zborder'><a href="<% print($cat_url); %>"><%
+loadurp("CSS::zbody.bgcolor");
+set($bgcolor=>$_);
+load($cat_thumb); default(""); 
+image(w=>"90",h=>"90",bg=>$bgcolor,tag=>"1",alt=>$cat_pretty); 
+print(); %></a></div>
+
+<div style='line-height:14px; font-size:10px;'>
+<a href="<% print($cat_url); %>" class="zlink" style='text-decoration:none;'><% load($cat_pretty); default(""); strip(length=>"60",html=>"1"); print(); %></a>
+</div>
+
+</div>
+<!-- /CATEGORY -->
+<!-- /ROW -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CUBEZEL" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+</tr>
+<tr>
+	<td colspan='2'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER1" WIKI="3" HELP="Please enter a message that will appear on this page" MAXLENGTH="35" EDITOR="INLINE" DATA="page:header1" PROMPT="Product List Header (optional)" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT SIZE="5000" ID="PRODUCTS" MAX="500" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
+<div class='ztitle' style='margin-bottom:10px; border-top:1px solid <% loadurp("CSS::zcolor_light.bgcolor"); default("#EFEFEF"); print(); %>; padding-top:10px;'>
+<%
+loadurp("page:header1"); default("&nbsp;"); print();
+%>
+</div>
+<!-- ROW -->
+<!-- PRODUCT -->
+<div style='float:left; height:134px; width:92px; margin:0px 5px 5px 0px; overflow:hidden;'>
+
+<div class='zborder'><a href="<% print($PROD_URL); %>"><%
+loadurp("CSS::zbody.bgcolor");
+set($bgcolor=>$_);
+load($zoovy:prod_thumb); default(""); default($zoovy:prod_image1);
+image(w=>"90",h=>"90",bg=>$bgcolor,tag=>"1",alt=>$zoovy:prod_name); 
+print(); %></a></div>
+<div style='line-height:14px; font-size:10px;'>
+<a href="<% print($PROD_URL); %>" class="zlink" style='text-decoration:none;'><% load($zoovy:prod_name); default(""); strip(length=>"60"); format(encode=>"entity"); print(); %></a>
+</div>
+
+</div>
+<!-- /PRODUCT -->
+<!-- /ROW -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CUBEZEM" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+</tr>
+<tr>
+	<td colspan='2'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION2" HELP="Please enter a message that will appear on this page" EDITOR="INLINE" DATA="page:description2" PROMPT="Text area for bottom of page" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CUBEZEN" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+</tr>
+</table>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,257 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "LensAccessory",
+      "subcat" : "lensaccessory",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:LensAccessory",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWYF",
+      "xmlpath" : "CameraPhoto.ProductType.LensAccessory."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "film-cameras",
+            "v" : "film-cameras"
+         },
+         {
+            "p" : "digital-cameras",
+            "v" : "digital-cameras"
+         },
+         {
+            "p" : "camcorders",
+            "v" : "camcorders"
+         },
+         {
+            "p" : "telescopes",
+            "v" : "telescopes"
+         },
+         {
+            "p" : "microscopes",
+            "v" : "microscopes"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lensaccessory_forusewith",
+      "title" : "Lens Accessory For Use With",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.LensAccessory.ForUseWith",
+      "list" : "LIST_CAMERA_LENSACCESSORY_FORUSEWITH"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "c-mounts",
+            "v" : "c-mounts"
+         },
+         {
+            "p" : "lens-scope-converters",
+            "v" : "lens-scope-converters"
+         },
+         {
+            "p" : "lens-to-camera-adapters",
+            "v" : "lens-to-camera-adapters"
+         },
+         {
+            "p" : "remote-lens-controllers",
+            "v" : "remote-lens-controllers"
+         },
+         {
+            "p" : "extenders",
+            "v" : "extenders"
+         },
+         {
+            "p" : "series-vii-adapters",
+            "v" : "series-vii-adapters"
+         },
+         {
+            "p" : "t-mounts",
+            "v" : "t-mounts"
+         },
+         {
+            "p" : "tripod-adapters",
+            "v" : "tripod-adapters"
+         },
+         {
+            "p" : "lens-boards",
+            "v" : "lens-boards"
+         },
+         {
+            "p" : "bayonets",
+            "v" : "bayonets"
+         },
+         {
+            "p" : "lens-hoods",
+            "v" : "lens-hoods"
+         },
+         {
+            "p" : "lens-supports",
+            "v" : "lens-supports"
+         },
+         {
+            "p" : "rapid-focusing-levers",
+            "v" : "rapid-focusing-levers"
+         },
+         {
+            "p" : "shutters",
+            "v" : "shutters"
+         },
+         {
+            "p" : "diopters",
+            "v" : "diopters"
+         },
+         {
+            "p" : "mirror-scopes",
+            "v" : "mirror-scopes"
+         },
+         {
+            "p" : "lens-caps-general",
+            "v" : "lens-caps-general"
+         },
+         {
+            "p" : "lens-caps-up-to-48mm",
+            "v" : "lens-caps-up-to-48mm"
+         },
+         {
+            "p" : "lens-caps-49mm",
+            "v" : "lens-caps-49mm"
+         },
+         {
+            "p" : "lens-caps-52mm",
+            "v" : "lens-caps-52mm"
+         },
+         {
+            "p" : "lens-caps-55mm",
+            "v" : "lens-caps-55mm"
+         },
+         {
+            "p" : "lens-caps-58mm",
+            "v" : "lens-caps-58mm"
+         },
+         {
+            "p" : "lens-caps-62mm",
+            "v" : "lens-caps-62mm"
+         },
+         {
+            "p" : "lens-caps-67mm",
+            "v" : "lens-caps-67mm"
+         },
+         {
+            "p" : "lens-caps-72mm",
+            "v" : "lens-caps-72mm"
+         },
+         {
+            "p" : "lens-caps-77mm",
+            "v" : "lens-caps-77mm"
+         },
+         {
+            "p" : "lens-caps-82mm",
+            "v" : "lens-caps-82mm"
+         },
+         {
+            "p" : "lens-caps-86mm",
+            "v" : "lens-caps-86mm"
+         },
+         {
+            "p" : "lens-caps-95mm",
+            "v" : "lens-caps-95mm"
+         },
+         {
+            "p" : "lens-caps-other-sizes",
+            "v" : "lens-caps-other-sizes"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lensaccessory_accessorytype",
+      "title" : "Lens Accessory Accessory Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.LensAccessory.AccessoryType",
+      "list" : "LIST_CAMERA_LENSACCESSORY_ACCESSORYTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

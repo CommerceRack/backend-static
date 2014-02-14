@@ -1,0 +1,530 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "Filter",
+      "subcat" : "filter",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:Filter",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWTF",
+      "xmlpath" : "CameraPhoto.ProductType.Filter."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "camcorders",
+            "v" : "camcorders"
+         },
+         {
+            "p" : "digital-cameras",
+            "v" : "digital-cameras"
+         },
+         {
+            "p" : "film-cameras",
+            "v" : "film-cameras"
+         },
+         {
+            "p" : "telescopes",
+            "v" : "telescopes"
+         },
+         {
+            "p" : "binoculars",
+            "v" : "binoculars"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filter_forusewith",
+      "title" : "Filter For Use With",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Filter.ForUseWith",
+      "list" : "LIST_CAMERA_FILTER_FORUSEWITH"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "single-filter",
+            "v" : "single-filter"
+         },
+         {
+            "p" : "filter-sets",
+            "v" : "filter-sets"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filter_pkgtype",
+      "title" : "Filter Package Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Filter.PackageType",
+      "list" : "LIST_CAMERA_FILTER_PACKAGETYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "round",
+            "v" : "round"
+         },
+         {
+            "p" : "square",
+            "v" : "square"
+         },
+         {
+            "p" : "bayonet",
+            "v" : "bayonet"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filter_mounttype",
+      "title" : "Filter Mount Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Filter.MountType",
+      "list" : "LIST_CAMERA_FILTER_MOUNTTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_filter_threadsize",
+      "type" : "number",
+      "title" : "ThreadSize",
+      "xmlpath" : "CameraPhoto.ProductType.Filter.ThreadSize"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "6-inch-wratten",
+            "v" : "6-inch-wratten"
+         },
+         {
+            "p" : "cokin-a",
+            "v" : "cokin-a"
+         },
+         {
+            "p" : "cokin-p",
+            "v" : "cokin-p"
+         },
+         {
+            "p" : "lee-type",
+            "v" : "lee-type"
+         },
+         {
+            "p" : "pro-optic-a",
+            "v" : "pro-optic-a"
+         },
+         {
+            "p" : "pro-optic-p",
+            "v" : "pro-optic-p"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filter_dropinsize",
+      "title" : "Filter Drop In Size",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Filter.DropInSize",
+      "list" : "LIST_CAMERA_FILTER_DROPINSIZE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "b-3",
+            "v" : "b-3"
+         },
+         {
+            "p" : "b-39",
+            "v" : "b-39"
+         },
+         {
+            "p" : "b-50",
+            "v" : "b-50"
+         },
+         {
+            "p" : "b-6",
+            "v" : "b-6"
+         },
+         {
+            "p" : "b-60",
+            "v" : "b-60"
+         },
+         {
+            "p" : "b-70",
+            "v" : "b-70"
+         },
+         {
+            "p" : "b-93",
+            "v" : "b-93"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filter_bayonetsize",
+      "title" : "Filter Bayonet Size",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Filter.BayonetSize",
+      "list" : "LIST_CAMERA_FILTER_BAYONETSIZE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "graduated",
+            "v" : "graduated"
+         },
+         {
+            "p" : "black-and-white-contrast",
+            "v" : "black-and-white-contrast"
+         },
+         {
+            "p" : "close-up",
+            "v" : "close-up"
+         },
+         {
+            "p" : "image-softening",
+            "v" : "image-softening"
+         },
+         {
+            "p" : "neutral-density",
+            "v" : "neutral-density"
+         },
+         {
+            "p" : "general-polarizer",
+            "v" : "general-polarizer"
+         },
+         {
+            "p" : "circular-polarizer",
+            "v" : "circular-polarizer"
+         },
+         {
+            "p" : "linear-polarizer",
+            "v" : "linear-polarizer"
+         },
+         {
+            "p" : "underwater",
+            "v" : "underwater"
+         },
+         {
+            "p" : "uv-and-protective",
+            "v" : "uv-and-protective"
+         },
+         {
+            "p" : "viewing-filters",
+            "v" : "viewing-filters"
+         },
+         {
+            "p" : "lighting-and-compensation",
+            "v" : "lighting-and-compensation"
+         },
+         {
+            "p" : "cooling",
+            "v" : "cooling"
+         },
+         {
+            "p" : "flourescent",
+            "v" : "flourescent"
+         },
+         {
+            "p" : "indoor",
+            "v" : "indoor"
+         },
+         {
+            "p" : "outdoor",
+            "v" : "outdoor"
+         },
+         {
+            "p" : "warming",
+            "v" : "warming"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filter_filtertype",
+      "title" : "Filter Filter Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Filter.FilterType",
+      "list" : "LIST_CAMERA_FILTER_FILTERTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "blue",
+            "v" : "blue"
+         },
+         {
+            "p" : "brown",
+            "v" : "brown"
+         },
+         {
+            "p" : "cyan",
+            "v" : "cyan"
+         },
+         {
+            "p" : "green",
+            "v" : "green"
+         },
+         {
+            "p" : "magenta",
+            "v" : "magenta"
+         },
+         {
+            "p" : "orange",
+            "v" : "orange"
+         },
+         {
+            "p" : "red",
+            "v" : "red"
+         },
+         {
+            "p" : "red-orange",
+            "v" : "red-orange"
+         },
+         {
+            "p" : "violet",
+            "v" : "violet"
+         },
+         {
+            "p" : "yellow",
+            "v" : "yellow"
+         },
+         {
+            "p" : "yellow-green",
+            "v" : "yellow-green"
+         },
+         {
+            "p" : "yellow-orange",
+            "v" : "yellow-orange"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filter_filtercolor",
+      "title" : "Filter Filter Color",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Filter.FilterColor",
+      "list" : "LIST_CAMERA_FILTER_FILTERCOLOR"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "center-spot",
+            "v" : "center-spot"
+         },
+         {
+            "p" : "cross-screen",
+            "v" : "cross-screen"
+         },
+         {
+            "p" : "diffraction",
+            "v" : "diffraction"
+         },
+         {
+            "p" : "double-exposure",
+            "v" : "double-exposure"
+         },
+         {
+            "p" : "enhancing",
+            "v" : "enhancing"
+         },
+         {
+            "p" : "fog",
+            "v" : "fog"
+         },
+         {
+            "p" : "hot-mirror",
+            "v" : "hot-mirror"
+         },
+         {
+            "p" : "infrared",
+            "v" : "infrared"
+         },
+         {
+            "p" : "masks",
+            "v" : "masks"
+         },
+         {
+            "p" : "multi-image",
+            "v" : "multi-image"
+         },
+         {
+            "p" : "prism",
+            "v" : "prism"
+         },
+         {
+            "p" : "sepia",
+            "v" : "sepia"
+         },
+         {
+            "p" : "special-contrast",
+            "v" : "special-contrast"
+         },
+         {
+            "p" : "speed",
+            "v" : "speed"
+         },
+         {
+            "p" : "split-field",
+            "v" : "split-field"
+         },
+         {
+            "p" : "star-filters",
+            "v" : "star-filters"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filter_specialeffect",
+      "title" : "Filter Special Effect",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Filter.SpecialEffect",
+      "list" : "LIST_CAMERA_FILTER_SPECIALEFFECT"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "travel",
+            "v" : "travel"
+         },
+         {
+            "p" : "hiking-and-outdoors",
+            "v" : "hiking-and-outdoors"
+         },
+         {
+            "p" : "hunting-and-shooting",
+            "v" : "hunting-and-shooting"
+         },
+         {
+            "p" : "sports",
+            "v" : "sports"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filter_specificuses",
+      "title" : "Filter Specific Uses",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Filter.SpecificUses",
+      "list" : "LIST_CAMERA_FILTER_SPECIFICUSES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

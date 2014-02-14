@@ -1,0 +1,243 @@
+<TEMPLATE ID="css" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CTJGCBG" TYPE="SPECL"><HTML><![CDATA[
+<div style="width:600px;">
+
+
+<div class="zbox">
+	<div class="zbox_head">zboxhead</div>
+	<div class="zbox_body">This is the zbox_body class. Around this div and the zboxhead div is a div with zbox on it.  ( <a href="#" class="zlink">Linked</a> )</div>
+</div>
+<br />
+
+
+<table cellspacing="1" cellpadding="3" width="100%">
+<tr>
+	<td class="ztable_head">ztable_head</td>
+	<td class="ztable_head">ztable_head</td>
+	<td class="ztable_head">ztable_head</td>
+</tr>
+<tr>
+	<td class="ztable_row ztable_row0">ztablerow and ztablerow0</td>
+	<td class="ztable_row ztable_row0"><span class="ztable_row_small">ztable_row_small ( <a href="#" class="zlink">Linked</a> )</span></td>
+	<td class="ztable_row ztable_row0"><span class="ztable_row_title">ztable_row_title</span></td>
+</tr>
+<tr>
+	<td class="ztable_row ztable_row1">ztablerow and ztablerow1</td>
+	<td class="ztable_row ztable_row1"><span class="ztable_row_small">ztable_row_small ( <a href="#" class="zlink">Linked</a> )</span></td>
+	<td class="ztable_row ztable_row1"><span class="ztable_row_title">ztable_row_title</span></td>
+</tr>
+<tr>
+	<td class="ztable_row ztable_row0">ztablerow and ztablerow0</td>
+	<td class="ztable_row ztable_row0">ztablerow and ztablerow0</td>
+	<td class="ztable_row ztable_row0">ztablerow and ztablerow0</td>
+</tr>
+<tr>
+	<td class="ztable_row">ztablerow</td>
+	<td class="ztable_row">ztablerow</td>
+	<td class="ztable_row">ztablerow</td>
+</tr>
+</table>
+<br>
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr>
+	<td valign='top' width='90%'>
+
+<div class="zborder zbody ztxt" style="padding:10px;">
+	<div class="ztitle">Ztitle - used for titles on the page, not necessarily the TITLE element.</div>
+	<div class="ztitle2">Ztitle2 - used for secondary titles and headers.</div>
+	<div class="zwarn">zwarn - alert text used on cart and checkout pages to display errors.</div>
+	<div class="zhint">zhint - smaller text used on cart and checkout pages to display hints.</div>
+	<div class="zsmall">zsmall - this class will be used on the footer, but is not limited to that use.</div>
+	<div><a href='#' class='zlink'>This is zlink</a> and <a href='#'>this is a link with no class</a> - these two should match</div>
+
+	<div class="ztxt">ztxt - the div around the text class divs is zborder, ztxt, AND zbody.  Zborder should always ONLY be a border and zbody should always only be a background color.  The <a href="#" class="zlink">Link Color (zlink class) should be visible here</a>. The background color of zbody should always look good behind the text classes above.  zbody is the CONTENT background color, not the page background color.</div>
+
+	<h1>This is an H1.  usually used for the TITLE ELEMENT</h2>
+	<h2>This is an H2.  The custom wiki snippet puts title1 into an H2</h2>
+	<h3>This is an H3.  The custom wiki snippet puts title2 into an H3</h3>
+	<h4>This is an H4.  </h4>
+	<h5>This is an H5. </h5>
+	<h6>This is an H6.  </h6>
+
+
+</div>
+
+</td>
+	<td valign='top' width='10%'>
+	<div style='margin-left:20px;'>
+<%
+print("");
+element(TYPE=>"SITEBUTTON",BUTTON=>"forward"); print(); print("<br>");
+element(TYPE=>"SITEBUTTON",BUTTON=>"back"); print(); print("<br>");
+%>
+<br>
+<%
+print("");
+element(TYPE=>"SITEBUTTON",BUTTON=>"add_to_cart"); print(); print("<br>");
+element(TYPE=>"SITEBUTTON",BUTTON=>"cancel"); print(); print("<br>");
+%>
+<br>
+
+<%
+	element(TYPE=>"SITEBUTTON",BUTTON=>"update_cart"); print(); print("<br>");
+	element(TYPE=>"SITEBUTTON",BUTTON=>"empty_cart"); print(); print("<br>");
+	element(TYPE=>"SITEBUTTON",BUTTON=>"continue_shopping"); print(); print("<br>");
+	element(TYPE=>"SITEBUTTON",BUTTON=>"checkout"); print(); print("<br>");
+%>
+
+<%
+print("<!-- google button -->");
+element(TYPE=>"SITEBUTTON",BUTTON=>"google"); print(); print("<br>");
+%>
+<%
+print("<!-- paypal button -->");
+element(TYPE=>"SITEBUTTON",BUTTON=>"paypal"); print(); print("<br>");
+%>
+
+
+	</div>
+	</td>
+</tr>
+</table>
+
+
+
+<table cellspacing="5" cellpadding="2" width="100%">
+<tr>
+	<td class='ztxt'>
+<div>%title1%this is the title one in wiki %/title1%</div>
+<div>%title2%this is the title two in wiki %/title2%</div>
+<div>%title3%this is the title three in wiki %/title3% inside a ztxt class</div>
+	</td>
+	<td>
+<div class='ztxt'>This is a wiki table.</div>
+%table%
+%tablerow%
+%tablehead%Header content%/tablehead%
+%tablehead%Column 2%/tablehead%
+%/tablerow%
+%tablerow%
+%tabledata%r1c1 content%/tabledata%
+%tabledata%r1c2 content%/tabledata%
+%/tablerow%
+%tablerow%
+%tabledata%r1c1 content%/tabledata%
+%tabledata%r1c2 content%/tabledata%
+%/tablerow%
+%/table%
+
+	</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+	<td valign="top" width="50%" class='zsmall'>
+
+<table cellspacing="5" cellpadding="2" width="100%">
+<tr>
+	<td class="zcolor">zcolor - bgcolor shade between the light and dark with a text color specified as well.</td>
+</tr>
+<tr>
+	<td class="zcolor_dark">zcolor_dark - the darkest of the three bgcolors with a text color specified as well.</td>
+</tr>
+<tr>
+	<td class="zcolor_light">zcolor_light</td>
+</tr>
+<tr>
+	<td class="zcolor_contrast">zcolor_contrast - a high contrast color from the other three zcolor classes and a text color.</td>
+</tr>
+</table>
+
+	</td>
+	<td valign="top">
+	
+<table cellspacing="0" cellpadding='3' width="100%">
+<tr>
+	<td class='ztab0' style='border-bottom:2px solid <% loadurp("CSS::zbody.bgcolor"); print(); %>; border-right:<% loadurp("CSS::zborder.border"); print(); %>; '>ztab0 (off)	</td>	
+	<td rowspan="5" class="ztabbody" style='padding:5px; border-top:<% loadurp("CSS::zborder.border"); print(); %>; '>This is the ztabbody class.  ( <a href="#" class="zlink">Linked</a> )
+	
+<br>	
+<input type="text" value="zform_textbox" class="zform_textbox" /><br>
+<select class="zform_select"><option>zform_select</option></select><br>
+<textarea class="zform_textarea">zform_textarea</textarea><br>
+<input type="button" class="zform_button" value="zform_button" />	
+
+<div><span class='zwarn'>Warning!</span> - The warning word to the left should be legible here.</div>
+
+<div><b>Notice the stroke</b> around the ztab1 class.  That's zborder.  It goes across the top of this cell too.  It is used in this style for one page checkout.</div>
+
+	</td>
+</tr>
+<tr>
+	<td class="ztab0" style='border-right:<% loadurp("CSS::zborder.border"); print(); %>; border-bottom:2px solid #ffffff;'>ztab0 (off)</td>	
+</tr>
+<tr>
+	<td class="ztab1" style='border-top:<% loadurp("CSS::zborder.border"); print(); %>; border-left:<% loadurp("CSS::zborder.border"); print(); %>;' NOWRAP>ztab1 (on)</td>	
+</tr>
+<tr>
+	<td class="ztab0" style='border-bottom:2px solid #ffffff;'>ztab0 (off)</td>	
+</tr>
+<tr>
+	<td class="ztab0" NOWRAP>ztab0 (off)</td>	
+</tr>	
+	</td>
+</tr>
+</table>
+</td>
+</tr>
+
+</table>
+
+<div class='ztitle'><b>Some Common Uses:</b></div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SPECL_DESC" TYPE="SPECL"><HTML><![CDATA[<!-- begin prod desc specl -->
+<%
+
+print("<div class='zcolor' style='padding:7px; margin-bottom:7px;'>");
+loadurp("CSS::zcolor.bgcolor");
+set($zcolor_bgcolor=>$_);
+set($image_loc=>"stock/layouts/p20060923/head_description");
+image(src=>$image_loc,library=>"proshop",h=>"22",w=>"86",p=>"1",bg=>$zcolor_bgcolor,tag=>"1");
+print();
+%>
+	<div style='padding:4px; margin-top:4px;' class='zbody ztxt' id='prodDetailElement'>
+<p>This is use for product layout p-20060923.</p>
+<p>dividentur, et populus populum superabit, et maior serviet minori. Itaque cum populus seu gens Iudaeorum anterior sit tempore et maior per gratiam primae dignationis in lege, noster vero minor.</p>
+	</div>
+</div>
+<!-- end prod desc specl -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CTJGCBG" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div style="margin:5px; width:auto; text-align:left;" class="zbox">
+<table cellspacing="0" cellpadding="0" width="100%" style="border-bottom: %ZBOX_BORDER%;">
+<tr>
+	<td width="95%" valign="top" style="padding:2px;" class="ztxt">
+	<div class="zcolor_dark" style="padding:4px; text-align:left; margin-bottom:2px;">SKU: PROD_NAME</div>
+	<p>This is use for product layout p-20061003.</p>
+	<p>dividentur, et populus populum superabit, et maior serviet minori. Itaque cum populus seu gens Iudaeorum anterior sit tempore et maior per gratiam primae dignationis in lege, noster vero minor.</p>
+	</td>
+	<td width="5%" valign="top" align="center" style="padding:2px; border-left: %ZBOX_BORDER%;" class="zbox_body">
+	<div class="zbox_head" style="padding:4px; text-align:center; width:120px;"><strong>Related Items</strong></div>
+	<div style="margin:5px; text-align:center;" class="ztable_row">Product List</div>
+	</td>
+</tr>
+</table>
+</div>
+
+
+</div>
+
+
+<div class='zcolor_contrast'>This is a div with zcolor contrast OUTSIDE the 600 pixel container.  Used to easily determine the width around the BODY element.  No style on this div.</div>
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

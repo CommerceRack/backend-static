@@ -1,0 +1,185 @@
+<TEMPLATE ID="pop_2011_crispnclean" FORMAT="WRAPPER">
+
+
+<!-- ******* -->
+<ELEMENT FORMAT="WRAPPER" ID="DEKFGOP" TYPE="CONFIG" CREATED="20110315" TITLE="Popup Theme: Crisp-n-Clean" SITEBUTTONS="default=2011_crispnclean|gif|102|30&amp;checkout=2011_crispnclean|png|130|43" SUBTYPE="P" RELEASED="20110315"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+.zborder { border: 1px solid #EDF2FD; }
+.zbox { border: 1px solid #f2f2f2; }
+.zbox_body { background-color: #ffffff; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 11px; }
+.zbox_head { background-color: #f2f2f2; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; }
+.zcolor { background-color: #f2f2f2; color: #3b3b3b; }
+.zcolor_contrast { background-color: #f46d0b; color: #FFFFFF; }
+.zcolor_dark { background-color: #bebebe; color: #000000; }
+.zcolor_light { background-color: #ffffff; color: #3b3b3b; }
+.zform_button { border: 1px solid #f89b21; background-color: #f89b21; color: #ffffff; font-size: 11px; font-family: "Gill Sans MT", tahoma, arial, sans-serif; }
+.zform_select { border: 1px solid #c4c4c4; background-color: #FFFFFF; color: #000000; font-size: 11px; font-family: "Gill Sans MT", tahoma, arial, sans-serif; }
+.zform_textarea { border: 1px solid #c4c4c4; background-color: #FFFFFF; color: #000000; font-size: 11px; font-family: "Gill Sans MT", tahoma, arial, sans-serif; }
+.zform_textbox { border: 1px solid #c4c4c4; background-color: #FFFFFF; color: #000000; font-size: 11px; font-family: "Gill Sans MT", tahoma, arial, sans-serif; }
+.zhint { color: #666666; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 11px; }
+.zlink { color: #3b3b3b; }
+.zsmall { color: #515151; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 11px; }
+.ztab0 { background-color: #f2f2f2; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; }
+.ztab1 { background-color: #ffffff; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; font-weight: bold;}
+.ztabbody { background-color: #ffffff; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; }
+.ztable_head { background-color: #efefef; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 13px; }
+.ztable_row {color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; }
+.ztable_row0 { background-color: #FFFFFF; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px;}
+.ztable_row1 { background-color: #f7f7f7; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px;}
+.ztable_row_small { color: #666666; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 10px; }
+.ztable_row_title { font-weight: bold; color: #f46d0b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 14px; }
+.ztitle { font-weight: bold; color: #666666; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 15px; }
+.ztitle2 { font-weight: bold; color: #f46d0b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 14px; }
+.ztxt { color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; }
+.zwarn { color: #cc0000; font-weight: bold; }]]></CSS>
+<THEME><![CDATA[alert_color=cc0000&content_background_color=ffffff&content_font_face=%22Gill+Sans+MT%22%2c+tahoma%2c+arial%2c+sans%2dserif&content_font_size=1&content_text_color=3b3b3b&disclaimer_background_color=ffffff&disclaimer_font_face=%22Gill+Sans+MT%22%2c+tahoma%2c+arial%2c+sans%2dserif&disclaimer_font_size=1&disclaimer_text_color=515151&link_active_text_color=3b3b3b&link_text_color=3b3b3b&link_visited_text_color=3b3b3b&name=&pretty_name=&table_heading_background_color=efefef&table_heading_font_face=%22Gill+Sans+MT%22%2c+tahoma%2c+arial%2c+sans%2dserif&table_heading_font_size=1&table_heading_text_color=3b3b3b&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=f7f7f7&table_listing_font_face=%22Gill+Sans+MT%22%2c+tahoma%2c+arial%2c+sans%2dserif&table_listing_font_size=1&table_listing_text_color=3b3b3b]]></THEME>
+</ELEMENT>
+<ELEMENT ID="WRAP_WRAPPER_URL" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_FILES_URL" SUB="FILES_URL" TYPE="READONLY" LOAD="URL::FILES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_GRAPHICS_URL" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_IMAGE_URL" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_NONSECURE_URL" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WIKI_TITLE1_OPEN" SUB="title1" TYPE="HIDDEN"><DEFAULT><![CDATA[<h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE1_CLOSED" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[</h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE2_OPEN" SUB="title2" TYPE="HIDDEN"><DEFAULT><![CDATA[<h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE2_CLOSED" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE3_OPEN" SUB="title3" TYPE="HIDDEN"><DEFAULT><![CDATA[<span style="font-weight:bold;">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE3_CLOSED" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</span>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILIST" SUB="list" TYPE="HIDDEN"><DEFAULT><![CDATA[<ul class="wiki_list">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLIST" SUB="/list" TYPE="HIDDEN"><DEFAULT><![CDATA[</ul>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILISTITEM" SUB="listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[<li class="wiki_listitem">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLISTITEM" SUB="/listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[</li>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKISECTION" SUB="section" TYPE="HIDDEN"><DEFAULT><![CDATA[<div class="wiki_section">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDSECTION" SUB="/section" TYPE="HIDDEN"><DEFAULT><![CDATA[</div>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIHARDBREAK" SUB="hardbreak" TYPE="SPECL"><HTML><![CDATA[<div style='background:#cccccc; height:1px; margin:5px 0px;'></div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKISOFTBREAK" SUB="softbreak" TYPE="SPECL"><HTML><![CDATA[<br />]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKITABLE" SUB="table" TYPE="HIDDEN"><DEFAULT><![CDATA[<table cellspacing="0" class="zborder">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLE" SUB="/table" TYPE="HIDDEN"><DEFAULT><![CDATA[</table>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEROW" SUB="tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[<tr class="ztablerow">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEROW" SUB="/tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[</tr>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLECELL" SUB="tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_row">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLECELL" SUB="/tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[</td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEHEAD" SUB="tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_head"><b>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_LOGO" HEIGHT="58" MINIMAL_MODE="1" WIDTH="300" SUB="WRAP_LOGO" BGCOLOR="TTTTTT" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C,P"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
+<POSTTEXT><![CDATA[</h1>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_CUSTOM_FOOTER" SUB="WRAP_FOOTER" TYPE="FOOTER"><HTML><![CDATA[
+<div>Copyright &copy; <% load($year);  print(); %>.  All Rights Reserved.</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="58" ID="TOPRIGHT_HEADER_DECAL1" WIDTH="200" PROMPT="Top right corner of header" SUB="WRAP_DECAL_HEADER1" TYPE="DECAL" DATA="wrapper:cnc_decal_topright1"><PRETEXT><![CDATA[<div class='floatRight marginLeft10 marginTop10' id='mastHeadDecal'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DOCTYPE_N_HEAD" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+
+
+
+
+
+
+
+<!DOCTYPE html >
+<html>
+<head>
+
+
+
+
+
+
+
+
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="DEFAULT_HEAD" TYPE="HEAD"></ELEMENT>
+<ELEMENT ID="PRE_BODYELEMENT_HTML" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+<link rel="stylesheet" type="text/css" href="%WRAPPER_URL%/cnc_global_styles.css" />
+
+
+</head>
+
+<body>
+
+<table cellspacing='0' cellpadding='0' align='center' width='90%'>
+<tr>
+	<td valign='top' width='1%'><img src='%WRAPPER_URL%/cnc_bshadow_left-32x490.png' width='32' height='490' alt='' /></td>
+
+	<td style=' background:#ffffff; ' valign='top' class='ztxt'>
+
+	<div style='background:url(%WRAPPER_URL%/cnc_tilesprite-1x705.png) repeat-x 0 -51px; height:110px;  z-index:10; position:relative; text-align:center; min-width:550px;'>
+		<div class='floatLeft marginTop20'>%WRAP_LOGO%</div>
+		<div class='floatRight marginTop20'>%WRAP_DECAL_HEADER1%</div>
+	</div>
+%WRAP_TITLE%
+	<div id='content'>
+
+
+
+
+
+
+<!--
+########  START OF BODY ELEMENT ########
+-->
+
+
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="YEPTHISISTHEBODYELEMENT" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="POST_BODYELEMENT_HTML" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+
+
+<!--
+########  END OF BODY ELEMENT ########
+-->
+
+	</div>	
+	</td>
+
+	<td valign='top' width='1%'><img src='%WRAPPER_URL%/cnc_bshadow_right-32x490.png' width='32' height='490' alt='' /></td>
+
+</tr>
+</table>
+
+<div class='center' id='mastFooter' style='padding-top:10px'>%WRAP_FOOTER%</div>
+
+
+</body>
+</html>
+
+
+
+]]></DEFAULT>
+</ELEMENT>
+
+</TEMPLATE>

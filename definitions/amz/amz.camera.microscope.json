@@ -1,0 +1,157 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "Microscope",
+      "subcat" : "microscope",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:Microscope",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXCX",
+      "xmlpath" : "CameraPhoto.ProductType.Microscope."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "digital-and-film-systems",
+            "v" : "digital-and-film-systems"
+         },
+         {
+            "p" : "educational-and-hobby",
+            "v" : "educational-and-hobby"
+         },
+         {
+            "p" : "laboratory",
+            "v" : "laboratory"
+         },
+         {
+            "p" : "stereo",
+            "v" : "stereo"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_microscope_microscopetype",
+      "title" : "Microscope Microscope Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Microscope.MicroscopeType",
+      "list" : "LIST_CAMERA_MICROSCOPE_MICROSCOPETYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "binocular",
+            "v" : "binocular"
+         },
+         {
+            "p" : "monocular",
+            "v" : "monocular"
+         },
+         {
+            "p" : "trinocular",
+            "v" : "trinocular"
+         },
+         {
+            "p" : "fixed-optics",
+            "v" : "fixed-optics"
+         },
+         {
+            "p" : "zoom-magnification",
+            "v" : "zoom-magnification"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_microscope_features",
+      "title" : "Microscope Features",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Microscope.Features",
+      "list" : "LIST_CAMERA_MICROSCOPE_FEATURES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

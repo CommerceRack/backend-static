@@ -1,0 +1,206 @@
+<TEMPLATE ID="h-20071024" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="PAGE_CSPDWSN" CREATOR="Zoovy: JT" V="3" CREATED="20071024" SUBTYPE="H" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Slideshow, product lists, banners and text"><SUMMARY><![CDATA[This layout features a slideshow element at the top, followed by a three item product list on the left and two banners on the right.  Below that is a 9 item product list and then an editable text block.  Each product list has a customizable header.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="UIONLYINSTRUCTIONS" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
+<p><b>Multiple Product Lists:</b>  For instructions on how to select different product lists for each of the list elements, visit: <ul style="margin-top:4px;"> <a href="http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361" target="webdoc">http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361</a></ul></p>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="240" ID="PAGE_CVKEIZI" EDITOR="INLINE" DATA="page:dynimage1" SUB="PAGE_SLIDESHOW" WIDTH="600" PROMPT="SlideShow" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST1_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List 1 Header" DEFAULT="Best Sellers" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT SIZE="5000" ID="PAGE_PRODLIST1" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 1 (1 column)" SUB="PAGE_PRODLIST1" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list 1 -->
+<div class='zbox zbox_body' id='zprodlist1'>
+	<div id='zprodlist1_header' class='zbox_head '>
+		<div style='padding:3px 8px; width:auto; text-align:left;' class='zprodlist1_header'><% loadurp("page:prodlist_header"); default("Best Sellers"); print(); %></div>
+	</div>
+	<div id='zprodlist1_content' class='zprodlist1_content'>
+<table border='0' cellpadding='0' cellspacing='5'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td class='ztable_row' valign='top' width='1%' align='center'>
+<div style='margin-bottom:3px; width:52px;' class='zborder zbody'><a href="<% print($PROD_URL); %>"><%
+loadurp("CSS::zbody.bgcolor"); set($BGCOLOR=>$_);
+load($zoovy:prod_thumb); default(""); default($zoovy:prod_image1);
+image(w=>"50",h=>"50",tag=>"1",bg=>$BGCOLOR,alt=>$zoovy:prod_name);
+print();
+
+%></a></div>
+	</td>
+	<td style='text-align:left; ' class='ztable_row'>
+	
+<div style='text-transform:capitalize;' class='no_underline'><a href="<% load($PROD_URL);  default("");  print(); %>" class='zlink'><% load($zoovy:prod_name); strip(length=>"85"); format(convert=>"lowercase"); default(""); print(); %></a></div>
+	
+<div style='font-weight:bold;' class='zprodlist_price'><% load($zoovy:base_price); default(""); format(money); format(pretext=>"only "); print(); %></div>
+
+<div align='right'>
+<div style='font-weight:bold;' class='no_underline zprodlist_details'><a href='<% print($PROD_URL); %>'>details</a></div>
+</div>
+
+	</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td class='ztable_row'> </td>
+<!-- /BLANK -->
+</tr>
+<tr>
+	<td colspan='2' style='border-top: <% loadurp("CSS::zborder.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>
+</tr>
+<!-- /ROW -->
+</table>
+</div>
+<div id='zprodlist1_footer'></div>
+<!-- /product list -->
+]]></HTML>
+<DIVIDER><![CDATA[<td><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>]]></DIVIDER>
+</ELEMENT>
+<ELEMENT ID="PAGE_BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Link for right-top banner" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="120" ID="PAGE_BANNER1" EDITOR="INLINE" DATA="page:banner1" SUB="PAGE_BANNER1" WIDTH="295" PROMPT="Right-top banner" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PAGE_PAGE_BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" PROMPT="Link for right-bottom banner" SUB="PAGE_BANNER2_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="120" ID="PAGE_BANNER2" EDITOR="INLINE" DATA="page:banner2" SUB="PAGE_BANNER2" WIDTH="295" PROMPT="Right-bottom banner" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST2_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header" DEFAULT="Featured Items" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT SIZE="5000" ID="PAGE_PRODLIST" MAX="9" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List" SUB="PAGE_PRODLIST2" TYPE="PRODLIST" DISABLEPRODUCTS="1" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<div  id='zprodlist2'>
+<div id='zprodlist2_header' class='zcolor'>
+	<div style='padding:3px 8px; text-align:left;' class='zprodlist2_header'><% loadurp("page:prodlist2_header"); default("Featured Items"); print(); %></div>
+</div>
+<div id='zprodlist2_content' class='zprodlist2_content'>
+<table border='0' cellpadding='0' cellspacing='5' width='100%'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td class='ztable_row ' align='center' valign='top' width='33%'>
+	<div style='width:127px;'>
+	<div style='margin-bottom:3px;' class='zborder'><a href="<% print($PROD_URL); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"125",h=>"125",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a></div>
+	</div>
+
+	<div style='text-transform:capitalize;' class='no_underline'><a href="<% print($PROD_URL); %>"><% load($zoovy:prod_name); strip(length=>"85"); format(convert=>"lowercase"); default(""); print(); %></a></div>
+	
+	<div class='ztable_row_title'><% load($zoovy:base_price); default(""); format(money); print(); %></div>
+
+	</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td> </td>
+<!-- /BLANK -->
+</tr>
+<tr>
+	<td colspan='5' style='border-top: <% loadurp("CSS::zborder.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>
+</tr>
+<!-- /ROW -->
+</table>
+</div>
+</div>
+
+<!-- /product list -->
+]]></HTML>
+<DIVIDER><![CDATA[<td style='border-left: <% loadurp("CSS::zborder.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>]]></DIVIDER>
+</ELEMENT>
+<ELEMENT ID="PAGE_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="PAGE_DESC" PROMPT="Text Description" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:3px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PAGE_CSPDWSO" TYPE="OUTPUT"><HTML><![CDATA[
+
+<script language="JavaScript">
+<!--
+function iList () {
+	this.name = '';
+	this.img = new Array();
+	this.url = new Array();
+	this.zum = new Array();
+	this.pause = new Array();
+	this.last = null;
+	this.current = null;
+	this.defaultpause = 2000;
+	this.buttons = false;
+	this.stopped = false;
+	this.loaded = false;
+	this.startstop = false;
+}
+function iLoad (i) {
+	if (i.loaded == true) { return; }
+	i.loaded = true;
+	iRotate(i);
+}
+function iLink (i) {
+	if (!i.loaded) { return; }
+	if (typeof(i.url[i.current]) != "undefined") { window.location.href = i.url[i.current]; }
+	else if (typeof(i.zum[i.current]) != "undefined") { zoom(i.zum[i.current]); }
+	else if (i.startstop) { iSwitch(i); }
+}
+function iSwitch (i) {
+	if (!i.loaded) { return; }
+	if (i.stopped) { i.stopped = false; iRotate(i); }
+	else { i.stopped = true; }
+}
+function iRotate (i) {
+	if (i.stopped) { return; }
+	iNext(i);
+	var pause = i.defaultpause;
+	if (typeof(i.pause[i.current]) != "undefined") { pause = i.pause[i.current]; }
+	setTimeout("iRotate("+i.name+")",pause);
+}
+function iNext (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Loading..."; }
+	i.current++; if (i.current > i.last) { i.current = 0; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Next Image"; }
+}
+function iPrev (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Loading..."; }
+	i.current--; if (i.current < 0) { i.current = i.last; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Previous Image"; }
+}
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write("<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align=\"center\">\n<img src=\"" + url + "\"><br>\n<form><input type=\"button\" value=\"Close Window\" onClick=\"self.close(true)\"></form>\n</div>\n</body>\n</html>\n");
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script> 
+
+
+<div align='center'  id='h_20071024'>
+	<div style='width:600px; text-align:left;'>
+
+<div style='margin-bottom:3px;'>%PAGE_SLIDESHOW%</div>
+
+<div style='margin-bottom:3px;'>
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr>
+	<td valign='top' width='50%'>%PAGE_PRODLIST1%</td>
+	<td valign='top' width='50%' style='padding-left:3px;'>
+<div style='margin-bottom:3px;'>%PAGE_BANNER1%</div>
+<div>%PAGE_BANNER2%</div>
+	</td>
+</tr>
+</table>
+</div>
+
+
+<div>%PAGE_PRODLIST2%</div>
+
+
+
+<div>%PAGE_DESC%</div>
+
+	</div>
+</div>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

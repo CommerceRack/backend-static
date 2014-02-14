@@ -1,0 +1,90 @@
+<!-- CONFIG
+THEME=l2_schmoop2
+SITEBUTTONS=l2_schmoop2
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- HEAD -->
+<style type="text/css">
+body	{margin: 0px;}
+body, td, li, ol, ul, p {font-family: verdana, Helvetica, sans-serif; color: #000000;}
+a	{color: #000066;}
+a:hover	{color: #BCC6E1;}
+h1	{margin: 0px; font-size: 12pt; color: #6374AA;}
+.menu	{font-size: 9pt; color: #000000;}
+.cats	{font-size: 9pt; text-decoration: none;}
+
+.cat_bg	{background-color: #F0F0F0;}
+.cat_stroke	{background-color: #000066;}
+
+.formed	{border-style: solid; border-width: 1px; border-color: #000066; background-color: #FFFFFF; color: #000000; font-family: verdana, Helvetica, sans-serif; font-size: 9pt;}
+.button	{border-style: solid; border-width: 1px; border-color: #000066; background-color: #F0F0F0; font-family: verdana, Helvetica, sans-serif; font-size: 8pt; color: #000066;}
+</style>
+</head>
+
+<body>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td background="<!-- WRAPPER_URL -->/menu_bg.gif" height=32 width="99%"><span class="menu">&nbsp;&nbsp;<a href="<!-- HOME_URL -->">Home</a>&nbsp;|&nbsp;<a href="<!-- ABOUT_URL -->">About Us</a>&nbsp;|&nbsp;<a href="<!-- CONTACT_URL -->">Contact Us</a>&nbsp;|&nbsp;<a href="<!-- CART_URL -->">Cart</a>&nbsp;|&nbsp;<a href="<!-- CHECKOUT_URL -->">Checkout</a>
+</span></td>
+	<td background="<!-- WRAPPER_URL -->/menu_bg.gif" width="1%"><table cellspacing=2 cellpadding=0><form action="<!-- RESULTS_URL -->" method="get"><input type="hidden" name="catalog" value=""><tr>
+		<td><input type="text" name="keywords" class="formed" value=""></td>
+		<td><input type="submit" value="Search" class="button"></td>
+	</tr></form></table></td>
+</tr><tr>
+	<td height=1 colspan=2 class="cat_stroke"></td>
+</tr></table>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td width="50%" align="left"><a href="<!-- HOME_URL -->"><!-- LOGO
+HEIGHT=85
+WIDTH=300
+--></a></td>
+	<td width="50%" align="right"><img src="<!-- WRAPPER_URL -->/graphic.jpg" width="406" height="93"></td>
+</tr><tr>
+	<td height=1 colspan=2 class="cat_stroke"></td>
+</tr><tr>
+	<td height=18 colspan=2 class="cat_bg"><span class="menu">&nbsp;&nbsp;<!-- MENU
+FORMAT=<a href="%URL%" class="cats" target="%TARGET%">%MESSAGE%</a>
+DIVIDER=&nbsp;|&nbsp;
+NOHOME=1
+--></span></td>
+</tr><tr>
+	<td height=1 colspan=2 class="cat_stroke"></td>
+</tr><tr>
+	<td colspan=2 background="<!-- WRAPPER_URL -->/cats_shadow.gif"><img src="<!-- WRAPPER_URL -->/cats_shadow.gif" width="1" height="9"></td>
+</tr></table>
+<table width="100%"><tr><td valign="top" height=300>
+<h1><!-- TITLE --></h1>
+<!-- BODY -->
+</td></tr></table>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td background="<!-- WRAPPER_URL -->/menu_bg.gif" height=32 width="99%" NOWRAP><span class="menu">&nbsp;&nbsp;Items in Cart: <!-- MINICART
+ITEMSONLY=1
+-->&nbsp;&nbsp;|&nbsp;&nbsp;Subtotal:&nbsp;<!-- MINICART
+SUBTOTALONLY=1
+--></span></td>
+	<td background="<!-- WRAPPER_URL -->/menu_bg.gif" height=32 width="1%"><table cellspacing=2 cellpadding=0><tr><form action="<!-- LOGIN_URL -->" method="post" target="_self"><input type="hidden" name="mode" value="check"><input type="hidden" name="url" value="<!-- CUSTOMER_MAIN_URL -->">
+<td><span class="menu">Email:&nbsp;</span></td>
+<td><input type="text" size="14" maxlength="50" name="login" value="" class="formed"></td>
+<td><span class="menu">&nbsp;&nbsp;Password:&nbsp;</span></td>
+<td><input type="password" size="14" maxlength="50" name="password" value="" class="formed"></td>
+<td><input type="submit" name="submit" value="Login" class="button"></td>
+</form>
+	</tr></table></td>
+</tr><tr>
+	<td height=1 colspan=2 class="cat_stroke"></td>
+</tr><tr><td colspan=2 height=4></td></tr><tr>
+	<td height=1 colspan=2 class="cat_stroke"></td>
+</tr><tr>
+	<td height=18 colspan=2 class="cat_bg"><!-- FOOTER
+TRANSPARENT=TRUE
+--></td>
+</tr><tr>
+	<td height=1 colspan=2 class="cat_stroke"></td>
+</tr><tr>
+	<td colspan=2 background="<!-- WRAPPER_URL -->/cats_shadow.gif"><img src="<!-- WRAPPER_URL -->/cats_shadow.gif" width="1" height="9"></td>
+</tr></table>
+</body>
+</html>

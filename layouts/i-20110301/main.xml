@@ -1,0 +1,668 @@
+<TEMPLATE ID="i-20110301" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CONFIGED" CREATED="00000000" SUBTYPE="I" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Banners and Products (2011)" NEWSLETTER="1" RELEASED="00000000"><SUMMARY><![CDATA[A short header with user-defined links as well as social icons followed by an assortment of banners, text and product lists.]]></SUMMARY>
+<CSS><![CDATA[.zbody { background-color: #ffffff; }
+.zborder { border: 1px dotted #595959; }
+.zbox { border: 1px solid #bdbdbd; }
+.zbox_body { background-color: #f1f2f3; color: #000000; font-family: verdana, arial, helvetica; font-size: 8pt; }
+.zbox_head { background-color: #bccad3; color: #393939; font-family: verdana, arial, helvetica; font-size: 9pt; }
+.zcolor { background-color: #ca8029; color: #ffffff; }
+.zcolor_contrast { background-color: #bccad3; color: #393939; }
+.zcolor_dark { background-color: #333333; color: #ffffff; }
+.zcolor_light { background-color: #fff3d0; color: #393939; }
+.zform_button { border: 1px solid #beb47c; background-color: #beb47c; color: #444444; font-size: 8pt; font-family: verdana, arial, helvetica; }
+.zform_select { border: 1px solid #7f9db9; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: verdana, arial, helvetica; }
+.zform_textarea { border: 1px solid #7f9db9; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: verdana, arial, helvetica; }
+.zform_textbox { border: 1px solid #7f9db9; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: verdana, arial, helvetica; }
+.zhint { color: #bccad3; font-family: verdana, arial, helvetica; font-size: 7pt; }
+.zlink { color: #ee9100; }
+.zsmall { color: #515151; font-family: verdana, arial, helvetica; font-size: 7pt; }
+.ztab0 { background-color: #ee9100; color: #FFFFFF; font-family: verdana, arial, helvetica; font-size: 8pt; }
+.ztab1 { background-color: #f1f2f3; color: #393939; font-family: verdana, arial, helvetica; font-size: 8pt; font-weight: bold;}
+.ztabbody { background-color: #f1f2f3; color: #000000; font-family: verdana, arial, helvetica; font-size: 8pt; }
+.ztable_head { background-color: #e5ebee; color: #393939; font-family: verdana, arial, helvetica; font-size: 9pt; }
+.ztable_row {color: #8b8c8c; font-family: verdana, arial, helvetica; font-size: 8pt; }
+.ztable_row0 { background-color: #FFFFFF; color: #8b8c8c; font-family: verdana, arial, helvetica; font-size: 8pt;}
+.ztable_row1 { background-color: #fff9d3; color: #8b8c8c; font-family: verdana, arial, helvetica; font-size: 8pt;}
+.ztable_row_small { color: #666666; font-family: verdana, arial, helvetica; font-size: 7pt; }
+.ztable_row_title { font-weight: bold; color: #393939; font-family: verdana, arial, helvetica; font-size: 9pt; }
+.ztitle { font-weight: bold; color: #393939; font-family: verdana, arial, helvetica; font-size: 10pt; }
+.ztitle2 { font-weight: bold; color: #666666; font-family: verdana, arial, helvetica; font-size: 10pt; }
+.ztxt { color: #000000; font-family: verdana, arial, helvetica; font-size: 8pt; }
+.zwarn { color: #660000; font-weight: bold; }]]></CSS>
+</ELEMENT>
+<ELEMENT ID="CPVRQCT" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCZ" RAW="1" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDD" RAW="1" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDI" RAW="1" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDM" RAW="1" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDQ" RAW="1" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDV" RAW="1" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDW" RAW="1" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEB" RAW="1" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL"></ELEMENT>
+<ELEMENT ID="CPVRQED" RAW="1" SUB="CUSTOMER_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEF" RAW="1" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEK" RAW="1" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEL" RAW="1" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL"></ELEMENT>
+<ELEMENT ID="VAR_USERNAME" DATA="FLOW::USERNAME" SUB="USERNAME" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="VAR_POPUPTHEME" RAW="1" SUB="POPUP_THEME" TYPE="READONLY" LOAD="profile:zoovy:popup_wrapper"></ELEMENT>
+<ELEMENT ID="CQHREXQ" SUB="title1" TYPE="SPECL"><HTML><![CDATA[<h2 style='font-size:15px; font-weight:bold; margin:0; color: <% loadurp("CSS::ztitle.color"); default("#666666"); print(); %>'>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQHREXR" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[</h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXS" SUB="title2" TYPE="SPECL"><HTML><![CDATA[<h3 style='font-size:13px; font-weight:bold; margin:0; color: <% loadurp("CSS::ztitle2.color"); default("#666666"); print(); %>'>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQHREXT" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXU" SUB="title3" TYPE="HIDDEN"><DEFAULT><![CDATA[<span style="font-weight:bold;">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXV" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</span>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILIST" SUB="list" TYPE="HIDDEN"><DEFAULT><![CDATA[<ul class="wiki_list">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLIST" SUB="/list" TYPE="HIDDEN"><DEFAULT><![CDATA[</ul>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILISTITEM" SUB="listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[<li class="wiki_listitem">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLISTITEM" SUB="/listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[</li>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKISECTION" SUB="section" TYPE="HIDDEN"><DEFAULT><![CDATA[<p class="wiki_section">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDSECTION" SUB="/section" TYPE="HIDDEN"><DEFAULT><![CDATA[</p>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIHARDBREAK" SUB="hardbreak" TYPE="SPECL"><HTML><![CDATA[<hr />]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKISOFTBREAK" SUB="softbreak" TYPE="SPECL"><HTML><![CDATA[<br />]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKITABLE" SUB="table" TYPE="HIDDEN"><DEFAULT><![CDATA[<table cellspacing="0" cellpadding="3">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLE" SUB="/table" TYPE="HIDDEN"><DEFAULT><![CDATA[</table>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEROW" SUB="tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[<tr>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEROW" SUB="/tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[</tr>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLECELL" SUB="tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[<td style='font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#333333;'>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLECELL" SUB="/tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[</td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEHEAD" SUB="tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[<td  style='font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#ffffff; background:#666666; font-weight:bold;'><b>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_LOGO" HEIGHT="107" MINIMAL_MODE="0" WIDTH="276" SUB="NEWS_LOGO" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPZWXCS" RAW="1" SUB="NEWS_PHONE" TYPE="READONLY" LOAD="profile:zoovy:support_phone"><PRETEXT><![CDATA[<div style='color:#808184; font-size:12px;'>Questions? Call</div><div style='color:#231f20; font-size:14px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DATE" EDITOR="INLINE" DATA="page:send_date" PROMPT="Newsletter send date (03/02/2011 for example)" SUB="NEWS_DATE" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="TWITTER_LINK" EDITOR="INLINE" DATA="profile:twitter:userid" PROMPT="Twitter ID (shared)" SUB="UI_ONLY" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="DEHTRJK" SUB="NEWS_LINK_TWITTER" TYPE="SPECL"><HTML><![CDATA[
+<%
+print("");
+loadurp("profile:twitter:userid"); default("");
+stop(unless=>$_);
+	set($TWITID=>$_);
+	print("<div style='float:left; margin-right:3px;'><a href='http://twitter.com/");
+	print($TWITID);
+	print("'><img src='%GRAPHICS_URL%/socialb_logos/simple-16x16/twitter-16x16.png' width='16' height='16' alt='twitter' border='0' /></a></div><div style='float:left; margin-right:10px;'><a href='http://twitter.com/");
+	print($TWITID);
+	print("' style='text-decoration:none; color:#404041;'>Twitter</a></div>");
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="FACEBOOK_LINK" EDITOR="INLINE" DATA="profile:facebook:url" PROMPT="Facebook URL (shared)" SUB="UI_ONLY" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="DEHTRJL" SUB="NEWS_LINK_FACEBOOK" TYPE="SPECL"><HTML><![CDATA[
+<%
+print("");
+loadurp("profile:facebook:url"); default("");
+stop(unless=>$_);
+	set($FACEURL=>$_);
+	print("<div style='float:left; margin-right:3px;'><a href='");
+	print($FACEURL);
+	print("'><img src='%GRAPHICS_URL%/socialb_logos/simple-16x16/facebook-16x16.png' width='16' height='16' alt='twitter' border='0' /></a></div><div style='float:left; margin-right:10px;'><a href='");
+	print($FACEURL);
+	print("' style='text-decoration:none; color:#404041;'>Facebook</a></div>");
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEHTRJM" EDITOR="INLINE" FALSE="" DATA="merchant:zoovy:news_amex" PROMPT="American Express Logo" SUB="AMEX_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_amex_tiny.gif' border='0'></div>]]></TRUE>
+</ELEMENT>
+<ELEMENT ID="DEHTRJN" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_visa" PROMPT="Visa Logo" SUB="VISA_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_visa_tiny.gif' border='0'></div>]]></TRUE>
+</ELEMENT>
+<ELEMENT ID="DEHTRJO" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_mastercard" PROMPT="Mastercard Logo" SUB="MCARD_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_mc_tiny.gif' border='0'></div>]]></TRUE>
+</ELEMENT>
+<ELEMENT ID="DEHTRJP" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_discover" PROMPT="Discover Logo" SUB="DISCOVER_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_novus_tiny.gif' border='0'></div>]]></TRUE>
+</ELEMENT>
+<ELEMENT ID="DEHTRJQ" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_paypal" PROMPT="PayPal Logo" SUB="PAYPAL_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/paypal-33x21.gif' border='0'></div>]]></TRUE>
+</ELEMENT>
+<ELEMENT ID="DEHTRJR" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_googlecheckout" PROMPT="Google Checkout Logo" SUB="GOOGLE_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/google_checkout-33x21.gif' border='0'></div>]]></TRUE>
+</ELEMENT>
+<ELEMENT ID="DEHTRJS" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_amazonpayments" PROMPT="Amazon Payments Logo" SUB="AMAZON_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/amazon_payments-33x21.gif'></div>]]></TRUE>
+</ELEMENT>
+<ELEMENT ID="DEHTRJT" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<style type='text/css'>
+a	{text-decoration:none; color:#404041;}
+</style>
+</head>
+
+<body style='font-size:12px; color:#231f20; font-family:Arial, Helvetica, sans-serif'>
+
+<div style='background:#f2f2f2;' align='center'>
+
+<table cellspacing='0' cellpadding='0'>
+<tr>
+	<td></td>
+	<td width='600' bgcolor='#ffffff' style='font-size:12px; color:#231f20; font-family:Arial, Helvetica, sans-serif'>
+	<div style='background:#efefef; border-bottom:1px solid #cccccc; padding:2px 10px; font-size:11px;'>
+	<a href='%HOME_URL%?VERB=DISPLAY_HTML&PG=%CAMPAIGN%'>Trouble viewing this email? Click here to view in a browser.</a>
+	</div>
+
+<!-- mast head -->
+<div style='padding:10px;'>
+	<div style='float:left;'><a href='%HOME_URL%'>%NEWS_LOGO%</a></div>
+	<div style='float:right; width:294px;'>
+	
+		<div style='float:right; padding-left:15px; text-align:right;'>
+
+<div><a href='%CUSTOMER_URL%' style='text-decoration:none; color:#404041;'>My Account</a> | <a href='%CONTACT_URL%' style='text-decoration:none; color:#404041;'>Contact</a></div>
+
+<div style='clear:both; margin-top:5px;'>%AMEX_LOGO%%VISA_LOGO%%MCARD_LOGO%%DISCOVER_LOGO%%PAYPAL_LOGO%%GOOGLE_LOGO%%AMAZON_LOGO%</div>	
+
+		</div>
+
+		<div style='float:right; text-align:left;'>%NEWS_PHONE%</div>
+		
+		<div style='clear:both; padding-top:8px; width:294px;'>
+		
+		
+		
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER_BANNER" HEIGHT="60" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_top" PROMPT="Banner: in header (294x60)" WIDTH="294" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<!-- BANNER: <% print($ID); %> --><% load($PRETEXT); default(""); print(); %><a id="<% print($ID); %>_href" title="<% 
+load($ALT); default(""); format(encode=>"entity"); print(); 
+%>" href="<%
+load($LINKURL); default("#"); format(rewrite); print();
+%>">
+<img border="0" height="<% print($HEIGHT); %>" width="<% print($WIDTH); %>" id="<% print($ID); %>_img" src="<%
+print($IMGURL);
+%>" alt="<% load($ALT); default(""); format(encode=>"entity"); print(); %>" />
+</a><% load($POSTTEXT); default(""); print(); %><!-- /BANNER: <% print($ID); %> -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEHTRJU" TYPE="OUTPUT"><HTML><![CDATA[
+		
+		
+		
+		</div>
+		
+		
+	
+	</div>
+</div>
+
+<div style='clear:both;'></div>
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="TOP_NAV" WIKI="3" EDITOR="INLINE" DATA="page:wiki_links_header" PROMPT="Wiki based links for top nav" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Use wiki to add some links to the top of the newsletter. Putting a pipe between each link will help create nice separation.  A limited amount of horizontal space is available. If more links/text is added then space available, cropping will occur.]]></HELPER>
+<POSTTEXT><![CDATA[
+	
+	</span></div>
+	<div><img src='%LAYOUT_URL%/s11a_headerbot-1x5.gif' width='600' height='5' alt='' /></div>
+</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[
+<!-- wiki nav header links -->
+<div>
+	<div><img src='%LAYOUT_URL%/s11a_headertop-1x5.gif' width='600' height='5' alt='' /></div>
+	<div style='width:600px; overflow:hidden; height:18px; line-height:18px; font-size:12px;'><span style='padding:0 10px;'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="DEHTRJV" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+
+
+
+<!-- social links and timestamp -->
+<div style='padding:4px 10px; border-bottom:2px solid #d0d2d3; font-size:11px; margin-bottom:10px; line-height:16px;'>
+
+	<div style='float:right;'>%NEWS_DATE%</div>
+
+	<div style='float:left; padding-right:10px;'>%NEWS_LINK_FACEBOOK%</div>
+
+	<div style='float:left; padding-right:10px;'>%NEWS_LINK_TWITTER%</div>
+	<div style='clear:both;'></div>
+</div>
+
+<!-- main banner and trio -->
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MAIN_BANNER" HEIGHT="580" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_main" PROMPT="Banner: main (580x580)" WIDTH="580" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<!-- BANNER: <% print($ID); %> -->
+<div style='padding-bottom:10px;' align='center'>
+<a id="<% print($ID); %>_href" title="<% 
+load($ALT); default(""); format(encode=>"entity"); print(); 
+%>" href="<%
+load($LINKURL); default("#"); format(rewrite); print();
+%>">
+<img border="0" height="<% print($HEIGHT); %>" width="<% print($WIDTH); %>" id="<% print($ID); %>_img" src="<%
+print($IMGURL);
+%>" alt="<% load($ALT); default(""); format(encode=>"entity"); print(); %>" />
+</a>
+</div>
+<!-- /BANNER: <% print($ID); %> -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BANNER_TRIO_LEFT" HEIGHT="112" MINIMAL="0" EDITOR="INLINE" DATA="page:banner_trioleft" PROMPT="Banner: trio on left (186x112)" WIDTH="186" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<!-- BANNER: <% print($ID); %> -->
+<div style='padding-bottom:10px; float:left; padding-left:10px;'>
+<a id="<% print($ID); %>_href" title="<% 
+load($ALT); default(""); format(encode=>"entity"); print(); 
+%>" href="<%
+load($LINKURL); default("#"); format(rewrite); print();
+%>">
+<img border="0" height="<% print($HEIGHT); %>" width="<% print($WIDTH); %>" id="<% print($ID); %>_img" src="<%
+print($IMGURL);
+%>" alt="<% load($ALT); default(""); format(encode=>"entity"); print(); %>" />
+</a>
+</div>
+<!-- /BANNER: <% print($ID); %> -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BANNER_TRIO_CENTER" HEIGHT="112" MINIMAL="0" EDITOR="INLINE" DATA="page:banner_triocenter" PROMPT="Banner: trio on left (187x112)" WIDTH="187" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<!-- BANNER: <% print($ID); %> -->
+<div style='padding-bottom:10px; float:left; padding-left:10px;'>
+<a id="<% print($ID); %>_href" title="<% 
+load($ALT); default(""); format(encode=>"entity"); print(); 
+%>" href="<%
+load($LINKURL); default("#"); format(rewrite); print();
+%>">
+<img border="0" height="<% print($HEIGHT); %>" width="<% print($WIDTH); %>" id="<% print($ID); %>_img" src="<%
+print($IMGURL);
+%>" alt="<% load($ALT); default(""); format(encode=>"entity"); print(); %>" />
+</a>
+</div>
+<!-- /BANNER: <% print($ID); %> -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BANNER_TRIO_RIGHT" HEIGHT="112" MINIMAL="0" EDITOR="INLINE" DATA="page:banner_trioright" PROMPT="Banner: trio on right (186x112)" WIDTH="186" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<!-- BANNER: <% print($ID); %> -->
+<div style='padding-bottom:10px; float:right; padding-right:10px;'>
+<a id="<% print($ID); %>_href" title="<% 
+load($ALT); default(""); format(encode=>"entity"); print(); 
+%>" href="<%
+load($LINKURL); default("#"); format(rewrite); print();
+%>">
+<img border="0" height="<% print($HEIGHT); %>" width="<% print($WIDTH); %>" id="<% print($ID); %>_img" src="<%
+print($IMGURL);
+%>" alt="<% load($ALT); default(""); format(encode=>"entity"); print(); %>" />
+</a>
+</div>
+<!-- /BANNER: <% print($ID); %> -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+
+<div style='clear:both;'></div>
+<div style='margin-bottom:10px; width:auto; padding:10px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DEHTRJW" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div style='clear:both;'></div>
+
+<!-- section 1 -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SECTION1BANNER" HEIGHT="133" MINIMAL="0" EDITOR="INLINE" DATA="page:section1_banner" PROMPT="Section 1: banner (186x133)" WIDTH="186" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<!-- BANNER: <% print($ID); %> -->
+<div style='padding:0 10px 10px 10px; float:left;'>
+<a id="<% print($ID); %>_href" title="<% 
+load($ALT); default(""); format(encode=>"entity"); print(); 
+%>" href="<%
+load($LINKURL); default("#"); format(rewrite); print();
+%>">
+<img border="0" height="<% print($HEIGHT); %>" width="<% print($WIDTH); %>" id="<% print($ID); %>_img" src="<%
+print($IMGURL);
+%>" alt="<% load($ALT); default(""); format(encode=>"entity"); print(); %>" />
+</a>
+</div>
+<!-- /BANNER: <% print($ID); %> -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SECTION1_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section1_description" PROMPT="Section 1: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<div style='padding:0 10px 10px 10px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DEHTRJX" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+<div style='clear:both;'></div>
+
+<!-- section 2 -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEHTRJY" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section2_header" PROMPT="Section 2: title" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[
+	</div>
+	<div><img src='%LAYOUT_URL%/s11a_headerbot-1x5.gif' width='600' height='5' alt='' /></div>
+</div>
+]]></POSTTEXT>
+<PRETEXT><![CDATA[
+
+<div style='margin-bottom:10px;'>
+	<div><img src='%LAYOUT_URL%/s11a_headertop-1x5.gif' width='600' height='5' alt='' /></div>
+	<div style='height:18px; line-height:18px; font-size:14px; padding:0 10px; font-weight:bold;'>
+	
+]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="SECTION2_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section2_description" PROMPT="Section 2: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<div style='padding:0 10px 10px 10px; width:auto;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="SECTION2_BANNER1" HEIGHT="185" MINIMAL="0" EDITOR="INLINE" DATA="page:section2_banner1" PROMPT="Section 2: banner 1 (185x185)" WIDTH="185" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<!-- BANNER: <% print($ID); %> -->
+<div style='float:left; padding:0 0 10px 10px;'>
+	<div style='border:1px solid #919293;'><div style='width:<% print($WIDTH); %>px ;'>
+	<div><a id="<% print($ID); %>_href" title="<% 
+	load($ALT); default(""); format(encode=>"entity"); print(); 
+	%>" href="<%
+	load($LINKURL); default("#"); format(rewrite); print();
+	%>"><img border="0" height="<% print($HEIGHT); %>" width="<% print($WIDTH); %>" id="<% print($ID); %>_img" src="<%
+	print($IMGURL);
+	%>" alt="<% load($ALT); default(""); format(encode=>"entity"); print(); %>" /></a></div>
+	<div style='padding:4px; text-align:right; font-size:12px; background:#919293;'>
+	<a href="<% load($LINKURL); default("#"); format(rewrite); print(); %>" style='color:#ffffff; text-decoration:none;'>
+	<% load($ALT); default(""); format(encode=>"entity"); print(); %> &#187;
+	</a>
+	</div>
+	</div></div>
+</div>
+<!-- /BANNER: <% print($ID); %> -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SECTION2_BANNER2" HEIGHT="185" MINIMAL="0" EDITOR="INLINE" DATA="page:section2_banner2" PROMPT="Section 2: banner 2 (185x185)" WIDTH="185" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<!-- BANNER: <% print($ID); %> -->
+<div style='float:left; padding:0 0 10px 10px;'>
+	<div style='border:1px solid #919293;'><div style='width:<% print($WIDTH); %>px ;'>
+	<div><a id="<% print($ID); %>_href" title="<% 
+	load($ALT); default(""); format(encode=>"entity"); print(); 
+	%>" href="<%
+	load($LINKURL); default("#"); format(rewrite); print();
+	%>"><img border="0" height="<% print($HEIGHT); %>" width="<% print($WIDTH); %>" id="<% print($ID); %>_img" src="<%
+	print($IMGURL);
+	%>" alt="<% load($ALT); default(""); format(encode=>"entity"); print(); %>" /></a></div>
+	<div style='padding:4px; text-align:right; font-size:12px; background:#919293;'>
+	<a href="<% load($LINKURL); default("#"); format(rewrite); print(); %>" style='color:#ffffff; text-decoration:none;'>
+	<% load($ALT); default(""); format(encode=>"entity"); print(); %> &#187;
+	</a>
+	</div>
+	</div></div>
+</div>
+<!-- /BANNER: <% print($ID); %> -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SECTION2_BANNER3" HEIGHT="185" MINIMAL="0" EDITOR="INLINE" DATA="page:section2_banner3" PROMPT="Section 2: banner 3 (185x185)" WIDTH="185" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<!-- BANNER: <% print($ID); %> -->
+<div style='float:left; padding:0 0 10px 10px;'>
+	<div style='border:1px solid #919293;'><div style='width:<% print($WIDTH); %>px ;'>
+	<div><a id="<% print($ID); %>_href" title="<% 
+	load($ALT); default(""); format(encode=>"entity"); print(); 
+	%>" href="<%
+	load($LINKURL); default("#"); format(rewrite); print();
+	%>"><img border="0" height="<% print($HEIGHT); %>" width="<% print($WIDTH); %>" id="<% print($ID); %>_img" src="<%
+	print($IMGURL);
+	%>" alt="<% load($ALT); default(""); format(encode=>"entity"); print(); %>" /></a></div>
+	<div style='padding:4px; text-align:right; font-size:12px; background:#919293;'>
+	<a href="<% load($LINKURL); default("#"); format(rewrite); print(); %>" style='color:#ffffff; text-decoration:none;'>
+	<% load($ALT); default(""); format(encode=>"entity"); print(); %> &#187;
+	</a>
+	</div>
+	</div></div>
+</div>
+<!-- /BANNER: <% print($ID); %> -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEHTRJZ" TYPE="OUTPUT"><HTML><![CDATA[
+<!--
+%NEWS_SECTION2_BANNER4%
+%NEWS_SECTION2_BANNER5%
+%NEWS_SECTION2_BANNER6%
+%NEWS_SECTION2_BANNER7%
+%NEWS_SECTION2_BANNER8%
+%NEWS_SECTION2_BANNER9%
+-->
+<div style='clear:both;'></div>
+
+
+<!-- section 3 -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEHTRKA" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section3_header" PROMPT="Section 3: title" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[
+	</div>
+	<div><img src='%LAYOUT_URL%/s11a_headerbot-1x5.gif' width='600' height='5' alt='' /></div>
+</div>
+]]></POSTTEXT>
+<PRETEXT><![CDATA[
+
+<div style='margin-bottom:10px;'>
+	<div><img src='%LAYOUT_URL%/s11a_headertop-1x5.gif' width='600' height='5' alt='' /></div>
+	<div style='height:18px; line-height:18px; font-size:14px; padding:0 10px; font-weight:bold;'>
+	
+]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="SECTION3_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section3_description" PROMPT="Section 3: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<div style='padding:0 10px 10px 10px; width:auto;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST_SECTION3" SIZE="9" MAX="9" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="page:section3_prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Section 3: product list (nine item max)" TYPE="PRODLIST" SRC="page:section3_prodlist_stuff"><HTML><![CDATA[
+<table border='0' cellpadding='5' cellspacing='10' align='center'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td class='ztable_row' valign='top' align='left' width='33%' style='border:1px solid #919293; font-size:11px; font-family:Arial, Helvetica, sans-serif;'>
+	<div><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"175",h=>"175",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a></div>
+	<div style='padding-top:10px;'>
+		<div><a href="<% load($PROD_URL);  default("");  print(); %>" style='text-decoration:none; color:#333333;'><% load($zoovy:prod_name); default(""); print(); %></a></div>
+	
+		<div style='font-weight:bold; font-size:12px;'><% load($zoovy:base_price);  default("");  format(money);  print(); %></div>
+	</div>
+	</td>
+<!-- /PRODUCT -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEHTRKB" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div style='clear:both;'></div>
+
+
+<!-- section 4 -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEHTRKC" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section4_header" PROMPT="Section 4: title" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[
+	</div>
+	<div><img src='%LAYOUT_URL%/s11a_headerbot-1x5.gif' width='600' height='5' alt='' /></div>
+</div>
+]]></POSTTEXT>
+<PRETEXT><![CDATA[
+
+<div style='margin-bottom:10px;'>
+	<div><img src='%LAYOUT_URL%/s11a_headertop-1x5.gif' width='600' height='5' alt='' /></div>
+	<div style='height:18px; line-height:18px; font-size:14px; padding:0 10px; font-weight:bold;'>
+	
+]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="SECTION4_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section4_description" PROMPT="Section 4: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<div style='padding:0 10px 10px 10px; width:auto;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST_SECTION4" SIZE="9" MAX="9" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="page:section4_prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Section 4: product list (nine item max)" TYPE="PRODLIST" SRC="page:section4_prodlist_stuff"><HTML><![CDATA[
+<table border='0' cellpadding='5' cellspacing='10' align='center'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td class='ztable_row' valign='top' align='left' width='33%' style='border:1px solid #919293; font-size:11px; font-family:Arial, Helvetica, sans-serif;'>
+	<div><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"175",h=>"175",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a></div>
+	<div style='padding-top:10px;'>
+		<div><a href="<% load($PROD_URL);  default("");  print(); %>" style='text-decoration:none; color:#333333;'><% load($zoovy:prod_name); default(""); print(); %></a></div>
+	
+		<div style='font-weight:bold; font-size:12px;'><% load($zoovy:base_price);  default("");  format(money);  print(); %></div>
+	</div>
+	</td>
+<!-- /PRODUCT -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEHTRKD" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div style='clear:both;'></div>
+
+
+<!-- section 5 -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEHTRKE" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section5_header" PROMPT="Section 5: title" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[
+	</div>
+	<div><img src='%LAYOUT_URL%/s11a_headerbot-1x5.gif' width='600' height='5' alt='' /></div>
+</div>
+]]></POSTTEXT>
+<PRETEXT><![CDATA[
+
+<div style='margin-bottom:10px;'>
+	<div><img src='%LAYOUT_URL%/s11a_headertop-1x5.gif' width='600' height='5' alt='' /></div>
+	<div style='height:18px; line-height:18px; font-size:14px; padding:0 10px; font-weight:bold;'>
+	
+]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="SECTION5_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section5_description" PROMPT="Section 5: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<div style='padding:0 10px 10px 10px; width:auto;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST_SECTION5" SIZE="9" MAX="9" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="page:section5_prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Section 5: product list (nine item max)" TYPE="PRODLIST" SRC="page:section5_prodlist_stuff"><HTML><![CDATA[
+<table border='0' cellpadding='5' cellspacing='10' align='center'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td class='ztable_row' valign='top' align='left' width='33%' style='border:1px solid #919293; font-size:11px; font-family:Arial, Helvetica, sans-serif;'>
+	<div><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"175",h=>"175",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a></div>
+	<div style='padding-top:10px;'>
+		<div><a href="<% load($PROD_URL);  default("");  print(); %>" style='text-decoration:none; color:#333333;'><% load($zoovy:prod_name); default(""); print(); %></a></div>
+	
+		<div style='font-weight:bold; font-size:12px;'><% load($zoovy:base_price);  default("");  format(money);  print(); %></div>
+	</div>
+	</td>
+<!-- /PRODUCT -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEHTRKF" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+
+<div style='clear:both;'></div>
+
+<!-- section 7 -->
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BANNER_SECTION1" HEIGHT="133" MINIMAL="0" EDITOR="INLINE" DATA="page:section7_banner" PROMPT="Section 7: banner (186x133)" WIDTH="186" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<!-- BANNER: <% print($ID); %> -->
+<div style='padding:0 10px 10px 10px; float:left;'>
+<a id="<% print($ID); %>_href" title="<% 
+load($ALT); default(""); format(encode=>"entity"); print(); 
+%>" href="<%
+load($LINKURL); default("#"); format(rewrite); print();
+%>">
+<img border="0" height="<% print($HEIGHT); %>" width="<% print($WIDTH); %>" id="<% print($ID); %>_img" src="<%
+print($IMGURL);
+%>" alt="<% load($ALT); default(""); format(encode=>"entity"); print(); %>" />
+</a>
+</div>
+<!-- /BANNER: <% print($ID); %> -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SECTION7_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section7_description" PROMPT="Section 7: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<div style='padding:0 10px 10px 10px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DEHTRKG" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div style='clear:both;'></div>
+
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BOTTOM_WIDE_BANNER" HEIGHT="250" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_bottomwide" PROMPT="wide banner for bottom (580x250)" WIDTH="580" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<!-- BANNER: <% print($ID); %> -->
+<div style='padding-bottom:10px;' align='center'>
+<a id="<% print($ID); %>_href" title="<% 
+load($ALT); default(""); format(encode=>"entity"); print(); 
+%>" href="<%
+load($LINKURL); default("#"); format(rewrite); print();
+%>">
+<img border="0" height="<% print($HEIGHT); %>" width="<% print($WIDTH); %>" id="<% print($ID); %>_img" src="<%
+print($IMGURL);
+%>" alt="<% load($ALT); default(""); format(encode=>"entity"); print(); %>" />
+</a>
+</div>
+<!-- /BANNER: <% print($ID); %> -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="FOOTER_NAV" WIKI="3" EDITOR="INLINE" DATA="page:wiki_links_footer" PROMPT="Wiki based links for top nav" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Use wiki to add some links to the bottom of the newsletter. Putting a pipe between each link will help create nice separation.  A limited amount of horizontal space is available. If more links/text is added then space available, cropping will occur.]]></HELPER>
+<POSTTEXT><![CDATA[
+	
+	</span></div>
+	<div><img src='%LAYOUT_URL%/s11a_headerbot-1x5.gif' width='600' height='5' alt='' /></div>
+</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[
+<!-- wiki nav header links -->
+<div>
+	<div><img src='%LAYOUT_URL%/s11a_headertop-1x5.gif' width='600' height='5' alt='' /></div>
+	<div style='width:600px; overflow:hidden; height:18px; line-height:18px; font-size:12px;'><span style='padding:0 10px;'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="DEHTRKH" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br />
+
+
+	</td>
+	<td></td>
+</tr>
+</table>
+
+</div>
+
+
+</body>
+</html>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,752 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "Darkroom",
+      "subcat" : "darkroom",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:Darkroom",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWJK",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "black-and-white-film-developer",
+            "v" : "black-and-white-film-developer"
+         },
+         {
+            "p" : "black-and-white-fixer",
+            "v" : "black-and-white-fixer"
+         },
+         {
+            "p" : "black-and-white-paper-developer",
+            "v" : "black-and-white-paper-developer"
+         },
+         {
+            "p" : "black-and-white-stop-baths",
+            "v" : "black-and-white-stop-baths"
+         },
+         {
+            "p" : "color-negative-film-chemicals",
+            "v" : "color-negative-film-chemicals"
+         },
+         {
+            "p" : "color-slide-film-chemicals",
+            "v" : "color-slide-film-chemicals"
+         },
+         {
+            "p" : "chemicals-for-prints-from-color-negatives",
+            "v" : "chemicals-for-prints-from-color-negatives"
+         },
+         {
+            "p" : "chemicals-for-prints-from-color-slides",
+            "v" : "chemicals-for-prints-from-color-slides"
+         },
+         {
+            "p" : "processing-aids",
+            "v" : "processing-aids"
+         },
+         {
+            "p" : "retouching-chemicals",
+            "v" : "retouching-chemicals"
+         },
+         {
+            "p" : "wash-aids",
+            "v" : "wash-aids"
+         },
+         {
+            "p" : "alternative-chemicals",
+            "v" : "alternative-chemicals"
+         },
+         {
+            "p" : "other-chemicals",
+            "v" : "other-chemicals"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_chemicals",
+      "title" : "Darkroom Chemicals",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.Chemicals",
+      "list" : "LIST_CAMERA_DARKROOM_CHEMICALS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "enlargers-general",
+            "v" : "enlargers-general"
+         },
+         {
+            "p" : "black-and-white-enlargers",
+            "v" : "black-and-white-enlargers"
+         },
+         {
+            "p" : "color-enlargers",
+            "v" : "color-enlargers"
+         },
+         {
+            "p" : "variable-contrast-enlargers",
+            "v" : "variable-contrast-enlargers"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_enlargers",
+      "title" : "Darkroom Enlargers",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.Enlargers",
+      "list" : "LIST_CAMERA_DARKROOM_ENLARGERS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "easels-general",
+            "v" : "easels-general"
+         },
+         {
+            "p" : "adjustable-easels",
+            "v" : "adjustable-easels"
+         },
+         {
+            "p" : "fixed-size-easels",
+            "v" : "fixed-size-easels"
+         },
+         {
+            "p" : "borderless-easels",
+            "v" : "borderless-easels"
+         },
+         {
+            "p" : "contact-printers",
+            "v" : "contact-printers"
+         },
+         {
+            "p" : "other-easels",
+            "v" : "other-easels"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_easels",
+      "title" : "Darkroom Easels",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.Easels",
+      "list" : "LIST_CAMERA_DARKROOM_EASELS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "enlarging-heads-general",
+            "v" : "enlarging-heads-general"
+         },
+         {
+            "p" : "black-and-white-condenser-heads",
+            "v" : "black-and-white-condenser-heads"
+         },
+         {
+            "p" : "color-dichronic-heads",
+            "v" : "color-dichronic-heads"
+         },
+         {
+            "p" : "variable-contrast-diffusion-heads",
+            "v" : "variable-contrast-diffusion-heads"
+         },
+         {
+            "p" : "cold-light-heads",
+            "v" : "cold-light-heads"
+         },
+         {
+            "p" : "enlarging-head-accessories",
+            "v" : "enlarging-head-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_enlargingheadandaccs",
+      "title" : "Darkroom Enlarging Head And Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.EnlargingHeadAndAccessories",
+      "list" : "LIST_CAMERA_DARKROOM_ENLARGINGHEADANDACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "enlarger-lamps",
+            "v" : "enlarger-lamps"
+         },
+         {
+            "p" : "enlarging-lens-accessories",
+            "v" : "enlarging-lens-accessories"
+         },
+         {
+            "p" : "focusing-aids",
+            "v" : "focusing-aids"
+         },
+         {
+            "p" : "lens-boards",
+            "v" : "lens-boards"
+         },
+         {
+            "p" : "general-negative-carriers",
+            "v" : "general-negative-carriers"
+         },
+         {
+            "p" : "below-35mm-negative-carriers",
+            "v" : "below-35mm-negative-carriers"
+         },
+         {
+            "p" : "35mm-negative-carriers",
+            "v" : "35mm-negative-carriers"
+         },
+         {
+            "p" : "medium-format-negative-carriers",
+            "v" : "medium-format-negative-carriers"
+         },
+         {
+            "p" : "large-format-negative-carriers",
+            "v" : "large-format-negative-carriers"
+         },
+         {
+            "p" : "other-format-negative-carriers",
+            "v" : "other-format-negative-carriers"
+         },
+         {
+            "p" : "printing-filters",
+            "v" : "printing-filters"
+         },
+         {
+            "p" : "timers",
+            "v" : "timers"
+         },
+         {
+            "p" : "other-enlarger-accessories",
+            "v" : "other-enlarger-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_otherenlargeraccs",
+      "title" : "Darkroom Other Enlarger Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.OtherEnlargerAccessories",
+      "list" : "LIST_CAMERA_DARKROOM_OTHERENLARGERACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "analyzers-and-accessories",
+            "v" : "analyzers-and-accessories"
+         },
+         {
+            "p" : "darkroom-exposure-meters",
+            "v" : "darkroom-exposure-meters"
+         },
+         {
+            "p" : "densitometers-and-accessories",
+            "v" : "densitometers-and-accessories"
+         },
+         {
+            "p" : "grey-cards-and-exposure-guides",
+            "v" : "grey-cards-and-exposure-guides"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_analyzersandexposuremeters",
+      "title" : "Darkroom Analyzers And Exposure Meters",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.AnalyzersAndExposureMeters",
+      "list" : "LIST_CAMERA_DARKROOM_ANALYZERSANDEXPOSUREMETERS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "black-and-white-safelights",
+            "v" : "black-and-white-safelights"
+         },
+         {
+            "p" : "color-safelights",
+            "v" : "color-safelights"
+         },
+         {
+            "p" : "safelight-filters",
+            "v" : "safelight-filters"
+         },
+         {
+            "p" : "other-safelight-accessories",
+            "v" : "other-safelight-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_safelightsandaccs",
+      "title" : "Darkroom Safelights And Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.SafelightsAndAccessories",
+      "list" : "LIST_CAMERA_DARKROOM_SAFELIGHTSANDACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "air-cleaners",
+            "v" : "air-cleaners"
+         },
+         {
+            "p" : "fans",
+            "v" : "fans"
+         },
+         {
+            "p" : "louvers",
+            "v" : "louvers"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_airregulators",
+      "title" : "Darkroom Air Regulators",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.AirRegulators",
+      "list" : "LIST_CAMERA_DARKROOM_AIRREGULATORS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "flowmeters",
+            "v" : "flowmeters"
+         },
+         {
+            "p" : "thermometers",
+            "v" : "thermometers"
+         },
+         {
+            "p" : "temperature-regulators",
+            "v" : "temperature-regulators"
+         },
+         {
+            "p" : "tempered-water-heaters",
+            "v" : "tempered-water-heaters"
+         },
+         {
+            "p" : "water-panels",
+            "v" : "water-panels"
+         },
+         {
+            "p" : "water-control-accessories",
+            "v" : "water-control-accessories"
+         },
+         {
+            "p" : "water-filters",
+            "v" : "water-filters"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_watercontrolsandfilters",
+      "title" : "Darkroom Water Controls And Filters",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.WaterControlsAndFilters",
+      "list" : "LIST_CAMERA_DARKROOM_WATERCONTROLSANDFILTERS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "sinks-general",
+            "v" : "sinks-general"
+         },
+         {
+            "p" : "plastic-sinks",
+            "v" : "plastic-sinks"
+         },
+         {
+            "p" : "fiberglass-sinks",
+            "v" : "fiberglass-sinks"
+         },
+         {
+            "p" : "stainless-steel-sinks",
+            "v" : "stainless-steel-sinks"
+         },
+         {
+            "p" : "sink-accessories",
+            "v" : "sink-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_sinksandaccs",
+      "title" : "Darkroom Sinks And Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.SinksAndAccessories",
+      "list" : "LIST_CAMERA_DARKROOM_SINKSANDACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "funnels",
+            "v" : "funnels"
+         },
+         {
+            "p" : "graduates",
+            "v" : "graduates"
+         },
+         {
+            "p" : "stirring-devices",
+            "v" : "stirring-devices"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_mixingeqpt",
+      "title" : "Darkroom Mixing Equipment",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.MixingEquipment",
+      "list" : "LIST_CAMERA_DARKROOM_MIXINGEQUIPMENT"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "aprons",
+            "v" : "aprons"
+         },
+         {
+            "p" : "blotter-books",
+            "v" : "blotter-books"
+         },
+         {
+            "p" : "changing-bags",
+            "v" : "changing-bags"
+         },
+         {
+            "p" : "control-strips",
+            "v" : "control-strips"
+         },
+         {
+            "p" : "darkroom-pens",
+            "v" : "darkroom-pens"
+         },
+         {
+            "p" : "darkroom-pencils",
+            "v" : "darkroom-pencils"
+         },
+         {
+            "p" : "darkroom-tapes",
+            "v" : "darkroom-tapes"
+         },
+         {
+            "p" : "gloves",
+            "v" : "gloves"
+         },
+         {
+            "p" : "paper-safes",
+            "v" : "paper-safes"
+         },
+         {
+            "p" : "scales",
+            "v" : "scales"
+         },
+         {
+            "p" : "storage-bottles-and-tanks",
+            "v" : "storage-bottles-and-tanks"
+         },
+         {
+            "p" : "tray-siphons",
+            "v" : "tray-siphons"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_generaldevnprocsupplies",
+      "title" : "Darkroom General Developing And Processing Supplies",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.GeneralDevelopingAndProcessingSupplies",
+      "list" : "LIST_CAMERA_DARKROOM_GENERALDEVELOPINGANDPROCESSINGSUPPLIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "film-dryers",
+            "v" : "film-dryers"
+         },
+         {
+            "p" : "film-reels",
+            "v" : "film-reels"
+         },
+         {
+            "p" : "tanks",
+            "v" : "tanks"
+         },
+         {
+            "p" : "film-washers",
+            "v" : "film-washers"
+         },
+         {
+            "p" : "developing-racks",
+            "v" : "developing-racks"
+         },
+         {
+            "p" : "film-hangers",
+            "v" : "film-hangers"
+         },
+         {
+            "p" : "film-squeegees",
+            "v" : "film-squeegees"
+         },
+         {
+            "p" : "film-cleaning-brushes-and-cloths",
+            "v" : "film-cleaning-brushes-and-cloths"
+         },
+         {
+            "p" : "film-cleaning-solutions",
+            "v" : "film-cleaning-solutions"
+         },
+         {
+            "p" : "other-film-processing-accessories",
+            "v" : "other-film-processing-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_filmprocessingsupplies",
+      "title" : "Darkroom Film Processing Supplies",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.FilmProcessingSupplies",
+      "list" : "LIST_CAMERA_DARKROOM_FILMPROCESSINGSUPPLIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "print-drums",
+            "v" : "print-drums"
+         },
+         {
+            "p" : "print-dryers",
+            "v" : "print-dryers"
+         },
+         {
+            "p" : "roller-bases",
+            "v" : "roller-bases"
+         },
+         {
+            "p" : "vertical-slot-processors",
+            "v" : "vertical-slot-processors"
+         },
+         {
+            "p" : "washers",
+            "v" : "washers"
+         },
+         {
+            "p" : "trays-general",
+            "v" : "trays-general"
+         },
+         {
+            "p" : "5x7-trays",
+            "v" : "5x7-trays"
+         },
+         {
+            "p" : "8x10-trays",
+            "v" : "8x10-trays"
+         },
+         {
+            "p" : "11x14-trays",
+            "v" : "11x14-trays"
+         },
+         {
+            "p" : "12x16-trays",
+            "v" : "12x16-trays"
+         },
+         {
+            "p" : "16x20-trays",
+            "v" : "16x20-trays"
+         },
+         {
+            "p" : "20x24-trays",
+            "v" : "20x24-trays"
+         },
+         {
+            "p" : "30x40-trays",
+            "v" : "30x40-trays"
+         },
+         {
+            "p" : "other-paper-processing-accessories",
+            "v" : "other-paper-processing-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_paperprocessingsupplies",
+      "title" : "Darkroom Paper Processing Supplies",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.PaperProcessingSupplies",
+      "list" : "LIST_CAMERA_DARKROOM_PAPERPROCESSINGSUPPLIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "film-drums",
+            "v" : "film-drums"
+         },
+         {
+            "p" : "paper-drums",
+            "v" : "paper-drums"
+         },
+         {
+            "p" : "processors",
+            "v" : "processors"
+         },
+         {
+            "p" : "reels",
+            "v" : "reels"
+         },
+         {
+            "p" : "wash-dry-modules",
+            "v" : "wash-dry-modules"
+         },
+         {
+            "p" : "other-tabletop-processing-accessories",
+            "v" : "other-tabletop-processing-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dkrm_tabletopprocessingsupplies",
+      "title" : "Darkroom Tabletop Processing Supplies",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Darkroom.TabletopProcessingSupplies",
+      "list" : "LIST_CAMERA_DARKROOM_TABLETOPPROCESSINGSUPPLIES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

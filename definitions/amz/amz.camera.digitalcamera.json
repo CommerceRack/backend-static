@@ -1,0 +1,799 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "DigitalCamera",
+      "subcat" : "digitalcamera",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:DigitalCamera",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWLK",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Unit",
+      "amz-units" : "pixels",
+      "id" : "amz:prod_cp_dgc_megapixels",
+      "type" : "textbox",
+      "title" : "Megapixels",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.Megapixels"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_opticalzoom",
+      "type" : "textbox",
+      "title" : "Optical Zoom",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.OpticalZoom"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Unit",
+      "amz-units" : "x",
+      "id" : "amz:prod_cp_dgc_digitalzoom",
+      "type" : "textbox",
+      "title" : "Digital Zoom",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.DigitalZoom"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_dgc_internalmemorysize",
+      "type" : "textbox",
+      "title" : "Internal Memory Size",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.InternalMemorySize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_dgc_externalmemorysize",
+      "type" : "textbox",
+      "title" : "External Memory Size",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.ExternalMemorySize"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "point-and-shoot",
+            "v" : "point-and-shoot"
+         },
+         {
+            "p" : "slr",
+            "v" : "slr"
+         },
+         {
+            "p" : "3-d",
+            "v" : "3-d"
+         },
+         {
+            "p" : "macro",
+            "v" : "macro"
+         },
+         {
+            "p" : "passport-and-id",
+            "v" : "passport-and-id"
+         },
+         {
+            "p" : "underwater",
+            "v" : "underwater"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_cameratype",
+      "title" : "Digital Camera Camera Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.CameraType",
+      "list" : "LIST_CAMERA_DIGITALCAMERA_CAMERATYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "automatic",
+            "v" : "automatic"
+         },
+         {
+            "p" : "manual",
+            "v" : "manual"
+         },
+         {
+            "p" : "manual-and-auto",
+            "v" : "manual-and-auto"
+         },
+         {
+            "p" : "focus-free",
+            "v" : "focus-free"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_focustype",
+      "title" : "Digital Camera Focus Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.FocusType",
+      "list" : "LIST_CAMERA_DIGITALCAMERA_FOCUSTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "ccd",
+            "v" : "ccd"
+         },
+         {
+            "p" : "super-ccd",
+            "v" : "super-ccd"
+         },
+         {
+            "p" : "cmos",
+            "v" : "cmos"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_sensortype",
+      "title" : "Digital Camera Sensor Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.SensorType",
+      "list" : "LIST_CAMERA_DIGITALCAMERA_SENSORTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_cp_dgc_lcdscreensize",
+      "type" : "number",
+      "title" : "LCDScreenSize",
+		"amz-uom" : "IN",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.LCDScreenSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_lcdswivel",
+      "type" : "checkbox",
+      "title" : "L C D Swivel",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.LCDSwivel"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "optical",
+            "v" : "optical"
+         },
+         {
+            "p" : "electronic",
+            "v" : "electronic"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_viewfinder",
+      "title" : "Digital Camera Viewfinder",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.Viewfinder",
+      "list" : "LIST_CAMERA_DIGITALCAMERA_VIEWFINDER"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_minaperture",
+      "type" : "textbox",
+      "title" : "Min Aperture",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.MinAperture"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_maxaperture",
+      "type" : "textbox",
+      "title" : "Max Aperture",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.MaxAperture"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_imagestabilization",
+      "type" : "checkbox",
+      "title" : "Image Stabilization",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.ImageStabilization"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_infraredcapability",
+      "type" : "checkbox",
+      "title" : "Infrared Capability",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.InfraredCapability"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_firewireoutput",
+      "type" : "checkbox",
+      "title" : "Firewire Output",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.FirewireOutput"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_s-videooutput",
+      "type" : "checkbox",
+      "title" : "S - Video Output",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.S-VideoOutput"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "usb1.1",
+            "v" : "usb1.1"
+         },
+         {
+            "p" : "usb2.0",
+            "v" : "usb2.0"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_usboutput",
+      "title" : "Digital Camera U S B Output",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.USBOutput",
+      "list" : "LIST_CAMERA_DIGITALCAMERA_USBOUTPUT"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_avoutput",
+      "type" : "checkbox",
+      "title" : "A V Output",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.AVOutput"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_digitalstillcapability",
+      "type" : "checkbox",
+      "title" : "Digital Still Capability",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.DigitalStillCapability"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_digitalstillresolution",
+      "type" : "textbox",
+      "title" : "Digital Still Resolution",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.DigitalStillResolution"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "compact-flash",
+            "v" : "compact-flash"
+         },
+         {
+            "p" : "smart-media",
+            "v" : "smart-media"
+         },
+         {
+            "p" : "secure-digital",
+            "v" : "secure-digital"
+         },
+         {
+            "p" : "mmc",
+            "v" : "mmc"
+         },
+         {
+            "p" : "xd-picture-card",
+            "v" : "xd-picture-card"
+         },
+         {
+            "p" : "memory-stick",
+            "v" : "memory-stick"
+         },
+         {
+            "p" : "micro-drive",
+            "v" : "micro-drive"
+         },
+         {
+            "p" : "cd-r",
+            "v" : "cd-r"
+         },
+         {
+            "p" : "cd-rw",
+            "v" : "cd-rw"
+         },
+         {
+            "p" : "dvd-r",
+            "v" : "dvd-r"
+         },
+         {
+            "p" : "dvd-rw",
+            "v" : "dvd-rw"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_externalmemorytype",
+      "title" : "Digital Camera External Memory Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.ExternalMemoryType",
+      "list" : "LIST_CAMERA_DIGITALCAMERA_EXTERNALMEMORYTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_externalmemoryincluded",
+      "type" : "checkbox",
+      "title" : "External Memory Included",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.ExternalMemoryIncluded"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "lcd-screen",
+            "v" : "lcd-screen"
+         },
+         {
+            "p" : "mpeg-movie-mode",
+            "v" : "mpeg-movie-mode"
+         },
+         {
+            "p" : "interchangeable-lens",
+            "v" : "interchangeable-lens"
+         },
+         {
+            "p" : "image-stabilization",
+            "v" : "image-stabilization"
+         },
+         {
+            "p" : "waterproof",
+            "v" : "waterproof"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_features",
+      "title" : "Digital Camera Features",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.Features",
+      "list" : "LIST_CAMERA_DIGITALCAMERA_FEATURES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_usbstreaming",
+      "type" : "checkbox",
+      "title" : "U S B Streaming",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.USBStreaming"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_headphonejack",
+      "type" : "checkbox",
+      "title" : "Headphone Jack",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.HeadphoneJack"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_flyingeraseheads",
+      "type" : "checkbox",
+      "title" : "Flying Erase Heads",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.FlyingEraseHeads"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_autolight",
+      "type" : "checkbox",
+      "title" : "Autolight",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.Autolight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_hotshoe",
+      "type" : "checkbox",
+      "title" : "Hot Shoe",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.HotShoe"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_lensthread",
+      "type" : "number",
+      "title" : "LensThread",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.LensThread"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "windows",
+            "v" : "windows"
+         },
+         {
+            "p" : "mac",
+            "v" : "mac"
+         },
+         {
+            "p" : "linux",
+            "v" : "linux"
+         }
+      ],
+      "amz-format" : "ComputerPlatform",
+      "id" : "amz:prod_cp_dgc_computerplatform",
+      "title" : "Computer Platform Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.ComputerPlatform",
+      "list" : "LIST_BASE_COMPUTERPLATFORM_TYPE"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_base_systemreqs",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "System Requirements"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_softwareincluded",
+      "type" : "textbox",
+      "title" : "Software Included",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.SoftwareIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_batterytype",
+      "type" : "textbox",
+      "title" : "Battery Type",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.BatteryType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_rechargeablebincld",
+      "type" : "checkbox",
+      "title" : "Rechargeable Battery Included",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.RechargeableBatteryIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_acadapterincluded",
+      "type" : "checkbox",
+      "title" : "A C Adapter Included",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.ACAdapterIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_remoteincluded",
+      "type" : "checkbox",
+      "title" : "Remote Included",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.RemoteIncluded"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "usb",
+            "v" : "usb"
+         },
+         {
+            "p" : "usb1.1",
+            "v" : "usb1.1"
+         },
+         {
+            "p" : "usb2.0",
+            "v" : "usb2.0"
+         },
+         {
+            "p" : "firewire",
+            "v" : "firewire"
+         },
+         {
+            "p" : "firewire2.0",
+            "v" : "firewire2.0"
+         },
+         {
+            "p" : "serial",
+            "v" : "serial"
+         },
+         {
+            "p" : "parallel",
+            "v" : "parallel"
+         },
+         {
+            "p" : "ieee1394",
+            "v" : "ieee1394"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_connectivity",
+      "title" : "Digital Camera Connectivity",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.Connectivity",
+      "list" : "LIST_CAMERA_DIGITALCAMERA_CONNECTIVITY"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "compact-flash",
+            "v" : "compact-flash"
+         },
+         {
+            "p" : "compact-flash-ii",
+            "v" : "compact-flash-ii"
+         },
+         {
+            "p" : "pcmcia",
+            "v" : "pcmcia"
+         },
+         {
+            "p" : "pcmcia-ii",
+            "v" : "pcmcia-ii"
+         },
+         {
+            "p" : "pcmcia-iii",
+            "v" : "pcmcia-iii"
+         },
+         {
+            "p" : "smartmedia",
+            "v" : "smartmedia"
+         },
+         {
+            "p" : "memory-sticks",
+            "v" : "memory-sticks"
+         },
+         {
+            "p" : "sd-multi-media",
+            "v" : "sd-multi-media"
+         },
+         {
+            "p" : "xd-picture-card",
+            "v" : "xd-picture-card"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_internalmemorytype",
+      "title" : "Digital Camera Internal Memory Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.InternalMemoryType",
+      "list" : "LIST_CAMERA_DIGITALCAMERA_INTERNALMEMORYTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Unit",
+      "amz-units" : "pixels",
+      "id" : "amz:prod_cp_dgc_maximageresolution",
+      "type" : "textbox",
+      "title" : "Max Image Resolution",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.MaxImageResolution"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "tiff",
+            "v" : "tiff"
+         },
+         {
+            "p" : "raw",
+            "v" : "raw"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_uncompressedmode",
+      "title" : "Digital Camera Uncompressed Mode",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.UncompressedMode",
+      "list" : "LIST_CAMERA_DIGITALCAMERA_UNCOMPRESSEDMODE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_isoequivalency",
+      "type" : "textbox",
+      "title" : "I S O Equivalency",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.ISOEquivalency"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_macrofocus",
+      "type" : "number",
+      "title" : "MacroFocus",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.MacroFocus"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_minshutterspeed",
+      "type" : "textbox",
+      "title" : "Min Shutter Speed",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.MinShutterSpeed"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_maxshutterspeed",
+      "type" : "textbox",
+      "title" : "Max Shutter Speed",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.MaxShutterSpeed"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_manualexposuremode",
+      "type" : "checkbox",
+      "title" : "Manual Exposure Mode",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.ManualExposureMode"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_moviemode",
+      "type" : "checkbox",
+      "title" : "Movie Mode",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.MovieMode"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_dgc_maxmovielength",
+      "type" : "textbox",
+      "title" : "Max Movie Length",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.MaxMovieLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_audiorecording",
+      "type" : "checkbox",
+      "title" : "Audio Recording",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.AudioRecording"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_continuousshooting",
+      "type" : "textbox",
+      "title" : "Continuous Shooting",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.ContinuousShooting"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_dgc_selftimer",
+      "type" : "textbox",
+      "title" : "Self Timer",
+      "xmlpath" : "CameraPhoto.ProductType.DigitalCamera.SelfTimer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

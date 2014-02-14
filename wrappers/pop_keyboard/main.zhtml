@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=lucido
+SITEBUTTONS=l2_watery
+-->
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+.title	{font-family: arial; font-size: 13px; color: #FFFFFF;font-weight:bold;}
+</style>
+</head>
+
+<body>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td background="<!-- WRAPPER_URL -->/top_bg.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td align="right" width=399><img src="<!-- WRAPPER_URL -->/top.jpg" width="399" height="16" alt="" border="0"></td>
+	</tr>
+</table><table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td><!-- LOGO
+WIDTH=167
+HEIGHT=65
+BGCOLOR=FFFFFF
+--></td>
+		<td align="right" width=233><img src="<!-- WRAPPER_URL -->/middle.jpg" width="233" height="69" alt="" border="0"></td>
+	</tr>
+</table>
+<!-- BODY -->
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td background="<!-- WRAPPER_URL -->/left_bg.gif" width=25><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td width=26><img src="<!-- WRAPPER_URL -->/corner.gif" width="26" height="25" alt="" border="0"></td>
+		<td background="<!-- WRAPPER_URL -->/title_bg.gif">&nbsp;<span class="title"><!-- TITLE --></span></td>
+	</tr>
+</table>
+</body>
+</html>

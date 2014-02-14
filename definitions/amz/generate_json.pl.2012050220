@@ -1,0 +1,147 @@
+#!/usr/bin/perl
+
+## USE:
+## takes an amazon valid values csv and converts it to a json file for use with amazon syndication.
+
+## ACCEPTABLE PARAMETERS:
+##	file = filename
+ 
+use strict;
+use lib "/httpd/modules";
+use Data::Dumper;
+use JSON::XS;
+use File::Slurp;
+use Text::CSV_XS;
+use IO::Scalar;
+require Text::CSV;
+
+my $ERROR = '';
+my %params = ();
+foreach my $arg (@ARGV) {
+	if ($arg !~ /=/) { $ERROR = "parameters and values must be separated  by ="; }
+	my ($k,$v) = split(/=/,$arg);
+	$params{$k} = $v;
+	}
+
+my $file = '';
+
+if (defined $params{'file'}) {
+	$file = $params{'file'}
+	}
+else {
+	$ERROR = "file is a required parameter. Please re-run the script with a file";
+	}
+
+
+
+my @rows = ();
+## parse data from amazon valid values file
+
+my $csv = Text::CSV_XS->new ({ binary => 1 });
+open (CSV, "<", $file) or die $!;
+
+while (<CSV>) {
+	my $status = $csv->parse($_);
+	my @columns = $csv->fields();
+	push @rows, [@columns];
+	}
+
+## the first line in the catefory file (and now in @rows) is the header and consists of the amazon flat file field names (not the Zoovy equivalunt attribute) 
+
+## the 11 lines below the header contain the following attributes data:
+##		- type - 							the zoovy field type. ie. 'select', 'textbox' etc
+##		- xmlpath - 						the path used for the attribute in the xml. ie. ClothingAccessories.ClassificationData.ID
+##		- amz_attrib -						the amazon attribute name to be used in the xml
+##		- amz-format - 					the format determines how the attribute will be validated. ie Text.
+##		- Title - 							the attribute title dispalyed in the zoovy ui
+##		- mandatory -						determines whether this is a mandatroy field
+##		- amz-max-length - 				max allowed length of value 
+##		- amz-min-length - 				min allowed length of value
+##		- id -								zoovy attribute
+##		- max-allowed-lines - 			max allowed lines (only applies to text lists)
+##		- aum -								allowed units of measure for attirubute saparated by a comma (ie. CM,IN)
+
+ 
+#my @ATTRIB_DATA = ('type','xmlpath','amz_attrib','amz-format','Title','mandatory','amz-max-length','amz-min-length','id','max-allowed-lines','aum');
+
+## amazon restricts the values we send for certain attributes to a specific list. We presnt these values to the merchant in a select list
+##		-	those values start after the attrib data and we parse them into @valid_values below.
+
+my $attrib_ref = shift @rows; # remove ATTRIBS line from @rows and add to attrib_ref.  
+#my @data_ref = ();
+
+my @ATTRIB_DATA = split(/,/, @$attrib_ref[0]);
+
+#my $header_ref = shift @rows; # take headers from @rows 
+
+#my @attribs = ();
+#foreach my $ref (@$attrib_ref) {
+#	if ($ref ne '') {
+#		@attribs = split (/,/, $ref);
+#		foreach my $attrib(@attribs) {
+#			my $row = shift @rows;
+#			push @$data_ref, {$attrib => $row};
+#			}
+#		}
+#	}
+
+#my $data_ref = ();
+
+
+
+
+my @valid_values = @rows;
+my $header_ref = shift @valid_values; # remove the header row from @valid_values and give to $headers
+my @attribs = splice(@valid_values, 0, int(@ATTRIB_DATA)); # remove the attribs row from @valid_values and give to @attribs
+
+
+print 
+
+close CSV;
+
+my @combined_field_data = ();
+
+
+
+## rows conatining the relevant attribute specific data discussed above.
+my @types = $attribs[0];
+my @paths = $attribs[1];
+my @amz_attribs = $attribs[2];
+my @formats = $attribs[3];
+my @titles = $attribs[4];
+my @requirements = $attribs[5];
+my @max_lengths = $attribs[6];
+my @min_legths = $attribs[7];
+my @ids = $attribs[8];
+my @max_lines = $attribs[9];
+my @aums = $attribs[10];
+
+my $element_count = 0;
+
+
+foreach my $header (@$header_ref) {
+	my @options = ();
+	foreach my $ref (@valid_values){
+		push @options, {T => $ref->[$element_count], V => $ref->[$element_count]};   
+		}
+	
+	push @combined_field_data, {'options' => \@options, 'xml_path' => $paths[0]->[$element_count], 'amz_attrib' => $amz_attribs[0]->[$element_count], 
+									'type' => $types[0]->[$element_count], 'amz_format' => $formats[0]->[$element_count], 'title' => $titles[0]->[$element_count], 
+									'amz-max-length' => $max_lengths[0]->[$element_count], 'amz-min-length' => $min_legths[0]->[$element_count], 
+									'id' => $ids[0]->[$element_count], 'max-allowed-lines' => $max_lines[0]->[$element_count], 'aum' => $aums[0]->[$element_count]};
+	$element_count ++;
+	}
+
+my $combined_field_data = \@combined_field_data;
+
+# Convert data to a json format and copy to file.
+my $coder = JSON::XS->new->ascii->pretty->allow_nonref;
+my $pretty_printed_unencoded = $coder->encode ($combined_field_data);
+open F, ">/httpd/static/definitions/amz/amz.clothing.test.json";
+print F $pretty_printed_unencoded;
+close F;
+
+
+print $pretty_printed_unencoded;
+
+exit;

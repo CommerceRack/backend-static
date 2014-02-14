@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=rightside2
+SITEBUTTONS=bluedual
+-->
+<html>
+<head>
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+td.foo	{background-color: #3857BD;}
+td.goo	{background-color: #96BEE0;}
+.small	{font-family: verdana; font-size: 10px;}
+a:hover	{text-decoration: underline; color: #3857BD;}
+a	{color: #343434; text-decoration: none}
+form	{display:	inline;}
+.title    {font-family: verdana; color: #FFFFFF; font-size: 8pt; font-weight: bold;}
+p, td, body, li, ul, ol    {font-family: verdana; font-size: 9pt;}
+</style>
+</head>
+<body leftmargin=10 marginheight=10 bottommargin=10 marginwidth=10 rightmargin=10 topmargin=10 bgcolor="#FFFFFF">
+<table cellspacing=0 cellpadding=2 border=0 width=100%>
+	<tr>
+		<td class="foo">&nbsp;<span class="title"><!-- TITLE --></span></td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td width=99%></td>
+		<td class="goo"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=200 height=1></td>
+	</tr><tr>
+		<td valign="top" align="left">
+			<table cellspacing=0 cellpadding=0 border=0 width=98%>
+				<tr>
+					<td><br><!-- BODY -->
+					</td></tr></table>
+		</td>
+		<td class="goo" valign="top">
+			<table cellspacing=0 cellpadding=2 border=0 width=100%>
+				<tr>
+					<td width=100%><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=190
+HEIGHT=80
+--></a></td>
+				</tr><tr>
+					<td class="foo"><span class="title">&nbsp;Menu:</span></td>
+				</tr><tr>
+					<td width=99%><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=4><br><div class="small">
+					&nbsp;-&nbsp;<a href="<!-- HOME_URL -->">Home</a><br>
+					&nbsp;-&nbsp;<a href="<!--CART_URL-->">Cart</a><br>
+					&nbsp;-&nbsp;<a href="<!-- LOGIN_URL -->">My Account</a><br>
+					&nbsp;-&nbsp;<a href="<!--ABOUT_URL-->">Company Info</a><br>
+					&nbsp;-&nbsp;<a href="<!--CONTACT_URL-->">Contact Us</a><br>
+					<img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=4><br>
+					</td>
+				</tr><tr>
+					<td class="foo"><span class="title">&nbsp;Categories:</span></td>
+				</tr><tr>
+					<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=4><br><span class="small"><!-- MENU
+FORMAT=&nbsp;-&nbsp;<a href="%URL%">%MESSAGE%</a><br>
+ONLYHOME=0
+NOHOME=1
+--></span><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=4><br></td>
+				</tr><tr>
+					<td class="foo"><span class="title">&nbsp;Search:</span></td>
+				</tr><tr>
+					<td nowrap><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=4><br><span class="small">&nbsp;&nbsp;&nbsp;Product Search:<br></span>
+					&nbsp;&nbsp;<form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" name="keywords" value=""><br>&nbsp;&nbsp;
+<input type="image" src="<!-- WRAPPER_URL -->/search.gif" >
+</form><p></p></td>
+				</tr>
+			</table>
+			
+		</td>
+	</tr>
+</table>
+<p><!-- FOOTER --></p>
+</body>
+</html>

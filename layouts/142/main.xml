@@ -1,0 +1,153 @@
+<TEMPLATE ID="142" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNFX" CREATOR="JT" CREATED="00000000" CLASSIFICATION="GENERIC" IMAGES="3" PROPERTIES="1" SUBTYPE="P" SERIES="2003" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="3 Top Images and Toggled Descriptions" RELEASED="20030303"><SUMMARY><![CDATA[
+Default Description (shared)
+Detailed Product Description
+IMAGE1 (120x120)
+IMAGE2 (120x120)
+IMAGE3 (120x120)
+]]></SUMMARY>
+<SHORT><![CDATA[Contains 3 120x120 images across the top as well as a dynamic toggle which flips between your description and detailed description without reloading the page.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKNFY" TYPE="OUTPUT"><HTML><![CDATA[<style rel="STYLESHEET" type="text/css">
+.togon	{background-color: #CCCCCC; border-color: #CCCCCC;}
+.togoff	{background-color: #FFFFFF;}
+.togfonton	{color: #000000;}
+.togfontoff	{color: #000000;}
+</style>
+<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+
+// get the true offset of anything on NS4, IE4/5 & NS6, even if it's in a table!
+function getAbsX(elt) { return (elt.x) ? elt.x : getAbsPos(elt,"Left"); }
+function getAbsY(elt) { return (elt.y) ? elt.y : getAbsPos(elt,"Top"); }
+function getAbsPos(elt,which) {
+ iPos = 0;
+//	alert(elt.pageX());
+ while (elt != null) {
+  iPos += elt["offset" + which];
+	if (which == "Left") {
+		iPos += elt["clientLeft"];
+//		iPos += elt["width"];
+		}
+	if (which == "Top") {
+		iPos += elt["clientTop"];
+//		iPos += elt["height"];
+		}
+  elt = elt.offsetParent;
+ }
+
+//	iPos = 0;
+//	iPos = 'ABC';
+// alert(iPos);
+ return iPos;
+}
+
+</script>
+<table cellspacing=2 cellpadding=0 border=0>
+<tr><td width="120" align="center">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="120" ID="IMAGE1" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="120" PROMPT="Image1 120 x 120" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNFZ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<td align="center" width="120">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="120" ID="IMAGE2" HELP="Please enter the second picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="120" PROMPT="Image2 120 x 120" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNGA" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<td align="center" width="180">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="120" ID="IMAGE3" HELP="Please enter the third picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" WIDTH="120" PROMPT="Image3 120 x 120" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNGB" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr><tr>
+<td>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKNGC" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<td>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:prod_msrp"></ELEMENT>
+<ELEMENT ID="CPUKNGD" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<td>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKNGE" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr></table><br><br>
+
+
+<div name="container" style="position: relative; left: 0px; top: 0px; width: 530px;">
+<img src="//static.zoovy.com/graphics/general/blank.gif" width="1" height="100%">
+<span id="contents" style="position: absolute; top: 0px; width: 530px; left: 0px; height: 100%;">
+<table cellspacing=0 cellpadding=2 border=0 width=100%>
+<tr>
+	<td class="togon" width=50%>&nbsp;<a href="javascript:;" onClick="MM_showHideLayers('contents','','show','features','','hide')" class="togfonton"><strong>Description</a></strong></td>
+	<td class="togoff" width=50%>&nbsp;<a href="javascript:;" onClick="MM_showHideLayers('contents','','hide','features','','show')" class="togfontoff"><strong>Detailed Description</a></strong></td>
+</tr>
+</table>
+<table cellspacing=0 cellpadding=2 border=1 width=100% bordercolor="#CCCCCC">
+<tr>
+	<td bgcolor="#FFFFFF">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNGF" TYPE="OUTPUT"><HTML><![CDATA[ </td>
+</tr>
+</table>
+</span>
+<span id="features" style="position: absolute; left: 0px; top: 0px; width: 530px; z-index:2; visibility: hidden; overflow:visible; height: 100%;">
+<table cellspacing=0 cellpadding=2 border=0 width=100%>
+<tr>
+	<td class="togoff" width=50%>&nbsp;<a href="javascript:;" onClick="MM_showHideLayers('contents','','show','features','','hide')" class="togfontoff" class="togfontoff"><strong>Description</a></strong></td>
+	<td class="togon" width=50%>&nbsp;<a href="javascript:;" onClick="MM_showHideLayers('contents','','hide','features','','show')" class="togfonton"><strong>Detailed Description</a></strong></td>
+</tr>
+</table>
+<table cellspacing=0 cellpadding=2 border=1 width=100% bordercolor="#CCCCCC">
+<tr>
+	<td bgcolor="#FFFFFF">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DETAIL" HELP="This is the detailed product description that will appear on your website." DATA="product:zoovy:prod_detail" PROMPT="Detailed Product Description" DEFAULT="More information about the product" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNGG" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+</table>
+</span>
+</div>
+<script>
+<!--
+MM_showHideLayers('contents','','show','features','','hide');
+//-->
+</script>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,39 @@
+<TEMPLATE ID="1018" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMTW" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG"></ELEMENT>
+<ELEMENT ID="CPUKMTX" TYPE="OUTPUT"><HTML><![CDATA[<center>
+<table cellpadding=10>
+	<tr>
+		<td valign="middle" height="100" width="100">
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" PROMPT="Sub Categories" TYPE="SUBCAT"></ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="100" HELP="Please select a picture for this category." DATA="page:picture1" PROMPT="Small Picture" WIDTH="100" DEFAULT="https://static.zoovy.com/img/H100-W100-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMTY" TYPE="OUTPUT"><HTML><![CDATA[
+</center>
+		</td>
+		<td width="500" valign="middle">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" DEFAULT="These items all have something in common." TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long the products will be hard to find. <br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKMTZ" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 width="100%">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKMUA" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+	</tr>
+</table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

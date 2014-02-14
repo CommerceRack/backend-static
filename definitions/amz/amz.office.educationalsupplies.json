@@ -1,0 +1,32 @@
+[
+   {
+      "catalog" : "OFFICE",
+		"amz-catalog" : "Office",
+      "amz-subcat" : "EducationalSupplies",
+      "subcat" : "educationalsupplies",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "Office:EducationalSupplies",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYWH",
+      "xmlpath" : "Office.ProductType.EducationalSupplies."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_ofc_edlsupplies_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "Office.ProductType.EducationalSupplies.ItemPackageQuantity"
+   }
+]

@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=widescreen4
+SITEBUTTONS=l2_khakiplain
+-->
+<html>
+<head>
+<!-- HEAD -->
+</head>
+
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 10px; font-family: verdana; background-color: #CCCC99;}
+td.menu	{font-family: verdana; font-size: 11px; background-color: #660000; color: #FFFFFF;}
+td.line	{background-color: #333333;}
+td.content	{background-color: #FFFFFF; font-family: verdana;}
+td.cats		{background-color: #999966; font-family: verdana;}
+a	{text-decoration: none;}
+a:hover	{text-decoration: underline;}
+.title	{font-family: verdana; font-size: 12px; color: #660000; font-weight: bold;}
+.white	{color: #FFFFFF; font-family: verdana; font-size: 11px;}
+</style>
+<script language="JavaScript">
+<!--
+initialized = 0;
+<!-- MENU
+FORMAT=rollover_%NUM%_on = new Image;%BREAK%rollover_%NUM%_on.src = "%SRC%";%BREAK%
+BUTTONTYPE=widescreen4_on
+WIDTH=150
+NOHOME=1
+--><!-- MENU
+FORMAT=rollover_%NUM%_off = new Image;%BREAK%rollover_%NUM%_off.src = "%SRC%";%BREAK%
+BUTTONTYPE=widescreen4_off
+WIDTH=150
+NOHOME=1
+-->initialized = 1;
+function on(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_on.src");
+}
+function off(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_off.src");
+}
+// -->
+</script>
+<body>
+<div align="right"><!-- LOGO
+WIDTH=400
+HEIGHT=85
+-->
+</div>
+<div align="center">
+<table width=100% cellspacing=0 cellpadding=0 border=0>
+	<tr>
+		<td width=14% height=1><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td width=1 class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td width=72% class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=300 height=1></td>
+		<td width=1 class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td width=14%><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+	</tr><tr>
+		<td height=18><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=18></td>
+		<td class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td nowrap class="menu">&nbsp;
+<a href="<!-- HOME_URL -->"><span class="white">Home</span></a>&nbsp;-&nbsp;
+<a href="<!-- CART_URL -->"><span class="white">Cart</span></a>&nbsp;-&nbsp;
+<a href="<!-- LOGIN_URL -->"><span class="white">Login</span></a>&nbsp;-&nbsp;
+<a href="<!-- SEARCH_URL -->"><span class="white">Search</a></span>&nbsp;-&nbsp;
+<a href="<!-- ABOUT_URL -->"><span class="white">About&nbsp;Us</span></a>&nbsp;-&nbsp;
+<a href="<!-- CONTACT_URL -->"><span class="white">Contact</span></a>&nbsp;</span>
+		</td>
+		<td class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td></td>
+	</tr>
+</table>
+<table width=100% cellspacing=0 cellpadding=0 border=0>
+	<tr>
+		<td width=5%></td>
+		<td class="line" width=1><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td width=90% class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=500 height=1></td>
+		<td class="line" width=1><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td width=5%></td>
+	</tr><tr>
+		<td></td>
+		<td class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td valign="top">
+			<table cellspacing=0 cellpadding=4 border=0 width=100%>
+				<tr>
+					<td valign="top" class="cats" width=150 background="<!-- WRAPPER_URL -->/menu_bg.jpg">
+					<!-- MENU
+BUTTONTYPE=widescreen4_off
+FORMAT=<a href="%URL%" OnMouseOver="on(%NUM%)" OnMouseOut="off(%NUM%)"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0" name="roll_%NUM%"></a><br>
+WIDTH=150
+NOHOME=1
+--><br><br>
+<!-- SIDEBAR -->					</td>
+					<td class="content" width=1><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=300></td>
+					<td valign="top" class="content" width=99%><p class="title"><!-- TITLE --></p><!-- BODY --></td>
+				</tr>
+			</table>
+		
+		</td>
+		<td class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td></td>
+	</tr><tr>
+		<td></td>
+		<td class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td class="line" ><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td ></td>
+	</tr>
+</table>
+<table width=100% cellspacing=0 cellpadding=0 border=0>
+	<tr>
+		<td height=18><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=38></td>
+		<td class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td nowrap class="menu"><!-- FOOTER
+TRANSPARENT=TRUE
+--></td>
+		<td class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td></td>
+	</tr><tr>
+		<td width=14% height=1><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td width=1 class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td width=72% class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=400 height=1></td>
+		<td width=1 class="line"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+		<td width=14%><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+	</tr>
+</table>	
+</body>
+</html>

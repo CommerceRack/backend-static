@@ -1,0 +1,257 @@
+<body>
+<script type="text/javascript" src="../My Documents/sites/static on dev/graphics/general/jslib/jquery/jquery-1.5.1.js"></script>
+
+<h1>Output:</h1>
+<div id="wiki_output">
+</div>
+
+<hr>
+
+<h1>Input:</h1>
+<div id="wiki_input">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis felis elit. Nullam tempor adipiscing rutrum. Donec aliquet vulputate felis a pulvinar. Nunc sapien lorem, consequat in dictum et, sagittis ut velit. Vestibulum ornare, felis vitae fermentum pretium, orci turpis euismod diam, nec laoreet purus neque ut justo.
+
+
+
+
+[[model]]
+
+[[Linked phrase]:search=spork]
+
+[[visit a domain]:url=http://www.starwars.com]
+
+[[open a window]:popup=http://www.google.com]
+
+[[email us]:url=mailto:jt@zoovy.com]
+
+[[has dot no slash]:category=.subcategories.subcat_9]
+
+[[no dot no slash]:category=subcategories.subcat_9]
+
+[[has dot has slash]:category=.subcategories.subcat_9/]
+
+[[no dot has slash]:category=subcategories.subcat_9/]
+
+[[product]:product=OUTFIT]
+
+[[product with apostrophe de'lally]:product=OUTFIT]
+
+[[customer phrase]:customer=login]
+
+[[my Account]:customer=]
+
+
+=Header 1=
+= but is this valid too =
+==header 2==
+Vestibulum aliquet dignissim orci sit amet placerat. Quisque orci elit, porta eu accumsan tincidunt, rutrum varius sem. Phasellus sed lorem libero, quis facilisis neque.
+===HEADER3===
+Vivamus tristique venenatis vestibulum. Curabitur feugiat elementum molestie. Fusce egestas leo sed nulla adipiscing commodo. Ut massa enim, rutrum et facilisis sed, mollis vitae justo.
+
+
+
+*Nam pulvinar commodo leo eget volutpat.
+*Pellentesque vel eros erat, eget hendrerit leo.
+*Morbi aliquam ante in nulla consectetur porttitor.
+*Ut nunc turpis, accumsan in dapibus eu.
+
+
+Oorper ac enim. Suspendisse tellus neque, vehicula at aliquet at, suscipit in risus. Curabitur consequat est vel mi faucibus eget egestas tortor suscipit. Sed in lectus sem. Curabitur enim urna, fermentum non venenatis id, adipiscing sit amet lacus. Aliquam erat volutpat. In feugiat arcu eget dui molestie vestibulum.
+
+=wiki table to follow:==
+
+|=Heading A|=Heading B|=Heading C
+|1a|1b|1c
+|2a|2b|2c
+</div>
+
+<script>
+//make these optional.
+//also pass in an object with function references so that when :url is matched for a 
+function wiki2html(wiki) {
+
+	if (wiki.indexOf("[[",0)>=0) {
+		// we have [[macros]]
+
+		var myOutput = new Array;
+		var myTokens = wiki.split(/(\[\[.*?\].*?\])/);
+
+		for(i = 0; i < myTokens.length; i++){
+		    var chunk = myTokens[i];
+
+
+			if (chunk.substring(0,2) != '[[') {
+         		// not a token
+
+         		// good spot to do some cleanup
+         		chunk.replace(/\r/,"");	// eliminate \r (so any \r\n are now just \n)
+
+         		var fixed = "";
+         		var lines = chunk.split(/\n/);
+         		for (li = lines.length; li > 0; li--) {
+         			var lstr = lines[li-1];
+					if (lstr.match(/^[=]+[\s]*[a-zA-Z0-9]+/)) {
+						// rewrite '==header' to '== header =='
+						// rewrite '= header ==' to '= header ='
+						lstr = lstr.replace(/^([=]+)[\s]*(.*?)([\s]*[=]*)$/g,"$1 $2 $1"); //### remove this spaces if = head should be =head
+						}
+					fixed = lstr + "\n" + fixed;
+         			}
+
+				// console.log(fixed);
+				myOutput.push(fixed);
+            	}
+         	else if (chunk.match(/^\[\[.*?\].*?\]$/)) {
+				// this is a token
+				var output = '';
+
+	            var phrase = chunk.match(/^\[\[(.*?)\]/)[1];
+	            var operation = chunk.match(/^\[\[.*?\](.*?)\]$/)[1];
+	            var suffix = '';
+	            if (operation.indexOf("=")>0) {
+	            	suffix = operation.match(/^.*?\=(.*?)$/)[1];
+	            	operation = operation.substring(0,operation.indexOf("="));
+	            	}
+
+            	if (operation == '') {
+            		// default operation
+            		operation = ':search';
+            		suffix = phrase;
+            		}
+
+            	// make sure category has a leading .
+            	if (operation != "category") {
+            		}
+         		else if (suffix.substring(0,1) == ".") {
+            		}
+            	else {
+            		suffix = "."+suffix;
+            		}
+
+				switch(operation) {
+					case ":url" :
+						output = "<a href=\""+suffix+"\">"+phrase+"</a>";
+						break;
+					case ":search" :
+						output = "<a href=\"/search.cgis?keyword="+suffix+"\">"+phrase+"</a>";
+						break;
+					case ":category" :
+						output = "<a href=\"/category/"+suffix+"\">"+phrase+"</a>";
+						break;
+					case ":product" :
+						output = "<a href=\"/product/"+suffix+"\">"+phrase+"</a>";
+						break;
+					case ":customer" :
+						output = "<a href=\"/customer/"+suffix+"\">"+phrase+"</a>";
+						break;
+					default:
+						output = "<!-- unhandled_token: "+chunk+" -->"+phrase;
+						break;
+					}
+
+
+				// console.log("phrase["+phrase+"] operation["+operation+"] suffix["+suffix+"]");
+
+
+				myOutput.push(output);
+         		}
+         	else {
+         		// looks like a token, talks like a token, but it's not a token.
+         		// this should almost NEVER be reached only on lines like [[asdf]asdf
+         		myOutput.push(chunk);
+         		}
+			}
+
+
+
+		// console.log("FINAL OUTPUT: "+myOutput.join(""));
+		wiki = myOutput.join("");
+		}
+
+	return(wiki);
+}
+
+$("#wiki_output").html(wiki2html($("#wiki_input").html()));
+</script>
+
+
+
+</body>
+
+<!--
+   if (index($text,'[[')>=0) {
+      ## handles links.
+
+      my $output = '';
+      # parsing strategy: start at the front of $text look for [[
+      foreach my $chunk (split(/(\[\[.*?\].*?\])/os,$text)) {
+         ## at this point $text is [[asdf]...]
+         if (substr($chunk,0,2) ne '[[') {
+            # push @chunks, [ 0, $chunk ];
+            $output .= $chunk;
+            }
+         elsif ($chunk =~ /^\[\[(.*?)\](.*?)\]$/os) {
+         # elsif ($chunk =~ /^\[\[([a-zA-Z0-9\.\&\-\_\'\"\(\)\s]+)\](.*?)\]$/os) {
+
+            my ($phrase,$operation) = ($1,$2);
+
+            if ($operation eq '') { $operation = ':search='.$phrase; }
+            my %pref = ();
+            if (index($operation,'&')>=0) {
+               %pref = %{&ZTOOLKIT::parseparams($operation)};     # 3 seconds.
+               $operation = lc(substr($operation,1,index($operation,'=')-1)); # operation :product=asdf should be just
+               }
+            else {
+               ## single key=value so we can shortcut (to save time)
+               my ($k,$v) = split(/=/o,$operation);
+               if ($v !~ /%/o) {
+                  ## if we don't have a %XX then we don't need to unescape, and that's expensive so we skip it.
+                  $pref{$k} = $v;
+                  }
+               else {
+                  $pref{$k} = URI::Escape::uri_unescape($v); # unescape %XY
+                  }
+               $operation = lc(substr($k,1));   # was ':PRODUCT' now 'product'
+               }
+
+            # print "TEXT: $phrase OP:$operation\n";
+            my $url = '';
+            if (defined $WIKI::LINK_FUNCTIONS{$operation}) {
+               $url = $WIKI::LINK_FUNCTIONS{$operation}->($phrase,\%pref);
+               }
+            else {
+               $url = "#unknown_wiki_link=$operation";
+
+            if (not defined $pref{'title'}) {
+               $pref{'title'} = $phrase;
+               }
+            if (not defined $pref{'class'}) {
+               $pref{'class'} = "wikilink wikilink_$operation";
+               }
+            if (defined $pref{':class'}) {
+               ## lets the user append their own class to a link.
+               $pref{'class'} .= ' '.$pref{':class'};
+               }
+
+            my $attribs = '';
+            foreach my $k (keys %pref) {
+               next if (substr($k,0,1) eq ':'); # skip atrributes like :product
+               # $attribs .= ' '.$k.'="'.&ZOOVY::incode($pref{$k}).'" ';
+               if ($pref{$k} =~ /[\&\"\<\>]/o) {
+                  ## if we need to incode, then encode
+                  $attribs .= ' '.$k.'="'.&ZOOVY::incode($pref{$k}).'" ';
+                  }
+               else {
+                  $attribs .= ' '.$k.'="'.$pref{$k}.'" ';
+                  }
+               }
+            # push @chunks, [ 1, "<a $attribs href=\"$url\">$phrase</a>" ];
+            $output .= "<a $attribs href=\"$url\">$phrase</a>";
+            }
+         else {
+            # push @chunks, [ 0, $chunk ];
+            $output .= $chunk;
+            }
+         }
+      $text = $output;
+      }

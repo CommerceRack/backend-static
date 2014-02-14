@@ -1,0 +1,265 @@
+<!-- SETUP_TAB -->
+
+<br>
+<table align='center' width='800'><tr><td>
+
+<form name="thisFrm" action="index.cgi" method="GET">
+<input type="hidden" id="VERB" name="VERB" value="">
+<input type="hidden" id="USER" name="USER" value="<!-- USERNAME -->">
+<!-- MSG -->
+<Br>
+<table border=0 class="zoovytable" width="100%">
+	<tr>
+		<td colspan=3 class="zoovytableheader">Account Configuration</td>
+	</tr>
+	<tr>
+		<td width=200 valign="top" align="left">Username:</td>
+		<td valign="top" align="left"><!-- USERNAME --></td>
+	</tr>
+	<tr>
+		<td valign="top" align="left">Account Package Type:</td>
+		<td valign="top" align="left"><!-- ACCOUNT_TYPE --></td>
+	</tr>
+	<tr>
+		<td valign="top" align="left">Payment Method:</td>
+		<td valign="top" align="left"><!-- PAYMENT_METHOD -->
+		(<a href="/biz/vstore/billing/index.cgi?VERB=PAYMENTS">Add Payment Method</a>)
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left">Billing Day:</td>
+		<td valign="top" align="left"><!-- BILLING_DAY -->
+		<div class="hint">Note: billing may be delayed by 2-3 days.</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="zoovysub1header" valign="top" align="left" colspan=2>
+		Package Details:
+		</td>
+	</tr>
+	<tr>
+		<td class="r1" valign="top" align="left" colspan=2>
+		<!-- PACKAGE_DETAIL -->
+		</td>	
+	</tr>
+	<tr>
+		<td class="zoovysub1header" valign="top" align="left" colspan=2>
+		Effective Fees:
+		</td>
+	</tr>
+	<tr>
+		<td class="r1" valign="top" align="left" colspan=2>
+		<!-- FEES -->
+		</td>	
+	</tr>
+</table>
+		
+<br>
+<br>
+<center>
+
+<table class="zoovytable" width='100%'>
+<tr><td colspan=2 class="zoovytableheader">Billing Information:</td></tr>
+<tr><td colspan=2>
+Please provide the appropriate contact information to reach you. 
+The email and phone number below is for Zoovy internal use only and will NOT be shared with customers.
+Providing false, misleading, or inaccurate information in any of the fields below is a violation of the 
+Zoovy Terms of Service and in some circumstances will result in termination/suspension.
+</td></tr>
+
+<tr><td colspan=2 class="zoovysub1header">Organization Details</td></tr>
+<tr>
+	<td valign="top" align="right" >Company Name:</td>
+	<td valign="top" align="left" ><input type="textbox" name="org.company" size="50" value="<!-- COMPANY_NAME -->"></td>
+</tr>
+<tr><td valign="top" align="right" >Address: </td><td valign="top" align="left" >
+   <input size="50" type="textbox" name="org.address1" value="<!-- ORG_ADDRESS1 -->"><br>
+   <input size="50" type="textbox" name="org.address2" value="<!-- ORG_ADDRESS2 -->"></td></tr>
+
+<tr><td valign="top" align="right" >City: </td><td>
+   <input type="textbox" name="org.city" value="<!-- ORG_CITY -->">
+State:
+   <input type="textbox" size="2" name="org.region" value="<!-- ORG_REGION -->">
+</td></tr>
+<tr><td valign="top" align="right">Zip:</td><td>
+   <input type="textbox" size="5" name="org.postal" value="<!-- ORG_POSTAL -->">ISO Country:
+   <input type="textbox" size="2" name="org.countrycode" value="<!-- ORG_COUNTRY -->">
+</td></tr>
+<tr><td valign="top" align="right">Org Type:</td><td>
+	<select name="org.type">
+		<option <!-- ORG_TYPE_ --> value="">Not Disclosed</option>
+		<option <!-- ORG_TYPE_SOLE --> value="sole">Sole Proprietor</option>
+		<option <!-- ORG_TYPE_PARTNER --> value="partner">Partnership</option>
+		<option <!-- ORG_TYPE_LLC --> value="llc">LLC/LLP</option>
+		<option <!-- ORG_TYPE_INC --> value="inc">Incorporation</option>
+	</select>
+</td></tr>
+<tr><td valign="top" align="right">EIN/Tax #:</td><td>
+	<input size=10 value="<!-- ORG_EIN -->" type="textbox" name="org.ein">
+	</td>
+</tr>
+<tr><td valign="top" align="right"># of Employees:</td><td>
+	<input size=4 value="<!-- INFO_EMPLOYEES -->" type="textbox" name="info.employees">
+	</td>
+</tr>
+<tr><td valign="top" align="right">Year Founded:</td><td>
+	<input size=4 value="<!-- INFO_FOUNDED -->" type="textbox" name="info.founded">
+	</td>
+</tr>
+<tr><td valign="top" align="right">Est. Annual Sales (dollars):</td><td>
+	$ <input size=10 value="<!-- INFO_SALES -->" type="textbox" name="info.sales"> (in this account)
+	</td>
+</tr>
+
+
+<tr><td colspan=2 class="zoovysub1header">Organizational Contact</td></tr>
+<tr><td colspan=2><div class="hint">This should be a principal in the business even if they do not have a day to day role in the website.</div></td></tr>
+<tr>
+	<td valign="top" align="right" >(First MI Lastname)</td><td valign="top" align="left" >
+  <input type="textbox" size="15" name="org.firstname" value="<!-- ORG_FIRSTNAME -->">
+  <input type="textbox" size="15" name="org.lastname" value="<!-- ORG_LASTNAME -->"></td>
+</tr>
+<tr>
+	<td valign="top" align="right" >Email:</font><br>
+	</td>
+	<td valign="top" align="left" >
+   <input type="textbox" name="org.email" value="<!-- ORG_EMAIL -->">
+	</td>
+</tr>
+<tr>
+	<td valign="top" align="right" >Phone:</font><br>
+	</td>
+	<td valign="top" align="left" >
+   <input type="textbox" name="org.phone" value="<!-- ORG_PHONE -->">
+	</td>
+</tr>
+<tr>
+	<td valign="top" align="right" >Mobile:</font><br>
+	</td>
+	<td valign="top" align="left" >
+   <input type="textbox" name="org.mobile" value="<!-- ORG_MOBILE -->">
+	</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td valign="top" colspan='2' align="left" >
+	<input <!-- ORG_NEWSLETTER --> type="checkbox" name="org.newsletter"> Subscribe to Newsletter<br>
+</tr>
+
+
+<tr><td colspan=2 class="zoovysub1header">Billing Contact</td></tr>
+<tr><td colspan=2><div class="hint">This is the person who is responsible for accounts receivable within the organization.</div></td></tr>
+<tr>
+	<td valign="top" align="right" >(First MI Lastname)</td><td valign="top" align="left" >
+	<input type="textbox" size="15" name="bill.firstname" value="<!-- BILL_FIRSTNAME -->">
+  <input type="textbox" size="15" name="bill.lastname" value="<!-- BILL_LASTNAME -->"></td>
+</tr>
+<tr>
+	<td valign="top" align="right" >Email:</font><br>
+	</td>
+	<td valign="top" align="left" >
+   <input type="textbox" name="bill.email" value="<!-- BILL_EMAIL -->">
+	</td>
+</tr>
+<tr>
+	<td valign="top" align="right" >Phone:</font><br>
+	</td>
+	<td valign="top" align="left" >
+   <input type="textbox" name="bill.phone" value="<!-- BILL_PHONE -->">
+	</td>
+</tr>
+<tr>
+	<td valign="top" align="right" >Mobile:</font><br>
+	</td>
+	<td valign="top" align="left" >
+   <input type="textbox" name="bill.mobile" value="<!-- BILL_MOBILE -->">
+	</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td valign="top" colspan='2' align="left" >
+	<input <!-- BILL_NEWSLETTER --> type="checkbox" name="bill.newsletter"> Subscribe to Newsletter<br>
+</tr>
+
+<tr><td colspan=2 class="zoovysub1header">Technical Contact</td></tr>
+<tr><td colspan=2><div class="hint">This is the primary technical contact for the account.</div></td></tr>
+<tr>
+	<td valign="top" align="right" >(First MI Lastname)</td><td valign="top" align="left" >
+	<input type="textbox" size="15" name="tech.firstname" value="<!-- TECH_FIRSTNAME -->">
+  <input type="textbox" size="15" name="tech.lastname" value="<!-- TECH_LASTNAME -->"></td>
+</tr>
+<tr>
+	<td valign="top" align="right" >Email:</font><br>
+	</td>
+	<td valign="top" align="left" >
+   <input type="textbox" name="tech.email" value="<!-- TECH_EMAIL -->">
+	</td>
+</tr>
+<tr>
+	<td valign="top" align="right" >Phone:</font><br>
+	</td>
+	<td valign="top" align="left" >
+   <input type="textbox" name="tech.phone" value="<!-- TECH_PHONE -->">
+	</td>
+</tr>
+<tr>
+	<td valign="top" align="right" >Mobile:</font><br>
+	</td>
+	<td valign="top" align="left" >
+   <input type="textbox" name="tech.mobile" value="<!-- TECH_MOBILE -->">
+	</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td valign="top" colspan='2' align="left" >
+	<input <!-- TECH_NEWSLETTER --> type="checkbox" name="tech.newsletter"> Subscribe to Newsletter<br>
+</tr>
+
+<tr><td colspan="2"><button class="button" type="submit" onClick="jQuery('#VERB').val('SAVECOMPANY');">Save Billing Info</button></td></tr>
+</table>
+<br>
+
+
+<table width=100%><tr><td>
+<h2>Billing History:</h2>
+<table class="zoovytable" width='100%'>
+<tr class="zoovytableheader">
+	<td>Invoice #</td>
+	<td>Created</td>
+	<td>Payment</td>
+	<td>View Detail</td>
+	<td>Amount</td>
+</tr>
+<!-- INVOICES -->
+</table>
+</td></tr></table>
+<br>
+<table width=100%><tr><td>
+<h2>Pending Transactions:</h2>
+<table width='100%' class="zoovytable">
+<tr class="zoovytableheader">
+	<td>Date</td>
+	<td>Class</td>
+	<td>Type</td>
+	<td>Description</td>
+	<td>Amount</td>
+</tr>
+<!-- TRANSACTIONS -->
+<tr>
+	<td align=right colspan=4>Total:</td>
+	<td>$<!-- AMOUNT --></td>
+</tr>
+</table>
+</td></tr></table>
+
+</center>
+<br>
+
+</form>
+</font>
+
+</td></tr></table>
+
+<!-- TAB_FOOTER -->
+</center>
+</body>

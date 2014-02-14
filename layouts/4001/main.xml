@@ -1,0 +1,44 @@
+<TEMPLATE ID="4001" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMIH" CREATOR="STAFF" IMAGES="1" PROPERTIES="1" SERIES="2002" SUBTYPE="G" FORMAT="LAYOUT" SHORT="A 200x400 picture sits at the top of this page, with an extended description, and site products." TYPE="CONFIG" TITLE="Single Picture" RELEASED="20020129"><SUMMARY><![CDATA[
+Extended Description
+Gallery Listing
+IMAGE1 (400x200)
+Product Listing
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMII" TYPE="OUTPUT"><HTML><![CDATA[<center>
+<table cellpadding="10"><tr><td align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="200" ID="PIC1" HELP="Please select a picture for this category." DATA="page:picture1" WIDTH="400" PROMPT="Large Picture" DEFAULT="https://static.zoovy.com/img/H100-W100-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMIJ" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr>
+<tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Extra information for bidders" DATA="page:description" PROMPT="Extended Description" TYPE="TEXT"><DEFAULT><![CDATA[Thank you for visiting our website!  Here's a list of our other auctions, feel free to browse around and see what we have to buy.]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CPUKMIK" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+<center>
+<P>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="GALLERYSELECT1" TYPE="GALLERYSELECT"></ELEMENT>
+<ELEMENT ID="GALLERY1" HELP="These are all of the products in this marketplace" DATA="page:gallery" PROMPT="Gallery Listing" DEFAULT="THUMB,3,1,NONE,SHOWPRICE=1" TYPE="GALLERY"></ELEMENT>
+<ELEMENT ID="CPUKMIL" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" DATA="page:prodlist" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"><HELP><![CDATA[You can add related products to this, when you do they will appear below. WARNING: It is against eBay rules to have products on this page - do not add products if you are selling on eBay. ]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CPUKMIM" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr></table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,497 @@
+.zbody { background-color: #171b1e; }
+.zborder { border: 1px solid #000000; }
+.zbox { border: 1px solid #292929; }
+.zbox_body { background-color: #171b1e; color: #ffffff; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.zbox_head { background-color: #000000; color: #cccccc; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 13px; }
+.zcolor { background-color: #171b1e; color: #ffffff; }
+.zcolor_contrast { background-color: #14a2b0; color: #000000; }
+.zcolor_dark { background-color: #000000; color: #ffffff; }
+.zcolor_light { background-color: #303030; color: #ffffff; }
+.zform_button { background:#14a2b0; border:1px solid #015f68; color:#ffffff; font-size:14px; font-family: "Helvetica Neue", helvetica, sans-serif; }
+.zform_select { background:#bcbcbc; border:1px solid #4e4e4e; color:#666666; font-size:14px; font-family: "Helvetica Neue", helvetica, sans-serif; }
+.zform_textarea { background:#bcbcbc; border:1px solid #4e4e4e; color:#666666; font-size:14px; font-family: "Helvetica Neue", helvetica, sans-serif; }
+.zform_textbox { background:#bcbcbc; border:1px solid #4e4e4e; color:#666666; font-size:14px; font-family: "Helvetica Neue", helvetica, sans-serif; }
+.zhint { color: #cccccc; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.zlink { color: #14a2b0; }
+.zsmall { color: #ffffff; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.ztab0 { background-color: #171b1e; color: #ffffff; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 11px; }
+.ztab1 { background-color: #000000; color: #ffffff; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 11px; font-weight: bold;}
+.ztabbody { background-color: #000000; color: #ffffff; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 11px; }
+.ztable_head { background-color: #000000; color: #ffffff; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 13px; }
+.ztable_row {color: #ffffff; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.ztable_row0 { background-color: #171b1e; color: #ffffff; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 12px;}
+.ztable_row1 { background-color: #000000; color: #ffffff; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 12px;}
+.ztable_row_small { color: #cccccc; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.ztable_row_title { font-weight: bold; color: #ff7700; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 14px; }
+.ztitle { font-weight: bold; color: #ffffff; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 15px; }
+.ztitle2 { font-weight: bold; color: #cccccc; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 14px; }
+.ztxt { color: #ffffff; font-family: "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.zwarn { color: #FF0000; font-weight: bold; }
+
+
+.zform_textbox	{	padding:0; text-indent:5px; 
+	height:24px;
+	line-height:24px; /* ignored by FF, but used by IE */
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	}
+
+/* styles for shadow */
+
+
+.spritebg	{background:url(shadow_sprites-111x68.png) no-repeat;}
+
+body	{
+	
+	font-family: Helvetica, Arial, sans-serif;
+	background: url(gradient_bg-1x211.png) repeat-x fixed bottom #171b1e; color:#ffffff;	margin:0;
+	padding:0;
+	font-size:12px;
+	}
+
+a	{color:#14a2b0;}
+a:hover	{color:#ffffff;}
+
+img	{border:0px}
+
+/* removes bottom padding/margin from form in old browsers */
+form	{display:inline;}
+
+
+
+/* global styles for float and clear */
+div.floatLeft	{float:left;}
+div.floatRight	{float:right;}
+div.clearAll	{clear:both;}
+
+div.no_underline a	{text-decoration:none;} /* this should be left alone */
+
+
+h1  {font-size:13px; color:#727272; margin:0px 0px 0px 0px; font-weight:bold; clear:both;} /* Used for the page title element */
+
+/* used for the wiki header 1 & 2 */
+h2	{font-size:12pt; color:#666666; margin:5px 0px 2px 0px; font-weight:bold;}
+h3	{font-size:11pt; color:#666666; margin:2px 0px 1px 0px; font-weight:bold;}
+
+
+.bold	{font-weight:bold;}
+
+.pointer	{cursor:pointer;} /* use on any div with an onClick for document.location. */
+
+.posRel	{position:relative;}
+
+/* the width around the entire theme, including the margins and shadows */
+.themeWidth	{
+	width:990px;
+	text-align:left;
+	margin-left: auto ;
+	margin-right: auto ;
+	}
+
+.center	{text-align:center; vertical-align:middle;}
+
+
+
+
+/* ####################  Main Column - content area */
+
+/* a class is used instead of an id, because on specific pages, an ID is output around this div to adjust the width for when the left column is not displayed */
+
+#leftCol	{float:left; width:196px; z-index:54;}
+.bodyContent	{float:right; width:780px; text-align:left; z-index:55; min-height:300px;}
+
+/* overrides the bodyContent width for pages with no left column. div with id is only output when needed (outputskip) */
+#noLeftCol .bodyContent	{width:990px;}
+
+/* use this in page layouts where the width needs to be fixed and the overflow needs to be hidden. width should ALWAYS match bodyContent */
+.bodyContentWidth	{width:780px; overflow:hidden;}
+
+/* wiki styles */
+
+div.wiki_section	{margin-bottom:15px; line-height:150%}
+
+
+
+/* gradients */
+
+.blueGradient	{
+	background: #40adb7; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQwYWRiNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzJjYWJiOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzE0YTJiMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNGEyYjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #40adb7 0%, #2cabb8 50%, #14a2b0 51%, #14a2b0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#40adb7), color-stop(50%,#2cabb8), color-stop(51%,#14a2b0), color-stop(100%,#14a2b0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #40adb7 0%,#2cabb8 50%,#14a2b0 51%,#14a2b0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #40adb7 0%,#2cabb8 50%,#14a2b0 51%,#14a2b0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #40adb7 0%,#2cabb8 50%,#14a2b0 51%,#14a2b0 100%); /* IE10+ */
+	background: linear-gradient(top, #40adb7 0%,#2cabb8 50%,#14a2b0 51%,#14a2b0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40adb7', endColorstr='#14a2b0',GradientType=0 ); /* IE6-8 */
+	}
+
+.blackGradient	{
+background: #2b2b2b; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJiMmIyYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzFhMWExYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzBhMGUwYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwYTA4MDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #2b2b2b 0%, #1a1a1a 50%, #0a0e0a 51%, #0a0809 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2b2b2b), color-stop(50%,#1a1a1a), color-stop(51%,#0a0e0a), color-stop(100%,#0a0809)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #2b2b2b 0%,#1a1a1a 50%,#0a0e0a 51%,#0a0809 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #2b2b2b 0%,#1a1a1a 50%,#0a0e0a 51%,#0a0809 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #2b2b2b 0%,#1a1a1a 50%,#0a0e0a 51%,#0a0809 100%); /* IE10+ */
+background: linear-gradient(top, #2b2b2b 0%,#1a1a1a 50%,#0a0e0a 51%,#0a0809 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#0a0809',GradientType=0 ); /* IE6-8 */
+
+	}
+
+
+/* margins between major sections */
+#mastFooter, #bodyContent, #categoriesContainer	{margin-bottom:14px;}
+#breadcrumb	{position:relative; top:-14px} /* compensate for category margin. necessary cuz breadcrumb not on every page */
+
+/* master header */
+
+#mastHead	{position:relative; height:100px;}
+#mastHead a	{color:#ffffff; text-decoration:none;}
+
+#mastHeadLogo	{position:absolute; left:0; width:400px; top:5px; height:90px;} /* logo element height is 90px */
+#mastHeadDecal	{position:absolute; right:300px; width:240px; height:50px; top:5px;}
+#mastHeadMenuAndPhone	{position:absolute; top:0px; right:0; text-align:right; line-height:20px; font-size:12px;}
+#mastHeadMenuAndPhone a	{padding:0 5px;}
+
+#mastHeadMenuAndPhone .contactInfo	{margin-top:5px;}
+#mastHeadMenuAndPhone .phoneNumber	{font-size:14px; font-weight:bold;}
+#mastHeadMenuAndPhone .storeHours	{font-size:11px; line-height:13px;}
+
+#mastHeadSearch	{
+	background:#000000;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright: 7px;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	border-radius: 7px 7px 0 0; 
+	width:540px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	height:35px;
+	}
+
+#wrapperFrmContainer	{padding:6px;}
+#wrapperFrmContainer .zform_textbox	{
+	width:460px; 
+	position:absolute; top:5px; left:5px;
+	z-index:50;
+	}
+
+#wrapperFrmContainer .zform_button, #mastFooterNewsletter .zform_button	{
+	padding:0 10px; text-indent:5px; 
+	color:#ffffff; 
+	text-align:center;
+	font-weight:bold;
+	border:1px solid #015f68;
+	height:26px;
+	font-size:14px; 
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	z-index:52;
+	}
+
+
+#wrapperFrmContainer .zform_button	{
+	position:absolute;
+	right:5px;
+	top:5px;	
+	}
+
+
+#breadcrumb	{
+	text-indent:7px;
+	line-height:26px;
+	background:#000000;
+	color:#ffffff; 
+	text-align:left;
+	height:28px;
+	font-size:12px; 
+	border:1px solid #292929;
+	border-top-width:0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	-webkit-border-radius: 0 0 7px 7px;
+	border-radius: 0 0 7px 7px; 
+	}
+
+#mastFooter a	{color:#ffffff; text-decoration:none;}
+#mastFooter	{
+	background:#171b1e; color:#ffffff;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	padding: 7px;
+	}
+
+#mastFooter .cobrand	{float:right;}
+#mastFooter .copyright	{float:left;}
+
+#mastFooter .footSection	{float:left; width:305px; margin-right:30px;}
+#mastFooter #mastFooterNewsletter	{margin-right:0;}
+#mastFooter .footHead	{font-size:14px; font-weight:bold; margin-bottom:5px; font-family: Helvetica Narrow, Helvetica, Arial, sans-serif; letter-spacing:1px; word-spacing:5px;}
+
+#mastFooterCustServ .footLinks a	{display:block; padding:0 2px;}
+#mastFooterCustServ .footLinks	{float:left; margin-right:20px}
+
+
+#mastFooterNewsletter	.zsmall	{margin-bottom:3px;}
+#mastFooterNewsletter #mastFootEmailInput {width:305px; margin-bottom:3px;}
+#mastFooterNewsletter #mastFootFullNameInput	{width:190px; margin-right:3px;}
+#mastFooterNewsletter .zform_button	{float:right;}
+
+
+#mastFooter	.bookmarklet	{display:block; float:left; width:120px; height:20px;}
+/* for the bookmarklets in the upper right corner */
+div.icon	{float:left; margin-right:3px; width:16px; height:16px; }
+
+div.twittericon	{background-position: 0px 0px;}
+div.facebookicon	{background-position: -19px 0px;}
+div.youtubeicon	{background-position: -38px 0px;}
+div.rssicon	{background-position: -57px 0px;}
+div.blogicon	{background-position: -76px 0px;}
+div.linkedinicon	{background-position: -95px 0px;}
+
+div.homeIcon	{background-position: -20px -20px; height:16px; width:16px; margin:6px 0 0 7px;}
+
+
+
+
+/* left column */
+
+#tier2n3_dual_cats_displayed a		{color:#ffffff; display:block; text-decoration:none;}
+#tier2n3_dual_cats_displayed {margin-bottom:14px;}
+#tier2n3_dual_cats_displayed ul	{margin:0px; padding:0;}
+#tier2n3_dual_cats_displayed ul li	{display:block; font-size:13px;}
+
+#tier2n3_dual_cats_displayed a:hover	{color:#14a2b0}
+
+#tier2n3_dual_cats_displayed ul.top_cats a	{padding:4px 0px;}
+
+#tier2n3_dual_cats_displayed ul.sub_cats a	{padding:2px 0px 2px 14px;}
+#tier2n3_dual_cats_displayed ul.sub_cats	{margin-bottom:7px}
+
+#leftCol div.elementMargin	{margin-bottom:14px;}
+
+#leftCol .boxContent	{clear:both;}
+#leftCol .boxHeadText	{background:#000000; padding:7px; margin-bottom:7px;}
+
+#recentlyViewedItems .ztable_row	{padding-bottom:7px;}
+#recentlyViewedItems .ztable_row .prodListThumb	{margin-right:7px;}
+
+
+
+
+
+/* tier 1 and 2 horizontal cats with dropdowns */
+
+#categoriesContainer	{
+	border-top:1px solid #000000;
+	border-bottom:1px solid #292929;
+	}
+
+/* 
+found menu here:
+http://www.webdesignerwall.com/demo/css3-dropdown-menu/
+*/
+
+
+#nav {
+	margin: 0;
+	padding: 0;
+	}
+
+#nav li {
+	margin: 0px 10px 0 0px;
+	padding: 0 0 0 0 ; /* removing this bottom padding seems to break the menu. */
+	float: left;
+	position: relative;
+	list-style: none;
+	z-index:1000;
+	font-family: helvetica narrow, "Helvetica Neue", helvetica, sans-serif;
+	font-size:14px;
+
+	}
+
+
+/* main level link */
+#nav a {
+	color: #ffffff;
+
+	text-decoration: none;
+	display: block;
+	margin: 0;
+	padding:13px 10px;
+	
+	}
+
+/* main level link hover */
+#nav .current a, #nav li:hover > a {
+	color: #fff;
+	
+	background: #40adb7; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQwYWRiNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzJjYWJiOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzE0YTJiMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNGEyYjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #40adb7 0%, #2cabb8 50%, #14a2b0 51%, #14a2b0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#40adb7), color-stop(50%,#2cabb8), color-stop(51%,#14a2b0), color-stop(100%,#14a2b0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #40adb7 0%,#2cabb8 50%,#14a2b0 51%,#14a2b0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #40adb7 0%,#2cabb8 50%,#14a2b0 51%,#14a2b0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #40adb7 0%,#2cabb8 50%,#14a2b0 51%,#14a2b0 100%); /* IE10+ */
+	background: linear-gradient(top, #40adb7 0%,#2cabb8 50%,#14a2b0 51%,#14a2b0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40adb7', endColorstr='#14a2b0',GradientType=0 ); /* IE6-8 */
+	
+	}
+
+
+#nav li ul li a	{padding:0 5px; line-height:22px; font-size:12px; font-family: "Helvetica Neue", helvetica, sans-serif;}
+
+/* sub levels link */
+#nav ul li:hover a {
+	border: none;
+	background:#14a2b0;
+	}
+
+#nav ul a:hover {
+	color: #006 !important;
+	
+	}
+
+/* dropdown */
+#nav li:hover > ul {
+	display: block;
+	}
+
+/* level 2 list */
+#nav ul {
+	display: none;
+	background: #000000;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	position: absolute;
+	top: 35px;
+	left: -15px;
+	border: solid 2px #14a2b0;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	}
+
+#nav ul li {
+	float: none;
+	margin: 0px;
+	padding: 0;
+	}
+
+#nav ul a {
+	font-weight: normal;
+	}
+
+/* level 3+ list */
+#nav ul ul {
+	left: 181px;
+	top: -3px;
+	}
+
+
+/* clearfix */
+#nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	}
+
+#nav {	display: inline-block;} 
+
+html[xmlns] #nav {	display: block;}
+ 
+* html #nav {height: 1%;}
+
+
+
+
+
+
+
+
+/* class corrections for layouts */
+
+#cart_shipping_blurb small	{font-size:11px;}
+
+
+/* generic  layout styles */
+.pageLayout .elementMargin	{margin-bottom:14px;}
+.pageLayout section		{margin-bottom:14px;}
+.pageLayout img	{display:inline-block; vertical-align:top;}
+.pageLayout table {border-collapse:collapse; padding:0;}
+.pageLayout table td	{vertical-align:top;}
+.pageLayout #accessories div.ztable_head	{padding:5px; text-align:right;}
+.pageLayout .retailPrice .value	{text-decoration:line-through;}
+.pageLayout .savings .percentage:before	{content:" (";}
+.pageLayout .savings .percentage:after	{content:")";}
+
+/* generic product layout styles */
+#prodPageFocusImages {margin-right:14px;}
+#socialToolBar	{padding-bottom:7px;}
+#socialToolBar .socialTool	{float:left; margin-right:7px;}
+#prodQtyDiscount .zbox_head	{padding:3px;}
+#prodAttributes	{margin-bottom:7px;}
+.reviewRatingArticle	{padding-bottom:7px;}
+
+/* layout specific styles */
+#p20110912 .reviewSummaryTop	{float:right;}
+#p20110912 #prodQtyDiscount {float:right;}
+#p20110912 td.prodlistProdThumbContainer {width:100px}
+#p20110912 td.prodlistProdContentContainer	{min-width:220px; padding-bottom:7px}
+#p20110912 #reviews .zborder	{padding:4px; margin-bottom:5px;}
+#p20110912 #reviews .zborder img	{vertical-align:text-bottom}
+#p20110912 #relatedItemsProdlist	{margin-left:14px;}
+#p20110912 #relatedItemsProdlist .ztable_row	{padding-top:7px;}
+#p20110912 h4 {margin:0 0 4px 0;}
+#p20110912 .reviewThumb {padding-right:7px;}
+#p20110912 .reviewAddReviewLink	{float:right; font-weight:bold;}
+
+/* category and results layout styles */
+
+.prodlistSoloItem .prodlistLeftCol {position:relative; margin-right:14px;}
+
+.prodlistSoloItem .prodlistLeftCol .buttons	{position:absolute; bottom:7px; left:7px;}
+
+.prodlistSoloItem .prodPricing div	{float:left; margin-right:14px; line-height:20px;}
+
+.prodlistSoloItem .prodlistRightCol .percentage:before	{content:"(";}
+.prodlistSoloItem .prodlistRightCol .percentage:after	{content:")";}
+
+.prodlistSoloItem .prodlistRightCol .prodDesc	{clear:both; padding-top:14px;}
+.prodlistSoloItem .prodAttribs	{padding-top:14px;}
+
+.prodlist4Columns td.ztable_row	{width:25%}
+.prodlist4Columns .ztable_row .prodContainer	{margin-right:14px;} 
+.prodlist4Columns .ztable_col3 .prodContainer {margin-right:0px;}  /* no right side margin needed in right column */
+.prodlist4Columns .prodContainer	{margin-bottom:14px;}
+
+#c-20111020 .prodlistProdThumbContainer {padding-right:7px;}
+#c-20111020 .prodAttribs {font-size:11px; padding-bottom:7px;}
+#c-20111020 .prodDesc	{padding-bottom:7px;} 
+#c-20111020 .prodPricing	{ padding-bottom:7px;}
+#c-20111020 .prodPricing div	{display:inline; margin-right:20px;}
+#c-20111020 .prodPricing:after	{clear:both;}
+#c-20111020 .quantityInput:before {content:"qty: ";}
+#c-20111020 .quantityInput	{text-align:center;}
+
+
+/*
+.prodlist .salePrice, .prodlist .salePrice .ztable_row_title	{color:#cc0000;}
+.prodlist .salePrice:before	{content:"sale price: "}
+*/

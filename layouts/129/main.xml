@@ -1,0 +1,84 @@
+<TEMPLATE ID="129" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMRW" FORMAT="LAYOUT" CREATOR="STAFF" TYPE="CONFIG" TITLE="Customizable Fields" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="P" SERIES="2002" RELEASED="20021205"><SUMMARY><![CDATA[
+ MSRP
+Default Description (shared)
+Detailed Product Description
+IMAGE1 (200x200)
+Pricing Text
+Strikethrough Text
+]]></SUMMARY>
+<SHORT><![CDATA[This layout allows you to determine what text appears before the price as well as an MSRP strikethrough. Uses the default description]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKMRX" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+<style>
+.strikeout	{text-decoration: line-through;
+			color: #990000;
+			}
+</style>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKMRY" TYPE="OUTPUT"><HTML><![CDATA[<br><br>
+<table width=100% cellspacing=0 cellpadding=3 border=0>
+  <tr>
+      <td valign=top width="220">
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="200" ID="IMAGE" WIDTH="200" PROMPT="Image 1" DEFAULT="" TYPE="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1"></ELEMENT>
+<ELEMENT ID="CPUKMRZ" TYPE="OUTPUT"><HTML><![CDATA[ 
+    </td>
+    <td valign="top"> 
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc"></ELEMENT>
+<ELEMENT ID="CPUKMSA" TYPE="OUTPUT"><HTML><![CDATA[ 
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DETAIL" PROMPT="Detailed Product Description" DEFAULT="More information about the product" TYPE="TEXT" HELP="This is the detailed product description that will appear on your website." DATA="product:zoovy:prod_detail"></ELEMENT>
+<ELEMENT ID="CPUKMSB" TYPE="OUTPUT"><HTML><![CDATA[ 
+<br>
+<br><strong>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="STRIKETHROUGH" PROMPT="Strikethrough Text" DEFAULT="Suggested Retail Price:" TYPE="TEXT" HELP="This is the piece of text that will appear right before the price that is crossed out." DATA="merchant:zoovy:strikethrough"></ELEMENT>
+<ELEMENT ID="CPUKMSC" TYPE="OUTPUT"><HTML><![CDATA[ 
+</strong>  &nbsp;&nbsp;
+<span class="strikeout">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MSRP" PROMPT=" MSRP" DEFAULT="" TYPE="TEXT" HELP="This is the msrp that will appear crossed out on your website.  Saved to product:zoovy:prod_msrp" DATA="product:zoovy:prod_msrp"></ELEMENT>
+<ELEMENT ID="CPUKMSD" TYPE="OUTPUT"><HTML><![CDATA[ <br></span>
+<strong>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICING" PROMPT="Pricing Text" DEFAULT="Price:" TYPE="TEXT" HELP="This is the piece of text that will appear right before the price." DATA="merchant:zoovy:pricing"></ELEMENT>
+<ELEMENT ID="CPUKMSE" TYPE="OUTPUT"><HTML><![CDATA[ 
+</strong>  &nbsp;&nbsp;
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" FORMAT="PLAINPRICE" TYPE="READONLY" ERROR="Not Set!" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKMSF" TYPE="OUTPUT"><HTML><![CDATA[<br>
+    </td>
+
+  </tr>
+</table>
+</center>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+
+</TEMPLATE>

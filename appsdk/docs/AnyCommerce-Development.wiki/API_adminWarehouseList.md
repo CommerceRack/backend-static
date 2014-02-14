@@ -1,0 +1,9 @@
+# API: adminWarehouseList
+
+
+## ACCESS REQUIREMENTS: ##
+[[WMS|CONCEPT_wms]] - SEARCH
+
+
+## OUTPUT PARAMETERS: ##
+  * @WAREHOUSES: 

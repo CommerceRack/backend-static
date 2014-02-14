@@ -1,0 +1,326 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "PhotoPaper",
+      "subcat" : "photopaper",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:PhotoPaper",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXGJ",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoPaper."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "black-and-white",
+            "v" : "black-and-white"
+         },
+         {
+            "p" : "color-negative",
+            "v" : "color-negative"
+         },
+         {
+            "p" : "color-reversal",
+            "v" : "color-reversal"
+         },
+         {
+            "p" : "ra-chemistry",
+            "v" : "ra-chemistry"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_photopaper_papertype",
+      "title" : "Photo Paper Paper Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoPaper.PaperType",
+      "list" : "LIST_CAMERA_PHOTOPAPER_PAPERTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "polyester-based",
+            "v" : "polyester-based"
+         },
+         {
+            "p" : "fiber-based",
+            "v" : "fiber-based"
+         },
+         {
+            "p" : "resin-coated",
+            "v" : "resin-coated"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_photopaper_paperbase",
+      "title" : "Photo Paper Paper Base",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoPaper.PaperBase",
+      "list" : "LIST_CAMERA_PHOTOPAPER_PAPERBASE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "glossy",
+            "v" : "glossy"
+         },
+         {
+            "p" : "semi-glossy",
+            "v" : "semi-glossy"
+         },
+         {
+            "p" : "matt",
+            "v" : "matt"
+         },
+         {
+            "p" : "semi-matt",
+            "v" : "semi-matt"
+         },
+         {
+            "p" : "pearl",
+            "v" : "pearl"
+         },
+         {
+            "p" : "luster",
+            "v" : "luster"
+         },
+         {
+            "p" : "satin",
+            "v" : "satin"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_photopaper_papersurface",
+      "title" : "Photo Paper Paper Surface",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoPaper.PaperSurface",
+      "list" : "LIST_CAMERA_PHOTOPAPER_PAPERSURFACE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "grade-0",
+            "v" : "grade-0"
+         },
+         {
+            "p" : "grade-1",
+            "v" : "grade-1"
+         },
+         {
+            "p" : "grade-2",
+            "v" : "grade-2"
+         },
+         {
+            "p" : "grade-3",
+            "v" : "grade-3"
+         },
+         {
+            "p" : "grade-4",
+            "v" : "grade-4"
+         },
+         {
+            "p" : "multigrade",
+            "v" : "multigrade"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_photopaper_papergrade",
+      "title" : "Photo Paper Paper Grade",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoPaper.PaperGrade",
+      "list" : "LIST_CAMERA_PHOTOPAPER_PAPERGRADE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "10x10",
+            "v" : "10x10"
+         },
+         {
+            "p" : "10x12",
+            "v" : "10x12"
+         },
+         {
+            "p" : "10x20",
+            "v" : "10x20"
+         },
+         {
+            "p" : "11x14",
+            "v" : "11x14"
+         },
+         {
+            "p" : "12x17",
+            "v" : "12x17"
+         },
+         {
+            "p" : "16x20",
+            "v" : "16x20"
+         },
+         {
+            "p" : "20x24",
+            "v" : "20x24"
+         },
+         {
+            "p" : "20x30",
+            "v" : "20x30"
+         },
+         {
+            "p" : "24x30",
+            "v" : "24x30"
+         },
+         {
+            "p" : "3.5x5",
+            "v" : "3.5x5"
+         },
+         {
+            "p" : "30x40",
+            "v" : "30x40"
+         },
+         {
+            "p" : "4x5",
+            "v" : "4x5"
+         },
+         {
+            "p" : "4x6",
+            "v" : "4x6"
+         },
+         {
+            "p" : "5x7",
+            "v" : "5x7"
+         },
+         {
+            "p" : "8.5x11",
+            "v" : "8.5x11"
+         },
+         {
+            "p" : "8x10",
+            "v" : "8x10"
+         },
+         {
+            "p" : "roll",
+            "v" : "roll"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_photopaper_papersize",
+      "title" : "Photo Paper Paper Size",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoPaper.PaperSize",
+      "list" : "LIST_CAMERA_PHOTOPAPER_PAPERSIZE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

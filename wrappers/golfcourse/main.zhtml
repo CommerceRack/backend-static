@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=golfcourse
+SITEBUTTONS=golfball
+-->
+<html>
+<head>
+<!-- HEAD -->
+<script language="JavaScript">
+<!--
+initialized = 0;
+<!-- MENU
+FORMAT=rollover_%NUM%_on = new Image;%BREAK%rollover_%NUM%_on.src = "%SRC%";%BREAK%
+BUTTONTYPE=golfcourse_on
+WIDTH=140
+NOHOME=1
+ONLYHOME=0
+--><!-- MENU
+FORMAT=rollover_%NUM%_off = new Image;%BREAK%rollover_%NUM%_off.src = "%SRC%";%BREAK%
+BUTTONTYPE=golfcourse_off
+WIDTH=140
+NOHOME=1
+ONLYHOME=0
+-->initialized = 1;
+function on(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_on.src");
+}
+function off(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_off.src");
+}
+// -->
+</script>
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+.menu	{color:#FFFFFF; font-size: 11px; font-family: arial; text-decoration: none;}
+.menu:hover	{color:#638DC8; font-size: 11px; font-family: arial;}
+.title	{color:#638DC8; font-size: 11px; font-weight: bold; font-family: arial;}
+.subs	{color:#000000; font-size: 11px; font-family: arial;}
+form	{display: inline;}
+.buttons	{border-color: #000066; background-color: #FFFFFF; font-size: 10px; color: #000066; font-weight: bold; border-style: solid; font-family: arial;}
+.texties	{border-color: #000066; background-color: #FFFFFF; font-size: 11px; color: #000066; border-style: solid; font-family: arial;}
+</style>
+</head>
+
+<body marginheight=0 marginwidth=0>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%"><tr>
+	<td width="95%" valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+		<td bgcolor="#000000" height="16" width="100%"><span class="menu">&nbsp;&nbsp;&nbsp;&nbsp;<a href="<!-- HOME_URL -->" class="menu">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<!-- CART_URL -->" class="menu">Cart</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<!-- LOGIN_URL -->" class="menu">Login</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<!-- ABOUT_URL -->" class="menu">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<!-- CONTACT_URL -->" class="menu">Contact</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<!-- CHECKOUT_URL -->" class="menu">Checkout</a><span></td>
+	</tr><tr>
+	<td background="<!-- WRAPPER_URL -->/greenstripes.gif"><img src="<!-- WRAPPER_URL -->/golfcourse.jpg" width="439" height="67" alt="" border="0"></td>
+	</tr><tr>
+		<td bgcolor="#000000" height="18">&nbsp;<img src="<!-- WRAPPER_URL -->/arrow.gif">&nbsp;<span class="title"><!-- TITLE --></span></td>
+	</tr><tr>
+		<td align="center"><table width="100%"><tr><td><!-- BODY --></td></tr></table></td>
+	</tr></table></td>
+	<td width="1%" aling="right" valign="top" background="<!-- WRAPPER_URL -->/vertdot.gif"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+		<td height="1%"><img src="<!-- WRAPPER_URL -->/menu_right.gif" width="18" height="16" alt="" border="0"></td>
+	</tr><tr>
+		<td background="<!-- WRAPPER_URL -->/greenstripes.gif" height="1%"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=67></td>
+	</tr><tr>
+		<td bgcolor="#000000" height="1%"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=18></td>
+	</tr></table></td>
+	<td width="4%" valign="top" bgcolor="#638DC8"><img src="<!-- WRAPPER_URL -->/top.gif" width="186" height="32" alt="" border="0"><table cellspacing=0 cellpadding=0 border=0 width=186>
+	<tr>
+		<td></td>
+	</tr><tr>
+		<td align="center" bgcolor="#638DC8"><!-- LOGO
+WIDTH=186
+HEIGHT=130
+BGCOLOR=638DC8
+--></td>
+	</tr><tr>
+		<td background="<!-- WRAPPER_URL -->/hordot.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=3></td>
+	</tr><tr>
+		<td align="center"><form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+		<table cellpadding="1" cellspacing="1">
+		<tr>
+			<td><span class="subs">Product Search:</span></td>
+		</tr><tr>
+			<td><input type="text" name="keywords" value="" size="15" maxlength="50" class="texties" style="width: 140px;"></td>
+		</tr><tr>
+			<td align="right"><input type="submit" value="Search" class="buttons"></td>
+		</tr>
+		</table></form></td>
+	</tr><tr>
+		<td background="<!-- WRAPPER_URL -->/hordot.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=3></td>
+	</tr><tr>
+		<td align="center"><br>
+		<table cellpadding="1" cellspacing="1">
+<!-- MENU
+BUTTONTYPE=golfcourse_off
+FORMAT=<tr><td><a href="%URL%" OnMouseOver="on(%NUM%)" OnMouseOut="off(%NUM%)"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0" name="roll_%NUM%"></a></td></tr>
+WIDTH=140
+ONLYHOME=0
+NOHOME=1
+--></table><br></td>
+	</tr><tr>
+		<td background="<!-- WRAPPER_URL -->/hordot.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=3></td>
+	</tr><tr>
+		<td align="center"><form action="<!-- SUBSCRIBE_URL -->" method="post">
+<input type="hidden" name="check" value="1">
+		<table cellpadding="1" cellspacing="1">
+		<tr>
+			<td colspan=2><span class="subs">Mailing List:</span></td>
+		</tr><tr>
+			<td><span class="subs">Email:</span></td>
+			<td><input type="text" size="14" maxlength="50" name="email" value="" class="texties"></td>
+		</tr><tr>
+			<td><span class="subs">Name:</span></td>
+			<td><input type="text" size="14" maxlength="50" name="fullname" value="" class="texties"></td>
+		</tr><tr>
+			<td colspan=2 align="right"><input type="submit" value="Subscribe" class="buttons"></td>
+		</tr>
+		</table></form></td>
+	</tr>
+	</table></td>
+</tr><tr>
+	<td bgcolor="#000000" height="35" colspan="2"><!-- FOOTER --></td>
+	<td bgcolor="#638DC8">&nbsp;</td>
+</tr></table>
+</body>
+</html>

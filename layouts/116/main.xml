@@ -1,0 +1,49 @@
+<TEMPLATE ID="116" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLSD" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SERIES="2002" SUBTYPE="P" FORMAT="LAYOUT" SHORT="(1) 300 x 300 right side picture, with Default description on left" TYPE="CONFIG" TITLE="Right Picture 2" RELEASED="20020510"><SUMMARY><![CDATA[
+Default Description (shared)
+IMAGE1 (300x300)
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKLSE" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+<table align="center">
+  <tr>
+    <td valign="top" width="260"> 
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKLSF" TYPE="OUTPUT"><HTML><![CDATA[ 
+<br>
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKLSG" TYPE="OUTPUT"><HTML><![CDATA[
+    </td>
+    <td valign=top width="300">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE" HEIGHT="300" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="300" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKLSH" TYPE="OUTPUT"><HTML><![CDATA[ 
+    </td>
+  </tr>
+</table>
+</center>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+
+</TEMPLATE>

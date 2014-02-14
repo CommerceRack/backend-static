@@ -1,0 +1,92 @@
+<TEMPLATE ID="7001" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMVJ" CREATOR="JT" CLASSIFICATION="BOOKS" IMAGES="1" CREATED="00000000" PROPERTIES="1" SERIES="2003" SUBTYPE="P" FORMAT="LAYOUT" SHORT="Contains 1 200x400 image down the left with the default description." TYPE="CONFIG" TITLE="1 Long Vertical Picture" RELEASED="20030109"><SUMMARY><![CDATA[
+Authors Name
+Default Description (shared)
+Format
+IMAGE1 (200x400)
+ISBN
+Number of Pages in the book
+Publisher/Publishing House
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMVK" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+<table width="560" border="0" cellspacing=4 cellpadding=0 align="center">
+	<tr>
+		<td width="200" valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="400" ID="IMAGE1" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="200" PROMPT="Image 1" DEFAULT="https://static.zoovy.com/img/H2-W2-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMVL" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+		<td valign="top">
+<!-- Specific Code  --><table cellspacing=0 cellpadding=1 border=1 bordercolor="#CCCCCC" width=100%>
+	<tr>
+		<td align="left" valign="top">ISBN</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ISBN" HELP="This is the product isbn that will appear on your website." DATA="product:zoovy:isbn" PROMPT="ISBN" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVM" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Format</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="FORMAT" HELP="This is the product format that will appear on your website - hardcover, paperback, etc." DATA="product:zoovy:prod_book_format" PROMPT="Format" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVN" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Author</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="AUTHOR" HELP="This is the authors name that will appear on your website." DATA="product:zoovy:prod_book_author" PROMPT="Authors Name" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVO" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Publisher</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PUBLISHER" HELP="This is the product Publisher or Publishing House that will appear on your website." DATA="product:zoovy:prod_book_publisher" PROMPT="Publisher/Publishing House" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVP" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Pages</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PAGES" HELP="This is the products number of pages that will appear on your website." DATA="product:zoovy:prod_book_pages" PROMPT="Number of Pages in the book" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVQ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr>
+</table>		<p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVR" TYPE="OUTPUT"><HTML><![CDATA[</p><p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKMVS" TYPE="OUTPUT"><HTML><![CDATA[
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKMVT" TYPE="OUTPUT"><HTML><![CDATA[</p>
+
+		</td>
+	</tr>
+</table>
+<br>
+
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

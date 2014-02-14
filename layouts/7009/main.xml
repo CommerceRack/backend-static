@@ -1,0 +1,132 @@
+<TEMPLATE ID="7009" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNDI" CREATOR="JT" IMAGES="9" CREATED="00000000" CLASSIFICATION="BOOKS" PROPERTIES="1" SUBTYPE="P" SERIES="2003" FORMAT="LAYOUT" SHORT="Contains 1 254x254 image and 8 125x125 images around it with the default description below." TYPE="CONFIG" TITLE="9 Images at the top" RELEASED="20030109"><SUMMARY><![CDATA[
+Authors Name
+Default Description (shared)
+Format
+IMAGE1 (254x254)
+IMAGE2 (125x125)
+IMAGE3 (125x125)
+IMAGE4 (125x125)
+IMAGE5 (125x125)
+IMAGE6 (125x125)
+IMAGE7 (125x125)
+IMAGE8 (125x125)
+IMAGE9 (125x125)
+ISBN
+Number of Pages in the book
+Publisher/Publishing House
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKNDJ" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+<center>
+
+<table cellspacing=2 cellpadding=0 border=0 width=458>
+	<tr>
+		<td align="right" rowspan=2 colspan=2 width=254>
+		]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="254" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image1 254 x 254" WIDTH="254" DEFAULT="https://static.zoovy.com/img/H254-W254-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNDK" TYPE="OUTPUT"><HTML><![CDATA[</td>
+		<td  align="right" width=125>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="125" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image2 125 x 125" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNDL" TYPE="OUTPUT"><HTML><![CDATA[</td>
+		<td align="left" width=125>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE3" HEIGHT="125" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image3 125 x 125" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNDM" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td  align="right">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE4" HEIGHT="125" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image4" PROMPT="Image4 125 x 125" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNDN" TYPE="OUTPUT"><HTML><![CDATA[</td>
+		<td align="left">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE5" HEIGHT="125" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image5" PROMPT="Image5 125 x 125" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNDO" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td width=125 align="right">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE6" HEIGHT="125" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image6" PROMPT="Image6 125 x 125" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNDP" TYPE="OUTPUT"><HTML><![CDATA[</td>
+		<td width=125 align="left">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE7" HEIGHT="125" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image7" PROMPT="Image7 125 x 125" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNDQ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+		<td align="right">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE8" HEIGHT="125" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image8" PROMPT="Image8 125 x 125" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNDR" TYPE="OUTPUT"><HTML><![CDATA[</td>
+		<td align="left">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE9" HEIGHT="125" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image9" PROMPT="Image9 125 x 125" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNDS" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td colspan=4><p>
+		]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNDT" TYPE="OUTPUT"><HTML><![CDATA[</p>
+		</td>
+	</tr><tr>
+		<td colspan=4><table cellspacing=0 cellpadding=1 border=1 bordercolor="#CCCCCC" width=100%>
+	<tr>
+		<td align="left" valign="top">ISBN</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ISBN" HELP="This is the product isbn that will appear on your website." DATA="product:zoovy:isbn" PROMPT="ISBN" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNDU" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Format</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="FORMAT" HELP="This is the product format that will appear on your website - hardcover, paperback, etc." DATA="product:zoovy:prod_book_format" PROMPT="Format" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNDV" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Author</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="AUTHOR" HELP="This is the authors name that will appear on your website." DATA="product:zoovy:prod_book_author" PROMPT="Authors Name" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNDW" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Publisher</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PUBLISHER" HELP="This is the product Publisher or Publishing House that will appear on your website." DATA="product:zoovy:prod_book_publisher" PROMPT="Publisher/Publishing House" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNDX" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Pages</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PAGES" HELP="This is the products number of pages that will appear on your website." DATA="product:zoovy:prod_book_pages" PROMPT="Number of Pages in the book" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNDY" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr>
+</table><p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKNDZ" TYPE="OUTPUT"><HTML><![CDATA[
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKNEA" TYPE="OUTPUT"><HTML><![CDATA[</p>
+		</td></tr>
+</table>
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

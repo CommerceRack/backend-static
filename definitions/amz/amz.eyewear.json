@@ -1,0 +1,669 @@
+[
+   {
+      "catalog" : "EYEWEAR",
+		"amz-catalog" : "Shoes",
+      "amz-subcat" : null,
+      "subcat" : null,
+      "type" : "config",
+		"variation-themes" : "ColorName+MagnificationStrength,ColorName+LensColor,ColorName+LensWidth,Color,Size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "type" : "default",
+      "id" : "amz:prod_cloth_cd_clothingtype",
+		"default" : "Eyewear",
+      "xmlpath" : "Shoes.ClothingType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "amz_attrib" : "parentage",
+      "id" : "variation:parentage",
+      "type" : "variation",
+      "variation-type" : "parentage",
+      "xmlpath" : "Shoes.VariationData.Parentage"
+   },
+   {
+      "amz_attrib" : "Size",
+      "xmlpath" : "Shoes.VariationData.Size",
+      "ns" : "product",
+		"title" : "Size",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "id" : "amz:prod_size"
+   },
+   {
+      "amz_attrib" : "Size",
+      "xmlpath" : "Shoes.VariationData.Size",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+      "id" : "variation:size",
+      "vkey" : "Size",
+      "variation-type" : "value"
+   },
+   {
+      "amz_attrib" : "Color",
+      "xmlpath" : "Shoes.VariationData.Color",
+      "ns" : "product",
+		"title" : "Product Color",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "id" : "amz:prod_color"
+   },
+   {
+      "amz_attrib" : "Color",
+      "xmlpath" : "Shoes.VariationData.Color",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+      "id" : "variation:color",
+      "vkey" : "Color",
+      "variation-type" : "value"
+   },
+   {
+      "amz_attrib" : "ColorName",
+      "xmlpath" : "Shoes.VariationData.Color",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+      "id" : "variation:colorname",
+      "vkey" : "ColorName",
+      "variation-type" : "value"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "amz_attrib" : "VariationTheme",
+      "id" : "variation:theme",
+      "type" : "variation",
+      "variation-type" : "theme",
+      "xmlpath" : "Shoes.VariationData.VariationTheme"
+   },
+   {
+      "amz-allow-blank" : "Y",
+      "DATA" : "product:amz:catalog",
+      "id" : "CRCQVVN",
+      "type" : "hidden",
+      "xmlpath" : "Shoes.ClassificationData.",
+      "PROMPT" : "SHOES"
+   },
+   {
+      "ns" : "product",
+      "amz_attrib" : "search-terms",
+      "id" : "amz:search_terms",
+      "title" : "search terms",
+      "type" : "textlist"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_itemtype",
+      "title" : "Item Type",
+      "type" : "textbox"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "beige",
+            "v" : "beige"
+         },
+         {
+            "p" : "black",
+            "v" : "black"
+         },
+         {
+            "p" : "blue",
+            "v" : "blue"
+         },
+         {
+            "p" : "bronze",
+            "v" : "bronze"
+         },
+         {
+            "p" : "brown",
+            "v" : "brown"
+         },
+         {
+            "p" : "gold",
+            "v" : "gold"
+         },
+         {
+            "p" : "green",
+            "v" : "green"
+         },
+         {
+            "p" : "grey",
+            "v" : "grey"
+         },
+         {
+            "p" : "metallic",
+            "v" : "metallic"
+         },
+         {
+            "p" : "multicoloured",
+            "v" : "multicoloured"
+         },
+         {
+            "p" : "off-white",
+            "v" : "off-white"
+         },
+         {
+            "p" : "orange",
+            "v" : "orange"
+         },
+         {
+            "p" : "pink",
+            "v" : "pink"
+         },
+         {
+            "p" : "purple",
+            "v" : "purple"
+         },
+         {
+            "p" : "red",
+            "v" : "red"
+         },
+         {
+            "p" : "silver",
+            "v" : "silver"
+         },
+         {
+            "p" : "transparent",
+            "v" : "transparent"
+         },
+         {
+            "p" : "turquoise",
+            "v" : "turquoise"
+         },
+         {
+            "p" : "white",
+            "v" : "white"
+         },
+         {
+            "p" : "yellow",
+            "v" : "yellow"
+         }
+      ],
+      "amz_attrib" : "ColorMap",
+      "xmlpath" : "Shoes.ClassificationData.ColorMap",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_colormap",
+      "type" : "select",
+      "title" : "Color Map",
+      "mandatory" : "Y"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "baby-boy",
+            "v" : "baby-boy"
+         },
+         {
+            "p" : "baby-girl",
+            "v" : "baby-girl"
+         },
+         {
+            "p" : "boys",
+            "v" : "boys"
+         },
+         {
+            "p" : "girls",
+            "v" : "girls"
+         },
+         {
+            "p" : "mens",
+            "v" : "mens"
+         },
+         {
+            "p" : "unisex-adult",
+            "v" : "unisex-adult"
+         },
+         {
+            "p" : "unisex-baby",
+            "v" : "unisex-baby"
+         },
+         {
+            "p" : "unisex-child",
+            "v" : "unisex-child"
+         },
+         {
+            "p" : "womens",
+            "v" : "womens"
+         },
+         {
+            "p" : "teen-girls",
+            "v" : "teen-girls"
+         },
+         {
+            "p" : "teen-boys",
+            "v" : "teen-boys"
+         },
+         {
+            "p" : "unisex-teen",
+            "v" : "unisex-teen"
+         }
+      ],
+      "amz_attrib" : "Department",
+      "xmlpath" : "Shoes.ClassificationData.Department",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_dpt",
+      "type" : "select",
+      "title" : "Department",
+      "mandatory" : "Y"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "composite",
+            "v" : "composite"
+         },
+         {
+            "p" : "metal",
+            "v" : "metal"
+         },
+         {
+            "p" : "resin",
+            "v" : "resin"
+         },
+         {
+            "p" : "titanium",
+            "v" : "titanium"
+         },
+         {
+            "p" : "plastic",
+            "v" : "plastic"
+         },
+         {
+            "p" : "memory-metal",
+            "v" : "memory-metal"
+         }
+      ],
+      "amz_attrib" : "FrameMaterialType",
+      "xmlpath" : "Shoes.ClassificationData.FrameMaterialType",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_shoe_cd_framematerialtype",
+      "type" : "select",
+      "title" : "Frame Material Type",
+      "mandatory" : "Y"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "aviator",
+            "v" : "aviator"
+         },
+         {
+            "p" : "oval",
+            "v" : "oval"
+         },
+         {
+            "p" : "oversized",
+            "v" : "oversized"
+         },
+         {
+            "p" : "rectangular",
+            "v" : "rectangular"
+         },
+         {
+            "p" : "rimless",
+            "v" : "rimless"
+         },
+         {
+            "p" : "round",
+            "v" : "round"
+         },
+         {
+            "p" : "semi-rimless",
+            "v" : "semi-rimless"
+         },
+         {
+            "p" : "shield",
+            "v" : "shield"
+         },
+         {
+            "p" : "sport",
+            "v" : "sport"
+         },
+         {
+            "p" : "square",
+            "v" : "square"
+         },
+         {
+            "p" : "wayfarer",
+            "v" : "wayfarer"
+         },
+         {
+            "p" : "wrap",
+            "v" : "wrap"
+         },
+         {
+            "p" : "butterfly",
+            "v" : "butterfly"
+         },
+         {
+            "p" : "goggle",
+            "v" : "goggle"
+         },
+         {
+            "p" : "cateye",
+            "v" : "cateye"
+         }
+      ],
+      "amz_attrib" : "ItemShape",
+      "xmlpath" : "Shoes.ClassificationData.ItemShape",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_shoe_cd_itemshape",
+      "type" : "select",
+      "title" : "Item Shape",
+      "mandatory" : "Y"
+   },
+   {
+      "amz_attrib" : "LensColor",
+      "xmlpath" : "Shoes.ClassificationData.LensColor",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+		"title" : "Lens Color",
+      "id" : "amz:prod_cloth_cd_lenscolor"
+   },
+   {
+      "amz_attrib" : "LensColor",
+      "xmlpath" : "Shoes.ClassificationData.LensColor",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+      "id" : "variation:lenscolor",
+      "vkey" : "LensColor",
+      "variation-type" : "value"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "beige",
+            "v" : "beige"
+         },
+         {
+            "p" : "black",
+            "v" : "black"
+         },
+         {
+            "p" : "blue",
+            "v" : "blue"
+         },
+         {
+            "p" : "bronze",
+            "v" : "bronze"
+         },
+         {
+            "p" : "brown",
+            "v" : "brown"
+         },
+         {
+            "p" : "gold",
+            "v" : "gold"
+         },
+         {
+            "p" : "green",
+            "v" : "green"
+         },
+         {
+            "p" : "grey",
+            "v" : "grey"
+         },
+         {
+            "p" : "metallic",
+            "v" : "metallic"
+         },
+         {
+            "p" : "multicoloured",
+            "v" : "multicoloured"
+         },
+         {
+            "p" : "off-white",
+            "v" : "off-white"
+         },
+         {
+            "p" : "orange",
+            "v" : "orange"
+         },
+         {
+            "p" : "pink",
+            "v" : "pink"
+         },
+         {
+            "p" : "purple",
+            "v" : "purple"
+         },
+         {
+            "p" : "red",
+            "v" : "red"
+         },
+         {
+            "p" : "silver",
+            "v" : "silver"
+         },
+         {
+            "p" : "transparent",
+            "v" : "transparent"
+         },
+         {
+            "p" : "turquoise",
+            "v" : "turquoise"
+         },
+         {
+            "p" : "white",
+            "v" : "white"
+         },
+         {
+            "p" : "yellow",
+            "v" : "yellow"
+         }
+      ],
+      "amz_attrib" : "LensColorMap",
+      "xmlpath" : "Shoes.ClassificationData.LensColorMap",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_shoe_cd_lenscolormap",
+      "type" : "select",
+      "title" : "Lens Color Map",
+      "mandatory" : "Y"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "composite",
+            "v" : "composite"
+         },
+         {
+            "p" : "glass",
+            "v" : "glass"
+         },
+         {
+            "p" : "plastic",
+            "v" : "plastic"
+         },
+         {
+            "p" : "gradient",
+            "v" : "gradient"
+         },
+         {
+            "p" : "photochromatic",
+            "v" : "photochromatic"
+         },
+         {
+            "p" : "mirrored",
+            "v" : "mirrored"
+         },
+         {
+            "p" : "anti-reflective",
+            "v" : "anti-reflective"
+         },
+         {
+            "p" : "interchangeable",
+            "v" : "interchangeable"
+         }
+      ],
+      "amz_attrib" : "LensMaterialType",
+      "xmlpath" : "Shoes.ClassificationData.LensMaterialType",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_shoe_cd_lensmaterialtype",
+      "type" : "select",
+      "title" : "Lens Material Type",
+      "mandatory" : "Y"
+   },
+   {
+      "amz_attrib" : "LensWidth",
+      "xmlpath" : "Shoes.ClassificationData.LensWidth",
+      "ns" : "product",
+      "amz-format" : "Length",
+      "type" : "textbox",
+		"title" : "Lens Width",
+		"amz-uom" : "MM",
+      "id" : "amz:prod_cloth_cd_lenswidth"
+   },
+   {
+      "amz_attrib" : "LensWidth",
+      "xmlpath" : "Shoes.ClassificationData.LensWidth",
+      "ns" : "product",
+      "amz-format" : "Number",
+      "type" : "variation",
+      "id" : "variation:lenswidth",
+      "vkey" : "LensWidth",
+		"amz-uom" : "MM",
+      "variation-type" : "value"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "bridal",
+            "v" : "bridal"
+         },
+         {
+            "p" : "cold-weather",
+            "v" : "cold-weather"
+         },
+         {
+            "p" : "dress",
+            "v" : "dress"
+         },
+         {
+            "p" : "fashion",
+            "v" : "fashion"
+         },
+         {
+            "p" : "formal",
+            "v" : "formal"
+         },
+         {
+            "p" : "rain",
+            "v" : "rain"
+         },
+         {
+            "p" : "retro",
+            "v" : "retro"
+         },
+         {
+            "p" : "work-utility",
+            "v" : "work-utility"
+         }
+      ],
+      "amz_attrib" : "OccasionAndLifestyle",
+      "xmlpath" : "Shoes.ClassificationData.OccasionAndLifestyle",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "select",
+      "title" : "Occasion and Lifestyle",
+      "id" : "amz:prod_cloth_cd_occandlife"
+   },
+   {
+      "amz_attrib" : "MagnificationStrength",
+      "xmlpath" : "Shoes.ClassificationData.MagnificationStrength",
+      "ns" : "product",
+      "amz-format" : "Scaler",
+      "type" : "variation",
+      "id" : "variation:magnificationstrength",
+      "vkey" : "MagnificationStrength",
+      "variation-type" : "value"
+   },
+   {
+      "amz_attrib" : "MaterialType",
+      "xmlpath" : "Shoes.ClassificationData.MaterialType",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_shoe_cd_materialtype",
+      "type" : "textbox",
+      "title" : "Material"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "iridium",
+            "v" : "iridium"
+         },
+         {
+            "p" : "non-polarized",
+            "v" : "non-polarized"
+         },
+         {
+            "p" : "polarized",
+            "v" : "polarized"
+         }
+      ],
+      "amz_attrib" : "PolarizationType",
+      "xmlpath" : "Shoes.ClassificationData.PolarizationType",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_shoe_cd_polarizationtype",
+      "type" : "select",
+      "title" : "Polarization Type",
+      "mandatory" : "Y"
+   },
+   {
+      "amz_attrib" : "SpecialFeatures",
+      "xmlpath" : "Shoes.ClassificationData.SpecialFeatures",
+      "ns" : "product",
+      "amz-format" : "Textlist",
+      "type" : "textlist",
+      "title" : "Special Features",
+      "id" : "amz:prod_cloth_cd_specialfeat",
+      "max-allowed-lines" : "2"
+   }
+]

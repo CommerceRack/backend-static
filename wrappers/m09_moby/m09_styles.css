@@ -1,0 +1,50 @@
+
+/* removes some default styling set by safari   */  
+  
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6{  
+    margin:0;  
+    padding:0;  
+     -webkit-text-size-adjust:none;  
+    }  
+
+ ul, li, ol, dl, dd, dt{  
+     list-style:none;  
+     padding:0;  
+     margin:0;  
+     }  
+
+/* end safari adjustments */
+
+form	{display:inline;}
+
+a	{color:#067ff1;} 
+a:hover	{color:#FF6600;}
+
+
+/* Used for the page title element */
+h1  {font-size:13px; color:#333333; margin:5px 0px 2px 0px; font-weight:bold;} 
+
+/* used for the wiki header 1 & 2 */
+h2	{font-size:12px; color:#000000; margin:3px 0px 2px 0px; font-weight:bold;}
+h3	{font-size:11px; color:#FF6600; margin:2px 0px 1px 0px; font-weight:bold;}
+
+/* turns off underlining  */
+div.no_underline a	{text-decoration:none;}
+
+
+#addtocartForm select	{font-size:11px;}
+
+img	{border:0}
+
+div.headlink a	{color:#ffffff; font-size:9px;}
+
+
+/* used for arrow bars, like on the product detail page attributes (description, accessories, etc) */
+div.arrowbar_content	{border:1px solid #a0d7ec; border-top-width:0px; padding:5px 10px; margin-bottom:20px;}
+
+div.footerIcon	{margin-right:6px; margin-bottom:6px; float:left; text-align:center;}
+
+
+
+/* select list for shipping on cart page */
+#addtocartContainer	select	{width:150px;}

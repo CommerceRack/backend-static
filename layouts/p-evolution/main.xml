@@ -1,0 +1,1195 @@
+<TEMPLATE ID="p-evolution" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CRNFWLQ" V="2" CREATED="00000000" FORMAT="LAYOUT" TYPE="CONFIG" EXPORT="0" TITLE="Evolution Product Layout"><SUMMARY><![CDATA[This product layout is designed to work in conjunction with Web 2.0/Ajax themes.  If you do not have an Web 2.0 enabled theme, do not select this layout.]]></SUMMARY>
+<UPDATES><![CDATA[2006-08-16: Modified the Image Elements so that they play 'more' friendly with products that have externally referenced images.]]></UPDATES>
+</ELEMENT>
+<ELEMENT ID="CRNFWLR" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!--
+ajax function and vars for contact form (to be added later )  
+sendMsg
+params = from,subject,message,
+-->
+
+<!-- IF statements to determine whether or not the tab for specific fields should show up -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="TAB_SPECS" FALSE="" DATA="product:zoovy:prod_detail" SUB="SPECS_TAB" OPERATION="NB" TYPE="IF"><TRUE><![CDATA[<li><a href="#specs_content" onClick="new TabToggle(this); return false;">Specifications</a></li>]]></TRUE>
+</ELEMENT>
+<ELEMENT ID="TAB_FEATURES" FALSE="" DATA="product:zoovy:prod_features" SUB="FEATURES_TAB" OPERATION="NB" TYPE="IF"><TRUE><![CDATA[<li><a href="#features_content" onClick="new TabToggle(this); return false;">Features</a></li>]]></TRUE>
+</ELEMENT>
+<ELEMENT ID="QTYPRICE_FEATURES" FALSE="" DATA="product:zoovy:qty_price" SUB="QTYPRICE_TAB" OPERATION="NB" TYPE="IF"><TRUE><![CDATA[<li><a href="#qtyprice_content" onClick="new TabToggle(this); return false;">Quantity Pricing</a></li>]]></TRUE>
+</ELEMENT>
+<ELEMENT ID="ACCESSORY_PRODUCTS_TAB" FALSE="" DATA="PRODUCT:zoovy:accessory_products" SUB="ACCESSORY_TAB" OPERATION="NB" TYPE="IF"><TRUE><![CDATA[<li><a href="#accessories_content" onClick="new TabToggle(this); return false;">Accessories</a></li>]]></TRUE>
+</ELEMENT>
+<ELEMENT ID="CRNFWLS" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- merchant vars -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQFJSOP" DATA="FLOW::USERNAME" SUB="USERNAME" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRNFWLT" RAW="1" SUB="FL_ID" TYPE="READONLY" LOAD="FLOW::FL"></ELEMENT>
+<ELEMENT ID="CRNFWLU" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- product vars -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWLV" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
+<ELEMENT ID="CRNFWLW" RAW="1" FORMAT="PLAINPRICE" SUB="MSRP" TYPE="READONLY" LOAD="product:zoovy:prod_msrp"></ELEMENT>
+<ELEMENT ID="CRNFWLX" RAW="1" FORMAT="PLAINPRICE" SUB="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="PRODNAME" RAW="1" SUB="PROD_NAME" TYPE="READONLY" LOAD="product:zoovy:prod_name"></ELEMENT>
+<ELEMENT ID="CRNFWLY" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- customer elements -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="VARCUSTOMEREMAIL" RAW="1" SUB="CUSTOMER_EMAIL" TYPE="READONLY" LOAD="CART::LOGIN"></ELEMENT>
+<ELEMENT ID="CRLXBDG" RAW="1" SUB="CUSTOMER_FULLNAME" TYPE="READONLY" LOAD="CART::customer::INFO.FULLNAME"></ELEMENT>
+<ELEMENT ID="VAR_PRODURL" DATA="URL::PRODUCT_URL" SUB="PRODUCT_URL" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CZVIFIQ" SUB="PROD_WISHPOT_BUTTON" TYPE="SPECL"><HTML><![CDATA[<%
+
+
+print("<!-- Wishpot button, if enabled -->");
+
+loadurp("profile:wishpot:merchantid"); default("");
+stop(unless=>$_);
+	set($WISHPOT_MID=>$_);
+print("
+<div style='margin:5px 0;'>
+<div class='wishpot_form'>
+<form method='post' action='http://www.wishpot.com/my/wishes/add.aspx' onSubmit='return false;'>
+<!--the partner key-->
+<input name='pkey' value='zoovy' type='hidden'>
+<!--optionally specify a channel for reporting purposes. 32 character limit -->
+<input name='pchannel' value='"); print($WISHPOT_MID); print("' type='hidden'>
+<input name='WishUrl' value='%PRODUCT_URL%/%SKU%' type='hidden'>
+<input name='WishTitle' value=&quot;");
+
+loadurp("product:zoovy:prod_name"); default(""); format(encode=>"entity"); print();
+
+print("&quot; type='hidden'>
+<input name='Price' value='");
+
+loadurp("product:zoovy:base_price"); default(""); format(money); print();
+
+print("' type='hidden'>
+
+<input name='Notes' value='' type='hidden'>
+
+<!-- Display the image source and size for the product (size required) -->
+
+<input name='ImgSrc' value='");
+
+loadurp("product:zoovy:prod_image1"); default("");
+image(h=>"200",w=>"200",bg=>"ffffff",tag=>"0"); print();
+
+print("' type='hidden'>
+<input name='ImgWidth' value='200' type='hidden'>
+<input name='ImgHeight' value='200' type='hidden'>
+
+<!--Specific to certain items -->
+<input name='Isbn' value='");
+
+loadurp("product:zoovy:prod_isbn"); default(""); print();
+
+print("' type='hidden'>
+<input name='Upc' value='");
+
+loadurp("product:zoovy:prod_upc"); default(""); print();
+print("' type='hidden'>
+
+<!-- There are a few buttong to choose from. Simply replace the src attribute -->
+<input type='image' title='Add to Wishlist at Wishpot' src='%GRAPHICS_URL%/wishpot_addbutton2-134x26.png' alt='Add to Wishpot' onClick=&quot;if(document.getElementById){window.WISHPOT_FORM=this.parentNode;var x=document.getElementsByTagName('head').item(0);var o=document.createElement('script');if(typeof(o)!='object') o=document.standardCreateElement('script');o.setAttribute('src','http://www.wishpot.com/scripts/bm.js?v=100');o.setAttribute('type','text/javascript');x.appendChild(o);} return false;&quot; />
+</form>
+</div>
+</div>
+
+<!-- /wishpot code -->
+
+
+");
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWLZ" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- Image sub elements for javascript -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWMA" TYPE="OUTPUT"><HTML><![CDATA[
+
+<script type="text/javascript">
+var tafConfirm = '<center><br><br><a href="#" onclick="Effect.Squish(\'tellafriend\')">close window</a></center>';
+
+function validateTAF()	{
+	var alerts = '';
+//Check to make sure the three required fields are populated.	
+	if(document.tafForm.SENTFROM.value == '')
+		alerts += 'Please enter your name. <br>';
+	if(document.tafForm.SENDER.value == '')
+		alerts += 'Please enter your email. <br>';
+	if(document.tafForm.RECIPIENT.value == '')
+		alerts += 'Please enter the destination email. <br>';
+	if(document.tafForm.TITLE.value == '')
+		alerts += 'Please enter the message title (subject line). <br>';
+	if(document.tafForm.MESSAGE.value == '')
+		alerts += 'Please enter a short, personal message for the intended recipient. <br>';
+//if alerts is empty, send the taf form through
+	if(alerts == '')	{
+//		alert('everything is otay!');
+		sendForm('tafForm','tafContent','http://%USERNAME%.zoovy.com/popup.cgi','tafConfirm',tafConfirm);
+		}
+//some important fields were left blank.  Let the user know which.
+	else	{
+		document.getElementById('tafAlerts').innerHTML = alerts;
+		}
+	}
+
+function sendForm(formID, formDivID, postURL, updateDiv, updateContent){
+var params = Form.serialize($(formID));
+new Ajax.Updater(formDivID, postURL, {
+	asynchronous:true, 
+	parameters:params, 
+	onSuccess:document.getElementById(updateDiv).innerHTML = updateContent
+	});
+	}
+</script>
+
+<script type="text/javascript">
+<!--
+//pass in an integer X and how many points to the right you want it to round off to (N)
+function RoundToNdp(X, N) {
+    var T = Number("1e" + N);
+    return Math.round(X * T) / T;
+	}
+
+
+//compute the difference between the regular price and the msrp.
+function youSave(price,msrp)	{
+//Checks to make sure price is greater than 0.
+	if (price != '' && msrp != '') {
+		var x = msrp - price;
+//Set x to rounded number
+		dp = 2
+		x = RoundToNdp(x, dp);
+//check for decimal point in string
+		dec = String(x).indexOf(".");
+		if(dec != -1){
+//if decimal exists, see if the length is only 1
+			aft = String(x).substring(dec+1,String(x).length);
+			if(aft.length == 1){
+//if length after decimal is only 1, then tag on a 0
+				if(dp != 1){
+					x = String(x)+"0";
+				}
+			}
+		}
+	else	{
+		x = String(x)+".00";
+		}
+	document.write("A savings of: $"+x);
+	}	
+else	{
+	document.write('<!-- either the price or the msrp was not set -->');
+	}	
+
+	}
+//Image Zoom
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+	}
+
+// tabs.js - Original code by Justin Palmer available at www.encytemedia.com/effectspack
+// Internet Explorer fix by Jake Tracey
+TabToggle = function(element) {
+// This gives the active tab its look
+	var tabs = $('tabs').getElementsByTagName('li');
+	for(j = 0; j < tabs.length; j++) {
+		link = tabs[j].getElementsByTagName('a')[0];
+		link.id = "";
+		tabs[j].id = "";
+		}
+	element.id = "current"
+	element.parentNode.id = "active"
+
+//Hide all content containers
+	contents = document.getElementsByClassName('tabset_content');
+	for(var i = 0; i < contents.length; i++) {
+		contents[i].style.display = 'none';
+		}
+
+//Extract content container id from href
+	tabname = element.getAttribute('href').replace(/^.*\#/,'');
+	ele = $(tabname);
+
+//Magic Happens
+	new Effect.Appear(ele);
+	}
+
+// -->
+</script>
+
+
+<!-- This script will validate the review and then post it through ajax into the system -->
+<script type="text/javascript">
+<!--
+
+//Set vars needed for ajax
+var session_id = '%SESSION_ID%';
+var store = '%STORENAME%';
+var LAYOUTID = '%FL_ID%';
+
+function submitReview()	{
+	var alerts = '';
+//these validate the form, making sure name, subject, message and score are set.
+	if(document.reviewForm.CUSTOMER_NAME.value == '')
+		alerts += 'please enter your name<br>';
+	if(document.reviewForm.SUBJECT.value == '')
+		alerts += 'please enter a subject line<br>';
+	if(document.reviewForm.MESSAGE.value == '')
+		alerts += 'please enter a message<br>';
+	if(document.reviewForm.RATING.value == '')
+		alerts += 'please score this product in the score dropdown.<br>';	
+//If alerts isn't blank, then the customer didn't fill in the entire form.  Display alerts in the alerts div.
+	if(alerts != '')	{
+		$('reviewAlerts').innerHTML = alerts;
+		}
+//Looks like they filled everything in, upload the review then reload the review elements.
+	else	{
+		var params = Form.serialize($('reviewForm'));
+//	alert(params);
+		var postBody = 'm=addReview&PID=%SKU%&'+params;
+		new Ajax.Request('/ajax/addReview', { 
+			postBody: postBody, 
+			asynchronous: 1,
+//		onComplete: function(request){handleResponse(request.responseText)},
+		  	onComplete: $('reviewForm').innerHTML = '<div id="reviewSuccess">Thank you, your review has been added and is pending review.<br><br><a href="#" onclick="Effect.BlindUp(\'reviewForm\'); return false;">close window</a></div>'
+			} );
+		}
+	}
+
+// -->
+</script>
+
+
+<!-- Image rollover script -->
+<script language="javascript">
+var offsetfrommouse=[15,-25]; //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+var displayduration=0; //duration in seconds image should remain visible. 0 for always.
+var currentimageheight = 190;	// maximum image size.
+
+if (document.getElementById || document.all){
+	document.write('<div id="trailimageid">');
+	document.write('</div>');
+}
+
+function gettrailobj(){
+if (document.getElementById)
+return document.getElementById("trailimageid").style
+else if (document.all)
+return document.all.trailimagid.style
+}
+
+function gettrailobjnostyle(){
+if (document.getElementById)
+return document.getElementById("trailimageid")
+else if (document.all)
+return document.all.trailimagid
+}
+
+
+function truebody(){
+return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function showtrail(imagename,title,description,ratingaverage,ratingnumber,showthumb,height){
+
+	if (height > 0){
+		currentimageheight = height;
+	}
+
+	document.onmousemove=followmouse;
+
+	cameraHTML = '';
+
+	newHTML = '<div style="padding: 5px; background-color: #FFF; border: 1px solid #888;">';
+
+	if (showthumb > 0){
+		newHTML = newHTML + '<div align="center" style="padding: 8px 2px 2px 2px;"><img src="' + imagename + '" border="0"></div>';
+	}
+
+	newHTML = newHTML + '</div>';
+
+	gettrailobjnostyle().innerHTML = newHTML;
+
+	gettrailobj().visibility="visible";
+
+}
+
+
+function hidetrail(){
+	gettrailobj().visibility="hidden"
+	document.onmousemove=""
+	gettrailobj().left="-500px"
+
+}
+
+function followmouse(e){
+
+	var xcoord=offsetfrommouse[0]
+	var ycoord=offsetfrommouse[1]
+
+	var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+	var docheight=document.all? Math.min(truebody().scrollHeight, truebody().clientHeight) : Math.min(document.body.offsetHeight, window.innerHeight)
+
+	if (typeof e != "undefined"){
+		if (docwidth - e.pageX < 195){
+			xcoord = e.pageX - xcoord - 200; // Move to the left side of the cursor
+		} else {
+			xcoord += e.pageX;
+		}
+		if (docheight - e.pageY < (currentimageheight + 110)){
+			ycoord += e.pageY - Math.max(0,(110 + currentimageheight + e.pageY - docheight - truebody().scrollTop));
+		} else {
+			ycoord += e.pageY;
+		}
+
+	} else if (typeof window.event != "undefined"){
+		if (docwidth - event.clientX < 200){
+			xcoord = event.clientX + truebody().scrollLeft - xcoord - 190; // Move to the left side of the cursor
+		} else {
+			xcoord += truebody().scrollLeft+event.clientX
+		}
+		if (docheight - event.clientY < (currentimageheight + 110)){
+			ycoord += event.clientY + truebody().scrollTop - Math.max(0,(110 + currentimageheight + event.clientY - docheight));
+		} else {
+			ycoord += truebody().scrollTop + event.clientY;
+		}
+	}
+
+	var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+	var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+
+	gettrailobj().left=xcoord+"px"
+	gettrailobj().top=ycoord+"px"
+
+}
+</script>
+
+<script type="text/javascript">
+
+function showhide_button(layer_ref) {
+		var state = eval( "document.all." + layer_ref + ".style.display");
+
+//	alert(state);
+	if (state == 'block') {
+		state = 'none';
+		}
+	else {
+		state = 'block';
+		}
+	if (document.all) { //IS IE 4 or 5 (or 6 beta)
+		eval( "document.all." + layer_ref + ".style.display = state");
+		}
+	if (document.layers) { //IS NETSCAPE 4 or below
+		document.layers[layer_ref].display = state;
+		}
+	if (document.getElementById &&!document.all) {
+		hza = document.getElementById(layer_ref);
+		hza.style.display = state;
+		}
+	}
+
+
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var enableanchorlink=0 //Enable or disable the anchor link when clicked on? (1=e, 0=d)
+var hidemenu_onclick=1 //hide menu when user clicks within menu? (1=yes, 0=no)
+
+/////No further editting needed
+
+var ie5=document.all
+var ns6=document.getElementById&&!document.all
+
+function getposOffset(what, offsettype){
+	var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+	var parentEl=what.offsetParent;
+	while (parentEl!=null){
+		totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+		parentEl=parentEl.offsetParent;
+		}
+	return totaloffset;
+	}
+
+function showhide(obj, e, visible, hidden, productId){
+	if (ie5||ns6) { dropmenuobj.style.left=dropmenuobj.style.top=-500; }
+	if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover") {
+		obj.visibility=visible;
+	// ---------------- AJAX HOOK BEGINS HERE --------- //
+		var thisDiv;
+		if (document.all){ // browser="IE";
+			thisDiv = document.all.prod_info;
+			} 
+		else {
+			thisDiv = document.getElementById('prod_info');
+			}	
+		thisDiv.innerHTML = 'Please wait .. loading';
+		ajaxNotify('renderProduct','?pid='+productId+'&fl=prod_info&div=prod_info');
+	// ---------------- AJAX HOOK ENDS HERE --------- //
+		}
+	else if (e.type=="click") {
+		obj.visibility=hidden;
+		}
+	}
+
+function iecompattest(){
+	return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+	}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie5 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie5 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie5 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function dropdownmenu(obj, e, dropmenuID, productId){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+if (typeof dropmenuobj!="undefined") //hide previous menu
+dropmenuobj.style.visibility="hidden"
+clearhidemenu()
+if (ie5||ns6){
+obj.onmouseout=delayhidemenu
+dropmenuobj=document.getElementById(dropmenuID)
+if (hidemenu_onclick) dropmenuobj.onclick=function(){dropmenuobj.style.visibility='hidden'}
+dropmenuobj.onmouseover=clearhidemenu
+dropmenuobj.onmouseout=ie5? function(){ dynamichide(event)} : function(event){ dynamichide(event)}
+showhide(dropmenuobj.style, e, "visible", "hidden", productId)
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+	if ((ie5||ns6) && !enableanchorlink) return false
+	else return true
+	}
+function contains_ns6(a, b) {
+	while (b.parentNode)
+	if ((b = b.parentNode) == a)
+		return true;
+	return false;
+	}
+function dynamichide(e){
+	if (ie5&&!dropmenuobj.contains(e.toElement))
+		delayhidemenu()
+	else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+		delayhidemenu()
+	}
+function delayhidemenu(){
+	delayhide=setTimeout("dropmenuobj.style.visibility='hidden'",disappeardelay)
+	}
+function clearhidemenu(){
+	if (typeof delayhide!="undefined")
+	clearTimeout(delayhide)
+	}
+function ajaxNotify(method,data) {
+	req = false;
+	// branch for native XMLHttpRequest object
+	if(window.XMLHttpRequest) {
+		try {	req = new XMLHttpRequest(); } catch(e) { req = false; }
+
+		} 
+	// branch for IE/Windows ActiveX version
+	else if(window.ActiveXObject) {
+		try {	req = new ActiveXObject("Msxml2.XMLHTTP"); } catch(e) {
+        	try { req = new ActiveXObject("Microsoft.XMLHTTP"); } catch(e) { req = false; }
+	      }
+	  	}
+	  	
+	if(req) {
+		req.onreadystatechange = processReqChange;
+		req.open("GET", "/ajax/zoovy?v=1&m="+escape(method)+"&data="+escape(data), true);
+		req.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2000 00:00:00 GMT");
+		req.send(data);
+		}	
+	}
+function processReqChange() {
+// only if req shows "loaded"
+	if (req.readyState == 4) {
+// only if "OK"
+		if (req.status == 200) {
+// ...processing statements go here...
+			handleResponse(req.responseText);
+			} 
+		else {
+			alert("There was a problem retrieving the XML data:\n" +req.statusText);
+			}
+		}
+	}
+</script>
+
+<style type="text/css">
+/* these two classes are used around the product images.  
+The divImage is a div around each image.  
+The tdImage is in the cell that contains each image.
+table.prod_images is the class on the table that the images are ALL in
+*/
+#prod_imageHolder	{float:left; width:215px;}
+.prod_divImage		{border:1px solid #CCCCCC;}
+.prod_tdImage		{font-size:15px;}
+table.prod_images	{border:none;}
+div#imageText	{font-size:9px; text-align:center;}
+/* this is the style for the floating product image. */
+#trailimageid {position: absolute; visibility: hidden; left: 0px; top: 0px; width: 300px; height: 1px; z-index: 1000;}
+
+/* determines the width of the layout. */
+#containment	{width:600px; margin-bottom:4px;}
+
+/* Controls the encompasing DIV around the add to price element on the product page*/
+#prod_price		{font-weight:bold; font-size:18px; text-align:right;}
+
+/*These are the classes used for the product ratings on the product page.
+prodRatings is the encompasing div.
+title is the title, rank is for the stars/ratings and link is for the link.  Go figure.
+*/
+#prod_ratings_title	{float:left; margin-right:10px;}
+#prod_ratings_rank	{float:left;}
+#prod_ratings_link	{float:right;}
+
+#reviewLink	{width:100%; text-align:right;}
+
+
+#reviewAlerts	{color:#990000;}
+
+
+/*These are the classes used for the top data.  ID, mfg, pric, etc.
+topData_info is for the sku, manf. and mfg id.
+*/
+#prod_topData_info	{text-align:left; color:#333333; line-height:140%;}
+#prod_topData_pricing	{text-align:right; color:#333333; line-height:140%;}
+#prod_topData_price		{color:#000000; font-weight:bold;}
+#prod_topData_msrp		{color:#990000; text-decoration:line-through;}
+#prod_topData_savings		{color:#006600;}
+
+.zinvtext	{font-size:9pt; color:#000000;}
+
+/* this is the div that contains the related items on the product page. */
+#prod_relatedItems	{font-size:13px; font-weight:bold; text-align:center; width:120px; margin:8px 0px 8px 0px;} 
+.prod_relatedItemsCol	{background-color:#efefef; padding-left:4px;}
+
+/*These are for the related items product list on the right */
+.prod_prodlist_holder	{border-top:1px solid #cccccc; padding:5px 0px 5px 0px;}
+.prod_prodlist_text	{font-size:8pt;}
+.prod_prodlist_price	{font-weight:bold;}
+
+/* Controls the encompasing DIV around the add to cart element on the product page */
+#prod_addDiv	{border-top:1px solid #cccccc;border-bottom:1px solid #cccccc; margin:5px 0px 5px 0px; text-align:right;}
+
+/* these styles control the three links after the add to cart button on the product page. 
+The first encompases all three to set 'global' style for the group. Use the other three to effect the individual links. */
+#prod_links			{font-size:11px; margin-bottom:30px; font-size:9pt; position:relative;}
+#prod_links_ask		{float:left; padding-right:20px;}
+#prod_links_tell		{float:left; padding-right:20px;}
+#prod_links_print	{float:left; padding-right:20px;}
+
+
+.tellafriend {position:absolute; z-index:1000; width:320px; height:290px; display:block}
+.textstyle {font-family:Verdana, Arial, Helvetica, sans-serif; display:inline; font-size:11px; color:#333333;}
+.right_shadow {width:5px;height:233px;padding:5px; background-color:#555555;opacity:.15;filter: alpha(opacity=15); -moz-opacity: 0.15; font-size:1px;}
+.base_shadow {width:281px;height:5px;padding:5px; background-color:#555555;opacity:.15;filter: alpha(opacity=15); -moz-opacity: 0.15; font-size:1px;}
+.taf_window {width:290px;height:250px;padding:5px;border:1px solid #999999; position:relative; background-color:#FFFFFF; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+
+/* This is for the content under the link bar. Product content is loaded into the prod_content div.*/
+.prod_content		{height:350px; overflow:scroll; }
+
+/* This controls the product name as it appears just below the link bar inside the details section. */
+#prod_name			{font-size:14px; font-weight:bold;}
+
+/* this is the cell that contains the tabs and their content */
+.prod_contentCol	{padding-right:3px; padding-left:3px;}
+
+
+/* this is the class for the UL that contains the tab list.  Set indentation with a left margin. */
+.tabset_tabs {margin:0px; padding:0px;}
+/* controls the appearance of the tab bar and the tabs themselves */
+div#tabs {float: left; font-size: 8pt;} 
+
+
+div#tabs li {float: left; margin:0px 2px 0px 0px; border:1px solid #666666; border-bottom:0px; width:auto; padding:0px; list-style-type:none;}
+div#tabs a {display: block;  padding:4px 10px 4px 10px; text-decoration: none;  color: #6b654f; } 
+ 
+/* this is for the content that is revealed by the tabs */
+div#tab_content {color: #666666;  width: 550px;  padding:5px; line-height:140%;}
+.prod_content	{border:1px solid #666666; float:left; background-color:#FFFFFF; font-size:10pt; color:#333333;}
+
+div#pop_window	{border:1px solid #000000; height:350px; width:600px; overflow:scroll; background-color:#ffffff;}
+.anylinkcss{position:absolute; visibility: hidden; font:normal 11px;line-height: 18px;z-index: 1000;width: 205px;margin-left:85px;}
+.anylinkcss a{ width: 100%; display: block; text-indent: 3px; padding: 1px 0;text-decoration: none;font-weight: bold;text-indent: 5px;}
+ /*hover background color*/
+.anylinkcss a:hover{background-color: #666666;color: #ffffff;}
+</style>
+
+
+
+<!-- This is the DIV that shows the extended product data and framing -->
+<div id="pop_window" class="anylinkcss">
+	<!-- This is the DIV that shows the actual product data -->
+	<div id="prod_info"></div>
+</div>
+
+
+<div id="containment">
+
+<div id="prod_imageHolder" style="width:222px;">
+<!-- begin images -->
+<table cellspacing="3" cellpadding="0" class="prod_images">
+<tr>
+<!-- IMAGE 1 -->
+	<td colspan="2" rowspan="2" class="prod_tdImage">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRGULBZ" DATA="product:zoovy:prod_image1" RAW="1" SUB="IMAGE1" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT ID="CRGULCD" DATA="product:zoovy:prod_image2" RAW="1" SUB="IMAGE2" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT ID="CRGULB4" DATA="product:zoovy:prod_image3" RAW="1" SUB="IMAGE3" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT ID="CRGULC5" DATA="product:zoovy:prod_image4" RAW="1" SUB="IMAGE4" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT ID="CRGULB6" DATA="product:zoovy:prod_image5" RAW="1" SUB="IMAGE5" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT ID="CRGULC9" DATA="product:zoovy:prod_image6" RAW="1" SUB="IMAGE6" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG1" MINIMAL="0" DATA="product:zoovy:prod_image1" RAW="1" WIDTH="280" SUB="IMAGE1_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG2" MINIMAL="0" DATA="product:zoovy:prod_image2" RAW="1" WIDTH="280" SUB="IMAGE2_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG3" MINIMAL="0" DATA="product:zoovy:prod_image3" RAW="1" WIDTH="280" SUB="IMAGE3_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG4" MINIMAL="0" DATA="product:zoovy:prod_image4" RAW="1" WIDTH="280" SUB="IMAGE4_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG5" MINIMAL="0" DATA="product:zoovy:prod_image5" RAW="1" WIDTH="280" SUB="IMAGE5_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG6" MINIMAL="0" DATA="product:zoovy:prod_image6" RAW="1" WIDTH="280" SUB="IMAGE6_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="145" ID="CQFJSMG" MINIMAL="0" DATA="product:zoovy:prod_image1" RAW="1" WIDTH="145" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="145" width="145" border="0" alt="%PROD_NAME%"></a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE1%')" onmouseover="showtrail('%IMAGE1_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMB" TYPE="OUTPUT"><HTML><![CDATA[</td>
+
+<!-- IMAGE 2 -->
+	<td class="prod_tdImage" width="70">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="70" ID="CRGULCF" MINIMAL="0" DATA="product:zoovy:prod_image2" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE2%');"  onmouseover="showtrail('%IMAGE2_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMC" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+<tr>
+<!-- IMAGE 3 -->
+	<td class="prod_tdImage" width="70">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="70" ID="CRGULCF" MINIMAL="0" DATA="product:zoovy:prod_image3" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE3%');"  onmouseover="showtrail('%IMAGE3_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMD" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+<tr>
+<!-- IMAGE 4 -->
+	<td class="prod_tdImage" width="70">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="70" ID="CRGULCF" MINIMAL="0" DATA="product:zoovy:prod_image4" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE4%');"  onmouseover="showtrail('%IMAGE4_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWME" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<!-- IMAGE 5 -->
+	<td class="prod_tdImage" width="70">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="70" ID="CRGULCF" MINIMAL="0" DATA="product:zoovy:prod_image5" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE5%');"  onmouseover="showtrail('%IMAGE5_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMF" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<!-- IMAGE 6 -->
+	<td class="prod_tdImage" width="70">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="70" ID="CRGULCF" MINIMAL="0" DATA="product:zoovy:prod_image6" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE6%');"  onmouseover="showtrail('%IMAGE6_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMG" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<tr>
+</table>
+<!-- /end images -->
+<div id="imageText">roll over or click images to enlarge</div>
+</div>
+
+<!-- top content -->
+<div id="prod_topHolder" style="float:right; width:360px; padding-right:3px; z-index:0">
+
+	<div id="prod_price">only $%PRICE%</div>
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="REVIEWSUMMARY" DATA="product:zoovy:prod_reviews" TYPE="REVIEWS"><HTML><![CDATA[
+<!-- SUMMARY -->
+<!-- rating -->
+<div id="REVIEWSUMMARY" style="background-color:#FFFFFF; border:1px dotted #EFEFEF; height:35px; vertical-align:middle;" >
+<table style="width:auto;" cellspacing="2" cellpadding="0">
+<tr>
+	<td width="85%">Reviewed <% load($TOTAL_REVIEWS);  default("");  print(); %> times</td>
+	<td NOWRAP align="right">Average Rating: </td>
+	<td align="left"><%
+/* load the profile review icon that is selected.  If not set, use default instead. */
+loadurp("CSS::zcolor.bgcolor");
+set($bgcolor=>$_);
+loadurp("profile:zoovy:prod_reviews_icon"); default("stars"); format(pretext=>"stock/reviews/",posttext=>"/");
+set($image_loc=>$_);
+load($AVG_RATING); format(pretext=>$image_loc);
+image(src=>$_,library=>"proshop",h=>"25",w=>"110",bg=>$bgcolor,tag=>"1");
+print();	
+
+%></td>
+</tr>
+</table></div>
+<!-- /rating -->	
+<!-- /SUMMARY -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWMH" TYPE="OUTPUT"><HTML><![CDATA[
+<!-- manf. info and price -->
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-top:5px;">
+<tr>
+	<td valign="top">
+	<!-- manf. info -->
+	<div id="prod_topData_info">
+		<div id="prod_topData_sku">Item #: %SKU%</div> 
+		]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MANUFACTURER" DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div id="prod_topData_mfg">Manufacturer: ]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="MANUFACTURERID" DATA="product:zoovy:prod_mfgid" PROMPT="Manufacturer's ID" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div id="prod_topData_mfgid">Mfg. ID: ]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMI" TYPE="OUTPUT"><HTML><![CDATA[
+	</div>
+<!-- /manf. info -->	
+	</td>
+	<td valign="top">
+	<div id="prod_topData_pricing">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SPECL_PROD_PRICING" TYPE="SPECL"><HTML><![CDATA[
+<%
+print("");
+loadurp("product:zoovy:base_price");
+set($price=>$_);
+
+
+load($price);
+format(money);
+format(pretext=>"<div>Our&nbsp;Price:&nbsp;<span id='prod_topData_price'>",posttext=>"</span></div>");
+print();
+
+
+/* if the msrp is blank or the msrp < price, do not display savings */
+loadurp("product:zoovy:prod_msrp");
+stop(unless=>$_);
+	set($msrp=>$_);
+	load($msrp);
+	math(op=>"subtract",var=>$price);
+	goto(label=>"END",lt=>"0");
+	set($savings=>$_);
+
+/* we only get here if msrp > price. display msrp and savings */
+load($msrp);
+format(money);
+format(pretext=>"<div>Retail&nbsp;Price:&nbsp;<span id='prod_topData_msrp'>",posttext=>"</span></div>");
+print();
+
+load($savings);
+/* don't show a savings of 0 */
+stop(unless=>$_);
+format(money);
+format(pretext=>"<div id='prod_topData_savings'>A&nbsp;Savings&nbsp;of:&nbsp;",posttext=>"</div>"); 
+print();
+
+:END();
+
+print("");
+%>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWML" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+		
+
+		</div>
+	</div>
+	</td>
+</tr>
+</table>
+<!-- /manf. info and price -->	
+	
+<div id="prod_addDiv">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" SHOWQUANTITY="Quantity: " TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CRNFWMM" TYPE="OUTPUT"><HTML><![CDATA[
+
+%PROD_WISHPOT_BUTTON%
+
+</div>
+
+<div style="position:relative;">
+
+<div id="prod_links">
+<!-- 	<div id="prod_links_ask"><a href="#" onClick="Effect.BlindDown('contact_form'); return false;">Ask a Question about this product</a></div> -->
+	
+	%ENABLE_TAF%
+	
+	<div id="prod_links_print"><a href="%PRODUCT_URL%/%SKU%?fl=prod_info&wrapper=plain" target="_blank">Printer Friendly Version</a></div>
+</div>
+<DIV id="recently_head">
+
+<!-- TAF -->
+	<div id="tellafriend" class="tellafriend" style="display:none; margin-top:15px;">
+	
+<table BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<tr>
+	<td>
+	<Div id="tafWindow" class="taf_window" style="text-align:center;">
+	<div id="tafConfirm"></div>
+	
+	
+	<div id="tafContent">
+	<div id="tafAlerts" style="text-align:left;"></div>
+<form action="" onSubmit="validateTAF(); return false;" style="display:inline" id="tafForm" name="tafForm">
+<!-- SUCCESS_FL contains the flow we will load on success (otherwise we'll reload) FL -->
+<input type="HIDDEN" name="SUCCESS_FL" value="pop_tafdone2">
+
+<!-- the IMAGE_ variables dictate how big we will format the IMAGEURL the default is w=200/h=200/bg=FFFFFF -->
+
+<input type="HIDDEN" name="IMAGE_HEIGHT" value="200">
+<input type="HIDDEN" name="IMAGE_WIDTH" value="200">
+<input type="HIDDEN" name="IMAGE_BGCOLOR" value="FFFFFF">
+
+<!-- DO NOT EDIT BELOW THIS LINE OR YOU MIGHT BREAK STUFF YOU DO NOT MEAN TO -->
+
+<input type="HIDDEN" name="VERB" value="EXEC_TAF">
+<input type="HIDDEN" name="PRODUCT" value="%SKU%">
+<input type="hidden" name="wrapper" value="plain">
+
+<input type="HIDDEN" name="FL" value="pop_taf1">
+<input type="HIDDEN" NAME="PG" value="">
+
+<table cellspacing="8" cellpadding="0" border="0" style="margin-top:5px;">	
+<tr>
+	<td align="right" class="textstyle" width="106"><span class="bold">Your Name:&nbsp;</span></td>
+	<td width="157" align="left" class="textstyle"><input type="TEXTBOX" class="formed" name="SENTFROM" value="%CUSTOMER_FULLNAME%"></td>
+</tr>
+<tr>
+	<td align="right" class="textstyle" ><!-- SENDER_ERROR --><span class="bold">Your Email:&nbsp;</span></td>
+	<td align="left" class="textstyle"><input type="TEXTBOX" class="formed" name="SENDER" value="%CUSTOMER_EMAIL%"></td>
+</tr>
+<tr>
+	<td align="right" class="textstyle"  nowrap><!-- RECIPIENT_ERROR --><span class="bold">Recipients Email:&nbsp;</span></td>
+	<td align="left" class="textstyle"><input type="TEXTBOX" class="formed" name="RECIPIENT" value=""></td>
+</tr>
+<tr>
+	<td align="right" class="textstyle" ><span class="bold">Message Title:</span></td>
+	<td align="left" class="textstyle"><input type="textbox" class="formed" name="TITLE" value="regarding %SKU% - %PROD_NAME%"></td>
+</tr>
+<tr>
+	<td align="right" class="textstyle"  valign="top" nowrap><span class="bold">Custom Message:&nbsp;</span></td>
+	<td align="left" class="textstyle"><textarea name="MESSAGE" class="formed" cols="25" style="height:80px; width:150px;"></textarea></td>
+</tr>
+<tr>
+	<td align="left" class="textstyle" valign="top"><input type="submit" class="button" value="Send"></td>
+	<td align="right" class="textstyle" valign="top"><input type="button" class="button" value="Close" onclick="Effect.Squish('tellafriend'); return false;"></td>
+</tr>
+</table>
+</form>
+	</div>
+	</div>
+	</td>
+	<td ROWSPAN="2" valign="bottom" align="left"><Div class="right_shadow">&nbsp;</div></td>
+</tr>
+<tr>
+	<td align="right"><Div class="base_shadow">&nbsp;</div></td>
+</tr>
+</table>
+	</div>
+<!-- /TAF -->	
+
+
+<!-- CONTACT form -->
+	<div id="contact_form" style="display:none; margin-top:15px;" class="tellafriend">
+<table BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<tr>
+	<td><Div id="contact_window" class="taf_window" style="text-align:center;">
+	
+<form action="" onSubmit="validateContact(); return false;" style="display:inline" id="contactForm" name="contactForm">
+<input type="hidden" name="validate" value="1">
+<table>
+<tr>
+	<td valign="top" class="textstyle" align="right">From:</td>
+	<td align="left"><input type="text" name="from" value="%CUSTOMER_EMAIL%" size="32" maxlength="80" class="formed" style="width:150px;"><div style="font-size:8pt; font-style:italic;"> (your email address)</div></td>
+</tr>
+<tr>
+	<td class="textstyle" align="right">Subject:</td>
+ 	<td align="left"><input type="text" name="subject" value="Regarding %SKU% - %PROD_NAME%" size="32" maxlength="80" class="formed" style="width:150px;"></td>
+</tr>
+<tr>
+	<td valign="top" class="textstyle" align="right">Message:</td>
+	<td align="left"><textarea name="message" class="formed" style="height:80px; width:150px;"></textarea></td>
+</tr>
+<tr>
+	<td align="left"><input type="submit" value="Send" class="button"></td>
+	<td align="right"><input type="button" value="Close" onclick="Effect.Squish('contact_form'); return false;" class="button"></td>
+</tr>
+</table>
+</form>
+	</div></td>
+	<td ROWSPAN="2" valign="bottom" align="left"><Div class="right_shadow">&nbsp;</div></td>
+</tr>
+<tr>
+	<td align="right"><Div class="base_shadow">&nbsp;</div></td>
+</tr>
+</table>
+
+</div>
+<!-- /CONTACT form -->
+
+</DIV>
+
+</div>
+
+</div>
+<!-- /top content -->
+
+<div id="bottomhalf" style="float:left; margin-top:3px; margin-right:3px">
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+	<td valign="top" class="prod_contentCol">
+<div id="tabs">
+<ul class="tabset_tabs">
+
+	<li id="active"><a href="#product_content" onClick="new TabToggle(this); return false;">Details</a></li>
+	%SPECS_TAB%
+<!-- %FEATURES_TAB% -->
+	%ENABLE_REVIEWS%
+	%ACCESSORY_TAB%
+	%QTYPRICE_TAB%
+
+</ul>
+</div>
+<a name="prod_content"></a>	
+
+
+<div id="tab_content" class="prod_content" style="width:460px;">
+
+<!-- general content - name and description -->
+	<div id="product_content" class="tabset_content">
+	<div id="prod_name">%PROD_NAME%</div>
+	]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWMN" WIKI="3" DATA="product:zoovy:prod_desc" PROMPT="Product Description" FONT="0" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CRNFWMO" TYPE="OUTPUT"><HTML><![CDATA[
+	</div>
+<!-- specifications content -->
+	<div id="specs_content" class="tabset_content" style="display: none;">
+	]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWMP" WIKI="3" DATA="product:zoovy:prod_detail" PROMPT="Product Specifications (shared field - details)" FONT="0" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CRNFWMQ" TYPE="OUTPUT"><HTML><![CDATA[
+	</div>
+<!-- Features content -->
+	<div id="features_content" class="tabset_content" style="display: none;">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWMR" RAW="1" TYPE="TEXTLIST" LOAD="product:zoovy:prod_features"><POSTTEXT><![CDATA[ </ul>]]></POSTTEXT>
+<LINEPRETEXT><![CDATA[ <li> ]]></LINEPRETEXT>
+<LINEPOSTTEXT><![CDATA[ </li> ]]></LINEPOSTTEXT>
+<PRETEXT><![CDATA[<ul>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMS" TYPE="OUTPUT"><HTML><![CDATA[
+	</div>
+<!-- Reviews content -->
+	<div id="reviews_content" class="tabset_content" style="display: none;">
+
+<div id="reviewsContainer">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWMT" TYPE="OUTPUT"><HTML><![CDATA[
+	<div id="reviewLink"><a href="#" onClick="Effect.BlindDown('reviewForm'); return false;">click here to leave a review</a></div>
+	<div id="reviewForm" style="display: none;">
+	
+Write a review:<br>
+<div id="reviewAlerts"></div>
+<form name="reviewForm" id="reviewForm" onSubmit="submitReview(); return false;">
+<table cellspacing="3" cellpadding="0" border="0" class="review_table">
+<tr>
+	<td align="right">Your Name:</td>
+	<td align="left"><input type="text" name="CUSTOMER_NAME" value="%CUSTOMER_FULLNAME%" class="formed" MAXLENGTH="30" style="width:180px;"></td>
+</tr>
+<tr>
+	<td align="right">Location:</td>
+	<td align="left"><input type="text" MAXLENGTH="30" name="LOCATION" value="" class="formed" style="width:180px;"></td>
+</tr>
+<tr>
+	<td align="right" valign="top">Subject:</td>
+	<td align="left"><input type="text" MAXLENGTH="60" name="SUBJECT" class="formed" style="width:180px;" ></td>
+</tr>
+
+<tr>
+	<td align="right" valign="top">Message:</td>
+	<td align="left"><textarea name="MESSAGE" class="formed" style="width:180px; height:80px;"></textarea></td>
+</tr>
+<tr>
+	<td align="right">score:</td>
+	<td align="left"><select name="RATING" class="formed">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+	</select></td>
+</tr>
+<tr>
+	<td align="left"><input type="submit" value="submit review" class="button"></td>
+	<td align="right"><input type="button" value="cancel" onclick="Effect.BlindUp('reviewForm');" class="button" /></td>
+</tr>
+</table>
+</form>	
+	
+	
+	</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWMW" TYPE="OUTPUT"><HTML><![CDATA[	
+
+
+
+<div id="REVIEWDETAILS">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="REVIEWDETAILS" DATA="product:zoovy:prod_reviews" TYPE="REVIEWS"><HTML><![CDATA[
+<!-- DETAIL -->
+<hr />
+<table cellspacing="0" width="100%">
+<!-- ROW -->
+<!-- REVIEW -->
+<tr>
+	<td width="99%"><strong><% load($CUSTOMER_NAME);  default("");  print(); %></strong> of <% load($LOCATION);  default("");  print(); %>
+	<div><% load($SUBJECT);  default("");  print(); %></div></td>
+	<td valign="top"><img src="//static.zoovy.com/img/proshop/W110-H25-Bffffff/zoovy/reviews/stars_<% load($RATING);  default("");  print(); %>.jpg" height="25" width="110" alt="ranked <% load($RATINGDECIMAL);  default("");  print(); %> our of 5" border="0" /> <!--  as a <% load($RATING);  default("");  print(); %> (  )<br> --></td>
+</tr>
+<tr>
+	<td colspan="2" style="border-bottom:1px dotted #CCCCCC;"><div><% load($MESSAGE);  default("");  print(); %></div></td>
+</tr>
+<!-- /REVIEW -->
+<!-- /ROW -->
+</table>
+<!-- /DETAIL -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWMX" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+</div>
+
+
+	</div>
+<!-- Accessories Product list -->
+	<div id="accessories_content" class="tabset_content" style="display: none;">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST" SIZE="5000" MAX="35" SHOWDEFAULT="0" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<table cellspacing="0" cellpadding="2" width="100%">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td <% load($bg);  default("");  print(); %>><a href="<% load($PROD_URL);  default("");  print(); %>" onMouseover="dropdownmenu(this, event, 'pop_window','<% load($PRODUCT_ID);  default("");  print(); %>')"><% load($zoovy:prod_name);  default(""); strip(length=>"55",breaks=>"1",html=>"1");  print(); %></a></td>
+<td <% load($bg);  default("");  print(); %> align="right"><% load($zoovy:base_price);  default("");  format(money);  print(); %></td>
+<td <% load($bg);  default("");  print(); %> align="right"><% load($ADD_LINK);  default("");  print(); %></td>
+<!-- /PRODUCT -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWMY" TYPE="OUTPUT"><HTML><![CDATA[
+
+	</div>
+
+	<div id="qtyprice_content" class="tabset_content" style="display: none;">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="QTYPRICE" DATA="product:zoovy:qty_price" MIDLINE=" for " PRELINE="Buy " PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
+</ELEMENT>
+<ELEMENT ID="CRNFWMZ" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+	</div>
+</div>
+	
+	</td>
+	<td valign="top" class="prod_relatedItemsCol" >
+	<div id="prod_relatedItems">Related Items</div>
+	<div align="center">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST" SIZE="5000" MAX="3" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<!-- ROW -->
+<!-- PRODUCT --><div class="prod_prodlist_holder">
+<div class="prod_prodlist_image"><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"70",h=>"70",bg=>"efefef",tag=>"1");  print(); %></a></div>
+<div class="prod_prodlist_text"><div><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_name);  default(""); strip(length=>"55",breaks=>"1",html=>"1");  print(); %></a></div>
+<span class="prod_prodlist_price"><% load($zoovy:base_price);  default("");  format(money);  print(); %></span></div>
+</div>
+<!-- /PRODUCT -->
+<!-- /ROW -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWNA" TYPE="OUTPUT"><HTML><![CDATA[
+
+	</div>
+	</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+
+
+<!-- This element is here for the UI so the user can edit the field. -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWNC" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- This element is here for the UI so the user can edit the field. -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWND" DATA="product:zoovy:prod_detail" SUB="NOTUSED_FEATURES" HELPER="This field will appear in a different spot in the actual layout.  It is here for edit only purposes." PROMPT="Product Detailed Description" FONT="0" TYPE="TEXT"></ELEMENT>
+
+</TEMPLATE>

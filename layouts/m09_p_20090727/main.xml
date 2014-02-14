@@ -1,0 +1,455 @@
+<TEMPLATE ID="m09_p_20090727" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="DADBTEG" CREATED="00000000" OVERLOAD="dev.no_continue=1" SUBTYPE="P" TYPE="CONFIG" EXPORT="0" TITLE="Product: for Moby"></ELEMENT>
+<ELEMENT ID="VAR_USERNAME" DATA="FLOW::USERNAME" SUB="USERNAME" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="VAR_POPUPTHEME" RAW="1" SUB="POPUP_THEME" TYPE="READONLY" LOAD="profile:zoovy:popup_wrapper"></ELEMENT>
+<ELEMENT ID="VAR_SKU" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
+<ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
+<ELEMENT ID="DADBTEH" RAW="1" SUB="PROD_NAME" TYPE="READONLY" LOAD="product:zoovy:prod_name"></ELEMENT>
+<ELEMENT ID="DADBTEI" RAW="1" SUB="PROD_UPC" TYPE="READONLY" LOAD="product:zoovy:prod_upc"><PRETEXT><![CDATA[<div>UPC: ]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DADBTEJ" RAW="1" SUB="PROD_ISBN" TYPE="READONLY" LOAD="product:zoovy:prod_isbn"><PRETEXT><![CDATA[<div>ISBN: ]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DADBTEK" RAW="1" SUB="PROD_MFGID" TYPE="READONLY" LOAD="product:zoovy:prod_mfgid"><PRETEXT><![CDATA[<div>Mfg ID: ]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="MFG" SUB="PROD_MFG" TYPE="SPECL"><HTML><![CDATA[
+<%
+print("");
+loadurp("product:zoovy:prod_mfg"); default("");
+set($mfg=>$_);
+/* if mfg is not set, we dont print it, so we skip down to blank.  If it does have a value, it is printed and linked to search results. */
+
+goto(label=>"BLANK",eq=>"");
+	print("");
+	print("<div id='prodMfg'>by <a href='");
+	print("%SEARCH_URL%/");
+	load($mfg);
+	format(replace=>" ",with=>"/");
+	print();
+	print("/'>");
+	print($mfg);
+	print("</a></div>");
+
+:BLANK();
+	print("<!-- No Manf. Specified -->");
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="REVIEWSUMMARY" DATA="product:zoovy:prod_reviews" SUB="PROD_REVIEW_SUMMARY" TYPE="REVIEWS"><HTML><![CDATA[<!-- Product review summary -->
+<!-- SUMMARY -->
+<!-- rating -->
+<%
+print("");
+load($TOTAL_REVIEWS); default("");
+stop(unless=>$_);
+/* load the profile review icon that is selected.  If not set, use default instead. */
+load("stock/reviews/colored_stars/");
+set($image_loc=>$_);
+load($AVG_RATING); format(pretext=>$image_loc);
+image(src=>$_,library=>"proshop",h=>"14",w=>"58",bg=>"FF6600",tag=>"1",alt=>$AVG_RATING);
+print();
+%>
+<!-- /rating -->	
+<!-- /SUMMARY -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PROD_IMAGE1" EDITOR="INLINE" DATA="product:zoovy:prod_image1" SUB="PROD_IMAGE1" WIDTH="140" PROMPT="Image 1" TYPE="IMAGE" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="SPECL_PROD_PRICING" SUB="PROD_PRICING" TYPE="SPECL"><HTML><![CDATA[
+<%
+print("");
+loadurp("product:zoovy:prod_msrp");
+stop(unless=>$_);
+	format(hidezero); format(money);
+	format(pretext=>"<div class='ztxt'>Retail Price: ",posttext=>"</div>");
+	print();
+%>
+<%
+print("");
+loadurp("product:zoovy:base_price");
+set($price=>$_);
+format(hidezero); format(money); 
+format(pretext=>"<div class='ztitle2'>Our Price: ",posttext=>"</div>");
+print();
+
+/* if the msrp is blank or the msrp - price is less than 0, do not display savings */
+loadurp("product:zoovy:prod_msrp");
+stop(unless=>$_);
+
+math(op=>"subtract",var=>$price);
+goto(label=>"END",lt=>"0");
+	format(hidezero); format(money);
+	format(pretext=>"<div class='ztxt'  style='color:#79a838;'>You Save  ",posttext=>"</div>"); 
+	print();
+
+:END();
+
+print("");
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DADBTEL" SUB="PROD_ADDTOCART" TYPE="ADDTOCART"><HTML><![CDATA[
+
+
+
+<%
+print("<!-- ADDTOCART -->");
+/*
+Why a custom add to cart element?
+ - moved the print sitebutton up above $message print for aesthetical reasons.
+ - added 'order by phone' button to bar.
+these two are the main reasons for custom element. everything else was for optimization since I was using custom anyway.
+ - removed the showquantity code
+ - removed specl for opening form, because i do it on the page.
+ - removed code for cancel/continue shopping button.
+ - removed specl for closing form tag.
+*/
+%>
+<% 
+
+load($TOPHTML); print(); print(""); 
+
+%>
+<%  
+
+load($CLAIM);
+goto(eq=>"0",label=>"END");
+	print("<b>Quantity:");
+	load($zoovy:quantity); print();
+	print("</b><br>");
+	print("<input type='hidden' name='external' value='1'>");
+:END();
+print("");
+
+%><% 
+
+load($PURCHASABLE);
+goto(eq=>"0",label=>"END");
+
+	print("<input type='hidden' name='product_id' value='");
+	print($SKU);
+	print("'><input type='hidden' name='add' value='yes'>");
+	print($poghtml);
+
+:END();
+print("");
+
+%>
+<%
+/* prints the actual ADDTOCART button */
+load($PURCHASABLE);
+goto(lt=>"1",label=>"END");
+	load($ID);
+	format(posttext=>":add_to_cart");
+	set($ATCID=>$_);
+	print("<div class='round_bottom' style='padding:4px;'>");
+	
+/* if the call button is disabled OR no phone number is set, skip the display of the 'order by phone' button */
+	loadurp("profile:zoovy:wrap_disable_call"); default("0");
+	goto(label=>"ADDONLY",eq=>"1");
+		loadurp("profile:zoovy:support_phone");
+		goto(label=>"ADDONLY",eq=>"");
+			format(pretext=>"<div style='float:left; margin-left:5px;'><a href='tel:");
+			format(posttext=>"'><img src='%LAYOUT_URL%/m09_p_orderbyphone-132x51.png' width='132' height='51' alt='order by phone' border='0'></a></div>");	
+			print();
+		
+:ADDONLY();
+	print("
+	<div style='float:right; margin-right:5px;'>");
+	element(TYPE=>"SITEBUTTON",button=>"add_to_cart",SKU=>$SKU,PID=>$PID,ID=>$ATCID,alt=>"Add to Cart",name=>"add_to_cart");
+	print();
+	print("</div>
+	<div style='clear:both;'></div>
+</div>");
+:END();
+print("");
+
+%>
+<%
+
+/* This message usually has stuff like inventory disposition, or claim details. */
+load($message);
+goto(eq=>"",label=>"END");
+	print("<div class='zsmall'>");
+	print($message);
+	print("</div>");
+:END();
+print("");
+
+%>
+
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DADBTEM" TYPE="HIDDEN" OUTPUTSKIP="32768"><DEFAULT><![CDATA[
+
+
+
+<form action='%CART_URL%' method='get'>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="DADBTEN" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+
+
+<div class='mypanel'>
+
+<table cellspacing='5' cellpadding='0' border='0' width='100%'>
+<tr>
+	<td valign='top' width='5%'>%PROD_IMAGE1%</td>
+	<td valign='top' width='95%' class='ztxt'>
+	<div style='margin-left:7px; line-height:150%;'>
+	
+<h1>%PROD_NAME%</h1>
+<div style='float:right;'>%PROD_REVIEW_SUMMARY%</div>
+%PROD_MFG%
+
+<div style='margin-top:10px;'>%PROD_PRICING%</div>
+
+<div style='margin-top:10px;'>Sku: %SKU%</div>
+%PROD_MFGID%
+%PROD_ISBN%
+%PROD_UPC%
+
+	</div>
+	</td>
+</tr>
+<tr>
+	<td align='right' colspan='2' class='ztxt' style='padding-top:3px;'>
+
+	<div id='addtocartContainer'>
+	%PROD_ADDTOCART%
+	</div>
+	</td>
+</tr>
+</table>
+
+</div>
+
+
+
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PROD_DESC" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_desc" PROMPT="Product Description" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<div id="prodDescHeader" class='arrowbar_off'><a href='#' onclick='showHideiPanel("prodDesc"); return false;'>Product Description</a></div>
+<div id="prodDescContent" class='ztxt arrowbar_content' style='display:none;'>
+]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT SIZE="5000" ID="PRODLIST1" MAX="10" MULTIPAGE="0" SHOWDEFAULT="0" ALTERNATE="1" DATA="product:zoovy:prod_prodlist_style2" INVENTORY="1" COLS="1" FORMAT="CUSTOM" PROMPT="Accessories" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<div id="prodAccessoriesHeader" class='arrowbar_off'><a href='#' onclick='showHideiPanel("prodAccessories"); return false;'>Accessories</a></div>
+<div id="prodAccessoriesContent" class='ztxt arrowbar_content' style='display:none;'>
+
+<table cellspacing='0' cellpadding='0' width='100%'>
+<!-- ROW -->
+<!-- PRODUCT -->
+<tr>
+
+<td width='1%'><a href='<% print($PROD_URL); %>' title="<% load($zoovy:prod_name); default(""); format(encode=>"entity"); print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"90",h=>"90",tag=>"1",bg=>"ffffff",alt=>$zoovy:prod_name);  print(); %></a></td>
+
+	<td class='ztable_row' width='98%'>
+	<a href='<% print($PROD_URL); %>' style='display:block; text-decoration:none;'>
+	<div style='margin-left:5px;' class='no_underline ztable_row'>
+
+
+<div style='font-weight:bold; margin-bottom:3px;' class='zlink'><% load($zoovy:prod_seo_title); default($zoovy:prod_name);  default(""); print(); %></div>
+
+<%
+print("");
+	
+/* if the msrp is greater than the price, compute the savings percentage. Otherwise, just show price */	
+load($zoovy:prod_msrp);
+goto(label=>"DISPLAY_SAVINGS",gt=>$zoovy:base_price);
+	load($zoovy:base_price);
+	format(hidezero);
+	format(money);
+	format(pretext=>"<div class='ztable_row_title'>",posttext=>"</div>");
+	print();
+	stop();
+
+:DISPLAY_SAVINGS();
+	load($zoovy:base_price);
+/* stop has to be here to handle products with a blank or 0 price */
+	stop(unless=>$_);
+	format(money);
+	format(pretext=>"<div class='ztable_row_title'>");
+	print();
+/* compute the savings and display it after the price. no need to check msrp because we did that above */
+	load($zoovy:base_price);
+	math(op=>"divide",var=>$zoovy:prod_msrp); 
+	math(op=>"subtract",var=>"1");
+	math(op=>"multiply",var=>"-100"); format(hidezero); format(convert=>"number",precision=>"0"); 
+	format(pretext=>"<span class='ztable_row'> (",posttext=>"%)</span></div>");
+	print();
+
+	load($zoovy:prod_msrp);
+	format(hidezero);
+	format(money);
+	format(pretext=>"<div>regular price: <span style='text-decoration:line-through;'>",posttext=>"</span></div>");
+	print();
+
+%>
+
+
+<div style='margin-top:3px;'>In Stock</div>
+
+	</div>
+	</a>
+	<div style='margin-left:5px;'><% print($ADD_FIELD_DETAILS); %></div>
+	</td>
+	
+	<td valign='middle' width='1%'>
+	<div style='margin-left:5px;'>
+
+<div><a href='<% print($PROD_URL); %>'><img src='%LAYOUT_URL%/m09_btn_details-25x25.jpg' width='25' height='25' alt='more details'></a></div>
+
+	</div>
+	</td>
+</tr>
+<tr>
+	<td colspan='3'><div style='height:1px; background:#cccccc;'></div></td>
+</tr>
+<!-- /PRODUCT -->
+<!-- /ROW -->
+</table>
+<div class='button_container' style='padding:4px; text-align:center;'>
+<%
+element(TYPE=>"SITEBUTTON",button=>"add_to_cart",alt=>"Add to Cart",name=>"add_to_cart");
+print();
+%>
+</div>
+
+</div>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PROD_DETAIL" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_detail" PROMPT="Product Details" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<div id="prodDetailHeader" class='arrowbar_off'><a href='#' onclick='showHideiPanel("prodDetail"); return false;'>Specifications</a></div>
+<div id="prodDetailContent" class='ztxt arrowbar_content' style='display:none;'>
+]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PROD_DETAIL" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_features" PROMPT="Product Details" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<div id="prodFeaturesHeader" class='arrowbar_off'><a href='#' onclick='showHideiPanel("prodFeatures"); return false;'>Features</a></div>
+<div id="prodFeaturesContent" class='ztxt arrowbar_content' style='display:none;'>
+]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="REVIEWDETAILS" DATA="product:zoovy:prod_reviews" TYPE="REVIEWS"><HTML><![CDATA[<!-- product reviews -->
+
+<!-- DETAIL -->
+<div id="prodReviewsHeader" class='arrowbar_off'><a href='#' onclick='showHideiPanel("prodReviews"); return false;'>Customer Reviews</a></div>
+<div id="prodReviewsContent" class='ztxt  arrowbar_content' style='display:none;'>
+<table cellspacing="0" cellpadding="0" width='100%'>
+<!-- ROW -->
+<!-- REVIEW -->
+<tr>
+	<td class="ztable_row">
+	<strong><% print($CUSTOMER_NAME); %></strong> of <% load($LOCATION);  default("");  print(); %><br>
+	<% load($SUBJECT);  default("");  print(); %>
+	</td>
+	
+	<td valign="top" align="right" class="ztable_row">
+<%
+/* stars icon for rating. */
+load("stock/reviews/colored_stars/");
+set($image_loc=>$_);
+load($RATING); format(pretext=>$image_loc);
+image(src=>$_,library=>"proshop",h=>"20",w=>"85",bg=>"FF6600",tag=>"1");
+print();	
+%>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="padding-bottom:5px;" class='ztable_row'>
+	<div style='border-bottom:1px dashed #a0d7ec; padding-bottom:5px;'>
+	<% load($MESSAGE);  default(""); strip(html=>"1"); print(); %>
+	</div>
+	</td>
+</tr>
+<!-- /REVIEW -->
+<!-- /ROW -->
+</table>
+</div>
+<!-- /DETAIL -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODUCT_CATEGORIES" MODE="LIST" TYPE="PRODCATS" DEPTH="0"><HTML><![CDATA[
+
+<h2 style='margin-top:3px;'>Find similar items here</h2>
+
+<div class='mypanel paddedpanel'>
+<table cellspacing='0' cellpadding='0' width='100%'>
+
+<!-- CATEGORY -->
+<tr>
+
+	<td width='1%'>
+	<a href='<% print($cat_url); %>'  title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>">
+	<% load($cat_thumb); default(""); image(w=>"90",h=>"90",bg=>"ffffff",tag=>"1",alt=>$cat_pretty);  print(); %>
+	</a>
+	</td>
+
+
+	<td class='ztable_row'>
+
+<div style='margin-left:5px;' class='no_underline'>
+<a href='<% print($cat_url); %>' title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>" style='display:block;'>
+
+<div class='ztable_row_title'><b><% print($cat_pretty); %></b></div>
+
+<div class='ztable_row_small'><%
+load($cat_safe); format(pretext=>"PAGE[.",posttext=>"]::meta_description");
+/* the format encode below MUST be present to discourage html in the descriptions which will break the header of the store */
+loadurp($_); strip(length=>"90"); format(encode=>"entity");
+print();
+%></div>
+
+</a>
+	</div>
+	</td>
+
+
+	<td valign='middle' width='1%'>
+	<div style='margin:0 5px;'>
+	<a href='<% print($cat_url); %>'  title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>">
+	<img src='%LAYOUT_URL%/m09_btn_details-25x25.jpg' width='25' height='25' alt='more details'>
+	</a>
+	</div>
+	</td>
+
+</tr>
+<%
+/* if this isn't the last row, add a single row */
+print("");
+load($TOTALCOUNT);
+math(op=>"subtract",var=>$COUNT);
+math(op=>"subtract",var=>"1");
+stop(unless=>$_);
+print("
+<tr>
+	<td colspan='3'><div style='height:1px; background:#999999;'></div></td>
+</tr>
+");
+%>
+
+<!-- /CATEGORY -->
+</table>
+</div>
+]]></HTML>
+<DELIMITER><![CDATA[ > ]]></DELIMITER>
+</ELEMENT>
+<ELEMENT ID="DADBTEO" TYPE="HIDDEN" OUTPUTSKIP="32768"><DEFAULT><![CDATA[
+</form>
+]]></DEFAULT>
+</ELEMENT>
+
+</TEMPLATE>

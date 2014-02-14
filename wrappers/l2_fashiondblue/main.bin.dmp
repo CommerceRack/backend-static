@@ -1,0 +1,773 @@
+$VAR1 = {
+          '_DIGEST' => 'AJjGS+fB5WKPBuFnYwMGlQ',
+          '_DIVS' => [],
+          '_ID' => 'l2_fashiondblue',
+          '_ELEMENTS' => [
+                           {
+                             'ID' => 'CQDOCNZ',
+                             'SUB' => 'LINK_VISITED_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_VISITED_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOA',
+                             'SUB' => 'TABLE_HEADING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOB',
+                             'SUB' => 'DISCLAIMER_FONT_SIZE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOC',
+                             'SUB' => 'CONTENT_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::CONTENT_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOD',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOE',
+                             'SUB' => 'CONTENT_TEXT_COLOR',
+                             'LOAD' => 'THEME::CONTENT_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOF',
+                             'SUB' => 'TABLE_LISTING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOG',
+                             'SUB' => 'TABLE_LISTING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOH',
+                             'SUB' => 'TABLE_LISTING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOI',
+                             'SUB' => 'CONTENT_FONT_FACE',
+                             'LOAD' => 'THEME::CONTENT_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOJ',
+                             'SUB' => 'NAME',
+                             'LOAD' => 'THEME::NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOK',
+                             'SUB' => 'DISCLAIMER_FONT_FACE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOL',
+                             'SUB' => 'PRETTY_NAME',
+                             'LOAD' => 'THEME::PRETTY_NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOM',
+                             'SUB' => 'TABLE_HEADING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCON',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOO',
+                             'SUB' => 'LINK_ACTIVE_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_ACTIVE_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOP',
+                             'SUB' => 'CONTENT_FONT_SIZE',
+                             'LOAD' => 'THEME::CONTENT_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOQ',
+                             'SUB' => 'ALERT_COLOR',
+                             'LOAD' => 'THEME::ALERT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOR',
+                             'SUB' => 'DISCLAIMER_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOS',
+                             'SUB' => 'TABLE_HEADING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOT',
+                             'SUB' => 'TABLE_HEADING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOU',
+                             'SUB' => 'DISCLAIMER_TEXT_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOV',
+                             'SUB' => 'LINK_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOW',
+                             'SUB' => 'HOMECATEGORY_URL',
+                             'LOAD' => 'URL::HOMECATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOX',
+                             'SUB' => 'WRAPPER_URL',
+                             'LOAD' => 'URL::WRAPPER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOY',
+                             'SUB' => 'CART_URL',
+                             'LOAD' => 'URL::CART_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCOZ',
+                             'SUB' => 'SUBSCRIBE_URL',
+                             'LOAD' => 'URL::SUBSCRIBE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPA',
+                             'SUB' => 'FEEDBACK_URL',
+                             'LOAD' => 'URL::FEEDBACK_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPB',
+                             'SUB' => 'LOGOUT_FUNCTION_URL',
+                             'LOAD' => 'URL::LOGOUT_FUNCTION_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPC',
+                             'SUB' => 'SHIPQUOTE_URL',
+                             'LOAD' => 'URL::SHIPQUOTE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPD',
+                             'SUB' => 'PRIVACY_URL',
+                             'LOAD' => 'URL::PRIVACY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPE',
+                             'SUB' => 'SITEBUTTON_URL',
+                             'LOAD' => 'URL::SITEBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPF',
+                             'SUB' => 'HOMEPAGE_URL',
+                             'LOAD' => 'URL::HOMEPAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPG',
+                             'SUB' => 'COUNTER_URL',
+                             'LOAD' => 'URL::COUNTER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPH',
+                             'SUB' => 'RETURNS_URL',
+                             'LOAD' => 'URL::RETURNS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPI',
+                             'SUB' => 'PASSWORD_URL',
+                             'LOAD' => 'URL::PASSWORD_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPJ',
+                             'SUB' => 'UPDATE_PAYMENT_URL',
+                             'LOAD' => 'URL::UPDATE_PAYMENT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPK',
+                             'SUB' => 'FORGOT_URL',
+                             'LOAD' => 'URL::FORGOT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPL',
+                             'SUB' => 'NAVBUTTON_URL',
+                             'LOAD' => 'URL::NAVBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPM',
+                             'SUB' => 'CONTACT_URL',
+                             'LOAD' => 'URL::CONTACT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPN',
+                             'SUB' => 'LOGOUT_URL',
+                             'LOAD' => 'URL::LOGOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPO',
+                             'SUB' => 'GALLERY_URL',
+                             'LOAD' => 'URL::GALLERY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPP',
+                             'SUB' => 'REMOVE_URL',
+                             'LOAD' => 'URL::REMOVE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPQ',
+                             'SUB' => 'HOME_URL',
+                             'LOAD' => 'URL::HOME_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPR',
+                             'SUB' => 'ABOUT_ZOOVY_URL',
+                             'LOAD' => 'URL::ABOUT_ZOOVY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPS',
+                             'SUB' => 'NEWS_URL',
+                             'LOAD' => 'URL::NEWS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPT',
+                             'SUB' => 'SECURE_URL',
+                             'LOAD' => 'URL::SECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPU',
+                             'SUB' => 'ABOUT_URL',
+                             'LOAD' => 'URL::ABOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPV',
+                             'SUB' => 'USERBUTTON_URL',
+                             'LOAD' => 'URL::USERBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPW',
+                             'SUB' => 'CLOSED_URL',
+                             'LOAD' => 'URL::CLOSED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPX',
+                             'SUB' => 'FASTORDER_URL',
+                             'LOAD' => 'URL::FASTORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPY',
+                             'SUB' => 'MAIL_FORM_URL',
+                             'LOAD' => 'URL::MAIL_FORM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCPZ',
+                             'SUB' => 'GRAPHICS_URL',
+                             'LOAD' => 'URL::GRAPHICS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQA',
+                             'SUB' => 'IMAGE_URL',
+                             'LOAD' => 'URL::IMAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQB',
+                             'SUB' => 'CONTACTUS_URL',
+                             'LOAD' => 'URL::CONTACTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQC',
+                             'SUB' => 'DYNAMIC_URL',
+                             'LOAD' => 'URL::DYNAMIC_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQD',
+                             'SUB' => 'NONSECURE_URL',
+                             'LOAD' => 'URL::NONSECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQE',
+                             'SUB' => 'CONTACT_US_URL',
+                             'LOAD' => 'URL::CONTACT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQF',
+                             'SUB' => 'SEARCH_URL',
+                             'LOAD' => 'URL::SEARCH_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQG',
+                             'SUB' => 'ABOUTUS_URL',
+                             'LOAD' => 'URL::ABOUTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQH',
+                             'SUB' => 'CUSTOMER_MAIN_URL',
+                             'LOAD' => 'URL::CUSTOMER_MAIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQI',
+                             'SUB' => 'MERCHANT_LOGIN_URL',
+                             'LOAD' => 'URL::MERCHANT_LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQJ',
+                             'SUB' => 'CATEGORY_URL',
+                             'LOAD' => 'URL::CATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQK',
+                             'SUB' => 'ADULT_URL',
+                             'LOAD' => 'URL::ADULT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQL',
+                             'SUB' => 'CLAIM_URL',
+                             'LOAD' => 'URL::CLAIM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQM',
+                             'SUB' => 'CLAIM_MULTI_URL',
+                             'LOAD' => 'URL::CLAIM_MULTI_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQN',
+                             'SUB' => 'ABOUT_US_URL',
+                             'LOAD' => 'URL::ABOUT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQO',
+                             'SUB' => 'RESULTS_URL',
+                             'LOAD' => 'URL::RESULTS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQP',
+                             'SUB' => 'PRODUCT_URL',
+                             'LOAD' => 'URL::PRODUCT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQQ',
+                             'SUB' => 'CONTINUE_URL',
+                             'LOAD' => 'URL::CONTINUE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQR',
+                             'SUB' => 'REDIR_URL',
+                             'LOAD' => 'URL::REDIR_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQS',
+                             'SUB' => 'KILL_COOKIES_URL',
+                             'LOAD' => 'URL::KILL_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQT',
+                             'SUB' => 'LOGIN_URL',
+                             'LOAD' => 'URL::LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQU',
+                             'SUB' => 'CHECKOUT_URL',
+                             'LOAD' => 'URL::CHECKOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQV',
+                             'SUB' => 'ORDER_STATUS_URL',
+                             'LOAD' => 'URL::ORDER_STATUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQW',
+                             'SUB' => 'NO_COOKIES_URL',
+                             'LOAD' => 'URL::NO_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQX',
+                             'SUB' => 'PAYPAL_URL',
+                             'LOAD' => 'URL::PAYPAL_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQY',
+                             'SUB' => 'CANCEL_ORDER_URL',
+                             'LOAD' => 'URL::CANCEL_ORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCQZ',
+                             'SUB' => 'MAIL_CONFIG_URL',
+                             'LOAD' => 'URL::MAIL_CONFIG_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCRA',
+                             'SUB' => 'DISABLED_URL',
+                             'LOAD' => 'URL::DISABLED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQDOCRB',
+                             'COLORS' => 16,
+                             'TYPE' => 'CONFIG',
+                             'CATEGORIES' => 16384,
+                             'THEME' => 'disclaimer_text_color=000000&content_font_face=Arial&table_listing_background_color_alternate=CEE4FF&table_heading_text_color=FFFFFF&pretty_name=blue+Circles&link_visited_text_color=001571&content_background_color=FFFFFF&table_heading_background_color=000000&link_text_color=1E00FC&link_active_text_color=FFFFFF&table_listing_font_face=Arial&content_text_color=000000&content_font_size=3&disclaimer_font_face=Arial&name=fashiondblue&table_listing_background_color=EEEEEE&disclaimer_background_color=999999&disclaimer_font_size=1&table_listing_text_color=000000&table_heading_font_face=Arial&table_heading_font_size=3&table_listing_font_size=3',
+                             'TITLE' => 'Blue Circles',
+                             'CREATED' => 20020328,
+                             'PROPERTIES' => 2,
+                             'SITEBUTTONS' => 'l2_fashiondblue'
+                           },
+                           {
+                             'HTML' => '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+',
+                             'ID' => 'CQDOCRC',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQDOCRD',
+                             'TYPE' => 'HEAD'
+                           },
+                           {
+                             'HTML' => '
+<map name="left">
+	<area href="%CART_URL%" shape="rect" coords="5,0,160,15" alt="Shopping Cart">
+	<area href="%SEARCH_URL%" shape="rect" coords="5,14,159,31" alt="Search">
+	<area href="%ABOUT_URL%" shape="rect" coords="4,32,157,49" alt="About Us">
+	<area href="%CONTACT_URL%" shape="rect" coords="5,50,159,74" alt="Contact Us">
+</map>
+<script language="JavaScript">
+<!--
+initialized = 0;
+',
+                             'ID' => 'CQDOCRE',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQDOCRF',
+                             'HTML' => 'rollover_%NUM%_on = new Image;%BREAK%rollover_%NUM%_on.src = "%SRC%";%BREAK%',
+                             'WIDTH' => 160,
+                             'BUTTONTYPE' => 'l2_fashiondblue_on',
+                             'TYPE' => 'MENU'
+                           },
+                           {
+                             'ID' => 'CQDOCRG',
+                             'HTML' => 'rollover_%NUM%_off = new Image;%BREAK%rollover_%NUM%_off.src = "%SRC%";%BREAK%',
+                             'WIDTH' => 160,
+                             'BUTTONTYPE' => 'l2_fashiondblue_off',
+                             'TYPE' => 'MENU'
+                           },
+                           {
+                             'HTML' => 'initialized = 1;
+function on(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\\"roll_"+imageNumber+"\\"")].src = eval("rollover_"+imageNumber+"_on.src");
+}
+function off(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\\"roll_"+imageNumber+"\\"")].src = eval("rollover_"+imageNumber+"_off.src");
+}
+// -->
+</script>
+</head> 
+<body background="%WRAPPER_URL%/background.gif" text="#%CONTENT_TEXT_COLOR%" link="#%LINK_TEXT_COLOR%" alink="#%LINK_ACTIVE_TEXT_COLOR%" vlink="#%LINK_VISITED_TEXT_COLOR%" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%" height="1" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td background="%WRAPPER_URL%/topbar_background.gif" border="0" cellpadding="0" cellspacing="0" width="100%" align="left">
+			<table background="%WRAPPER_URL%/topbar_background.gif" width="171" height="1" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td align="left" valign="top" width="198" background=""><img src="%WRAPPER_URL%/leftmap.gif" width="198"  height="78" usemap="#left" border="0"></td>
+					<td align="left" valign="middle" width="100%">
+						<table background="" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td background="%WRAPPER_URL%/logo_background.gif" width="462" height="78" align="right" valign="bottom"><a href="%HOME_URL%">',
+                             'ID' => 'CQDOCRH',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQDOCRI',
+                             'HEIGHT' => 78,
+                             'WIDTH' => 462,
+                             'TYPE' => 'LOGO'
+                           },
+                           {
+                             'HTML' => '</a></td>
+							</tr>
+						</table>
+					</td>
+					<td align="right" valign="bottom" width="1" background=""><img src="%WRAPPER_URL%/rightmap.gif" width="1"  height="1" border="0"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td align="left" valign="top">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top" align="center" height="60"><img src="%WRAPPER_URL%/topmap.gif" width="171" height="60" border="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" align="left" background="%WRAPPER_URL%/sidebar_background.gif"><img src="%GRAPHICS_URL%/blank.gif" width="171" height="1"><br>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left">',
+                             'ID' => 'CQDOCRJ',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'HTML' => '<a href="%URL%" OnMouseOver="on(%NUM%)" OnMouseOut="off(%NUM%)"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0" name="roll_%NUM%"></a><br>',
+                             'ID' => 'CQDOCRK',
+                             'WIDTH' => 160,
+                             'BUTTONTYPE' => 'l2_fashiondblue_off',
+                             'TYPE' => 'MENU'
+                           },
+                           {
+                             'HTML' => '</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="center" height="60"><img src="%WRAPPER_URL%/bottommap.gif" width="171" height="60" border="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" align="center" background="">',
+                             'ID' => 'CQDOCRL',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQDOCRM',
+                             'TYPE' => 'SIDEBAR'
+                           },
+                           {
+                             'HTML' => '</td>
+				</tr>
+			</table>
+		</td>
+		<td align="left" valign="top" width="100%">
+			<table background="%WRAPPER_URL%/title_background.gif" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td valign="top" align="left"><img src="%WRAPPER_URL%/corner.gif"  width="1" height="1"></td>
+					<td width="100%" align="left" valign="middle">
+						<table cellpadding="5">
+							<tr>
+								 <td background=""><font color="#ffffff" face="Arial"  size="4">',
+                             'ID' => 'CQDOCRN',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQDOCRO',
+                             'TYPE' => 'TITLE'
+                           },
+                           {
+                             'HTML' => '</font></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tr>
+					<td width="100%" align="left" valign="top">
+',
+                             'ID' => 'CQDOCRP',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQDOCRQ',
+                             'TYPE' => 'BODY'
+                           },
+                           {
+                             'HTML' => '
+<br>
+<br>
+',
+                             'ID' => 'CQDOCRR',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQDOCRS',
+                             'TRANSPARENT' => 'TRUE',
+                             'TYPE' => 'FOOTER'
+                           },
+                           {
+                             'HTML' => '
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
+',
+                             'ID' => 'CQDOCRT',
+                             'TYPE' => 'OUTPUT'
+                           }
+                         ],
+          '_FORMAT' => 'WRAPPER',
+          '_LISTS' => [],
+          '_MID' => '0',
+          '_V' => 2
+        };

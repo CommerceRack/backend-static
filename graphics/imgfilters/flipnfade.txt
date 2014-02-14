@@ -1,0 +1,23 @@
+#mirror the image vertically
+Flip
+
+#Border     {"geometry":"100x100+10+10",width:"2",height:"2",color:"blue"}
+
+#OilPaint	{"radius":"50"}
+
+#Crop	{"geometry":"100x100+10+20"}
+#AdaptiveBlur  {"geometry":"100x100+10+20","radius":"200","sigma":"200","channel":"all"}
+
+# resize image 0 - image 0 is the original image 
+0	Resize	{"geometry":"320x240"}
+
+1	New	{"size":"320x240"}
+1	Annotate	{"font":"@/httpd/static/fonts/BAUHAUS.TTF", "text":"this is the text","pointsize":"18", "x":"10", "y":"40", "antialias":"true"}
+1	Set   {"background":"#000000"}
+1	Set	{"fill":"#000000"}
+1	Wave	{"geometry":"220x340","fill":"transparent"}
+1	Resize	{"geometry":"320x240"}
+
+
+# composite layer 1 ON to layer 0
+0	Composite	{"image":"1","gravity":"Center"}

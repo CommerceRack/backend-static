@@ -1,0 +1,65 @@
+<TEMPLATE ID="1003" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLXN" CREATOR="STAFF" CREATED="00000000" IMAGES="3" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" SHORT="This layout features three 180x180 pictures, along with a short description. " TYPE="CONFIG" TITLE="Triple Picture" RELEASED="20020618"><SUMMARY><![CDATA[
+Category Description
+IMAGE1 (180  x180 )
+IMAGE2 (180  x180 )
+IMAGE3 (180  x180 )
+Product Listing 
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DATA="page:subcat" MODE="CHOOSER" TYPE="SUBCAT"></ELEMENT>
+<ELEMENT ID="CPUKLXO" TYPE="OUTPUT"><HTML><![CDATA[
+<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script><center>
+<table width="560"> 
+        <tr>
+                <td align=center width="180">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="180 " ID="IMAGE1" HELP="Please enter the first picture." ZOOM="1 " DATA="page:picture1" WIDTH="180  " PROMPT="Image1 180 x 180 " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKLXP" TYPE="OUTPUT"><HTML><![CDATA[
+
+</td><td align=center width="180">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="180 " ID="IMAGE2" HELP="Please enter a second picture." ZOOM="1 " DATA="page:picture2" WIDTH="180  " PROMPT="Image2 180 x 180 " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKLXQ" TYPE="OUTPUT"><HTML><![CDATA[
+
+</td><td align=center width="180">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="180 " ID="IMAGE3" HELP="Please enter a third picture." ZOOM="1 " DATA="page:picture3" WIDTH="180  " PROMPT="Image3 180 x 180 " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKLXR" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+		</td>
+	</tr>
+</table>
+</center>
+<p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Category Description" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKLXS" TYPE="OUTPUT"><HTML><![CDATA[
+ 
+<p>
+ 
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing " DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+
+</TEMPLATE>

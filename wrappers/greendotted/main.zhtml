@@ -1,0 +1,73 @@
+<!-- CONFIG
+THEME=greendotted
+SITEBUTTONS=l2_bluebergs
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+table	{display:	inline;
+		}
+		
+</style>
+</head>
+<body leftmargin=0 rightmargin=0 topmargin=0 marginheight=0 marginwidth=0>
+<table cellspacing=0 cellpadding=0 border=0 width=100% background="<!-- WRAPPER_URL -->/header_bg.gif">
+	<tr>
+		<td><img src="<!-- WRAPPER_URL -->/blank.gif" width=1 height=103></td>
+		<td><img src="<!-- WRAPPER_URL -->/blank.gif" width=23 height=1></td>
+		<td valign="top">
+			<table cellspacing=0 cellpadding=2 border=0 width=100% bgcolor="#FFFFFF">
+				<tr>
+					<td bgcolor="#FFFFFF"><img src="<!-- WRAPPER_URL -->/blank.gif" width=1 height=25></td>
+					<td bgcolor="#FFCCCC">&nbsp;<a href="<!--CART_URL-->"><font face="verdana,arial" size=2 color="#000000"><strong>Cart</strong></a>&nbsp;</td>
+					<td bgcolor="#FFFFFF"><img src="<!-- WRAPPER_URL -->/blank.gif" width=1 height=1></td>
+					<td bgcolor="#FFFF99">&nbsp;<a href="<!--SEARCH_URL-->"><font face="verdana,arial" size=2 color="#000000"><strong>Search</strong></a>&nbsp;</td>
+					<td bgcolor="#FFFFFF"><img src="<!-- WRAPPER_URL -->/blank.gif" width=1 height=1></td>
+					<td bgcolor="#99CCFF">&nbsp;<a href="<!--CONTACT_URL-->"><font face="verdana,arial" size=2 color="#000000"><strong>Contact</strong></a>&nbsp;</td>
+					<td bgcolor="#FFFFFF"><img src="<!-- WRAPPER_URL -->/blank.gif" width=1 height=1></td>
+					<td bgcolor="#FFCCFF">&nbsp;<a href="<!--ABOUT_URL-->"><font face="verdana,arial" size=2 color="#000000"><strong>Company</strong></a>&nbsp;</td>
+					<td bgcolor="#FFFFFF"><img src="<!-- WRAPPER_URL -->/blank.gif" width=1 height=1></td>
+				</tr><tr>
+					<td colspan=9 bgcolor="#FFFFFF"><img src="<!-- WRAPPER_URL -->/blank.gif" width=1 height=1></td></tr>
+			</table>
+		</td>
+		<td width=99%></td>
+		<td valign="middle"><!-- LOGO
+WIDTH=200
+HEIGHT=97
+--></td>
+		<td><img src="<!-- WRAPPER_URL -->/blank.gif" width=24 height=1></td>
+	</tr>
+</table><br><br>
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td valign="top" align="left">
+			<table cellspacing=0 cellpadding=0 border=0 width=170>
+				<tr>
+					<td width=5 bgcolor="#669966"><img src="<!-- WRAPPER_URL -->/blank.gif" width=5 height=1></td>
+					<td width=164 bgcolor="#669966"><font face="verdana, arial" size=2 color="#FFFFFF"><strong>Menu:</strong></td>
+					<td width=1 bgcolor="#669966"><img src="<!-- WRAPPER_URL -->/blank.gif" width=1 height=1></td>
+				</tr><tr>
+					<td></td>
+					<td><br><!-- MENU 
+					FORMAT=<a href="%URL%"><font color="#669966" face="verdana" size=2>%MESSAGE%</font></a><br> 
+					--><br></td>
+					<td background="<!-- WRAPPER_URL -->/dash.gif"></td>
+				</tr><tr>
+					<td colspan=3 background="<!-- WRAPPER_URL -->/dash2.gif"><img src="blank.gif" width=170 height=1></td>
+				</tr>
+			</table>
+		</td>
+		<td><img src="<!-- WRAPPER_URL -->/blank.gif" width=20 height=1></td>
+		<td valign="top" align="left" width=95%>	
+			<font face="verdana, arial" size=2 color="#669966"><strong><!-- TITLE --></strong><br><br>
+			<!-- BODY --><br><br><!-- FOOTER -->
+		</td>
+		<td><img src="<!-- WRAPPER_URL -->/blank.gif" width=20 height=1></td>
+	</tr>
+</table>
+
+</body>

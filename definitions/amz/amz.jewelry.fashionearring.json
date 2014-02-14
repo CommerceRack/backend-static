@@ -1,0 +1,129 @@
+[
+   {
+      "catalog" : "JEWELRY",
+		"amz-catalog" : "Jewelry",
+      "amz-subcat" : "FashionEarring",
+      "subcat" : "fashionearring",
+      "type" : "config",
+		"variation-themes" : "MetalType",
+		"parentage-values" : "parent,child,child"
+   },
+   {
+      "PROMPT" : "Jewelry:FashionEarring",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYDQ",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnearring_metaltype",
+      "type" : "textbox",
+      "title" : "Metal Type",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.VariationData.MetalType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:metaltype",
+		"vkey" : "MetalType",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.VariationData.MetalType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnearring_matl",
+      "type" : "textlist",
+      "title" : "Material",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.Material"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnearring_metalstamp",
+      "type" : "textbox",
+      "title" : "Metal Stamp",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.MetalStamp"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnearring_settingtype",
+      "type" : "textbox",
+      "title" : "Setting Type",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.SettingType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fsnearring_diameter",
+      "type" : "number",
+      "title" : "Diameter",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.Diameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fsnearring_height",
+      "type" : "number",
+      "title" : "Height",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.Height"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fsnearring_width",
+      "type" : "number",
+      "title" : "Width",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.Width"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fsnearring_length",
+      "type" : "number",
+      "title" : "Length",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.Length"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnearring_backfinding",
+      "type" : "textbox",
+      "title" : "Back Finding",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.BackFinding"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnearring_estateperiod",
+      "type" : "textbox",
+      "title" : "Estate Period",
+      "xmlpath" : "Jewelry.ProductType.FashionEarring.EstatePeriod"
+   }
+]

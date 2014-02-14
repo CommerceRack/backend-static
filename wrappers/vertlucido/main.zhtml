@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<!-- CONFIG
+THEME=lucido
+SITEBUTTONS=lucido
+-->
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+td.foo    {background-color: #83BDFF;}
+td.goo    {background-color: #f0f0f0;}
+td.hoo    {background-color: #6699FF;}
+td.loo    {background-color: #666666;}
+td.moo    {background-color: #FFFFFF;}
+.small    {font-family: verdana; font-size: 10px;}
+a:hover    {text-decoration: underline; color: #727885;}
+a    {color: #343434; text-decoration: none}
+form    {display:    inline;}
+.title    {font-family: verdana; color: #666666; font-size: 11px; font-weight: bold;}
+.body   {font-family: verdana; color: #999999; font-size: 10px; margin: 0px;}
+p    {font-family: verdana; color: #999999; font-size: 10px;}
+</style>
+</head>
+
+<body leftmargin=0 marginheight=0 bottommargin=0 marginwidth=0 rightmargin=0 topmargin=0 bgcolor="#83BDFF">
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+    <tr>
+		<td class="foo"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=5 height=1></td>
+        <td class="foo" nowrap valign="bottom"><span class="small">
+        <a href="<!--HOME_URL-->">Home</a>&nbsp;&nbsp;&nbsp;
+	    <a href="<!--CART_URL-->">Cart</a>&nbsp;&nbsp;&nbsp;
+        <a href="<!-- LOGIN_URL -->">My Account</a>&nbsp;&nbsp;&nbsp;
+        <a href="<!--ABOUT_URL-->">About Us</a>&nbsp;&nbsp;&nbsp;
+        <a href="<!--CONTACT_URL-->">Contact Us</a>
+        </span></td>
+        <td class="foo" width=99% align="right" valign="bottom"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=45></td>
+		<td class="foo" width=200 align="left" valign="bottom"><!-- LOGO
+WIDTH=200
+HEIGHT=45
+--></td>     
+        <td class="foo" width=5><img src="<!-- GRAPHICS_URL -->/blank.gif" width=5 height=1></td>
+    </tr><tr>
+        <td background="<!-- WRAPPER_URL -->/search_top.gif" height=2 colspan=6><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=2></td>
+    </tr><tr>
+		<td class="goo"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+        <td class="goo" colspan=4 nowrap align="left"><form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" name="keywords" value="product name">
+<input type="image" src="<!-- WRAPPER_URL -->/search.gif" border=0 >
+</form></td>
+        <td class="goo"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+    </tr><tr>
+        <td background="<!-- WRAPPER_URL -->/search_bottom.gif" height=2 colspan=6><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=7></td>
+    </tr>
+</table>
+<table cellspacing=0 cellpadding=0 border=0 width=100%> 
+	<tr>
+		<td width=130 valign="top" class="hoo"><br><span class="small"><!-- MENU
+FORMAT=&nbsp;-&nbsp;<a href="%URL%">%MESSAGE%</a><br>
+ONLYHOME=0
+NOHOME=1
+--></span>
+		<!-- SIDEBAR -->
+		<img src="<!-- GRAPHICS_URL -->/blank.gif" width=130 height=1></td>
+		<td class="moo"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=5 height=1></td>
+		<td class="moo" height=300 valign="top"><p><span class="title"><!-- TITLE --></span></p><!-- BODY --></td>
+		<td class="moo"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=5 height=1></td>
+	</tr>
+</table>   
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%> 	
+	<tr>
+        <td background="<!-- WRAPPER_URL -->/search_bottom.gif" height=2 colspan=5><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=7></td>
+    </tr><tr>
+        <td class="goo" colspan=5 height=14 align="left"><div class="small"><!-- FOOTER
+TRANSPARENT=1
+--></td>
+    </tr><tr>
+        <td class="loo" height=1 colspan=5><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+    </tr>
+</table>
+
+
+
+
+</body>
+</html>

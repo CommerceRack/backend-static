@@ -1,0 +1,100 @@
+<!-- CONFIG
+THEME=aol
+SITEBUTTONS=aol
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- HEAD -->
+<style type="text/css">
+body	{margin: 0px;}
+p, td, li, ol, ul, body	{font-family: trebuchet, trebuchet ms, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;}
+.body_bg	{background-color: #C4DCE8;}
+.footer_bg	{background-color: #A0BDCB;}
+.title	{color: #7495A6; font-size: 11pt; font-weight: bold;}
+.outline	{border-style: solid; border-color: #A0BDCB; border-width: 2px;}
+a	{color: #0000ff;}
+a:hover	{color: #6D903E;}
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+<!--//
+function openWindow(url) {
+adviceWin = window.open(url,'advice','status=no,width=420,height=400,menubar=no,scrollbars=yes');
+adviceWin.focus(true);
+}
+//-->
+</SCRIPT>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td align="left" bgcolor="#C1E888" width="95%"><img src="<!-- WRAPPER_URL -->/logo_small.gif" width="353" height="36" border=0 alt="AOL Classifieds MarketPlace"></td>
+	<td align="right" bgcolor="#C1E888" width="5%"><table><tr>
+<!--
+		<td><a href="<!-- HOME_URL -->"><img src="<!-- WRAPPER_URL -->/continue_btn.gif" width="115" height="19" border=0 alt="Continue Shopping"></a></td>
+-->
+		<td><a href="javascript:window.close();"><img src="<!-- WRAPPER_URL -->/cancel_btn.gif" width="53" height="19" border=0 alt="Cancel"></a></td>
+	</tr></table></td>
+</tr><tr>
+	<td colspan="2" height="1" bgcolor="#759944"></td>
+</tr></table>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td background="<!-- WRAPPER_URL -->/tile_4.gif" height=25></td>
+</tr></table>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td align="center" class="body_bg" style="padding-right: 7px; padding-left: 7px;"><table cellspacing="0" cellpadding="7" border="0" width="100%" style="border-style: solid; border-color: #A0B9C6; border-width: 2px; border-bottom-width: 0px;"><tr>
+		<td bgcolor="#ffffff"><p><strong><span style="font-size: 13px;">Place Your Order with:</span><br><br>
+<!-- ELEMENT
+TYPE=TEXTBOX
+SAVETO=merchant:zoovy:aol_screen_name
+FONT=0
+PRETEXT=AOL Screen Name: 
+POSTTEXT=<br>
+--></strong>
+<!-- ELEMENT
+TYPE=TEXTBOX
+SAVETO=merchant:zoovy:address1
+FONT=0
+POSTTEXT= 
+-->
+<!-- ELEMENT
+TYPE=TEXTBOX
+SAVETO=merchant:zoovy:address2
+FONT=0
+POSTTEXT= 
+-->, 
+<!-- ELEMENT
+TYPE=TEXTBOX
+SAVETO=merchant:zoovy:city
+FONT=0
+POSTTEXT=, 
+-->
+<!-- ELEMENT
+TYPE=TEXTBOX
+SAVETO=merchant:zoovy:state
+FONT=0
+-->
+<!-- ELEMENT
+TYPE=TEXTBOX
+SAVETO=merchant:zoovy:zip
+FONT=0
+POSTTEXT=<br>
+-->
+<a href="javascript:openWindow('<!-- RETURNS_URL -->?wrapper=pop_aol&fl=14');">Terms &amp; Conditions</a> | <a href="javascript:openWindow('<!-- PRIVACY_URL -->?wrapper=pop_aol&fl=14');">Privacy Policy</a>
+</p><!-- BODY -->
+<!-- 
+<div align="center">
+<a href="http://classifieds.aol.com/">Shops</a> | <a href="http://advisor.aol.com/">Advertise</a> | <a href="http://www.aol.com/optimized/safetyandsecurity.adp">Security</a> | <a href="http://www.aol.com/info/p_privacy.adp">Privacy</a> | <a href="http://www.aol.com/info/copyright.adp">Terms of Use</a> | <a href="http://www.aol.com/support/index.adp">Question/Problem</a> | <a href="http://www.aol.com/sitemap/index.adp">Site Map</a><br>
+
+&copy; 2000-2004 Zoovy.com  All rights reserved.</div>		
+-->
+</td>
+	</tr></table></td>
+</tr></table>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td height=24 class="footer_bg"></td>
+</tr><tr>
+	<td background="<!-- WRAPPER_URL -->/tile_2.gif"><img src="<!-- WRAPPER_URL -->/tile_2.gif" width="8" height="36"></td>
+</tr></table>
+</body>
+</html>

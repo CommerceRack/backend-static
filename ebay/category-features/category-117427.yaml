@@ -1,0 +1,29 @@
+--- 
+"@conditions": 
+  - 
+    "{urn:ebay:apis:eBLBaseComponents}Condition": 
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'New with tags'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 1000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'New without tags'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 1500
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'New with defects'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 1750
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Pre-owned'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 3000
+    "{urn:ebay:apis:eBLBaseComponents}ConditionHelpURL": 
+      - 'http://pages.ebay.com/help/sell/contextual/condition_2.html'
+"CategoryID": 117427
+"GlobalShippingEnabled": 'true'
+"ItemSpecificsEnabled": 'Enabled'

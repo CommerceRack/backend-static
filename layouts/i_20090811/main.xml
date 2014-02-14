@@ -1,0 +1,205 @@
+<TEMPLATE ID="i_20090811" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="DAEIORU" CREATED="20090811" SUBTYPE="I" AUTHOR="jt" TYPE="CONFIG" TITLE="Big banner and text " NEWSLETTER="1"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+.zborder { border: 1px dotted #cccccc; }
+.zbox { border: 1px solid #bdbdbd; }
+.zbox_body { background-color: #f1f2f3; color: #000000; font-family: verdana, arial, helvetica; font-size: 8pt; }
+.zbox_head { background-color: #bccad3; color: #393939; font-family: verdana, arial, helvetica; font-size: 9pt; }
+.zcolor { background-color: #ca8029; color: #ffffff; }
+.zcolor_contrast { background-color: #bccad3; color: #393939; }
+.zcolor_dark { background-color: #333333; color: #ffffff; }
+.zcolor_light { background-color: #fff3d0; color: #393939; }
+.zform_button { border: 1px solid #beb47c; background-color: #beb47c; color: #444444; font-size: 8pt; font-family: verdana, arial, helvetica; }
+.zform_select { border: 1px solid #7f9db9; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: verdana, arial, helvetica; }
+.zform_textarea { border: 1px solid #7f9db9; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: verdana, arial, helvetica; }
+.zform_textbox { border: 1px solid #7f9db9; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: verdana, arial, helvetica; }
+.zhint { color: #bccad3; font-family: verdana, arial, helvetica; font-size: 7pt; }
+.zlink { color: #ee9100; }
+.zsmall { color: #515151; font-family: verdana, arial, helvetica; font-size: 7pt; }
+.ztab0 { background-color: #ee9100; color: #FFFFFF; font-family: verdana, arial, helvetica; font-size: 8pt; }
+.ztab1 { background-color: #f1f2f3; color: #393939; font-family: verdana, arial, helvetica; font-size: 8pt; font-weight: bold;}
+.ztabbody { background-color: #f1f2f3; color: #000000; font-family: verdana, arial, helvetica; font-size: 8pt; }
+.ztable_head { background-color: #e5ebee; color: #393939; font-family: verdana, arial, helvetica; font-size: 9pt; }
+.ztable_row {color: #8b8c8c; font-family: verdana, arial, helvetica; font-size: 8pt; }
+.ztable_row0 { background-color: #FFFFFF; color: #8b8c8c; font-family: verdana, arial, helvetica; font-size: 8pt;}
+.ztable_row1 { background-color: #fff9d3; color: #8b8c8c; font-family: verdana, arial, helvetica; font-size: 8pt;}
+.ztable_row_small { color: #EFEFEF; font-family: verdana, arial, helvetica; font-size: 7pt; }
+.ztable_row_title { font-weight: bold; color: #393939; font-family: verdana, arial, helvetica; font-size: 9pt; }
+.ztitle { font-weight: bold; color: #393939; font-family: verdana, arial, helvetica; font-size: 10pt; }
+.ztitle2 { font-weight: bold; color: #EFEFEF; font-family: verdana, arial, helvetica; font-size: 10pt; }
+.ztxt { color: #000000; font-family: verdana, arial, helvetica; font-size: 8pt; }
+.zwarn { color: #660000; font-weight: bold; }]]></CSS>
+</ELEMENT>
+<ELEMENT ID="CPVRQCZ" RAW="1" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDD" RAW="1" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDI" RAW="1" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDL" RAW="1" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDM" RAW="1" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDQ" RAW="1" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQED" RAW="1" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEF" RAW="1" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEK" RAW="1" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL"></ELEMENT>
+<ELEMENT ID="VAR_USERNAME" DATA="FLOW::USERNAME" SUB="USERNAME" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="VAR_POPUPTHEME" RAW="1" SUB="POPUP_THEME" TYPE="READONLY" LOAD="profile:zoovy:popup_wrapper"></ELEMENT>
+<ELEMENT ID="CQHREXQ" SUB="title1" TYPE="SPECL"><HTML><![CDATA[
+<h2 style='font-size:15px; font-weight:bold; margin:0; color: <% loadurp("CSS::ztitle.color"); default("#000000"); print(); %>'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQHREXR" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[
+</h2>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXS" SUB="title2" TYPE="SPECL"><HTML><![CDATA[
+<h3 style='font-size:13px; font-weight:bold; margin:0; color: <% loadurp("CSS::ztitle2.color"); default("#FF6600"); print(); %>'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQHREXT" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[
+</h3>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXU" SUB="title3" TYPE="HIDDEN"><DEFAULT><![CDATA[<strong>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXV" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</strong>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILIST" SUB="list" TYPE="HIDDEN"><DEFAULT><![CDATA[
+<ul>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLIST" SUB="/list" TYPE="HIDDEN"><DEFAULT><![CDATA[
+</ul>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILISTITEM" SUB="listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[
+<li>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLISTITEM" SUB="/listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[
+</li>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKISECTION" SUB="section" TYPE="HIDDEN"><DEFAULT><![CDATA[
+<p>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDSECTION" SUB="/section" TYPE="HIDDEN"><DEFAULT><![CDATA[
+</p>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIHARDBREAK" SUB="hardbreak" TYPE="SPECL"><HTML><![CDATA[<div style='border-top:<% loadurp("CSS:zborder.border"); print(); %>; margin:5px 0px;'></div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKISOFTBREAK" SUB="softbreak" TYPE="SPECL"><HTML><![CDATA[
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKITABLE" SUB="table" TYPE="HIDDEN"><DEFAULT><![CDATA[
+<table cellspacing="0" cellpadding='3'>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLE" SUB="/table" TYPE="HIDDEN"><DEFAULT><![CDATA[
+</table>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEROW" SUB="tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[
+<tr>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEROW" SUB="/tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[
+</tr>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLECELL" SUB="tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[
+<td class="ztable_row">
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLECELL" SUB="/tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[
+</td>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEHEAD" SUB="tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[
+<td class="ztable_head">
+<b>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[
+</b>
+</td>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_CUSTOM_FOOTER" SUB="WRAP_FOOTER" TYPE="FOOTER"><HTML><![CDATA[
+<div style='font-size:10px; margin:2px 0; color:#666666; text-align:right;'>
+Copyright &copy; <% load($year);  print(); %>.  
+Please read our 
+<a href='<% load($privacy_url);  print(); %>'>
+Privacy Statement
+</a>
+
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DAEIORV" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+<html>
+<head>
+
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DAEIORW" TYPE="HEAD"></ELEMENT>
+<ELEMENT ID="DAEIORX" TYPE="OUTPUT"><HTML><![CDATA[
+</head>
+
+<body style='margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif; background:#ffffff;'>
+
+<table width='600' cellspacing='0' cellpadding='0' align='center'>
+<tr>
+<td>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DAEIORY" EDITOR="INLINE" DATA="page:banner1_link" SUB="NEWS_BANNER1_LINK" PROMPT="Destination url for banner (when clicked)" DEFAULT="%HOME_URL%" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="DAEIORZ" HEIGHT="600" EDITOR="INLINE" DATA="page:banner1" WIDTH="600" PROMPT="Banner (600 x 600)" TYPE="IMAGE" BGCOLOR="FFFFFF"><POSTTEXT><![CDATA[
+</a>
+</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[
+<div style='margin-bottom:3px;'>
+<a href="%NEWS_BANNER1_LINK%?%TRACKING%">
+]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Block" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
+
+<div style='margin:3px 0 1px 0; border-bottom:2px solid #EFEFEF; padding-bottom:3px; font-size:13px;'>
+
+]]></PRETEXT>
+<POSTTEXT><![CDATA[
+
+</div>
+
+]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DAEIOSA" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div style='background:#EFEFEF; padding:5px; text-align:center; font-size:12px;'>
+<a href="%HOME_URL%?%TRACKING%">Home</a> | 
+<a href="%ABOUT_URL%?%TRACKING%">Company</a> | 
+<a href="%CONTACT_URL%?%TRACKING%">Contact</a> | 
+<a href="%RETURNS_URL%?%TRACKING%">Policies</a> | 
+<a href="%RETURNS_URL%#faq?%TRACKING%">FAQ</a> | 
+<a href="%CUSTOMER_MAIN_URL%?%TRACKING%">My Account</a>
+</div>
+
+%WRAP_FOOTER%
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

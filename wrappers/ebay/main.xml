@@ -1,0 +1,189 @@
+<TEMPLATE ID="ebay" FORMAT="WRAPPER">
+
+
+<!-- ******* -->
+<ELEMENT ID="CQDPNQD" SUB="LINK_VISITED_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_VISITED_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQE" SUB="TABLE_HEADING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQF" SUB="DISCLAIMER_FONT_SIZE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQG" SUB="CONTENT_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQH" SUB="TABLE_LISTING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQI" SUB="CONTENT_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQJ" SUB="TABLE_LISTING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQK" SUB="TABLE_LISTING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQL" SUB="TABLE_LISTING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQM" SUB="CONTENT_FONT_FACE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQN" SUB="NAME" TYPE="READONLY" LOAD="THEME::NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQO" SUB="DISCLAIMER_FONT_FACE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQP" SUB="PRETTY_NAME" TYPE="READONLY" LOAD="THEME::PRETTY_NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQQ" SUB="TABLE_HEADING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQR" SUB="TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQS" SUB="LINK_ACTIVE_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_ACTIVE_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQT" SUB="CONTENT_FONT_SIZE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQU" SUB="ALERT_COLOR" TYPE="READONLY" LOAD="THEME::ALERT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQV" SUB="DISCLAIMER_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQW" SUB="TABLE_HEADING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQX" SUB="TABLE_HEADING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQY" SUB="DISCLAIMER_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNQZ" SUB="LINK_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRA" SUB="HOMECATEGORY_URL" TYPE="READONLY" LOAD="URL::HOMECATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRB" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRC" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRD" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRE" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRF" SUB="LOGOUT_FUNCTION_URL" TYPE="READONLY" LOAD="URL::LOGOUT_FUNCTION_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRG" SUB="SHIPQUOTE_URL" TYPE="READONLY" LOAD="URL::SHIPQUOTE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRH" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRI" SUB="SITEBUTTON_URL" TYPE="READONLY" LOAD="URL::SITEBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRJ" SUB="HOMEPAGE_URL" TYPE="READONLY" LOAD="URL::HOMEPAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRK" SUB="COUNTER_URL" TYPE="READONLY" LOAD="URL::COUNTER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRL" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRM" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRN" SUB="UPDATE_PAYMENT_URL" TYPE="READONLY" LOAD="URL::UPDATE_PAYMENT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRO" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRP" SUB="NAVBUTTON_URL" TYPE="READONLY" LOAD="URL::NAVBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRQ" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRR" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRS" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRT" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRU" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRV" SUB="ABOUT_ZOOVY_URL" TYPE="READONLY" LOAD="URL::ABOUT_ZOOVY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRW" SUB="NEWS_URL" TYPE="READONLY" LOAD="URL::NEWS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRX" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRY" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNRZ" SUB="USERBUTTON_URL" TYPE="READONLY" LOAD="URL::USERBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSA" SUB="CLOSED_URL" TYPE="READONLY" LOAD="URL::CLOSED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSB" SUB="FASTORDER_URL" TYPE="READONLY" LOAD="URL::FASTORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSC" SUB="MAIL_FORM_URL" TYPE="READONLY" LOAD="URL::MAIL_FORM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSD" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSE" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSF" SUB="CONTACTUS_URL" TYPE="READONLY" LOAD="URL::CONTACTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSG" SUB="DYNAMIC_URL" TYPE="READONLY" LOAD="URL::DYNAMIC_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSH" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSI" SUB="CONTACT_US_URL" TYPE="READONLY" LOAD="URL::CONTACT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSJ" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSK" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSL" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSM" SUB="MERCHANT_LOGIN_URL" TYPE="READONLY" LOAD="URL::MERCHANT_LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSN" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSO" SUB="ADULT_URL" TYPE="READONLY" LOAD="URL::ADULT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSP" SUB="CLAIM_URL" TYPE="READONLY" LOAD="URL::CLAIM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSQ" SUB="CLAIM_MULTI_URL" TYPE="READONLY" LOAD="URL::CLAIM_MULTI_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSR" SUB="ABOUT_US_URL" TYPE="READONLY" LOAD="URL::ABOUT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSS" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNST" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSU" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSV" SUB="REDIR_URL" TYPE="READONLY" LOAD="URL::REDIR_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSW" SUB="KILL_COOKIES_URL" TYPE="READONLY" LOAD="URL::KILL_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSX" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSY" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNSZ" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNTA" SUB="NO_COOKIES_URL" TYPE="READONLY" LOAD="URL::NO_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNTB" SUB="PAYPAL_URL" TYPE="READONLY" LOAD="URL::PAYPAL_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNTC" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNTD" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNTE" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQDPNTF" COLORS="0" TYPE="CONFIG" CATEGORIES="0" TITLE="ebay" CREATED="00000000" PROPERTIES="0" SITEBUTTONS="default=ebay|gif|101|23&amp;add_to_site=ebay|gif|122|32"><CSS><![CDATA[.zbody { background-color: #FFFFFF; }
+.zborder { border: 1px solid #CCCCCC; }
+.zbox { border: 1px solid #CCCCCC; }
+.zbox_body { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.zbox_head { background-color: #CCCCCC; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.zcolor { background-color: #cccccc; color: #000000; }
+.zcolor_contrast { background-color: #4c4c4c; color: #7f7f7f; }
+.zcolor_dark { background-color: #8c8c8c; color: #000000; }
+.zcolor_light { background-color: #ffffff; color: #404040; }
+.zform_button { border: 1px solid #8c8c8c; background-color: #ffffff; color: #8c8c8c; font-size: 8pt; font-family: Arial, Helvetica; }
+.zform_select { border: 1px solid #8c8c8c; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zform_textarea { border: 1px solid #8c8c8c; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zform_textbox { border: 1px solid #8c8c8c; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zhint { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.zlink { color: #000066; }
+.zsmall { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztab0 { background-color: #ffffff; color: #404040; font-family: Arial, Helvetica; font-size: 9pt; }
+.ztab1 { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 9pt; font-weight: bold;}
+.ztabbody { background-color: #CCCCCC; color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztable_head { background-color: #CCCCCC; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztable_row { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztable_row0 { background-color: #FFFFFF; font-size: 11pt; }
+.ztable_row1 { background-color: #EEEEEE; font-size: 11pt; }
+.ztable_row_small { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztable_row_title { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztitle { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 12pt; }
+.ztitle2 { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztxt { color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.zwarn { color: #FF0000; font-weight: bold; }]]></CSS>
+<THEME><![CDATA[alert_color=FF0000&content_background_color=FFFFFF&content_font_face=Arial%2c+Helvetica&content_font_size=3&content_text_color=000000&disclaimer_background_color=FFFFFF&disclaimer_font_face=Arial%2c+Helvetica&disclaimer_font_size=1&disclaimer_text_color=000000&link_active_text_color=000066&link_text_color=000066&link_visited_text_color=000066&name=&pretty_name=&table_heading_background_color=CCCCCC&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_heading_text_color=000000&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=EEEEEE&table_listing_font_face=Arial%2c+Helvetica&table_listing_font_size=3&table_listing_text_color=000000]]></THEME>
+<THEME_OLD><![CDATA[disclaimer_text_color=000000&content_font_face=Arial%2c+Helvetica&table_listing_background_color_alternate=EEEEEE&table_heading_text_color=000000&pretty_name=Default&link_visited_text_color=000000&content_background_color=FFFFFF&table_heading_background_color=CCCCCC&link_text_color=000066&link_active_text_color=000033&table_listing_font_face=Arial%2c+Helvetica&content_text_color=000000&content_font_size=3&disclaimer_font_face=Arial%2c+Helvetica&name=default&table_listing_background_color=FFFFFF&disclaimer_background_color=999999&alert_color=FF0000&disclaimer_font_size=1&table_listing_text_color=000000&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_listing_font_size=3]]></THEME_OLD>
+</ELEMENT>
+<ELEMENT ID="CQDPNTG" TYPE="OUTPUT"><HTML><![CDATA[
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQDPNTH" TYPE="HEAD"></ELEMENT>
+<ELEMENT ID="CQDPNTI" TYPE="OUTPUT"><HTML><![CDATA[
+<style type="text/css">
+body	{margin: 10px;}
+body, td, li, ol, ul, p	{font-family: Arial, Helvetica, sans-serif;}
+a	{color: #0000CC;}
+
+.menu	{font-size: 14px; color: #000000; font-weight: bold; text-decoration: none; padding-left: 5px; padding-right: 5px;}
+
+.menu_bg	{background-color:#0000CC;}
+.lt_purp_bg	{background-color:#EEEEF8;}
+.title_bg	{background-color:#D6DCFE;}
+.stroke	{background-color:#9999CC;}
+.white_bg	{background-color:#ffffff; border-right-style: solid; border-right-width: 1px; border-right-color: #000066;}
+.tab_bg	{background-color:#EFEFEF;}
+</style>
+</head>
+<body>
+<table width="100%" cellspacing="4" cellpadding="0"><tr>
+	<td width="1%"><img src="%WRAPPER_URL%/ebaylogo.gif"></td>
+	<td width="99%" align="left" style="border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #0000CC;"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr class="tab_bg">
+		<td width="1%" align="left" valign="top"><img src="%WRAPPER_URL%/menu_left.gif" width="11" height="11"></td>
+		<td width="98%" align="right">&nbsp;</td>
+		<td rowspan="2">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="55" ID="CQDPNTJ" WIDTH="200" TYPE="LOGO" BGCOLOR="EEEEEE"></ELEMENT>
+<ELEMENT ID="CQDPNTK" TYPE="OUTPUT"><HTML><![CDATA[</td>
+		<td width="1%" align="right" valign="top"><img src="%WRAPPER_URL%/menu_right.gif" width="11" height="11"></td>
+	</tr><tr class="tab_bg">
+		<td colspan="2"></td>
+			<td><img src="%GRAPHICS_URL%/blank.gif" height="1" width="1" alt=""></td>
+	</tr></table></td>
+</tr></table>
+<table cellspacing="0" cellpadding="0" width="100%"><tr>
+	<td style="height: 6px;" colspan="2"></td>
+</tr><tr>
+	<td class="stroke" style="height: 2px;" colspan="2"></td>
+</tr><tr class="title_bg">
+	<td align="left"  style="height: 22px;"><span style="font-size: 14px; font-weight: bold; margin-left: 10px;">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQDPNTL" TYPE="TITLE"></ELEMENT>
+<ELEMENT ID="CQDPNTM" TYPE="OUTPUT"><HTML><![CDATA[</span></td>
+	<td NOWRAP align="right" width="10%"><span style="font-size: 12px;">Items in Cart: ]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQDPNTN" TYPE="MINICART" ITEMSONLY="1"></ELEMENT>
+<ELEMENT HTML=" | Subtotal: " ID="CQDPNTO" TYPE="OUTPUT"></ELEMENT>
+<ELEMENT ID="CQDPNTP" SUBTOTALONLY="1" TYPE="MINICART"></ELEMENT>
+<ELEMENT ID="CQDPNTQ" TYPE="OUTPUT"><HTML><![CDATA[</span></td>
+</tr><tr>
+	<td class="stroke" style="height: 2px;" colspan="2"></td>
+</tr></table><div align="center">
+
+<table cellspacing="2" cellpadding="2" width="96%"><tr><td align="left">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQDPNTR" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="CQDPNTS" TYPE="OUTPUT"><HTML><![CDATA[</td></tr></table>
+</div><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQDPNTT" TYPE="FOOTER" TRANSPARENT="TRUE"></ELEMENT>
+<ELEMENT ID="CQDPNTU" TYPE="OUTPUT"><HTML><![CDATA[
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

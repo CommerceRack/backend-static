@@ -1,0 +1,117 @@
+[
+   {
+      "catalog" : "WIRELESS",
+		"amz-catalog" : "Wireless",
+      "amz-subcat" : "WirelessDownloads",
+      "subcat" : "wirelessdownloads",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "Wireless:WirelessDownloads",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQZDY",
+      "xmlpath" : "Wireless.ProductType.WirelessDownloads."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_wrls_wrlsdwnlds_cmpphnmdls",
+      "type" : "textlist",
+      "title" : "Compatible Phone Models",
+      "xmlpath" : "Wireless.ProductType.WirelessDownloads.CompatiblePhoneModels"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_wrls_wrlsdwnlds_cmpphnmdls_10",
+      "type" : "textbox",
+      "title" : "Compatible Phone Models_10"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_wrls_wrlsdwnlds_cmpphnmdls_11",
+      "type" : "textbox",
+      "title" : "Compatible Phone Models_11"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_wrls_wrlsdwnlds_cmpphnmdls_12",
+      "type" : "textbox",
+      "title" : "Compatible Phone Models_12"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_wrls_wrlsdwnlds_cmpphnmdls_13",
+      "type" : "textbox",
+      "title" : "Compatible Phone Models_13"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_wrls_wrlsdwnlds_cmpphnmdls_14",
+      "type" : "textbox",
+      "title" : "Compatible Phone Models_14"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_wrls_wrlsdwnlds_cmpphnmdls_15",
+      "type" : "textbox",
+      "title" : "Compatible Phone Models_15"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_wrls_wrlsdwnlds_cmpphnmdls_16",
+      "type" : "textbox",
+      "title" : "Compatible Phone Models_16"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_wrls_wrlsdwnlds_cmpphnmdls_17",
+      "type" : "textbox",
+      "title" : "Compatible Phone Models_17"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_wrls_wrlsdwnlds_cmpphnmdls_18",
+      "type" : "textbox",
+      "title" : "Compatible Phone Models_18"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_wrls_wrlsdwnlds_mnfgname",
+      "type" : "textbox",
+      "title" : "Manufacturer Name",
+      "xmlpath" : "Wireless.ProductType.WirelessDownloads.ManufacturerName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_wrls_wrlsdwnlds_addlfeatures",
+      "type" : "textbox",
+      "title" : "Additional Features",
+      "xmlpath" : "Wireless.ProductType.WirelessDownloads.AdditionalFeatures"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_wrls_wrlsdwnlds_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "Wireless.ProductType.WirelessDownloads.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_wrls_wrlsdwnlds_applnvrsn",
+      "type" : "textbox",
+      "title" : "Application Version",
+      "xmlpath" : "Wireless.ProductType.WirelessDownloads.ApplicationVersion"
+   }
+]

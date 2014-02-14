@@ -1,0 +1,270 @@
+<TEMPLATE ID="golfcourse" FORMAT="WRAPPER">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUMBCU" SUB="LINK_VISITED_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_VISITED_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBCV" SUB="TABLE_HEADING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBCW" SUB="DISCLAIMER_FONT_SIZE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBCX" SUB="CONTENT_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBCY" SUB="TABLE_LISTING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBCZ" SUB="CONTENT_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDA" SUB="TABLE_LISTING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDB" SUB="TABLE_LISTING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDC" SUB="TABLE_LISTING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDD" SUB="CONTENT_FONT_FACE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDE" SUB="NAME" TYPE="READONLY" LOAD="THEME::NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDF" SUB="DISCLAIMER_FONT_FACE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDG" SUB="PRETTY_NAME" TYPE="READONLY" LOAD="THEME::PRETTY_NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDH" SUB="TABLE_HEADING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDI" SUB="TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDJ" SUB="LINK_ACTIVE_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_ACTIVE_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDK" SUB="CONTENT_FONT_SIZE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDL" SUB="ALERT_COLOR" TYPE="READONLY" LOAD="THEME::ALERT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDM" SUB="DISCLAIMER_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDN" SUB="TABLE_HEADING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDO" SUB="TABLE_HEADING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDP" SUB="DISCLAIMER_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDQ" SUB="LINK_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDR" SUB="HOMECATEGORY_URL" TYPE="READONLY" LOAD="URL::HOMECATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDS" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDT" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDU" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDV" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDW" SUB="LOGOUT_FUNCTION_URL" TYPE="READONLY" LOAD="URL::LOGOUT_FUNCTION_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDX" SUB="SHIPQUOTE_URL" TYPE="READONLY" LOAD="URL::SHIPQUOTE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDY" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBDZ" SUB="SITEBUTTON_URL" TYPE="READONLY" LOAD="URL::SITEBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEA" SUB="HOMEPAGE_URL" TYPE="READONLY" LOAD="URL::HOMEPAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEB" SUB="COUNTER_URL" TYPE="READONLY" LOAD="URL::COUNTER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEC" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBED" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEE" SUB="UPDATE_PAYMENT_URL" TYPE="READONLY" LOAD="URL::UPDATE_PAYMENT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEF" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEG" SUB="NAVBUTTON_URL" TYPE="READONLY" LOAD="URL::NAVBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEH" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEI" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEJ" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEK" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEL" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEM" SUB="ABOUT_ZOOVY_URL" TYPE="READONLY" LOAD="URL::ABOUT_ZOOVY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEN" SUB="NEWS_URL" TYPE="READONLY" LOAD="URL::NEWS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEO" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEP" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEQ" SUB="USERBUTTON_URL" TYPE="READONLY" LOAD="URL::USERBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBER" SUB="CLOSED_URL" TYPE="READONLY" LOAD="URL::CLOSED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBES" SUB="FASTORDER_URL" TYPE="READONLY" LOAD="URL::FASTORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBET" SUB="MAIL_FORM_URL" TYPE="READONLY" LOAD="URL::MAIL_FORM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEU" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEV" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEW" SUB="CONTACTUS_URL" TYPE="READONLY" LOAD="URL::CONTACTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEX" SUB="DYNAMIC_URL" TYPE="READONLY" LOAD="URL::DYNAMIC_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEY" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBEZ" SUB="CONTACT_US_URL" TYPE="READONLY" LOAD="URL::CONTACT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFA" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFB" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFC" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFD" SUB="MERCHANT_LOGIN_URL" TYPE="READONLY" LOAD="URL::MERCHANT_LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFE" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFF" SUB="ADULT_URL" TYPE="READONLY" LOAD="URL::ADULT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFG" SUB="CLAIM_URL" TYPE="READONLY" LOAD="URL::CLAIM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFH" SUB="CLAIM_MULTI_URL" TYPE="READONLY" LOAD="URL::CLAIM_MULTI_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFI" SUB="ABOUT_US_URL" TYPE="READONLY" LOAD="URL::ABOUT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFJ" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFK" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFL" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFM" SUB="REDIR_URL" TYPE="READONLY" LOAD="URL::REDIR_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFN" SUB="KILL_COOKIES_URL" TYPE="READONLY" LOAD="URL::KILL_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFO" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFP" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFQ" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFR" SUB="NO_COOKIES_URL" TYPE="READONLY" LOAD="URL::NO_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFS" SUB="PAYPAL_URL" TYPE="READONLY" LOAD="URL::PAYPAL_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFT" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFU" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFV" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBFW" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMBFX" COLORS="128" TYPE="CONFIG" CATEGORIES="33280" TITLE="Golf Course" CREATED="20030218" PROPERTIES="8" OCREATED="20030218" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+.zborder {  border: 1px solid #CCCCCC; }
+.zbox {  border: 1px solid #000000; }
+.zbox_body {  background-color: #f0f0f0; color: #000000; font-family: ARIAL; font-size: 9pt; }
+.zbox_head {  background-color: #000000; color: #638DC8; font-family: ARIAL; font-size: 9pt; }
+.zcolor {  background-color: #000000; color: #638dc8; }
+.zcolor_contrast {  background-color: #757575; color: #c61b91; }
+.zcolor_dark {  background-color: #000000; color: #234d88; }
+.zcolor_light {  background-color: #404040; color: #a3cdff; }
+.zform_button {  background-color: #404040; border: 1px solid #000000; color: #000000; font-family: ARIAL; font-size: 8pt; }
+.zform_select {  background-color: #FFFFFF; border: 1px solid #000000; color: #000000; font-family: ARIAL; font-size: 8pt; }
+.zform_textarea {  background-color: #FFFFFF; border: 1px solid #000000; color: #000000; font-family: ARIAL; font-size: 8pt; }
+.zform_textbox {  background-color: #FFFFFF; border: 1px solid #000000; color: #000000; font-family: ARIAL; font-size: 8pt; }
+.zhint {  color: #000000; font-family: Arial; font-size: 9pt; }
+.zlink {  color: #000066; }
+.zsmall {  color: #000000; font-family: Arial; font-size: 9pt; }
+.ztab0 {  background-color: #a3cdff; color: #404040; font-family: ARIAL; font-size: 9pt; }
+.ztab1 {  background-color: #f0f0f0; color: #000000; font-family: ARIAL; font-size: 9pt; font-weight: bold; }
+.ztabbody {  background-color: #000000; color: #638DC8; font-family: ARIAL; font-size: 8pt; }
+.ztable_head {  background-color: #000000; color: #638DC8; font-family: ARIAL; font-size: 9pt; }
+.ztable_row {  color: #000000; font-family: ARIAL; font-size: 9pt; }
+.ztable_row0 {  background-color: #f0f0f0; color: #000000; font-family: ARIAL; font-size: 9pt; }
+.ztable_row1 {  background-color: #638DC8; color: #000000; font-family: ARIAL; font-size: 9pt; }
+.ztable_row_small {  color: #000000; font-family: ARIAL; font-size: 8pt; }
+.ztable_row_title {  color: #000000; font-family: ARIAL; font-size: 11pt; font-weight: bold; }
+.ztitle {  color: #000000; font-family: Arial; font-size: 10pt; font-weight: bold; }
+.ztitle2 {  color: #000000; font-family: Arial; font-size: 9pt; font-weight: bold; }
+.ztxt {  color: #000000; font-family: Arial; font-size: 9pt; }
+.zwarn {  color: #006600; font-weight: bold; }
+]]></CSS>
+<THEME><![CDATA[alert_color=006600&content_background_color=FFFFFF&content_font_face=Arial&content_font_size=2&content_text_color=000000&disclaimer_background_color=FFFFFF&disclaimer_font_face=Arial&disclaimer_font_size=2&disclaimer_text_color=000000&link_active_text_color=000066&link_text_color=000066&link_visited_text_color=000066&name=&pretty_name=&table_heading_background_color=000000&table_heading_font_face=Arial&table_heading_font_size=2&table_heading_text_color=638DC8&table_listing_background_color=f0f0f0&table_listing_background_color_alternate=638DC8&table_listing_font_face=Arial&table_listing_font_size=2&table_listing_text_color=000000]]></THEME>
+<SITEBUTTONS><![CDATA[forward=golfball|gif|70|26&back=golfball|gif|73|26&default=golfball|gif|120|26&add_to_site=golfball|gif|122|32]]></SITEBUTTONS>
+</ELEMENT>
+<ELEMENT ID="CPUMBFY" TYPE="OUTPUT"><HTML><![CDATA[
+<html>
+<head>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMBFZ" TYPE="HEAD"></ELEMENT>
+<ELEMENT ID="CPUMBGA" TYPE="OUTPUT"><HTML><![CDATA[
+<script language="JavaScript">
+<!--
+initialized = 0;
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMBGB" WIDTH="140" NOHOME="1" TYPE="MENU" BUTTONTYPE="golfcourse_on" ONLYHOME="0"><HTML><![CDATA[
+<!-- CATEGORY -->
+rollover_<% load($cat_num);  default("");  print(); %>_on = new Image;<% load("
+");  default("");  print(); %>rollover_<% load($cat_num);  default("");  print(); %>_on.src = "<% load($button_imgsrc);  default("");  print(); %>";<% load("
+");  default("");  print(); %>
+
+<!-- /CATEGORY -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMBGC" WIDTH="140" NOHOME="1" TYPE="MENU" BUTTONTYPE="golfcourse_off" ONLYHOME="0"><HTML><![CDATA[
+<!-- CATEGORY -->
+rollover_<% load($cat_num);  default("");  print(); %>_off = new Image;<% load("
+");  default("");  print(); %>rollover_<% load($cat_num);  default("");  print(); %>_off.src = "<% load($button_imgsrc);  default("");  print(); %>";<% load("
+");  default("");  print(); %>
+
+<!-- /CATEGORY -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMBGD" TYPE="OUTPUT"><HTML><![CDATA[initialized = 1;
+function on(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_on.src");
+}
+function off(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_off.src");
+}
+// -->
+</script>
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+.menu	{color:#FFFFFF; font-size: 11px; font-family: arial; text-decoration: none;}
+.menu:hover	{color:#638DC8; font-size: 11px; font-family: arial;}
+.title	{color:#638DC8; font-size: 11px; font-weight: bold; font-family: arial;}
+.subs	{color:#000000; font-size: 11px; font-family: arial;}
+form	{display: inline;}
+.buttons	{border-color: #000066; background-color: #FFFFFF; font-size: 10px; color: #000066; font-weight: bold; border-style: solid; font-family: arial;}
+.texties	{border-color: #000066; background-color: #FFFFFF; font-size: 11px; color: #000066; border-style: solid; font-family: arial;}
+</style>
+</head>
+
+<body marginheight=0 marginwidth=0>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%"><tr>
+	<td width="95%" valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+		<td bgcolor="#000000" height="16" width="100%"><span class="menu">&nbsp;&nbsp;&nbsp;&nbsp;<a href="%HOME_URL%" class="menu">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="%CART_URL%" class="menu">Cart</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="%LOGIN_URL%" class="menu">Login</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="%ABOUT_URL%" class="menu">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="%CONTACT_URL%" class="menu">Contact</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="%CHECKOUT_URL%" class="menu">Checkout</a><span></td>
+	</tr><tr>
+	<td background="%WRAPPER_URL%/greenstripes.gif"><img src="%WRAPPER_URL%/golfcourse.jpg" width="439" height="67" alt="" border="0"></td>
+	</tr><tr>
+		<td bgcolor="#000000" height="18">&nbsp;<img src="%WRAPPER_URL%/arrow.gif">&nbsp;<span class="title">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMBGE" TYPE="TITLE"></ELEMENT>
+<ELEMENT ID="CPUMBGF" TYPE="OUTPUT"><HTML><![CDATA[</span></td>
+	</tr><tr>
+		<td align="center"><table width="100%"><tr><td>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMBGG" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="CPUMBGH" TYPE="OUTPUT"><HTML><![CDATA[</td></tr></table></td>
+	</tr></table></td>
+	<td width="1%" aling="right" valign="top" background="%WRAPPER_URL%/vertdot.gif"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+		<td height="1%"><img src="%WRAPPER_URL%/menu_right.gif" width="18" height="16" alt="" border="0"></td>
+	</tr><tr>
+		<td background="%WRAPPER_URL%/greenstripes.gif" height="1%"><img src="%GRAPHICS_URL%/blank.gif" width=1 height=67></td>
+	</tr><tr>
+		<td bgcolor="#000000" height="1%"><img src="%GRAPHICS_URL%/blank.gif" width=1 height=18></td>
+	</tr></table></td>
+	<td width="4%" valign="top" bgcolor="#638DC8"><img src="%WRAPPER_URL%/top.gif" width="186" height="32" alt="" border="0"><table cellspacing=0 cellpadding=0 border=0 width=186>
+	<tr>
+		<td></td>
+	</tr><tr>
+		<td align="center" bgcolor="#638DC8">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="130" ID="CPUMBGI" WIDTH="186" TYPE="LOGO" BGCOLOR="638DC8"></ELEMENT>
+<ELEMENT ID="CPUMBGJ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td background="%WRAPPER_URL%/hordot.gif"><img src="%GRAPHICS_URL%/blank.gif" width=1 height=3></td>
+	</tr><tr>
+		<td align="center"><form action="%RESULTS_URL%" method="get">
+<input type="hidden" name="catalog" value="">
+		<table cellpadding="1" cellspacing="1">
+		<tr>
+			<td><span class="subs">Product Search:</span></td>
+		</tr><tr>
+			<td><input type="text" name="keywords" value="" size="15" maxlength="50" class="texties" style="width: 140px;"></td>
+		</tr><tr>
+			<td align="right"><input type="submit" value="Search" class="buttons"></td>
+		</tr>
+		</table></form></td>
+	</tr><tr>
+		<td background="%WRAPPER_URL%/hordot.gif"><img src="%GRAPHICS_URL%/blank.gif" width=1 height=3></td>
+	</tr><tr>
+		<td align="center"><br>
+		<table cellpadding="1" cellspacing="1">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMBGK" WIDTH="140" NOHOME="1" TYPE="MENU" BUTTONTYPE="golfcourse_off" ONLYHOME="0"><HTML><![CDATA[
+<!-- CATEGORY -->
+<tr><td><a href="<% load($cat_url);  default("");  print(); %>" OnMouseOver="on(<% load($cat_num);  default("");  print(); %>)" OnMouseOut="off(<% load($cat_num);  default("");  print(); %>)"><img src="<% load($button_imgsrc);  default("");  print(); %>" width="<% load($button_width);  default("");  print(); %>" height="<% load($button_height);  default("");  print(); %>" border="0" name="roll_<% load($cat_num);  default("");  print(); %>"></a></td></tr>
+
+<!-- /CATEGORY -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMBGL" TYPE="OUTPUT"><HTML><![CDATA[</table><br></td>
+	</tr><tr>
+		<td background="%WRAPPER_URL%/hordot.gif"><img src="%GRAPHICS_URL%/blank.gif" width=1 height=3></td>
+	</tr><tr>
+		<td align="center"><form action="%SUBSCRIBE_URL%" method="post">
+<input type="hidden" name="check" value="1">
+		<table cellpadding="1" cellspacing="1">
+		<tr>
+			<td colspan=2><span class="subs">Mailing List:</span></td>
+		</tr><tr>
+			<td><span class="subs">Email:</span></td>
+			<td><input type="text" size="14" maxlength="50" name="email" value="" class="texties"></td>
+		</tr><tr>
+			<td><span class="subs">Name:</span></td>
+			<td><input type="text" size="14" maxlength="50" name="fullname" value="" class="texties"></td>
+		</tr><tr>
+			<td colspan=2 align="right"><input type="submit" value="Subscribe" class="buttons"></td>
+		</tr>
+		</table></form></td>
+	</tr>
+	</table></td>
+</tr><tr>
+	<td bgcolor="#000000" height="35" colspan="2">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMBGM" TYPE="FOOTER"></ELEMENT>
+<ELEMENT ID="CPUMBGN" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	<td bgcolor="#638DC8">&nbsp;</td>
+</tr></table>
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

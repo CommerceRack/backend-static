@@ -1,0 +1,50 @@
+--- 
+"@conditions": 
+  - 
+    "{urn:ebay:apis:eBLBaseComponents}Condition": 
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'New'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 1000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'New other (see details)'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 1500
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Manufacturer refurbished'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 2000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Seller refurbished'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 2500
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Used'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 3000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'For parts or not working'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 7000
+    "{urn:ebay:apis:eBLBaseComponents}ConditionHelpURL": 
+      - 'http://pages.ebay.com/help/sell/contextual/condition_1.html'
+"AttributeConversionEnabled": 'Disabled'
+"BestOfferAutoAcceptEnabled": 'true'
+"BestOfferAutoDeclineEnabled": 'true'
+"BestOfferCounterEnabled": 'true'
+"BestOfferEnabled": 'true'
+"CategoryID": 12576
+"ConditionEnabled": 'Required'
+"FreePicturePackEnabled": 'true'
+"GlobalShippingEnabled": 'false'
+"ItemSpecificsEnabled": 'Enabled'
+"ProPackPlusEnabled": 'true'
+"SafePaymentRequired": 'false'
+"UPCIdentifierEnabled": 'true'
+"ValuePackEnabled": 'true'

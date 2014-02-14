@@ -1,0 +1,50 @@
+<TEMPLATE ID="7" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLXY" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" SHORT="This uses a 250x200 picture on the righthand side of the page." TYPE="CONFIG" TITLE="Side Picture 2" RELEASED="20020618"><SUMMARY><![CDATA[Bold Welcome Message
+IMAGEe (200x250)
+Product Listing
+Welcome Message 
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKLXZ" TYPE="OUTPUT"><HTML><![CDATA[<center>
+<table border='0'>
+	<tr>
+		<td valign="top">
+<b> 
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="COMPANYNAME" LENGTH="75 " HELP="Please enter a single line greeting that will appear in bold." DATA="page:boldwelcome" PROMPT="Bold Welcome Message" DEFAULT="Welcome to our Website! " TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CPUKLYA" TYPE="OUTPUT"><HTML><![CDATA[ 
+</b> 
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" HELP="Please enter a Welcome message that will appear on your front page" DATA="page:welcome_message" PROMPT="Welcome Message " DEFAULT="Please stay as long as you like, if you need help send us email!" TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long, or not helpful visitors probably won't go any further. A lot of businesses talk about what makes their products unique, or their excellent customer service. If you have neither of those, then consider simply welcoming the customer.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKLYB" TYPE="OUTPUT"><HTML><![CDATA[
+
+		</td>
+                <td valign="top" height="250" width="200" align="center">
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="250" ID="HOMEPAGE_PIC" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" WIDTH="200" PROMPT="Front Page Picture" DEFAULT="https://www.zoovy.com/images/samples/flows-default/greybg-logo.gif" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKLYC" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 valign=top align=center>
+<b>Featured Products:</b><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKLYD" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+	</tr>
+</table>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,216 @@
+<TEMPLATE ID="aol2" FORMAT="WRAPPER">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUMFMB" SUB="LINK_VISITED_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_VISITED_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMC" SUB="TABLE_HEADING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMD" SUB="DISCLAIMER_FONT_SIZE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFME" SUB="CONTENT_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMF" SUB="TABLE_LISTING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMG" SUB="CONTENT_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMH" SUB="TABLE_LISTING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMI" SUB="TABLE_LISTING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMJ" SUB="TABLE_LISTING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMK" SUB="CONTENT_FONT_FACE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFML" SUB="NAME" TYPE="READONLY" LOAD="THEME::NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMM" SUB="DISCLAIMER_FONT_FACE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMN" SUB="PRETTY_NAME" TYPE="READONLY" LOAD="THEME::PRETTY_NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMO" SUB="TABLE_HEADING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMP" SUB="TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMQ" SUB="LINK_ACTIVE_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_ACTIVE_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMR" SUB="CONTENT_FONT_SIZE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMS" SUB="ALERT_COLOR" TYPE="READONLY" LOAD="THEME::ALERT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMT" SUB="DISCLAIMER_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMU" SUB="TABLE_HEADING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMV" SUB="TABLE_HEADING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMW" SUB="DISCLAIMER_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMX" SUB="LINK_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMY" SUB="HOMECATEGORY_URL" TYPE="READONLY" LOAD="URL::HOMECATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFMZ" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNA" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNB" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNC" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFND" SUB="LOGOUT_FUNCTION_URL" TYPE="READONLY" LOAD="URL::LOGOUT_FUNCTION_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNE" SUB="SHIPQUOTE_URL" TYPE="READONLY" LOAD="URL::SHIPQUOTE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNF" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNG" SUB="SITEBUTTON_URL" TYPE="READONLY" LOAD="URL::SITEBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNH" SUB="HOMEPAGE_URL" TYPE="READONLY" LOAD="URL::HOMEPAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNI" SUB="COUNTER_URL" TYPE="READONLY" LOAD="URL::COUNTER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNJ" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNK" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNL" SUB="UPDATE_PAYMENT_URL" TYPE="READONLY" LOAD="URL::UPDATE_PAYMENT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNM" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNN" SUB="NAVBUTTON_URL" TYPE="READONLY" LOAD="URL::NAVBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNO" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNP" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNQ" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNR" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNS" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNT" SUB="ABOUT_ZOOVY_URL" TYPE="READONLY" LOAD="URL::ABOUT_ZOOVY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNU" SUB="NEWS_URL" TYPE="READONLY" LOAD="URL::NEWS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNV" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNW" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNX" SUB="USERBUTTON_URL" TYPE="READONLY" LOAD="URL::USERBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNY" SUB="CLOSED_URL" TYPE="READONLY" LOAD="URL::CLOSED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFNZ" SUB="FASTORDER_URL" TYPE="READONLY" LOAD="URL::FASTORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOA" SUB="MAIL_FORM_URL" TYPE="READONLY" LOAD="URL::MAIL_FORM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOB" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOC" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOD" SUB="CONTACTUS_URL" TYPE="READONLY" LOAD="URL::CONTACTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOE" SUB="DYNAMIC_URL" TYPE="READONLY" LOAD="URL::DYNAMIC_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOF" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOG" SUB="CONTACT_US_URL" TYPE="READONLY" LOAD="URL::CONTACT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOH" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOI" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOJ" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOK" SUB="MERCHANT_LOGIN_URL" TYPE="READONLY" LOAD="URL::MERCHANT_LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOL" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOM" SUB="ADULT_URL" TYPE="READONLY" LOAD="URL::ADULT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFON" SUB="CLAIM_URL" TYPE="READONLY" LOAD="URL::CLAIM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOO" SUB="CLAIM_MULTI_URL" TYPE="READONLY" LOAD="URL::CLAIM_MULTI_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOP" SUB="ABOUT_US_URL" TYPE="READONLY" LOAD="URL::ABOUT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOQ" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOR" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOS" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOT" SUB="REDIR_URL" TYPE="READONLY" LOAD="URL::REDIR_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOU" SUB="KILL_COOKIES_URL" TYPE="READONLY" LOAD="URL::KILL_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOV" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOW" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOX" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOY" SUB="NO_COOKIES_URL" TYPE="READONLY" LOAD="URL::NO_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFOZ" SUB="PAYPAL_URL" TYPE="READONLY" LOAD="URL::PAYPAL_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFPA" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFPB" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFPC" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMFPD" COLORS="0" TYPE="CONFIG" CATEGORIES="0" TITLE="aol2" CREATED="00000000" PROPERTIES="0"><CSS><![CDATA[.zbody { background-color: #FFFFFF; }
+.zborder { border: 1px solid #CCCCCC; }
+.zbox { border: 1px solid #32627E; }
+.zbox_body { background-color: #FFFFFF; color: #000000; font-family: arial; font-size: 9pt; }
+.zbox_head { background-color: #32627E; color: #FFFFFF; font-family: arial; font-size: 9pt; }
+.zcolor { background-color: #32627e; color: #ffffff; }
+.zcolor_contrast { background-color: #b1e1fd; color: #101010; }
+.zcolor_dark { background-color: #00223e; color: #bfbfbf; }
+.zcolor_light { background-color: #72a2be; color: #ffffff; }
+.zform_button { border: 1px solid #00223e; background-color: #72a2be; color: #00223e; font-size: 8pt; font-family: arial; }
+.zform_select { border: 1px solid #00223e; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: arial; };
+.zform_textarea { border: 1px solid #00223e; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: arial; };
+.zform_textbox { border: 1px solid #00223e; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: arial; };
+.zhint { color: #000000; font-family: arial; font-size: 8pt; }
+.zlink { color: #32627E; }
+.zsmall { color: #000000; font-family: arial; font-size: 8pt; }
+.ztab0 { background-color: #ffffff; color: #404040; font-family: arial; font-size: 9pt; }
+.ztab1 { background-color: #FFFFFF; color: #000000; font-family: arial; font-size: 9pt; font-weight: bold;}
+.ztabbody { background-color: #32627E; color: #FFFFFF; font-family: arial; font-size: 8pt; }
+.ztable_head { background-color: #32627E; color: #FFFFFF; font-family: arial; font-size: 9pt; }
+.ztable_row { background-color: #FFFFFF; color: #000000; font-family: arial; font-size: 9pt; }
+.ztable_row0 { background-color: #FFFFFF; font-size: 9pt; }
+.ztable_row1 { background-color: #C4DCE8; font-size: 9pt; }
+.ztable_row_small { color: #000000; font-family: arial; font-size: 8pt; }
+.ztable_row_title { font-weight: bold; color: #000000; font-family: arial; font-size: 9pt; }
+.ztitle { font-weight: bold; color: #000000; font-family: arial; font-size: 10pt; }
+.ztitle2 { font-weight: bold; color: #000000; font-family: arial; font-size: 9pt; }
+.ztxt { color: #000000; font-family: arial; font-size: 9pt; }
+.zwarn { color: #006600; font-weight: bold; }]]></CSS>
+<THEME><![CDATA[alert_color=006600&content_background_color=FFFFFF&content_font_face=arial&content_font_size=2&content_text_color=000000&disclaimer_background_color=FFFFFF&disclaimer_font_face=arial&disclaimer_font_size=1&disclaimer_text_color=000000&link_active_text_color=32627E&link_text_color=32627E&link_visited_text_color=32627E&name=&pretty_name=&table_heading_background_color=32627E&table_heading_font_face=arial&table_heading_font_size=2&table_heading_text_color=FFFFFF&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=C4DCE8&table_listing_font_face=arial&table_listing_font_size=2&table_listing_text_color=000000]]></THEME>
+<THEME_OLD><![CDATA[content_font_face=arial&disclaimer_text_color=32627E&table_listing_background_color_alternate=C4DCE8&table_heading_text_color=FFFFFF&pretty_name=AOL&link_visited_text_color=32627E&table_heading_background_color=32627E&content_background_color=FFFFFF&link_active_text_color=32627E&link_text_color=32627E&table_listing_font_face=arial&content_text_color=000000&content_font_size=2&disclaimer_font_face=arial&table_listing_background_color=FFFFFF&name=aol&disclaimer_background_color=ffffff&alert_color=006600&disclaimer_font_size=1&table_listing_text_color=000000&table_heading_font_face=arial&table_heading_font_size=2&table_listing_font_size=2]]></THEME_OLD>
+<SITEBUTTONS><![CDATA[forward=aol|gif|59|21&back=aol|gif|59|21&default=aol|gif|79|21&add_to_site=aol|gif|122|32&checkout=aol|gif|59|21&continue_shopping=aol|gif|97|21&cancel=aol|gif|59|21]]></SITEBUTTONS>
+</ELEMENT>
+<ELEMENT ID="CPUMFPE" TYPE="OUTPUT"><HTML><![CDATA[
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMFPF" TYPE="HEAD"></ELEMENT>
+<ELEMENT ID="CPUMFPG" TYPE="OUTPUT"><HTML><![CDATA[
+</head>
+<STYLE TYPE="text/css">
+.categoryHdr {font-family:arial,verdana;color:#32627E;font-size:12pt;font-weight:bold;}
+.categorySubHdr {font-family:arial,verdana;color:#32627E;font-size:9pt;}
+.cats {font-family:arial,verdana;color:#395A0F;font-size:11px;text-decoration: none;}
+.cats:hover	{color: #006600; text-decoration: underline;}
+.bulletColor{font-family:arial,verdana;color:#395A0F;font-size:11pt;font-weight: bold;}
+</style>
+<body text="#%CONTENT_TEXT_COLOR%" link="#%LINK_TEXT_COLOR%" alink="#%LINK_ACTIVE_TEXT_COLOR%" vlink="#%LINK_VISITED_TEXT_COLOR%"><div align="center"><table cellspacing="0" cellpadding="0" border="0" width="770"><tr>
+	<td background="%WRAPPER_URL%/logo_right_bg.gif" width="325"><img src="%WRAPPER_URL%/logo.gif" width="323" height="54" alt="" border="0"></td>
+	<td align="right" background="%WRAPPER_URL%/logo_right_bg.gif" width="445"><table cellpadding="5"><tr><td><A HREF="#" onclick="window.close(); return false;"><img src="%WRAPPER_URL%/btn_close.gif" width="47" height="21" alt="Close Window" border="0"></a></td></tr></table></td>
+</tr><tr>
+	<td colspan="2"><table cellspacing="0" cellpadding="0" border="0" width="770"><tr>
+
+		<td width="156" valign="top" bgcolor="#A7D66B"><table cellspacing="0" cellpadding="0" border="0" width="156"><tr>
+			<td><img src="%WRAPPER_URL%/categories_header.gif" width="156" height="25" alt="" border="0"></td>
+		</tr><tr>
+			<td background="%WRAPPER_URL%/categories_bg.gif"><TABLE width="100%" border=0 cellpadding=2 cellspacing=0>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMFPH" NOHOME="1" TYPE="MENU"><HTML><![CDATA[
+<!-- CATEGORY -->
+<TR><TD valign="top" align="left"><font class="bulletColor"><b>&nbsp;&#183;</b></font></TD><TD align="left" valign="top"><a href="<% load($cat_url);  default("");  print(); %>" target="<% load($TARGET);  default("");  print(); %>" class="cats"><% load($cat_pretty);  default("");  print(); %></a></TD></TR>
+
+<!-- /CATEGORY -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMFPI" TYPE="OUTPUT"><HTML><![CDATA[</TABLE></td>
+		</tr>
+		<tr>
+			<td><img src="%WRAPPER_URL%/cats_botom.gif" width="156" height="7" alt="" border="0"></td>
+		</tr><tr>
+			<td><table width="100%" cellpadding="2"><tr><td>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMFPJ" TYPE="SIDEBAR"></ELEMENT>
+<ELEMENT ID="CPUMFPK" TYPE="OUTPUT"><HTML><![CDATA[</td></tr></table></td>
+		</tr></table></td>
+		<td width="2" bgcolor="#6B9529"><img src="%GRAPHICS_URL%/blank.gif" width="2" height="2"></td>
+		<td width="610" valign="top"><table cellspacing="0" cellpadding="4" width="100%"><tr>
+			<td background="%WRAPPER_URL%/search_bg.gif"><span class="categoryHdr">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMFPL" TYPE="TITLE"></ELEMENT>
+<ELEMENT ID="CPUMFPM" TYPE="OUTPUT"><HTML><![CDATA[</span></td>
+		</tr><tr>
+			<td align="center" bgcolor="#C4DCE8"><table cellspacing="0" cellpadding="0" border="0" width="610"><tr>
+				<td width="5"><img src="%WRAPPER_URL%/body_corner_ul.gif" width="5" height="5" alt="" border="0"></td>
+				<td width="600" background="%WRAPPER_URL%/body_top.gif" height="5"><img src="%GRAPHICS_URL%/blank.gif" width="1" height="5"></td>
+				<td width="5"><img src="%WRAPPER_URL%/body_corner_ur.gif" width="5" height="5" alt="" border="0"></td>
+			</tr><tr>
+				<td colspan="3"><table cellspacing="0" cellpadding="0" border="0" width="610"><tr>
+					<td width="2" bgcolor="#A0B9C6"><img src="%GRAPHICS_URL%/blank.gif" width="2" height="2"></td>
+					<td width="606" bgcolor="#ffffff"><div align="center"><a href="%HOME_URL%">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="80" ID="CPUMFPN" WIDTH="390" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPUMFPO" TYPE="OUTPUT"><HTML><![CDATA[</a></div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUMFPP" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="CPUMFPQ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+					<td width="2" bgcolor="#A0B9C6"><img src="%GRAPHICS_URL%/blank.gif" width="2" height="2"></td>
+				</tr></table></td>
+			</tr><tr>
+				<td><img src="%WRAPPER_URL%/body_corner_ll.gif" width="5" height="5" alt="" border="0"></td>
+				<td  background="%WRAPPER_URL%/body_bottom.gif" height="5"></td>
+				<td><img src="%WRAPPER_URL%/body_corner_lr.gif" width="5" height="5" alt="" border="0"></td>
+			</tr></table><br><div class="categoryHdr" align="left">Store Options</div><table cellspacing="0" cellpadding="0" border="0" width="610"><tr>
+				<td width="5"><img src="%WRAPPER_URL%/body_corner_ul.gif" width="5" height="5" alt="" border="0"></td>
+				<td width="600" background="%WRAPPER_URL%/body_top.gif" height="5"></td>
+				<td width="5"><img src="%WRAPPER_URL%/body_corner_ur.gif" width="5" height="5" alt="" border="0"></td>
+			</tr><tr>
+				<td colspan="3"><table cellspacing="0" cellpadding="0" border="0" width="610"><tr>
+					<td width="2" bgcolor="#A0B9C6"><img src="%GRAPHICS_URL%/blank.gif" width="2" height="2"></td>
+					<td width="606" align="center" bgcolor="#ffffff"><table><tr><td><a href="%CART_URL%"><img src="%WRAPPER_URL%/view_cart.gif" width="59" height="21" alt="View Cart" border="0"></a></td><td><a href="%SEARCH_URL%"><img src="%WRAPPER_URL%/search.gif" width="46" height="21" alt="Search" border="0"></a></td><td><a href="%ABOUT_URL%"><img src="%WRAPPER_URL%/about.gif" width="59" height="21" alt="Company Information" border="0"></a></td><td><a href="%CONTACT_URL%"><img src="%WRAPPER_URL%/contact.gif" width="59" height="21" alt="Contact Us" border="0"></a></td></tr></table><span class="categorySubHdr">Please note: this store is in NO WAY affiliated with AOL/Time Warner or any of it's subsidiaries</span></td>
+					<td width="2" bgcolor="#A0B9C6"></td>
+				</tr></table></td>
+			</tr><tr>
+				<td><img src="%WRAPPER_URL%/body_corner_ll.gif" width="5" height="5" alt="" border="0"></td>
+				<td background="%WRAPPER_URL%/body_bottom.gif" height="5"></td>
+				<td><img src="%WRAPPER_URL%/body_corner_lr.gif" width="5" height="5" alt="" border="0"></td>
+			</tr></table><br></td>
+		</tr></table></td>
+	</tr></table></td>
+</tr></table>
+</div>
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

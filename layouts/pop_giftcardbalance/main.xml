@@ -1,0 +1,116 @@
+<TEMPLATE ID="pop_giftcardbalance" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="MYCONFIG" V="3" CREATED="00000000" IMAGES="0" TYPE="CONFIG" EXPORT="0" TITLE="Popup Layout: Gift Card Balance"><SUMMARY><![CDATA[This is a popup page layout with a form for customers to enter a giftcard into to obtain their balance.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPVRQDV" RAW="1" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL"></ELEMENT>
+<ELEMENT ID="SESSIONID" RAW="1" SUB="SESSION_ID" TYPE="READONLY" LOAD="CART::ID"></ELEMENT>
+<ELEMENT ID="CQFJSOP" DATA="FLOW::USERNAME" SUB="STORENAME" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="VAR_MAGIC_URL" RAW="1" SUB="MAGIC_URL" TYPE="READONLY" LOAD="URL::MAGIC_URL"></ELEMENT>
+<ELEMENT ID="CSPFDBF" TYPE="OUTPUT"><HTML><![CDATA[
+
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/jquery/jquery-1.5.min.js"></script>
+
+
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/json2-20090929.js">
+//a lib for backwards compatibility in IE.
+</script>
+
+<script type="text/javascript">
+
+var uuid = 999;
+var sessionId = '%SESSION_ID%';
+
+//used frequently to throw errors or debugging info at the console.
+//called within the throwError function too
+
+function zStdErr(msg)	{
+//if the console isn't open, an error occurs, so check to make sure it's defined. If not, do nothing.
+	if(typeof console != 'undefined')	{
+		if(typeof console.dir == 'function' && typeof msg == 'object')	{
+		//IE8 doesn't support console.dir.
+			console.dir(msg);
+			}
+		else if(typeof console.dir == 'undefined' && typeof msg == 'object')	{
+			//probably IE8. do nothing.
+			console.log('object output not supported');
+			}
+		else
+			console.log(msg);
+		}
+	}
+
+function fetchUUID()	{
+	uuid++; 
+	return uuid;
+	}
+
+
+
+function UnixTStoPrettyDate(unix_timestamp)	{
+		var a = new Date(unix_timestamp*1000);
+		var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+		var year = a.getFullYear();
+		var month = months[a.getMonth()];
+		var date = a.getDate();
+		return month+' '+date+', '+year;
+		}
+
+
+function sendRequest()	{
+	$("#giftcardBalanceErrors").empty();
+	var ajaxRequest = $.ajax({
+		type: "POST",
+		url: "%MAGIC_URL%jquery/",
+		contentType : "text/json",
+		dataType:"json",
+		data: JSON.stringify({"_uuid":fetchUUID(),"_zjsid": sessionId,"_cmd":"getGiftcardDetail","giftcard":$("#giftcardBalanceInput").val().toUpperCase()}),
+		error: function(d)	{
+			zStdErr(' -> Critical Error! Request returned errors.');
+			},
+		success: function(d)	{
+			zStdErr('made a successful ajax request.');
+			if(d['_msg_1_type'] != 'success')	{
+				zStdErr('-> request returned errors ');
+//error messages start at 1, not 0.
+				for(i = 1, L = d['_msgs']; i <= L; i += 1)	{
+					zStdErr(' -> error id =  '+d['_msg_'+i+'_id']);
+					$("#giftcardBalanceErrors").append("<li>"+d['_msg_'+i+'_txt']+"<\/li>");
+					}			
+				
+				}
+			else	{
+				var o = "The balance is: <span class='giftcardBalanceAmount'>$"+d.BALANCE+"<\/span>";
+				if(d.EXPIRES_GMT > 0)
+					o += "<span class='giftcardBalanceExpiration'> and expires on <span class='giftcardBalanceExpirationDate'>"+UnixTStoPrettyDate(d.EXPIRES_GMT)+"<\/span><\/span>";
+				 
+				$("#giftcardBalanceTxt").empty().append(o);
+				}
+			}
+		});
+	return false; //do not actually submit the form.
+	}
+
+//writing the content of the form via jquery/javascript means the form won't show up till the libraries finish loading
+//this solves the problem of submit being pushed prior to jquery being loaded.
+$(function() {
+	$('#popGiftcardBalanceContainer').append("<form action='' method='get' onSubmit='return sendRequest();'><fieldset><legend>Check your Giftcard Balance</legend><ul class='zwarn' id='giftcardBalanceErrors'></ul><label for=''>Giftcard: </label><input type='text' name='giftcard' id='giftcardBalanceInput' size='30' class='zform_textbox' /><input type='submit' id='giftcardBalanceSubmit' class='zform_button' value='get balance' />	<span id='giftcardBalanceTxt' class='ztitle2'></span></fieldset></form>");
+	});
+
+</script>
+
+
+
+<div id='popGiftcardBalanceContainer' class='ztxt'>
+
+
+
+</div>
+<noscript>We're sorry, but javascript is required to use this feature. Please upgrade your browser or enable javascript.</noscript>
+
+	
+	]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,219 @@
+<TEMPLATE ID="p-print_me" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="prod_info" V="2" CREATED="000000" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Product: print product info (no add to cart or options)"><SUMMARY><![CDATA[This layout will display 6 images down the left column and most product data in the right.  No add to cart button is present.  This layout is for informational purposes only (popups, ajax and such). DO NOT select this layout. This layout subject to change without warning.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="PUT_SKU_INTO_FOCUS" TYPE="SPECL"><HTML><![CDATA[<%
+/* legacy support is to link to the product detail page. however, if this is loaded in popup.cgi, product is passed on URI and needs to be put into focus */
+
+print("");
+loadurp("VAR::product"); default("");
+stop(unless=>$_);
+	set($FOCUSSKU=>$_);
+	element(TYPE=>"SET",SRC=>"SREF::PID",DATA=>$FOCUSSKU);
+	element(TYPE=>"SET",SRC=>"SREF::SKU",DATA=>$FOCUSSKU);
+	print("
+	
+	<!-- focus sku changed to: ");
+	print($FOCUSSKU);
+	print(" -->
+	
+	");
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WRAP_NONSECURE_URL" RAW="1" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL"></ELEMENT>
+<ELEMENT ID="CRNENFL" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
+<ELEMENT HEIGHT="65" ID="CXIBSKV" WIDTH="250" SUB="PAGE_LOGO" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPZWXCM" RAW="0" SUB="PAGE_COMPANY" TYPE="READONLY" LOAD="profile:zoovy:company_name"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPZWXCS" RAW="0" SUB="PAGE_PHONE" TYPE="READONLY" LOAD="profile:zoovy:support_phone"></ELEMENT>
+<ELEMENT ID="IMAGES" SUB="PROD_IMAGES" TYPE="SPECL"><HTML><![CDATA[
+
+<%
+print("");
+
+set($i=>"1");
+
+
+/* this is the product field that we append $i to for generating the image key. */
+set($image_key=>"product:zoovy:prod_image"); 
+
+
+:LOOP();
+
+print("
+
+<!-- image # "); print($i); print(" -->
+
+");
+
+load($image_key); format(posttext=>$i);
+loadurp($_);
+/* we use the filename in multiple places, so I set the var instead of loadurp'ing it several times. */
+set($image=>$_);
+
+/* if the current load has no value, then there are no more images to process.  Stop. Otherwise, print a thumbnail with JS to change big image and open original onclick */
+stop(unless=>$_);
+
+	print("
+	<div style='margin-bottom:3px;'>");
+	load($image); default("blank"); image(w=>"150",h=>"350",m=>"1",tag=>"1",bg=>"ffffff"); print();
+	print("</div>
+	
+	");
+
+	load($i);
+	math(op=>"add",var=>"1");
+	set($i=>$_);
+/* Go to loop and do it all again. */
+	goto(label=>"LOOP",ne=>"");
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODNAME" RAW="1" SUB="PROD_NAME" TYPE="READONLY" LOAD="product:zoovy:prod_name"></ELEMENT>
+<ELEMENT ID="CXIBSKW" PRETEXT="Manufacturer: " RAW="1" SUB="PROD_MFG" TYPE="READONLY" LOAD="product:zoovy:prod_mfg"></ELEMENT>
+<ELEMENT ID="CXIBSKX" PRETEXT="Mfg ID: " RAW="1" SUB="PROD_MFGID" TYPE="READONLY" LOAD="product:zoovy:prod_mfgid"></ELEMENT>
+<ELEMENT ID="CXIBSKY" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_desc" SUB="PROD_DESC" PROMPT="Product Description" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-top:5px; border-top:1px solid #cccccc; padding-top:5px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CXIBSKZ" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_detail" SUB="PROD_DETAIL" PROMPT="Product Details" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-top:5px; border-top:1px solid #cccccc; padding-top:5px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CXIBSLA" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_features" SUB="PROD_FEATURES" PROMPT="Product Features" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-top:5px; border-top:1px solid #cccccc; padding-top:5px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="REVIEWDETAILS" DATA="product:zoovy:prod_reviews" SUB="PROD_REVIEWS" TYPE="REVIEWS"><HTML><![CDATA[<!-- product reviews -->
+
+<!-- DETAIL -->
+<div style='margin-top:5px; border-top:1px solid #cccccc; padding-top:5px;'>
+<table cellspacing="0" cellpadding="0">
+<tr>
+	<td><span class='ztitle2'>Customer Reviews</span></td>
+	<td></td>
+</tr>
+<!-- ROW -->
+<!-- REVIEW -->
+<tr>
+	<td class="ztable_row"><strong><% print($CUSTOMER_NAME); %></strong> of <% load($LOCATION);  default("");  print(); %><br>
+	<% load($SUBJECT);  default("");  print(); %></td>
+	<td valign="top" align="right" class="ztable_row">
+<%
+/* load the profile review icon that is selected.  If not set, use default instead. */
+loadurp("CSS::zcolor.bgcolor");
+set($bgcolor=>$_);
+loadurp("profile:zoovy:prod_reviews_icon"); default("colored_stars"); format(pretext=>"stock/reviews/",posttext=>"/");
+set($image_loc=>$_);
+load($RATING); format(pretext=>$image_loc);
+image(src=>$_,library=>"proshop",h=>"25",w=>"110",bg=>$bgcolor,tag=>"1");
+print();	
+%>	
+	
+	</td>
+</tr>
+<tr>
+	<td colspan="2" style="border-bottom:1px dotted <% loadurp("CSS::zcolor_light.bgcolor"); print(); %>;" class="ztable_row"><% load($MESSAGE);  default(""); strip(html=>"1"); print(); %></td>
+</tr>
+<!-- /REVIEW -->
+<!-- /ROW -->
+</table>
+</div>
+<!-- /DETAIL -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SPECL_PROD_PRICING" SUB="PROD_PRICING" TYPE="SPECL"><HTML><![CDATA[
+<%
+loadurp("product:zoovy:prod_msrp"); format(hidezero); format(money); format(pretext=>"<div class='ztxt'>MSRP: <span style='text-decoration:line-through;'>",posttext=>"</span></div>"); print();
+
+loadurp("product:zoovy:base_price");
+set($price=>$_);
+format(hidezero); format(money); format(pretext=>"<div class='ztxt' style='font-weight:bold;'>Our Price: ",posttext=>"</div>"); print();
+
+
+loadurp("product:zoovy:prod_msrp");
+
+math(op=>"subtract",var=>$price); format(hidezero); format(money); format(pretext=>"<div class='ztxt'>Your Savings: ",posttext=>"</div>"); print();
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNENFP" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+<div style='clear:both; margin-bottom:2px;'><a href='%PRODUCT_URL%/%SKU%/' class='zsmall'>%PRODUCT_URL%/%SKU%</a></div>
+
+<table cellspacing="0" cellpadding="0" width='600'>
+<tr>
+	<td valign="top" width="150">
+
+%PROD_IMAGES%
+	
+	</td>
+
+	<td valign="top" width="450" class='ztxt'>
+	<div style='margin-left:10px;'>
+
+<div class='ztitle' style='margin-bottom:5px;'>%PROD_NAME%</div>
+
+
+<div style='float:right; text-align:right;'>%PROD_PRICING%</div>
+
+<div style='float:left;'>
+	<div>Item #: %SKU%</div>
+	<div>%PROD_MFG%</div>
+	<div>%PROD_MFGID%</div>
+</div>
+
+<div style='clear:both;'></div>
+
+<div>%PROD_DESC%</div>
+
+<div>%PROD_DETAIL%</div>
+
+<div>%PROD_FEATURES%</div>
+
+<div>%PROD_REVIEWS%</div>
+
+
+
+
+	</td>
+</tr>
+<tr>
+	<td colspan='2' class='ztxt'>
+
+<div  style='margin-top:5px; border-top:2px solid #cccccc; padding-top:5px;'>
+	
+	<div style='float:left;'>%PAGE_LOGO%</div>
+<div style='float:right; text-align:right' class='zsmall'>
+	<div>%PAGE_COMPANY%</div>
+	<div>%PAGE_PHONE%</div>
+	<div>%HOME_URL%</div>
+</div>
+
+</div>
+
+	</td>
+</tr>
+</table>
+
+<div align='center' style='margin-top:5px;'>
+<script type='text/javascript'>
+if(location.protocol == 'http:')	{
+	document.write("<img src='//chart.apis.google.com/chart?cht=qr&chl=%NONSECURE_URL%/product/%SKU%/&chs=120x120' height='120' width='120' alt='QR Code' />");
+	}
+</script>
+</div>
+
+
+<script type='text/javascript'>
+
+window.print(); 
+
+</script>
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,79 @@
+<!-- CONFIG
+THEME=aol
+SITEBUTTONS=aol
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<!-- HEAD -->
+</head>
+<STYLE TYPE="text/css">
+.categoryHdr {font-family:arial,verdana;color:#32627E;font-size:12pt;font-weight:bold;}
+.categorySubHdr {font-family:arial,verdana;color:#32627E;font-size:9pt;}
+.cats {font-family:arial,verdana;color:#395A0F;font-size:11px;text-decoration: none;}
+.cats:hover	{color: #006600; text-decoration: underline;}
+.bulletColor{font-family:arial,verdana;color:#395A0F;font-size:11pt;font-weight: bold;}
+</style>
+<body text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!-- LINK_VISITED_TEXT_COLOR -->"><div align="center"><table cellspacing="0" cellpadding="0" border="0" width="770"><tr>
+	<td background="<!-- WRAPPER_URL -->/logo_right_bg.gif" width="325"><img src="<!-- WRAPPER_URL -->/logo.gif" width="323" height="54" alt="" border="0"></td>
+	<td align="right" background="<!-- WRAPPER_URL -->/logo_right_bg.gif" width="445"><table cellpadding="5"><tr><td><A HREF="#" onclick="window.close(); return false;"><img src="<!-- WRAPPER_URL -->/btn_close.gif" width="47" height="21" alt="Close Window" border="0"></a></td></tr></table></td>
+</tr><tr>
+	<td colspan="2"><table cellspacing="0" cellpadding="0" border="0" width="770"><tr>
+
+		<td width="156" valign="top" bgcolor="#A7D66B"><table cellspacing="0" cellpadding="0" border="0" width="156"><tr>
+			<td><img src="<!-- WRAPPER_URL -->/categories_header.gif" width="156" height="25" alt="" border="0"></td>
+		</tr><tr>
+			<td background="<!-- WRAPPER_URL -->/categories_bg.gif"><TABLE width="100%" border=0 cellpadding=2 cellspacing=0>
+<!-- MENU
+FORMAT=<TR><TD valign="top" align="left"><font class="bulletColor"><b>&nbsp;&#183;</b></font></TD><TD align="left" valign="top"><a href="%URL%" target="%TARGET%" class="cats">%MESSAGE%</a></TD></TR>
+NOHOME=1
+--></TABLE></td>
+		</tr>
+		<tr>
+			<td><img src="<!-- WRAPPER_URL -->/cats_botom.gif" width="156" height="7" alt="" border="0"></td>
+		</tr><tr>
+			<td><table width="100%" cellpadding="2"><tr><td><!-- SIDEBAR --></td></tr></table></td>
+		</tr></table></td>
+		<td width="2" bgcolor="#6B9529"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="2"></td>
+		<td width="610" valign="top"><table cellspacing="0" cellpadding="4" width="100%"><tr>
+			<td background="<!-- WRAPPER_URL -->/search_bg.gif"><span class="categoryHdr"><!-- TITLE --></span></td>
+		</tr><tr>
+			<td align="center" bgcolor="#C4DCE8"><table cellspacing="0" cellpadding="0" border="0" width="610"><tr>
+				<td width="5"><img src="<!-- WRAPPER_URL -->/body_corner_ul.gif" width="5" height="5" alt="" border="0"></td>
+				<td width="600" background="<!-- WRAPPER_URL -->/body_top.gif" height="5"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="1" height="5"></td>
+				<td width="5"><img src="<!-- WRAPPER_URL -->/body_corner_ur.gif" width="5" height="5" alt="" border="0"></td>
+			</tr><tr>
+				<td colspan="3"><table cellspacing="0" cellpadding="0" border="0" width="610"><tr>
+					<td width="2" bgcolor="#A0B9C6"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="2"></td>
+					<td width="606" bgcolor="#ffffff"><div align="center"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=390
+HEIGHT=80
+--></a></div><!-- BODY --></td>
+					<td width="2" bgcolor="#A0B9C6"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="2"></td>
+				</tr></table></td>
+			</tr><tr>
+				<td><img src="<!-- WRAPPER_URL -->/body_corner_ll.gif" width="5" height="5" alt="" border="0"></td>
+				<td  background="<!-- WRAPPER_URL -->/body_bottom.gif" height="5"></td>
+				<td><img src="<!-- WRAPPER_URL -->/body_corner_lr.gif" width="5" height="5" alt="" border="0"></td>
+			</tr></table><br><div class="categoryHdr" align="left">Store Options</div><table cellspacing="0" cellpadding="0" border="0" width="610"><tr>
+				<td width="5"><img src="<!-- WRAPPER_URL -->/body_corner_ul.gif" width="5" height="5" alt="" border="0"></td>
+				<td width="600" background="<!-- WRAPPER_URL -->/body_top.gif" height="5"></td>
+				<td width="5"><img src="<!-- WRAPPER_URL -->/body_corner_ur.gif" width="5" height="5" alt="" border="0"></td>
+			</tr><tr>
+				<td colspan="3"><table cellspacing="0" cellpadding="0" border="0" width="610"><tr>
+					<td width="2" bgcolor="#A0B9C6"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="2"></td>
+					<td width="606" align="center" bgcolor="#ffffff"><table><tr><td><a href="<!-- CART_URL -->"><img src="<!-- WRAPPER_URL -->/view_cart.gif" width="59" height="21" alt="View Cart" border="0"></a></td><td><a href="<!-- SEARCH_URL -->"><img src="<!-- WRAPPER_URL -->/search.gif" width="46" height="21" alt="Search" border="0"></a></td><td><a href="<!-- ABOUT_URL -->"><img src="<!-- WRAPPER_URL -->/about.gif" width="59" height="21" alt="Company Information" border="0"></a></td><td><a href="<!-- CONTACT_URL -->"><img src="<!-- WRAPPER_URL -->/contact.gif" width="59" height="21" alt="Contact Us" border="0"></a></td></tr></table><span class="categorySubHdr">Please note: this store is in NO WAY affiliated with AOL/Time Warner or any of it's subsidiaries</span></td>
+					<td width="2" bgcolor="#A0B9C6"></td>
+				</tr></table></td>
+			</tr><tr>
+				<td><img src="<!-- WRAPPER_URL -->/body_corner_ll.gif" width="5" height="5" alt="" border="0"></td>
+				<td background="<!-- WRAPPER_URL -->/body_bottom.gif" height="5"></td>
+				<td><img src="<!-- WRAPPER_URL -->/body_corner_lr.gif" width="5" height="5" alt="" border="0"></td>
+			</tr></table><br></td>
+		</tr></table></td>
+	</tr></table></td>
+</tr></table>
+</div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+
+#appTemplates	{display:none;}
+
+input.numberInput	{width:50px}
+
+
+
+
+/******* positioning *******/
+
+.floatLeft	{float:left;}
+.floatRight	{float:right;}
+
+.alignCenter	{text-align:center;}
+.alignLeft	{text-align:left;}
+.alignRight	{text-align:right;}
+
+.center	{margin:0 auto;}
+
+
+/****** aesthetics/usability ******/
+
+/* added to buttons (such as place order) when they're disabled to clearly indicate they should not be clicked again. */
+.disabled	{
+	cursor:crosshair !important;
+	filter: alpha(opacity=50);
+	opacity:0.5;
+	}
+.formValidationError, .zwarn	{color:#cc0000;} /* applied to errors displayed in form validation or generic warnings */
+.pointer	{cursor:pointer;}
+
+/* used when an element needs to start of hidden. this is used frequently. */
+.displayNone	{display:none;}
+
+.lineThrough	{text-decoration:line-through}
+.underline	{text-decoration:underline; cursor:pointer} /* only use this on clickable text */
+.borderNone	{border:none;}
+
+.clearfix	{clear:both;}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+	}
+	
+/* added to a piece of text once it becomed editable */
+.editable	{} /* put this on any editable field. */
+.editEnabled	{border:1px solid #ffcc00; min-width:25px; min-height:22px; width:200px; display:inline-block; padding:2px; margin-bottom:2px;} /* added to any editable field once editor is enabled. */
+.edited		{border:1px solid #390;} /* added if a field is changed */
+
+
+
+.marginLeft	{margin-left:12px;}
+.marginRight	{margin-right:12px;}
+.marginTop	{margin-top:12px;}
+.marginBottom	{margin-bottom:12px;}
+.stdMargin	{margin:12px;}
+.stdPadding	{padding:12px;}
+
+.headerPadding	{padding: 3px 6px;} /* for use in headings or legends that use the ui-state classes and need a little padding within. */
+
+.fullWidth	{width:100%;}
+
+
+
+
+.buyerLoggedIn .hideIfLoggedIn	{display:none;}
+
+.hideIfLoggedOut	{display:none;}
+
+.buyerLoggedIn .hideIfLoggedOut	{display: block;} /* may be 'block' */
+.buyerLoggedIn span.hideIfLoggedOut, .buyerLoggedIn a.hideIfLoggedOut	{display: inline;} /* ensures inline on span elements */
+
+
+
+.listStyleNone, .listStyleNone li	{list-style:none;} /* apply to a ul or ol */
+.noPadOrMargin	{padding:0; margin:0;}
+.fluidList li	{float:left; margin:12px; padding:0; display:inline-block;}
+
+
+
+/****** APP specific styles ******/
+
+
+/* messaging css. some error css is defined in the jqueryui styles */
+
+.appMessage P	{padding:0; margin:0;} /* used in app messaging for warnings, alerts, successes, etc */
+.zMessage	{margin:6px; 0}
+
+.appMessage	{margin-bottom:12px; position:relative;}
+.appMessage .stdMargin {padding:5px;}
+.appMessage .ui-button	{position:absolute; top:-3px; right:-3px; z-index:100;}
+.appMessage .ui-icon	{float:left; margin-right:12px;}
+
+/* some messages have a red bg. add a white circle around the icon in these cases. */
+.ui-state-z-ise .ui-icon, .ui-state-z-error .ui-icon, .ui-state-z-debug .ui-icon	{
+	background-color:#ffffff;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	}
+
+/*.appMessage .ui-icon-alert	{background:url(images/error-82x82.png) no-repeat; height:82px; width:82px; margin:0 10px 10px 0;} */
+.appMessage .appMessageTxt	{float:left;}
+
+.ui-state-success, .ui-state-statusupdate	{border:1px solid #aecdae !important; background:#e3f6e3 !important; color:#333333 !important;}
+.ui-state-warning	{border:1px solid #f58d48 !important; background:#ffdfc9 !important; color:#333333 !important;}
+
+
+
+/* these ui styles don't seem to be in the ui css from google. odd. */
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-top: 2px;
+	padding: .5em .5em .5em .7em;
+	min-height: 0; /* support: IE7 */
+}
+
+
+
+.ui-accordion .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-noicons {
+	padding-left: .7em;
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+
+
+
+
+.headerPadding label	{padding:2px 6px;}
+.creditCardCVVIcon	{display:inline-block !important;}
+
+
+.paybySupplemental {padding:12px; font-weight:normal; border-top-width:0;}
+.paybySupplemental select {margin-right:12px;}
+
+.addressList address	{float:left; margin:0 12px 12px 0;}
+
+
+.checkoutFormContainer input, checkoutFormContainer select	{margin:2px 6px 2px 0;}
+.checkoutFormContainer input[type='password']	{width:200px;} /* class affects both login password and create account passwords */
+.checkoutFormContainer .anycb-label	{}
+
+/* the write review button doesn't work in 1PC. works in apps */
+.writeReview	{display:none;}
+
+
+
+
+
+
+
+

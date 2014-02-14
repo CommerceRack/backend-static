@@ -1,0 +1,60 @@
+<TEMPLATE ID="missing404-20090421" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CZJEVOB" RAW="1" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL"></ELEMENT>
+<ELEMENT ID="CZJEVOC" RAW="1" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL"></ELEMENT>
+<ELEMENT ID="CZJEVOD" RAW="1" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL"></ELEMENT>
+<ELEMENT ID="CZJEVOE" RAW="1" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL"></ELEMENT>
+<ELEMENT ID="CZJEVXW" RAW="1" SUB="COMPANY_NAME" TYPE="READONLY" LOAD="profile:zoovy:company_name"></ELEMENT>
+<ELEMENT ID="CZJEUJE" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div id='404_message'>
+
+<h1 class='ztitle zwarn'>Requested page not found (404 error)</h1>
+
+<div class='ztxt' style='margin:5px 25px;'>
+
+<p>We're sorry, but the page you've requested could not be found. Please <a href='%HOME_URL%'>click here</a> to visit  our homepage or try the
+following:
+<ul>
+<li>Check the spelling of the url you entered</li>
+<li><a href='%CUSTOMER_MAIN_URL%'>Click here</a> to get your order
+status.</li>
+<li><a href='%CONTACT_URL%'>Contact us directly</a>.</li>
+</ul>
+</p>
+
+<div id='404_search'>
+
+<div class='ztitle2'>Looking for something specific? Try searching for
+it:</div>
+
+
+<form action='%RESULTS_URL%' method='get' style='margin:5px 0;'>
+<input type='hidden' name='catalog' value=''>
+<table cellspacing='2' cellpadding='0'>
+<tr>
+	<td><input type='text' name='keywords' value='' id='keywords_404' class='zform_textbox'></td>
+	<td><input type='submit' class='zform_button' id='search_404'  value='search'></td>
+</tr>
+</table>
+</form>
+
+
+</div>
+<br><br>
+Thank you,<br><br>
+
+%COMPANY_NAME%
+
+</div>
+
+</div>
+
+<!-- Show two levels of categories here.  Yee haw.  I love categories. -->
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,96 @@
+<TEMPLATE ID="131" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMSS" CREATOR="STAFF" IMAGES="7" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Big n Small" RELEASED="20021205"><SUMMARY><![CDATA[
+Default Description (shared)
+IMAGE1 (500x200)
+IMAGE2 (150x150)
+IMAGE3 (150x150)
+IMAGE4 (150x150)
+IMAGE5 (150x150)
+IMAGE6 (150x150)
+IMAGE7 (150x150)
+]]></SUMMARY>
+<SHORT><![CDATA[(7) This layout includes a 500x200 images across the top with 6 150x150 images listed down the left side, and right aligned against the text.  There is a 1 pixel wide black border seperating the cells and a white background on the table.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKMST" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+<style>
+.strikeout	{text-decoration: line-through;
+			color: #990000;
+			}
+</style>
+<div align="center">
+<table cellspacing=0 cellpadding=3 border=1 bordercolor="#000000" bgcolor="#ffffff">
+  <tr>
+      <td valign=top width="500" colspan=2>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="200" ID="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="500" PROMPT="Image 1" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMSU" TYPE="OUTPUT"><HTML><![CDATA[ 
+    </td>
+</tr><tr>
+	<td align="right" width=150>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE2" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="150" PROMPT="Image 2" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMSV" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE3" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" WIDTH="150" PROMPT="Image 3" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMSW" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>	
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE4" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image4" WIDTH="150" PROMPT="Image 4" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMSX" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE5" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image5" WIDTH="150" PROMPT="Image 5" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMSY" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE6" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image6" WIDTH="150" PROMPT="Image 6" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMSZ" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE7" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image7" WIDTH="150" PROMPT="Image 7" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMTA" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>
+	
+	
+	</td>
+    <td align="left" valign="top" width=350> 
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMTB" TYPE="OUTPUT"><HTML><![CDATA[ 
+<br>
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKMTC" TYPE="OUTPUT"><HTML><![CDATA[<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKMTD" TYPE="OUTPUT"><HTML><![CDATA[
+    </td>
+
+  </tr>
+</table>
+</center>
+
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=l1_iciclelights
+SITEBUTTONS=l2_sweetpurple
+-->
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+<style>
+body	{font-family: arial; font-size: 9pt; margin: 0}
+a:hover	{text-decoration: underline; color: #000000;}
+a	{text-decoration: none; color: #0000FF;}
+td	{font-family: arial; font-size: 9pt}
+td.foo	{background-image: url(cat_top.gif);}
+td.moo	{background-image: url(cat_bg.gif);}
+td.zoo	{background-image: url(cat_bottom.gif);}
+td.goo	{background-color: #f0f0f0;}
+td.hoo	{background-color: #CCCCCC;}
+.menu	{color: #333333;}
+</style>
+<body>
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+	<tr>
+		<td width=7 class="goo"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=7 height=1></td>
+		<td width=1 class="goo"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=75></td>
+		<td valign="top" align="left" class="goo">
+			<table cellspacing=0 cellpadding=0 border=0>
+				<tr>
+					<td><a href="<!--CART_URL-->"><span class="menu">Cart</span></a></td>
+					<td>&nbsp;-&nbsp;</td>
+					<td><a href="<!-- HOME_URL -->"><span class="menu">Home</span></a></td>
+					<td>&nbsp;-&nbsp;</td>
+					<td><a href="<!--ABOUT_URL-->"><span class="menu">About&nbsp;Us</span></a></td>
+					<td>&nbsp;-&nbsp;</td>
+					<td><a href="<!--SEARCH_URL-->"><span class="menu">Search</span></a></td>
+					<td>&nbsp;-&nbsp;</td>
+					<td><a href="<!--CONTACT_URL-->"><span class="menu">Contact&nbsp;Us</span></a></td>
+					<td>&nbsp;-&nbsp;</td>
+					<td><a href="<!-- LOGIN_URL -->"><span class="menu">Login</span></a></td>
+				</tr>
+			</table>
+		</td>
+		<td valign="middle" align="right" class="goo"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=300
+HEIGHT=71
+--></a></td>
+		<td class="goo"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=8 height=1></td>
+	</tr><tr>
+		<td colspan=5 height=8 class="foo"><img src="cat_top.gif" width="1" height="8" alt="" border="0"></td>
+	</tr><tr>
+		<td colspan=5 height=16 class="moo"><img src="cat_bg.gif" width="1" height="16" alt="" border="0"></td>
+	</tr><tr>
+		<td colspan=5 height=8 class="zoo"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=8></td>
+	</tr><tr>
+		<td colspan=5 height=99%><!-- TITLE --><br><!-- BODY --></td>
+	</tr><tr>
+		<td colspan=5 class="hoo" height=1><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=1></td>
+	</tr><tr>
+		<td colspan=5 class="goo" height=40><!-- FOOTER --></td>
+	</tr>
+</table>
+
+
+</body>
+</html>

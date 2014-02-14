@@ -1,0 +1,60 @@
+<TEMPLATE ID="5003" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMMM" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="S" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="This form includes the ability to add search hints, and specify up to three catalogs to be searched." RELEASED="20020224"><SUMMARY><![CDATA[Search Box 1
+Search Box 2
+Search Box 3
+Search Hints
+Welcome Message
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMMN" TYPE="OUTPUT"><HTML><![CDATA[
+<table>
+	<tr>
+		<td>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" HELP="Please enter a Welcome message that will appear on your search" DATA="page:message" PROMPT="Welcome Message" DEFAULT="Use the box below to search the titles of products." TYPE="TEXT"><HELPER><![CDATA[If you have a gold account, consider using the Advanced Site Search to offer your customers even more functionality.]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKMMO" TYPE="OUTPUT"><HTML><![CDATA[<br>
+
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SEARCH1" PROMPTATTRIB="page:prompt" PROMPT="Search Box 1" PROMPTDEFAULT="Keywords :  " TYPE="SEARCHBOX" BUTTONDEFAULT=" Go " BUTTONATTRIB="page:button" CATALOGATTRIB="page:catalog"></ELEMENT>
+<ELEMENT ID="CPUKMMP" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SEARCH2" PROMPTATTRIB="page:prompt2" PROMPT="Search Box 2" PROMPTDEFAULT="Keywords :  " TYPE="SEARCHBOX" BUTTONDEFAULT=" Go " BUTTONATTRIB="page:button2" CATALOGATTRIB="page:catalog2"></ELEMENT>
+<ELEMENT ID="CPUKMMQ" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SEARCH3" PROMPTATTRIB="page:prompt3" PROMPT="Search Box 3" PROMPTDEFAULT="Keywords :  " TYPE="SEARCHBOX" BUTTONDEFAULT=" Go " BUTTONATTRIB="page:button3" CATALOGATTRIB="page:catalog3"></ELEMENT>
+<ELEMENT ID="CPUKMMR" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HINTS" HELP="Please enter a some search hints" DATA="page:hints" PROMPT="Search Hints" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMMS" TYPE="OUTPUT"><HTML><![CDATA[
+
+		</td>
+	</tr>
+</table>
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

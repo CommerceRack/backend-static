@@ -1,0 +1,149 @@
+<TEMPLATE ID="checkout-201342r" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="DGBSYGG" FORMAT="LAYOUT" TYPE="CONFIG" EXPORT="0" TITLE="Checkout: one page (required)" CREATED="00000000" CHEESE="1" RELEASED="00000000" SUBTYPE=""><SUMMARY><![CDATA[A one page checkout layout specifically designed for retail customerson stores with 'nice' or 'active' as the checkout setting.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="VAR_RELEASE" HELPER="release # =  YYYYMMDDHHMMSS when deployed." SUB="MVC_RELEASE" DEFAULT="20131016131000" TYPE="HIDDEN"></ELEMENT>
+<ELEMENT ID="VAR_LAYOUT_URL" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="VAR_SECURE_URL" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="VAR_NONSECURE_URL" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQPOIJP" SUB="SESSION_ID" TYPE="READONLY" LOAD="CART::ID" RAW="1"></ELEMENT>
+<ELEMENT ID="DGYFWVN" TYPE="SPECL"><HTML><![CDATA[<%
+loadurp("CONFIG::IHAVEJQUERYUICSS"); default("");
+goto(label=>"END",ne=>"");
+	print("<link rel='stylesheet' type='text/css' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/cupertino/jquery-ui.css' />");
+:END();
+print("");
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DGBSYGH" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+<!--
+/* **************************************************************
+
+   Copyright 2011 Zoovy, Inc.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+************************************************************** */
+
+
+
+
+
+-->
+
+
+
+<link rel="stylesheet" type="text/css" href="%LAYOUT_URL%/styles.css?MVC=%MVC_RELEASE%" />
+
+<!-- ** 201342 -> jquery and jquery ui are pivotal to the functionality of the app. load them first -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+
+<script type="text/javascript">
+
+var myCreole;
+
+var app = {vars:{
+	"release":"%MVC_RELEASE%",  //increment this with each change. should solve caching issues. format: YYYYMMDDHHMMSS
+	"baseURL":"/media/graphics/general/jslib/zmvc/201342/", //where MVC files are loaded from.
+	"cartID":"%SESSION_ID%",
+	"_clientid":"1pc",
+	"layoutURL":"%LAYOUT_URL%/",
+	"httpsURL":"%SECURE_URL%",
+	"checkoutAuthMode":"required",
+	"httpURL":"%NONSECURE_URL%"
+	},u:{},rq:[]};
+
+//oh, the bain of my existence. secure and nonsecure url vars are not consistent. ssl cert has no slash. default cert does. handy.
+if(app.vars.httpURL.charAt(app.vars.httpURL.length-1) == '/'){} //ends in a slash. do nothing.
+else	{
+	app.vars.httpURL += "/";
+	}
+
+if(app.vars.httpsURL.charAt(app.vars.httpsURL.length-1) == '/'){} //ends in a slash. do nothing.
+else	{
+	app.vars.httpsURL += "/";
+	}
+
+</script>
+
+
+<!-- needs to be after var declaration above -->
+<script type="text/javascript" src="/media/graphics/general/jslib/zmvc/201342/loadscript.js"></script>
+<script type="text/javascript">
+app.u.loadScript("%LAYOUT_URL%/init.js");
+</script>
+
+
+
+
+
+
+<!-- what is displayed onLoad until the view is loaded -->
+<div id='appPreView'>
+<table>
+<tr>
+	<td>
+	<h3>Loading Secure Checkout</h3>
+	
+	<div class='alignCenter'>
+	<progress id="appPreViewProgressBar" max="100" value="0" /><br />
+	</div>
+	<div id='appPreViewProgressText'>0% Complete</div>
+	
+	<div class='appMessaging'></div>
+	</td>
+</tr>
+</table>
+</div>
+
+
+<div id='appView'>
+
+	<!-- used for any 'global' errors, such as incompatible system settings, high level errors and also for request/response errors. -->
+	<div id='globalMessaging' class='appMessaging'></div>
+	
+	<!-- This is where most content is going to be added, except for some high-level errors. -->
+	<div id='zContent' class='loadingBG'></div>
+
+</div>
+
+
+
+
+<div id='appTemplates'>
+
+</div><!-- /appTemplates -->
+
+
+
+<!-- for facebook -->
+<div id='fb-root'></div>
+
+
+
+
+
+
+
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

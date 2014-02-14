@@ -1,0 +1,68 @@
+<TEMPLATE ID="999" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMQA" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG"></ELEMENT>
+<ELEMENT ID="CPUKMQB" TYPE="OUTPUT"><HTML><![CDATA[<style>
+.strikeout	{text-decoration: line-through;
+			color: #000099;
+			}
+</style>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKMQC" TYPE="OUTPUT"><HTML><![CDATA[<br><br>
+<table cellpadding=3 cellspacing=0 border=0 width=100%><tr><td valign="top">
+<strong>Manufacturer:</strong>&nbsp;&nbsp;
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="VENDOR" HELP="This is the vendors name that will appear on your website." DATA="product:tntserve:vendor" PROMPT="Vendor" DEFAULT=" " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMQD" TYPE="OUTPUT"><HTML><![CDATA[ <br>
+<strong>Part #:</strong>&nbsp;&nbsp;
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PARTNUMBER" HELP="This is the product number that will appear on your website." DATA="product:tntserve:part_number" PROMPT="Part Number" DEFAULT=" " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMQE" TYPE="OUTPUT"><HTML><![CDATA[ <br>
+
+<strong>Make:</strong>&nbsp;&nbsp;
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MAKE" HELP=" " DATA="product:tntserve:make" PROMPT=" Make of the part" DEFAULT=" " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMQF" TYPE="OUTPUT"><HTML><![CDATA[ <br>
+
+<strong>Model:</strong>&nbsp;&nbsp;
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MODEL" HELP=" " DATA="product:tntserve:model" PROMPT=" Model" DEFAULT=" " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMQG" TYPE="OUTPUT"><HTML><![CDATA[ <br>
+<strong>Years:</strong>&nbsp;&nbsp;
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="YEARS" HELP=" " DATA="product:tntserve:years" PROMPT=" Years of the make this product supports" DEFAULT=" " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMQH" TYPE="OUTPUT"><HTML><![CDATA[ <br><br>
+
+<strong>Suggested Retail Price:</strong>&nbsp;&nbsp;<span class="strikeout">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MSRP" HELP="This is the product msrp that will appear on your website." DATA="product:zoovy:prod_msrp" PROMPT="Default Description (shared)" DEFAULT=" " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMQI" TYPE="OUTPUT"><HTML><![CDATA[</span> <br>
+<strong>Our Discounted Price:</strong>&nbsp;&nbsp;<b>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BASEPRICE" HELP="This is the product msrp that will appear on your website." DATA="product:zoovy:base_price" PROMPT="Default Description (shared)" DEFAULT=" " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMQJ" TYPE="OUTPUT"><HTML><![CDATA[ <br></b>
+</td><td valign="top" align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ASTERISK" HELP="This is the product msrp that will appear on your website." DATA="merchant:zoovy:asterisk" PROMPT="Text that will appear above the images" DEFAULT="Images that appear may not be identical to product." TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMQK" TYPE="OUTPUT"><HTML><![CDATA[</span><br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE" HEIGHT="200" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMQL" TYPE="OUTPUT"><HTML><![CDATA[ <br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="200" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image 2" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMQM" TYPE="OUTPUT"><HTML><![CDATA[ 
+</tr></table>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

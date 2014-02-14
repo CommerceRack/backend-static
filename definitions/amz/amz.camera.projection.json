@@ -1,0 +1,314 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "Projection",
+      "subcat" : "projection",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:Projection",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXLF",
+      "xmlpath" : "CameraPhoto.ProductType.Projection."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "slide-projectors",
+            "v" : "slide-projectors"
+         },
+         {
+            "p" : "video-projectors",
+            "v" : "video-projectors"
+         },
+         {
+            "p" : "large-format-projectors",
+            "v" : "large-format-projectors"
+         },
+         {
+            "p" : "medium-format-projectors",
+            "v" : "medium-format-projectors"
+         },
+         {
+            "p" : "multimedia-projectors",
+            "v" : "multimedia-projectors"
+         },
+         {
+            "p" : "opaque-projectors",
+            "v" : "opaque-projectors"
+         },
+         {
+            "p" : "lightboxes",
+            "v" : "lightboxes"
+         },
+         {
+            "p" : "viewers",
+            "v" : "viewers"
+         },
+         {
+            "p" : "loupes",
+            "v" : "loupes"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_projection_projectiontype",
+      "title" : "Projection Projection Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Projection.ProjectionType",
+      "list" : "LIST_CAMERA_PROJECTION_PROJECTIONTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "up-to-4x",
+            "v" : "up-to-4x"
+         },
+         {
+            "p" : "5x-9x",
+            "v" : "5x-9x"
+         },
+         {
+            "p" : "10x-15x",
+            "v" : "10x-15x"
+         },
+         {
+            "p" : "above-15x",
+            "v" : "above-15x"
+         },
+         {
+            "p" : "zoom",
+            "v" : "zoom"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_projection_loupemagnification",
+      "title" : "Projection Loupe Magnification",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Projection.LoupeMagnification",
+      "list" : "LIST_CAMERA_PROJECTION_LOUPEMAGNIFICATION"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "35mm",
+            "v" : "35mm"
+         },
+         {
+            "p" : "large-format",
+            "v" : "large-format"
+         },
+         {
+            "p" : "medium-format",
+            "v" : "medium-format"
+         },
+         {
+            "p" : "normal",
+            "v" : "normal"
+         },
+         {
+            "p" : "telephoto",
+            "v" : "telephoto"
+         },
+         {
+            "p" : "wide-angle",
+            "v" : "wide-angle"
+         },
+         {
+            "p" : "zoom",
+            "v" : "zoom"
+         },
+         {
+            "p" : "other-projector-lenses",
+            "v" : "other-projector-lenses"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_projection_projectorlenses",
+      "title" : "Projection Projector Lenses",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Projection.ProjectorLenses",
+      "list" : "LIST_CAMERA_PROJECTION_PROJECTORLENSES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "fast-fold-screens",
+            "v" : "fast-fold-screens"
+         },
+         {
+            "p" : "free-standing-floor-screens",
+            "v" : "free-standing-floor-screens"
+         },
+         {
+            "p" : "rear-projection-screens",
+            "v" : "rear-projection-screens"
+         },
+         {
+            "p" : "tabletop-screens",
+            "v" : "tabletop-screens"
+         },
+         {
+            "p" : "tripod-mounted-screens",
+            "v" : "tripod-mounted-screens"
+         },
+         {
+            "p" : "wall-and-ceiling-electric-screens",
+            "v" : "wall-and-ceiling-electric-screens"
+         },
+         {
+            "p" : "wall-and-ceiling-screens",
+            "v" : "wall-and-ceiling-screens"
+         },
+         {
+            "p" : "other-projection-screens",
+            "v" : "other-projection-screens"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_projection_projectionscreens",
+      "title" : "Projection Projection Screens",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Projection.ProjectionScreens",
+      "list" : "LIST_CAMERA_PROJECTION_PROJECTIONSCREENS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "dissolve-and-control-units",
+            "v" : "dissolve-and-control-units"
+         },
+         {
+            "p" : "lamps",
+            "v" : "lamps"
+         },
+         {
+            "p" : "stands",
+            "v" : "stands"
+         },
+         {
+            "p" : "mounting-equipment",
+            "v" : "mounting-equipment"
+         },
+         {
+            "p" : "other-accessories",
+            "v" : "other-accessories"
+         },
+         {
+            "p" : "projector-trays-general",
+            "v" : "projector-trays-general"
+         },
+         {
+            "p" : "35mm-slide-projector-trays",
+            "v" : "35mm-slide-projector-trays"
+         },
+         {
+            "p" : "medium-format-slide-projector-trays",
+            "v" : "medium-format-slide-projector-trays"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_projection_audiovisualproductaccs",
+      "title" : "Projection Audio Visual Product Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Projection.AudioVisualProductAccessories",
+      "list" : "LIST_CAMERA_PROJECTION_AUDIOVISUALPRODUCTACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

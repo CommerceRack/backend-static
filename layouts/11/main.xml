@@ -1,0 +1,41 @@
+<TEMPLATE ID="11" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLRY" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="A" FORMAT="LAYOUT" SHORT="This about us page features a giant picture." TYPE="CONFIG" TITLE="About Us with Picture" RELEASED="20020305"><SUMMARY><![CDATA[About Us Blurb
+IMAGE1 (400x200)
+Page Title
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKLRZ" TYPE="OUTPUT"><HTML><![CDATA[<center>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="200" ID="BIGIMAGE" HELP="Please select a graphic that represents your company and will appear on the About Us page." DATA="merchant:zoovy:aboutus_image1" WIDTH="400" PROMPT="Company Picture 400x200" DEFAULT="https://static.zoovy.com/img/H200-W400-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKLSA" TYPE="OUTPUT"><HTML><![CDATA[
+
+<table border='0' width='100%'>
+<tr><td>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="COMPANYNAME" LENGTH="75" HELP="Please enter your company name as it should appear throughout your site" DATA="page:company_name" PROMPT="Page Title" DEFAULT="" TYPE="TEXTBOX" LOADFROM="merchant:zoovy:company_name"></ELEMENT>
+<ELEMENT ID="CPUKLSB" TYPE="OUTPUT"><HTML><![CDATA[
+
+<hr>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BLURB" HELP="Please enter an About Us Blurb that will appear on your website" DATA="page:blurb" PROMPT="About Us Blurb" DEFAULT="We are a really great company, you should buy stuff from us and tell your friends! " TYPE="TEXT"><HELPER><![CDATA[&nbsp;&nbsp;&nbsp;It is important that you use your website as a tool to develop your Company Image. A good Company Image will increase the percieved value of your services, and also increase the likelihood the customer will remember your company in the future.<br><br>Recommended Topics:<li>What makes you unique?<li>Do you employ any experts?<li>Are you a leader in your field? (why?)<li>How long have you been in business?<li>Have you won any awards recently?<li>Do you have any dealer authorizations (make sure you have permission to use trademarks!)<li>Are there any special ingredients/components that go into your products?<br><br>&nbsp;&nbsp;&nbsp;Try to be concise, you should pick 2 or 3 topics and only cover those, remember if its too long most visitors will not read it!]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKLSC" TYPE="OUTPUT"><HTML><![CDATA[
+
+</td></tr>
+</table>
+
+</center>
+<br>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

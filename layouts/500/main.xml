@@ -1,0 +1,21 @@
+<TEMPLATE ID="500" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLUN" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG"></ELEMENT>
+<ELEMENT ID="PRODUCTLIST" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKLUO" TYPE="OUTPUT"><HTML><![CDATA[
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CATEGORYLIST" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKLUP" TYPE="OUTPUT"><HTML><![CDATA[
+<br>
+
+
+<br>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

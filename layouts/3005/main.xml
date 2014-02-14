@@ -1,0 +1,17 @@
+<TEMPLATE ID="3005" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLSX" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SUBTYPE="T" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Product List + Custom Text" RELEASED="20020129"><SUMMARY><![CDATA[Bottom Text
+Product Listing
+Shopping Cart
+Top Text
+]]></SUMMARY>
+<SHORT><![CDATA[This layout includes a place for your own custom text above and below the visitor's cart as well as a product list at the bottom.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="TOPTEXT" HELP="This text will appear above the shopping cart" DATA="page:toptext" PROMPT="Top Text" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CART1" HELP="This is the contents of the user's shopping cart." PROMPT="Shopping Cart" TYPE="CART"></ELEMENT>
+<ELEMENT ID="BOTTOMTEXT" HELP="This text will appear below the shopping cart" DATA="page:bottomtext" PROMPT="Bottom Text" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="PRODLIST1" SIZE="50000" HELP="You can add products to your shopping cart page" DATA="page:prodlist" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+
+</TEMPLATE>

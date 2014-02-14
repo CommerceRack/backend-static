@@ -1,0 +1,105 @@
+<TEMPLATE ID="i_20050311" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNKN" CREATED="20050311" IMAGES="0" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" SHORT="A simple email template with a featured product and a second product list." TYPE="CONFIG" TITLE="Featured Product and Product List" NEWSLETTER="1"><SUMMARY><![CDATA[
+Header
+Message
+Product Listing
+Subheading
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPVRQCT" RAW="1" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCU" RAW="1" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCV" RAW="1" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCZ" RAW="1" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDD" RAW="1" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDE" RAW="1" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDI" RAW="1" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDK" RAW="1" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDL" RAW="1" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDM" RAW="1" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDQ" RAW="1" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDV" RAW="1" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDW" RAW="1" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEB" RAW="1" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEC" RAW="1" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQED" RAW="1" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEF" RAW="1" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEK" RAW="1" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEL" RAW="1" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEP" RAW="1" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEQ" RAW="1" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQER" RAW="1" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEV" RAW="1" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL"></ELEMENT>
+<ELEMENT ID="CVPKKKP" HEIGHT="150" MINIMAL_MODE="1" SUB="NEWS_LOGO" WIDTH="150" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="CPUKNKO" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>%SUBJECT%</title>
+<style type="text/css">
+body	{margin: 0px; background-color: #ffffff;}
+body, td, li, ol, p	{color: #333333; font-size: 9pt; 
+font-family: Tahoma, Arial, sans-serif}
+.light_bg	{background-color: #0066FF;}
+.dark_bg	{background-color:#003399;}
+
+.header		{font-size: 9pt; font-weight: bold; color: #ffffff;}
+.subhead	{font-size: 9pt; font-weight: bold; color: #0066FF;}
+
+.footer	{font-size: 8pt; color: #666666;}
+</style>
+</head>
+
+<body>
+
+<table cellspacing="0" cellpadding="0" boder="0" width="100%"><tr>
+	<td style="height: 4px;" class="light_bg"></td>
+</tr><tr>
+	<td style="height: 4px;"></td>
+</tr></table>
+<table width="100%"><tr>
+	<td width="1%"><a href='%HOME_URL%?%TRACKING%'>%NEWS_LOGO%</a></td>
+	<td><table cellspacing="1" cellpadding="1" 
+width="100%" class="light_bg"><tr>
+		<td style="height: 4px;"></td>
+	</tr><tr>
+		<td style="background-color: #ffffff">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" LENGTH="45" HELP="Please enter a header for this email" DATA="page:email_header" HELPER="Remember to keep this text short and to the point." PROMPT="Header" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</span></td></tr></table><br>]]></POSTTEXT>
+<PRETEXT><![CDATA[<table cellspacing="0" cellpadding="2" width="100%">
+<tr><td class="dark_bg"><span class="header">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MAX="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" COLS="1" FORMAT="DETAIL" PROMPT="Product Listing" TYPE="PRODLIST" SRC="page:prodlist1stuff"></ELEMENT>
+<ELEMENT ID="CPUKNKR" TYPE="OUTPUT"><HTML><![CDATA[
+</td>
+	</tr></table></td>
+</tr><tr>
+	<td colspan="2"><p>	
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME2" LENGTH="55" HELP="Please enter a Subheading" DATA="page:welcome_message" HELPER="Remember to keep this text short and to the point." PROMPT="Subheading" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</span><br>]]></POSTTEXT>
+<PRETEXT><![CDATA[<span class="subhead">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please enter a message that will appear on this page" DATA="page:description" PROMPT="Message" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Type a short note here to remind yourself about this element.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKNKS" TYPE="OUTPUT"><HTML><![CDATA[
+</p></td>
+</tr><tr>
+	<td colspan="2">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST2" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist2" PROMPT="Product Listing" DEFAULT="&amp;FORMAT=THUMB&amp;COLS=2&amp;ALTERNATE=0" TYPE="PRODLIST" SRC="page:prodlist1stuff2"></ELEMENT>
+<ELEMENT ID="CPUKNKT" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr></table>
+<table cellspacing="0" cellpadding="0" boder="0" width="100%"><tr>
+	<td style="height: 4px;" class="light_bg"></td>
+</tr></table><br>
+<br>
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

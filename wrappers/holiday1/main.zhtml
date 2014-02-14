@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=l2_xmasangles
+SITEBUTTONS=l2_xmasangles
+-->
+<html>
+<head>
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+td.smoo	{background-image: url(<!-- WRAPPER_URL -->/top_bg.gif);}
+td.cats	{background-image: url(<!-- WRAPPER_URL -->/menu_bg.gif);}
+.title	{font-family: garamond; font-size: 16px; color: 990000; font-weight: bold}
+.header	{font-family: garamond; font-size: 18px; color: #FFFFFF}
+</style>
+<script language="JavaScript">
+<!--
+initialized = 0;
+<!-- MENU
+FORMAT=rollover_%NUM%_on = new Image;%BREAK%rollover_%NUM%_on.src = "%SRC%";%BREAK%
+BUTTONTYPE=holiday_on
+WIDTH=152
+NOHOME=1
+--><!-- MENU
+FORMAT=rollover_%NUM%_off = new Image;%BREAK%rollover_%NUM%_off.src = "%SRC%";%BREAK%
+BUTTONTYPE=holiday_off
+WIDTH=152
+NOHOME=1
+-->initialized = 1;
+function on(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_on.src");
+}
+function off(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_off.src");
+}
+// -->
+</script>
+<SCRIPT language="JavaScript">
+<!--
+if (document.images)
+{
+  pic1= new Image(52,53); 
+  pic1.src="<!--IMAGE_URL-->/home_on.gif"; 
+
+  pic2= new Image(52,53); 
+  pic2.src="<!--IMAGE_URL-->/about_on.gif"; 
+
+  pic3= new Image(53,53); 
+  pic3.src="<!--IMAGE_URL-->/contact_on.gif"; 
+  
+  pic4= new Image(53,53); 
+  pic4.src="<!--IMAGE_URL-->/cart_on.gif"; 
+  
+}
+//-->
+</SCRIPT>
+
+</head>
+
+<body>
+<table cellspacing=0 cellpadding=0 width=100% border=0>
+	<tr>
+		<td class="smoo" width=4><img src="<!-- GRAPHICS_URL -->/blank.gif" width=4 height=1></td>
+		<td valign="top" class="smoo" width=226>
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td><a href="<!--HOME_URL-->" onMouseOver="document.home.src='<!-- WRAPPER_URL -->/home_on.gif';" onMouseOut="document.home.src='<!-- WRAPPER_URL -->/home_off.gif';"><img src="<!-- WRAPPER_URL -->/home_off.gif" width="52" height="53" alt="Home" border="0" name="home"></a></td>
+					<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width=4 height=1></td>
+					<td><a href="<!--ABOUT_URL-->" onMouseOver="document.about.src='<!-- WRAPPER_URL -->/about_on.gif';" onMouseOut="document.about.src='<!-- WRAPPER_URL -->/about_off.gif';"><img src="<!-- WRAPPER_URL -->/about_off.gif" width="52" height="53" alt="About Us" border="0" name="about"></a></td>
+					<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width=4 height=1></td>
+					<td><a href="<!--CONTACT_URL-->" onMouseOver="document.contact.src='<!-- WRAPPER_URL -->/contact_on.gif';" onMouseOut="document.contact.src='<!-- WRAPPER_URL -->/contact_off.gif';"><img src="<!-- WRAPPER_URL -->/contact_off.gif" width="53" height="53" alt="Contact Us" border="0" name="contact"></a></td>
+					<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width=4 height=1></td>
+					<td><a href="<!--CART_URL-->" onMouseOver="document.cart.src='<!-- WRAPPER_URL -->/cart_on.gif';" onMouseOut="document.cart.src='<!-- WRAPPER_URL -->/cart_off.gif';"><img src="<!-- WRAPPER_URL -->/cart_off.gif" width="53" height="53" alt="" border="0" name="cart"></a></td>
+					<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width=4 height=1></td>
+				</tr>
+			</table>
+		</td>
+		<td width=99%  class="smoo" align="right"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=100></td>
+		<td class="smoo" align="right" width=42 valign="middle"><img src="<!-- WRAPPER_URL -->/logo_left.gif" width="42" height="36" alt="" border="0"></td>
+		<td class="smoo" align="center" valign="top" width=300>
+			<table cellspacing=0 cellpadding=0 border=0>
+				<tr>
+					<td align="center"><span class="header">Seasons Greetings From</span></td>
+				</tr><tr>
+					<td><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=300
+HEIGHT=70
+--></a></td>
+				</tr>
+			</table>
+		</td>
+		<td valign="middle" class="smoo" align="left" width=41><img src="<!-- WRAPPER_URL -->/logo_right.gif" width="41" height="36" alt="" border="0"></td>
+		<td width=4 class="smoo"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=4 height=1></td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=2 width=100%>
+	<tr>
+		<td valign="top" width=152>
+		<table cellspacing=0 cellpadding=0 width=100% border=0>
+			<tr>
+				<td><img src="<!-- WRAPPER_URL -->/menu_top.gif" width="152" height="56" alt="" border="0"></td>
+			</tr><tr>
+				<td class="cats" align="center"><!-- MENU
+BUTTONTYPE=holiday_off
+FORMAT=<a href="%URL%" OnMouseOver="on(%NUM%)" OnMouseOut="off(%NUM%)"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0" name="roll_%NUM%"></a><br>
+WIDTH=152
+NOHOME=1
+--></td>
+			</tr><tr>
+				<td><img src="<!-- WRAPPER_URL -->/menu_bottom.gif" width="152" height="49" alt="" border="0"></td>
+			</tr>
+		</table>
+		</td>
+		<td width=99% valign="top"><p class="title"><!-- TITLE --></p><!-- BODY -->
+<!-- FOOTER
+TRANSPARENT=TRUE
+--></td>
+	</tr>
+</table>
+
+
+</body>
+</html>

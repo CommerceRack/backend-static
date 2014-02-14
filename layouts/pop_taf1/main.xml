@@ -1,0 +1,71 @@
+<TEMPLATE ID="pop_taf1" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNIA" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG"></ELEMENT>
+<ELEMENT ID="CPUKNIB" TYPE="OUTPUT"><HTML><![CDATA[
+<div align="center">
+<table width="80%"><tr><td><p class='ztxt'>Use the form below to send out a notice about this product.</p></td></tr></table>
+<form action="popup.cgi">
+
+<!-- SUCCESS_FL contains the flow we will load on success (otherwise we'll reload) FL -->
+<input type="HIDDEN" name="SUCCESS_FL" value="pop_tafdone">
+
+<!-- the IMAGE_ variables dictate how big we will format the IMAGEURL the default is w=200/h=200/bg=FFFFFF
+Not used anymore.
+<input type="HIDDEN" name="IMAGE_HEIGHT" value="200">
+<input type="HIDDEN" name="IMAGE_WIDTH" value="200">
+<input type="HIDDEN" name="IMAGE_BGCOLOR" value="FFFFFF">
+ -->
+
+<!-- DO NOT EDIT BELOW THIS LINE OR YOU MIGHT BREAK STUFF YOU DO NOT MEAN TO -->
+
+<input type="HIDDEN" name="VERB" value="EXEC_TAF">
+<input type="HIDDEN" name="PRODUCT" value="]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CWACLGI" RAW="1" TYPE="READONLY" LOAD="VAR::product"></ELEMENT>
+<ELEMENT ID="CPUKNIC" TYPE="OUTPUT"><HTML><![CDATA[">
+<input type="hidden" name="wrapper" value="]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CWACLGJ" RAW="1" TYPE="READONLY" LOAD="VAR::wrapper"></ELEMENT>
+<ELEMENT ID="CPUKNID" TYPE="OUTPUT"><HTML><![CDATA[">
+
+<input type="HIDDEN" name="FL" value="pop_taf1">
+
+<table cellspacing=0 cellpadding=4 width=80% border=0>	
+	<tr>
+		<td align="right" class='ztxt'><span class="bold">Your Name:&nbsp;</span></td>
+		<td width="99%" align="left"><input type="TEXTBOX" class="zform_textbox formed" name="SENDER_NAME" value="]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CWACLGK" RAW="1" TYPE="READONLY" LOAD="VAR::sentfrom"></ELEMENT>
+<ELEMENT ID="CPUKNIF" TYPE="OUTPUT"><HTML><![CDATA["></td>
+	</tr><tr>
+		<td align="right" nowrap class='ztxt'><!-- RECIPIENT_ERROR --><span class="bold">Recipients Email:&nbsp;</span></td>
+		<td align="left"><input type="TEXTBOX" class="zform_textbox formed" name="RECIPIENT" value="]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CWACLGL" RAW="1" TYPE="READONLY" LOAD="VAR::recipient"></ELEMENT>
+<ELEMENT ID="CPUKNIH" TYPE="OUTPUT"><HTML><![CDATA["></td>
+	</tr><tr>
+		<td align="right" class='ztxt'><span class="bold">Message Title:</span></td>
+		<td align="left"><input type="textbox" class="zform_textbox formed" name="SENDER_SUBJECT" size="25" value="]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CWACLGM" RAW="1" TYPE="READONLY" LOAD="VAR::title"></ELEMENT>
+<ELEMENT ID="CPUKNII" TYPE="OUTPUT"><HTML><![CDATA["></td>
+	</tr><tr>
+		<td align="right" class='ztxt' valign="top" nowrap><span class="bold">Custom Message:&nbsp;</span></td>
+		<td align="left"><textarea name="SENDER_BODY" class="zform_textarea formed" cols="25">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CWACLGN" RAW="1" TYPE="READONLY" LOAD="VAR::message"></ELEMENT>
+<ELEMENT ID="CPUKNIJ" TYPE="OUTPUT"><HTML><![CDATA[</textarea></td>
+	</tr><tr>
+		<td align="left" valign="top"><input type="button" class="zform_button pop_button zform_button0" value="Cancel" onclick="javascript:window.close();"></td>
+		<td align="right" valign="top"><input type="submit" class="zform_button pop_button zform_button1" value="Send Message">
+		</form>
+		</td>
+	</tr>
+</table>
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

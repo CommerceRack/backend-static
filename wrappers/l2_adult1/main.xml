@@ -1,0 +1,270 @@
+<TEMPLATE ID="l2_adult1" FORMAT="WRAPPER">
+
+
+<!-- ******* -->
+<ELEMENT ID="CQLVLCZ" SUB="LINK_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCY" SUB="DISCLAIMER_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCX" SUB="TABLE_HEADING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCW" SUB="TABLE_HEADING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCV" SUB="DISCLAIMER_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCU" SUB="ALERT_COLOR" TYPE="READONLY" LOAD="THEME::ALERT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCT" SUB="CONTENT_FONT_SIZE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCS" SUB="LINK_ACTIVE_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_ACTIVE_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCR" SUB="TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCQ" SUB="TABLE_HEADING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCP" SUB="PRETTY_NAME" TYPE="READONLY" LOAD="THEME::PRETTY_NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCO" SUB="DISCLAIMER_FONT_FACE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCN" SUB="NAME" TYPE="READONLY" LOAD="THEME::NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCM" SUB="CONTENT_FONT_FACE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCL" SUB="TABLE_LISTING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCK" SUB="TABLE_LISTING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCJ" SUB="TABLE_LISTING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCI" SUB="CONTENT_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCH" SUB="TABLE_LISTING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCG" SUB="CONTENT_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCF" SUB="DISCLAIMER_FONT_SIZE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCE" SUB="TABLE_HEADING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCD" SUB="LINK_VISITED_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_VISITED_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRF" SUB="HOMECATEGORY_URL" TYPE="READONLY" LOAD="URL::HOMECATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRG" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRH" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRI" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRJ" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRK" SUB="LOGOUT_FUNCTION_URL" TYPE="READONLY" LOAD="URL::LOGOUT_FUNCTION_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRL" SUB="SHIPQUOTE_URL" TYPE="READONLY" LOAD="URL::SHIPQUOTE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRM" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRN" SUB="SITEBUTTON_URL" TYPE="READONLY" LOAD="URL::SITEBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRO" SUB="HOMEPAGE_URL" TYPE="READONLY" LOAD="URL::HOMEPAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRP" SUB="COUNTER_URL" TYPE="READONLY" LOAD="URL::COUNTER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRQ" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRR" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRS" SUB="UPDATE_PAYMENT_URL" TYPE="READONLY" LOAD="URL::UPDATE_PAYMENT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRT" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRU" SUB="NAVBUTTON_URL" TYPE="READONLY" LOAD="URL::NAVBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRV" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRW" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRX" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRY" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZRZ" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSA" SUB="ABOUT_ZOOVY_URL" TYPE="READONLY" LOAD="URL::ABOUT_ZOOVY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSB" SUB="NEWS_URL" TYPE="READONLY" LOAD="URL::NEWS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSC" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSD" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSE" SUB="USERBUTTON_URL" TYPE="READONLY" LOAD="URL::USERBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSF" SUB="CLOSED_URL" TYPE="READONLY" LOAD="URL::CLOSED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSG" SUB="FASTORDER_URL" TYPE="READONLY" LOAD="URL::FASTORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSH" SUB="MAIL_FORM_URL" TYPE="READONLY" LOAD="URL::MAIL_FORM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSI" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSJ" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSK" SUB="CONTACTUS_URL" TYPE="READONLY" LOAD="URL::CONTACTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSL" SUB="DYNAMIC_URL" TYPE="READONLY" LOAD="URL::DYNAMIC_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSM" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSN" SUB="CONTACT_US_URL" TYPE="READONLY" LOAD="URL::CONTACT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSO" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSP" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSQ" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSR" SUB="MERCHANT_LOGIN_URL" TYPE="READONLY" LOAD="URL::MERCHANT_LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSS" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZST" SUB="ADULT_URL" TYPE="READONLY" LOAD="URL::ADULT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSU" SUB="CLAIM_URL" TYPE="READONLY" LOAD="URL::CLAIM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSV" SUB="CLAIM_MULTI_URL" TYPE="READONLY" LOAD="URL::CLAIM_MULTI_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSW" SUB="ABOUT_US_URL" TYPE="READONLY" LOAD="URL::ABOUT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSX" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSY" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZSZ" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTA" SUB="REDIR_URL" TYPE="READONLY" LOAD="URL::REDIR_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTB" SUB="KILL_COOKIES_URL" TYPE="READONLY" LOAD="URL::KILL_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTC" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTD" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTE" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTF" SUB="NO_COOKIES_URL" TYPE="READONLY" LOAD="URL::NO_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTG" SUB="PAYPAL_URL" TYPE="READONLY" LOAD="URL::PAYPAL_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTH" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTI" SUB="WISHLIST_URL" TYPE="READONLY" LOAD="URL::WISHLIST_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTJ" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTK" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQQYZTL" COLORS="128" TYPE="CONFIG" CATEGORIES="16384" CREATED="20020328" TITLE="Lovely Lady" OCREATED="20020328" PROPERTIES="2" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #000000; }
+.zborder {  border: 1px solid #CCCCCC; }
+.zbox {  border: 1px solid #C600FF; }
+.zbox_body {  background-color: #9A048E; color: #FFFFFF; font-family: Arial, Helvetica; font-size: 11pt; }
+.zbox_head {  background-color: #C600FF; color: #000000; font-family: Arial, Helvetica; font-size: 15pt; }
+.zcolor {  background-color: #c600ff; color: #000000; }
+.zcolor_contrast {  background-color: #c6758a; color: #7f7f7f; }
+.zcolor_dark {  background-color: #8600bf; color: #000000; }
+.zcolor_light {  background-color: #ff40ff; color: #404040; }
+.zform_button {  background-color: #ff40ff; border: 1px solid #8600bf; color: #8600bf; font-family: Arial, Helvetica; font-size: 8pt; }
+.zform_select {  background-color: #FFFFFF; border: 1px solid #8600bf; color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.zform_textarea {  background-color: #FFFFFF; border: 1px solid #8600bf; color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.zform_textbox {  background-color: #FFFFFF; border: 1px solid #8600bf; color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.zhint {  color: #C600FF; font-family: Arial, Helvetica; font-size: 8pt; }
+.zlink {  color: #9A048E; }
+.zsmall {  color: #C600FF; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztab0 {  background-color: #724a7d; color: #ffffff; font-family: Arial, Helvetica; font-size: 9pt; }
+.ztab1 {  background-color: #9A048E; color: #FFFFFF; font-family: Arial, Helvetica; font-size: 9pt; font-weight: bold; }
+.ztabbody {  background-color: #C600FF; color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztable_head {  background-color: #C600FF; color: #000000; font-family: Arial, Helvetica; font-size: 15pt; }
+.ztable_row {  color: #FFFFFF; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztable_row0 {  background-color: #9A048E; color: #FFFFFF; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztable_row1 {  background-color: #320A3D; color: #FFFFFF; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztable_row_small {  color: #FFFFFF; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztable_row_title {  color: #FFFFFF; font-family: Arial, Helvetica; font-size: 17pt; font-weight: bold; }
+.ztitle {  color: #C600FF; font-family: Arial, Helvetica; font-size: 12pt; font-weight: bold; }
+.ztitle2 {  color: #C600FF; font-family: Arial, Helvetica; font-size: 11pt; font-weight: bold; }
+.ztxt {  color: #C600FF; font-family: Arial, Helvetica; font-size: 11pt; }
+.zwarn {  color: #9A048E; font-weight: bold; }
+]]></CSS>
+<THEME><![CDATA[alert_color=9A048E&content_background_color=000000&content_font_face=Arial%2c+Helvetica&content_font_size=3&content_text_color=C600FF&disclaimer_background_color=000000&disclaimer_font_face=Arial%2c+Helvetica&disclaimer_font_size=1&disclaimer_text_color=C600FF&link_active_text_color=9A048E&link_text_color=9A048E&link_visited_text_color=9A048E&name=&pretty_name=&table_heading_background_color=C600FF&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=4&table_heading_text_color=000000&table_listing_background_color=9A048E&table_listing_background_color_alternate=320A3D&table_listing_font_face=Arial%2c+Helvetica&table_listing_font_size=3&table_listing_text_color=FFFFFF]]></THEME>
+<SITEBUTTONS><![CDATA[forward=l2_adult1|gif|76|24&add_to_cart=l2_adult1|gif|102|24&back=l2_adult1|gif|76|24&default=l2_adult1|gif|95|24&add_to_site=l2_adult1|gif|122|32&checkout=l2_adult1|gif|82|24&continue_shopping=l2_adult1|gif|150|24&update_cart=l2_adult1|gif|103|24&cancel=l2_adult1|gif|61|24]]></SITEBUTTONS>
+</ELEMENT>
+<ELEMENT ID="CQQYZTM" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQQYZTN" TYPE="HEAD"></ELEMENT>
+<ELEMENT ID="CQQYZTO" TYPE="OUTPUT"><HTML><![CDATA[
+<map name="right">
+	<area href="%CART_URL%" shape="rect" coords="7,51,66,72" alt="Shopping Cart">
+	<area href="%SEARCH_URL%" shape="rect" coords="8,19,86,40" alt="Search">
+	<area href="%ABOUT_URL%" shape="rect" coords="140,51,206,71" alt="About Us">
+	<area href="%CONTACT_URL%" shape="rect" coords="120,20,206,40" alt="Contact Us">
+</map>
+<script language="JavaScript">
+<!--
+initialized = 0;
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQQYZTP" WIDTH="110" TYPE="MENU" BUTTONTYPE="l2_adult1_on"><HTML><![CDATA[
+<!-- CATEGORY -->
+rollover_<% load($cat_num);  default("");  print(); %>_on = new Image;<% load("
+");  default("");  print(); %>rollover_<% load($cat_num);  default("");  print(); %>_on.src = "<% load($button_imgsrc);  default("");  print(); %>";<% load("
+");  default("");  print(); %>
+
+<!-- /CATEGORY -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQQYZTQ" WIDTH="110" TYPE="MENU" BUTTONTYPE="l2_adult1_off"><HTML><![CDATA[
+<!-- CATEGORY -->
+rollover_<% load($cat_num);  default("");  print(); %>_off = new Image;<% load("
+");  default("");  print(); %>rollover_<% load($cat_num);  default("");  print(); %>_off.src = "<% load($button_imgsrc);  default("");  print(); %>";<% load("
+");  default("");  print(); %>
+
+<!-- /CATEGORY -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQQYZTR" TYPE="OUTPUT"><HTML><![CDATA[initialized = 1;
+function on(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_on.src");
+}
+function off(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_off.src");
+}
+// -->
+</script>
+</head> 
+<body background="%WRAPPER_URL%/background.gif" text="#%CONTENT_TEXT_COLOR%" link="#%LINK_TEXT_COLOR%" alink="#%LINK_ACTIVE_TEXT_COLOR%" vlink="#%LINK_VISITED_TEXT_COLOR%" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%" height="1" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td background="%WRAPPER_URL%/topbar_background.gif" border="0" cellpadding="0" cellspacing="0" width="100%" align="left">
+			<table background="%WRAPPER_URL%/topbar_background.gif" width="600" height="1" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td align="left" valign="top" width="330" background=""><img src="%WRAPPER_URL%/leftmap.gif" width="330"  height="103" border="0"></td>
+					<td align="left" valign="bottom" width="100%">
+						<table background="" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td background="%WRAPPER_URL%/logo_background.gif" width="300" height="103" align="center" valign="middle"><a href="%HOME_URL%">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQQYZTS" HEIGHT="103" WIDTH="300" BGCOLOR="000000" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CQQYZTT" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
+							</tr>
+						</table>
+					</td>
+					<td align="right" valign="bottom" width="210" background=""><img src="%WRAPPER_URL%/rightmap.gif" width="210"  height="103" usemap="#right" border="0"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td align="left" valign="top">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top" align="left" height="124"><img src="%WRAPPER_URL%/topmap.gif" width="149" height="124" border="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" align="center" background="%WRAPPER_URL%/sidebar_background.gif"><img src="%GRAPHICS_URL%/blank.gif" width="135" height="1"><br>
+						<table border="0" cellpadding="3" cellspacing="0">
+							<tr>
+								<td align="center">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQQYZTU" WIDTH="110" TYPE="MENU" BUTTONTYPE="l2_adult1_off"><HTML><![CDATA[
+<!-- CATEGORY -->
+<a href="<% load($cat_url);  default("");  print(); %>" OnMouseOver="on(<% load($cat_num);  default("");  print(); %>)" OnMouseOut="off(<% load($cat_num);  default("");  print(); %>)"><img src="<% load($button_imgsrc);  default("");  print(); %>" width="<% load($button_width);  default("");  print(); %>" height="<% load($button_height);  default("");  print(); %>" border="0" name="roll_<% load($cat_num);  default("");  print(); %>"></a><br>
+
+<!-- /CATEGORY -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQQYZTV" TYPE="OUTPUT"><HTML><![CDATA[</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left" height="37"><img src="%WRAPPER_URL%/bottommap.gif" width="149" height="37" border="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" align="center" background="">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQQYZTW" TYPE="SIDEBAR"></ELEMENT>
+<ELEMENT ID="CQQYZTX" TYPE="OUTPUT"><HTML><![CDATA[</td>
+				</tr>
+			</table>
+		</td>
+		<td align="left" valign="top" width="100%">
+			<table background="%WRAPPER_URL%/title_background.gif" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td valign="top" align="left"><img src="%WRAPPER_URL%/corner.gif"  width="29" height="34"></td>
+					<td width="100%" align="left" valign="middle">
+						<table cellpadding="0">
+							<tr>
+								 <td background=""><font color="#C600FF" face="Arial, Helvetica"  size="4">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQQYZTY" TYPE="TITLE"></ELEMENT>
+<ELEMENT ID="CQQYZTZ" TYPE="OUTPUT"><HTML><![CDATA[</font></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="10" cellspacing="0" width="100%">
+				<tr>
+					<td width="100%" align="left" valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQQYZUA" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="CQQYZUB" TYPE="OUTPUT"><HTML><![CDATA[
+<br>
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQQYZUC" TYPE="FOOTER" TRANSPARENT="TRUE"></ELEMENT>
+<ELEMENT ID="CQQYZUD" TYPE="OUTPUT"><HTML><![CDATA[
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

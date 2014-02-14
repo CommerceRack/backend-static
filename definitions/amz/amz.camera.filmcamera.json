@@ -1,0 +1,646 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "FilmCamera",
+      "subcat" : "filmcamera",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:FilmCamera",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWQL",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "point-and-shoot",
+            "v" : "point-and-shoot"
+         },
+         {
+            "p" : "slr",
+            "v" : "slr"
+         },
+         {
+            "p" : "instant",
+            "v" : "instant"
+         },
+         {
+            "p" : "single-use",
+            "v" : "single-use"
+         },
+         {
+            "p" : "large-format",
+            "v" : "large-format"
+         },
+         {
+            "p" : "medium-format",
+            "v" : "medium-format"
+         },
+         {
+            "p" : "rangefinder",
+            "v" : "rangefinder"
+         },
+         {
+            "p" : "field",
+            "v" : "field"
+         },
+         {
+            "p" : "monorail",
+            "v" : "monorail"
+         },
+         {
+            "p" : "kids",
+            "v" : "kids"
+         },
+         {
+            "p" : "3-d",
+            "v" : "3-d"
+         },
+         {
+            "p" : "micro",
+            "v" : "micro"
+         },
+         {
+            "p" : "panorama",
+            "v" : "panorama"
+         },
+         {
+            "p" : "passport-and-id",
+            "v" : "passport-and-id"
+         },
+         {
+            "p" : "underwater",
+            "v" : "underwater"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_cameratype",
+      "title" : "Film Camera Camera Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.CameraType",
+      "list" : "LIST_CAMERA_FILMCAMERA_CAMERATYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "aps",
+            "v" : "aps"
+         },
+         {
+            "p" : "16mm",
+            "v" : "16mm"
+         },
+         {
+            "p" : "35mm",
+            "v" : "35mm"
+         },
+         {
+            "p" : "110",
+            "v" : "110"
+         },
+         {
+            "p" : "120",
+            "v" : "120"
+         },
+         {
+            "p" : "2x3",
+            "v" : "2x3"
+         },
+         {
+            "p" : "4x5",
+            "v" : "4x5"
+         },
+         {
+            "p" : "5x7",
+            "v" : "5x7"
+         },
+         {
+            "p" : "6x8",
+            "v" : "6x8"
+         },
+         {
+            "p" : "8x10",
+            "v" : "8x10"
+         },
+         {
+            "p" : "8x20",
+            "v" : "8x20"
+         },
+         {
+            "p" : "10x12",
+            "v" : "10x12"
+         },
+         {
+            "p" : "11x14",
+            "v" : "11x14"
+         },
+         {
+            "p" : "12x20",
+            "v" : "12x20"
+         },
+         {
+            "p" : "14x17",
+            "v" : "14x17"
+         },
+         {
+            "p" : "16x20",
+            "v" : "16x20"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_filmformat",
+      "title" : "Film Camera Film Format",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.FilmFormat",
+      "list" : "LIST_CAMERA_FILMCAMERA_FILMFORMAT"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "auto-focus",
+            "v" : "auto-focus"
+         },
+         {
+            "p" : "manual-focus",
+            "v" : "manual-focus"
+         },
+         {
+            "p" : "manual-and-auto-focus",
+            "v" : "manual-and-auto-focus"
+         },
+         {
+            "p" : "focus-free",
+            "v" : "focus-free"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_focustype",
+      "title" : "Film Camera Focus Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.FocusType",
+      "list" : "LIST_CAMERA_FILMCAMERA_FOCUSTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "fixed",
+            "v" : "fixed"
+         },
+         {
+            "p" : "interchangeable",
+            "v" : "interchangeable"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_lenstype",
+      "title" : "Film Camera Lens Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.LensType",
+      "list" : "LIST_CAMERA_FILMCAMERA_LENSTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_opticalzoomrange",
+      "type" : "number",
+      "title" : "OpticalZoomRange",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.OpticalZoomRange"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_filmcamera_minfocallength",
+      "type" : "number",
+      "title" : "MinFocalLength",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.MinFocalLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_filmcamera_maxfocallength",
+      "type" : "number",
+      "title" : "MaxFocalLength",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.MaxFocalLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_minaperture",
+      "type" : "textbox",
+      "title" : "Min Aperture",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.MinAperture"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_maxaperture",
+      "type" : "textbox",
+      "title" : "Max Aperture",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.MaxAperture"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_minshutterspeed",
+      "type" : "textbox",
+      "title" : "Min Shutter Speed",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.MinShutterSpeed"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_maxshutterspeed",
+      "type" : "textbox",
+      "title" : "Max Shutter Speed",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.MaxShutterSpeed"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_meteringmethods",
+      "type" : "textbox",
+      "title" : "Metering Methods",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.MeteringMethods"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_isorange",
+      "type" : "textbox",
+      "title" : "I S O Range",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.ISORange"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "automatic",
+            "v" : "automatic"
+         },
+         {
+            "p" : "forced",
+            "v" : "forced"
+         },
+         {
+            "p" : "fill",
+            "v" : "fill"
+         },
+         {
+            "p" : "none",
+            "v" : "none"
+         },
+         {
+            "p" : "flash-override",
+            "v" : "flash-override"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_flashtype",
+      "title" : "Film Camera Flash Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.FlashType",
+      "list" : "LIST_CAMERA_FILMCAMERA_FLASHTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_flashmodes",
+      "type" : "textbox",
+      "title" : "Flash Modes",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.FlashModes"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_hotshoe",
+      "type" : "checkbox",
+      "title" : "Hot Shoe",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.HotShoe"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_flashsynchronization",
+      "type" : "checkbox",
+      "title" : "Flash Synchronization",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.FlashSynchronization"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_red-eyereduction",
+      "type" : "checkbox",
+      "title" : "Red - Eye Reduction",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.Red-EyeReduction"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_diopteradjustment",
+      "type" : "checkbox",
+      "title" : "Diopter Adjustment",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.DiopterAdjustment"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "optical",
+            "v" : "optical"
+         },
+         {
+            "p" : "electronic",
+            "v" : "electronic"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_viewfinder",
+      "title" : "Film Camera Viewfinder",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.Viewfinder",
+      "list" : "LIST_CAMERA_FILMCAMERA_VIEWFINDER"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_lcd",
+      "type" : "checkbox",
+      "title" : "L C D",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.LCD"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_dateimprint",
+      "type" : "checkbox",
+      "title" : "Date Imprint",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.DateImprint"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_midrollchange",
+      "type" : "checkbox",
+      "title" : "Midroll Change",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.MidrollChange"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_midrollrewind",
+      "type" : "checkbox",
+      "title" : "Midroll Rewind",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.MidrollRewind"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_autorewind",
+      "type" : "checkbox",
+      "title" : "Auto Rewind",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.AutoRewind"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_autofilmadvance",
+      "type" : "checkbox",
+      "title" : "Auto Film Advance",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.AutoFilmAdvance"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_autofilmload",
+      "type" : "checkbox",
+      "title" : "Auto Film Load",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.AutoFilmLoad"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_selftimer",
+      "type" : "textbox",
+      "title" : "Self Timer",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.SelfTimer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_remoteincluded",
+      "type" : "checkbox",
+      "title" : "Remote Included",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.RemoteIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_continuousshooting",
+      "type" : "textbox",
+      "title" : "Continuous Shooting",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.ContinuousShooting"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_batterytype",
+      "type" : "textbox",
+      "title" : "Battery Type",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.BatteryType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_bincld",
+      "type" : "checkbox",
+      "title" : "Battery Included",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.BatteryIncluded"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "manual",
+            "v" : "manual"
+         },
+         {
+            "p" : "automatic",
+            "v" : "automatic"
+         },
+         {
+            "p" : "manual-and-automatic",
+            "v" : "manual-and-automatic"
+         },
+         {
+            "p" : "aperture-priority",
+            "v" : "aperture-priority"
+         },
+         {
+            "p" : "shutter-speed-priority",
+            "v" : "shutter-speed-priority"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_exposurecontrol",
+      "title" : "Film Camera Exposure Control",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.ExposureControl",
+      "list" : "LIST_CAMERA_FILMCAMERA_EXPOSURECONTROL"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "compact",
+            "v" : "compact"
+         },
+         {
+            "p" : "ultra-compact",
+            "v" : "ultra-compact"
+         }
+      ],
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_filmcamera_size",
+      "title" : "Film Camera Size",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.Size",
+      "list" : "LIST_CAMERA_FILMCAMERA_SIZE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "body-only",
+            "v" : "body-only"
+         },
+         {
+            "p" : "multiple-lenses",
+            "v" : "multiple-lenses"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_filmcamera_pkgtype",
+      "title" : "Film Camera Package Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.FilmCamera.PackageType",
+      "list" : "LIST_CAMERA_FILMCAMERA_PACKAGETYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

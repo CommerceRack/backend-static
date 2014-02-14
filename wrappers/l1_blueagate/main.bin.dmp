@@ -1,0 +1,850 @@
+$VAR1 = {
+          '_DIGEST' => '2BiwkoJiOvVK54qImSbHAg',
+          '_DIVS' => [],
+          '_ID' => 'l1_blueagate',
+          '_ELEMENTS' => [
+                           {
+                             'ID' => 'CQLVLCZ',
+                             'SUB' => 'LINK_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCY',
+                             'SUB' => 'DISCLAIMER_TEXT_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCX',
+                             'SUB' => 'TABLE_HEADING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCW',
+                             'SUB' => 'TABLE_HEADING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCV',
+                             'SUB' => 'DISCLAIMER_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCU',
+                             'SUB' => 'ALERT_COLOR',
+                             'LOAD' => 'THEME::ALERT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCT',
+                             'SUB' => 'CONTENT_FONT_SIZE',
+                             'LOAD' => 'THEME::CONTENT_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCS',
+                             'SUB' => 'LINK_ACTIVE_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_ACTIVE_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCR',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCQ',
+                             'SUB' => 'TABLE_HEADING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCP',
+                             'SUB' => 'PRETTY_NAME',
+                             'LOAD' => 'THEME::PRETTY_NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCO',
+                             'SUB' => 'DISCLAIMER_FONT_FACE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCN',
+                             'SUB' => 'NAME',
+                             'LOAD' => 'THEME::NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCM',
+                             'SUB' => 'CONTENT_FONT_FACE',
+                             'LOAD' => 'THEME::CONTENT_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCL',
+                             'SUB' => 'TABLE_LISTING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCK',
+                             'SUB' => 'TABLE_LISTING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCJ',
+                             'SUB' => 'TABLE_LISTING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCI',
+                             'SUB' => 'CONTENT_TEXT_COLOR',
+                             'LOAD' => 'THEME::CONTENT_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCH',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCG',
+                             'SUB' => 'CONTENT_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::CONTENT_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCF',
+                             'SUB' => 'DISCLAIMER_FONT_SIZE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCE',
+                             'SUB' => 'TABLE_HEADING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCD',
+                             'SUB' => 'LINK_VISITED_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_VISITED_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTBU',
+                             'SUB' => 'HOMECATEGORY_URL',
+                             'LOAD' => 'URL::HOMECATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTBV',
+                             'SUB' => 'WRAPPER_URL',
+                             'LOAD' => 'URL::WRAPPER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTBW',
+                             'SUB' => 'CART_URL',
+                             'LOAD' => 'URL::CART_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTBX',
+                             'SUB' => 'SUBSCRIBE_URL',
+                             'LOAD' => 'URL::SUBSCRIBE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTBY',
+                             'SUB' => 'FEEDBACK_URL',
+                             'LOAD' => 'URL::FEEDBACK_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTBZ',
+                             'SUB' => 'LOGOUT_FUNCTION_URL',
+                             'LOAD' => 'URL::LOGOUT_FUNCTION_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCA',
+                             'SUB' => 'SHIPQUOTE_URL',
+                             'LOAD' => 'URL::SHIPQUOTE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCB',
+                             'SUB' => 'PRIVACY_URL',
+                             'LOAD' => 'URL::PRIVACY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCC',
+                             'SUB' => 'SITEBUTTON_URL',
+                             'LOAD' => 'URL::SITEBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCD',
+                             'SUB' => 'HOMEPAGE_URL',
+                             'LOAD' => 'URL::HOMEPAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCE',
+                             'SUB' => 'COUNTER_URL',
+                             'LOAD' => 'URL::COUNTER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCF',
+                             'SUB' => 'RETURNS_URL',
+                             'LOAD' => 'URL::RETURNS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCG',
+                             'SUB' => 'PASSWORD_URL',
+                             'LOAD' => 'URL::PASSWORD_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCH',
+                             'SUB' => 'UPDATE_PAYMENT_URL',
+                             'LOAD' => 'URL::UPDATE_PAYMENT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCI',
+                             'SUB' => 'FORGOT_URL',
+                             'LOAD' => 'URL::FORGOT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCJ',
+                             'SUB' => 'NAVBUTTON_URL',
+                             'LOAD' => 'URL::NAVBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCK',
+                             'SUB' => 'CONTACT_URL',
+                             'LOAD' => 'URL::CONTACT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCL',
+                             'SUB' => 'LOGOUT_URL',
+                             'LOAD' => 'URL::LOGOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCM',
+                             'SUB' => 'GALLERY_URL',
+                             'LOAD' => 'URL::GALLERY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCN',
+                             'SUB' => 'REMOVE_URL',
+                             'LOAD' => 'URL::REMOVE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCO',
+                             'SUB' => 'HOME_URL',
+                             'LOAD' => 'URL::HOME_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCP',
+                             'SUB' => 'ABOUT_ZOOVY_URL',
+                             'LOAD' => 'URL::ABOUT_ZOOVY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCQ',
+                             'SUB' => 'NEWS_URL',
+                             'LOAD' => 'URL::NEWS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCR',
+                             'SUB' => 'SECURE_URL',
+                             'LOAD' => 'URL::SECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCS',
+                             'SUB' => 'ABOUT_URL',
+                             'LOAD' => 'URL::ABOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCT',
+                             'SUB' => 'USERBUTTON_URL',
+                             'LOAD' => 'URL::USERBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCU',
+                             'SUB' => 'CLOSED_URL',
+                             'LOAD' => 'URL::CLOSED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCV',
+                             'SUB' => 'FASTORDER_URL',
+                             'LOAD' => 'URL::FASTORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCW',
+                             'SUB' => 'MAIL_FORM_URL',
+                             'LOAD' => 'URL::MAIL_FORM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCX',
+                             'SUB' => 'GRAPHICS_URL',
+                             'LOAD' => 'URL::GRAPHICS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCY',
+                             'SUB' => 'IMAGE_URL',
+                             'LOAD' => 'URL::IMAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTCZ',
+                             'SUB' => 'CONTACTUS_URL',
+                             'LOAD' => 'URL::CONTACTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDA',
+                             'SUB' => 'DYNAMIC_URL',
+                             'LOAD' => 'URL::DYNAMIC_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDB',
+                             'SUB' => 'NONSECURE_URL',
+                             'LOAD' => 'URL::NONSECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDC',
+                             'SUB' => 'CONTACT_US_URL',
+                             'LOAD' => 'URL::CONTACT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDD',
+                             'SUB' => 'SEARCH_URL',
+                             'LOAD' => 'URL::SEARCH_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDE',
+                             'SUB' => 'ABOUTUS_URL',
+                             'LOAD' => 'URL::ABOUTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDF',
+                             'SUB' => 'CUSTOMER_MAIN_URL',
+                             'LOAD' => 'URL::CUSTOMER_MAIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDG',
+                             'SUB' => 'MERCHANT_LOGIN_URL',
+                             'LOAD' => 'URL::MERCHANT_LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDH',
+                             'SUB' => 'CATEGORY_URL',
+                             'LOAD' => 'URL::CATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDI',
+                             'SUB' => 'ADULT_URL',
+                             'LOAD' => 'URL::ADULT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDJ',
+                             'SUB' => 'CLAIM_URL',
+                             'LOAD' => 'URL::CLAIM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDK',
+                             'SUB' => 'CLAIM_MULTI_URL',
+                             'LOAD' => 'URL::CLAIM_MULTI_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDL',
+                             'SUB' => 'ABOUT_US_URL',
+                             'LOAD' => 'URL::ABOUT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDM',
+                             'SUB' => 'RESULTS_URL',
+                             'LOAD' => 'URL::RESULTS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDN',
+                             'SUB' => 'PRODUCT_URL',
+                             'LOAD' => 'URL::PRODUCT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDO',
+                             'SUB' => 'CONTINUE_URL',
+                             'LOAD' => 'URL::CONTINUE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDP',
+                             'SUB' => 'REDIR_URL',
+                             'LOAD' => 'URL::REDIR_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDQ',
+                             'SUB' => 'KILL_COOKIES_URL',
+                             'LOAD' => 'URL::KILL_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDR',
+                             'SUB' => 'LOGIN_URL',
+                             'LOAD' => 'URL::LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDS',
+                             'SUB' => 'CHECKOUT_URL',
+                             'LOAD' => 'URL::CHECKOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDT',
+                             'SUB' => 'ORDER_STATUS_URL',
+                             'LOAD' => 'URL::ORDER_STATUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDU',
+                             'SUB' => 'NO_COOKIES_URL',
+                             'LOAD' => 'URL::NO_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDV',
+                             'SUB' => 'PAYPAL_URL',
+                             'LOAD' => 'URL::PAYPAL_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDW',
+                             'SUB' => 'CANCEL_ORDER_URL',
+                             'LOAD' => 'URL::CANCEL_ORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDX',
+                             'SUB' => 'WISHLIST_URL',
+                             'LOAD' => 'URL::WISHLIST_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDY',
+                             'SUB' => 'MAIL_CONFIG_URL',
+                             'LOAD' => 'URL::MAIL_CONFIG_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTDZ',
+                             'SUB' => 'DISABLED_URL',
+                             'LOAD' => 'URL::DISABLED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQQYTEA',
+                             'COLORS' => 128,
+                             'CSS' => '.zbody { background-color: #FFFFFF; }
+.zborder { border: 1px solid #CCCCCC; }
+.zbox { border: 1px solid #5E93BF; }
+.zbox_body { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.zbox_head { background-color: #5E93BF; color: #FFFFF9; font-family: Arial, Helvetica; font-size: 11pt; }
+.zcolor { background-color: #5e93bf; color: #fffff9; }
+.zcolor_contrast { background-color: #dd133f; color: #1010f9; }
+.zcolor_dark { background-color: #1e537f; color: #bfbfb9; }
+.zcolor_light { background-color: #9ed3ff; color: #ffffff; }
+.zform_button { border: 1px solid #1e537f; background-color: #9ed3ff; color: #1e537f; font-size: 8pt; font-family: Arial, Helvetica; }
+.zform_select { border: 1px solid #1e537f; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zform_textarea { border: 1px solid #1e537f; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zform_textbox { border: 1px solid #1e537f; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zhint { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.zlink { color: #0000CC; }
+.zsmall { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztab0 { background-color: #ffffff; color: #404040; font-family: Arial, Helvetica; font-size: 9pt; }
+.ztab1 { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 9pt; font-weight: bold;}
+.ztabbody { background-color: #5E93BF; color: #FFFFF9; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztable_head { background-color: #5E93BF; color: #FFFFF9; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztable_row { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztable_row0 { background-color: #FFFFFF; font-size: 11pt; }
+.ztable_row1 { background-color: #DDDAE9; font-size: 11pt; }
+.ztable_row_small { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztable_row_title { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztitle { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 12pt; }
+.ztitle2 { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztxt { color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.zwarn { color: #FF0000; font-weight: bold; }',
+                             '%CSSVARS' => {
+                                             'zbox_body.color' => '#000000',
+                                             'zbox_head.color' => '#FFFFF9',
+                                             'zform_button.border.color' => '#1e537f',
+                                             'zsmall.color' => '#000000',
+                                             'ztable_head.font_size' => '11pt',
+                                             'zbox.border' => '1px solid #5E93BF',
+                                             'zcolor_light.bgcolor' => '#9ed3ff',
+                                             'ztable_row_title.color' => '#000000',
+                                             'ztab1.font_size' => '9pt',
+                                             'zcolor_contrast.color' => '#1010f9',
+                                             'ztab1.font_weight' => 'bold',
+                                             'ztable_row1.bgcolor' => '#DDDAE9',
+                                             'zbox.border.color' => '#5E93BF',
+                                             'ztab0.bgcolor' => '#ffffff',
+                                             'zcolor_light.color' => '#ffffff',
+                                             'zform_button.color' => '#1e537f',
+                                             'zcolor.bgcolor' => '#5e93bf',
+                                             'zcolor_dark.color' => '#bfbfb9',
+                                             'ztabbody.font_size' => '8pt',
+                                             'ztitle2.font_size' => '11pt',
+                                             'zsmall.font_size' => '8pt',
+                                             'ztab0.color' => '#404040',
+                                             'ztxt.color' => '#000000',
+                                             'zform_button.bgcolor' => '#9ed3ff',
+                                             'ztitle2.color' => '#000000',
+                                             'zhint.font_size' => '8pt',
+                                             'zbody.bgcolor' => '#FFFFFF',
+                                             'zbox_head.bgcolor' => '#5E93BF',
+                                             'zcolor_dark.bgcolor' => '#1e537f',
+                                             'ztab1.color' => '#000000',
+                                             'ztable_head.bgcolor' => '#5E93BF',
+                                             'ztabbody.color' => '#FFFFF9',
+                                             'zbox_body.bgcolor' => '#FFFFFF',
+                                             'zform_button.font_size' => '8pt',
+                                             'ztitle.color' => '#000000',
+                                             'ztable_row_small.color' => '#000000',
+                                             'zlink.color' => '#0000CC',
+                                             'ztitle.font_size' => '12pt',
+                                             'ztable_row0.bgcolor' => '#FFFFFF',
+                                             'ztable_row.font_size' => '11pt',
+                                             'ztable_head.color' => '#FFFFF9',
+                                             'ztable_row.color' => '#000000',
+                                             'ztable_row1.font_size' => '11pt',
+                                             'ztable_row.bgcolor' => '#FFFFFF',
+                                             'ztable_row0.font_size' => '11pt',
+                                             'zwarn.font_weight' => 'bold',
+                                             'ztabbody.bgcolor' => '#5E93BF',
+                                             'ztable_row_small.font_size' => '8pt',
+                                             'zborder.border.color' => '#CCCCCC',
+                                             'zbox_head.font_size' => '11pt',
+                                             'ztab0.font_size' => '9pt',
+                                             'zbox_body.font_size' => '11pt',
+                                             'ztitle.font_weight' => 'bold',
+                                             'zcolor.color' => '#fffff9',
+                                             'zborder.border' => '1px solid #CCCCCC',
+                                             'ztab1.bgcolor' => '#FFFFFF',
+                                             'ztxt.font_size' => '11pt',
+                                             'ztable_row_title.font_size' => '11pt',
+                                             'zcolor_contrast.bgcolor' => '#dd133f',
+                                             'ztitle2.font_weight' => 'bold',
+                                             'zhint.color' => '#000000',
+                                             'zform_button.border' => '1px solid #1e537f',
+                                             'zwarn.color' => '#FF0000',
+                                             'ztable_row_title.font_weight' => 'bold',
+                                             'ztxt.font_family' => 'Arial, Helvetica'
+                                           },
+                             'TYPE' => 'CONFIG',
+                             'CATEGORIES' => 8208,
+                             'THEME' => 'alert_color=FF0000&content_background_color=FFFFFF&content_font_face=Arial%2c+Helvetica&content_font_size=3&content_text_color=000000&disclaimer_background_color=FFFFFF&disclaimer_font_face=Arial%2c+Helvetica&disclaimer_font_size=1&disclaimer_text_color=000000&link_active_text_color=0000CC&link_text_color=0000CC&link_visited_text_color=0000CC&name=&pretty_name=&table_heading_background_color=5E93BF&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_heading_text_color=FFFFF9&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=DDDAE9&table_listing_font_face=Arial%2c+Helvetica&table_listing_font_size=3&table_listing_text_color=000000',
+                             'CREATED' => 20020328,
+                             'TITLE' => 'Blue Agate',
+                             'THEME_OLD' => 'disclaimer_text_color=999999&content_font_face=Arial%2c+Helvetica&table_listing_background_color_alternate=DDDAE9&table_heading_text_color=FFFFF9&pretty_name=Blue+Agate&link_visited_text_color=000000&content_background_color=FFFFFF&table_heading_background_color=5E93BF&link_text_color=0000CC&link_active_text_color=000033&table_listing_font_face=Arial%2c+Helvetica&content_text_color=000000&content_font_size=3&disclaimer_font_face=Arial%2c+Helvetica&name=blueagate&table_listing_background_color=FFFFFF&disclaimer_background_color=000033&alert_color=FF0000&disclaimer_font_size=1&table_listing_text_color=000000&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_listing_font_size=3',
+                             'PROPERTIES' => '0',
+                             'SITEBUTTONS' => 'forward=l1_blueagate|gif|113|30&back=l1_blueagate|gif|113|30&default=l1_blueagate|gif|57|30&add_to_site=l1_blueagate|gif|122|32&continue_shopping=l1_blueagate|gif|113|30&cancel=l1_blueagate|gif|113|30',
+                             'NARROW' => 'TRUE'
+                           },
+                           {
+                             'ID' => 'CQQYTEB',
+                             'HTML' => '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQQYTEC',
+                             'TYPE' => 'HEAD'
+                           },
+                           {
+                             'ID' => 'CQQYTED',
+                             'HTML' => '
+<map name="menu">
+	<area href="%ABOUT_URL%" shape="rect" coords="38,31,100,58" alt="About Us">
+	<area href="%SEARCH_URL%" shape="rect" coords="120,32,182,59" alt="Search">
+	<area href="%CONTACT_URL%" shape="rect" coords="198,29,260,56" alt="Contact Us">
+	<area href="%CART_URL%" shape="rect" coords="72,75,226,110" alt="Shopping Cart">
+</map>
+</head> 
+<body bgcolor="#FFFFFF" text="#%CONTENT_TEXT_COLOR%" link="#%LINK_TEXT_COLOR%" alink="#%LINK_ACTIVE_TEXT_COLOR%" vlink="#%LINK_VISITED_TEXT_COLOR%">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="%WRAPPER_URL%/top.jpg">
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="">
+				<tr>
+					<td width="320" height="10"><img src="%GRAPHICS_URL%/blank.gif" width="320" height="10"></td>
+					<td width="300" height="140" align="center" valign="middle" rowspan="4"><img src="%WRAPPER_URL%/menu.gif" width="300" height="140" usemap="#menu" border="0"></td>
+				</tr>
+				<tr>
+					<td width="300" height="88" align="center" valign="middle"><a href="%HOME_URL%">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'HEIGHT' => 88,
+                             'ID' => 'CQQYTEE',
+                             'WIDTH' => 300,
+                             'TYPE' => 'LOGO'
+                           },
+                           {
+                             'ID' => 'CQQYTEF',
+                             'HTML' => '</a></td>
+				</tr>
+				<tr>
+					<td width="320" height="32" align="left" valign="bottom">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="20"><img src="%GRAPHICS_URL%/blank.gif" width="20" height="1"></td>
+								<td width="300" align="left" valign="middle">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQQYTEG',
+                             'HTML' => '
+<!-- CATEGORY -->
+<a href="<% load($cat_url);  default("");  print(); %>"><img src="<% load($button_imgsrc);  default("");  print(); %>" width="<% load($button_width);  default("");  print(); %>" height="<% load($button_height);  default("");  print(); %>" border="0"></a>&nbsp;
+
+<!-- /CATEGORY -->
+
+',
+                             'BUTTONTYPE' => 'l1_blueagate_bc',
+                             'TYPE' => 'BREADCRUMB',
+                             'STYLE' => 'LEGACYBREADCRUMB'
+                           },
+                           {
+                             'ID' => 'CQQYTEH',
+                             'HTML' => '<img src="%GRAPHICS_URL%/blank.gif" width="2" height="1"></td>
+							</tr>
+						</table>
+					</td>
+				</tr> 
+				<tr>
+					<td width="320" height="10"><img src="%GRAPHICS_URL%/blank.gif" width="320" height="1"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table> 		
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620">
+	<tr>
+		<td width="20" valign="top" background="%WRAPPER_URL%/border1.jpg"><img src="%GRAPHICS_URL%/blank.gif" width="16" height="200"></td>
+		<td width="580" bgcolor="#FFFFFF" valign="top">
+			<table width="580" cellpadding="3" cellspacing="3" border="0" bgcolor="#FFFFFF">
+				<tr>
+					<td align="left" valign="middle" bgcolor="#516AA2">
+						<font color="#FFFFF9" face="Arial, Helvetica"  size="4">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQQYTEI',
+                             'TYPE' => 'TITLE'
+                           },
+                           {
+                             'ID' => 'CQQYTEJ',
+                             'HTML' => '</font>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" bgcolor="#FFFFFF">
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQQYTEK',
+                             'HTML' => '<div align="center">Categories:<% load("
+");  default("");  print(); %>
+<!-- CATEGORY -->
+<a href="<% load($cat_url);  default("");  print(); %>" target="<% load($TARGET);  default("");  print(); %>"><% load($cat_pretty);  default("");  print(); %></a><% load("
+");  default("");  print(); %>
+
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); runspec("|&lt;% load("
+");  default(&quot;&quot;);  print(); %&gt;"); print(); %>
+
+<!-- /CATEGORY -->
+</div>
+',
+                             'NOHOME' => 1,
+                             'ONLYHOME' => 1,
+                             'TYPE' => 'MENU'
+                           },
+                           {
+                             'ID' => 'CQQYTEL',
+                             'TYPE' => 'BODY'
+                           },
+                           {
+                             'ID' => 'CQQYTEM',
+                             'HTML' => '
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="20" valign="top" background="%WRAPPER_URL%/border2.jpg"><img src="%GRAPHICS_URL%/blank.gif" width="16" height="200"></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="80" background="%WRAPPER_URL%/bottom.jpg">
+	<tr>
+		<td width="620" height="80" align="center" valign="middle">
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQQYTEN',
+                             'TYPE' => 'FOOTER'
+                           },
+                           {
+                             'ID' => 'CQQYTEO',
+                             'HTML' => '
+		</td>
+	</tr>
+</table>
+</center>
+</div>
+</body>
+</html>
+
+',
+                             'TYPE' => 'OUTPUT'
+                           }
+                         ],
+          '_FORMAT' => 'WRAPPER',
+          '_LISTS' => [],
+          '_CONFIG' => $VAR1->{'_ELEMENTS'}[81],
+          '_V' => 2,
+          '_SYSTEM' => 1
+        };

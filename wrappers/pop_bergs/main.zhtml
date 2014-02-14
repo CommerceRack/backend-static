@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=bergs
+SITEBUTTONS=l2_bluebergs
+-->
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+.title	{font-family: arial; font-size: 14px; color: #FFFFFF;font-weight:bold;}
+</style>
+</head>
+
+<body>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td width=203><img src="<!-- WRAPPER_URL -->/left.jpg" width="203" height="68" alt="" border="0"></td>
+		<td><!-- LOGO
+WIDTH=190
+HEIGHT=64
+BGCOLOR=FFFFFF
+--></td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+<tr>
+	<td width=22><img src="<!-- WRAPPER_URL -->/corner.gif" width="22" height="22" alt="" border="0"></td>
+	<td background="<!-- WRAPPER_URL -->/title_bg.gif"><span class="title"><!-- TITLE --></span>&nbsp;</td>
+</tr>
+</table>
+<table cellspacing=0 cellpadding=4 border=0 width=100%><tr><td><!-- BODY -->
+<img src="http://www.zoovy.com/images/blank.gif" width="300" height="1"></td></tr></table>
+
+</body>
+</html>

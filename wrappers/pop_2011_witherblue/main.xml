@@ -1,0 +1,216 @@
+<TEMPLATE ID="pop_2011_witherblue" FORMAT="WRAPPER">
+
+
+<!-- ******* -->
+<ELEMENT FORMAT="WRAPPER" ID="CONFIGELEMENT" TYPE="CONFIG" EXPORT="0" TITLE="Popup Theme: Wither Blue" CREATED="20110405" RELEASED="20110405" SUBTYPE="P"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+.zborder { border: 1px solid #cccccc; }
+.zbox { border: 1px solid #5f8aa8; }
+.zbox_body { background-color: #ffffff; color: #333333; font-family: Arial, Helvetica, sans-serif;; font-size: 11px; }
+.zbox_head { background-color: #5f8aa8; color: #ffffff; font-family: Arial, Helvetica, sans-serif;; font-size: 12px; }
+.zcolor { background-color: #5f8aa8; color: #ffffff; }
+.zcolor_contrast { background-color: #cccccc; color: #333333; }
+.zcolor_dark { background-color: #333333; color: #ffffff; }
+.zcolor_light { background-color: #ffffff; color: #333333; }
+.zform_button { border:1px solid #ffffff; font-size:12px; color:#ffffff; background:#5e89a8; font-family:Arial, Helvetica, sans-serif;}
+.zform_select { border: 1px solid #5e89a8; background-color: #FFFFFF; color: #333333; font-size: 11px; font-family: Arial, Helvetica, sans-serif;; }
+.zform_textarea { border: 1px solid #5e89a8; background-color: #FFFFFF; color: #333333; font-size: 11px; font-family: Arial, Helvetica, sans-serif;; }
+.zform_textbox { border: 1px solid #5e89a8; background-color: #FFFFFF; color: #333333; font-size: 11px; font-family: Arial, Helvetica, sans-serif;; }
+.zhint { color: #666666; font-family: Arial, Helvetica, sans-serif;; font-size: 10px; }
+.zlink { color: #206fb2; }
+.zsmall { color: #515151; font-family: Arial, Helvetica, sans-serif;; font-size: 10px; }
+.ztab0 { background-color: #ecf4f9; color: #206fb2; font-family: Arial, Helvetica, sans-serif;; font-size: 11px; }
+.ztab1 { background-color: #ffffff; color: #333333; font-family: Arial, Helvetica, sans-serif;; font-size: 11px; font-weight: bold;}
+.ztabbody { background-color: #ffffff; color: #333333; font-family: Arial, Helvetica, sans-serif;; font-size: 11px; }
+.ztable_head { background-color: #a0b3c1; color: #ffffff; font-family: Arial, Helvetica, sans-serif;; font-size: 13px; }
+.ztable_row {color: #666666; font-family: Arial, Helvetica, sans-serif;; font-size: 12px; }
+.ztable_row0 { background-color: #FFFFFF; color: #333333; font-family: Arial, Helvetica, sans-serif;; font-size: 12px;}
+.ztable_row1 { background-color: #f9f9f9; color: #333333; font-family: Arial, Helvetica, sans-serif;; font-size: 12px;}
+.ztable_row_small { color: #666666; font-family: Arial, Helvetica, sans-serif;; font-size: 10px; }
+.ztable_row_title { font-weight: bold; color: #333333; font-family: Arial, Helvetica, sans-serif;; font-size: 14px; }
+.ztitle { font-weight: bold; color: #000000; font-family: Arial, Helvetica, sans-serif;; font-size: 15px; }
+.ztitle2 { font-weight: bold; color: #333333; font-family: Arial, Helvetica, sans-serif;; font-size: 14px; }
+.ztxt { color: #333333; font-family: Arial, Helvetica, sans-serif;; font-size: 12px; }
+.zwarn { color: #CC0000; font-weight: bold; }]]></CSS>
+<THEME><![CDATA[alert_color=CC0000&content_background_color=ffffff&content_font_face=Arial%2c+Helvetica%2c+sans%2dserif&content_font_size=1&content_text_color=333333&disclaimer_background_color=ffffff&disclaimer_font_face=Arial%2c+Helvetica%2c+sans%2dserif&disclaimer_font_size=1&disclaimer_text_color=515151&link_active_text_color=206fb2&link_text_color=206fb2&link_visited_text_color=206fb2&name=&pretty_name=&table_heading_background_color=a0b3c1&table_heading_font_face=Arial%2c+Helvetica%2c+sans%2dserif&table_heading_font_size=1&table_heading_text_color=ffffff&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=f9f9f9&table_listing_font_face=Arial%2c+Helvetica%2c+sans%2dserif&table_listing_font_size=1&table_listing_text_color=666666]]></THEME>
+<SITEBUTTONS><![CDATA[forward=2011_witherblue|png|111|45&add_to_cart=2011_witherblue|png|144|45&back=2011_witherblue|png|111|45&default=2011_witherblue|png|127|33&checkout=2011_witherblue|png|144|45]]></SITEBUTTONS>
+</ELEMENT>
+<ELEMENT ID="WRAP_WRAPPER_URL" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_FILES_URL" SUB="FILES_URL" TYPE="READONLY" LOAD="URL::FILES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_GRAPHICS_URL" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_IMAGE_URL" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_NONSECURE_URL" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CART_URL" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_PRIVACY_URL" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_RETURNS_URL" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_PASSWORD_URL" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CONTACT_URL" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_HOME_URL" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_ABOUT_URL" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_SEARCH_URL" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CATEGORY_URL" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_PRODUCT_URL" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_RESULTS_URL" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CONTINUE_URL" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CHECKOUT_URL" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WRAP_CUSTOMER_URL" SUB="CUSTOMER_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAC" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="WIKI_TITLE1_OPEN" SUB="title1" TYPE="HIDDEN"><DEFAULT><![CDATA[<h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE1_CLOSED" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[</h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE2_OPEN" SUB="title2" TYPE="HIDDEN"><DEFAULT><![CDATA[<h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE2_CLOSED" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE3_OPEN" SUB="title3" TYPE="HIDDEN"><DEFAULT><![CDATA[<span style="font-weight:bold;">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKI_TITLE3_CLOSED" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</span>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILIST" SUB="list" TYPE="HIDDEN"><DEFAULT><![CDATA[<ul class="wiki_list">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLIST" SUB="/list" TYPE="HIDDEN"><DEFAULT><![CDATA[</ul>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILISTITEM" SUB="listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[<li class="wiki_listitem">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLISTITEM" SUB="/listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[</li>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKISECTION" SUB="section" TYPE="HIDDEN"><DEFAULT><![CDATA[<div class="wiki_section">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDSECTION" SUB="/section" TYPE="HIDDEN"><DEFAULT><![CDATA[</div>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIHARDBREAK" SUB="hardbreak" TYPE="SPECL"><HTML><![CDATA[<div style='border-top:<% loadurp("CSS::zborder.border"); print(); %>; margin:5px 0px;'></div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKISOFTBREAK" SUB="softbreak" TYPE="SPECL"><HTML><![CDATA[<br />]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKITABLE" SUB="table" TYPE="HIDDEN"><DEFAULT><![CDATA[<table cellspacing="0" class="zborder">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLE" SUB="/table" TYPE="HIDDEN"><DEFAULT><![CDATA[</table>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEROW" SUB="tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[<tr class="ztablerow">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEROW" SUB="/tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[</tr>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLECELL" SUB="tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_row">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLECELL" SUB="/tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[</td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEHEAD" SUB="tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_head"><b>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_LOGO" HEIGHT="50" MINIMAL_MODE="0" WIDTH="200" SUB="WRAP_LOGO" BGCOLOR="TTTTTT" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTFILTER="!FS=C,P" OUTPUTSKIP="1"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
+<POSTTEXT><![CDATA[</h1>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="STORE_PHONE" SUB="WRAP_PHONE" TYPE="READONLY" LOAD="profile:zoovy:support_phone" RAW="1"><PRETEXT><![CDATA[<div class='phonePrompt'>Questions? Call</div><div class='phoneNumber'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="STORE_HOURS" PROMPT="Store Hours" SUB="WRAP_STORE_HOURS" FONT="0" TYPE="TEXTBOX" DATA="profile:zoovy:store_hours"><PRETEXT><![CDATA[<div id='mhStoreHours'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_CUSTOM_FOOTER" SUB="WRAP_FOOTER" TYPE="FOOTER"><HTML><![CDATA[
+	<div>Copyright &copy; <% load($year);  print(); %>.  All Rights Reserved.</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DOCTYPE" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="THEHEAD" TYPE="HEAD" HEADSKIP="1"></ELEMENT>
+<ELEMENT ID="MASTHEAD" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+
+<link rel="stylesheet" type="text/css" href="%WRAPPER_URL%/wb_styles-20110405.css" />
+
+</head>
+
+<body>
+
+<!-- left and right shadow. -->
+	
+<table cellspacing='0' cellpadding='0' width='90%' align='center' style='height:100%' height='100%'>
+<tr>
+	<td class='bodyShadowLeft'><img src='%GRAPHICS_URL%/blank.gif' width='23' height='1' alt='' /></td>
+	<td valign='top' class='ztxt'>
+<div id='mastHead'>
+
+	<div class='floatLeft' id='mhLogo'>%WRAP_LOGO%</div>
+	
+	<div id='mhContact' class='floatRight'>
+		%WRAP_PHONE%
+		%WRAP_STORE_HOURS%
+	</div>
+	
+	
+	<div class='clearAll'></div>
+</div>
+
+<div id='topCats'></div>
+<!-- shadow -->
+<div class='spritebg dropShadow'></div>
+
+
+%WRAP_TITLE%
+
+
+
+<div class='bodyContent'>
+
+
+
+<!--
+########################### BEGIN BODY 
+-->
+
+
+
+
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="THEBODY" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="CLOSE_BODY_CONTENT_DIV" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+<!--
+########################### END BODY 
+-->
+
+
+</div><!-- /bodyContent -->
+
+
+<div id='mfLinks'></div>
+<!-- shadow -->
+<div class='spritebg dropShadow'></div>
+
+
+<div id='zFooter' class='center'>%WRAP_FOOTER%</div>
+
+	</td>
+	<td class='bodyShadowRight'><img src='%GRAPHICS_URL%/blank.gif' width='23' height='1' alt='' /></td>
+</tr>
+</table>
+
+
+
+</body>
+</html>
+
+
+
+]]></DEFAULT>
+</ELEMENT>
+
+</TEMPLATE>

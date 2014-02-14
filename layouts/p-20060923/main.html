@@ -1,0 +1,107 @@
+<ELEMENT ID="CPXKZXR" SUB="ZBOX_BORDER" TYPE="READONLY" LOAD="CSS::zbox.border" RAW="1"></ELEMENT>
+<ELEMENT ID="VAR_SKU" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD" RAW="1"></ELEMENT>
+
+<ELEMENT FORMAT="PLAINPRICE" ID="PRICE" SUB="PRICE" TYPE="READONLY" HIDEZERO="1" ERROR="" LOAD="product:zoovy:base_price" PRETEXT="$" RAW="1"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="225" SUB="IMAGE1" WIDTH="225" PROMPT="Main image" TYPE="IMAGE" ZOOM="1" DATA="product:zoovy:prod_image1"></ELEMENT>
+
+<script type="text/javascript" language="javascript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+	}
+
+function openWindow(url) {
+	adviceWin = window.open(url,'advice','status=no,width=420,height=400,menubar=no,scrollbars=yes');
+	adviceWin.focus(true);
+	}
+//-->
+</script>
+
+
+<div align="center">
+<div style="margin:5px; width:590px; text-align:left;">
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+	<td valign="top" width="10%" class="zcolor" style="padding:7px;"><div style="background-color:#ffffff; border:1px solid #000000; padding:4px;">Image1</div></td>
+	<td valign="top" width="90%" style="padding:7px 0px 7px 0px;" class="ztxt">
+	<div style="width:auto;" class="zcolor">
+		<div style="float:left;" class="zcolor">sku: <b>%SKU%</b></div>
+		<div style="float:right;" class="ztitle zcolor">%PRICE%</div>
+	
+		<div style="width:auto; padding:4px;" id="prodDescElement">
+<ELEMENT TYPE="TEXT" DATA="product:zoovy:prod_desc" ID="PROD_DESC" PROMPT="Product Description" HELP="Your product description should contain a brief, yet colorful, description of the product.  Run this text through a spell checker because typo's and grammatical errors will not help your credibility.  You should not type in all uppercase, as it looks unprofessional and is hard to read.  In most cases, if a product description is present in a list (such as on a category, search results or homepage) the first 100-200 characters from this description will be used.">
+</ELEMENT>
+		
+<!-- put the add to cart button here IF no options are present -->
+		
+		</div>
+	
+	</div></td>
+</tr>
+</table>
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+	<td valign="top" width="90%">
+<ELEMENT TYPE="SPECL">
+<HTML><![CDATA[
+<%
+loadurp("product:zoovy:prod_details");
+set($prod_details=>$_);
+stop(unless=>$_);
+	print("<div class='zcolor' style='padding:7px;'>");
+	loadurp("CSS::zcolor.bgcolor");
+	set($zcolor_bgcolor=>$_);
+	set($image_loc=>"stock/layouts/p20060923/head_specs");
+	image(src=>$image_loc,library=>"proshop",h=>"22",w=>"107",bg=>$zcolor_bgcolor,tag=>"1");
+	print();
+	print("<div style='padding:4px;' class='zbody ztxt' id='prodDetailElement'>");
+	print($prod_details);
+	print("</div>
+	</div>");
+%>
+]]></HTML>
+</ELEMENT>
+	
+	</td>
+	<td valign="top" width="10%">
+
+<div class="zcolor_light" style="padding-left:3px;">
+	<div class="ztitle zcolor_light">Similar Items</div>
+
+<ELEMENT SIZE="5000" ID="LIST_RELATED" FORMAT="CUSTOM" PROMPT="Product List - Related Items" TYPE="PRODLIST" ALTERNATE="3" DISABLEPRODUCTS="1" DATA="product:zoovy:prod_prodlist_style" COLS="1"><HTML><![CDATA[<!-- begin product list 3 -->
+<table cellspacing="2" cellpadding="0" width="100%">
+<!-- PRODUCT -->
+<tr>
+	<td valign="top" width="1%"><a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"45",h=>"45",tag=>"1", bgcolor=>"ffffff",alt=>$zoovy:prod_name); print(); %></a></td>
+	<td class="ztable_row_small" >
+<a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_name); strip(length=>"40",breaks=>"1",html=>"1"); print(); %></a><br />
+<% load($zoovy:base_price); format(hidezero); format(money); format(pretext=>"only "); print(); %>
+	</td>
+</tr>
+<tr>
+	<td colspan="2"><hr class="ruler" noshade="noshade" size="1" style="padding:0px; margin:0px;" /></td>
+</tr>
+<!-- /PRODUCT -->
+</table>
+<!-- end product list 3 -->
+]]></HTML>
+</ELEMENT>
+
+	 </div>
+	 </td>
+</tr>
+</table>
+</div>
+</div>	
+	
+	</td>
+</tr>
+</table>
+
+</div>
+</div>

@@ -1,0 +1,153 @@
+[
+   {
+      "catalog" : "MUSICINST",
+		"amz-catalog" : "MusicalInstruments",
+      "amz-subcat" : "PercussionInstruments",
+      "subcat" : "percussioninstruments",
+      "type" : "config",
+		"variation-themes" : "Color"
+   },
+   {
+      "PROMPT" : "MusicalInstruments:PercussionInstruments",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYTQ",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_percninmts_addlspecs",
+      "type" : "textbox",
+      "title" : "Additional Specifications",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.AdditionalSpecifications"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_percninmts_clrspec",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_clrmap",
+      "type" : "textbox",
+      "title" : "Color Map",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.ColorSpecification"
+   },   
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_percninmts_ctryprdin",
+      "type" : "textbox",
+      "title" : "Country Produced In",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.CountryProducedIn"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_percninmts_drumsetpieceqty",
+      "type" : "number",
+      "title" : "DrumSetPieceQty",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.DrumSetPieceQty"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_mus_percninmts_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_percninmts_matltype",
+      "type" : "textbox",
+      "title" : "Material Type",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.MaterialType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_percninmts_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_percninmts_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_percninmts_mdlyear",
+      "type" : "textbox",
+      "title" : "Model Year",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.ModelYear"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_percninmts_musicalstyle",
+      "type" : "textbox",
+      "title" : "Musical Style",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.MusicalStyle"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_percninmts_nbrofkeybrdkeys",
+      "type" : "number",
+      "title" : "NumberOfKeybrdKeys",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.NumberOfKeyboardKeys"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_mus_percninmts_percndiameter",
+      "type" : "textbox",
+      "title" : "Percussion Diameter",
+      "xmlpath" : "MusicalInstruments.ProductType.PercussionInstruments.PercussionDiameter"
+   }
+]

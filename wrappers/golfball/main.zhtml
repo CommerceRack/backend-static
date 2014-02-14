@@ -1,0 +1,231 @@
+<!-- CONFIG
+sitebuttons=golfball
+theme=l2_greenangles
+--><html>
+<head>
+
+<!-- HEAD -->
+<style type="text/css">
+body	{margin: 0px; background-color: #999999; font-family: Arial, Helvetica, sans-serif; color: #000000;}
+h1		{margin: 0px; font-size: 11pt; color: #4DB55E;}
+a	{color: #339933;}
+a:hover	{color: #6666ff; text-decoration: underline;}
+.small    {font-size: 11px; color: #666666;} 
+.cats	{font-size: 10pt; text-decoration: none; font-weight: bold;}
+.minicart	{font-size: 8pt;}
+.menu	{color: #ffffff; text-decoration: none;}
+.light	{background-color: #CCCCCC;}
+.medium	{background-color: #CCCCCC;}
+.dark	{background-color: #339900;}
+.stroke	{background-color: #339900;}
+.outline	{border-style: solid; border-width: 1px; border-color: #339900;}
+
+.formed	{border-style: solid; border-width: 1px; border-color: #333333; background-color: #ffffff; font-size: 9pt; color: #000000; font-family: Arial, Helvetica, sans-serif;}
+.button	{border-style: solid; border-width: 1px; border-color: #333333; background-color: #ffffff; font-size: 8pt; color: #006600; font-family: Arial, Helvetica, sans-serif;}
+.inputbox {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	background: #cccccc;
+	border: 1px solid;
+    margin: 0px 0px 0px 0px;
+	}
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+<body onLoad="MM_preloadImages('<!-- WRAPPER_URL -->/home_on.jpg','<!-- WRAPPER_URL -->/aboutus_on.jpg','<!-- WRAPPER_URL -->/contactus_on.jpg','<!-- WRAPPER_URL -->/cart_on.jpg')">
+<table border="0" cellpadding="0" cellspacing="0" width="790" height="600" align="center" bgcolor="#ffffff">
+  <tr>
+    <td><img name="Pliska_Golf_1" src="<!-- WRAPPER_URL -->/Pliska_Golf_1.jpg" width="790" height="83" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" width="790">
+        <tr>
+          <td valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" width="301">
+              <tr>
+                <td height="18" valign="top"><img name="Pliska_Golf_2" src="<!-- WRAPPER_URL -->/Pliska_Golf_2.jpg" width="301" height="18" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td><!-- LOGO WIDTH=301 HEIGHT=70 --></td>
+              </tr>
+          </table></td>
+          <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="489">
+              <tr>
+                <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="489">
+                    <tr>
+                      <td><a href="<!-- HOME_URL -->" onMouseOver="MM_swapImage('Pliska_Golf_3','','<!-- WRAPPER_URL -->/home_on.jpg',1)" onMouseOut="MM_swapImgRestore()"><img name="Pliska_Golf_3" src="<!-- WRAPPER_URL -->/Pliska_Golf_3.jpg" width="105" height="57" border="0" alt=""></a></td>
+                      <td><a href="<!-- ABOUT_URL -->" onMouseOver="MM_swapImage('Pliska_Golf_4','','<!-- WRAPPER_URL -->/aboutus_on.jpg',1)" onMouseOut="MM_swapImgRestore()"><img name="Pliska_Golf_4" src="<!-- WRAPPER_URL -->/Pliska_Golf_4.jpg" width="122" height="57" border="0" alt=""></a></td>
+                      <td><a href="<!-- CONTACT_URL -->" onMouseOver="MM_swapImage('Pliska_Golf_5','','<!-- WRAPPER_URL -->/contactus_on.jpg',1)" onMouseOut="MM_swapImgRestore()"><img name="Pliska_Golf_5" src="<!-- WRAPPER_URL -->/Pliska_Golf_5.jpg" width="147" height="57" border="0" alt=""></a></td>
+                      <td><a href="<!-- CART_URL -->" onMouseOver="MM_swapImage('Pliska_Golf_6','','<!-- WRAPPER_URL -->/cart_on.jpg',1)" onMouseOut="MM_swapImgRestore()"><img name="Pliska_Golf_6" src="<!-- WRAPPER_URL -->/Pliska_Golf_6.jpg" width="115" height="57" border="0" alt=""></a></td>
+                    </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td><img name="Pliska_Golf_8" src="<!-- WRAPPER_URL -->/Pliska_Golf_8.jpg" width="489" height="31" border="0" alt=""></td>
+              </tr>
+          </table></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+  <!-- CONTENT -->
+  
+  <td>
+  <table align="left" border="0" cellpadding="0" cellspacing="0" width="790">
+  <tr>
+  <td align="left" width="647" height="600" bgcolor=white valign="top"><p><!-- TITLE --></p><!-- BODY --></td>
+  <td width="143" valign="top">
+  		<table align="left" border="0" cellpadding="0" cellspacing="0" width="143">
+  		<tr>
+  		<td> 
+ 
+  			<table align="left" border="0" cellpadding="0" cellspacing="0">
+ 			<tr>
+  			<td><img name="Pliska_Golf_10" src="<!-- WRAPPER_URL -->/Pliska_Golf_10.jpg" width="143" height="15" border="0" alt=""></td>
+  			</tr>
+  			<tr>
+ 			<td>
+  				<table cellpadding="0" cellspacing="0" border="0">
+  				<tr>
+  				<td width="1" background="<!-- WRAPPER_URL -->/vert_line.jpg"></td>
+ 				<td width="141" height="82" bgcolor="#ffffff">
+				<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+				<td class="minicart"><table><tr>    
+    <td align="left" valign="bottom" style="height: 20px;"><span class="small">Items: </span></td>
+    <td width="70"><!-- MINICART
+ITEMSONLY=1
+CSSCLASS=small
+-->
+</td>
+</tr><tr>
+    <td align="left" style="height: 15px;"><span class="small">Shipping: </span></td>
+    <td><!-- MINICART
+SHIPPINGONLY=1
+CSSCLASS=small
+-->
+</td>
+</tr><tr>
+    <td align="left" style="height: 15px;"><span class="small">Total: </span></td>
+    <td><!-- MINICART
+TOTALONLY=1
+CSSCLASS=small
+-->
+</td></tr><tr><td colspan="2">&nbsp;</td></tr></table>     </td>
+				</tr>
+				<tr>
+				<td height="5" background="<!-- WRAPPER_URL -->/bottom_line.jpg" width="141"></td>
+				</tr>
+				</table>
+				</td>
+   				<td width="1" background="<!-- WRAPPER_URL -->/vert_line.jpg"></td>
+  				</tr>
+  				</table>
+			  </td>
+			  </tr>
+  		</table>
+ 
+
+  </td>
+  </tr>
+  <tr>
+  <td height="35"><form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input name="keywords" type="text" class="inputbox" value="" size="22">
+<input type="image" src="<!-- WRAPPER_URL -->/search.gif" >
+</form></td>
+  </tr>
+  <tr>
+  <td>
+
+
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+ 			<tr>
+  			<td><img name="Pliska_Golf_10" src="<!-- WRAPPER_URL -->/Pliska_Golf_10.jpg" width="143" height="15" border="0" alt=""></td>
+  			</tr>
+  			<tr>
+ 			<td>
+  				<table cellpadding="0" cellspacing="0" border="0">
+  				<tr>
+  				<td width="1" background="<!-- WRAPPER_URL -->/vert_line.jpg"></td>
+ 				<td width="141" height="100%" bgcolor="#ffffff">
+				<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+				<td class="cats"><!-- MENU
+FORMAT=&nbsp;<a href="%URL%" target="%TARGET%">%MESSAGE%</a><br>
+ONLYHOME=0
+NOHOME=1
+--></td>
+				</tr>
+				<tr>
+				<td height="5" background="<!-- WRAPPER_URL -->/bottom_line.jpg" width="141"></td>
+				</tr>
+				</table>
+				</td>
+   				<td width="1" background="<!-- WRAPPER_URL -->/vert_line.jpg"></td>
+  				</tr>
+  				</table>
+			  </td>
+			  </tr>
+  		</table>
+
+
+  			
+
+  </td>
+  </tr>
+  </table>
+
+
+ 
+  
+  
+  <!-- END CONTENT -->
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td height="12"><img src="<!-- WRAPPER_URL -->/Pliska_Golf_21.jpg"></td>
+</tr>
+  <tr>
+    <td width="790" height="20" bgcolor="#386F24">
+      <!-- FOOTER TRANSPARENT=TRUE -->
+    </td>
+  </tr>
+  </table></td>
+</tr>
+</table>
+
+</body>
+</html>

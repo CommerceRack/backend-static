@@ -1,0 +1,195 @@
+[
+   {
+      "catalog" : "TOYSBABY",
+		"amz-catalog" : "ToysBaby",
+      "amz-subcat" : "ToysAndGames",
+      "subcat" : "toysandgames",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "value" : "ToysBaby:ToysAndGames",
+      "type" : "hidden",
+      "id" : "amz:catalog"
+	},
+	{
+		"type" : "hidden",
+		"id" : "",
+		"value" : "ToysAndGames",
+		"amz-format" : "Verbatim",
+      "xmlpath" : "ToysBaby.ProductType"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Age",
+      "id" : "amz:prod_toysbaby_minmmnfgagerecd",
+      "type" : "textbox",
+		"mandatory" : "Y",
+      "title" : "Minimum Manufacturer Age Recommended",
+      "xmlpath" : "ToysBaby.AgeRecommendation.MinimumManufacturerAgeRecommended"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Age",
+		"mandatory" : "Y",
+      "id" : "amz:prod_toysbaby_maxmmnfgagerecd",
+      "type" : "textbox",
+      "title" : "Maximum Manufacturer Age Recommended",
+      "xmlpath" : "ToysBaby.AgeRecommendation.MaximumManufacturerAgeRecommended"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Age",
+      "id" : "amz:prod_toysbaby_minmmerchantagerecd",
+      "type" : "textbox",
+      "title" : "Minimum Merchant Age Recommended",
+      "xmlpath" : "ToysBaby.AgeRecommendation.MinimumMerchantAgeRecommended"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Age",
+      "id" : "amz:prod_toysbaby_maxmmerchantagerecd",
+      "type" : "textbox",
+      "title" : "Maximum Merchant Age Recommended",
+      "xmlpath" : "ToysBaby.AgeRecommendation.MaximumMerchantAgeRecommended"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_toysbaby_assemblyinstrts",
+      "type" : "textbox",
+      "title" : "Assembly Instructions",
+      "xmlpath" : "ToysBaby.AssemblyInstructions"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Time",
+      "id" : "amz:prod_toysbaby_assemblytime",
+      "type" : "textbox",
+      "title" : "Assembly Time",
+      "xmlpath" : "ToysBaby.AssemblyTime"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_toysbaby_isassemblyrequired",
+      "type" : "checkbox",
+      "title" : "Is Assembly Required",
+      "xmlpath" : "ToysBaby.IsAssemblyRequired"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_toysbaby_mnfgsafetywarning",
+      "type" : "textbox",
+      "title" : "Manufacturer Safety Warning",
+      "xmlpath" : "ToysBaby.ManufacturerSafetyWarning"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_toysbaby_mnfgwarrantydscrpt",
+      "type" : "textbox",
+      "title" : "Manufacturer Warranty Description",
+      "xmlpath" : "ToysBaby.ManufacturerWarrantyDescription"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_toysbaby_nbrofpieces",
+      "type" : "number",
+      "title" : "NumberOfPieces",
+      "xmlpath" : "ToysBaby.NumberOfPieces"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Players",
+      "id" : "amz:prod_toysbaby_nbrofplayers",
+      "type" : "number",
+      "title" : "NumberOfPlayers",
+      "xmlpath" : "ToysBaby.NumberOfPlayers"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "child_magazine",
+            "v" : "child_magazine"
+         },
+         {
+            "p" : "dr_toys_100_best_child_products",
+            "v" : "dr_toys_100_best_child_products"
+         },
+         {
+            "p" : "family_fun_toy_of_the_year_seal",
+            "v" : "family_fun_toy_of_the_year_seal"
+         },
+         {
+            "p" : "games_magazine",
+            "v" : "games_magazine"
+         },
+         {
+            "p" : "lion_mark",
+            "v" : "lion_mark"
+         },
+         {
+            "p" : "national_parenting_approval_award",
+            "v" : "national_parenting_approval_award"
+         },
+         {
+            "p" : "oppenheim_toys",
+            "v" : "oppenheim_toys"
+         },
+         {
+            "p" : "parents_choice_portfolio",
+            "v" : "parents_choice_portfolio"
+         },
+         {
+            "p" : "parents_magazine",
+            "v" : "parents_magazine"
+         },
+         {
+            "p" : "toy_wishes",
+            "v" : "toy_wishes"
+         },
+         {
+            "p" : "unknown",
+            "v" : "unknown"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_toysbaby_toyawardname",
+      "title" : "Toys Baby Toy Award Name",
+      "type" : "select",
+      "xmlpath" : "ToysBaby.ToyAwardName",
+      "list" : "LIST_TOYSBABY_TOYAWARDNAME"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Weight",
+      "id" : "amz:prod_toysbaby_minmmnfgwtrecd",
+      "type" : "textbox",
+      "title" : "Minimum Manufacturer Weight Recommended",
+		"amz-uom" : "GR,KG,OZ,LB",
+      "xmlpath" : "ToysBaby.WeightRecommendation.MinimumManufacturerWeightRecommended"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Weight",
+      "id" : "amz:prod_toysbaby_maxmmnfgwtrecd",
+      "type" : "textbox",
+      "title" : "Maximum Manufacturer Weight Recommended",
+ 		"amz-uom" : "GR,KG,OZ,LB",
+      "xmlpath" : "ToysBaby.WeightRecommendation.MaximumManufacturerWeightRecommended"
+   }
+]

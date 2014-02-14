@@ -1,0 +1,128 @@
+<TEMPLATE ID="pop_prod_images_big" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="MYCONFIG" TYPE="CONFIG" EXPORT="0" V="3" IMAGES="0" CREATED="00000000" TITLE="Popup Layout: Product Images"></ELEMENT>
+<ELEMENT ID="CYEPCAO" SUB="PROD_NAME" TYPE="READONLY" LOAD="product:zoovy:prod_name" RAW="1"></ELEMENT>
+<ELEMENT ID="VAR_USERNAME" SUB="USERNAME" TYPE="READONLY" DATA="FLOW::USERNAME"></ELEMENT>
+<ELEMENT ID="VAR_POPUPTHEME" SUB="POPUP_THEME" TYPE="READONLY" LOAD="profile:zoovy:popup_wrapper" RAW="1"></ELEMENT>
+<ELEMENT ID="VAR_SKU" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD" RAW="1"></ELEMENT>
+<ELEMENT ID="PUT_SKU_INTO_FOCUS" TYPE="SPECL"><HTML><![CDATA[<%
+/* legacy support is to link to the product detail page. however, if this is loaded in popup.cgi, product is passed on URI and needs to be put into focus */
+
+print("");
+loadurp("VAR::product"); default("");
+stop(unless=>$_);
+	set($FOCUSSKU=>$_);
+	element(TYPE=>"SET",SRC=>"SREF::PID",DATA=>$FOCUSSKU);
+	element(TYPE=>"SET",SRC=>"SREF::SKU",DATA=>$FOCUSSKU);
+	print("<!-- focus sku changed to: ");
+	print($FOCUSSKU);
+	print(" -->");
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CZSVCON" SUB="PROD_IMAGE1" TYPE="SPECL"><HTML><![CDATA[
+<%
+/* big Image. Used specl instead of an IMAGE element so that a specific image other that prod_image1 could be loaded */
+print("");
+loadurp("VAR::targetimageid"); default("1");
+format(pretext=>"product:zoovy:prod_image");
+loadurp($_);
+image(h=>"480",w=>"640",m=>"1",bg=>"ffffff",tag=>"1");
+print();
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGES" SUB="PROD_IMAGES" TYPE="SPECL"><HTML><![CDATA[
+
+<%
+print("");
+
+/* used for the alt tag and title */
+loadurp("product:zoovy:prod_name"); format(encode=>"entity");
+set($PROD_NAME=>$_);
+
+set($i=>"1");
+
+/* this is the product field that we append $i to for generating the image key. */
+set($image_key=>"product:zoovy:prod_image"); 
+
+
+:LOOP();
+
+load($image_key); format(posttext=>$i);
+loadurp($_);
+/* we use the filename in multiple places, so a var is set instead of loadurp'ing it several times. */
+set($image=>$_);
+
+/* if the current load has no value, then there are no more images to process.  Stop. Otherwise, preload image and print thumbnail with JS to change big image */
+stop(unless=>$_);
+	print("<script type='text/javascript'>
+<!--
+pic"); print($i); print("= new Image(); 
+pic"); print($i); print(".src='"); image(src=>$image,w=>"640",h=>"480",m=>"0",bg=>"FFFFFF",tag=>"0"); print(); print("'; 
+//-->
+</script>");
+	print("
+	<div style='float:left; margin-bottom:3px; margin-right:3px;'>
+	<div class='zborder' style='padding:1px;'><a href='#' onMouseOver=&quot;swapBigImage(pic");
+	print($i);
+	print(".src)&quot;>");
+/* fix the width but support variable height to be more flexible */
+	image(src=>$image,w=>"75",h=>"200",m=>"1",tag=>"1",alt=>$PROD_NAME);
+	print();
+	print("</a></div>
+	</div>
+	");
+
+/* increment i by one for next loadurp */
+	load($i);
+	math(op=>"add",var=>"1");
+	set($i=>$_);
+/* Go to loop and do it all again. */
+	goto(label=>"LOOP",ne=>"");
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CYEPCAP" TYPE="OUTPUT"><HTML><![CDATA[
+
+<script type='text/javascript'>
+// switched to a function and innerhtml on 6-11.  Did this to try to get a different way of loading images that didn't stretch. Unsuccessful.
+function swapBigImage(imgUrl)	{
+	document.getElementById('bigImageContainer').innerHTML = "<img src='"+imgUrl+"'>"
+	}
+
+</script>
+
+<div id='pop_prod_images_big'>
+
+<div style='float:left;' id='product_name'><h2>%PROD_NAME%</h2></div>
+<div style='float:right;' class='zsmall' id='sku'>%SKU%</div>
+
+<div style='clear:both;'>
+<table cellspacing='0' cellpadding='0' align='center'>
+<tr>
+	<td valign='top' align='center' valign='middle' style='width:650px;'>
+	<div id='bigImageContainer'>
+%PROD_IMAGE1%
+	</div>
+	</td>
+	<td valign='top'>
+<div style='height:480px; overflow:auto;' id='thumbnails'>
+
+%PROD_IMAGES%
+	
+</div>
+	</td>
+</tr>
+</table>
+</div>
+
+
+
+</div>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,74 @@
+[
+   {
+      "catalog" : "SOFTWARE",
+		"amz-catalog" : "SoftwareVideoGames",
+      "amz-subcat" : "VideoGames",
+      "subcat" : "videogames",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "SoftwareVideoGames:VideoGames",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYZJ",
+      "xmlpath" : "SoftwareVideoGames.ProductType.VideoGames."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "mandatory" : "Y",
+      "title" : "Console Video Games Genre",
+      "id" : "amz:prod_swvg_vg_consolevggenre",
+      "xmlpath" : "SoftwareVideoGames.ProductType.VideoGames.ConsoleVideoGamesGenre"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "E S R B Rating",
+      "id" : "amz:prod_swvg_vg_esrbrating",
+      "xmlpath" : "SoftwareVideoGames.ProductType.VideoGames.ESRBRating"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "Hardware Platform",
+      "id" : "amz:prod_swvg_vg_hwpt",
+      "xmlpath" : "SoftwareVideoGames.ProductType.VideoGames.HardwarePlatform"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_swvg_vg_bundles",
+      "type" : "textbox",
+      "title" : "Bundles",
+      "xmlpath" : "SoftwareVideoGames.ProductType.VideoGames.Bundles"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_swvg_vg_esrbdescriptors",
+      "type" : "textlist",
+      "title" : "E S R B Descriptors",
+      "xmlpath" : "SoftwareVideoGames.ProductType.VideoGames.ESRBDescriptors"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Players",
+      "id" : "amz:prod_swvg_vg_maxnbrofplayers",
+      "type" : "number",
+      "title" : "MaxNumberOfPlayers",
+      "xmlpath" : "SoftwareVideoGames.ProductType.VideoGames.MaxNumberOfPlayers"
+   }
+]

@@ -1,0 +1,905 @@
+$VAR1 = {
+          '_LISTS' => [],
+          '_DIGEST' => 'Zo742eUfjz0rIZID9Pyq1A',
+          '_DIVS' => [],
+          '_ID' => 'gradefade',
+          '_V' => 2,
+          '_SYSTEM' => 1,
+          '_ELEMENTS' => [
+                           {
+                             'ID' => 'CPULUDI',
+                             'SUB' => 'LINK_VISITED_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_VISITED_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDJ',
+                             'SUB' => 'TABLE_HEADING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDK',
+                             'SUB' => 'DISCLAIMER_FONT_SIZE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDL',
+                             'SUB' => 'CONTENT_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::CONTENT_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDM',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDN',
+                             'SUB' => 'CONTENT_TEXT_COLOR',
+                             'LOAD' => 'THEME::CONTENT_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDO',
+                             'SUB' => 'TABLE_LISTING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDP',
+                             'SUB' => 'TABLE_LISTING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDQ',
+                             'SUB' => 'TABLE_LISTING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDR',
+                             'SUB' => 'CONTENT_FONT_FACE',
+                             'LOAD' => 'THEME::CONTENT_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDS',
+                             'SUB' => 'NAME',
+                             'LOAD' => 'THEME::NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDT',
+                             'SUB' => 'DISCLAIMER_FONT_FACE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDU',
+                             'SUB' => 'PRETTY_NAME',
+                             'LOAD' => 'THEME::PRETTY_NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDV',
+                             'SUB' => 'TABLE_HEADING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDW',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDX',
+                             'SUB' => 'LINK_ACTIVE_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_ACTIVE_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDY',
+                             'SUB' => 'CONTENT_FONT_SIZE',
+                             'LOAD' => 'THEME::CONTENT_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUDZ',
+                             'SUB' => 'ALERT_COLOR',
+                             'LOAD' => 'THEME::ALERT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEA',
+                             'SUB' => 'DISCLAIMER_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEB',
+                             'SUB' => 'TABLE_HEADING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEC',
+                             'SUB' => 'TABLE_HEADING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUED',
+                             'SUB' => 'DISCLAIMER_TEXT_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEE',
+                             'SUB' => 'LINK_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEF',
+                             'SUB' => 'HOMECATEGORY_URL',
+                             'LOAD' => 'URL::HOMECATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEG',
+                             'SUB' => 'WRAPPER_URL',
+                             'LOAD' => 'URL::WRAPPER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEH',
+                             'SUB' => 'CART_URL',
+                             'LOAD' => 'URL::CART_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEI',
+                             'SUB' => 'SUBSCRIBE_URL',
+                             'LOAD' => 'URL::SUBSCRIBE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEJ',
+                             'SUB' => 'FEEDBACK_URL',
+                             'LOAD' => 'URL::FEEDBACK_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEK',
+                             'SUB' => 'LOGOUT_FUNCTION_URL',
+                             'LOAD' => 'URL::LOGOUT_FUNCTION_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEL',
+                             'SUB' => 'SHIPQUOTE_URL',
+                             'LOAD' => 'URL::SHIPQUOTE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEM',
+                             'SUB' => 'PRIVACY_URL',
+                             'LOAD' => 'URL::PRIVACY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEN',
+                             'SUB' => 'SITEBUTTON_URL',
+                             'LOAD' => 'URL::SITEBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEO',
+                             'SUB' => 'HOMEPAGE_URL',
+                             'LOAD' => 'URL::HOMEPAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEP',
+                             'SUB' => 'COUNTER_URL',
+                             'LOAD' => 'URL::COUNTER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEQ',
+                             'SUB' => 'RETURNS_URL',
+                             'LOAD' => 'URL::RETURNS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUER',
+                             'SUB' => 'PASSWORD_URL',
+                             'LOAD' => 'URL::PASSWORD_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUES',
+                             'SUB' => 'UPDATE_PAYMENT_URL',
+                             'LOAD' => 'URL::UPDATE_PAYMENT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUET',
+                             'SUB' => 'FORGOT_URL',
+                             'LOAD' => 'URL::FORGOT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEU',
+                             'SUB' => 'NAVBUTTON_URL',
+                             'LOAD' => 'URL::NAVBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEV',
+                             'SUB' => 'CONTACT_URL',
+                             'LOAD' => 'URL::CONTACT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEW',
+                             'SUB' => 'LOGOUT_URL',
+                             'LOAD' => 'URL::LOGOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEX',
+                             'SUB' => 'GALLERY_URL',
+                             'LOAD' => 'URL::GALLERY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEY',
+                             'SUB' => 'REMOVE_URL',
+                             'LOAD' => 'URL::REMOVE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUEZ',
+                             'SUB' => 'HOME_URL',
+                             'LOAD' => 'URL::HOME_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFA',
+                             'SUB' => 'ABOUT_ZOOVY_URL',
+                             'LOAD' => 'URL::ABOUT_ZOOVY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFB',
+                             'SUB' => 'NEWS_URL',
+                             'LOAD' => 'URL::NEWS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFC',
+                             'SUB' => 'SECURE_URL',
+                             'LOAD' => 'URL::SECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFD',
+                             'SUB' => 'ABOUT_URL',
+                             'LOAD' => 'URL::ABOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFE',
+                             'SUB' => 'USERBUTTON_URL',
+                             'LOAD' => 'URL::USERBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFF',
+                             'SUB' => 'CLOSED_URL',
+                             'LOAD' => 'URL::CLOSED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFG',
+                             'SUB' => 'FASTORDER_URL',
+                             'LOAD' => 'URL::FASTORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFH',
+                             'SUB' => 'MAIL_FORM_URL',
+                             'LOAD' => 'URL::MAIL_FORM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFI',
+                             'SUB' => 'GRAPHICS_URL',
+                             'LOAD' => 'URL::GRAPHICS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFJ',
+                             'SUB' => 'IMAGE_URL',
+                             'LOAD' => 'URL::IMAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFK',
+                             'SUB' => 'CONTACTUS_URL',
+                             'LOAD' => 'URL::CONTACTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFL',
+                             'SUB' => 'DYNAMIC_URL',
+                             'LOAD' => 'URL::DYNAMIC_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFM',
+                             'SUB' => 'NONSECURE_URL',
+                             'LOAD' => 'URL::NONSECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFN',
+                             'SUB' => 'CONTACT_US_URL',
+                             'LOAD' => 'URL::CONTACT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFO',
+                             'SUB' => 'SEARCH_URL',
+                             'LOAD' => 'URL::SEARCH_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFP',
+                             'SUB' => 'ABOUTUS_URL',
+                             'LOAD' => 'URL::ABOUTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFQ',
+                             'SUB' => 'CUSTOMER_MAIN_URL',
+                             'LOAD' => 'URL::CUSTOMER_MAIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFR',
+                             'SUB' => 'MERCHANT_LOGIN_URL',
+                             'LOAD' => 'URL::MERCHANT_LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFS',
+                             'SUB' => 'CATEGORY_URL',
+                             'LOAD' => 'URL::CATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFT',
+                             'SUB' => 'ADULT_URL',
+                             'LOAD' => 'URL::ADULT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFU',
+                             'SUB' => 'CLAIM_URL',
+                             'LOAD' => 'URL::CLAIM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFV',
+                             'SUB' => 'CLAIM_MULTI_URL',
+                             'LOAD' => 'URL::CLAIM_MULTI_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFW',
+                             'SUB' => 'ABOUT_US_URL',
+                             'LOAD' => 'URL::ABOUT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFX',
+                             'SUB' => 'RESULTS_URL',
+                             'LOAD' => 'URL::RESULTS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFY',
+                             'SUB' => 'PRODUCT_URL',
+                             'LOAD' => 'URL::PRODUCT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUFZ',
+                             'SUB' => 'CONTINUE_URL',
+                             'LOAD' => 'URL::CONTINUE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUGA',
+                             'SUB' => 'REDIR_URL',
+                             'LOAD' => 'URL::REDIR_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUGB',
+                             'SUB' => 'KILL_COOKIES_URL',
+                             'LOAD' => 'URL::KILL_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUGC',
+                             'SUB' => 'LOGIN_URL',
+                             'LOAD' => 'URL::LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUGD',
+                             'SUB' => 'CHECKOUT_URL',
+                             'LOAD' => 'URL::CHECKOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUGE',
+                             'SUB' => 'ORDER_STATUS_URL',
+                             'LOAD' => 'URL::ORDER_STATUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUGF',
+                             'SUB' => 'NO_COOKIES_URL',
+                             'LOAD' => 'URL::NO_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUGG',
+                             'SUB' => 'PAYPAL_URL',
+                             'LOAD' => 'URL::PAYPAL_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUGH',
+                             'SUB' => 'CANCEL_ORDER_URL',
+                             'LOAD' => 'URL::CANCEL_ORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUGI',
+                             'SUB' => 'MAIL_CONFIG_URL',
+                             'LOAD' => 'URL::MAIL_CONFIG_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUGJ',
+                             'SUB' => 'DISABLED_URL',
+                             'LOAD' => 'URL::DISABLED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPULUGK',
+                             'HTML' => '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPULUGL',
+                             'COLORS' => 128,
+                             'TYPE' => 'CONFIG',
+                             'CATEGORIES' => 32768,
+                             'TITLE' => 'Gradefade',
+                             'CREATED' => 20021022,
+                             'THEME' => 'disclaimer_text_color=333333&content_font_face=Arial&table_listing_background_color_alternate=FFFFFF&table_heading_text_color=F0F0F0&pretty_name=gradefade&link_visited_text_color=000099&content_background_color=F0F0F0&table_heading_background_color=999999&link_text_color=333333&link_active_text_color=000099&table_listing_font_face=Arial&content_text_color=333333&content_font_size=2&disclaimer_font_face=Arial&name=gradefade&table_listing_background_color=CCFFFF&disclaimer_background_color=FFFFFF&alert_color=000099&disclaimer_font_size=1&table_listing_text_color=333333&table_heading_font_face=Arial&table_heading_font_size=2&table_listing_font_size=2',
+                             'PROPERTIES' => 4,
+                             'SITEBUTTONS' => 'forward=lucido|gif|45|15&add_to_cart=lucido|gif|61|15&back=lucido|gif|52|15&default=lucido|gif|65|15&checkout=lucido|gif|52|15&continue_shopping=lucido|gif|74|15&add_to_site_height=32&update_cart=lucido|gif|65|15Add+To+Site+Width&cancel=lucido|gif|38|15'
+                           },
+                           {
+                             'ID' => 'CPULUGM',
+                             'HTML' => '
+<html>
+<head>
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPULUGN',
+                             'TYPE' => 'HEAD'
+                           },
+                           {
+                             'ID' => 'CPULUGO',
+                             'HTML' => '
+<style rel="STYLESHEET" type="text/css">
+body {margin: 8; background-color: #999999;}
+a	{color: #333333; text-decoration: none;}
+a:hover	{color: #000099; text-decoration: none;}
+td.b	{background-color: #333333;}
+td.goo	{background-color: #CCCCCC;}
+td.foo	{background-color: #666666;}
+td.hoo	{background-color: #F0F0F0;}
+td.moo	{background-color: #CCFFFF;}
+td.loo	{background-color: #3333CC;}
+.fade	{background-image: url(%WRAPPER_URL%/fade.jpg);}
+.grade	{background-image: url(%WRAPPER_URL%/grade.jpg);}
+.title    {font-family: arial; color: #666666; font-size: 16px; font-weight: bold;}
+.menu	{font-family: arial; font-size: 12px;}
+</style>
+</head>
+
+<body>
+<table cellspacing=0 cellpadding=0 width=100% height=100%>
+	<tr>
+		<td class="b" valign="top" colspan=5 height=1><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+	</tr><tr>
+		<td class="b" height=8 width=1><img src="%GRAPHICS_URL%/blank.gif" height=8 width=1></td>
+		<td class="goo"  width=8><img src="%GRAPHICS_URL%/blank.gif" height=1 width=8></td>
+		<td class="goo"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=10></td>
+		<td class="goo"  width=8><img src="%GRAPHICS_URL%/blank.gif" height=1 width=8></td>
+		<td class="b"  height=8 width=1><img src="%GRAPHICS_URL%/blank.gif" height=8 width=1></td>
+	</tr><tr>
+		<td class="b" height=99%><img src="%GRAPHICS_URL%/blank.gif" height=10 width=1></td>
+		<td colspan="3" class="goo" valign="top">	
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+	<tr>
+		<td width=10><img src="%GRAPHICS_URL%/blank.gif" height=1 width=8></td>
+		<td width=150 valign="top">
+			<table cellspacing=0 cellpadding=0 border=0 width=150 height=100%>
+				<tr>
+					<td class="b" height="1" colspan=7><img src="%GRAPHICS_URL%/blank.gif" height=1 width=150></td>
+				</tr><tr>
+					<td class="b" height="4" rowspan=13><img src="%GRAPHICS_URL%/blank.gif" height=4 width=1></td>
+					<td class="foo" height="4" colspan=5><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="b" height="4" rowspan=13><img src="%GRAPHICS_URL%/blank.gif" height=4 width=1></td>
+				</tr><tr>
+					<td class="foo" height="1" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+					<td class="b"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="b" width=140></td>
+					<td class="b"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="foo" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+				</tr><tr>
+					<td class="foo"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+					<td class="b"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="hoo" width=140 height=90><a href="%HOME_URL%">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'HEIGHT' => 90,
+                             'ID' => 'CPULUGP',
+                             'WIDTH' => 140,
+                             'TYPE' => 'LOGO'
+                           },
+                           {
+                             'ID' => 'CPULUGQ',
+                             'HTML' => '</a></td>
+					<td class="b"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="foo"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+				</tr><tr>
+					<td class="foo" height="1" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+					<td class="b" height="1"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="b" width=140></td>
+					<td class="b" height="1"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="foo" height="1" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+				</tr><tr>
+					<td class="foo" colspan=5 height=4><img src="%GRAPHICS_URL%/blank.gif" height=4 width=1></td>
+				</tr><tr>
+					<td class="foo" height="1" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+					<td class="b" height="1"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="b" width=140></td>
+					<td class="b"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="foo" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+				</tr><tr>
+					<td class="foo"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+					<td class="b"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="moo" height=90 valign="top">
+						<table cellspacing=0 cellpadding=0 border=0 width=100%>
+							<tr>
+								<td height=2 colspan=2><img src="%GRAPHICS_URL%/blank.gif" height=3 width=1></td></tr>
+							<tr>
+								<td class="grade" width=2 height=21><img src="%GRAPHICS_URL%/blank.gif" height=21 width=2></td>
+								<td class="grade"><span class="menu">&nbsp;<a href="%HOME_URL%">Home</a></span></td>
+							</tr><tr>
+								<td height=2 colspan=2><img src="%GRAPHICS_URL%/blank.gif" height=3 width=1></td></tr>
+							<tr>
+								<td class="grade" width=2 height=21><img src="%GRAPHICS_URL%/blank.gif" height=21 width=2></td>
+								<td class="grade"><span class="menu">&nbsp;<a href="%CART_URL%">Cart</a></span></td>
+							</tr><tr>
+								<td height=2 colspan=2><img src="%GRAPHICS_URL%/blank.gif" height=3 width=1></td></tr>
+							<tr>
+								<td class="grade" width=2 height=21><img src="%GRAPHICS_URL%/blank.gif" height=21 width=2></td>
+								<td class="grade"><span class="menu">&nbsp;<a href="%SEARCH_URL%">Search</a></span></td>
+							</tr><tr>
+								<td height=2 colspan=2><img src="%GRAPHICS_URL%/blank.gif" height=3 width=1></td></tr>
+							<tr>
+								<td class="grade" width=2 height=21><img src="%GRAPHICS_URL%/blank.gif" height=21 width=2></td>
+								<td class="grade"><span class="menu">&nbsp;<a href="%ABOUT_URL%">Company Info</a></span></td>
+							</tr><tr>
+								<td height=2 colspan=2><img src="%GRAPHICS_URL%/blank.gif" height=3 width=1></td></tr>
+							<tr>
+								<td class="grade" width=2 height=21><img src="%GRAPHICS_URL%/blank.gif" height=21 width=2></td>
+								<td class="grade"><span class="menu">&nbsp;<a href="%CONTACT_URL%">Contact Us</a></span></td>
+							</tr><tr>
+								<td height=2 colspan=2><img src="%GRAPHICS_URL%/blank.gif" height=3 width=1></td></tr>
+							<tr>
+								<td class="grade" width=2 height=21><img src="%GRAPHICS_URL%/blank.gif" height=21 width=2></td>
+								<td class="grade"><span class="menu">&nbsp;<a href="%LOGIN_URL%">My Account</a></span></td>
+							</tr><tr>
+								<td height=2 colspan=2><img src="%GRAPHICS_URL%/blank.gif" height=3 width=1></td></tr>
+							<tr>
+						</table>
+					
+</td>
+					<td class="b"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="foo"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+				</tr><tr>
+					<td class="foo" height="1" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+					<td class="b" height="1"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="b" width=140></td>
+					<td class="b" height="1"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="foo" height="1" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+				</tr><tr>
+					<td class="foo" colspan=5 height=4><img src="%GRAPHICS_URL%/blank.gif" height=4 width=1></td>
+				</tr><tr>
+					<td class="foo" height="1" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+					<td class="b" height="1"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="b" width=140></td>
+					<td class="b"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="foo" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+				</tr><tr>
+					<td class="foo"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+					<td class="b"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="moo" height=20 valign="top">
+					<table cellspacing=0 cellpadding=0 border=0 width=100%>
+							<tr>
+								<td height=2 colspan=2><img src="%GRAPHICS_URL%/blank.gif" height=3 width=1></td>
+							</tr>',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPULUGR',
+                             'HTML' => '<tr><td class="grade" width=2 height=21><img src="<% load($GRAPHICS_URL);  default("");  print(); %>/blank.gif" height=21 width=2></td><td class="grade"><span class="menu">&nbsp;<a XXX href="<% load($URL);  default("");  print(); %>"><% load($MESSAGE);  default("");  print(); %></a></span></td></tr><tr><td height=2 colspan=2><img src="<% load($GRAPHICS_URL);  default("");  print(); %>/blank.gif" height=3 width=1></td></tr>',
+                             'NOHOME' => 1,
+                             'TYPE' => 'SUBCAT',
+                             'DESCENDTREE' => 1,
+                             'NOROOT' => 1,
+                             'PRODCAT' => 1,
+                             'STYLE' => 'LEGACYMENU'
+                           },
+                           {
+                             'ID' => 'CPULUGS',
+                             'HTML' => '	
+						</table>
+					
+				
+					</td>
+					<td class="b"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="foo"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+				</tr><tr>
+					<td class="foo" height="1" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+					<td class="b" height="1"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="b" width=140></td>
+					<td class="b" height="1"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td class="foo" height="1" width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+				</tr><tr>
+					<td class="foo" colspan=5 height=99%><img src="%GRAPHICS_URL%/blank.gif" height=4 width=1></td>
+				</tr><tr>
+					<td class="b" height="1" colspan=7><img src="%GRAPHICS_URL%/blank.gif" height=1 width=150></td>
+				</tr>
+			</table>
+		</td>
+		<td width=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+		<td width=99% valign="top">
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td class="loo" width=1><img src="%GRAPHICS_URL%/blank.gif" height=21 width=1></td>
+					<td width=8 class="grade"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=8></td>
+					<td width=99% class="grade"><span class="menu">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPULUGT',
+                             'HTML' => '
+<!-- CATEGORY -->
+<a href="<% load($cat_url);  default("");  print(); %>" target="<% load($TARGET);  default("");  print(); %>"><% load($cat_pretty);  default("");  print(); %></a><% load("
+");  default("");  print(); %>
+
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); runspec("|&lt;% load("
+");  default(&quot;&quot;);  print(); %&gt;"); print(); %>
+
+<!-- /CATEGORY -->
+</div>
+
+',
+                             'NOHOME' => 1,
+                             'TYPE' => 'MENU'
+                           },
+                           {
+                             'ID' => 'CPULUGU',
+                             'HTML' => '</span></td>
+					<td width=8 class="grade"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=8></td>
+					<td class="loo" width=1><img src="%GRAPHICS_URL%/blank.gif" height=21 width=1></td>    
+				</tr><tr>
+					<td><img src="%GRAPHICS_URL%/blank.gif" height=4 width=1></td></tr>
+			</table><table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>	
+					<td class="b" colspan=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+				</tr><tr>
+					<td height=32 class="b" width=1><img src="%GRAPHICS_URL%/blank.gif" height=32 width=1></td>
+					<td width=8 class="fade"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=8></td>
+					<td width=99% class="fade"><span class="title">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPULUGV',
+                             'TYPE' => 'TITLE'
+                           },
+                           {
+                             'ID' => 'CPULUGW',
+                             'HTML' => '</span></td>
+					<td class="b" width=1><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+				</tr>
+			</table>
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>	
+					<td class="b" colspan=5><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+				</tr><tr>
+					<td class="b" width=1><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+					<td height=4 class="hoo" colspan=3><img src="%GRAPHICS_URL%/blank.gif" height=4 width=1></td>
+					<td class="b" width=1><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+				</tr><tr>
+					<td height=32 class="b" width=1><img src="%GRAPHICS_URL%/blank.gif" height=300 width=1></td>
+					<td width=4 class="hoo"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+					<td width=99% class="hoo" valign="top">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPULUGX',
+                             'TYPE' => 'BODY'
+                           },
+                           {
+                             'ID' => 'CPULUGY',
+                             'HTML' => '</td>
+					<td width=4 class="hoo"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=4></td>
+					<td class="b" width=1><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+				</tr><tr>	
+					<td class="b" colspan=5><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+				</tr><tr>	
+					<td colspan=4><img src="%GRAPHICS_URL%/blank.gif" height=4 width=1></td>
+				</tr>
+			</table><br>
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>	
+					<td class="b" colspan=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+				</tr><tr>
+					<td height=32 class="b" width=1><img src="%GRAPHICS_URL%/blank.gif" height=32 width=1></td>
+					<td width=8 class="fade"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=8></td>
+					<td width=99% class="fade">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'TRANSPARENT' => 'True',
+                             'ID' => 'CPULUGZ',
+                             'TYPE' => 'FOOTER'
+                           },
+                           {
+                             'ID' => 'CPULUHA',
+                             'HTML' => '
+					</td>
+					<td class="b" width=1><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+				</tr><tr>	
+					<td class="b" colspan=4><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+				</tr>
+			</table><br>
+		</td>
+		<td width=10><img src="%GRAPHICS_URL%/blank.gif" height=1 width=8></td>
+	</tr>
+</table>					
+		</td>
+		<td class="b"><img src="%GRAPHICS_URL%/blank.gif" height=10 width=1></td>
+	</tr><tr>
+		<td class="b" height=10 width=1><img src="%GRAPHICS_URL%/blank.gif" height=10 width=1></td>
+		<td class="goo"  width=10><img src="%GRAPHICS_URL%/blank.gif" height=1 width=10></td>
+		<td class="goo"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=10></td>
+		<td class="goo"  width=10><img src="%GRAPHICS_URL%/blank.gif" height=1 width=10></td>
+		<td class="b"  height=10 width=1><img src="%GRAPHICS_URL%/blank.gif" height=10 width=1></td>
+	</tr><tr>
+		<td class="b" valign="top" colspan=5 height=1><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+	</tr>
+</table>
+
+</body>
+</html>
+',
+                             'TYPE' => 'OUTPUT'
+                           }
+                         ],
+          '_FORMAT' => 'WRAPPER'
+        };

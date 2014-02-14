@@ -1,0 +1,140 @@
+<TEMPLATE ID="i_20081223w" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNKN" IMAGES="1" CREATED="20081223" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" SHORT="A simple email template with one big banner, followed by a product list, then text" TYPE="CONFIG" TITLE="Big banner and product list  (wiki friendly)" NEWSLETTER="1" RELEASED="20081223"><SUMMARY><![CDATA[
+Header
+Banner
+Product List with custom header
+Text
+
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPVRQCT" RAW="1" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCU" RAW="1" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCV" RAW="1" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCZ" RAW="1" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDD" RAW="1" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDE" RAW="1" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDI" RAW="1" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDK" RAW="1" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDL" RAW="1" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDM" RAW="1" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDQ" RAW="1" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDV" RAW="1" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDW" RAW="1" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEB" RAW="1" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEC" RAW="1" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQED" RAW="1" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEF" RAW="1" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEK" RAW="1" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEL" RAW="1" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEP" RAW="1" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEQ" RAW="1" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQER" RAW="1" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEV" RAW="1" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL"></ELEMENT>
+<ELEMENT ID="CQHREXQ" SUB="title1" TYPE="HIDDEN"><DEFAULT><![CDATA[<div style='margin-top:4px; font-size:14px; color:#000000; font-weight:bold;'>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXR" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[</div>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXS" SUB="title2" TYPE="HIDDEN"><DEFAULT><![CDATA[<div style='margin-top:2px; font-size:13px; color:#c37506; font-weight:bold;'>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXT" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</div>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT HEIGHT="85" ID="CVPKKKP" MINIMAL_MODE="1" WIDTH="300" SUB="NEWS_LOGO" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CYMRFOG" EDITOR="INLINE" DATA="page:banner1_link" SUB="NEWS_BANNER1_LINK" PROMPT="Link for main banner" DEFAULT="%CART%/" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="CYMRFOH" HEIGHT="400" EDITOR="INLINE" DATA="page:banner1" WIDTH="600" PROMPT="Main banner (600 x 400)" SUB="NEWS_BANNER1" TYPE="IMAGE" BGCOLOR="FFFFFF"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div align='center'><a href="%NEWS_BANNER1_LINK%?%TRACKING%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PL_HEADER" MAXLENGTH="45" EDITOR="INLINE" DATA="page:email_header" PROMPT="Product list header (only shows up if products are present)" SUB="NEWS_PL_HEADER" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style='font-size:18px; margin-bottom:4px; color:#CC6600;' align='center'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST" MAX="40" ALTERNATE="0" MULTIPAGE="0" EDITOR="INLINE" DATA="page:prodlist1" COLS="4" FORMAT="CUSTOM" SUB="NEWS_PRODLIST" PROMPT="Product List" TYPE="PRODLIST" SRC="page:prodlist1_stuff"><HTML><![CDATA[<!-- product list -->
+<div style='margin-top:20px;'>
+%NEWS_PL_HEADER%
+<table border='0' cellpadding='0' cellspacing='0' align='center'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+	<td align='left' style='font-size:11px; color:#333333; 
+	padding-bottom:15px;' valign='top'>
+	<div 
+style='margin-bottom:3px;'><a href="<% load($PROD_URL);  default("");  print(); %>?%TRACKING%">
+<% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"135",h=>"135",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a>
+</div>
+	
+	<div><a 
+href="<% load($PROD_URL);  default("");  print(); %>?%TRACKING%"><% load($zoovy:prod_name); strip(length=>"60"); default(""); print(); %></a>
+</div>
+	
+	<div>Only <% load($zoovy:base_price);  default("");  format(money);  print(); %></div>
+
+	</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td> </td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+</div>
+<!-- /product list -->
+]]></HTML>
+<DIVIDER><![CDATA[
+
+<td><img 
+src='<% loadurp("URL::GRAPHICS_URL"); default(""); print(); %>/blank.gif' 
+height='1' width='20' alt=''></td>
+
+]]></DIVIDER>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Block" SUB="NEWS_TEXT" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area -->
+<div style='margin:20px 0px; font-size:11px; color:#333333; width:auto;'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CONTENT" TYPE="OUTPUT"><HTML><![CDATA[
+<html>
+<head>
+
+<title>%SUBJECT%</title>
+
+</head>
+
+<body style='margin: 0px; font-family:tahoma, arial, sans-serif; color: #333333' 
+link="#0066FF" alink="#0066FF" vlink="#0066FF" bgcolor="#FFFFFF">
+
+<table cellspacing='0' cellpadding='0' border='0' width='600' align='center'>
+<tr>
+	<td style='padding-bottom:4px;' valign='middle' width='300' align='left'>
+	<a 
+href="%HOME_URL%?%TRACKING%">
+%NEWS_LOGO%
+</a></td>
+	<td valign='middle' width='300' NOWRAP align='right' style='font-size:11px;'>
+<a href='%HOME_URL%?%TRACKING%' 
+style='text-decoration:none;'>Home</a> | 
+<a href='%CONTACT_URL%?%TRACKING%' 
+style='text-decoration:none;'>Contact</a> | 
+<a href='%CUSTOMER_MAIN_URL%?%TRACKING%' 
+style='text-decoration:none;'>My Account</a>
+	</td>
+</tr>
+<tr>
+	<td colspan='2' style='border-top:1px solid #cccccc; padding-top:4px;'>
+
+%NEWS_BANNER1%
+
+%NEWS_PRODLIST%
+
+%NEWS_TEXT%
+
+	</td>
+</tr>
+</table>
+
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

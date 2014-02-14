@@ -1,0 +1,96 @@
+<!-- CONFIG
+THEME=ebay
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- HEAD -->
+<style type="text/css">
+body	{margin: 10px;}
+body, td, li, ol, ul, p	{font-family: Arial, Helvetica, sans-serif;}
+a	{color: #0000CC;}
+
+.menu	{font-size: 14px; color: #000000; font-weight: bold; text-decoration: none; padding-left: 5px; padding-right: 5px;}
+
+.menu_bg	{background-color:#0000CC;}
+.lt_purp_bg	{background-color:#EEEEF8;}
+.title_bg	{background-color:#D6DCFE;}
+.stroke	{background-color:#9999CC;}
+.white_bg	{background-color:#ffffff; border-right-style: solid; border-right-width: 1px; border-right-color: #000066;}
+.tab_bg	{background-color:#EFEFEF;}
+</style>
+</head>
+<body>
+<table width="100%" cellspacing="4" cellpadding="0"><tr>
+	<td width="1%"><img src="<!-- WRAPPER_URL -->/ebaylogo.gif"></td>
+	<td width="99%" align="left"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr class="tab_bg">
+		<td width="1%" align="left" valign="top"><img src="<!-- WRAPPER_URL -->/menu_left.gif" width="11" height="11"></td>
+		<td width="98%" align="right"><form action="<!-- RESULTS_URL -->" method="get" style="margin: 0px;"><input type="hidden" name="catalog" value=""><table cellspacing="2" cellpadding="0"><tr>
+			<td><input type="text" name="keywords" value=""></td>
+			<td><input type="submit" value="Search"></td>
+		</tr></table></form></td>
+		<td rowspan="2" style="border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #0000CC;"><a href=""><!-- LOGO
+HEIGHT=55
+WIDTH=200
+BGCOLOR=EEEEEE
+--></a></td>
+		<td width="1%" align="right" valign="top"><img src="<!-- WRAPPER_URL -->/menu_right.gif" width="11" height="11"></td>
+	</tr><tr class="tab_bg">
+		<td colspan="2" style="border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #0000CC;"><table cellspacing="0" cellpadding="3" border="0" class="menu_bg" style="border-top-style: solid; border-top-width: 1px; border-top-color: #0000CC;" ><tr>
+			<td class="white_bg"  style="border-left-style: solid; border-left-width: 1px; border-left-color: #0000CC;"><a href="<!-- HOME_URL -->" class="menu">Home</a></td>
+			<td class="white_bg"><a href="<!-- ABOUT_URL -->" class="menu">About<!-- ELEMENT 
+TYPE=TEXT
+PRETEXT=&nbsp;
+SAVETO=merchant:ebay:username
+FONT=0
+--></a></td>
+			<td class="white_bg"><a href="<!-- LOGIN_URL -->" class="menu">Sign In</a></td>
+			<td class="white_bg"><a href="<!-- CHECKOUT_URL -->" class="menu">Checkout</a></td>
+		</tr></table></td>
+			<td style="border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #0000CC;"><img src="<!-- GRAPHICS_URL -->/blank.gif" height="1" width="1" alt=""></td>
+	</tr></table></td>
+</tr></table>
+<table cellspacing="0" cellpadding="0" width="100%"><tr>
+	<td style="height: 6px;" colspan="2"></td>
+</tr><tr>
+	<td class="stroke" style="height: 2px;" colspan="2"></td>
+</tr><tr class="title_bg">
+	<td align="left"  style="height: 22px;"><span style="font-size: 14px; font-weight: bold; margin-left: 10px;"><!-- TITLE --></span></td>
+	<td NOWRAP align="right" width="10%"><span style="font-size: 12px;">Items in Cart: <!-- MINICART
+ITEMSONLY=1
+-->	| Subtotal: <!-- MINICART
+SUBTOTALONLY=1
+-->&nbsp;</span></td>
+</tr><tr>
+	<td class="stroke" style="height: 2px;" colspan="2"></td>
+</tr></table><div align="center">
+<table cellspacing="0" cellpadding="0" width="96%" style="border-right-color: #9999CC; border-right-style: solid; border-right-width: 1px; border-left-color: #9999CC; border-left-style: solid; border-left-width: 1px; border-bottom-color: #9999CC; border-bottom-style: solid; border-bottom-width: 1px;"><tr>
+	<td class="lt_purp_bg" style="height: 28px;" align="left"><span style="font-size: 11px; font-weight: bold;">&nbsp;<!-- BREADCRUMB
+FORMAT=<a href="%URL%">%MESSAGE%</a>
+DIVIDER=%BREAK%&#187;%BREAK%
+--></span></td>
+</tr></table>
+</div>
+<table cellspacing="4" cellpadding="0" width="100%"><tr>
+	<td valign="top"><table cellspacing="0" cellpadding="0" border="0" width="150" style="background-color: #FFFFCC; border-style: solid; border-width: 2px; border-color: #FFCC00;"><tr>
+		<td><table cellspacing="0" cellpadding="0" width="100%"><tr>
+			<td style="height: 4px;" colspan="2"></td>
+		</tr><tr>
+			<td width="2%" style="background-color: #FFCC00;"></td>
+			<td style="background-color: #FFE684; height: 22px;"><span style="font-weight: bold; font-size: 14px;">&nbsp;Categories</span></td>
+		</tr></table>
+		
+		<div style="font-size: 13px; font-weight: bold; margin: 4px; line-height: 20px;"><!-- MENU
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a><br>
+NOHOME=1
+--></div></td>
+	</tr></table></td>
+	<td align="left" valign="top"><!-- BODY --></td></tr></table>
+<br>
+<!-- FOOTER
+TRANSPARENT=TRUE
+-->
+</body>
+</html>

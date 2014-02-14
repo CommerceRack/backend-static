@@ -1,0 +1,92 @@
+<!-- CONFIG
+THEME=l1_dotty
+SITEBUTTONS=l1_dotty
+NARROW=TRUE
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- HEAD -->
+<map name="menu">
+	<area href="<!--CONTACT_URL-->" shape="rect" coords="74,78,159,110" alt="Contact Us">
+	<area href="<!--ABOUT_URL-->" shape="rect" coords="180,79,265,111" alt="About Us">
+	<area href="<!--SEARCH_URL-->" shape="rect" coords="74,28,159,60" alt="Search">
+	<area href="<!--CART_URL-->" shape="poly" coords="247,24,235,31,227,32,217,34,208,35,202,36,198,37,193,37,196,44,196,49,197,55,198,57,197,60,196,66,199,68,203,64,204,60,205,56,213,58,223,57,227,57,228,64,228,68,234,63,234,59,237,57,242,54,241,47,242,40,244,36,245,31,247,24,247,24" alt="Shopping Cart">
+</map>
+</head> 
+<body bgcolor="#FFFFFF" text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!--LINK_VISITED_TEXT_COLOR -->">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="<!-- WRAPPER_URL -->/top.gif">
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="">
+				<tr>
+					<td width="320" height="10"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="320" height="10"></td>
+					<td width="300" height="140" align="center" valign="middle" rowspan="4"><img src="<!-- WRAPPER_URL -->/menu.gif" width="300" height="140" usemap="#menu" border="0"></td>
+				</tr>
+				<tr>
+					<td width="300" height="88" align="center" valign="middle"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=300
+HEIGHT=88
+--></a></td>
+				</tr>
+				<tr>
+					<td width="320" height="32" align="left" valign="bottom">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="20"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="20" height="1"></td>
+								<td width="300" align="left" valign="middle"><!-- BREADCRUMB
+BUTTONTYPE=l1_dotty_bc
+FORMAT=<a href="%URL%"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0"></a>&nbsp;
+--><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="1"></td>
+							</tr>
+						</table>
+					</td>
+				</tr> 
+				<tr>
+					<td width="320" height="10"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="320" height="1"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table> 		
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620">
+	<tr>
+		<td width="20" valign="top" background="<!-- WRAPPER_URL -->/border1.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="16" height="200"></td>
+		<td width="580" bgcolor="#FFFFFF" valign="top">
+			<table width="580" cellpadding="3" cellspacing="3" border="0" bgcolor="#FFFFFF">
+				<tr>
+					<td align="left" valign="middle" bgcolor="#5A9499">
+						<font color="#FFFDC9" face="Arial, Helvetica"  size="4"><!-- TITLE --></font>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" bgcolor="#FFFFFF">
+<!-- MENU
+BEFORE=<div align="center">Categories:%BREAK%
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a>%BREAK%
+DIVIDER=|%BREAK%
+AFTER=</div>
+ONLYHOME=1
+NOHOME=1
+-->
+<!-- BODY -->
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="20" valign="top" background="<!-- WRAPPER_URL -->/border2.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="16" height="200"></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="80" background="<!-- WRAPPER_URL -->/bottom.gif">
+	<tr>
+		<td width="620" height="80" align="center" valign="middle">
+<!-- FOOTER -->
+		</td>
+	</tr>
+</table>
+</center>
+</div>
+</body>
+</html>
+

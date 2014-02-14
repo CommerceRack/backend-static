@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=lucido
+SITEBUTTONS=lucido
+-->
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+</style>
+</head>
+
+<body>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td valign="middle"><!-- LOGO
+WIDTH=300
+HEIGHT=64
+--></td>
+		<td height=58><img src="<!-- GRAPHICS_URL -->/blank.gif" height=58 width=1></td>
+		<td width=99%></td>
+	</tr>
+</table>
+
+
+
+
+
+<form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" name="keywords" value="" size="10" maxlength="25" style="border-color:#990000; background-color:#ffffff; color:#666666; font-family: sans-serif; font-size: 12px; width: 100px"><br>
+<input type="image" src="<!-- WRAPPER_URL -->/search.gif" >
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+[
+   {
+      "catalog" : "MUSICINST",
+      "amz-subcat" : "KeyboardInstruments",
+      "subcat" : "keyboardinstruments",
+      "type" : "config",
+		"variation-themes" : "Color"
+   },
+   {
+      "PROMPT" : "MusicalInstruments:KeybrdInstruments",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYSJ",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_keybrdinmts_addlspecs",
+      "type" : "textbox",
+      "title" : "Additional Specifications",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.AdditionalSpecifications"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_keybrdinmts_clrspec",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_clrmap",
+      "type" : "textbox",
+      "title" : "Color Map",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.ColorSpecification"
+   },   
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_keybrdinmts_ctryprdin",
+      "type" : "textbox",
+      "title" : "Country Produced In",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.CountryProducedIn"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_keybrdinmts_inmtkey",
+      "type" : "textbox",
+      "title" : "Instrument Key",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.InstrumentKey"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_mus_keybrdinmts_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_keybrdinmts_matltype",
+      "type" : "textbox",
+      "title" : "Material Type",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.MaterialType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_keybrdinmts_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_keybrdinmts_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_keybrdinmts_mdlyear",
+      "type" : "textbox",
+      "title" : "Model Year",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.ModelYear"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_keybrdinmts_musicalstyle",
+      "type" : "textbox",
+      "title" : "Musical Style",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.MusicalStyle"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_keybrdinmts_nbrofkeybrdkeys",
+      "type" : "number",
+      "title" : "NumberOfKeybrdKeys",
+      "xmlpath" : "MusicalInstruments.ProductType.KeyboardInstruments.NumberOfKeyboardKeys"
+   }
+]

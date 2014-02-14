@@ -1,0 +1,90 @@
+<TEMPLATE ID="148" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMUK" CREATOR="JT" IMAGES="3" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="3 Image with prodlist" RELEASED="20041103"><SUMMARY><![CDATA[3 images across the top followed by the description, msrp, price and add to cart.  beneath that is a prodlist.]]></SUMMARY>
+<SHORT><![CDATA[Contains default description (HTML Editor), 3 images (1 500 x 180 with two 250 x 250 below) MSRP, Price and a prodlist with the product name, 75 x 75 thumb, 120 character description and add to cart/more details links.  Product list style can NOT be changed.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKMUL" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+<table cellpadding=0 cellspacing=3 width="100%"><tr>
+	<Td valign="top" width="100%" align="left"><div align="center">
+<table width="100%" cellspacing=4 cellpadding=0><tr>
+	<td colspan=2>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="500" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image1" WIDTH="250" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMUM" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr><tr>
+	<td width="50%" align="left">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="250" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image2" WIDTH="250" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMUN" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	<td width="50%" align="right">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE3" HEIGHT="250" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image3" WIDTH="250" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMUO" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr></table></div>
+	
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the default product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" TYPE="HTML"></ELEMENT>
+<ELEMENT ID="CPUKMUP" TYPE="OUTPUT"><HTML><![CDATA[
+
+<p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MSRP" HELP="This is the msrp that will appear crossed out on your website." DATA="product:zoovy:prod_msrp" PROMPT="Suggested Retail Price" TYPE="TEXT"><PRETEXT><![CDATA[<strong>MSRP: </strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKMUQ" TYPE="OUTPUT"><HTML><![CDATA[	
+</p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKMUR" TYPE="OUTPUT"><HTML><![CDATA[
+	
+	</td>
+</tr><tr>
+	<td>
+	
+	]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" HELP="You can add products to your homepage, when you do they will appear below." DATA="product:zoovy:prod_prodlist_style" COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[<hr style="color: #<% load($head_bg_spec);  default("");  print(); %>; background-color: #<% load($head_bg_spec);  default("");  print(); %>; height: 1px;"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td <% load($bg);  default("");  print(); %> width="50%"><table cellspacing=2 border=0 cellpadding=0 width="100%"><tr>
+	<td colspan=2><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><a href="<% load($PROD_URL);  default("");  print(); %>"><strong><% load($zoovy:prod_name);  default("");  print(); %></strong></a></font></td>
+</tr><tr>
+	<td><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"75",h=>"75",bg=>"ffffff",tag=>"1");  print(); %></a></td>
+	<td><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><% load($zoovy:prod_desc);  default(""); strip(length=>"130",breaks=>"1",html=>"1");  print(); %><br><br>
+<% load($ADD_LINK);  default("");  print(); %> | <% load($VIEW_DETAILS);  default("");  print(); %>	</font></td>
+</tr></table></td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUKMUS" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+</tr>
+</table>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

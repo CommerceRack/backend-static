@@ -1,0 +1,1811 @@
+<?xml version="1.0" encoding="utf-8"?><VerifyAddFixedPriceItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+<Item>
+<ApplicationData></ApplicationData><AutoPay>1</AutoPay><BuyerResponsibleForShipping>false</BuyerResponsibleForShipping><CategoryBasedAttributesPrefill>true</CategoryBasedAttributesPrefill><CategoryMappingAllowed>true</CategoryMappingAllowed><CheckoutDetailsSpecified>true</CheckoutDetailsSpecified><ConditionID>1000</ConditionID><Country>US</Country><Currency>USD</Currency><Description>&lt;html&gt;&lt;head&gt;&lt;!-- meta content=&quot;CommerceRack http://www.commercerack.com/ &quot; name=&quot;generator&quot; / --&gt;&lt;!-- meta content=&quot;http://bikinimo.com/media/merchant/moetown55/_ebay/ALLEBAY/&quot; name=&quot;base&quot; / --&gt;&lt;!-- meta content=&quot;support/erich&quot; name=&quot;luser&quot; / --&gt;&lt;!-- meta content=&quot;$SYSTEM:crisp_n_clean&quot; name=&quot;origin&quot; / --&gt;&lt;!-- meta content=&quot;201330&quot; name=&quot;api&quot; / --&gt;&lt;!-- base href=&quot;http://bikinimo.com/media/merchant/moetown55/_ebay/ALLEBAY/&quot; / --&gt;&lt;!-- meta content=&quot;kiss/1.0&quot; name=&quot;version&quot; / --&gt;&lt;style type=&quot;text/css&quot;&gt;&lt;!-- 
+.topBar {
+	background-image: url(http://bikinimo.com/media/merchant/moetown55/_ebay/ALLEBAY/topBar.jpg);
+	height: 215;
+	width: 680px;
+}
+.prodName {
+	color: #000000;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 15px 2px;
+}
+.mainProdInfo {
+	float: right;
+	width: 310px;
+}
+.mainImage {
+	float: left;
+	margin-right: 30px;
+}
+.mainContentArea {
+	padding: 25px 30px;
+}
+.infoSection {
+	clear: both;
+	padding-top: 20px;
+	width: 680px;
+}
+.infoContent span {
+	color: #000000;
+	font-size: 15px;
+}
+.infoContent h1 {
+	color: #000000;
+	font-size: 20px;
+	margin: 18px 0px 0px;
+}
+.infoContent {
+	padding: 5px 60px 40px;
+}
+.body {
+	background-color: #E8E8E8;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 680px;
+}
+.additionalProdImage {
+	border: 2px solid #c1d0d6;
+	margin: 3px;
+}
+#logo {
+	margin: 10px;
+}
+
+ --&gt;&lt;/style&gt;&lt;!-- meta content=&quot;wizard.html&quot; name=&quot;wizard&quot; / --&gt;&lt;link href=&quot;http://fonts.googleapis.com/css?family=PT+Sans:400,700&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;body&quot;&gt;&lt;div class=&quot;topBar&quot;&gt;&lt;br /&gt;&lt;div align=&quot;center&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;img alt=&quot;bikinimo_logo_500x110.jpg&quot; bgcolor=&quot;ffffff&quot; border=&quot;0&quot; class=&quot;unwizardificated wizardificated logo&quot; data=&quot;merchant:zoovy:company_logo&quot; data-attrib=&quot;zoovy:company_logo&quot; data-filepath=&quot;logo/bikinimo_logo_500x110.jpg&quot; data-label=&quot;Company Logo (200 x 150)&quot; data-object=&quot;KISS&quot; data-wizardificated=&quot;true&quot; height=&quot;&quot; id=&quot;LOGO&quot; src=&quot;https://www-bikinimo-com.app-hosted.com/media/img/moetown55/W450-Bffffff/logo/bikinimo_logo_500x110.jpg&quot; type=&quot;IMAGE&quot; width=&quot;450&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;div class=&quot;prodName&quot;&gt;&lt;span class=&quot;actbProductAttribute prodName attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_name&quot; data-input-cols=&quot;100&quot; data-input-data=&quot;product:zoovy:prod_name&quot; data-input-type=&quot;TEXTBOX&quot; data-label=&quot;Product Name&quot; data-object=&quot;PRODUCT&quot; id=&quot;PROD_NAME&quot;&gt;Blue Lemonade Shaper Bikini&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;div class=&quot;mainContentArea&quot;&gt;&lt;div class=&quot;actbProductAttribute attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image1&quot; data-else=&quot;INNER&quot; data-if=&quot;BLANK&quot; data-object=&quot;PRODUCT&quot; id=&quot;IMAGE1&quot;&gt;&lt;a class=&quot;actbProductAttribute actbHref attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image1&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image1&quot; data-img-height=&quot;0&quot; data-img-width=&quot;0&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; href=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W1067-H1600-Bffffff/A/a318_0.jpg&quot; id=&quot;IMAGE1&quot;&gt;
+			&lt;img class=&quot;actbProductAttribute mainImage attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image1&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image1&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; height=&quot;275&quot; id=&quot;IMAGE1&quot; src=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W176-H275-Bffffff/A/a318_0.jpg&quot; width=&quot;176&quot; /&gt;&lt;/a&gt;
+
+						&lt;span class=&quot;actbProductAttribute attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image2&quot; data-else=&quot;INNER&quot; data-if=&quot;BLANK&quot; data-object=&quot;PRODUCT&quot; id=&quot;IMAGE2&quot;&gt;
+			&lt;a class=&quot;actbProductAttribute actbHref attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image2&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image2&quot; data-img-height=&quot;0&quot; data-img-width=&quot;0&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; href=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W1067-H1600-Bffffff/A/a318_1.jpg&quot; id=&quot;IMAGELINK2&quot;&gt;
+			&lt;img class=&quot;actbProductAttribute mainImage attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image2&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image2&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; height=&quot;275&quot; id=&quot;IMAGE2&quot; src=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W176-H275-Bffffff/A/a318_1.jpg&quot; width=&quot;176&quot; /&gt;&lt;/a&gt;
+				&lt;/span&gt;
+						&lt;span class=&quot;actbProductAttribute attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image3&quot; data-else=&quot;INNER&quot; data-if=&quot;BLANK&quot; data-object=&quot;PRODUCT&quot; id=&quot;IMAGE3&quot;&gt;
+			&lt;a class=&quot;actbProductAttribute actbHref attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image3&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image3&quot; data-img-height=&quot;0&quot; data-img-width=&quot;0&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; href=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W1066-H1600-Bffffff/A/a318_2.jpg&quot; id=&quot;IMAGELINK3&quot;&gt;
+			&lt;img class=&quot;actbProductAttribute mainImage attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image3&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image3&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; height=&quot;275&quot; id=&quot;IMAGE3&quot; src=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W176-H275-Bffffff/A/a318_2.jpg&quot; width=&quot;176&quot; /&gt;&lt;/a&gt;
+				&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;infoSection&quot;&gt;&lt;div class=&quot;infoContent&quot;&gt;&lt;div class=&quot;attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_desc&quot; data-else=&quot;INNER&quot; data-if=&quot;BLANK&quot; data-object=&quot;PRODUCT&quot;&gt;&lt;h1&gt;Product Description&lt;/h1&gt;&lt;br /&gt;&lt;font color=&quot;#cc0000&quot;&gt;&lt;b&gt;NOTE: This item is sold as separates you must purchase both pieces to receive the set.&lt;/b&gt;&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+Look as good as that Blue Lemonade drink you are about to order!  Refreshing and perfect for that summer day, our Monroe top is the best.  Ties at the neck and back with a twist in front, you will look fabulous.  Our body shaping bottom has a v-cut in front and back to make you look slim, trim and sexy.  These will be your favorite bottoms since the fabric lays perfect on your hips without cutting into your&lt;/div&gt;&lt;div class=&quot;attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_features&quot; data-else=&quot;INNER&quot; data-if=&quot;BLANK&quot; data-object=&quot;PRODUCT&quot;&gt;&lt;h1&gt;Product Details&lt;/h1&gt;&lt;p&gt;Blue Lemonade Classic Monroe Top&lt;ul&gt;&lt;li&gt;Twist front&lt;li&gt;Wide halter straps&lt;li&gt;Ties at the neck &amp;amp; back&lt;li&gt;Removable padding&lt;li&gt;Fully lined&lt;li&gt;Matte Sky Blue Nylon/Lycra fabric&lt;li&gt;Matte Yellow Nylon/Lycra fabric
+Blue Lemonade Body Slimming Bottom&lt;li&gt;V front and back&lt;li&gt;Shirred panels&lt;li&gt;Mid cut legs&lt;li&gt;Full rear coverage&lt;li&gt;Fully lined&lt;li&gt;Matte Sky Blue Nylon/Lycra fabric &lt;li&gt;Matte Yellow Nylon/Lycra fabric
+&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;h1&gt;Shipping&lt;/h1&gt;
+				BikiniMo ships within 3 business days using UPS. we also enclose a FREE UPS return shipping label for you convenience.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Some items will be delivered via your local post office using UPS SURE-POST.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;We strongly recommend all customers to sign up for &amp;quot;UPS/MY CHOICE&amp;quot; and take advantage of the best logistical experience in the shipping industry.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Some of the options available through UPS/MYCHOICE&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;*Change destinations&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;*Hold a shipment at a local UPS Store&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;*Delay a delivery&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;*Reroute A delivery&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;*Along with many more options&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;Sign up for UPS/MYCHOICE today and take control of your shipments.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+</Description><DisableBuyerRequirements>true</DisableBuyerRequirements><DispatchTimeMax>3</DispatchTimeMax><GetItFast>false</GetItFast><HitCounter>HiddenStyle</HitCounter><InventoryTrackingMethod>SKU</InventoryTrackingMethod><ListingDuration>GTC</ListingDuration><Location>Orlando, Florida</Location><PayPalEmailAddress>Purchase@bikinimo.com</PayPalEmailAddress><PaymentMethods>PayPal</PaymentMethods><PrivateListing>false</PrivateListing><PrivateNotes>SKU:A318E</PrivateNotes><SKU>A318E</SKU><ShipToLocations>Worldwide</ShipToLocations><ThirdPartyCheckout>false</ThirdPartyCheckout><Title>Ujena Blue Lemonade Shaper Bikini - Sizes XS S M L XL 1X 2X - Separates or Set</Title><UseTaxTable>false</UseTaxTable><BestOfferDetails>
+<BestOfferEnabled>false</BestOfferEnabled>
+</BestOfferDetails><PictureDetails>
+<GalleryType>None</GalleryType><Picture>VendorHostedPicture</Picture><PictureURL>http://static---moetown55.app-hosted.com/media/img/moetown55/v1/A/a318_0.jpg</PictureURL>
+</PictureDetails><Storefront>
+<StoreCategory2ID>3557283015</StoreCategory2ID><StoreCategoryID>4352631015</StoreCategoryID>
+</Storefront><ShippingDetails>
+<InternationalInsuranceDetails>
+<InsuranceOption>NotOffered</InsuranceOption>
+</InternationalInsuranceDetails>
+<InsuranceDetails>
+<InsuranceOption>NotOffered</InsuranceOption>
+</InsuranceDetails>
+<ShippingServiceOptions>
+<FreeShipping>true</FreeShipping>
+<ShippingService>ShippingMethodStandard</ShippingService>
+<ShippingServicePriority>1</ShippingServicePriority>
+</ShippingServiceOptions>
+<ShippingServiceOptions>
+<FreeShipping>false</FreeShipping>
+<ShippingServiceAdditionalCost currencyID="USD">3.00</ShippingServiceAdditionalCost>
+<ShippingServiceCost currencyID="USD">39.00</ShippingServiceCost>
+<ShippingService>ShippingMethodExpress</ShippingService>
+<ShippingServicePriority>2</ShippingServicePriority>
+</ShippingServiceOptions>
+<ShippingServiceOptions>
+<FreeShipping>false</FreeShipping>
+<ShippingServiceAdditionalCost currencyID="USD">3.00</ShippingServiceAdditionalCost>
+<ShippingServiceCost currencyID="USD">73.00</ShippingServiceCost>
+<ShippingService>ShippingMethodOvernight</ShippingService>
+<ShippingServicePriority>3</ShippingServicePriority>
+</ShippingServiceOptions>
+<ShippingType>Flat</ShippingType>
+<SalesTax>
+<SalesTaxPercent>0.000</SalesTaxPercent>
+<SalesTaxState>
+</SalesTaxState>
+<ShippingIncludedInTax>false</ShippingIncludedInTax>
+</SalesTax>
+</ShippingDetails><ReturnPolicy>
+<Description>We must receive return/exchange request within 14 days of receipt of your order. We must receive the return/exchange item(s) within 30 days of receipt of you order. Exchanges are for same item different size only. There is no charge for an exchange. 20% restock on all returns.</Description><RefundOption>MoneyBackOrExchange</RefundOption><RestockingFeeValueOption>Percent_20</RestockingFeeValueOption><ReturnsAcceptedOption>ReturnsAccepted</ReturnsAcceptedOption><ReturnsWithinOption>Days_14</ReturnsWithinOption><ShippingCostPaidByOption>Buyer</ShippingCostPaidByOption>
+</ReturnPolicy><Variations>
+<!-- $VAR1 = {
+          'A318E:A905:AX01:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A905:AX01:AW01'
+                                    },
+          'A318E:A903:AX01:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A903:AX01:AW02'
+                                    },
+          'A318E:A905:AX01:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A905:AX01:AW00'
+                                    },
+          'A318E:A904:AX01:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A904:AX01:AW01'
+                                    },
+          'A318E:A902:AX01:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A902:AX01:AW00'
+                                    },
+          'A318E:A905:AX02:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A905:AX02:AW01'
+                                    },
+          'A318E:A906:AX02:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A906:AX02:AW00'
+                                    },
+          'A318E:A902:AX02:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A902:AX02:AW00'
+                                    },
+          'A318E:A900:AX02:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A900:AX02:AW02'
+                                    },
+          'A318E:A903:AX02:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A903:AX02:AW02'
+                                    },
+          'A318E:A901:AX01:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A901:AX01:AW02'
+                                    },
+          'A318E:A902:AX02:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A902:AX02:AW02'
+                                    },
+          'A318E:A904:AX02:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A904:AX02:AW01'
+                                    },
+          'A318E:A904:AX02:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A904:AX02:AW00'
+                                    },
+          'A318E:A901:AX02:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A901:AX02:AW00'
+                                    },
+          'A318E:A901:AX01:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A901:AX01:AW00'
+                                    },
+          'A318E:A906:AX01:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A906:AX01:AW00'
+                                    },
+          'A318E:A906:AX02:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A906:AX02:AW02'
+                                    },
+          'A318E:A900:AX01:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A900:AX01:AW01'
+                                    },
+          'A318E:A905:AX02:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A905:AX02:AW02'
+                                    },
+          'A318E:A904:AX01:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A904:AX01:AW02'
+                                    },
+          'A318E:A906:AX01:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A906:AX01:AW01'
+                                    },
+          'A318E:A903:AX01:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A903:AX01:AW01'
+                                    },
+          'A318E:A901:AX02:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A901:AX02:AW02'
+                                    },
+          'A318E:A902:AX01:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A902:AX01:AW02'
+                                    },
+          'A318E:A904:AX01:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A904:AX01:AW00'
+                                    },
+          'A318E:A905:AX02:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A905:AX02:AW00'
+                                    },
+          'A318E:A900:AX02:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A900:AX02:AW01'
+                                    },
+          'A318E' => {
+                       'TS' => '1382373522',
+                       'PID' => 'A318E',
+                       'DIRTY' => '0',
+                       'MARKETS' => '9999',
+                       'ONSHELF' => '209979',
+                       'AVAILABLE' => '209979',
+                       'SKU' => 'A318E'
+                     },
+          'A318E:A903:AX01:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A903:AX01:AW00'
+                                    },
+          'A318E:A900:AX01:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A900:AX01:AW00'
+                                    },
+          'A318E:A906:AX01:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A906:AX01:AW02'
+                                    },
+          'A318E:A900:AX02:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A900:AX02:AW00'
+                                    },
+          'A318E:A902:AX02:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A902:AX02:AW01'
+                                    },
+          'A318E:A903:AX02:AW00' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A903:AX02:AW00'
+                                    },
+          'A318E:A900:AX01:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A900:AX01:AW02'
+                                    },
+          'A318E:A906:AX02:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A906:AX02:AW01'
+                                    },
+          'A318E:A905:AX01:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A905:AX01:AW02'
+                                    },
+          'A318E:A902:AX01:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A902:AX01:AW01'
+                                    },
+          'A318E:A903:AX02:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A903:AX02:AW01'
+                                    },
+          'A318E:A901:AX01:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '9999',
+                                      'AVAILABLE' => '3',
+                                      'SKU' => 'A318E:A901:AX01:AW01'
+                                    },
+          'A318E:A904:AX02:AW02' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A904:AX02:AW02'
+                                    },
+          'A318E:A901:AX02:AW01' => {
+                                      'TS' => '1382373522',
+                                      'PID' => 'A318E',
+                                      'DIRTY' => '0',
+                                      'MARKETS' => '0',
+                                      'ONSHELF' => '0',
+                                      'AVAILABLE' => '0',
+                                      'SKU' => 'A318E:A901:AX02:AW01'
+                                    }
+        };
+ --><Variation>
+<Quantity>3</Quantity><SKU>A318E:A900:AX01:AW00</SKU><StartPrice currencyID="USD">99.50</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A900:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A900:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A900:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A900:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A900:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A901:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A901:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A901:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A901:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A901:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A901:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A902:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A902:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A902:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A902:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A902:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A902:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A903:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A903:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A903:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A903:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A903:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A903:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A904:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A904:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A904:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A904:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A904:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A904:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A905:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A905:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A905:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A905:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A905:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A905:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A906:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A906:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A906:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A906:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A906:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A906:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women's)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<VariationSpecificsSet>
+<NameValueList><Name>Size (Women's)</Name><Value>XS</Value><Value>S</Value><Value>M</Value><Value>L</Value><Value>XL</Value><Value>1X</Value><Value>2X</Value></NameValueList><NameValueList><Name>Size Type</Name><Value>Regular</Value><Value>Plus</Value></NameValueList><NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value><Value>Bottom Only</Value><Value>Complete Swimsuit</Value></NameValueList>
+</VariationSpecificsSet>
+</Variations><PrimaryCategory>
+<CategoryID>63867</CategoryID>
+</PrimaryCategory><BuyerRequirementDetails>
+<MinimumFeedbackScore>-1</MinimumFeedbackScore><ShipToRegistrationCountry>true</ShipToRegistrationCountry><VerifiedUserRequirements>
+<VerifiedUser>false</VerifiedUser>
+</VerifiedUserRequirements>
+</BuyerRequirementDetails><ItemSpecifics>
+<NameValueList>
+<Name>Pattern</Name><Value>Solid</Value>
+</NameValueList><NameValueList>
+<Name>Shade</Name><Value>Matte Yellow/Matte Sky Blue</Value>
+</NameValueList><NameValueList>
+<Name>Manufacturer</Name><Value>Ujena</Value>
+</NameValueList><NameValueList>
+<Name>Country of Manufacture</Name><Value>United States</Value>
+</NameValueList><NameValueList>
+<Name>Manufacturer Part Number</Name><Value>A318</Value>
+</NameValueList><NameValueList>
+<Name>Color</Name><Value>Yellow</Value>
+</NameValueList><NameValueList>
+<Name>Brand</Name><Value>Ujena</Value>
+</NameValueList><NameValueList>
+<Name>Style</Name><Value>Bikini</Value>
+</NameValueList>
+</ItemSpecifics>
+</Item><RequesterCredentials>
+<eBayAuthToken>AgAAAA**AQAAAA**aAAAAA**BzH5UQ**nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJnYOjCJCKogmdj6x9nY+seQ**CwQAAA**OAMAAA**mVInZKdn7vae2dhQrVijJj/0FoWSvWZw5iMhapEpCihfpwS4UxHX0AIQbzlqF/dgWiCWCsGMcOPmCQYolrRMGkLiXN9fsze85cAKcfcMQP9PBPR/UbnyMLd6wQnuTCXkoYbaFteshFoyNkrJ4xhmsrN1RYo3zuv0x9hSwKOe7ZJPoimepQmPsQWYBenOYy6hTMknIB/pihR/xyIdvnHp5Kx3ZAPPZrwEICvukKHtqgOvXE2vaowQojtwKoMwet1VryVMNJBYW6agyvaG4xXfg6qvbVI5K4Y9ZG2UV/AFJAZe7KX8TmGeSBzVPCA4FQXqAafkMo2jiDOsNCOw+3U/Eq3AMctZbyE7Oqz668pnkhmqX65F8OKRGOF/XFrZhr2EcKBEZnkXdJJAIK0kOsMsp6OcGHdXQBqVIAQA9RyJRw4CQsuyW7kfT1C9TmRzQVIRQ97DLgkVR1z5WiEexcRV+CKbIjqsLuknIOvhBYtxHnei7pEky5596CUdYZ3+v5NqhV4v20GdvUmURuyJzojKBieRD+myxnv/C3Tj+PHZ4IsGlpxlgD5IY1KW6/q4J+rkHf3G/jhdWWv45SHODTfLgQlXpy3KO4oat0Y5dzPwmWi53uc2PpDw5XRlwGaZ7OoM/LijX8yHqKx+UvrO/yXzDslqmvWtFEHZ8z6nHTQqQXgF+2rX3D26dig9DmPtDRcFA37kNBIykC+L+ylrgEHlOpdAurPXx5pAh+rrG4gK770ZHjS0gV3JWiuGgtTEkqS3grnWxME35UO0fLsawrs4AZ/NDlK0K8KK8KRmobdlroyoVq92fibLxg**</eBayAuthToken>
+</RequesterCredentials>
+</VerifyAddFixedPriceItemRequest>$VAR1 = bless( {
+                 '_protocol' => 'HTTP/1.1',
+                 '_content' => '<?xml version="1.0" encoding="UTF-8"?>
+<VerifyAddFixedPriceItemResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2013-10-21T17:32:15.823Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Starting price is not valid.</ShortMessage><LongMessage>Please enter a valid starting price for your item (eg. US $0.99).</LongMessage><ErrorCode>73</ErrorCode><SeverityCode>Error</SeverityCode><ErrorParameters ParamID="0"><Value>US $0.99</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A900:AX02:AW00</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A900:AX02:AW01</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A900:AX02:AW02</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A901:AX02:AW00</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A901:AX02:AW01</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A901:AX02:AW02</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A902:AX02:AW00</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A902:AX02:AW01</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A902:AX02:AW02</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A903:AX02:AW00</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A903:AX02:AW01</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A903:AX02:AW02</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A904:AX02:AW00</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A904:AX02:AW01</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A904:AX02:AW02</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A905:AX01:AW00</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A905:AX01:AW01</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A905:AX01:AW02</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A906:AX01:AW00</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A906:AX01:AW01</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Errors><ShortMessage>Variations with quantity &apos;0&apos; will be removed.</ShortMessage><LongMessage>Variations with quantity &apos;0&apos; will be removed.</LongMessage><ErrorCode>21916620</ErrorCode><SeverityCode>Warning</SeverityCode><ErrorParameters ParamID="0"><Value>A318E:A906:AX01:AW02</Value></ErrorParameters><ErrorClassification>RequestError</ErrorClassification></Errors><Version>845</Version><Build>E845_UNI_API5_16460367_R1</Build></VerifyAddFixedPriceItemResponse>',
+                 '_rc' => '200',
+                 '_headers' => bless( {
+                                        'connection' => 'Keep-Alive',
+                                        'date' => 'Mon, 21 Oct 2013 17:32:15 GMT',
+                                        'client-ssl-cert-issuer' => '/C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=Terms of use at https://www.verisign.com/rpa (c)09/CN=VeriSign Class 3 Secure Server CA - G2',
+                                        'client-ssl-cipher' => 'RC4-MD5',
+                                        'client-peer' => '66.211.179.180:443',
+                                        'client-date' => 'Mon, 21 Oct 2013 17:32:15 GMT',
+                                        'x-ebay-esb-app-name' => 'gtagruv3',
+                                        'client-ssl-warning' => 'Peer certificate not verified',
+                                        'x-ebay-esb-siteid' => '0',
+                                        'content-type' => 'text/xml',
+                                        'server' => 'Apache-Coyote/1.1',
+                                        'x-ebay-api-pool-name' => '___cDRidW8ydmtv',
+                                        'client-response-num' => 1,
+                                        'x-ebay-api-server-name' => '___ZW9nNGQ3MWYrNDo8ZCgyNSg+OysyKTIxND07NT43',
+                                        'content-length' => '8750',
+                                        '::std_case' => {
+                                                          'x-ebay-api-pool-name' => 'X-EBAY-API-POOL-NAME',
+                                                          'client-response-num' => 'Client-Response-Num',
+                                                          'x-ebay-api-server-name' => 'X-EBAY-API-SERVER-NAME',
+                                                          'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                          'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                          'client-peer' => 'Client-Peer',
+                                                          'client-date' => 'Client-Date',
+                                                          'x-ebay-esb-app-name' => 'X-EBAY-ESB-APP-NAME',
+                                                          'x-ebay-esb-call-name' => 'X-EBAY-ESB-CALL-NAME',
+                                                          'client-ssl-warning' => 'Client-SSL-Warning',
+                                                          'x-ebay-esb-siteid' => 'X-EBAY-ESB-SITEID',
+                                                          'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                          'x-ebay-esb-guid' => 'X-EBAY-ESB-GUID'
+                                                        },
+                                        'x-ebay-esb-call-name' => 'VerifyAddFixedPriceItem',
+                                        'client-ssl-cert-subject' => '/C=US/ST=California/L=San Jose/O=eBay, Inc./OU=Site-Operations/CN=api.ebay.com',
+                                        'x-ebay-esb-guid' => 'urn:uuid:793B262F030E6414BC1385223273795'
+                                      }, 'HTTP::Headers' ),
+                 '_msg' => 'OK',
+                 '_request' => bless( {
+                                        '_content' => '<?xml version="1.0" encoding="utf-8"?><VerifyAddFixedPriceItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+<Item>
+<ApplicationData></ApplicationData><AutoPay>1</AutoPay><BuyerResponsibleForShipping>false</BuyerResponsibleForShipping><CategoryBasedAttributesPrefill>true</CategoryBasedAttributesPrefill><CategoryMappingAllowed>true</CategoryMappingAllowed><CheckoutDetailsSpecified>true</CheckoutDetailsSpecified><ConditionID>1000</ConditionID><Country>US</Country><Currency>USD</Currency><Description>&lt;html&gt;&lt;head&gt;&lt;!-- meta content=&quot;CommerceRack http://www.commercerack.com/ &quot; name=&quot;generator&quot; / --&gt;&lt;!-- meta content=&quot;http://bikinimo.com/media/merchant/moetown55/_ebay/ALLEBAY/&quot; name=&quot;base&quot; / --&gt;&lt;!-- meta content=&quot;support/erich&quot; name=&quot;luser&quot; / --&gt;&lt;!-- meta content=&quot;$SYSTEM:crisp_n_clean&quot; name=&quot;origin&quot; / --&gt;&lt;!-- meta content=&quot;201330&quot; name=&quot;api&quot; / --&gt;&lt;!-- base href=&quot;http://bikinimo.com/media/merchant/moetown55/_ebay/ALLEBAY/&quot; / --&gt;&lt;!-- meta content=&quot;kiss/1.0&quot; name=&quot;version&quot; / --&gt;&lt;style type=&quot;text/css&quot;&gt;&lt;!-- 
+.topBar {
+	background-image: url(http://bikinimo.com/media/merchant/moetown55/_ebay/ALLEBAY/topBar.jpg);
+	height: 215;
+	width: 680px;
+}
+.prodName {
+	color: #000000;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 15px 2px;
+}
+.mainProdInfo {
+	float: right;
+	width: 310px;
+}
+.mainImage {
+	float: left;
+	margin-right: 30px;
+}
+.mainContentArea {
+	padding: 25px 30px;
+}
+.infoSection {
+	clear: both;
+	padding-top: 20px;
+	width: 680px;
+}
+.infoContent span {
+	color: #000000;
+	font-size: 15px;
+}
+.infoContent h1 {
+	color: #000000;
+	font-size: 20px;
+	margin: 18px 0px 0px;
+}
+.infoContent {
+	padding: 5px 60px 40px;
+}
+.body {
+	background-color: #E8E8E8;
+	font-family: \'PT Sans\', sans-serif;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 680px;
+}
+.additionalProdImage {
+	border: 2px solid #c1d0d6;
+	margin: 3px;
+}
+#logo {
+	margin: 10px;
+}
+
+ --&gt;&lt;/style&gt;&lt;!-- meta content=&quot;wizard.html&quot; name=&quot;wizard&quot; / --&gt;&lt;link href=&quot;http://fonts.googleapis.com/css?family=PT+Sans:400,700&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;body&quot;&gt;&lt;div class=&quot;topBar&quot;&gt;&lt;br /&gt;&lt;div align=&quot;center&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;img alt=&quot;bikinimo_logo_500x110.jpg&quot; bgcolor=&quot;ffffff&quot; border=&quot;0&quot; class=&quot;unwizardificated wizardificated logo&quot; data=&quot;merchant:zoovy:company_logo&quot; data-attrib=&quot;zoovy:company_logo&quot; data-filepath=&quot;logo/bikinimo_logo_500x110.jpg&quot; data-label=&quot;Company Logo (200 x 150)&quot; data-object=&quot;KISS&quot; data-wizardificated=&quot;true&quot; height=&quot;&quot; id=&quot;LOGO&quot; src=&quot;https://www-bikinimo-com.app-hosted.com/media/img/moetown55/W450-Bffffff/logo/bikinimo_logo_500x110.jpg&quot; type=&quot;IMAGE&quot; width=&quot;450&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;div class=&quot;prodName&quot;&gt;&lt;span class=&quot;actbProductAttribute prodName attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_name&quot; data-input-cols=&quot;100&quot; data-input-data=&quot;product:zoovy:prod_name&quot; data-input-type=&quot;TEXTBOX&quot; data-label=&quot;Product Name&quot; data-object=&quot;PRODUCT&quot; id=&quot;PROD_NAME&quot;&gt;Blue Lemonade Shaper Bikini&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div align=&quot;center&quot;&gt;&lt;div class=&quot;mainContentArea&quot;&gt;&lt;div class=&quot;actbProductAttribute attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image1&quot; data-else=&quot;INNER&quot; data-if=&quot;BLANK&quot; data-object=&quot;PRODUCT&quot; id=&quot;IMAGE1&quot;&gt;&lt;a class=&quot;actbProductAttribute actbHref attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image1&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image1&quot; data-img-height=&quot;0&quot; data-img-width=&quot;0&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; href=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W1067-H1600-Bffffff/A/a318_0.jpg&quot; id=&quot;IMAGE1&quot;&gt;
+			&lt;img class=&quot;actbProductAttribute mainImage attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image1&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image1&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; height=&quot;275&quot; id=&quot;IMAGE1&quot; src=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W176-H275-Bffffff/A/a318_0.jpg&quot; width=&quot;176&quot; /&gt;&lt;/a&gt;
+
+						&lt;span class=&quot;actbProductAttribute attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image2&quot; data-else=&quot;INNER&quot; data-if=&quot;BLANK&quot; data-object=&quot;PRODUCT&quot; id=&quot;IMAGE2&quot;&gt;
+			&lt;a class=&quot;actbProductAttribute actbHref attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image2&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image2&quot; data-img-height=&quot;0&quot; data-img-width=&quot;0&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; href=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W1067-H1600-Bffffff/A/a318_1.jpg&quot; id=&quot;IMAGELINK2&quot;&gt;
+			&lt;img class=&quot;actbProductAttribute mainImage attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image2&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image2&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; height=&quot;275&quot; id=&quot;IMAGE2&quot; src=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W176-H275-Bffffff/A/a318_1.jpg&quot; width=&quot;176&quot; /&gt;&lt;/a&gt;
+				&lt;/span&gt;
+						&lt;span class=&quot;actbProductAttribute attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image3&quot; data-else=&quot;INNER&quot; data-if=&quot;BLANK&quot; data-object=&quot;PRODUCT&quot; id=&quot;IMAGE3&quot;&gt;
+			&lt;a class=&quot;actbProductAttribute actbHref attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image3&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image3&quot; data-img-height=&quot;0&quot; data-img-width=&quot;0&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; href=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W1066-H1600-Bffffff/A/a318_2.jpg&quot; id=&quot;IMAGELINK3&quot;&gt;
+			&lt;img class=&quot;actbProductAttribute mainImage attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_image3&quot; data-format=&quot;img&quot; data-img-bgcolor=&quot;ffffff&quot; data-img-border=&quot;0&quot; data-img-data=&quot;product:zoovy:prod_image3&quot; data-img-zoom=&quot;1&quot; data-label=&quot;Image (200 by X)&quot; data-object=&quot;PRODUCT&quot; height=&quot;275&quot; id=&quot;IMAGE3&quot; src=&quot;http://static---moetown55.app-hosted.com/media/img/moetown55/W176-H275-Bffffff/A/a318_2.jpg&quot; width=&quot;176&quot; /&gt;&lt;/a&gt;
+				&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;infoSection&quot;&gt;&lt;div class=&quot;infoContent&quot;&gt;&lt;div class=&quot;attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_desc&quot; data-else=&quot;INNER&quot; data-if=&quot;BLANK&quot; data-object=&quot;PRODUCT&quot;&gt;&lt;h1&gt;Product Description&lt;/h1&gt;&lt;br /&gt;&lt;font color=&quot;#cc0000&quot;&gt;&lt;b&gt;NOTE: This item is sold as separates you must purchase both pieces to receive the set.&lt;/b&gt;&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+Look as good as that Blue Lemonade drink you are about to order!  Refreshing and perfect for that summer day, our Monroe top is the best.  Ties at the neck and back with a twist in front, you will look fabulous.  Our body shaping bottom has a v-cut in front and back to make you look slim, trim and sexy.  These will be your favorite bottoms since the fabric lays perfect on your hips without cutting into your&lt;/div&gt;&lt;div class=&quot;attributeContainer_PRODUCT&quot; data-attrib=&quot;zoovy:prod_features&quot; data-else=&quot;INNER&quot; data-if=&quot;BLANK&quot; data-object=&quot;PRODUCT&quot;&gt;&lt;h1&gt;Product Details&lt;/h1&gt;&lt;p&gt;Blue Lemonade Classic Monroe Top&lt;ul&gt;&lt;li&gt;Twist front&lt;li&gt;Wide halter straps&lt;li&gt;Ties at the neck &amp;amp; back&lt;li&gt;Removable padding&lt;li&gt;Fully lined&lt;li&gt;Matte Sky Blue Nylon/Lycra fabric&lt;li&gt;Matte Yellow Nylon/Lycra fabric
+Blue Lemonade Body Slimming Bottom&lt;li&gt;V front and back&lt;li&gt;Shirred panels&lt;li&gt;Mid cut legs&lt;li&gt;Full rear coverage&lt;li&gt;Fully lined&lt;li&gt;Matte Sky Blue Nylon/Lycra fabric &lt;li&gt;Matte Yellow Nylon/Lycra fabric
+&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;h1&gt;Shipping&lt;/h1&gt;
+				BikiniMo ships within 3 business days using UPS. we also enclose a FREE UPS return shipping label for you convenience.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Some items will be delivered via your local post office using UPS SURE-POST.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;We strongly recommend all customers to sign up for &amp;quot;UPS/MY CHOICE&amp;quot; and take advantage of the best logistical experience in the shipping industry.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Some of the options available through UPS/MYCHOICE&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;*Change destinations&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;*Hold a shipment at a local UPS Store&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;*Delay a delivery&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;*Reroute A delivery&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;*Along with many more options&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;Sign up for UPS/MYCHOICE today and take control of your shipments.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+</Description><DisableBuyerRequirements>true</DisableBuyerRequirements><DispatchTimeMax>3</DispatchTimeMax><GetItFast>false</GetItFast><HitCounter>HiddenStyle</HitCounter><InventoryTrackingMethod>SKU</InventoryTrackingMethod><ListingDuration>GTC</ListingDuration><Location>Orlando, Florida</Location><PayPalEmailAddress>Purchase@bikinimo.com</PayPalEmailAddress><PaymentMethods>PayPal</PaymentMethods><PrivateListing>false</PrivateListing><PrivateNotes>SKU:A318E</PrivateNotes><SKU>A318E</SKU><ShipToLocations>Worldwide</ShipToLocations><ThirdPartyCheckout>false</ThirdPartyCheckout><Title>Ujena Blue Lemonade Shaper Bikini - Sizes XS S M L XL 1X 2X - Separates or Set</Title><UseTaxTable>false</UseTaxTable><BestOfferDetails>
+<BestOfferEnabled>false</BestOfferEnabled>
+</BestOfferDetails><PictureDetails>
+<GalleryType>None</GalleryType><Picture>VendorHostedPicture</Picture><PictureURL>http://static---moetown55.app-hosted.com/media/img/moetown55/v1/A/a318_0.jpg</PictureURL>
+</PictureDetails><Storefront>
+<StoreCategory2ID>3557283015</StoreCategory2ID><StoreCategoryID>4352631015</StoreCategoryID>
+</Storefront><ShippingDetails>
+<InternationalInsuranceDetails>
+<InsuranceOption>NotOffered</InsuranceOption>
+</InternationalInsuranceDetails>
+<InsuranceDetails>
+<InsuranceOption>NotOffered</InsuranceOption>
+</InsuranceDetails>
+<ShippingServiceOptions>
+<FreeShipping>true</FreeShipping>
+<ShippingService>ShippingMethodStandard</ShippingService>
+<ShippingServicePriority>1</ShippingServicePriority>
+</ShippingServiceOptions>
+<ShippingServiceOptions>
+<FreeShipping>false</FreeShipping>
+<ShippingServiceAdditionalCost currencyID="USD">3.00</ShippingServiceAdditionalCost>
+<ShippingServiceCost currencyID="USD">39.00</ShippingServiceCost>
+<ShippingService>ShippingMethodExpress</ShippingService>
+<ShippingServicePriority>2</ShippingServicePriority>
+</ShippingServiceOptions>
+<ShippingServiceOptions>
+<FreeShipping>false</FreeShipping>
+<ShippingServiceAdditionalCost currencyID="USD">3.00</ShippingServiceAdditionalCost>
+<ShippingServiceCost currencyID="USD">73.00</ShippingServiceCost>
+<ShippingService>ShippingMethodOvernight</ShippingService>
+<ShippingServicePriority>3</ShippingServicePriority>
+</ShippingServiceOptions>
+<ShippingType>Flat</ShippingType>
+<SalesTax>
+<SalesTaxPercent>0.000</SalesTaxPercent>
+<SalesTaxState>
+</SalesTaxState>
+<ShippingIncludedInTax>false</ShippingIncludedInTax>
+</SalesTax>
+</ShippingDetails><ReturnPolicy>
+<Description>We must receive return/exchange request within 14 days of receipt of your order. We must receive the return/exchange item(s) within 30 days of receipt of you order. Exchanges are for same item different size only. There is no charge for an exchange. 20% restock on all returns.</Description><RefundOption>MoneyBackOrExchange</RefundOption><RestockingFeeValueOption>Percent_20</RestockingFeeValueOption><ReturnsAcceptedOption>ReturnsAccepted</ReturnsAcceptedOption><ReturnsWithinOption>Days_14</ReturnsWithinOption><ShippingCostPaidByOption>Buyer</ShippingCostPaidByOption>
+</ReturnPolicy><Variations>
+<!-- $VAR1 = {
+          \'A318E:A905:AX01:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A905:AX01:AW01\'
+                                    },
+          \'A318E:A903:AX01:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A903:AX01:AW02\'
+                                    },
+          \'A318E:A905:AX01:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A905:AX01:AW00\'
+                                    },
+          \'A318E:A904:AX01:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A904:AX01:AW01\'
+                                    },
+          \'A318E:A902:AX01:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A902:AX01:AW00\'
+                                    },
+          \'A318E:A905:AX02:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A905:AX02:AW01\'
+                                    },
+          \'A318E:A906:AX02:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A906:AX02:AW00\'
+                                    },
+          \'A318E:A902:AX02:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A902:AX02:AW00\'
+                                    },
+          \'A318E:A900:AX02:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A900:AX02:AW02\'
+                                    },
+          \'A318E:A903:AX02:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A903:AX02:AW02\'
+                                    },
+          \'A318E:A901:AX01:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A901:AX01:AW02\'
+                                    },
+          \'A318E:A902:AX02:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A902:AX02:AW02\'
+                                    },
+          \'A318E:A904:AX02:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A904:AX02:AW01\'
+                                    },
+          \'A318E:A904:AX02:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A904:AX02:AW00\'
+                                    },
+          \'A318E:A901:AX02:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A901:AX02:AW00\'
+                                    },
+          \'A318E:A901:AX01:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A901:AX01:AW00\'
+                                    },
+          \'A318E:A906:AX01:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A906:AX01:AW00\'
+                                    },
+          \'A318E:A906:AX02:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A906:AX02:AW02\'
+                                    },
+          \'A318E:A900:AX01:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A900:AX01:AW01\'
+                                    },
+          \'A318E:A905:AX02:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A905:AX02:AW02\'
+                                    },
+          \'A318E:A904:AX01:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A904:AX01:AW02\'
+                                    },
+          \'A318E:A906:AX01:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A906:AX01:AW01\'
+                                    },
+          \'A318E:A903:AX01:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A903:AX01:AW01\'
+                                    },
+          \'A318E:A901:AX02:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A901:AX02:AW02\'
+                                    },
+          \'A318E:A902:AX01:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A902:AX01:AW02\'
+                                    },
+          \'A318E:A904:AX01:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A904:AX01:AW00\'
+                                    },
+          \'A318E:A905:AX02:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A905:AX02:AW00\'
+                                    },
+          \'A318E:A900:AX02:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A900:AX02:AW01\'
+                                    },
+          \'A318E\' => {
+                       \'TS\' => \'1382373522\',
+                       \'PID\' => \'A318E\',
+                       \'DIRTY\' => \'0\',
+                       \'MARKETS\' => \'9999\',
+                       \'ONSHELF\' => \'209979\',
+                       \'AVAILABLE\' => \'209979\',
+                       \'SKU\' => \'A318E\'
+                     },
+          \'A318E:A903:AX01:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A903:AX01:AW00\'
+                                    },
+          \'A318E:A900:AX01:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A900:AX01:AW00\'
+                                    },
+          \'A318E:A906:AX01:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A906:AX01:AW02\'
+                                    },
+          \'A318E:A900:AX02:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A900:AX02:AW00\'
+                                    },
+          \'A318E:A902:AX02:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A902:AX02:AW01\'
+                                    },
+          \'A318E:A903:AX02:AW00\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A903:AX02:AW00\'
+                                    },
+          \'A318E:A900:AX01:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A900:AX01:AW02\'
+                                    },
+          \'A318E:A906:AX02:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A906:AX02:AW01\'
+                                    },
+          \'A318E:A905:AX01:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A905:AX01:AW02\'
+                                    },
+          \'A318E:A902:AX01:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A902:AX01:AW01\'
+                                    },
+          \'A318E:A903:AX02:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A903:AX02:AW01\'
+                                    },
+          \'A318E:A901:AX01:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'9999\',
+                                      \'AVAILABLE\' => \'3\',
+                                      \'SKU\' => \'A318E:A901:AX01:AW01\'
+                                    },
+          \'A318E:A904:AX02:AW02\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A904:AX02:AW02\'
+                                    },
+          \'A318E:A901:AX02:AW01\' => {
+                                      \'TS\' => \'1382373522\',
+                                      \'PID\' => \'A318E\',
+                                      \'DIRTY\' => \'0\',
+                                      \'MARKETS\' => \'0\',
+                                      \'ONSHELF\' => \'0\',
+                                      \'AVAILABLE\' => \'0\',
+                                      \'SKU\' => \'A318E:A901:AX02:AW01\'
+                                    }
+        };
+ --><Variation>
+<Quantity>3</Quantity><SKU>A318E:A900:AX01:AW00</SKU><StartPrice currencyID="USD">99.50</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A900:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A900:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A900:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A900:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A900:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XS</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A901:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A901:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A901:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A901:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A901:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A901:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>S</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A902:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A902:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A902:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A902:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A902:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A902:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>M</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A903:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A903:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A903:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A903:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A903:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A903:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>L</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A904:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A904:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A904:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A904:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A904:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A904:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XL</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A905:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A905:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A905:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A905:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A905:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A905:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>1X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A906:AX01:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A906:AX01:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>0</Quantity><SKU>A318E:A906:AX01:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Regular</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A906:AX02:AW00</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A906:AX02:AW01</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Bottom Only</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<Variation>
+<Quantity>3</Quantity><SKU>A318E:A906:AX02:AW02</SKU><StartPrice currencyID="USD">0.00</StartPrice><VariationSpecifics>
+<NameValueList><Name>Size (Women\'s)</Name><Value>2X</Value></NameValueList>
+<NameValueList><Name>Size Type</Name><Value>Plus</Value></NameValueList>
+<NameValueList><Name>Select Piece(s)</Name><Value>Complete Swimsuit</Value></NameValueList>
+
+</VariationSpecifics>
+</Variation>
+<VariationSpecificsSet>
+<NameValueList><Name>Size (Women\'s)</Name><Value>XS</Value><Value>S</Value><Value>M</Value><Value>L</Value><Value>XL</Value><Value>1X</Value><Value>2X</Value></NameValueList><NameValueList><Name>Size Type</Name><Value>Regular</Value><Value>Plus</Value></NameValueList><NameValueList><Name>Select Piece(s)</Name><Value>Top Only</Value><Value>Bottom Only</Value><Value>Complete Swimsuit</Value></NameValueList>
+</VariationSpecificsSet>
+</Variations><PrimaryCategory>
+<CategoryID>63867</CategoryID>
+</PrimaryCategory><BuyerRequirementDetails>
+<MinimumFeedbackScore>-1</MinimumFeedbackScore><ShipToRegistrationCountry>true</ShipToRegistrationCountry><VerifiedUserRequirements>
+<VerifiedUser>false</VerifiedUser>
+</VerifiedUserRequirements>
+</BuyerRequirementDetails><ItemSpecifics>
+<NameValueList>
+<Name>Pattern</Name><Value>Solid</Value>
+</NameValueList><NameValueList>
+<Name>Shade</Name><Value>Matte Yellow/Matte Sky Blue</Value>
+</NameValueList><NameValueList>
+<Name>Manufacturer</Name><Value>Ujena</Value>
+</NameValueList><NameValueList>
+<Name>Country of Manufacture</Name><Value>United States</Value>
+</NameValueList><NameValueList>
+<Name>Manufacturer Part Number</Name><Value>A318</Value>
+</NameValueList><NameValueList>
+<Name>Color</Name><Value>Yellow</Value>
+</NameValueList><NameValueList>
+<Name>Brand</Name><Value>Ujena</Value>
+</NameValueList><NameValueList>
+<Name>Style</Name><Value>Bikini</Value>
+</NameValueList>
+</ItemSpecifics>
+</Item><RequesterCredentials>
+<eBayAuthToken>AgAAAA**AQAAAA**aAAAAA**BzH5UQ**nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJnYOjCJCKogmdj6x9nY+seQ**CwQAAA**OAMAAA**mVInZKdn7vae2dhQrVijJj/0FoWSvWZw5iMhapEpCihfpwS4UxHX0AIQbzlqF/dgWiCWCsGMcOPmCQYolrRMGkLiXN9fsze85cAKcfcMQP9PBPR/UbnyMLd6wQnuTCXkoYbaFteshFoyNkrJ4xhmsrN1RYo3zuv0x9hSwKOe7ZJPoimepQmPsQWYBenOYy6hTMknIB/pihR/xyIdvnHp5Kx3ZAPPZrwEICvukKHtqgOvXE2vaowQojtwKoMwet1VryVMNJBYW6agyvaG4xXfg6qvbVI5K4Y9ZG2UV/AFJAZe7KX8TmGeSBzVPCA4FQXqAafkMo2jiDOsNCOw+3U/Eq3AMctZbyE7Oqz668pnkhmqX65F8OKRGOF/XFrZhr2EcKBEZnkXdJJAIK0kOsMsp6OcGHdXQBqVIAQA9RyJRw4CQsuyW7kfT1C9TmRzQVIRQ97DLgkVR1z5WiEexcRV+CKbIjqsLuknIOvhBYtxHnei7pEky5596CUdYZ3+v5NqhV4v20GdvUmURuyJzojKBieRD+myxnv/C3Tj+PHZ4IsGlpxlgD5IY1KW6/q4J+rkHf3G/jhdWWv45SHODTfLgQlXpy3KO4oat0Y5dzPwmWi53uc2PpDw5XRlwGaZ7OoM/LijX8yHqKx+UvrO/yXzDslqmvWtFEHZ8z6nHTQqQXgF+2rX3D26dig9DmPtDRcFA37kNBIykC+L+ylrgEHlOpdAurPXx5pAh+rrG4gK770ZHjS0gV3JWiuGgtTEkqS3grnWxME35UO0fLsawrs4AZ/NDlK0K8KK8KRmobdlroyoVq92fibLxg**</eBayAuthToken>
+</RequesterCredentials>
+</VerifyAddFixedPriceItemRequest>',
+                                        '_uri' => bless( do{\(my $o = 'https://api.ebay.com/ws/api.dll')}, 'URI::https' ),
+                                        '_headers' => bless( {
+                                                               'user-agent' => 'Groovy-Zoovy/1.0',
+                                                               'x-ebay-api-call-name' => 'VerifyAddFixedPriceItem',
+                                                               'x-ebay-api-siteid' => 0,
+                                                               'x-ebay-api-session-certificate' => 'py0ozv;gtagruv3;py0ozv9745p',
+                                                               '::std_case' => {
+                                                                                 'x-ebay-api-call-name' => 'X-EBAY-API-CALL-NAME',
+                                                                                 'x-ebay-api-siteid' => 'X-EBAY-API-SITEID',
+                                                                                 'if-ssl-cert-subject' => 'If-SSL-Cert-Subject',
+                                                                                 'x-ebay-api-session-certificate' => 'X-EBAY-API-SESSION-CERTIFICATE',
+                                                                                 'x-ebay-api-cert-name' => 'X-EBAY-API-CERT-NAME',
+                                                                                 'x-ebay-api-app-name' => 'X-EBAY-API-APP-NAME',
+                                                                                 'x-ebay-api-compatibility-level' => 'X-EBAY-API-COMPATIBILITY-LEVEL',
+                                                                                 'x-ebay-api-dev-name' => 'X-EBAY-API-DEV-NAME'
+                                                                               },
+                                                               'x-ebay-api-cert-name' => 'py0ozv9745p',
+                                                               'content-type' => 'text/xml',
+                                                               'x-ebay-api-app-name' => 'gtagruv3',
+                                                               'x-ebay-api-compatibility-level' => 741,
+                                                               'x-ebay-api-dev-name' => 'py0ozv'
+                                                             }, 'HTTP::Headers' ),
+                                        '_method' => 'POST',
+                                        '_uri_canonical' => $VAR1->{'_request'}{'_uri'}
+                                      }, 'HTTP::Request' )
+               }, 'HTTP::Response' );

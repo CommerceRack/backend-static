@@ -1,0 +1,22 @@
+<TEMPLATE ID="1001" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLWY" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Just Plain" OCREATED="20020618" RELEASED="20020618"><SUMMARY><![CDATA[
+Category Description
+Product Listing
+]]></SUMMARY>
+<SHORT><![CDATA[This layout features a description, along with a product list. There are no pictures (only thumbnails of products), its pretty plain and simple.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DATA="page:subcat" MODE="CHOOSER" TYPE="SUBCAT"></ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long the products will be hard to find. <br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKLWZ" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to your page, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+
+</TEMPLATE>

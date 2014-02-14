@@ -1,0 +1,65 @@
+<TEMPLATE ID="4003" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMJS" CREATOR="STAFF" IMAGES="3" PROPERTIES="1" SUBTYPE="G" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="3 Picture" RELEASED="20020129"><SUMMARY><![CDATA[
+Extended Description
+Gallery Listing
+IMAGE1 (180x180)
+IMAGE2 (180x180)
+IMAGE3 (180x180)
+Product Listing
+]]></SUMMARY>
+<SHORT><![CDATA[Three 180x180 pictures show extra detail, an extended description, and the gallery and the site products.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKMJT" TYPE="OUTPUT"><HTML><![CDATA[<center>
+<table>
+  <tr>
+    <td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="180" ID="PIC1" HELP="Please select a picture." DATA="page:picture1" WIDTH="180" PROMPT="Small Picture" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMJU" TYPE="OUTPUT"><HTML><![CDATA[
+    </td>
+    <td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="180" ID="PIC2" HELP="Please select a picture." DATA="page:picture2" WIDTH="180" PROMPT="Small Picture" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMJV" TYPE="OUTPUT"><HTML><![CDATA[
+    </td>
+    <td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="180" ID="PIC3" HELP="Please select a picture." DATA="page:picture3" WIDTH="180" PROMPT="Small Picture" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMJW" TYPE="OUTPUT"><HTML><![CDATA[
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Extra information for bidders" DATA="page:description" PROMPT="Extended Description" TYPE="TEXT"><DEFAULT><![CDATA[Thank you for visiting our website!  Here's a list of our other auctions, feel free to browse around and see what we have to buy.]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CPUKMJX" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="GALLERYSELECT1" TYPE="GALLERYSELECT"></ELEMENT>
+<ELEMENT ID="CPUKMJY" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="GALLERY1" HELP="These are all of the products in this marketplace" DATA="page:gallery" PROMPT="Gallery Listing" DEFAULT="THUMB,3,1,NONE,SHOWPRICE=1" TYPE="GALLERY"></ELEMENT>
+<ELEMENT ID="PRODLIST1" DATA="page:prodlist" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"><HELP><![CDATA[You can add related products to this, when you do they will appear below. WARNING: It is against eBay rules to have products on this page - do not add products if you are selling on eBay.]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CPUKMJZ" TYPE="OUTPUT"><HTML><![CDATA[
+</center>
+    </td>
+  </tr>
+</table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

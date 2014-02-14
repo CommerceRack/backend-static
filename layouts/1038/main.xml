@@ -1,0 +1,76 @@
+<TEMPLATE ID="1038" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="MYCONFIG" CREATOR="JT" IMAGES="1" CREATED="20060809" PROPERTIES="260" SUBTYPE="C" SERIES="2006" FORMAT="LAYOUT" SHORT="Contains 2 text boxes, a 5x1 image and detailed product list." TYPE="CONFIG" TITLE="Detailed Product List"><SUMMARY><![CDATA[Contains two WIKI text boxes, one at the top and one at the bottom, plus a 550 by 110 pixel (5x1 aspect ratio) image near the top of the page.  <br><br>
+
+The product list features a 150 x 150 pixel image on the left, with the product name, price, description to the left, with a more info and add to cart link below that.  Wiki formatting will be stripped.  This product list is NOT friendly towards HTML. <br><br>
+
+Subcategories on pages using this layout will be displayed in a three column format and will display the most recent set of subcategories if non are present for this category.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CUWNPYW" TYPE="OUTPUT"><HTML><![CDATA[
+<div align="center">
+	<div style="width: 550px; text-align: left;">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DESCENDTREE="1" NOROOT="1" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="3"><HTML><![CDATA[
+<table cellspacing=0 cellpadding=0 border=0 style="width:550px; margin-bottom:8px;" class="zcats_subcats_table">
+<!-- ROW -->
+<tr class="zcats_subcats_row">
+<!-- CATEGORY -->
+<td align="left" width="33%" style="padding:2px 4px 2px 0px;" class="zcat_subcats_cell"><a href='<% load($cat_url);  default("");  print(); %>' class="zcat_subcats subcats"><% load($cat_pretty);  default("");  print(); %></a></td>
+<!-- /CATEGORY -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="110" MINIMAL="0" DATA="page:picture1" WIDTH="550" PROMPT="Category Image ( 5 by 1 ) - optional" TYPE="IMAGE"><PRETEXT><![CDATA[</div>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="TEXT1" WIKI="3" DATA="page:desc" PROMPT="Category Description - optional" TYPE="TEXT"><HELPER><![CDATA[This is an optional text block that you can use to describe the product below.  Remember that if this text is too long, your customer will not see the product below.  Keep this short and to the point.]]></HELPER>
+<PRETEXT><![CDATA[<div style="margin-bottom:10px; width:auto; text-align:left;" class="zcat_image_5x1 zcat_image">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST" LINKFONT="DISABLED" ALTERNATE="1" DATA="page:prodlist" COLS="1" FORMAT="CUSTOM" PROMPT="Product Listing" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list -->
+<table border="0" cellpadding="3" cellspacing="0" style="width:auto; margin-bottom:10px;">
+<!-- PRODUCT -->
+<tr>
+	<td <% load($bg);  default("");  print(); %> width="1%" style="padding-right:7px;">
+<a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"150",h=>"150",tag=>"1");  print(); %></a>
+	</td>
+	<td valign="top" <% load($bg);  default("");  print(); %>>
+	<table cellspacing=0 border=0 cellpadding=0 width="100%">
+	<tr>
+		<td><div style="font-family:<% load($font);  default("");  print(); %>; font-size:10pt;">
+	<a href="<% load($PROD_URL);  default("");  print(); %>"><strong><% load($zoovy:prod_name); format(wiki,softbreak=>"",title1=>"",/title1=>"",title2=>"",/title2=>"",title3=>"",/title3=>"",listitem=>"",/listitem=>"",list=>"",/list=>"",hardbreak=>""); default(""); print(); %></strong></a>
+		</div>
+		</td>
+		<td align="right"><div style="color: #<% load($head_bg_spec);  default("");  print(); %>; font-family:<% load($font);  default("");  print(); %>; font-size:13pt; font-weight:bold;">
+		<% load($zoovy:base_price); default(""); format(money); format(pretext=>"only "); print(); %>
+		</div></td>
+	</tr>
+	<tr>
+		<td align="left" colspan="2">
+		<div style="color:#<% load($fg_spec);  default("");  print(); %>; font-family: <% load($font);  default("");  print(); %>; font-size:9pt;">
+		<% load($zoovy:prod_mfg); default(""); format(pretext=>"Manufacturer: ",posttext=>"&lt;br&gt;"); print(); %>
+		<% load($zoovy:prod_desc);  default(""); format(wiki,softbreak=>"",title1=>"",/title1=>"",title2=>"",/title2=>"",title3=>"",/title3=>"",listitem=>"",/listitem=>"",list=>"",/list=>"",hardbreak=>""); strip(length=>"300"); format(encode=>"entity"); print(); %>
+		<div style="width:auto; text-align:right"><a href="<% load($PROD_URL);  default("");  print(); %>" class="z_add_link">More Info</a> | <% load($ADD_LINK);  default("");  print(); %></div>
+		</div>
+		</td>
+	</tr>
+	</table></td></tr>
+<!-- /PRODUCT -->
+<!-- END product list --></table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="TEXT2" WIKI="3" DATA="page:desc_bottom" PROMPT="Category Description - optional" TYPE="TEXT"><HELPER><![CDATA[This is an optional text block that you can use to describe the product above.  Because this text appears below the product, you can make it longer and use it for SEO text.]]></HELPER>
+<PRETEXT><![CDATA[<div style="margin-bottom:10px; width:auto; text-align:left;" class="zcat_image_5x1 zcat_image">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CUWNPYX" TYPE="OUTPUT"><HTML><![CDATA[	
+	</div>
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

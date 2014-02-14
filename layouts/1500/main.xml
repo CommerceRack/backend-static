@@ -1,0 +1,21 @@
+<TEMPLATE ID="1500" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMKI" CREATOR="STAFF" CREATED="0" IMAGES="0" PROPERTIES="1" SUBTYPE="U" SERIES="2001" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Default" RELEASED="20010911"><SUMMARY><![CDATA[
+Mail Form
+]]></SUMMARY>
+<SHORT><![CDATA[Includes a brief description of how to a customer can contact the merchant, and provides an email form.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" TYPE="READONLY" LOAD="FLOW::DESCRIPTION"><ERROR><![CDATA[This description is automatically generated based on your entered phone number and choice of customer management.]]></ERROR>
+</ELEMENT>
+<ELEMENT ID="CPUKMKJ" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MAILFORM" HELP="This is a form to allow users to send you email." DATA="page:mailform" REQORDER="1" PROMPT="Mail Form" TYPE="MAILFORM"></ELEMENT>
+
+</TEMPLATE>

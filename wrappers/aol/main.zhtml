@@ -1,0 +1,105 @@
+<!-- CONFIG
+THEME=aol
+SITEBUTTONS=aol
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- HEAD -->
+<style type="text/css">
+body	{margin: 0px;}
+p, td, li, ol, ul, body	{font-family: trebuchet, trebuchet ms, Arial, Helvetica, sans-serif; font-size: 9pt; color: #000000;}
+.body_bg	{background-color: #C4DCE8;}
+.footer_bg	{background-color: #A0BDCB;}
+.title	{color: #7495A6; font-size: 11pt; font-weight: bold;}
+.outline	{border-style: solid; border-color: #A0BDCB; border-width: 2px;}
+a	{color: #32627E;}
+a:hover	{color: #6D903E;}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td align="left" bgcolor="#C1E888" width="95%"><img src="<!-- WRAPPER_URL -->/logo_small.gif" width="353" height="36" border=0 alt="AOL Classifieds MarketPlace"></td>
+	<td align="right" bgcolor="#C1E888" width="5%"><table><tr>
+		<td NOWRAP><span class="minicart">Items in Cart: <!-- MINICART
+ITEMSONLY=1
+-->&nbsp;|&nbsp;Subtotal: <!-- MINICART
+SUBTOTALONLY=1
+--></td>
+	</tr></table></td>
+</tr><tr>
+	<td colspan="2" height="1" bgcolor="#759944"></td>
+</tr></table>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td background="<!-- WRAPPER_URL -->/tile_4.gif" height=25 align="right" valign="bottom"><strong><a href="<!-- HOME_URL -->">Home</a>&nbsp;|&nbsp;<a href="<!-- ABOUT_URL -->">About Us</a>&nbsp;|&nbsp;<a href="<!-- CONTACT_URL -->">Contact</a>&nbsp;|&nbsp;<a href="<!-- SUBSCRIBE_URL -->">Newsletter</a>&nbsp;|&nbsp;<a href="<!-- CART_URL -->">View Cart</a>&nbsp;|&nbsp;<a href="<!-- CHECKOUT_URL -->">Checkout</a>&nbsp;&nbsp;</strong></td>
+</tr></table>
+<table cellspacing=0 cellpadding=4 border=0 width="100%"><tr>
+	<td width="10%" align="center" class="body_bg" valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td width="5" valign="top" align="left"><img src="<!-- WRAPPER_URL -->/body_corner_ul.gif" width="5" height="5" alt="" border="0"></td>
+		<td background="<!-- WRAPPER_URL -->/body_top.gif" height="5" width="99%"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="1" height="5"></td>
+		<td width="5" valign="top" align="right"><img src="<!-- WRAPPER_URL -->/body_corner_ur.gif" width="5" height="5" alt="" border="0"></td>
+	</tr><tr>
+		<td colspan="3"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+			<td width="2" bgcolor="#A0B9C6"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="2"></td>
+			<td width="99%" align="left" bgcolor="#ffffff"><table width="100%" cellpadding=1 cellspacing=1><!-- MENU
+FORMAT=<tr><td><a href="%URL%" class="cats"><strong>%MESSAGE%</strong></a></td></tr>
+-->
+
+</table></td>
+			<td width="2" bgcolor="#A0B9C6"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="2"></td>
+		</tr></table></td>
+	</tr><tr>
+		<td valign="bottom" align="left"><img src="<!-- WRAPPER_URL -->/body_corner_ll.gif" width="5" height="5" alt="" border="0"></td>
+		<td background="<!-- WRAPPER_URL -->/body_bottom.gif" height="5"></td>
+		<td valign="bottom" align="right"><img src="<!-- WRAPPER_URL -->/body_corner_lr.gif" width="5" height="5" alt="" border="0"></td>
+	</tr></table><br><img src="<!-- GRAPHICS_URL -->/blank.gif" width="150" height="1">
+	
+	
+	
+	
+	</td>
+	<td align="center" class="body_bg"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td width="5" valign="top" align="left"><img src="<!-- WRAPPER_URL -->/body_corner_ul.gif" width="5" height="5" alt="" border="0"></td>
+		<td background="<!-- WRAPPER_URL -->/body_top.gif" height="5" width="99%"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="1" height="5"></td>
+		<td width="5" valign="top" align="right"><img src="<!-- WRAPPER_URL -->/body_corner_ur.gif" width="5" height="5" alt="" border="0"></td>
+	</tr><tr>
+		<td colspan="3"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+			<td width="2" bgcolor="#A0B9C6"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="2"></td>
+			<td width="100%" bgcolor="#ffffff"><table width='100%' cellpadding=5><tr>
+				<td align="left"><table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+						<td width="90%"><p class="title"><!-- TITLE --></p></td>
+						<td width="1%"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="5" height="5"></td>
+						<td width="9%"><a href="<!-- HOME_URL -->"><!-- LOGO
+HEIGHT=50
+WIDTH=200
+--></a></td>
+			</tr></table><br><!-- BODY --></td>
+		</tr></table></td>
+			<td width="2" bgcolor="#A0B9C6"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="2"></td>
+		</tr></table></td>
+	</tr><tr>
+		<td valign="bottom" align="left"><img src="<!-- WRAPPER_URL -->/body_corner_ll.gif" width="5" height="5" alt="" border="0"></td>
+		<td background="<!-- WRAPPER_URL -->/body_bottom.gif" height="5"></td>
+		<td valign="bottom" align="right"><img src="<!-- WRAPPER_URL -->/body_corner_lr.gif" width="5" height="5" alt="" border="0"></td>
+	</tr></table>	
+<!--
+<div align="center">Shops | Advertise | Security | Privacy | Terms of Use | Question/Problem | Site Map<br>
+&copy; 2000-2004 Zoovy.com  All rights reserved.</div>		
+--></td>
+</tr></table>
+<table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
+	<td height=24 class="footer_bg" align="right" colspan=3><strong><a href="<!-- HOME_URL -->">Home</a>&nbsp;|&nbsp;<a href="<!-- ABOUT_URL -->">About Us</a>&nbsp;|&nbsp;<a href="<!-- CONTACT_URL -->">Contact</a>&nbsp;|&nbsp;<a href="<!-- SUBSCRIBE_URL -->">Newsletter</a>&nbsp;|&nbsp;<a href="<!-- CART_URL -->">View Cart</a>&nbsp;|&nbsp;<a href="<!-- CHECKOUT_URL -->">Checkout</a>&nbsp;&nbsp;</strong></td>
+</tr><tr>
+	<td background="<!-- WRAPPER_URL -->/tile_2.gif"><!-- FOOTER
+TRANSPARENT=TRUE
+--></td>
+	<td width="4%" background="<!-- WRAPPER_URL -->/tile_2.gif" align="right"><a href="javascript:window.close();"><img src="<!-- WRAPPER_URL -->/cancel_btn.gif" width="53" height="19" border=0 alt="Cancel"></a></td>
+	<td width="1%" background="<!-- WRAPPER_URL -->/tile_2.gif"></td>
+</tr></table>
+
+
+
+</body>
+</html>

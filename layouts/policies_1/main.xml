@@ -1,0 +1,359 @@
+<TEMPLATE ID="policies_1" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="MYCONFIG" V="3" CREATED="00000000" IMAGES="0" SUBTYPE="R" PROMPT="Policies 1" TYPE="CONFIG" TITLE="Policies Page: 3 policies and 25 faq" OCREATED="20060801"><SUMMARY><![CDATA[This layout contains three policies; payment, shipping and returns.  The policies can be set to not display, so you can disable those you do not need or want on the website/auction.  Below the three policies is a list of FAQ.  Up to 25 questions and answers can be set.]]></SUMMARY>
+<SHORT><![CDATA[This layout displays your profile shipping, return and payment policy, as well as a FAQ list of up to 25 Questions and Answers.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPXKZXE" RAW="1" SUB="TABLE_HEADING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_SIZE"></ELEMENT>
+<ELEMENT ID="CPXKZXR" RAW="1" SUB="TABLE_HEADING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_BACKGROUND_COLOR"></ELEMENT>
+<ELEMENT ID="CPXKZXW" RAW="1" SUB="TABLE_HEADING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_FACE"></ELEMENT>
+<ELEMENT ID="CPXKZXX" RAW="1" SUB="TABLE_HEADING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_TEXT_COLOR"></ELEMENT>
+<ELEMENT ID="COMPANYNAME" RAW="1" SUB="COMPANY_NAME" TYPE="READONLY" LOAD="profile:zoovy:company_name"></ELEMENT>
+<ELEMENT ID="CPUKNGS" TYPE="OUTPUT"><HTML><![CDATA[
+<div align="center">
+<div style="text-align:left; width:600px; line-height:120%;">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="border:1px solid #%TABLE_HEADING_BACKGROUND_COLOR%; margin-bottom:10px;">
+<tr>
+	<td colspan="2" style="background-color:#%TABLE_HEADING_BACKGROUND_COLOR%; padding:3px; text-align:center;"><span style="font-size:11pt; font-weight:bold; font-family:%TABLE_HEADING_FONT_FACE%; color:#%TABLE_HEADING_TEXT_COLOR%">%COMPANY_NAME% Policies</span></td>
+</tr>
+<tr>
+	<td valign="top" style="padding:2px;">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="COMPANYADDRESS1" TYPE="READONLY" LOAD="profile:zoovy:address1"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="COMPANYADDRESS2" TYPE="READONLY" LOAD="profile:zoovy:address2"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="COMPANYCITY" TYPE="READONLY" POSTTEXT=", " LOAD="profile:zoovy:city"></ELEMENT>
+<ELEMENT ID="COMPANYSTATE" TYPE="READONLY" POSTTEXT=". " LOAD="profile:zoovy:state"></ELEMENT>
+<ELEMENT ID="COMPANYZIP" TYPE="READONLY" LOAD="profile:zoovy:zip"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="COMPANYCOUNTRY" TYPE="READONLY" LOAD="profile:zoovy:country"></ELEMENT>
+<ELEMENT ID="CPUKNGS" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+	<td valign="top" style="padding:2px;" align="right">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="COMPANYPHONE" PRETEXT="Phone: " TYPE="READONLY" LOAD="profile:zoovy:support_phone"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="COMPANYEMAIL" TYPE="READONLY" LOAD="profile:zoovy:support_email"><PRETEXT><![CDATA[<a href="mailto:%COMPANY_EMAIL%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="COMPANYFAX" PRETEXT="Fax: " TYPE="READONLY" LOAD="profile:zoovy:facsimile"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNGS2" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr></table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="RETURNPOLICY" SUB="RETURN_POLICY" PROMPT="Return Policy " TYPE="READONLY" LOAD="profile:zoovy:return_policy"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<PRETEXT><![CDATA[<div style="margin-bottom:10px;"><b>Return Policy:</b><br />]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PAYMENTPOLICY" SUB="PAYMENT_POLICY" PROMPT="Payment Policy " TYPE="READONLY" LOAD="profile:zoovy:payment_policy"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<PRETEXT><![CDATA[<div style="margin-bottom:10px;"><b>Payment Policy:</b><br />]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="SHIPPINGPOLICY" SUB="SHIPPING_POLICY" PROMPT="Shipping Policy " TYPE="READONLY" LOAD="profile:zoovy:shipping_policy"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<PRETEXT><![CDATA[<div style="margin-bottom:10px;"><b>Shipping Policy:</b><br />]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="RETURNCHECK" TRUE="%RETURN_POLICY%" FALSE="" DATA="profile:show_returns" PROMPT="Show Returns Policy" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"></ELEMENT>
+<ELEMENT ID="PAYMENTCHECK" TRUE="%PAYMENT_POLICY%" FALSE="" DATA="profile:show_payment" PROMPT="Show Payment Policy" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"></ELEMENT>
+<ELEMENT ID="SHIPPINGCHECK" TRUE="%SHIPPING_POLICY%" FALSE="" DATA="profile:show_shipping" PROMPT="Show Shipping Policy" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"></ELEMENT>
+<ELEMENT ID="CVBUUTD" DATA="page:faq_title" SUB="FAQ_TITLE" PROMPT="Header for the FAQ" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div style='margin-bottom:5px;'><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNGR" TYPE="OUTPUT"><HTML><![CDATA[
+<p> </p>
+%FAQ_TITLE%
+<a name='faq'></a>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="L1" TYPE="READONLY" LOAD="profile:zoovy:faq_q1"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q1">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L2" TYPE="READONLY" LOAD="profile:zoovy:faq_q2"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q2">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L3" TYPE="READONLY" LOAD="profile:zoovy:faq_q3"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q3">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L4" TYPE="READONLY" LOAD="profile:zoovy:faq_q4"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q4">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L5" TYPE="READONLY" LOAD="profile:zoovy:faq_q5"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q5">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L6" TYPE="READONLY" LOAD="profile:zoovy:faq_q6"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q6">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L7" TYPE="READONLY" LOAD="profile:zoovy:faq_q7"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q7">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L8" TYPE="READONLY" LOAD="profile:zoovy:faq_q8"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q8">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L9" TYPE="READONLY" LOAD="profile:zoovy:faq_q9"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q9">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L10" TYPE="READONLY" LOAD="profile:zoovy:faq_q10"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q10">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L11" TYPE="READONLY" LOAD="profile:zoovy:faq_q11"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q11">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L12" TYPE="READONLY" LOAD="profile:zoovy:faq_q12"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q12">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L13" TYPE="READONLY" LOAD="profile:zoovy:faq_q13"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q13">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L14" TYPE="READONLY" LOAD="profile:zoovy:faq_q14"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q14">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L15" TYPE="READONLY" LOAD="profile:zoovy:faq_q15"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q15">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L16" TYPE="READONLY" LOAD="profile:zoovy:faq_q16"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q16">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L17" TYPE="READONLY" LOAD="profile:zoovy:faq_q17"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q17">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L18" TYPE="READONLY" LOAD="profile:zoovy:faq_q18"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q18">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L19" TYPE="READONLY" LOAD="profile:zoovy:faq_q19"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q19">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L20" TYPE="READONLY" LOAD="profile:zoovy:faq_q20"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q20">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L21" TYPE="READONLY" LOAD="profile:zoovy:faq_q21"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q21">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L22" TYPE="READONLY" LOAD="profile:zoovy:faq_q22"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q22">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L23" TYPE="READONLY" LOAD="profile:zoovy:faq_q23"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q23">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L24" TYPE="READONLY" LOAD="profile:zoovy:faq_q24"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q24">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L25" TYPE="READONLY" LOAD="profile:zoovy:faq_q25"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q25">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNGR" TYPE="OUTPUT"><HTML><![CDATA[
+
+<table cellspacing=0 cellpadding=0 border=0 style='margin-top:20px;'>
+<tr><td width=25></td><td></td></tr>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="Q1" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q1" PROMPT="Question #1" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q1"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A1" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a1" PROMPT="Answer #1" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q2" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q2" PROMPT="Question #2" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q2"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A2" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a2" PROMPT="Answer #2" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q3" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q3" PROMPT="Question #3" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q3"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A3" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a3" PROMPT="Answer #3" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q4" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q4" PROMPT="Question #4" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q4"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A4" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a4" PROMPT="Answer #4" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q5" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q5" PROMPT="Question #5" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q5"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A5" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a5" PROMPT="Answer #5" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q6" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q6" PROMPT="Question #6" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q6"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A6" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a6" PROMPT="Answer #6" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q7" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q7" PROMPT="Question #7" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q7"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A7" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a7" PROMPT="Answer #7" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q8" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q8" PROMPT="Question #8" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q8"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A8" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a8" PROMPT="Answer #8" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q9" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q9" PROMPT="Question #9" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q9"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A9" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a9" PROMPT="Answer #9" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q10" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q10" PROMPT="Question #10" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q10"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A10" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a10" PROMPT="Answer #10" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q11" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q11" PROMPT="Question #11" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q11"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A11" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a11" PROMPT="Answer #11" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q12" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q12" PROMPT="Question #12" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q12"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A12" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a12" PROMPT="Answer #12" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q13" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q13" PROMPT="Question #13" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q13"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A13" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a13" PROMPT="Answer #13" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q14" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q14" PROMPT="Question #14" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q14"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A14" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a14" PROMPT="Answer #14" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q15" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q15" PROMPT="Question #15" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q15"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A15" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a15" PROMPT="Answer #15" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q16" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q16" PROMPT="Question #16" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q16"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A16" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a16" PROMPT="Answer #16" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q17" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q17" PROMPT="Question #17" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q17"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A17" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a17" PROMPT="Answer #17" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q18" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q18" PROMPT="Question #18" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q18"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A18" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a18" PROMPT="Answer #18" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q19" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q19" PROMPT="Question #19" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q19"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A19" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a19" PROMPT="Answer #19" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q20" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q20" PROMPT="Question #20" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q20"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A20" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a20" PROMPT="Answer #20" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q21" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q21" PROMPT="Question #21" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q21"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A21" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a21" PROMPT="Answer #21" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q22" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q22" PROMPT="Question #22" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q22"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A22" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a22" PROMPT="Answer #22" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q23" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q23" PROMPT="Question #23" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q23"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A23" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a23" PROMPT="Answer #23" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q24" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q24" PROMPT="Question #24" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q24"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A24" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a24" PROMPT="Answer #24" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="Q25" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_q25" PROMPT="Question #25" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q25"><b>]]></PRETEXT>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="A25" HELP="Please enter a question into this field" DATA="profile:zoovy:faq_a25" PROMPT="Answer #25" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNGS" TYPE="OUTPUT"><HTML><![CDATA[
+</table>
+</div></div>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

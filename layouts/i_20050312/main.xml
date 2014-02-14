@@ -1,0 +1,110 @@
+<TEMPLATE ID="i_20050312" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNKU" IMAGES="0" CREATED="20050312" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Multiple Product List" NEWSLETTER="1"><SUMMARY><![CDATA[
+Description
+Description2
+Email Header
+Product Listing
+Product Listing 2
+Product Listing 3
+]]></SUMMARY>
+<SHORT><![CDATA[Highlight a single product at the top and two product lists in the body with a text description preceding each.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPVRQCT" RAW="1" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCU" RAW="1" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCV" RAW="1" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCZ" RAW="1" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDD" RAW="1" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDE" RAW="1" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDI" RAW="1" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDK" RAW="1" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDL" RAW="1" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDM" RAW="1" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDQ" RAW="1" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDV" RAW="1" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQDW" RAW="1" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEB" RAW="1" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEC" RAW="1" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQED" RAW="1" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEF" RAW="1" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEK" RAW="1" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEL" RAW="1" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEP" RAW="1" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEQ" RAW="1" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQER" RAW="1" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL"></ELEMENT>
+<ELEMENT ID="CPVRQEV" RAW="1" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL"></ELEMENT>
+<ELEMENT ID="CVPKKKQ" HEIGHT="120" MINIMAL_MODE="1" SUB="NEWS_LOGO" WIDTH="200" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="CPUKNKV" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>%SUBJECT%</title>
+<style type="text/css">
+.head_bg_color {background-color: #660000;}
+body,p,td,li { font-size: 8pt; font-family: Arial, Helvetica; 
+color: #000000;  }
+body { background-color: #FFFFFF; }
+.bg_color { background-color: #FFFFFF; }
+z_footer { background-color: #FFFFFF; font-size: 8pt; 
+font-family: Arial, Helvetica; color: #000000;  }
+a:visited { color: #660000; }
+a:active { color: #660000; }
+a:hover { color: #660000; }
+a { color: #660000; }
+z_alert { color: #660000;}
+.list_color1 { background-color: #F0F0F0; font-size: 8pt; 
+font-family: Arial, Helvetica; color: #000000;  }
+.list_color2 { background-color: #FFFFFF; font-size: 8pt; 
+font-family: Arial, Helvetica; color: #000000;  }
+.list_head { font-weight: bold; background-color: #660000; 
+font-size: 8pt; font-family: Arial, Helvetica; color: #FFFFFF;  }
+</style>
+</head>
+<body>
+
+<table cellspacing="0" width="100%" cellpadding="0"><tr>
+	<td align="left" valign="middle"><a 
+href='%HOME_URL%?%TRACKING%'>
+%NEWS_LOGO%
+</a></td>
+	<td>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MAX="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" COLS="1" FORMAT="DETAIL" PROMPT="Product Listing" TYPE="PRODLIST" SRC="page:prodlist1stuff"></ELEMENT>
+<ELEMENT ID="CPUKNKY" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr><tr>
+	<td colspan="2">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" LENGTH="35" HELP="Please enter a header that will appear at the top of the email content" DATA="page:email_header" PROMPT="Email Header" HELPER="Remember to keep this text short and to the point." TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[</span></td></tr></table>]]></POSTTEXT>
+<PRETEXT><![CDATA[<table cellspacing="0" cellpadding="3">
+<tr><td class="head_bg_color"><span class="list_head">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNKZ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr><tr>
+	<td colspan=2><table cellspacing="0"><tr>
+		<td class="list_color1" width="5%">&nbsp;</td>
+		<td>
+		
+		
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this section of the newsletter" DATA="page:description" PROMPT="Description" HELPER="Remember to keep this text short and to the point.  " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="PRODLIST2" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist2" PROMPT="Product Listing 2" DEFAULT="&amp;FORMAT=THUMB&amp;COLS=3&amp;ALTERNATE=1" TYPE="PRODLIST" SRC="page:prodlist2stuff"></ELEMENT>
+<ELEMENT ID="DESCRIPTION2" HELP="Please describe this section of the newsletter" DATA="page:description2" PROMPT="Description2" HELPER="Remember to keep this text short and to the point.  " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="PRODLIST3" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist3" PROMPT="Product Listing 3" DEFAULT="&amp;FORMAT=THUMB&amp;COLS=3&amp;ALTERNATE=1" TYPE="PRODLIST" SRC="page:prodlist3stuff"></ELEMENT>
+<ELEMENT ID="CPUKNLA" TYPE="OUTPUT"><HTML><![CDATA[
+		
+		
+		
+		</td>
+	</tr></table></td>
+</tr><tr>
+	<td colspan="2" class="head_bg_color"></td>
+</tr></table>
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

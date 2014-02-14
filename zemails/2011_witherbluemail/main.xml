@@ -1,0 +1,162 @@
+<TEMPLATE ID="2011_witherbluemail" FORMAT="EMAIL">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUMBRN" TYPE="CONFIG" THUMBNAIL="" THUMBNAILS="" CREATED="0" TITLE="Wither Blue" THUMBNAIL_COUNT="0" RELEASED="0"></ELEMENT>
+<ELEMENT ID="CPZWXAA" SUB="EMAIL_URL" TYPE="READONLY" LOAD="URL::EMAIL_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAB" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAC" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAD" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAG" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAK" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAL" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAN" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAP" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAR" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAS" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAT" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAV" SUB="NEWS_URL" TYPE="READONLY" LOAD="URL::NEWS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAX" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAZ" SUB="FASTORDER_URL" TYPE="READONLY" LOAD="URL::FASTORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBB" SUB="MAIL_FORM_URL" TYPE="READONLY" LOAD="URL::MAIL_FORM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBC" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBD" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBI" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBK" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBM" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBO" SUB="CLAIM_URL" TYPE="READONLY" LOAD="URL::CLAIM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBR" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBS" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBW" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQHREXQ" SUB="title1" TYPE="HIDDEN"><DEFAULT><![CDATA[<div style="font-size:11pt; font-weight:bold" class="wiki_header1">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXR" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[</div>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXS" SUB="title2" TYPE="HIDDEN"><DEFAULT><![CDATA[<div style="font-size:10pt; font-weight:bold" class="wiki_header2">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXT" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</div>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXU" SUB="title3" TYPE="HIDDEN"><DEFAULT><![CDATA[<span style="font-weight:bold;"  class="wiki_header3">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXV" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</span>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILIST" SUB="list" TYPE="HIDDEN"><DEFAULT><![CDATA[<ul  class="wiki_list">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLIST" SUB="/list" TYPE="HIDDEN"><DEFAULT><![CDATA[</ul>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILISTITEM" SUB="listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[<li class="wiki_listitem">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLISTITEM" SUB="/listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[</li>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKISECTION" SUB="section" TYPE="HIDDEN"><DEFAULT><![CDATA[<p  class="wiki_section">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDSECTION" SUB="/section" TYPE="HIDDEN"><DEFAULT><![CDATA[</p>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKISOFTBREAK" SUB="softbreak" TYPE="HIDDEN"><DEFAULT><![CDATA[<br>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIHARDBREAK" SUB="hardbreak" TYPE="HIDDEN"><DEFAULT><![CDATA[<hr class="wiki_ruler">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLE" SUB="table" TYPE="HIDDEN"><DEFAULT><![CDATA[<table cellspacing="0" class="wiki_table">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLE" SUB="/table" TYPE="HIDDEN"><DEFAULT><![CDATA[</table>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEROW" SUB="tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[<tr class="wiki_tablerow">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEROW" SUB="/tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[</tr>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLECELL" SUB="tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="wiki_tabledata">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLECELL" SUB="/tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[</td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEHEAD" SUB="tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="wiki_tablehead"><b>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CART" SUB="HTMLCONTENTS" PROMPT="Shopping Cart" TYPE="ORDER" MODE="EMAIL"></ELEMENT>
+<ELEMENT ID="CSFWSAG" SUB="CONTENTS" DEFAULT="%HTMLCONTENTS%" TYPE="HIDDEN"></ELEMENT>
+<ELEMENT HEIGHT="80" ID="WRAPPER_LOGO" MINIMAL_MODE="1" SUB="WRAP_LOGO" WIDTH="200" TYPE="LOGO" BGCOLOR="TTTTTT"></ELEMENT>
+<ELEMENT ID="STORE_PHONE" SUB="WRAP_PHONE" TYPE="READONLY" LOAD="profile:zoovy:support_phone" RAW="1"><PRETEXT><![CDATA[<div class='phonePrompt'>Questions? Call</div><div class='phoneNumber'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="STORE_HOURS" SUB="WRAP_STORE_HOURS" PROMPT="Store Hours" TYPE="TEXTBOX" FONT="0" DATA="profile:zoovy:store_hours"><PRETEXT><![CDATA[<div id='mhStoreHours'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="SUBCATEGORIES" SUB="EMAIL_SUBCATS" TYPE="SUBCAT" MODE="LIST"><HTML><![CDATA[
+<!-- CATEGORY -->
+<a href='<% print($cat_url); %>' style='color:#ffffff; text-decoration:none;'  title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>"><% print($cat_pretty); %></a>
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); print(" | "); %>
+<!-- /CATEGORY -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEOEUCE" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="DEOEUCF" TYPE="HEAD"></ELEMENT>
+<ELEMENT ID="DEOEUCG" TYPE="HIDDEN"><DEFAULT><![CDATA[
+<table cellspacing='0' cellpadding='0' width='100%'><tr><td bgcolor='#cccccc'>
+
+<table cellspacing='0' cellpadding='0' width='700' align='center'>
+<tr>
+	<td valign='top' class='ztxt' style='border-left:1px solid #666666; border-right:1px solid #666666; border-bottom:1px solid #666666; background:#ffffff;' bgcolor='#ffffff'>
+
+<table cellspacing='0' cellpadding='0' width='100%'>
+<tr>
+	<td background="%EMAIL_URL%/wb_header_bg-988x101.png" style='height:90px; background:url(%EMAIL_URL%/wb_header_bg-988x101.png) no-repeat right;'>
+<div style='padding:5px;'>%EMAIL_LOGO%</div>
+	</td>
+	<td valign='top' align='right'>
+<div><img src="%EMAIL_URL%/wb_menu-239x34.png" width='239' height='34' alt='' border='0' usemap='#zheaderMap' /></div>
+
+<div style='padding:5px;'>
+%WRAP_PHONE%
+%WRAP_STORE_HOURS%
+</div>
+
+	</td>
+</tr>
+<tr>
+	<td colspan='2' background='%EMAIL_URL%/wb_cats_bg-1x38.jpg' style='height:38px; font-size:11px; font-family:Helvetica, Arial, sans-serif; line-height:30px; color:#a0b3c1;' valign='top' align='center'>
+%EMAIL_SUBCATS%	
+	</td>
+</tr>
+<tr>
+	<td colspan='2'>
+	<div style='padding:5px;'>
+	
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="ZBODY" HTML="" DIV="EMAILBODY" TYPE="OUTPUT"></ELEMENT>
+<ELEMENT ID="DEOEUCH" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+	</div>
+</td>
+</tr>
+</table>
+
+
+	</td>
+</tr>
+</table>
+
+
+</td></tr></table>
+
+<map name="zheaderMap">
+	<area shape="rect" coords="154,3,234,26" href="%CONTACT_URL%" title='contact us'>
+	<area shape="rect" coords="73,3,147,25" href="%CUSTOMER_URL%" title='order status'>
+	<area shape="rect" coords="11,4,69,26" href="%RETURNS_URL%#faq" title='frequently asked questions'>
+</map>
+
+</body>
+</html>
+]]></DEFAULT>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,119 @@
+<TEMPLATE ID="r-20090113" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="MYCONFIG" V="3" CREATED="20090114" IMAGES="0" SUBTYPE="R" TYPE="CONFIG" TITLE="Policies Page: 3 policies and faq" RELEASED="20090114"><SUMMARY><![CDATA[This layout contains three policies; payment, shipping and returns.  Below the three policies is a list of FAQ.]]></SUMMARY>
+<SHORT><![CDATA[This layout displays your profile shipping, return and payment policy, as well as a searchable FAQ interface and a list of your q &amp; a.  This faq element has the list of questions and answers displayed, instead of hidden and revealed 'on click'. Makes the page longer, but is easier to use.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="RETURNPOLICY" DATA="profile:zoovy:return_policy" PROMPT="Return Policy " FONT="0" TYPE="TEXT"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<PRETEXT><![CDATA[
+<div id='returns' style="margin-bottom:10px;">
+	<div class="ztitle">
+		<div class='zcolor' style='padding:3px 8px; margin-bottom:5px;'>Return Policy:</div>
+	</div>
+	<div style="margin-left:8px;" class='ztxt'>]]></PRETEXT>
+<POSTTEXT><![CDATA[
+	</div>
+</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PAYMENTPOLICY" DATA="profile:zoovy:payment_policy" PROMPT="Payment Policy " FONT="0" TYPE="TEXT"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<PRETEXT><![CDATA[
+<div id='payment' style="margin-bottom:10px;">
+	<div class="ztitle">
+		<div class='zcolor' style='padding:3px 8px; margin-bottom:5px;'>Payment Policy:</div>
+	</div>
+	<div style="margin-left:8px;" class='ztxt'>]]></PRETEXT>
+<POSTTEXT><![CDATA[
+	</div>
+</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="SHIPPINGPOLICY" DATA="profile:zoovy:shipping_policy" PROMPT="Shipping Policy " FONT="0" TYPE="TEXT"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<PRETEXT><![CDATA[
+<div id='shipping' style="margin-bottom:10px;">
+	<div class="ztitle">
+		<div class='zcolor' style='padding:3px 8px; margin-bottom:5px;'>Shipping Policy:</div>
+	</div>
+	<div style="margin-left:8px;" class='ztxt'>]]></PRETEXT>
+<POSTTEXT><![CDATA[
+	</div>
+</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="FAQELEMENT" TYPE="FAQ"><HTML><![CDATA[<!-- faqs start here -->
+<div id='faq' style='margin:10px 0px;' class='ztxt'>
+
+
+<div class='ztitle2'>
+	<div class="zcolor_dark" style='padding:3px 8px;'>Frequently Asked Questions</div>
+</div>
+
+<div class='zcolor' align='left'>
+<form method="get" action="" style="margin:0px;">
+<table cellpadding='4' cellspacing='0' style='margin-left:4px;'>
+<tr>
+	<td class='ztxt'><span class='zcolor'>Search FAQ</span></td>
+	<td class='ztxt'><span class='zcolor'>by topic:</span></td>
+	<td><select class="zform_select" name="<% print($ID); %>.TOPIC_ID">
+<option value="">search all</option>
+<%
+
+:TOPICLOOP();
+stop(unless=>$TOPICSTACK);
+
+pop(stack=>>$TOPICSTACK,namespace=>"TOPIC");
+	print("<option value='");
+	print($TOPIC.TOPIC_ID);	
+	print("'>");
+	print($TOPIC.TOPIC_TITLE);	
+	print("</option>");
+goto(nb=>$TOPICSTACK,label=>"TOPICLOOP");
+
+%>
+</select></td>
+	<td class='ztxt'><span class='zcolor'> and/or keywords: </span></td>
+	<td><input type="text" name="<% print($ID); %>.KEYWORDS" class="zform_textbox" /></td>
+	<td><input type="submit" value="search faq" class="zform_button" /></td>
+</tr>
+</table>
+</form>
+</div>
+
+
+<!-- TOPIC -->
+
+<!-- ( topic id: <% load($TOPIC_ID); default(""); print(); %> ) : -->
+
+<div style="padding:3px 8px; margin-top:5px;" class="zcolor_light"><% load($TOPIC_TITLE); default(""); print(); %></div>
+
+<div class="ztable_row" style="padding:5px;" id="topic_<% load($TOPIC_ID); default(""); print(); %>">
+
+<% 
+print("");
+
+:LOOP();
+stop(unless=>$FAQSTACK);
+
+pop(stack=>>$FAQSTACK,namespace=>"FAQ");
+	print("<div style='margin-left:8px;'>");
+	 print("Q: ");
+	print($FAQ.QUESTION);
+	print("</div>
+	<div style='margin-left:8px; margin-bottom:5px;' id='");
+	print($FAQ.ID);
+	print("'>A: ");
+	load($FAQ.ANSWER); format(wiki=>"1"); print();
+	print("</div>");
+
+
+goto(nb=>$FAQSTACK,label=>"LOOP");
+
+%>
+	
+</div>
+<!-- /TOPIC -->
+
+
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

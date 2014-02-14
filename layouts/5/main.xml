@@ -1,0 +1,47 @@
+<TEMPLATE ID="5" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLTI" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Big Picture" RELEASED="20020618"><SUMMARY><![CDATA[Bold Welcome Message
+IMAGEe (400x200)
+Product Listing
+Welcome Message
+]]></SUMMARY>
+<SHORT><![CDATA[Give your customers the big picture, in a literal way. This layout features a 400x200 image. A great way to show off your company and its products!]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKLTJ" TYPE="OUTPUT"><HTML><![CDATA[<center>
+<table border='0'>
+	<tr>
+		<td valign="middle" height="200" width="400" align="center">
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="200" ID="HOMEPAGE_PIC" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" WIDTH="400" PROMPT="Front Page Picture" DEFAULT="https://static.zoovy.com/img/H200-W400-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKLTK" TYPE="OUTPUT"><HTML><![CDATA[
+<center>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" valign="middle">
+<b>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="COMPANYNAME" LENGTH="75" HELP="Please enter a single line greeting that will appear in bold." DATA="page:boldwelcome" PROMPT="Bold Welcome Message" DEFAULT="Welcome to our Website!" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CPUKLTL" TYPE="OUTPUT"><HTML><![CDATA[
+</b>
+		</td>
+	</tr>
+</table>
+</center>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" HELP="Please enter a Welcome message that will appear on your front page" DATA="page:welcome_message" PROMPT="Welcome Message" DEFAULT="Please stay as long as you like, if you need help send us email!" TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long, or not helpful visitors probably won't go any further. A lot of businesses talk about what makes their products unique, or their excellent customer service. If you have neither of those, then consider simply welcoming the customer.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKLTM" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+
+</TEMPLATE>

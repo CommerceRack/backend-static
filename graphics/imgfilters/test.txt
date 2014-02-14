@@ -1,0 +1,33 @@
+## these don't.
+#Charcoal		{"factor":10}
+#Charcoal		{"factor":"1000"}
+#
+## these work: 
+Flip
+# OilPaint		{"factor":"50"}
+# Flop
+# Negate  	{ "gray":"True" }
+#
+## you can also run "Set" commands -- which are separate than Mogrify like this:
+#Set	{ "colorspace":"gray" }
+#Quantize
+## trippy effect:
+# Roll	{ "geometry":"100x100", "x":"50", "y":"50" }
+# Solarize		{ "factor":"100" }
+# Spread	{ "factor":"100" }
+# Swirl		{ "degrees":"33.3" }
+#Set	{ "bordercolor":"xc:white" }
+## create a rectangle using "Draw"
+#Draw	{ "pen":"black", "primitive":"rectangle", "points":"20,20 100,100" }
+## Composite 	compose=>{Over, In, Out, Atop, Xor, Plus, Minus, Add,
+#Subtract, Difference, Bumpmap, Replace, ReplaceRed, ReplaceGreen,
+#ReplaceBlue, ReplaceMatte, Blend, Displace}, image=>image-handle,
+#geometry=>geometry, x=>integer, y=>integer, gravity=>{NorthWest, North,
+#NorthEast, West, Center, East, SouthWest, South, SouthEast}
+
+#0	Flip
+#0	Oilpaint	
+#1	New
+#1	Read
+#1	Navbutton	
+#0	Composite	{ "compose":"Atop", "image":$

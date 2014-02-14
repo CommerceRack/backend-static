@@ -1,0 +1,121 @@
+
+/*
+
+########################################################
+
+
+ORDER MANAGER
+
+########################################################
+
+*/
+
+/*
+order list
+*/
+
+#orderListMessaging	{max-height:220px; overflow:auto;}
+#orderList	{margin:0 auto;font-size:.8em;} /* the container. the margin will center it on the page */
+.orderManagerTable, #orderListTable	{width:100%;}
+
+table.orderManagerTable	{
+	border-spacing:0;
+	border-collapse:collapse;
+	}
+
+
+.orderManagerTable	td.mainCol	{vertical-align:top; padding:0;}
+.orderManagerTable	td.leftCol	{width:220px; vertical-align:top; padding:0;}
+.orderManagerTable	td.mainCol .ui-widget-header	{padding:2px 12px; min-height:10px;} /* the min-height is for the footer w/ borders */
+.orderManagerTable	td.leftCol .ui-widget-content	{border-right:none;}
+
+.orderManagerTable	td.leftCol .fixedWidth	{width: 150px;} /* for use on inputs and selects */
+
+#orderListTableContainer	{min-height:450px;} /* decreases 'jumpiness' between loading and loaded */
+.filterGroup ul	{margin:4px 0 12px 0px; padding:0; list-style:none;}
+.filterGroup li	{padding:3px 24px; margin:0;} /* vertical padding is present for mobile-friendlyness */
+
+.viewOrderIframe, .bulkMailIframe	{width:94%; margin:0 auto; height:500px; border:0; text-align:center;}
+
+/* turn bevel corners off on the right side of the left col and on the left side of the right col */
+.orderManagerTable .leftCol .ui-accordion-header,
+.orderManagerTable .leftCol .ui-widget-content	{
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;	
+	}
+
+
+.orderManagerTable .leftCol .ui-accordion .ui-accordion-header:first-child	{margin-top:0px;}
+.orderManagerTable .bulkEditMenu li li	{width:150px;}
+
+.ui-selectee .selectedIcon	{display:none; width:16px;} /* setting a width keeps the table from 'jumping' when something is selected */
+.ui-selected .selectedIcon	{display:block !important;}
+
+/* for order flags */
+.adminOrderLineItem span.ship_expedited	{display:inline-block; background:url(images/exp_shipping-20x25.png) no-repeat; width:25px; height:20px;}
+
+
+/*
+order detail
+*/
+
+.orderDetails hgroup h1, 
+.orderDetails hgroup h2, 
+.orderDetails hgroup h3, 
+.orderDetails hgroup h4, 
+.orderDetails hgroup h5, 
+.orderDetails hgroup h6	{margin: 2px 0;}
+
+.topCol	{min-width:200px;}
+
+.orderDetails .rightCol	{float:right; width:32%; min-width:200px; max-width:300px; margin-left:12px; float:right;}
+.orderDetails .leftCol	{width:65%; min-width:300px; margin-right:12px;}
+
+.orderDetails .rightCol	textarea	{width:95%; height:80px;}
+
+.orderDetails .rightCol label span	{width:100px;}
+
+
+.orderDetailHeader	{padding-bottom:12px; border-bottom:1px solid #efefef;}
+.orderDetailHeader,	.orderAddresses, .orderDetailsStuff{margin-bottom:12px;}
+.orderAddresses	{padding-right:24px; width:28%;}
+.orderDetailsStuff	{width:69%; text-align:left;}
+.orderAddresses address	{margin-bottom:12px;}
+
+.orderStuffItemRow td	{padding:0 12px 12px 0;}
+
+.orderDetailButtonBar	{margin-bottom:12px;}
+.orderDetailButtonBar button	{padding:2px 6px;}
+
+.orderDetails fieldset	{border:0; margin:0;padding:0;}
+
+
+.orderDetails .shipAddressContainer .email	{display:none;}
+
+
+/* payment panel */
+
+.actionInputs label, .actionInputs div, .actionInputs button	{display:inline-block; margin-left:12px;}
+
+
+
+/* order and customer notes area */
+
+.noteContainer	{width:45%;}
+
+.notes .editable	{display:block;}
+
+.notes textarea	{min-height:100px; width:90%;}
+
+.customerNotes table	{width:60%}
+
+/* payment panel */
+.paybySupplemental .ui-icon-help	{display:none;} /* don't need cvv help in the UI */
+
+
+/* cart edit */
+.orderItemAddBasic label span	{text-align: right;}

@@ -1,0 +1,56 @@
+<TEMPLATE ID="1032" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNIX" CREATOR="JT" PRODLISTS="2" IMAGES="1" PROPERTIES="0" SERIES="Multiple Prodlists" SUBTYPE="C" FORMAT="LAYOUT" SHORT="Contains 2 HTML text boxes, 1 image and 2 verical product lists." TYPE="CONFIG" TITLE="2 vertical product lists with 1 images and 2 texts"><SUMMARY><![CDATA[A Large image at the top followed by a HTML editor.   Two prodlists listing vertically in a 1 - 3 column layout follow.  At the bottom of the page is another HTML editor.  The 'mutliple page' feature is disabled on this layout. Subcategories on pages using this layout will be displayed in a three column layout and will display on the subcategory pages (that use this flow) if no subcats are present there.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DESCENDTREE="1" NOROOT="1" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="3"><HTML><![CDATA[<table cellspacing=2 cellpadding=0 border=0 width="100%">
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+<td align="left"><a href='<% load($cat_url);  default("");  print(); %>'><% load($cat_pretty);  default("");  print(); %></a></td>
+<!-- /CATEGORY -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUKNIY" TYPE="OUTPUT"><HTML><![CDATA[<table width="100%" cellspacing=2 cellpadding=2><tr>
+	<td valign="top" align="left" colspan=2><div align="center">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="200" URL_SAVETO="page:prod_pic1_url" HELP="Please select a picture for this category." DATA="page:picture1" PROMPT="Main Picture" WIDTH="500" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNIZ" TYPE="OUTPUT"><HTML><![CDATA[</div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please enter a message that will appear on this page" DATA="page:description" PROMPT="Message" TYPE="HTML"></ELEMENT>
+<ELEMENT ID="CPUKNJA" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr>
+
+<tr><td valign="top" width="50%">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER1" HELP="Please enter a message that will appear on this page" DATA="page:header1" PROMPT="Message" TYPE="TEXTBOX"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." EDITOR="&amp;COLS=1-3" DATA="page:prodlist1" PROMPT="Product Listing" DEFAULT="&amp;COLS=2&amp;FORMAT=THUMB" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKNJB" TYPE="OUTPUT"><HTML><![CDATA[
+</td>
+
+<td valign="top" width="50%">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER2" HELP="Please enter a message that will appear on this page" DATA="page:header2" PROMPT="Message" TYPE="TEXTBOX"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST2" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." EDITOR="&amp;COLS=1-3" DATA="page:prodlist2" PROMPT="Product Listing" DEFAULT="&amp;COLS=2&amp;FORMAT=THUMB" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKNJC" TYPE="OUTPUT"><HTML><![CDATA[
+</td>
+</tr><tr><td colspan=2>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION2" HELP="Please enter a message that will appear on this page" DATA="page:description2" PROMPT="Message" TYPE="HTML"></ELEMENT>
+<ELEMENT ID="CPUKNJD" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr>
+</table>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

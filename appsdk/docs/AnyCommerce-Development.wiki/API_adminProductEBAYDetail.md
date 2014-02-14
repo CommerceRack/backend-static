@@ -1,0 +1,6 @@
+# API: adminProductEBAYDetail
+
+
+## ACCESS REQUIREMENTS: ##
+[[PRODUCT|CONCEPT_product]] - DELETE/REMOVE
+

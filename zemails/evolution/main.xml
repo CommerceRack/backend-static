@@ -1,0 +1,274 @@
+<TEMPLATE ID="evolution" FORMAT="EMAIL">
+
+
+<!-- ******* -->
+<ELEMENT ID="CQFJSOP" SUB="USERNAME" TYPE="READONLY" DATA="FLOW::USERNAME"></ELEMENT>
+<ELEMENT HEIGHT="60" ID="LOGO" MINIMAL_MODE="1" SUB="LOGO" WIDTH="400" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPZWXAA" SUB="WRAPPER_URL" DEFAULT="http://%USERNAME%.zoovy.com/graphics/wrappers/evolution/" TYPE="HIDDEN" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAB" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAC" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAD" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAG" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAK" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAL" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAN" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAP" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAR" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAS" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAT" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAV" SUB="NEWS_URL" TYPE="READONLY" LOAD="URL::NEWS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAX" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXAZ" SUB="FASTORDER_URL" TYPE="READONLY" LOAD="URL::FASTORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBB" SUB="MAIL_FORM_URL" TYPE="READONLY" LOAD="URL::MAIL_FORM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBC" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBD" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBI" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBK" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBM" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBO" SUB="CLAIM_URL" TYPE="READONLY" LOAD="URL::CLAIM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBR" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBS" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPZWXBW" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQHREXQ" SUB="title1" TYPE="HIDDEN"><DEFAULT><![CDATA[<div style="font-size:11pt; font-weight:bold" class="wiki_header1">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXR" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[</div>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXS" SUB="title2" TYPE="HIDDEN"><DEFAULT><![CDATA[<div style="font-size:10pt; font-weight:bold" class="wiki_header2">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXT" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</div>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXU" SUB="title3" TYPE="HIDDEN"><DEFAULT><![CDATA[<span style="font-weight:bold;"  class="wiki_header3">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXV" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</span>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILIST" SUB="list" TYPE="HIDDEN"><DEFAULT><![CDATA[<ul  class="wiki_list">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLIST" SUB="/list" TYPE="HIDDEN"><DEFAULT><![CDATA[</ul>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILISTITEM" SUB="listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[<li class="wiki_listitem">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLISTITEM" SUB="/listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[</li>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKISECTION" SUB="section" TYPE="HIDDEN"><DEFAULT><![CDATA[<p  class="wiki_section">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDSECTION" SUB="/section" TYPE="HIDDEN"><DEFAULT><![CDATA[</p>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKISOFTBREAK" SUB="softbreak" TYPE="HIDDEN"><DEFAULT><![CDATA[<br>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIHARDBREAK" SUB="hardbreak" TYPE="HIDDEN"><DEFAULT><![CDATA[<hr class="wiki_ruler">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLE" SUB="table" TYPE="HIDDEN"><DEFAULT><![CDATA[<table cellspacing="0" class="wiki_table">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLE" SUB="/table" TYPE="HIDDEN"><DEFAULT><![CDATA[</table>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEROW" SUB="tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[<tr class="wiki_tablerow">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEROW" SUB="/tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[</tr>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLECELL" SUB="tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="wiki_tabledata">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLECELL" SUB="/tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[</td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEHEAD" SUB="tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="wiki_tablehead"><b>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CART" SUB="HTMLCONTENTS" PROMPT="Shopping Cart" TYPE="ORDER" MODE="EMAIL"></ELEMENT>
+<ELEMENT ID="CSFWSAG" SUB="CONTENTS" DEFAULT="%HTMLCONTENTS%" TYPE="HIDDEN"></ELEMENT>
+<ELEMENT HEIGHT="60" ID="CRGOZAM" WIDTH="200" PROMPT="Choose the banner image you would like to use" SUB="BANNER_IMAGE" TYPE="IMAGE" DATA="profile:zoovy:email_banner"><HELP><![CDATA[Choose a banner to have linked at the top of you emails.  This banner is different from the store banner because the dimensions are smaller and it gives you the option to run a different promotion in emails than on the store.]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CRNEEWG" PROMPT="Link for Banner" SUB="BANNER_LINK" DEFAULT="%HOME_URL%" FONT="0" TYPE="TEXTBOX" HELP="You should only link this to your store or ebay store.  It defaults to your homepage." DATA="profile:zoovy:email_bannerlink"></ELEMENT>
+<ELEMENT ID="COLOR" SUB="COLOR1" DEFAULT="5E8ED0" TYPE="READONLY" DATA="merchant:zoovy:wrap_evolution_color" RAW="1"></ELEMENT>
+<ELEMENT ID="CPUMBRN" TYPE="CONFIG" THUMBNAIL="" THUMBNAILS="" TITLE="Evolution Email Template" CREATED="20060823" THUMBNAIL_COUNT="0"><SUMMARY><![CDATA[This template offers customizable default messaging for each email message, with a header at the top, very similar to evolution, with your categories listed down the left.  There is no Ajax in the email template.]]></SUMMARY>
+<CSS><![CDATA[.zbody { background-color: #FFFFFF; }
+.zborder { border: 1px solid #CCCCCC; }
+.zbox { border: 1px solid #666666; }
+.zbox_body { background-color: #EFEFEF; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.zbox_head { background-color: #666666; color: #FFFFFF; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.zcolor { background-color: #666666; color: #ffffff; }
+.zcolor_contrast { background-color: #e5e5e5; color: #101010; }
+.zcolor_dark { background-color: #262626; color: #bfbfbf; }
+.zcolor_light { background-color: #a6a6a6; color: #ffffff; }
+.zform_button { border: 1px solid #262626; background-color: #a6a6a6; color: #262626; font-size: 8pt; font-family: verdana, sans serif, helvetica; }
+.zform_select { border: 1px solid #262626; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: verdana, sans serif, helvetica; };
+.zform_textarea { border: 1px solid #262626; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: verdana, sans serif, helvetica; };
+.zform_textbox { border: 1px solid #262626; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: verdana, sans serif, helvetica; };
+.zhint { color: #333333; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.zlink { color: #333333; }
+.zsmall { color: #333333; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.ztab0 { background-color: #ffffff; color: #737373; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztab1 { background-color: #EFEFEF; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; font-weight: bold;}
+.ztabbody { background-color: #666666; color: #FFFFFF; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.ztable_head { background-color: #666666; color: #FFFFFF; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztable_row { background-color: #EFEFEF; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztable_row0 { background-color: #EFEFEF; font-size: 9pt; }
+.ztable_row1 { background-color: #FFFFFF; font-size: 9pt; }
+.ztable_row_small { color: #333333; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.ztable_row_title { font-weight: bold; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztitle { font-weight: bold; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 10pt; }
+.ztitle2 { font-weight: bold; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztxt { color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.zwarn { color: #990000; font-weight: bold; }]]></CSS>
+<THEME><![CDATA[alert_color=990000&content_background_color=FFFFFF&content_font_face=verdana%2c+sans+serif%2c+helvetica&content_font_size=2&content_text_color=333333&disclaimer_background_color=FFFFFF&disclaimer_font_face=verdana%2c+sans+serif%2c+helvetica&disclaimer_font_size=1&disclaimer_text_color=333333&link_active_text_color=333333&link_text_color=333333&link_visited_text_color=333333&name=&pretty_name=&table_heading_background_color=666666&table_heading_font_face=verdana%2c+sans+serif%2c+helvetica&table_heading_font_size=2&table_heading_text_color=FFFFFF&table_listing_background_color=EFEFEF&table_listing_background_color_alternate=FFFFFF&table_listing_font_face=verdana%2c+sans+serif%2c+helvetica&table_listing_font_size=2&table_listing_text_color=333333]]></THEME>
+<THEME_OLD><![CDATA[disclaimer_text_color=333333&content_font_face=verdana%2c+sans+serif%2c+helvetica&table_listing_background_color_alternate=FFFFFF&table_heading_text_color=FFFFFF&pretty_name=Evolution&link_visited_text_color=333333&content_background_color=FFFFFF&table_heading_background_color=666666&link_text_color=333333&link_active_text_color=333333&table_listing_font_face=verdana%2c+sans+serif%2c+helvetica&content_text_color=333333&content_font_size=2&disclaimer_font_face=verdana%2c+sans+serif%2c+helvetica&name=evolution&table_listing_background_color=EFEFEF&disclaimer_background_color=FDFDFD&alert_color=990000&disclaimer_font_size=1&table_listing_text_color=333333&table_heading_font_face=verdana%2c+sans+serif%2c+helvetica&table_heading_font_size=2&table_listing_font_size=2]]></THEME_OLD>
+</ELEMENT>
+<ELEMENT ID="CRNEEWG" PROMPT="Link for Banner" SUB="BANNER_LINK" DEFAULT="%HOME_URL%" FONT="0" TYPE="TEXTBOX" HELP="You should only link this to your store or ebay store.  It defaults to your homepage." DATA="profile:zoovy:email_bannerlink"></ELEMENT>
+<ELEMENT HEIGHT="60" ID="CRGOZAM" WIDTH="200" PROMPT="Choose the banner image you would like to use" SUB="BANNER_IMAGE" TYPE="IMAGE" DATA="profile:zoovy:email_banner"><HELP><![CDATA[Choose a banner to have linked at the top of you emails.  This banner is different from the store banner because the dimensions are smaller and it gives you the option to run a different promotion in emails than on the store.]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CART" SUB="HTMLCONTENTS" PROMPT="Shopping Cart" TYPE="ORDER" MODE="EMAIL"></ELEMENT>
+<ELEMENT ID="CSFWSAG" SUB="CONTENTS" DEFAULT="%HTMLCONTENTS%" TYPE="HIDDEN"></ELEMENT>
+<ELEMENT ID="BRIAN" TYPE="OUTPUT"><HTML><![CDATA[
+<html>
+<head>
+<style type="text/css">
+.header {font-size: 11px; color: #FFFFFF; font-weight: bold; margin-left:3px;}
+.light {background-color: #FFFFFF;}
+.dark {background-color: #%COLOR1%; }
+
+.cats	{text-decoration:none;}
+
+/* these are for the blue style */
+.cat_head {width:170px; margin:2px; font-size:11px; font-weight:bold; color:#FFFFFF; background-image:url(%WRAPPER_URL%/bar_back_%COLOR1%-1x25.gif); background-position:bottom; border:1px solid #ffffff; padding:4px 4px 5px 0px; text-align:right; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.titlebar {width:auto; margin:2px; font: bold 11px left; color:#FFFFFF; background-image:url(%WRAPPER_URL%/bar_back_%COLOR1%-1x25.gif); background-position:bottom; border:1px solid #ffffff; padding:2px 0px 3px 0px; box-sizing: border-box; -moz-box-sizing: border-box; height:15px; font-family:Verdana, Arial, Helvetica, sans-serif}
+
+.bcrumbbar {width:auto; margin:2px; font: bold 11px left; color:#D6E3F4; background-image:url(%WRAPPER_URL%/bar_back_%COLOR1%-1x25.gif);background-position:bottom; border:1px solid #EEEEF0; padding:2px 0px 3px 0px; position:relative; box-sizing: border-box; -moz-box-sizing: border-box; height:19px; font-family:Verdana, Arial, Helvetica, sans-serif}
+
+.cat_foot {width:170px; height:18px; margin:2px; font-size:11px; font-weight:bold; color:#ffffff; border:1px solid #ffffff; padding:2px 0px 3px 0px; text-align:left; position:relative; background-color:#%COLOR1%; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.cat_col {width:176px; background-color:#D8DCDB; border:solid 1px #%COLOR1%; position:relative; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.cat_but a {width:158px; margin:0px 5px 0px 5px; text-decoration:none; font-family:Verdana, Arial, Helvetica, sans-serif; color:#%COLOR1%; display:block; font-size:11px; font-weight:bold; padding:2px 0px 3px 0px; border-bottom:1px solid #bbbbbb; text-align:left;  box-sizing: border-box; -moz-box-sizing: border-box;}
+
+/* Header and it's content */
+.eve_header {background-color:#D8DCDB; border:solid 1px #%COLOR1%; width:100%; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.filler_table {width:176px; background-color:#D8DCDB; border:solid 1px #%COLOR1%; position:relative; margin-top:3px; height:100%; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+div, html, textarea, select {scrollbar-base-color: #%COLOR1%;}
+
+/* General site attributes */
+a	{color:#%COLOR1%;}
+
+a:hover	{text-decoration:underline; color:#F1AA12;}
+
+body, p, table, div	{font-size:9pt;}
+
+.field_size {width:108px; height:18px; display:inline; border:1px solid #CCCCCC; font-size:11px; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.logobar {width:auto; height:64px; margin:0px 2px; border:1px solid #B4C3E2; background-color:#FFFFFF;}
+.logo {height:60px; box-sizing: border-box; -moz-box-sizing: border-box;}
+.banner {height:60px; margin:2px; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.text_links a {color:#ffffff; font-size:11px; font-weight:bold; text-align:right; text-decoration:none; vertical-align:top;}
+.text_links a:hover {text-decoration:underline;}
+
+/* Columns */
+
+.white_box {width:170px; margin:2px; font-size:11px; font-weight:bold; color:#000000; border:1px solid #B4C3E2; padding:4px 0px 5px 0px; text-align:right; position:relative; background-color:#FFFFFF; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.cat_but a:hover {background-color:#eeeeee;}
+
+.white_gap {width:auto; background-color:#ffffff; font-size:1px; height:3px; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+/* Footer links */
+.foot_text_links a {font-size:11px; font-weight:300; text-align:right; text-decoration:none; vertical-align:top; word-spacing:25px}
+.foot_text_links a:hover {text-decoration:underline;}
+
+</style>
+</head>
+<body style="background-color:#FFFFFF; margin:5px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#666666;" alink="#%COLOR1%" link="#%COLOR1%" vlink="#%COLOR1%">
+
+<table id="website" align="center" BORDER="0" CELLSPACING="0" CELLPADDING="0" width="100%" >
+<tr>
+<!-- This is the header -->
+	<td COLSPAN="3" VALIGN="top" STYLE="padding-bottom:2px">
+
+<div id="site_header" class="eve_header">
+<!-- Title Bar -->
+	<div id="titlebar" class="titlebar" style="padding-left:5px; height:19px; position:relative">
+	<div id="head_text_links" class="text_links" style="position:absolute; top:2px; right:10px; width:233px; text-align:right">
+	<A HREF="%LOGIN_URL%" >Click here to login</A></div>
+</div>
+<!-- Logo Bar -->
+<div id="logobar" class="logobar">
+	<table BORDER="0" CELLSPACING="0" CELLPADDING="0" style="width:100%">
+	<tr>
+		<td width="50%" align="left">
+		<div id="logo" class="logo" style="margin:2px;"><A HREF="%HOME_URL%">%LOGO%</A></div>
+		</td>
+		<td width="50%" align="right">
+			<div id="banner" class="banner" style="margin:2px;"><A HREF="%BANNER_LINK%">%BANNER_IMAGE%</A></div>
+		</td>
+	</tr>
+	</table>
+	</div>		
+<!-- Breadcrumb Bar -->
+	<div id="bcrumbbar" class="bcrumbbar" style="padding-left:5px; height:19px;">
+		<div class="text_links" style="position:absolute; top:2px; right:10px; font-size:10px; color:#FFFFFF;">
+		<A HREF="%HOME_URL%">home</A> | <A HREF="%CONTACT_URL%">contact</A> | <A HREF="%ABOUT_URL%">company</A>
+		</div>
+	</div>
+</div>
+	</td>
+</tr>
+</table>
+<table id="websitefooter" align="center" BORDER="0" CELLSPACING="0" CELLPADDING="0" width="100%" >
+<tr>
+	
+	<td width="5%" valign="top">
+
+	<div class="cat_col">
+<!-- Category Header -->
+		<div id="cat_col_head" class="cat_head">CATEGORIES </div>
+<!-- Category Buttons Area -->
+		<div id="cat_frame" class="white_box" style="padding:5px 0px 5px 0px">
+
+<!-- Category Buttons -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRGOZAQ" TYPE="SUBCAT" SRC="." MODE="LIST"><HTML><![CDATA[
+<!-- CATEGORY -->
+<div id="cat_button" class="cat_but"><A HREF="<% load($cat_url);  default("");  print(); %>"><% load($cat_pretty);  default("");  print(); %></A></div>
+<!-- /CATEGORY -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFLUH" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+
+		</div>
+<!-- Category Footer -->
+	<div id="cat_foot" class="cat_foot"></div>
+</div>
+	</td>
+	
+	<td valign="top">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ZBODY" HTML="" DIV="EMAILBODY" TYPE="OUTPUT"></ELEMENT>
+<ELEMENT ID="CPUKNGS" TYPE="OUTPUT"><HTML><![CDATA[
+
+</td>
+</tr>
+</table>
+
+
+<div class="cat_col" style="width:auto; margin-top:2px;">
+<!-- Text Links  Area -->
+	<div id="foot_links_frame" class="white_box" style="padding:5px 0px 5px 0px; width:auto">
+<!-- Text Links -->
+		<div id="foot_links" class="foot_text_links" style="word-spacing:12px;">
+			<DIV ALIGN="CENTER"><A HREF="%HOME_URL%">Home</A> <A HREF="%CONTACT_URL%">Contact</A> <A HREF="%ABOUT_URL%">About</A> <A HREF="%SEARCH_URL%">Search</A></DIV>
+		</div>
+	</div>
+	<!-- Footer blue sloab -->
+	<div id="foot_blue_slab" class="cat_foot" style="height:7px; width:auto; font-size:1px;"></div>
+</div>
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

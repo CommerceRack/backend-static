@@ -1,0 +1,700 @@
+[
+   {
+      "catalog" : "MISC",
+		"amz-catalog" : "Miscellaneous",
+      "amz-subcat" : null,
+      "subcat" : null,
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "MISC",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CSDCKZV",
+      "xmlpath" : "Miscellaneous."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Antiques",
+            "v" : "Antiques"
+         },
+         {
+            "p" : "Art",
+            "v" : "Art"
+         },
+         {
+            "p" : "Car_Parts_and_Accessories",
+            "v" : "Car_Parts_and_Accessories"
+         },
+         {
+            "p" : "Coins",
+            "v" : "Coins"
+         },
+         {
+            "p" : "Collectibles",
+            "v" : "Collectibles"
+         },
+         {
+            "p" : "Crafts",
+            "v" : "Crafts"
+         },
+         {
+            "p" : "Event_Tickets",
+            "v" : "Event_Tickets"
+         },
+         {
+            "p" : "Flowers",
+            "v" : "Flowers"
+         },
+         {
+            "p" : "Gifts_and_Occasions",
+            "v" : "Gifts_and_Occasions"
+         },
+         {
+            "p" : "Gourmet_Food_and_Wine",
+            "v" : "Gourmet_Food_and_Wine"
+         },
+         {
+            "p" : "Hobbies",
+            "v" : "Hobbies"
+         },
+         {
+            "p" : "Home_Furniture_and_Decor",
+            "v" : "Home_Furniture_and_Decor"
+         },
+         {
+            "p" : "Home_Lighting_and_Lamps",
+            "v" : "Home_Lighting_and_Lamps"
+         },
+         {
+            "p" : "Home_Organizers_and_Storage",
+            "v" : "Home_Organizers_and_Storage"
+         },
+         {
+            "p" : "Jewelry_and_Gems",
+            "v" : "Jewelry_and_Gems"
+         },
+         {
+            "p" : "Luggage",
+            "v" : "Luggage"
+         },
+         {
+            "p" : "Major_Home_Appliances",
+            "v" : "Major_Home_Appliances"
+         },
+         {
+            "p" : "Medical_Supplies",
+            "v" : "Medical_Supplies"
+         },
+         {
+            "p" : "Motorcycles",
+            "v" : "Motorcycles"
+         },
+         {
+            "p" : "Musical_Instruments",
+            "v" : "Musical_Instruments"
+         },
+         {
+            "p" : "Pet_Supplies",
+            "v" : "Pet_Supplies"
+         },
+         {
+            "p" : "Pottery_and_Glass",
+            "v" : "Pottery_and_Glass"
+         },
+         {
+            "p" : "Prints_and_Posters",
+            "v" : "Prints_and_Posters"
+         },
+         {
+            "p" : "Scientific_Supplies",
+            "v" : "Scientific_Supplies"
+         },
+         {
+            "p" : "Sporting_and_Outdoor_Goods",
+            "v" : "Sporting_and_Outdoor_Goods"
+         },
+         {
+            "p" : "Sports_Memorabilia",
+            "v" : "Sports_Memorabilia"
+         },
+         {
+            "p" : "Stamps",
+            "v" : "Stamps"
+         },
+         {
+            "p" : "Teaching_and_School_Supplies",
+            "v" : "Teaching_and_School_Supplies"
+         },
+         {
+            "p" : "Watch",
+            "v" : "Watch"
+         },
+         {
+            "p" : "Wholesale_and_Industrial",
+            "v" : "Wholesale_and_Industrial"
+         },
+         {
+            "p" : "Misc_Other",
+            "v" : "Misc_Other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_misc_producttype",
+      "title" : "Product Type",
+      "type" : "select",
+      "xmlpath" : "Miscellaneous.ProductType",
+      "list" : "LIST_MISC_MISCTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Antiques",
+            "v" : "Antiques"
+         },
+         {
+            "p" : "Art",
+            "v" : "Art"
+         },
+         {
+            "p" : "Car_Parts_and_Accessories",
+            "v" : "Car_Parts_and_Accessories"
+         },
+         {
+            "p" : "Coins",
+            "v" : "Coins"
+         },
+         {
+            "p" : "Collectibles",
+            "v" : "Collectibles"
+         },
+         {
+            "p" : "Crafts",
+            "v" : "Crafts"
+         },
+         {
+            "p" : "Event_Tickets",
+            "v" : "Event_Tickets"
+         },
+         {
+            "p" : "Flowers",
+            "v" : "Flowers"
+         },
+         {
+            "p" : "Gifts_and_Occasions",
+            "v" : "Gifts_and_Occasions"
+         },
+         {
+            "p" : "Gourmet_Food_and_Wine",
+            "v" : "Gourmet_Food_and_Wine"
+         },
+         {
+            "p" : "Hobbies",
+            "v" : "Hobbies"
+         },
+         {
+            "p" : "Home_Furniture_and_Decor",
+            "v" : "Home_Furniture_and_Decor"
+         },
+         {
+            "p" : "Home_Lighting_and_Lamps",
+            "v" : "Home_Lighting_and_Lamps"
+         },
+         {
+            "p" : "Home_Organizers_and_Storage",
+            "v" : "Home_Organizers_and_Storage"
+         },
+         {
+            "p" : "Jewelry_and_Gems",
+            "v" : "Jewelry_and_Gems"
+         },
+         {
+            "p" : "Luggage",
+            "v" : "Luggage"
+         },
+         {
+            "p" : "Major_Home_Appliances",
+            "v" : "Major_Home_Appliances"
+         },
+         {
+            "p" : "Medical_Supplies",
+            "v" : "Medical_Supplies"
+         },
+         {
+            "p" : "Motorcycles",
+            "v" : "Motorcycles"
+         },
+         {
+            "p" : "Musical_Instruments",
+            "v" : "Musical_Instruments"
+         },
+         {
+            "p" : "Pet_Supplies",
+            "v" : "Pet_Supplies"
+         },
+         {
+            "p" : "Pottery_and_Glass",
+            "v" : "Pottery_and_Glass"
+         },
+         {
+            "p" : "Prints_and_Posters",
+            "v" : "Prints_and_Posters"
+         },
+         {
+            "p" : "Scientific_Supplies",
+            "v" : "Scientific_Supplies"
+         },
+         {
+            "p" : "Sporting_and_Outdoor_Goods",
+            "v" : "Sporting_and_Outdoor_Goods"
+         },
+         {
+            "p" : "Sports_Memorabilia",
+            "v" : "Sports_Memorabilia"
+         },
+         {
+            "p" : "Stamps",
+            "v" : "Stamps"
+         },
+         {
+            "p" : "Teaching_and_School_Supplies",
+            "v" : "Teaching_and_School_Supplies"
+         },
+         {
+            "p" : "Watch",
+            "v" : "Watch"
+         },
+         {
+            "p" : "Wholesale_and_Industrial",
+            "v" : "Wholesale_and_Industrial"
+         },
+         {
+            "p" : "Misc_Other",
+            "v" : "Misc_Other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_misc_productcategory",
+      "title" : "Product Category",
+      "type" : "select",
+      "xmlpath" : "Miscellaneous.ProductCategory",
+      "list" : "LIST_MISC_MISCTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Decorative_Arts",
+            "v" : "Decorative_Arts"
+         },
+         {
+            "p" : "Furniture",
+            "v" : "Furniture"
+         },
+         {
+            "p" : "Rugs_Carpets",
+            "v" : "Rugs_Carpets"
+         },
+         {
+            "p" : "Silver",
+            "v" : "Silver"
+         },
+         {
+            "p" : "Textiles_Linens",
+            "v" : "Textiles_Linens"
+         },
+         {
+            "p" : "Drawings",
+            "v" : "Drawings"
+         },
+         {
+            "p" : "Mixed_Media",
+            "v" : "Mixed_Media"
+         },
+         {
+            "p" : "Paintings",
+            "v" : "Paintings"
+         },
+         {
+            "p" : "Sculptures_Carvings",
+            "v" : "Sculptures_Carvings"
+         },
+         {
+            "p" : "Car_Accessories",
+            "v" : "Car_Accessories"
+         },
+         {
+            "p" : "Car_Parts",
+            "v" : "Car_Parts"
+         },
+         {
+            "p" : "Car_Performance",
+            "v" : "Car_Performance"
+         },
+         {
+            "p" : "Truck_Accessories",
+            "v" : "Truck_Accessories"
+         },
+         {
+            "p" : "Truck_Parts",
+            "v" : "Truck_Parts"
+         },
+         {
+            "p" : "Truck_Performance",
+            "v" : "Truck_Performance"
+         },
+         {
+            "p" : "Coins_US",
+            "v" : "Coins_US"
+         },
+         {
+            "p" : "Coins_World",
+            "v" : "Coins_World"
+         },
+         {
+            "p" : "Paper_Money_US",
+            "v" : "Paper_Money_US"
+         },
+         {
+            "p" : "Paper_Money_World",
+            "v" : "Paper_Money_World"
+         },
+         {
+            "p" : "Scripophily",
+            "v" : "Scripophily"
+         },
+         {
+            "p" : "Autographs",
+            "v" : "Autographs"
+         },
+         {
+            "p" : "Comics",
+            "v" : "Comics"
+         },
+         {
+            "p" : "Holiday_Seasonal",
+            "v" : "Holiday_Seasonal"
+         },
+         {
+            "p" : "Militaria",
+            "v" : "Militaria"
+         },
+         {
+            "p" : "Trading_Cards",
+            "v" : "Trading_Cards"
+         },
+         {
+            "p" : "Corsages",
+            "v" : "Corsages"
+         },
+         {
+            "p" : "Exotics",
+            "v" : "Exotics"
+         },
+         {
+            "p" : "Flowering_Plants",
+            "v" : "Flowering_Plants"
+         },
+         {
+            "p" : "Green_Plants",
+            "v" : "Green_Plants"
+         },
+         {
+            "p" : "Mixed_Arrangements",
+            "v" : "Mixed_Arrangements"
+         },
+         {
+            "p" : "Single_Flower",
+            "v" : "Single_Flower"
+         },
+         {
+            "p" : "Anniversary",
+            "v" : "Anniversary"
+         },
+         {
+            "p" : "Birthday",
+            "v" : "Birthday"
+         },
+         {
+            "p" : "Holiday",
+            "v" : "Holiday"
+         },
+         {
+            "p" : "Wedding",
+            "v" : "Wedding"
+         },
+         {
+            "p" : "Cheese",
+            "v" : "Cheese"
+         },
+         {
+            "p" : "Wine",
+            "v" : "Wine"
+         },
+         {
+            "p" : "Furniture",
+            "v" : "Furniture"
+         },
+         {
+            "p" : "Decor",
+            "v" : "Decor"
+         },
+         {
+            "p" : "Lighting",
+            "v" : "Lighting"
+         },
+         {
+            "p" : "Lamps",
+            "v" : "Lamps"
+         },
+         {
+            "p" : "Indoor",
+            "v" : "Indoor"
+         },
+         {
+            "p" : "Outdoor",
+            "v" : "Outdoor"
+         },
+         {
+            "p" : "Jewelry",
+            "v" : "Jewelry"
+         },
+         {
+            "p" : "Gems",
+            "v" : "Gems"
+         },
+         {
+            "p" : "Garment_Bags",
+            "v" : "Garment_Bags"
+         },
+         {
+            "p" : "Duffle_Bags",
+            "v" : "Duffle_Bags"
+         },
+         {
+            "p" : "Kitchen",
+            "v" : "Kitchen"
+         },
+         {
+            "p" : "Laundry",
+            "v" : "Laundry"
+         },
+         {
+            "p" : "Hospital_Supplies",
+            "v" : "Hospital_Supplies"
+         },
+         {
+            "p" : "Home_Health",
+            "v" : "Home_Health"
+         },
+         {
+            "p" : "Motorcyles",
+            "v" : "Motorcyles"
+         },
+         {
+            "p" : "Motorcycle_Parts",
+            "v" : "Motorcycle_Parts"
+         },
+         {
+            "p" : "Motorcycle_Protective_Gear",
+            "v" : "Motorcycle_Protective_Gear"
+         },
+         {
+            "p" : "Pet_Care",
+            "v" : "Pet_Care"
+         },
+         {
+            "p" : "Pet_Food",
+            "v" : "Pet_Food"
+         },
+         {
+            "p" : "Pet_Toys",
+            "v" : "Pet_Toys"
+         },
+         {
+            "p" : "Glass",
+            "v" : "Glass"
+         },
+         {
+            "p" : "Pottery",
+            "v" : "Pottery"
+         },
+         {
+            "p" : "Posters",
+            "v" : "Posters"
+         },
+         {
+            "p" : "Prints",
+            "v" : "Prints"
+         },
+         {
+            "p" : "Lab_Supplies",
+            "v" : "Lab_Supplies"
+         },
+         {
+            "p" : "Sporting_Goods",
+            "v" : "Sporting_Goods"
+         },
+         {
+            "p" : "Outdoor_Gear",
+            "v" : "Outdoor_Gear"
+         },
+         {
+            "p" : "Autographs",
+            "v" : "Autographs"
+         },
+         {
+            "p" : "Trading_Cards",
+            "v" : "Trading_Cards"
+         },
+         {
+            "p" : "Stamps_US",
+            "v" : "Stamps_US"
+         },
+         {
+            "p" : "Stamps_World",
+            "v" : "Stamps_World"
+         },
+         {
+            "p" : "Preschool",
+            "v" : "Preschool"
+         },
+         {
+            "p" : "K-12",
+            "v" : "K-12"
+         },
+         {
+            "p" : "Special_Needs",
+            "v" : "Special_Needs"
+         },
+         {
+            "p" : "Men",
+            "v" : "Men"
+         },
+         {
+            "p" : "Women",
+            "v" : "Women"
+         },
+         {
+            "p" : "Kids",
+            "v" : "Kids"
+         },
+         {
+            "p" : "Agriculture",
+            "v" : "Agriculture"
+         },
+         {
+            "p" : "Architecture",
+            "v" : "Architecture"
+         },
+         {
+            "p" : "Construction",
+            "v" : "Construction"
+         },
+         {
+            "p" : "Marine",
+            "v" : "Marine"
+         },
+         {
+            "p" : "Metalworking",
+            "v" : "Metalworking"
+         },
+         {
+            "p" : "Other",
+            "v" : "Other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_misc_productsubcategory",
+      "title" : "Product Subcategory",
+      "type" : "select",
+      "xmlpath" : "Miscellaneous.ProductSubcategory",
+      "list" : "LIST_MISC_SUBTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_misc_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "Miscellaneous.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_misc_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "Miscellaneous.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_misc_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "Miscellaneous.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_misc_size",
+      "type" : "textbox",
+      "title" : "Size",
+      "xmlpath" : "Miscellaneous.Size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_misc_eventdate",
+      "type" : "textbox",
+      "title" : "Event Date",
+      "xmlpath" : "Miscellaneous.EventDate"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_misc_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "Miscellaneous.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_misc_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "Miscellaneous.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_misc_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "Miscellaneous.MfrPartNumber"
+   }
+]

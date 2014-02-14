@@ -1,0 +1,39 @@
+<!-- CONFIG
+THEME=lavender2
+SITEBUTTONS=lavender
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- HEAD -->
+</head> 
+<body background="<!-- WRAPPER_URL -->/background.gif" text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!-- LINK_VISITED_TEXT_COLOR -->" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td colspan="2" background="<!-- WRAPPER_URL -->/top.gif" height="100">
+<a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=160
+HEIGHT=80
+--></a>&nbsp;
+</td></tr>
+<tr><td background="<!-- WRAPPER_URL -->/topmenu.gif" height="20" colspan="2" align="right">
+<font size="2" face="Arial, Helvetica"><B><a href="<!--CART_URL-->">Cart</a> | <a href="<!--SEARCH_URL-->">Search</a> | <a href="<!--ABOUT_URL-->">About Us</a> | <a href="<!--CONTACT_URL-->">Contact Us</a></font></b> &nbsp; &nbsp;
+</td></tr>
+<tr><td width="180" valign="top" align="center">
+<!-- MENU 
+FORMAT=<font face="arial" size=1><a href="%URL%">%MESSAGE%</font></a><br>
+-->
+<P>
+<!-- SIDEBAR -->
+
+
+
+</td><td valign="top">
+<font size="2" face="Arial, Helvetica"><!-- TITLE --></font>
+<P>
+<!-- BODY -->
+<P>
+<!-- DISCLAIMER -->
+<P>
+<!-- BRANDMESSAGE -->
+</td></tr></table>
+</body>
+</html>

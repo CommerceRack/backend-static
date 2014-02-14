@@ -1,0 +1,127 @@
+<TEMPLATE ID="subscribe-20080305" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CWJIBPI" TYPE="CONFIG" EXPORT="0" TITLE="Subscribe: Text and form"></ELEMENT>
+<ELEMENT ID="CWJIBPJ" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL"></ELEMENT>
+<ELEMENT ID="CWJIBPK" WIKI="3" DATA="page:description" PROMPT="Newsletter Message" SUB="PAGE_SUBSCRIBE_WELCOME" DEFAULT="To get updates about our store, please subscribe to our mailing list below." TYPE="TEXT" FONT="0"></ELEMENT>
+<ELEMENT ID="CWJIBPL" SUB="SUBSCRIBE_BODY" TYPE="SPECL"><HTML><![CDATA[
+
+<div id='subscribe-20080305' style='text-align:left;'>
+
+<div style='margin:0px 0px 10px 3px;' class='ztxt'>%PAGE_SUBSCRIBE_WELCOME%</div>
+
+
+<form action="%SUBSCRIBE_URL%" method="post">
+<%
+/* collects all the variables passed (such as list id) and turns them into hidden form elements */
+
+print("");
+
+/* email and full name are set as text inputs so they're ignored here */
+load("email,fullname");
+set($blacklist_urivars=>$_);
+urivars(blacklist=>$blacklist_urivars); set($urivars=>$_); 
+
+/* stackificate all the uri variables so they can be looped through */
+
+load($urivars);
+pull(stack=>>$CGISTACK,format=>"textlist",delimiter=>"=",p0=>"KEY",p1=>"VALUE",linedelimiter=>"&");
+
+:LOOP();
+
+pop(stack=>>$CGISTACK,namespace=>"CGIVAR");
+	print("<input type='hidden' name='");
+	print($CGIVAR.KEY);
+	print("' value='");
+	print($CGIVAR.VALUE);
+	print("'>
+	");
+goto(label=>"LOOP",nb=>$CGISTACK);
+
+%>
+
+<table border="0" cellspacing='3' cellpadding='0'>
+<tr>
+	<td class='ztxt'>Email Address:</td>
+	<td><input type="text" size="30" maxlength="50" name="email" value="<% loadurp("VAR::email"); default(""); print(); %>" class='zform_textbox'></td>
+</tr>
+<tr>
+	<td class='ztxt'>Full Name:</td>
+	<td><input type="text" size="30" maxlength="50" name="fullname" value="<% loadurp("VAR::fullname"); default(""); print(); %>" class='zform_textbox'></td>
+</tr>
+<%
+/* support for multiple lists */
+print("");
+loadurp("profile:zoovy:wrap_subscribe_checkboxes"); default("");
+stop(unless=>$_);
+	format(pretext=>"<tr><td colspan='2' class='zsmall'>",posttext=>"</td></tr>");
+	print();
+%>
+<tr>
+	<td></td>
+	<td><input type="submit" value="Subscribe To Mailing List" class='zform_button'></td>
+</tr>
+</table>
+</form>
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CWJIBPM" SUB="SUCCESS_BODY" TYPE="SPECL"><HTML><![CDATA[
+
+<div class='ztxt'>Thank you for subscribing to our mailing list</div>
+<br>
+<a href='<% loadurp("URL::CONTINUE_URL"); default(""); print(); %>'>
+<% element(TYPE=>"SITEBUTTON",ID=>"SUBBUTTON",BUTTON=>"continue_shopping"); default(""); print(); %>
+</a>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="XYZ" TYPE="SPECL"><HTML><![CDATA[
+
+<%
+
+print(""); 
+
+/* detect if CGI email variable is passed (even if blank) before running validation code */
+loadurp("VAR::email");
+tfu(true=>"1",false=>"1",undef=>"0");
+stop(unless=>$_);
+
+/* run subscribe+validation code */
+element(TYPE=>"EXEC",ID=>"XSUB",FUNCTION=>"RUN_SUBSCRIBE");
+loadurp("VAR::xsub_err");
+stop(unless=>$_);
+
+format(pretext=>"<div class='zwarn' style='margin-left:3px;'>",posttext=>"</div>");
+print($_);
+
+%>
+
+<%
+
+/* now determine which body we show */
+loadurp("VAR::email");
+
+
+loadurp("VAR::xsub_err");
+goto(nb=>$_,label=>"SUBSCRIBE"); /* xsub_err is set - back to subscribe you go! */
+loadurp("VAR::email");
+goto(eq=>"",label=>"SUBSCRIBE"); /* email was NOT set - back to subscribe you go! */
+
+goto(label=>"SUCCESS");  /* xsub_err is blank, email is set, hurrah! */
+:SUCCESS();
+print("%SUCCESS_BODY%");
+stop();
+
+:SUBSCRIBE();
+print("%SUBSCRIBE_BODY%");
+stop();
+
+
+%>
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,76 @@
+<TEMPLATE ID="216" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNLS" CREATOR="JT" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="Image Categories" FORMAT="LAYOUT" SHORT="Categories as images with a single image" TYPE="CONFIG" TITLE="Categories as images (vertical)" RELEASED="20050525"><SUMMARY><![CDATA[This layout starts with a text block, followed by a large static image.  After that is a custom product list of 'featured items' that shows the price, msrp and you save fields.  Following the product list is another text block.  Down the right side of the page is the category list shown as thumbnails and text.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKNLT" TYPE="OUTPUT"><HTML><![CDATA[<table width="100%" border='0' cellspacing='5' cellpadding='0'><tr>
+	<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" HELP="Please enter a Welcome message that will appear on your front page" DATA="page:welcome_message" PROMPT="Welcome Message" TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long, or not helpful visitors probably won't go any further. A lot of businesses talk about what makes their products unique, or their excellent customer service. If you have neither of those, then consider simply welcoming the customer.<br>]]></HELPER>
+<PRETEXT><![CDATA[<p>]]></PRETEXT>
+<POSTTEXT><![CDATA[</p>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNLU" TYPE="OUTPUT"><HTML><![CDATA[
+<div align="center">
+	]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="250" HELP="Please enter the first picture for your homepage." DATA="merchant:zoovy:homepage_picture" PROMPT="Image1 (no zoom)" WIDTH="400" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNLV" TYPE="OUTPUT"><HTML><![CDATA[</div>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" HELP="You can add products to your homepage, when you do they will appear below." MSRPHEAD="MSRP: " DATA="page:prodlist" COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing" SAVEHEAD="A Savings of " TYPE="PRODLIST" PRICEHEAD="Price: " LOADFLOW="1"><HTML><![CDATA[<br><table border="0" cellpadding="0" cellspacing="1" width=100%  bgcolor="#<% load($head_bg_spec);  default("");  print(); %>"><tr><td colspan="2"><font color="#<% load($head_fg_spec);  default("");  print(); %>" face="<% load($head_font);  default("");  print(); %>" size="<% load($head_size);  default("");  print(); %>"><b>Featured Items</b></font></td></tr>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td align="left" valign="top" width="<% load($COLWIDTH);  default("");  print(); %>" <% load($bg);  default("");  print(); %>><table cellspacing="0" cellpadding="2" border="0" width="100%"><tr>
+	<td colspan="2"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><a href="<% load($PROD_URL);  default("");  print(); %>"><strong><% load($zoovy:prod_name);  default(""); strip(length=>"35",breaks=>"1",html=>"1");  print(); %></strong></a></font></td>
+</tr><tr>
+	<td><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"100",h=>"100",tag=>"1");  print(); %></a></td>
+	<td><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>">
+<% load($MSRPHEAD);  default("");  stop(unless=>$zoovy:prod_msrp);  print(); %><% load($zoovy:prod_msrp);  default("");  format(money);  format(after=>"break",skipblank=>"1");  print(); %>
+<% load($PRICEHEAD);  default("");  stop(unless=>$zoovy:base_price);  print(); %><% load($zoovy:base_price);  default(""); format(hidezero,skipblank=>"1"); format(money);  format(after=>"break",skipblank=>"1");  print(); %>
+<% load($SAVEHEAD);  default("");  stop(unless=>$zoovy:prod_msrp);  print(); %><% load($zoovy:prod_msrp);  default(""); math(op=>"subtract",var=>$zoovy:base_price); format(money);  format(after=>"break",skipblank=>"1");  print(); %>
+<br><nobr><% load($VIEW_DETAILS);  default("");  format(after=>"space",skipblank=>"1");  format(after=>"bar",skipblank=>"1");  format(after=>"space",skipblank=>"1");  print(); %><% load($ADD_LINK);  default("");  print(); %></nobr>	
+	</font></td>
+</table></td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td width="<% load($COLWIDTH);  default("");  print(); %>" <% load($bg);  default("");  print(); %>></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DETAIL" HELP="The detail message will typically describe the pictures above." DATA="page:detail" PROMPT="Detail Message (optional)" HELPER="Extra information if you need it." TYPE="TEXT"><PRETEXT><![CDATA[<p>]]></PRETEXT>
+<POSTTEXT><![CDATA[</p>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNLW" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+</td>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" MODE="LIST" TYPE="SUBCAT" SRC="." FORCECOLUMNS="1"><HTML><![CDATA[<td valign="top" align="center" bgcolor="#<% load($head_bg_spec);  default("");  print(); %>" width="1%"><table cellspacing=2 cellpadding=0 border=0>
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+<td width="33%" align="center"><a href="<% load($cat_url);  default("");  print(); %>">
+<% load($cat_thumb);  default(""); image(w=>"150",h=>"150",tag=>"1",bg=>"FFFFFF");  print(); %></a>
+</td></tr><tr><td align="center" style="padding-bottom:8px;">
+<a href="<% load($cat_url);  default("");  print(); %>" class="subcat"><strong><font color="#<% load($head_fg_spec);  default("");  print(); %>" face="<% load($head_font);  default("");  print(); %>" size="<% load($head_size);  default("");  print(); %>"><% load($cat_pretty);  default("");  print(); %></font></strong></a></td>
+<!-- /CATEGORY -->
+</tr>
+<!-- /ROW -->
+</table></td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUKNLX" TYPE="OUTPUT"><HTML><![CDATA[
+
+</tr></table>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,272 @@
+<TEMPLATE ID="1037" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNKH" CREATOR="JT" IMAGES="0" PROPERTIES="1" SUBTYPE="C" SERIES="Image Map" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Map of U.S. linked to text areas" RELEASED="20041123"><SUMMARY><![CDATA[This layout features a map of the United States at the top that you can choose the color for.  Each state is linked to an anchor on the same page with a textbox and auto-generated header based on the state. There is no product list on this page.]]></SUMMARY>
+<SHORT><![CDATA[A U.S. map with each state linked to a corresponding text area on the page.  You choose the color of the map.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CQXSASV" RAW="1" SUB="USERNAME" TYPE="READONLY" LOAD="FLOW::USERNAME"></ELEMENT>
+<ELEMENT ID="SUBCAT" DESCENDTREE="0" NOROOT="1" DATA="page:subcat" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="3"><HTML><![CDATA[<table cellpadding=5 width=100% cellspacing=0>
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+<td width="33%" align="center" <% load($bg);  default("");  print(); %> ><a href="<% load($cat_url);  default("");  print(); %>"><% load($cat_thumb); default(""); image(w=>"180",h=>"180",tag=>"1",alt=>$cat_pretty);  print(); %></a><br><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><font size="+1"><a href="<% load($cat_url);  default("");  print(); %>" class="subcat"><strong><% load($cat_pretty);  default("");  print(); %></strong></a></font></font></td>
+<!-- /CATEGORY -->
+<!-- BLANK -->
+<td <% load($bg);  default("");  print(); %>></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="10" ID="COLOR" HELP="Map background color (use HEX: #990000 or simple colors: red)" DATA="page:color" PROMPT="Map background color (use HEX: #990000 or simple colors: red)" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[ <!--]]></PRETEXT>
+<POSTTEXT><![CDATA[ -->]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNKI" TYPE="OUTPUT"><HTML><![CDATA[
+
+<style type="text/css">
+.state_content	{padding-left: 6px;}
+.map_bg_color	{background-color: ]]></HTML>
+</ELEMENT>
+<ELEMENT ID="R1" RAW="1" TYPE="READONLY" LOAD="page:color"></ELEMENT>
+<ELEMENT ID="CPUKNKJ" TYPE="OUTPUT"><HTML><![CDATA[
+}
+
+</style>
+
+
+<map name="united_states_Map">
+<area shape="rect" alt="Washington D.C." coords="531,189,555,206" href="#DC">
+<area shape="rect" alt="Maryland" coords="531,168,555,184" href="#MD">
+<area shape="rect" alt="Delaware" coords="531,147,555,163" href="#DE">
+<area shape="rect" alt="Conneticut" coords="531,124,554,140" href="#CT">
+<area shape="rect" alt="Rhode Island" coords="531,104,555,116" href="#RI">
+<area shape="rect" alt="Massachusetes" coords="533,82,555,94" href="#MA">
+<area shape="poly" alt="New Jersey" coords="496,146, 487,137, 493,128, 487,121, 492,115, 501,116, 504,128, 504,134, 496,147" href="#NJ">
+<area shape="poly" alt="Maine" coords="531,23, 522,24, 512,56, 519,81, 524,82, 551,56, 546,43, 538,27, 531,23, 531,23" href="#ME">
+<area shape="poly" alt="New Hampshire" coords="523,83, 519,81, 512,56, 508,62, 510,68, 505,81, 510,95, 523,88, 523,83" href="#NH">
+<area shape="poly" alt="Vermont" coords="509,62, 492,66, 501,95, 509,94, 506,81, 510,69" href="#VT">
+<area shape="poly" alt="New York" coords="501,117, 491,115, 483,108, 443,115, 439,115, 447,104, 444,102, 455,95, 465,95, 471,89, 469,82, 479,68, 492,66, 501,95, 504,115" href="#NY">
+<area shape="poly" alt="Pennsylvania" coords="435,120, 440,115, 444,116, 483,108, 491,115, 489,121, 490,126, 493,130, 489,137, 459,146, 458,143, 439,148, 435,135" href="#PA">
+<area shape="poly" alt="West Virginia" coords="449,148, 440,148, 435,135, 435,149, 423,168, 423,173, 426,180, 435,180, 445,175, 451,161, 452,163, 463,148, 458,143, 440,148" href="#WV">
+<area shape="poly" alt="Ohio" coords="435,120, 435,149, 423,168, 418,163, 405,166, 398,161, 392,128, 406,124, 418,128" href="#OH">
+<area shape="poly" alt="Indiana " coords="398,161, 393,128, 372,128, 365,132, 371,167, 365,180, 386,175" href="#IN">
+<area shape="poly" alt="Illinois" coords="366,132, 363,121, 337,121, 340,128, 337,135, 332,135, 332,141, 328,148, 331,150, 331,156, 339,168, 344,168, 344,175, 356,189, 363,192, 365,180, 371,167" href="#IL">
+<area shape="poly" alt="Virginia " coords="492,175, 491,180, 431,192, 418,194, 426,180, 435,181, 446,175, 451,161, 453,163, 463,148, 476,152, 476,161, 486,163" href="#VA">
+<area shape="poly" alt="Kentucky" coords="427,180, 418,194, 353,200, 356,194, 356,189, 363,192, 363,187, 366,180, 387,176, 398,161, 405,166, 418,163, 423,168, 423,173" href="#KY">
+<area shape="poly" alt="Tennessee " coords="414,194, 353,200, 346,220, 366,220, 405,214, 410,207, 425,201, 431,192, 430,192, 412,194" href="#TN">
+<area shape="poly" alt="North Carolina" coords="492,180, 431,192, 425,201, 410,208, 406,214, 423,214, 444,207, 449,212, 459,211, 471,220, 478,220, 493,201, 490,194, 496,194, 497,188" href="#NC">
+<area shape="poly" alt="South Carolina" coords="471,220, 469,226, 468,231, 451,247, 425,220, 418,220, 423,214, 443,207, 449,212, 460,211" href="#SC">
+<area shape="poly" alt="Georgia" coords="422,214, 419,220, 426,221, 451,247, 449,266, 442,266, 442,272, 411,272, 405,266, 406,247, 396,215" href="#GA">
+<area shape="poly" alt="Florida " coords="449,267, 442,266, 442,272, 411,272, 406,267, 378,272, 380,274, 378,280, 406,286, 419,280, 438,292, 438,306, 444,318, 464,339, 472,334, 472,313, 463,292" href="#FL">
+<area shape="poly" alt="Alabama " coords="396,216, 367,220, 371,280, 379,280, 381,275, 378,272, 407,268, 407,249" href="#AL">
+<area shape="poly" alt="Mississippi" coords="368,220, 371,280, 360,280, 356,280, 352,272, 333,273, 339,255, 339,247, 339,233, 346,220" href="#MS">
+<area shape="poly" alt="Arkansas " coords="346,220, 339,233, 337,247, 306,247, 306,240, 299,240, 299,201, 346,201, 346,201, 343,207, 351,207" href="#AR">
+<area shape="poly" alt="Missouri " coords="343,207, 347,202, 346,201, 299,202, 299,168, 293,163, 287,148, 326,148, 331,150, 330,157, 339,168, 344,169, 344,175, 340,175, 347,182, 352,187, 356,194, 354,201, 351,207" href="#MO ">
+<area shape="poly" alt="Iowa " coords="330,148, 328,150, 326,148, 287,148, 278,121, 280,120, 280,109, 330,109, 332,120, 337,121, 341,128, 337,136, 333,136, 333,141, 328,150, 327,150, 328,150" href="#IA">
+<area shape="poly" alt="Michigan" coords="373,128, 378,120, 378,115, 374,104, 376,88, 387,75, 385,71, 379,71, 372,78, 365,78, 363,82, 359,76, 339,71, 337,68, 354,56, 359,56, 354,62, 359,62, 363,66, 371,66, 385,61, 385,64, 392,64, 400,69, 397,71, 391,71, 392,75, 401,81, 404,89, 398,97, 398,102, 401,102, 407,95, 412,102,
+413,113, 405,126" href="#MI">
+<area shape="poly" alt="Wisconsin" coords="363,121, 337,121, 332,120, 330,109, 330,103, 314,94, 313,81, 319,75, 319,68, 331,63, 333,68, 337,68, 339,71, 359,78, 366,84, 365,97, 363,109" href="#WI">
+<area shape="poly" alt="Minesota" coords="340,50, 328,48, 323,49, 313,42, 299,42, 293,34, 291,38, 273,40, 274,56, 280,75, 278,76, 278,81, 280,88, 280,110, 330,110, 330,104, 315,94, 313,81, 319,75, 319,68" href="#MN">
+<area shape="poly" alt="North Dakota" coords="274,40, 214,36, 211,75, 278,77, 280,75, 275,56" href="#ND">
+<area shape="poly" alt="South Dakota" coords="278,78, 211,75, 207,115, 259,115, 267,120, 272,120, 278,122, 280,120, 280,88, 278,82" href="#SD ">
+<area shape="poly" alt="Nebraska " coords="278,123, 272,120, 268,121, 259,116, 207,115, 206,139, 225,141, 225,154, 291,155" href="#NE">
+<area shape="poly" alt="Kansas " coords="291,156, 294,161, 294,163, 299,168, 299,198, 220,194, 222,154" href="#KS">
+<area shape="poly" alt="Oklahoma" coords="299,196, 300,240, 293,238, 280,240, 247,229, 240,227, 241,201, 214,201, 214,194, 299,198, 299,196" href="#OK">
+<area shape="poly" alt="Louisiana" coords="338,247, 306,247, 305,260, 313,275, 307,292, 330,293, 331,290, 344,299, 363,295, 361,281, 357,281, 353,272, 334,273, 340,256" href="#LA">
+<area shape="poly" alt="Texas" coords="308,292, 298,293, 291,302, 278,306, 269,319, 266,330, 271,340, 267,343, 256,340, 247,334, 242,319, 234,310, 227,295, 220,291, 207,290, 203,299, 196,295, 186,286, 182,275, 168,259, 168,254, 207,260, 206,260, 212,201, 242,202, 241,227, 248,231, 280,240, 294,238, 306,241, 306,261, 313,275"
+href="#TX">
+<area shape="poly" alt="New Mexico " coords="148,258, 148,262, 139,262, 148,187, 214,194, 206,260, 168,255, 168,259" href="#NM">
+<area shape="poly" alt="Colorado " coords="221,194, 148,187, 155,135, 225,141" href="#CO">
+<area shape="poly" alt="Utah " coords="148,187, 156,135, 135,133, 137,120, 108,115, 97,180" href="#UT">
+<area shape="poly" alt="Wyoming" coords="136,132, 145,81, 208,88, 206,141, 135,132, 136,133" href="#WY ">
+<area shape="poly" alt="Montana " coords="214,36, 156,29, 108,21, 108,36, 108,42, 120,54, 115,68, 121,66, 127,83, 141,82, 141,86, 143,83, 145,81, 209,88" href="#MT">
+<area shape="poly" alt="Idaho " coords="108,21, 108,35, 108,42, 115,51, 120,54, 115,67, 115,69, 121,66, 127,84, 141,83, 142,86, 139,120, 108,115, 82,108, 88,81, 87,75, 95,62, 94,56, 101,17" href="#ID">
+<area shape="poly" alt="Washington " coords="101,18, 94,56, 80,53, 80,54, 62,54, 42,49, 42,42, 31,36, 34,9, 51,17, 55,9, 53,7, 56,7" href="#WA">
+<area shape="poly" alt="Oregon" coords="14,89, 15,78, 21,69, 33,37, 42,42, 42,49, 63,54, 80,54, 94,57, 96,62, 91,71, 87,75, 87,78, 88,81, 82,108" href="#OR">
+<area shape="poly" alt="Nevada" coords="109,115, 95,180, 94,192, 87,187, 84,203, 42,141, 54,102" href="#NV">
+<area shape="poly" alt="Arizona" coords="97,180, 149,187, 139,261, 117,259, 78,235, 78,233, 82,233, 82,226, 90,214, 86,204, 88,188, 94,192" href="#AZ">
+<area shape="poly" alt="California " coords="82,233, 53,231, 51,220, 21,196, 5,130, 5,107, 12,90, 54,102, 43,141, 84,202, 87,208, 89,214, 84,219, 81,226" href="#CA">
+<area shape="poly" alt="Hawaii" coords="153,298, 153,307, 159,304, 194,319, 198,321, 196,332, 202,339, 214,332, 214,324, 202,318, 201,313, 189,306, 183,306, 179,300, 157,294" href="#HI">
+<area shape="poly" alt="Alaska" coords="68,253, 51,252, 33,271, 24,299, 29,328, 50,347, 3,378, 49,366, 69,352, 82,338, 96,328, 122,330, 155,353, 168,347, 166,334, 154,333, 135,318, 128,323, 121,318, 116,319, 102,258, 93,254, 86,255, 74,254" href="#AL">
+</map>
+
+
+<table width="100%"><tr>
+	<td colspan="2" align="center"><table cellspacing="0" cellpadding="0"><tr><td class="map_bg_color"><img src="//static.zoovy.com/graphics/general/united_states.gif" width="560" height="385" border="0" alt="" usemap="#united_states_Map"></td></tr></table></td>
+</tr><tr>
+	<td valign="top" width="50%">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ALABAMA" HELP="Please describe this category and why it is unique" DATA="page:alabama" PROMPT="Alabama Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="AL"></a><strong>Alabama</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="ALASKA" HELP="Please describe this category and why it is unique" DATA="page:alaska" PROMPT="Alaska Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="AK"></a><strong>Alaska</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="ARIZONA" HELP="Please describe this category and why it is unique" DATA="page:arizona" PROMPT="Arizona Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="AZ"></a><strong>Arizona</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="ARKANSAS" HELP="Please describe this category and why it is unique" DATA="page:arkansas" PROMPT="Arkansas Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="AR"></a><strong>Arkansas</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CALIFORNIA" HELP="Please describe this category and why it is unique" DATA="page:california" PROMPT="California Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="CA"></a><strong>California</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="COLORADO" HELP="Please describe this category and why it is unique" DATA="page:colorado" PROMPT="Colorado Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="CO"></a><strong>Colorado</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CONNECTICUT" HELP="Please describe this category and why it is unique" DATA="page:connecticut" PROMPT="Connecticut Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="CT"></a><strong>Connecticut</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DELAWARE" HELP="Please describe this category and why it is unique" DATA="page:delaware" PROMPT="Delaware Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="DE"></a><strong>Delaware</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="FLORIDA" HELP="Please describe this category and why it is unique" DATA="page:florida" PROMPT="Florida Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="FL"></a><strong>Florida</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="GEORGIA" HELP="Please describe this category and why it is unique" DATA="page:georgia" PROMPT="Georgia Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="GA"></a><strong>Georgia</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="HAWAII" HELP="Please describe this category and why it is unique" DATA="page:hawaii" PROMPT="Hawaii Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="HI"></a><strong>Hawaii</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="IDAHO" HELP="Please describe this category and why it is unique" DATA="page:idaho" PROMPT="Idaho Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="ID"></a><strong>Idaho</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="ILLINOIS" HELP="Please describe this category and why it is unique" DATA="page:illinois" PROMPT="Illinois Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="IL"></a><strong>Illinois</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="INDIANA" HELP="Please describe this category and why it is unique" DATA="page:indiana" PROMPT="Indiana Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="IN"></a><strong>Indiana</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="IOWA" HELP="Please describe this category and why it is unique" DATA="page:iowa" PROMPT="Iowa Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="IA"></a><strong>Iowa</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="KANSAS" HELP="Please describe this category and why it is unique" DATA="page:kansas" PROMPT="Kansas Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="KS"></a><strong>Kansas</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="KENTUCKY" HELP="Please describe this category and why it is unique" DATA="page:kentucky" PROMPT="Kentucky Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="KY"></a><strong>Kentucky</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="LOUISIANA" HELP="Please describe this category and why it is unique" DATA="page:louisiana" PROMPT="Louisiana Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="LA"></a><strong>Louisiana</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="MAINE" HELP="Please describe this category and why it is unique" DATA="page:maine" PROMPT="Maine Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="ME"></a><strong>Maine</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="MARYLAND" HELP="Please describe this category and why it is unique" DATA="page:maryland" PROMPT="Maryland Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="MD"></a><strong>Maryland</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="MASSACHUSETTS" HELP="Please describe this category and why it is unique" DATA="page:massachusetts" PROMPT="Massachusetts Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="MA"></a><strong>Massachusetts</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="MICHIGAN" HELP="Please describe this category and why it is unique" DATA="page:michigan" PROMPT="Michigan Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="MI"></a><strong>Michigan</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="MINNESOTA" HELP="Please describe this category and why it is unique" DATA="page:minnesota" PROMPT="Minnesota Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="MN"></a><strong>Minnesota</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="MISSISSIPPI" HELP="Please describe this category and why it is unique" DATA="page:mississippi" PROMPT="Mississippi Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="MS"></a><strong>Mississippi</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="MISSOURI" HELP="Please describe this category and why it is unique" DATA="page:missouri" PROMPT="Missouri Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="MO"></a><strong>Missouri</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNKK" TYPE="OUTPUT"><HTML><![CDATA[
+
+	</td>
+	<td valign="top" width="50%">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MONTANA" HELP="Please describe this category and why it is unique" DATA="page:montana" PROMPT="Montana Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="MT"></a><strong>Montana</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="NEBRASKA" HELP="Please describe this category and why it is unique" DATA="page:nebraska" PROMPT="Nebraska Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="NE"></a><strong>Nebraska</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="NEVADA" HELP="Please describe this category and why it is unique" DATA="page:nevada" PROMPT="Nevada Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="NV"></a><strong>Nevada</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="NEWHAMPSHIRE" HELP="Please describe this category and why it is unique" DATA="page:newhampshire" PROMPT="New Hampshire Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="NH"></a><strong>New Hampshire</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="NEWJERSEY" HELP="Please describe this category and why it is unique" DATA="page:newjersey" PROMPT="New Jersey Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="NJ"></a><strong>New Jersey</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="NEWMEXICO" HELP="Please describe this category and why it is unique" DATA="page:newmexico" PROMPT="New Mexico Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="NM"></a><strong>New Mexico</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="NEWYORK" HELP="Please describe this category and why it is unique" DATA="page:newyork" PROMPT="New York Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="NY"></a><strong>New York</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="NORTHCAROLINA" HELP="Please describe this category and why it is unique" DATA="page:northcarolina" PROMPT="North Carolina Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="NC"></a><strong>North Carolina</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="NORTHDAKOTA" HELP="Please describe this category and why it is unique" DATA="page:northdakota" PROMPT="North Dakota Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="ND"></a><strong>North Dakota</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="OHIO" HELP="Please describe this category and why it is unique" DATA="page:ohio" PROMPT="Ohio Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="OH"></a><strong>Ohio</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="OKLAHOMA" HELP="Please describe this category and why it is unique" DATA="page:oklahoma" PROMPT="Oklahoma Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="ND"></a><strong>Oklahoma</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="OREGON" HELP="Please describe this category and why it is unique" DATA="page:oregon" PROMPT="Oregon Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="OR"></a><strong>Oregon</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PENNSYLVANIA" HELP="Please describe this category and why it is unique" DATA="page:pennsylvania" PROMPT="Pennsylvania Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="PA"></a><strong>Pennsylvania</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="RHODEISLAND" HELP="Please describe this category and why it is unique" DATA="page:rhodeisland" PROMPT="Rhode Island Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="RI"></a><strong>Rhode Island</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="SOUTHCAROLINA" HELP="Please describe this category and why it is unique" DATA="page:southcarolina" PROMPT="South Carolina Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="SC"></a><strong>South Carolina</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="SOUTHDAKOTA" HELP="Please describe this category and why it is unique" DATA="page:southdakota" PROMPT="South Dakota Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="SD"></a><strong>South Dakota</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="TENNESSEE" HELP="Please describe this category and why it is unique" DATA="page:tennessee" PROMPT="Tennessee Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="TN"></a><strong>Tennessee</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="TEXAS" HELP="Please describe this category and why it is unique" DATA="page:texas" PROMPT="Texas Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="TX"></a><strong>Texas</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="UTAH" HELP="Please describe this category and why it is unique" DATA="page:utah" PROMPT="Utah Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="UT"></a><strong>Utah</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="VERMONT" HELP="Please describe this category and why it is unique" DATA="page:vermont" PROMPT="Vermont Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="VT"></a><strong>Vermont</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="VIRGINIA" HELP="Please describe this category and why it is unique" DATA="page:virginia" PROMPT="Virginia Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="VA"></a><strong>Virginia</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="WASHINGTON" HELP="Please describe this category and why it is unique" DATA="page:waashington" PROMPT="Washington State Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="WA"></a><strong>Washington</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="WASHINGTONDC" HELP="Please describe this category and why it is unique" DATA="page:waashingtondc" PROMPT="Washington DC Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="DC"></a><strong>Washington DC</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="WESTVIRGINIA" HELP="Please describe this category and why it is unique" DATA="page:westvirginia" PROMPT="West Virginia Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="WV"></a><strong>West Virginia</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="WISCONSIN" HELP="Please describe this category and why it is unique" DATA="page:wisconsin" PROMPT="Wisconsin Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="WI"></a><strong>Wisconsin</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="WYOMING" HELP="Please describe this category and why it is unique" DATA="page:wyoming" PROMPT="Wyoming Description" TYPE="TEXT"><PRETEXT><![CDATA[<a name="WY"></a><strong>Wyoming</strong><div class="state_content">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNKL" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr><tr>
+	<td colspan="2">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Misc text area (international)" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNKM" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr></table>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

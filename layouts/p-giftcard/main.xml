@@ -1,0 +1,211 @@
+<TEMPLATE ID="p-giftcard" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CTJKLXZ" V="1" CREATED="20091130" OVERLOAD="dev.no_continue=1" SUBTYPE="P" FORMAT="LAYOUT" EXPORT="0" TYPE="CONFIG" TITLE="Gift Card (experimental)" RELEASED="20091130"><SUMMARY><![CDATA[A simple layout designed specifically for gift cards (should NOT be used with any other product). A default gift card graphic is diplayed if image1 is not set for the item (allowing you to easily override the default graphic).  The product default and detailed description are both present.  Default should be VERY short, as it appears above the add to cart button.  Use the detailed description for longer text, like legal mumbo-jumbo. A redepmtions/login prompt also appears below the add to cart. Both descriptions are wiki only.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="VAR_SKU" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
+<ELEMENT ID="CPVRQCU" RAW="1" PROMPT="Product name" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCU2" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCU3" RAW="1" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL"></ELEMENT>
+<ELEMENT ID="DAZKBUI" BUTTON="add_to_cart" RAW="1" SUB="PROD_ADDTOCART_BTN" TYPE="SITEBUTTON"></ELEMENT>
+<ELEMENT ID="DAZKBUJ" SUB="PROD_IMAGE_MAIN" TYPE="SPECL"><HTML><![CDATA[<%
+print("");
+loadurp("product:zoovy:prod_image1"); default(""); 
+goto(label=>"SHOWDEFAULT",eq=>"");
+	image(h=>"500",w=>"200",tag=>"1",alt=>"Gift Cards Available!",m=>"1");
+	print();	
+	stop();
+
+:SHOWDEFAULT();
+	print("<img src='%LAYOUT_URL%/giftcard-200x192.jpg' width='200' height='192' alt='Gift Cards Available!' />");
+
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODNAME" WIKI="3" DATA="product:zoovy:prod_name" RAW="1" SUB="PROD_NAME" PROMPT="Name" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="PRODDESC" WIKI="3" DATA="product:zoovy:prod_desc" RAW="1" SUB="PROD_DESC" PROMPT="Description" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="PRODDETAIL" WIKI="3" DATA="product:zoovy:prod_detail" RAW="1" SUB="PROD_DETAIL" PROMPT="Detailed description" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="MYADD2CART" TYPE="ADDTOCART" JAVASCRIPT="v2" OUTPUTSKIP="32768"><HTML><![CDATA[
+
+
+<script type='text/javascript'>
+//options in a JSON format
+
+
+//$JSONOverrides = "";
+
+var hasOptions = true;
+
+<%
+print("");
+load($JAVASCRIPT); default("");
+goto(label=>"NOJSON",eq=>"v2");
+	print($JAVASCRIPT);
+	stop();
+
+:NOJSON();
+	print("hasOptions = false;");
+%>
+</script>
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DAZKBUK" TYPE="HIDDEN" OUTPUTSKIP="32768"><DEFAULT><![CDATA[
+
+
+
+<script type='text/javascript' src='%GRAPHICS_URL%/jslib/scriptaculous-js-1.8.2/lib/prototype.js'></script>
+<script type='text/javascript' src='%GRAPHICS_URL%/jslib/dynamicoptions/DynamicOptionList-20090825.js'></script>
+
+
+<script type='text/javascript' src='%GRAPHICS_URL%/jslib/pogs/json_interpreter-20091130g.js'></script>
+
+<style type='text/css'>
+
+/* styles used in the json pogs */
+
+.zform_div	{margin-bottom:3px;}
+.clear_both	{clear:both; margin-bottom:2px;}
+.imageFloat	{float:left; margin-right:5px;  margin-bottom:5px;padding:1px; border:1px solid #cccccc;}
+
+.imageFloatSelected	{border:1px solid #5ed7c2; float:left; margin-right:5px; padding:1px; margin-bottom:5px; background:#ddf8f3;}
+
+.ghint_qmark	{padding-left:10px;}
+
+label	{font-weight:bold;}
+
+
+</style>
+
+
+
+<form name='addToCartFrm' id='addToCartFrm' action="%CART_URL%" method="get">
+
+<!--
+ onSubmit="if(hasOptions == true){return validate_pogs()} else {
+ return true};">
+-->
+<input type="hidden" name="product_id"  id="product_id" value="%SKU%">
+<input type="hidden" name="add" value="yes">
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CUEMSWT" TYPE="OUTPUT"><HTML><![CDATA[
+
+<table cellspacing='0' cellpadding='0' width='100%'>
+<tr>
+
+
+	<td valign='top'>
+	<div style='margin-right:20px;'>
+	%PROD_IMAGE_MAIN%
+	</div>
+	</td>
+
+
+	<td valign='top' width='99%' class='ztxt'>
+
+<h1 class='ztitle'>%PROD_NAME%</h1>
+
+%PROD_DESC%
+
+
+
+<div style='margin:20px 0;'>
+	<div id='JSONpogErrors' class='zwarn'></div>
+	<div id='JSONPogDisplay'></div>
+
+<a href='#' onClick="validateA2CFrm(); return false;">
+%PROD_ADDTOCART_BTN%
+</a>
+
+</div>
+
+
+</form>
+
+<div style='width:300px; margin-bottom:20px;'>
+	<div class='ztxt zcolor' style='padding:3px;'><span class='zcolor'><b>Redeeming a gift card?</b></span></div>
+	<div class='ztxt zcolor_light' style='width:auto; padding:3px; '>
+	<a href='%LOGIN_URL%' class='zlink' style='text-decoration:underline;'>Log in</a> or enter your gift card id here:
+<form action="%CART_URL%">
+<input type="hidden" name="add" value="yes">
+<input type="hidden" name="override" value="1">
+	<table align='center'>
+	<tr>
+		<td><input type='text' name='product_id' class='zform_textbox' ></td>
+		<td><input type='submit' value='submit' class='zform_button'></td>
+	</tr>
+	</table>
+	</form>
+	</div>
+</div>
+
+	</td>
+</tr>
+<tr>
+	<td colspan='2' class='ztxt'>
+
+%PROD_DETAIL%
+
+	</td>
+</tr>
+</table>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DAZKBUL" TYPE="HIDDEN"><DEFAULT><![CDATA[
+
+
+
+
+<script type="text/javascript"> 
+
+
+function validateA2CFrm()	{
+	if(hasOptions == true)	{
+		r = validate_pogs();
+		}
+	else	{
+		r = true; //if no options, always return true.
+		}
+//	console.log("r = "+r);
+	if(r == true)
+		document.addToCartFrm.submit();
+	}
+
+
+if(hasOptions == true)	{
+
+	var MyPOGs = Class.create(ZoovyPOGs, {
+	  xinit : function($super) { }
+	});
+ 
+ 
+ 
+	var pogs = new MyPOGs(MYADD2CART_pogs);
+	pogs.xinit();
+
+	var ids = pogs.listOptionIDs();
+	for ( var i=0, len=ids.length; i<len; ++i) {
+	 	var pog = pogs.getOptionByID(ids[i]);
+
+// alert(ids[i] + " : " + pog.prompt);
+//document.write("<hr>"+ids[i] + " : " + pog['prompt']+" and type = "+pog['type']);
+  
+  	pogs.renderOption(pog)
+  	}
+}
+
+
+</script>
+
+
+
+
+]]></DEFAULT>
+</ELEMENT>
+
+</TEMPLATE>

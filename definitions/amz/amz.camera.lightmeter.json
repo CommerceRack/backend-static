@@ -1,0 +1,184 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "LightMeter",
+      "subcat" : "lightmeter",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:LightMeter",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXBJ",
+      "xmlpath" : "CameraPhoto.ProductType.LightMeter."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "film-camera",
+            "v" : "film-camera"
+         },
+         {
+            "p" : "digital-camera",
+            "v" : "digital-camera"
+         },
+         {
+            "p" : "camcorder",
+            "v" : "camcorder"
+         },
+         {
+            "p" : "universal",
+            "v" : "universal"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lightmeter_cameratype",
+      "title" : "Light Meter Camera Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.LightMeter.CameraType",
+      "list" : "LIST_CAMERA_LIGHTMETER_CAMERATYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "ambient",
+            "v" : "ambient"
+         },
+         {
+            "p" : "flash",
+            "v" : "flash"
+         },
+         {
+            "p" : "ambient-and-flash",
+            "v" : "ambient-and-flash"
+         },
+         {
+            "p" : "spot",
+            "v" : "spot"
+         },
+         {
+            "p" : "color",
+            "v" : "color"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lightmeter_metertype",
+      "title" : "Light Meter Meter Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.LightMeter.MeterType",
+      "list" : "LIST_CAMERA_LIGHTMETER_METERTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "analog",
+            "v" : "analog"
+         },
+         {
+            "p" : "digital",
+            "v" : "digital"
+         },
+         {
+            "p" : "led",
+            "v" : "led"
+         },
+         {
+            "p" : "match-needle",
+            "v" : "match-needle"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lightmeter_meterdisplay",
+      "title" : "Light Meter Meter Display",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.LightMeter.MeterDisplay",
+      "list" : "LIST_CAMERA_LIGHTMETER_METERDISPLAY"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

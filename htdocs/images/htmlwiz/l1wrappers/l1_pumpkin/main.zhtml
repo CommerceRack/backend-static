@@ -1,0 +1,93 @@
+<!-- CONFIG
+THEME=l1_pumpkin
+SITEBUTTONS=l1_pumpkin
+NARROW=TRUE
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- HEAD -->
+<map name="menu">
+	<area href="<!--CART_URL-->" shape="poly" coords="123,49,123,45,122,44,125,42,128,40,131,39,131,35,128,33,125,32,123,32,118,36,115,39,107,37,101,37,95,37,89,39,85,40,80,42,76,43,75,48,74,51,74,54,76,59,78,60,78,62,77,67,77,70,80,76,85,80,88,82,92,84,94,85,99,84,107,84,112,85,116,86,119,82,120,80,124,79,132,82,134,84,134,87,137,87,143,83,147,81,151,77,154,73,152,65,150,59,145,55,137,53,130,52,125,50,123,49" alt="Shopping Cart">
+	<area href="<!--SEARCH_URL-->" shape="poly" coords="208,49,206,45,206,42,207,42,212,40,215,39,217,37,213,33,209,31,206,33,203,36,200,38,200,39,193,38,187,37,182,37,177,37,174,39,172,40,169,40,165,40,162,44,159,48,158,54,159,58,161,62,162,62,161,67,161,72,164,76,169,81,176,84,179,86,187,84,190,84,197,85,198,85,200,85,203,82,206,79,212,80,216,82,219,86,208,49" alt="Search">
+	<area href="<!--SEARCH_URL-->" shape="poly" coords="221,86,224,85,228,84,233,80,238,75,238,66,236,61,232,58,219,52,213,50,208,50,221,86" alt="Search">
+	<area href="<!--ABOUT_URL-->" shape="poly" coords="124,98,122,95,121,93,122,90,124,88,125,86,123,84,121,84,120,87,118,89,116,90,113,89,107,88,103,88,99,87,95,88,92,88,87,89,83,90,79,94,76,97,76,100,75,105,77,108,78,110,79,113,78,116,79,122,80,124,85,127,99,135,107,137,115,138,123,138,134,137,145,132,152,127,155,122,155,116,153,111,149,108,144,103,130,100,125,98,123,98,124,98" alt="About Us">
+	<area href="<!--CONTACT_URL-->" shape="poly" coords="205,97,203,94,204,91,206,90,208,87,209,85,207,83,205,85,203,88,200,89,199,90,193,89,188,88,184,88,182,90,178,90,172,91,169,91,165,92,163,95,160,101,160,104,162,108,163,111,162,114,161,119,165,125,168,128,177,132,180,133,193,137,201,138,208,138,217,134,226,132,232,129,237,123,238,117,233,108,229,103,214,100,208,98,206,97,204,95,203,92,205,91,205,97" alt="Contact Us">
+</map>
+</head> 
+<body bgcolor="#FFFFFF" text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!--LINK_VISITED_TEXT_COLOR -->">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="<!-- WRAPPER_URL -->/top.jpg">
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="">
+				<tr>
+					<td width="320" height="10"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="320" height="10"></td>
+					<td width="300" height="140" align="center" valign="middle" rowspan="4"><img src="<!-- WRAPPER_URL -->/menu.gif" width="300" height="140" usemap="#menu" border="0"></td>
+				</tr>
+				<tr>
+					<td width="300" height="88" align="center" valign="middle"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=300
+HEIGHT=88
+--></a></td>
+				</tr>
+				<tr>
+					<td width="320" height="32" align="left" valign="bottom">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="20"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="20" height="1"></td>
+								<td width="300" align="left" valign="middle"><!-- BREADCRUMB
+BUTTONTYPE=l1_pumpkin_bc
+FORMAT=<a href="%URL%"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0"></a>&nbsp;
+--><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="1"></td>
+							</tr>
+						</table>
+					</td>
+				</tr> 
+				<tr>
+					<td width="320" height="10"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="320" height="1"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table> 		
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620">
+	<tr>
+		<td width="20" valign="top" background="<!-- WRAPPER_URL -->/border1.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="16" height="200"></td>
+		<td width="580" bgcolor="#FFFFFF" valign="top">
+			<table width="580" cellpadding="3" cellspacing="3" border="0" bgcolor="#FFFFFF">
+				<tr>
+					<td align="left" valign="middle" bgcolor="#E79935">
+						<font color="#000000" face="Arial, Helvetica"  size="4"><!-- TITLE --></font>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" bgcolor="#FFFFFF">
+<!-- MENU
+BEFORE=<div align="center">Categories:%BREAK%
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a>%BREAK%
+DIVIDER=|%BREAK%
+AFTER=</div>
+ONLYHOME=1
+NOHOME=1
+-->
+<!-- BODY -->
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="20" valign="top" background="<!-- WRAPPER_URL -->/border2.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="16" height="200"></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="80" background="<!-- WRAPPER_URL -->/bottom.jpg">
+	<tr>
+		<td width="620" height="80" align="center" valign="middle">
+<!-- FOOTER -->
+		</td>
+	</tr>
+</table>
+</center>
+</div>
+</body>
+</html>
+

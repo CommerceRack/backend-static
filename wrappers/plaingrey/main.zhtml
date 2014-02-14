@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=l2_sleekgrey2
+SITEBUTTONS=lucido
+-->
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+.title	{font-family: verdana; color: #666666; font-size: 12px; font-weight: bold;}
+.cats	{font-family: verdana; color: #666666; font-size: 12px;}
+.menu	{font-family: verdana; color: #666666; font-size: 12px; font-weight: bold;}
+a	{text-decoration: none; color: #333333}
+a:hover	{text-decoration: underline; color: #000000}
+td.cats	{background-color:#f2f2f2}
+</style>
+</head>
+
+<body marginheight=0 marginwidth=0>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+	<tr>
+		<td valign="top" width=140 class="cats">
+			<table cellspacing=0 cellpadding=5 border=0 width=100%>
+				<tr>
+					<td><!-- LOGO
+WIDTH=130
+HEIGHT=130
+--><br><p class="cats"><!-- MENU
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a><br>
+ONLYHOME=0
+NOHOME=1
+--></p></td>
+				</tr>
+			</table></td>
+		<td valign="top" background="<!-- WRAPPER_URL -->/seperate.gif" width=23><img src="<!-- WRAPPER_URL -->/seperate.gif" width="23" height="1" alt="" border="0"></td>
+		<td valign="top" width=99%>
+			<table cellspacing=0 cellpadding=5 border=0 width=100%>
+				<tr>
+					<td>
+						<table cellspacing=0 cellpadding=0 border=1 bordercolor="#666666">
+							<tr>
+								<td class="cats">&nbsp;&nbsp;<a href="<!-- HOME_URL -->">Home</a>&nbsp;&nbsp;</td>
+								<td class="cats">&nbsp;&nbsp;<a href="<!-- SEARCH_URL -->">Search</a>&nbsp;&nbsp;</td>
+								<td class="cats">&nbsp;&nbsp;<a href="<!-- ABOUT_URL -->">Company</a>&nbsp;&nbsp;</td>
+								<td class="cats">&nbsp;&nbsp;<a href="<!-- CONTACT_URL -->">Contact</a>&nbsp;&nbsp;</td>
+								<td class="cats">&nbsp;&nbsp;<a href="<!-- LOGIN_URL -->">Login</a>&nbsp;&nbsp;</td>
+								<td class="cats">&nbsp;&nbsp;<a href="<!-- CART_URL -->">Cart</a>&nbsp;&nbsp;</td>
+							</tr>
+						</table>
+					<p class="title"><!-- TITLE --></p><!-- BODY --><p><!-- FOOTER
+TRANSPARENT=TRUE
+--></p></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

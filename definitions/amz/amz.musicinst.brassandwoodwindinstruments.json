@@ -1,0 +1,163 @@
+[
+   {
+      "catalog" : "MUSICINST",
+      "amz-subcat" : "BrassAndWoodwindInstruments",
+      "subcat" : "brassandwoodwindinstruments",
+      "type" : "config",
+		"variation-themes" : "Color"
+   },
+   {
+      "PROMPT" : "MusicalInstruments:BrassAndWoodwindInstruments",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYQD",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_bawwinmts_addlspecs",
+      "type" : "textbox",
+      "title" : "Additional Specifications",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.AdditionalSpecifications"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_bawwinmts_clrspec",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_clrmap",
+      "type" : "textbox",
+      "title" : "Color Map",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.ColorSpecification"
+   },   
+	{
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_bawwinmts_ctryprdin",
+      "type" : "textbox",
+      "title" : "Country Produced In",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.CountryProducedIn"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_bawwinmts_inmtkey",
+      "type" : "textbox",
+      "title" : "Instrument Key",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.InstrumentKey"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_mus_bawwinmts_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_bawwinmts_matltype",
+      "type" : "textbox",
+      "title" : "Material Type",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.MaterialType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_bawwinmts_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_bawwinmts_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_bawwinmts_mdlyear",
+      "type" : "textbox",
+      "title" : "Model Year",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.ModelYear"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_bawwinmts_musicalstyle",
+      "type" : "textbox",
+      "title" : "Musical Style",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.MusicalStyle"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Intermediate",
+            "v" : "Intermediate"
+         },
+         {
+            "p" : "Professional",
+            "v" : "Professional"
+         },
+         {
+            "p" : "Student",
+            "v" : "Student"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_bawwinmts_proficiencylevel",
+      "title" : "Brass And Woodwind Instruments Proficiency Level",
+      "type" : "select",
+      "xmlpath" : "MusicalInstruments.ProductType.BrassAndWoodwindInstruments.ProficiencyLevel",
+      "list" : "LIST_MUSICINST_BRASSANDWOODWINDINSTRUMENTS_PROFICIENCYLEVEL"
+   }
+]

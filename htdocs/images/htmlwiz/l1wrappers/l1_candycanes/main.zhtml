@@ -1,0 +1,93 @@
+<!-- CONFIG
+THEME=l1_candycanes
+SITEBUTTONS=l1_candycanes
+NARROW=TRUE
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- HEAD -->
+<map name="menu">
+	<area href="<!--HOME_URL-->" shape="poly" coords="20,71,25,69,24,65,25,63,31,64,35,66,41,66,44,65,47,64,50,62,52,56,58,51,61,49,63,45,67,43,71,42,73,37,72,28,67,20,60,12,55,7,50,2,47,4,44,5,39,4,35,4,33,5,24,1,23,6,22,10,16,13,7,22,2,40,4,50,11,63,17,69,20,71" alt="Home">
+	<area href="<!--SEARCH_URL-->" shape="poly" coords="74,44,81,45,85,45,93,54,98,59,99,62,101,64,109,65,116,65,125,62,127,67,128,69,133,69,138,62,141,57,143,53,145,47,146,40,146,33,144,29,141,22,136,17,132,12,127,9,125,8,125,5,123,2,120,2,117,5,115,5,111,3,107,4,103,4,98,1,96,3,95,6,94,10,88,14,85,17,80,23,78,27,76,31,76,43,74,44" alt="Search">
+	<area href="<!--ABOUT_URL-->" shape="poly" coords="106,69,110,72,105,68,110,68,118,69,122,69,124,70,129,75,136,79,139,83,142,88,144,92,145,98,146,106,145,110,143,116,142,119,140,123,138,126,136,128,132,130,128,133,124,135,118,137,115,138,111,139,106,139,101,138,95,136,91,133,85,126,82,121,79,116,75,111,75,105,75,101,75,98,85,97,92,94,98,87,99,81,100,75,107,72,111,73,106,69" alt="About Us">
+	<area href="<!--CONTACT_URL-->" shape="poly" coords="22,74,14,76,11,79,9,83,7,89,6,91,4,95,3,100,2,106,4,115,6,117,9,122,12,126,15,129,19,133,25,136,32,137,39,138,51,137,58,132,63,127,66,123,68,119,70,113,72,107,72,103,71,99,67,97,64,97,60,97,59,95,55,90,53,86,52,84,50,80,45,73,41,71,36,70,30,72,28,77,29,70,22,74" alt="Contact Us">
+	<area href="<!--CART_URL-->" shape="circle" coords="74,70,21" alt="Shopping Cart">
+</map>
+</head> 
+<body bgcolor="#FFFFFF" text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!--LINK_VISITED_TEXT_COLOR -->">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="<!-- WRAPPER_URL -->/top.jpg">
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="">
+				<tr>
+					<td width="320" height="10"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="320" height="10"></td>
+					<td width="300" height="140" align="center" valign="middle" rowspan="4"><img src="<!-- WRAPPER_URL -->/menu.gif" width="300" height="140" usemap="#menu" border="0"></td>
+				</tr>
+				<tr>
+					<td width="300" height="88" align="center" valign="middle"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=300
+HEIGHT=88
+--></a></td>
+				</tr>
+				<tr>
+					<td width="320" height="32" align="left" valign="bottom">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="20"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="20" height="1"></td>
+								<td width="300" align="left" valign="middle"><!-- BREADCRUMB
+BUTTONTYPE=l1_candycanes_bc
+FORMAT=<a href="%URL%"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0"></a>&nbsp;
+--><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="1"></td>
+							</tr>
+						</table>
+					</td>
+				</tr> 
+				<tr>
+					<td width="320" height="10"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="320" height="1"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table> 		
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620">
+	<tr>
+		<td width="20" valign="top" background="<!-- WRAPPER_URL -->/border1.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="16" height="200"></td>
+		<td width="580" bgcolor="#FFFFFF" valign="top">
+			<table width="580" cellpadding="3" cellspacing="3" border="0" bgcolor="#FFFFFF">
+				<tr>
+					<td align="left" valign="middle" bgcolor="#DF2F21">
+						<font color="#FFFFFF" face="Arial, Helvetica"  size="4"><!-- TITLE --></font>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" bgcolor="#FFFFFF">
+<!-- MENU
+BEFORE=<div align="center">Categories:%BREAK%
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a>%BREAK%
+DIVIDER=|%BREAK%
+AFTER=</div>
+ONLYHOME=1
+NOHOME=1
+-->
+<!-- BODY -->
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="20" valign="top" background="<!-- WRAPPER_URL -->/border2.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="16" height="200"></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="80" background="<!-- WRAPPER_URL -->/bottom.jpg">
+	<tr>
+		<td width="620" height="80" align="center" valign="middle">
+<!-- FOOTER -->
+		</td>
+	</tr>
+</table>
+</center>
+</div>
+</body>
+</html>
+

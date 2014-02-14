@@ -1,0 +1,83 @@
+<!-- CONFIG
+THEME=shadowjuice
+SITEBUTTONS=shadowjuice
+-->
+<head><style rel="STYLESHEET" type="text/css">
+form    {display:    inline;
+        }
+a        {text-decoration: none;
+    }
+a:hover    {text-decoration: underline;
+    }            
+</style>
+<!-- HEAD -->
+
+</head>
+<body leftmargin=0 marginheight=0 bottommargin=0 marginwidth=0 rightmargin=0 topmargin=0 bgcolor="#FFFFFF" text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!-- LINK_VISITED_TEXT_COLOR -->">
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+<tr>
+    <td height=4 width=16><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=16></td>
+    <td width=320><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=220></td>
+    <td width=210><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=210></td>
+    <td width=99%><img src="<!-- GRAPHICS_URL -->/blank.gif" height=4 width=1></td>
+    <td width=8><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=8></td>
+</tr><tr>
+    <td height=98 background="<!-- WRAPPER_URL -->/color.jpg" bgcolor="#F0BE1F"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+    <td background="<!-- WRAPPER_URL -->/color.jpg" valign="middle" align="center"><!-- LOGO
+WIDTH=320
+HEIGHT=90
+--></td>
+    <td><img src="<!-- WRAPPER_URL -->/middle.jpg" height=98 width=210></td>
+    <td background="<!-- WRAPPER_URL -->/lines.jpg" nowrap align="right"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=25 width=1>
+<br><b><font size=2 face="verdana"><a href="<!--CART_URL-->">Cart</a> | <a href="<!--ABOUT_URL-->">About Us</a> | <a href="<!--CONTACT_URL-->">Contact Us</a></font></b></td>
+    <td background="<!-- WRAPPER_URL -->/lines.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+</tr>
+</table>
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+    <tr>
+        <td valign="top" width=174>
+            <table cellspacing=0 cellpadding=0 border=0  height=100%>
+                <tr>
+                    <td width=16 height=10 background="<!-- WRAPPER_URL -->/color.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=16></td>
+                    <td width=147 background="<!-- WRAPPER_URL -->/color.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=147></td>
+                    <td width=13 background="<!-- WRAPPER_URL -->/bottom_shadow.jpg" valign="top"><img src="<!-- WRAPPER_URL -->/corner.jpg"></td>
+                </tr><tr>
+                    <td background="<!-- WRAPPER_URL -->/color.jpg" height=10><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+                    <td background="<!-- WRAPPER_URL -->/color.jpg" align="left" valign="top">
+<form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" size=10 name="keywords" value="">
+<input type="image" border=0 name="NAME" src="<!-- WRAPPER_URL -->/search.jpg">
+
+</form></td>
+                    <td background="<!-- WRAPPER_URL -->/menu_right.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+                </tr><tr>
+                    <td colspan=3 valign="bottom"><img src="<!-- WRAPPER_URL -->/menu_top.jpg"></td>
+                </tr><tr>
+                    <td background="<!-- WRAPPER_URL -->/menu_left.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+                    <td bgcolor="#FFFFFF" valign="top"><!-- MENU 
+                FORMAT=<a href="%URL%"><font color="#000066" face="verdana" size=2>%MESSAGE%</font></a><br> 
+                --></td>
+                    <td background="<!-- WRAPPER_URL -->/menu_right.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+                </tr><tr>
+                    <td colspan=3 valign="top"><img src="<!-- WRAPPER_URL -->/menu_bottom.jpg"></td>
+                </tr><tr>
+                    <td background="<!-- WRAPPER_URL -->/color.jpg" height="99%"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+                    <td valign="top" background="<!-- WRAPPER_URL -->/color.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1><br><!-- SIDEBAR --></td>
+                    <td background="<!-- WRAPPER_URL -->/menu_right.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+                    </tr>
+            </table>
+        </td>
+        <td valign="top" width=99%>
+            <table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>            
+                <tr>
+                    <td width=50 background="<!-- WRAPPER_URL -->/bottom_shadow.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=160></td>
+                    <td><img src="<!-- WRAPPER_URL -->/bottom_curve.jpg"></td>
+                    <td bgcolor="#FFFFFF" width=99%></td>
+                    <td width=8><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=8></td>
+                </tr><tr>
+                    <td colspan=3 height=99% valign="top"><p><!-- TITLE --></p><!-- BODY --><p><!-- FOOTER --></p></td>
+</tr>
+</table></td></tr></table>
+</body>
+</html> 

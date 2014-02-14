@@ -1,0 +1,204 @@
+<TEMPLATE ID="c-20060921" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CSPDWSN" CREATOR="Zoovy: JT" V="3" CREATED="20061019" SUBTYPE="C" FORMAT="LAYOUT" EXPORT="0" TYPE="CONFIG" TITLE="Featured Product and two column product list - experimental" RELEASED="20061019"><SUMMARY><![CDATA[This layout has a 'featured product' at the top (thumbnail, name, description, view details graphic and, if product has no options, an add to cart graphic).  This product will be selected from the first item in the list. After the featured item, a dual column product layout which displays slightly differently in each column.  This layout will put the multipage chooser ONLY at the bottom of the list. To the right of the product list are the subcategories in a vertical column.  Descendtree is turned on, so if the current category has no subcategories, the parent set will be used (will not show top level categories).]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CSPDWSO" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div align="center">
+	<table cellspacing="5" cellpadding="0" width="590">
+	<tr>
+		<td valign="top" align="left">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="LIST" MAX="500" ALTERNATE="1" DATA="page:prodlist" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list -->
+<table cellspacing="4" cellpadding="0" width="100%">
+<!-- PRODUCT -->
+<%
+
+loadurp("CSS::zborder.border");
+set($border=>$_);
+loadurp("CSS::zcolor_dark.bgcolor");
+set($bgcolor=>$_);
+loadurp("CSS::zcolor.bgcolor");
+set($bgcolor2=>$_);
+
+print("<!-- Item:  "); print($COUNT); print("  -->
+
+ ");
+
+/* look to see if we are at spot 0.  If so, output the first prodlist style.  Otherwise go down to NOTZERO */
+
+load($COUNT);
+goto(ne=>"0",label=>"NOTZERO");
+	print("<tr>
+	<td colspan='4'>");
+
+	print("<div class='zcolor_dark' style='width:292px; height:19px;'>");
+	set($image_loc=>"stock/layouts/c20060921/head_featured.gif");
+	image(src=>$image_loc,library=>"proshop",h=>"19",w=>"292",p=>"1",bg=>$bgcolor,tag=>"1");
+	print();
+	print("</div>
+
+<!-- 0 count item table -->");
+
+	print("<div style='margin-bottom:10px; border-top:3px solid ");
+	print($bgcolor);
+	print(";'>
+	<table cellspacing='2' cellpadding='0' width='100%' class='zborder'>
+	<tr>
+		<td width='1%'><a href='");
+	print($PROD_URL);
+	print("'>");
+	load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"145",h=>"145",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name); print();
+	print("</a></td><td class='ztable_row' align='left'><div style='margin-bottom:4px;' class='ztable_row_title'>");
+	print($zoovy:prod_name);
+	print("</div><div style='line-height:135%;' class='ztable_small'>");
+	load($zoovy:prod_desc); format(wiki,title1=>"",/title1=>"",title2=>"",/title2=>"",title3=>"",/title3=>"",listitem=>"",/listitem=>"",list=>"",/list=>"",hardbreak=>"",section=>"",/section=>""); strip(length=>"200"); print();
+	
+	print("<div align='right'>
+<table cellspacing='3' cellpadding='0' style='margin-top:4px;'>
+<tr>
+	<td><a href='");
+	print($PROD_URL);
+	print("'>");
+	set($image_loc=>"stock/layouts/c20060921/button_viewdetails.gif");
+	image(src=>$image_loc,library=>"proshop",h=>"24",w=>"108",p=>"1",bg=>$bgcolor2,tag=>"1");
+	print();
+	print("</a></td>");
+/* Look to see if pogs are present to determine whether or not to display the 'add to cart' link */	
+	load($zoovy:pogs); default("");
+	goto(ne=>"",label=>"OPTIONS");
+		print("<td><a href='");
+		print($ADD_URL);
+		print("'>");
+
+set($image_loc=>"stock/layouts/c20060921/button_addtocart.gif");
+image(src=>$image_loc,library=>"proshop",h=>"24",w=>"108",bg=>$bgcolor,tag=>"1",p=>"1");
+print();
+		
+		print("</a></td>");
+		
+:OPTIONS();
+
+	print("</tr>
+</table>
+</div>");
+	
+	print("</div></td></tr></table></div>");
+	
+	print("</td>
+</tr>");
+	stop();
+
+:NOTZERO();
+load($row.alt);
+/* This is the left column code.  If Row.alt is 1, it will skip this and go to the right column code below */
+goto(ne=>"1",label=>"RIGHTCOLUMN");
+	print("<tr>
+	<td width='1%' valign='top' ><a href='");
+	print($PROD_URL);
+	print("'>");
+	load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"45",h=>"45",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name); print();
+	print("</a></td><td width='49%' class='ztable_row' style='padding-bottom:5px; border-right:");
+	print($border);
+	print("'>");
+	load($zoovy:prod_name); strip(length=>"40",breaks=>"1",html=>"1"); print();
+	print("<br>");
+	load($zoovy:base_price); default("");
+	format(hidezero); format(money);
+	format(pretext=>"only <span class='ztable_row_title'>",posttext=>"</span><br>");
+	print();
+	load($VIEW_DETAILS); format(posttext=>" | "); print(); 
+	
+	load($ADD_LINK); print();
+
+	print("</td>");
+	
+	
+	stop();
+
+:RIGHTCOLUMN();
+	print("<td width='49%' valign='top' class='ztable_row' style='padding-bottom:5px;'>");
+	
+	load($zoovy:prod_name); strip(length=>"40",breaks=>"1",html=>"1"); print();
+	print("<br>");
+	load($zoovy:base_price); default("");
+	format(hidezero); format(money);
+	format(pretext=>"only <span class='ztable_row_title'>",posttext=>"</span><br>");
+	print();
+	load($VIEW_DETAILS); format(posttext=>" | "); print(); 
+	load($ADD_LINK); print();
+	print("</td><td width='1%'><a href='");
+	print($PROD_URL);
+	print("'>");
+	load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"45",h=>"45",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name); print();
+	print("</a></td>
+</tr><tr><td colspan='4' style='height:1px; border-top:");
+	print($border);
+	print(";'><img src='");
+	loadurp("URL::GRAPHICS_URL"); print();
+	print("/blank.gif' height='1' width='1'></td></tr>");	
+%>
+
+<!-- /PRODUCT -->
+</table>
+<!-- end product list 2 -->
+]]></HTML>
+<MULTIPAGE_HEADER><![CDATA[<!-- NO Header with this layout -->]]></MULTIPAGE_HEADER>
+<MULTIPAGE_FOOTER><![CDATA[
+<table width="100%" cellpadding="4" cellspacing="0" border="0" class="ztable_row">
+<tr>
+<td align="left" valign="middle" width="20%" class="zcolor_dark">
+<% load($PREVPAGE);  format(before=>"angle",skipblank=>"1");  print(); %>
+</td>
+<td align="center" valign="middle" width="60%" class="zcolor_dark">
+<b>Page <% load($THISPAGE);  print(); %> of <% load($TOTALPAGES);  print(); %></b> <font size="-1"><% load($PAGELINKS);  print(); %></font>
+</td>
+<td align="right" valign="middle" width="20%" class="zcolor_dark">
+<% load($NEXTPAGE);  format(after=>"angle",skipblank=>"1");  print(); %>
+</td>
+</tr>
+</table>
+]]></MULTIPAGE_FOOTER>
+</ELEMENT>
+<ELEMENT ID="CSPD2WSO" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DESCENDTREE="1" NOROOT="1" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="1"><HTML><![CDATA[
+<!-- subcategories are present -->
+
+<td valign="top" width="115">
+<%
+loadurp("CSS::zcolor.bgcolor");
+set($bgcolor=>$_);
+print("<div style='text-align:right; margin-top:4px; width:115px; border-bottom:3px solid ");
+print($bgcolor);
+print("'>");
+set($image_loc=>"stock/layouts/c20060921/head_browse.gif");
+image(src=>$image_loc,library=>"proshop",h=>"19",w=>"115",p=>"1",bg=>$bgcolor,tag=>"1");
+print();
+print("</div>");
+%>
+<table cellspacing=0 cellpadding=3 border=0 style="margin-bottom:10px;" width="100%" class="zborder">
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+<td class='ztable_row' align="left" width="33%"><a href='<% print($cat_url); %>' class="zlink"><% print($cat_pretty); %></a></td>
+<!-- /CATEGORY -->
+</tr>
+<!-- /ROW -->
+</table>
+	</td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDWSO2" TYPE="OUTPUT"><HTML><![CDATA[
+</tr>
+</table>
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

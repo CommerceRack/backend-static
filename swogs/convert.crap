@@ -1,0 +1,133 @@
+#!/usr/bin/perl
+
+use lib "/httpd/modules";
+use POGS;
+use Data::Dumper;
+use strict;
+
+
+$/ = undef;
+open F, "<97-Vehicle_Make_Model.txt"; my $buf = <F>; close F;
+my ($makemodelpog) = &POGS::text_to_struct('brian',$buf,0);
+my %makemodels = ();		# hash key=uc(prompt) val: option value.
+foreach my $pair (@{$makemodelpog->{'options'}}) {
+	$makemodels{ uc($pair->{'prompt'}) } = $pair->{'v'};
+	}
+
+open F, "<99-Year.txt"; my $buf = <F>; close F;
+my ($yearpog) = &POGS::text_to_struct('brian',$buf,0);
+my %years = ();
+foreach my $pair (@{$yearpog->{'options'}}) {
+	$years{ uc($pair->{'prompt'}) } = $pair->{'v'};
+	}
+$/ = "\n";
+
+
+open F, ">/httpd/site/graphics/jslib/swog97.js";
+print F qq~addListGroup("vehicles", "car-makers");\n\n~;
+print F qq~addOption("car-makers", "Select vehicle make", "", "", 1); //Empty starter option\n~;
+## compile a list of vehicle manufacturers
+my %makes = ();
+my %makeyears = ();
+foreach my $option (@{$makemodelpog->{'options'}}) {
+	next if (not defined $option->{'m'});
+	my ($make,$model) = split(/-/,$option->{'prompt'});
+	$make =~ s/^[\s]+//gso;
+	$make =~ s/[\s]+$//gso;
+	$model =~ s/^[\s]+//gso;
+	$model =~ s/[\s]+$//gso;
+
+	my $optioncode = substr($option->{'v'},0,2);
+	open Fx, ">>/httpd/site/graphics/jslib/swog97-$optioncode.js";
+
+	if (not defined $makes{$make}) {
+		## hurrah, we found a new make, add it.
+		$makes{$make} = $optioncode;
+		print F qq~addList("car-makers","$make","$optioncode","/graphics/jslib/swog97-$optioncode.js");\n~;
+		print Fx qq~addOption("$optioncode","Select $make year","","",1); \n~;
+		}
+
+	my $metaref = &POGS::parse_meta($option->{'m'});
+	my @years = split(/,/,$metaref->{'years'});
+	foreach my $y (sort @years) {
+		my $yearcode = $years{$y};
+
+		if (not defined ($makeyears{"$optioncode-$yearcode"})) {
+			print F qq~addList("$optioncode","$y","$yearcode","$optioncode-$yearcode");\n~;
+			print F qq~addOption("$optioncode-$yearcode","Select $make $y model","");\n~;
+			$makeyears{"$optioncode-$yearcode"}++;;
+			}
+	
+		}
+
+	if (scalar(@years)==1) {
+		my $yearcode = $years{$years[0]};
+		print "try: $optioncode-$yearcode\n";
+		print F qq~addOption("$optioncode-$yearcode", "$model", "$option->{'v'}");\n~;
+		}
+	else {
+		my @yearcodes = ();
+		foreach my $year (@years) { push @yearcodes, $years{$year}; }
+		print F qq~v = new Array('~.join("','",sort @yearcodes).qq~');\nfor(i in v){ ~;
+		print F qq~addOption("$optioncode-"+v[i], "$model", "$option->{'v'}"); }\n~;
+		}
+
+	}
+
+
+
+close F;
+
+# print Dumper(\%makemodels);
+#exit;
+
+if (0) {
+my %yearmap = ();	# key prompt - value = 
+my %mmmap = ();	
+open F, "<all_makes_models_year.csv";
+while (<F>) {
+	$_ =~ s/[\n\r]+//gs;
+	my ($make,$model,$year) = split(/,/,$_);
+
+	if ($year < 1960) { 
+		$yearmap{$year} = 'AA';
+		}
+	elsif (not defined $years{$year}) {
+		die("Missing year: [$year]\n");
+		}
+	else {
+		$yearmap{$year} = $years{$year};
+		}
+	
+	my $mmstr = uc("$make - $model");
+	$mmmap{ $mmstr } .= $year.',';;
+	}
+close F;
+
+# print Dumper(\%mmmap);
+foreach my $pair (@{$makemodelpog->{'options'}}) {
+	my $prompt = uc($pair->{'prompt'});
+	if (defined $mmmap{ $prompt }) {
+		chop($mmmap{$prompt});	# remove the trailing comma.
+		my $metaref = &POGS::parse_meta($pair->{'m'});
+		$metaref->{'years'} = $mmmap{ $prompt };
+		$pair->{'m'} = &POGS::encode_meta($metaref);
+		delete $mmmap{$prompt};
+		}
+	else {
+		warn "Could not find: [$prompt]\n";
+		}
+	}
+
+	my $text = POGS::struct_to_text([$makemodelpog]); 
+	open F, ">97-Vehicle_Make_Model.txt"; print F $text; close F;
+
+	# print Dumper(\%mmmap);
+	open F, ">97-Vehicle_Make_Model.notfound";
+	foreach my $k (sort keys %mmmap) {
+		print F "$k,$mmmap{$k}\n";
+		}
+	close F;  
+	}
+
+

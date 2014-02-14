@@ -1,0 +1,122 @@
+[
+   {
+      "catalog" : "JEWELRY",
+		"amz-catalog" : "Jewelry",
+      "amz-subcat" : "FashionOther",
+      "subcat" : "fashionother",
+      "type" : "config",
+		"variation-themes" : "Length-MetalType,Length,MetalType",
+		"parentage-values" : "parent,child,child"
+   },
+   {
+      "PROMPT" : "Jewelry:FashionOther",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYFA",
+      "xmlpath" : "Jewelry.ProductType.FashionOther."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "variation:lenth",
+		"vkey" : "Length",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.VariationData.Length"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnother_metaltype",
+      "type" : "textbox",
+      "title" : "Metal Type",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.VariationData.MetalType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:metaltype",
+		"vkey" : "MetalType",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.VariationData.MetalType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnother_matl",
+      "type" : "textlist",
+      "title" : "Material",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.Material"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnother_metalstamp",
+      "type" : "textbox",
+      "title" : "Metal Stamp",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.MetalStamp"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Weight",
+      "id" : "amz:prod_jly_fsnother_totalmetalwt",
+      "type" : "textbox",
+      "title" : "Total Metal Weight",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.TotalMetalWeight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fsnother_diameter",
+      "type" : "number",
+      "title" : "Diameter",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.Diameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fsnother_height",
+      "type" : "number",
+      "title" : "Height",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.Height"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fsnother_width",
+      "type" : "number",
+      "title" : "Width",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.Width"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnother_estateperiod",
+      "type" : "textbox",
+      "title" : "Estate Period",
+      "xmlpath" : "Jewelry.ProductType.FashionOther.EstatePeriod"
+   }
+]

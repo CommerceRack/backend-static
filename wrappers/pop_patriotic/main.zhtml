@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=l2_patriotic
+SITEBUTTONS=l2_patriotic
+-->
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+.title	{font-family: arial; font-size: 14px; color: #FFFFFF;font-weight:bold;}
+</style>
+</head>
+
+<body>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td bgcolor="#990000" height=9></td>
+	</tr><tr>
+		<td height=1></td>
+	</tr><tr>
+		<td height=6 bgcolor="#003399"></td>
+	</tr><tr>
+		<td height=1 bgcolor="#000000"></td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+<tr>
+	<td width=216><img src="<!-- WRAPPER_URL -->/left.jpg" width="216" height="68" alt="" border="0"></td>
+	<td background="<!-- WRAPPER_URL -->/logo_bg.gif" width=170 valign="top"><!-- LOGO
+WIDTH=170
+HEIGHT=60
+BGCOLOR=6479A6
+--></td>
+	<td valign="bottom" background="<!-- WRAPPER_URL -->/right_bg.gif"><img src="<!-- WRAPPER_URL -->/right.gif" width="20" height="23" alt="" border="0"></td>
+</tr>
+</table>
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+<tr>
+	<td height=27 width=55 background="<!-- WRAPPER_URL -->/title_left.gif"></td>
+	<td width=25><img src="<!-- WRAPPER_URL -->/title_middle.gif" width="25" height="27" alt="" border="0"></td>
+	<td background="<!-- WRAPPER_URL -->/title_bg.gif">&nbsp;<span class="title"><!-- TITLE --></span></td>
+</tr>
+</table>
+<table cellspacing=2 cellpadding=3 border=0 width=100%><tr><td><!-- BODY -->
+<img src="http://www.zoovy.com/images/blank.gif" width="300" height="1"></td></tr></table>
+</body>
+</html>

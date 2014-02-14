@@ -1,0 +1,1 @@
+alert("Jt is cool");

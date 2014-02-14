@@ -1,0 +1,10 @@
+<TEMPLATE ID="pop_tafdone" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNIK" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG"></ELEMENT>
+<ELEMENT ID="CPUKNIL" TYPE="OUTPUT"><HTML><![CDATA[<p>Thank you for taking the time to send out information on our store.</p>
+<p>Please <a href="javascript:window.close();">click here</a> to continue your shopping experience.</p>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,27 @@
+<TEMPLATE ID="5010" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT FORMAT="LAYOUT" ID="CPUKMNI" CREATOR="STAFF" TYPE="CONFIG" CREATED="00000000" IMAGES="0" PROPERTIES="1" SUBTYPE="S" SERIES="2002" RELEASED="20020224"><SUMMARY><![CDATA[Welcome Message
+]]></SUMMARY>
+<TITLE><![CDATA[This form includes the ability to add your own custom HTML to customize how users are able to search your catalogs.]]></TITLE>
+</ELEMENT>
+<ELEMENT ID="CPUKMNJ" TYPE="OUTPUT"><HTML><![CDATA[
+<table>
+	<tr>
+		<td>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" PROMPT="Welcome Message" DEFAULT="Please stay as long as you like, if you need help send us email!" TYPE="TEXT" HELP="Please enter a Welcome message that will appear on your front page" DATA="page:welcome_message"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long, or not helpful visitors probably won't go any further. A lot of businesses talk about what makes their products unique, or their excellent customer service. If you have neither of those, then consider simply welcoming the customer.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKMNK" TYPE="OUTPUT"><HTML><![CDATA[
+
+		</td>
+	</tr>
+</table>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

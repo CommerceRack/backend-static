@@ -1,0 +1,33 @@
+<TEMPLATE ID="40" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLRD" CREATED="00000000" IMAGES="0" PROPERTIES="1" SUBTYPE="R" FORMAT="LAYOUT" SHORT="This is the generic return policy page, it automatically imports company name, phone number, etc." TYPE="CONFIG" TITLE="Return" RELEASED="20020612"><SUMMARY><![CDATA[Company Name
+Return Policy
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKLRE" TYPE="OUTPUT"><HTML><![CDATA[<table border='0' width='100%'>
+<tr><td>
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="COMPANYNAME" LENGTH="75" HELP="Please enter your company name as it should appear throughout your site" DATA="merchant:zoovy:company_name" PROMPT="Company Name" DEFAULT="Northwind Traders" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CPUKLRF" TYPE="OUTPUT"><HTML><![CDATA[
+</center>
+</td></tr>
+<tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="POLICY" HELP="Please enter a Return Policy that will appear on your website." DATA="merchant:zoovy:return_policy" PROMPT="Return Policy" TYPE="TEXT"><DEFAULT><![CDATA[We will accept postage paid returns only after a return merchandise authorization has been obtained, items must be in original packaging. A 10% re-stocking fee will be applied after 24 hours of receiving the delivery.]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CPUKLRG" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+</td></tr>
+</table>
+
+<br>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

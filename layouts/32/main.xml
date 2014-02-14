@@ -1,0 +1,22 @@
+<TEMPLATE ID="32" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMHP" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SUBTYPE="Y" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Blank Privacy 1 Custom (blank) plain policy." RELEASED="20020630"><SUMMARY><![CDATA[Custom Privacy Policy Amendment
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMHQ" TYPE="OUTPUT"><HTML><![CDATA[<center>
+<table><tr><td><div align="left">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="POLICY" DATA="page:policy" PROMPT="Custom Privacy Policy Amendment" DEFAULT="No Privacy Policy" TYPE="TEXT"><HELP><![CDATA[Please enter a Privacy Policy Amendment. Hint: you may want to copy from the default privacy policy to get started.]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CPUKMHR" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+</td></tr></table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

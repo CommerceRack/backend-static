@@ -1,0 +1,202 @@
+<TEMPLATE ID="c-20100518" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CYVZOZP" CREATED="20100519" SUBTYPE="C" AUTHOR="Zoovy" TYPE="CONFIG" EXPORT="0" TITLE="Photo Gallery (experimental)" RELEASED="20100519"><SUMMARY><![CDATA[A banner at the top. Below that is a two column format with a text block followed by up to 50 pics and another text block. On the right is an optional product list (starts below the banner). Picture enlargements open inline. Sweet.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
+<ELEMENT ID="VAR_GRAPHICS_URL" RAW="1" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL"></ELEMENT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for banner" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER1" HEIGHT="120" EDITOR="INLINE" DATA="page:banner1" PROMPT="Banner" WIDTH="600" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:20px;" align='center'><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description (top - keep this short)" SUB="PAGE_DESC" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Keep this text relatively short.  If it is too long, and the subcategories can not be seen when the page initially loads, the subcategories won't be clicked (that's bad).  Put your SEO text in the text block at the bottom of the page.]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:20px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC1" EDITOR="INLINE" DATA="page:picture1" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC2" EDITOR="INLINE" DATA="page:picture2" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC3" EDITOR="INLINE" DATA="page:picture3" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC4" EDITOR="INLINE" DATA="page:picture4" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC5" EDITOR="INLINE" DATA="page:picture5" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC6" EDITOR="INLINE" DATA="page:picture6" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC7" EDITOR="INLINE" DATA="page:picture7" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC8" EDITOR="INLINE" DATA="page:picture8" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC9" EDITOR="INLINE" DATA="page:picture9" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC10" EDITOR="INLINE" DATA="page:picture10" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC11" EDITOR="INLINE" DATA="page:picture11" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC12" EDITOR="INLINE" DATA="page:picture12" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC13" EDITOR="INLINE" DATA="page:picture13" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC14" EDITOR="INLINE" DATA="page:picture14" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC15" EDITOR="INLINE" DATA="page:picture15" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC16" EDITOR="INLINE" DATA="page:picture16" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC17" EDITOR="INLINE" DATA="page:picture17" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC18" EDITOR="INLINE" DATA="page:picture18" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC19" EDITOR="INLINE" DATA="page:picture19" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC20" EDITOR="INLINE" DATA="page:picture20" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC21" EDITOR="INLINE" DATA="page:picture21" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC22" EDITOR="INLINE" DATA="page:picture22" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC23" EDITOR="INLINE" DATA="page:picture23" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC24" EDITOR="INLINE" DATA="page:picture24" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC25" EDITOR="INLINE" DATA="page:picture25" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC26" EDITOR="INLINE" DATA="page:picture26" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC27" EDITOR="INLINE" DATA="page:picture27" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC28" EDITOR="INLINE" DATA="page:picture28" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC29" EDITOR="INLINE" DATA="page:picture29" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC30" EDITOR="INLINE" DATA="page:picture30" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC31" EDITOR="INLINE" DATA="page:picture31" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC32" EDITOR="INLINE" DATA="page:picture32" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC33" EDITOR="INLINE" DATA="page:picture33" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC34" EDITOR="INLINE" DATA="page:picture34" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC35" EDITOR="INLINE" DATA="page:picture35" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC36" EDITOR="INLINE" DATA="page:picture36" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC37" EDITOR="INLINE" DATA="page:picture37" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC38" EDITOR="INLINE" DATA="page:picture38" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC39" EDITOR="INLINE" DATA="page:picture39" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC40" EDITOR="INLINE" DATA="page:picture40" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC41" EDITOR="INLINE" DATA="page:picture41" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC42" EDITOR="INLINE" DATA="page:picture42" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC43" EDITOR="INLINE" DATA="page:picture43" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC44" EDITOR="INLINE" DATA="page:picture44" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC45" EDITOR="INLINE" DATA="page:picture45" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC46" EDITOR="INLINE" DATA="page:picture46" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC47" EDITOR="INLINE" DATA="page:picture47" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC48" EDITOR="INLINE" DATA="page:picture48" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC49" EDITOR="INLINE" DATA="page:picture49" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC50" EDITOR="INLINE" DATA="page:picture50" WIDTH="100" PROMPT="Small Picture" TYPE="IMAGE" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="IMAGES" SUB="PAGE_PICS" TYPE="SPECL"><HTML><![CDATA[
+<%
+print("");
+
+set($i=>"0");
+
+:LOOP();
+
+/* Need to loop through all 50 pics and checks/goto's occur in various locations, so incrementing is done at the top to avoid an infinite loop */
+load($i);
+math(op=>"add",var=>"1");
+set($i=>$_);
+
+load($i);
+goto(label=>"END",gt=>"50");
+
+format(pretext=>"page:picture");
+loadurp($_);
+
+/* if the current load has no value, then try the next. we have a finite number in the loop (50) */
+goto(label=>"LOOP",eq=>"");
+
+/* the filename is used in multiple places, so it is set to a var instead of loadurp'ing it several times. */
+	set($image=>$_);
+	load($i); format(pretext=>"<!-- ",posttext=>" -->"); print();
+	print("
+<div style='float:left; margin-bottom:5px; margin-right:5px; padding:1px;' class='zborder'><a href='");
+	load($image);
+	image(h=>"",w=>"",bg=>"ffffff",tag=>"0",m=>"0"); print();
+	print("' class='MagicThumb'>");
+	load($image);
+	image(src=>$image,w=>"100",h=>"100",bg=>"ffffff",m=>"0",tag=>"1",alt=>$image);
+	print();
+	print("</a></div>");
+
+
+
+/* Go to loop and do it all again. */
+	goto(label=>"LOOP",ne=>"");
+
+:END();
+	print("<!-- the end is nigh! -->");
+	stop();
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List 1 Header" SUB="PAGE_PRODLIST_HEADER" DEFAULT="Featured Items" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="PRODLIST" SIZE="11" MAX="10" ALTERNATE="2" MULTIPAGE="0" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" HELPER="This product list supports a max of ten products and no multipage." SUB="PAGE_PRODLIST" TYPE="PRODLIST"><HTML><![CDATA[
+
+<td valign='top' class='ztable_row1 ztable_row' width='5%'>
+<div style='margin-left:25px;'>
+
+<div class='ztitle' style='margin-bottom:5px;'>%PAGE_PRODLIST_HEADER%</div>
+<!-- ROW -->
+<!-- PRODUCT -->
+
+	<div style='margin-bottom:3px;'>
+	<a href='<% print($PROD_URL); %>' title="<% load($zoovy:prod_name); default(""); format(encode=>"entity"); print(); %>">
+	<% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"120",h=>"120",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a>
+	</div>
+	
+	<div style='margin-bottom:3px;' class='no_underline'><a href='<% print($PROD_URL); %>'><% load($zoovy:prod_name); default(""); print(); %></a></div>
+	
+	<div class='ztable_row_title' style='margin-bottom:10px;'><%
+print("");
+load($zoovy:base_price); default(""); 
+format(hidezero,skipblank=>"1"); 
+format(money,skipblank=>"1"); 
+print();
+%></div>
+
+
+<!-- /PRODUCT -->
+<!-- /ROW -->
+
+</div>
+</td>
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION2" WIKI="3" EDITOR="INLINE" DATA="page:description2" PROMPT="Text Description (bottom - SEO text goes here)" SUB="PAGE_DESC2" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:20px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="DCFNUPN" TYPE="HIDDEN" OUTPUTSKIP="32768"><DEFAULT><![CDATA[
+
+<link rel="stylesheet" type="text/css" href="%GRAPHICS_URL%/jslib/magiczoomplus-2.0/magiczoomplus.css">
+<script typ='text/javascript' src='%GRAPHICS_URL%/jslib/magiczoomplus-2.0/magiczoomplus.js'></script>
+
+<script typ='text/javascript'>
+MagicZoomPlus.options = {
+  'background-color':'#000000',
+  'background-opacity':'20',
+  'disable-zoom':'true',
+  'click-to-initialize':'true'
+ }
+
+
+</script>
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="DCFNUPO" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr>
+	<td valign='top'>
+	<div style='margin-right:25px;'>
+%PAGE_DESC%	
+	
+
+
+
+%PAGE_PICS%
+
+
+
+
+%PAGE_DESC2%
+
+	</div>
+	</td>
+	%PAGE_PRODLIST%
+</tr>
+</table>
+
+
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

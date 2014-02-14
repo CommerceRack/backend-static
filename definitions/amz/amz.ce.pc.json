@@ -1,0 +1,234 @@
+[
+   {
+      "catalog" : "CE",
+		"amz-catalog" : "CE",
+      "amz-subcat" : "PC",
+      "subcat" : "pc",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CE:PC",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXUT",
+      "xmlpath" : "CE.ProductType.PC."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Memory",
+      "id" : "amz:prod_ce_pc_harddrivesize",
+      "type" : "textlist",
+      "title" : "Hard Drive Size",
+      "xmlpath" : "CE.ProductType.PC.HardDriveSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "mandatory" : "Y",
+      "title" : "Hard Drive Interface",
+      "id" : "amz:prod_ce_pc_harddriveinterface",
+      "xmlpath" : "CE.ProductType.PC.HardDriveInterface"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "mandatory" : "Y",
+      "title" : "Computer Memory Type",
+      "id" : "amz:prod_ce_pc_computermemorytype",
+      "xmlpath" : "CE.ProductType.PC.ComputerMemoryType"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_ce_pc_computermemorytype_10",
+      "type" : "textbox",
+      "title" : "Computer Memory Type_10"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Memory",
+      "id" : "amz:prod_ce_pc_ramsize",
+      "type" : "textbox",
+      "title" : "R A M Size",
+      "xmlpath" : "CE.ProductType.PC.RAMSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "Processor Brand",
+      "id" : "amz:prod_ce_pc_processorbrand",
+      "xmlpath" : "CE.ProductType.PC.ProcessorBrand"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "FrequencyDimension",
+      "id" : "amz:prod_ce_pc_processorspeed",
+      "type" : "textbox",
+      "title" : "Processor Speed",
+      "xmlpath" : "CE.ProductType.PC.ProcessorSpeed"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "Processor Type",
+      "id" : "amz:prod_ce_pc_processortype",
+      "xmlpath" : "CE.ProductType.PC.ProcessorType"		
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pc_processorcnt",
+      "type" : "number",
+      "title" : "ProcessorCount",
+      "xmlpath" : "CE.ProductType.PC.ProcessorCount"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "mandatory" : "Y",
+      "title" : "Operating System",
+      "id" : "amz:prod_ce_pc_os",
+      "xmlpath" : "CE.ProductType.PC.OperatingSystem"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "Hardware Platform",
+      "id" : "amz:prod_ce_pc_hwpt",
+      "xmlpath" : "CE.ProductType.PC.HardwarePlatform"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "WirelessType",
+      "id" : "amz:prod_ce_pc_wrlstype",
+      "type" : "textlist",
+      "title" : "Wireless Type",
+      "xmlpath" : "CE.ProductType.PC.WirelessType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pc_addldrives",
+      "type" : "textlist",
+      "title" : "Additional Drives",
+      "xmlpath" : "CE.ProductType.PC.AdditionalDrives"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_ce_pc_addldrives_10",
+      "type" : "textbox",
+      "title" : "Additional Drives_10"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pc_softwareincluded",
+      "type" : "textbox",
+      "title" : "Software Included",
+      "xmlpath" : "CE.ProductType.PC.SoftwareIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pc_memoryslotsavailable",
+      "type" : "textbox",
+      "title" : "Memory Slots Available",
+      "xmlpath" : "CE.ProductType.PC.MemorySlotsAvailable"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pc_screenresolution",
+      "type" : "textbox",
+      "title" : "Screen Resolution",
+      "xmlpath" : "CE.ProductType.PC.ScreenResolution"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_ce_pc_screensize",
+      "type" : "number",
+      "title" : "ScreenSize",
+      "xmlpath" : "CE.ProductType.PC.ScreenSize"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "1",
+            "v" : "1"
+         },
+         {
+            "p" : "2",
+            "v" : "2"
+         },
+         {
+            "p" : "3",
+            "v" : "3"
+         },
+         {
+            "p" : "4",
+            "v" : "4"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pc_u-racksize",
+      "title" : "P C U - Rack Size",
+      "type" : "select",
+      "xmlpath" : "CE.ProductType.PC.U-RackSize",
+      "list" : "LIST_ELECTRONIX_PC_U-RACKSIZE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "Graphics Card Description",
+      "id" : "amz:prod_ce_gfxcard_gfxcarddscrpt",
+      "xmlpath" : "CE.ProductType.GraphicsCard.GraphicsCardDescription"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Memory",
+      "id" : "amz:prod_ce_gfxcard_gfxcardramsize",
+      "type" : "textbox",
+      "title" : "Graphics Card Ram Size",
+      "xmlpath" : "CE.ProductType.GraphicsCard.GraphicsCardRamSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "Graphics Card Interface",
+      "id" : "amz:prod_ce_gfxcard_gfxcardinterface",
+      "xmlpath" : "CE.ProductType.GraphicsCard.GraphicsCardInterface"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pc_addlfeatures",
+      "type" : "textbox",
+      "title" : "Additional Features",
+      "xmlpath" : "CE.ProductType.PC.AdditionalFeatures"
+   }
+]

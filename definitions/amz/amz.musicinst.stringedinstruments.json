@@ -1,0 +1,153 @@
+[
+   {
+      "catalog" : "MUSICINST",
+		"amz-catalog" : "MusicalInstruments",
+      "amz-subcat" : "StringedInstruments",
+      "subcat" : "stringedinstruments",
+      "type" : "config",
+		"variation-themes" : "Color"
+   },
+   {
+      "PROMPT" : "MusicalInstruments:StringedInstruments",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYVC",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_strgdinmts_addlspecs",
+      "type" : "textbox",
+      "title" : "Additional Specifications",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.AdditionalSpecifications"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_strgdinmts_clrspec",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_clrmap",
+      "type" : "textbox",
+      "title" : "Color Map",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.ColorSpecification"
+   },   
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_strgdinmts_ctryprdin",
+      "type" : "textbox",
+      "title" : "Country Produced In",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.CountryProducedIn"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_strgdinmts_inmtkey",
+      "type" : "textbox",
+      "title" : "Instrument Key",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.InstrumentKey"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Scalar",
+      "id" : "amz:prod_mus_strgdinmts_inmtsize",
+      "type" : "textbox",
+      "title" : "Instrument Size",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.InstrumentSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_mus_strgdinmts_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_strgdinmts_matltype",
+      "type" : "textbox",
+      "title" : "Material Type",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.MaterialType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_strgdinmts_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_strgdinmts_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_strgdinmts_mdlyear",
+      "type" : "textbox",
+      "title" : "Model Year",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.ModelYear"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_strgdinmts_musicalstyle",
+      "type" : "textbox",
+      "title" : "Musical Style",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.MusicalStyle"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_strgdinmts_nbrofstrings",
+      "type" : "number",
+      "title" : "NumberOfStrings",
+      "xmlpath" : "MusicalInstruments.ProductType.StringedInstruments.NumberOfStrings"
+   }
+]

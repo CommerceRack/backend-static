@@ -1,0 +1,210 @@
+[
+   {
+      "catalog" : "AUTOPART",
+		"amz-catalog" : "AutoAccessory",
+      "amz-subcat" : "AutoAccessoryMisc",
+      "subcat" : "autoaccessorymisc",
+      "type" : "config",
+		"variation-themes" : "Size+Color,Size,Color"
+   },
+   {
+      "PROMPT" : "AutoAccessory:AutoAccessoryMisc",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQVZB",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Unit",
+      "amz-units" : "amps",
+      "id" : "amz:prod_aa_aamisc_amperage",
+      "type" : "textbox",
+      "title" : "Amperage",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.Amperage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+		"amz-max-length" : "50",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.ColorSpecification"
+   },
+   {
+      "options" : [
+			{
+				"p" : "",
+	    		"v" : ""
+			},
+			{
+				"p" : "black",
+	    		"v" : "black"
+			},
+			{
+	   		"p" : "blue",
+	    		"v" : "blue"
+			},
+			{
+	    		"p" : "bronze",
+	    		"v" : "bronze"
+			},
+			{
+	    		"p" : "brown",
+	    		"v" : "brown"
+			},
+			{
+	    		"p" : "gold",
+	    		"v" : "gold"
+			},
+			{
+	    		"p" : "gray",
+	    		"v" : "gray"
+			},
+			{
+	    		"p" : "green",
+	    		"v" : "green"
+			},
+			{
+			   "p" : "metallic",
+	 		   "v" : "metallic"
+			},
+			{
+	    		"p" : "off-white",
+	    		"v" : "off-white"
+			},
+			{
+	    		"p" : "orange",
+	    		"v" : "orange"
+			},
+			{
+	    		"p" : "pink",
+	    		"v" : "pink"
+			},
+			{
+	    		"p" : "purple",
+	    		"v" : "purple"
+			},
+			{
+	    		"p" : "red",
+	    		"v" : "red"
+			},
+			{
+	    		"p" : "silver",
+	    		"v" : "silver"
+			},
+			{
+	    		"p" : "unpainted",
+	    		"v" : "unpainted"
+			},
+			{
+	    		"p" : "white",
+	    		"v" : "white"
+			},
+			{
+	    		"p" : "yellow",
+	    		"v" : "yellow"
+			}
+      ],
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_aa_aamisc_clrmap",
+		"default-color" : "unpainted",
+      "type" : "select",
+      "title" : "Color Map",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_aa_aamisc_diameter",
+      "type" : "number",
+      "title" : "Diameter",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.Diameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_aa_aamisc_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_aa_aamisc_matl",
+      "type" : "textbox",
+      "title" : "Material",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.Material"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:size",
+		"vkey" : "Size",
+      "type" : "variation",
+		"variation-type" : "value",
+		"amz-max-length" : "50",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.Size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_aa_aamisc_viscosity",
+      "type" : "textbox",
+      "title" : "Viscosity",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.Viscosity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Volume",
+      "id" : "amz:prod_aa_aamisc_volume",
+      "type" : "textbox",
+      "title" : "Volume",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.Volume"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Unit",
+      "amz-units" : "volts",
+      "id" : "amz:prod_aa_aamisc_voltage",
+      "type" : "number",
+      "title" : "Voltage",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.Voltage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Unit",
+      "amz-units" : "watts",
+      "id" : "amz:prod_aa_aamisc_wattage",
+      "type" : "number",
+      "title" : "Wattage",
+      "xmlpath" : "AutoAccessory.ProductType.AutoAccessoryMisc.Wattage"
+   }
+]

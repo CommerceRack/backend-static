@@ -1,0 +1,788 @@
+$VAR1 = {
+          '_LISTS' => [],
+          '_DIGEST' => '6f11HiVa+Efgi7X3dV/sTw',
+          '_DIVS' => [],
+          '_ID' => 'rediron',
+          '_V' => 2,
+          '_ELEMENTS' => [
+                           {
+                             'ID' => 'CPTUIFA',
+                             'SUB' => 'LINK_VISITED_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_VISITED_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFB',
+                             'SUB' => 'TABLE_HEADING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFC',
+                             'SUB' => 'DISCLAIMER_FONT_SIZE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFD',
+                             'SUB' => 'CONTENT_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::CONTENT_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFE',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFF',
+                             'SUB' => 'CONTENT_TEXT_COLOR',
+                             'LOAD' => 'THEME::CONTENT_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFG',
+                             'SUB' => 'TABLE_LISTING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFH',
+                             'SUB' => 'TABLE_LISTING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFI',
+                             'SUB' => 'TABLE_LISTING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFJ',
+                             'SUB' => 'CONTENT_FONT_FACE',
+                             'LOAD' => 'THEME::CONTENT_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFK',
+                             'SUB' => 'NAME',
+                             'LOAD' => 'THEME::NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFL',
+                             'SUB' => 'DISCLAIMER_FONT_FACE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFM',
+                             'SUB' => 'PRETTY_NAME',
+                             'LOAD' => 'THEME::PRETTY_NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFN',
+                             'SUB' => 'TABLE_HEADING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFO',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFP',
+                             'SUB' => 'LINK_ACTIVE_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_ACTIVE_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFQ',
+                             'SUB' => 'CONTENT_FONT_SIZE',
+                             'LOAD' => 'THEME::CONTENT_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFR',
+                             'SUB' => 'ALERT_COLOR',
+                             'LOAD' => 'THEME::ALERT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFS',
+                             'SUB' => 'DISCLAIMER_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFT',
+                             'SUB' => 'TABLE_HEADING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFU',
+                             'SUB' => 'TABLE_HEADING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFV',
+                             'SUB' => 'DISCLAIMER_TEXT_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFW',
+                             'SUB' => 'LINK_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFX',
+                             'SUB' => 'HOMECATEGORY_URL',
+                             'LOAD' => 'URL::HOMECATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFY',
+                             'SUB' => 'WRAPPER_URL',
+                             'LOAD' => 'URL::WRAPPER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIFZ',
+                             'SUB' => 'CART_URL',
+                             'LOAD' => 'URL::CART_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGA',
+                             'SUB' => 'SUBSCRIBE_URL',
+                             'LOAD' => 'URL::SUBSCRIBE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGB',
+                             'SUB' => 'FEEDBACK_URL',
+                             'LOAD' => 'URL::FEEDBACK_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGC',
+                             'SUB' => 'LOGOUT_FUNCTION_URL',
+                             'LOAD' => 'URL::LOGOUT_FUNCTION_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGD',
+                             'SUB' => 'SHIPQUOTE_URL',
+                             'LOAD' => 'URL::SHIPQUOTE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGE',
+                             'SUB' => 'PRIVACY_URL',
+                             'LOAD' => 'URL::PRIVACY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGF',
+                             'SUB' => 'SITEBUTTON_URL',
+                             'LOAD' => 'URL::SITEBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGG',
+                             'SUB' => 'HOMEPAGE_URL',
+                             'LOAD' => 'URL::HOMEPAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGH',
+                             'SUB' => 'COUNTER_URL',
+                             'LOAD' => 'URL::COUNTER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGI',
+                             'SUB' => 'RETURNS_URL',
+                             'LOAD' => 'URL::RETURNS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGJ',
+                             'SUB' => 'PASSWORD_URL',
+                             'LOAD' => 'URL::PASSWORD_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGK',
+                             'SUB' => 'UPDATE_PAYMENT_URL',
+                             'LOAD' => 'URL::UPDATE_PAYMENT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGL',
+                             'SUB' => 'FORGOT_URL',
+                             'LOAD' => 'URL::FORGOT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGM',
+                             'SUB' => 'NAVBUTTON_URL',
+                             'LOAD' => 'URL::NAVBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGN',
+                             'SUB' => 'CONTACT_URL',
+                             'LOAD' => 'URL::CONTACT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGO',
+                             'SUB' => 'LOGOUT_URL',
+                             'LOAD' => 'URL::LOGOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGP',
+                             'SUB' => 'GALLERY_URL',
+                             'LOAD' => 'URL::GALLERY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGQ',
+                             'SUB' => 'REMOVE_URL',
+                             'LOAD' => 'URL::REMOVE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGR',
+                             'SUB' => 'HOME_URL',
+                             'LOAD' => 'URL::HOME_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGS',
+                             'SUB' => 'ABOUT_ZOOVY_URL',
+                             'LOAD' => 'URL::ABOUT_ZOOVY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGT',
+                             'SUB' => 'NEWS_URL',
+                             'LOAD' => 'URL::NEWS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGU',
+                             'SUB' => 'SECURE_URL',
+                             'LOAD' => 'URL::SECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGV',
+                             'SUB' => 'ABOUT_URL',
+                             'LOAD' => 'URL::ABOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGW',
+                             'SUB' => 'USERBUTTON_URL',
+                             'LOAD' => 'URL::USERBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGX',
+                             'SUB' => 'CLOSED_URL',
+                             'LOAD' => 'URL::CLOSED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGY',
+                             'SUB' => 'FASTORDER_URL',
+                             'LOAD' => 'URL::FASTORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIGZ',
+                             'SUB' => 'MAIL_FORM_URL',
+                             'LOAD' => 'URL::MAIL_FORM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHA',
+                             'SUB' => 'GRAPHICS_URL',
+                             'LOAD' => 'URL::GRAPHICS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHB',
+                             'SUB' => 'IMAGE_URL',
+                             'LOAD' => 'URL::IMAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHC',
+                             'SUB' => 'CONTACTUS_URL',
+                             'LOAD' => 'URL::CONTACTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHD',
+                             'SUB' => 'DYNAMIC_URL',
+                             'LOAD' => 'URL::DYNAMIC_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHE',
+                             'SUB' => 'NONSECURE_URL',
+                             'LOAD' => 'URL::NONSECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHF',
+                             'SUB' => 'CONTACT_US_URL',
+                             'LOAD' => 'URL::CONTACT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHG',
+                             'SUB' => 'SEARCH_URL',
+                             'LOAD' => 'URL::SEARCH_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHH',
+                             'SUB' => 'ABOUTUS_URL',
+                             'LOAD' => 'URL::ABOUTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHI',
+                             'SUB' => 'CUSTOMER_MAIN_URL',
+                             'LOAD' => 'URL::CUSTOMER_MAIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHJ',
+                             'SUB' => 'MERCHANT_LOGIN_URL',
+                             'LOAD' => 'URL::MERCHANT_LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHK',
+                             'SUB' => 'CATEGORY_URL',
+                             'LOAD' => 'URL::CATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHL',
+                             'SUB' => 'ADULT_URL',
+                             'LOAD' => 'URL::ADULT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHM',
+                             'SUB' => 'CLAIM_URL',
+                             'LOAD' => 'URL::CLAIM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHN',
+                             'SUB' => 'CLAIM_MULTI_URL',
+                             'LOAD' => 'URL::CLAIM_MULTI_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHO',
+                             'SUB' => 'ABOUT_US_URL',
+                             'LOAD' => 'URL::ABOUT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHP',
+                             'SUB' => 'RESULTS_URL',
+                             'LOAD' => 'URL::RESULTS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHQ',
+                             'SUB' => 'PRODUCT_URL',
+                             'LOAD' => 'URL::PRODUCT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHR',
+                             'SUB' => 'CONTINUE_URL',
+                             'LOAD' => 'URL::CONTINUE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHS',
+                             'SUB' => 'REDIR_URL',
+                             'LOAD' => 'URL::REDIR_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHT',
+                             'SUB' => 'KILL_COOKIES_URL',
+                             'LOAD' => 'URL::KILL_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHU',
+                             'SUB' => 'LOGIN_URL',
+                             'LOAD' => 'URL::LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHV',
+                             'SUB' => 'CHECKOUT_URL',
+                             'LOAD' => 'URL::CHECKOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHW',
+                             'SUB' => 'ORDER_STATUS_URL',
+                             'LOAD' => 'URL::ORDER_STATUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHX',
+                             'SUB' => 'NO_COOKIES_URL',
+                             'LOAD' => 'URL::NO_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHY',
+                             'SUB' => 'PAYPAL_URL',
+                             'LOAD' => 'URL::PAYPAL_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIHZ',
+                             'SUB' => 'CANCEL_ORDER_URL',
+                             'LOAD' => 'URL::CANCEL_ORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIIA',
+                             'SUB' => 'MAIL_CONFIG_URL',
+                             'LOAD' => 'URL::MAIL_CONFIG_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIIB',
+                             'SUB' => 'DISABLED_URL',
+                             'LOAD' => 'URL::DISABLED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CPTUIIC',
+                             'THEME' => 'packaged',
+                             'CART' => 'persist',
+                             'TYPE' => 'CONFIG',
+                             'SITEBUTTONS' => 'bubblered'
+                           },
+                           {
+                             'HTML' => '
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+',
+                             'ID' => 'CPTUIID',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPTUIIE',
+                             'TYPE' => 'HEAD'
+                           },
+                           {
+                             'HTML' => '
+</head>
+<style type="text/css">
+body	{background-color:#D5D5D5; margin:0px;}
+body, td, li, ol, ul, p	{font-family:Verdana, Arial, Helvetica, sans-serif; color:#333333;}
+table { text-align: left; }
+a	{color:#990000; text-decoration: none;}
+a:hover	{color:#666666; text-decoration: underline;}
+
+.minicart	{font-size:11px;}
+.cats	{font-size:11px;}
+
+.formed	{border:1px solid #666666; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+</style>
+<body>
+<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+	<td width="4%" valign="top" style="padding-left: 8px; background-image:url(%WRAPPER_URL%/ri_left_bg.gif); background-position:right; background-repeat:repeat-y;" align="right"><table cellspacing="0" cellpadding="0" border="0" width="185"  style="background-image:url(%WRAPPER_URL%/ri_cats_bg.gif); background-position:right; background-repeat:repeat-y;background-color:#FFFFFF;"><tr>
+		<td align="right" style="padding-right:5px; padding-top:4px;"><a href="%HOME_URL%">',
+                             'ID' => 'CPTUIIF',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'HEIGHT' => 80,
+                             'ID' => 'CPTUIIG',
+                             'WIDTH' => 165,
+                             'TYPE' => 'LOGO',
+                             'BGCOLOR' => 'FFFFFF'
+                           },
+                           {
+                             'HTML' => '</a></td>
+	</tr><tr>
+		<td align="right" style="padding-right:8px;"><hr color="#cccccc" width="165"><table cellspacing=2 border=0 width=160 cellpadding=0>
+<tr><td align="left"><span class="minicart">Items in Cart: </span></td><td align="right">',
+                             'ID' => 'CPTUIIH',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPTUIII',
+                             'ITEMSONLY' => 1,
+                             'TYPE' => 'MINICART',
+                             'CSSCLASS' => 'minicart'
+                           },
+                           {
+                             'HTML' => '
+</td></tr><tr><td align="left"><span class="minicart">Shipping: </span></td><td align="right">',
+                             'ID' => 'CPTUIIJ',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPTUIIK',
+                             'TYPE' => 'MINICART',
+                             'CSSCLASS' => 'minicart',
+                             'SHIPPINGONLY' => 1
+                           },
+                           {
+                             'HTML' => '
+</td></tr><tr><td align="left"><span class="minicart">Total: </span></td><td align="right">',
+                             'ID' => 'CPTUIIL',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPTUIIM',
+                             'TYPE' => 'MINICART',
+                             'TOTALONLY' => 1,
+                             'CSSCLASS' => 'minicart'
+                           },
+                           {
+                             'HTML' => '
+</td></tr><tr><td colspan="2"><img src="%GRAPHICS_URL%/blank.gif" height="7" width="1"></td></tr>
+</table>
+</td>
+	</tr><tr>
+		<td align="right"><img src="%WRAPPER_URL%/ri_header_cats.gif" width="175" height="29"></td>
+	</tr><tr>
+		<td style="padding-right:8px;" align="right">
+		
+<table cellspacing="2" cellpadding="0" width="160">
+',
+                             'ID' => 'CPTUIIN',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'FORMAT' => '<tr><td align="left"><a href="%URL%" class="cats">%MESSAGE%</a></td></tr>',
+                             'ID' => 'CPTUIIO',
+                             'NOHOME' => 1,
+                             'TYPE' => 'MENU'
+                           },
+                           {
+                             'HTML' => '
+</table>		<br>
+		
+		</td>
+	</tr>
+	
+',
+                             'ID' => 'CPTUIIP',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'FORMAT' => 'CUSTOM',
+                             'ID' => 'PRODUCTLIST',
+                             'HTML' => '<tr><td align="right"><img src="%wrapper_url%/ri_header_prodlist.gif" width="175" height="29"></td></tr><tr><td align=="right" style="padding-left:8px;"><table border="0" cellpadding="0" cellspacing="2" width="100%"><!-- ROW --><tr><!-- PRODUCT --><td width="45"><a href="%PROD_URL%">%zoovy:prod_thumb/default-zoovy:prod_image1/image-w:45-h:45-b:FFFFFF-alt:prod_name%</a></td><td align="left"><a href="%PROD_URL%" style="font-size: 11px;">%zoovy:prod_name%</a></td><!-- /PRODUCT --><!-- BLANK --><td></td><!-- /BLANK --></tr><!-- /ROW --></table></td></tr>',
+                             'MAX' => 4,
+                             'TYPE' => 'PRODLIST',
+                             'SHOWDEFAULT' => '0',
+                             'ALTERNATE' => 1,
+                             'SRC' => 'SMART:VISITED',
+                             'COLS' => 1
+                           },
+                           {
+                             'HTML' => '<tr>
+		<td><img src="%WRAPPER_URL%/ri_left_bottom.gif" width="185" height="9"></td>
+	</tr></table><br>
+	<div align="center">',
+                             'ID' => 'CPTUIIQ',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPTUIIR',
+                             'TYPE' => 'SIDEBAR'
+                           },
+                           {
+                             'HTML' => '</div></td>
+	<td width="96%" valign="top" style="border-left:1px solid #5E5E5E; background-color:#FFFFFF;" align="left"><table cellspacing="0" cellpadding="0" border="0" width="100%"><form action="%RESULTS_URL%" method="get"><input type="hidden" name="catalog" value=""><tr style="background-image:url(%WRAPPER_URL%/ri_menu_bg.gif); background-repeat:repeat-x; height:34px;">
+		<td style="padding-left:4px; word-spacing:10px; font-size:12px;"><a href="%LOGIN_URL%">Login</a>
+<a href="%CONTACT_URL%">Contact</a>
+<a href="%CART_URL%">Cart</a></td>
+		<td align="right" width="1%" style="padding-right: 4px;"><input type="text" name="keywords" value="" class="formed"></td>
+		<td width="1%"><input type="image" src="%WRAPPER_URL%/ri_search.gif" ></td>
+	</tr></form><tr>
+		<td colspan="3" style="background-color:#E5E5E5; border-bottom:1px solid #878787;"><h1 style="font-size:14px; padding-left:4px; margin-bottom:0px; margin-top:3px; color:#000000; height:22px;">',
+                             'ID' => 'CPTUIIS',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPTUIIT',
+                             'TYPE' => 'TITLE'
+                           },
+                           {
+                             'HTML' => '</h1></td>
+	</tr><tr>
+		<td colspan="3" style="background-image:url(%WRAPPER_URL%/ri_shadow.gif); background-repeat:repeat-x;"><img src="%WRAPPER_URL%/ri_shadow.gif" width="1" height="7"></td>
+	</tr></table>',
+                             'ID' => 'CPTUIIU',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CPTUIIV',
+                             'TYPE' => 'BODY'
+                           },
+                           {
+                             'HTML' => '
+<br>
+<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+	<td style="background-color:#efefef; border-bottom:1px solid #878787;border-top:1px solid #878787; height:24px; padding-left:4px;word-spacing:10px; font-size:12px;">
+<a href="%HOME_URL%">Home</a>
+<a href="%ABOUT_URL%">Company</a>
+<a href="%LOGIN_URL%">Login</a>
+<a href="%CONTACT_URL%">Contact</a>
+<a href="%CART_URL%">Cart</a>
+<a href="%CHECKOUT_URL%">Checkout</a></td>
+</tr><tr>
+	<td style="background-color:#E5E5E5;"><form action="%SUBSCRIBE_URL%" method="post" style="margin:0px;"><input type="hidden" name="check" value="1">
+<table cellspacing="3" cellpadding="2" border="0"><tr>
+		<td><img src="%WRAPPER_URL%/ri_header_news.gif" width="86" height="31"></td>
+		<td style="padding-left: 10px;"><span class="minicart">email: </span></td>
+		<td><input type="text" class="formed" maxlength="50" name="email" value=""></td>
+		<td><span class="minicart">name: </span></td>
+		<td><input type="text" class="formed" maxlength="50" name="fullname" value=""></td>
+		<td><input type="image" src="%WRAPPER_URL%/ri_subscribe.gif"></td>
+	</tr></table></form></td>
+</tr><tr>
+		<td style="background-image:url(%WRAPPER_URL%/ri_shadow.gif); background-repeat:repeat-x; border-top:1px solid #878787;"><img src="%WRAPPER_URL%/ri_shadow.gif" width="1" height="7"></td>
+	</tr></table>
+	
+',
+                             'ID' => 'CPTUIIW',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'TRANSPARENT' => 'TRUE',
+                             'ID' => 'CPTUIIX',
+                             'TYPE' => 'FOOTER'
+                           },
+                           {
+                             'HTML' => '
+	</td>
+</tr><tr>
+	<td colspan="2" style="background-image:url(%WRAPPER_URL%/ri_footer_bg.gif); background-repeat:repeat-x;"><img src="%WRAPPER_URL%/ri_footer_left.gif" width="204" height="14"></td>
+</tr></table>
+</body>
+</html>
+',
+                             'ID' => 'CPTUIIY',
+                             'TYPE' => 'OUTPUT'
+                           }
+                         ],
+          '_FORMAT' => 'WRAPPER'
+        };

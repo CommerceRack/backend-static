@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=suv
+SITEBUTTONS=lucido
+-->
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+a	{color: #990000; text-decoration: none;}
+a:hover {color: #000000; text-decoration: underline;}
+body	{margin: 0px;}
+form	{display:	inline;}
+.white	{color: #FFFFFF; font-size: 12px; font-family: arial}
+.title {color: #990000; font-family: arial; font-size: 14px; font-weight: bold;}
+td.black	{background-color: #000000;}
+td.grey	{background-color: #BFBFBF;}
+td.red	{background-color: #990000;}
+td.beige	{background-color: #cccc99;}
+</style>
+</head>
+
+<body marginheight=0 marginwidth=0>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100% >
+	<tr>
+		<td valign="top">
+			<table cellspacing=0 cellpadding=0 width=100% border=0>
+				<tr>
+					<td height=89 width=215><img src="<!-- WRAPPER_URL -->/truck_top.jpg" width="215" height="89" alt="" border="0"></td>
+					<td width=15><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=15></td>
+					<td width=99%><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=500
+HEIGHT=89
+--></a></td>
+					<td><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=15></td>
+				</tr><tr>
+					<td class="black" align="left" valign="top" height=31><img src="<!-- WRAPPER_URL -->/truck_bottom.jpg" width="173" height="31" alt="" border="0"></td>
+					<td class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+					<td class="black" align="right"><form action="<!-- RESULTS_URL -->" method="get"><input type="hidden" name="catalog" value=""><input type="text" name="keywords" value="" size="10" maxlength="25" style="border-color:#990000; background-color:#ffffff; color:#666666; font-family: sans-serif; font-size: 12px; width: 100px">&nbsp;<input type="image" src="<!-- WRAPPER_URL -->/search.gif" border=0></form></td>
+					<td class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+				</tr><tr>
+					<td class="red" align="right" height=14><img src="<!-- WRAPPER_URL -->/corner.gif" width="43" height="14" alt="" border="0"></td>
+					<td height=14 background="<!-- WRAPPER_URL -->/rednblack.gif" colspan=3><img src="<!-- WRAPPER_URL -->/rednblack.gif" width="1" height="14" alt="" border="0"></td>
+				</tr>
+			</table>		
+		</td>
+	</tr><tr>	
+		<td valign="top">
+			<table cellspacing=0 cellpadding=0 width=100% border=0 >
+				<tr>
+					<td width=192 valign="top" background="<!-- WRAPPER_URL -->/cats_bg.gif">
+						<table cellspacing=0 cellpadding=0 width=100% border=0>
+							<tr>
+								<td height=18><img src="<!-- WRAPPER_URL -->/menu_top.gif" width="192" height="18" alt="" border="0"></td>
+							</tr><tr>
+								<td background="<!-- WRAPPER_URL -->/menu_bg.gif" height=25><p>
+								&nbsp;<a href="<!-- HOME_URL -->"><span class="white">Home</span></a><br>
+								&nbsp;<a href="<!-- CART_URL -->"><span class="white">Cart</span></a><br>
+								&nbsp;<a href="<!-- ABOUT_URL -->"><span class="white">Company Info</span></a><br>
+								&nbsp;<a href="<!-- CONTACT_URL -->"><span class="white">Contact Us</span></a></p>
+								
+								</td>
+							</tr><tr>
+								<td height=27><img src="<!-- WRAPPER_URL -->/menu_bottom.gif" width="192" height="27" alt="" border="0"></td>
+							</tr><tr>
+								<td valign="top"><br><span class="white"><!-- MENU
+FORMAT=&nbsp;&nbsp;<a href="%URL%" target="%TARGET%">%MESSAGE%</a><br>
+ONLYHOME=0
+NOHOME=1
+--></span><br></td>
+							</tr>
+						</table>
+					</td>
+					<td width=8><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=8></td>
+					<td width=99% valign="top"><p class="title"><!-- TITLE --></p><!-- BODY --></td>
+					<td width=8><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=8></td>
+				</tr>
+			</table>
+		</td>
+	</tr><tr>
+		<td>
+			<table cellspacing=0 cellpadding=0 width=100% border=0>
+				<tr>
+					<td><img src="<!-- WRAPPER_URL -->/cats_bottom.gif" width="192" height="19" alt="" border="0"></td>
+					<td width=23><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=8></td>
+					<td width=99%><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=8></td>
+				</tr><tr>
+					<td align="right" bgcolor="#990000"><img src="<!-- WRAPPER_URL -->/footer_left.gif" width="36" height="25" alt="" border="0"></td>
+					<td background="<!-- WRAPPER_URL -->/footer_top_bg.gif"><img src="<!-- WRAPPER_URL -->/footer_top.gif" width="23" height="25" alt="" border="0"></td>
+					<td background="<!-- WRAPPER_URL -->/footer_top_bg.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=8></td>
+				</tr><tr>
+					<td class="red"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=8></td>
+					<td colspan=2 class="red"><!-- FOOTER
+TRANSPARENT=TRUE
+--></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+</body>
+</html>

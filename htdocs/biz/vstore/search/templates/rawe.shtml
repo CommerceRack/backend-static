@@ -1,0 +1,41 @@
+<!-- SETUP_TAB -->
+
+<h2>Schema</h2>
+<form method="POST" id="raweForm" name="raweForm" action="/biz/vstore/search/index.cgi">
+<input type="hidden"  id="ACTION" name="ACTION" value="">
+<input type="button" onClick="
+	raweForm.ACTION.value='RAWE-SCHEMA-PID-LIVE'; jQuery('#raweForm').submit(); " 
+	value=" Product Schema (LIVE) " class="button">
+<input type="button" onClick="
+	raweForm.ACTION.value='RAWE-SCHEMA-PID-CONFIGURED'; jQuery('#raweForm').submit(); " 
+	value=" Product Schema (CONFIGURED) " class="button">
+
+<br>
+<br>
+
+<h2>Raw Elastic Interface:</h2>
+
+<h2>Debug Product</h2>
+PID: <input type="textbox" name="PID">
+<input type="button" onClick="
+	raweForm.ACTION.value='RAWE-SHOWPID'; jQuery('#raweForm').submit(); " 
+	value=" Dump Product (in Elastic) " class="button">
+<input type="button" 
+	onClick="raweForm.ACTION.value='RAWE-INDEXPID'; jQuery('#raweForm').submit();" 
+	value=" Reindex/Dump Product Now " class="button">
+</form>
+<br>
+<Br>
+
+
+<form method="POST" action="/biz/vstore/search/index.cgi">
+<input type="hidden" name="ACTION" value="RAWE-QUERY">
+<h2>JSON Query or Filter</h2>
+<textarea cols=60 rows=3 name="QUERY"><!-- QUERY --></textarea><br>
+<input type="submit" value=" Run Query " class="button">
+</form>
+
+
+
+<!-- OUTPUT -->
+

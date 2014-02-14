@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=habit
+SITEBUTTONS=l2_corporatered
+-->
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 15px; font-family: arial;}
+form	{display: inline;}
+.menu	{font-size: 11px;color:#FFFFFF; font-family: arial; font-weight: bold; text-decoration: none;}
+.cats	{font-size: 12px;color:#FFFFFF;text-decoration: none; font-weight: bold; font-family: arial;}
+.cats:hover	{font-size: 12px;color:#efefef;text-decoration: underline; font-weight: bold; font-family: arial;}
+.bored	{background-color:#000066; font-family: arial;}
+.title	{font-size:14px;color: #000066;font-weight:bold; font-family: arial;}
+.menued	{background-color:#990000; font-family: arial;}
+.mini	{background-color:#FFFFFF; font-size: 11px; font-family: arial;}
+</style>
+</head>
+
+<body>
+<div align="center">
+<table cellspacing=0 cellpadding=0 width=740 style="border-style:solid; border-color: #000066; border-width: 1px;">
+<tr>
+	<td height=75 colspan=2 class="bored"><!-- LOGO
+WIDTH=740
+HEIGHT=75
+--></td>
+</tr><tr>
+	<td class="menued" colspan=2 align="right">&nbsp;<span class="menu"><a href="<!-- HOME_URL -->" class="menu">Home</a> | <a href="<!-- ABOUT_URL -->" class="menu">About Us</a> | <a href="<!-- CUSTOMER_MAIN_URL -->" class="menu">My Account</a> | <a href="<!-- ORDER_STATUS_URL -->" class="menu">Order Status</a> | <a href="<!-- CONTACT_URL -->" class="menu">Contact</a> | <a href="<!-- CART_URL -->" class="menu">Cart</a> | <a href="<!-- CHECKOUT_URL -->" class="menu">Checkout</a>&nbsp;</span></td>
+</tr><tr>
+	<td valign="top" class="bored" width=140>
+<table cellpadding=2 border=0 width=100% cellspacing=0 height=45><tr><td class="mini" align="right">Items in Cart:&nbsp;</td><td class="mini"><!-- MINICART
+ITEMSONLY=1
+-->
+</td></tr>
+<tr><td class="mini" align="right" width=75>Subtotal:&nbsp;</td><td class="mini"><!-- MINICART
+SUBTOTALONLY=1
+--></td></tr></table>
+<table width=100% cellpadding=2 cellspacing=0 border=0 height=45><tr><td class="menued"><form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" name="keywords" value="" size="10" maxlength="25" style="border-color:#660000; border-style:solid; background-color:#ffffff; color:#000066; font-family: sans-serif; font-size: 12px; width: 100px"></td><td class="menued">
+<input type="submit" name="submit" value="go!" ></form></td></tr></table>
+<table cellspacing=2 cellpadding=2 border=0 width=100%><tr><td><!-- MENU
+FORMAT=<a href="%URL%" class="cats" target="%TARGET%">%MESSAGE%</a><br>
+ONLYHOME=0
+NOHOME=1
+-->
+</td></tr></table>
+	</td>
+	<td><table cellspacing=4 border=0 width=600><tr><td valign="top" bgcolor="#FFFFFF"><p class="title">&nbsp;<!--  TITLE --></p><!-- BODY  --></td></tr></table><table cellspacing=0 cellpadding=0 border=0 width=100%><tr><td class="menued">
+<!-- FOOTER
+TRANSPARENT=TRUE
+--></td></tr></table></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+</body>
+</html>

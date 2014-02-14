@@ -1,0 +1,94 @@
+a:hover	{text-decoration:underline; color:#F1AA12;}
+
+
+select	{font-family: sans-serif; color:#666666; font-size:8pt;}
+
+html, body {height:99%; background-color:#FFFFFF; margin:5px;}
+
+#body td, div	{font-size:9pt;}
+
+h2	{margin:0px; font-size:10pt; color:#003366;}
+h3	{margin:0px; font-size:9pt; color:#666666;}
+h4	{margin:0px; font-size:9pt; color:#003366;}
+
+
+.zform_button {font-weight:bold}
+.button	{height:17px; padding:1px 5px 3px 5px; background-color:#dddddd; font:bold 8pt Verdana, Arial, Helvetica, sans-serif; border:1px solid #aaaaaa; color:#666666;}
+
+.formed	{font-size:9pt; color:#333333; font-family:Arial, Helvetica, sans-serif;}
+
+.field_size {width:108px; height:18px; display:inline; border:1px solid #CCCCCC; font-size:11px; box-sizing: border-box; -moz-box-sizing: border-box;}
+.headlines { font-size:18px; font-weight:bold; color:#000066; text-align:left; margin-bottom:5px; margin-top:5px; width:485px;}
+
+
+.logobar {width:auto; height:64px; margin:0px 2px; border:1px solid #B4C3E2; background-color:#FFFFFF;}
+.logo {width:173px; height:60px; box-sizing: border-box; -moz-box-sizing: border-box;}
+.banner {width:468px; height:60px; margin:2px; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.text_links a {color:#ffffff; font-size:11px; font-weight:bold; text-align:right; text-decoration:none; vertical-align:top;}
+.text_links a:hover {text-decoration:underline;}
+
+.breadcrumb	{font-size:10px; color:#ffffff;}
+
+/* Categories */
+.zcat a:hover {background-color:#eeeeee;}
+.zcat a {width:150px; margin:0px 5px 0px 5px; text-decoration:none; font-family:Verdana, Arial, Helvetica, sans-serif; display:block; font-size:11px; font-weight:bold; padding:2px 0px 3px 0px; border-bottom:1px solid #bbbbbb; text-align:left;  box-sizing: border-box; -moz-box-sizing: border-box;}
+
+
+/* Search field */
+.search_field {position:absolute; left: 12px; top:9px;}
+.search_but {position:absolute; right: 14px; top: 8px; height: 20px; width: 24px;}
+
+/* Mini Cart */
+.minicart {font-size: 10px;}
+.listies {font-size: 11px;}
+
+/* Newsletter fields*/
+.news_email_field {position:absolute; right: 9px; top:34px; width:86px; height:15px; display:inline; border:none; font-size:11px;}
+.news_name_field {position:absolute; right:9px; top:11px; width:86px; height:15px; display:inline; border:none; font-size:11px;}
+.news_but {position:absolute; right:9px; top:58px; width:150px;}
+
+/* Footer links */
+.foot_text_links a {font-size:11px; font-weight:300; text-align:right; text-decoration:none; vertical-align:top; word-spacing:25px}
+.foot_text_links a:hover {text-decoration:underline;}
+
+
+/* These are the styles for the search autocompletion divs */
+div.keywords_auto_complete {width: 350px;}
+div.keywords_auto_complete ul {border:1px solid #888; margin:0; padding:0; width:100%; list-style-type:none; background-color:#FDFDFD; opacity:.85;filter: alpha(opacity=85); -moz-opacity: 0.85;}
+div.keywords_auto_complete ul li {margin:0; padding:1px 2px 1px 2px; font-size:11px;}
+div.keywords_auto_complete ul li.selected {background-color: #EFEFEF;}
+div.keywords_auto_complete ul strong.highlight {color: #FFFFFF;background-color:#666666; margin:0;padding:0;}
+
+
+/* These are the styles that are used in the search results layout. */
+.search_list {color:#333333; font-size:12px;}
+.search_list_text {font:normal 10px Arial, Helvetica, sans-serif; color:#333333; text-decoration:none; margin-left:4px;}
+.z_add_link a {font-size:10px; color:#888888; text-decoration:none;}
+.z_add_link a:hover {color:#000000;}
+
+
+
+/*this is the div that encapsulates each keyword result in the recent searches list. */
+.searchKeywords		{width:150px; margin:0px 2px 0px 2px; border-bottom:1px solid #bbbbbb; font-size:10px; font-weight:bold;  text-align:left;}
+
+#keywordsDisplay a 	{text-decoration:none; display:block; padding:2px 4px 3px 4px;}
+#keywordsDisplay a:hover	{background-color:#eeeeee;}
+
+#edresultscontainer	{position:absolute; left:50px; top:10px; background-color:#f1f1f1; border:1px solid #666666; width:350px;}
+
+#edresults	{height:350px; overflow:scroll; font-size:10px; color:#666666; width:350px;}
+
+#effectsdemo { position:relative; width:185px; background-color:white;border:1px solid #CCCCCC; margin:4px;padding:4px;}
+div.auto_complete {position:absolute;width:250px;background-color:white;border:1px solid #888;margin:0px;padding:0px;}
+#message_to_auto_complete ul.contacts  {list-style-type: none;margin:0px;padding:0px;}
+
+#edsubpanel	{background-color:#EFEFEF; border:1px dashed #666666; width:auto; font-size:10px; padding:3px;}
+
+
+/* this is the active tab color for the product layout. It only gets changed with EVOLUTION or if this class is specified in the stylesheet*/
+div#tabs #active a {color:#666666; background-color:#F1AA12;}
+
+
+#foot_links a	{text-decoration:none;}
+.box_content td	{font-size:8pt;}

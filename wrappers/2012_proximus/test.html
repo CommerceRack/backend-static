@@ -1,0 +1,1110 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+
+
+
+<title>m.sporktacular.com Home</title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="" />
+<meta name="generator" content="Zoovy Commerce System http://www.zoovy.com/" />
+<link rel="canonical" href="http://www.sporktacular.com/" />
+
+<style type="text/css">
+<!--
+.zbody { background-color: #FFFFFF; }
+.zborder { border: 1px solid #CCCCCC; }
+.zbox { border: 1px solid #CCCCCC; }
+.zbox_body { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.zbox_head { background-color: #CCCCCC; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.zcolor { background-color: #cccccc; color: #000000; }
+.zcolor_contrast { background-color: #4c4c4c; color: #7f7f7f; }
+.zcolor_dark { background-color: #8c8c8c; color: #000000; }
+.zcolor_light { background-color: #ffffff; color: #404040; }
+.zform_button { border: 1px solid #8c8c8c; background-color: #ffffff; color: #8c8c8c; font-size: 8pt; font-family: Arial, Helvetica; }
+.zform_select { border: 1px solid #8c8c8c; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zform_textarea { border: 1px solid #8c8c8c; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zform_textbox { border: 1px solid #8c8c8c; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zhint { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.zlink { color: #000033; }
+.zsmall { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztab0 { background-color: #ffffff; color: #404040; font-family: Arial, Helvetica; font-size: 9pt; }
+.ztab1 { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 9pt; font-weight: bold;}
+.ztabbody { background-color: #CCCCCC; color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztable_head { background-color: #CCCCCC; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztable_row { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztable_row0 { background-color: #FFFFFF; font-size: 11pt; }
+.ztable_row1 { background-color: #EEEEEE; font-size: 11pt; }
+.ztable_row_small { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztable_row_title { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztitle { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 12pt; }
+.ztitle2 { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztxt { color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.zwarn { color: #FF0000; font-weight: bold; }
+-->
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="https://static.zoovy.com/graphics/general/jslib/jquery/jqueryui_themes/ui-cupertino-1.8.16/jquery-ui-1.8.16.custom.css" />
+<link rel="stylesheet" type="text/css" href="https://static.zoovy.com/graphics/general/jcarousel_skins/ie7/skin.css" />
+
+<link rel="stylesheet" type="text/css" href="https://static.zoovy.com/graphics/wrappers/2012_proximus/styles-20120206.css" />
+
+
+<!-- profile specific settings -->
+<script type="text/javascript" src="http://m.sporktacular.com/c=FVro019IFh3Wk8DVBtil9L4hG/jquery/config.js"></script>
+
+<script type="text/javascript" src="https://static.zoovy.com/graphics/general/jslib/jquery/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="https://static.zoovy.com/graphics/general/jslib/jquery/jqueryui-1.8.16/js/jquery-ui.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://static.zoovy.com/graphics/general/jslib/zmvc/201205/model.js"></script>
+<script type="text/javascript" src="https://static.zoovy.com/graphics/general/jslib/zmvc/201205/controller.js"></script>
+<script type="text/javascript" src="https://static.zoovy.com/graphics/general/jslib/zmvc/201205/json2.js"></script>
+<script type="text/javascript" src="https://static.zoovy.com/graphics/general/jslib/zmvc/201205/variations.js"></script>
+<script type="text/javascript" src="https://static.zoovy.com/graphics/general/jslib/zmvc/201205/wiki.js"></script>
+
+
+
+
+
+</head>
+<body  class='ui-widget ui-widget-content'>
+
+
+
+
+
+
+
+
+
+<header id='mastHead'>
+
+<!--
+utility buttons. when clicked, no contextual menu shows up.
+cart opens a modal.
+tools and help empty page content and load their own templates
+-->
+
+<menu>
+	
+	<button onClick="myControl.ext.proximus.util.showCart(); return false;" id='cartBtn' class='disableAtStart spriteBG icon cart'>Cart</button>
+	
+	<button onClick="myControl.ext.proximus.util.changeNavTo('tools'); return false;" id='toolsBtn' class='disableAtStart spriteBG icon tools'>Tools</button>
+	
+	<button onClick="myControl.ext.proximus.util.changeNavTo('help'); return false;" id='helpBtn' class='disableAtStart spriteBG icon help'>Help</button>
+	
+</menu>
+
+<div id='loginPrompt' class='hideIfLoggedIn' onClick="myControl.ext.proximus.util.changeNavTo('tools');"><span class='underline'>log in</span> for optimal shopping experience</div>
+
+
+<div id='logo'></div>
+
+</header>
+
+<div class='ui-widget-header horBar'>
+<!-- action set in extension -->
+	<button id='shopByCatsBtn' class='disableAtStart ui-state-default ui-corner-all'>Browse by Category</button>
+
+	<form id='headerSearchFrm' name='headerSearchFrm' action='#'>
+	<fieldset>
+		<legend>keyword search</legend>
+		<div class="ui-widget">
+		
+		<input type='text' name='KEYWORDS' id='headerKeywordsInput' value='' />
+		<input type='hidden' name='MODE' id='headerModeInput' value='and' />
+		
+		<input type='submit' value='search' class='ui-state-default ui-corner-all ui-state-highlight ui-state-active disableAtStart' id='headerSearchFrmSubmit' />
+		
+		</div>
+
+		<input type='hidden' name='CATALOG' id='headerCatalog' value='' />
+		
+	</fieldset>
+	</form>
+
+</div>
+
+<section id='columnContainer'>
+
+	<div id='leftCol'>
+
+<nav id='shopByCatsNav'>
+	<ul id='categoryTree'></ul>
+
+</nav>
+
+<!--
+actions on nav are added via proximus.util.changeNav function.
+to add a new page, simply add a new li w/ anchor and then 
+a new article in the 'tools' or 'help' template
+if any translating or special code needs to execute, update 
+the showArticle function in proximus.util
+-->
+
+<nav id='toolsNav' class='displayNone'>
+<ul>
+	<li><a href='#login' id='navLink_login'>Log In</a></li>
+	
+	<li><a href='#newsletter' id='navLink_newsletter'>Newsletter Subscription</a></li>
+	
+	<li><a href='#orders' id='navLink_orders'>Order History</a></li>
+	
+	<li><a href='#wishlist' id='navLink_wishlist'>Wish List</a></li>
+
+	
+	<li><a href='#forgetmelist' id='navLink_forgetmelist'>'Forget Me' List</a></li>
+	
+</nav>
+
+<!-- store/company specific content -->
+<nav id='helpNav' class='displayNone'>
+<ul>
+	<li><a href='#about'  id='navLink_about'>About Us</a></li>
+	<li><a href='#contact'  id='navLink_contact'>Contact Information</a></li>
+<!--	<li><a href='#' onClick='myControl.ext.proximus.util.showArticle("faq"); return false' class='ui-state-default'>FAQ</a></li> -->
+	<li><a href='#payment' id='navLink_payment'>Payment Policy</a></li>
+
+	<li><a href='#privacy' id='navLink_privacy'>Privacy Statement</a></li>
+	<li><a href='#return' id='navLink_return'>Return Policy</a></li>
+	<li><a href='#shipping' id='navLink_shipping'>Shipping Information</a></li>
+</ul>
+</nav>
+
+<nav id='searchNav' class='displayNone'>
+<ul>
+	<li id='altSearchesContainer'>
+	<h3 class='ui-accordion-header ui-helper-reset ui-state-default ui-corner-top '>Alternative Searches</h3>
+
+	<ul id='altSearchesList' class='ui-corner-bottom ui-accordion-content ui-helper-reset ui-widget-content'></ul>
+	</li>
+
+	<li id='recentSearchesContainer'>
+	<h3 class='ui-accordion-header ui-helper-reset ui-state-default ui-corner-top '>Recent Searches</h3>
+	<ul id='recentSearchesList' class='ui-corner-bottom ui-accordion-content ui-helper-reset ui-widget-content'></ul>
+	</li>
+</ul>
+</nav>
+
+<button onClick='localStorage.clear()' class='forTesting'>Nuke local storage</button>
+
+	</div>
+
+	<div id='mainCol'>
+		<div id='globalMessaging'></div><!-- used for error handling -->
+		<div id='mainContentArea'></div><!-- used for majority of content -->
+	</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id='templates'>
+
+
+
+<!-- used for the category tree on left for all tiers. also used in breadcrumb -->
+<ul>
+	<li id='categoryTemplate'>
+	<a href='#' onClick="myControl.ext.proximus.util.showPage($(this).parent().attr('data-catsafeid'));" data-bind='var: category(pretty); format:text;'  class='ui-state-default'></a>
+	</li>
+</ul>
+
+<!-- used in the 'page' content area. -->
+<ul>
+<li id='categoryThumbTemplate' onClick="myControl.ext.proximus.util.showPage($(this).attr('data-catsafeid'));">
+	<img class='catThumb' data-bind='var: category(%meta.CAT_THUMB); format:imageURL;'  />
+
+	<div class='nameBG'></div>
+	<div class='name' data-bind='var: category(pretty); format:text;'></div>
+</li>
+</ul>
+
+
+<!--
+used to organize content when a category is clicked.
+each of the 'sections' are used to load another template. don't change the id.
+-->
+<div id='categoryPageTemplate'>
+	<hgroup>
+		<ul id='breadcrumb'></ul><h1 data-bind='var: category(pretty); format:text;'></h1>
+	</hgroup>
+
+	<section id='subcats'></section>
+
+	<section id='prodlist'></section>
+	
+</div>
+
+
+
+
+<ul>
+<!--
+Used for the product in a prodlist (category page and/or search results.
+the loadingBG class is removed (must be that classname) when the template is translated.
+-->
+<li id='productTemplate' class='loadingBG' onClick="myControl.ext.proximus.util.showProd($(this).attr('data-pid'));">
+
+	<img class='prodThumb' data-bind='var: product(zoovy:prod_image1); format:imageURL;' />
+
+	<div class='nameNPriceBG'></div>
+	<div class='nameNPrice'>
+		<span data-bind='var: product(zoovy:base_price); format:money; currencySign: $;  hideZero:true; className:price;'></span>
+		<span data-bind='var: product(zoovy:prod_name); format:text;'></span>
+	</div>
+
+</li>
+</ul>
+
+
+<ul>
+<!--
+product template used in a 'list' list. like the 'view my wishlist' page.
+-->
+
+<li id='prodForListEditTemplate' class='loadingBG' onClick="myControl.ext.proximus.util.showProd($(this).attr('data-pid'));">
+
+	<img class='prodThumb' data-bind='var: product(zoovy:prod_image1); format:imageURL;' />
+	<div class='nameNPrice'>
+		<span data-bind='var: product(zoovy:base_price); format:money; currencySign: $;  hideZero:true; className:price;'></span>
+		<span data-bind='var: product(zoovy:prod_name); format:text;'></span>
+	</div>
+
+</li>
+</ul>
+
+
+
+
+<!--
+a template for multipage controls
+after this is generated, actions for going to last and next page will be added
+to any element with a class of paging and a data-role of either 'next' or 'previous'
+onclicks are recursive, so only add it to the parent element.
+-->
+
+<div id='mpControlSpec'>
+	<div class='mpControls ui-widget ui-state-default ui-corner-top'>
+
+<span class="ui-state-active ui-corner-all floatRight paging" data-role='next' title="next page">
+<span class="ui-icon ui-icon-circle-triangle-e"></span>
+</span>	
+
+<div class='floatRight ddUlMenu'>
+<ul>
+	<li>
+
+	<a href='#'>
+	<span data-bind='var:prodlistmeta(page_in_focus); format:text; pretext: page ;'></span>
+	<span data-bind='var:prodlistmeta(total_page_count); format:text; pretext: of ;'></span>
+	</a>
+	<ul data-bind='var:prodlistmeta(total_page_count); format:mpPagesAsListItems; extension:store_prodlist;' class='ui-widget-content ui-corner-bottom'></ul>
+	</li>
+</ul>
+</div>
+
+<span class="ui-state-active ui-corner-all floatRight paging" data-role='previous' title="previous page">
+<span class="ui-icon ui-icon-circle-triangle-w"></span>
+
+</span>	
+
+
+<span data-bind='var:prodlistmeta(page_start_point); format:text; pretext:items ;'></span>
+<span data-bind='var:prodlistmeta(page_end_point); format:text; pretext: - ;'></span>
+<span data-bind='var:prodlistmeta(total_product_count); format:text; pretext: of ;'></span>
+		
+	</div>
+</div>
+
+
+
+
+
+
+
+<div id='toolsTemplate'>
+
+
+	<article id='loginArticle'>
+		<h1>Account Login</h1>
+		
+		<div class='showIfLoggedIn'>
+		You are logged in.
+		</div>
+		
+		<div class='hideIfLoggedIn'>
+
+<div class='loginOption'>
+<form action='' onSubmit='myControl.ext.proximus.util.loginFrmSubmit($("#login").val(),$("#password").val()); return false;'>
+	<fieldset>
+
+	<legend>Please log in:</legend>
+	<div id='loginErrors'></div>
+	<div>
+	<label for='login'>Email</label>
+	<input type='email' class='zform_textbox zform_email'  name='login' id='login' value='' />
+	</div>
+	
+	<div>
+	<label for='chkout-password'>Password</label>
+
+	<input type='password' class='zform_textbox zform_password'   name='password' id='password' value='' />
+	</div>
+	
+	<div>
+	<input type='submit' value='log in' class='ui-state-default ui-corner-all ui-state-highlight ui-state-active' />
+	</div>
+	</fieldset>
+</form>
+</div>
+
+<!--
+<div class='loginOption'>
+<form>
+	<fieldset>
+	<legend>Create Account</legend>
+	<div>
+	<label for='data.bill_email2'>Email</label>
+	<input type='email' class='zform_textbox zform_email'  name='data.bill_email' id='login-bill_email' value='' />
+	</div>
+	
+	<div>
+	<label for='chkout-password'>Password</label>
+	<input type='password' class='zform_textbox zform_password'   name='password' id='login-password' value='' />
+	</div>
+	
+	<div>
+	<label for='chkout-password'>Verify Password</label>
+	<input type='password' class='zform_textbox zform_password'   name='password2' id='login-password2' value='' />
+	</div>	
+	<div>
+	<input type='submit' value='log in' />
+	</div>
+	</fieldset>
+</form>
+</div>
+
+<div class='loginOption'>
+<h3>Third Party Login</h3>
+<fb:login-button onlogin='myControl.calls.authentication.facebook.init({"callback":"authenticateThirdParty","extension":"proximus"}); myControl.model.dispatchThis("immutable");'>Login with Facebook</fb:login-button>
+</div>
+-->
+
+		</div>
+		
+	</article>
+
+
+
+	<article id='newsletterArticle' class='displayNone'>
+		<h1>Subscribe to our Newsletter and Save!</h1>
+		<div id='newsletterFormContainer'></div>
+	</article>
+
+	<article id='ordersArticle' class='displayNone'>
+		<h1>Order History</h1>
+		<div id='orderHistoryContainer' class='loadingBG ui-accordion ui-widget ui-helper-reset ui-accordion-icons'></div>
+	</article>
+
+	<article id='wishlistArticle' class='displayNone'>
+		<h1>Your Wishlist</h1>
+		<ul id='wishlistContainer' class='prodlist' class='loadingBG'></ul>
+
+	</article>
+
+	<article id='forgetmelistArticle' class='displayNone'>
+		<h1>Your 'Forget Me' list</h1>
+		<p>Items on this list will not show up anywhere on the site. Use it for items you never want to see again. If you add an item to the list by mistake, use this page to remove it from the list and it will start re-appearing during your shopping experience.</p>
+		<ul id='forgetmelistContainer' class='prodlist' class='loadingBG'></ul>
+	</article>
+
+
+</div>
+
+
+
+
+
+<div id='helpTemplate'>
+
+	<article id='aboutArticle' class='textContentArea'>
+		<h1>About Us</h1>
+		<div data-bind='var: profile(zoovy:about); format:text;'></div>
+	</article>
+
+	
+
+	<article id='contactArticle' class='displayNone textContentArea'>
+		<h1>Contact Information</h1>
+		<div data-bind='var: profile(zoovy:contact); format:text;'></div>
+	</article>
+
+	
+
+	<article id='faqArticle' class='displayNone textContentArea'>
+		<h1>Frequently Asked Questions</h1>
+		<div>Coming Soon</div>
+
+	</article>
+
+
+	<article class='displayNone textContentArea' id='paymentArticle'>
+		<h1>Payment Policy</h1>
+		<div data-bind='var: profile(zoovy:payment_policy); format:text;'></div>
+	</article>
+	
+	
+	<article class='displayNone textContentArea' id='privacyArticle'>
+		<h1>Privacy Statement</h1>
+
+<h4>About this Privacy Policy:</h4>
+<p>The entire site, or at least specific portions of this site are assisted by Zoovy technology. Zoovy has created this privacy policy as a template for customers who are using Zoovy technology with their websites. Zoovy in no way takes responsibility for the accuracy or enforcement of this policy. For a copy of Zoovy's privacy policy (which does not necessarily apply to the customers of its customers) visit http://www.zoovy.com/legal</p>
+
+<p>Zoovy, Inc. has created this privacy statement for this Company in order to demonstrate our joint commitment to privacy. The following discloses the information gathering and dissemination practices for this website:</p>
+
+<h5>Zoovy.com tracks IP Addresses</h5>
+<p>Your IP address is used to help diagnose problems with our server, and to administer the Web site, in addition your IP address is used to help identify you and your shopping cart (in conjunction with a cookie.) We also use cookies to deliver content specific to your interests and to save your password so you don't have to re-enter it each time you visit our site.</p>
+
+
+<h3>This site may contains links to other sites.</h3>
+<p>This Company is not responsible for the privacy practices or the content of such Web sites, unless otherwise specified below your information is never shared with other companies, even those who are also using Zoovy technology. In the future Zoovy may provide you the ability to share your information across multiple websites which all utilize Zoovy technology however this will only be done at your explicit request.</p>
+
+<h3>This site requires Unique Identifiers.</h3>
+<p>This site uses an order form for customers to request information, products, and services, it also collects visitor's contact information (like their email address), in some circumstances their unique identifiers (like their pets name, or mothers maiden name), and financial information (like their account or credit card numbers). Contact information from the order form is used to send orders and information about our company to customers. The customer's contact information is also used to get in touch with the visitor when necessary. Users may opt-out of receiving future informational mailings; see the choice/opt-out section below, users may NOT opt out of receiving order notifications, or other contacts which are deemed essential by this Company.</p>
+
+<h3>This site requires Financial Information.</h3>
+<p>Financial information that is collected is used to bill the customer for products and services. Unique identifiers (such as pets name, and mothers maiden name) are collected from Web site visitors to verify the user's identity.</p>
+
+<h3>This site may have Surveys and/or Contests.</h3>
+<p>Our online surveys ask visitors for contact information (like their email address). We use contact data from our surveys to send the user information about our company. The customer's contact information is also used to contact the visitor when necessary. Users may opt-out of receiving future mailings; see the choice/opt-out section below. This site may also run contests in which case we may ask visitors for contact information (like their email address). Generally this information is used to verify eligibility, however we may also use contact data from our contests to send users information about this Company. The customer's contact information is also used to contact the visitor when necessary (for example winners). Users may opt-out of receiving future mailings; see the choice/opt-out section below. Financial information that is collected from our users is used to check the users' qualifications for registration and bill the user for products and services.</p>
+
+<h3>This site may contain Public Forums</h3>
+
+<p>This site may include chat rooms, forums, message boards, and/or news groups available to its users. Please remember that any information that is disclosed in these areas becomes public information and you should exercise caution when deciding to disclose your personal information.</p>
+
+<h3>About our System Security</h3>
+<p>This site has security measures in place to protect the loss, misuse and alteration of the information under our control. Information is stored behind a firewall, against a password protected database system. Whenever sensitive information is accessed it is transmitted using strong SSL encryption. this Company may keep a copy of your information on its own system using Zoovy's WebAPI system, this system may have its own security measures in place.</p>
+
+<h3>This site provides the choice to Opt In or Out</h3>
+<p>Our site provides users the opportunity to opt-out of receiving communications from us at the point where we request information about the visitor. This site gives users the following options for removing their information from our database to not receive future communications or to no longer receive our service. Each time an information email is distributed, you have the option to use unique unsubscribe url which is attached to each outgoing email. Customers may unsubscribe at any time by simply logging into their accounts.</p>
+
+<h3>We provide the ability to Correct/Update YOUR information.</h3>
+<p>This site gives users the following options for changing and modifying information previously provided. Simply visit the customer login area of this website.</p>
+
+<!-- !!! load amendments here -->
+	</article>
+	
+	
+	
+	
+	<article class='displayNone textContentArea' id='returnArticle'>
+		<h1>Return Policy</h1>
+		<div data-bind='var: profile(zoovy:return_policy); format:text;'></div>
+	</article>
+
+
+	
+	<article class='displayNone textContentArea' id='shippingArticle'>
+		<h1>Shipping Information</h1>
+
+		<div data-bind='var: profile(zoovy:shipping_policy); format:text;'></div>
+	</article>
+
+
+</div><!-- /helpTemplate -->
+
+
+
+
+
+
+
+<!--
+used for store_cart.js
+
+
+The cart viewer is basically just a container for two other elements that get translated.
+Currently, the elements within that get translated have 'fixed' template ID's and element IDs.
+cartViewerContents is the id used for a list of the items in the cart, and it uses template id cartViewerProductTemplate.
+cartSummaryTotals is the id used for totals, subtotal, tax, shipping, etc. It uses template id cartSummaryTotalsTemplate.
+
+fixed id's and templates was a decision that was made for usability. transferring around the two id's for each template was
+sticky, so they're fixed. Makes it easier on the designer and the developer.
+
+So the cart template should contain these two elements and the extension should contain these two templates.
+-->
+
+<div id='cartViewer' class='loadingBG'>
+
+<div id="cartAccessoriesCarouselContainer">
+	<h2>These items go great!</h2>
+	<ul id="cartAccessoriesCarousel" class="jcarousel-skin-proximus"></ul>
+</div>
+
+
+<form id='cartViewerForm' action='' onSubmit='return false'>
+<table>
+<tr>
+	<td id='cartViewerContentsContainer'>
+	<ul id='cartViewerContents' class='lineItemProdlist'></ul>
+
+	</td>
+
+	<td id='cartSummaryTotalsContainer'>
+	<div class='ui-widget ui-widget-content ui-helper-clearfix ui-corner-all'>
+		<h4 class='ui-widget-header ui-helper-clearfix ui-corner-all ui-header'>Cart Totals</h4>
+
+
+		<div id='cartSummaryTotals' class='cartRtColMargin'></div>
+		
+		<section  class='cartRtColMargin'>
+
+			<div class='padMargBorderBottom'>
+			<label for='bill_zip'>Zip/Postal Code</label>
+			<input type='text' size='10' class='zform_textbox' name='data.ship_zip' id='data-ship_zip' size='10' value='' data-bind='var: cart(data.ship_zip); format:popVal;' maxlength='10' onChange="myControl.calls.setSessionVars.init({'data.ship_zip':this.value});
+			myControl.ext.store_cart.util.updateCartSummary();
+			myControl.ext.store_cart.calls.getShippingRatesWithUpdate.init();
+			myControl.model.dispatchThis('immutable');"  />
+			</div>
+
+	
+
+			<h5>Coupons &amp; Giftcards</h5>
+			<div id='couponContainer'  class='padMargBorderBottom'>
+
+	
+				<div id='couponFrmContainer'>
+					<label for='coupon'>Coupon/Promo Code:</label>
+					<input type='text' name='coupon' id='couponCode' size='8' class='zform_textbox' onKeyPress="if(event.keyCode==13){$('#addCouponBtn').click();}" />
+					<button class='zform_button loadingButton' onClick="myControl.ext.store_cart.util.handleCouponSubmit($('#couponCode').val(),'couponContainer'); myControl.model.dispatchThis('immutable'); return false;" id='addCouponBtn'>add</button>
+				</div>
+			</div>
+	
+	
+			<div id='giftcardContainer' class='padMargBorderBottom'>
+				<label for='giftcardCode'>Gift Certificate Code:</label>
+
+				<input type='text' name='giftcard' id='giftcardCode' size='8' class='zform_textbox' onKeyPress="if(event.keyCode==13){$('#addGiftcardBtn').click();}" />
+				<button class='zform_button loadingButton' onClick="myControl.ext.store_cart.util.handleGiftcardSubmit($('#giftcardCode').val(),'giftcardContainer'); myControl.model.dispatchThis('immutable'); return false;" id='addGiftcardBtn'>add</button>
+			</div>
+			
+			
+			<button class='ui-state-default ui-state-highlight ui-corner-all' onClick='alert("you need to complete me. !!!");'>Checkout Now!</button>
+			<button class='ui-state-default ui-corner-all' onClick="$('#modalCart').dialog('close');">Continue Shopping</button>
+		</section>
+	</div>
+
+
+
+
+
+
+	</td>
+</tr>
+</table>
+</form>
+</div><!-- /cartViewer -->
+
+
+
+
+<!--
+cart summary template. used in both the shopping cart modal and checkout.
+### SANITY! - the shipping options are inside this spec so that they update every time
+the item totals do. shipping options could be effected by zip, what's in the cart, 
+and what promotions are added.
+-->
+
+<!--
+
+<div data-bind="var: cart(id); format:text; pretext:CART ID: ; "></div> here for testing. you probably wouldn't want this
+
+ -->
+		
+
+<div id='cartSummaryTemplate' class='loadingBG'>
+
+		<div data-bind="var: cart(data.order_subtotal); format:money; className:orderSubtotal; hideZero:false; currencySign: $; pretext:Subtotal: ; "></div>
+		
+		<div data-bind='var: cart(data.tax_total); format:money; className:orderTax; hideZero:true;currencySign: $; pretext:Tax: ; '></div>
+
+		<div data-bind='var: cart(ship.selected_id); format:shipInfoById; className:orderShipping; hideZero:false; extension:store_cart;'></div>
+		
+		<div data-bind='var: cart(data.order_total); format:money; className:orderTotal; hideZero:false; currencySign: $; pretext:Order Total: ; '></div>
+		
+		<div data-bind='var: cart(chkout.giftcard_total); format:money; className:orderGiftcardTotal; hideZero:false; currencySign: $; pretext:Giftcard(s): ; '></div>
+		<div data-bind='var: cart(data.balance_due); format:orderBalance; className:orderBalanceDue; hideZero:false; currencySign: $; pretext:Estimated Total: ; extension:store_cart;'></div>
+
+		<hr />
+		<h5>Shipping:</h5>
+
+		<ul data-bind='var: cart(@shipmethods); format:shipMethodsAsRadioButtons; extension:store_cart;'></ul>
+		
+</div><!-- /cartSummaryTemplate -->
+
+
+
+
+
+<!-- cart line-item template -->
+<ul>
+
+	<li id='cartViewerProductTemplate' class='padMargBorderBottom'>
+		
+		<img class='prodThumb' data-bind='var: product(zoovy:prod_image1); format:imageURL;' />
+	
+		<h4 class='prodName' data-bind='var: product(prod_name); format:text; '></h4>
+		
+		<div class='ztable_row_small stid' data-bind='var: product(sku); format:text; className: stid; pretext: Sku: ;'></div>
+		
+		<div>
+		qty: <input type='number' class='zform_textbox' onChange="myControl.ext.store_cart.util.updateCartQty($(this).attr('data-stid'),this.value); myControl.model.dispatchThis('immutable');"  data-bind='var: product(qty); format:cartItemQty;extension:store_cart;' size='2' />
+		<span data-bind='var: product(price); format:money; currencySign: $;  hideZero:false; pretext: x ;' ></span>
+		<span data-bind='var: product(extended); format:money; currencySign: $; hideZero:false; pretext: = ;'></span>
+
+		<button onClick="" data-bind='var: product(stid); format:removeItemBtn; extension:store_cart;'>X</button>
+		</div>
+		
+		<div class='ztable_row_small prodOptions' data-bind='var: variations(*options); format:selectedOptionsDisplay;'></div>
+	</li>
+</ul>
+
+
+
+
+
+
+
+<!--
+used for store_product.js ( product viewer )
+
+form - the form id gets modified to be unique in case multiple viewers are open at the same time. _pid is appended to it.
+NOTE - currently, variations.js supports only 1 viewer at a time. this will change.
+2 fieldsets are present:
+ -> One is for variations/options and really ought to be present. 
+ -> The other is for a quantity input and is optional
+
+the submit button does not need to be within the form (a button could be used elsewhere if needed. 
+ -> use the button to submit the form, not execute the call or utility separately. That way if additional
+ actions are added to the submit, they only have to be managed in one place.
+
+note - this is draft 1. currently, the view in modal utility has the reviewsummary and reviews content ID's hard coded.
+reviewSummaryID='prodViewerReviewSummary' 
+reviewsID='prodViewerReviews'
+
+Additionally, the cross selling features also have hard coded id's, though they're specified within this extension in the xsell callback.
+
+this will likely become more flexible in the future. ###
+-->
+
+
+
+<div id='prodViewerTemplate'  >
+
+
+<table>
+<tr>
+	<td class='imageContainer'>
+<img class='prodBigImage' data-bind='var: product(zoovy:prod_image1); format:imageURL;' width='300' height='300' />
+	</td>
+	<td class='prodSummaryContainer'>
+
+	<h6 class='ztable_row_small stid' data-bind='var: product(pid); format:text; className: stid; pretext: Sku: ;'></h6>
+	
+	<h2 data-bind='var: product(zoovy:base_price); format:money; currencySign: $;  hideZero:true; pretext:only ;'></h2>
+	
+	<section id='prodViewerReviewSummary'></section>
+
+	<div id='prodlistChildrenContainer'>
+		<h3>Children:</h3>
+		<ul id='prodlistChildren' class='smallProdlist loadingBG'></ul>
+	</div>
+
+	
+
+	
+
+
+	<div data-bind='var: product(@inventory.inv); format:simpleInvDisplay; extension:store_product;' class='inventory'></div>
+	<div data-bind='var: product(zoovy:ship_latency); format:text;pretext:Normally ships in ;posttext: day(s);' class='latency'></div>
+	
+<!--
+you'll likely want to something MUCH more custom here. this just simply adds it to the cart and reports a success. it can be used, if desired. 
+-->	
+	
+	<form data-bind='var: product(pid); format:atcForm; extension:store_product;' class='prodViewerAddToCartForm' id='prodViewerAddToCartFrm' action='#' onSubmit="myControl.ext.store_product.util.handleAddToCart(this.id);  return false;">
+	
+		<fieldset data-bind='var: product(pid); format:atcVariations; extension:store_product;' class='borderNone'></fieldset>
+		<fieldset data-bind='var: product(pid); format:atcQuantityInput; extension:store_product; pretext:Quantity: ;' class='borderNone'></fieldset>
+	
+		<input type='submit' value='Add to Cart' data-bind='var: product(pid); format:addToCartButton; extension:store_product;' id='addToCartBtn' class='displayNone ui-state-default ui-corner-all ui-state-highlight ui-state-active addToCartButton' />
+	</form>
+	
+	<menu data-bind='var:product(pid);format:assignAttribute; attribute:data-pid;' id='CRMButtonMenu'>
+
+		
+		<button class='ui-state-default ui-corner-all' onClick='myControl.ext.store_crm.calls.addToCustomerList.init({"listid":"wishlist","sku":$(this).parent().attr("data-pid")},{"parentID":"CRMButtonMenu","message":"Item has been added to your wish list","callback":"showMessaging"}); myControl.model.dispatchThis();'>Add to Wishlist</button>
+		
+<!--		<button class='ui-state-default ui-corner-all' disabled='disabled'>Tell a Friend</button> -->
+		
+		<button class='ui-state-default ui-corner-all' onClick='myControl.ext.store_crm.util.showReviewFrmInModal({"pid":$(this).parent().attr("data-pid"),"templateID":"reviewFrmTemplate"});'>Write Review</button>
+		
+		<button class='ui-state-default ui-corner-all' onClick='myControl.ext.store_crm.calls.addToCustomerList.init({"listid":"forgetme","sku":$(this).parent().attr("data-pid")},{"parentID":"CRMButtonMenu","message":"Item has been added to your forget me list","callback":"showMessaging"}); myControl.model.dispatchThis();'>Blech! Never show me this again!</button>
+
+	</menu>
+
+	
+	</td>
+
+</tr>
+<tr>
+	<td colspan='2'>
+
+<div id="tabbedProductContent">
+
+	<ul class='tabs'>
+		<li id='prodDescTab' data-bind='var: product(zoovy:prod_desc); format:showIfSet;'><a href="#prodDesc" >Description</a></li>
+		<li id='prodDetailTab' data-bind='var: product(zoovy:prod_detail); format:showIfSet;'><a href="#prodDetail">Specs</a></li>
+		<li id='prodFeaturesTab' data-bind='var: product(zoovy:prod_features); format:showIfSet;'><a href="#prodFeatures">Features</a></li>
+
+		<li id='prodReviewsTab'><a href="#prodReviews">Reviews</a></li>
+		<li id='prodVideoTab' data-bind='var: product(youtube:videoid); format:showIfSet;'><a href="#prodVideo">Video</a></li>
+		<li id='prodAccessoriesTab' data-bind='var: product(zoovy:accessory_products); format:showIfSet;'><a href="#prodlistAccessoriesContainer">Accessories</a></li>
+	</ul>
+<!-- tab content -->
+	<div id="prodDesc" data-bind='var: product(zoovy:prod_desc); format:wiki; wikiFormats:proximus;'></div>
+	
+	<div id="prodDetail" data-bind='var: product(zoovy:prod_detail); format:text; '></div>
+	
+	<div id="prodFeatures" data-bind='var: product(zoovy:prod_features); format:text; '></div>
+
+	
+	<div id="prodVideo" data-bind='var: product(youtube:videoid); format:youtubeVideo; '></div>
+	
+	<div id="prodReviews">
+		<ul id='prodViewerReviews'></ul>
+		<div class='clearAll'></div>
+	</div>
+	
+	
+	<div id='prodlistAccessoriesContainer'>
+		<ul id='prodlistAccessories' class='prodlist loadingBG'></ul>
+		<div class='clearAll'></div>
+	</div>
+
+
+
+	
+	
+	
+</div>
+
+	</td>
+</tr>
+</table>
+<!-- must be outside table, otherwise width goes way wide -->
+<div id='prodlistRelatedContainer'>
+	<h3>Related Items</h3>
+	<ul id='prodlistRelated' class='prodlist loadingBG jcarousel-skin-proximus'></ul>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- review summary template -->
+
+<div id='prodReviewSummaryTemplate'>
+<span data-bind='var: reviews(average); format:addClass; pretext:review_;className:reviewSprite;'></span>
+
+<span data-bind='var: reviews(total); format:text;posttext: Reviews;'></span>
+</div>
+
+<!-- individual review template -->
+<ul>
+	<li id='prodReviewsTemplate' class='reviewLineItem'>
+	<ul class='prodReviewInfo'>
+		<li data-bind='var:review(RATING); format:addClass; pretext:review_;className:reviewSprite;'></li>
+		<li data-bind='var:review(CUSTOMER_NAME); format:text;'></li>
+		<li data-bind='var:review(LOCATION); format:text; pretext:of ;'></li>
+		<li data-bind='var:review(CREATED_GMT); format:unix2mdy; pretext:on ;'></li>
+
+		
+	</ul>
+	<blockquote>
+		<h2 data-bind='var:review(SUBJECT); format:text;'></h2>
+		<p data-bind='var:review(MESSAGE); format:text; ;'></p>
+	</blockquote>
+	</li>
+</ul>
+
+
+
+
+<!-- image viewer template -->
+<div id='imageViewerTemplate'>
+
+<table>
+<tr>
+	<td><img class='prodBigImage' data-bind='var: product(zoovy:prod_image1); format:imageURL;' width='500' height='500' /></td>
+	<td>
+	<img class='prodThumb' data-bind='var: product(zoovy:prod_image2); format:imageURL;' width='100' height='100' />
+	<img class='prodThumb' data-bind='var: product(zoovy:prod_image3); format:imageURL;' width='100' height='100' />
+	<img class='prodThumb' data-bind='var: product(zoovy:prod_image4); format:imageURL;' width='100' height='100' />
+	<img class='prodThumb' data-bind='var: product(zoovy:prod_image5); format:imageURL;' width='100' height='100' />
+
+	<img class='prodThumb' data-bind='var: product(zoovy:prod_image6); format:imageURL;' width='100' height='100' />
+	</td>
+</tr>
+</table>
+</div>
+
+
+
+
+
+
+
+
+<!--
+used for store_crm.js
+-->
+
+<div id='reviewFrmTemplate'>
+
+<form name="reviewFrm" id="reviewFrm" action="#" onSubmit="myControl.ext.store_crm.util.handleReviews('reviewFrm'); return false;">
+<input type='hidden' name='pid' id='reviewsPid' value='' data-bind='var: product(pid); format:popVal;' />
+
+<label for='reviewsCustomerName'>Your Name:</label>
+<input type="text" name="CUSTOMER_NAME" id='reviewsCustomerName' value="" MAXLENGTH="30" />
+<br />
+
+<label for='reviewsLocation'>Location:</label>
+<input type="text" MAXLENGTH="30" name="LOCATION" id='reviewsLocation' value="" />
+<br />
+
+<label for='reviewsSubject'>Subject:</label>
+
+<input type="text" MAXLENGTH="60" name="SUBJECT" id='reviewsSubject' />
+<br />
+
+
+<label for='reviewsMessage'>Review:</label>
+<textarea name="MESSAGE" id='reviewsMessage'></textarea>
+<br />
+
+<label for='reviewsRating'>Score:</label>
+<select name="RATING" id='reviewsRating'>
+	<option value="10">5</option>
+	<option value="9">4.5</option>
+
+	<option value="8">4</option>
+	<option value="7">3.5</option>
+	<option value="6">3</option>
+	<option value="5">2.5</option>
+	<option value="4">2</option>
+	<option value="3">1.5</option>
+
+	<option value="2">1</option>
+	<option value="1">.5</option>
+</select>
+<br />
+
+<input type="submit" value="submit review" />
+
+</form>
+</div>
+
+
+<div id='subscribeFormTemplate'>
+<form action='#' id='subscribeFrm' name='subscribeFrm' onSubmit="myControl.ext.store_crm.util.handleSubscribe(this.id); return false">
+
+<div>
+<label for='subscribeLogin'>Email Address</label>
+<input type='email' class='zform_textbox' maxlength='50' size='30' name='login' id='subscribeLogin' value='' />
+</div>
+
+<div>
+<label for='subscribeFullname'>Full Name</label>
+<input type='text' class='zform_textbox' maxlength='50' size='30' name='fullname' id='subscribeFullname' value='' />
+</div>
+
+<fieldset data-bind="var:newsletters(@lists); format:subscribeCheckboxes; extension:store_crm;" class='borderNone'></fieldset>
+
+<input type='submit' class='ui-state-default ui-corner-all ui-state-highlight ui-state-active' value='Subscribe'>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+<section id='orderLineItemTemplate'>
+	
+	<div onClick="myControl.ext.proximus.util.showOrderDetails($(this).attr('data-orderid'));" class='ui-accordion-header ui-helper-reset ui-state-default ui-corner-top ui-corner-bottom' data-bind='var:order(ORDERID);format:assignAttribute; attribute:data-orderid;'>
+	<span class="ui-icon ui-icon-triangle-1-e"></span>
+	<span data-bind='var:order(ORDERID);format:text;pretext:Order ID: ;'></span>
+	<span data-bind='var:order(MODIFIED_GMT);format:unix2mdy; pretext: Placed on ;'></span>
+
+	</div>
+	
+	<div data-bind='var:order(ORDERID);format:assignAttribute; attribute:id; pretext:orderContents_;' class='ui-accordion-content ui-helper-reset ui-widget-content '></div>
+
+</section>
+
+
+
+
+
+
+<table id='orderContentsTemplate' class='orderContentsTable'>
+<tr>
+	<td>
+
+<hgroup>
+<!-- <h2 data-bind='var:order(data.bill_firstname);format:text; pretext:Shipping Status: ;'></h2> -->
+<h3 data-bind='var:order(data.pool);format:text; pretext:Order Status: ;'></h3>
+<h4 data-bind='var:order(data.order_total);format:text; pretext:Order Total: ;'></h4>
+<h4 data-bind='var:order(data.balance_due);format:text; pretext:Balance Due: ;'></h4>
+</hgroup>
+
+<address>
+<h3>
+	<span data-bind='var:order(data.bill_firstname);format:text; pretext:Bill To: ;'></span>
+	<span data-bind='var:order(data.bill_lastname);format:text;'></span>
+</h3>
+<div data-bind='var:order(data.bill_address);format:text;'></div>
+<div data-bind='var:order(data.bill_address2);format:text;'></div>
+<div>
+
+	<span data-bind='var:order(data.bill_city);format:text;posttext:, ;'></span>
+	<span data-bind='var:order(data.bill_state);format:text;posttext:. ;'></span>
+	<span data-bind='var:order(data.bill_zip);format:text; defaultVar:order(data.bill_int_zip);'></span>
+</div>
+<div data-bind='var:order(data.bill_country);format:text;'></div>
+</address>
+
+<address>
+<h3>
+	<span data-bind='var:order(data.ship_firstname);format:text; pretext:Ship To: ;'></span>
+	<span data-bind='var:order(data.ship_lastname);format:text;'></span>
+</h3>
+
+<div data-bind='var:order(data.ship_address);format:text;'></div>
+<div data-bind='var:order(data.ship_address2);format:text;'></div>
+<div>
+	<span data-bind='var:order(data.ship_city);format:text;posttext:, ;'></span>
+	<span data-bind='var:order(data.ship_state);format:text;posttext:. ;'></span>
+	<span data-bind='var:order(data.ship_zip);format:text; defaultVar:order(data.ship_int_zip);'></span>
+</div>
+<div data-bind='var:order(data.ship_country);format:text;'></div>
+</address>
+
+
+	</td>
+	<td class='orderContentsProdlistContainer'>
+
+	
+<ul data-bind='var:order(order_id);format:assignAttribute; attribute:id; pretext:orderProductLineitem_;' class='lineItemProdlist loadingBG'></ul>
+	
+	</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+<!-- order line-item template -->
+<ul>
+	<li id='orderProductLineItemTemplate' class='padMargBorderBottom'>
+
+		
+<img class='prodThumb' data-bind='var: order(full_product.zoovy:prod_image1); format:imageURL;' />
+
+<div class='infoContainer'>
+
+	<h4 class='prodName' data-bind='var: order(full_product.zoovy:prod_name); format:text; '></h4>
+	<div class='ztable_row_small stid' data-bind='var: order(sku); format:text; className: stid; pretext: Sku: ;'></div>
+
+	<div>
+	<span data-bind='var: order(qty); format:text; pretext:qty: ;'></span>
+	<span data-bind='var: order(price); format:money; currencySign: $;  hideZero:false; pretext: x ;' ></span>
+	<span data-bind='var: order(extended); format:money; currencySign: $; hideZero:false; pretext: = ;'></span>
+
+	</div>
+
+	<div class='ztable_row_small prodOptions' data-bind='var: order(*options); format:selectedOptionsDisplay;'></div>
+
+<button class='ui-state-default ui-corner-all' onClick='myControl.ext.store_crm.util.showReviewFrmInModal({"pid":$(this).parent().attr("data-pid"),"templateID":"reviewFrmTemplate"});'>Write Review</button>
+
+	
+</div>
+
+	</li>
+</ul>
+
+
+
+
+
+
+
+</div><!-- /templates -->
+
+<div id='fb-root'></div>
+</body>
+</html>
+<!--
+ CART=[FVro019IFh3Wk8DVBtil9L4hG] TS=[20120215 07:11:26] IP=[192.168.1.149]
+TOOK=[1 sec.] CYCLES=[0.31/0.02] SERVER[newdev.25300] 
+USER[sporks] build[20090601a]
+PAGE[homepage] PROFILE[POOP:0] 
+FS[H] LAYOUT[h-20111115] WRAPPER[2012_proximus] PG[homepage] 
+DN:[] MVS[A] CLUSTER=[crackle] PUB=[]
+-->
+
+
+

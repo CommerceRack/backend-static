@@ -1,0 +1,166 @@
+[
+   {
+      "catalog" : "JEWELRY",
+      "amz-subcat" : "Watch",
+      "subcat" : "watch",
+      "type" : "config",
+		"variation-themes" : "BandColor"
+   },
+   {
+      "PROMPT" : "Jewelry:Watch",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYOJ",
+      "xmlpath" : "Jewelry.ProductType.Watch."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_bandmatl",
+      "type" : "textbox",
+      "title" : "Band Material",
+      "xmlpath" : "Jewelry.ProductType.Watch.BandMaterial"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_watch_bandlength",
+      "type" : "textbox",
+      "title" : "Band Length",
+      "xmlpath" : "Jewelry.ProductType.Watch.BandLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_watch_bandwidth",
+      "type" : "number",
+      "title" : "BandWidth",
+      "xmlpath" : "Jewelry.ProductType.Watch.BandWidth"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_clasptype",
+      "type" : "textbox",
+      "title" : "Clasp Type",
+      "xmlpath" : "Jewelry.ProductType.Watch.ClaspType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_casematl",
+      "type" : "textlist",
+      "title" : "Case Material",
+      "xmlpath" : "Jewelry.ProductType.Watch.CaseMaterial"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_watch_casesizethickness",
+      "type" : "number",
+      "title" : "CaseSizeThickness",
+      "xmlpath" : "Jewelry.ProductType.Watch.CaseSizeThickness"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_watch_casesizediameter",
+      "type" : "number",
+      "title" : "CaseSizeDiameter",
+      "xmlpath" : "Jewelry.ProductType.Watch.CaseSizeDiameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_metalstamp",
+      "type" : "textbox",
+      "title" : "Metal Stamp",
+      "xmlpath" : "Jewelry.ProductType.Watch.MetalStamp"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_dialcolor",
+      "type" : "textbox",
+      "title" : "Dial Color",
+      "xmlpath" : "Jewelry.ProductType.Watch.DialColor"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_bezelmatl",
+      "type" : "textbox",
+      "title" : "Bezel Material",
+      "xmlpath" : "Jewelry.ProductType.Watch.BezelMaterial"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_bezelfunction",
+      "type" : "textbox",
+      "title" : "Bezel Function",
+      "xmlpath" : "Jewelry.ProductType.Watch.BezelFunction"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_crystal",
+      "type" : "textbox",
+      "title" : "Crystal",
+      "xmlpath" : "Jewelry.ProductType.Watch.Crystal"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_movementtype",
+      "type" : "textbox",
+      "title" : "Movement Type",
+      "xmlpath" : "Jewelry.ProductType.Watch.MovementType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_calendartype",
+      "type" : "textbox",
+      "title" : "Calendar Type",
+      "xmlpath" : "Jewelry.ProductType.Watch.CalendarType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_watch_waterresistantdepth",
+      "type" : "number",
+      "title" : "WaterResistantDepth",
+      "xmlpath" : "Jewelry.ProductType.Watch.WaterResistantDepth"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_resaletype",
+      "type" : "textbox",
+      "title" : "Resale Type",
+      "xmlpath" : "Jewelry.ProductType.Watch.ResaleType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_warrantytype",
+      "type" : "textbox",
+      "title" : "Warranty Type",
+      "xmlpath" : "Jewelry.ProductType.Watch.WarrantyType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_watch_estateperiod",
+      "type" : "textbox",
+      "title" : "Estate Period",
+      "xmlpath" : "Jewelry.ProductType.Watch.EstatePeriod"
+   }
+]

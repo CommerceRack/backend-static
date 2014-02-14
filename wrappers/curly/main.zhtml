@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=l2_watery
+SITEBUTTONS=l2_watery
+-->
+<html>
+<head>
+<!-- HEAD-->
+<style rel="STYLESHEET" type="text/css">
+a	{text-decoration: none;}
+a:hover	{text-decoration: underline;}
+form	{display:	inline;}				
+</style>
+</head>
+<body leftmargin=0 marginheight=0 marginwidth=0 rightmargin=0 bottommargin=0 topmargin=0 bgcolor="#FFFFFF" text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!-- LINK_VISITED_TEXT_COLOR -->">
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+	<tr>
+		<td valign="top" width=197>
+			<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+				<tr>
+					<td background="<!-- WRAPPER_URL-->/rb_topcolor.gif" height=24><img src="<!-- WRAPPER_URL-->/rb_topcolor.gif" width="1" height="24" alt="" border="0"></td>
+					<td background="<!-- WRAPPER_URL-->/rb_topcolor.gif" width=5><img src="<!-- GRAPHICS_URL-->/blank.gif" width="5" height="1" alt="" border="0"></td>
+				</tr><tr>
+					<td background="<!-- WRAPPER_URL-->/rb_topcolor.gif" height=60 align="right" valign="top"><!-- LOGO
+WIDTH=192
+HEIGHT=65
+--></td><td background="<!-- WRAPPER_URL-->/rb_topcolor.gif"></td>
+				</tr><tr>
+					<td background="<!-- WRAPPER_URL-->/rb_topcolor.gif" align="right" valign="top"><!-- MENU 
+FORMAT=&nbsp; <a href="%URL%"><font color="#FFFFFF" size=2 face="verdana" class="foo"><strong>%MESSAGE%</strong></font></a><br> 
+--><br><strong><font  face="verdana" size=2>
+<a href="<!--CART_URL-->"><font color="#990066" class="foo">Shopping Bag</font></a><br>
+<a href="<!--ABOUT_URL-->"><font color="#990066" class="foo">About Us</font></a><br>
+<a href="<!-- LOGIN_URL -->"><font color="#990066" class="foo">My Account</font></a><br>
+<a href="<!--CONTACT_URL-->"><font color="#990066" class="foo">Contact Us</font></a><br></td>
+					<td background="<!-- WRAPPER_URL-->/rb_topcolor.gif"></td>
+				</tr><tr>
+					<td background="<!-- WRAPPER_URL-->/rb_topcolor.gif" align="right" colspan=2><img src="<!-- WRAPPER_URL-->/rb_middle_graphic.gif" width="197" height="62" alt="" border="0"></td>
+				</tr><tr>
+					<td background="<!-- WRAPPER_URL-->/rb_bottomcolor.gif" height=99%><img src="<!-- WRAPPER_URL-->/rb_bottomcolor.gif" width="1" height="50" alt="" border="0"></td>
+					<td background="<!-- WRAPPER_URL-->/rb_bottomcolor.gif"></td></tr>
+			</table>
+		</td>
+		<td valign="top">
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td height=24 background="<!-- WRAPPER_URL-->/rb_top_graphic.gif" align="right" width=100% colspan=3></td>
+				</tr><tr>
+					<td rowspan=5></td>
+					<td height=5><img src="<!-- GRAPHIC_URL-->/blank.gif" width=1 height=5></td>
+					<td rowspan=5></td>
+				</tr><tr>
+					<td align="center">
+						<table cellspacing=5 cellpadding=0 border=0 width=100%>
+							<tr>
+								<td width=99% valign="top" nowrap align="left">&nbsp;&nbsp;<font size=2 face="verdana" color="#990066"><strong><!-- TITLE--></strong></font></td>
+								<td nowrap><form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" name="keywords" value="">
+<input type="image" src="<!-- WRAPPER_URL -->/search.gif" >
+</form></td>
+				</tr><tr>
+					<td height=350 valign="top" colspan=2><p>&nbsp;</p><!-- BODY--></td>
+				</tr><tr>
+					<td><!-- FOOTER
+					TRANSPARENT= TRUE
+					--></td></tr>
+			</table></td>
+							</tr>
+						</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

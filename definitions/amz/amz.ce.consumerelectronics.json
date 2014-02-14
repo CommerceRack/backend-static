@@ -1,0 +1,302 @@
+[
+   {
+      "catalog" : "CE",
+		"amz-catalog" : "CE",
+      "amz-subcat" : "ConsumerElectronics",
+      "subcat" : "consumerelectronics",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CE:ConsumerElectronics",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXSH",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.Color"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "black",
+            "v" : "black"
+         },
+         {
+            "p" : "blue",
+            "v" : "blue"
+         },
+         {
+            "p" : "bronze",
+            "v" : "bronze"
+         },
+         {
+            "p" : "brown",
+            "v" : "brown"
+         },
+         {
+            "p" : "gold",
+            "v" : "gold"
+         },
+         {
+            "p" : "gray",
+            "v" : "gray"
+         },
+         {
+            "p" : "green",
+            "v" : "green"
+         },
+         {
+            "p" : "metallic",
+            "v" : "metallic"
+         },
+         {
+            "p" : "off-white",
+            "v" : "off-white"
+         },
+         {
+            "p" : "orange",
+            "v" : "orange"
+         },
+         {
+            "p" : "pink",
+            "v" : "pink"
+         },
+         {
+            "p" : "purple",
+            "v" : "purple"
+         },
+         {
+            "p" : "red",
+            "v" : "red"
+         },
+         {
+            "p" : "silver",
+            "v" : "silver"
+         },
+         {
+            "p" : "white",
+            "v" : "white"
+         },
+         {
+            "p" : "yellow",
+            "v" : "yellow"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_colormap",
+      "title" : "Color Map",
+      "type" : "select",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.ColorMap",
+      "list" : "LIST_BASE_COLORMAP"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Unit",
+      "amz-units" : "volts",
+      "id" : "amz:prod_ce_ces_voltage",
+      "type" : "textbox",
+      "title" : "Voltage",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.Voltage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Unit",
+      "amz-units" : "watts",
+      "id" : "amz:prod_ce_ces_wattage",
+      "type" : "textbox",
+      "title" : "Wattage",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.Wattage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_powersource",
+      "type" : "textbox",
+      "title" : "Power Source",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.PowerSource"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_addlfeatures",
+      "type" : "textbox",
+      "title" : "Additional Features",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.AdditionalFeatures"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_ce_ces_vehiclespeakersize",
+      "type" : "textbox",
+      "title" : "Vehicle Speaker Size",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.VehicleSpeakerSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_ce_ces_speakerdiameter",
+      "type" : "number",
+      "title" : "SpeakerDiameter",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.SpeakerDiameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_telephonetype",
+      "type" : "textlist",
+      "title" : "Telephone Type",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.TelephoneType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_pdabasemdl",
+      "type" : "textlist",
+      "title" : "P D A Base Model",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.PDABaseModel"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_digitalmediaformat",
+      "type" : "textbox",
+      "title" : "Digital Media Format",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.DigitalMediaFormat"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_ce_ces_homeautomationcmtnsdv",
+      "type" : "textbox",
+      "title" : "Home Automation Communication Device"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_digitalaudiocapacity",
+      "type" : "textbox",
+      "title" : "Digital Audio Capacity",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.DigitalAudioCapacity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_holdercapacity",
+      "type" : "textbox",
+      "title" : "Holder Capacity",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.HolderCapacity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_memoryslotsavailable",
+      "type" : "textbox",
+      "title" : "Memory Slots Available",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.MemorySlotsAvailable"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Memory",
+      "id" : "amz:prod_ce_ces_ramsize",
+      "type" : "textbox",
+      "title" : "R A M Size",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.RAMSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_screenresolution",
+      "type" : "textbox",
+      "title" : "Screen Resolution",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.ScreenResolution"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_colorscreen",
+      "type" : "checkbox",
+      "title" : "Color Screen",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.ColorScreen"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_ce_ces_screensize",
+      "type" : "number",
+      "title" : "ScreenSize",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.ScreenSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "WirelessType",
+      "id" : "amz:prod_ce_ces_wrlstype",
+      "type" : "textlist",
+      "title" : "Wireless Type",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.WirelessType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Memory",
+      "id" : "amz:prod_ce_ces_harddrivesize",
+      "type" : "textbox",
+      "title" : "Hard Drive Size",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.HardDriveSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_harddriveinterface",
+      "type" : "textlist",
+      "title" : "Hard Drive Interface",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.HardDriveInterface"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_os",
+      "type" : "textlist",
+      "title" : "Operating System",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.OperatingSystem"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_hwpt",
+      "type" : "textbox",
+      "title" : "Hardware Platform",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.HardwarePlatform"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_computermemorytype",
+      "type" : "textlist",
+      "title" : "Computer Memory Type",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.ComputerMemoryType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_ces_itempkgqnty",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "xmlpath" : "CE.ProductType.ConsumerElectronics.ItemPackageQuantity"
+   }
+]

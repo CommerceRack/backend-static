@@ -1,0 +1,125 @@
+<TEMPLATE ID="pop_reviews_ajax" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="MYCONFIG" V="3" CREATED="00000000" IMAGES="0" EXPORT="0" TYPE="CONFIG" TITLE="Popup Layout: Reviews"><SUMMARY><![CDATA[This is a popup page layout with ajax 'product reviews' built into it.  It's ajax because currently there is no non-ajax way to do this.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPVRQDV" RAW="1" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL"></ELEMENT>
+<ELEMENT ID="CRLXBDG" RAW="1" SUB="CUSTOMER_FIRSTNAME" TYPE="READONLY" POSTTEXT=" " LOAD="CART::data.bill_firstname"></ELEMENT>
+<ELEMENT ID="CRLXBDG" RAW="1" SUB="CUSTOMER_LASTNAME" TYPE="READONLY" LOAD="CART::data.bill_lastname"></ELEMENT>
+<ELEMENT ID="CRLXBDG" RAW="1" SUB="CUSTOMER_CITY" TYPE="READONLY" LOAD="CART::data.bill_city"></ELEMENT>
+<ELEMENT ID="CRLXBDG" PRETEXT=", " RAW="1" SUB="CUSTOMER_STATE" TYPE="READONLY" LOAD="CART::data.bill_state"></ELEMENT>
+<ELEMENT ID="SESSIONID" RAW="1" SUB="SESSION_ID" TYPE="READONLY" LOAD="CART::ID"></ELEMENT>
+<ELEMENT ID="CQFJSOP" DATA="FLOW::USERNAME" SUB="STORENAME" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRNFWLT" RAW="1" SUB="FL_ID" TYPE="READONLY" LOAD="FLOW::FL"></ELEMENT>
+<ELEMENT ID="SKU" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="VAR::product"></ELEMENT>
+<ELEMENT ID="VAR_MAGIC_URL" RAW="1" SUB="MAGIC_URL" TYPE="READONLY" LOAD="URL::MAGIC_URL"></ELEMENT>
+<ELEMENT ID="CSPFDBF" TYPE="OUTPUT"><HTML><![CDATA[
+
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/zoovy.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.7.1/lib/prototype.js"></script>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.7.1/src/scriptaculous.js"></script>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.7.1/src/effects.js"></script>
+<script type="text/javascript">
+
+function submitReview()	{
+	var alerts = '';
+//these validate the form, making sure name, subject, message and score are set.
+	if(document.reviewForm.CUSTOMER_NAME.value == '')
+		alerts += 'please enter your name<br>';
+	if(document.reviewForm.SUBJECT.value == '')
+		alerts += 'please enter a subject line<br>';
+	if(document.reviewForm.MESSAGE.value == '')
+		alerts += 'please write a short review<br>';
+	if(document.reviewForm.RATING.value == '')
+		alerts += 'please score/rank this product.<br>';	
+//If alerts isn't blank, then the customer didn't fill in the entire form.  Display alerts in the alerts div.
+	if(alerts != '')	{
+		$('alertsReviews').innerHTML = alerts;
+		}
+//Looks like they filled everything in, upload the review then reload the review elements.
+	else	{
+		var params = Form.serialize($('reviewForm'));
+//	alert(params);
+		var postBody = 'm=addReview&PID='+SKU+'&'+params;
+		new Ajax.Request('%MAGIC_URL%/ajax/addReview', { 
+			postBody: postBody, 
+			asynchronous: 1,
+//		onComplete: function(request){handleResponse(request.responseText)},
+		  	onComplete: $('contentReviews').innerHTML = reviewConfirm
+			} );
+		}
+	}
+
+</script>
+
+<script type="text/javascript">
+<!--
+
+//Set vars needed for ajax
+var session_id = '%SESSION_ID%';
+var store = '%STORENAME%';
+var SKU = '%SKU%';
+
+//This var is used for the ajax reviews form.  It appears when the review is successfully submitted.
+var reviewConfirm = '<div id="reviewSuccess" class="ztxt">Thank you, your review has been added and is pending approval.<br><br><a href="#" onclick="window.close(); return false;" class="zlink">close</a></div>';
+
+
+//-->
+</script>
+
+<div id="reviewFormContent">
+<div id="contentReviews">
+<div id='alertsReviews' class='zwarn'></div>
+<form name="reviewForm" id="reviewForm" onSubmit="submitReview(); return false;">
+<table cellspacing="3" cellpadding="0" border="0" class="review_table">
+<tr>
+	<td colspan='2'><div id="reviewAlerts" style="text-align:right;" class='zsmall zwarn'></div></td>
+</tr>
+<tr>
+	<td align="right" class='ztxt'>Your Name:</td>
+	<td align="left"><input type="text" name="CUSTOMER_NAME" value="%CUSTOMER_FIRSTNAME%%CUSTOMER_LASTNAME%" class='zform_textbox' MAXLENGTH="30" style="width:180px;"></td>
+</tr>
+<tr>
+	<td align="right" class='ztxt'>Location:</td>
+	<td align="left"><input type="text" MAXLENGTH="30" name="LOCATION" value="%CUSTOMER_CITY% %CUSTOMER_STATE%" class='zform_textbox' style="width:180px;"></td>
+</tr>
+<tr>
+	<td align="right" valign="top" class='ztxt'>Subject:</td>
+	<td align="left"><input type="text" MAXLENGTH="60" name="SUBJECT" class='zform_textbox' style="width:180px;" ></td>
+</tr>
+
+<tr>
+	<td align="right" valign="top" class='ztxt'>Review:</td>
+	<td align="left"><textarea name="MESSAGE" class='zform_textarea' style="width:180px; height:80px;"></textarea></td>
+</tr>
+<tr>
+	<td align="right" class='ztxt'>score:</td>
+	<td align="left"><select name="RATING" class='zform_select'>
+<option value="10">10</option>
+<option value="9">9</option>
+<option value="8">8</option>
+<option value="7">7</option>
+<option value="6">6</option>
+<option value="5">5</option>
+<option value="4">4</option>
+<option value="3">3</option>
+<option value="2">2</option>
+<option value="1">1</option>
+	</select></td>
+</tr>
+<tr>
+	<td align="right"><input type="button" value="cancel" onclick="window.close();" class="pop_button zform_button zform_button0" /></td>
+	<td align="right"><input type="submit" value="submit review" class="zform_button" /></td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+
+
+	
+	]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

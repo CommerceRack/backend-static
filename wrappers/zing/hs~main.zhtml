@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<!-- HEAD -->
+</head>
+<style>
+body	{margin: 0; font-family: verdana; font-size: 12px; color: #000000; background-color: #FFFFFF;}
+.foo	{background-image: url(topbg.gif);}
+.goo	{background-image: url(catbg.gif);}
+.cats	{font-family: verdana; font-size: 11px; color: #666666;}
+.title	{font-family: verdana; font-size: 13px; color: #666666; font-weight: bold;}
+p	{font-family: verdana; font-size: 12px;}
+a	{text-decoration: none; color: #333333;}
+td	{font-family: verdana; font-size: 12px;}
+a:hover	{text-decoration: underline; color: #0000FF;}
+</style>
+<body>
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td colspan=5 height=2 class="foo"><img src="blank.gif" width=1 height=2></td>
+	</tr>
+	<tr>	
+		<td width=10 class="foo"><img src="blank.gif" width=10 height=1></td>
+		<td class="foo">
+		<table cellspacing=0 cellpadding=1 border=0 width=100%>
+			<tr>	
+				<td width=44><a href="<!-- HOME_URL -->"><img src="home.gif" width="44" height="38" alt="" border="0"></a></td>
+				<td width=43><a href="<!--CONTACT_URL-->"><img src="contact.gif" width="43" height="38" alt="" border="0"></a></td>
+				<td width=44><a href="<!--SEARCH_URL-->"><img src="search.gif" width="44" height="38" alt="" border="0"></a></td>
+				<td width=43><a href="<!--ABOUT_URL-->"><img src="about.gif" width="43" height="38" alt="" border="0"></a></td>
+				<td width=44><a href="<!--CART_URL-->"><img src="cart.gif" width="43" height="38" alt="" border="0"></a></td>
+			</tr>
+		</table>
+		</td>
+		<td width=99% class="foo"></td>
+		<td width=200 class="foo" align="right" valign="middle"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=200
+HEIGHT=34
+--></a></td>
+		<td width=10 class="foo"><img src="blank.gif" width=10 height=1></td>
+	</tr>
+	<tr>
+		<td colspan=5 height=2 class="foo"><img src="blank.gif" width=1 height=2></td>
+	</tr><tr>
+		<td class="goo"><img src="catbg.gif" width="1" height="21" alt="" border="0"></td>
+		<td colspan=4 height=21 class="goo"><span class="cats"><!-- MENU
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a>%BREAK%
+DIVIDER=|%BREAK%
+AFTER=</div>
+ONLYHOME=0
+NOHOME=1
+--></span></td>
+	</tr>
+</table>
+<table cellspacing=10 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td height=300 valign="top"><p class="title">test<!-- TITLE --></p>
+		<!-- BODY --></td>
+	</tr><tr>
+		<td><!-- FOOTER 
+		TRANSPARENT=TRUE
+		--></td>
+	</tr>
+</table>
+</body>
+</html>

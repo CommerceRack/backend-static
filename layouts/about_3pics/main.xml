@@ -1,0 +1,47 @@
+<TEMPLATE ID="about_3pics" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMZG" CREATOR="STAFF" V="3" IMAGES="3" CREATED="20060801" PROPERTIES="1" SUBTYPE="A" SERIES="2006" FORMAT="LAYOUT" SHORT="(2) 250 by 250 with preceding text.  More text than a 500 by X image." TYPE="CONFIG" TITLE="About Us: 3 Pictures and 2 Text Areas" RELEASED="20060801"><SUMMARY><![CDATA[This layout contains your profile 'about us' at the top followed by two images.  After that is an extended 'about us' text area and a large image.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="COMPANY" RAW="1" SUB="COMPANY_NAME" TYPE="READONLY" LOAD="profile:zoovy:company_name"></ELEMENT>
+<ELEMENT ID="CPUKMZH" TYPE="OUTPUT"><HTML><![CDATA[<table cellspacing="8" cellpadding="0" border="0" width=100%>
+<tr><td colspan=2 align="left">
+<div style="line-height:130%;" class='ztxt'>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BLURB" DATA="profile:zoovy:about" PROMPT="About Us Blurb" TYPE="TEXT"><HELP><![CDATA[&nbsp;&nbsp;&nbsp;It is important that you use your website as a tool to develop your Company Image. A good Company Image will increase the percieved value of your services, and also increase the likelihood the customer will remember your company in the future.<br><br>Recommended Topics:<li>What makes you unique?<li>Do you employ any experts?<li>Are you a leader in your field? (why?)<li>How long have you been in business?<li>Have you won any awards recently?<li>Do you have any dealer authorizations (make sure you have permission to use trademarks!)<li>Are there any special ingredients/components that go into your products?<br><br>&nbsp;&nbsp;&nbsp;Try to be concise, you should pick 2 or 3 topics and only cover those, remember if its too long most visitors will not read it!]]></HELP>
+<PRETEXT><![CDATA[<div style="font-weight:bold; font-size:11pt; margin-bottom:4px;">%COMPANY_NAME%</div>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKMZI" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+</td></tr>
+<tr><td width="50%" valign="top" align="right">
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="250" ID="IMAGE1" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="profile:zoovy:about_image1" WIDTH="250" PROMPT="Company Picture 1" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMZJ" TYPE="OUTPUT"><HTML><![CDATA[
+</td><td align="left" width=50%>]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="250" ID="IMAGE2" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="profile:zoovy:about_image2" WIDTH="250" PROMPT="Company Picture 2" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMZK" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+<tr><td colspan=2 align="left"><div style="line-height:130%;" class='ztxt'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BLURB2" DATA="profile:zoovy:about_extended" PROMPT="Extended about us text" TYPE="TEXT"><HELP><![CDATA[Use this to have an extended text about your company.  Note that this text may or may not be used in wizards.]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CPUKMZL" TYPE="OUTPUT"><HTML><![CDATA[</div></td></tr>
+<tr><td colspan=2 align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE3" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="profile:zoovy:about_image3" WIDTH="500" PROMPT="Company Picture 3" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMZM" TYPE="OUTPUT"><HTML><![CDATA[
+
+</td></tr>
+</table>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

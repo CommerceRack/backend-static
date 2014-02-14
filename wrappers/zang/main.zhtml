@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=bergs
+SITEBUTTONS=zing
+-->
+<html>
+<head>
+<!-- HEAD -->
+</head>
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 10; font-family: verdana; font-size: 12px; color: #000000; background-color: #FFFFFF;}
+td.foo	{background-color: #1B85D9; border-color: #000000; border-width: 1; border-style: double; font-size: 10px;}
+td.foo2	{background-color: #1B85D9;}
+td.goo	{background-image: url(<!-- WRAPPER_URL -->/tablebg.gif);}
+td.goo2	{background-image: url(<!-- WRAPPER_URL -->/black.gif);}
+td.cats	{font-family: verdana; font-size: 11px; color: #666666;}
+td.title	{font-family: verdana; font-size: 13px; color: #1B85D9; font-weight: bold;}
+p	{font-family: verdana; font-size: 12px;}
+a	{text-decoration: none; color: #000000;}
+td	{font-family: verdana; font-size: 12px;}
+a:hover	{text-decoration: underline; color: #FFFF33;}
+</style>
+<body>
+<table cellspacing=0 cellpadding=1  width="100%">
+	<tr>	
+		<td  class="foo">&nbsp;&nbsp;<a href="<!-- HOME_URL -->">Home</a>&nbsp;&nbsp;</td>
+		<td  class="foo">&nbsp;&nbsp;<a href="<!--CONTACT_URL-->">Contact</a>&nbsp;&nbsp;</td>
+		<td  class="foo">&nbsp;&nbsp;<a href="<!--SEARCH_URL-->">Search</a>&nbsp;&nbsp;</td>
+		<td  class="foo">&nbsp;&nbsp;<a href="<!--ABOUT_URL-->">Company</a>&nbsp;&nbsp;</td>
+		<td  class="foo">&nbsp;&nbsp;<a href="<!-- LOGIN_URL -->">Login</a>&nbsp;&nbsp;</td>
+		<td  class="foo">&nbsp;&nbsp;<a href="<!--CART_URL-->">Cart</a>&nbsp;&nbsp;</td>
+		<td width=99% class="foo">&nbsp;</td>
+	</tr>
+</table>		
+<table cellspacing=0 cellpadding=0  width="100%">
+	<tr>	
+		<td width=44><img src="<!-- WRAPPER_URL -->/graphic.gif" width="137" height="50" alt="" border="0"></td>
+		<td width=99% class="goo">&nbsp;</td>
+		<td><img src="<!-- WRAPPER_URL -->/black.gif" width="1" height="50" alt="" border="0"></td>
+		<td width=200 class="goo" align="right" valign="middle"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=200
+HEIGHT=44
+--></a></td>
+		<td><img src="<!-- WRAPPER_URL -->/black.gif" width="1" height="50" alt="" border="0"></td>
+	</tr>
+</table>	
+<table cellspacing=0 cellpadding=1  width="100%">
+	<tr>	
+<span class="cats"><!-- MENU
+FORMAT=<td class="foo" nowrap>&nbsp;&nbsp;<a href="%URL%" target="%TARGET%">%MESSAGE%</a>&nbsp;&nbsp;</td>
+ONLYHOME=0
+NOHOME=1
+--></span>
+		<td width=99% class="foo">&nbsp;</td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=0  width="100%">
+	<tr>
+		<td width=1 class="goo2"><img src="<!-- WRAPPER_URL -->/black.gif" width="1" height="300" alt="" border="0"></td>
+		<td class="foo2">&nbsp;</td>
+		<td width=1 class="goo2"><img src="<!-- WRAPPER_URL -->/black.gif" width="1" height="1" alt="" border="0"></td>
+		<td valign="top">
+			<table cellspacing=0 cellpadding=5  width="100%"><tr><td valign="top">
+		
+		<p class="title"><!-- TITLE --></p>
+<p><!-- BODY --></p>
+<br></td></tr></table>
+	</td>
+		<td width=1 class="goo2"><img src="<!-- WRAPPER_URL -->/black.gif" width="1" height="1" alt="" border="0"></td>
+		<td class="foo2">&nbsp;</td>
+		<td width=1 class="goo2"><img src="<!-- WRAPPER_URL -->/black.gif" width="1" height="1" alt="" border="0"></td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=0  width="100%">
+	<tr>
+		<td class="foo"><!-- FOOTER 
+TRANSPARENT=TRUE
+-->	</td>
+	</tr>
+</table></body>
+</html>

@@ -1,0 +1,60 @@
+<TEMPLATE ID="126" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMRC" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Two Button Left Picture" RELEASED="20020716"><SUMMARY><![CDATA[
+Default Description (shared)
+Detailed Product Description
+IMAGE1 (300x300)
+]]></SUMMARY>
+<SHORT><![CDATA[A one picture (300x300), click to enlarge,  with the add to cart at the top and bottom.  Uses the default and detailed description.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKMRD" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKMRE" TYPE="OUTPUT"><HTML><![CDATA[<br><br>
+<table width=100% cellspacing=0 cellpadding=3 border=0>
+  <tr>
+      <td valign=top width="300" align="left">
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="300" ID="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="300" PROMPT="Image 1" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMRF" TYPE="OUTPUT"><HTML><![CDATA[ 
+    </td>
+    <td valign="top"> 
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMRG" TYPE="OUTPUT"><HTML><![CDATA[ 
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DETAIL" HELP="This is the detailed product description that will appear on your website." DATA="product:zoovy:prod_detail" PROMPT="Detailed Product Description" DEFAULT="More information about the product" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMRH" TYPE="OUTPUT"><HTML><![CDATA[ 
+<br>
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKMRI" TYPE="OUTPUT"><HTML><![CDATA[
+    </td>
+
+  </tr>
+</table>
+</center>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+
+</TEMPLATE>

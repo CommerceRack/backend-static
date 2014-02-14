@@ -1,0 +1,401 @@
+$VAR1 = bless( {
+                 '_DIGEST' => 'vJRJNeTRHD3GK3w4oqmOjw',
+                 '_DIVS' => [],
+                 '_ID' => 'amazon',
+                 '_ELEMENTS' => [
+                                  {
+                                    'ID' => 'CPZWXAA',
+                                    'SUB' => 'WRAPPER_URL',
+                                    'LOAD' => 'URL::WRAPPER_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAB',
+                                    'SUB' => 'CART_URL',
+                                    'LOAD' => 'URL::CART_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAC',
+                                    'SUB' => 'SUBSCRIBE_URL',
+                                    'LOAD' => 'URL::SUBSCRIBE_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAD',
+                                    'SUB' => 'FEEDBACK_URL',
+                                    'LOAD' => 'URL::FEEDBACK_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAG',
+                                    'SUB' => 'PRIVACY_URL',
+                                    'LOAD' => 'URL::PRIVACY_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAK',
+                                    'SUB' => 'RETURNS_URL',
+                                    'LOAD' => 'URL::RETURNS_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAL',
+                                    'SUB' => 'PASSWORD_URL',
+                                    'LOAD' => 'URL::PASSWORD_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAN',
+                                    'SUB' => 'FORGOT_URL',
+                                    'LOAD' => 'URL::FORGOT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAP',
+                                    'SUB' => 'CONTACT_URL',
+                                    'LOAD' => 'URL::CONTACT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAR',
+                                    'SUB' => 'GALLERY_URL',
+                                    'LOAD' => 'URL::GALLERY_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAS',
+                                    'SUB' => 'REMOVE_URL',
+                                    'LOAD' => 'URL::REMOVE_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAT',
+                                    'SUB' => 'HOME_URL',
+                                    'LOAD' => 'URL::HOME_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAV',
+                                    'SUB' => 'NEWS_URL',
+                                    'LOAD' => 'URL::NEWS_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAX',
+                                    'SUB' => 'ABOUT_URL',
+                                    'LOAD' => 'URL::ABOUT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXAZ',
+                                    'SUB' => 'FASTORDER_URL',
+                                    'LOAD' => 'URL::FASTORDER_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXBB',
+                                    'SUB' => 'MAIL_FORM_URL',
+                                    'LOAD' => 'URL::MAIL_FORM_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXBC',
+                                    'SUB' => 'GRAPHICS_URL',
+                                    'LOAD' => 'URL::GRAPHICS_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXBD',
+                                    'SUB' => 'IMAGE_URL',
+                                    'LOAD' => 'URL::IMAGE_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXBI',
+                                    'SUB' => 'SEARCH_URL',
+                                    'LOAD' => 'URL::SEARCH_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXBK',
+                                    'SUB' => 'CUSTOMER_MAIN_URL',
+                                    'LOAD' => 'URL::CUSTOMER_MAIN_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXBM',
+                                    'SUB' => 'CATEGORY_URL',
+                                    'LOAD' => 'URL::CATEGORY_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXBO',
+                                    'SUB' => 'CLAIM_URL',
+                                    'LOAD' => 'URL::CLAIM_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXBR',
+                                    'SUB' => 'PRODUCT_URL',
+                                    'LOAD' => 'URL::PRODUCT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXBS',
+                                    'SUB' => 'RESULTS_URL',
+                                    'LOAD' => 'URL::RESULTS_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CPZWXBW',
+                                    'SUB' => 'LOGIN_URL',
+                                    'LOAD' => 'URL::LOGIN_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQHREXQ',
+                                    'SUB' => 'title1',
+                                    'DEFAULT' => '<div style="font-size:11pt; font-weight:bold" class="wiki_header1">',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'CQHREXR',
+                                    'SUB' => '/title1',
+                                    'DEFAULT' => '</div>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'CQHREXS',
+                                    'SUB' => 'title2',
+                                    'DEFAULT' => '<div style="font-size:10pt; font-weight:bold" class="wiki_header2">',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'CQHREXT',
+                                    'SUB' => '/title2',
+                                    'DEFAULT' => '</div>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'CQHREXU',
+                                    'SUB' => 'title3',
+                                    'DEFAULT' => '<span style="font-weight:bold;"  class="wiki_header3">',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'CQHREXV',
+                                    'SUB' => '/title3',
+                                    'DEFAULT' => '</span>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKILIST',
+                                    'SUB' => 'list',
+                                    'DEFAULT' => '<ul  class="wiki_list">',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKIENDLIST',
+                                    'SUB' => '/list',
+                                    'DEFAULT' => '</ul>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKILISTITEM',
+                                    'SUB' => 'listitem',
+                                    'DEFAULT' => '<li class="wiki_listitem">',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKIENDLISTITEM',
+                                    'SUB' => '/listitem',
+                                    'DEFAULT' => '</li>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKISECTION',
+                                    'SUB' => 'section',
+                                    'DEFAULT' => '<p  class="wiki_section">',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKIENDSECTION',
+                                    'SUB' => '/section',
+                                    'DEFAULT' => '</p>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKISOFTBREAK',
+                                    'SUB' => 'softbreak',
+                                    'DEFAULT' => '<br>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKIHARDBREAK',
+                                    'SUB' => 'hardbreak',
+                                    'DEFAULT' => '<hr class="wiki_ruler">',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKITABLE',
+                                    'SUB' => 'table',
+                                    'DEFAULT' => '<table cellspacing="0" class="wiki_table">',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKIENDTABLE',
+                                    'SUB' => '/table',
+                                    'DEFAULT' => '</table>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKITABLEROW',
+                                    'SUB' => 'tablerow',
+                                    'DEFAULT' => '<tr class="wiki_tablerow">',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKIENDTABLEROW',
+                                    'SUB' => '/tablerow',
+                                    'DEFAULT' => '</tr>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKITABLECELL',
+                                    'SUB' => 'tabledata',
+                                    'DEFAULT' => '<td class="wiki_tabledata">',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKIENDTABLECELL',
+                                    'SUB' => '/tabledata',
+                                    'DEFAULT' => '</td>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKITABLEHEAD',
+                                    'SUB' => 'tablehead',
+                                    'DEFAULT' => '<td class="wiki_tablehead"><b>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'WIKIENDTABLEHEAD',
+                                    'SUB' => '/tablehead',
+                                    'DEFAULT' => '</b></td>',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'CART',
+                                    'SUB' => 'HTMLCONTENTS',
+                                    'PROMPT' => 'Shopping Cart',
+                                    'TYPE' => 'ORDER',
+                                    'MODE' => 'EMAIL'
+                                  },
+                                  {
+                                    'ID' => 'CSFWSAG',
+                                    'SUB' => 'CONTENTS',
+                                    'DEFAULT' => '%HTMLCONTENTS%',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'CPUMBRN',
+                                    'SUMMARY' => 'This template offers a blank field for each email message, with no header and footer ability.
+Used specifically for Amazon emails, which dont allow external links (or
+information) back to the merchant.',
+                                    'CREATED' => '20111003',
+                                    'TITLE' => 'Custom Email Template',
+                                    'THUMBNAIL_COUNT' => '0',
+                                    'TYPE' => 'CONFIG',
+                                    'THUMBNAIL' => undef,
+                                    'THUMBNAILS' => ''
+                                  },
+                                  {
+                                    'ID' => 'CART',
+                                    'SUB' => 'HTMLCONTENTS',
+                                    'PROMPT' => 'Shopping Cart',
+                                    'TYPE' => 'ORDER',
+                                    'MODE' => 'EMAIL'
+                                  },
+                                  {
+                                    'ID' => 'CSFWSAG',
+                                    'SUB' => 'CONTENTS',
+                                    'DEFAULT' => '%HTMLCONTENTS%',
+                                    'TYPE' => 'HIDDEN'
+                                  },
+                                  {
+                                    'ID' => 'BRIAN',
+                                    'HTML' => '
+<html>
+<head>
+<style type="text/css">
+.header {font-size: 10pt; color: #FFFFFF; font-weight: bold;}
+.light {background-color: #EFEFEF;}
+.dark {background-color: #666666;}
+
+.cats	{text-decoration:none;}
+</style>
+</head>
+<body alink="#0066FF" vlink="#0066FF" link="#0066FF" style="margin:4px; font-family:Arial, Helvetica, sans-serif; font-size:9pt; color:#000000;">
+',
+                                    'TYPE' => 'OUTPUT'
+                                  },
+                                  {
+                                    'ID' => 'CSPFEES',
+                                    'HEIGHT' => '60',
+                                    'MINIMAL_MODE' => '1',
+                                    'WIDTH' => '400',
+                                    'TYPE' => 'LOGO',
+                                    'BGCOLOR' => 'FFFFFF'
+                                  },
+                                  {
+                                    'ID' => 'CSPFEET',
+                                    'HTML' => '<br>',
+                                    'TYPE' => 'OUTPUT'
+                                  },
+                                  {
+                                    'HTML' => '',
+                                    'ID' => 'ZBODY',
+                                    'DIV' => 'EMAILBODY',
+                                    'TYPE' => 'OUTPUT'
+                                  },
+                                  {
+                                    'ID' => 'CPUKNGS2',
+                                    'HTML' => '
+	</body>
+</html>
+	',
+                                    'TYPE' => 'OUTPUT'
+                                  }
+                                ],
+                 '_FORMAT' => 'EMAIL',
+                 '_LISTS' => [],
+                 '_CONFIG' => $VAR1->{'_ELEMENTS'}[49],
+                 '_V' => 2,
+                 '_SYSTEM' => 1
+               }, 'TOXML' );

@@ -1,0 +1,21 @@
+<TEMPLATE ID="8000" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNHA" CREATED="20021001" IMAGES="0" PROPERTIES="1" SUBTYPE="N" FORMAT="LAYOUT" SHORT="contains text at the top and bottom of the page" TYPE="CONFIG" EXPORT="0" TITLE="Basic shipping calculator page"><SUMMARY><![CDATA[Bottom Textbar
+Mini Cart
+Upper Text
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="TOPTEXT" HELP="This text appears above the shipping calculator" DATA="page:toptxt" PROMPT="Upper Text" TYPE="TEXT"><DEFAULT><![CDATA[Attention Customers: If you are viewing this page from an auction or fixed price listing on a site such as eBay or AOL Classifieds - please note that the total below DOES NOT include the closing price for that item. You will be responsible for paying the amount below in addition to your winning bid/purchase price and any applicable taxes.]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CPUKNHB" TYPE="OUTPUT"><HTML><![CDATA[
+<br>
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MINICART3" HELP="Blah blah blah" PROMPT="Mini Cart" TYPE="MINICART" TITLE="Shipping Quote" SHIPQUOTE="1" SELECTOR="RADIO" NOGO="1"></ELEMENT>
+<ELEMENT ID="LOWERTEXT" HELP="This text appears below the shipping calculator" DATA="page:lowertxt" PROMPT="Bottom Textbar" TYPE="TEXT"></ELEMENT>
+
+</TEMPLATE>

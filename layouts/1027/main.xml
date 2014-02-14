@@ -1,0 +1,96 @@
+<TEMPLATE ID="1027" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMYU" CREATOR="STAFF" IMAGES="8" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" SHORT="This layout features one column of 8 400x400 images." TYPE="CONFIG" TITLE="Photo Gallery 2" RELEASED="00000000"><SUMMARY><![CDATA[
+Category Description
+IMAGE1 (400x400)
+IMAGE2 (400x400)
+IMAGE3 (400x400)
+IMAGE4 (400x400)
+IMAGE5 (400x400)
+IMAGE6 (400x400)
+IMAGE7 (400x400)
+IMAGE8 (400x400)
+Product Listing
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DATA="page:subcat" MODE="CHOOSER" TYPE="SUBCAT"></ELEMENT>
+<ELEMENT ID="CPUKMYV" TYPE="OUTPUT"><HTML><![CDATA[
+<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+<center>
+<table cellpadding=5 cellspacing=0 border=0 width=100%>
+	<tr>	
+		<td colspan=2>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long the products will be hard to find. <br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKMYW" TYPE="OUTPUT"><HTML><![CDATA[</td></tr>
+	<tr>
+		<td valign="top" width="100%" align="center">
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="400" HELP="Please select a picture for this category." ZOOM="1" DATA="page:picture1" PROMPT="Small Picture" WIDTH="400" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMYX" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC2" HEIGHT="400" HELP="Please select a picture for this category." ZOOM="1" DATA="page:picture2" PROMPT="Small Picture" WIDTH="400" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMYY" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC3" HEIGHT="400" HELP="Please select a picture for this category." ZOOM="1" DATA="page:picture3" PROMPT="Small Picture" WIDTH="400" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMYZ" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC4" HEIGHT="400" HELP="Please select a picture for this category." ZOOM="1" DATA="page:picture4" PROMPT="Small Picture" WIDTH="400" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMZA" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC5" HEIGHT="400" HELP="Please select a picture for this category." ZOOM="1" DATA="page:picture5" PROMPT="Small Picture" WIDTH="400" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMZB" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC6" HEIGHT="400" HELP="Please select a picture for this category." ZOOM="1" DATA="page:picture6" PROMPT="Small Picture" WIDTH="400" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMZC" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC7" HEIGHT="400" HELP="Please select a picture for this category." ZOOM="1" DATA="page:picture7" PROMPT="Small Picture" WIDTH="400" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMZD" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC8" HEIGHT="400" HELP="Please select a picture for this category." ZOOM="1" DATA="page:picture8" PROMPT="Small Picture" WIDTH="400" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMZE" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 width="100%">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKMZF" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+	</tr>
+</table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

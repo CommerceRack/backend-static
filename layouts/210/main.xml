@@ -1,0 +1,112 @@
+<TEMPLATE ID="210" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMAG" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="H" FORMAT="LAYOUT" SHORT="Featured products appear on the righthand side and an animated top picture. " TYPE="CONFIG" TITLE="Animated Featured" RELEASED="20020618"><SUMMARY><![CDATA[Animated Picture (250 x 250)
+Product Listing
+Welcome Message
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMAH" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function iList () {
+	this.name = '';
+	this.img = new Array();
+	this.url = new Array();
+	this.zum = new Array();
+	this.pause = new Array();
+	this.last = null;
+	this.current = null;
+	this.defaultpause = 2000;
+	this.buttons = false;
+	this.stopped = false;
+	this.loaded = false;
+	this.startstop = false;
+}
+function iLoad (i) {
+	if (i.loaded == true) { return; }
+	i.loaded = true;
+	iRotate(i);
+}
+function iLink (i) {
+	if (!i.loaded) { return; }
+	if (typeof(i.url[i.current]) != "undefined") { window.location.href = i.url[i.current]; }
+	else if (typeof(i.zum[i.current]) != "undefined") { zoom(i.zum[i.current]); }
+	else if (i.startstop) { iSwitch(i); }
+}
+function iSwitch (i) {
+	if (!i.loaded) { return; }
+	if (i.stopped) { i.stopped = false; iRotate(i); }
+	else { i.stopped = true; }
+}
+function iRotate (i) {
+	if (i.stopped) { return; }
+	iNext(i);
+	var pause = i.defaultpause;
+	if (typeof(i.pause[i.current]) != "undefined") { pause = i.pause[i.current]; }
+	setTimeout("iRotate("+i.name+")",pause);
+}
+function iNext (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Loading..."; }
+	i.current++; if (i.current > i.last) { i.current = 0; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Next Image"; }
+}
+function iPrev (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Loading..."; }
+	i.current--; if (i.current < 0) { i.current = i.last; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Previous Image"; }
+}
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write("<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align=\"center\">\n<img src=\"" + url + "\"><br>\n<form><input type=\"button\" value=\"Close Window\" onClick=\"self.close(true)\"></form>\n</div>\n</body>\n</html>\n");
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+<center>
+<table width="95%" cellpadding="10" cellspacing="0" border='0'>
+<Tr>
+	<td valign='top'>
+	<table border='0' width="100%">
+	<tr>
+		<td valign="top">
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="250" ID="DYNIMAGE1" HELP="Animated homepage picture composed of images in your image library." DATA="page:dynimage1" WIDTH="250" PROMPT="Animated Picture (250 x 250)" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMAI" TYPE="OUTPUT"><HTML><![CDATA[</center>
+		</td>
+	</tr>
+	<tr>
+		<td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" HELP="Please enter a Welcome message that will appear on your front page" DATA="page:welcome_message" PROMPT="Welcome Message" DEFAULT="Hello, welcome to our wonderful website!" TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long, or not helpful visitors probably won't go any further. A lot of businesses talk about what makes their products unique, or their excellent customer service. If you have neither of those, then consider simply welcoming the customer.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKMAJ" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+	</tr>
+</table>
+</td>
+<td valign='top'>
+
+<table width='100'><tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="500" ID="PRODLIST1" MAX="15" HELP="Your Products" DATA="page:prodlist" COLS="1" FORMAT="THUMB" PROMPT="Product Listing" DEFAULT="&amp;ALTERNATE=0" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKMAK" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr></table>
+</td>
+</tr></table>
+</center>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

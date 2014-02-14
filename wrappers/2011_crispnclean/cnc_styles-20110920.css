@@ -1,0 +1,273 @@
+.zbody { background-color: #ffffff; }
+.zborder { border: 1px solid #EDF2FD; }
+.zbox { border: 1px solid #f2f2f2; }
+.zbox_body { background-color: #ffffff; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 11px; }
+.zbox_head { background-color: #f2f2f2; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; }
+.zcolor { background-color: #f2f2f2; color: #3b3b3b; }
+.zcolor_contrast { background-color: #f46d0b; color: #FFFFFF; }
+.zcolor_dark { background-color: #bebebe; color: #000000; }
+.zcolor_light { background-color: #ffffff; color: #3b3b3b; }
+.zform_button { border: 1px solid #f89b21; background-color: #f89b21; color: #ffffff; font-size: 11px; font-family: "Gill Sans MT", tahoma, arial, sans-serif; }
+.zform_select { border: 1px solid #c4c4c4; background-color: #FFFFFF; color: #000000; font-size: 11px; font-family: "Gill Sans MT", tahoma, arial, sans-serif; }
+.zform_textarea { border: 1px solid #c4c4c4; background-color: #FFFFFF; color: #000000; font-size: 11px; font-family: "Gill Sans MT", tahoma, arial, sans-serif; }
+.zform_textbox { border: 1px solid #c4c4c4; background-color: #FFFFFF; color: #000000; font-size: 11px; font-family: "Gill Sans MT", tahoma, arial, sans-serif; }
+.zhint { color: #666666; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 11px; }
+.zlink { color: #3b3b3b; }
+.zsmall { color: #515151; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 11px; }
+.ztab0 { background-color: #f2f2f2; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; }
+.ztab1 { background-color: #ffffff; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; font-weight: bold;}
+.ztabbody { background-color: #ffffff; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; }
+.ztable_head { background-color: #efefef; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 13px; }
+.ztable_row {color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; }
+.ztable_row0 { background-color: #FFFFFF; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px;}
+.ztable_row1 { background-color: #f7f7f7; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px;}
+.ztable_row_small { color: #666666; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 10px; }
+.ztable_row_title { font-weight: bold; color: #f46d0b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 14px; }
+.ztitle { font-weight: bold; color: #666666; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 15px; }
+.ztitle2 { font-weight: bold; color: #f46d0b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 14px; }
+.ztxt { color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 12px; }
+.zwarn { color: #cc0000; font-weight: bold; }
+
+
+#searchFrmContainer .zform_textbox	{padding:2px;  font-size:14px;}
+
+
+/* styles for crisp and clean */
+
+
+body	{
+	
+	font-family: "Gill Sans MT Pro Medium", tahoma, arial, sans-serif;
+	color:#666666;
+	margin:0;
+	padding:0;
+	background:url(cnc_tilesprite-1x705.png) repeat-x 0 -292px #ffffff;
+	font-size:12px;
+	}
+
+a	{color:#535353;}
+a:hover	{color:#f46d0b;}
+
+img	{border:0px}
+
+/* removes bottom padding/margin from form in old browsers */
+form	{display:inline;}
+
+
+
+/* global styles for float and clear */
+div.floatLeft	{float:left;}
+div.floatRight	{float:right;}
+div.clearAll	{clear:both;}
+
+
+/* commonly used margins */
+.marginTop10	{margin-top:10px;}
+.marginLeft10	{margin-left:10px;}
+
+.marginRight16	{margin-left:10px;}
+.marginBottom16	{margin-bottom:16px;}
+.paddingBottom16	{padding-bottom:16px;}
+
+div.no_underline a	{text-decoration:none;} /* this should be left alone */
+
+.center	{text-align:center; vertical-align:middle;}
+
+h1  {font-size:13px; color:#727272; margin:0px 0px 0px 0px; font-weight:bold; line-height:26px; font-family: "Gill Sans MT Pro Medium", tahoma, arial, sans-serif} /* Used for the page title element */
+
+/* used for the wiki header 1 & 2 */
+h2	{font-size:12pt; color:#666666; margin:5px 0px 2px 0px; font-weight:bold; font-family: "Gill Sans MT Pro Medium", tahoma, arial, sans-serif}
+h3	{font-size:11pt; color:#666666; margin:2px 0px 1px 0px; font-weight:bold; font-family: "Gill Sans MT Pro Medium", tahoma, arial, sans-serif}
+
+
+.bold	{font-weight:bold;}
+.orange	{color:#f46d0b;}
+
+.pointer	{cursor:pointer;} /* use on any div with an onClick for document.location. */
+
+.posRel	{position:relative;}
+
+
+/* the width around content areas. */
+.usableWidth	{width:959px;	text-align:left;
+	margin-left: auto ;
+	margin-right: auto ;}
+
+/* the width around the entire theme, including the margins and shadows */
+.themeWidth	{width:990px; 	text-align:left;  background:#ffffff;
+	margin-left: auto ;
+	margin-right: auto ;}
+
+
+/* mast head and body positioning styles */
+#headAndBody	{position:relative; min-height:500px;}
+.bodyShadowLeft	{position:absolute; top:0; left:-16px; z-index:1}
+.bodyShadowRight	{position:absolute; top:0; right:-16px; z-index:1}
+
+#mastHead	{background:url(cnc_tilesprite-1x705.png) repeat-x 0 -51px; height:124px;  z-index:10; position:relative;}
+
+#mastHead .menu	{font-size:11px; font-weight:normal; color:#999999; text-align:right;}
+#mastHead .menu a	{; padding:0 3px;}
+
+#mastHead a, #footLinks a	{text-decoration:none; color:#666666} /* colors and behaviors for menu and wiki nav */
+#mastHead a:hover, #mastHead .minicart:hover, #footLinks a:hover	{color:#f46d0b; text-decoration:underline;}	
+
+#mastHead .minicart	{padding-left:25px; line-height:35px; background:url(cnc_sprites-181x157.png) no-repeat -160px -18px; text-align:right; padding-right:3px;} /* right padding is to compensate for padding in [menu a] */
+
+
+.leftCol	{float:left; width:164px; margin-left:16px; z-index:54;}
+.bodyContent	{float:right; width:780px; text-align:left; margin-right:16px; z-index:55;}
+
+/* use this in page layouts where the width needs to be fixed and the overflow needs to be hidden. width should ALWAYS match bodyContent */
+.bodyContentWidth	{width:780px; overflow:hidden;}
+
+/* div around very wide banner just below mast head. div is only rendered if banner is populated */
+#postMastHeadBanner	{background:#efefef; clear:both; height:35px;}
+
+
+
+/* for the bookmarklets in the upper right corner */
+div.bookmarklet	{float:right; margin-left:3px; margin-top:3px; width:16px; height:16px; cursor:pointer;}
+
+div.twitterlet	{background:url(cnc_sprites-181x157.png) no-repeat 0px -19px;}
+div.twitterlet:hover	{background:url(cnc_sprites-181x157.png) no-repeat 0px 0px;}
+
+
+div.facebooklet	{background:url(cnc_sprites-181x157.png) no-repeat -19px -19px;}
+div.facebooklet:hover	{background:url(cnc_sprites-181x157.png) no-repeat -19px 0px;}
+
+div.youtubelet	{background:url(cnc_sprites-181x157.png) no-repeat -38px -19px;}
+div.youtubelet:hover	{background:url(cnc_sprites-181x157.png) no-repeat -38px 0px;}
+
+
+div.rsslet	{background:url(cnc_sprites-181x157.png) no-repeat -57px -19px;}
+div.rsslet:hover	{background:url(cnc_sprites-181x157.png) no-repeat -57px 0px;}
+
+
+div.bloglet	{background:url(cnc_sprites-181x157.png) no-repeat -76px -19px;}
+div.bloglet:hover	{background:url(cnc_sprites-181x157.png) no-repeat -76px 0px;}
+
+
+.leftSideDecal	{width:164px; overflow:hidden;}
+
+/* around header decal, only appears if decal is set so that header links will shift right as needed */
+#mastHeadDecal	{height:58px; max-width:200px; overflow:hidden; margin-right:1px;} /* right margin is here to solve an issue with the right side shadow */
+
+#mastHead div.gradBar	{position:absolute; top:86px; left:0; right:0; }
+#mastFooter div.gradBar	{position:absolute; top:-18px; left:0; right:0; }
+
+div.gradBar	{background:url(cnc_tilesprite-1x705.png) repeat-x; height:43px;}
+div.leftCap		{z-index:20; background:url(cnc_sprites-181x157.png) no-repeat -95px 0; width:9px; height:43px; float:left; margin-left:-3px;}
+div.rightCap	{z-index:20; background:url(cnc_sprites-181x157.png) no-repeat -104px 0; width:9px; height:43px; float:right; margin-right:-3px;}
+
+
+#mastHead #wikiNavLinks	{position:absolute; top:94px; right:10px; text-align:right; width:500px; height:24px; line-height:24px; overflow:hidden; z-index:50}
+
+#mastHead #wikiNavLinks	a	{padding-left:10px; margin-left:10px; font-size:13px; background:url(cnc_sprites-181x157.png) no-repeat -177px -51px; display:block; float:right;}
+
+#mastHead #searchFrmContainer {position:absolute; top:94px; left:15px; z-index:35;}
+#mastHead #searchFrmContainer .zform_textbox	{ width:300px;}
+#mastHead #searchFrmContainer label	{float:left; line-height:24px; font-size:14px; font-weight:bold; padding-right:4px; }
+
+#mastHead #searchFrmContainer #searchSubmit{ background:url(cnc_sprites-181x157.png) no-repeat -128px -22px; font-size:0; width:25px; height:25px; border:0; cursor:pointer; margin-left:4px;}
+
+/* sets style on splitter */
+#breadcrumb, #secondBodyTitle	{padding:8px 0; font-size:13px; font-weight:bold; border-bottom:1px solid #cccccc; margin-bottom:10px;}
+/* sets style on links */
+#breadcrumb a	{padding:0 5px; font-size:12px; font-weight:normal; text-decoration:none;}
+
+/* left column styles */
+
+#dual_cats_displayed #dualCatsHead	{height:37px; background:url(cnc_sprites-181x157.png) no-repeat 0px -92px;}
+#dual_cats_displayed #dualCatsContent	{
+	border:1px solid #f2f2f2; border-top:0;
+    -webkit-border-radius-bottomright: 5px; /* older handles safari and chrome */
+	-webkit-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;  /* handles safari, chrome and future css3 compatible browsers. */
+	border-bottom-left-radius: 5px; 
+	-moz-border-radius-bottomright: 5px; /* handles firefox */
+	-moz-border-radius-bottomleft: 5px;
+	}
+#dual_cats_displayed a	{color:#666666; text-decoration:none; display:block;}
+#dual_cats_displayed a:hover	{color:#f46d0b; text-decoration:none; display:block;}
+#dual_cats_displayed div.top_cat a	{font-size:14px; padding:1px 11px 1px 5px;}
+#dual_cats_displayed div.top_cat_on a	{background:url(cnc_sprites-181x157.png) no-repeat -20px -146px #f2f2f2;}
+#dual_cats_displayed div.sub_cats a	{font-size:12px; display:block; padding:1px 2px 1px 10px;}
+
+#mastFooter	{background:url(cnc_tilesprite-1x705.png) repeat-x 0 -192px; height:93px;}
+
+
+div.custServiceHead	{background:url(cnc_sprites-181x157.png) no-repeat 0px -66px; width:170px; height:23px; margin-top:8px; margin-left:10px;}
+div.subscribeHead	{background:url(cnc_sprites-181x157.png) no-repeat 0px -44px; width:170px; height:23px; margin-top:8px; margin-right:220px;}
+
+#footLinks	{position:absolute; top:30px;}
+#footSubscribe	{position:absolute; top:30px; right:0;}
+#footLinks a	{display:block; padding:2px 23px 2px 17px;}
+
+#wikiFootLinks	{width:190px; height:58px; overflow:hidden;}
+
+#footSubscribe	{width:395px;}
+#footSubscribe .zsmall	{margin-bottom:5px;}
+#footSubscribe .zform_textbox	{margin-right:3px; width:150px; font-size:12px;}
+#footSubscribe .zform_button	{border:0; font-size:0; background:url(cnc_sprites-181x157.png) no-repeat -114px 0px; width:67px; height:18px; }
+
+#paycons	{height:34px; max-width:350px;}
+.paycon	{margin-left:3px;}
+
+
+
+
+/* 
+overrides the width of the content area during checkout to compensate for the left column being removed.
+in triplocate in case the page type case ever changes.
+*/
+#pagetypeCHECKOUT, #pagetypeCheckout, #pagetypecheckout	{width:959px;}
+
+
+/* wiki styles */
+
+div.wiki_section	{margin-bottom:15px; line-height:150%}
+
+
+/* admin panel (customer) overrides */
+
+#customer_main .zadminpanel_head {
+ background:#666666; 
+ padding:2px 5px; 
+ font-weight: bold;
+ font-size:14px; 
+ color:#ffffff; 
+ }
+
+
+
+
+
+/* generic  layout styles */
+.pageLayout .elementMargin	{margin-bottom:25px;}
+.pageLayout section		{margin-bottom:25px;}
+.pageLayout img	{display:inline-block; vertical-align:top;}
+.pageLayout table {border-collapse:collapse; padding:0;}
+.pageLayout table td	{vertical-align:top;}
+.pageLayout #accessories div.ztable_head	{padding:5px; text-align:right;}
+
+/* generic product layout styles */
+#prodPageFocusImages {margin-right:25px;}
+#socialToolBar	{padding-bottom:10px;}
+#socialToolBar .socialTool	{float:left; margin-right:5px;}
+#prodQtyDiscount .zbox_head	{padding:3px;}
+#prodAttributes	{margin-bottom:10px;}
+.reviewRatingArticle	{padding-bottom:10px;}
+
+/* layout specific styles */
+#p20110912 .reviewSummaryTop	{float:right;}
+#p20110912 #prodQtyDiscount {float:right;}
+#p20110912 td.prodlistProdThumbContainer {width:100px}
+#p20110912 td.prodlistProdContentContainer	{min-width:220px; padding-bottom:10px}
+#p20110912 #reviews .zborder	{padding:4px; margin-bottom:5px;}
+#p20110912 #reviews .zborder img	{vertical-align:text-bottom}
+#p20110912 #relatedItemsProdlist	{margin-left:20px;}
+#p20110912 #relatedItemsProdlist .ztable_row	{padding-top:10px;}
+#p20110912 h4 {margin:0 0 4px 0;}
+#p20110912 .reviewThumb {padding-right:10px;}
+#p20110912 .reviewAddReviewLink	{float:right; font-weight:bold;}

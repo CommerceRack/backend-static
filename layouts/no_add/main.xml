@@ -1,0 +1,35 @@
+<TEMPLATE ID="no_add" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLZZ" CREATOR="STAFF" CREATED="00000000" IMAGES="1" FORMAT="LAYOUT" SHORT="Do not use this layout. It has no add to cart button." TYPE="CONFIG" TITLE="No Add"><SUMMARY><![CDATA[
+Do not use this layout, it has no add to cart button.  It is designed to show up in a popup or ajax window.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMAA" TYPE="OUTPUT"><HTML><![CDATA[
+<table cellspacing="5" cellpadding="0">
+  <tr>
+    <td valign="top"> 
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="NAME" DATA="product:zoovy:prod_name" PROMPT="Default Name" TYPE="TEXT"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="NAME" PRETEXT="Manufacturer: " DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" TYPE="TEXT"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="ABOUT" DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" TYPE="TEXT"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKMAC" TYPE="OUTPUT"><HTML><![CDATA[
+    </td>
+    <td valign="top" width="100">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="200" DATA="product:zoovy:prod_image1" PROMPT="Image1" WIDTH="100" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMAF" TYPE="OUTPUT"><HTML><![CDATA[
+    </td>
+  </tr>
+</table>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

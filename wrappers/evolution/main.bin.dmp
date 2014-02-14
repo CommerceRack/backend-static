@@ -1,0 +1,1682 @@
+$VAR1 = {
+          '_DIGEST' => 'r2la+/qEQrNsm2lQ+N3HNQ',
+          '_DIVS' => [],
+          '_ID' => 'evolution',
+          '_ELEMENTS' => [
+                           {
+                             'ID' => 'CRNFLTZ',
+                             'HTML' => '<!-- Loose HTML created Mon 8-May-2006 14:10 PDT -->
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'evolution',
+                             'SUMMARY' => 'This is the next generation Ajax theme. It offers: 
+<li>Your choice of 6 colors.</li>
+<li>Advanced search</li>
+<ol>
+	<li>Prompts the customer with likely search phrases as they type. (must have dictionary catalog specified)</li>
+	<li>Displays a list of the customers recently searched words.</li>
+	<li>Displays search results within an ajax layer in the body of the page.</li>
+</ol>
+<li>Gen2 minicart which keeps your customer on the product page when add to cart is pushed.</li>
+<li>FORCES your product pages to a next generation ajax product layout.</li>
+	<ol>
+		<li>Product reviews (optional - requires CRM bundle)</li>
+		<li>Ajax tell a friend (optional - requires XSELL bundle)</li>
+		<li>Printer friendly version of page (it\'s seo friendly too)</li>
+		<li>Description and specifications (detailed description)</li>
+		<li>Accessories product list with ajax product info</li>
+		<li>Related items product list (max of 3)</li>
+		<li>On-hover effect for product images that loads larger version (still click to see original)</li>
+		<li>Manufacturer, manufacturer\'s id and product id</li>
+		<li>Retail price and \'a savings of\'</li>
+		<li>Support for WikiText</li>
+		<li>Strips HTML from all product fields on product page (to ensure ajax compliance)</li>
+	</ol>
+<li>468x60 linkable image element in the header.</li>
+<li>Ajax login which only appears if customer is NOT logged in, otherwise it displays their username.</li>
+<li>Newsletter subscription box</li>
+<li>Optimized for high resolution monitors (1000 pixels wide).</li>
+',
+                             'CART' => 'persist',
+                             'COLORS' => 120,
+                             'V' => 2,
+                             'CREATED' => 20060510,
+                             'PROPERTIES' => 315,
+                             'SITEBUTTONS' => 'default=reflectgel_grey|gif|110|33',
+                             'OVERLOAD' => 'flow.product=p-evolution&site.css=1&dev.search_bounce=0',
+                             'FORMAT' => 'WRAPPER',
+                             'EXPORT' => '0',
+                             'TYPE' => 'CONFIG',
+                             'CATEGORIES' => 65537,
+                             'ELEMENT' => 'ELEMENT',
+                             'THEME' => 'disclaimer_text_color=333333&content_font_face=verdana%2c+sans+serif%2c+helvetica&table_listing_background_color_alternate=FFFFFF&table_heading_text_color=FFFFFF&pretty_name=Evolution&link_visited_text_color=333333&content_background_color=FFFFFF&table_heading_background_color=666666&link_text_color=333333&link_active_text_color=333333&table_listing_font_face=verdana%2c+sans+serif%2c+helvetica&content_text_color=333333&content_font_size=2&disclaimer_font_face=verdana%2c+sans+serif%2c+helvetica&name=evolution&table_listing_background_color=EFEFEF&disclaimer_background_color=FDFDFD&alert_color=990000&disclaimer_font_size=1&table_listing_text_color=333333&table_heading_font_face=verdana%2c+sans+serif%2c+helvetica&table_heading_font_size=2&table_listing_font_size=2',
+                             'TITLE' => 'Evolution (Web 2.0)'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'ADDOVERLOAD',
+                             'LINK' => 'javascript:addToCart(\'%ID%\',\'%SKU%\');',
+                             'BUTTON' => 'add_to_cart',
+                             'TYPE' => 'OVERLOAD'
+                           },
+                           {
+                             'ID' => 'CRUEGLS',
+                             'SUB' => 'COLOR1',
+                             'DEFAULT' => '5E8ED0',
+                             'TYPE' => 'HIDDEN'
+                           },
+                           {
+                             'ID' => 'COLOR_CHOOSER',
+                             'VALUE' => '5E8ED0',
+                             'SUB' => 'COLOR1',
+                             'PROMPT' => 'Color',
+                             'DEFAULT' => '5E8ED0',
+                             'TYPE' => 'SELECT',
+                             'FONT' => '0',
+                             'ELEMENT' => 'ELEMENT',
+                             'HELP' => 'Choose a color from the list above to select the aesthetic to your store',
+                             'LIST' => 'COLOR1',
+                             'DATA' => 'merchant:zoovy:wrap_evolution_color',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CATALOGCHOOSER',
+                             'SUB' => 'CATALOG',
+                             'PROMPT' => 'Search Catalog',
+                             'TYPE' => 'SELECT',
+                             'FONT' => '0',
+                             'ELEMENT' => 'ELEMENT',
+                             'HELP' => '
+The search catalog feature allows you to set which fields in the zoovy system are searchable.  By default, DEFAULT is created and selected, which searches your product ID and name.  You can create and modify search catalogs from the \'search catalogs\' page off of setup.  A \'dictionary\' search is required for the text autocomplete feature. If you have questions, please schedule time with a trainer.<br>
+',
+                             'LIST' => '@SYSTEM.SEARCHCATALOGS',
+                             'DATA' => 'merchant:zoovy:wrap_catalog'
+                           },
+                           {
+                             'ID' => 'SEARCHMODE_CHOOSER',
+                             'SUB' => 'SEARCHMODE',
+                             'PROMPT' => 'Search Mode',
+                             'DEFAULT' => 'and',
+                             'TYPE' => 'SELECT',
+                             'FONT' => '0',
+                             'ELEMENT' => 'ELEMENT',
+                             'HELP' => '
+Search mode has three options:
+<li>\'and\' which will do a search and return results for product with BOTH words that are searched (X and Y) - system default</li>
+<li>\'or\' which will do a search and return results for product with EITHER words that are searched (X or Y) - returns most results</li>
+<li>\'exact\' which will do a search and return results for product with exact word(s) that are searched - returns least results</li>
+If you have questions, please schedule time with a trainer.<br>
+',
+                             'LIST' => 'MODE',
+                             'DATA' => 'merchant:zoovy:wrap_searchmode',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'TAFOPTION',
+                             'TRUE' => '
+<div id="prod_links_tell"><a href="#" onclick="Effect.BlindDown(\'tellafriend\'); return false;">Tell a Friend</a></div>
+',
+                             'PROMPT' => 'Tell a friend',
+                             'SUB' => 'ENABLE_TAF',
+                             'DEFAULT' => 1,
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'HELP' => '
+Tell a Friend or TAF is a feature that puts a contact form on your product pages so that your customers can send product specific information directly to an associate of theirs.  Your branding and product specific information are in the email sent, as well as a custom message set by your customer.  <br>This feature requires the XSELL bundle.<br>
+',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_tellafriend',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'REVIEWOPTION',
+                             'TRUE' => '
+<li><a href="#reviews_content" onClick="new TabToggle(this); return false;">Reviews</a></li>
+',
+                             'PROMPT' => 'Product Reviews',
+                             'SUB' => 'ENABLE_REVIEWS',
+                             'DEFAULT' => 1,
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'HELP' => '
+Product Reviews allows your customers to add their personal input about a specific product.  Once their review is submitted, it is entered into a queue for your approval.  You have the ability to add/remove/edit any specific review through the product editor.  <br>This feature requires the CRM bundle.<br>
+',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_reviews',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCD',
+                             'SUB' => 'LINK_VISITED_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_VISITED_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCE',
+                             'SUB' => 'TABLE_HEADING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCF',
+                             'SUB' => 'DISCLAIMER_FONT_SIZE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCG',
+                             'SUB' => 'CONTENT_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::CONTENT_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCH',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCI',
+                             'SUB' => 'CONTENT_TEXT_COLOR',
+                             'LOAD' => 'THEME::CONTENT_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCJ',
+                             'SUB' => 'TABLE_LISTING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCK',
+                             'SUB' => 'TABLE_LISTING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCL',
+                             'SUB' => 'TABLE_LISTING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCM',
+                             'SUB' => 'CONTENT_FONT_FACE',
+                             'LOAD' => 'THEME::CONTENT_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCN',
+                             'SUB' => 'NAME',
+                             'LOAD' => 'THEME::NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCO',
+                             'SUB' => 'DISCLAIMER_FONT_FACE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCP',
+                             'SUB' => 'PRETTY_NAME',
+                             'LOAD' => 'THEME::PRETTY_NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCQ',
+                             'SUB' => 'TABLE_HEADING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCR',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCS',
+                             'SUB' => 'LINK_ACTIVE_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_ACTIVE_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCT',
+                             'SUB' => 'CONTENT_FONT_SIZE',
+                             'LOAD' => 'THEME::CONTENT_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCU',
+                             'SUB' => 'ALERT_COLOR',
+                             'LOAD' => 'THEME::ALERT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCV',
+                             'SUB' => 'DISCLAIMER_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCW',
+                             'SUB' => 'TABLE_HEADING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCX',
+                             'SUB' => 'TABLE_HEADING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCY',
+                             'SUB' => 'DISCLAIMER_TEXT_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLCZ',
+                             'SUB' => 'LINK_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDA',
+                             'SUB' => 'HOMECATEGORY_URL',
+                             'LOAD' => 'URL::HOMECATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDB',
+                             'SUB' => 'WRAPPER_URL',
+                             'LOAD' => 'URL::WRAPPER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDC',
+                             'SUB' => 'CART_URL',
+                             'LOAD' => 'URL::CART_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDD',
+                             'SUB' => 'SUBSCRIBE_URL',
+                             'LOAD' => 'URL::SUBSCRIBE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDE',
+                             'SUB' => 'FEEDBACK_URL',
+                             'LOAD' => 'URL::FEEDBACK_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDF',
+                             'SUB' => 'LOGOUT_FUNCTION_URL',
+                             'LOAD' => 'URL::LOGOUT_FUNCTION_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDG',
+                             'SUB' => 'SHIPQUOTE_URL',
+                             'LOAD' => 'URL::SHIPQUOTE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDH',
+                             'SUB' => 'PRIVACY_URL',
+                             'LOAD' => 'URL::PRIVACY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDI',
+                             'SUB' => 'SITEBUTTON_URL',
+                             'LOAD' => 'URL::SITEBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDJ',
+                             'SUB' => 'HOMEPAGE_URL',
+                             'LOAD' => 'URL::HOMEPAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDK',
+                             'SUB' => 'COUNTER_URL',
+                             'LOAD' => 'URL::COUNTER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDL',
+                             'SUB' => 'RETURNS_URL',
+                             'LOAD' => 'URL::RETURNS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDM',
+                             'SUB' => 'PASSWORD_URL',
+                             'LOAD' => 'URL::PASSWORD_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDN',
+                             'SUB' => 'UPDATE_PAYMENT_URL',
+                             'LOAD' => 'URL::UPDATE_PAYMENT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDO',
+                             'SUB' => 'FORGOT_URL',
+                             'LOAD' => 'URL::FORGOT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDP',
+                             'SUB' => 'NAVBUTTON_URL',
+                             'LOAD' => 'URL::NAVBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDQ',
+                             'SUB' => 'CONTACT_URL',
+                             'LOAD' => 'URL::CONTACT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDR',
+                             'SUB' => 'LOGOUT_URL',
+                             'LOAD' => 'URL::LOGOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDS',
+                             'SUB' => 'GALLERY_URL',
+                             'LOAD' => 'URL::GALLERY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDT',
+                             'SUB' => 'REMOVE_URL',
+                             'LOAD' => 'URL::REMOVE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDU',
+                             'SUB' => 'HOME_URL',
+                             'LOAD' => 'URL::HOME_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDV',
+                             'SUB' => 'ABOUT_ZOOVY_URL',
+                             'LOAD' => 'URL::ABOUT_ZOOVY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDW',
+                             'SUB' => 'NEWS_URL',
+                             'LOAD' => 'URL::NEWS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDX',
+                             'SUB' => 'SECURE_URL',
+                             'LOAD' => 'URL::SECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDY',
+                             'SUB' => 'ABOUT_URL',
+                             'LOAD' => 'URL::ABOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLDZ',
+                             'SUB' => 'USERBUTTON_URL',
+                             'LOAD' => 'URL::USERBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEA',
+                             'SUB' => 'CLOSED_URL',
+                             'LOAD' => 'URL::CLOSED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEB',
+                             'SUB' => 'FASTORDER_URL',
+                             'LOAD' => 'URL::FASTORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEC',
+                             'SUB' => 'MAIL_FORM_URL',
+                             'LOAD' => 'URL::MAIL_FORM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLED',
+                             'SUB' => 'GRAPHICS_URL',
+                             'LOAD' => 'URL::GRAPHICS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEE',
+                             'SUB' => 'IMAGE_URL',
+                             'LOAD' => 'URL::IMAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEF',
+                             'SUB' => 'CONTACTUS_URL',
+                             'LOAD' => 'URL::CONTACTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEG',
+                             'SUB' => 'DYNAMIC_URL',
+                             'LOAD' => 'URL::DYNAMIC_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEH',
+                             'SUB' => 'NONSECURE_URL',
+                             'LOAD' => 'URL::NONSECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEI',
+                             'SUB' => 'CONTACT_US_URL',
+                             'LOAD' => 'URL::CONTACT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEJ',
+                             'SUB' => 'SEARCH_URL',
+                             'LOAD' => 'URL::SEARCH_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEK',
+                             'SUB' => 'ABOUTUS_URL',
+                             'LOAD' => 'URL::ABOUTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEL',
+                             'SUB' => 'CUSTOMER_MAIN_URL',
+                             'LOAD' => 'URL::CUSTOMER_MAIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEM',
+                             'SUB' => 'MERCHANT_LOGIN_URL',
+                             'LOAD' => 'URL::MERCHANT_LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEN',
+                             'SUB' => 'CATEGORY_URL',
+                             'LOAD' => 'URL::CATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEO',
+                             'SUB' => 'ADULT_URL',
+                             'LOAD' => 'URL::ADULT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEP',
+                             'SUB' => 'CLAIM_URL',
+                             'LOAD' => 'URL::CLAIM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEQ',
+                             'SUB' => 'CLAIM_MULTI_URL',
+                             'LOAD' => 'URL::CLAIM_MULTI_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLER',
+                             'SUB' => 'ABOUT_US_URL',
+                             'LOAD' => 'URL::ABOUT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLES',
+                             'SUB' => 'RESULTS_URL',
+                             'LOAD' => 'URL::RESULTS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLET',
+                             'SUB' => 'PRODUCT_URL',
+                             'LOAD' => 'URL::PRODUCT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEU',
+                             'SUB' => 'CONTINUE_URL',
+                             'LOAD' => 'URL::CONTINUE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEV',
+                             'SUB' => 'REDIR_URL',
+                             'LOAD' => 'URL::REDIR_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEW',
+                             'SUB' => 'KILL_COOKIES_URL',
+                             'LOAD' => 'URL::KILL_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEX',
+                             'SUB' => 'LOGIN_URL',
+                             'LOAD' => 'URL::LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEY',
+                             'SUB' => 'CHECKOUT_URL',
+                             'LOAD' => 'URL::CHECKOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLEZ',
+                             'SUB' => 'ORDER_STATUS_URL',
+                             'LOAD' => 'URL::ORDER_STATUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLFA',
+                             'SUB' => 'NO_COOKIES_URL',
+                             'LOAD' => 'URL::NO_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLFB',
+                             'SUB' => 'PAYPAL_URL',
+                             'LOAD' => 'URL::PAYPAL_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLFC',
+                             'SUB' => 'CANCEL_ORDER_URL',
+                             'LOAD' => 'URL::CANCEL_ORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLFD',
+                             'SUB' => 'MAIL_CONFIG_URL',
+                             'LOAD' => 'URL::MAIL_CONFIG_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CQLVLFE',
+                             'SUB' => 'DISABLED_URL',
+                             'LOAD' => 'URL::DISABLED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CRNEEWD',
+                             'SUB' => 'SKU',
+                             'LOAD' => 'FLOW::PROD',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'SESSIONID',
+                             'SUB' => 'SESSION_ID',
+                             'LOAD' => 'CART::ID',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'STORENAME',
+                             'SUB' => 'STORENAME',
+                             'LOAD' => 'FLOW::USERNAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CRNEEWE',
+                             'SUB' => 'WRAPPER_ID',
+                             'LOAD' => 'FLOW::WRAPPER',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'VARKEYWORDS',
+                             'SUB' => 'SEARCH_KEYWORDS',
+                             'LOAD' => 'CART::SEARCH_KEYWORDLIST',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CRNEEWF',
+                             'SUB' => 'CUSTOMER_EMAIL',
+                             'LOAD' => 'CART::LOGIN',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CRLXBDG',
+                             'SUB' => 'CUSTOMER_FULLNAME',
+                             'LOAD' => 'CART::customer::INFO.FULLNAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CRLXBDG',
+                             'SUB' => 'CUSTOMER_NEWSLETTER',
+                             'LOAD' => 'CART::customer::INFO.NEWSLETTER',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQHREXQ',
+                             'SUB' => 'title1',
+                             'DEFAULT' => '<h2>',
+                             'TYPE' => 'HIDDEN'
+                           },
+                           {
+                             'ID' => 'CQHREXR',
+                             'SUB' => '/title1',
+                             'DEFAULT' => '</h2>',
+                             'TYPE' => 'HIDDEN'
+                           },
+                           {
+                             'ID' => 'CQHREXS',
+                             'SUB' => 'title2',
+                             'DEFAULT' => '<h3>',
+                             'TYPE' => 'HIDDEN'
+                           },
+                           {
+                             'ID' => 'CQHREXT',
+                             'SUB' => '/title2',
+                             'DEFAULT' => '</h3>',
+                             'TYPE' => 'HIDDEN'
+                           },
+                           {
+                             'ID' => 'CQHREXU',
+                             'SUB' => 'title3',
+                             'DEFAULT' => '<h4>',
+                             'TYPE' => 'HIDDEN'
+                           },
+                           {
+                             'ID' => 'CQHREXV',
+                             'SUB' => '/title3',
+                             'DEFAULT' => '</h4>',
+                             'TYPE' => 'HIDDEN'
+                           },
+                           {
+                             'ID' => 'CRNEEWG',
+                             'SUB' => 'BANNER_LINK',
+                             'PROMPT' => 'Link for Banner',
+                             'DEFAULT' => '%CART%/search.cgi',
+                             'TYPE' => 'TEXTBOX',
+                             'FONT' => '0',
+                             'ELEMENT' => 'ELEMENT',
+                             'HELP' => 'WARNING:  linking within your Zoovy store requires you to use a special syntax in order to avoid cart/cookie issues.  When setting up links, use this variable to ensure the cart id is passed in the URL and that users don\'t bounce between domains.<br>
+Links should look like this: %CART%/category/cat.safe.name<br>
+Links should NOT look like this:  http://yourdomain.com/c=54654SD6546SDF4656/category/cat.safe.name<br>
+The c= is the cart id.  If you paste that in as your link, all your customers will share the same cart id.  This would be bad.<br>
+If you have questions, schedule time with your trainer or contact support.<br>
+',
+                             'DATA' => 'merchant:zoovy:wrap_bannerlink'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CRGOZAM',
+                             'HEIGHT' => 60,
+                             'SUB' => 'BANNER_IMAGE',
+                             'PROMPT' => 'Choose the banner image you would like to use',
+                             'WIDTH' => 468,
+                             'DATA' => 'merchant:zoovy:wrap_banner',
+                             'TYPE' => 'IMAGE'
+                           },
+                           {
+                             'ID' => 'NEWSLETTER',
+                             'SUB' => 'NEWSLETTER_FORM',
+                             'DEFAULT' => '<!-- Newsletter form -->
+<div class="white_gap"></div>
+<div class="cat_col">
+<!-- Newsletter Header -->
+	<div id="newsletter_col_head" class="cat_head">NEWSLETTER</div>
+<!-- Newsletter Content Area -->
+	<div id="newsletter_frame" class="white_box" style="padding:5px 0px 5px 0px; height:90px;">
+
+<form action="%SUBSCRIBE_URL%" method="post" style="margin-bottom:4px;">
+<input type="hidden" name="check" value="1">
+<table>
+<tr>
+	<td>Email:</td>
+	<td align="right"><input type="text" class="formed" maxlength="50" name="email" value="%CUSTOMER_EMAIL%" STYLE="width:100px;"></td>
+</tr>
+<tr>
+	<td>Name:</td>
+	<td align="right"><input type="text" class="formed" maxlength="50" name="fullname" value="%CUSTOMER_FULLNAME%" STYLE="width:100px;"></td>
+</tr>
+<tr>
+	<td colspan="2" align="right"><input type="submit" class="button" value="Subscribe" HEIGHT="15" WIDTH="81" class="buttonz" STYLE="width:150px; text-align:right;"></td>
+</tr>
+</table>
+</form></div>
+<!-- Newsletter Footer -->
+	<div id="newsletter_foot" class="cat_foot"></div>
+</div>
+<!-- /newsletter form -->
+',
+                             'TYPE' => 'HIDDEN'
+                           },
+                           {
+                             'ID' => 'CRNFLUB',
+                             'HTML' => '
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Transitional//EN" />
+<HTML>
+<head>
+
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CRGOZAG',
+                             'TYPE' => 'HEAD'
+                           },
+                           {
+                             'ID' => 'CRNFLUC',
+                             'HTML' => '
+
+<link rel="stylesheet" type="text/css" href="%WRAPPER_URL%/style.css">
+<style type="text/css">
+<!--
+
+/* these are for the blue style */
+.cat_head {width:170px; margin:2px; font-size:11px; font-weight:bold; color:#FFFFFF; background-image:url(%WRAPPER_URL%/bar_back_%COLOR1%-1x25.gif); background-position:bottom; border:1px solid #ffffff; padding:4px 4px 5px 0px; text-align:right; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.titlebar {width:auto; margin:2px; font: bold 11px left; color:#FFFFFF; background-image:url(%WRAPPER_URL%/bar_back_%COLOR1%-1x25.gif); background-position:bottom; border:1px solid #ffffff; padding:2px 0px 3px 0px; box-sizing: border-box; -moz-box-sizing: border-box; height:15px; font-family:Verdana, Arial, Helvetica, sans-serif}
+
+.bcrumbbar {width:auto; margin:2px; font: bold 11px left; color:#D6E3F4; background-image:url(%WRAPPER_URL%/bar_back_%COLOR1%-1x25.gif);background-position:bottom; border:1px solid #EEEEF0; padding:2px 0px 3px 0px; position:relative; box-sizing: border-box; -moz-box-sizing: border-box; height:19px; font-family:Verdana, Arial, Helvetica, sans-serif}
+
+.cat_foot {width:170px; height:18px; margin:2px; font-size:11px; font-weight:bold; color:#ffffff; border:1px solid #ffffff; padding:2px 0px 3px 0px; text-align:left; position:relative; background-color:#%COLOR1%; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.cat_col {width:176px; background-color:#D8DCDB; border:solid 1px #%COLOR1%; position:relative; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.cat_but a {width:158px; margin:0px 5px 0px 5px; text-decoration:none; font-family:Verdana, Arial, Helvetica, sans-serif; color:#%COLOR1%; display:block; font-size:11px; font-weight:bold; padding:2px 0px 3px 0px; border-bottom:1px solid #bbbbbb; text-align:left;  box-sizing: border-box; -moz-box-sizing: border-box;}
+
+/* Header and it\'s content */
+.header {background-color:#D8DCDB; border:solid 1px #%COLOR1%; width:100%; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.filler_table {width:176px; background-color:#D8DCDB; border:solid 1px #%COLOR1%; position:relative; margin-top:3px; height:100%; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+div, html, textarea, select {
+scrollbar-base-color: #%COLOR1%;
+}
+
+/* General site attributes */
+a	{color:#%COLOR1%;}
+
+.search_list_price	{text-decoration:none; font-size:11px; color:#%COLOR1%; font-weight:bold}
+
+
+
+-->
+</style>
+
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/prototype.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/zoovy.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous/scriptaculous.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous/effects.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript">
+<!--
+
+var session_id = \'%SESSION_ID%\';
+var store = \'%STORENAME%\';
+var DOCID = \'%WRAPPER_ID%\';
+
+function updateCart() {
+
+	$(\'PUTCARTHERE\').innerHTML = \'Updating - please wait!\';
+	new Effect.Highlight($(\'PUTCARTHERE\'));
+	
+	// this gets called by handleResponse (which is in zoovy.js)
+   var postBody = \'m=RenderElement&format=WRAPPER&docid=\'+DOCID+\'&element=IMAGECART&targetDiv=PUTCARTHERE\';
+	new Ajax.Request(\'/ajax/RenderElement\', { postBody: postBody, asynchronous: 1,
+		onComplete: function(request){handleResponse(request.responseText);} }
+		) ;
+	}
+
+//
+// this function is overloaded, and is run whenever an "add_to_cart" button is clicked
+//		it finds the form with a product id that matches on it.
+//
+function addToCart(id,pid) {
+	// alert("adding To Cart (product: " + pid + ")");
+
+   var postBody = \'m=AddToCart&cart=\'+session_id+\'&pid=\'+pid;
+	for (i = document.forms.length-1; i>=0; --i) {
+		if (document.forms[i].elements[\'product_id\']) {
+			if (document.forms[i].elements[\'product_id\'].value == pid) {
+				postBody = postBody + \'&\' + Form.serialize(document.forms[i]);
+			   new Ajax.Request(\'/ajax/AddToCart\', { postBody: postBody, asynchronous: 1,
+			      onComplete: function(request){handleResponse(request.responseText);} }
+			      ) ;
+				}
+			}
+		}
+	// alert(\'finished with addToCart\');	
+	}
+
+//--></script>
+<script type="text/javascript" language="javascript">
+<!-- 
+/*
+get the list of keywords and if present, display them. If not, forget about it...
+If a word is searched, prepend it to the keyword variable separated by a pipe - | and save it back to the cart.
+redisplay list of keywords with the newest word at the top, do NOT retrieve again from cart.
+display the search results in appropriate div.
+*/
+
+var myKeywords = \'%SEARCH_KEYWORDS%\';
+var session_id = \'%SESSION_ID%\';
+
+
+//Set this var to the maximum number of results you want shown in the recent searches.
+var maxWords = 6;
+
+/* ##### this is the master function to display the updated list of keywords and the search results.
+1. look to see if myKeywords has a value.
+  	if so: append myKeywords to the new word as update var.
+ 		if no: set new word to update var.
+2. update CART with the list of keywords.
+3. Update display of keywords with latest edition.
+4. Load the search results into the magically appearing div.
+*/
+
+function updateKeywordList(newWord) {
+//if myKeywords isn\'t blank, postpend them onto value, separated by a pipe.
+	if(myKeywords != \'\')
+		var update = newWord+\'|\'+myKeywords;
+	else
+		var update = newWord;
+//zap out the last search results.
+	$(\'edresults\').innerHTML = \'Updating - please wait!\';
+
+//Set the postbody var.
+	var postBody = \'m=set&data=\'+update+\'&src=CART::SEARCH_KEYWORDLIST&cart=\'+session_id;
+//Update the cart with the pipe separated list of keywords.
+//onComplete, load the results of the new Word and update the list of keywords that are displayed.
+	new Ajax.Request(\'/ajax/set\', { postBody: postBody, asynchronous: 1, onComplete: function(request){
+		displayKeywords(update);
+		loadResults(newWord);
+	}});
+	return update;
+	}
+
+/*	##### This functions will display the keywords that have been searched.
+1.  check to see if the passed in var keywordList has a value.
+		if so: Proceed.
+		if no: nothing happens.
+2.	split the keywordList var into an array, separated at the pipes.
+3.	look to see if there are more keywords in the array than the value set in maxWords
+		if so: set display to maxWords.
+ 		if no: set display to number of items in array.
+## this is done so that only the number of loops necessary are done.
+4.	loop through the array DISPLAY number of times and generate the HTML to be displayed.
+5.	update keywordsDisplay div with content generated in step 4.
+*/
+function displayKeywords(keywordList) {
+//if a search has been run before, saved correctly and the readonly loaded properly, myKeywords will have a value and you should proceed.
+	if(keywordList != \'\'){
+//initialize the keywords array and then saved the value from the cart keyword list, splitting at a | into the array
+		var keywords_array = new Array();
+		var display;
+		keywords_array = keywordList.split(\'|\');			
+//if the number of values in the keywords_array is LESS than maxWords, reset maxWords to the length so that no extra loops occur.
+		if(keywords_array.length < maxWords)
+			display = keywords_array.length;
+		else
+			display = maxWords;
+		var keywords = \'<div id="keywordsHeader">Recent Searches:</div>\';
+		for (var i = 0; i < display; i++)	{
+			keywords += \'<div id="keyword\'+i+\'"><a href="javascript:loadResults(\\\'\'+keywords_array[i]+\'\\\');" class="searchKeywords" >\'+keywords_array[i]+\'</a></div>\';
+			}
+		$(\'keywordsDisplay\').innerHTML = keywords;
+		}
+	}
+
+/*  ##### THis function will load the results into a div.
+1. check style of edsubpanel div and slide up if needed.
+2. check style of edwarning div and slide up if needed.
+3.  slide down the edresultscontainer div.
+4.  set url to the results url.  - NOTE: UPDATE CATALOG TO LOAD IN THE VAR!
+5.  set the paramaters var.  Not currenlty used.
+6.  update the edresults div with the URL var.
+*/
+function loadResults(keywords){
+	if($("edsubpanel").style.display=="") 
+		Effect.SlideUp("edsubpanel");
+	if($("edwarning").style.display=="")
+		Effect.Fade("edwarning");
+	Effect.SlideDown("edresultscontainer");
+//set the URL to be loaded in the div
+	var url = \'%RESULTS_URL%?fl=5502&wrapper=evolution_searchresults&CATALOG=%CATALOG%&keywords=\'+keywords;
+//	alert(url);
+//use this to set any parameters.
+	var pars = \'\';
+//Ajax update div.  first parameter is the div ID.
+	new Ajax.Updater(\'edresults\', url, {method: \'get\', parameters: pars});
+	}
+
+//-->
+</script>
+
+</head>
+
+<body  onLoad="displayKeywords(myKeywords);">
+<!-- Create the outer boundaries of the site -->
+<table id="website" align="center" BORDER="0" CELLSPACING="0" CELLPADDING="0" width="960" STYLE="height:100%">
+<tr>
+<!-- This is the header -->
+	<td COLSPAN="3" VALIGN="top" STYLE="padding-bottom:2px">
+
+<div id="site_header" class="header">
+<!-- Title Bar -->
+<div id="titlebar" class="titlebar" style="padding-left:5px; height:19px; position:relative">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CRGOZAI',
+                             'TYPE' => 'TITLE',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CRNFLUD',
+                             'HTML' => '
+
+
+	<!-- Text Links Login -->
+	',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'LOGGEDIN',
+                             'HTML' => '
+	<!-- Login link -->
+			<div id="head_text_links" class="text_links" style="position:absolute; top:2px; right:10px; width:400px; text-align:right; color:#FFFFFF; font-size:11px">you are logged in as: <a href="%CUSTOMER_MAIN_URL%">%CUSTOMER_EMAIL%</a> | <A HREF="%LOGOUT_FUNCTION_URL%">Logout</A>
+			</div>
+	',
+                             'TYPE' => 'OUTPUT',
+                             'OUTPUTSKIP' => 8
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'LOGGEDOUT',
+                             'HTML' => '
+<!-- Login link -->
+		<div id="head_text_links" class="text_links" style="position:absolute; top:2px; right:10px; width:233px; text-align:right">
+			<A HREF="#"  onClick="new Effect.BlindDown(\'loginForm\');return false;">Click here to login</A></div>
+		
+		<div id="loginForm" style="display:none; position:absolute; top:16px; right:-5px; z-index:9999; text-align:right; line-height:25px; background-color:#FFFFFF; padding:3px">
+
+<form action="%LOGIN_URL%" method="post" style="margin:0px;">
+<input type="hidden" name="mode" value="check">
+<input type="hidden" name="url" value="%CUSTOMER_MAIN_URL%">
+Login: <input type="text" class="formed" maxlength="50" name="login" value=""><br>
+Password: <input type="password" class="formed" maxlength="50" name="password" value=""><br>
+<input type="submit" name="submit" class="button" value="Login"><br>
+</form>
+		</div>
+		
+
+',
+                             'TYPE' => 'OUTPUT',
+                             'OUTPUTSKIP' => 16
+                           },
+                           {
+                             'ID' => 'CRNFLUE',
+                             'HTML' => '
+
+</div>
+<!-- Logo Bar -->
+	<div id="logobar" class="logobar">
+	<table BORDER="0" CELLSPACING="0" CELLPADDING="0" style="width:100%">
+	<tr><td width="50%" align="left">
+			<div id="logo" class="logo" style="margin:2px;"><A HREF="%HOME_URL%">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CRGOZAK',
+                             'HEIGHT' => 60,
+                             'WIDTH' => 400,
+                             'TYPE' => 'LOGO',
+                             'BGCOLOR' => 'ffffff'
+                           },
+                           {
+                             'ID' => 'CRNFLUF',
+                             'HTML' => '
+</A></div>
+		</td>
+		<td width="50%" align="right">
+			<div id="banner" class="banner" style="margin:2px;"><A HREF="%BANNER_LINK%">%BANNER_IMAGE%</A></div>
+		</td>
+	</tr>
+	</table>
+	</div>		
+<!-- Breadcrumb Bar -->
+	<div id="bcrumbbar" class="bcrumbbar" style="padding-left:5px; height:19px;">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'BREADCRUMB',
+                             'HTML' => '
+<!-- CATEGORY -->
+<a href="<% load($cat_url);  default("");  print(); %>" class="breadcrumb"><% load($cat_pretty);  default("");  print(); %></a>
+
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); runspec(" &#187; "); print(); %>
+
+<!-- /CATEGORY -->
+
+',
+                             'STYLE' => 'LEGACYBREADCRUMB',
+                             'TYPE' => 'BREADCRUMB',
+                             'OUTPUTSKIP' => 1,
+                             'OUTPUTFILTER' => 'PG=homepage'
+                           },
+                           {
+                             'ID' => 'CRNFLUG',
+                             'HTML' => '
+
+<div class="text_links" style="position:absolute; top:2px; right:10px; font-size:10px; color:#FFFFFF;">
+<A HREF="%HOME_URL%">home</A> | <A HREF="%CONTACT_URL%">contact</A> | <A HREF="%ABOUT_URL%">company</A>
+</div>
+
+
+	</div>
+</div>
+
+	</td>
+</tr>
+<tr>
+<!-- This is the category buttons column -->
+	<td VALIGN="top" WIDTH="176" STYLE="height:99%; background-image:url(%WRAPPER_URL%/bar_fill-176x21.gif); background-repeat:repeat-y; background-color:#%COLOR1%;">
+
+<div class="cat_col">
+<!-- Search Header -->
+	<div id="search_col_head" class="cat_head">SEARCH </div>
+<!-- Search Area -->
+
+
+
+<div id="searchContainer" class="white_box" style="padding:2px; position:relative">
+<div id="edresultscontainer" class="edresultscontainer" style="display:none; z-index:900; position:absolute; top:10px; left:13px; text-align:right">
+	<div align="right" width="350"><A HREF="#" onClick="new Effect.SlideUp(\'edresultscontainer\');return false;"><img src="%WRAPPER_URL%/close_button-16x16.gif" BORDER="0" height="16" width="16"></A></div>
+	<div id="edresults">
+		<div><!-- This is the search results. --></div>
+	</div>
+</div>
+<form method="get" style="margin:0px;" action="" onSubmit="myKeywords = updateKeywordList(document.searchFrm.keywords.value); return false;" id="searchFrm" name="searchFrm">
+<input type="hidden" name="CATALOG" value="%CATALOG%">
+<input type="hidden" name="mode" value="%SEARCHMODE%">
+<table>
+<tr>
+	<td><input class="box" name="keywords" id="keywords" type="text" style="font-size:11px; width:130px;" /><span style="display:none" id="keywords_stat"></span></td>
+	<td><input type="image" src="%WRAPPER_URL%/search_butt-21x21.gif" /></td>
+</tr>
+</table>
+
+<!-- This onclick causes IE to shut down.  Though a pretty cool feature, i decided to disable it for this release -->
+<!-- <div align="right"><a href="#" onClick="new Effect.BlindDown(\'edsubpanel\');return false;" style="font-size:10px;">Advanced options</a></div> -->
+		
+
+		
+<div id="edwarning" style="display:none;">Invalid Search Query.</div>
+
+<div id="edsubpanel" style="display:none;">
+	<div>
+		<div align="right"><A HREF="#" onClick="new Effect.SlideUp(\'edsubpanel\');return false;"><img src="%WRAPPER_URL%/close_button-16x16.gif" BORDER="0"></A></div>
+		These are the advanced search options... if available...
+	</div>
+</div>
+
+<div id="keywordsDisplay"></div>
+
+
+</form>
+</div>
+
+<!-- Column Footer -->
+	<div id="search_column_foot" class="cat_foot"></div>
+</div>
+<div class="white_gap"></div>
+	<div class="cat_col">
+<!-- Category Header -->
+		<div id="cat_col_head" class="cat_head">CATEGORIES </div>
+<!-- Category Buttons Area -->
+		<div id="cat_frame" class="white_box" style="padding:5px 0px 5px 0px">
+
+<!-- Category Buttons -->
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CRGOZAQ',
+                             'HTML' => '
+<!-- CATEGORY -->
+
+<div id="cat_button" class="cat_but"><A HREF="<% load($cat_url);  default("");  print(); %>"><% load($cat_pretty);  default("");  print(); %></A></div>
+
+
+<!-- /CATEGORY -->
+
+',
+                             'TYPE' => 'MENU'
+                           },
+                           {
+                             'ID' => 'CRNFLUH',
+                             'HTML' => '
+
+
+
+		</div>
+<!-- Category Footer -->
+	<div id="cat_foot" class="cat_foot"></div>
+</div>
+<div class="white_gap"></div>
+<div><img src="%WRAPPER_URL%/bar_fill_top-176x9.gif"></div>
+
+	</td>
+	<!-- This is the body column -->
+	<td VALIGN="top" width="648" ROWSPAN="2" style="padding:4px; box-sizing: padding-box; -moz-box-sizing: padding-box;"><div style="z-index:0;">',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'BODY',
+                             'TYPE' => 'BODY'
+                           },
+                           {
+                             'ID' => 'CRNFLUI',
+                             'HTML' => '
+
+</div></td>
+	<!-- This is the right column -->
+	<td VALIGN="top" WIDTH="176" ALIGN="right" STYLE="height:99%; background-image:url(%WRAPPER_URL%/bar_fill-176x21.gif); background-repeat:repeat-y; background-position:right; background-color:#%COLOR1%;">
+	
+<div class="cat_col">
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CRNFLUI',
+                             'HTML' => '
+<!-- Mini Cart Header -->
+	<div id="minicart_head" class="cat_head">MINI CART </div>
+<!-- Mini Cart Content Area -->
+	<div id="minicart_frame" class="white_box" style="padding:5px 4px 5px 4px; box-sizing: padding-box; -moz-box-sizing: padding-box;">
+
+
+<div id="PUTCARTHERE">
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'IMAGECART',
+                             'FORMAT' => 'CUSTOM',
+                             'HTML' => '
+
+<!-- MINICART --><table width="160" cellpadding="0" cellspacing="2">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td width="45"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"45",h=>"45",tag=>"1");  print(); %></td>
+<td><span class="listies"><a href="<% load($PROD_URL);  default("");  print(); %>" style="text-decoration:none;"><% load($prod_name);  default(""); strip(length=>"35",breaks=>"1",html=>"1");  print(); %></a> <% load($REMOVE_LINK);  default("");  print(); %></span></td>
+<!-- /PRODUCT -->
+</tr><tr><td style="height:1px; background-color:#CCCCCC;" colspan="2"></td></tr>
+<!-- /ROW -->
+</table><div align="center">
+<table width="140" cellspacing="1" cellpadding="0"><tr>
+	<td><span class="minicart">Items: </span></td>
+	<td align="right"><span class="minicart"><% load($ITEMCOUNT);  default("");  print(); %></span></td>
+</tr>
+<% load($SURCHARGE_LINE);  default("");  print(); %>
+<% load($SURCHARGE_BND);  default("");  print(); %>
+<tr>
+	<td><span class="minicart">Total: </span></td>
+	<td align="right"><span class="minicart"><% load($GRANDTOTAL);  default("");  format(money);  print(); %></span></td>
+</tr>
+<tr>
+	<td style="height:1px; background-color:#CCCCCC;" colspan="2"></td>
+</tr>
+	<td colspan="2" align="center"><span class="minicart"><a href="<% load($CART_URL);  default("");  print(); %>">view cart</a> | <a href="<% load($CHECKOUT_URL);  default("");  print(); %>">checkout</a></span></td>
+</tr>
+</table>
+</div>
+
+
+<!-- SURCHARGE -->
+<tr>
+	<td><span class="minicart">Shipping:</span></td>
+	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
+</tr>
+<!-- /SURCHARGE -->
+
+<!-- SURCHARGE_BND -->
+<tr><td>Bonding: </td><td><% load($BUYSAFE_SURCHARGETXT); default(""); print(); %></td></tr>
+<!-- /SURCHARGE_BND -->
+
+',
+                             'PROMPT' => 'Shopping Cart',
+                             'TYPE' => 'CART',
+                             'OUTPUTSKIP' => 1,
+                             'OUTPUTFILTER' => 'PG=cart'
+                           },
+                           {
+                             'ID' => 'CRNFLUJ',
+                             'HTML' => '
+
+</div>
+
+
+</div>
+	<!-- Mini Cart Footer -->
+	<div id="minicart_foot" class="cat_foot"></div>
+</div>
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'CRNEEWH',
+                             'TRUE' => '<!-- Subscribed: True -->',
+                             'FALSE' => '<!-- Newsletter Form.  Status: False -->
+%NEWSLETTER_FORM%
+<!-- /newsletter form -->
+',
+                             'LOAD' => 'CART::customer::INFO.NEWSLETTER',
+                             'TYPE' => 'TRISTATE',
+                             'UNDEF' => '<!-- Newsletter Form.  Status: Undef -->
+%NEWSLETTER_FORM%
+<!-- /newsletter form -->
+'
+                           },
+                           {
+                             'ID' => 'CRNFLUK',
+                             'HTML' => '
+
+
+<div class="white_gap"></div>
+<div class="cat_col">
+<!-- Sidebar Content Area -->
+	<div id="sidebar_frame" class="white_box">
+<!-- Sidebar Element -->
+	',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'ID' => 'SIDEBAR',
+                             'TYPE' => 'SIDEBAR'
+                           },
+                           {
+                             'ID' => 'CRNFLUL',
+                             'HTML' => '
+
+
+	</div>
+</div>
+<div class="white_gap"></div>
+<div><img src="%WRAPPER_URL%/bar_fill_top-176x9.gif"></div>
+
+	</td>
+</tr>
+<tr>
+	<td VALIGN="bottom" STYLE="height:1%; background-image:url(%WRAPPER_URL%/bar_fill-176x21.gif); background-repeat:repeat-y; background-color:#%COLOR1%;" align="right"><img src="%WRAPPER_URL%/bar_fill_bottom-176x12.gif"></td>
+	<td VALIGN="bottom" ALIGN="right" STYLE="height:1%; background-image:url(%WRAPPER_URL%/bar_fill-176x21.gif); background-repeat:repeat-y; background-position:right; background-color:#%COLOR1%;"><img src="%WRAPPER_URL%/bar_fill_bottom-176x12.gif"></td>
+</tr>
+<tr>
+	<!-- This is the page footer area -->
+	<td COLSPAN="3" STYLE="padding-top:2px;" WIDTH="100%">
+
+<div class="cat_col" style="width:auto">
+<!-- Text Links  Area -->
+	<div id="foot_links_frame" class="white_box" style="padding:5px 0px 5px 0px; width:auto">
+<!-- Text Links -->
+		<div id="foot_links" class="foot_text_links" style="word-spacing:12px;">
+			<DIV ALIGN="CENTER"><A HREF="%HOME_URL%">Home</A> <A HREF="%CONTACT_URL%">Contact</A> <A HREF="%ABOUT_URL%">About</A> <A HREF="%SEARCH_URL%">Search</A> <A HREF="%CART_URL%">Cart</A> <A HREF="%CHECKOUT_URL%">Checkout</A></DIV>
+		</div>
+	</div>
+	<!-- Footer blue sloab -->
+	<div id="foot_blue_slab" class="cat_foot" style="height:7px; width:auto; font-size:1px;"></div>
+</div>
+
+	</td>
+</tr>
+</table>
+<div align="center">
+',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ELEMENT' => 'ELEMENT',
+                             'TRANSPARENT' => 1,
+                             'ID' => 'FOOTER',
+                             'TYPE' => 'FOOTER'
+                           },
+                           {
+                             'ID' => 'CRNFLUM',
+                             'HTML' => '
+
+
+</div>
+ 
+<!-- begin of the auto_completing textbox -->
+<div id="keywords_auto_complete" class="keywords_auto_complete">Popular Searches:<br></div>
+<script type="text/javascript">
+<!--
+new Ajax.Autocompleter( \'keywords\', \'keywords_auto_complete\', \'/ajax/AutoComplete/CATALOG=%CATALOG%\',
+   { min_chars: 2, indicator: \'keywords_stat\' })
+//-->
+</script>
+<!-- 
+troubleshooting:
+color 1 = %COLOR1%
+cart id: %SESSION_ID%
+storename: %STORENAME%
+wrapper id: %WRAPPER_ID%
+newsletter keywords: %SEARCH_KEYWORDS%
+newsletter email: %CUSTOMER_EMAIL%
+newsletter name: %CUSTOMER_FULLNAME%
+newsletter status: %CUSTOMER_NEWSLETTER%
+catalog = %CATALOG%
+html by Joel, Design by Jordan, ajaxed by JT
+-->
+</body>
+</html>
+',
+                             'TYPE' => 'OUTPUT'
+                           }
+                         ],
+          '_FORMAT' => 'WRAPPER',
+          '_LISTS' => [
+                        {
+                          'ID' => 'COLOR1',
+                          '_OPTS' => [
+                                       {
+                                         'T' => 'Ice Blue',
+                                         'V' => '5E8ED0'
+                                       },
+                                       {
+                                         'T' => 'Green Apple',
+                                         'V' => '76B45F'
+                                       },
+                                       {
+                                         'T' => 'Charcoal',
+                                         'V' => 808080
+                                       },
+                                       {
+                                         'T' => 'Purple',
+                                         'V' => '9C71CF'
+                                       },
+                                       {
+                                         'T' => 'Brick',
+                                         'V' => 'D56868'
+                                       },
+                                       {
+                                         'T' => 'Orange',
+                                         'V' => 'DBAA3D'
+                                       },
+                                       {
+                                         'T' => 'Sunset',
+                                         'V' => 'ED1B23'
+                                       },
+                                       {
+                                         'T' => 'Night Fire',
+                                         'V' => 990000
+                                       },
+                                       {
+                                         'T' => 'Blue',
+                                         'V' => '0A547D'
+                                       },
+                                       {
+                                         'T' => 'Purple Gel',
+                                         'V' => '483D99'
+                                       },
+                                       {
+                                         'T' => 'Heartfelt',
+                                         'V' => 'B80000'
+                                       },
+                                       {
+                                         'T' => 'Pink Gel',
+                                         'V' => 'C171D9'
+                                       },
+                                       {
+                                         'T' => 'Blue Gel',
+                                         'V' => '2663B3'
+                                       },
+                                       {
+                                         'T' => 'Red Gel',
+                                         'V' => 'CC0000'
+                                       },
+                                       {
+                                         'T' => 'Earthy Green',
+                                         'V' => '3C7B42'
+                                       },
+                                       {
+                                         'T' => 'Green Circles',
+                                         'V' => '1C391F'
+                                       }
+                                     ],
+                          'TYPE' => 'TEXT'
+                        },
+                        {
+                          'ID' => 'MODE',
+                          '_OPTS' => [
+                                       {
+                                         'T' => 'Or',
+                                         'V' => 'or'
+                                       },
+                                       {
+                                         'T' => 'And',
+                                         'V' => 'and'
+                                       },
+                                       {
+                                         'T' => 'Exact',
+                                         'V' => 'EXACT'
+                                       }
+                                     ],
+                          'TYPE' => 'TEXT'
+                        }
+                      ],
+          '_MID' => '0',
+          '_V' => 2,
+          '_SYSTEM' => 1
+        };

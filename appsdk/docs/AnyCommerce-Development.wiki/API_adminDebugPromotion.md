@@ -1,0 +1,20 @@
+# API: adminDebugPromotion
+
+
+## ACCESS REQUIREMENTS: ##
+[[CONFIG|CONCEPT_config]] - LIST
+
+
+does a promotion debug
+
+## INPUT PARAMETERS: ##
+  * SRC: ORDER|DEST|CART
+  * _cartid: SRC:CART
+  * ITEM1: SRC=DEST: ITEM1,ITEM2,ITEM3
+  * QTY1: SRC=DEST: QTY1, QTY2, QTY3
+  * ZIP: SRC=DEST:
+  * ZIP: SRC=DEST:
+  * STATE: SRC=DEST:
+  * COUNTRY: SRC=DEST:
+  * ORDERID: SRC=ORDER
+  * : 

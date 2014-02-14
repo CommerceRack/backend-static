@@ -1,0 +1,383 @@
+<TEMPLATE ID="c-20080701" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNJS" CREATOR="JT" IMAGES="1" CREATED="20080701" PROPERTIES="1" SUBTYPE="C" SERIES="2008" FORMAT="LAYOUT" SHORT="big thumb product list with a banner above and text then subcats below" TYPE="CONFIG" EXPORT="0" TITLE="Big thumbnails for products with sort/items per page header - experimental" RELEASED="20080703"><SUMMARY><![CDATA[This layout features a wide banner, followed by the products in a four column format with a header that supports sorting, items per page and view all.  Below the product list is a text box and then a pipe separated list of categories.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CXFYQIP" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div id='c-20080701'>
+	<div align='center'>
+		<div style='width:600px; text-align:left;'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BANNER1_LINK" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for wide image" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER1" HEIGHT="225" DATA="page:banner1" PROMPT="Wide Image (600 x 225)" WIDTH="600" TYPE="IMAGE"><PRETEXT><![CDATA[<div align='center'><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CAT_URL_4_DD" SUB="CAT_URL_FOR_DROPDOWNS" TYPE="SPECL"><HTML><![CDATA[<%
+/* This is here so that cwpath does not have to be looked up more than once */
+loadurp("URL::CATEGORY_URL"); 
+print(); 
+print("/");
+
+loadurp("SREF::_CWPATH");
+format(substring=>$_,pos=>"1",len=>"256");
+print();
+print("/");
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST_GEN3_MPHEAD" SIZE="20" MAX="2500" MULTIPAGE="1" ALTERNATE="0" DATA="page:prodlist_custom" COLS="4" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" SORTBY="zoovy:prod_name"><HTML><![CDATA[ 
+<table border='0' cellpadding='4' cellspacing='2' align='center'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+<td class='ztable_row ztable_row<% print($row.alt); %>' align='left' valign='top' style='padding-bottom:5px;' width='135'>
+<div style='margin-bottom:3px;'><a href="<% load($PROD_URL); default(""); print(); %>"><% load($zoovy:prod_thumb); default(""); default($zoovy:prod_image1); image(w=>"135",h=>"135",tag=>"1",m=>"0",alt=>$zoovy:prod_name); print(); %></a></div>
+
+<div class='no_underline'><a href="<% load($PROD_URL); default(""); print(); %>" class='zlink'><% load($zoovy:prod_name); strip(length=>"60"); default(""); print(); %></a></div>
+
+<div class='ztable_row_title'><%
+print("");
+load($zoovy:base_price); default(""); 
+format(hidezero,skipblank=>"1"); 
+format(money,skipblank=>"1"); print();
+%></div>
+</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td class='ztable_row ztable_row<% print($row.alt); %>'> </td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+<MULTIPAGE_HEADER><![CDATA[
+<!-- begin multipage header -->
+
+<div class='zbox zbox_body no_underline'>
+
+
+<div style='float:left; padding:5px; font-weight:bold;'>
+<%
+print("");
+
+/* the header is a little different based on whether or not multiple pages are present */
+load($TOTALPAGES); default("1");
+goto(label=>"MULTIPAGES",ne=>"1");
+	print("Displaying ");
+	print($TOTALPRODUCTS);
+	print(" items");
+	stop();
+
+
+:MULTIPAGES();
+
+/* outputs: displaying items X - Y of Z items.  */
+
+/* used to set X (see example above) */
+loadurp("VAR::size"); default("20"); set($VSIZE=>$_);
+
+/* used to generate Y.  If Y is greater than Z, Z is used for Y (this could occur on the last page of multipage) */
+
+loadurp("VAR::p"); default("1"); math(op=>"multiply",var=>$VSIZE);
+set($LASTPROD=>$_);
+goto(label=>"NOTLASTPAGE",lt=>$TOTALPRODUCTS);
+	set($LASTPROD=>$TOTALPRODUCTS);
+:NOTLASTPAGE();
+
+math(op=>"subtract",var=>$VSIZE);
+math(op=>"add",var=>"1");
+
+format(pretext=>"Displaying ",posttext=>" - "); format(posttext=>$LASTPROD); format(posttext=>" of ");  format(posttext=>$TOTALPRODUCTS);  format(posttext=>" items");  print();
+%>
+</div>
+
+
+
+<div style='float:right; padding:5px;'>
+<form name='viewSortCriteria' id='viewSortCriteria' style='display:inline;'>
+
+
+<%
+/* outputs the numbers for each page in the multipage list */
+
+print("");
+
+
+loadurp("");
+
+/* no sense outputting the pages if there is only one page */
+load($TOTALPAGES); default("1");
+goto(label=>"STOPALL",eq=>"1");
+
+
+/* i is the var we use to denote where we are in the loop. it starts at 1 instead of 0 so that we can use it for the links */
+set($i=>"1");
+
+/* ACTIVEPAGE is the page that we are currenlty on in the store. Size is the number of products displayed and sortby = sort.  Duh. */
+loadurp("VAR::p"); default("1"); set($ACTIVEPAGE=>$_);
+loadurp("VAR::size"); default("20"); set($VSIZE=>$_);
+loadurp("VAR::sortby"); default("NAME"); set($VSORTBY=>$_);
+
+
+
+print("
+
+<select name='p' id='p' class='zform_select' style=' font-size:10px;' onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+
+");
+
+load($TOTALPAGES);
+
+
+:LOOP();
+	load($i); format(pretext=>"p=");
+	urivars(override=>$_);
+	set($urivariables=>$_);
+	print(" <option value='%CAT_URL_FOR_DROPDOWNS%?");
+	print($urivariables);
+	print("'");
+/* select the option if that page is currently being viewed. */
+	loadurp("VAR::p");
+	goto(ne=>$i,label=>"NOSELECT");
+	print(" selected ");
+:NOSELECT();	
+	print(">Page ");
+	print($i);
+	print("</option> ");
+	load($i);
+	math(op=>"add",var=>"1");
+	set($i=>$_);
+
+/* add one to total pages and compare to $i to see if another iteration is needed */
+	load($TOTALPAGES);
+	math(op=>"add",var=>"1");
+	goto(ne=>$i,label=>"LOOP");
+	
+
+:END();
+
+	print("</select>");
+
+:STOPALL();
+	stop();
+%>
+
+
+<select name='size' id='size' class='zform_select' style=' font-size:10px;' onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+	<option value=''>Items per Page</option>
+<%
+
+/* if no urivars are set, this block is skipped because otherwise it causes issues */
+
+urivars();
+goto(label=>"SKIPPARAMS",eq=>"");
+/* size and p are blacklisted because size is getting set and p should reset to the first page when this is changed. */
+	load("size,p");
+	set($urivariables=>$_);
+	urivars(blacklist=>$urivariables);
+/* skip updating caturl if the only params set are size and p because it would set caturl to blank */
+	goto(label=>"SKIPPARAMS",eq=>"");	
+		set($catvars=>$_);
+
+:SKIPPARAMS();
+
+print("
+<option value='%CAT_URL_FOR_DROPDOWNS%?"); load($catvars); default(""); print(); print("&size=20' id='20'>20 items per page</option>");
+print("
+<option value='%CAT_URL_FOR_DROPDOWNS%?"); load($catvars); default(""); print(); print("&size=40' id='40'>40 items per page</option>");
+print("
+<option value='%CAT_URL_FOR_DROPDOWNS%?"); load($catvars); default(""); print(); print("&size=60' id='60'>60 items per page</option>");
+print("
+<option value='%CAT_URL_FOR_DROPDOWNS%?"); load($catvars); default(""); print(); print("&size=80' id='80'>80 items per page</option>");
+
+	print("<option value='%CAT_URL_FOR_DROPDOWNS%?");
+	set($urivariables=>"viewall=1&size=2500&p=1");
+	urivars(override=>$urivariables); default(""); print();
+	print("'>View All</option>");
+
+%>
+</select>
+
+<select name='sortby' id='sortby' class='zform_select' style=' font-size:10px;' onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+	<option value=''>Sort Order</option>
+<%
+/* if no urivars are set, this block is skipped because otherwise it causes issues */
+urivars();
+goto(label=>"SKIPPARAMS",eq=>"");
+/* size and p are blacklisted because size is getting set and p should reset to the first page when this is changed. */
+	load("sortby,p");
+	set($urivariables=>$_);
+	urivars(blacklist=>$urivariables);
+/* skip updating caturl if the only params set are size and p because it would set caturl to blank */
+	goto(label=>"SKIPPARAMS",eq=>"");	
+		set($catvars=>$_);
+
+:SKIPPARAMS();
+	
+print("
+<option value='%CAT_URL_FOR_DROPDOWNS%?"); load($catvars); default(""); print(); print("&sortby=zoovy:prod_name' id='zoovy:prod_name'>Name: A to Z</option>");
+print("
+<option value='%CAT_URL_FOR_DROPDOWNS%?"); load($catvars); default(""); print(); print("&sortby=!zoovy:prod_name' id='!zoovy:prod_name'>Name: Z to A</option>");
+print("
+<option value='%CAT_URL_FOR_DROPDOWNS%?"); load($catvars); default(""); print(); print("&sortby=zoovy:base_price' id='zoovy:base_price'>Price: Low to High</option>");
+print("
+<option value='%CAT_URL_FOR_DROPDOWNS%?"); load($catvars); default(""); print(); print("&sortby=!zoovy:base_price' id='!zoovy:base_price'>Price: High to Low</option>");
+print("
+<option value='%CAT_URL_FOR_DROPDOWNS%?"); load($catvars); default(""); print(); print("&sortby=zoovy:prod_mfg' id='zoovy:prod_mfg'>Brand: A to Z</option>");
+print("
+<option value='%CAT_URL_FOR_DROPDOWNS%?"); load($catvars); default(""); print(); print("&sortby=!zoovy:prod_mfg' id='!zoovy:prod_mfg'>Brand: Z to A</option>");
+
+%>
+</select>
+
+
+
+
+
+</form>
+
+</div>
+
+<div style="clear:both;"></div>
+
+</div>
+
+
+<div align='right' class='zsmall'>
+<%
+/* outputs the previous page link IF the first page of products isnt loaded */
+print("");
+loadurp("VAR::p"); default("1");
+goto(ne=>"1",label=>"PREVIOUS");
+	stop();
+	
+:PREVIOUS();
+	print("<a href='");
+	print($PREVURL);
+	print("' style='text-decoration:none; padding-right:6px;' class='zlink'>&#171; Previous</a>  ");
+%>
+<%
+/* outputs the next page link IF the last page of products isnt loaded and there is more than one page total  */
+
+print("");
+
+load($TOTALPAGES); default("1");
+	goto(label=>"MULTIPAGES",ne=>"1");
+	stop();
+
+:MULTIPAGES();
+
+loadurp("VAR::p"); default("1");
+/* if we are on the last page do NOT show the link to the next page */
+goto(ne=>$TOTALPAGES,label=>"NEXT");
+	stop();
+	
+:NEXT();
+	 print("  <a href='");
+	 load($NEXTURL); default(""); print();
+	 print("' style='text-decoration:none; padding-left:20px; padding-right:6px;' class='zlink'>Next &#187;</a>");
+%>
+</div>
+
+
+<script type="text/javascript">
+
+<!--
+
+function PreselectMyItem(itemToSelect,formField)	{
+	itemToSelect = itemToSelect.replace('%3A',':')
+// Get a reference to the drop-down
+	var myDropdownList = document.viewSortCriteria[formField];
+
+// Loop through all the items
+	for (iLoop = 0; iLoop< myDropdownList.options.length; iLoop++)	{    
+		if (myDropdownList.options[iLoop].id == itemToSelect)	{
+// Item is found. Set its selected property, and exit the loop
+			myDropdownList.options[iLoop].selected = true;
+			break;
+			}
+		}
+	}
+
+// preselect the products per page and sort order select lists
+PreselectMyItem("<% loadurp("VAR::size"); default("20"); print(); %>","size");
+PreselectMyItem("<% loadurp("VAR::sortby"); default("zoovy:prod_name"); print(); %>","sortby");
+
+//-->
+</script>
+
+]]></MULTIPAGE_HEADER>
+<INIT><![CDATA[<%
+
+/* override the default INI values here. this gets preprocessed.  */
+
+loadurp("VAR::size"); default($SIZE); initset(SIZE=>$_);
+loadurp("VAR::sortby"); default($SORTBY); initset(SORTBY=>$_);
+
+%>]]></INIT>
+<MULTIPAGE_FOOTER><![CDATA[
+
+<div align='right' class='zsmall'>
+<%
+/* outputs the previous page link IF the first page of products isnt loaded */
+print("");
+loadurp("VAR::p"); default("1");
+goto(ne=>"1",label=>"PREVIOUS");
+	stop();
+	
+:PREVIOUS();
+	print("<a href='");
+	print($PREVURL);
+	print("' style='text-decoration:none; padding-right:6px;' class='zlink'>&#171; Previous</a>  ");
+%>
+<%
+/* outputs the next page link IF the last page of products isnt loaded and there is more than one page total  */
+
+print("");
+
+load($TOTALPAGES); default("1");
+	goto(label=>"MULTIPAGES",ne=>"1");
+	stop();
+
+:MULTIPAGES();
+
+loadurp("VAR::p"); default("1");
+/* if we are on the last page do NOT show the link to the next page */
+goto(ne=>$TOTALPAGES,label=>"NEXT");
+	stop();
+	
+:NEXT();
+	 print("  <a href='");
+	 load($NEXTURL); default(""); print();
+	 print("' style='text-decoration:none; padding-left:20px; padding-right:6px;' class='zlink'>Next &#187;</a>");
+%>
+</div>
+
+
+
+]]></MULTIPAGE_FOOTER>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<!-- begin text area --><div style='margin-top:10px; text-align:left;' class='ztxt'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="SUBCATEGORIES" DESCENDTREE="1" NOROOT="1" MODE="LIST" TYPE="SUBCAT"><HTML><![CDATA[
+<div style='margin-top:10px;' class='zsmall'>
+<!-- CATEGORY -->
+<a href='<% print($cat_url); %>' class='zlink'><% print($cat_pretty); %></a>
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); print(" | "); %>
+<!-- /CATEGORY -->
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CXFYQIR" TYPE="OUTPUT"><HTML><![CDATA[
+		</div>
+	</div>
+</div>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

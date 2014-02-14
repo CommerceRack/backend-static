@@ -1,0 +1,11 @@
+<TEMPLATE ID="1502" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMOE" CREATOR="STAFF" IMAGES="0" CREATED="20010913" PROPERTIES="1" SUBTYPE="U" SERIES="2001" FORMAT="LAYOUT" SHORT="Includes a customizable description, no email form." TYPE="CONFIG" TITLE="No Form" RELEASED="20010913"><SUMMARY><![CDATA[Contact Us Description
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe how users can get in contact with you" DATA="page:description" PROMPT="Contact Us Description" HELPER="This is where you describe how to get in contact with you." TYPE="TEXT"><DEFAULT><![CDATA[If you'd like to check the status of an order, (or cancel one that hasn't been processed), please go to the <a href="/customer_main.cgis">customer account</a> page.  You can also <a href="/subscribe.cgis">subscribe to our mailing list</a>.]]></DEFAULT>
+</ELEMENT>
+
+</TEMPLATE>

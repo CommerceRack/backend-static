@@ -1,0 +1,49 @@
+$VAR1 = bless( {
+                 '_DIGEST' => 'qVyfqRXGk3q/3eP99ht1Cg',
+                 '_DIVS' => [],
+                 '_ID' => 'main',
+                 '_ELEMENTS' => [
+                                  {
+                                    'ID' => 'CPUKMDU',
+                                    'FORMAT' => 'LAYOUT',
+                                    'SUMMARY' => 'Shopping Cart
+',
+                                    'CREATOR' => 'STAFF',
+                                    'SHORT' => 'This is the default cart layout.',
+                                    'TYPE' => 'CONFIG',
+                                    'TITLE' => 'Simple Cart',
+                                    'IMAGES' => '0',
+                                    'PROPERTIES' => '1',
+                                    'SERIES' => '2001',
+                                    'SUBTYPE' => 'T',
+                                    'RELEASED' => '20010619'
+                                  },
+                                  {
+                                    'ID' => 'CPUKMDV',
+                                    'HTML' => '<center>
+
+',
+                                    'TYPE' => 'OUTPUT'
+                                  },
+                                  {
+                                    'ID' => 'CART1',
+                                    'HEIGHT' => '300',
+                                    'HELP' => 'This is the contents of the user\'s shopping cart.',
+                                    'PROMPT' => 'Shopping Cart',
+                                    'WIDTH' => '560',
+                                    'TYPE' => 'CART'
+                                  },
+                                  {
+                                    'ID' => 'CPUKMDW',
+                                    'HTML' => '
+
+</center>
+',
+                                    'TYPE' => 'OUTPUT'
+                                  }
+                                ],
+                 '_FORMAT' => 'LAYOUT',
+                 '_LISTS' => [],
+                 '_V' => 2,
+                 '_SYSTEM' => 1
+               }, 'TOXML' );

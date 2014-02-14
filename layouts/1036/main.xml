@@ -1,0 +1,35 @@
+<TEMPLATE ID="1036" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNJU" CREATOR="JT" IMAGES="0" PROPERTIES="1" SUBTYPE="C" SERIES="Subcat Images" FORMAT="LAYOUT" SHORT="Contains HTML editor at top and bottom, category images, and a prodlist" TYPE="CONFIG" TITLE="3 Column Category Images" RELEASED="00000000"><SUMMARY><![CDATA[The layout has an HTML editor at the top, followed by the categories displayed as images (180 x 180) and name in a 3 column layout. There is a customizable header that appears before the product list (defaulted to big thumb) and another HTML editor at the bottom.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please enter a message that will appear on this page" DATA="page:description" PROMPT="Message" TYPE="HTML"></ELEMENT>
+<ELEMENT ID="SUBCAT" DESCENDTREE="0" NOROOT="1" DATA="page:subcat" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="3"><HTML><![CDATA[<table cellpadding=5 width=100% cellspacing=0>
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+<td width="33%" valign='top' align="center" <% load($bg);  default("");  print(); %> >
+<div style='margin-bottom:4px;'><a href="<% load($cat_url);  default("");  print(); %>"><% load($cat_thumb); default(""); image(w=>"180",h=>"180",bg=>"ffffff",tag=>"1",alt=>$cat_pretty);  print(); %></a></div>
+
+<font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><font size="+1"><a href="<% load($cat_url);  default("");  print(); %>" class="subcat"><strong><% load($cat_pretty);  default("");  print(); %></strong></a></font></font></td>
+<!-- /CATEGORY -->
+<!-- BLANK -->
+<td <% load($bg);  default("");  print(); %>></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUKNJV" TYPE="OUTPUT"><HTML><![CDATA[
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER1" HELP="Please enter a message that will appear on this page" DATA="page:header1" PROMPT="Message" TYPE="TEXTBOX"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." EDITOR="&amp;COLS=1-4" DATA="page:prodlist1" PROMPT="Product Listing (multipage NOT supported)" DEFAULT="&amp;COLS=3&amp;FORMAT=BIGTHUMB" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="DESCRIPTION2" HELP="Please enter a message that will appear on this page" DATA="page:description2" PROMPT="Message 2" TYPE="HTML"></ELEMENT>
+
+</TEMPLATE>

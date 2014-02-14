@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=blinky
+SITEBUTTONS=blinky
+-->
+<html>
+<head>
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0; font-family: verdana; font-size: 13px; background-color: #000000;}
+.title {color: #FFFF33; font-family: verdana; font-weight: bold; font-size: 14px;}
+a {text-decoration: none; color: #FFFF33}
+a:hover	{text-decoration: underline; color: #00CC66}
+form	{display:	inline;}
+</style>
+</head>
+
+<body>
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td width=152>
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td><img src="<!-- WRAPPER_URL -->/cat_top.gif" width="152" height="28" alt="" border="0"></td>
+				</tr><tr>
+					<td><img src="<!-- WRAPPER_URL -->/cat_eyes_animated.gif" width="152" height="63" alt="" border="0"></td>
+				</tr><tr>
+					<td><img src="<!-- WRAPPER_URL -->/cat_mouth.gif" width="152" height="27" alt="" border="0"></td>
+				</tr>
+			</table>
+		</td>
+		<td width=134><table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width="1" height="7" border="0"></td>
+				</tr><tr>
+					<td><a href="<!-- ABOUT_URL -->"><img src="<!-- WRAPPER_URL -->/company.gif" width="134" height="21" alt="" border="0"></a></td>
+				</tr><tr>
+					<td><a href="<!-- LOGIN_URL -->"><img src="<!-- WRAPPER_URL -->/login.gif" width="134" height="21" alt="" border="0"></a></td>
+				</tr><tr>
+					<td><a href="<!-- CONTACT_URL -->"><img src="<!-- WRAPPER_URL -->/contact.gif" width="134" height="21" alt="" border="0"></a></td>
+				</tr><tr>
+					<td><a href="<!-- HOME_URL -->"><img src="<!-- WRAPPER_URL -->/home.gif" width="134" height="21" alt="" border="0"></a></td>
+				</tr><tr>
+					<td><a href="<!-- CART_URL -->"><img src="<!-- WRAPPER_URL -->/cart.gif" width="134" height="19" alt="" border="0"></a></td>
+				</tr><tr>
+					<td><img src="<!-- WRAPPER_URL -->/nav_bottom.gif" width="134" height="8" alt="" border="0"></td>
+				</tr>
+			</table></td>
+		<td width=99%><table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width="1" height="7" border="0"></td>
+				</tr><tr>
+					<td align="right" valign="middle" height="68"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=300
+HEIGHT=68
+--></a></td>
+				</tr><tr>
+					<td align="right" valign="bottom">
+<form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" name="keywords" value="">
+<input type="image" src="<!-- WRAPPER_URL -->/search.gif" >
+</form></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td valign="top"><img src="<!-- WRAPPER_URL -->/cat_bottom.gif" width="152" height="70" alt="" border="0"><br><br><div align="center">
+		<img src="<!-- WRAPPER_URL -->/categories.gif" width="110" height="21" alt="" border="0"><br>
+<!-- MENU
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a><br>
+ONLYHOME=0
+NOHOME=1
+-->
+		
+		</div>
+		</td>
+		<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width="7" height="1" border="0"></td>
+		<td width=99% valign="top"><p><span class="title"><!-- TITLE --></span></p>
+		<!-- BODY -->
+		<p><!-- FOOTER --></p></td>
+		<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width="7" height="1" border="0"></td>
+	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<TEMPLATE ID="c-20100513" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CYVZOZP" CREATED="20100513" SUBTYPE="C" AUTHOR="Zoovy" TYPE="CONFIG" TITLE="Banner, subcats and text" RELEASED="20100519"><SUMMARY><![CDATA[A banner at the top, followed by a four column list of categories with thumbnails and then a text block.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for banner" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER1" HEIGHT="120" EDITOR="INLINE" DATA="page:banner1" PROMPT="Banner" WIDTH="600" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:20px;" align='center'><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description (top - keep this short)" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Keep this text relatively short.  If it is too long, and the subcategories can not be seen when the page initially loads, the subcategories won't be clicked (that's bad).  Put your SEO text in the text block at the bottom of the page.]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:20px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="SUBCATEGORIES" DESCENDTREE="0" DATA="page:subcat" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="4"><HTML><![CDATA[
+<table cellpadding='10' align='center' cellspacing='0' style='margin-bottom:10px;'>
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+	<td width='25%' class='ztable_row' align='center' valign='top'>
+	<div style='margin-bottom:3px;'><a href='<% print($cat_url); %>'  title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>"><%
+/* used to set the bgcolor on the image.  subcat element does not support ALTERNATE params */
+loadurp("CSS::zbody.bgcolor"); default("FFFFFF");
+set($BG=>$_);
+load($cat_thumb); default(""); 
+image(w=>"120",h=>"120",bg=>$BG,tag=>"1",alt=>$cat_pretty);
+print(); 
+%></a></div>
+
+	<div class='ztable_row_title no_underline'><a href='<% print($cat_url); %>' class='zlink'><% print($cat_pretty); %></a></div>
+	</td>
+<!-- /CATEGORY -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION2" WIKI="3" EDITOR="INLINE" DATA="page:description2" PROMPT="Text Description (bottom - SEO text goes here)" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:20px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+
+</TEMPLATE>

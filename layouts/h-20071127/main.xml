@@ -1,0 +1,274 @@
+<TEMPLATE ID="h-20071127" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT SUMMARY="" ID="PAGE_CSPDWSN" CREATOR="Zoovy: JT" V="3" CREATED="20071127" SUBTYPE="H" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Banners, finder, 2 product lists and text"></ELEMENT>
+<ELEMENT ID="UIONLYINSTRUCTIONS" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
+<p><b>Multiple Product Lists:</b>  For instructions on how to select different product lists for each of the list elements, visit: <ul style="margin-top:4px;"> <a href="http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361" target="webdoc">http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361</a></ul></p>
+
+<p><b>Finder (advanced search):</b>  For instructions on how to create and map finders, visit: <ul style="margin-top:4px;"> <a href="http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50900" target="webdoc">http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50900</a></ul></p>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CVQTPAD" HEIGHT="250" EDITOR="INLINE" DATA="page:dynimage1" PROMPT="SlideShow" WIDTH="600" SUB="PAGE_SLIDESHOW" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="FINDER_HEAD" MAXLENGTH="35" EDITOR="INLINE" DATA="page:finder_header" PROMPT="Short heading for the finder form (will only appear if finder is enabled)" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"><SUMMARY><![CDATA[This layout features a slideshow element at the top, followed by a finder (advanced search). Below that is a two item product list and a newsletter subscription box.  To the right is a set of three linkable banners.  Next is 6 item product list followed by a text block.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="FINDER" EDITOR="INLINE" DATA="page:finder" PROMPT="Product Finder" SUB="PAGE_FINDER" TYPE="FINDER"><HTML><![CDATA[
+<!-- Here starts the finder -->
+<% load($FORM); default(""); print(); %>
+<div id='finder' style='margin-bottom:5px;'>
+	<div style='margin-bottom:1px;' class='ztitle'><% loadurp("page:finder_header"); print(); %></div>
+	<div class='zcolor_light'>
+<table cellspacing='0' cellpadding='3'>
+<tr>
+	<% load($FINDERS); default(""); print(); %>
+	
+	<td valign='bottom'><input type="submit" value=" Find it! " class="zform_button"></td>
+
+</tr>
+</table>
+	</div>
+</div>
+</form>
+<!-- end of finder -->]]></HTML>
+<SPEC_DEFAULT><![CDATA[
+	<td align='left' valign='bottom'>
+<div class="ztxt"><% load($prompt); default(""); print(); %></div>
+<div>
+<select name="<% load($id); default(""); print(); %>" class='zform_select'>
+<!-- OPTIONS -->
+	<option value=":<% load($id); default(""); print(); %><% load($v); default(""); print(); %>"><% load($prompt); default(""); print(); %></option>
+<!-- /OPTIONS -->
+</select>
+</div>	
+	</td>
+]]></SPEC_DEFAULT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST" SIZE="5000" MAX="2" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="2" FORMAT="CUSTOM" PROMPT="Product List" SUB="PAGE_PRODLIST" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<div id='zprodlist1' style='margin-bottom:3px; padding-right:3px;'>
+	<div id='zprodlist1_content' class='zprodlist1_content zborder no_underline' align='center'>
+<table border='0' cellpadding='0' cellspacing='0'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td class='ztable_row' style='padding:10px 25px;' align='center' valign='top'>
+	
+	<div style='padding:5px; width:140px; margin-bottom:3px;' class='ztable_row1'><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"130",h=>"130",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a></div>
+	
+	<div style='font-weight:bold;' class='no_underline zprodlist_details'><a href='<% print($PROD_URL); %>'>details</a></div>
+
+	</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td class='ztable_row'> </td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+	</div>
+</div>
+<!-- /product list -->
+]]></HTML>
+<DIVIDER><![CDATA[<td style='border-right: <% loadurp("CSS::zborder.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>]]></DIVIDER>
+</ELEMENT>
+<ELEMENT ID="NEWS_HEAD" MAXLENGTH="35" EDITOR="INLINE" DATA="page:newsletter_header" PROMPT="Short heading for the newsletter form" SUB="PAGE_NEWS_HEADER" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="NEWS_TEXT" WIKI="3" EDITOR="INLINE" DATA="page:newsletter_desc" PROMPT="Short marketing text for newsletter (no html)" SUB="PAGE_NEWS_DESC" TYPE="TEXT" FONT="0"></ELEMENT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for right side banner (top)" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER1" HEIGHT="95" EDITOR="INLINE" DATA="page:banner1" PROMPT="Right side banner (top)" WIDTH="195" SUB="PAGE_BANNER1" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style="margin-bottom:3px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" SUB="PAGE_BANNER2_LINK" PROMPT="Link for right side banner (middle)" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER2" HEIGHT="95" EDITOR="INLINE" DATA="page:banner2" PROMPT="Right side banner (top)" WIDTH="195" SUB="PAGE_BANNER2" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style="margin-bottom:3px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="BANNER3_LINK" EDITOR="INLINE" DATA="page:banner3_link" SUB="PAGE_BANNER3_LINK" PROMPT="Link for right side banner (bottom)" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER3" HEIGHT="95" EDITOR="INLINE" DATA="page:banner3" PROMPT="Right side banner (top)" WIDTH="195" SUB="PAGE_BANNER3" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style="margin-bottom:3px;"><a href="%PAGE_BANNER3_LINK%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST2_HEADER" WIKI="3" MAXLENGTH="20" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header (optional)" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="PRODLIST2" SIZE="5000" MAX="6" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" SUB="PAGE_PRODLIST2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<div id='zprodlist2' style='margin-bottom:5px;' class='zbox zbox_body'>
+
+	<% loadurp("page:prodlist2_header"); stop(unless=>$_); format(pretext=>"<div id='zprodlist2_header' class='zbox_head'><div style='padding:3px 8px; text-align:left;' class='zprodlist2_header'>",posttext=>"</div></div>"); print(); %>
+
+<div id='zprodlist2_content' class='no_underline'>
+<table border='0' cellpadding='0' cellspacing='0' width='598'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td class='ztable_row' style='padding:10px 25px;' align='center' valign='top'>
+	
+	<div style='padding:5px; width:140px; margin-bottom:3px;' class='zbox_head'><a href="<% load($PROD_URL); default(""); print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"130",h=>"130",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a></div>
+	
+	<div style='font-weight:bold;' class='no_underline zprodlist_details'><a href='<% print($PROD_URL); %>'>details</a></div>
+
+	</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td class='ztable_row'> </td>
+<!-- /BLANK -->
+</tr>
+<tr>
+	<td colspan='5' style='border-bottom: <% loadurp("CSS::zbox.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>
+</tr>
+<!-- /ROW -->
+<tr>
+	<td colspan='5' class='zbox_head'><img src='<% print($graphics_url); %>/blank.gif' height='3' width='1' alt='' border='0'></td>
+</tr>
+</table>
+	</div>
+</div>
+<!-- /product list -->
+]]></HTML>
+<DIVIDER><![CDATA[<td style='border-right: <% loadurp("CSS::zbox.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>]]></DIVIDER>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" SUB="PAGE_DESC" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CVQTPAE" TYPE="OUTPUT"><HTML><![CDATA[
+<script language="JavaScript">
+<!--
+function iList () {
+	this.name = '';
+	this.img = new Array();
+	this.url = new Array();
+	this.zum = new Array();
+	this.pause = new Array();
+	this.last = null;
+	this.current = null;
+	this.defaultpause = 2000;
+	this.buttons = false;
+	this.stopped = false;
+	this.loaded = false;
+	this.startstop = false;
+}
+function iLoad (i) {
+	if (i.loaded == true) { return; }
+	i.loaded = true;
+	iRotate(i);
+}
+function iLink (i) {
+	if (!i.loaded) { return; }
+	if (typeof(i.url[i.current]) != "undefined") { window.location.href = i.url[i.current]; }
+	else if (typeof(i.zum[i.current]) != "undefined") { zoom(i.zum[i.current]); }
+	else if (i.startstop) { iSwitch(i); }
+}
+function iSwitch (i) {
+	if (!i.loaded) { return; }
+	if (i.stopped) { i.stopped = false; iRotate(i); }
+	else { i.stopped = true; }
+}
+function iRotate (i) {
+	if (i.stopped) { return; }
+	iNext(i);
+	var pause = i.defaultpause;
+	if (typeof(i.pause[i.current]) != "undefined") { pause = i.pause[i.current]; }
+	setTimeout("iRotate("+i.name+")",pause);
+}
+function iNext (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Loading..."; }
+	i.current++; if (i.current > i.last) { i.current = 0; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Next Image"; }
+}
+function iPrev (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Loading..."; }
+	i.current--; if (i.current < 0) { i.current = i.last; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Previous Image"; }
+}
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write("<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align=\"center\">\n<img src=\"" + url + "\"><br>\n<form><input type=\"button\" value=\"Close Window\" onClick=\"self.close(true)\"></form>\n</div>\n</body>\n</html>\n");
+	z.document.close();
+	z.focus(true);
+}
+
+
+function clearText(thefield)	{
+	if (thefield.defaultValue == thefield.value)
+		thefield.value = "";
+}
+
+
+function clearText(thefield)	{
+	if (thefield.defaultValue == thefield.value)
+		thefield.value = "";
+}
+//-->
+</script>
+<div align='center'  id='h_200711127'>
+	<div style='width:600px; text-align:left;'>
+
+
+<div style='margin-bottom:5px;'>%PAGE_SLIDESHOW%</div>
+
+
+<div>%PAGE_FINDER%</div>
+
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%' style='margin-bottom:5px;'>
+<tr>
+	<td valign='top' width='66%'>
+
+
+<div>%PAGE_PRODLIST%</div>
+
+
+<div id='newsletter'>
+	<div class='ztitle'>%PAGE_NEWS_HEADER%</div>
+	<div class='zsmall'>%PAGE_NEWS_DESC%</div>
+	<div>
+
+<!-- Newsletter form -->
+<form action='%SUBSCRIBE_URL%' method='post'>
+<input type='hidden' name='check' value='1'>
+<table cellspacing='0' cellpadding='0'>
+<tr>
+	<td><input type='text' class='zform_textbox' maxlength='50' name='email' value='Email Address' onfocus='clearText(this);' style='width:135px;'></td>
+	<td style='padding:0px 4px;'><input type='text' class='zform_textbox' maxlength='50' name='fullname' value='Full Name' onfocus='clearText(this);' style='width:135px;'></td>
+	<td><input type='submit' class='zform_button' value='Subscribe'></td>
+</tr>
+</table>
+</form>
+<!-- /newsletter form -->
+
+	</div>
+</div>
+
+
+	</td>
+
+
+	<td valign='top' width='33%'>
+
+
+<div>%PAGE_BANNER1%</div>	
+
+<div>%PAGE_BANNER2%</div>	
+
+<div>%PAGE_BANNER3%</div>	
+
+
+	</td>
+</tr>
+</table>
+
+
+<div>%PAGE_PRODLIST2%</div>
+
+
+<div>%PAGE_DESC%</div>
+
+
+	</div>
+</div>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

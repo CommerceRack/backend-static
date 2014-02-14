@@ -1,0 +1,1400 @@
+$VAR1 = {
+          '_DIGEST' => 'UDIWJEvwAOyjCC4eDSAzgQ',
+          '_DIVS' => [],
+          '_ID' => 'shoptastic',
+          '_ELEMENTS' => [
+                           {
+                             'SUMMARY' => '
+This Theme offers four different colors and optional payment & shipping icons, plus you choose from which menu items appear.  Also offers the newsletter login and account login forms as options for the left side.  Right side includes a Generation 2 minicart and recently viewed items.  The Gen2 minicart doesn\'t take the user from the page when add to cart is clicked, in most cases.
+	',
+                             'ID' => 'CQLVLCC',
+                             'PROMPT' => 'Shoptastic',
+                             'COLORS' => 240,
+                             'CART' => 'persist',
+                             'TYPE' => 'CONFIG',
+                             'CATEGORIES' => 65537,
+                             'THEME' => 'disclaimer_text_color=000000&content_font_face=Arial%2c+Helvetica&table_listing_background_color_alternate=EEEEEE&table_heading_text_color=000000&pretty_name=Default&link_visited_text_color=000000&content_background_color=FFFFFF&table_heading_background_color=CCCCCC&link_text_color=000066&link_active_text_color=000033&table_listing_font_face=Arial%2c+Helvetica&content_text_color=000000&content_font_size=3&disclaimer_font_face=Arial%2c+Helvetica&name=default&table_listing_background_color=FFFFFF&disclaimer_background_color=999999&alert_color=FF0000&disclaimer_font_size=1&table_listing_text_color=000000&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_listing_font_size=3',
+                             'TITLE' => 'Shoptastic',
+                             'CREATED' => 20051214,
+                             'PROPERTIES' => 511,
+                             'SITEBUTTONS' => 'default=reflectgel_grey|gif|110|33'
+                           },
+                           {
+                             'ID' => 'CQHUPZE',
+                             'VALUE' => 'CC0000',
+                             'SUB' => 'COLOR1',
+                             'TYPE' => 'HIDDEN',
+                             'DATA' => 'merchant:zoovy:wrap_shoptastic_color'
+                           },
+                           {
+                             'ID' => 'COLOR_CHOOSER',
+                             'VALUE' => '6583F8',
+                             'PROMPT' => 'Color',
+                             'SUB' => 'COLOR1',
+                             'FONT' => '0',
+                             'TYPE' => 'SELECT',
+                             'LIST' => 'COLOR1',
+                             'DATA' => 'merchant:zoovy:wrap_shoptastic_color',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQPOIJN',
+                             'HELPER' => 'Be sure to set your catalog to all upper case.  Set to DEFAULT if you don\'t know what this is.',
+                             'PROMPT' => 'Search Catalog',
+                             'SUB' => 'SEARCHCATALOG',
+                             'DEFAULT' => 'DEFAULT',
+                             'LIST' => '@SYSTEM.SEARCHCATALOGS',
+                             'FONT' => '0',
+                             'TYPE' => 'SELECT'
+                           },
+                           {
+                             'ID' => 'CQLVLCD',
+                             'SUB' => 'LINK_VISITED_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_VISITED_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCE',
+                             'SUB' => 'TABLE_HEADING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCF',
+                             'SUB' => 'DISCLAIMER_FONT_SIZE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCG',
+                             'SUB' => 'CONTENT_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::CONTENT_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCH',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCI',
+                             'SUB' => 'CONTENT_TEXT_COLOR',
+                             'LOAD' => 'THEME::CONTENT_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCJ',
+                             'SUB' => 'TABLE_LISTING_FONT_SIZE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCK',
+                             'SUB' => 'TABLE_LISTING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_LISTING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCL',
+                             'SUB' => 'TABLE_LISTING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_LISTING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCM',
+                             'SUB' => 'CONTENT_FONT_FACE',
+                             'LOAD' => 'THEME::CONTENT_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCN',
+                             'SUB' => 'NAME',
+                             'LOAD' => 'THEME::NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCO',
+                             'SUB' => 'DISCLAIMER_FONT_FACE',
+                             'LOAD' => 'THEME::DISCLAIMER_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCP',
+                             'SUB' => 'PRETTY_NAME',
+                             'LOAD' => 'THEME::PRETTY_NAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCQ',
+                             'SUB' => 'TABLE_HEADING_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCR',
+                             'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCS',
+                             'SUB' => 'LINK_ACTIVE_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_ACTIVE_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCT',
+                             'SUB' => 'CONTENT_FONT_SIZE',
+                             'LOAD' => 'THEME::CONTENT_FONT_SIZE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCU',
+                             'SUB' => 'ALERT_COLOR',
+                             'LOAD' => 'THEME::ALERT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCV',
+                             'SUB' => 'DISCLAIMER_BACKGROUND_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_BACKGROUND_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCW',
+                             'SUB' => 'TABLE_HEADING_FONT_FACE',
+                             'LOAD' => 'THEME::TABLE_HEADING_FONT_FACE',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCX',
+                             'SUB' => 'TABLE_HEADING_TEXT_COLOR',
+                             'LOAD' => 'THEME::TABLE_HEADING_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCY',
+                             'SUB' => 'DISCLAIMER_TEXT_COLOR',
+                             'LOAD' => 'THEME::DISCLAIMER_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLCZ',
+                             'SUB' => 'LINK_TEXT_COLOR',
+                             'LOAD' => 'THEME::LINK_TEXT_COLOR',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDA',
+                             'SUB' => 'HOMECATEGORY_URL',
+                             'LOAD' => 'URL::HOMECATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDB',
+                             'SUB' => 'WRAPPER_URL',
+                             'LOAD' => 'URL::WRAPPER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDC',
+                             'SUB' => 'CART_URL',
+                             'LOAD' => 'URL::CART_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDD',
+                             'SUB' => 'SUBSCRIBE_URL',
+                             'LOAD' => 'URL::SUBSCRIBE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDE',
+                             'SUB' => 'FEEDBACK_URL',
+                             'LOAD' => 'URL::FEEDBACK_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDF',
+                             'SUB' => 'LOGOUT_FUNCTION_URL',
+                             'LOAD' => 'URL::LOGOUT_FUNCTION_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDG',
+                             'SUB' => 'SHIPQUOTE_URL',
+                             'LOAD' => 'URL::SHIPQUOTE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDH',
+                             'SUB' => 'PRIVACY_URL',
+                             'LOAD' => 'URL::PRIVACY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDI',
+                             'SUB' => 'SITEBUTTON_URL',
+                             'LOAD' => 'URL::SITEBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDJ',
+                             'SUB' => 'HOMEPAGE_URL',
+                             'LOAD' => 'URL::HOMEPAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDK',
+                             'SUB' => 'COUNTER_URL',
+                             'LOAD' => 'URL::COUNTER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDL',
+                             'SUB' => 'RETURNS_URL',
+                             'LOAD' => 'URL::RETURNS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDM',
+                             'SUB' => 'PASSWORD_URL',
+                             'LOAD' => 'URL::PASSWORD_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDN',
+                             'SUB' => 'UPDATE_PAYMENT_URL',
+                             'LOAD' => 'URL::UPDATE_PAYMENT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDO',
+                             'SUB' => 'FORGOT_URL',
+                             'LOAD' => 'URL::FORGOT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDP',
+                             'SUB' => 'NAVBUTTON_URL',
+                             'LOAD' => 'URL::NAVBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDQ',
+                             'SUB' => 'CONTACT_URL',
+                             'LOAD' => 'URL::CONTACT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDR',
+                             'SUB' => 'LOGOUT_URL',
+                             'LOAD' => 'URL::LOGOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDS',
+                             'SUB' => 'GALLERY_URL',
+                             'LOAD' => 'URL::GALLERY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDT',
+                             'SUB' => 'REMOVE_URL',
+                             'LOAD' => 'URL::REMOVE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDU',
+                             'SUB' => 'HOME_URL',
+                             'LOAD' => 'URL::HOME_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDV',
+                             'SUB' => 'ABOUT_ZOOVY_URL',
+                             'LOAD' => 'URL::ABOUT_ZOOVY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDW',
+                             'SUB' => 'NEWS_URL',
+                             'LOAD' => 'URL::NEWS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDX',
+                             'SUB' => 'SECURE_URL',
+                             'LOAD' => 'URL::SECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDY',
+                             'SUB' => 'ABOUT_URL',
+                             'LOAD' => 'URL::ABOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLDZ',
+                             'SUB' => 'USERBUTTON_URL',
+                             'LOAD' => 'URL::USERBUTTON_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEA',
+                             'SUB' => 'CLOSED_URL',
+                             'LOAD' => 'URL::CLOSED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEB',
+                             'SUB' => 'FASTORDER_URL',
+                             'LOAD' => 'URL::FASTORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEC',
+                             'SUB' => 'MAIL_FORM_URL',
+                             'LOAD' => 'URL::MAIL_FORM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLED',
+                             'SUB' => 'GRAPHICS_URL',
+                             'LOAD' => 'URL::GRAPHICS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEE',
+                             'SUB' => 'IMAGE_URL',
+                             'LOAD' => 'URL::IMAGE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEF',
+                             'SUB' => 'CONTACTUS_URL',
+                             'LOAD' => 'URL::CONTACTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEG',
+                             'SUB' => 'DYNAMIC_URL',
+                             'LOAD' => 'URL::DYNAMIC_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEH',
+                             'SUB' => 'NONSECURE_URL',
+                             'LOAD' => 'URL::NONSECURE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEI',
+                             'SUB' => 'CONTACT_US_URL',
+                             'LOAD' => 'URL::CONTACT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEJ',
+                             'SUB' => 'SEARCH_URL',
+                             'LOAD' => 'URL::SEARCH_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEK',
+                             'SUB' => 'ABOUTUS_URL',
+                             'LOAD' => 'URL::ABOUTUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEL',
+                             'SUB' => 'CUSTOMER_MAIN_URL',
+                             'LOAD' => 'URL::CUSTOMER_MAIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEM',
+                             'SUB' => 'MERCHANT_LOGIN_URL',
+                             'LOAD' => 'URL::MERCHANT_LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEN',
+                             'SUB' => 'CATEGORY_URL',
+                             'LOAD' => 'URL::CATEGORY_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEO',
+                             'SUB' => 'ADULT_URL',
+                             'LOAD' => 'URL::ADULT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEP',
+                             'SUB' => 'CLAIM_URL',
+                             'LOAD' => 'URL::CLAIM_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEQ',
+                             'SUB' => 'CLAIM_MULTI_URL',
+                             'LOAD' => 'URL::CLAIM_MULTI_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLER',
+                             'SUB' => 'ABOUT_US_URL',
+                             'LOAD' => 'URL::ABOUT_US_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLES',
+                             'SUB' => 'RESULTS_URL',
+                             'LOAD' => 'URL::RESULTS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLET',
+                             'SUB' => 'PRODUCT_URL',
+                             'LOAD' => 'URL::PRODUCT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEU',
+                             'SUB' => 'CONTINUE_URL',
+                             'LOAD' => 'URL::CONTINUE_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEV',
+                             'SUB' => 'REDIR_URL',
+                             'LOAD' => 'URL::REDIR_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEW',
+                             'SUB' => 'KILL_COOKIES_URL',
+                             'LOAD' => 'URL::KILL_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEX',
+                             'SUB' => 'LOGIN_URL',
+                             'LOAD' => 'URL::LOGIN_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEY',
+                             'SUB' => 'CHECKOUT_URL',
+                             'LOAD' => 'URL::CHECKOUT_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLEZ',
+                             'SUB' => 'ORDER_STATUS_URL',
+                             'LOAD' => 'URL::ORDER_STATUS_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLFA',
+                             'SUB' => 'NO_COOKIES_URL',
+                             'LOAD' => 'URL::NO_COOKIES_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLFB',
+                             'SUB' => 'PAYPAL_URL',
+                             'LOAD' => 'URL::PAYPAL_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLFC',
+                             'SUB' => 'CANCEL_ORDER_URL',
+                             'LOAD' => 'URL::CANCEL_ORDER_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLFD',
+                             'SUB' => 'MAIL_CONFIG_URL',
+                             'LOAD' => 'URL::MAIL_CONFIG_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQLVLFE',
+                             'SUB' => 'DISABLED_URL',
+                             'LOAD' => 'URL::DISABLED_URL',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQPOIJO',
+                             'LINK' => 'javascript:addToCart(\'%ID%\',\'%SKU%\');',
+                             'BUTTON' => 'add_to_cart',
+                             'TYPE' => 'OVERLOAD'
+                           },
+                           {
+                             'ID' => 'CQPOIJP',
+                             'SUB' => 'SESSION_ID',
+                             'LOAD' => 'CART::ID',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQPOIJQ',
+                             'SUB' => 'STORENAME',
+                             'LOAD' => 'FLOW::USERNAME',
+                             'TYPE' => 'READONLY',
+                             'RAW' => 1
+                           },
+                           {
+                             'ID' => 'CQHLBGD',
+                             'TRUE' => '<td><img src=\'%GRAPHICS_URL%/cc_amex_small.gif\'></td>',
+                             'SUB' => 'AMEX',
+                             'PROMPT' => 'American Express Logo',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_amex',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CQHLBGE',
+                             'TRUE' => '<td><img src=\'%GRAPHICS_URL%/cc_visa_small.gif\'></td>',
+                             'SUB' => 'VISA',
+                             'PROMPT' => 'Visa Logo',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_visa',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CQHLBGF',
+                             'TRUE' => '<td><img src=\'%GRAPHICS_URL%/cc_mc_small.gif\'></td>',
+                             'SUB' => 'MCARD',
+                             'PROMPT' => 'Paypal Logo',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_mastercard',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CQHLBGG',
+                             'TRUE' => '<td><img src=\'%GRAPHICS_URL%/cc_discover_small.gif\'></td>',
+                             'SUB' => 'DISCOVER',
+                             'PROMPT' => 'Discover Logo',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_discover',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CQHLBGI',
+                             'TRUE' => '<td><img src=\'%GRAPHICS_URL%/paypal_small.gif\'></td>',
+                             'SUB' => 'PAYPAL',
+                             'PROMPT' => 'PayPal Logo',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_paypal',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CQHLBGJ',
+                             'TRUE' => '<td><img src=\'%GRAPHICS_URL%/fedex.gif\'></td>',
+                             'SUB' => 'FEDEX',
+                             'PROMPT' => 'Fedex Logo',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_fedex',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CQHLBGK',
+                             'TRUE' => '<td><img src=\'%GRAPHICS_URL%/ups_small.gif\'></td>',
+                             'SUB' => 'UPS',
+                             'PROMPT' => 'UPS Logo',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_ups',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CQHLBGL',
+                             'TRUE' => '<td><img src=\'%GRAPHICS_URL%/usps.gif\'></td>',
+                             'SUB' => 'USPS',
+                             'PROMPT' => 'USPS Logo',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_usps',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'NEWSLETTERFORM',
+                             'TRUE' => '<!-- Newsletter subscription form -->
+
+<table cellspacing="0" cellpadding="0" border="0" width="180" style="margin-bottom:4px;"><tr>
+		<td><img src="%WRAPPER_URL%/header_left.gif" width="10" height="28"></td>
+		<td style="background-image:url(%WRAPPER_URL%/header_bg.gif);" width="99%"><span class="header">Newsletter</span></td>
+		<td class="right_bg" align="right" valign="top"><img src="%WRAPPER_URL%/header_right.gif" width="7" height="28"></td>
+	</tr><tr>
+		<td class="left_bg"></td>
+		<td align="center" style="padding-right:4px;">
+		
+		<form action="%SUBSCRIBE_URL%" method="post" style="margin: 0px;"><input type="hidden" name="check" value="1"><table cellspacing="1" cellpadding="2" border="0"><tr>
+			<td align="left"><span class="minicart">Email:</span></td>
+			<td align="right"><input type="text" class="formed" maxlength="50" name="email" value="" style="width:110px;"></td>
+		</tr><tr>
+			<td align="left"><span class="minicart">Name:</span></td>
+			<td align="right"><input type="text" class="formed" maxlength="50" name="fullname" value="" style="width:110px;"></td>
+		</tr><tr>
+			<td colspan="2" align="right"><input type="image" src="%WRAPPER_URL%/%COLOR1%_btn_subscribe.gif" border="0"></td>
+		</tr></table></form>
+		
+		</td>
+		<td class="right_bg"></td>
+	</tr><tr>
+		<td align="left" class="shadow"><img src="%WRAPPER_URL%/bottom_left.gif" width="10" height="8"></td>
+		<td colspan="2"  align="right" valign="bottom" class="shadow"><img src="%WRAPPER_URL%/bottom_right.gif" width="7" height="8"></td>
+</tr></table>
+<!-- /Newsletter subscription form -->
+',
+                             'SUB' => 'NEWSLETTER_FORM',
+                             'PROMPT' => 'Display newsletter subscription form on left',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_shoptastic_newsform',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'LOGINFORM',
+                             'TRUE' => '<!-- Login form -->
+
+<table cellspacing="0" cellpadding="0" border="0" width="180" style="margin-bottom:4px;"><tr>
+		<td><img src="%WRAPPER_URL%/header_left.gif" width="10" height="28"></td>
+		<td style="background-image:url(%WRAPPER_URL%/header_bg.gif);" width="99%"><span class="header">Login</span></td>
+		<td class="right_bg" align="right" valign="top"><img src="%WRAPPER_URL%/header_right.gif" width="7" height="28"></td>
+	</tr><tr>
+		<td class="left_bg"></td>
+		<td align="center" style="padding-right:4px;">
+
+<form action="%LOGIN_URL%" method="post" style="margin:0px;"><input type="hidden" name="mode" value="check"><input type="hidden" name="url" value="%CUSTOMER_MAIN_URL%">
+		<table cellspacing="1" cellpadding="2" border="0"><tr>
+			<td align="left"><span class="minicart">Login:</span></td>
+			<td align="right"><input type="text" class="formed" maxlength="50" name="login" value="" style="width:85px;"></td>
+		</tr><tr>
+			<td align="left"><span class="minicart">Password:</span></td>
+			<td align="right"><input type="password" class="formed" maxlength="50" name="password" value="" style="width:85px;"></td>
+		</tr><tr>
+			<td colspan="2" align="right"><input type="image" src="%WRAPPER_URL%/%COLOR1%_btn_login.gif" border="0"></td>
+		</tr><tr>
+		
+			<td colspan="2" align="center"><span class="minicart"><a href="%LOGIN_URL%">secure login</a> | <a href="%FORGOT_URL%">lost password?</a></span></td>
+		
+		</tr></table></form>
+		
+		</td>
+		<td class="right_bg"></td>
+	</tr><tr>
+		<td align="left" class="shadow"><img src="%WRAPPER_URL%/bottom_left.gif" width="10" height="8"></td>
+		<td colspan="2"  align="right" valign="bottom" class="shadow"><img src="%WRAPPER_URL%/bottom_right.gif" width="7" height="8"></td>
+</tr></table>
+<!-- /login subscription form -->
+',
+                             'SUB' => 'LOGIN_FORM',
+                             'PROMPT' => 'Display Login form on left',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_shoptastic_loginform',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'GALLERYBTNPROMPT',
+                             'TRUE' => '
+<td><a href="%GALLERY_URL%"><img src=\'%WRAPPER_URL%/%COLOR1%_menu_auctions.gif\' height="65" width="70" border="0" alt="Auctions"></a></td>
+',
+                             'SUB' => 'GALLERY_BTN',
+                             'PROMPT' => 'Show Gallery (auctions) Button',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_menu_gallery',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CARTBTNPRMPT',
+                             'TRUE' => '
+<td><a href="%CART_URL%"><img src=\'%WRAPPER_URL%/%COLOR1%_menu_cart.gif\' height="65" width="70" border="0" alt="Home"></a></td>
+',
+                             'SUB' => 'CART_BTN',
+                             'PROMPT' => 'Show Cart Button',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_menu_cart',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CHECKOUTBTNPROMPT',
+                             'TRUE' => '
+<td><a href="%CHECKOUT_URL%"><img src=\'%WRAPPER_URL%/%COLOR1%_menu_checkout.gif\' height="65" width="70" border="0" alt="Checkout"></a></td>
+',
+                             'SUB' => 'CHECKOUT_BTN',
+                             'PROMPT' => 'Show Checkout Button',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_menu_checkout',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'ABOUTBTNPRMPT',
+                             'TRUE' => '
+<td><a href="%ABOUT_URL%"><img src=\'%WRAPPER_URL%/%COLOR1%_menu_company.gif\' height="65" width="70" border="0" alt="About"></a></td>
+',
+                             'SUB' => 'ABOUT_BTN',
+                             'PROMPT' => 'Show Company Button',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_menu_about',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CONTACTBTNPROPMT',
+                             'TRUE' => '
+<td><a href="%CONTACT_URL%"><img src=\'%WRAPPER_URL%/%COLOR1%_menu_contact.gif\' height="65" width="70" border="0" alt="Contact"></a></td>
+',
+                             'SUB' => 'CONTACT_BTN',
+                             'PROMPT' => 'Show Contact Button',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_menu_contact',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CQLVLFG',
+                             'TRUE' => '
+<td><a href="%HOME_URL%"><img src=\'%WRAPPER_URL%/%COLOR1%_menu_home.gif\' height="65" width="70" border="0" alt="Home"></a></td>
+',
+                             'SUB' => 'HOME_BTN',
+                             'PROMPT' => 'Show Home Button',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_menu_home',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'LOGINBTNPROMPT',
+                             'TRUE' => '
+<td><a href="%LOGIN_URL%"><img src=\'%WRAPPER_URL%/%COLOR1%_menu_login.gif\' height="65" width="70" border="0" alt="Account Login"></a></td>
+',
+                             'SUB' => 'LOGIN_BTN',
+                             'PROMPT' => 'Show Login Button',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_menu_login',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CQLVLFI',
+                             'TRUE' => '
+<td><a href="%SUBSCRIBE_URL%"><img src=\'%WRAPPER_URL%/%COLOR1%_menu_newsletter.gif\' height="65" width="70" border="0" alt="Newsletter"></a></td>
+',
+                             'HELPER' => 'If you have the newsletter form enabled on the left, it is redundant to enable it here as well.',
+                             'SUB' => 'NEWSLETTER_BTN',
+                             'PROMPT' => 'Show Newsletter Button',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_menu_newsletter',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'CQLVLFJ',
+                             'TRUE' => '
+<td><a href="%RETURNS_URL%"><img src=\'%WRAPPER_URL%/%COLOR1%_menu_returns.gif\' height="65" width="70" border="0" alt="Returns"></a></td>
+',
+                             'SUB' => 'RETURNS_BTN',
+                             'PROMPT' => 'Show Returns Button',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_menu_returns',
+                             'OFF' => '0'
+                           },
+                           {
+                             'ID' => 'SEARCHBTNPRMPT',
+                             'TRUE' => '
+<td><a href="%SEARCH_URL%"><img src=\'%WRAPPER_URL%/%COLOR1%_menu_search.gif\' height="65" width="70" border="0" alt="Search"></a></td>
+',
+                             'SUB' => 'SEARCH_BTN',
+                             'PROMPT' => 'Show Search Button',
+                             'ON' => 1,
+                             'TYPE' => 'CHECKBOX',
+                             'HELP' => 'In Most Cases, you don\'t need this.  If you have an advanced search page setup, then it is more applicable',
+                             'FALSE' => '',
+                             'DATA' => 'merchant:zoovy:wrap_menu_search',
+                             'OFF' => '0'
+                           },
+                           {
+                             'HTML' => '
+<html>
+<head>
+',
+                             'ID' => 'CQLVLFN',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQLVLFO',
+                             'TYPE' => 'HEAD'
+                           },
+                           {
+                             'HTML' => '
+</head>
+<style type="text/css">
+body	{font-family: Arial, Helvetica, sans-serif; color:#333333;}
+a	{color: #%COLOR1%;}
+a:hover	{color: #666666;}
+table	{text-align:left;}
+
+.minicart	{font-size: 11px;}
+.listies	{font-size: 11px;}
+.header	{font-size: 12px; color: #828282; font-weight: bold;}
+.cats	{font-size: 13px; font-weight: bold; text-decoration:none;}
+
+
+.top_bg	{background-image:url(%WRAPPER_URL%/logo_bg.gif); background-position:bottom; background-repeat:repeat-x}
+.left_bg	{background-image:url(%WRAPPER_URL%/grey.gif); background-position:left; background-repeat:repeat-y}
+.right_bg	{background-image:url(%WRAPPER_URL%/right_bg.gif); background-position:right; background-repeat:repeat-y}
+.shadow	{background-image:url(%WRAPPER_URL%/bottom_bg.gif); background-position:bottom; background-repeat:repeat-x}
+
+
+.leftborder	{border-left:1px solid #D5D5D5;}
+.topborder	{border-top:1px solid #D5D5D5;}
+.rightborder	{border-right:1px solid #D5D5D5;}
+.bottomborder	{border-bottom:1px solid #D5D5D5;}
+
+.formed	{border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color:#FFFFFF; font-size: 12px; font-family: Arial, Helvetica, sans-serif;}
+
+/* These are the styles for the search autocompletion divs */
+div.keywords_auto_complete {width: 350px;}
+div.keywords_auto_complete ul {border:1px solid #888; margin:0; padding:0; width:100%; list-style-type:none; background-color:#FDFDFD; opacity:.85;filter: alpha(opacity=85); -moz-opacity: 0.85;}
+div.keywords_auto_complete ul li {margin:0; padding:1px 2px 1px 2px; font-size:11px;}
+div.keywords_auto_complete ul li.selected {background-color: #EFEFEF;}
+div.keywords_auto_complete ul strong.highlight {color: #FFFFFF;background-color:#666666; margin:0;padding:0;}
+</style>
+
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/prototype.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/zoovy.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous/scriptaculous.js"></SCRIPT>
+
+<script>
+<!--
+
+var session_id = \'%SESSION_ID%\';
+var store = \'%STORENAME%\';
+var DOCID = \'shoptastic\';
+
+function updateCart() {
+
+	$(\'PUTCARTHERE\').innerHTML = \'Updating - please wait!\';
+	new Effect.Highlight($(\'PUTCARTHERE\'));
+	
+	// this gets called by handleResponse (which is in zoovy.js)
+   var postBody = \'m=RenderElement&format=WRAPPER&docid=\'+DOCID+\'&element=IMAGECART&targetDiv=PUTCARTHERE\';
+	new Ajax.Request(\'/ajax/RenderElement\', { postBody: postBody, asynchronous: 1,
+		onComplete: function(request){handleResponse(request.responseText);} }
+		) ;
+	}
+
+//
+// this function is overloaded, and is run whenever an "add_to_cart" button is clicked
+//		it finds the form with a product id that matches on it.
+//
+function addToCart(id,pid) {
+	// alert("adding To Cart (product: " + pid + ")");
+
+   var postBody = \'m=AddToCart&cart=\'+session_id+\'&pid=\'+pid;
+	for (i = document.forms.length-1; i>=0; --i) {
+		if (document.forms[i].elements[\'product_id\']) {
+			if (document.forms[i].elements[\'product_id\'].value == pid) {
+				postBody = postBody + \'&\' + Form.serialize(document.forms[i]);
+			   new Ajax.Request(\'/ajax/AddToCart\', { postBody: postBody, asynchronous: 1,
+			      onComplete: function(request){handleResponse(request.responseText);} }
+			      ) ;
+				}
+			}
+		}
+	// alert(\'finished with addToCart\');	
+	}
+	
+function emptyCart(btn) {
+	alert("Emptying Cart");
+	}
+
+//--></script>
+<body style="background-color:#FFFFFF; margin:4px;">
+<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+	<td style="padding:3px;" class="leftborder topborder bottomborder"><a href="%HOME_URL%">',
+                             'ID' => 'CQLVLFP',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'HEIGHT' => 65,
+                             'ID' => 'CQLVLFQ',
+                             'WIDTH' => 300,
+                             'TYPE' => 'LOGO',
+                             'BGCOLOR' => 'FFFFFF'
+                           },
+                           {
+                             'HTML' => '</a></td>
+	<td width="99%" align="right" class="rightborder topborder bottomborder"><table cellspacing="0" cellpadding="0"><tr>
+<!-- Begin menu buttons -->		
+		%HOME_BTN%
+		%CONTACT_BTN%
+		%NEWSLETTER_BTN%
+		%RETURNS_BTN%
+		%SEARCH_BTN%
+		%LOGIN_BTN%
+		%ABOUT_BTN%
+		%GALLERY_BTN%
+		%CART_BTN%
+		%CHECKOUT_BTN%
+<!-- /Begin menu buttons -->
+	</tr></table></td>
+	<td class="right_bg" valign="top"><img src="%WRAPPER_URL%/header_right.gif" width="7" height="28"></td>
+</tr><tr>
+<!-- breadcrumb and search -->
+	<td colspan="2" style="height:31px; background-image:url(%WRAPPER_URL%/search_bg.gif); background-repeat:repeat-x;" class="leftborder rightborder bottomborder"><table cellspacing="1" cellpadding="0" width="100%"><tr>
+		<td width="99%" style="padding-left:4px;"><span class="listies">',
+                             'ID' => 'CQLVLFR',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'HTML' => '
+<a href="%URL%">%MESSAGE%</a>
+',
+                             'ID' => 'CQLVLFS',
+                             'DIVIDER' => ' &#187; ',
+                             'TYPE' => 'BREADCRUMB',
+                             'STYLE' => 'LEGACYBREADCRUMB',
+                             'OUTPUTFILTER' => 'PG=home',
+                             'OUTPUTSKIP' => 4
+                           },
+                           {
+                             'HTML' => '</span></td>
+		<td align="right" colspan="2"><!-- begin of the auto_completing textbox -->
+
+
+<form action="%RESULTS_URL%" method="get" id="searchFrm" style="margin:0px;"><input type="hidden" name="CATALOG" value="%SEARCHCATALOG%">
+<table border=0><tr>
+	<td><input type="text" name="keywords" id="keywords"/><span style="display:none" id="keywords_stat"></span></td>
+
+<td align="right"><input type="image" src="%WRAPPER_URL%/%COLOR1%_btn_search.gif"></td>
+
+</tr></table>
+</form>
+
+
+
+<!-- end of the auto_completing textbox -->
+</td>
+		
+		</tr></table></form></td>
+	<td class="right_bg" valign="top"></td>
+<!-- /breadcrumb and search -->
+</tr><tr>
+	<td align="left" valign="bottom" class="shadow"><img src="%WRAPPER_URL%/bottom_left.gif" width="10" height="8"></td>
+	<td colspan="2" align="right" valign="bottom" class="shadow"><img src="%WRAPPER_URL%/bottom_right.gif" width="7" height="8"></td>
+</tr></table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+	<td valign="top" style="padding-right:4px;">
+	
+<table cellspacing="0" cellpadding="0" border="0" width="180" style="margin-bottom:4px;"><tr>
+		<td><img src="%WRAPPER_URL%/header_left.gif" width="10" height="28"></td>
+		<td style="background-image:url(%WRAPPER_URL%/header_bg.gif);" width="99%"><span class="header">Categories</span></td>
+		<td class="right_bg" align="right" valign="top"><img src="%WRAPPER_URL%/header_right.gif" width="7" height="28"></td>
+	</tr><tr>
+		<td class="left_bg"></td>
+		<td align="center" style="padding-right:4px;">
+		
+',
+                             'ID' => 'CQLVLFT',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'HTML' => '
+<table cellspacing="2" cellpadding="0" width="100%">
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+<td><a href="%cat_url%" class="cats">%cat_pretty%</a></td>
+<!-- /CATEGORY -->
+</tr><tr><td style="height:1px; background-color:#CCCCCC;"></td></tr>
+<!-- /ROW -->
+<tr><td style="height:8px;"></td></tr></table>
+',
+                             'ID' => 'CQLVLFU',
+                             'SRC' => '.',
+                             'FORCECOLUMNS' => 1,
+                             'TYPE' => 'SUBCAT',
+                             'MODE' => 'LIST'
+                           },
+                           {
+                             'HTML' => '		
+	
+		</td>
+		<td class="right_bg"></td>
+	</tr><tr>
+		<td align="left" class="shadow"><img src="%WRAPPER_URL%/bottom_left.gif" width="10" height="8"></td>
+		<td colspan="2"  align="right" valign="bottom" class="shadow"><img src="%WRAPPER_URL%/bottom_right.gif" width="7" height="8"></td>
+</tr></table>
+%NEWSLETTER_FORM%
+%LOGIN_FORM%
+
+',
+                             'ID' => 'CQLVLFV',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQLVLFW',
+                             'TYPE' => 'SIDEBAR'
+                           },
+                           {
+                             'HTML' => '	
+	
+</td>
+<!-- main content cell -->
+	<td valign="top" width="95%"><h1 style="font-size:16px; color:#666666; margin:0px;">',
+                             'ID' => 'CQLVLFX',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQLVLFY',
+                             'TYPE' => 'TITLE'
+                           },
+                           {
+                             'HTML' => '</h1>',
+                             'ID' => 'CQLVLFZ',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQLVLGA',
+                             'TYPE' => 'BODY'
+                           },
+                           {
+                             'HTML' => '</td>
+<!-- /main content cell -->
+',
+                             'ID' => 'CQLVLGB',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'HTML' => '
+<!-- right column.  Should only appear on non-secure pages. -->
+	<td valign="top">		
+',
+                             'ID' => 'BEGINRIGHTCELL',
+                             'TYPE' => 'OUTPUT',
+                             'OUTPUTFILTER' => 'PG=cart',
+                             'OUTPUTSKIP' => 3
+                           },
+                           {
+                             'HTML' => '		<!-- MINICART -->
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:4px;"><tr>
+		<td><img src="%WRAPPER_URL%/header_left.gif" width="10" height="28"></td>
+		<td style="background-image:url(%WRAPPER_URL%/header_bg.gif);" width="99%"><span class="header">Your Cart</span></td>
+		<td class="right_bg" align="right" valign="top"><img src="%WRAPPER_URL%/header_right.gif" width="7" height="28"></td>
+	</tr><tr>
+		<td class="left_bg"></td>
+		<td align="center" style="padding-right:4px;">
+		<div id="PUTCARTHERE">
+',
+                             'ID' => 'CQLVLGC',
+                             'TYPE' => 'OUTPUT',
+                             'OUTPUTFILTER' => 'PG=cart',
+                             'OUTPUTSKIP' => 3
+                           },
+                           {
+                             'HTML' => '
+<table width="100%" cellpadding="0" cellspacing="2">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td width="1%">%zoovy:prod_thumb/default-zoovy:prod_image1/image-w:45-h:45-alt:prod_name%</td>
+<td><span class="listies">%prod_name/strip-35% %REMOVE_LINK%</span></td>
+<!-- /PRODUCT -->
+</tr><tr><td style="height:1px; background-color:#CCCCCC;" colspan="2"></td></tr>
+<!-- /ROW -->
+</table>
+<table width="110" cellspacing="1" cellpadding="0"><tr>
+	<td><span class="minicart">Items: </span></td>
+	<td align="right"><span class="minicart">%ITEMCOUNT%</span></td>
+</tr>
+%SURCHARGE_LINE%
+<tr>
+	<td><span class="minicart">Total: </span></td>
+	<td align="right"><span class="minicart">%GRANDTOTAL/money%</span></td>
+</tr></table>
+
+<!-- SURCHARGE -->
+<tr>
+	<td><span class="minicart">Shipping:</span></td>
+	<td align="right"><span class="minicart">%SURCHARGEVALUE/money%</span></td>
+</tr>
+<!-- /SURCHARGE -->
+',
+                             'FORMAT' => 'CUSTOM',
+                             'ID' => 'IMAGECART',
+                             'PROMPT' => 'Shopping Cart',
+                             'TYPE' => 'CART',
+                             'OUTPUTFILTER' => 'PG=cart',
+                             'OUTPUTSKIP' => 3
+                           },
+                           {
+                             'HTML' => '		</div>
+<table><tr>
+	<td colspan="2" align="center"><a href="%CART_URL%"><img src="%WRAPPER_URL%/%COLOR1%_btn_update_cart.gif" alt="Change Quantities" border="0" height="24" width="118"></a></td>
+</tr><tr>
+	<td><a href="%CART_URL%"><img src="%WRAPPER_URL%/%COLOR1%_btn_cart.gif" alt="View Cart" border="0" height="24" width="76"></a></td>
+	<td><a href="%CHECKOUT_URL%"><img src="%WRAPPER_URL%/%COLOR1%_btn_checkout.gif" alt="Checkout" border="0" height="24" width="76"></a></td>
+</tr></table>
+		
+		</td>
+		<td class="right_bg"></td>
+	</tr><tr>
+		<td align="left" class="shadow"><img src="%WRAPPER_URL%/bottom_left.gif" width="10" height="8"></td>
+		<td colspan="2"  align="right" valign="bottom" class="shadow"><img src="%WRAPPER_URL%/bottom_right.gif" width="7" height="8"></td>
+</tr></table>		
+<!-- /MINICART -->
+	',
+                             'ID' => 'CQLVLGD',
+                             'TYPE' => 'OUTPUT',
+                             'OUTPUTFILTER' => 'PG=cart',
+                             'OUTPUTSKIP' => 3
+                           },
+                           {
+                             'HTML' => '
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:4px;"><tr>
+		<td><img src="%wrapper_url%/header_left.gif" width="10" height="28"></td>
+		<td style="background-image:url(%wrapper_url%/header_bg.gif);" width="99%"><span class="header">Recently Viewed</span></td>
+		<td class="right_bg" align="right" valign="top"><img src="%wrapper_url%/header_right.gif" width="7" height="28"></td>
+	</tr><tr>
+		<td class="left_bg"></td>
+		<td align="center" style="padding-right:4px;"><table border="0" cellpadding="0" cellspacing="2" width="100%">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td width="1%"><a href="%PROD_URL%">%zoovy:prod_thumb/default-zoovy:prod_image1/image-w:45-h:45-b:FFFFFF-alt:prod_name%</a></td>
+<td align="left"><a href="%PROD_URL%" class="listies">%zoovy:prod_name%</a></td>
+<!-- /PRODUCT -->
+</tr><tr><td style="height:1px; background-color:#CCCCCC;" colspan="2"></td></tr>
+<!-- /ROW -->
+</table></td>
+		<td class="right_bg"></td>
+	</tr><tr>
+		<td align="left" class="shadow"><img src="%wrapper_url%/bottom_left.gif" width="10" height="8"></td>
+		<td colspan="2"  align="right" valign="bottom" class="shadow"><img src="%wrapper_url%/bottom_right.gif" width="7" height="8"></td>
+</tr></table>',
+                             'FORMAT' => 'CUSTOM',
+                             'ID' => 'PRODUCTLIST',
+                             'SIZE' => 50000,
+                             'MAX' => 6,
+                             'TYPE' => 'PRODLIST',
+                             'SHOWDEFAULT' => '0',
+                             'ALTERNATE' => 1,
+                             'SRC' => 'SMART:VISITED',
+                             'OUTPUTFILTER' => 'PG=cart',
+                             'OUTPUTSKIP' => 3,
+                             'COLS' => 1
+                           },
+                           {
+                             'HTML' => '
+	</td>
+<!-- /right column -->	
+	',
+                             'ID' => 'ENDOFRIGHTCELL',
+                             'TYPE' => 'OUTPUT',
+                             'OUTPUTFILTER' => 'PG=cart',
+                             'OUTPUTSKIP' => 3
+                           },
+                           {
+                             'HTML' => '
+</tr></table>
+<table cellspacing="0" cellpadding="0" width="100%"><tr>
+	<td rowspan="2" width="95%" bgcolor="#F5F5F5" class="topborder rightborder leftborder">',
+                             'ID' => 'GOBBLYGOOK',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'ID' => 'CQLVLGE',
+                             'TRANSPARENT' => 'TRUE',
+                             'TYPE' => 'FOOTER'
+                           },
+                           {
+                             'HTML' => '</td>
+	<td width="5%" align="right" class="topborder" style="padding:0px 10px 0px 10px;"><table cellspacing="2" cellpadding="0"><tr>
+		%AMEX% %VISA% %MCARD% %DISCOVER% %PAYPAL% <!-- %BIDPAY% -->
+	</tr></table></td>
+	<td class="right_bg" rowspan="2" align="right" valign="top"><img src="%WRAPPER_URL%/header_right.gif" width="7" height="28"></td>
+</tr><tr>
+	<td align="right"><table cellspacing="0" cellpadding="0"><tr>
+		%FEDEX% %UPS% %USPS%
+	</tr></table></td>
+</tr><tr>
+		<td align="left" class="shadow"><img src="%WRAPPER_URL%/bottom_left.gif" width="10" height="8"></td>
+		<td colspan="2"  align="right" valign="bottom" class="shadow"><img src="%WRAPPER_URL%/bottom_right.gif" width="7" height="8"></td>
+</tr></table>
+',
+                             'ID' => 'CQLVLGF',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'HTML' => '
+ 
+<!-- begin of the auto_completing textbox -->
+
+<div id="keywords_auto_complete" class="keywords_auto_complete">Popular Searches:<br></div>
+<script type="text/javascript">
+<!--
+new Ajax.Autocompleter( \'keywords\', \'keywords_auto_complete\', \'/ajax/AutoComplete/CATALOG=%SEARCHCATALOG%\',
+   { min_chars: 2, indicator: \'keywords_stat\' })
+//-->
+</script>
+ 
+
+<!-- end of the auto_completing textbox -->
+',
+                             'ID' => 'CQDOEOR',
+                             'TYPE' => 'OUTPUT'
+                           },
+                           {
+                             'HTML' => '
+</body>
+</html>
+',
+                             'ID' => 'CQLZZZZZZZ',
+                             'TYPE' => 'OUTPUT'
+                           }
+                         ],
+          '_FORMAT' => 'WRAPPER',
+          '_LISTS' => [
+                        {
+                          'ID' => 'COLOR1',
+                          '_OPTS' => [
+                                       {
+                                         'T' => 'Blue',
+                                         'V' => '6583F8'
+                                       },
+                                       {
+                                         'T' => 'Green',
+                                         'V' => 197113
+                                       },
+                                       {
+                                         'T' => 'Purple',
+                                         'V' => '9B1EA6'
+                                       },
+                                       {
+                                         'T' => 'Red',
+                                         'V' => 'CC0000'
+                                       }
+                                     ],
+                          'TYPE' => 'TEXT'
+                        }
+                      ],
+          '_MID' => '0',
+          '_V' => 2,
+          '_SYSTEM' => 1
+        };

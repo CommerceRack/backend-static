@@ -1,0 +1,69 @@
+<TEMPLATE ID="1031" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNIM" CREATOR="JT" IMAGES="0" CREATED="00000000" PROPERTIES="1" SUBTYPE="C" SERIES="Multiple Prodlists" FORMAT="LAYOUT" SHORT="Contains 2 HTML text boxes and 5 separate product lists." TYPE="CONFIG" TITLE="Multi-prodlist (default) with 2 HTML textboxes" OCREATED="20041103"><SUMMARY><![CDATA[A description at the top followed by five product lists, each using any of the default listing styles.  Each of the product lists has it's own header. At the bottom of the page is another HTML editor. The 'mutliple page' feature is disabled on this layout. Subcategories on pages using this layout will be displayed in a three column layout and will display on the subcategory pages (that use this flow) if no subcats are present there.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DESCENDTREE="1" NOROOT="1" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="3"><HTML><![CDATA[<table cellspacing=2 cellpadding=0 border=0 width="100%">
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+<td align="left"><a href='<% load($cat_url);  default("");  print(); %>'><% load($cat_pretty);  default("");  print(); %></a></td>
+<!-- /CATEGORY -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please enter a message that will appear on this page" DATA="page:description" PROMPT="Message" TYPE="HTML"></ELEMENT>
+<ELEMENT ID="CPUKNIN" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER1" HELP="Please enter a message that will appear on this page" DATA="page:header1" PROMPT="Message" TYPE="TEXTBOX"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." EDITOR="&amp;COLS=1-4" DATA="page:prodlist1" PROMPT="Product Listing" DEFAULT="&amp;COLS=3&amp;FORMAT=THUMB" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKNIO" TYPE="OUTPUT"><HTML><![CDATA[
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER2" HELP="Please enter a message that will appear on this page" DATA="page:header2" PROMPT="Message" TYPE="TEXTBOX"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST2" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." EDITOR="&amp;COLS=1-4" DATA="page:prodlist2" PROMPT="Product Listing" DEFAULT="&amp;COLS=3&amp;FORMAT=THUMB" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKNIP" TYPE="OUTPUT"><HTML><![CDATA[
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER3" HELP="Please enter a message that will appear on this page" DATA="page:header3" PROMPT="Message" TYPE="TEXTBOX"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST3" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." EDITOR="&amp;COLS=1-4" DATA="page:prodlist3" PROMPT="Product Listing" DEFAULT="&amp;COLS=3&amp;FORMAT=THUMB" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKNIQ" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER4" HELP="Please enter a message that will appear on this page" DATA="page:header4" PROMPT="Message" TYPE="TEXTBOX"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST4" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." EDITOR="&amp;COLS=1-4" DATA="page:prodlist4" PROMPT="Product Listing" DEFAULT="&amp;COLS=3&amp;FORMAT=THUMB" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKNIR" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER5" HELP="Please enter a message that will appear on this page" DATA="page:header5" PROMPT="Message" TYPE="TEXTBOX"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST5" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." EDITOR="&amp;COLS=1-4" DATA="page:prodlist5" PROMPT="Product Listing" DEFAULT="&amp;COLS=3&amp;FORMAT=THUMB" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKNIS" TYPE="OUTPUT"><HTML><![CDATA[
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION2" HELP="Please enter a message that will appear on this page" DATA="page:description2" PROMPT="Message" TYPE="HTML"></ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,81 @@
+<TEMPLATE ID="213" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNJW" CREATOR="JT" CREATED="00000000" IMAGES="2" PROPERTIES="1" SUBTYPE="H" SERIES="Multiple Prodlists" FORMAT="LAYOUT" SHORT="Has 1 big pic at the top with two different more customized product lists on the page" TYPE="CONFIG" TITLE="Big Pic, 2 Product Lists" RELEASED="20041124"><SUMMARY><![CDATA[This layout has a big picture at the top (400 x 300) with a single column, 2 product max customized list just to the right (use a short LIST on this one, as it is set to order randomly).  Below that is a header and then another customized product list.  At the bottom of the page is an HTML editor with an image to the right.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKNJX" TYPE="OUTPUT"><HTML><![CDATA[<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+	<td width="40%">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="300" HELP="Please select a picture for this category." DATA="page:picture1" PROMPT="Big Picture" WIDTH="400" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNJY" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	<td width="60%">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST" MAX="2" MULTIPAGE="0" ALTERNATE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" COLS="1" FORMAT="CUSTOM" PROMPT="Product Listing" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td align="center" valign="top" width="<% load($COLWIDTH);  default("");  print(); %>" <% load($bg);  default("");  print(); %>><table cellspacing=0 width="100%"><tr>
+	<td valign="top"><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"100",h=>"80",tag=>"1");  print(); %></a></td>
+	<td valign="top" align="left"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><strong><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_name);  default(""); strip(length=>"35",breaks=>"1",html=>"1");  format(after=>"break",skipblank=>"1");  print(); %></a></strong><% load($zoovy:prod_desc);  default(""); strip(length=>"50",breaks=>"1",html=>"1");  print(); %></font></td>
+</tr><tr>
+	<td valign="middle"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><font size="+1"><strong><em><% load($zoovy:base_price);  default("");  format(money);  print(); %></em></strong></font></font></td>
+	<td align="left" valign="middle"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><strong>&#187; <a href="<% load($PROD_URL);  default("");  print(); %>">More Details</a></strong></font></td>
+</tr></table></td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td width="<% load($COLWIDTH);  default("");  print(); %>" <% load($bg);  default("");  print(); %>></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUKNJZ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr><tr>
+	<td colspan="2"><strong>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER" LENGTH="15" HELP="Please enter a Header for the product list" DATA="page:header" PROMPT="Product List Header" HELPER="Remember to keep this text short and to the point." DEFAULT="Featured Products" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</font></strong><br>]]></POSTTEXT>
+<PRETEXT><![CDATA[<strong><font size="+1">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNKA" TYPE="OUTPUT"><HTML><![CDATA[</strong>
+</td>
+</tr><tr>
+	<td colspan="2">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST2" SIZE="500" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist2" FORMAT="CUSTOM" PROMPT="Product Listing 2" TYPE="PRODLIST"><HTML><![CDATA[<table border="0" cellpadding="5" cellspacing="0" width=100%>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td align="center" valign="top" width="<% load($COLWIDTH);  default("");  print(); %>" <% load($bg);  default("");  print(); %>><table cellspacing=0 width="100%"><tr>
+	<td valign="top" height="120"><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"100",h=>"120",tag=>"1");  print(); %></a></td>
+	<td valign="top" align="left"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><strong><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_name);  default(""); strip(length=>"45",breaks=>"1",html=>"1");  format(after=>"break",skipblank=>"1");  print(); %></a></strong><% load($zoovy:prod_desc);  default(""); strip(length=>"90",breaks=>"1",html=>"1");  print(); %></font></td>
+</tr><tr>
+	<td height="30" valign="middle"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><font size="+2"><strong><em><% load($zoovy:base_price);  default("");  format(money);  print(); %></em></strong></font></font></td>
+	<td align="left" valign="middle"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><strong>&#187; <a href="<% load($PROD_URL);  default("");  print(); %>">More Details</a></strong></font></td>
+</tr></table></td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td width="<% load($COLWIDTH);  default("");  print(); %>" <% load($bg);  default("");  print(); %>></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUKNKB" TYPE="OUTPUT"><HTML><![CDATA[
+
+</td>
+</tr><tr>
+	<td align="left">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" HELPER="Remember to keep this text short and to the point.  " TYPE="HTML"></ELEMENT>
+<ELEMENT ID="CPUKNKC" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	<td align="right">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC2" HEIGHT="100" HELP="Please select a picture for this category." DATA="page:picture2" PROMPT="Small Picture 2" WIDTH="200" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKNKD" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr></table>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

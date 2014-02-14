@@ -1,0 +1,30 @@
+<TEMPLATE ID="20002" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMUT" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="Q" FORMAT="LAYOUT" SHORT="Provides access to a blank page where you can put your own HTML" TYPE="CONFIG" TITLE="Customizable" RELEASED="20021205"><SUMMARY><![CDATA[Accept Message
+No Accept
+Vendor
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="MESSAGE" HELP="Warning Message" DATA="product:tntserve:vendor" PROMPT="Vendor" TYPE="TEXT"><DEFAULT><![CDATA[ <h1>If you are underage, then stay out!</h1>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CPUKMUU" TYPE="OUTPUT"><HTML><![CDATA[ <br>
+
+
+<a href="/adult.cgis?adult_content=yes&url=%REDIRECT_URL%">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ACCEPT" LENGTH="100" HELP="This message is displayed to accept the agreement." DATA="page:prodcatstitle" PROMPT="Accept Message" DEFAULT="Yes, I certify am an adult meeting the above criteria." TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CPUKMUV" TYPE="OUTPUT"><HTML><![CDATA[</a><br>
+<br>
+<a href="http://www.yahooligans.com/">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="NOACCEPT" LENGTH="100" HELP="This message is displayed if the customer does not wish to enter the site." DATA="page:prodcatstitle" PROMPT="No Accept" DEFAULT="No, I cannot agree the terms of the site." TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CPUKMUW" TYPE="OUTPUT"><HTML><![CDATA[
+</a><br>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

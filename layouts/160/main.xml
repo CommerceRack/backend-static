@@ -1,0 +1,190 @@
+<TEMPLATE ID="160" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="prod_info" V="2" CREATED="00000000" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Product Info Only.  No add to cart"><SUMMARY><![CDATA[This layout will display 6 images down the left column and most product data in the right.  No add to cart button is present.  This layout is for informational purposes only (popups, ajax and such). DO NOT select this layout.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CRNENFI" TYPE="OUTPUT"><HTML><![CDATA[<!-- merchant vars -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQFJSOP" DATA="FLOW::USERNAME" SUB="USERNAME" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRNENFJ" RAW="1" SUB="FL_ID" TYPE="READONLY" LOAD="FLOW::FL"></ELEMENT>
+<ELEMENT ID="CRNENFK" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- product vars -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNENFL" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
+<ELEMENT ID="CRNENFM" RAW="1" FORMAT="PLAINPRICE" SUB="MSRP" TYPE="READONLY" LOAD="product:zoovy:prod_msrp"></ELEMENT>
+<ELEMENT ID="CRNENFN" RAW="1" FORMAT="PLAINPRICE" SUB="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="PRODNAME" RAW="1" SUB="PROD_NAME" TYPE="READONLY" LOAD="product:zoovy:prod_name"></ELEMENT>
+<ELEMENT ID="CRNENFO" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- Image sub elements for javascript -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRGULBZ" DATA="product:zoovy:prod_image1" RAW="1" SUB="IMAGE1" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRGULCD" DATA="product:zoovy:prod_image2" RAW="1" SUB="IMAGE2" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRGULB4" DATA="product:zoovy:prod_image3" RAW="1" SUB="IMAGE3" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRGULC5" DATA="product:zoovy:prod_image4" RAW="1" SUB="IMAGE4" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRGULB6" DATA="product:zoovy:prod_image5" RAW="1" SUB="IMAGE5" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRGULC9" DATA="product:zoovy:prod_image6" RAW="1" SUB="IMAGE6" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRNENFP" TYPE="OUTPUT"><HTML><![CDATA[
+
+<table cellspacing="4" cellpadding="0">
+<tr>
+	<td valign="top" width="200">
+
+<!-- Image sub elements for javascript -->
+<div style="margin-bottom:2px;">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRGULBZ" DATA="product:zoovy:prod_image1" WIDTH="200" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CRNENFQ" TYPE="OUTPUT"><HTML><![CDATA[</div>
+<div style="margin-bottom:2px;">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNENFV" TYPE="OUTPUT"><HTML><![CDATA[</div>
+	
+	</td>
+	<td valign="top" width="400">
+<div style="font-size:10pt; font-weight:bold;">%PROD_NAME%</div>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNJCGR" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CRNENFV2" TYPE="OUTPUT"><HTML><![CDATA[</div>
+<!-- manf. info and price -->
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-top:5px;">
+<tr>
+	<td valign="top">
+	<!-- manf. info -->
+	<div id="prod_topData_info">
+		<div id="prod_topData_sku">Item #: %SKU%</div> 
+		]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MANUFACTURER" DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div id="prod_topData_mfg">Manufacturer: ]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="MANUFACTURERID" DATA="product:zoovy:prod_mfgid" PROMPT="Manufacturer's ID" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div id="prod_topData_mfgid">Mfg. ID: ]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CRNENFW" TYPE="OUTPUT"><HTML><![CDATA[
+	</div>
+<!-- /manf. info -->	
+	</td>
+	<td valign="top">
+	<div id="prod_topData_pricing">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNENFX" RAW="1" FORMAT="PLAINPRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"><PRETEXT><![CDATA[Our&nbsp;Price:&nbsp;$<span id="prod_topData_price">]]></PRETEXT>
+<POSTTEXT><![CDATA[</span><br />]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CRNENFY" RAW="1" FORMAT="PLAINPRICE" TYPE="READONLY" LOAD="product:zoovy:prod_msrp"><PRETEXT><![CDATA[Retail&nbsp;Price:&nbsp;$<span id="prod_topData_msrp">]]></PRETEXT>
+<POSTTEXT><![CDATA[</span><br />]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CRNENFZ" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+	</div>
+	</td>
+</tr>
+</table>
+<!-- /manf. info and price -->		
+	
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNENGA" DATA="product:zoovy:prod_desc" PROMPT="Product Description" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[<p>Description:<br>]]></PRETEXT>
+<POSTTEXT><![CDATA[</p>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CRNENGB" DATA="product:zoovy:prod_detail" PROMPT="Product Specs (detailed description)" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[<p>Specifications:<br>]]></PRETEXT>
+<POSTTEXT><![CDATA[</p>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CRNENGC" RAW="1" TYPE="TEXTLIST" LOAD="product:zoovy:prod_features"><POSTTEXT><![CDATA[ </ul></p>]]></POSTTEXT>
+<LINEPRETEXT><![CDATA[ <li> ]]></LINEPRETEXT>
+<LINEPOSTTEXT><![CDATA[ </li> ]]></LINEPOSTTEXT>
+<PRETEXT><![CDATA[<p>Features: <ul>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNENGD" TYPE="OUTPUT"><HTML><![CDATA[
+
+<p>Product Reviews:<br>
+<!-- rating summary -->
+<div id="REVIEWSUMMARY">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="REVIEWSUMMARY" DATA="product:zoovy:prod_reviews" TYPE="REVIEWS"><HTML><![CDATA[
+<!-- SUMMARY -->
+<table style="width:auto;" cellspacing="2" cellpadding="0">
+<tr>
+	<td width="85%">Reviewed <% load($TOTAL_REVIEWS);  default("");  print(); %> times</td>
+	<td NOWRAP align="right">Average Rating: </td>
+	<td align="left"><img src="//static.zoovy.com/img/proshop/W110-H25-Bffffff/zoovy/reviews/stars_<% load($AVG_RATING);  default("");  print(); %>.jpg" height="25" width="110" alt="ranked  <% load($AVG_RATINGDECIMAL);  default("");  print(); %> our of 5" border="0" /></td>
+</tr>
+</table>	
+<!-- /SUMMARY -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNENGE" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+<!-- /rating summary -->
+
+<!-- Reviews content -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="REVIEWDETAILS" DATA="product:zoovy:prod_reviews" TYPE="REVIEWS"><HTML><![CDATA[
+<!-- DETAIL -->
+<hr />
+<table cellspacing="0" width="100%">
+<!-- ROW -->
+<!-- REVIEW -->
+<tr>
+	<td width="99%"><strong><% load($CUSTOMER_NAME);  default("");  print(); %></strong> of <% load($LOCATION);  default("");  print(); %>
+	<div><% load($SUBJECT);  default("");  print(); %></div></td>
+	<td valign="top"><img src="//static.zoovy.com/img/proshop/W110-H25-Bffffff/zoovy/reviews/stars_<% load($RATING);  default("");  print(); %>.jpg" height="25" width="110" alt="ranked <% load($RATINGDECIMAL);  default("");  print(); %> our of 5" border="0" /> <!--  as a <% load($RATING);  default("");  print(); %> (  )<br> --></td>
+</tr>
+<tr>
+	<td colspan="2" style="border-bottom:1px dotted #CCCCCC;"><div><% load($MESSAGE);  default("");  print(); %></div></td>
+</tr>
+<!-- /REVIEW -->
+<!-- /ROW -->
+</table>
+<!-- /DETAIL -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="50000" ID="PRODLIST_ACCESSORIES" MAX="15" COLS="1" FORMAT="CUSTOM" PROMPT="Accessory Products - set through product editor" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="PRODUCT:zoovy:accessory_products"><HTML><![CDATA[<!-- Accessories -->
+<p>Accessories:<br>
+<!-- ROW -->
+<!-- PRODUCT -->
+<% load($zoovy:base_price);  default("");  format(money);  print(); %> - <% load($zoovy:prod_name);  default("");  print(); %><br>
+<!-- /PRODUCT -->
+<!-- /ROW -->
+</p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="QTYPRICE" DATA="product:zoovy:qty_price" MIDLINE=" for " PRELINE="Buy " PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
+<PRETEXT><![CDATA[<p>Quantity Discount Pricing:<br>]]></PRETEXT>
+<POSTTEXT><![CDATA[</p>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST" SIZE="5000" MAX="3" DATA="page:prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[<table>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td align="center" valign="top"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"70",h=>"70",tag=>"1");  print(); %><br>
+<% load($zoovy:prod_name);  default(""); strip(length=>"55",breaks=>"1",html=>"1");  print(); %><br>
+<% load($zoovy:base_price);  default("");  format(money);  print(); %></td>
+<!-- /PRODUCT -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNENGF" TYPE="OUTPUT"><HTML><![CDATA[
+
+	</td>
+</tr>
+</table>
+
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

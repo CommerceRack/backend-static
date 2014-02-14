@@ -1,0 +1,30 @@
+--- 
+"@conditions": 
+  - 
+    "{urn:ebay:apis:eBLBaseComponents}Condition": 
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'New'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 1000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Used'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 3000
+    "{urn:ebay:apis:eBLBaseComponents}ConditionHelpURL": 
+      - 'http://pages.ebay.com/help/sell/contextual/condition_5.html'
+"AttributeConversionEnabled": 'Disabled'
+"BestOfferAutoAcceptEnabled": 'true'
+"BestOfferAutoDeclineEnabled": 'true'
+"BestOfferCounterEnabled": 'true'
+"BestOfferEnabled": 'true'
+"CategoryID": 220
+"ConditionEnabled": 'Enabled'
+"CrossBorderTradeGBEnabled": 'true'
+"FreePicturePackEnabled": 'true'
+"GlobalShippingEnabled": 'false'
+"ItemSpecificsEnabled": 'Enabled'
+"ProPackPlusEnabled": 'true'
+"UPCIdentifierEnabled": 'true'
+"ValuePackEnabled": 'true'

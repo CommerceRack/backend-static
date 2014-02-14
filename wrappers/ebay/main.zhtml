@@ -1,0 +1,63 @@
+<!-- CONFIG
+THEME=ebay
+SITEBUTTONS=ebay
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- HEAD -->
+<style type="text/css">
+body	{margin: 10px;}
+body, td, li, ol, ul, p	{font-family: Arial, Helvetica, sans-serif;}
+a	{color: #0000CC;}
+
+.menu	{font-size: 14px; color: #000000; font-weight: bold; text-decoration: none; padding-left: 5px; padding-right: 5px;}
+
+.menu_bg	{background-color:#0000CC;}
+.lt_purp_bg	{background-color:#EEEEF8;}
+.title_bg	{background-color:#D6DCFE;}
+.stroke	{background-color:#9999CC;}
+.white_bg	{background-color:#ffffff; border-right-style: solid; border-right-width: 1px; border-right-color: #000066;}
+.tab_bg	{background-color:#EFEFEF;}
+</style>
+</head>
+<body>
+<table width="100%" cellspacing="4" cellpadding="0"><tr>
+	<td width="1%"><img src="<!-- WRAPPER_URL -->/ebaylogo.gif"></td>
+	<td width="99%" align="left" style="border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #0000CC;"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr class="tab_bg">
+		<td width="1%" align="left" valign="top"><img src="<!-- WRAPPER_URL -->/menu_left.gif" width="11" height="11"></td>
+		<td width="98%" align="right">&nbsp;</td>
+		<td rowspan="2"><!-- LOGO
+HEIGHT=55
+WIDTH=200
+BGCOLOR=EEEEEE
+--></td>
+		<td width="1%" align="right" valign="top"><img src="<!-- WRAPPER_URL -->/menu_right.gif" width="11" height="11"></td>
+	</tr><tr class="tab_bg">
+		<td colspan="2"></td>
+			<td><img src="<!-- GRAPHICS_URL -->/blank.gif" height="1" width="1" alt=""></td>
+	</tr></table></td>
+</tr></table>
+<table cellspacing="0" cellpadding="0" width="100%"><tr>
+	<td style="height: 6px;" colspan="2"></td>
+</tr><tr>
+	<td class="stroke" style="height: 2px;" colspan="2"></td>
+</tr><tr class="title_bg">
+	<td align="left"  style="height: 22px;"><span style="font-size: 14px; font-weight: bold; margin-left: 10px;"><!-- TITLE --></span></td>
+	<td NOWRAP align="right" width="10%"><span style="font-size: 12px;">Items in Cart: <!-- MINICART
+ITEMSONLY=1
+-->	| Subtotal: <!-- MINICART
+SUBTOTALONLY=1
+--></span></td>
+</tr><tr>
+	<td class="stroke" style="height: 2px;" colspan="2"></td>
+</tr></table><div align="center">
+
+<table cellspacing="2" cellpadding="2" width="96%"><tr><td align="left"><!-- BODY --></td></tr></table>
+</div><br>
+<!-- FOOTER
+TRANSPARENT=TRUE
+-->
+</body>
+</html>

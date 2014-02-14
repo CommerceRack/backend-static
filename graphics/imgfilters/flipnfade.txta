@@ -1,0 +1,12 @@
+#mirror the image vertically
+Flip
+
+#Border     {"geometry":"100x100+10+10",width:"2",height:"2",color:"blue"}
+
+OilPaint	{"radius":"50"}
+
+#Crop	{"geometry":"100x100+10+20"}
+
+#AdaptiveBlur  {"geometry":"100x100+10+20","radius":"200","sigma":"200","channel":"all"}
+#Annotate	{"text":"this is the text", "pointsize":"12", "x":"10", "y":"40", "alias":"true"}
+#Distort	{"points":[0,0,25,25,0,90,0,90,0,0,70,25,90,90,90,65],"virtual-pixel":"transparent","distort":"perspective"}

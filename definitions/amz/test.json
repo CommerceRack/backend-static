@@ -1,0 +1,36 @@
+[
+   {
+      "options" : [
+         {
+            "T" : "1234",
+            "V" : "1234"
+         },
+         {
+            "T" : "5678",
+            "V" : "5678"
+         }
+      ],
+      "amz_attrib" : "ID",
+      "title" : "ID",
+      "type" : "Select",
+      "amz_format" : "Text",
+      "xml_path" : "ClothingAccessories.ClassificationData.ID"
+   },
+   {
+      "options" : [
+         {
+            "T" : "red",
+            "V" : "red"
+         },
+         {
+            "T" : "blue",
+            "V" : "blue"
+         }
+      ],
+      "amz_attrib" : "Color",
+      "title" : "Color",
+      "type" : "Select",
+      "amz_format" : "Text",
+      "xml_path" : "ClothingAccessories.ClassificationData.Color"
+   }
+]

@@ -1,0 +1,141 @@
+<TEMPLATE ID="1026" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMYA" FORMAT="LAYOUT" CREATOR="STAFF" SHORT="This layout features two columns of 8 200x200 images." TYPE="CONFIG" IMAGES="16" TITLE="Photo Gallery 1" PROPERTIES="1" SUBTYPE="C" SERIES="2002" RELEASED="00000000"><SUMMARY><![CDATA[
+Category Description
+IMAGE0 (200x200)
+IMAGE1 (200x200)
+IMAGE2 (200x200)
+IMAGE3 (200x200)
+IMAGE4 (200x200)
+IMAGE5 (200x200)
+IMAGE6 (200x200)
+IMAGE7 (200x200)
+IMAGE8 (200x200)
+IMAGE9 (200x200)
+Product Listing
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" TYPE="SUBCAT" DATA="page:subcat" MODE="CHOOSER"></ELEMENT>
+<ELEMENT ID="CPUKMYB" TYPE="OUTPUT"><HTML><![CDATA[
+<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+<center>
+<table cellpadding=5 cellspacing=0 border=0 width=100%>
+	<tr>	
+		<td colspan=2>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" PROMPT="Category Description" TYPE="TEXT" HELP="Please describe this category and why it is unique" DATA="page:description"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long the products will be hard to find. <br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKMYC" TYPE="OUTPUT"><HTML><![CDATA[</td></tr>
+	<tr>
+		<td valign="top" width="50%" align="center">
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture1"></ELEMENT>
+<ELEMENT ID="CPUKMYD" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC3" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture3"></ELEMENT>
+<ELEMENT ID="CPUKMYE" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC5" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture5"></ELEMENT>
+<ELEMENT ID="CPUKMYF" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC7" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture7"></ELEMENT>
+<ELEMENT ID="CPUKMYG" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC9" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture9"></ELEMENT>
+<ELEMENT ID="CPUKMYH" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC11" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture11"></ELEMENT>
+<ELEMENT ID="CPUKMYI" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC13" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture13"></ELEMENT>
+<ELEMENT ID="CPUKMYJ" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC15" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture15"></ELEMENT>
+<ELEMENT ID="CPUKMYK" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+		</td>
+		<td width="50%" valign="top" align="center">
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC2" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture2"></ELEMENT>
+<ELEMENT ID="CPUKMYL" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC4" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture4"></ELEMENT>
+<ELEMENT ID="CPUKMYM" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC6" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture6"></ELEMENT>
+<ELEMENT ID="CPUKMYN" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC8" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture8"></ELEMENT>
+<ELEMENT ID="CPUKMYO" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC10" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture10"></ELEMENT>
+<ELEMENT ID="CPUKMYP" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC12" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture12"></ELEMENT>
+<ELEMENT ID="CPUKMYQ" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC14" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture14"></ELEMENT>
+<ELEMENT ID="CPUKMYR" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC16" HEIGHT="200" PROMPT="Small Picture" WIDTH="200" TYPE="IMAGE" ZOOM="1" DATA="page:picture16"></ELEMENT>
+<ELEMENT ID="CPUKMYS" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 width="100%">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST" MULTIPAGE="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist"></ELEMENT>
+<ELEMENT ID="CPUKMYT" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+	</tr>
+</table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

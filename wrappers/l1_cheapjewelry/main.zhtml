@@ -1,0 +1,92 @@
+<!-- CONFIG
+THEME=l1_cheapjewelry
+SITEBUTTONS=l1_cheapjewelry
+NARROW=TRUE
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- HEAD -->
+<map name="menu">
+	<area href="<!--CART_URL-->" shape="poly" coords="133,10,130,12,125,14,122,16,119,18,118,19,117,22,116,25,115,27,115,32,116,35,120,40,125,44,127,45,137,49,139,49,147,49,151,48,157,48,167,46,170,44,177,38,180,35,182,31,182,26,181,22,176,17,174,15,169,13,163,10,154,8,150,8,145,8,140,8,134,10,133,10" alt="Shopping Cart">
+	<area href="<!--HOME_URL-->" shape="poly" coords="133,62,130,64,125,66,122,68,119,70,118,71,117,74,116,77,115,79,115,84,116,87,120,92,125,96,127,97,137,101,139,101,147,101,151,100,157,100,167,98,170,96,177,90,180,87,182,83,182,78,181,74,176,69,174,67,169,65,163,62,154,60,150,60,145,60,140,60,134,62,133,62" alt="Home">
+	<area href="<!--SEARCH_URL-->" shape="poly" coords="219,64,216,66,211,68,208,70,205,72,204,73,203,76,202,79,201,81,201,86,202,89,206,94,211,98,213,99,223,103,225,103,233,103,237,102,243,102,253,100,256,98,263,92,266,89,268,85,268,80,267,76,262,71,260,69,255,67,249,64,240,62,236,62,231,62,226,62,220,64,219,64" alt="Search">
+	<area href="<!--ABOUT_URL-->" shape="poly" coords="219,10,216,12,211,14,208,16,205,18,204,19,203,22,202,25,201,27,201,32,202,35,206,40,211,44,213,45,223,49,225,49,233,49,237,48,243,48,253,46,256,44,263,38,266,35,268,31,268,26,267,22,262,17,260,15,255,13,249,10,240,8,236,8,231,8,226,8,220,10,219,10" alt="About Us">
+</map>
+</head> 
+<body bgcolor="#FFFFFF" text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!--LINK_VISITED_TEXT_COLOR -->">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="<!-- WRAPPER_URL -->/top.jpg">
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="140" background="">
+				<tr>
+					<td width="320" height="10"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="320" height="10"></td>
+					<td width="300" height="140" align="center" valign="middle" rowspan="4"><img src="<!-- WRAPPER_URL -->/menu.gif" width="300" height="140" usemap="#menu" border="0"></td>
+				</tr>
+				<tr>
+					<td width="300" height="88" align="center" valign="middle"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=300
+HEIGHT=88
+--></a></td>
+				</tr>
+				<tr>
+					<td width="320" height="32" align="left" valign="bottom">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="20"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="20" height="1"></td>
+								<td width="300" align="left" valign="middle"><!-- BREADCRUMB
+BUTTONTYPE=l1_cheapjewelry_bc
+FORMAT=<a href="%URL%"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0"></a>&nbsp;
+--><img src="<!-- GRAPHICS_URL -->/blank.gif" width="2" height="1"></td>
+							</tr>
+						</table>
+					</td>
+				</tr> 
+				<tr>
+					<td width="320" height="10"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="320" height="1"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table> 		
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620">
+	<tr>
+		<td width="20" valign="top" background="<!-- WRAPPER_URL -->/border1.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="16" height="200"></td>
+		<td width="580" bgcolor="#FFFFFF" valign="top">
+			<table width="580" cellpadding="3" cellspacing="3" border="0" bgcolor="#FFFFFF">
+				<tr>
+					<td align="left" valign="middle" bgcolor="#93CDF2">
+						<font color="#FFFFFF" face="Arial, Helvetica"  size="4"><!-- TITLE --></font>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" bgcolor="#FFFFFF">
+<!-- MENU
+BEFORE=<div align="center">Categories:%BREAK%
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a>%BREAK%
+DIVIDER=|%BREAK%
+AFTER=</div>
+ONLYHOME=1
+NOHOME=1
+-->
+<!-- BODY -->
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="20" valign="top" background="<!-- WRAPPER_URL -->/border2.jpg"><img src="<!-- GRAPHICS_URL -->/blank.gif" width="16" height="200"></td>
+	</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="620" height="80" background="<!-- WRAPPER_URL -->/bottom.jpg">
+	<tr>
+		<td width="620" height="80" align="center" valign="middle">
+<!-- FOOTER -->
+		</td>
+	</tr>
+</table>
+</center>
+</div>
+</body>
+</html>
+

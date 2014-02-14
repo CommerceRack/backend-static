@@ -1,0 +1,123 @@
+/* removes bottom padding/margin from form in old browsers */
+form	{display:inline;}
+
+a	{color:#7d9bbd;} /* this color should match the color set in zlink */
+a:hover	{color:#9db326;}
+.zlink:hover	{color:#9db326;}
+
+h1  {font-size:10px; color:#bebcb2; margin:0px 0px 0px 0px; font-weight: normal; line-height:24px;} /* Used for the page title element */
+
+/* used for the wiki header 1 & 2 */
+h2	{font-size:13px; color:#6d6d6d; margin:5px 0px 2px 0px; font-weight:bold;}
+h3	{font-size:12px; color:#bcb9b0; margin:2px 0px 1px 0px; font-weight:bold;}
+
+div.no_underline a	{text-decoration:none;} /* this should be left alone */
+div.menulinks a	{padding:5px 5px 5px 5px;}
+
+#addtocart select, #accessories select	{font-size:11px;}
+
+div.foot_links_group	{margin:0 36px 0 8px; float:left; font-size:11px;}
+div.foot_links_group a	{display:block; text-decoration:none; padding:2px 0;}
+
+div.breadcrumb a	{padding:0 5px;}
+
+
+/* vertical categories in the theme, displayed only on category pages */
+#dual_cats_displayed div.top_cat a	{font-size:11px; display:block; padding:4px 4px 1px 0; font-weight:bold;}
+
+#dual_cats_displayed div.sub_cats		{padding-bottom:8px;}
+#dual_cats_displayed div.sub_cats a	{font-size:11px; display:block; padding:1px 5px;}
+#dual_cats_displayed a:hover	{background:#a8c02a; color:#ffffff;}
+
+/* classes for the categories across the top of the theme */
+#horizontal_cats	div.top_cats	{font-size:13px; line-height:32px; font-family: helvetica, arial, sans-serif}
+#horizontal_cats	div.top_cats a	{padding:0px 3px; font-weight:bold;}
+
+
+
+/* for use on product page */
+
+
+#addToCartContainer select	{font-size:8pt;}
+
+
+ .panel{
+width: 180px; 
+}
+
+
+#control_overlay {background-color:#000; cursor:pointer; }
+
+.modal {border: 1px solid #fbf8f1; background-color: #FFFFFF; color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 11px; }
+
+#social{margin-top:4px;}
+.social ul{margin:0px; padding:0px; list-style:none;}
+.social ul li{ width:24px; text-align:center; display:inline;}
+
+div.modal	{background:#000000; z-index:999; position:absolute; top:0; left:0; right:0; bottom:0; -moz-opacity:.70; filter:alpha(opacity=70); opacity:.70;}
+
+
+
+
+/* ###################### product layout styles ######################## */
+
+
+/* CSS class for zoomed area (what appears when the main image is moused over) */
+.MagicZoomBigImageCont {
+	border:			2px solid #d5d2c3; background:#fff;
+}
+
+/*
+Header look and feel CSS class 
+ - header is shown if "title" attribute is present in the <A> tag
+*/
+.MagicZoomHeader {
+	font:			10px Tahoma, Verdana, Arial, sans-serif;
+	color:			#fff;
+	background:		#91b817;
+	text-align:     center !important; 
+}
+
+
+/* CSS class for small looking glass square under mouse */
+.MagicZoomPup {
+	border: 		1px solid #aaa;
+	background: 	#ffffff;
+	cursor:			hand;
+}
+
+/* CSS style for loading animation box */
+.MagicZoomLoading {
+	text-align:		center;
+	background: 	#f9f6ef;
+	color:			#f9f6ef;
+	border: 		1px solid #d5d2c3;
+	opacity:		0.8;
+	padding:		3px 3px 3px 3px !important;
+	display: 		none; /* do not edit this line please */
+}
+
+/* CSS style for gif image in the loading animation box */
+.MagicZoomLoading img {
+	padding-top:	3px !important;
+}
+
+/* ©2008 MagicToolbox.com. To use this code on your own site, visit http://www.magictoolbox.com */
+
+
+/* CSS class for the thumbnail image - used for both the big AND the small images */
+.MagicThumb img { border: 0px solid #ffffff; outline: none; }
+
+/* CSS class for the big image while zooming (once an image is clicked) */
+.MagicThumb-image { 2px solid #d5d2c3; background:#fff; padding:4px; outline: none; }
+
+/* CSS class for the caption under the big zoomed image */
+.MagicThumb-caption {
+    color: #333333;
+    background-color: #F0F0F0;
+    border: 1px solid #CCCCCC;
+    border-top: none;
+    font-family: Verdana, Helvetica;
+    font-size: 11px;
+    padding: 8px 16px;
+}

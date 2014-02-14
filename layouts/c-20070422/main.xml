@@ -1,0 +1,118 @@
+<TEMPLATE ID="c-20070422" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNJS" CREATOR="JT" IMAGES="3" CREATED="20070422" PROPERTIES="1" SUBTYPE="C" SERIES="Subcat Images" FORMAT="LAYOUT" SHORT="Big linked image, text (x2), more images (x2), subcategories and products" TYPE="CONFIG" TITLE="Big Image, subcategories, products and text" RELEASED="20070501"><SUMMARY><![CDATA[This layout primarily features product in the main column.  In the right column are three linkable images interspersed between the subcategories and a text area.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CUBEZEH" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
+<b>About this layout:</b><br>
+The layout contains many elements which you can populate.  You dont HAVE to fill these in, the elements below them will shift up to fill vacancies.  Do not confuse your customers by adding images that don't serve a specific purpose, such as linking them to a specific product or a specific category relevant to the main content on the page.
+
+<p>Subcategories:<br />
+The subcategories on this layout will appear in the right column with a thumbnail and category name. Descend tree is turned on, no root is turned off. More information about categories and definitions of terms can be found at the link below:<br>
+<a href='http://webdoc.zoovy.com/index.cgi?VERB=DOC&DOCID=50325' target='webdoc'>http://webdoc.zoovy.com/doc/50325</a>
+</p>
+
+<p>Product List<br />
+The product list is forced to a single column layout.  You can set the alternating colors on/off through the editor.
+</p>
+
+<p>Colors<br />
+The colors that are used for the borders and the column on the left are set by the theme that you are using.  Changing themes will change those colors</p>
+<hr />
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CUBEZEI" TYPE="OUTPUT"><HTML><![CDATA[
+<table cellspacing='0' cellpadding='5' width='600'>
+<tr>
+	<td valign='top' align='left'>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE_LINK" EDITOR="INLINE" DATA="page:link1" ZOOVYDOCID="50355" PROMPT="Link for image" SUB="LINK1" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" EDITOR="INLINE" DATA="page:picture1" WIDTH="390" PROMPT="Image ( 390 by X)" TYPE="IMAGE"><PRETEXT><![CDATA[<div style='margin-bottom:10px;'><a href="%LINK1%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODUCTS" EDITOR="INLINE" DATA="page:prodlist1" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
+<table style='margin-bottom:5px;' cellspacing='0' cellpadding='3' width='100%'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+	<td valign='top' width='1%' class='zborder ztable_row<% print($row.alt); %>' style='border-top:0px; border-right:0px;'>
+<a href="<% print($PROD_URL); %>"><%
+load($zoovy:prod_thumb); default(""); default($zoovy:prod_image1);
+image(w=>"75",h=>"75",tag=>"1",alt=>$zoovy:prod_name); 
+print(); %></a>
+	</td>
+	<td valign='top' width='99%' class='zborder ztable_row ztable_row<% print($row.alt); %>' style='border-top:0px; border-left:0px; border-right:0px;'>
+<div class='ztable_row_title' style='margin-bottom:4px;'><% load($zoovy:prod_name); default(""); strip(length=>"60"); format(encode=>"entity"); print(); %></div>
+
+<div class='ztable_row_small'>
+
+<% load($zoovy:prod_desc);  default(""); format(wiki,title1=>"",/title1=>"",title2=>"",/title2=>"",title3=>"",/title3=>"",listitem=>"",/listitem=>"",list=>"",/list=>"",hardbreak=>"",softbreak=>""); strip(length=>"170"); format(encode=>"entity"); print(); %>
+
+	<div style='font-weight:bold;'><% load($zoovy:base_price); default(""); format(money); format(pretext=>"only "); print(); %></div>
+	<div align='right'><% print($VIEW_DETAILS); %> <% load($ADD_LINK); format(pretext=>" | "); print(); %></div>
+
+</div>
+</td>
+<!-- /PRODUCT -->
+</tr>
+<tr>
+	<td colspan='2'><img src='<% loadurp("URL::GRAPHICS_URL"); %>/blank.gif' height='1' width='1' alt=''></td>
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION2" WIKI="3" HELP="Please enter a short description that will appear at the bottom of this page. " EDITOR="INLINE" DATA="page:description2" PROMPT="Message 2" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-bottom:5px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CUBEZEI2" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+	<td valign='top' class='zcolor_light'>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SUBCATHEAD" WIKI="3" MAXLENGTH="30" DATA="profile:zoovy:layout_cat_subcatheader" PROMPT="Header for Subcategories (global - max 30 characters)" DEFAULT="Shop our store" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="SUBCAT" DESCENDTREE="0" NOROOT="1" DATA="page:subcat" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="1"><HTML><![CDATA[
+<%
+print("");
+loadurp("profile:zoovy:layout_cat_subcatheader"); default("");
+format(pretext=>"<div style='margin-bottom:4px;' class='ztitle'>",posttext=>"</div>");
+print();
+%>
+<div style='margin:0px 0px 10px 10px;' class='ztxt'>
+<!-- ROW -->
+<!-- CATEGORY -->
+<div>&#187; <a href="<% print($cat_url); %>" class="zlink" style='text-decoration:none;'><% load($cat_pretty); default(""); strip(html=>"1"); print(); %></a></div>
+<!-- /CATEGORY -->
+<!-- /ROW -->
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE_LINK2" EDITOR="INLINE" DATA="page:link2" ZOOVYDOCID="50355" PROMPT="Link for image 2" SUB="LINK2" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT HEIGHT="100" ID="IMAGE2" EDITOR="INLINE" DATA="page:picture2" WIDTH="200" PROMPT="Image 2 ( 200 by 100)" TYPE="IMAGE"><PRETEXT><![CDATA[<div style='margin-bottom:10px;'><a href="%LINK2%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Message" TYPE="TEXT"><HELP><![CDATA[Please enter a short description that will appear at the top of this page.  Use the text box at the bottom for longer text.]]></HELP>
+<PRETEXT><![CDATA[<div style='margin-bottom:5px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="IMAGE_LINK3" EDITOR="INLINE" DATA="page:link3" ZOOVYDOCID="50355" PROMPT="Link for image 3" SUB="LINK3" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="IMAGE3" EDITOR="INLINE" DATA="page:picture3" WIDTH="200" PROMPT="Image 3 ( 200 by X)" TYPE="IMAGE"><PRETEXT><![CDATA[<div style='margin-bottom:10px;'><a href="%LINK3%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CUBEZEL" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+</tr>
+</table>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

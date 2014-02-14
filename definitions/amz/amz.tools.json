@@ -1,0 +1,138 @@
+[
+   {
+      "catalog" : "TOOLS",
+		"amz-catalog" : "Tools",
+      "amz-subcat" : null,
+      "subcat" : null,
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "TOOLS",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQZBO",
+      "xmlpath" : "Tools."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_tools_gritrating",
+      "type" : "number",
+      "title" : "GritRating",
+      "xmlpath" : "Tools.GritRating"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_tools_horsepower",
+      "type" : "textbox",
+      "title" : "Horsepower",
+      "xmlpath" : "Tools.Horsepower"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_tools_diameter",
+      "type" : "number",
+      "title" : "Diameter",
+      "xmlpath" : "Tools.Diameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_tools_length",
+      "type" : "number",
+      "title" : "Length",
+      "xmlpath" : "Tools.Length"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_tools_width",
+      "type" : "number",
+      "title" : "Width",
+      "xmlpath" : "Tools.Width"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_tools_height",
+      "type" : "number",
+      "title" : "Height",
+      "xmlpath" : "Tools.Height"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Weight",
+      "id" : "amz:prod_tools_wt",
+      "type" : "number",
+      "title" : "Weight",
+      "xmlpath" : "Tools.Weight"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "battery-powered",
+            "v" : "battery-powered"
+         },
+         {
+            "p" : "gas-powered",
+            "v" : "gas-powered"
+         },
+         {
+            "p" : "hydraulic-powered",
+            "v" : "hydraulic-powered"
+         },
+         {
+            "p" : "air-powered",
+            "v" : "air-powered"
+         },
+         {
+            "p" : "corded-electric",
+            "v" : "corded-electric"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_tools_powersource",
+      "title" : "Tools Power Source",
+      "type" : "select",
+      "xmlpath" : "Tools.PowerSource",
+      "list" : "LIST_TOOLS_POWERSOURCE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_tools_wattage",
+      "type" : "number",
+      "title" : "Wattage",
+      "xmlpath" : "Tools.Wattage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_tools_voltage",
+      "type" : "number",
+      "title" : "Voltage",
+      "xmlpath" : "Tools.Voltage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_tools_nbrofitemsinpkg",
+      "type" : "number",
+      "title" : "NumberOfItemsInPackage",
+      "xmlpath" : "Tools.NumberOfItemsInPackage"
+   }
+]

@@ -1,0 +1,96 @@
+<!-- CONFIG
+THEME=sharpsoap
+SITEBUTTONS=l2_khakiplain
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" type="text/css" href="<!-- WRAPPER_URL -->/styles.css">
+<!-- HEAD -->
+<map name="left">
+	<area href="<!--CART_URL-->" shape="RECT" coords="0,100,82,115" alt="Shopping Cart">
+	<area href="<!--SEARCH_URL-->" shape="RECT" coords="0,79,104,94" alt="Search">
+	<area href="<!--CONTACT_URL-->" shape="RECT" coords="0,58,124,73" alt="Contact Us">
+	<area href="<!--ABOUT_URL-->" shape="RECT" coords="0,37,146,52" alt="About Us">
+</map>
+
+</head> 
+<body background="<!-- WRAPPER_URL -->/background.gif" text="#000000" link="#7F97AF" link="#CCFFFF" vlink="#7F97AF"  marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%" height="1" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td background="<!-- WRAPPER_URL -->/topbar_background.gif" border="0" cellpadding="0" cellspacing="0" width="100%" align="left">
+			<table background="<!-- WRAPPER_URL -->/topbar_background.gif" width="82" height="1" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td align="left" valign="top" width="175" background=""><img src="<!-- WRAPPER_URL -->/leftmap.gif" width="175"  height="154" usemap="#left" border="0"></td>
+					<td align="left" valign="bottom" width="100%">
+						<table background="" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td background="<!-- WRAPPER_URL -->/logo_background.gif" width="400" height="154" align="center" valign="middle"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=380
+HEIGHT=114
+--></a></td>
+							</tr>
+						</table>
+					</td>
+					<td align="right" valign="bottom" width="1" background=""><img src="<!-- WRAPPER_URL -->/rightmap.gif" width="1"  height="154" border="0"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td align="left" valign="top">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top" align="left" height="63"><img src="<!-- WRAPPER_URL -->/topmap.gif" width="176" height="63" border="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" align="center" background="<!-- WRAPPER_URL -->/sidebar_background.gif"><img src="<!--GRAPHICS_URL-->/blank.gif" width="176" height="1"><br>
+						<table border="0" cellpadding="8" cellspacing="0">
+							<tr>
+								<td align="center"><!-- MENU 
+					FORMAT=<a href="%URL%"><font color="#DFAF60" face="arial" size=2><strong>%MESSAGE%</strong></font></a><br> 
+					--></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left" height="30"><img src="<!-- WRAPPER_URL -->/bottommap.gif" width="176" height="30" border="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" align="center" background=""><!-- SIDEBAR --></td>
+				</tr>
+			</table>
+		</td>
+		<td align="left" valign="top" width="100%">
+			<table background="<!-- WRAPPER_URL -->/title_background.gif" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td valign="top" align="left"><img src="<!-- GRAPHICS -->/blank.gif" width="1" height="30" border="0"></td>
+					<td width="100%" align="left" valign="bottom">
+						<table cellpadding="0">
+							<tr>
+								 <td valign="middle"><font color="#80484F" face="Arial, Helvetica"  size="3"><strong><!-- TITLE --></strong></font></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="10" cellspacing="0" width="100%">
+				<tr>
+					<td width="100%" align="left" valign="top">
+<!-- BODY -->
+<br>
+<br>
+<!-- FOOTER 
+TRANSPARENT=TRUE
+-->
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

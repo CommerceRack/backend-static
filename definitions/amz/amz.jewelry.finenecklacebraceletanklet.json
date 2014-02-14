@@ -1,0 +1,380 @@
+[
+   {
+      "catalog" : "JEWELRY",
+		"amz-catalog" : "Jewelry",
+      "amz-subcat" : "FineNecklaceBraceletAnklet",
+      "subcat" : "finenecklacebraceletanklet",
+      "type" : "config",
+		"variation-themes" : "Length-TotalDiamondWeight,Length-SizePerPearl,MetalType-TotalDiamondWeight,MetalType-SizePerPearl,Length,MetalType,SizePerPearl,TotalDiamondWeight",
+		"parentage-values" : "parent,child,child"
+   },
+   {
+      "PROMPT" : "Jewelry:FineNecklaceBraceletAnklet",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYIB",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "variation:length",
+		"vkey" : "Length",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.VariationData.Length"
+	},
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnnba_metaltype",
+      "type" : "textbox",
+      "title" : "Metal Type",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.VariationData.MetalType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:metaltype",
+		"vkey" : "MetalType",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.VariationData.MetalType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:sizeperpearl",
+		"vkey" : "SizePerPearl",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.VariationData.SizePerPearl"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:totaldiamondweight",
+		"vkey" : "TotalDiamondWeight",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.VariationData.TotalDiamondWeight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnnba_clasptype",
+      "type" : "textbox",
+      "title" : "Clasp Type",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.ClaspType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnnba_matl",
+      "type" : "textlist",
+      "title" : "Material",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.Material"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnnba_metalstamp",
+      "type" : "textbox",
+      "title" : "Metal Stamp",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.MetalStamp"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnnba_settingtype",
+      "type" : "textbox",
+      "title" : "Setting Type",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.SettingType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prltype",
+      "type" : "textbox",
+      "title" : "Pearl Type",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlminmcolor",
+      "type" : "textbox",
+      "title" : "Pearl Minimum Color",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlMinimumColor"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prllustre",
+      "type" : "textbox",
+      "title" : "Pearl Lustre",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlLustre"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlshape",
+      "type" : "textbox",
+      "title" : "Pearl Shape",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlShape"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prluniformity",
+      "type" : "textbox",
+      "title" : "Pearl Uniformity",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlUniformity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlsfcmblms",
+      "type" : "textbox",
+      "title" : "Pearl Surface Markings And Blemishes",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlSurfaceMarkingsAndBlemishes"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlstringingmethod",
+      "type" : "textbox",
+      "title" : "Pearl Stringing Method",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlStringingMethod"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_sizeperprl",
+      "type" : "textbox",
+      "title" : "Size Per Pearl",
+      "xmlpath" : "Jewelry.ProductType.Pearl.SizePerPearl"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnnba_totalgemwt",
+      "type" : "textbox",
+      "title" : "Total Gem Weight",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.TotalGemWeight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnnba_totalmetalwt",
+      "type" : "textbox",
+      "title" : "Total Metal Weight",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.TotalMetalWeight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fnnba_diameter",
+      "type" : "number",
+      "title" : "Diameter",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.Diameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fnnba_height",
+      "type" : "number",
+      "title" : "Height",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.Height"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_jly_fnnba_width",
+      "type" : "number",
+      "title" : "Width",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.Width"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnnba_chaintype",
+      "type" : "textbox",
+      "title" : "Chain Type",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.ChainType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnnba_estateperiod",
+      "type" : "textbox",
+      "title" : "Estate Period",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.EstatePeriod"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnnba_nbrofstones",
+      "type" : "number",
+      "title" : "NumberOfStones",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.NumberOfStones"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prltype",
+      "type" : "textbox",
+      "title" : "Pearl Type",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlminmcolor",
+      "type" : "textbox",
+      "title" : "Pearl Minimum Color",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlMinimumColor"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prllustre",
+      "type" : "textbox",
+      "title" : "Pearl Lustre",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlLustre"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlshape",
+      "type" : "textbox",
+      "title" : "Pearl Shape",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlShape"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prluniformity",
+      "type" : "textbox",
+      "title" : "Pearl Uniformity",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlUniformity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlsfcmblms",
+      "type" : "textbox",
+      "title" : "Pearl Surface Markings And Blemishes",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlSurfaceMarkingsAndBlemishes"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlstringingmethod",
+      "type" : "textbox",
+      "title" : "Pearl Stringing Method",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlStringingMethod"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_sizeperprl",
+      "type" : "textbox",
+      "title" : "Size Per Pearl",
+      "xmlpath" : "Jewelry.ProductType.Pearl.SizePerPearl"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fnnba_nbrofprls",
+      "type" : "number",
+      "title" : "NumberOfPearls",
+      "xmlpath" : "Jewelry.ProductType.FineNecklaceBraceletAnklet.NumberOfPearls"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prltype",
+      "type" : "textbox",
+      "title" : "Pearl Type",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlminmcolor",
+      "type" : "textbox",
+      "title" : "Pearl Minimum Color",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlMinimumColor"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prllustre",
+      "type" : "textbox",
+      "title" : "Pearl Lustre",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlLustre"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlshape",
+      "type" : "textbox",
+      "title" : "Pearl Shape",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlShape"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prluniformity",
+      "type" : "textbox",
+      "title" : "Pearl Uniformity",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlUniformity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlsfcmblms",
+      "type" : "textbox",
+      "title" : "Pearl Surface Markings And Blemishes",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlSurfaceMarkingsAndBlemishes"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_prlstringingmethod",
+      "type" : "textbox",
+      "title" : "Pearl Stringing Method",
+      "xmlpath" : "Jewelry.ProductType.Pearl.PearlStringingMethod"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_prl_sizeperprl",
+      "type" : "textbox",
+      "title" : "Size Per Pearl",
+      "xmlpath" : "Jewelry.ProductType.Pearl.SizePerPearl"
+   }
+]

@@ -1,0 +1,35 @@
+--- 
+"@conditions": 
+  - 
+    "{urn:ebay:apis:eBLBaseComponents}Condition": 
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Brand New'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 1000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Like New'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 2750
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Very Good'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 4000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Good'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 5000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Acceptable'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 6000
+    "{urn:ebay:apis:eBLBaseComponents}ConditionHelpURL": 
+      - 'http://pages.ebay.com/help/sell/contextual/condition_6.html'
+"CategoryID": 171190
+"ConditionEnabled": 'Required'
+"GlobalShippingEnabled": 'true'
+"ItemSpecificsEnabled": 'Enabled'

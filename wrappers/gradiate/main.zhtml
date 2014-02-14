@@ -1,0 +1,100 @@
+<!-- CONFIG
+THEME=gradiate
+SITEBUTTONS=gradiate
+--> 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- HEAD -->
+<style type="text/css">
+body	{margin: 0px;}
+body, td, li, ol, ul, p		{font-family: tahoma, arial, sans-serif; color: #666666;}
+
+a	{color: #333333;}
+a:hover	{color: #DE6023;}
+h1	{font-size: 16px; font-weight: bold; color: #666666; margin-top: 8px;}
+h2	{font-size: 14px; font-weight: bold; color: #333333; margin: 0px;}
+h3	{font-size: 12px; font-weight: bold; color: #666666; margin: 0px;}
+h4	{font-size: 12px; font-weight: bold; color: #666666; margin: 0px;}
+
+.minicart	{font-size: 11px;}
+.cats	{font-size: 12px; font-weight: bold; text-decoration: none;}
+
+.formed	{border-color: #666666; border-width: 1px; border-style: outset; font-family: tahoma, arial, sans-serif;  font-size:11px;}
+.button	{border-color: #666666; border-width: 1px; border-style: outset; color: #666666; font-size:9px; background-color: #efefef; font-weight: bold; font-family: tahoma, arial, sans-serif; }
+</style>
+</head>
+<body><div align="center">
+<!-- BEGin sizing table -->
+<table cellspacing="0" cellpadding="0" width="100%"><tr><td align="left">
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+	<td valign="bottom" style="height: 66px;"><a href="<!-- HOME_URL -->"><!-- LOGO
+width=200
+height=66
+BGCOLOR=FFFFFF
+--></a></td>
+	<td valign="bottom" width="1%" rowspan="2" align="right" style="background-image:url(<!-- WRAPPER_URL -->/clb_logo_bottom_bg.gif); background-repeat:repeat-x; background-position:bottom;"><img src="<!-- WRAPPER_URL -->/clb_logo_right.jpg" width="111" height="68"></td>
+	<td width="1%" rowspan="4"><img src="<!-- WRAPPER_URL -->/clb_clubs.jpg" width="330" height="176"></td>
+</tr><tr>
+	<td style="height: 18px; background-image:url(<!-- WRAPPER_URL -->/clb_logo_bottom_bg.gif); background-repeat:repeat-x;"><img src="<!-- WRAPPER_URL -->/clb_logo_bottom_bg.gif" width="1" height="18"></td>
+</tr><tr>
+	<td colspan="2" width="98%"><table cellspacing="0" cellpadding="0" width="100%"><tr style="background-image:url(<!-- WRAPPER_URL -->/clb_menu_bg.gif); background-repeat:repeat-x;">
+		<td width="1%" align="left"><img src="<!-- WRAPPER_URL -->/clb_menu_left.gif" width="35" height="59"></td>
+		<td width="35%"></td>
+		
+		<td align="center" valign="bottom"><a href="<!-- HOME_URL -->"><img src="<!-- WRAPPER_URL -->/clb_menu_home.gif" width="39" height="45" alt="Home" border="0"></a></td>
+		<td><img src="<!-- WRAPPER_URL -->/clb_menu_splitter.gif" width="15" height="41" alt=""></td>
+		
+		<td align="center" valign="bottom"><a href="<!-- ABOUT_URL -->"><img src="<!-- WRAPPER_URL -->/clb_menu_about.gif" width="39" height="45" alt="Company Information" border="0"></a></td>
+		<td><img src="<!-- WRAPPER_URL -->/clb_menu_splitter.gif" width="15" height="41" alt=""></td>
+		<td align="center" valign="bottom"><a href="<!-- CONTACT_URL -->"><img src="<!-- WRAPPER_URL -->/clb_menu_contact.gif" width="39" height="45" alt="Contact Us" border="0"></a></td>
+		
+		<td><img src="<!-- WRAPPER_URL -->/clb_menu_splitter.gif" width="15" height="41" alt=""></td>
+		<td align="center" valign="bottom"><a href="<!-- LOGIN_URL -->"><img src="<!-- WRAPPER_URL -->/clb_menu_login.gif" width="39" height="45" alt="My Account" border="0"></a></td>
+		
+		<td><img src="<!-- WRAPPER_URL -->/clb_menu_splitter.gif" width="15" height="41" alt=""></td>
+		<td align="center" valign="bottom"><a href="<!-- CART_URL -->"><img src="<!-- WRAPPER_URL -->/clb_menu_cart.gif" width="39" height="45" alt="View Cart" border="0"></a></td>
+		
+		<td><img src="<!-- WRAPPER_URL -->/clb_menu_splitter.gif" width="15" height="41" alt=""></td>
+		<td align="center" valign="bottom"><a href="<!-- CHECKOUT_URL -->"><img src="<!-- WRAPPER_URL -->/clb_menu_checkout.gif" width="39" height="45" alt="Checkout" border="0"></a></td>
+		<td width="35%"></td>
+	</tr></table></td>
+</tr><tr>
+	<td align="left" colspan="2" NOWRAP style="background-image:url(<!-- WRAPPER_URL -->/clb_title_bg.gif); background-repeat:repeat-x; height: 33px;"><span class="minicart">&nbsp;&nbsp;&nbsp;Items in Cart: <!-- MINICART
+ITEMSONLY=1
+-->&nbsp;&nbsp;|&nbsp;&nbsp;Subtotal: <!-- MINCART
+SUBTOTALONLY=1
+--></span></td>
+</tr></table>
+<table cellspacing="0" cellpadding="0" width="100%"><tr>
+	<td valign="top"><table cellspacing="0" cellpadding="0" width="238"><tr>
+		<td width="14" valign="top" style="background-image: url(<!-- WRAPPER_URL -->/clb_cats_left_bg2.gif); background-repeat:repeat-y;"><img src="<!-- WRAPPER_URL -->/clb_cats_left.gif" width="14" height="203"></td>
+		<td style="background-image:url(<!-- WRAPPER_URL -->/clb_cats_bg.gif); background-repeat:repeat-x;" width="215" valign="top" bgcolor="#F6F6F6"><div align="center">
+<form action="<!-- RESULTS_URL -->" method="get" style="margin: 0px;"><input type="hidden" name="catalog" value=""><table><tr>
+	<td><input type="text" class="formed" name="keywords" value="" style="width: 100px;"></td>
+	<td><input type="submit" value="Search" class="button"></td>
+</tr></table></form></div><br>
+<table cellspacing="2" cellpadding="0" width="100%">
+<!-- MENU
+FORMAT=<tr><td><a href="%URL%" target="%TARGET%" class="cats">%MESSAGE%</a></td></tr>
+DIVIDER=<tr><td style="height: 1px; background-color: #CBCBCB;"></td></tr>
+NOHOME=1
+--></table>
+</td>
+		<td width="23" valign="top" background="<!-- WRAPPER_URL -->/clb_cats_right_bg.gif"><img src="<!-- WRAPPER_URL -->/clb_corner.gif" width="23" height="203"></td>
+	</tr><tr>
+		<td colspan="3" align="left"><img src="<!-- WRAPPER_URL -->/clb_cats_bottom.gif" width="225" height="31"></td>
+	</tr></table><!-- SIDEBAR --></td>
+	<td valign="top" width="95%" style="background-image: url(<!-- WRAPPER_URL -->/clb_shadow.gif); background-repeat:repeat-x;"><h1><!-- TITLE --></h1><!-- BODY --></td>
+</tr></table>
+<!-- FOOTER
+TRANSPARENT=TRUE
+-->
+<!-- End sizing table -->
+</td></tr></table>
+</div>
+</body>
+</html>

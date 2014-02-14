@@ -1,0 +1,882 @@
+<TEMPLATE ID="evolution" FORMAT="WRAPPER">
+<LIST ID="COLOR1" TYPE="TEXT">
+<OPT T="Ice Blue" V="5E8ED0"></OPT>
+<OPT T="Green Apple" V="76B45F"></OPT>
+<OPT T="Charcoal" V="808080"></OPT>
+<OPT T="Purple" V="9C71CF"></OPT>
+<OPT T="Brick" V="D56868"></OPT>
+<OPT T="Orange" V="DBAA3D"></OPT>
+<OPT T="Sunset" V="ED1B23"></OPT>
+<OPT T="Night Fire" V="990000"></OPT>
+<OPT T="Blue" V="0A547D"></OPT>
+<OPT T="Purple Gel" V="483D99"></OPT>
+<OPT T="Heartfelt" V="B80000"></OPT>
+<OPT T="Pink Gel" V="C171D9"></OPT>
+<OPT T="Blue Gel" V="2663B3"></OPT>
+<OPT T="Red Gel" V="CC0000"></OPT>
+<OPT T="Earthy Green" V="3C7B42"></OPT>
+<OPT T="Green Circles" V="1C391F"></OPT>
+</LIST>
+<LIST ID="MODE" TYPE="TEXT">
+<OPT T="Or" V="or"></OPT>
+<OPT T="And" V="and"></OPT>
+<OPT T="Exact" V="EXACT"></OPT>
+</LIST>
+
+
+<!-- ******* -->
+<ELEMENT FORMAT="WRAPPER" ID="evolution" COLORS="120" CART="persist" EXPORT="0" TYPE="CONFIG" CATEGORIES="65537" V="2" TITLE="Evolution (Web 2.0)" CREATED="00000000" OCREATED="20060510" PROPERTIES="315" SITEBUTTONS="default=reflectgel_grey|gif|110|33" OVERLOAD="flow.product=p-evolution&amp;site.css=1&amp;dev.search_bounce=0"><SUMMARY><![CDATA[This is the next generation Ajax theme. It offers: 
+<li>Your choice of 6 colors.</li>
+<li>Advanced search</li>
+<ol>
+	<li>Prompts the customer with likely search phrases as they type. (must have dictionary catalog specified)</li>
+	<li>Displays a list of the customers recently searched words.</li>
+	<li>Displays search results within an ajax layer in the body of the page.</li>
+</ol>
+<li>Gen2 minicart which keeps your customer on the product page when add to cart is pushed.</li>
+<li>FORCES your product pages to a next generation ajax product layout.</li>
+	<ol>
+		<li>Product reviews (optional - requires CRM bundle)</li>
+		<li>Ajax tell a friend (optional - requires XSELL bundle)</li>
+		<li>Printer friendly version of page (it's seo friendly too)</li>
+		<li>Description and specifications (detailed description)</li>
+		<li>Accessories product list with ajax product info</li>
+		<li>Related items product list (max of 3)</li>
+		<li>On-hover effect for product images that loads larger version (still click to see original)</li>
+		<li>Manufacturer, manufacturer's id and product id</li>
+		<li>Retail price and 'a savings of'</li>
+		<li>Support for WikiText</li>
+		<li>Strips HTML from all product fields on product page (to ensure ajax compliance)</li>
+	</ol>
+<li>468x60 linkable image element in the header.</li>
+<li>Ajax login which only appears if customer is NOT logged in, otherwise it displays their username.</li>
+<li>Newsletter subscription box</li>
+<li>Optimized for high resolution monitors (1000 pixels wide).</li>
+]]></SUMMARY>
+<CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+.zborder {  border: 1px solid #CCCCCC; }
+.zbox {  border: 1px solid #666666; }
+.zbox_body {  background-color: #EFEFEF; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.zbox_head {  background-color: #666666; color: #FFFFFF; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.zcolor {  background-color: #666666; color: #ffffff; }
+.zcolor_contrast {  background-color: #e5e5e5; color: #101010; }
+.zcolor_dark {  background-color: #262626; color: #bfbfbf; }
+.zcolor_light {  background-color: #a6a6a6; color: #ffffff; }
+.zform_button {  background-color: #EFEFEF; border: 1px solid #B4C3E2; color: #666666; font-family: verdana, sans serif, helvetica; font-size: 7pt; }
+.zform_select {  background-color: #FFFFFF; border: 1px solid #B4C3E2; color: #000000; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.zform_textarea {  background-color: #FFFFFF; border: 1px solid #B4C3E2; color: #000000; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.zform_textbox {  background-color: #FFFFFF; border: 1px solid #B4C3E2; color: #000000; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.zhint {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.zlink {  color: #333333; }
+.zsmall {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.ztab0 {  background-color: #ffffff; color: #737373; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztab1 {  background-color: #EFEFEF; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; font-weight: bold; }
+.ztabbody {  background-color: #666666; color: #FFFFFF; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.ztable_head {  background-color: #666666; color: #FFFFFF; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztable_row {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztable_row0 {  background-color: #EFEFEF; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztable_row1 {  background-color: #FFFFFF; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztable_row_small {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.ztable_row_title {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 11pt; font-weight: bold; }
+.ztitle {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 10pt; font-weight: bold; }
+.ztitle2 {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; font-weight: bold; }
+.ztxt {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.zwarn {  color: #990000; font-weight: bold; }
+]]></CSS>
+<THEME><![CDATA[alert_color=990000&content_background_color=FFFFFF&content_font_face=verdana%2c+sans+serif%2c+helvetica&content_font_size=2&content_text_color=333333&disclaimer_background_color=FFFFFF&disclaimer_font_face=verdana%2c+sans+serif%2c+helvetica&disclaimer_font_size=1&disclaimer_text_color=333333&link_active_text_color=333333&link_text_color=333333&link_visited_text_color=333333&name=&pretty_name=&table_heading_background_color=666666&table_heading_font_face=verdana%2c+sans+serif%2c+helvetica&table_heading_font_size=2&table_heading_text_color=FFFFFF&table_listing_background_color=EFEFEF&table_listing_background_color_alternate=FFFFFF&table_listing_font_face=verdana%2c+sans+serif%2c+helvetica&table_listing_font_size=2&table_listing_text_color=333333]]></THEME>
+</ELEMENT>
+<ELEMENT ID="ADDOVERLOAD" LINK="javascript:addToCart('%ID%','%SKU%');" BUTTON="add_to_cart" TYPE="OVERLOAD"></ELEMENT>
+<ELEMENT ID="CRUEGLS" SUB="COLOR1" DEFAULT="5E8ED0" TYPE="HIDDEN"></ELEMENT>
+<ELEMENT ID="COLOR_CHOOSER" VALUE="5E8ED0" PROMPT="Color" SUB="COLOR1" DEFAULT="5E8ED0" FONT="0" TYPE="SELECT" HELP="Choose a color from the list above to select the aesthetic to your store" LIST="COLOR1" DATA="merchant:zoovy:wrap_evolution_color" RAW="1"></ELEMENT>
+<ELEMENT ID="CATALOGCHOOSER" PROMPT="Search Catalog" SUB="CATALOG" FONT="0" TYPE="SELECT" LIST="@SYSTEM.SEARCHCATALOGS" DATA="merchant:zoovy:wrap_catalog"><HELP><![CDATA[
+The search catalog feature allows you to set which fields in the zoovy system are searchable.  By default, DEFAULT is created and selected, which searches your product ID and name.  You can create and modify search catalogs from the 'search catalogs' page off of setup.  A 'dictionary' search is required for the text autocomplete feature. If you have questions, please schedule time with a trainer.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="SEARCHMODE_CHOOSER" PROMPT="Search Mode" SUB="SEARCHMODE" DEFAULT="and" FONT="0" TYPE="SELECT" LIST="MODE" DATA="merchant:zoovy:wrap_searchmode" RAW="1"><HELP><![CDATA[
+Search mode has three options:
+<li>'and' which will do a search and return results for product with BOTH words that are searched (X and Y) - system default</li>
+<li>'or' which will do a search and return results for product with EITHER words that are searched (X or Y) - returns most results</li>
+<li>'exact' which will do a search and return results for product with exact word(s) that are searched - returns least results</li>
+If you have questions, please schedule time with a trainer.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="TAFOPTION" SUB="ENABLE_TAF" PROMPT="Tell a friend" ON="1" DEFAULT="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_tellafriend" OFF="0"><TRUE><![CDATA[
+<div id="prod_links_tell"><a href="#" onclick="Effect.BlindDown('tellafriend'); return false;">Tell a Friend</a></div>
+]]></TRUE>
+<HELP><![CDATA[
+Tell a Friend or TAF is a feature that puts a contact form on your product pages so that your customers can send product specific information directly to an associate of theirs.  Your branding and product specific information are in the email sent, as well as a custom message set by your customer.  <br>This feature requires the XSELL bundle.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="REVIEWOPTION" SUB="ENABLE_REVIEWS" PROMPT="Product Reviews" ON="1" DEFAULT="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_reviews" OFF="0"><TRUE><![CDATA[
+<li><a href="#reviews_content" onClick="new TabToggle(this); return false;">Reviews</a></li>
+]]></TRUE>
+<HELP><![CDATA[
+Product Reviews allows your customers to add their personal input about a specific product.  Once their review is submitted, it is entered into a queue for your approval.  You have the ability to add/remove/edit any specific review through the product editor.  <br>This feature requires the CRM bundle.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CQLVLCD" SUB="LINK_VISITED_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_VISITED_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCE" SUB="TABLE_HEADING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCF" SUB="DISCLAIMER_FONT_SIZE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCG" SUB="CONTENT_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCH" SUB="TABLE_LISTING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCI" SUB="CONTENT_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCJ" SUB="TABLE_LISTING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCK" SUB="TABLE_LISTING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCL" SUB="TABLE_LISTING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCM" SUB="CONTENT_FONT_FACE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCN" SUB="NAME" TYPE="READONLY" LOAD="THEME::NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCO" SUB="DISCLAIMER_FONT_FACE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCP" SUB="PRETTY_NAME" TYPE="READONLY" LOAD="THEME::PRETTY_NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCQ" SUB="TABLE_HEADING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCR" SUB="TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCS" SUB="LINK_ACTIVE_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_ACTIVE_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCT" SUB="CONTENT_FONT_SIZE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCU" SUB="ALERT_COLOR" TYPE="READONLY" LOAD="THEME::ALERT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCV" SUB="DISCLAIMER_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCW" SUB="TABLE_HEADING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCX" SUB="TABLE_HEADING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCY" SUB="DISCLAIMER_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLCZ" SUB="LINK_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDA" SUB="HOMECATEGORY_URL" TYPE="READONLY" LOAD="URL::HOMECATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDB" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDC" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDD" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDE" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDF" SUB="LOGOUT_FUNCTION_URL" TYPE="READONLY" LOAD="URL::LOGOUT_FUNCTION_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDG" SUB="SHIPQUOTE_URL" TYPE="READONLY" LOAD="URL::SHIPQUOTE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDH" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDI" SUB="SITEBUTTON_URL" TYPE="READONLY" LOAD="URL::SITEBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDJ" SUB="HOMEPAGE_URL" TYPE="READONLY" LOAD="URL::HOMEPAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDK" SUB="COUNTER_URL" TYPE="READONLY" LOAD="URL::COUNTER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDL" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDM" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDN" SUB="UPDATE_PAYMENT_URL" TYPE="READONLY" LOAD="URL::UPDATE_PAYMENT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDO" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDP" SUB="NAVBUTTON_URL" TYPE="READONLY" LOAD="URL::NAVBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDQ" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDR" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDS" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDT" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDU" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDV" SUB="ABOUT_ZOOVY_URL" TYPE="READONLY" LOAD="URL::ABOUT_ZOOVY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDW" SUB="NEWS_URL" TYPE="READONLY" LOAD="URL::NEWS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLXX" SUB="MAGIC_URL" TYPE="READONLY" LOAD="URL::MAGIC_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDX" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDY" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDZ" SUB="USERBUTTON_URL" TYPE="READONLY" LOAD="URL::USERBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEA" SUB="CLOSED_URL" TYPE="READONLY" LOAD="URL::CLOSED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEB" SUB="FASTORDER_URL" TYPE="READONLY" LOAD="URL::FASTORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEC" SUB="MAIL_FORM_URL" TYPE="READONLY" LOAD="URL::MAIL_FORM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLED" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEE" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEF" SUB="CONTACTUS_URL" TYPE="READONLY" LOAD="URL::CONTACTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEG" SUB="DYNAMIC_URL" TYPE="READONLY" LOAD="URL::DYNAMIC_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEH" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEI" SUB="CONTACT_US_URL" TYPE="READONLY" LOAD="URL::CONTACT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEJ" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEK" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEL" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEM" SUB="MERCHANT_LOGIN_URL" TYPE="READONLY" LOAD="URL::MERCHANT_LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEN" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEO" SUB="ADULT_URL" TYPE="READONLY" LOAD="URL::ADULT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEP" SUB="CLAIM_URL" TYPE="READONLY" LOAD="URL::CLAIM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEQ" SUB="CLAIM_MULTI_URL" TYPE="READONLY" LOAD="URL::CLAIM_MULTI_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLER" SUB="ABOUT_US_URL" TYPE="READONLY" LOAD="URL::ABOUT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLES" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLET" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEU" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEV" SUB="REDIR_URL" TYPE="READONLY" LOAD="URL::REDIR_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEW" SUB="KILL_COOKIES_URL" TYPE="READONLY" LOAD="URL::KILL_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEX" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEY" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEZ" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLFA" SUB="NO_COOKIES_URL" TYPE="READONLY" LOAD="URL::NO_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLFB" SUB="PAYPAL_URL" TYPE="READONLY" LOAD="URL::PAYPAL_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLFC" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLFD" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLFE" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CWQWQTG" TYPE="OUTPUT" OUTPUTSKIP="2048"><HTML><![CDATA[
+
+
+<!--
+
+this element is skipped on non-secure pages.  On secure pages, the sub is placed into the JS for the search to work properly
+
+-->
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQLVLDX" SUB="SECURE_ROOT" TYPE="READONLY" LOAD="URL::SECURE_URL" OUTPUTSKIP="4" RAW="1"></ELEMENT>
+<ELEMENT ID="CRNEEWD" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD" RAW="1"></ELEMENT>
+<ELEMENT ID="SESSIONID" SUB="SESSION_ID" TYPE="READONLY" LOAD="CART::ID" RAW="1"></ELEMENT>
+<ELEMENT ID="STORENAME" SUB="STORENAME" TYPE="READONLY" LOAD="FLOW::USERNAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CRNEEWE" SUB="WRAPPER_ID" TYPE="READONLY" LOAD="FLOW::WRAPPER" RAW="1"></ELEMENT>
+<ELEMENT ID="VARKEYWORDS" SUB="SEARCH_KEYWORDS" TYPE="READONLY" LOAD="CART::SEARCH_KEYWORDLIST" RAW="1"></ELEMENT>
+<ELEMENT ID="CRNEEWF" SUB="CUSTOMER_EMAIL" TYPE="READONLY" LOAD="CART::LOGIN" RAW="1"></ELEMENT>
+<ELEMENT ID="CRLXBDG" SUB="CUSTOMER_FULLNAME" TYPE="READONLY" LOAD="CART::customer::INFO.FULLNAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CRLXBDG" SUB="CUSTOMER_NEWSLETTER" TYPE="READONLY" LOAD="CART::customer::INFO.NEWSLETTER" RAW="1"></ELEMENT>
+<ELEMENT ID="CQHREXQ" SUB="title1" TYPE="HIDDEN"><DEFAULT><![CDATA[<h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXR" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[</h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXS" SUB="title2" TYPE="HIDDEN"><DEFAULT><![CDATA[<h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXT" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXU" SUB="title3" TYPE="HIDDEN"><DEFAULT><![CDATA[<h4>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXV" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</h4>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CRNEEWG" PROMPT="Link for Banner" SUB="BANNER_LINK" DEFAULT="%CART%/search.cgi" FONT="0" TYPE="TEXTBOX" DATA="merchant:zoovy:wrap_bannerlink"><HELP><![CDATA[WARNING:  linking within your Zoovy store requires you to use a special syntax in order to avoid cart/cookie issues.  When setting up links, use this variable to ensure the cart id is passed in the URL and that users don't bounce between domains.<br>
+Links should look like this: %CART%/category/cat.safe.name<br>
+Links should NOT look like this:  http://yourdomain.com/c=54654SD6546SDF4656/category/cat.safe.name<br>
+The c= is the cart id.  If you paste that in as your link, all your customers will share the same cart id.  This would be bad.<br>
+If you have questions, schedule time with your trainer or contact support.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT HEIGHT="60" ID="CRGOZAM" MINIMAL_MODE="1" WIDTH="468" PROMPT="Choose the banner image you would like to use" SUB="BANNER_IMAGE" TYPE="IMAGE" DATA="merchant:zoovy:wrap_banner"><POSTTEXT><![CDATA[</a>]]></POSTTEXT>
+<PRETEXT><![CDATA[<a href='%BANNER_LINK%'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CUWSXSQ" WIKI="3" PROMPT="Warning for users that have javascript disabled" SUB="WRAP_NOSCRIPT_TEXT" TYPE="TEXTBOX" FONT="1" DATA="profile:zoovy:wrap_noscript_text"><DEFAULT><![CDATA[This store relies heavily on JavaScript, which your browser does not support or has disabled.  Please enable it or use another browser.]]></DEFAULT>
+<POSTTEXT><![CDATA[</div></NOSCRIPT>]]></POSTTEXT>
+<HELP><![CDATA[Enter a short piece of text to be displayed to users that have javascript disabled.  This theme uses ajax for several features and will not play well with browsers that do not support javascript (or have it disabled).]]></HELP>
+<PRETEXT><![CDATA[<NOSCRIPT><div class='ztxt zwarn'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="NEWSLETTER" SUB="NEWSLETTER_FORM" TYPE="HIDDEN"><DEFAULT><![CDATA[
+<!-- newsletter -->
+<div class='box_padbottom'>
+	<div class='box_border'>
+
+<div class='box_header box_title'>NEWSLETTER</div>
+<div class='box_content'>
+
+<form action="%SUBSCRIBE_URL%" method="post" style="margin-bottom:4px;">
+<input type="hidden" name="check" value="1">
+<table>
+<tr>
+	<td>Email:</td>
+	<td align="right"><input type="text" class="zform_textbox" maxlength="50" name="email" value="%CUSTOMER_EMAIL%" STYLE="width:100px;"></td>
+</tr>
+<tr>
+	<td>Name:</td>
+	<td align="right"><input type="text" class="zform_textbox" maxlength="50" name="fullname" value="%CUSTOMER_FULLNAME%" STYLE="width:100px;"></td>
+</tr>
+<tr>
+	<td colspan="2" align="right"><input type="submit" class="zform_button" value="Subscribe" HEIGHT="15" WIDTH="81" class="buttonz" STYLE="width:150px; text-align:right;"></td>
+</tr>
+</table>
+</form>
+
+</div>
+<div class='box_bottom'></div>
+	</div>
+<!-- /newsletter -->
+</div>
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CRGOZAI" SUB="TITLE" TYPE="TITLE" RAW="1"></ELEMENT>
+<ELEMENT ID="LOGGEDIN" SUB="LOGTEXT_IN" TYPE="OUTPUT" OUTPUTSKIP="8"><HTML><![CDATA[
+	<!-- Login link -->
+			<div id="head_text_links" class="text_links" style="text-align:right;">you are logged in as: <a href="%CUSTOMER_MAIN_URL%">%CUSTOMER_EMAIL%</a> | <A HREF="%LOGOUT_FUNCTION_URL%">Logout</A>
+			</div>
+	]]></HTML>
+</ELEMENT>
+<ELEMENT ID="LOGGEDOUT" SUB="LOGTEXT" TYPE="OUTPUT" OUTPUTSKIP="16"><HTML><![CDATA[
+<!-- Login link -->
+		<div id="head_text_links" class="text_links">
+			<A HREF="#"  onClick="new Effect.BlindDown('loginForm');return false;">Click here to login</A></div>
+		
+		<div id="loginForm" style="display:none; position:absolute; top:16px; right:-5px; z-index:9999; text-align:right; line-height:25px; background-color:#FFFFFF; padding:3px; color:#666666; border:1px solid #666666; font-size:8pt; width:220px;">
+<div align="right"><A HREF="#" onClick="new Effect.BlindUp('loginForm');return false;"><img src="%WRAPPER_URL%/close_button-16x16.gif" BORDER="0" height="16" width="16" alt='close'></A></div>
+<form action="%LOGIN_URL%" method="post" style="margin:0px;">
+<input type="hidden" name="mode" value="check">
+<input type="hidden" name="url" value="%CUSTOMER_MAIN_URL%">
+Login: <input type="text" class="zform_textbox" maxlength="50" name="login" value=""><br>
+Password: <input type="password" class="zform_textbox" maxlength="50" name="password" value=""><br>
+<input type="submit" name="submit" class="zform_button" value="Login"><br>
+</form>
+		</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="60" ID="COMPANY_LOGO" WIDTH="400" SUB="LOGO" BGCOLOR="ffffff" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="BREADCRUMB" SUB="BREADCRUMB" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTFILTER="FS=H,P" OUTPUTSKIP="1"><HTML><![CDATA[
+<!-- CATEGORY -->
+<a href="<% load($cat_url);  default("");  print(); %>" class="breadcrumb"><% load($cat_pretty);  default("");  print(); %></a>
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); runspec(" &#187; "); print(); %>
+<!-- /CATEGORY -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFLUB" TYPE="OUTPUT" OUTPUTSKIP="32768"><HTML><![CDATA[
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<head>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="STYLESHEET" TYPE="OUTPUT"><HTML><![CDATA[
+<link rel="stylesheet" type="text/css" href="%WRAPPER_URL%/style.css">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRGOZAG" TYPE="HEAD" OUTPUTSKIP="32768"></ELEMENT>
+<ELEMENT ID="CRNFLUC" TYPE="OUTPUT" OUTPUTSKIP="32768"><HTML><![CDATA[
+<style type="text/css">
+<!--
+
+
+/* Header and it's content */
+.header {background-color:#D8DCDB; border:solid 1px #%COLOR1%; width:100%; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.filler_table {width:176px; background-color:#D8DCDB; border:solid 1px #%COLOR1%; position:relative; margin-top:3px; height:100%; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+div, html, textarea, select {
+scrollbar-base-color: #%COLOR1%;
+}
+
+/* General site attributes */
+a	{color:#%COLOR1%;}
+
+.search_list_price	{text-decoration:none; font-size:11px; color:#%COLOR1%; font-weight:bold}
+
+
+
+
+.box_padbottom	{border-bottom:2px solid #FFFFFF;}
+.box_border		{border:1px solid #%COLOR1%; background-color:#D8DCDB; padding:2px; position:relative;}
+.box_content	{width:auto; background-color:#ffffff; border:1px solid #B4C3E2; padding:2px; margin-bottom:2px;}
+.box_header		{width:auto; font: bold 11px left; color:#FFFFFF; background:url(%WRAPPER_URL%/bar_back_%COLOR1%-1x25.gif) repeat-x bottom #%COLOR1%; border:1px solid #ffffff; padding:2px 5px 3px 5px; box-sizing: border-box; -moz-box-sizing: border-box; font-family:Verdana, Arial, Helvetica, sans-serif;}
+.box_title		{text-align:right; margin-bottom:2px; padding-top:6px; font-size:8pt;}
+
+.box_bottom		{border:1px solid #FFFFFF; background-color:#%COLOR1%; width:auto; height:15px;}
+-->
+</style>
+
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/zoovy.js"></SCRIPT>
+<!-- <script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous/dragdrop.js"></script> -->
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.7.1/lib/prototype.js"></script>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.7.1/src/scriptaculous.js"></script>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.7.1/src/effects.js"></script>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.7.1/src/controls.js"></script>
+<script type="text/javascript">
+<!--
+
+var session_id = '%SESSION_ID%';
+var store = '%STORENAME%';
+var DOCID = '%WRAPPER_ID%';
+
+function updateCart() {
+
+	$('PUTCARTHERE').innerHTML = 'Updating - please wait!';
+	new Effect.Highlight($('PUTCARTHERE'));
+	
+	// this gets called by handleResponse (which is in zoovy.js)
+   var postBody = 'm=RenderElement&format=WRAPPER&docid='+DOCID+'&element=IMAGECART&targetDiv=PUTCARTHERE';
+	new Ajax.Request('%MAGIC_URL%/ajax/RenderElement', { postBody: postBody, asynchronous: 1,
+		onComplete: function(request){handleResponse(request.responseText);} }
+		) ;
+	}
+
+//
+// this function is overloaded, and is run whenever an "add_to_cart" button is clicked
+//		it finds the form with a product id that matches on it.
+//
+function addToCart(id,pid) {
+	// alert("adding To Cart (product: " + pid + ")");
+
+   var postBody = 'm=AddToCart&cart='+session_id+'&pid='+pid;
+	for (i = document.forms.length-1; i>=0; --i) {
+		if (document.forms[i].elements['product_id']) {
+			if (document.forms[i].elements['product_id'].value == pid) {
+				postBody = postBody + '&' + Form.serialize(document.forms[i]);
+			   new Ajax.Request('%MAGIC_URL%/ajax/AddToCart', { postBody: postBody, asynchronous: 1,
+			      onComplete: function(request){handleResponse(request.responseText);} }
+			      ) ;
+				}
+			}
+		}
+	// alert('finished with addToCart');	
+	}
+
+//--></script>
+<script type="text/javascript" language="javascript">
+<!-- 
+/*
+get the list of keywords and if present, display them. If not, forget about it...
+If a word is searched, prepend it to the keyword variable separated by a pipe - | and save it back to the cart.
+redisplay list of keywords with the newest word at the top, do NOT retrieve again from cart.
+display the search results in appropriate div.
+*/
+
+var myKeywords = '%SEARCH_KEYWORDS%';
+var session_id = '%SESSION_ID%';
+
+
+//Set this var to the maximum number of results you want shown in the recent searches.
+var maxWords = 6;
+
+/* ##### this is the master function to display the updated list of keywords and the search results.
+1. look to see if myKeywords has a value.
+  	if so: append myKeywords to the new word as update var.
+ 		if no: set new word to update var.
+2. update CART with the list of keywords.
+3. Update display of keywords with latest edition.
+4. Load the search results into the magically appearing div.
+*/
+
+function updateKeywordList(newWord) {
+//if myKeywords isn't blank, postpend them onto value, separated by a pipe.
+	if(myKeywords != '')
+		var update = newWord+'|'+myKeywords;
+	else
+		var update = newWord;
+
+//Set the postbody var.
+	var postBody = 'm=set&data='+update+'&src=CART::SEARCH_KEYWORDLIST&cart=%SESSION_ID%';
+//Update the cart with the pipe separated list of keywords.
+//onComplete, load the results of the new Word and update the list of keywords that are displayed.
+	new Ajax.Request('%MAGIC_URL%/ajax/set', { postBody: postBody, asynchronous: 1, onComplete: function(request){
+		displayKeywords();
+		loadResults(newWord);
+	}});
+	return update;
+	}
+
+/*	##### This functions will update the recent searches div. It reloads a SCRIPT element.*/
+function displayKeywords() {
+	var postBody = 'm=RenderElement&format=WRAPPER&docid='+DOCID+'&element=RECENTSEARCHES&targetDiv=keywordsDisplay';
+	new Ajax.Request('%MAGIC_URL%/ajax/RenderElement', { postBody: postBody, asynchronous: 1,
+		onComplete: function(request){handleResponse(request.responseText);} }
+		) ;
+	
+	}
+
+/*  ##### THis function will load the results into a div. */
+
+function loadResults(keywords){
+// set text in div to let user know a search is being conducted.
+	$("edresults").innerHTML = 'Searching, please wait...';
+//if the results panel is already open, no need to open it again, just higlight it to let the user know something has changed.
+	if($("edresultscontainer").style.display=="none") 
+		Effect.SlideDown("edresultscontainer");
+	else
+		new Effect.Highlight($("edresultscontainer"));
+		
+	var postBody = 'm=RenderElement&AJAX=1&format=WRAPPER&docid='+DOCID+'&element=WRAPRESULTS&targetDiv=edresults&CATALOG=%CATALOG%&mode=%SEARCHMODE%&keywords='+keywords;
+	new Ajax.Request('%MAGIC_URL%/ajax/RenderElement', { postBody: postBody, asynchronous: 1,
+		onComplete: function(request){handleResponse(request.responseText);} }
+		) ;
+//	alert(postBody);
+	}
+//-->
+</script>
+
+</head>
+<body style='font-family:Verdana, Arial, Helvetica, sans-serif; color:#666666;'> 
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSGBJDC" TYPE="OUTPUT"><HTML><![CDATA[
+<!-- Create the outer boundaries of the site -->
+<table id="website" align="center" BORDER="0" CELLSPACING="0" CELLPADDING="0" width="960" STYLE="height:96%">
+<tr>
+<!-- This is the header -->
+	<td COLSPAN="3" VALIGN="top" style='height:3%'>
+<div class='box_padbottom'>
+	<div class='box_border'>
+
+<div class='box_header' style='height:19px; margin-bottom:2px;'>
+	<span style='float:left;'>%TITLE%</span>	
+	<span style='float:right;' class='text_links'>%LOGTEXT%%LOGTEXT_IN%</span>	
+</div>
+
+<div style='height:60px;' class='box_content'>
+	<div style='float: left; '><a href='%HOME_URL%'>%LOGO%</a></div>
+	<div style='float:right; height:60px; overflow:hidden; width:468px; text-align:right'>%BANNER_IMAGE%</div>	
+</div>
+
+<div class='box_header' style="height:19px;">
+	<div style='float:left;'>%BREADCRUMB%</div>
+	<div style='float:right; color:#ffffff;' class='text_links'><A HREF="%HOME_URL%">home</A> | <A HREF="%CONTACT_URL%">contact</A> | <A HREF="%ABOUT_URL%">company</A></div>
+</div>
+
+	</div>
+</div>
+	</td>
+</tr>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFLUG" TYPE="OUTPUT"><HTML><![CDATA[
+<tr>
+<!-- This is the category buttons column -->
+	<td VALIGN="top" WIDTH="176" STYLE="height:90%; background:url(%WRAPPER_URL%/bar_fill-176x21.gif) repeat-y #%COLOR1% left;">
+	<div style='position:relative; z-index:900;'>
+<div id="edresultscontainer" class="edresultscontainer" style="display:none; z-index:1000; position:absolute; top:55px; left:80px; text-align:right; background-color:#EFEFEF;">
+<div align="right"><A HREF="#" onClick="new Effect.SlideUp('edresultscontainer');return false;"><img src="%WRAPPER_URL%/close_button-16x16.gif" BORDER="0" height="16" width="16" alt='close'></A></div>
+	<div id="edresults">
+<!-- This element gets skipped both in the UI and on all pages (used 2 & 4).  It gets rerendered using ajax for the search results -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT FORMAT="CUSTOM" ID="WRAPRESULTS" SIZE="50000" TYPE="PRODSEARCH" ALTERNATE="0" AJAX="1" DATA="profile:zoovy:wrap_results_style" OUTPUTSKIP="32774" COLS="1"><HTML><![CDATA[
+<div><% load($TOTAL_PRODUCTS); print(); %> results found for <% loadurp("VAR::keywords"); print(); %></div>
+<table BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td <% load($bg);  default("");  print(); %>>
+<table width="100%" BORDER="0" CELLPADDING="0" CELLSPACING="2">
+	<tr>
+		<td WIDTH="1%" VALIGN="top" HEIGHT="50"><A HREF="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"50",h=>"50",tag=>"1");  print(); %></A></td>
+		<td ALIGN="left" WIDTH="99%" VALIGN="top">
+		<DIV style="margin-bottom:1px; width:100%;"><A HREF="<% load($PROD_URL);  default("");  print(); %>" CLASS="search_list_text" STYLE="font-weight:bold; font-size:11px;"><% load($zoovy:prod_name);  default(""); strip(length=>"35",breaks=>"1",html=>"1");  print(); %></A></DIV>
+		<DIV style="width:100%"><A HREF="<% load($PROD_URL);  default("");  print(); %>" CLASS="search_list_text"><% load($zoovy:prod_desc);  default(""); format(wiki,title1=>"",/title1=>"",title2=>"",/title2=>"",title3=>"",/title3=>"",listitem=>"",/listitem=>"",list=>"",/list=>"",hardbreak=>""); strip(length=>"150");  print(); %></A></DIV>
+		<DIV style="padding-top:2px; width:100%">
+			<DIV ALIGN="RIGHT"><span class="search_list_price"><% load($zoovy:base_price);  default("");  format(money);  format(after=>"space",skipblank=>"1");  format(after=>"bar",skipblank=>"1");  print(); %>  <% load($ADD_LINK);  default("");  print(); %></span></DIV>
+		</DIV>
+		</td>
+	</tr>
+	</table>
+
+<td>
+<!-- /PRODUCT -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+<EMPTY_MESSAGE><![CDATA[0 results found for <% loadurp("VAR::keywords"); print(); %>]]></EMPTY_MESSAGE>
+</ELEMENT>
+<ELEMENT ID="CRNFLU52345" TYPE="OUTPUT"><HTML><![CDATA[		
+	</div>
+</div>
+
+	</div>
+	<div style='width:176px; overflow:hidden;'>
+
+<!-- search -->
+<div class='box_padbottom'>
+	<div class='box_border'>
+
+<div class='box_header box_title'>SEARCH</div>
+<div class='box_content'>
+
+<form method="get" style="margin:0px;" action="" onSubmit="myKeywords = updateKeywordList(document.searchFrm.keywords.value); return false;" id="searchFrm" name="searchFrm">
+<input type="hidden" name="CATALOG" value="%CATALOG%">
+<input type="hidden" name="mode" value="%SEARCHMODE%">
+<table>
+<tr>
+	<td><input class="zform_textbox" name="keywords" id="keywords" type="text" style="font-size:11px; width:125px;" /><span style="display:none" id="keywords_stat"></span></td>
+	<td><input type="image" src="%WRAPPER_URL%/search_butt-21x21.gif" /></td>
+</tr>
+</table>
+</form>
+
+	<div id="keywordsDisplay">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="RECENTSEARCHES" FONT="0" TYPE="SCRIPT" RAW="1"><HTML><![CDATA[
+
+// display a list of up to 6 recently searched words.
+
+var keywordlist = loadURP("CART::SEARCH_KEYWORDLIST");
+
+
+if (keywordlist != "") {
+
+	var keywords = keywordlist.split("|");
+//For whatever reason, keywordlist is not blank, even when blank.  So the search header gets put into another if statement.  look into this.
+	if(keywords.length > 0)	{
+		write("<div style='font-weight:bold; font-size:8pt;'>Recent Searches:</div>");
+		}
+
+// a max of six results should be displayed, so we set max to 6 if there are more words than that in the keywords array.
+	var max = keywords.length;
+	if(keywords.length > 6)
+		max = 6;
+	for (var i=0; i < max; i++) {
+		write("<div  class='searchKeywords'><a href='javascript:loadResults(\""+keywords[i]+"\");'>"+keywords[i]+"</a></div>\n");
+		}
+	}
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFLUG542" TYPE="OUTPUT"><HTML><![CDATA[
+	</div>
+</div>
+<div class='box_bottom'></div>
+	</div>
+<!-- /search -->
+</div>
+
+
+<!-- categories -->
+<div class='box_padbottom'>
+	<div class='box_border'>
+
+<div class='box_header box_title'>CATEGORIES</div>
+<div class='box_content'>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRGOZAQ" TYPE="SUBCAT" SRC="." MODE="LIST"><HTML><![CDATA[
+<!-- CATEGORY -->
+<div class="zcat"><A HREF="<% load($cat_url);  default("");  print(); %>"><% load($cat_pretty);  default("");  print(); %></A></div>
+<!-- /CATEGORY -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRN2345FLUG542" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+<div class='box_bottom'></div>
+	</div>
+<!-- /categories -->
+</div>
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="LEFTSIDE_DECAL1" PROMPT="Left column - after categories" WIDTH="176" TYPE="DECAL" DATA="wrapper:evolution_leftcol"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="LEFTSIDE_DECAL2" PROMPT="Left column - after categories #2" WIDTH="176" TYPE="DECAL" DATA="wrapper:evolution_leftcol2"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DAUPVSY" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div style='background-color:#%COLOR1%; padding:0px; margin:0px;'><img src='%WRAPPER_URL%/bar_fill_top2-176x12.gif' width='176' height='12' alt='' border='0' ></div>
+	</div>
+
+
+
+
+	</td>
+	<!-- This is the body column -->
+	<td VALIGN="top" width="648" ROWSPAN="2" style="padding:4px; box-sizing: padding-box; -moz-box-sizing: padding-box;">
+	<div style="z-index:0;" id='body'>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PAGETITLE" TYPE="TITLE" OUTPUTSKIP="4"><PRETEXT><![CDATA[<h3 style='margin-bottom:8px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</h3>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFLUI" TYPE="OUTPUT"><HTML><![CDATA[
+%WRAP_NOSCRIPT_TEXT%]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BODY" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="CRNFLUI" TYPE="OUTPUT"><HTML><![CDATA[
+
+</div></td>
+	<!-- This is the right column -->
+	<td VALIGN="top" WIDTH="176" STYLE="background:url(%WRAPPER_URL%/bar_fill-176x21.gif) repeat-y left #%COLOR1%;">
+	<div style='width:176px; overflow:hidden;'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFLUJ456" TYPE="OUTPUT" OUTPUTSKIP="1" OUTPUTFILTER="PG=cart"><HTML><![CDATA[
+<!-- minicart -->
+<div class='box_padbottom'>
+	<div class='box_border'>
+
+<div class='box_header box_title'>SHOPPING CART</div>
+<div class='box_content'>
+
+
+	<div id="PUTCARTHERE">
+	
+	]]></HTML>
+</ELEMENT>
+<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><HTML><![CDATA[
+
+<!-- MINICART --><table width="160" cellpadding="0" cellspacing="2">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td width="45"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"45",h=>"45",tag=>"1",bg=>"ffffff");  print(); %></td>
+<td><span class="listies"><a href="<% load($PROD_URL);  default("");  print(); %>" style="text-decoration:none;"><% load($prod_name);  default(""); strip(length=>"35",breaks=>"1",html=>"1");  print(); %></a> <% load($REMOVE_LINK);  default("");  print(); %></span></td>
+<!-- /PRODUCT -->
+</tr><tr><td style="height:1px; background-color:#CCCCCC;" colspan="2"></td></tr>
+<!-- /ROW -->
+</table><div align="center">
+<table width="140" cellspacing="1" cellpadding="0"><tr>
+	<td><span class="minicart">Items: </span></td>
+	<td align="right"><span class="minicart"><% load($TOTALCOUNT);  default("");  print(); %></span></td>
+</tr>
+<% load($SURCHARGE_LINE);  default("");  print(); %>
+<% load($SURCHARGE_BND_SPEC);  default("");  print(); %>
+<tr>
+	<td><span class="minicart">Total: </span></td>
+	<td align="right"><span class="minicart"><% load($GRANDTOTAL);  default("");  format(money);  print(); %></span></td>
+</tr>
+<tr>
+	<td style="height:1px; background-color:#CCCCCC;" colspan="2"></td>
+</tr>
+	<td colspan="2" align="center" style='padding:3px;'><span class="minicart"><a href="<% load($CART_URL);  default("");  print(); %>">view cart</a> | <a href="<% load($CHECKOUT_URL);  default("");  print(); %>">checkout</a></span></td>
+</tr>
+<tr>
+	<td colspan='2' align='center'>
+<% load($PAYPAL_BUTTON);  default("");  print(); %>	
+<% load($GOOGLE_BUTTON);  default("");  print(); %>	
+	</td>
+</tr>
+</table>
+</div>
+	
+
+]]></HTML>
+<SURCHARGE_BND_SPEC><![CDATA[
+<tr><td><span class="minicart">Bonding: </span></td><td align="right"><span class="minicart"><% load($BUYSAFE_SURCHARGETXT); default("");  format(money); print(); %></span></td></tr>
+]]></SURCHARGE_BND_SPEC>
+<SURCHARGE_SPEC><![CDATA[
+<tr>
+	<td><span class="minicart"><% load($SURCHARGE); default(""); print(); %>:</span></td>
+	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
+</tr>
+]]></SURCHARGE_SPEC>
+<SURCHARGE_INS_SPEC><![CDATA[
+<tr>
+	<td><span class="minicart"><% load($SURCHARGE); default(""); print(); %>:</span></td>
+	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
+</tr>
+]]></SURCHARGE_INS_SPEC>
+<NOITEMS_SPEC><![CDATA[<!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
+<div class='zsmall' align='center' style='margin:4px;'><b>There are no items in your shopping cart</b></div>
+]]></NOITEMS_SPEC>
+<SURCHARGE_GFC_SPEC><![CDATA[
+<tr>
+	<td><span class="minicart">Gift Card(s):</span></td>
+	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
+</tr>
+]]></SURCHARGE_GFC_SPEC>
+<SURCHARGE_SHP_SPEC><![CDATA[
+<tr>
+	<td><span class="minicart">Shipping:</span></td>
+	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
+</tr>
+]]></SURCHARGE_SHP_SPEC>
+<SURCHARGE_SPC_SPEC><![CDATA[
+<tr>
+	<td><span class="minicart">Special Charge:</span></td>
+	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
+</tr>
+]]></SURCHARGE_SPC_SPEC>
+<SURCHARGE_HND_SPEC><![CDATA[
+<tr>
+	<td><span class="minicart"><% load($SURCHARGE); default(""); print(); %>:</span></td>
+	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
+</tr>
+]]></SURCHARGE_HND_SPEC>
+</ELEMENT>
+<ELEMENT ID="CRNFLUJ" TYPE="OUTPUT" OUTPUTSKIP="1" OUTPUTFILTER="PG=cart"><HTML><![CDATA[
+	
+
+
+	</div>
+	
+</div>
+<div class='box_bottom'></div>
+	
+
+<!-- /minicart -->
+</div>
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="RIGHTSIDE_DECAL1" PROMPT="Right column - between minicart and newsletter" WIDTH="176" TYPE="DECAL" DATA="wrapper:evolution_rightcol"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CRNEEWH" TYPE="TRISTATE" LOAD="CART::customer::INFO.NEWSLETTER"><TRUE><![CDATA[<!-- Subscribed: True -->]]></TRUE>
+<FALSE><![CDATA[<!-- Newsletter Form.  Status: False -->
+%NEWSLETTER_FORM%
+<!-- /newsletter form -->
+]]></FALSE>
+<UNDEF><![CDATA[<!-- Newsletter Form.  Status: Undef -->
+%NEWSLETTER_FORM%
+<!-- /newsletter form -->
+]]></UNDEF>
+</ELEMENT>
+<ELEMENT ID="RIGHTSIDE_DECAL2" PROMPT="Right column - between newsletter and sidebar" WIDTH="176" TYPE="DECAL" DATA="wrapper:evolution_rightcol2"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFLUK" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- sidebar -->
+<div class='box_padbottom'>
+	<div class='box_border'>
+		<div class='box_content' >
+<div style='width:164px; overflow:hidden;' align='center'>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SIDEBAR" WIDTH="150" TYPE="SIDEBAR"></ELEMENT>
+<ELEMENT ID="CRNFLUL" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+		</div>
+	</div>
+<!-- /sidebar -->
+</div>
+
+	]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFLUL" TYPE="SPECL"><HTML><![CDATA[
+<div style='background-color:#%COLOR1%;'><img src='%WRAPPER_URL%/bar_fill_top2-176x12.gif' width='176' height='12' alt='' border='0' ></div>
+	</div>
+	</td>
+</tr>
+<tr>
+	<td VALIGN="bottom" STYLE="background:url(%WRAPPER_URL%/bar_fill-176x21.gif) repeat-y #%COLOR1% left;"><div style='background-color:#%COLOR1%;'><img src="%WRAPPER_URL%/bar_fill_bottom2-176x12.gif" width='176' height='12' alt='' bortder='0'></div></td>
+	<td VALIGN="bottom" STYLE="background:url(%WRAPPER_URL%/bar_fill-176x21.gif) repeat-y left #%COLOR1%;"><div style='background-color:#%COLOR1%;'><img src="%WRAPPER_URL%/bar_fill_bottom2-176x12.gif" width='176' height='12' alt='' bortder='0'></div></td>
+</tr>
+<tr>
+	<!-- This is the page footer area -->
+	<td COLSPAN="3" STYLE="padding-top:2px;" WIDTH="100%">
+<!-- finder -->
+<div class='box_border' id="foot_links_frame" >
+<div class='box_content' id="foot_links" style="word-spacing:12px; text-align:center; font-size:8pt; height:16px;">
+<A HREF="%HOME_URL%">Home</A> <A HREF="%CONTACT_URL%">Contact</A> <A HREF="%ABOUT_URL%">About</A> <A HREF="%SEARCH_URL%">Search</A> <A HREF="%CART_URL%">Cart</A> <%
+/* if google checkout is enabled, we do NOT want to show the checkout link in the footer */
+print("");
+loadurp("WEBDB::google_api_env"); default("0");
+goto(lt=>"1",label=>"CONTINUE");
+	stop();
+	
+:CONTINUE();
+	print("<A HREF='%CHECKOUT_URL%'>Checkout</A>");
+
+%>
+</div>
+<div class='box_bottom'></div>
+<!-- /finder -->
+</div>
+
+	</td>
+</tr>
+<tr>
+	<td colspan='3' align='center'><div id='zfooter'>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="FOOTER" TYPE="FOOTER" TRANSPARENT="1"></ELEMENT>
+<ELEMENT ID="CRNFLUM" TYPE="OUTPUT"><HTML><![CDATA[
+	</div></td>
+</tr>
+</table>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFLUM" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- begin of the auto_completing textbox -->
+<div id="keywords_auto_complete" class="keywords_auto_complete">Popular Searches:<br></div>
+<script type="text/javascript">
+<!--
+new Ajax.Autocompleter( 'keywords', 'keywords_auto_complete', '%MAGIC_URL%/ajax/AutoComplete/CATALOG=%CATALOG%',
+   { min_chars: 2, indicator: 'keywords_stat' })
+//-->
+</script>
+<!-- 
+troubleshooting:
+color 1 = '%COLOR1%'
+cart id: '%SESSION_ID%'
+storename: %STORENAME%'
+wrapper id: '%WRAPPER_ID%'
+search keywords: '%SEARCH_KEYWORDS%'
+newsletter email: '%CUSTOMER_EMAIL%'
+newsletter name: '%CUSTOMER_FULLNAME%'
+newsletter status: '%CUSTOMER_NEWSLETTER%'
+catalog = '%CATALOG%'
+html by Joel, Design by Jordan, ajaxed by JT
+-->
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

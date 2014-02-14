@@ -1,0 +1,62 @@
+<TEMPLATE ID="h-20061001" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CSPITCT" CREATOR="Zoovy: Jordan" V="3" CREATED="20061001" SUBTYPE="H" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Wide Pic and Product List Grid"><SUMMARY><![CDATA[This product list has a 5x1 Image at the top (445 x 89) followed by a picture only product list with a max of 16 items.  The product list is followed by a text block.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="UIONLYINSTRUCTIONS" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
+<p><b>Multiple Product Lists:</b>  For instructions on how to select different product lists for each of the list elements, visit: <ul style="margin-top:4px;"> <a href="http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361" target="webdoc">http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361</a></ul></p>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPITCU" TYPE="OUTPUT"><HTML><![CDATA[
+<div align="center">
+<table cellpadding="0" cellspacing="0" width="435">
+<tr>
+	<td align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPITCV" DATA="page:link_5x1" SUB="5X1_LINK" PROMPT="Link for 5 x 1 image" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CSPITCW" HEIGHT="89" DATA="page:image_5x1" PROMPT="Image 1 ( 5 x 1 )" WIDTH="445" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="padding-top:5px;"><a href="%5X1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPITCX" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+</tr>
+<tr>
+	<td align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPITCY" MAX="16" ALTERNATE="0" DATA="page:prodlist" COLS="4" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 1 -->
+<table cellpadding="0" cellspacing="12" align="center">
+<!-- ROW -->
+<tr>
+	<!-- PRODUCT -->
+	<td class="zborder"><a href="<% load($PROD_URL);  default("");  print(); %>">
+	<% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"100",h=>"100",m=>"1",alt=>$zoovy:prod_name,tag=>"1");  print(); %></a></td>
+	<!-- /PRODUCT -->
+</tr>
+<!-- /ROW -->
+</table>
+<!-- end product list 1 -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPITCZ" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+</tr>
+<tr>
+	<td style="padding:12px 12px 0px 12px; text-align:left;">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" DATA="page:description" PROMPT="Text Description" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CSPITDA" TYPE="OUTPUT"><HTML><![CDATA[	
+	</td>
+</tr>
+</table>
+</div>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

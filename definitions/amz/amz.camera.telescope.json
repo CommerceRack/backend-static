@@ -1,0 +1,353 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "Telescope",
+      "subcat" : "telescope",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:Telescope",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXOK",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "general",
+            "v" : "general"
+         },
+         {
+            "p" : "mirror-lens",
+            "v" : "mirror-lens"
+         },
+         {
+            "p" : "schmidt-cassegrain",
+            "v" : "schmidt-cassegrain"
+         },
+         {
+            "p" : "maksutov-cassegrain",
+            "v" : "maksutov-cassegrain"
+         },
+         {
+            "p" : "reflecting",
+            "v" : "reflecting"
+         },
+         {
+            "p" : "newtonian-reflector",
+            "v" : "newtonian-reflector"
+         },
+         {
+            "p" : "rich-field-reflector",
+            "v" : "rich-field-reflector"
+         },
+         {
+            "p" : "dobsonian-reflector",
+            "v" : "dobsonian-reflector"
+         },
+         {
+            "p" : "refracting",
+            "v" : "refracting"
+         },
+         {
+            "p" : "achromatic-refractor",
+            "v" : "achromatic-refractor"
+         },
+         {
+            "p" : "apochromatic-refractor",
+            "v" : "apochromatic-refractor"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_telescopetype",
+      "title" : "Telescope Telescope Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.TelescopeType",
+      "list" : "LIST_CAMERA_TELESCOPE_TELESCOPETYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_minaperture",
+      "type" : "textbox",
+      "title" : "Min Aperture",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.MinAperture"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_maxaperture",
+      "type" : "textbox",
+      "title" : "Max Aperture",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.MaxAperture"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "under-80mm",
+            "v" : "under-80mm"
+         },
+         {
+            "p" : "80mm-90mm",
+            "v" : "80mm-90mm"
+         },
+         {
+            "p" : "100mm-150mm",
+            "v" : "100mm-150mm"
+         },
+         {
+            "p" : "150mm-200mm",
+            "v" : "150mm-200mm"
+         },
+         {
+            "p" : "over-200mm",
+            "v" : "over-200mm"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_primaryaperture",
+      "title" : "Telescope Primary Aperture",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.PrimaryAperture",
+      "list" : "LIST_CAMERA_TELESCOPE_PRIMARYAPERTURE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_ts_focallength",
+      "type" : "number",
+      "title" : "FocalLength",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.FocalLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_resolvingpower",
+      "type" : "textbox",
+      "title" : "Resolving Power",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.ResolvingPower"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_mount",
+      "type" : "textbox",
+      "title" : "Mount",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.Mount"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_highestusefulmagnification",
+      "type" : "textbox",
+      "title" : "Highest Useful Magnification",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.HighestUsefulMagnification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_lowestusefulmagnification",
+      "type" : "textbox",
+      "title" : "Lowest Useful Magnification",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.LowestUsefulMagnification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_cp_ts_opticaltubelength",
+      "type" : "number",
+      "title" : "OpticalTubeLength",
+		"amz-uom" : "IN",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.OpticalTubeLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_cp_ts_opticaltubediameter",
+      "type" : "number",
+      "title" : "OpticalTubeDiameter",
+		"amz-uom" : "IN",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.OpticalTubeDiameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_opticalcoatings",
+      "type" : "textbox",
+      "title" : "Optical Coatings",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.OpticalCoatings"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_motorizedcontrols",
+      "type" : "textbox",
+      "title" : "Motorized Controls",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.MotorizedControls"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_viewfinder",
+      "type" : "textbox",
+      "title" : "Viewfinder",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.Viewfinder"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_eyepiecetype",
+      "type" : "textbox",
+      "title" : "Eyepiece Type",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.EyepieceType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_photographicresolution",
+      "type" : "textbox",
+      "title" : "Photographic Resolution",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.PhotographicResolution"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_daweslimit",
+      "type" : "textbox",
+      "title" : "Dawes Limit",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.DawesLimit"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "windows",
+            "v" : "windows"
+         },
+         {
+            "p" : "mac",
+            "v" : "mac"
+         },
+         {
+            "p" : "linux",
+            "v" : "linux"
+         }
+      ],
+      "amz-format" : "ComputerPlatform",
+      "id" : "amz:prod_cp_ts_computerplatform",
+      "title" : "Computer Platform Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.ComputerPlatform",
+      "list" : "LIST_BASE_COMPUTERPLATFORM_TYPE"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_base_systemreqs",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "System Requirements"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_batterytype",
+      "type" : "textbox",
+      "title" : "Battery Type",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.BatteryType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ts_bincld",
+      "type" : "checkbox",
+      "title" : "Battery Included",
+      "xmlpath" : "CameraPhoto.ProductType.Telescope.BatteryIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<!-- HEAD -->
+</head>
+<style>
+body {margin: 0; background-color: #FFFFFF;}
+a	{color: #FFFFFF; text-decoration: none;}
+a:hover	{color: #000099; text-decoration: none;}
+form	{display:	inline;}
+td.black	{background-color: #000000;}
+td.red	{background-color: #990000;}
+.title    {font-family: arial; color: #000099; font-size: 16px; font-weight: bold;}
+.menu	{font-family: arial; font-size: 12px; color: #FFFFFF;}
+</style>
+<body>
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+	<tr>
+		<td>
+		<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+			<tr>
+				<td width=165 height=120 class="black">
+<!-- LOGO
+WIDTH=165
+HEIGHT=120
+--></td>	
+			</tr><tr>
+				<td height="4" class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=4 width=1></td>
+			</tr><tr>
+				<td height="25" class="black" align="center">
+<form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" name="keywords" value="">
+<input type="image" src="<!-- WRAPPER_URL -->/search.jpg" >
+</form></td>
+			</tr><tr>
+				<td height="4" class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=4 width=1></td>
+			</tr><tr>
+				<td class="black" height=99%></td>
+			</tr><tr>
+				<td height="4" class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=4 width=1></td>
+			</tr><tr>
+				<td height="113" valign="bottom"><img src="<!-- WRAPPER_URL -->/guitar.gif" width="165" height="113" alt="" border="0"></td>
+			</tr><tr>
+				<td height="100" class="red"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=100 width=1></td>
+			</tr>		
+		</table>
+		</td>
+		<td width=99%>
+		<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+			<tr>
+				<td class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=10></td>
+				<td class="black" width="99%"><span class="menu">
+<a href="<!-- HOME_URL -->">Home</a>&nbsp;&nbsp;|&nbsp;
+<a href="<!--CART_URL-->">Cart</a>&nbsp;&nbsp;|&nbsp;
+<a href="<!--ABOUT_URL-->">About Us</a>&nbsp;&nbsp;|&nbsp;
+<a href="<!-- LOGIN_URL -->">My Account</a>&nbsp;&nbsp;|&nbsp;
+<a href="<!--CONTACT_URL-->">Contact Us</a></span></td>
+				<td class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=10></td>
+				<td class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=20 width=1></td>
+			</tr><tr>
+				<td class="red"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=20 width=1></td>
+				<td class="red">
+<!-- MENU
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a>%BREAK%
+DIVIDER=|%BREAK%
+AFTER=</div>
+ONLYHOME=0
+NOHOME=1
+-->				</td>
+				<td class="red"></td>
+				<td class="red"></td>
+			</tr><tr>
+				<td></td>
+				<td height="99%" valign="top"></td>
+			</tr>
+		</table>
+		
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

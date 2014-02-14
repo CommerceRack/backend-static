@@ -1,0 +1,263 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "BlankMedia",
+      "subcat" : "blankmedia",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:BlankMedia",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWDJ",
+      "xmlpath" : "CameraPhoto.ProductType.BlankMedia."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "8mm-camcorder-tapes",
+            "v" : "8mm-camcorder-tapes"
+         },
+         {
+            "p" : "beta",
+            "v" : "beta"
+         },
+         {
+            "p" : "hi-8-cassettes",
+            "v" : "hi-8-cassettes"
+         },
+         {
+            "p" : "s-vhs",
+            "v" : "s-vhs"
+         },
+         {
+            "p" : "s-vhs-c",
+            "v" : "s-vhs-c"
+         },
+         {
+            "p" : "vhs",
+            "v" : "vhs"
+         },
+         {
+            "p" : "vhs-c",
+            "v" : "vhs-c"
+         },
+         {
+            "p" : "reel-tapes",
+            "v" : "reel-tapes"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_blankmedia_analogformats",
+      "title" : "Blank Media Analog Formats",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.BlankMedia.AnalogFormats",
+      "list" : "LIST_CAMERA_BLANKMEDIA_ANALOGFORMATS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "minidv-cassettes",
+            "v" : "minidv-cassettes"
+         },
+         {
+            "p" : "full-size-dv-cassettes",
+            "v" : "full-size-dv-cassettes"
+         },
+         {
+            "p" : "micromv",
+            "v" : "micromv"
+         },
+         {
+            "p" : "dvd",
+            "v" : "dvd"
+         },
+         {
+            "p" : "digital-beta-cassettes",
+            "v" : "digital-beta-cassettes"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_blankmedia_digitalformats",
+      "title" : "Blank Media Digital Formats",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.BlankMedia.DigitalFormats",
+      "list" : "LIST_CAMERA_BLANKMEDIA_DIGITALFORMATS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "8mm-film",
+            "v" : "8mm-film"
+         },
+         {
+            "p" : "super-8mm-film",
+            "v" : "super-8mm-film"
+         },
+         {
+            "p" : "16mm-film",
+            "v" : "16mm-film"
+         },
+         {
+            "p" : "super-16mm-film",
+            "v" : "super-16mm-film"
+         },
+         {
+            "p" : "35mm-film",
+            "v" : "35mm-film"
+         },
+         {
+            "p" : "65mm-film",
+            "v" : "65mm-film"
+         },
+         {
+            "p" : "70mm-film",
+            "v" : "70mm-film"
+         },
+         {
+            "p" : "other-film-formats",
+            "v" : "other-film-formats"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_blankmedia_motionfilmformats",
+      "title" : "Blank Media Motion Film Formats",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.BlankMedia.MotionFilmFormats",
+      "list" : "LIST_CAMERA_BLANKMEDIA_MOTIONFILMFORMATS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "unknown_chromatism",
+            "v" : "unknown_chromatism"
+         },
+         {
+            "p" : "black-and-white",
+            "v" : "black-and-white"
+         },
+         {
+            "p" : "color",
+            "v" : "color"
+         },
+         {
+            "p" : "tinted",
+            "v" : "tinted"
+         },
+         {
+            "p" : "colorized",
+            "v" : "colorized"
+         },
+         {
+            "p" : "color/black_and_white",
+            "v" : "color/black_and_white"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_blankmedia_mediacolor",
+      "title" : "Blank Media Media Color",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.BlankMedia.MediaColor",
+      "list" : "LIST_CAMERA_BLANKMEDIA_MEDIACOLOR"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_blankmedia_cnt",
+      "type" : "number",
+      "title" : "Count",
+      "xmlpath" : "CameraPhoto.ProductType.BlankMedia.Count"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

@@ -1,0 +1,143 @@
+<TEMPLATE ID="7005" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMZY" CREATOR="JT" CREATED="00000000" CLASSIFICATION="BOOKS" IMAGES="0" PROPERTIES="1" SUBTYPE="P" SERIES="2003" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Slide Show" RELEASED="20030109"><SUMMARY><![CDATA[
+Authors Name
+Default Description (shared)
+Format
+ISBN
+Number of Pages in the book
+Publisher/Publishing House
+Slide Show
+]]></SUMMARY>
+<SHORT><![CDATA[Contains 1 200x200 slideshow image on the left and book details on the right, with the default description below.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKMZZ" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function iList () {
+	this.name = '';
+	this.img = new Array();
+	this.url = new Array();
+	this.zum = new Array();
+	this.pause = new Array();
+	this.last = null;
+	this.current = null;
+	this.defaultpause = 2000;
+	this.buttons = false;
+	this.stopped = false;
+	this.loaded = false;
+	this.startstop = false;
+}
+function iLoad (i) {
+	if (i.loaded == true) { return; }
+	i.loaded = true;
+	iRotate(i);
+}
+function iLink (i) {
+	if (!i.loaded) { return; }
+	if (typeof(i.url[i.current]) != "undefined") { window.location.href = i.url[i.current]; }
+	else if (typeof(i.zum[i.current]) != "undefined") { zoom(i.zum[i.current]); }
+	else if (i.startstop) { iSwitch(i); }
+}
+function iSwitch (i) {
+	if (!i.loaded) { return; }
+	if (i.stopped) { i.stopped = false; iRotate(i); }
+	else { i.stopped = true; }
+}
+function iRotate (i) {
+	if (i.stopped) { return; }
+	iNext(i);
+	var pause = i.defaultpause;
+	if (typeof(i.pause[i.current]) != "undefined") { pause = i.pause[i.current]; }
+	setTimeout("iRotate("+i.name+")",pause);
+}
+function iNext (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Loading..."; }
+	i.current++; if (i.current > i.last) { i.current = 0; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Next Image"; }
+}
+function iPrev (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Loading..."; }
+	i.current--; if (i.current < 0) { i.current = i.last; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Previous Image"; }
+}
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write("<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align=\"center\">\n<img src=\"" + url + "\"><br>\n<form><input type=\"button\" value=\"Close Window\" onClick=\"self.close(true)\"></form>\n</div>\n</body>\n</html>\n");
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+<center>
+<table cellspacing=4 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td width=200>]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="200" ID="SLIDE1" HELP="Rotates through several pictures" WIDTH="200" PROMPT="Slide Show" TYPE="SLIDE"></ELEMENT>
+<ELEMENT ID="CPUKNAA" TYPE="OUTPUT"><HTML><![CDATA[</td>
+		<td align="left" width=99%><!-- Specific Code Here --><table cellspacing=0 cellpadding=1 border=1 bordercolor="#CCCCCC" width=100%>
+	<tr>
+		<td align="left" valign="top">ISBN</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ISBN" HELP="This is the product isbn that will appear on your website." DATA="product:zoovy:isbn" PROMPT="ISBN" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNAB" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Format</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="FORMAT" HELP="This is the product format that will appear on your website - hardcover, paperback, etc." DATA="product:zoovy:prod_book_format" PROMPT="Format" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNAC" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Author</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="AUTHOR" HELP="This is the authors name that will appear on your website." DATA="product:zoovy:prod_book_author" PROMPT="Authors Name" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNAD" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Publisher</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PUBLISHER" HELP="This is the product Publisher or Publishing House that will appear on your website." DATA="product:zoovy:prod_book_publisher" PROMPT="Publisher/Publishing House" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNAE" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Pages</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PAGES" HELP="This is the products number of pages that will appear on your website." DATA="product:zoovy:prod_book_pages" PROMPT="Number of Pages in the book" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNAF" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr>
+</table></td>
+	</tr><tr>
+		<td colspan=2><p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNAG" TYPE="OUTPUT"><HTML><![CDATA[</p>
+<p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKNAH" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKNAI" TYPE="OUTPUT"><HTML><![CDATA[</p></td>
+	</tr>
+</table>
+
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

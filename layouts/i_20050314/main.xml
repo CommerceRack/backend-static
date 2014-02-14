@@ -1,0 +1,46 @@
+<TEMPLATE ID="i_20050314" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNLE" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG" NEWSLETTER="1"></ELEMENT>
+<ELEMENT ID="CPUKNLF" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>%SUBJECT%</title>
+</head>
+
+<body>
+<table cellspacing="1" cellpadding="1" width="100%"><tr>
+	<td align="left" valign="top"><p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" LENGTH="35" HELP="Please enter the header for your rewards program description" DATA="page:email_header" PROMPT="Rewards Program Header" TYPE="TEXTBOX" FONT="0"><PRETEXT><![CDATA[<span class="header">]]></PRETEXT>
+<POSTTEXT><![CDATA[</span><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="REWARDSDESCRIPTION" HELP="Please describe this section of the newsletter" DATA="page:rewards_description" PROMPT="Description of your rewards program" HELPER="Remember to keep this text short and to the point.  " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNLG" TYPE="OUTPUT"><HTML><![CDATA[
+</p></td>
+	<td align="right" valign="top" width="5%"><a href="http://]]></HTML>
+</ELEMENT>
+<ELEMENT ID="USERNAME" RAW="1" TYPE="READONLY" LOAD="FLOW::USERNAME"></ELEMENT>
+<ELEMENT ID="CPUKNLH" TYPE="OUTPUT"><HTML><![CDATA[.zoovy.com/rewards.cgi">REWARDS GRAPHIC</a></td>
+</tr><tr>
+	<td colspan="2">
+	
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this section of the newsletter" DATA="page:description" PROMPT="Description" HELPER="Remember to keep this text short and to the point.  " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="PRODLIST1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist1" PROMPT="Product Listing" DEFAULT="&amp;FORMAT=THUMB&amp;COLS=3&amp;ALTERNATE=1" TYPE="PRODLIST" SRC="page:prodlist1stuff"></ELEMENT>
+<ELEMENT ID="CPUKNLI" TYPE="OUTPUT"><HTML><![CDATA[
+
+	
+	</td>
+</tr></table>
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

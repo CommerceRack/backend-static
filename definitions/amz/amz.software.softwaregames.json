@@ -1,0 +1,125 @@
+[
+   {
+      "catalog" : "SOFTWARE",
+		"amz-catalog" : "SoftwareVideoGames",
+      "amz-subcat" : "SoftwareGames",
+      "subcat" : "softwaregames",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "SoftwareVideoGames:SoftwareGames",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYYB",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "mandatory" : "Y",
+      "title" : "Software Video Games Genre",
+      "id" : "amz:prod_swvg_swg_swvggenre",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.SoftwareVideoGamesGenre"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "E S R B Rating",
+      "id" : "amz:prod_swvg_swg_esrbrating",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.ESRBRating"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "mandatory" : "Y",
+      "title" : "Media Format",
+      "id" : "amz:prod_swvg_swg_mediaformat",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.MediaFormat"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "mandatory" : "Y",
+      "title" : "Operating System",
+      "id" : "amz:prod_swvg_swg_os",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.OperatingSystem"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_swvg_swg_bundles",
+      "type" : "textbox",
+      "title" : "Bundles",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.Bundles"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_swvg_swg_esrbdescriptors",
+      "type" : "textlist",
+      "title" : "E S R B Descriptors",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.ESRBDescriptors"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_swvg_swg_mfgsuggestedagemin",
+      "type" : "number",
+      "title" : "MFGSuggestedAgeMin",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.MFGSuggestedAgeMin"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_swvg_swg_mfgsuggestedagemax",
+      "type" : "number",
+      "title" : "MFGSuggestedAgeMax",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.MFGSuggestedAgeMax"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Players",
+      "id" : "amz:prod_swvg_swg_maxnbrofplayers",
+      "type" : "number",
+      "title" : "MaxNumberOfPlayers",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.MaxNumberOfPlayers"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_swvg_swg_hardware_platform",
+      "type" : "textbox",
+      "title" : "Hardware Platform",
+		"mandatory" : "Y",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.SoftwarePlatform.HardwarePlatform"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "title" : "System Requirements",
+      "id" : "amz:prod_swvg_swpt_systemreqs",
+      "default" : "N/A",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.SoftwarePlatform.SystemRequirements"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_swvg_swg_onlineplay",
+      "type" : "checkbox",
+      "title" : "Online Play",
+      "xmlpath" : "SoftwareVideoGames.ProductType.SoftwareGames.OnlinePlay"
+   }
+]

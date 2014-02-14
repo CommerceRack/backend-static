@@ -1,0 +1,169 @@
+[
+   {
+      "catalog" : "MUSICINST",
+		"amz-catalog" : "MusicalInstruments",
+      "amz-subcat" : "SoundAndRecordingEquipment",
+      "subcat" : "soundandrecordingequipment",
+      "type" : "config",
+		"variation-themes" : "Color"
+   },
+   {
+      "PROMPT" : "MusicalInstruments:SoundAndRecordingEquipment",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYUI",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_sndeqpt_addlspecs",
+      "type" : "textbox",
+      "title" : "Additional Specifications",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.AdditionalSpecifications"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_sndeqpt_clrspec",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_clrmap",
+      "type" : "textbox",
+      "title" : "Color Map",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.ColorSpecification"
+   },   
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_sndeqpt_ctryprdin",
+      "type" : "textbox",
+      "title" : "Country Produced In",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.CountryProducedIn"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_mus_sndeqpt_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_sndeqpt_mixerchannelqty",
+      "type" : "number",
+      "title" : "MixerChannelQty",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.MixerChannelQty"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_sndeqpt_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_sndeqpt_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_sndeqpt_mdlyear",
+      "type" : "textbox",
+      "title" : "Model Year",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.ModelYear"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_sndeqpt_musicalstyle",
+      "type" : "textbox",
+      "title" : "Musical Style",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.MusicalStyle"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_sndeqpt_outputwattage",
+      "type" : "number",
+      "title" : "OutputWattage",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.OutputWattage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_sndeqpt_recordertrackcnt",
+      "type" : "number",
+      "title" : "RecorderTrackCount",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.RecorderTrackCount"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_sndeqpt_speakercnt",
+      "type" : "number",
+      "title" : "SpeakerCount",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.SpeakerCount"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_mus_sndeqpt_speakersize",
+      "type" : "number",
+      "title" : "SpeakerSize",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.SpeakerSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_sndeqpt_wrlsmicrophonefqcy",
+      "type" : "textbox",
+      "title" : "Wireless Microphone Frequency",
+      "xmlpath" : "MusicalInstruments.ProductType.SoundAndRecordingEquipment.WirelessMicrophoneFrequency"
+   }
+]

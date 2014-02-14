@@ -1,0 +1,187 @@
+<TEMPLATE ID="h-20060921" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CSPDWSN" CREATOR="Zoovy: JT" V="3" CREATED="20060921" SUBTYPE="H" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Featured Product lists and Text in a Scrollbox"><SUMMARY><![CDATA[This layout starts with a four column, single row product list featuring images only.  Below that are two single item product lists with graphic headers for 'Deal of the Week' and 'This just in'.  These two lists will each show one item, chosen randomly from the list selected.  Below that is a 590 x 118 [5 x 1] banners.  After the banner is a text box inside a scrollable div, with a 4 item, single column product list to the right. <br><b>This layout will work best if the content area has a white background</b>]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="UIONLYINSTRUCTIONS" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
+<p><b>Multiple Product Lists:</b>  For instructions on how to select different product lists for each of the list elements, visit the following page in ZoovyDocs: <ul style="margin-top:4px;"> <a href="http://www.zoovydocs.com/doc-50361" target="webdoc">http://www.zoovydocs.com/doc-50361</a></ul></p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPXKZXR" RAW="1" SUB="ZTABLE_HEAD_BG" TYPE="READONLY" LOAD="CSS::zcolor_dark.bgcolor"></ELEMENT>
+<ELEMENT ID="CSPDWSO" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div align="center">
+<div style="margin:5px; text-align:left; width:590px;">
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="5000" ID="LIST1" MAX="4" ALTERNATE="0" DATA="page:prodlist" COLS="4" FORMAT="CUSTOM" PROMPT="Product List 1" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 1 -->
+<table cellpadding="0" cellspacing="2">
+<tr>
+	<td width="145" class="zcolor_dark" align="right" valign="top"><img src="//static.zoovy.com/graphics/layouts/h-20060921/h_angled_topleft-75x5.gif" height="5" width="74" alt=""></td>
+	<td width="145" class="zcolor_dark" valign="top" style="height:8px; background-image:url(//static.zoovy.com/graphics/layouts/h-20060921/h_angled_topbg-1x5.gif); background-repeat:repeat-x;"><img src="//static.zoovy.com/graphics/layouts/h-20060921/h_angled_topbg-1x5.gif" height="5" width="1" border="0" alt=""></td>
+	<td width="145" class="zcolor_dark" valign="top" style="background-image:url(//static.zoovy.com/graphics/layouts/h-20060921/h_angled_topbg-1x5.gif); background-repeat:repeat-x;"><img src="//static.zoovy.com/graphics/layouts/h-20060921/h_angled_topbg-1x5.gif" height="5" width="1" border="0" alt=""></td>
+	<td width="145" class="zcolor_dark" align="left" valign="top"><img src="//static.zoovy.com/graphics/layouts/h-20060921/h_angled_topright-75x5.gif" height="5" width="74" alt=""></td>
+</tr>
+<tr>
+<!-- PRODUCT -->
+	<td width="145"><a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"145",h=>"145",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name); print(); %></a></td>
+<!-- /PRODUCT -->
+
+</tr>
+</table>
+<!-- end product list 1 -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDWSP" TYPE="OUTPUT"><HTML><![CDATA[	
+<table cellspacing="2" cellpadding="0" border="0" width="100%">
+<tr>
+	<td valign="top" align="left" width="50%">
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="5000" ID="LIST2" MAX="1" ALTERNATE="3" DATA="page:prodlist2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- begin product list 2 -->
+<div class="zcolor_dark" style="width:292px; height:22px;"><%
+loadurp("CSS::zcolor_dark.bgcolor");
+set($zcolor_dark_bgcolor=>$_);
+set($image_loc=>"stock/layouts/h20060921/head_specials.gif");
+image(src=>$image_loc,library=>"proshop",h=>"22",w=>"292",p=>"1",bg=>$zcolor_dark_bgcolor,tag=>"1");
+print();
+%></div>
+<div class="zborder" style="box-sizing: border-box; -moz-box-sizing: border-box; width:292px;">
+<table cellspacing="2" cellpadding="0" width="100%">
+<!-- PRODUCT -->
+<td width="1%"><a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"75",h=>"75",tag=>"1",alt=>$zoovy:prod_name); print(); %></a></td>
+	<td width="99%" class="ztable_row" align="left" >
+<div class="ztable_row_small">
+	<% load($zoovy:prod_name); strip(length=>"40",breaks=>"1",html=>"1"); print(); %><br />
+	<%
+load($zoovy:base_price);
+stop(unless=>$_); 
+	print("only <span class='ztable_row_title'>");
+	load($zoovy:base_price);
+	format(hidezero); 
+	format(money);
+	print();
+	print("</span><br>");
+%><br>
+	<% load($VIEW_DETAILS); print(); %><% load($ADD_LINK); format(pretext=>" | "); print(); %>
+</div>
+	</td>
+<!-- /PRODUCT -->
+</table>
+</div><!-- end product list 2 -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDWSQ" TYPE="OUTPUT"><HTML><![CDATA[
+	
+	</td>
+	<td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="5000" ID="LIST3" MAX="1" ALTERNATE="3" DATA="page:prodlist3" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 3" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- begin product list 3 -->
+<div class="zcolor_dark" style="width:292px; height:22px;"><%
+loadurp("CSS::zcolor_dark.bgcolor");
+set($zcolor_dark_bgcolor=>$_);
+set($image_loc=>"stock/layouts/h20060921/head_just_in.gif");
+image(src=>$image_loc,library=>"proshop",h=>"22",w=>"292",p=>"1",bg=>$zcolor_dark_bgcolor,tag=>"1");
+print();
+%></div>
+<div class="zborder" style="box-sizing: border-box; -moz-box-sizing: border-box; width:292px;">
+<table cellspacing="2" cellpadding="0" width="100%">
+<!-- PRODUCT -->
+<td width="1%"><a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"75",h=>"75",tag=>"1",alt=>$zoovy:prod_name); print(); %></a></td>
+	<td width="99%" class="ztable_row" align="left" >
+<div class="ztable_row_small">
+	<% load($zoovy:prod_name); strip(length=>"40",breaks=>"1",html=>"1"); print(); %><br />
+<%
+load($zoovy:base_price);
+stop(unless=>$_); 
+	print("only <span class='ztable_row_title'>");
+	load($zoovy:base_price);
+	format(hidezero); 
+	format(money);
+	print();
+	print("</span><br>");
+%><br>
+	<% load($VIEW_DETAILS); print(); %><% load($ADD_LINK); format(pretext=>" | "); print(); %>
+</div>
+	</td>
+<!-- /PRODUCT -->
+</table>
+</div><!-- end product list 3 -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDWSR" TYPE="OUTPUT"><HTML><![CDATA[	
+	</td>
+</tr>
+</table>
+<div align="center">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDWSS" DATA="page:link_5x1" ZOOVYDOCID="50355" SUB="5X1_LINK" PROMPT="Link for 5 x 1 image" DEFAULT="%CART%/search.cgi" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CSPDWST" HEIGHT="117" DATA="page:image_5x1" PROMPT="Image 1 ( 5 x 1 )" WIDTH="585" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-top:5px;"><a href="%5X1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPDWSU" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+
+<table cellspacing="2" cellpadding="0" border="0" width="100%" style="margin-top:5px;">
+<tr>
+	<td width="1%" valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" DATA="page:description" PROMPT="Text Description" TYPE="TEXT"><PRETEXT><![CDATA[<!-- begin text area -->
+<div style="margin-bottom:5px; width:295px; height:260px; box-sizing: border-box; -moz-box-sizing: border-box; overflow:scroll;">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>
+<!-- end text area -->]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPDWSV" TYPE="OUTPUT"><HTML><![CDATA[	
+	</td>
+	<td valign="top">
+	
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="5000" ID="LIST4" MAX="4" ALTERNATE="3" DATA="page:prodlist4" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 4" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 4 -->
+<table cellspacing="0" cellpadding="2" width="100%">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td width="1%" style="border-bottom:<% loadurp("CSS::zborder.border"); set($zborder=>$_); print(); %>;" ><a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"55",h=>"55",tag=>"1",alt=>$zoovy:prod_name); print(); %></a>
+
+
+
+</td>
+	<td width="99%" class="ztable_row" align="left" style="border-bottom:<% loadurp("CSS::zborder.border"); print(); %>; border-right:<% loadurp("CSS::zborder.border"); print(); %>;">
+<div class="ztable_row_small">
+	<% load($zoovy:prod_name); strip(length=>"80",breaks=>"1",html=>"1"); print(); %><br />
+<%
+load($zoovy:base_price);
+stop(unless=>$_); 
+	print("only <span class='ztable_row_title'>");
+	load($zoovy:base_price);
+	format(hidezero); 
+	format(money);
+	print();
+	print("</span><br>");
+%>
+	<% load($VIEW_DETAILS); print(); %><% load($ADD_LINK); format(pretext=>" | "); print(); %>
+</div>
+	</td>
+<!-- /PRODUCT -->
+</tr><tr><td colspan="2" style="height:2px;"> </td></tr>
+<!-- /ROW -->
+</table><!-- end product list 4 -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPDWSW" TYPE="OUTPUT"><HTML><![CDATA[	
+	
+	</td>
+</tr>
+</table>
+</div>
+</div>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

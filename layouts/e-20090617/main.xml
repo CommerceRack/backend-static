@@ -1,0 +1,304 @@
+<TEMPLATE ID="e-20090617" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CYVZOZP" CREATED="20090617" SUBTYPE="E" AUTHOR="Zoovy" TYPE="CONFIG" EXPORT="0" TITLE="Big vertical thumbs with sortable headers (wide)" RELEASED="20090617"><SUMMARY><![CDATA[Designed to be used for apparel, the layout contains taller thumbnails, name, brand and price.  Sortable headers on the product list make it easier for customers to find what they're looking for. <br>Note - this layout is over 600 pixels wide.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT SIZE="20" ID="PRODLIST_GEN3_MPHEAD" MAX="2500" ALTERNATE="0" MULTIPAGE="1" DATA="page:prodlist_custom" COLS="4" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODSEARCH" SORTBY="zoovy:prod_name"><HTML><![CDATA[
+<table border='0' cellpadding='0' cellspacing='0' align='center' style='margin-bottom:12px;'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+
+	<td class='ztable_row ztable_row<% print($row.alt); %>' width='<% print($COLWIDTH); %>' valign='top' align='left' style='padding:6px 0;'>
+
+	<div style='margin-bottom:5px;'>
+	<a href='<% print($PROD_URL); %>' title="<% load($zoovy:prod_name); default(""); format(encode=>"entity"); print(); %>">
+	<% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"150",h=>"200",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a>
+	</div>
+	
+	<div><a href='<% print($PROD_URL); %>'><% load($zoovy:prod_name); default(""); print(); %></a></div>
+	
+	<div class='ztable_row_small'><% load($zoovy:prod_mfg); default(""); format(pretext=>" by "); print(); %></div>
+	
+	<div style='margin-top:3px;'><% load($zoovy:base_price); default(""); format(hidezero); format(money); format(pretext=>"only <span class='ztable_row_title'>",posttext=>"</span>");  print(); %></div>
+
+	</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td class='ztable_row ztable_row<% print($row.alt); %>'> </td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+<MULTIPAGE_HEADER><![CDATA[
+<!-- begin multipage header -->
+
+<div style='height:30px;' class='ztxt zcolor_light'>
+
+	<div style='float:left; padding:6px; font-weight:bold;'>
+<%
+print("");
+
+/* the header is a little different based on whether or not multiple pages are present */
+load($TOTALPAGES); default("1");
+goto(label=>"MULTIPAGES",ne=>"1");
+	print("Displaying ");
+	print($TOTALPRODUCTS);
+	print(" items");
+	stop();
+
+
+:MULTIPAGES();
+
+/* outputs: displaying items X - Y of Z items.  */
+
+/* used to set X (see example above) */
+loadurp("VAR::size"); default("20"); set($VSIZE=>$_);
+
+/* used to generate Y.  If Y is greater than Z, Z is used for Y (this could occur on the last page of multipage) */
+
+loadurp("VAR::p"); default("1"); math(op=>"multiply",var=>$VSIZE);
+set($LASTPROD=>$_);
+goto(label=>"NOTLASTPAGE",lt=>$TOTALPRODUCTS);
+	set($LASTPROD=>$TOTALPRODUCTS);
+:NOTLASTPAGE();
+
+math(op=>"subtract",var=>$VSIZE);
+math(op=>"add",var=>"1");
+
+format(pretext=>"Displaying ",posttext=>" - "); format(posttext=>$LASTPROD); format(posttext=>" of ");  format(posttext=>$TOTALPRODUCTS);  format(posttext=>" items");  print();
+%>
+	</div>
+
+
+	<div style='float:right; padding:5px;'>
+<form name='viewSortCriteria' id='viewSortCriteria' style='display:inline;'>
+
+
+<select name='sortby' id='sortby' class='zform_select' style=' font-size:10px;' onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+	<option value=''>Sort Order</option>
+<%
+/* put together the url for the value of each option in the select list.  Need the complete url for the js on the select */
+loadurp("URL::RESULTS_URL"); format(posttext=>"?"); set($caturl=>$_);
+/* if no urivars are set, this block is skipped because otherwise it causes issues */
+urivars();
+goto(label=>"SKIPPARAMS",eq=>"");
+	load("sortby,p");
+	set($urivariables=>$_);
+	urivars(blacklist=>$urivariables);  goto(label=>"SKIPPARAMS",eq=>"");
+	format(pretext=>$caturl,posttext=>"&amp;");
+	
+	set($caturl=>$_);
+
+:SKIPPARAMS();
+	
+print("
+<option value='"); print($caturl); print("sortby=zoovy:prod_name' id='zoovy:prod_name'>Name: A to Z</option>");
+print("
+<option value='"); print($caturl); print("sortby=!zoovy:prod_name' id='!zoovy:prod_name'>Name: Z to A</option>");
+print("
+<option value='"); print($caturl); print("sortby=zoovy:base_price' id='zoovy:base_price'>Price: Low to High</option>");
+print("
+<option value='"); print($caturl); print("sortby=!zoovy:base_price' id='!zoovy:base_price'>Price: High to Low</option>");
+print("
+<option value='"); print($caturl); print("sortby=zoovy:prod_mfg' id='zoovy:prod_mfg'>Brand: A to Z</option>");
+print("
+<option value='"); print($caturl); print("sortby=!zoovy:prod_mfg' id='!zoovy:prod_mfg'>Brand: Z to A</option>");
+
+
+%>
+</select>
+
+
+<select name='size' id='size' class='zform_select' style=' font-size:10px;' onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+	<option value=''>Items per Page</option>
+<%
+/* put together the url for the value of each option in the select list.  Need the complete url for the js on the select. */
+loadurp("URL::RESULTS_URL"); format(posttext=>"?"); set($caturl=>$_); 
+
+/* if no urivars are set, this block is skipped because otherwise it causes issues */
+urivars();
+goto(label=>"SKIPPARAMS",eq=>"");
+/* size and p are blacklisted because size is getting set and p should reset to the first page when this is changed. */
+	load("size,p");
+	set($urivariables=>$_);
+	urivars(blacklist=>$urivariables); goto(label=>"SKIPPARAMS",eq=>"");
+	format(pretext=>$caturl,posttext=>"&amp;");
+	set($caturl=>$_);
+
+:SKIPPARAMS();
+
+print("
+<option value='"); print($caturl); print("size=20' id='20'>20 items per page</option>");
+print("
+<option value='"); print($caturl); print("size=60' id='60'>60 items per page</option>");
+print("
+<option value='"); print($caturl); print("size=100' id='100'>100 items per page</option>");
+
+print("<option value='");
+	loadurp("URL::RESULTS_URL");print("?");
+	set($urivariables=>"viewall=1&size=2000&p=1");
+	urivars(override=>$urivariables); default(""); print();
+	print("' id='2000'>View All</option>");
+
+%>
+</select>
+
+
+</form>
+
+	</div>
+
+<div style="clear:both;"></div>
+
+</div>
+
+
+<div>
+<table cellspacing='0' cellpadding='0'>
+<tr>
+	
+<%
+/* outputs the previous page link IF the first page of products isnt loaded */
+print("");
+loadurp("VAR::p"); default("1");
+goto(ne=>"1",label=>"PREVIOUS");
+	stop();
+	
+:PREVIOUS();
+	print("<td align='left' NOWRAP class='ztable_head'><div style='padding:4px;'><a href='");
+	print($PREVURL);
+	print("' class='ztable_head'>&#171; Previous</a></div></td>");
+%>
+	
+	<td align='center' width='99%' class='ztable_head'>
+
+<div><% load($PAGELINKS); default(""); print(); %></div>
+
+	</td>
+	<%
+/* outputs the next page link IF the last page of products isnt loaded and there is more than one page total  */
+
+print("");
+
+load($TOTALPAGES); default("1");
+	goto(label=>"MULTIPAGES",ne=>"1");
+	stop();
+
+:MULTIPAGES();
+
+loadurp("VAR::p"); default("1");
+/* if we are on the last page do NOT show the link to the next page */
+goto(ne=>$TOTALPAGES,label=>"NEXT");
+	stop();
+	
+:NEXT();
+	 print("<td align='right' NOWRAP class='ztable_head'><div style='padding:4px;'><a href='");
+	 load($NEXTURL); default(""); print();
+	 print("' class='ztable_head'>Next &#187;</a></div></td>");
+%>
+
+	
+</tr>
+</table>
+</div>
+
+
+<script type="text/javascript">
+
+<!--
+
+function PreselectMyItem(itemToSelect,formField)	{
+	itemToSelect = itemToSelect.replace('%3A',':')
+// Get a reference to the drop-down
+	var myDropdownList = document.viewSortCriteria[formField];
+
+// Loop through all the items
+	for (iLoop = 0; iLoop< myDropdownList.options.length; iLoop++)	{    
+		if (myDropdownList.options[iLoop].id == itemToSelect)	{
+// Item is found. Set its selected property, and exit the loop
+			myDropdownList.options[iLoop].selected = true;
+			break;
+			}
+		}
+	}
+
+// preselect the products per page and sort order select lists
+PreselectMyItem("<% loadurp("VAR::size"); default("20"); print(); %>","size");
+PreselectMyItem("<% loadurp("VAR::sortby"); default("zoovy:prod_name"); print(); %>","sortby");
+
+//-->
+</script>
+]]></MULTIPAGE_HEADER>
+<MULTIPAGE_FOOTER><![CDATA[
+
+<div>
+<table cellspacing='0' cellpadding='0'>
+<tr>
+	<td align='left' NOWRAP class='ztable_head'>
+<%
+/* outputs the previous page link IF the first page of products isnt loaded */
+print("");
+loadurp("VAR::p"); default("1");
+goto(ne=>"1",label=>"PREVIOUS");
+	stop();
+	
+:PREVIOUS();
+	print("<div style='padding:4px;'><a href='");
+	print($PREVURL);
+	print("' class='ztable_head'>&#171; Previous</a></div>");
+%>
+	</td>
+	<td align='center' width='99%' class='ztable_head'>
+
+<div><% load($PAGELINKS); default(""); print(); %></div>
+	</td>
+	<td align='right' NOWRAP class='ztable_head'>
+	<%
+/* outputs the next page link IF the last page of products isnt loaded and there is more than one page total  */
+
+print("");
+
+load($TOTALPAGES); default("1");
+	goto(label=>"MULTIPAGES",ne=>"1");
+	stop();
+
+:MULTIPAGES();
+
+loadurp("VAR::p"); default("1");
+/* if we are on the last page do NOT show the link to the next page */
+goto(ne=>$TOTALPAGES,label=>"NEXT");
+	stop();
+	
+:NEXT();
+	 print("</td><td align='right' NOWRAP class='ztable_head'><div style='padding:4px;'><a href='");
+	 load($NEXTURL); default(""); print();
+	 print("'  class='ztable_head'>Next &#187;</a></div>");
+%>
+
+	</td>
+</tr>
+</table>
+</div>
+
+
+
+]]></MULTIPAGE_FOOTER>
+<INIT><![CDATA[<%
+
+/* override the default INI values here. this gets preprocessed.  */
+
+loadurp("VAR::size"); default($SIZE); initset(SIZE=>$_);
+loadurp("VAR::sortby"); default($SORTBY); initset(SORTBY=>$_);
+
+%>]]></INIT>
+<DIVIDER><![CDATA[
+
+<td><img src='<% loadurp("URL::GRAPHICS_URL"); default(""); print(); %>/blank.gif' height='1' width='15' alt=''></td>
+
+]]></DIVIDER>
+</ELEMENT>
+
+</TEMPLATE>

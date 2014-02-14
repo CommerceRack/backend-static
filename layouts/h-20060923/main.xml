@@ -1,0 +1,171 @@
+<TEMPLATE ID="h-20060923" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CRZLZWJ" CREATOR="Zoovy: JT" V="3" CREATED="20060923" SUBTYPE="H" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Pictures, Forms and Product Lists"><SUMMARY><![CDATA[Two linkable images in the main area, as well as the subscribe form.  Below that is a three item product list and then the account login form.  Next is two product lists, a text box, and a list of store categories with thumbnails.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="UIONLYINSTRUCTIONS" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
+<p><b>Multiple Product Lists:</b>  For instructions on how to select different product lists for each of the list elements, visit the following page in ZoovyDocs: <ul style="margin-top:4px;"> <a href="http://www.zoovydocs.com/doc-50361" target="webdoc">http://www.zoovydocs.com/doc-50361</a></ul></p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPXKZXR" RAW="1" SUB="ZTABLE_HEAD_BG" TYPE="READONLY" LOAD="CSS::zcolor_dark.bgcolor"></ELEMENT>
+<ELEMENT ID="CSPISQL" TYPE="OUTPUT"><HTML><![CDATA[
+<div align="center">
+<div style="margin:5px; text-align:left; width:553px; box-sizing: border-box; -moz-box-sizing: border-box;">
+
+<table cellspacing="0" cellpadding="0" style="margin-bottom:3px;">
+<tr>
+	<td style="padding-right:3px; box-sizing: border-box; -moz-box-sizing: border-box;" rowspan="2" width="400" align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPISQM" DATA="page:link_4x3" SUB="4X3_LINK" PROMPT="Link for image 1" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CSPISQN" HEIGHT="300" MINIMAL="0" DATA="page:image_4x3" PROMPT="Image 1 ( 4 x 3 )" WIDTH="400" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%4X3_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPISQO" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	<td style="padding-bottom:3px; height:150px; box-sizing: border-box; -moz-box-sizing: border-box;" align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPISQP" DATA="page:link_1x1" SUB="1X1_LINK" PROMPT="Link for image 2" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CSPISQQ" HEIGHT="150" MINIMAL="0" DATA="page:image_1x1" PROMPT="Image 2 ( 1 x 1 )" WIDTH="150" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%1X1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPISQR" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+<tr>
+	<td class="zcolor_dark" style="padding:2px; height:143px; box-sizing: border-box; -moz-box-sizing: border-box;" align="left" valign="top">
+<!-- newsletter subscription form -->
+<div style='margin:5px 0px 3px 5px;'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MYSPECL1" TYPE="SPECL"><HTML><![CDATA[
+<%
+loadurp("CSS::zcolor_dark.bgcolor");
+set($zcolor_dark_bgcolor=>$_);
+set($image_loc=>"stock/layouts/h20060923/subscribe.jpg");
+image(src=>$image_loc,library=>"proshop",h=>"35",w=>"130",bg=>$zcolor_dark_bgcolor,tag=>"1");
+print();
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPISQS" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+<form action="%SUBSCRIBE_URL%" method="post" style="margin:0px;">
+<input type="hidden" name="check" value="1">
+<table cellspacing="0" cellpadding="1" border="0" width="100%">
+<tr>
+	<td class="zcolor_dark"><span style="font-size:11px;">Email:</span></td>
+	<td align="right"><input type="text" class="zform_textbox" maxlength="50" name="email" value="" style="width:100px;"></td>
+</tr>
+<tr>
+	<td class="zcolor_dark"><span style="font-size:11px;">Name:</span></td>
+	<td align="right"><input type="text" class="zform_textbox" maxlength="50" name="fullname" value="" style="width:100px;"></td>
+</tr>
+<tr>
+	<td colspan="2" align="right"><input type="submit" class="zform_button" value="Subscribe"></td>
+</tr>
+</table>
+</form>
+	</td>
+</tr>
+</table>
+
+<!-- login form -->
+<form action="%LOGIN_URL%" method="post" style="margin:0px;">
+<input type="hidden" name="mode" value="check">
+<input type="hidden" name="url" value="%CUSTOMER_MAIN_URL%">
+<table cellspacing="0" cellpadding="3" border="0" width="100%" class="ztable_head">
+<tr>
+	<td width="1%" style="padding:4px 10px 0px 10px;">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MYSPECL" TYPE="SPECL"><HTML><![CDATA[
+<%
+loadurp("CSS::ztable_head.bgcolor");
+set($zcolor_dark_bgcolor=>$_);
+set($image_loc=>"stock/layouts/h20060923/login.jpg");
+image(src=>$image_loc,library=>"proshop",h=>"25",w=>"100",bg=>$zcolor_dark_bgcolor,tag=>"1");
+print();
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPISQT" TYPE="OUTPUT"><HTML><![CDATA[	
+	</td>
+	<td width="1%" align="right" class="ztable_head"><span style="font-size:11px;">Login:</span></td>
+	<td width="1%"><input type="text" class="zform_textbox" maxlength="50" name="login" value="" style="width:100px;"></td>
+	<td width="1%" class="ztable_head"><span style="font-size:11px;">Password:</span></td>
+	<td width="1%"><input type="password" class="zform_textbox" maxlength="50" name="password" value="" style="width:100px;"></td>
+	<td width="1%"><input type="submit" class="zform_button" value="Login"></td>
+	<td></td>
+</tr>
+</table>
+</form>
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-top:3px;">
+<tr>
+	<td valign="top" width="65%">
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="50000" ID="LIST2" MAX="6" ALTERNATE="0" DATA="page:prodlist2" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 2 -->
+<table cellspacing="0" cellpadding="0" width="100%">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+	<td valign="top" style="padding:0px 8px 5px 0px;" class="ztable_row" width="33%" ><a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"115",h=>"115",tag=>"1",bg=>"ffffff",alt=>$zoovy:prod_name); print(); %></a><br />
+	<a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_name); strip(length=>"65",breaks=>"1",html=>"1"); print(); %></a><br />
+<% load($zoovy:base_price); format(hidezero); format(money); format(pretext=>"only "); print(); %>
+	</td>
+<!-- /PRODUCT -->
+</tr>
+<!-- /ROW -->
+</table><!-- end product list 2 -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" DATA="page:description" PROMPT="Text Description" TYPE="TEXT"><PRETEXT><![CDATA[<!-- begin text area --><div style="margin-bottom:5px; width:365px; overflow:hidden;">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPISQU" TYPE="OUTPUT"><HTML><![CDATA[
+	
+	</td>
+	<td valign="top" style="padding-left:4px;">
+	<div class="zcolor_light" style="padding-left:3px;">
+	<div class="ztitle zcolor_light">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPISQV" WIKI="3" LENGTH="50" DATA="page:prodlist3_header" PROMPT="Product List 3 Header" DEFAULT="Best Sellers" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CSPISQW" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="5000" ID="LIST3" MAX="10" ALTERNATE="3" DATA="page:prodlist3" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 3" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 3 -->
+<table cellspacing="2" cellpadding="0" width="100%">
+<!-- PRODUCT -->
+<tr>
+	<td valign="top" width="1%"><a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"45",h=>"45",tag=>"1", bgcolor=>"ffffff",alt=>$zoovy:prod_name); print(); %></a></td>
+	<td class="ztable_row_small" >
+<a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_name); strip(length=>"40",breaks=>"1",html=>"1"); print(); %></a><br />
+<% load($zoovy:base_price); format(hidezero); format(money); format(pretext=>"only "); print(); %>
+	</td>
+</tr>
+<tr>
+	<td colspan="2"><hr class="ruler" noshade="noshade" size="1" style="padding:0px; margin:0px;" /></td>
+</tr>
+<!-- /PRODUCT -->
+</table>
+<!-- end product list 3 -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPISQX" TYPE="OUTPUT"><HTML><![CDATA[
+	 </div>
+	 </td>
+</tr>
+</table>
+</div>
+</div>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

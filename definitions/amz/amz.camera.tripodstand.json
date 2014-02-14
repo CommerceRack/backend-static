@@ -1,0 +1,277 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "TripodStand",
+      "subcat" : "tripodstand",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:TripodStand",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXQQ",
+      "xmlpath" : "CameraPhoto.ProductType.TripodStand."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "still-cameras",
+            "v" : "still-cameras"
+         },
+         {
+            "p" : "camcorders",
+            "v" : "camcorders"
+         },
+         {
+            "p" : "still-camera-and-camcorders",
+            "v" : "still-camera-and-camcorders"
+         },
+         {
+            "p" : "telescopes",
+            "v" : "telescopes"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_tripodstand_forusewith",
+      "title" : "Tripod Stand For Use With",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.TripodStand.ForUseWith",
+      "list" : "LIST_CAMERA_TRIPODSTAND_FORUSEWITH"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "camera-stands",
+            "v" : "camera-stands"
+         },
+         {
+            "p" : "monopods",
+            "v" : "monopods"
+         },
+         {
+            "p" : "tripods",
+            "v" : "tripods"
+         },
+         {
+            "p" : "car-window-mounts",
+            "v" : "car-window-mounts"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_tripodstand_standtype",
+      "title" : "Tripod Stand Stand Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.TripodStand.StandType",
+      "list" : "LIST_CAMERA_TRIPODSTAND_STANDTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "tabletop",
+            "v" : "tabletop"
+         },
+         {
+            "p" : "travel",
+            "v" : "travel"
+         },
+         {
+            "p" : "hiking-and-outdoors",
+            "v" : "hiking-and-outdoors"
+         },
+         {
+            "p" : "hunting-and-shooting",
+            "v" : "hunting-and-shooting"
+         },
+         {
+            "p" : "sports",
+            "v" : "sports"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_tripodstand_specificuses",
+      "title" : "Tripod Stand Specific Uses",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.TripodStand.SpecificUses",
+      "list" : "LIST_CAMERA_TRIPODSTAND_SPECIFICUSES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "aluminum",
+            "v" : "aluminum"
+         },
+         {
+            "p" : "carbon-fiber",
+            "v" : "carbon-fiber"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_tripodstand_matl",
+      "title" : "Tripod Stand Material",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.TripodStand.Material",
+      "list" : "LIST_CAMERA_TRIPODSTAND_MATERIAL"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "geared-heads",
+            "v" : "geared-heads"
+         },
+         {
+            "p" : "ball-heads",
+            "v" : "ball-heads"
+         },
+         {
+            "p" : "camera-rotator-heads",
+            "v" : "camera-rotator-heads"
+         },
+         {
+            "p" : "pan-and-tilt-heads",
+            "v" : "pan-and-tilt-heads"
+         },
+         {
+            "p" : "video-heads",
+            "v" : "video-heads"
+         },
+         {
+            "p" : "3-way-heads",
+            "v" : "3-way-heads"
+         },
+         {
+            "p" : "panoramic-heads",
+            "v" : "panoramic-heads"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_tripodstand_headtype",
+      "title" : "Tripod Stand Head Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.TripodStand.HeadType",
+      "list" : "LIST_CAMERA_TRIPODSTAND_HEADTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "head-only",
+            "v" : "head-only"
+         },
+         {
+            "p" : "legs-only",
+            "v" : "legs-only"
+         },
+         {
+            "p" : "head-and-leg-units",
+            "v" : "head-and-leg-units"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_tripodstand_pkgtype",
+      "title" : "Tripod Stand Package Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.TripodStand.PackageType",
+      "list" : "LIST_CAMERA_TRIPODSTAND_PACKAGETYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

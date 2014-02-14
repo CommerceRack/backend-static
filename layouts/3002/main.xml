@@ -1,0 +1,41 @@
+<TEMPLATE ID="3002" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLXT" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SERIES="2001" SUBTYPE="T" FORMAT="LAYOUT" SHORT="This layout includes a list of the categories of the products in the visitor's cart." TYPE="CONFIG" TITLE="Product Categories" RELEASED="20011022"><SUMMARY><![CDATA[Product Categories Listing
+Product Categories Title
+Shopping Cart
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKLXU" TYPE="OUTPUT"><HTML><![CDATA[<center>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CART1" HELP="This is the contents of the user's shopping cart." PROMPT="Shopping Cart" TYPE="CART"></ELEMENT>
+<ELEMENT ID="CPUKLXV" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left">
+			<b><font size="+2">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODCATSTITLE" LENGTH="100" HELP="This is the title that appears above the listing of categories for the items in the user's cart" DATA="page:prodcatstitle" PROMPT="Product Categories Title" DEFAULT="Featured Categories" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CPUKLXW" TYPE="OUTPUT"><HTML><![CDATA[
+			</font></b>
+			<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CARTPRODCATS" HELP="This is a list of categories for all the products in the user's cart" DATA="page:prodcats" PROMPT="Product Categories Listing" DEFAULT="" TYPE="CARTPRODCATS"></ELEMENT>
+<ELEMENT ID="CPUKLXX" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+	</tr>
+</table>
+
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

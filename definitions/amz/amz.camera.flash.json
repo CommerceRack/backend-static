@@ -1,0 +1,177 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "Flash",
+      "subcat" : "flash",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:Flash",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWVA",
+		"may-be-blank" : "Y",
+      "xmlpath" : "CameraPhoto.ProductType.Flash."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "handle-mount",
+            "v" : "handle-mount"
+         },
+         {
+            "p" : "macro",
+            "v" : "macro"
+         },
+         {
+            "p" : "ring-light",
+            "v" : "ring-light"
+         },
+         {
+            "p" : "shoe-mount",
+            "v" : "shoe-mount"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_flash_flashtype",
+      "title" : "Flash Flash Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Flash.FlashType",
+      "list" : "LIST_CAMERA_FLASH_FLASHTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "slave-flashed-general",
+            "v" : "slave-flashed-general"
+         },
+         {
+            "p" : "slave-transmitters-and-receivers",
+            "v" : "slave-transmitters-and-receivers"
+         },
+         {
+            "p" : "optical-slaves",
+            "v" : "optical-slaves"
+         },
+         {
+            "p" : "slave-accessories",
+            "v" : "slave-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_flash_slaveflashes",
+      "title" : "Flash Slave Flashes",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Flash.SlaveFlashes",
+      "list" : "LIST_CAMERA_FLASH_SLAVEFLASHES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "dedicated",
+            "v" : "dedicated"
+         },
+         {
+            "p" : "non-dedicated",
+            "v" : "non-dedicated"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_flash_dedication",
+      "title" : "Flash Dedication",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Flash.Dedication",
+      "list" : "LIST_CAMERA_FLASH_DEDICATION"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

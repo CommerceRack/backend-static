@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=l1_iciclelights
+SITEBUTTONS=l2_sweetpurple
+-->
+<html>
+<head>
+	<title>Untitled</title>
+	<style>
+a:link	{text-decoration: none;}
+a:visited	{text-decoration: none;}		
+a:hover		{background-color:#33CCFF; TEXT-DECORATION: underline}
+form		{display:	inline;}				
+</style>
+
+
+<STYLE TYPE="text/css">
+<!--
+-->
+</STYLE>
+</head>
+
+<body leftmargin=0 marginheight=0 bottommargin=0 marginwidth=0 rightmargin=0 topmargin=0 bgcolor="#FFFFFF" text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!-- LINK_VISITED_TEXT_COLOR -->">
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td width=99%><!-- LOGO
+WIDTH=300
+HEIGHT=84
+--></td>
+		<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width=2 height=84></td>
+		<td valign="bottom"><a href="<!--CART_URL-->"><img src="checkout.gif" width="96" height="29" alt="" border="0"></a></td>
+		<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width=4 height=1></td>
+		<td valign="bottom"><a href="<!--CONTACT_URL-->"><img src="contact.gif" width="96" height="29" alt="" border="0"></a></td>
+		<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width=4 height=1></td>
+		<td valign="bottom"><a href="<!-- LOGIN_URL -->"><img src="login.gif" width="96" height="29" alt="" border="0"></a></td>
+		<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width=4 height=1></td>
+		<td valign="bottom"><a href="<!--ABOUT_URL-->"><img src="about.gif" width="96" height="29" alt="" border="0"></a></td>
+		<td><img src="<!-- GRAPHICS_URL -->/blank.gif" width=4 height=1></td>
+	</tr><tr>
+		<td background="highlight.gif" colspan=10><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=4></td>
+	</tr><tr>
+		<td background="color.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=29></td>
+		<td background="color.gif" colspan=9 align="right" height=29><form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" name="keywords" value="">
+<input type="image" src="search.gif" >
+</form>&nbsp;</td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+	<tr>
+		<td valign="top" background="color.gif" width=170><img src="<!-- GRAPHICS_URL -->/blank.gif" width=161 height=1><br>
+			<table cellspacing=0 cellpadding=0 border=0 width=158>
+				<tr>
+					<td bgcolor="#FFFFFF">
+					<img src="<!-- GRAPHICS_URL -->/blank.gif" width=158 height=2><br>
+					<div align="center"><font size=3 face="verdana" color="#3366FF"><strong>Categories:</strong></font><br>
+					<img src="<!-- GRAPHICS_URL -->/blank.gif" width=158 height=2><br>
+			<table cellspacing=1 cellpadding=2 border=0 width=154>
+				</div>
+					<!-- MENU 
+FORMAT=<tr><td bgcolor="#3366FF"><a href="%URL%"><font color="#FFFFFF" face="verdana" size=2><strong>%MESSAGE%</strong></font></a></td></tr>
+-->
+</table>
+</td>
+				</tr>
+			</table> 
+		</td>
+		<td valign="top"  background="spacer.gif" valign="top" align="left"><img src="corner.gif" width="14" height="18" alt="" border="0"></td>
+		<td valign="top" width=99%></td>
+	</tr>
+</table>
+</body>
+</html>

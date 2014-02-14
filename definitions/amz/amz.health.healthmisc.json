@@ -1,0 +1,115 @@
+[
+   {
+      "catalog" : "HEALTH",
+		"amz-catalog" : "Health",
+      "amz-subcat" : "HealthMisc",
+      "subcat" : "healthmisc",
+      "type" : "config",
+		"variation-themes" : "Flavor+Size,Flavor+Count,Size+Color,Flavor,Size,Count,Color"
+   },
+   {
+      "PROMPT" : "Health:HealthMisc",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXYV",
+      "xmlpath" : "Health.ProductType.HealthMisc."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "Health.ProductType.HealthMisc.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "Health.ProductType.HealthMisc.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:flavor",
+		"vkey" : "Flavor",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Health.ProductType.HealthMisc.VariationData.Flavor"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:size",
+		"vkey" : "Size",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Health.ProductType.HealthMisc.VariationData.Size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Health.ProductType.HealthMisc.VariationData.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:count",
+		"vkey" : "Count",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Health.ProductType.HealthMisc.VariationData.Count"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_hth_hthmisc_indications",
+      "type" : "textbox",
+      "title" : "Indications",
+      "xmlpath" : "Health.ProductType.HealthMisc.Indications"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_hth_hthmisc_ingrdts",
+      "type" : "textlist",
+      "title" : "Ingredients",
+      "xmlpath" : "Health.ProductType.HealthMisc.Ingredients"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_hth_hthmisc_directions",
+      "type" : "textbox",
+      "title" : "Directions",
+      "xmlpath" : "Health.ProductType.HealthMisc.Directions"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_hth_hthmisc_warnings",
+      "type" : "textbox",
+      "title" : "Warnings",
+      "xmlpath" : "Health.ProductType.HealthMisc.Warnings"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_hth_hthmisc_isadultproduct",
+      "type" : "checkbox",
+      "title" : "Is Adult Product",
+      "xmlpath" : "Health.ProductType.HealthMisc.IsAdultProduct"
+   }
+]

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=lightemup
+SITEBUTTONS=l2_xmasangles
+-->
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+.title	{color: #006600; font-size: 14px; font-family: comic sans ms, sans serif; font-weight: bold;}
+.header	{color: #006600; font-size: 16px; font-family: comic sans ms, sans serif; font-weight: bold;}
+</style>
+</head>
+
+<body text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!-- LINK_VISITED_TEXT_COLOR -->" marginheight=0 marginwidth=0>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td height=100 background="<!-- WRAPPER_URL -->/lighting.gif" align="center"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=300
+HEIGHT=100
+--></a></td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=5 border=0 width=100%>
+	<tr>
+		<td width=160 valign="top"><span class="header">
+Menu:</span><br><span class="title">
+<a href="<!-- HOME_URL -->">Home</a><br>
+<a href="<!-- ABOUT_URL -->">About Us</a><br>
+<a href="<!-- CONTACT_URL -->">Contact</a><br>
+<a href="<!-- LOGIN_URL -->">Log In</a><br>
+<a href="<!-- CART_URL -->">Cart</a><br>
+<br>
+<span class="header">Categories:</span><br><span class="title">
+		
+<!-- MENU
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a><br>
+ONLYHOME=0
+NOHOME=1
+-->
+<img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=160><br>
+<!-- SIDEBAR -->		
+		</td>
+		<td width=99% valign="top"><p class="title"><!-- TITLE --></p><!-- BODY --><p><!-- FOOTER
+TRANSPARENT=TRUE
+--></p></td>
+	</tr>
+</table>
+
+
+
+
+
+</body>
+</html>

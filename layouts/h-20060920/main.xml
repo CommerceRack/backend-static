@@ -1,0 +1,176 @@
+<TEMPLATE ID="h-20060920" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="H_20060920" CREATOR="Zoovy: JT" V="3" CREATED="20060920" SUBTYPE="H" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="2 Big Pics, 3 Prodlists and Categories"><SUMMARY><![CDATA[At the top of this layout is a 400 x 300 [4 x 3] linkable banner with a single item, large thumbnail product list to the right.  Below them is an optional 590 x 118 [5 x 1] banner.  Next is a 6 item, 3 column product list with thumbnails and the product name. To the right of that is a 10 item text based product list with a customizable header.  Beneath those is a 4 column big thumbnail category list and then a text field.  This layout has a fixed width of 590 pixels and is set to be centered in the content area.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="UIONLYINSTRUCTIONS" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
+<p><b>Multiple Product Lists:</b>  For instructions on how to select different product lists for each of the list elements, visit the following page in ZoovyDocs: <ul style="margin-top:4px;"> <a href="http://www.zoovydocs.com/doc-50361" target="webdoc">http://www.zoovydocs.com/doc-50361</a></ul></p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPADRL" TYPE="OUTPUT"><HTML><![CDATA[
+<div align="center">
+<div style="margin:5px; text-align:left; width:590px;">
+<table cellspacing="0" cellpadding="0" width="590">
+<tr>
+	<td valign="top" width="400">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPADRM" DATA="page:link_4x3" ZOOVYDOCID="50355" PROMPT="Link for 4 x 3 image" SUB="4X3_LINK" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT HEIGHT="300" ID="CSPADRN" DATA="page:image_4x3" WIDTH="400" PROMPT="Image 1 ( 4 x 3 )" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%4X3_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPADRO" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	<td valign="top" style="padding-left:5px" class="ztable_row">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="LIST1" SIZE="5000" MAX="1" ALTERNATE="1" DATA="page:prodlist" COLS="1" ZOOVYDOCID="50325" FORMAT="CUSTOM" PROMPT="Product List 1" SHOWDETAILS="0" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- begin product list 1 -->
+<!-- PRODUCT -->
+<div style="padding:1px; width:183px;" class="zcolor_dark">
+<a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"183",h=>"225",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name); print(); %></a></div>
+
+<div class="ztable_row" style="font-weight:bold;">
+<% load($zoovy:prod_name); strip(length=>"50",breaks=>"1",html=>"1"); print(); %>
+</div>
+
+<table width="100%" cellspacing="0" cellpadding="0" style="margin-top:2px;">
+<tr>
+	<td align="left"><div class="ztable_row_small">
+	<% load($VIEW_DETAILS); print(); %><br />
+	<% load($ADD_LINK); print(); %>
+	</div>
+	</td>
+	<td align="right">
+	<div class="ztable_row_title" style="font-size:15pt;">
+	<% load($zoovy:base_price); format(hidezero); format(money); print(); %>
+	</div>
+	</td>
+</tr>
+</table>
+<!-- /PRODUCT -->
+<!-- end product list 1 -->
+]]></HTML>
+<HELP><![CDATA[This Product List is set to only show ONE item.  It will pull that item randomly from whatever list is associated with this product list.  If you do not want it to display randomly, select a list that only have one item in it.  Go to <a href="http://www.zoovydocs.com/doc-50325">http://www.zoovydocs.com/doc-50325</a> to read more about lists.
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CSPADRP" TYPE="OUTPUT"><HTML><![CDATA[	
+	</td>
+</tr>
+<tr>
+	<td colspan="2">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPADRQ" DATA="page:link_5x1" ZOOVYDOCID="50355" PROMPT="Link for 5 x 1 image" SUB="5X1_LINK" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT HEIGHT="118" ID="CSPADRR" DATA="page:image_5x1" WIDTH="590" PROMPT="Image 1 ( 5 x 1 )" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="padding-top:5px;"><a href="%5X1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPADRS" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+<tr>
+	<td valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="LIST2" SIZE="5000" MAX="6" ALTERNATE="3" DATA="page:prodlist2" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 2 -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top:5px;">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+	<td width="33%" valign="top" align="left" class="ztable_row" style="padding:0px 5px 5px 0px;">
+	<div style="padding:1px; width:121px; height:121px;" class="zcolor_light"><a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"121",h=>"121",tag=>"1",alt=>$zoovy:prod_name); print(); %></a></div>
+	
+	<div class="ztable_row">
+	<a href="<% load($PROD_URL); print(); %>" class="zlink"><% load($zoovy:prod_name); strip(length=>"40",breaks=>"1",html=>"1"); print(); %></a>
+	</div>
+	</td>	
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+<!-- end product list 2 -->
+]]></HTML>
+<HELP><![CDATA[This Product List is set to only show SIX items.  Go to <a href="http://www.zoovydocs.com/doc-50325">http://www.zoovydocs.com/doc-50325</a> to read more about lists.
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CSPADRT" TYPE="OUTPUT"><HTML><![CDATA[
+	</td>
+	<td style="padding-top:5px;" valign="top">
+	<table cellspacing="0" cellpadding="3" border="0" width="100%" class="zbox">
+	<tr>
+		<td class="zbox_head">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPADRU" WIKI="3" MAXLENGTH="25" DATA="page:prodlist3_header" PROMPT="Product List 3 Header" DEFAULT="Best Sellers" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="CSPADRV" TYPE="OUTPUT"><HTML><![CDATA[		
+		</td>
+	</tr>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="LIST3" SIZE="5000" MAX="10" DATA="page:prodlist3" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 3" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 3 -->
+<!-- PRODUCT -->
+<tr>
+	<td class="ztable_row<% load($row.alt); print(); %>" ><span class="ztable_row_small">
+<a href="<% load($PROD_URL); print(); %>" class="zlink"><% load($zoovy:prod_name); strip(length=>"50",breaks=>"1",html=>"1"); print(); %></a>
+</span>
+	</td>
+</tr>
+<!-- /PRODUCT -->
+<!-- end product list 3 -->
+]]></HTML>
+<HELP><![CDATA[This Product List is set to only show ONE item.  It will pull that item randomly from whatever list is associated with this product list.  If you do not want it to display randomly, select a list that only have one item in it.  Go to <a href="http://www.zoovydocs.com/doc-50325">http://www.zoovydocs.com/doc-50325</a> to read more about lists.
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CSPADRW" TYPE="OUTPUT"><HTML><![CDATA[
+	</table>
+	
+	</td>
+</tr>
+</table>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPADRX" WIKI="3" MAXLENGTH="40" DATA="page:cats_header" PROMPT="Header for Subcategories" DEFAULT="Shop our Store" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="ztitle" style="margin-top:5px;">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DESCENDTREE="0" ALTERNATE="0" DATA="page:subcat" MODE="LIST" TYPE="SUBCAT" SRC="." FORCECOLUMNS="4"><HTML><![CDATA[<!-- top level categories -->
+<table cellpadding="0" width="100%" cellspacing="5" style="margin-top:5px;">
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+	<td width="25%" align="center" valign="top">
+	<a href="<% load($cat_url); print(); %>"><% load($cat_thumb); default(""); image(w=>"110",h=>"110",tag=>"1",bg=>"ffffff",alt=>$cat_pretty); print(); %></a>
+	<div class="ztable_row_title"><a href="<% load($cat_url); print(); %>" class="zlink"><% load($cat_pretty); print(); %></a></div></td>
+<!-- /CATEGORY -->
+<!-- BLANK -->
+<td width="25%"></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSPADRY" TYPE="OUTPUT"><HTML><![CDATA[
+
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" DATA="page:description" PROMPT="Text Description" TYPE="TEXT"><HELP><![CDATA[When setting up links inside text or text boxes, be sure to use the proper linking syntax.  Failure to do so can cause your customers cart to mysteriously empty.<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+<PRETEXT><![CDATA[<!-- begin text area --><div style="margin:5px; text-align:left; width:590px;">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSPADRY" TYPE="OUTPUT"><HTML><![CDATA[
+
+</div>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

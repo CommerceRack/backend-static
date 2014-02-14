@@ -1,0 +1,278 @@
+<TEMPLATE ID="m09_t_20090727" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="DADBTEP" CREATED="00000000" SUBTYPE="T" EXPORT="0" TYPE="CONFIG" TITLE="Mobile: Cart"></ELEMENT>
+<ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
+<ELEMENT ID="DADBTEQ" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div class='mypanel'>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SHOPPING_CART" COLS="1" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART" TABLECOLS="4"><HTML><![CDATA[
+<form  id="SHOPPING_CART" name="SHOPPING_CART" action="%CART_URL%" method="post" target="_self">
+
+
+
+<div id='buttons' class='round_top' style='padding:5px 0;'>
+
+	<div style='float:right; margin-right:2px;'><a href='#' onclick="document.SHOPPING_CART.action='%CHECKOUT_URL%'; document.SHOPPING_CART.submit();"><%
+print("");
+element(TYPE=>"SITEBUTTON",BUTTON=>"checkout"); print();
+%></a></div>
+
+	<div style='float:left; margin-left:2px;'><% load($UPDATECART_BUTTON);  default("");  print(); %></div>
+
+	<div style='clear:both;'></div>
+
+</div>
+
+<table cellspacing="0" cellpadding="0" width="100%" style='margin-top:5px;'>
+<!-- ROW -->
+<!-- PRODUCT -->
+<tr>
+	<td class="ztable_row" valign="top" width='1%'>
+<%
+loadurp("CSS::ztable_row0.bgcolor"); default("FFFFFF");
+set($BGCOLOR=>$_);
+load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"70",h=>"70",bg=>$BGCOLOR,tag=>"1");  print();
+%>
+	</td>
+	<td valign='top' class='ztable_row'>
+	<div style='margin-left:5px;'>
+
+<div style='margin-bottom:3px;'><% load($zoovy:prod_seo_title); default($prod_name);   default(""); strip(breaks=>"1",html=>"1");  print(); %></div>
+
+<div style='margin-bottom:3px;'>sku: <% load($SKU_LINK);  default("");  print(); %></div>
+
+<% print(""); load($POGS); default(""); stop(unless=>$_); format(pretext=>"<div style='margin-bottom:3px;'>",posttext=>"</div>"); print(); %>
+
+<div style='margin-bottom:3px;'>
+<% load($QTY_INPUT);  default("");  print(); %> @ <% load($PRICE);  default("");  format(money);  print(); %> for <% load($EXTENDED);  default("");  format(money);  print(); %>
+</div>
+
+	</div>
+	</td>
+	
+<%
+	print("");
+	stop(unless=>$BUYSAFE_ENABLED);
+	print("&lt;td valign='top' class='ztable_row ztable_row0' width='1%' align='right'&gt;");
+	print($BOND_STATUS);
+	print("&lt;/td&gt;");
+%>		
+		
+	<td valign='middle' width='1%'>
+<% print($REMOVE_LINK); %>
+	</td>
+	
+</tr>	
+<!-- /PRODUCT -->
+<tr>
+	<td colspan='4'><div style='height:1px; background:#999999;'></div></td>
+</tr>
+<!-- /ROW -->
+</table>
+
+	
+<table cellspacing="0" cellpadding="2" width="100%">
+
+<%
+print("");
+/* if enable_promocode is not set to 1, the promotion textbox is not displayed. */
+loadurp("profile:zoovy:enable_promocode");
+stop(unless=>$_);
+	print("
+	<tr>
+		<td class='zcolor_dark' align='right'>
+<div id='zpromocode'>
+<table cellspacing='3' cellpadding='0'>
+<tr>
+	<td class='zcolor_dark'><span class='zpromocode_prompt' style='font-size: ");
+	loadurp("CSS::ztable_row.font_size"); print();
+	print("'>Coupon/Gift Certificate Code: </span></td>
+	<td><input type='text' class='zform_textbox' size='8' name='promocode' id='promocode'></td>
+	<td><input type='submit' class='zform_button' value='add'></td>
+</tr>
+</table>
+</div>
+		</td>
+	</tr>");
+%>
+
+<tr>
+	<td class='ztable_row_small'>
+
+<div id='zip_input'><% load($ZIP_INPUT);  default("");  print(); %></div>
+
+<div id='cart_shipping_blurb'><% load($DESTINATIONBLURB);  default("");  print(); %></div>	
+
+	</td>
+</tr>
+
+<tr>
+	<td align="right">
+	<table cellspacing="0" cellpadding="2" width="100%">
+	<tr>
+		<td colspan="2" nowrap align="right" width="95%" class='ztable_row'>Subtotal:</td>
+		<td nowrap align="right" style="padding-left:20px;" class='ztable_row'><% load($SUBTOTAL);  default("");  format(money);  print(); %></td>
+	</tr>
+		<% load($SURCHARGE_LINE);  default("");  print(); %>
+		<% load($TAX_LINE);  default("");  print(); %>
+	<tr>
+		<td colspan="2" nowrap align="right" class='ztable_row'><strong>Total: </strong></td>
+		<td nowrap align="right" style="padding-left:20px;" class='ztable_row'><strong><% load($GRANDTOTAL);  default("");  format(money);  print(); %></strong></td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+</div>
+<% load($ENDFORM);  default("");  print(); %>	
+<!-- POGS -->
+<div style="margin-left: 15px;">
+<table cellpadding=0 cellspacing=2>
+<!-- ROW -->
+<!-- OPTION -->
+<tr>
+	<td valign='top'><% load($img); default(""); image(w=>"22",h=>"22",tag=>"1"); stop(unless=>$img); print(); %></td>
+	<td valign='top' class='ztable_row_small'><% load($prompt);  default("");  print(); %>:</td>
+	<td class='ztable_row_small' valign='top'><% load($value);  default(""); format(replace=>"\n",with=>"<br>");  print(); %></td>
+</tr>
+<!-- /OPTION -->
+<!-- /ROW -->
+</table>
+</div>
+<!-- /POGS -->
+
+
+<!-- TAX -->
+<tr>
+	<td colspan="2" nowrap align="right" class='ztable_row'>State Tax(<% load($TAXRATE);  default("");  print(); %>%):</td>
+	<td nowrap align="right" style="padding-left:20px;" class='ztable_row'><% load($TAXTOTAL);  default("");  format(money);  print(); %></td>
+</tr>
+<!-- /TAX -->
+<!-- SURCHARGE -->
+<tr>
+	<td nowrap  colspan="2" align="right" class='ztable_row'><% load($SURCHARGE);  default("");  print(); %>:</td>
+	<td nowrap align="right" style="padding-left:20px;" class='ztable_row'><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></td>
+</tr>
+<!-- /SURCHARGE -->
+
+]]></HTML>
+<SURCHARGE_SHP_SPEC><![CDATA[<!-- shipping spec -->
+<tr>
+	<td class='ztable_row' colspan="2" align='right' NOWRAP><div id='shipSelect'><% load($SURCHARGE);  default("");  print(); %></div></td>
+	<td align='right' class='ztable_row'><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></td>
+</tr><!-- shipping spec -->
+]]></SURCHARGE_SHP_SPEC>
+<REMOVE_LINK_SPEC><![CDATA[<div style='margin:0 5px;'><a href="<% print($CART_URL); %>?delete_item=<% print($SAFESTID); %>" title='remove item from cart'><img src='<% loadurp("URL::LAYOUT_URL"); default(""); print(); %>/m09_btn_remove-25x25.jpg' height='25' width='25' alt='remove item from cart'></a></div>]]></REMOVE_LINK_SPEC>
+</ELEMENT>
+<ELEMENT SIZE="7" ID="DADBTES" MAX="5" ALTERNATE="0" MULTIPAGE="0" SHOWDEFAULT="0" EDITOR="INLINE" INVENTORY="1" DATA="page:prodlist_mobile" COLS="8" FORMAT="CUSTOM" SMARTSOURCE="SMART:ACCESSORIES" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
+<!-- cols is set to 'trick' divider into working. -->
+
+
+
+<h2>These items go great</h2>
+
+<div class='mypanel paddedpanel'>
+
+<table cellspacing='0' cellpadding='0' width='100%'>
+<!-- ROW -->
+<!-- PRODUCT -->
+<tr>
+
+<td width='1%'><a href='<% print($PROD_URL); %>#noMastHead' title="<% load($zoovy:prod_name); default(""); format(encode=>"entity"); print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"90",h=>"90",tag=>"1",bg=>"ffffff",alt=>$zoovy:prod_name);  print(); %></a></td>
+
+	<td class='ztable_row' width='98%'>
+	<a href='<% print($PROD_URL); %>#noMastHead' style='display:block; text-decoration:none;'>
+	<div style='margin-left:5px;' class='no_underline ztable_row'>
+
+
+<div style='font-weight:bold; margin-bottom:3px;' class='zlink'><% load($zoovy:prod_seo_title); default($zoovy:prod_name);  default(""); print(); %></div>
+
+<%
+print("");
+	
+/* if the msrp is greater than the price, compute the savings percentage. Otherwise, just show price */	
+load($zoovy:prod_msrp);
+goto(label=>"DISPLAY_SAVINGS",gt=>$zoovy:base_price);
+	load($zoovy:base_price);
+	format(hidezero);
+	format(money);
+	format(pretext=>"<div class='ztable_row_title'>",posttext=>"</div>");
+	print();
+	stop();
+
+:DISPLAY_SAVINGS();
+	load($zoovy:base_price);
+/* stop has to be here to handle products with a blank or 0 price */
+	stop(unless=>$_);
+	format(money);
+	format(pretext=>"<div class='ztable_row_title'>");
+	print();
+/* compute the savings and display it after the price. no need to check msrp because we did that above */
+	load($zoovy:base_price);
+	math(op=>"divide",var=>$zoovy:prod_msrp); 
+	math(op=>"subtract",var=>"1");
+	math(op=>"multiply",var=>"-100"); format(hidezero); format(convert=>"number",precision=>"0"); 
+	format(pretext=>"<span class='ztable_row'> (",posttext=>"%)</span></div>");
+	print();
+
+	load($zoovy:prod_msrp);
+	format(hidezero);
+	format(money);
+	format(pretext=>"<div>regular price: <span style='text-decoration:line-through;'>",posttext=>"</span></div>");
+	print();
+
+%>
+
+
+<div style='margin-top:3px;'>In Stock</div>
+	
+	</div>
+	</a>
+	</td>
+	
+	<td valign='middle' width='1%'>
+	<div style='margin:0 5px;'>
+
+<div><a href='<% print($PROD_URL); %>'><img src='%LAYOUT_URL%/m09_btn_details-25x25.jpg' width='25' height='25' alt='more details'></a></div>
+
+<%
+print("");
+/* if the item has pogs or no price set, don't show add to cart button. should default to some other button later. */
+load($zoovy:pogs);
+	stop(if=>$_);
+load($zoovy:base_price);
+	stop(unless=>$_);
+	print("<div style='margin-top:25px;'><a href='");
+	print($ADD_URL);
+	print("'><img src='%LAYOUT_URL%/m09_btn_add-25x25.jpg' width='25' height='25' alt='add to cart'></a></div>");
+%>
+	</div>
+	</td>
+</tr>
+<!-- /PRODUCT -->
+<!-- /ROW -->
+</table>
+</div>
+]]></HTML>
+<DIVIDER><![CDATA[
+<tr>
+	<td colspan='3'><div style='height:1px; background:#999999;'></div></td>
+</tr>
+]]></DIVIDER>
+</ELEMENT>
+<ELEMENT ID="DADBTER" TYPE="OUTPUT"><HTML><![CDATA[
+
+</div>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<!-- begin text area --><div style='text-align:left; padding:5px;' class='ztxt mypanel'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+</ELEMENT>
+
+</TEMPLATE>

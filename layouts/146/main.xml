@@ -1,0 +1,66 @@
+<TEMPLATE ID="146" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMEO" CREATOR="JT" IMAGES="3" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" FORMAT="LAYOUT" SHORT="Contains default description (HTML Editor), 3 images (180 x 180) MSRP, Price and a prodlist." TYPE="CONFIG" TITLE="3 Image with prodlist" RELEASED="20041103"><SUMMARY><![CDATA[3 images across the top followed by the description, msrp, price and add to cart.  beneath that is a prodlist.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMEP" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+<table cellpadding=0 cellspacing=3 width="100%"><tr>
+	<Td valign="top" width="100%" align="left"><div align="center">
+<table width="100%"><tr>
+	<td width="33%" align="center">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="180" ID="IMAGE1" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="180" PROMPT="Image1" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMEQ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	<td width="33%" align="center">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="180" ID="IMAGE2" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="180" PROMPT="Image2" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMER" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	<td width="33%" align="center">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="180" ID="IMAGE3" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" WIDTH="180" PROMPT="Image3" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMES" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr></table></div>
+	
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the default product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" TYPE="HTML"></ELEMENT>
+<ELEMENT ID="CPUKMET" TYPE="OUTPUT"><HTML><![CDATA[
+
+<p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MSRP" HELP="This is the msrp that will appear on your website." DATA="product:zoovy:prod_msrp" PROMPT="Suggested Retail Price" TYPE="TEXT"><PRETEXT><![CDATA[<strong>MSRP: </strong>$]]></PRETEXT>
+<POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKMEU" TYPE="OUTPUT"><HTML><![CDATA[	
+</p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKMEV" TYPE="OUTPUT"><HTML><![CDATA[
+	
+	</td>
+</tr><tr>
+	<td>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="product:zoovy:prod_prodlist_style" PROMPT="Product Listing" TYPE="PRODLIST" DISABLEPRODUCTS="1"></ELEMENT>
+<ELEMENT ID="CPUKMEW" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+</table>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

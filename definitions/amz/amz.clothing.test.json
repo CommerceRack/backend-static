@@ -1,0 +1,56 @@
+[
+   {
+      "options" : [
+         {
+            "T" : "buckle",
+            "V" : "buckle"
+         },
+         {
+            "T" : "bungee",
+            "V" : "bungee"
+         },
+         {
+            "T" : "hook-and-loop",
+            "V" : "hook-and-loop"
+         },
+         {
+            "T" : "lace-up",
+            "V" : "lace-up"
+         }
+      ],
+      "amz_attrib" : "ShoeClosureType",
+      "xmlpath" : "shoes.ClassificationData.apparel-closure-type",
+      "Title" : "Shoe Closure Type",
+      "amz-format" : "Text",
+      "type" : "select",
+      "mandatory" : "N",
+      "id" : "amz:prod_shoe_cd_dpt"
+   },
+   {
+      "options" : [
+         {
+            "T" : "baby-boy",
+            "V" : "baby-boy"
+         },
+         {
+            "T" : "baby-girl",
+            "V" : "baby-girl"
+         },
+         {
+            "T" : "boys",
+            "V" : "boys"
+         },
+         {
+            "T" : "girls",
+            "V" : "girls"
+         }
+      ],
+      "amz_attrib" : "department",
+      "xmlpath" : "shoes.ClassificationData.department",
+      "Title" : "department",
+      "amz-format" : "Text",
+      "type" : "select",
+      "mandatory" : "Y",
+      "id" : "amz:prod_shoe_cd_dpt"
+   }
+]

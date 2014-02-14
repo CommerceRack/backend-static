@@ -1,0 +1,736 @@
+$VAR1 = bless( {
+                 '_DIGEST' => '+/LuwjdI45T92LTTrKA4Vg',
+                 '_DIVS' => [],
+                 '_ID' => 'ebay',
+                 '_ELEMENTS' => [
+                                  {
+                                    'ID' => 'CQDPNQD',
+                                    'SUB' => 'LINK_VISITED_TEXT_COLOR',
+                                    'LOAD' => 'THEME::LINK_VISITED_TEXT_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQE',
+                                    'SUB' => 'TABLE_HEADING_FONT_SIZE',
+                                    'LOAD' => 'THEME::TABLE_HEADING_FONT_SIZE',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQF',
+                                    'SUB' => 'DISCLAIMER_FONT_SIZE',
+                                    'LOAD' => 'THEME::DISCLAIMER_FONT_SIZE',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQG',
+                                    'SUB' => 'CONTENT_BACKGROUND_COLOR',
+                                    'LOAD' => 'THEME::CONTENT_BACKGROUND_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQH',
+                                    'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR',
+                                    'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQI',
+                                    'SUB' => 'CONTENT_TEXT_COLOR',
+                                    'LOAD' => 'THEME::CONTENT_TEXT_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQJ',
+                                    'SUB' => 'TABLE_LISTING_FONT_SIZE',
+                                    'LOAD' => 'THEME::TABLE_LISTING_FONT_SIZE',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQK',
+                                    'SUB' => 'TABLE_LISTING_TEXT_COLOR',
+                                    'LOAD' => 'THEME::TABLE_LISTING_TEXT_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQL',
+                                    'SUB' => 'TABLE_LISTING_FONT_FACE',
+                                    'LOAD' => 'THEME::TABLE_LISTING_FONT_FACE',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQM',
+                                    'SUB' => 'CONTENT_FONT_FACE',
+                                    'LOAD' => 'THEME::CONTENT_FONT_FACE',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQN',
+                                    'SUB' => 'NAME',
+                                    'LOAD' => 'THEME::NAME',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQO',
+                                    'SUB' => 'DISCLAIMER_FONT_FACE',
+                                    'LOAD' => 'THEME::DISCLAIMER_FONT_FACE',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQP',
+                                    'SUB' => 'PRETTY_NAME',
+                                    'LOAD' => 'THEME::PRETTY_NAME',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQQ',
+                                    'SUB' => 'TABLE_HEADING_BACKGROUND_COLOR',
+                                    'LOAD' => 'THEME::TABLE_HEADING_BACKGROUND_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQR',
+                                    'SUB' => 'TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                                    'LOAD' => 'THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQS',
+                                    'SUB' => 'LINK_ACTIVE_TEXT_COLOR',
+                                    'LOAD' => 'THEME::LINK_ACTIVE_TEXT_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQT',
+                                    'SUB' => 'CONTENT_FONT_SIZE',
+                                    'LOAD' => 'THEME::CONTENT_FONT_SIZE',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQU',
+                                    'SUB' => 'ALERT_COLOR',
+                                    'LOAD' => 'THEME::ALERT_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQV',
+                                    'SUB' => 'DISCLAIMER_BACKGROUND_COLOR',
+                                    'LOAD' => 'THEME::DISCLAIMER_BACKGROUND_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQW',
+                                    'SUB' => 'TABLE_HEADING_FONT_FACE',
+                                    'LOAD' => 'THEME::TABLE_HEADING_FONT_FACE',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQX',
+                                    'SUB' => 'TABLE_HEADING_TEXT_COLOR',
+                                    'LOAD' => 'THEME::TABLE_HEADING_TEXT_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQY',
+                                    'SUB' => 'DISCLAIMER_TEXT_COLOR',
+                                    'LOAD' => 'THEME::DISCLAIMER_TEXT_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNQZ',
+                                    'SUB' => 'LINK_TEXT_COLOR',
+                                    'LOAD' => 'THEME::LINK_TEXT_COLOR',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRA',
+                                    'SUB' => 'HOMECATEGORY_URL',
+                                    'LOAD' => 'URL::HOMECATEGORY_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRB',
+                                    'SUB' => 'WRAPPER_URL',
+                                    'LOAD' => 'URL::WRAPPER_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRC',
+                                    'SUB' => 'CART_URL',
+                                    'LOAD' => 'URL::CART_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRD',
+                                    'SUB' => 'SUBSCRIBE_URL',
+                                    'LOAD' => 'URL::SUBSCRIBE_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRE',
+                                    'SUB' => 'FEEDBACK_URL',
+                                    'LOAD' => 'URL::FEEDBACK_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRF',
+                                    'SUB' => 'LOGOUT_FUNCTION_URL',
+                                    'LOAD' => 'URL::LOGOUT_FUNCTION_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRG',
+                                    'SUB' => 'SHIPQUOTE_URL',
+                                    'LOAD' => 'URL::SHIPQUOTE_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRH',
+                                    'SUB' => 'PRIVACY_URL',
+                                    'LOAD' => 'URL::PRIVACY_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRI',
+                                    'SUB' => 'SITEBUTTON_URL',
+                                    'LOAD' => 'URL::SITEBUTTON_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRJ',
+                                    'SUB' => 'HOMEPAGE_URL',
+                                    'LOAD' => 'URL::HOMEPAGE_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRK',
+                                    'SUB' => 'COUNTER_URL',
+                                    'LOAD' => 'URL::COUNTER_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRL',
+                                    'SUB' => 'RETURNS_URL',
+                                    'LOAD' => 'URL::RETURNS_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRM',
+                                    'SUB' => 'PASSWORD_URL',
+                                    'LOAD' => 'URL::PASSWORD_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRN',
+                                    'SUB' => 'UPDATE_PAYMENT_URL',
+                                    'LOAD' => 'URL::UPDATE_PAYMENT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRO',
+                                    'SUB' => 'FORGOT_URL',
+                                    'LOAD' => 'URL::FORGOT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRP',
+                                    'SUB' => 'NAVBUTTON_URL',
+                                    'LOAD' => 'URL::NAVBUTTON_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRQ',
+                                    'SUB' => 'CONTACT_URL',
+                                    'LOAD' => 'URL::CONTACT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRR',
+                                    'SUB' => 'LOGOUT_URL',
+                                    'LOAD' => 'URL::LOGOUT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRS',
+                                    'SUB' => 'GALLERY_URL',
+                                    'LOAD' => 'URL::GALLERY_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRT',
+                                    'SUB' => 'REMOVE_URL',
+                                    'LOAD' => 'URL::REMOVE_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRU',
+                                    'SUB' => 'HOME_URL',
+                                    'LOAD' => 'URL::HOME_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRV',
+                                    'SUB' => 'ABOUT_ZOOVY_URL',
+                                    'LOAD' => 'URL::ABOUT_ZOOVY_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRW',
+                                    'SUB' => 'NEWS_URL',
+                                    'LOAD' => 'URL::NEWS_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRX',
+                                    'SUB' => 'SECURE_URL',
+                                    'LOAD' => 'URL::SECURE_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRY',
+                                    'SUB' => 'ABOUT_URL',
+                                    'LOAD' => 'URL::ABOUT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNRZ',
+                                    'SUB' => 'USERBUTTON_URL',
+                                    'LOAD' => 'URL::USERBUTTON_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSA',
+                                    'SUB' => 'CLOSED_URL',
+                                    'LOAD' => 'URL::CLOSED_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSB',
+                                    'SUB' => 'FASTORDER_URL',
+                                    'LOAD' => 'URL::FASTORDER_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSC',
+                                    'SUB' => 'MAIL_FORM_URL',
+                                    'LOAD' => 'URL::MAIL_FORM_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSD',
+                                    'SUB' => 'GRAPHICS_URL',
+                                    'LOAD' => 'URL::GRAPHICS_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSE',
+                                    'SUB' => 'IMAGE_URL',
+                                    'LOAD' => 'URL::IMAGE_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSF',
+                                    'SUB' => 'CONTACTUS_URL',
+                                    'LOAD' => 'URL::CONTACTUS_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSG',
+                                    'SUB' => 'DYNAMIC_URL',
+                                    'LOAD' => 'URL::DYNAMIC_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSH',
+                                    'SUB' => 'NONSECURE_URL',
+                                    'LOAD' => 'URL::NONSECURE_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSI',
+                                    'SUB' => 'CONTACT_US_URL',
+                                    'LOAD' => 'URL::CONTACT_US_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSJ',
+                                    'SUB' => 'SEARCH_URL',
+                                    'LOAD' => 'URL::SEARCH_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSK',
+                                    'SUB' => 'ABOUTUS_URL',
+                                    'LOAD' => 'URL::ABOUTUS_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSL',
+                                    'SUB' => 'CUSTOMER_MAIN_URL',
+                                    'LOAD' => 'URL::CUSTOMER_MAIN_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSM',
+                                    'SUB' => 'MERCHANT_LOGIN_URL',
+                                    'LOAD' => 'URL::MERCHANT_LOGIN_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSN',
+                                    'SUB' => 'CATEGORY_URL',
+                                    'LOAD' => 'URL::CATEGORY_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSO',
+                                    'SUB' => 'ADULT_URL',
+                                    'LOAD' => 'URL::ADULT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSP',
+                                    'SUB' => 'CLAIM_URL',
+                                    'LOAD' => 'URL::CLAIM_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSQ',
+                                    'SUB' => 'CLAIM_MULTI_URL',
+                                    'LOAD' => 'URL::CLAIM_MULTI_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSR',
+                                    'SUB' => 'ABOUT_US_URL',
+                                    'LOAD' => 'URL::ABOUT_US_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSS',
+                                    'SUB' => 'RESULTS_URL',
+                                    'LOAD' => 'URL::RESULTS_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNST',
+                                    'SUB' => 'PRODUCT_URL',
+                                    'LOAD' => 'URL::PRODUCT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSU',
+                                    'SUB' => 'CONTINUE_URL',
+                                    'LOAD' => 'URL::CONTINUE_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSV',
+                                    'SUB' => 'REDIR_URL',
+                                    'LOAD' => 'URL::REDIR_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSW',
+                                    'SUB' => 'KILL_COOKIES_URL',
+                                    'LOAD' => 'URL::KILL_COOKIES_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSX',
+                                    'SUB' => 'LOGIN_URL',
+                                    'LOAD' => 'URL::LOGIN_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSY',
+                                    'SUB' => 'CHECKOUT_URL',
+                                    'LOAD' => 'URL::CHECKOUT_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNSZ',
+                                    'SUB' => 'ORDER_STATUS_URL',
+                                    'LOAD' => 'URL::ORDER_STATUS_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTA',
+                                    'SUB' => 'NO_COOKIES_URL',
+                                    'LOAD' => 'URL::NO_COOKIES_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTB',
+                                    'SUB' => 'PAYPAL_URL',
+                                    'LOAD' => 'URL::PAYPAL_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTC',
+                                    'SUB' => 'CANCEL_ORDER_URL',
+                                    'LOAD' => 'URL::CANCEL_ORDER_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTD',
+                                    'SUB' => 'MAIL_CONFIG_URL',
+                                    'LOAD' => 'URL::MAIL_CONFIG_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTE',
+                                    'SUB' => 'DISABLED_URL',
+                                    'LOAD' => 'URL::DISABLED_URL',
+                                    'TYPE' => 'READONLY',
+                                    'RAW' => '1'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTF',
+                                    'COLORS' => '0',
+                                    'CSS' => '.zbody { background-color: #FFFFFF; }
+.zborder { border: 1px solid #CCCCCC; }
+.zbox { border: 1px solid #CCCCCC; }
+.zbox_body { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.zbox_head { background-color: #CCCCCC; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.zcolor { background-color: #cccccc; color: #000000; }
+.zcolor_contrast { background-color: #4c4c4c; color: #7f7f7f; }
+.zcolor_dark { background-color: #8c8c8c; color: #000000; }
+.zcolor_light { background-color: #ffffff; color: #404040; }
+.zform_button { border: 1px solid #8c8c8c; background-color: #ffffff; color: #8c8c8c; font-size: 8pt; font-family: Arial, Helvetica; }
+.zform_select { border: 1px solid #8c8c8c; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zform_textarea { border: 1px solid #8c8c8c; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zform_textbox { border: 1px solid #8c8c8c; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, Helvetica; };
+.zhint { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.zlink { color: #000066; }
+.zsmall { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztab0 { background-color: #ffffff; color: #404040; font-family: Arial, Helvetica; font-size: 9pt; }
+.ztab1 { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 9pt; font-weight: bold;}
+.ztabbody { background-color: #CCCCCC; color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztable_head { background-color: #CCCCCC; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztable_row { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztable_row0 { background-color: #FFFFFF; font-size: 11pt; }
+.ztable_row1 { background-color: #EEEEEE; font-size: 11pt; }
+.ztable_row_small { color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
+.ztable_row_title { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztitle { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 12pt; }
+.ztitle2 { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.ztxt { color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
+.zwarn { color: #FF0000; font-weight: bold; }',
+                                    'TYPE' => 'CONFIG',
+                                    'CATEGORIES' => '0',
+                                    'TITLE' => 'ebay',
+                                    'CREATED' => '00000000',
+                                    'THEME' => 'alert_color=FF0000&content_background_color=FFFFFF&content_font_face=Arial%2c+Helvetica&content_font_size=3&content_text_color=000000&disclaimer_background_color=FFFFFF&disclaimer_font_face=Arial%2c+Helvetica&disclaimer_font_size=1&disclaimer_text_color=000000&link_active_text_color=000066&link_text_color=000066&link_visited_text_color=000066&name=&pretty_name=&table_heading_background_color=CCCCCC&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_heading_text_color=000000&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=EEEEEE&table_listing_font_face=Arial%2c+Helvetica&table_listing_font_size=3&table_listing_text_color=000000',
+                                    'THEME_OLD' => 'disclaimer_text_color=000000&content_font_face=Arial%2c+Helvetica&table_listing_background_color_alternate=EEEEEE&table_heading_text_color=000000&pretty_name=Default&link_visited_text_color=000000&content_background_color=FFFFFF&table_heading_background_color=CCCCCC&link_text_color=000066&link_active_text_color=000033&table_listing_font_face=Arial%2c+Helvetica&content_text_color=000000&content_font_size=3&disclaimer_font_face=Arial%2c+Helvetica&name=default&table_listing_background_color=FFFFFF&disclaimer_background_color=999999&alert_color=FF0000&disclaimer_font_size=1&table_listing_text_color=000000&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_listing_font_size=3',
+                                    'PROPERTIES' => '0',
+                                    'SITEBUTTONS' => 'default=ebay|gif|101|23&add_to_site=ebay|gif|122|32'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTG',
+                                    'HTML' => '
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+',
+                                    'TYPE' => 'OUTPUT'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTH',
+                                    'TYPE' => 'HEAD'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTI',
+                                    'HTML' => '
+<style type="text/css">
+body	{margin: 10px;}
+body, td, li, ol, ul, p	{font-family: Arial, Helvetica, sans-serif;}
+a	{color: #0000CC;}
+
+.menu	{font-size: 14px; color: #000000; font-weight: bold; text-decoration: none; padding-left: 5px; padding-right: 5px;}
+
+.menu_bg	{background-color:#0000CC;}
+.lt_purp_bg	{background-color:#EEEEF8;}
+.title_bg	{background-color:#D6DCFE;}
+.stroke	{background-color:#9999CC;}
+.white_bg	{background-color:#ffffff; border-right-style: solid; border-right-width: 1px; border-right-color: #000066;}
+.tab_bg	{background-color:#EFEFEF;}
+</style>
+</head>
+<body>
+<table width="100%" cellspacing="4" cellpadding="0"><tr>
+	<td width="1%"><img src="%WRAPPER_URL%/ebaylogo.gif"></td>
+	<td width="99%" align="left" style="border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #0000CC;"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr class="tab_bg">
+		<td width="1%" align="left" valign="top"><img src="%WRAPPER_URL%/menu_left.gif" width="11" height="11"></td>
+		<td width="98%" align="right">&nbsp;</td>
+		<td rowspan="2">',
+                                    'TYPE' => 'OUTPUT'
+                                  },
+                                  {
+                                    'HEIGHT' => '55',
+                                    'ID' => 'CQDPNTJ',
+                                    'WIDTH' => '200',
+                                    'TYPE' => 'LOGO',
+                                    'BGCOLOR' => 'EEEEEE'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTK',
+                                    'HTML' => '</td>
+		<td width="1%" align="right" valign="top"><img src="%WRAPPER_URL%/menu_right.gif" width="11" height="11"></td>
+	</tr><tr class="tab_bg">
+		<td colspan="2"></td>
+			<td><img src="%GRAPHICS_URL%/blank.gif" height="1" width="1" alt=""></td>
+	</tr></table></td>
+</tr></table>
+<table cellspacing="0" cellpadding="0" width="100%"><tr>
+	<td style="height: 6px;" colspan="2"></td>
+</tr><tr>
+	<td class="stroke" style="height: 2px;" colspan="2"></td>
+</tr><tr class="title_bg">
+	<td align="left"  style="height: 22px;"><span style="font-size: 14px; font-weight: bold; margin-left: 10px;">',
+                                    'TYPE' => 'OUTPUT'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTL',
+                                    'TYPE' => 'TITLE'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTM',
+                                    'HTML' => '</span></td>
+	<td NOWRAP align="right" width="10%"><span style="font-size: 12px;">Items in Cart: ',
+                                    'TYPE' => 'OUTPUT'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTN',
+                                    'ITEMSONLY' => '1',
+                                    'TYPE' => 'MINICART'
+                                  },
+                                  {
+                                    'HTML' => ' | Subtotal: ',
+                                    'ID' => 'CQDPNTO',
+                                    'TYPE' => 'OUTPUT'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTP',
+                                    'SUBTOTALONLY' => '1',
+                                    'TYPE' => 'MINICART'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTQ',
+                                    'HTML' => '</span></td>
+</tr><tr>
+	<td class="stroke" style="height: 2px;" colspan="2"></td>
+</tr></table><div align="center">
+
+<table cellspacing="2" cellpadding="2" width="96%"><tr><td align="left">',
+                                    'TYPE' => 'OUTPUT'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTR',
+                                    'TYPE' => 'BODY'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTS',
+                                    'HTML' => '</td></tr></table>
+</div><br>
+',
+                                    'TYPE' => 'OUTPUT'
+                                  },
+                                  {
+                                    'TRANSPARENT' => 'TRUE',
+                                    'ID' => 'CQDPNTT',
+                                    'TYPE' => 'FOOTER'
+                                  },
+                                  {
+                                    'ID' => 'CQDPNTU',
+                                    'HTML' => '
+</body>
+</html>
+',
+                                    'TYPE' => 'OUTPUT'
+                                  }
+                                ],
+                 '_FORMAT' => 'WRAPPER',
+                 '_MID' => 0,
+                 '_LISTS' => [],
+                 '_V' => 2,
+                 '_SYSTEM' => 1
+               }, 'TOXML' );

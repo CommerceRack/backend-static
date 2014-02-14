@@ -1,0 +1,83 @@
+<TEMPLATE ID="133" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMWF" CREATOR="STAFF" IMAGES="3" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Leftside Images" RELEASED="20021205"><SUMMARY><![CDATA[
+ MSRP
+Default Description (shared)
+IMAGE1 (180x180)
+IMAGE2 (180x180)
+IMAGE3 (180x180)
+Pricing Text
+Strikethrough Text
+]]></SUMMARY>
+<SHORT><![CDATA[(3) 180 x 180 images listed down the left side of the page with description and stikeout msrp on right.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKMWG" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+<style>
+.strikeout	{text-decoration: line-through;
+			color: #990000;
+			}
+</style>
+<center>
+<table width=100% cellspacing=0 cellpadding=5 border=0>
+<tr>
+<td width="180" align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="180" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image1 180 x 180" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMWH" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="180" HELP="Please enter the second picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image2 180 x 180" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMWI" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE3" HEIGHT="180" HELP="Please enter the third picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image3 180 x 180" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMWJ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<td valign="top"><p>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMWK" TYPE="OUTPUT"><HTML><![CDATA[</p>
+<p><strong>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="STRIKETHROUGH" HELP="This is the piece of text that will appear right before the price that is crossed out." DATA="merchant:zoovy:strikethrough" PROMPT="Strikethrough Text" DEFAULT="Suggested Retail Price:" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMWL" TYPE="OUTPUT"><HTML><![CDATA[ 
+</strong>  &nbsp;&nbsp;
+<span class="strikeout">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MSRP" HELP="This is the msrp that will appear crossed out on your website.  Saved to product:zoovy:prod_msrp" DATA="product:zoovy:prod_msrp" PROMPT=" MSRP" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMWM" TYPE="OUTPUT"><HTML><![CDATA[</span></p>
+<p><strong>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICING" HELP="This is the piece of text that will appear right before the price." DATA="merchant:zoovy:pricing" PROMPT="Pricing Text" DEFAULT="Price:" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMWN" TYPE="OUTPUT"><HTML><![CDATA[ 
+</strong>  &nbsp;&nbsp;
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PLAINPRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKMWO" TYPE="OUTPUT"><HTML><![CDATA[ </p>
+<p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKMWP" TYPE="OUTPUT"><HTML><![CDATA[</p></td></tr></table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

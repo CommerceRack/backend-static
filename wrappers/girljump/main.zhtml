@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=l2_corporateblu
+SITEBUTTONS=l2_corporateblu
+-->
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body    {margin: 0px; background-color: #FFFFFF;}
+.title    {font-family: arial, helvetica; font-size: 13px; font-weight: bold; color: #000066;}
+.menu	{font-size: 12px; color: #FFFFFF; font-family: arial, sans serif; font-weight: bold;}
+a:hover	{color: #A9D1FF;}
+</style>
+<script language="JavaScript">
+<!--
+initialized = 0;
+<!-- MENU
+FORMAT=rollover_%NUM%_on = new Image;%BREAK%rollover_%NUM%_on.src = "%SRC%";%BREAK%
+BUTTONTYPE=girljump_on
+NOHOME=1
+--><!-- MENU
+FORMAT=rollover_%NUM%_off = new Image;%BREAK%rollover_%NUM%_off.src = "%SRC%";%BREAK%
+BUTTONTYPE=girljump_off
+NOHOME=1
+-->initialized = 1;
+function on(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_on.src");
+}
+function off(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_off.src");
+}
+// -->
+</script>
+</head>
+<body text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!-- LINK_VISITED_TEXT_COLOR -->">
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+    <tr>
+		<td valign="top">
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td background="<!-- WRAPPER_URL -->/top.jpg" height=168 valign="top"><!-- LOGO
+WIDTH=130
+HEIGHT=50
+--></td>
+				</tr><tr>
+					<td background="<!-- WRAPPER_URL -->/cats_bg.jpg" height=320 valign="top">
+					&nbsp;<a href="<!-- CART_URL -->" class="menu">Cart</a><br>
+					&nbsp;<a href="<!-- HOME_URL -->" class="menu">Home</a><br>
+					&nbsp;<a href="<!-- ABOUT_URL -->" class="menu">About</a><br>
+					&nbsp;<a href="<!-- SEARCH_URL -->" class="menu">Search</a><br>
+					&nbsp;<a href="<!-- CUSTOMER_MAIN_URL -->" class="menu">My Account</a><br>
+					
+					</td>
+				</tr><tr>
+					<td><br><!-- SIDEBAR --></td>
+				</tr>
+			</table>
+		</td>
+		<td valign="top" width=99%>
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td align="left" valign="top" background="<!-- WRAPPER_URL -->/top_bg.gif"><img src="<!-- WRAPPER_URL -->/middle.jpg" width="84" height="49" alt="" border="0"></td>
+					<td background="<!-- WRAPPER_URL -->/top_bg.gif" valign="top"></td>
+					<td width=99% background="<!-- WRAPPER_URL -->/top_bg.gif" valign="top"><!-- MENU
+BUTTONTYPE=girljump_off
+FORMAT=<a href="%URL%" OnMouseOver="on(%NUM%)" OnMouseOut="off(%NUM%)"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0" name="roll_%NUM%"></a>
+NOHOME=1
+--></td>
+				</tr><tr>
+					<td colspan=3><p><span class="title"><!-- TITLE --></span></p><!-- BODY --><p><!-- FOOTER --></td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

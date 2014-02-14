@@ -1,0 +1,304 @@
+[
+   {
+      "catalog" : "SPORTS",
+		"amz-catalog" : "Sports",
+      "amz-subcat" : null,
+      "subcat" : null,
+      "type" : "config",
+		"variation-themes" : "Color+Length,Color+LensColor,Color+Size,GolfFlex+GolfLoft,GolfFlex+Material,GolfFlex+ShaftMaterial,GolfLoft+ShaftMaterial,GripSize+GripType,GripSize+HeadSize,Hand+ShaftLength,Hand+Size,Length+Size,Length+Width,Lens+Color,Shape+Size,Size+Style,Size+TensionLevel,Size+Weight,Size+WeightSupported,Color,GolfFlex,GolfLoft,GripSize,GripType,Hand,HeadSize,Length,LensColor,Material,Size,ShaftMaterial,TensionLevel,Weight,WeightSupported,Width"
+   },
+   {
+      "amz-attr" : "item-type",
+      "ns" : "product",
+      "title" : "Item Type",
+      "type" : "textbox",
+      "id" : "amz:prod_cloth_cd_itemtype"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "Sports.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "Sports.VariationData.VariationTheme"
+   },
+   {
+      "amz_attrib" : "Color",
+      "xmlpath" : "Sports.VariationData.Color",
+      "ns" : "product",
+		"title" : "Product Color",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "id" : "amz:prod_color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.Color"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "mens",
+            "v" : "mens"
+         },
+         {
+            "p" : "womens",
+            "v" : "womens"
+         },
+         {
+            "p" : "boys",
+            "v" : "boys"
+         },
+         {
+            "p" : "girls",
+            "v" : "girls"
+         },
+         {
+            "p" : "baby",
+            "v" : "baby"
+         },
+         {
+            "p" : "youth",
+            "v" : "youth"
+         },
+         {
+            "p" : "unisex",
+            "v" : "unisex"
+         }
+      ],
+      "xmlpath" : "Sports.VariationData.Department",
+      "ns" : "product",
+      "amz-attr" : "department",
+      "amz-format" : "Text",
+      "id" : "amz:prod_sports_dpt",
+      "type" : "select",
+		"mandatory" : "N",
+      "title" : "Department",
+      "amz-max-length" : 49,
+		"amz-min-length" : 1
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:golfflex",
+		"vkey" : "GolfFlex",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.GolfFlex"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:golfloft",
+		"vkey" : "GolfLoft",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.GolfLoft"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:gripsize",
+		"vkey" : "GripSize",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.GripSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:griptype",
+		"vkey" : "GripType",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.GripType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:hand",
+		"vkey" : "Hand",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.Hand"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:headsize",
+		"vkey" : "HeadSize",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.HeadSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "variation:length",
+		"vkey" : "Length",
+      "type" : "variation",
+		"variation-type" : "value",
+		"amz-uom" : "CM,IN",
+      "xmlpath" : "Sports.VariationData.Length"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:lenscolor",
+		"vkey" : "LensColor",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.LensColor"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:material",
+		"vkey" : "Material",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.Material"
+   },
+   {
+      "amz_attrib" : "Size",
+      "xmlpath" : "Sports.VariationData.Size",
+      "ns" : "product",
+		"title" : "Size",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "id" : "amz:prod_size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:size",
+		"vkey" : "Size",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.Size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:shaftmaterial",
+		"vkey" : "ShaftMaterial",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.ShaftMaterial"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:tensionlevel",
+		"vkey" : "TensionLevel",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.TensionLevel"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Weight",
+      "id" : "variation:weight",
+		"vkey" : "Weight",
+      "type" : "variation",
+		"variation-type" : "value",
+		"amz-uom" : "OZ",
+      "xmlpath" : "Sports.VariationData.Weight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:weightsupported",
+		"vkey" : "WeightSupported",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.WeightSupported"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:width",
+		"vkey" : "Width",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Sports.VariationData.Width"
+   },
+   {
+      "PROMPT" : "SPORTS",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQZBF",
+      "xmlpath" : "Sports."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_sports_packaging",
+      "type" : "textbox",
+      "title" : "Packaging",
+      "xmlpath" : "Sports.Packaging"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_sports_iscstmz",
+      "type" : "checkbox",
+      "title" : "Is Customizable",
+      "xmlpath" : "Sports.IsCustomizable"
+   },
+	{
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_sports_cstmztemplatename",
+      "type" : "textbox",
+      "title" : "Customizable Template Name",
+      "xmlpath" : "Sports.CustomizableTemplateName"
+   },
+	{
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_sports_leaguename",
+      "type" : "textbox",
+      "title" : "League Name",
+      "xmlpath" : "Sports.LeagueName"
+   },
+	{
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_sports_playername",
+      "type" : "textbox",
+      "title" : "Player Name",
+      "xmlpath" : "Sports.PlayerName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_sports_teamname",
+      "type" : "textbox",
+      "title" : "Team Name",
+      "xmlpath" : "Sports.TeamName"
+   }
+]

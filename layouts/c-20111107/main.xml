@@ -1,0 +1,251 @@
+<TEMPLATE ID="c-20111107" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="DGEJNXK" CREATED="20111107" SUBTYPE="C" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Featured Item" RELEASED="20111114"><SUMMARY><![CDATA[A layout featuring a single product at the top of the page, followed by a banner, text, product list and another text block. 
+<b>works best with 2011+ themes</b>]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
+<ELEMENT ID="VAR_NONSECURE_URL" RAW="1" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL"></ELEMENT>
+<ELEMENT ID="DGEJNXL" TYPE="HIDDEN" OUTPUTSKIP="4096"><DEFAULT><![CDATA[
+
+
+The product list at the top will load the first item from the page. The secondary list that shows up to 12 items will load product 2-13 from the list. That means no 'list' is necessary for the secondary product lists on this page. Both product lists have multipage disabled.
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="DGEJNXM" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+<div id='c-20111107' class='category pageLayout'>
+
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DGEJNXN" MMULTIPAGE="0" MAX="1" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
+
+<!-- ROW -->
+<!-- PRODUCT -->
+<div id='prodlistFeaturedItem' class='prodlistSoloItem elementMargin'>
+
+	<div id='prodlistFeaturedItemHeaderOutside'></div><!-- use CSS to populate -->
+
+	<div class='zbox zbox_body prodlist'>
+
+		<div id='prodlistFeaturedItemHeaderInside'></div>
+
+<table>
+<tr>
+	
+	<td class='prodlistProdThumbContainer'>
+	<div class='prodlistLeftCol'>
+<div class='prodThumb'>
+<% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"300",h=>"300",tag=>"1",alt=>$zoovy:prod_name); print(); %>
+</div>
+
+<div class='buttons'>
+	<button class='zform_button zform_atc_button pointer' onClick="document.location='<%
+print("");
+/* use add link only if item is not a parent or has no options */
+load($POGS); default("");
+goto(label=>"HASPOGSORCHILDREN",ne=>"");
+load($zoovy:grp_type); default("");
+goto(label=>"HASPOGSORCHILDREN",eq=>"PARENT");
+	print($ADD_URL);
+	stop();
+:HASPOGSORCHILDREN();
+	print($PROD_URL);
+	stop();
+%>';">Add to Cart</button>
+
+	<button class='zform_button zform_details_button pointer' onClick="document.location='<% print($PROD_URL); %>'">More Details</button>
+<%
+print("");
+load($youtube:videoid); default("");
+stop(unless=>$_);
+	print("	<button class='zform_button zform_watchvideo_button pointer' onClick=&quot;window.open('%NONSECURE_URL%/popup.cgis?product=");
+	print($PRODUCT_ID);
+	print("&amp;fl=pop_prod_video','advice','status=no,width=600,height=500,menubar=no,scrollbars=auto');&quot;>Watch Video</button>");
+%>
+</div>
+	</div>
+	</td>
+	
+	<td class='zbody ztxt'>
+	<div class='prodlistRightCol'>
+
+<div class='ztable_row_title prodName'>
+<% load($zoovy:prod_name); default(""); print(); %>
+</div>
+
+<div class='prodPricing'>
+<%
+print("");
+load($zoovy:base_price); default("");
+format(money,skipblank=>"1");
+format(pretext=>"<div class='basePrice'><span class='prompt'>price: </span><span class='ztable_row_title value'>",posttext=>"</span></div>");
+print();
+
+/* only show the msrp if it is more than the base price. this will also ensure a positive # on the 'you save' */
+load($zoovy:prod_msrp); 
+stop(unless=>$_);
+	goto(label=>"END",lt=>$zoovy:base_price);
+	goto(label=>"END",eq=>$zoovy:base_price);
+	format(hidezero);
+	format(money);
+	format(pretext=>"<div class='retailPrice'><span class='prompt'>retail price: </span><span class='value'>",posttext=>"</span></div>");
+	print();
+
+	load($zoovy:prod_msrp);
+	math(op=>"subtract",var=>$zoovy:base_price);
+	format(hidezero); 
+	format(money); 
+	format(pretext=>"<div class='savings'><span class='prompt'>save </span><span class='value'>",posttext=>"</span>");
+	print();
+	load($zoovy:base_price);
+	math(op=>"divide",var=>$zoovy:prod_msrp); 
+	math(op=>"subtract",var=>"1");
+	math(op=>"multiply",var=>"-100"); format(hidezero); format(convert=>"number",precision=>"0"); format(pretext=>"<span class='percentage'> ",posttext=>"%</span>");
+	print();
+	
+	print("</div>"); 
+
+:END();
+
+%>
+</div>
+
+
+
+<div class='prodDesc'>
+<% load($zoovy:prod_desc);  default(""); format(wiki,title1=>"",/title1=>"",title2=>"",/title2=>"",title3=>"",/title3=>"",listitem=>"",/listitem=>"",list=>"",/list=>"",hardbreak=>""); strip(length=>"500"); format(encode=>"entity"); print(); %>
+</div>
+
+
+<div class='prodAttribs'>
+
+	<% print(""); load($PRODUCT_ID); default(""); format(pretext=>"<div class='prodSku'><span class='prompt'>Sku: </span><span class='value'>",posttext=>"</span></div>"); print(); %>
+
+	<% print(""); load($zoovy:prod_mfg); default(""); stop(unless=>$_); format(pretext=>"<div class='prodMfg'><span class='prompt'>Mfg: </span><span class='value'>",posttext=>"</span></div>"); print(); %>
+
+	<% print(""); load($zoovy:prod_mfgid); default(""); stop(unless=>$_); format(pretext=>"<div class='prodMfgid'><span class='prompt'>Mfg Id:</span><span class='value'>",posttext=>"</span></div>"); print(); %>
+
+	<% print(""); load($zoovy:prod_upc); default(""); stop(unless=>$_); format(pretext=>"<div class='prodUPC'><span class='prompt'>UPC: </span><span class='value'>",posttext=>"</span></div>"); print(); %>
+
+	<% print(""); load($zoovy:isbn); default(""); stop(unless=>$_); format(pretext=>"<div class='prodISBN'><span class='prompt'>ISBN: </span><span class='value'>",posttext=>"</span></div>"); print(); %>
+
+</div>
+	
+	</div>
+	</td>
+
+</tr>
+</table>
+
+
+	</div>
+</div>
+
+<!-- /PRODUCT -->
+<!-- /ROW -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MIDDLE_OF_PAGE" HEIGHT="150" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_top" WIDTH="780" PROMPT="Banner: below featured item" TYPE="BANNER" BGCOLOR="TTTTTT"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class='banner elementMargin center'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description (keep this short)" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div class='ztxt elementMargin'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST_CONT" MAX="12" MULTIPAGE="0" DATA="page:prodlist_custom" COLS="4" FORMAT="CUSTOM" PROMPT="Product List" HELPER="Multipage is disabled for this product list. A max of 12 items will show up." PRODUCTS_SKIP="1" DEFAULT="&amp;ALTERNATE=3" TYPE="PRODLIST"><HTML><![CDATA[
+
+<div id='prodlistMoreItems' class='prodlist4Columns elementMargin'>
+
+	<div id='prodlistMoreHeaderOutside'></div><!-- use CSS to populate -->
+
+	<div class='prodlist'>
+
+		<div id='prodlistMoreHeaderInside'></div>
+
+<table>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+
+	<td class='ztable_row ztable_row<% print($row.alt); %> ztable_col<%
+/* outputs the rowid then the column id so that each column can have a different class.  Will alternate every other row */
+load($COUNT); math(op=>"mod",var=>"4");	 print(); %>'>
+	<div class='prodContainer'>
+
+<a href='<% print($PROD_URL); %>' title="<% load($zoovy:prod_name); default(""); format(encode=>"entity"); print(); %>">
+<% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"140",h=>"140",tag=>"1",alt=>$zoovy:prod_name);  print(); %>
+</a>
+
+<div class='prodName'>
+<% load($zoovy:prod_name); default(""); print(); %>
+</div>
+
+<%
+print("");
+set($className=>"basePrice");
+load($is:sale); default("");
+	goto(label=>"SHOWPRICE",ne=>"1");
+	set($className=>"basePrice salePrice");
+:SHOWPRICE();
+
+print("<div class='"); print($className); print("'>");
+load($zoovy:base_price); default("");
+format(money,skipblank=>"1");
+	format(pretext=>"<span class='prompt'></span><span class='ztable_row_title value'>",posttext=>"</span>");
+	print();
+print("</div>");
+%>
+
+<div class='buttons'>
+
+	<button title='more info' class='zform_button zform_atc_button' onClick="document.location = '<%
+load($POGS); default("");
+goto(label=>"HASPOGSORCHILDREN",ne=>"");
+load($zoovy:grp_type); default("");
+goto(label=>"HASPOGSORCHILDREN",eq=>"PARENT");
+	print($ADD_URL);
+	stop();
+	
+:HASPOGSORCHILDREN();
+	print($PROD_URL);
+%>'" title='add to cart'>Add to Cart</button>
+
+	<button class='zform_button' onClick="document.location = '<% print($PROD_URL); %>';">More Details</button>
+
+</div>
+
+	</td>
+
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td class='ztable_row ztable_row<% print($row.alt); %>'></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+
+	</div>
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION2" WIKI="3" EDITOR="INLINE" DATA="page:description2" PROMPT="Text Description" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div class='ztxt elementMargin'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="DGEJNXO" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+</div>
+
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=rednorange
+SITEBUTTONS=l2_schmoop
+-->
+<html>
+<head>
+	<!-- HEAD -->
+
+<style rel="STYLESHEET" type="text/css">
+<!--
+A:hover { text-decoration: underline; 
+	color: #FFB356; }
+-->
+</style>
+</head>
+<body leftmargin=0 rightmargin=0 topmargin=0 marginheight=0 marginwidth=0 text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!-- LINK_VISITED_TEXT_COLOR -->">
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>	
+		<td width=20% background="<!-- WRAPPER_URL -->/light.gif"><img src="<!-- WRAPPER_URL -->/light.gif" height=8 width=1></td>
+		<td width=60% background="<!-- WRAPPER_URL -->/light.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+		<td width=20% background="<!-- WRAPPER_URL -->/light.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+	</tr><tr>
+		<td background="<!-- WRAPPER_URL -->/light.gif"><img src="<!-- WRAPPER_URL -->/light.gif" height=75 width=1></td>
+		<td background="<!-- WRAPPER_URL -->/light.gif" align="center"><!-- LOGO
+WIDTH=400
+HEIGHT=75
+--></td>
+		<td background="<!-- WRAPPER_URL -->/light.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+	</tr><tr>	
+		<td background="<!-- WRAPPER_URL -->/light.gif"><img src="<!-- WRAPPER_URL -->/light.gif" height=8 width=1></td>
+		<td background="<!-- WRAPPER_URL -->/light.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+		<td background="<!-- WRAPPER_URL -->/light.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+	</tr>
+</table><table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>	
+		<td width=20% background="<!-- WRAPPER_URL -->/dark.gif"><img src="<!-- WRAPPER_URL -->/dark.gif" height=5 width=1></td>
+		<td width=60% background="<!-- WRAPPER_URL -->/dark.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+		<td width=20% background="<!-- WRAPPER_URL -->/dark.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+	</tr><tr>
+		<td background="<!-- WRAPPER_URL -->/dark.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+		<td background="<!-- WRAPPER_URL -->/dark.gif" align="center">
+			<table cellspacing=0 cellpadding=0 border=0>
+				<tr>
+					<td><a href="<!--HOME_URL-->"><font face="arial"><strong>HOME</strong></a></td>
+					<td width=21 align="center"><font color="#FFFFFF">|</font></td>
+					<td><a href="<!--ABOUT_URL-->"><font face="arial"><strong>ABOUT US</strong></a></td>
+					<td width=21 align="center"><font color="#FFFFFF">|</td>
+					<td><a href="<!--CONTACT_URL-->"><font face="arial"><strong>CONTACT US</strong></a></td>
+					<td width=21 align="center"><font color="#FFFFFF">|</td>
+					<td><a href="<!--SEARCH_URL-->"><font face="arial"><strong>SEARCH</strong></a></td>
+					<td width=21 align="center"><font color="#FFFFFF">|</td>
+					<td><a href="<!--CART_URL-->"><font face="arial"><strong>CART</strong></a></td>
+				</tr>
+			</table>
+		</td>
+		<td background="<!-- WRAPPER_URL -->/dark.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+	</tr><tr>	
+		<td background="<!-- WRAPPER_URL -->/dark.gif"><img src="<!-- WRAPPER_URL -->/dark.gif" height=5 width=1></td>
+		<td background="<!-- WRAPPER_URL -->/dark.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+		<td background="<!-- WRAPPER_URL -->/dark.gif"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+	</tr>
+</table><table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td width=5><img src="<!-- GRAPHICS_URL -->/blank.gif" width=5 height=1></td>
+		<td width=20% valign="top" align="left"><br><!-- MENU 
+					FORMAT=<strong><a href="%URL%"><font face="arial" size=2>%MESSAGE%</font></a><br><br> 
+					--></font></td>
+		<td width=5><img src="<!-- GRAPHICS_URL -->/blank.gif" width=10 height=1></td>
+		<td width=80% valign="top" align="left"><br><font color="#C31200" face="arial" size=3><b><!-- TITLE --></b></font><br><br><!-- BODY --><br><p><!-- FOOTER --></p></td>
+		<td width=5><img src="<!-- GRAPHICS_URL -->/blank.gif" width=10 height=1></td>
+		<td width=20% valign="top" align="right"><!-- SIDEBAR --></td>
+		<td width=5><img src="<!-- GRAPHICS_URL -->/blank.gif" width=3 height=1></td>
+	</tr>
+</table>
+</body>
+</html>

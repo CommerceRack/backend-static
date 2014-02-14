@@ -1,0 +1,49 @@
+<TEMPLATE ID="41" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLWJ" FORMAT="LAYOUT" SHORT="This return policy uses a 560x100 graphic." TYPE="CONFIG" CREATED="00000000" IMAGES="1" TITLE="Return with Picture" PROPERTIES="1" RELEASED="20020826" SUBTYPE="R"><SUMMARY><![CDATA[Company Name
+IMAGEe (560x100)
+Return Policy
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKLWK" TYPE="OUTPUT"><HTML><![CDATA[<center>
+<table> 
+        <tr>
+                <td align=center width="560">
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="100" ID="RETURNS_PIC" WIDTH="560" PROMPT="Wide Page Picture" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE" HELP="Please select a wide picture for your site." DATA="merchant:zoovy:returns_picture"></ELEMENT>
+<ELEMENT ID="CPUKLWL" TYPE="OUTPUT"><HTML><![CDATA[
+ 
+                </td>
+        </tr>
+        <tr>
+                <td align=center>
+&nbsp;<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="COMPANYNAME" LENGTH="75" PROMPT="Company Name" DEFAULT="Northwind Traders" TYPE="TEXTBOX" HELP="Please enter your company name as it should appear throughout your site" DATA="merchant:zoovy:company_name"></ELEMENT>
+<ELEMENT ID="CPUKLWM" TYPE="OUTPUT"><HTML><![CDATA[
+</font></b></center>
+	</td></tr>
+	<tr><td>
+
+Return Policy:<br>
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="POLICY" PROMPT="Return Policy" TYPE="TEXT" HELP="Please enter a Return Policy that will appear on your website." DATA="merchant:zoovy:return_policy"><DEFAULT><![CDATA[We will accept postage paid returns only after a return merchandise authorization has been obtained, items must be in original packaging. A 10% re-stocking fee will be applied after 24 hours of receiving the delivery.]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CPUKLWN" TYPE="OUTPUT"><HTML><![CDATA[
+
+</td></tr>
+</table>
+</center>
+<br>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

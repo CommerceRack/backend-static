@@ -1,0 +1,27 @@
+<TEMPLATE NAME="GREYSTOKE">
+
+<DIV NAME="MAIN">
+<INPUT SUB="COMPANY_LOGO" HEIGHT="70" WIDTH="400" BGCOLOR="ffffff" TYPE="IMAGE" NAME="product:zoovy:company_logo" PROMPT="Company Logo (300x120"></INPUT>
+<INPUT COLS="100" SUB="PRODUCT_NAME" TYPE="TEXTBOX" NAME="product:zoovy:prod_name" PROMPT="Product Name"></INPUT>
+<INPUT SUB="IMAGE1" HEIGHT="320" WIDTH="200" TYPE="IMAGE" NAME="product:zoovy:prod_image1" PROMPT="Left Image (200x320)"></INPUT>
+<INPUT SUB="IMAGE2" HEIGHT="320" WIDTH="200" TYPE="IMAGE" NAME="product:zoovy:prod_image2" PROMPT="Left Image (200x320)"></INPUT>
+<INPUT SUB="IMAGE3" HEIGHT="320" WIDTH="200" TYPE="IMAGE" NAME="product:zoovy:prod_image3" PROMPT="Left Image (200x320)"></INPUT>
+<INPUT COLS="80" ROWS="5" SUB="PRODUCT_DESCRIPTION" TYPE="TEXTAREA" NAME="product:zoovy:prod_desc" PROMPT="Product Description"></INPUT>
+<INPUT COLS="80" ROWS="5" SUB="PRODUCT_CONDITION" TYPE="TEXTAREA" NAME="product:zoovy:prod_cond" PROMPT="Product Condition"></INPUT>
+<INPUT COLS="80" ROWS="5" SUB="OPTION1" TYPE="TEXTAREA" NAME="product:zoovy:option1" PROMPT="Additional Information (optional)"></INPUT>
+<INPUT COLS="100" SUB="COMPANY_NAME" TYPE="TEXTBOX" NAME="merchant:zoovy:company_name" PROMPT="Company Name"></INPUT>
+<INPUT COLS="50" SUB="SUPPORT_PHONE" TYPE="TEXTBOX" NAME="merchant:zoovy:support_phone" PROMPT="Support Phone"></INPUT>
+<INPUT COLS="50" SUB="SUPPORT_EMAIL" TYPE="TEXTBOX" NAME="merchant:zoovy:support_email" PROMPT="Support Email"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="ABOUT_US" TYPE="TEXTAREA" NAME="merchant:zoovy:about_us" PROMPT="About us"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="PAYMENT_OPTIONS" TYPE="TEXTAREA" NAME="merchant:zoovy:payment_options" PROMPT="Store Payment Options"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="SHIPPING_POLICY" TYPE="TEXTAREA" NAME="merchant:zoovy:shipping_policy" PROMPT="Shipping Options"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="SHIPPING_RATE" TYPE="TEXTAREA" NAME="merchant:zoovy:shipping_rate" PROMPT="Shipping Rate"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="SHIP_TO" TYPE="TEXTAREA" NAME="merchant:zoovy:ship_to" PROMPT="Ship To"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="SALES_TAX" TYPE="TEXTAREA" NAME="merchant:zoovy:sales_tax" PROMPT="Sales Tax"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="CS_POLICY" TYPE="TEXTAREA" NAME="merchant:zoovy:cs_policy" PROMPT="Customer Service Policy"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="PAYMENT_POLICY" TYPE="TEXTAREA" NAME="merchant:zoovy:payment_policy" PROMPT="Store Payment Policy"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="RETURN_POLICY" TYPE="TEXTAREA" NAME="merchant:zoovy:return_policy" PROMPT="Store Return Policy"></INPUT>
+<INPUT COLS="100" SUB="OPTION2" TYPE="TEXTBOX" NAME="merchant:zoovy:option2" PROMPT="Text that will appear under bottom logo"></INPUT>
+</DIV>
+
+</TEMPLATE>

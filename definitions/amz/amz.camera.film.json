@@ -1,0 +1,315 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "Film",
+      "subcat" : "film",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:Film",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWOU",
+      "xmlpath" : "CameraPhoto.ProductType.Film."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "black-and-white",
+            "v" : "black-and-white"
+         },
+         {
+            "p" : "color",
+            "v" : "color"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_film_filmcolor",
+      "title" : "Film Film Color",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Film.FilmColor",
+      "list" : "LIST_CAMERA_FILM_FILMCOLOR"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "print",
+            "v" : "print"
+         },
+         {
+            "p" : "slide",
+            "v" : "slide"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_film_filmtype",
+      "title" : "Film Film Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Film.FilmType",
+      "list" : "LIST_CAMERA_FILM_FILMTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "35mm",
+            "v" : "35mm"
+         },
+         {
+            "p" : "70mm",
+            "v" : "70mm"
+         },
+         {
+            "p" : "110",
+            "v" : "110"
+         },
+         {
+            "p" : "120",
+            "v" : "120"
+         },
+         {
+            "p" : "220",
+            "v" : "220"
+         },
+         {
+            "p" : "2x3",
+            "v" : "2x3"
+         },
+         {
+            "p" : "4x5",
+            "v" : "4x5"
+         },
+         {
+            "p" : "5x7",
+            "v" : "5x7"
+         },
+         {
+            "p" : "8x10",
+            "v" : "8x10"
+         },
+         {
+            "p" : "11x14",
+            "v" : "11x14"
+         },
+         {
+            "p" : "aps",
+            "v" : "aps"
+         },
+         {
+            "p" : "micro",
+            "v" : "micro"
+         },
+         {
+            "p" : "instant",
+            "v" : "instant"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_film_format",
+      "title" : "Film Format",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Film.Format",
+      "list" : "LIST_CAMERA_FILM_FORMAT"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "up-to-99",
+            "v" : "up-to-99"
+         },
+         {
+            "p" : "100",
+            "v" : "100"
+         },
+         {
+            "p" : "125",
+            "v" : "125"
+         },
+         {
+            "p" : "160",
+            "v" : "160"
+         },
+         {
+            "p" : "200",
+            "v" : "200"
+         },
+         {
+            "p" : "320",
+            "v" : "320"
+         },
+         {
+            "p" : "400",
+            "v" : "400"
+         },
+         {
+            "p" : "above-401",
+            "v" : "above-401"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_film_asa-iso",
+      "title" : "Film A S A - I S O",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Film.ASA-ISO",
+      "list" : "LIST_CAMERA_FILM_ASA-ISO"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "12-exposure",
+            "v" : "12-exposure"
+         },
+         {
+            "p" : "24-exposure",
+            "v" : "24-exposure"
+         },
+         {
+            "p" : "36-exposure",
+            "v" : "36-exposure"
+         },
+         {
+            "p" : "other-exposure-count",
+            "v" : "other-exposure-count"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_film_exposurecnt",
+      "title" : "Film Exposure Count",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Film.ExposureCount",
+      "list" : "LIST_CAMERA_FILM_EXPOSURECOUNT"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "daylight",
+            "v" : "daylight"
+         },
+         {
+            "p" : "infrared",
+            "v" : "infrared"
+         },
+         {
+            "p" : "tungsten",
+            "v" : "tungsten"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_film_lightingtype",
+      "title" : "Film Lighting Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Film.LightingType",
+      "list" : "LIST_CAMERA_FILM_LIGHTINGTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cp_platinumkwords_10",
+      "type" : "textbox",
+      "title" : "Platinum Keywords_10"
+   }
+]

@@ -1,0 +1,97 @@
+<table cellspacing=0 cellpadding=0 border=0 width=100%><tr>
+<td background="http://static.zoovy.com/merchant/gkworld/section_bg.gif" width=174 valign="top"><ELEMENT TYPE="IMAGE" NAME="PIC1">
+PRETTY=Small Picture
+ABOUT=Please select a picture for this category.
+DEFAULT=https://static.zoovy.com/img/H100-W100-Z1/zoovy_logo
+HEIGHT=73
+WIDTH=174
+SAVETO=page:picture1
+</ELEMENT></td>
+<td background="http://static.zoovy.com/merchant/gkworld/section_bg.gif" align="center" valign="top">
+<table cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=70 valign="top"><a href="http://gkworld.zoovy.com/category/consoles"><img src="http://static.zoovy.com/merchant/gkworld/sub_console_ps2.gif" width=70 height=64 border=0 alt="Consoles"></a></td>
+<td width=12></td>
+<td width=70 valign="top"><a href="http://gkworld.zoovy.com/category/control"><img src="http://static.zoovy.com/merchant/gkworld/sub_control_ps.gif" width=70 height=64 border=0 alt="Controllers"></a></td>
+<td width=12></td>
+<td width=70 valign="top"><a href="http://gkworld.zoovy.com/category/accessories"><img src="http://static.zoovy.com/merchant/gkworld/sub_accessory.gif" width=70 height=64 border=0 alt="Accessories"></a></td>
+<td width=12></td>
+<td width=70 valign="top"><a href="http://gkworld.zoovy.com/category/guides"><img src="http://static.zoovy.com/merchant/gkworld/sub_guides.gif" width=70 height=64 border=0 alt="Game Guides"></a></td>
+<td width=12></td>
+</tr></table></td>
+<td background="http://static.zoovy.com/merchant/gkworld/section_bg.gif" width=174 align="right" valign="top"><a href='http://server.iad.liveperson.net/hc/41523965/?cmd=file&file=visitorWantsToChat&site=41523965&byhref=1' target='chat41523965' onClick="javascript:window.open('http://server.iad.liveperson.net/hc/41523965/?cmd=file&file=visitorWantsToChat&site=41523965&referrer='+document.location,'chat41523965','width=472,height=320');return false;"><img src="http://static.zoovy.com/merchant/gkworld/chat_icon.gif" name="hcIcon" border="0" alt="Click here for Live Help"></a></td>
+</tr></table>
+<table cellspacing=0 cellpadding=4 border=0 width=740>
+<tr>
+	<td width=150 valign="top">
+	<table cellspacing=0 cellpadding=0 border=0>
+	<tr>
+		<td colspan=2><img src="http://static.zoovy.com/merchant/gkworld/cart_head.gif" width="150" height="20" alt="" border="0"></td>
+	</tr><tr>
+		<td width=74 class="desc" bgcolor="#e9eaec">Items:</td>
+		<td bgcolor="#e9eaec"><ELEMENT TYPE="MINICART" NAME="MINICART">
+CSSCLASS=desc
+ITEMSONLY=1
+</ELEMENT></td>
+	</tr><tr>
+		<td colspan=2 background="http://static.zoovy.com/merchant/gkworld/greydash.gif" height=1></td>
+	</tr><tr>
+		<td width=74 class="desc" bgcolor="#e9eaec">Subtotal:</td>
+		<td bgcolor="#e9eaec"><ELEMENT TYPE="MINICART" NAME="MINICART">
+CSSCLASS=desc
+SUBTOTALONLY=1
+</ELEMENT></td>
+	</tr><tr>
+		<td colspan=2><a href="/checkout.cgis"><img src="http://static.zoovy.com/merchant/gkworld/cart_checkout.gif" border=0></a></td>
+	</tr>
+	</table>
+	<br><br>
+<ELEMENT TYPE="SUBCAT" NAME="SUBCAT">
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a><br>
+FONTCOLOR=#000000
+FONTFACE=arial
+FONTSIZE=1
+NOHOME=1
+</ELEMENT>
+</td>
+	<td>
+<ELEMENT TYPE="PRODLIST" NAME="PRODLIST1">
+PRETTY=Product Listing
+ABOUT=You can add products to your homepage, when you do they will appear below.
+SAVETO=page:prodlist
+MULTIPAGE=1
+DEFAULT=CUSTOM,1,2,NONE
+FORCECOLUMNS=1
+FORCEFORMAT=1
+<HTML>=
+<table border="0" width="600" cellpadding="2" cellspacing="0">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+
+<td align="center" valign="top" width="600"><a href="%PROD_URL%">%zoovy:prod_thumb/default-zoovy:prod_image1/image-w:92-h:65-alt:prod_name%</a></td>
+	<td align="left" width=400 valign="top"><form action="http://gkworld.zoovy.com/cart.cgis" method="get"><input type="hidden" name="product_id" value="%PRODUCT_ID%"><input type="hidden" name="add" value="yes">
+	<table cellspacing=1 border=0 width=500 cellpadding=0>
+	<tr>
+		<td width=400><span class="miniproduct"><a href="%PROD_URL%">%zoovy:prod_name%</a></span></td>
+		<td width=100 align="right"><span class="miniproduct"><strong>%zoovy:base_price/money%</strong></span></td>
+	</tr><tr>
+		<td colspan=2><span class="desc">%zoovy:prod_desc/strip-150-1%</span></td>
+	</tr><tr>
+		<td colspan=2  background="http://static.zoovy.com/merchant/gkworld/feature_bg2.gif">
+		<table cellspacing=0 cellpadding=0 border=0><tr>
+		<td><a href="%PROD_URL%"><img src="http://static.zoovy.com/merchant/gkworld/option_details.gif" border=0 alt="details"></a></td>
+		<td><input type="image" src="http://static.zoovy.com/merchant/gkworld/ship_addtocart.gif" border="0" alt="Add to Cart"></td>
+		</tr></table></td></tr>
+</table></form>
+</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td width="%COLWIDTH%"%bg%> </td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+</HTML>=
+</ELEMENT>
+</td><td></td></tr></table>

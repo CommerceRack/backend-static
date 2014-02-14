@@ -1,0 +1,1526 @@
+[
+   {
+      "catalog" : "CLOTHING",
+		"amz-catalog" : "ClothingAccessories",
+      "amz-subcat" : null,
+      "subcat" : null,
+      "type" : "config",
+		"variation-themes" : "Size+Color,SizeColor,Size,Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "amz:prod_cloth_cd_parentage",
+      "xmlpath" : "ClothingAccessories.VariationData.Parentage"
+   },
+   {
+      "amz_attrib" : "Size",
+      "xmlpath" : "ClothingAccessories.VariationData.Size",
+      "ns" : "product",
+		"title" : "Size",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "id" : "amz:prod_size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:size",
+		"vkey" : "Size",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "ClothingAccessories.VariationData.Size"
+   },
+   {
+      "amz_attrib" : "Color",
+      "xmlpath" : "ClothingAccessories.VariationData.Color",
+      "ns" : "product",
+		"title" : "Product Color",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "id" : "amz:prod_color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "ClothingAccessories.VariationData.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "ClothingAccessories.VariationData.VariationTheme"
+   },
+   {
+      "PROMPT" : "CLOTHING",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQVVN",
+		"amz-allow-blank" : "Y",
+      "xmlpath" : "ClothingAccessories.ClassificationData."
+   },
+   {
+      "ns" : "product",
+      "amz-attr" : "search-terms",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "mens",
+            "v" : "mens"
+         },
+         {
+            "p" : "womens",
+            "v" : "womens"
+         },
+         {
+            "p" : "boys",
+            "v" : "boys"
+         },
+         {
+            "p" : "girls",
+            "v" : "girls"
+         },
+         {
+            "p" : "baby-boys",
+            "v" : "baby-boys"
+         },
+         {
+            "p" : "baby-girls",
+            "v" : "baby-girls"
+         },
+         {
+            "p" : "unisex-adult",
+            "v" : "unisex-adult"
+         },
+         {
+            "p" : "unisex-child",
+            "v" : "unisex-child"
+         },
+         {
+            "p" : "unisex-baby",
+            "v" : "unisex-baby"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.Department",
+      "ns" : "product",
+      "amz-attr" : "department",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_dpt",
+      "type" : "select",
+		"mandatory" : "Y",
+      "title" : "Department",
+      "amz-max-length" : 49,
+		"amz-min-length" : 1
+   },
+   {
+      "amz-attr" : "item-type",
+      "ns" : "product",
+      "title" : "Item Type",
+      "type" : "textbox",
+      "id" : "amz:prod_cloth_cd_itemtype"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Beige",
+            "v" : "Beige"
+         },
+         {
+            "p" : "Black",
+            "v" : "Black"
+         },
+         {
+            "p" : "Blue",
+            "v" : "Blue"
+         },
+         {
+            "p" : "Bronze",
+            "v" : "Bronze"
+         },
+         {
+            "p" : "Brown",
+            "v" : "Brown"
+         },
+         {
+            "p" : "Gold",
+            "v" : "Gold"
+         },
+         {
+            "p" : "Green",
+            "v" : "Green"
+         },
+         {
+            "p" : "Grey",
+            "v" : "Grey"
+         },
+         {
+            "p" : "Metallic",
+            "v" : "Metallic"
+         },
+			{
+				"p" : "Multi",
+				"v" : "Multi"
+			},
+         {
+            "p" : "Off-White",
+            "v" : "Off-White"
+         },
+         {
+            "p" : "Orange",
+            "v" : "Orange"
+         },
+         {
+            "p" : "Pink",
+            "v" : "Pink"
+         },
+         {
+            "p" : "Purple",
+            "v" : "Purple"
+         },
+         {
+            "p" : "Red",
+            "v" : "Red"
+         },
+         {
+            "p" : "Silver",
+            "v" : "Silver"
+         },
+         {
+            "p" : "Transparent",
+            "v" : "Transparent"
+         },
+         {
+            "p" : "Turquoise",
+            "v" : "Turquoise"
+         },
+         {
+            "p" : "White",
+            "v" : "White"
+         },
+         {
+            "p" : "Yellow",
+            "v" : "Yellow"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.ColorMap",
+      "ns" : "product",
+      "amz-attr" : "color-map",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_colormap",
+      "type" : "select",
+      "title" : "Color Map"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Carry-On",
+            "v" : "Carry-On"
+         },
+         {
+            "p" : "Tsa Lock",
+            "v" : "Tsa Lock"
+         },
+         {
+            "p" : "Tsa Ready",
+            "v" : "Tsa Ready"
+         },
+         {
+            "p" : "Lightweight",
+            "v" : "Lightweight"
+         },
+         {
+            "p" : "Checkpoint Friendly",
+            "v" : "Checkpoint Friendly"
+         },
+         {
+            "p" : "Built In Scale",
+            "v" : "Built In Scale"
+         },
+         {
+            "p" : "Reversible",
+            "v" : "Reversible"
+         },
+         {
+            "p" : "Adjustable",
+            "v" : "Adjustable"
+         },
+         {
+            "p" : "Wrinkle-Free",
+            "v" : "Wrinkle-Free"
+         },
+         {
+            "p" : "Elastic Band",
+            "v" : "Elastic Band"
+         },
+         {
+            "p" : "Sun Protection",
+            "v" : "Sun Protection"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.SpecialFeature",
+      "ns" : "product",
+      "amz-attr" : "special-feature1",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_specialfeature",
+      "type" : "select",
+      "title" : "Special Feature"
+   },
+   {
+      "amz-attr" : "material-and-fabric",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "title" : "Material And Fabric",
+		"max-allowed-lines" : "4",
+      "id" : "amz:prod_cloth_cd_matlandfabric",
+      "xmlpath" : "ClothingAccessories.ClassificationData.MaterialAndFabric"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Ultra Sheer",
+            "v" : "Ultra Sheer"
+         },
+         {
+            "p" : "Sheer",
+            "v" : "Sheer"
+         },
+         {
+            "p" : "Semi Opaque",
+            "v" : "Semi Opaque"
+         },
+         {
+            "p" : "Opaque",
+            "v" : "Opaque"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.MaterialOpacity",
+      "ns" : "product",
+      "amz-attr" : "material-opacity",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_materialopacity",
+      "type" : "select",
+      "title" : "Material Opacity"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Light",
+            "v" : "Light"
+         },
+         {
+            "p" : "Medium",
+            "v" : "Medium"
+         },
+         {
+            "p" : "Dark",
+            "v" : "Dark"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.FabricWash",
+      "ns" : "product",
+      "amz-attr" : "fabric-wash",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_fabricwash",
+      "type" : "select",
+      "title" : "Fabric Wash"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Checkered",
+            "v" : "Checkered"
+         },
+         {
+            "p" : "Paisley",
+            "v" : "Paisley"
+         },
+         {
+            "p" : "Patterned",
+            "v" : "Patterned"
+         },
+         {
+            "p" : "Polka Dots",
+            "v" : "Polka Dots"
+         },
+         {
+            "p" : "Solid",
+            "v" : "Solid"
+         },
+         {
+            "p" : "Stripes",
+            "v" : "Stripes"
+         },
+         {
+            "p" : "Plaid",
+            "v" : "Plaid"
+         },
+         {
+            "p" : "String",
+            "v" : "String"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.PatternStyle",
+      "ns" : "product",
+      "amz-attr" : "pattern-style",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_patternstyle",
+      "type" : "select",
+      "title" : "Pattern Style"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Slim",
+            "v" : "Slim"
+         },
+         {
+            "p" : "Regular",
+            "v" : "Regular"
+         },
+         {
+            "p" : "Relaxed",
+            "v" : "Relaxed"
+         },
+         {
+            "p" : "Stretch",
+            "v" : "Stretch"
+         },
+         {
+            "p" : "Skinny",
+            "v" : "Skinny"
+         },
+         {
+            "p" : "Loose",
+            "v" : "Loose"
+         },
+         {
+            "p" : "Western",
+            "v" : "Western"
+         },
+         {
+            "p" : "Overall",
+            "v" : "Overall"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.FitType",
+      "ns" : "product",
+      "amz-attr" : "fit-type",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_fittype",
+      "type" : "select",
+      "title" : "Fit Type"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "not_water_resistant",
+            "v" : "not_water_resistant"
+         },
+         {
+            "p" : "water_resistant",
+            "v" : "water_resistant"
+         },
+         {
+            "p" : "waterproof",
+            "v" : "waterproof"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.WaterResistanceLevel",
+      "ns" : "product",
+      "amz-attr" : "water-resistance-level",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_waterreslevel",
+      "type" : "select",
+      "title" : "Water Resistance Level"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Round Classic Ring",
+            "v" : "Round Classic Ring"
+         },
+         {
+            "p" : "Square Classic Ring",
+            "v" : "Square Classic Ring"
+         },
+         {
+            "p" : "Flat Solid Buckle",
+            "v" : "Flat Solid Buckle"
+         },
+         {
+            "p" : "D Ring",
+            "v" : "D Ring"
+         },
+         {
+            "p" : "Double D Ring",
+            "v" : "Double D Ring"
+         },
+         {
+            "p" : "Hook & Eye",
+            "v" : "Hook & Eye"
+         },
+         {
+            "p" : "Snaps",
+            "v" : "Snaps"
+         },
+         {
+            "p" : "Zipper",
+            "v" : "Zipper"
+         },
+         {
+            "p" : "Button Fly",
+            "v" : "Button Fly"
+         },
+         {
+            "p" : "Pull On",
+            "v" : "Pull On"
+         },
+         {
+            "p" : "Drawstring",
+            "v" : "Drawstring"
+         },
+         {
+            "p" : "Elastic",
+            "v" : "Elastic"
+         },
+         {
+            "p" : "Self Tie",
+            "v" : "Self Tie"
+         },
+         {
+            "p" : "Velcro",
+            "v" : "Velcro"
+         },
+         {
+            "p" : "J-Clip",
+            "v" : "J-Clip"
+         },
+         {
+            "p" : "Button-End",
+            "v" : "Button-End"
+         },
+         {
+            "p" : "Snap On",
+            "v" : "Snap On"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.ApparelClosureType",
+      "ns" : "product",
+      "amz-attr" : "apparel-closure-type",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_apparelclosuretype",
+      "type" : "select",
+      "title" : "apparel closure type"
+   },
+   {
+      "amz-attr" : "button-quantity",
+      "ns" : "product",
+      "amz-format" : "Number",
+      "title" : "Button Quantity",
+      "type" : "textbox",
+      "id" : "amz:prod_cloth_cd_buttonqty",
+      "xmlpath" : "ClothingAccessories.ClassificationData.ButtonQuantity"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Light",
+            "v" : "Light"
+         },
+         {
+            "p" : "Medium",
+            "v" : "Medium"
+         },
+         {
+            "p" : "Maximum",
+            "v" : "Maximum"
+         },
+         {
+            "p" : "Moderate",
+            "v" : "Moderate"
+         },
+         {
+            "p" : "Firm",
+            "v" : "Firm"
+         },
+         {
+            "p" : "Extra Firm",
+            "v" : "Extra Firm"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.ControlType",
+      "ns" : "product",
+      "amz-attr" : "control-type",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_ctrltype",
+      "type" : "select",
+      "title" : "Control Type"
+   },
+   {
+      "amz-attr" : "occasion-and-lifestyle",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "title" : "Occasion And Lifestyle",
+      "id" : "amz:prod_cloth_cd_occandlife",
+      "xmlpath" : "ClothingAccessories.ClassificationData.OccasionAndLifestyle"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Full Coverage",
+            "v" : "Full Coverage"
+         },
+         {
+            "p" : "Demi",
+            "v" : "Demi"
+         },
+         {
+            "p" : "Balconette",
+            "v" : "Balconette"
+         },
+         {
+            "p" : "Plunge",
+            "v" : "Plunge"
+         },
+         {
+            "p" : "Push-Up",
+            "v" : "Push-Up"
+         },
+         {
+            "p" : "Seamless",
+            "v" : "Seamless"
+         },
+         {
+            "p" : "Padded",
+            "v" : "Padded"
+         },
+         {
+            "p" : "Molded",
+            "v" : "Molded"
+         },
+         {
+            "p" : "Soft",
+            "v" : "Soft"
+         },
+         {
+            "p" : "Double-Breasted",
+            "v" : "Double-Breasted"
+         },
+         {
+            "p" : "Classic",
+            "v" : "Classic"
+         },
+         {
+            "p" : "Modern/Fitted",
+            "v" : "Modern/Fitted"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.StyleName",
+      "ns" : "product",
+      "amz-attr" : "style-name",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_stylename",
+      "type" : "select",
+      "title" : "Style Name"
+   },
+   {
+      "ns" : "product",
+      "amz-attr" : "collar-type",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Mandarin Collar",
+            "v" : "Mandarin Collar"
+         },
+         {
+            "p" : "Spread",
+            "v" : "Spread"
+         },
+         {
+            "p" : "Cutaway",
+            "v" : "Cutaway"
+         },
+         {
+            "p" : "Point",
+            "v" : "Point"
+         },
+         {
+            "p" : "Button-Down",
+            "v" : "Button-Down"
+         }
+      ],
+      "id" : "amz:prod_cloth_cd_collartype",
+      "type" : "select",
+      "title" : "collar type"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Short Sleeve",
+            "v" : "Short Sleeve"
+         },
+         {
+            "p" : "Long Sleeve",
+            "v" : "Long Sleeve"
+         },
+         {
+            "p" : "Sleeveless",
+            "v" : "Sleeveless"
+         },
+         {
+            "p" : "3/4 Sleeve",
+            "v" : "3/4 Sleeve"
+         },
+         {
+            "p" : "Cap Sleeve",
+            "v" : "Cap Sleeve"
+         },
+         {
+            "p" : "Tanks",
+            "v" : "Tanks"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.SleeveType",
+      "ns" : "product",
+      "amz-attr" : "sleeve-type",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_sleevetype",
+      "type" : "select",
+      "title" : "sleeve type"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "French",
+            "v" : "French"
+         },
+         {
+            "p" : "Barrel",
+            "v" : "Barrel"
+         },
+         {
+            "p" : "Single",
+            "v" : "Single"
+         },
+         {
+            "p" : "Cuffed",
+            "v" : "Cuffed"
+         },
+         {
+            "p" : "Convertible",
+            "v" : "Convertible"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.CuffType",
+      "ns" : "product",
+      "amz-attr" : "cuff-type",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_cufftype",
+      "type" : "select",
+      "title" : "Cuff Type"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Basic 5 Pckt",
+            "v" : "Basic 5 Pckt"
+         },
+         {
+            "p" : "Pork Chop Pocket",
+            "v" : "Pork Chop Pocket"
+         },
+         {
+            "p" : "Slant Pocket",
+            "v" : "Slant Pocket"
+         },
+         {
+            "p" : "Utility Pocket",
+            "v" : "Utility Pocket"
+         },
+         {
+            "p" : "Cargo",
+            "v" : "Cargo"
+         },
+         {
+            "p" : "Carpenter",
+            "v" : "Carpenter"
+         },
+         {
+            "p" : "Back Flap Pocket",
+            "v" : "Back Flap Pocket"
+         },
+         {
+            "p" : "Slit Pocket",
+            "v" : "Slit Pocket"
+         },
+         {
+            "p" : "No Back Pocket",
+            "v" : "No Back Pocket"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.PocketDescription",
+      "ns" : "product",
+      "amz-attr" : "pocket-description",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_pocketdesc",
+      "type" : "select",
+      "title" : "Pocket Description"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Pleated",
+            "v" : "Pleated"
+         },
+         {
+            "p" : "Flat Front",
+            "v" : "Flat Front"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.FrontPleatType",
+      "ns" : "product",
+      "amz-attr" : "front-pleat-type",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_frontpltype",
+      "type" : "select",
+      "title" : "Front Pleat Type"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Strapless/Tube",
+            "v" : "Strapless/Tube"
+         },
+         {
+            "p" : "Halter",
+            "v" : "Halter"
+         },
+         {
+            "p" : "Tank",
+            "v" : "Tank"
+         },
+         {
+            "p" : "Racerback",
+            "v" : "Racerback"
+         },
+         {
+            "p" : "Cami",
+            "v" : "Cami"
+         },
+         {
+            "p" : "Button Down",
+            "v" : "Button Down"
+         },
+         {
+            "p" : "One Shoulder",
+            "v" : "One Shoulder"
+         },
+         {
+            "p" : "Bandeaux",
+            "v" : "Bandeaux"
+         },
+         {
+            "p" : "Triangle Tops",
+            "v" : "Triangle Tops"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.TopStyle",
+      "ns" : "product",
+      "amz-attr" : "top-style",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_topstyle",
+      "type" : "select",
+      "title" : "Top Style"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Pant",
+            "v" : "Pant"
+         },
+         {
+            "p" : "Short",
+            "v" : "Short"
+         },
+         {
+            "p" : "Bikini",
+            "v" : "Bikini"
+         },
+         {
+            "p" : "Thong",
+            "v" : "Thong"
+         },
+         {
+            "p" : "G-String",
+            "v" : "G-String"
+         },
+         {
+            "p" : "Boy Short",
+            "v" : "Boy Short"
+         },
+         {
+            "p" : "Hipster",
+            "v" : "Hipster"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.BottomStyle",
+      "ns" : "product",
+      "amz-attr" : "bottom-style",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_bottomstyle",
+      "type" : "select",
+      "title" : "bottom style"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "XXXXX-Small",
+            "v" : "XXXXX-Small"
+         },
+         {
+            "p" : "XXXX-Small",
+            "v" : "XXXX-Small"
+         },
+         {
+            "p" : "XXX-Small",
+            "v" : "XXX-Small"
+         },
+         {
+            "p" : "XX-Small",
+            "v" : "XX-Small"
+         },
+         {
+            "p" : "X-Small",
+            "v" : "X-Small"
+         },
+         {
+            "p" : "Small",
+            "v" : "Small"
+         },
+         {
+            "p" : "Medium",
+            "v" : "Medium"
+         },
+         {
+            "p" : "Large",
+            "v" : "Large"
+         },
+         {
+            "p" : "X-Large",
+            "v" : "X-Large"
+         },
+         {
+            "p" : "XX-Large",
+            "v" : "XX-Large"
+         },
+         {
+            "p" : "XXX-Large",
+            "v" : "XXX-Large"
+         },
+         {
+            "p" : "XXXX-Large",
+            "v" : "XXXX-Large"
+         },
+         {
+            "p" : "XXXXX-Large",
+            "v" : "XXXXX-Large"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.SizeMap",
+      "ns" : "product",
+      "amz-attr" : "size-map",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_sizemap",
+      "type" : "select",
+      "title" : "Clothing Size Map",
+      "list" : "LIST_APPAREL_CLOTHING_SIZEMAP"
+   },
+   {
+      "amz-attr" : "waist-size",
+      "ns" : "product",
+      "amz-format" : "Length",
+      "type" : "textbox",
+      "title" : "Waist Size",
+      "id" : "amz:prod_cloth_cd_waistsize",
+		"amz-uom" : "CM,IN",
+      "xmlpath" : "ClothingAccessories.ClassificationData.WaistSize"
+   },
+   {
+      "amz-attr" : "inseam-length",
+      "ns" : "product",
+      "amz-format" : "Length",
+      "type" : "textbox",
+      "title" : "Inseam Length",
+      "id" : "amz:prod_cloth_cd_inseamlength",
+		"amz-uom" : "CM,IN",
+      "xmlpath" : "ClothingAccessories.ClassificationData.InseamLength"
+   },
+   {
+      "amz-attr" : "sleeve-length",
+      "ns" : "product",
+      "amz-format" : "Length",
+      "type" : "textbox",
+      "title" : "Sleeve Length",
+      "id" : "amz:prod_cloth_cd_sleevelength",
+		"amz-uom" : "CM,IN",
+      "xmlpath" : "ClothingAccessories.ClassificationData.SleeveLength"
+   },
+   {
+      "amz-attr" : "neck-size",
+      "ns" : "product",
+      "amz-format" : "Length",
+      "type" : "textbox",
+      "title" : "Neck Size",
+      "id" : "amz:prod_cloth_cd_necksize",
+		"amz-uom" : "CM,IN",
+      "xmlpath" : "ClothingAccessories.ClassificationData.NeckSize"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "Boat Neck",
+            "v" : "Boat Neck"
+         },
+         {
+            "p" : "Cowl Neck",
+            "v" : "Cowl Neck"
+         },
+         {
+            "p" : "Crewneck",
+            "v" : "Crewneck"
+         },
+         {
+            "p" : "Halter",
+            "v" : "Halter"
+         },
+         {
+            "p" : "Henley",
+            "v" : "Henley"
+         },
+         {
+            "p" : "High Neck",
+            "v" : "High Neck"
+         },
+         {
+            "p" : "Hooded",
+            "v" : "Hooded"
+         },
+         {
+            "p" : "Mock Neck",
+            "v" : "Mock Neck"
+         },
+         {
+            "p" : "One Shoulder",
+            "v" : "One Shoulder"
+         },
+         {
+            "p" : "Racer Back",
+            "v" : "Racer Back"
+         },
+         {
+            "p" : "Scoop Neck",
+            "v" : "Scoop Neck"
+         },
+         {
+            "p" : "Strapless/Tube",
+            "v" : "Strapless/Tube"
+         },
+         {
+            "p" : "Turtleneck",
+            "v" : "Turtleneck"
+         },
+         {
+            "p" : "V-Neck",
+            "v" : "V-Neck"
+         },
+         {
+            "p" : "Eyelet",
+            "v" : "Eyelet"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.NeckStyle",
+      "ns" : "product",
+      "amz-attr" : "neck-style",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_neckstyle",
+      "type" : "select",
+      "title" : "Neck Style"
+   },
+   {
+      "amz-attr" : "chest-size",
+      "ns" : "product",
+      "amz-format" : "Length",
+      "type" : "textbox",
+      "title" : "Chest Size",
+      "id" : "amz:prod_cloth_cd_chestsize",
+		"amz-uom" : "CM,IN",
+      "xmlpath" : "ClothingAccessories.ClassificationData.ChestSize"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "A",
+            "v" : "A"
+         },
+         {
+            "p" : "B",
+            "v" : "B"
+         },
+         {
+            "p" : "C",
+            "v" : "C"
+         },
+         {
+            "p" : "D",
+            "v" : "D"
+         },
+         {
+            "p" : "DD",
+            "v" : "DD"
+         },
+         {
+            "p" : "DDD",
+            "v" : "DDD"
+         },
+         {
+            "p" : "E",
+            "v" : "E"
+         },
+         {
+            "p" : "F",
+            "v" : "F"
+         },
+         {
+            "p" : "FF",
+            "v" : "FF"
+         },
+         {
+            "p" : "G",
+            "v" : "G"
+         },
+         {
+            "p" : "H",
+            "v" : "H"
+         },
+         {
+            "p" : "I",
+            "v" : "I"
+         }
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.CupSize",
+      "ns" : "product",
+      "amz-attr" : "cup-size",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_cupsize",
+      "type" : "select",
+      "title" : "Clothing Cup Size",
+      "list" : "LIST_APPAREL_CLOTHING_CUPSIZE"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+			{
+				"p" : "Underwire",
+				"v" : "Underwire"
+			},
+			{
+				"p" : "Wire Free",
+				"v" : "Wire Free"
+			}
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.UnderwireType",
+      "ns" : "product",
+      "amz-attr" : "underwire-type",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_underwiretype",
+      "type" : "select",
+      "title" : "Underwire Type"
+   },
+   {
+      "xmlpath" : "ClothingAccessories.ClassificationData.ItemRise",
+      "ns" : "product",
+      "amz-attr" : "item-rise",
+      "amz-format" : "Length",
+      "id" : "amz:prod_cloth_cd_itemrise",
+      "type" : "textbox",
+		"amz-uom" : "CM,IN",
+      "title" : "Item Rise"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+			{
+				"p" : "No Show",
+				"v" : "No Show"
+			},
+			{
+				"p" : "Ankle",
+				"v" : "Ankle"
+			},
+			{
+				"p" : "Mid-Calf",
+				"v" : "Mid-Calf"
+			},
+			{
+				"p" : "Knee High",
+				"v" : "Knee High"
+			},
+			{
+				"p" : "Thigh High",
+				"v" : "Thigh High"
+			},
+			{
+				"p" : "Low",
+				"v" : "Low"
+			},
+			{
+				"p" : "Mid",
+				"v" : "Mid"
+			},
+			{
+				"p" : "High",
+				"v" : "High"
+			}
+  	   ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.RiseStyle",
+      "ns" : "product",
+      "amz-attr" : "rise-style",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_risestyle",
+      "type" : "select",
+      "title" : "Rise Style"
+   },
+   {
+      "xmlpath" : "ClothingAccessories.ClassificationData.LegDiameter",
+      "ns" : "product",
+      "amz-attr" : "leg-diameter",
+      "amz-format" : "Length",
+      "id" : "amz:prod_cloth_cd_legdiameter",
+      "type" : "textbox",
+		"amz-uom" : "CM,IN",
+      "title" : "Leg Diameter"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+			{
+				"p" : "Skinny ",
+				"v" : "Skinny "
+			},
+			{
+				"p" : "Tapered",
+				"v" : "Tapered"
+			},
+			{
+				"p" : "Straight",
+				"v" : "Straight"
+			},
+			{
+				"p" : "Boot Cut",
+				"v" : "Boot Cut"
+			},
+			{
+				"p" : "Flared",
+				"v" : "Flared"
+			},
+			{
+				"p" : "Trouser ",
+				"v" : "Trouser "
+			},
+			{
+				"p" : "Cropped",
+				"v" : "Cropped"
+			},
+			{
+				"p" : "Ankle",
+				"v" : "Ankle"
+			},
+			{
+				"p" : "Wide",
+				"v" : "Wide"
+			}
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.LegStyle",
+      "ns" : "product",
+      "amz-attr" : "leg-style",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_legstyle",
+      "type" : "select",
+      "title" : "Leg Style"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+			{
+				"p" : "Chain",
+				"v" : "Chain"
+			},
+			{
+				"p" : "Sash/Woven",
+				"v" : "Sash/Woven"
+			},
+			{
+				"p" : "Skinny",
+				"v" : "Skinny"
+			},
+			{
+				"p" : "Medium ",
+				"v" : "Medium "
+			},
+			{
+				"p" : "Wide",
+				"v" : "Wide"
+			}
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.BeltStyle",
+      "ns" : "product",
+      "amz-attr" : "belt-style",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_beltstyle",
+      "type" : "select",
+      "title" : "Belt Style"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+			{
+				"p" : "Strapless",
+				"v" : "Strapless"
+			},
+			{
+				"p" : "Invisible",
+				"v" : "Invisible"
+			},
+			{
+ 				"p" : "Convertible",
+				"v" : "Convertible"
+			},
+			{
+				"p" : "Halter",
+				"v" : "Halter"
+			},
+			{
+				"p" : "Racerback",
+				"v" : "Racerback"
+			},
+			{
+				"p" : "Backless",
+				"v" : "Backless"
+			}
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.StrapType",
+      "ns" : "product",
+      "amz-attr" : "strap-type",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_straptype",
+      "type" : "select",
+      "title" : "Strap Type"
+   },
+   {
+      "options" : [
+			{
+            "T" : "",
+            "V" : ""
+         },
+			{
+				"p" : "Animal",
+				"v" : "Animal"
+			},
+			{
+				"p" : "Cartoon",
+				"v" : "Cartoon"
+			},
+			{
+				"p" : "Classic Monster",
+				"v" : "Classic Monster"
+			},
+			{
+				"p" : "Fairytale",
+				"v" : "Fairytale"
+			},
+			{
+				"p" : "Famous People",
+				"v" : "Famous People"
+			},
+			{
+				"p" : "Food & Beverage",
+				"v" : "Food & Beverage"
+			},
+			{
+				"p" : "Historical & Period",
+				"v" : "Historical & Period"
+			},
+			{
+				"p" : "Horror",
+				"v" : "Horror"
+			},
+			{
+				"p" : "Humorous",
+				"v" : "Humorous"
+			},
+			{
+				"p" : "Insects",
+				"v" : "Insects"
+			},
+			{
+				"p" : "Mascots",
+				"v" : "Mascots"
+			},
+			{
+				"p" : "Occupational/Professional",
+				"v" : "Occupational/Professional"
+			},
+			{
+				"p" : "Religious",
+				"v" : "Religious"
+			},
+			{
+		    "p" : "Scary",
+		    "v" : "Scary"
+			},
+			{
+				"p" : "Science Fiction",
+				"v" : "Science Fiction"
+			},
+			{
+				"p" : "Sexy",
+				"v" : "Sexy"
+			},
+			{
+				"p" : "Sports",
+				"v" : "Sports"
+			},
+			{
+				"p" : "Superhero",
+				"v" : "Superhero"
+			},
+			{
+				"p" : "Tv & Movies",
+				"v" : "Tv & Movies"
+			},
+			{
+				"p" : "Western",
+				"v" : "Western"
+			}
+      ],
+      "xmlpath" : "ClothingAccessories.ClassificationData.Theme",
+      "ns" : "product",
+      "amz-attr" : "theme",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_theme",
+      "type" : "select",
+      "title" : "Theme"
+   }
+]

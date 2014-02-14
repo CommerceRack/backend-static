@@ -1,0 +1,86 @@
+<!-- CONFIG
+THEME=yellowrose
+SITEBUTTONS=l2_orangelightning
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!-- HEAD -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+body	{margin: 0px; background-color: #FFFFFF; font-family: tahoma, Arial, Helvetica, sans-serif; color: #8E5B02; background-image:url(<!-- WRAPPER_URL -->/left_bg.gif); background-repeat:repeat-y;}
+h1		{margin: 0px; font-size: 12pt; color: #FF3300;}
+a	{color: #FF3300;}
+.cats	{font-size: 11pt; font-weight: bold; text-decoration: none;}
+.minicart	{font-size: 8pt;}
+.light	{background-color: #FFFEE9;}
+.menu	{font-size: 8pt; text-decoration: none;}
+.menu_bg	{background-image:url(<!-- WRAPPER_URL -->/menu_bg.gif); background-repeat:repeat-x;}
+.strokeshadow	{background-image:url(<!-- WRAPPER_URL -->/stroke_shadow.gif); background-repeat:repeat-x;}
+
+.formed	{border-style: solid; border-width: 1px;; border-color: #FF3300; background-color: #ffffff; font-size: 9pt; color: #000000; font-family: tahoma, Arial, Helvetica, sans-serif;}
+.button	{border-style: solid; border-width: 1px;; border-color: #FF3300; background-color: #ffffff; font-size: 8pt; color: #FF3300; font-family: tahoma, Arial, Helvetica, sans-serif;}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr class="light">
+	<td width="3%"><a href="<!-- HOME_URL -->"><!-- LOGO
+width=160
+height=81
+bgcolor=FFFEE9
+--></a></td>
+	<td width="1%" align="right"><img src="<!-- WRAPPER_URL -->/corner.gif" width="16" height="81"></td>
+	<td width="96%" align="right" valign="bottom"><table cellspacing="0" cellpadding="0" width="100%"><tr>
+		<td align="right"><table cellspacing="3" cellpadding="0"><tr><form action="<!-- RESULTS_URL -->" method="get"><input type="hidden" name="catalog" value=""><tr>
+			<td><input type="text" name="keywords" value="" class="formed" size="14"></td>
+			<td><input type="submit" class="button" value="Search" ></td>
+		</tr></form></table></td>
+	</tr><tr><td height="5"></td></tr><tr>
+		<td align="right"><table cellspacing="0" cellpadding="0"><tr class="menu_bg">
+			<td><img src="<!-- WRAPPER_URL -->/menu_cap.gif" width="16" height="23"></td>
+			<td><a href="<!-- HOME_URL -->" class="menu">Home</a></td><td><img src="<!-- WRAPPER_URL -->/menu_split.gif" width="32" height="23"></td>
+			<td><a href="<!-- ABOUT_URL -->" class="menu">Company</a></td><td><img src="<!-- WRAPPER_URL -->/menu_split.gif" width="32" height="23"></td>
+			<td><a href="<!-- CONTACT_URL -->" class="menu">Contact</a></td><td><img src="<!-- WRAPPER_URL -->/menu_split.gif" width="32" height="23"></td>
+			<td><a href="<!-- GALLERY_URL -->" class="menu">eBay&nbsp;Gallery</a></td><td><img src="<!-- WRAPPER_URL -->/menu_split.gif" width="32" height="23"></td>
+			<td><a href="<!-- LOGIN_URL -->" class="menu">Login</a></td><td><img src="<!-- WRAPPER_URL -->/menu_split.gif" width="32" height="23"></td>
+			<td><a href="<!-- CART_URL -->" class="menu">Cart</a></td><td><img src="<!-- WRAPPER_URL -->/menu_split.gif" width="32" height="23"></td>
+			<td><a href="<!-- CHECKOUT_URL -->" class="menu">Checkout</a></td><td><img src="<!-- WRAPPER_URL -->/menu_split.gif" width="32" height="23"></td>
+		</tr></table></td>
+	</tr><tr><td class="strokeshadow"><img src="<!-- WRAPPER_URL -->/stroke_shadow.gif" width="1" height="14"></td>
+	</tr></table></td>
+</tr><tr>
+	<td colspan="2"><table cellspacing=3 border=0 cellpadding=0 width="160">
+<tr><td align="right" NOWRAP><span class="minicart">Items in Cart: </span></td><td width="75"><!-- MINICART
+ITEMSONLY=1
+CSSCLASS=minicart
+-->
+</td></tr><tr><td align="right"><span class="minicart">Shipping: </span></td><td><!-- MINICART
+SHIPPINGONLY=1
+CSSCLASS=minicart
+-->
+</td></tr><tr><td align="right"><span class="minicart">Total: </span></td><td><!-- MINICART
+TOTALONLY=1
+CSSCLASS=minicart
+-->
+</td></tr>
+</table><img src="<!-- WRAPPER_URL -->/cats_top.gif" width="176" height="31"><table cellspacing=0 cellpadding=2 border=0 width="166"><tr>
+	<td bgcolor="#FFFFFF" align="left"><!-- MENU
+FORMAT=<a href="%URL%" target="%TARGET%" class="cats">%MESSAGE%</a><br>
+DIVIDER=<hr color="#FFCC66" style="width: 100%;">
+NOHOME=1
+--></td>
+</tr></table><img src="<!-- WRAPPER_URL -->/cats_bottom.gif" width="176" height="30"><br><br><table cellspacing="4" cellpadding="1"><form action="<!-- SUBSCRIBE_URL -->" method="post"><input type="hidden" name="check" value="1"><tr>
+	<td align="left"><span class="minicart">&nbsp;Email</span></td>
+	<td><input type="text" size="14" maxlength="50" name="email" value="" class="formed"></td>
+</tr><tr>
+	<td align="left"><span class="minicart">&nbsp;Name</span></td>
+	<td><input type="text" size="14" maxlength="50" name="fullname" value="" class="formed"></td>
+</tr><tr>
+	<td colspan="2" align="right"><input type="submit" value="Subscribe" class="button"></td>
+</tr></form></table><br><!-- SIDEBAR --></td>
+	<td valign="top" align="left"><h1><!-- TITLE --></h1><!-- BODY --><br><!-- FOOTER
+TRANSPARENT=TRUE
+--></td>
+</tr></table>
+</body>
+</html>

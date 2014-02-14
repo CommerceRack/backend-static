@@ -1,0 +1,95 @@
+<TEMPLATE ID="pop_prod_images" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="VAR_IMAGEURL" DATA="URL::IMAGE_URL" SUB="IMAGE_URL" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="PUT_SKU_INTO_FOCUS" TYPE="SPECL"><HTML><![CDATA[<%
+/* legacy support is to link to the product detail page. however, if this is loaded in popup.cgi, product is passed on URI and needs to be put into focus */
+
+print("");
+loadurp("VAR::product"); default("");
+stop(unless=>$_);
+	set($FOCUSSKU=>$_);
+	element(TYPE=>"SET",SRC=>"SREF::PID",DATA=>$FOCUSSKU);
+	element(TYPE=>"SET",SRC=>"SREF::SKU",DATA=>$FOCUSSKU);
+	print("
+	
+	<!-- focus sku changed to: ");
+	print($FOCUSSKU);
+	print(" -->
+	
+	");
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SCRIPT" TYPE="OUTPUT"><HTML><![CDATA[
+
+<script type="text/javascript">
+<!--
+function DoSwap(img){
+	document.bigimage.src = img;
+}
+
+//-->
+</script>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MYCONFIG" V="3" CREATED="00000000" IMAGES="0" TYPE="CONFIG" TITLE="Popup Layout: Product Images"></ELEMENT>
+<ELEMENT ID="ASDF" TYPE="SPECL"><HTML><![CDATA[
+
+<table cellspacing='5' cellpadding='0' align='center'><tr>
+	<td width='400' valign='top'><div class='zborder' style='width:400px;'><%
+loadurp("product:zoovy:prod_image1"); image(h=>"400",w=>"400",m=>"0",bg=>"FFFFFF"); format(pretext=>"<img src='",posttext=>"' name='bigimage' height='400' width='400'>"); print();
+print("</div></td>
+	<td width='75' valign='top' align='center'>");
+print("<div");	
+/* here we're checking to see if image 5 is populated so that we can add a horizontal scroller on the div */
+loadurp("product:zoovy:prod_image1");
+goto(label=>"START",eq=>"");
+	print(" style='height:400px; width:105px; box-sizing: border-box; -moz-box-sizing: border-box; overflow: auto;' ");
+	
+:START();
+print(">");
+set($i=>"1");
+/* we need a var to increment with.  This is it. */
+set($one=>"1");
+/* this is the product field that we append $i to for generating the image key. */
+set($image_key=>"product:zoovy:prod_image"); 
+
+:LOOP();
+
+load($image_key); format(posttext=>$i);
+loadurp($_);
+/* we use the filename in multiple places, so I set the var instead of loadurp'ing it several times. */
+set($image=>$_);
+/* if the current load has no value, then there are no more images to process.  Skip to the end. */
+stop(unless=>$_);
+	print("<script type='text/javascript'>
+<!--
+pic"); print($i); print("= new Image(400,400); 
+pic"); print($i); print(".src='"); image(src=>$image,w=>"400",h=>"400",m=>"0",bg=>"FFFFFF",tag=>"0"); print(); print("'; 
+//-->
+</script>
+<div class='zborder' style='width:75px; margin-bottom:5px; padding:1px;'><a href='#' onMouseOver=&quot;DoSwap(pic");
+	print($i);
+	print(".src)&quot;>");
+	image(src=>$image,w=>"75",h=>"0",m=>"1",tag=>"1");
+	print();
+	print("</a></div>
+	");
+	load($i);
+	math(op=>"add",var=>$one);
+	set($i=>$_);
+/* Go to loop and do it all again. */
+	goto(label=>"LOOP",ne=>"");
+%>
+	</td>
+</tr>
+<tr>
+	<td colspan='2' align='center'><span class='zsmall'>scroll over images on the right for larger picture</span></td>
+</tr>
+</table>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,23 @@
+<!-- SETUP_TAB -->
+<!-- MSGS -->
+<center>
+
+<form method="POST" name="thisFrm" action="/biz/vstore/builder/index.cgi">
+	<input type="hidden" name="ACTION" value="CHOOSERSAVE">
+	<input type="hidden" name="FL" value="">
+	<input type="hidden" name="_SREF" value="<!-- SREF -->">
+
+<center>
+<table class="zoovytable" width=640>
+<tr><td>
+
+<!-- FLOW_CHOOSER -->
+
+</td></tr></table>
+</center>
+
+</form>
+
+<!-- BUTTONS -->
+<!-- FOOTER -->
+

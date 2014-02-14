@@ -1,0 +1,72 @@
+[
+   {
+      "catalog" : "PETSUPPLY",
+		"amz-catalog" : "PetSupplies",
+      "amz-subcat" : "PetSuppliesMisc",
+      "subcat" : "petsuppliesmisc",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "PetSupplies:PetSuppliesMisc",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYWX",
+      "xmlpath" : "PetSupplies.ProductType.PetSuppliesMisc."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_petsps_petspsmisc_clrspec",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "PetSupplies.ProductType.PetSuppliesMisc.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_petsps_petspsmisc_ingrdts",
+      "type" : "textbox",
+      "title" : "Ingredients",
+      "xmlpath" : "PetSupplies.ProductType.PetSuppliesMisc.Ingredients"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_petsps_petspsmisc_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "PetSupplies.ProductType.PetSuppliesMisc.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_petsps_petspsmisc_matl",
+      "type" : "textbox",
+      "title" : "Material",
+      "xmlpath" : "PetSupplies.ProductType.PetSuppliesMisc.Material"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Scalar",
+      "id" : "amz:prod_petsps_petspsmisc_size",
+      "type" : "textbox",
+      "title" : "Size",
+      "xmlpath" : "PetSupplies.ProductType.PetSuppliesMisc.Size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Weight",
+      "id" : "amz:prod_petsps_petspsmisc_volume",
+      "type" : "textbox",
+      "title" : "Volume",
+      "xmlpath" : "PetSupplies.ProductType.PetSuppliesMisc.Volume"
+   }
+]

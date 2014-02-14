@@ -1,0 +1,427 @@
+<TEMPLATE ID="3010" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CQCSTLV" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SERIES="2007" SUBTYPE="T" FORMAT="LAYOUT" EXPORT="0" TYPE="CONFIG" TITLE="Image Cart with checkout prompts" OCREATED="20070207" RELEASED="20081014"><SUMMARY><![CDATA[This layout features a single column image based cart with a text block, a product list header and a product list.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPVRQDA" SUB="CHECKOUT_BUTTON" TYPE="SPECL"><HTML><![CDATA[<%
+element(TYPE=>"SITEBUTTON",BUTTON=>"checkout"); print();
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPVRQD2" RAW="1" SUB="ZBORDER" TYPE="READONLY" LOAD="CSS::zborder.border"></ELEMENT>
+<ELEMENT ID="CPVRQD2" RAW="1" SUB="ZBOX_BORDER" TYPE="READONLY" LOAD="CSS::zbox.border"></ELEMENT>
+<ELEMENT ID="CPVRQD3" RAW="1" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL"></ELEMENT>
+<ELEMENT ID="COUPON_CHECKBOX" TRUE="On" FALSE="Off" EDITOR="INLINE" DATA="profile:zoovy:enable_promocode" PROMPT="Display coupon entry form in cart" ON="1" TYPE="CHECKBOX" UNDEF="0" OUTPUTSKIP="4096" OFF="0"></ELEMENT>
+<ELEMENT ID="SPECL_GOOGLE_BUTTON" SUB="GOOGLE_BUTTON" TYPE="SPECL"><HTML><![CDATA[<%
+/* outputs the google button inside a div.  By default, the sitebutton outputs <!-- GOOGLE_BUTTON --> if it is not enabled, so that has to be checked for and also blank (as a redundancy). */
+
+print("<!-- google button -->");
+element(TYPE=>"SITEBUTTON",BUTTON=>"google");
+goto(label=>"NOOUTPUT",eq=>"<!-- GOOGLE_BUTTON -->");
+goto(label=>"NOOUTPUT",eq=>"");
+	format(pretext=>"<div align='center' style='border-top:%ZBOX_BORDER%; padding:3px; background:#ffffff;'>",posttext=>"</div>");
+	print();
+
+:NOOUTPUT();
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SPECL_PAYPAL_BUTTON" SUB="PAYPAL_BUTTON" TYPE="SPECL"><HTML><![CDATA[<%
+/* outputs the paypal button inside a div.  By default, the sitebutton outputs <!-- PAYPAL_BUTTON --> if it is not enabled, so that has to be checked for and also blank (as a redundancy). */
+print("<!-- paypal button -->");
+element(TYPE=>"SITEBUTTON",BUTTON=>"paypal");
+goto(label=>"NOOUTPUT",eq=>"<!-- PAYPAL_BUTTON -->");
+goto(label=>"NOOUTPUT",eq=>"");
+	format(pretext=>"<div align='center' style='border-top:%ZBOX_BORDER%; padding:3px; background:#ffffff;'>",posttext=>"</div>");
+	print();
+
+:NOOUTPUT();
+
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SPECL_AMZPAY_BUTTON" SUB="AMZPAY_BUTTON" TYPE="SPECL"><HTML><![CDATA[<%
+/* outputs the amazon button inside a div.  By default, the sitebutton outputs <!-- AMAZON_BUTTON --> if it is not enabled, so that has to be checked for and also blank (as a redundancy). */
+print("<!-- amazon button -->");
+element(TYPE=>"SITEBUTTON",BUTTON=>"amzpay");
+goto(label=>"NOOUTPUT",eq=>"<!-- AMZPAY_BUTTON -->");
+goto(label=>"NOOUTPUT",eq=>"");
+	format(pretext=>"<form style='display:inline; margin:0px;'><div align='center' style='border-top:%ZBOX_BORDER%; padding:3px; background:#ffffff;'>",posttext=>"</div></form>");
+	print();
+
+:NOOUTPUT();
+
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGECART" CREATED="20070801" COLS="1" FORMAT="CUSTOM" PROMPT="Shopping Cart" SUB="PAGE_CART" TYPE="CART" TABLECOLS="4" RELEASED="20080930"><HTML><![CDATA[
+<% load($FORM);  default("");  print(); %>
+
+<div style='width:auto; text-align:right; margin-bottom:1px;'>
+	<div style='margin-left:3px; display:inline;'><% load($UPDATECART_BUTTON);  default("");  print(); %></div>
+	<div style='margin-left:3px; display:inline;'><% load($EMPTYCART_BUTTON);  default("");  print(); %></div>
+	<div style='margin-left:3px; display:inline;'><% load($CONTINUE_BUTTON);  default("");  print(); %></div>
+	<div style='margin-left:3px; display:inline;'><% load($ADDTOSITE_BUTTON);  default("");  print(); %></div>
+</div>
+<div style='margin-right:3px;'>
+<table cellspacing="1" cellpadding="3" width="100%"  class='ztable_head'>
+<tr>
+	<td class='ztable_head'>Item Description</td>
+	<td class='ztable_head' align='right'>Quantity</td>
+	<td class='ztable_head' align='right'>Price</td>
+	<td class='ztable_head' NOWRAP align='right'>Item Subtotal</td>
+	<%
+	print("");
+	stop(unless=>$BUYSAFE_ENABLED);
+	print("&lt;td class='ztable_row_head' align='right'&gt;Bonding");
+	print($BOND_STATUS);
+	print("&lt;/td&gt;");
+	%>
+</tr>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+	<td class="ztable_row ztable_row0" valign="top">
+	<table cellspacing='4' cellpadding='0' width='100%'>
+	<tr>
+		<td valign='top' width='1%' style='padding-right:5px;'><%
+loadurp("CSS::ztable_row0.bgcolor"); default("FFFFFF");
+set($BGCOLOR=>$_);
+load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"70",h=>"70",bg=>$BGCOLOR,tag=>"1");  print(); %></td>
+		<td valign='top' class='ztable_row'>
+<div style='margin-bottom:3px;'><% load($prod_name);  default(""); strip(length=>"65",breaks=>"1",html=>"1");  print(); %></div>
+<div>sku: <% load($SKU_LINK);  default("");  print(); %></div>
+<div><% load($POGS);  default("");  print(); %></div>
+		</td>
+	</tr>
+	</table>
+	</td>
+	
+	<td class="ztable_row ztable_row0" valign="top" align='right'>
+	<% load($QTY_INPUT);  default("");  print(); %>
+	<div class='ztable_row_small' style='margin-top:3px;'><% load($REMOVE_LINK);  default("");  print(); %></div>
+	</td>
+	
+	<td class="ztable_row ztable_row0" valign="top" align='right'>
+	<% load($PRICE);  default("");  format(money);  print(); %>
+	</td>		
+
+	<td class="ztable_row ztable_row0" valign="top" align='right'>
+	<% load($EXTENDED);  default("");  format(money);  print(); %>
+	</td>
+		
+<%
+	print("");
+	stop(unless=>$BUYSAFE_ENABLED);
+	print("&lt;td valign='top' class='ztable_row ztable_row0' align='right'&gt;");
+	print($BOND_STATUS);
+	print("&lt;/td&gt;");
+%>		
+		
+
+<!-- /PRODUCT -->
+	</tr>
+<!-- /ROW -->
+</table>
+
+
+	
+<table cellspacing="0" cellpadding="2" width="100%">
+
+<%
+print("");
+/* if enable_promocode is not set to 1, the promotion textbox is not displayed. */
+loadurp("profile:zoovy:enable_promocode");
+stop(unless=>$_);
+	print("
+	<tr>
+		<td class='zcolor_light' align='right' colspan='2' style='border:1px solid ");
+	loadurp("CSS::ztable_head.bgcolor"); print();
+	print("; border-top:none;'>
+<div id='zpromocode'>
+<table cellspacing='3' cellpadding='0'>
+<tr>
+	<td><label for='promocode' id='promocode_prompt' class='zpromocode_prompt' style='font-size: ");
+	loadurp("CSS::ztable_row.font_size"); print();
+	print("; color: ");
+	loadurp("CSS::zcolor_light.color"); print();
+	print(";'>Coupon/Gift Certificate Code: </label></td>
+	<td><input type='text' class='zform_textbox' size='8' name='promocode' id='promocode'></td>
+	<td><input type='submit' class='zform_button' value='add'></td>
+</tr>
+</table>
+</div>
+		</td>
+	</tr>");
+%>
+
+<tr>
+	<td width="80%" class='ztable_row_small'>
+
+<div id='zip_input'><% load($ZIP_INPUT);  default("");  print(); %></div>
+
+<!-- this is for a zip override set in the wrapper -->
+<div id='custom_zip_input'></div>
+
+<div id='cart_shipping_blurb'><% load($DESTINATIONBLURB);  default("");  print(); %></div>	
+
+	</td>
+
+	<td align="right">
+	<table cellspacing="0" cellpadding="2" width="100%">
+	<tr>
+		<td colspan="2" nowrap align="right" width="95%" class='ztable_row'>Subtotal:</td>
+		<td nowrap align="right" style="padding-left:20px;" class='ztable_row'><% load($SUBTOTAL);  default("");  format(money);  print(); %></td>
+	</tr>
+		<% load($SURCHARGE_LINE);  default("");  print(); %>
+		<% load($TAX_LINE);  default("");  print(); %>
+	<tr>
+		<td colspan="2" nowrap align="right" class='ztable_head'><strong>Total: </strong></td>
+		<td nowrap align="right" style="padding-left:20px;" class='ztable_head'><strong><% load($GRANDTOTAL);  default("");  format(money);  print(); %></strong></td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+</div>
+<% load($ENDFORM);  default("");  print(); %>	
+<!-- POGS -->
+<div style="margin-left: 15px;">
+<table cellpadding=0 cellspacing=2>
+<!-- ROW -->
+<!-- OPTION -->
+<tr>
+	<td valign='top'><% load($img); default(""); image(w=>"22",h=>"22",tag=>"1"); stop(unless=>$img); print(); %></td>
+	<td valign='top' class='ztable_row_small'><% load($prompt);  default("");  print(); %>:</td>
+	<td class='ztable_row_small' valign='top'><% load($value);  default(""); format(replace=>"\n",with=>"<br>");  print(); %></td>
+</tr>
+<!-- /OPTION -->
+<!-- /ROW -->
+</table>
+</div>
+<!-- /POGS -->
+
+
+<!-- TAX -->
+<tr>
+	<td colspan="2" nowrap align="right" class='ztable_row'>State Tax(<% load($TAXRATE);  default("");  print(); %>%):</td>
+	<td nowrap align="right" style="padding-left:20px;" class='ztable_row'><% load($TAXTOTAL);  default("");  format(money);  print(); %></td>
+</tr>
+<!-- /TAX -->
+<!-- SURCHARGE -->
+<tr>
+	<td colspan="2" nowrap  align="right" class='ztable_row'><% load($SURCHARGE);  default("");  print(); %>:</td>
+	<td nowrap align="right" style="padding-left:20px;" class='ztable_row'><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></td>
+</tr>
+<!-- /SURCHARGE -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="NEWCUSTOMERTEXT" WIKI="3" LENGTH="10" EDITOR="INLINE" DATA="page:new_customer_text" PROMPT="Text that appears just above the new customer checkout button" SUB="PAGE_NEWCUSTOMER_TEXT" TYPE="TEXTBOX"><DEFAULT><![CDATA[If you have never made a purchase at this web site and have never subscribed to this store's mailing list, please choose this option.]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="OLDCUSTOMERTEXT" WIKI="3" LENGTH="10" EDITOR="INLINE" DATA="page:old_customer_text" PROMPT="Text that appears just above the registered customer checkout button" SUB="PAGE_REGCUSTOMER_TEXT" TYPE="TEXTBOX"><DEFAULT><![CDATA[If you have made a purchase at this web site or have subscribed to this store's mailing list, please choose this option]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="FEATUREDTITLE" WIKI="3" MAXLENGTH="40" EDITOR="INLINE" DATA="page:featured" PROMPT="Product list 1 header" SUB="PAGE_PRODLIST_TITLE" DEFAULT="You may also like " TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="PRODLIST1" SIZE="20" MAX="4" ALTERNATE="3" MULTIPAGE="0" EDITOR="INLINE" DATA="page:prodlist" COLS="4" FORMAT="CUSTOM" SMARTSOURCE="CHOOSE" PROMPT="Product List 1" SUB="PAGE_PRODLIST" TYPE="PRODLIST"><HTML><![CDATA[
+
+<div style='margin-top:20px;'>
+<%
+print("<div style='margin-bottom:2px; border-bottom: ");
+loadurp("CSS::zborder.border"); default("1px solid #CCCCCC"); print();
+print(";' class='ztitle2' >");
+loadurp("page:featured"); default("You may also like"); print();
+print("</div>");
+%>
+
+<table cellpadding='10' cellspacing='0' align='center'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td valign='top' class='ztable_row' width='25%'>
+
+	<div><a href='<% print($PROD_URL); %>'><%
+load($zoovy:prod_thumb); default($zoovy:prod_image1); 
+image(w=>"75",h=>"75",tag=>"1",alt=>$zoovy:prod_name);
+print(); %></a></div>
+
+	<div style='margin-top:2px;'><a href='<% print($PROD_URL); %>' class='zlink'><% load($zoovy:prod_name); default(""); print(); %></a></div>
+
+	</td>
+<!-- /PRODUCT -->
+
+</tr>
+<!-- /ROW -->
+
+</table>
+</div>
+<!-- /product list -->
+]]></HTML>
+<BLANK><![CDATA[<td width='25%'></td>]]></BLANK>
+</ELEMENT>
+<ELEMENT ID="BOTTOMTEXT" WIKI="3" EDITOR="INLINE" DATA="page:bottomtext" PROMPT="Bottom Text" SUB="PAGE_BOTTOMTEXT" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class='zborder' style='margin-top:10px; padding-top:10px; border-left:0px; border-right:0px; border-bottom:0px;' class='ztxt' >]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="FEATUREDTITLE2" WIKI="3" MAXLENGTH="40" EDITOR="INLINE" DATA="page:featured2" PROMPT="Product list 2 header" SUB="PAGE_PRODLIST_TITLE2" DEFAULT="These items go great " TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="PRODLIST2" SIZE="20" MAX="4" SHOWDEFAULT="0" MULTIPAGE="0" ALTERNATE="3" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="4" FORMAT="CUSTOM" SMARTSOURCE="CHOOSE" PROMPT="Product List 2" SUB="PAGE_PRODLIST2" TYPE="PRODLIST" DISABLEPRODUCTS="1"><BLANK><![CDATA[<td width='25%'></td>]]></BLANK>
+<HTML><![CDATA[
+
+<div style='margin-top:20px;'>
+<%
+print("<div style='margin-bottom:2px; border-bottom: ");
+loadurp("CSS::zborder.border"); default("1px solid #CCCCCC"); print();
+print(";' class='ztitle2' >");
+loadurp("page:featured2"); default("These items go great"); print();
+print("</div>");
+%>
+
+<table cellpadding='10' cellspacing='0' align='center'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td valign='top' class='ztable_row' width='25%'>
+
+	<div><a href='<% print($PROD_URL); %>'><%
+load($zoovy:prod_thumb); default($zoovy:prod_image1); 
+image(w=>"75",h=>"75",tag=>"1",alt=>$zoovy:prod_name);
+print(); %></a></div>
+
+	<div style='margin-top:2px;'><a href='<% print($PROD_URL); %>' class='zlink'><% load($zoovy:prod_name); default(""); print(); %></a></div>
+
+	</td>
+<!-- /PRODUCT -->
+
+</tr>
+<!-- /ROW -->
+
+</table>
+</div>
+<!-- /product list -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="FEATUREDTITLE3" WIKI="3" MAXLENGTH="40" EDITOR="INLINE" DATA="page:featured3" PROMPT="Product list 3 header" SUB="PAGE_PRODLIST_TITLE3" DEFAULT="Similar Items" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="PRODLIST3" SIZE="20" MAX="4" SHOWDEFAULT="0" MULTIPAGE="0" ALTERNATE="3" EDITOR="INLINE" DATA="page:prodlist3_custom" COLS="4" FORMAT="CUSTOM" SMARTSOURCE="CHOOSE" SUB="PAGE_PRODLIST3" PROMPT="Product List 3" TYPE="PRODLIST" DISABLEPRODUCTS="1"><BLANK><![CDATA[<td width='25%'></td>]]></BLANK>
+<HTML><![CDATA[
+
+<div style='margin-top:20px;'>
+<%
+print("<div style='margin-bottom:2px; border-bottom: ");
+loadurp("CSS::zborder.border"); default("1px solid #CCCCCC"); print();
+print(";' class='ztitle2' >");
+loadurp("page:featured3"); default("Similar items"); print();
+print("</div>");
+%>
+
+<table cellpadding='10' cellspacing='0' align='center'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td valign='top' class='ztable_row' width='25%'>
+
+	<div><a href='<% print($PROD_URL); %>'><%
+load($zoovy:prod_thumb); default($zoovy:prod_image1); 
+image(w=>"75",h=>"75",tag=>"1",alt=>$zoovy:prod_name);
+print(); %></a></div>
+
+	<div style='margin-top:2px;'><a href='<% print($PROD_URL); %>' class='zlink'><% load($zoovy:prod_name); default(""); print(); %></a></div>
+
+	</td>
+<!-- /PRODUCT -->
+
+</tr>
+<!-- /ROW -->
+
+</table>
+</div>
+<!-- /product list -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Link for right side banner #1" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="BANNER1" EDITOR="INLINE" DATA="page:banner1" WIDTH="170" PROMPT="Right side banner #1" SUB="PAGE_BANNER1" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" PROMPT="Link for right side banner #2" SUB="PAGE_BANNER2_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="BANNER2" EDITOR="INLINE" DATA="page:banner2" WIDTH="170" PROMPT="Right side banner #2" SUB="PAGE_BANNER2" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CUWUNZJ" TYPE="SPECL"><HTML><![CDATA[
+
+<div id='t-3010'>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr>
+	<td valign='top'>
+<div style='width:auto;'>
+
+	<div>%PAGE_CART%</div>
+	
+	<div>%PAGE_PRODLIST%</div>
+	<div>%PAGE_BOTTOMTEXT%</div>
+	
+	<div>%PAGE_PRODLIST2%</div>
+	
+	<div>%PAGE_PRODLIST3%</div>
+
+</div>
+	</td>
+	<td valign='top' width='10%' style='padding-left:10px;'>
+<div class='zbox' style='margin-bottom:4px;' id='cart_checkout_prompts'>
+	<div style="padding:3px; font-weight:bold;" class='zbox_head '>Checkout</div>
+	
+<div class='zbox_body' style='padding:3px;'>
+	<div class='ztitle2 ztitle4' style='margin-bottom:3px;'>New Customers</div>
+	<div style='margin-bottom:5px;'>%PAGE_NEWCUSTOMER_TEXT%</div>
+
+	<div align='center'>
+<a href='%CHECKOUT_URL%?sender=CART.NEW'>%CHECKOUT_BUTTON%</a><br>
+
+	</div>
+</div>
+
+<div>%GOOGLE_BUTTON%</div>
+<div>%PAYPAL_BUTTON%</div>
+<div>%AMZPAY_BUTTON%</div>
+
+<!-- allows the addition of user-specific content via javascript -->
+	<div id='blankDivForJS'></div>
+
+
+<div class='zbox_body' style='padding:3px; border-top:<% loadurp("CSS::zbox.border"); print(); %>'>
+	<div class='ztitle2 ztitle4' style='margin-bottom:3px;'>Registered Customers</div>
+	<div style='margin-bottom:5px;'>%PAGE_REGCUSTOMER_TEXT%</div>
+
+	<div>
+<form method="post" action="%CHECKOUT_URL%" id='checkout_reg_customer'>
+<input type="hidden" name="sender" value="CART.LOGIN">
+<table>
+<tr>
+	<td class='zbox_body zform_prompt'>Login/Email:</td>
+	<td><input type="textbox" class="zform_textbox" size="20" maxlength="60" name="login" value=""></td>
+</tr>
+<tr>
+	<td class='zbox_body zform_prompt'>Password:</td>
+	<td><input type="password" class="zform_textbox" size="20" maxlength="20" name="password" value=""></td>
+</tr>
+<tr>
+	<td colspan='2' align='center'><a href='javascript:document.forms.checkout_reg_customer.submit()'>%CHECKOUT_BUTTON%</a></td>
+</tr>
+</table>
+
+
+</form>
+	</div>
+</div>
+
+
+</div>
+<div align='center'>
+%PAGE_BANNER1%
+%PAGE_BANNER2%
+</div>
+	</td>
+</tr>
+</table>
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

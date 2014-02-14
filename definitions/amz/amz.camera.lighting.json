@@ -1,0 +1,351 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "Lighting",
+      "subcat" : "lighting",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:Lighting",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWZS",
+      "xmlpath" : "CameraPhoto.ProductType.Lighting."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "floodlights",
+            "v" : "floodlights"
+         },
+         {
+            "p" : "spotlights",
+            "v" : "spotlights"
+         },
+         {
+            "p" : "monolights",
+            "v" : "monolights"
+         },
+         {
+            "p" : "flashlights",
+            "v" : "flashlights"
+         },
+         {
+            "p" : "ballasts",
+            "v" : "ballasts"
+         },
+         {
+            "p" : "cables-and-connectors",
+            "v" : "cables-and-connectors"
+         },
+         {
+            "p" : "flash-tubes",
+            "v" : "flash-tubes"
+         },
+         {
+            "p" : "head-accessories",
+            "v" : "head-accessories"
+         },
+         {
+            "p" : "modeling-lamps",
+            "v" : "modeling-lamps"
+         },
+         {
+            "p" : "mounting-hardware",
+            "v" : "mounting-hardware"
+         },
+         {
+            "p" : "pack-accessories",
+            "v" : "pack-accessories"
+         },
+         {
+            "p" : "special-bulbs",
+            "v" : "special-bulbs"
+         },
+         {
+            "p" : "general-power-packs",
+            "v" : "general-power-packs"
+         },
+         {
+            "p" : "1-head-outfits-power-packs",
+            "v" : "1-head-outfits-power-packs"
+         },
+         {
+            "p" : "2-head-outfits-power-packs",
+            "v" : "2-head-outfits-power-packs"
+         },
+         {
+            "p" : "3-head-outfits-power-packs",
+            "v" : "3-head-outfits-power-packs"
+         },
+         {
+            "p" : "4-head-outfits-power-packs",
+            "v" : "4-head-outfits-power-packs"
+         },
+         {
+            "p" : "slaves-general",
+            "v" : "slaves-general"
+         },
+         {
+            "p" : "flash-activated-slaves",
+            "v" : "flash-activated-slaves"
+         },
+         {
+            "p" : "infrared-slaves",
+            "v" : "infrared-slaves"
+         },
+         {
+            "p" : "radio-slaves",
+            "v" : "radio-slaves"
+         },
+         {
+            "p" : "adapters",
+            "v" : "adapters"
+         },
+         {
+            "p" : "barndoors",
+            "v" : "barndoors"
+         },
+         {
+            "p" : "cucoloris",
+            "v" : "cucoloris"
+         },
+         {
+            "p" : "diffusers",
+            "v" : "diffusers"
+         },
+         {
+            "p" : "filters",
+            "v" : "filters"
+         },
+         {
+            "p" : "flags",
+            "v" : "flags"
+         },
+         {
+            "p" : "gobos",
+            "v" : "gobos"
+         },
+         {
+            "p" : "grids",
+            "v" : "grids"
+         },
+         {
+            "p" : "inserts",
+            "v" : "inserts"
+         },
+         {
+            "p" : "liners",
+            "v" : "liners"
+         },
+         {
+            "p" : "louvers",
+            "v" : "louvers"
+         },
+         {
+            "p" : "panel-systems",
+            "v" : "panel-systems"
+         },
+         {
+            "p" : "reflectors",
+            "v" : "reflectors"
+         },
+         {
+            "p" : "snoots",
+            "v" : "snoots"
+         },
+         {
+            "p" : "soft-boxes",
+            "v" : "soft-boxes"
+         },
+         {
+            "p" : "umbrellas",
+            "v" : "umbrellas"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lighting_forusewith",
+      "title" : "Lighting For Use With",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Lighting.ForUseWith",
+      "list" : "LIST_CAMERA_LIGHTING_FORUSEWITH"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "continuous-output",
+            "v" : "continuous-output"
+         },
+         {
+            "p" : "strobe",
+            "v" : "strobe"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lighting_lightingtype",
+      "title" : "Lighting Lighting Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Lighting.LightingType",
+      "list" : "LIST_CAMERA_LIGHTING_LIGHTINGTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "ac",
+            "v" : "ac"
+         },
+         {
+            "p" : "dc",
+            "v" : "dc"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lighting_powertype",
+      "title" : "Lighting Power Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Lighting.PowerType",
+      "list" : "LIST_CAMERA_LIGHTING_POWERTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Unit",
+      "amz-units" : "watts-per-sec",
+      "id" : "amz:prod_cp_lighting_power",
+      "type" : "textbox",
+      "title" : "Power",
+      "xmlpath" : "CameraPhoto.ProductType.Lighting.Power"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "flourescent",
+            "v" : "flourescent"
+         },
+         {
+            "p" : "hmi",
+            "v" : "hmi"
+         },
+         {
+            "p" : "tungsten",
+            "v" : "tungsten"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lighting_lightingsourcetype",
+      "title" : "Lighting Lighting Source Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Lighting.LightingSourceType",
+      "list" : "LIST_CAMERA_LIGHTING_LIGHTINGSOURCETYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "underwater",
+            "v" : "underwater"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lighting_specialtyuse",
+      "title" : "Lighting Specialty Use",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Lighting.SpecialtyUse",
+      "list" : "LIST_CAMERA_LIGHTING_SPECIALTYUSE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

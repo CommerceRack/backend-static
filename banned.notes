@@ -1,0 +1,30 @@
+
+we use two measures for tracking robots
+request velocity across a 20 second interval, and a 60 second interval
+
+in addition we have multipliers for certain request parameters - such as invalid user agents, 
+the word robot in a user agent, etc. finally there is a table that we maintain of suspicous behavior 
+which either implicitly designates a robot OR other suspicious behavior -- specifically long traffic, 
+over periods of time, excessive form posts, and never placing an order, not supporting/having a cookie, 
+increases the 'multiplier' of a page view by a factor of 1 to 5.
+
+in addition pages which are heavy (require substantial resources) OR are 404 pages can also increase the
+weight of all future calls.  it's best to keep pages lean (less than 200 products) and avoid linking to 404's. 
+
+robot rules:
+if you access robots.txt - you are a robot for 3 hours (no exceptions)
+
+otherwise - 
+	each time an agent (you, or other remote person) access the site the webserver looks up if they've been given a "designation"
+	if the agent has a designation, the lookup of the designation refreshes the expiration for 5 minutes.
+	(so once an agent is a bot, each time they access the site they're a bot for another 5 minutes)
+
+the designations are as follows:
+bot:	a robot, no session id's in pages, no cart or shipping quotes, no checkout allowed.
+scan:	a security scanner, same rules as a bot between the hours of 8pm and 7am, during the day we issue a forbidden (kill)
+kill: 	minimum expedieture of resources, treated as a ddos or other hostile party. no content is served. 
+evil:	a designation for competitive repricing robots (including amazon) can use a schedule to provide higher prices (BETA)
+good:	a trusted party (whitelisted)
+safe:	a regular site visitor, safe to serve content, request a cart, issue shipping quotes, etc. 
+
+

@@ -1,0 +1,156 @@
+<TEMPLATE ID="c-20090210" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CYVZOZP" CREATED="20090210" SUBTYPE="C" AUTHOR="Zoovy" TYPE="CONFIG" EXPORT="0" TITLE="Article style - small image, text, subcats and products"><SUMMARY><![CDATA[Designed to be used as an article page that cross-promotes products mentioned (vertical product list down the side). Will also list subcategories or sibling categories if no subcats are present (categories list in reverse alphabetical order so that they can be listed by day [safe name should be YYYYMMDD_article_title]).]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="200" MINIMAL="1" EDITOR="INLINE" DATA="page:picture1" PROMPT="Picture" WIDTH="140" SUB="PAGE_PIC1" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style='float:left; margin:0 5px 5px 0;'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" SUB="PAGE_DESC" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Use wiki text to format your content.<br>
+Go to <a href="http://www.zoovydocs.com/doc-50590" target="webdoc">http://www.zoovydocs.com/doc-50590</a> for more information on how to properly set up your links.<br>
+]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for right side banner" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER1" EDITOR="INLINE" DATA="page:banner1" PROMPT="Right side banner (160 by X)" WIDTH="160" SUB="PAGE_BANNER1" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:10px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" SUB="PAGE_BANNER2_LINK" PROMPT="Link for right side banner 2" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER2" EDITOR="INLINE" DATA="page:banner2" PROMPT="Right side banner 2(160 by X)" WIDTH="160" SUB="PAGE_BANNER2" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:10px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CYVZOZQ" WIKI="3" MAXLENGTH="35" EDITOR="INLINE" DATA="page:header" PROMPT="Subcategory header" SUB="PAGE_CAT_HEAD" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CYVZOZR" SUB="PAGE_SUBCATS" TYPE="SPECL"><HTML><![CDATA[
+<%
+print("");
+
+/* put the subcats into a format that can be read as a stack. have to do it this way instead of straight from a stack for descendtree feature */
+element(TYPE=>"SUBCAT",HTML=>$CATHTML,MODE=>"LIST",DESCENDTREE=>"1");
+
+/* put the subcats into a stack.  */
+pull(stack=>>$CATSTACK,format=>"textlist",delimiter=>"|",p0=>"SAFE",p1=>"PRETTY",p2=>"URL");
+
+
+/* proceed only if there are subcategories */
+count(stack=>>$CATSTACK);
+goto(label=>"NOCATS",lt=>"1");
+
+	print("<div class='zcolor_light' style='margin-bottom:10px; padding:2px;'>
+	<div class='ztitle2' style='margin-bottom:2px;'>%PAGE_CAT_HEAD%</div>
+	<div class='zbody ztable_row0 no_underline' style='padding:5px; text-align:left; '>
+	");
+
+:LOOP();
+
+pop(stack=>>$CATSTACK,namespace=>"CAT",type=>"lifo");
+	load($CAT.SAFE);
+		print("
+		<div style='margin-bottom:5px;'><a href='");
+		print($CAT.URL);
+		print("'> &bull; ");
+		print($CAT.PRETTY);
+		print("</a></div>");
+
+/* keep looping till we have shown all the subcats */
+
+		goto(nb=>$CATSTACK,label=>"LOOP");
+		print("
+	</div>
+</div>");
+		stop();
+
+:NOCATS();
+	print("<!-- no subcats for category -->");
+	stop();
+
+
+%>
+]]></HTML>
+<CATHTML><![CDATA[
+<!-- ROW -->
+<!-- CATEGORY --><% print($cat_safe); %>|<% print($cat_pretty); %>|<% print($cat_url); %><!-- /CATEGORY -->
+<!-- /ROW -->
+]]></CATHTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1_HEADER" WIKI="3" MAXLENGTH="35" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List 1 Header" SUB="PAGE_PRODLIST_HEADER" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="PRODLIST" SIZE="500" MAX="15" MULTIPAGE="0" ALTERNATE="0" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" SUB="PAGE_PRODLIST" TYPE="PRODLIST"><HTML><![CDATA[<!-- product list -->
+
+
+<div class='zcolor_light' style='margin-bottom:10px; padding:2px;'>
+	<div class='ztitle2' style='margin-bottom:2px;'>%PAGE_PRODLIST_HEADER%</div>
+	<div class='zbody ztable_row0 no_underline' style='padding:5px; text-align:left;'>
+<!-- ROW -->
+<!-- PRODUCT -->
+
+<div style='margin-bottom:10px;'>
+
+	<div style='margin-bottom:3px;' align='center'><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"110",h=>"110",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a></div>
+	
+	<div><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_name); default(""); print(); %></a></div>
+	
+	<div style='font-weight:bold;'><% load($zoovy:base_price); default(""); format(money); print(); %></div>
+
+</div>
+<!-- /PRODUCT -->
+<!-- /ROW -->
+
+	</div>
+</div>
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PAGE_LAYOUT_CONTENT" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+<div id='c-20090210'>
+
+<table cellspacing='0' cellpadding='0'>
+<tr>
+	<td width='90%' valign='top' align='left' class='ztxt'>
+	<div style='margin-right:20px;'>
+
+%PAGE_PIC1%
+
+
+%PAGE_DESC%
+
+
+	</div>
+	</td>
+	
+	<td width='10%' valign='top' align='left' class='ztxt'>
+	<div style='width:160px;'>
+
+
+%PAGE_BANNER1%
+
+
+
+%PAGE_SUBCATS%
+
+
+
+%PAGE_BANNER2%
+
+
+
+%PAGE_PRODLIST%
+
+
+	</div>
+	</td>
+	
+</tr>
+</table>
+
+
+</div>
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

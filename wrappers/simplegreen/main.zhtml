@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=geodual
+SITEBUTTONS=l2_greenclouds
+-->
+<html>
+<head>
+<!-- HEAD -->
+</head>
+<style rel="STYLESHEET" type="text/css">
+p	{font-family: arial, verdana, sans-serif; font-size: 11pt; color: #000000;}
+li	{font-family: arial, verdana, sans-serif; font-size: 10pt; color: #006600;}
+body	{margins=5; font-family: arial, verdana, sans-serif; font-size: 11pt; color: #000000;}
+a	{color: #006600; text-decoration: none;}
+a:hover	{text-decoration: underline;color: #33CC00;}
+</style>
+<body>
+<table cellspacing=0 cellpadding=0 width=750 border=0 height=100%>
+	<tr>
+		<td colspan=3 align="left" height=100><!-- LOGO
+WIDTH=750
+HEIGHT=100
+--></td></tr>
+<tr><td><img src="<!-- GRAPHICS_URL -->/blank.gif" width=1 height=10></td></tr>
+	<tr>
+		<td valign="top" width=145>
+<ul>
+	<li><a href="<!--HOME_URL-->">Store Home</a></li>
+	<li><a href="<!--ABOUT_URL-->">About Us</a></li>
+	<li><a href="<!--SEARCH_URL-->">Search</a></li>
+	<li><a href="<!--CART_URL-->">Cart</a></li>
+<!-- MENU
+FORMAT=<li><a href="%URL%" target="%TARGET%">%MESSAGE%</a></li>
+ONLYHOME=0
+NOHOME=1
+-->
+	<li><a href="<!--CONTACT_URL-->">Contact Us</a></li>
+	<li><a href="<!-- CHECKOUT_URL -->">Checkout</a></li>
+	
+	
+</ul>
+		</td>
+		<td width=5><img src="<!-- GRAPHICS_URL -->/blank.gif" width=5 height=1></td>
+		<td valign="top" width=600 height=99%>
+		<!-- TITLE -->
+		<p><!-- BODY --></p></td>
+	</tr><tr>
+		<td></td>
+		<td></td>
+		<td valign="top" height=40><!-- FOOTER
+TRANSPARENT=TRUE
+--></td>
+	</tr>
+</table></body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=l2_greenangles
+SITEBUTTONS=l2_greenangles
+-->
+<html>
+<head>
+<!-- HEAD -->
+</head>
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0; font-family: verdana; font-size: 13px;}
+.white	{color: #FFFFFF; font-size: 11px; font-family: verdana;}
+td.foo	{background-image: url(<!-- WRAPPER_URL -->/table_bg.gif);}
+.title {color: #006600; font-family: verdana; font-weight: bold; font-size: 13px;}
+a {text-decoration: none;}
+a:hover	{text-decoration: underline; color: #000000}
+</style>
+<body>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td class="foo"><img src="<!-- WRAPPER_URL -->/car.jpg" width="201" height="116" alt="" border="0"></td>
+		<td class="foo" width=99%>
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td width=99% align="right"><span class="white">
+<a href="<!-- HOME_URL -->"><span class="white">Home</span></a>&nbsp;|
+<a href="<!--CART_URL-->"><span class="white">Cart</span></a>&nbsp;|
+<a href="<!--SEARCH_URL-->"><span class="white">Search</span></a>&nbsp;|
+<a href="<!--ABOUT_URL-->"><span class="white">About Us</span></a>&nbsp;|
+<a href="<!-- LOGIN_URL -->"><span class="white">My Account</span></a>&nbsp;|
+<a href="<!--CONTACT_URL-->"><span class="white">Contact Us</span></a>
+					
+					</td>
+					<td width=3><img src="blank.gif" width="3" height="22" alt="" border="0"></td>
+				</tr><tr>
+					<td align="right" valign="middle"><!-- LOGO
+WIDTH=400
+HEIGHT=63
+--></td>
+					<td><img src="blank.gif" width="3" height="67" alt="" border="0"></td>
+				</tr><tr>
+					<td align="right"><div class="white">
+<!-- MENU
+FORMAT=<a href="%URL%" target="%TARGET%"><span class="white">%MESSAGE%</span></a>%BREAK%
+DIVIDER=|%BREAK%
+AFTER=</div>
+ONLYHOME=0
+NOHOME=1
+--></div>
+					</td>
+					<td><img src="blank.gif" width="3" height="22" alt="" border="0"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table><div align="center">
+<table cellspacing=8 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td><span class="title"><!-- TITLE --></span></td>
+	</tr><tr>
+		<td height=300 valign="top"><!-- BODY --></td>
+	</tr><tr>
+		<td><!-- FOOTER --></td>
+	</tr>
+</table></div>
+</body>
+</html>

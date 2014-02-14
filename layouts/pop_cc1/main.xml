@@ -1,0 +1,27 @@
+<TEMPLATE ID="pop_cc1" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNIA" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG"></ELEMENT>
+<ELEMENT ID="CUFXWBG" RAW="1" SUB="CC_CODE" TYPE="READONLY" LOAD="CART::cc_code"></ELEMENT>
+<ELEMENT ID="CPUKNIB" TYPE="OUTPUT"><HTML><![CDATA[
+<div align="center">
+
+
+<table cellspacing='0' cellpadding='5' border='0' width='100%'>
+<tr>
+	<td valign='top' align='left'>
+	<div class='ztitle'>Our operators are standing by to assist you...</div>
+	
+CC: %CC_CODE%	
+	
+	</td>
+</tr>
+</table>
+
+
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

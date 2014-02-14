@@ -1,0 +1,230 @@
+[
+   {
+      "catalog" : "MUSICINST",
+      "amz-subcat" : "InstrumentPartsAndAccessories",
+      "subcat" : "instrumentpartsandaccessories",
+      "type" : "config",
+		"variation-themes" : "Color"
+   },
+   {
+      "PROMPT" : "MusicalInstruments:InstrumentPartsAndAccessories",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYRN",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_inmtpartsacc_addlspecs",
+      "type" : "textbox",
+      "title" : "Additional Specifications",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.AdditionalSpecifications"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_inmtpartsacc_clrspec",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_clrmap",
+      "type" : "textbox",
+      "title" : "Color Map",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.ColorSpecification"
+   },   
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_mus_inmtpartsacc_cablelength",
+      "type" : "number",
+      "title" : "CableLength",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.CableLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_inmtpartsacc_ctryprdin",
+      "type" : "textbox",
+      "title" : "Country Produced In",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.CountryProducedIn"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_mus_inmtpartsacc_drumstickssize",
+      "type" : "textbox",
+      "title" : "Drum Sticks Size",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.DrumSticksSize"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "extra-thick",
+            "v" : "extra-thick"
+         },
+         {
+            "p" : "medium",
+            "v" : "medium"
+         },
+         {
+            "p" : "thick",
+            "v" : "thick"
+         },
+         {
+            "p" : "thin",
+            "v" : "thin"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_inmtpartsacc_gtrpickthickness",
+      "title" : "Instrument Parts And Accessories Guitar Pick Thickness",
+      "type" : "select",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.GuitarPickThickness",
+      "list" : "LIST_MUSICINST_INSTRUMENTPARTSANDACCESSORIES_GUITARPICKTHICKNESS"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_inmtpartsacc_inmtkey",
+      "type" : "textbox",
+      "title" : "Instrument Key",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.InstrumentKey"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_mus_inmtpartsacc_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "extra-hard",
+            "v" : "extra-hard"
+         },
+         {
+            "p" : "hard",
+            "v" : "hard"
+         },
+         {
+            "p" : "medium",
+            "v" : "medium"
+         },
+         {
+            "p" : "soft",
+            "v" : "soft"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_inmtpartsacc_mallethardness",
+      "title" : "Instrument Parts And Accessories Mallet Hardness",
+      "type" : "select",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.MalletHardness",
+      "list" : "LIST_MUSICINST_INSTRUMENTPARTSANDACCESSORIES_MALLETHARDNESS"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_inmtpartsacc_matltype",
+      "type" : "textbox",
+      "title" : "Material Type",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.MaterialType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_inmtpartsacc_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_inmtpartsacc_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_inmtpartsacc_mdlyear",
+      "type" : "textbox",
+      "title" : "Model Year",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.ModelYear"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_inmtpartsacc_musicalstyle",
+      "type" : "textbox",
+      "title" : "Musical Style",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.MusicalStyle"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_inmtpartsacc_nbrofkeybrdkeys",
+      "type" : "number",
+      "title" : "NumberOfKeybrdKeys",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.NumberOfKeyboardKeys"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_mus_inmtpartsacc_percndiameter",
+      "type" : "textbox",
+      "title" : "Percussion Diameter",
+      "xmlpath" : "MusicalInstruments.ProductType.InstrumentPartsAndAccessories.PercussionDiameter"
+   }
+]

@@ -1,0 +1,104 @@
+<TEMPLATE ID="1033" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNJE" CREATOR="JT" IMAGES="0" PROPERTIES="1" SERIES="Multiple Prodlists" SUBTYPE="C" FORMAT="LAYOUT" SHORT="Contains 2 HTML text boxes, and 3 separate product lists, each with it's own header." TYPE="CONFIG" TITLE="Multiple customized prodlist with 2 HTML editors"><SUMMARY><![CDATA[Contains a HTML editor at the top and bottom of the page.  Between are three product lists, each with it's own header.  This flow does NOT allow the standard zoovy product lists, but instead has a custom listing style that has the title, followed be the image on the left and a truncated description (200 characters) with optional view details link and an add to cart link. The 'mutliple page' feature is disabled on this layout. Subcategories on pages using this layout will be displayed in a three column layout and will display on the subcategory pages (that use this flow) if no subcats are present there.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DESCENDTREE="1" NOROOT="1" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="3"><HTML><![CDATA[<table cellspacing=2 cellpadding=0 border=0 width="100%">
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+<td align="left"><a href='<% load($cat_url);  default("");  print(); %>'><% load($cat_pretty);  default("");  print(); %></a></td>
+<!-- /CATEGORY -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please enter a message that will appear on this page" DATA="page:description" PROMPT="Message" TYPE="HTML"></ELEMENT>
+<ELEMENT ID="HEADER1" HELP="Please enter a short header that will appear on this page" DATA="page:header1" PROMPT="Header for Prodlist 1" TYPE="TEXTBOX"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing" TYPE="PRODLIST"><HTML><![CDATA[<table border="0" cellpadding="0" cellspacing="2" width="100%">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td <% load($BG);  default("");  print(); %> width="50%"><table cellspacing=2 border=0 cellpadding=0 width="100%"><tr>
+	<td colspan=2><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><a href="<% load($PROD_URL);  default("");  print(); %>"><strong><% load($zoovy:prod_name);  default(""); strip(length=>"30",breaks=>"1",html=>"1");  print(); %></strong></a></font></td>
+</tr><tr>
+	<td width="1%" rowspan=2><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"75",h=>"75",bg=>"ffffff",tag=>"1");  print(); %></a></td>
+	<td align="left" valign="top"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><% load($zoovy:prod_desc);  default(""); strip(length=>"200",breaks=>"1",html=>"1");  print(); %><br></font></td>
+</tr><tr>
+	<td align="left" valign="bottom"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><nobr><% load($VIEW_DETAILS);  default("");  format(after=>"space",skipblank=>"1");  format(after=>"bar",skipblank=>"1");  format(after=>"space",skipblank=>"1");  print(); %><% load($ADD_LINK);  default("");  print(); %></nobr></font></td>
+</tr>
+</table></td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUKNJF" TYPE="OUTPUT"><HTML><![CDATA[<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER2" HELP="Please enter a short header that will appear on this page" DATA="page:header2" PROMPT="Header for Prodlist 2" TYPE="TEXTBOX"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST2" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist2" COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing" TYPE="PRODLIST"><HTML><![CDATA[<table border="0" cellpadding="0" cellspacing="2" width="100%">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td <% load($BG);  default("");  print(); %> width="50%"><table cellspacing=2 border=0 cellpadding=0 width="100%"><tr>
+	<td colspan=2><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><a href="<% load($PROD_URL);  default("");  print(); %>"><strong><% load($zoovy:prod_name);  default(""); strip(length=>"30",breaks=>"1",html=>"1");  print(); %></strong></a></font></td>
+</tr><tr>
+	<td width="1%" rowspan=2><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"75",h=>"75",bg=>"ffffff",tag=>"1");  print(); %></a></td>
+	<td align="left" valign="top"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><% load($zoovy:prod_desc);  default(""); strip(length=>"200",breaks=>"1",html=>"1");  print(); %><br></font></td>
+</tr><tr>
+	<td align="left" valign="bottom"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><nobr><% load($VIEW_DETAILS);  default("");  format(after=>"space",skipblank=>"1");  format(after=>"bar",skipblank=>"1");  format(after=>"space",skipblank=>"1");  print(); %><% load($ADD_LINK);  default("");  print(); %></nobr></font></td>
+</tr>
+</table></td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUKNJG" TYPE="OUTPUT"><HTML><![CDATA[<br>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HEADER3" HELP="Please enter a short header that will appear on this page" DATA="page:header3" PROMPT="Header for Prodlist 3" TYPE="TEXTBOX"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
+<POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PRODLIST3" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist3" COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing" TYPE="PRODLIST"><HTML><![CDATA[<table border="0" cellpadding="0" cellspacing="2" width="100%">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td <% load($BG);  default("");  print(); %> width="50%"><table cellspacing=2 border=0 cellpadding=0 width="100%"><tr>
+	<td colspan=2><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><a href="<% load($PROD_URL);  default("");  print(); %>"><strong><% load($zoovy:prod_name);  default(""); strip(length=>"30",breaks=>"1",html=>"1");  print(); %></strong></a></font></td>
+</tr><tr>
+	<td width="1%" rowspan=2><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"75",h=>"75",bg=>"ffffff",tag=>"1");  print(); %></a></td>
+	<td align="left" valign="top"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><% load($zoovy:prod_desc);  default(""); strip(length=>"200",breaks=>"1",html=>"1");  print(); %><br></font></td>
+</tr><tr>
+	<td align="left" valign="bottom"><font color="#<% load($fg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><nobr><% load($VIEW_DETAILS);  default("");  format(after=>"space",skipblank=>"1");  format(after=>"bar",skipblank=>"1");  format(after=>"space",skipblank=>"1");  print(); %><% load($ADD_LINK);  default("");  print(); %></nobr></font></td>
+</tr>
+</table></td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td></td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPUKNJH" TYPE="OUTPUT"><HTML><![CDATA[<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION2" HELP="Please enter a message that will appear on this page" DATA="page:description2" PROMPT="Message" TYPE="HTML"></ELEMENT>
+
+</TEMPLATE>

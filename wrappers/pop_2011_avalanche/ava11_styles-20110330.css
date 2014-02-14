@@ -1,0 +1,129 @@
+.zbody { background-color: #ffffff; }
+.zborder { border: 1px solid #f0f5f9; }
+.zbox { border: 1px solid #cee1f2; }
+.zbox_body { background-color: #FFFFFF; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.zbox_head { background-color: #cee1f2; color: #333333; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 13px; }
+.zcolor { background-color: #cee1f2; color: #666666; }
+.zcolor_contrast { background-color: #FF6600; color: #FFFFFF; }
+.zcolor_dark { background-color: #2f7abb; color: #ffffff; }
+.zcolor_light { background-color: #ffffff; color: #666666; }
+.zform_button { border: 1px solid #cee1f2; background-color: #ffffff; color: #2f7abb; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zform_select { border: 1px solid #cee1f2; background-color: #FFFFFF; color: #666666; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zform_textarea { border: 1px solid #cee1f2; background-color: #FFFFFF; color: #666666; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zform_textbox { border: 1px solid #cee1f2; background-color: #FFFFFF; color: #666666; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zhint { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.zlink { color: #2f7abb; }
+.zsmall { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.ztab0 { background-color: #cee1f2; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 11px; }
+.ztab1 { background-color: #ffffff; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 11px; font-weight: bold;}
+.ztabbody { background-color: #ffffff; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 11px; }
+.ztable_head { background-color: #cee1f2; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 13px; }
+.ztable_row {color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.ztable_row0 { background-color: #FFFFFF; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px;}
+.ztable_row1 { background-color: #f4f9ff; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px;}
+.ztable_row_small { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.ztable_row_title { font-weight: bold; color: #333333; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 14px; }
+.ztitle { font-weight: bold; color: #000000; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 15px; }
+.ztitle2 { font-weight: bold; color: #333333; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 14px; }
+.ztxt { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.zwarn { color: #FF0000; font-weight: bold; }
+
+
+body	{
+	
+	font-family: Calibri, "Helvetica Neue", helvetica, sans-serif;
+	color:#666666;
+	margin:0;
+	padding:0;
+	background:#ffffff;
+	font-size:12px;
+	
+	}
+
+a	{color:#2f7abb;}
+a:hover	{color:#333333;}
+
+img	{border:0px}
+
+/* removes bottom padding/margin from form in old browsers */
+form	{display:inline;}
+
+
+
+#wrapper	{z-index:500; position:relative;}
+
+/* form styles. */
+
+.zform_div	{padding-bottom:8px; clear:both;}
+.zform_div label	{width:150px; vertical-align: text-top; font-size:12px; display:block; float:left; margin-right:5px; text-align:right;}
+
+.zform_div .zform_textbox	{width:250px;}
+
+div.no_underline a	{text-decoration:none;} /* this should be left alone */
+
+.center	{text-align:center; vertical-align:middle;}
+
+h1  {font-size:15px; color:#727272; margin:0px 0px 2px 0px; font-weight:bold; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif} /* Used for the page title element */
+
+/* used for the wiki header 1 & 2 */
+h2	{font-size:12pt; color:#333333; margin:5px 0px 2px 0px; font-weight:bold; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif}
+h3	{font-size:11pt; color:#727272; margin:2px 0px 1px 0px; font-weight:bold; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif}
+
+
+.bold	{font-weight:bold;}
+.textAlignRight	{text-align:right;}
+
+/* used for section break on wiki */
+.wiki_section	{margin-bottom:25px; line-height:150%}
+
+.posRel	{position:relative;}
+
+
+/* ####################  sprite */
+
+.spritebg	{background:url(ava11_sprites-175x190.png) no-repeat;}
+
+
+.floatRight	{float:right;}
+
+
+.whiteness	{background:url(ava11_white_alpha65-75x75.png);}
+
+
+#bodyBgBottomRight, #bodyBgTopLeft, #bodyBgBottomLeft,#bodyBgTopRight	{ 
+	position:fixed;
+	top:0; left:0; right:0; bottom:0;
+	z-index:1;
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	}
+
+/* note - the png version of the bg graphics was twice as big as gif and we didn't lose much in the way of quality. pngs are in same folder. */
+#bodyBgTopRight	{
+	background:url(ava11_body_rightbg-1297x594.gif) top right no-repeat;
+	z-index:1;
+	}
+
+/* the 'rotates' flip the entire div, so positioning is opposite (top right to position into bottom left corner */
+
+#bodyBgBottomLeft	{
+	background:url(ava11_body_rightbg-1297x594.gif) top right no-repeat;
+	/* for firefox, safari, chrome, etc. */
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	/* for ie */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	z-index:1;
+	}
+
+
+
+
+#mhContact	{width:220px; height:34px; text-align:right;}
+#mhContact .phonePrompt	{font-size:11px; color:#85888d; display:inline; margin-right:5px;}
+#mhContact .phoneNumber	{font-size:13px; color:#3f4140; display:inline; font-weight:bold;}
+
+
+

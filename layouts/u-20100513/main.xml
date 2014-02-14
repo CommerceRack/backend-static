@@ -1,0 +1,166 @@
+<TEMPLATE ID="u-20100513" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="DCFMFDD" IMAGES="0" CREATED="20100518" PROPERTIES="1" SUBTYPE="U" TYPE="CONFIG" EXPORT="0" TITLE="Company contact info (address, mail, etc) and form" RELEASED="20100513"></ELEMENT>
+<ELEMENT ID="PAGE_URLSUB_LAYOUT" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
+<ELEMENT ID="PAGE_URLSUB_MAILCONFIG" RAW="1" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL"></ELEMENT>
+<ELEMENT ID="PAGE_URLSUB_RETURNS" RAW="1" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL"></ELEMENT>
+<ELEMENT ID="PAGE_URLSUB_CMAIN" RAW="1" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL"></ELEMENT>
+<ELEMENT ID="PAGE_URLSUB_CONTACT" RAW="1" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL"></ELEMENT>
+<ELEMENT ID="PAGE_URLSUB_LOGIN" RAW="1" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL"></ELEMENT>
+<ELEMENT ID="PAGE_URLSUB_OSTATUS" RAW="1" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL"></ELEMENT>
+<ELEMENT ID="VAR_FROM" RAW="1" SUB="VAR_FORM_FROM" TYPE="READONLY" LOAD="VAR::from"></ELEMENT>
+<ELEMENT ID="VAR_ORDERID" RAW="1" SUB="VAR_FORM_ORDERID" TYPE="READONLY" LOAD="VAR::order_id"></ELEMENT>
+<ELEMENT ID="VAR_FULLNAME" RAW="1" SUB="VAR_FORM_FULLNAME" TYPE="READONLY" LOAD="VAR::fullname"></ELEMENT>
+<ELEMENT ID="VAR_PHONE" RAW="1" SUB="VAR_FORM_PHONE" TYPE="READONLY" LOAD="VAR::phone"></ELEMENT>
+<ELEMENT ID="VAR_MESSAGE" RAW="1" SUB="VAR_FORM_MESSAGE" TYPE="READONLY" LOAD="VAR::message"></ELEMENT>
+<ELEMENT ID="DESCRIPTION_TOP" DATA="page:description" PROMPT="Contact us text (top of page)" SUB="PAGE_DESC" TYPE="TEXT"><DEFAULT><![CDATA[Here you can send a message regarding this site or a particular order. Below the contact information are links to some commonly requested pages.  The contact form is the best way to reach us electronically.]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION_BOTTOM" DATA="page:description2" PROMPT="Additional contact information (bottom of page)" SUB="PAGE_DESC_BOTTOM" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="DCFMFDE" TYPE="OUTPUT"><HTML><![CDATA[
+
+<style type='text/css'>
+#contact label	{text-align:right; width:100px; display:inline-block;}
+#contact .zform_button	{width:120px; margin-left:100px; font-weight:bold;}
+</style>
+
+
+<div class='ztxt' id='contact'>
+<div id='contact_20100513'>
+
+
+<div>%PAGE_DESC%</div>
+
+<div style='clear:both; padding:25px 0;'></div>
+
+<table cellspacing='0' cellpadding='0' width='100%'>
+<tr>
+	<td class='ztxt' valign='top'>
+	<div style='margin-right:25px;'>
+
+<div class='ztitle2'>Address:</div>
+<div style='margin-bottom:10px;'>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPZWXCO" RAW="1" TYPE="READONLY" LOAD="profile:zoovy:address1"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPZWXCO2" RAW="1" TYPE="READONLY" LOAD="profile:zoovy:address2"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPZWXCP" RAW="1" TYPE="READONLY" POSTTEXT=", " LOAD="profile:zoovy:city"></ELEMENT>
+<ELEMENT ID="CPZWXCQ" RAW="1" TYPE="READONLY" POSTTEXT=". " LOAD="profile:zoovy:state"></ELEMENT>
+<ELEMENT ID="CPZWXCR" RAW="1" TYPE="READONLY" LOAD="profile:zoovy:zip"></ELEMENT>
+<ELEMENT ID="DCFMFDF" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="COMPANY_PHONE" RAW="1" TYPE="READONLY" LOAD="profile:zoovy:support_phone"><PRETEXT><![CDATA[
+	<div class='ztitle2'>Phone:</div>
+	<div style='margin-bottom:10px;'>
+    ]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="COMPANY_FAX" RAW="1" TYPE="READONLY" LOAD="profile:zoovy:facsimile"><PRETEXT><![CDATA[
+	<div class='ztitle2'>Fax:</div>
+	<div style='margin-bottom:10px;'>
+    ]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="DCFMFDG" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+
+<div class='ztitle2'>Helpful links:</div>
+<div style='margin-bottom:10px;' class='ztxt no_underline'>
+
+	<div id='contactpage_ostatuslink'> &#187; <a href='%CUSTOMER_MAIN_URL%' class='zlink'>Order status</a></div>
+	<div id='contactpage_recoverpasslink'> &#187; <a href='%LOGIN_URL%' class='zlink'>Recover lost password</a></div>
+	<div id='contactpage_newslink'> &#187; <a href='%MAIL_CONFIG_URL%' class='zlink'>Email/newsletter preferences</a></div>
+
+	<div id='contactpage_shippinglink'> &#187; <a href='%RETURNS_URL%#shipping' class='zlink'>Shipping policy</a></div>
+	<div id='contactpage_returnslink'> &#187; <a href='%RETURNS_URL%#returns' class='zlink'>Return policy</a></div>
+	<div id='contactpage_paymentlink'> &#187; <a href='%RETURNS_URL%#payment' class='zlink'>Payment policy</a></div>
+	<div id='contactpage_privacylink'> &#187; <a href='%PRIVACY_URL%' class='zlink'>Privacy policy</a></div>
+	<div id='contactpage_faqlink'> &#187; <a href='%RETURNS_URL%#faq' class='zlink'>FAQ</a></div>
+
+</div>
+
+
+	</div>
+	</td>
+	
+	<td valign='top' class='ztxt'>
+
+
+
+
+<div style='float:right; width:370px;' id='contact_form_container'>
+
+
+<form id='contact_form' name='contact_form' action='%CONTACT_URL%' method='post'>
+<input type="hidden" name="customvars" value="fullname,order_id,phone,message">
+<input type="hidden" name="validate" value="1">
+<input type="hidden" name="subject" value="Contact form from website">
+<input type="hidden" name="required" value="from">
+
+<fieldset>
+<legend class='ztitle2'>Contact us</legend>
+
+
+
+
+
+<div style='margin-bottom:4px;'>
+<label for='from'>Email: </label>
+<input type='text' name='from' id='contactform_from' class='zform_textbox' value='%VAR_FORM_FROM%' style='width:200px;' />
+</div>
+
+<div style='margin-bottom:4px;'>
+<label for='name'>Name: </label>
+<input type='text' name='fullname' id='contactform_name' class='zform_textbox' value='%VAR_FORM_FULLNAME%' style='width:200px;' />
+</div>
+
+<div style='margin-bottom:4px;'>
+<label for='order_id'>Order id: </label>
+<input type='text' name='order_id' id='contactform_from' class='zform_textbox' value='%VAR_FORM_ORDERID%' style='width:200px;' />
+<!-- <span class='zhint'> (if applicable)</span> -->
+</div>
+
+<div style='margin-bottom:4px;'>
+<label for='phone'>Phone: </label>
+<input type='text' name='phone' id='contactform_phone' class='zform_textbox' value='%VAR_FORM_PHONE%' style='width:200px;' />
+</div>
+
+<div style='margin-bottom:4px;'>
+<label for='phone' style='vertical-align:top'>Message: </label>
+<textarea class='zform_textarea' name='message' id='contactform_message' style='width:200px;' rows='8'>%VAR_FORM_MESSAGE%</textarea>
+</div>
+
+<div style='padding-left:4px;'><input type='submit' value='Send Now' class='zform_button' /></div>
+
+</fieldset>
+
+
+
+</form>
+
+</div>
+
+	</td>
+</tr>
+</table>
+
+%PAGE_DESC_BOTTOM%
+
+
+
+</div>
+</div>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

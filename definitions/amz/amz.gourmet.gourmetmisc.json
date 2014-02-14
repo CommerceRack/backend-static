@@ -1,0 +1,73 @@
+[
+   {
+      "catalog" : "GOURMET",
+		"amz-catalog" : "Gourmet",
+      "amz-subcat" : "GourmetMisc",
+      "subcat" : "gourmetmisc",
+      "type" : "config",
+		"variation-themes" : "Flavor-Size,Size,Flavor"
+   },
+   {
+      "PROMPT" : "Gourmet:GourmetMisc",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXYN",
+      "xmlpath" : "Gourmet.ProductType.GourmetMisc."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "Gourmet.ProductType.GourmetMisc.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "Gourmet.ProductType.GourmetMisc.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:size",
+		"vkey" : "Size",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Gourmet.ProductType.GourmetMisc.VariationData.Size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:flavor",
+		"vkey" : "Flavor",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Gourmet.ProductType.GourmetMisc.VariationData.Flavor"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_grmt_grmtmisc_ctryprdin",
+      "type" : "textbox",
+      "title" : "Country Produced In",
+      "xmlpath" : "Gourmet.ProductType.GourmetMisc.CountryProducedIn"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_grmt_grmtmisc_ingrdts",
+      "type" : "textbox",
+      "title" : "Ingredients",
+      "xmlpath" : "Gourmet.ProductType.GourmetMisc.Ingredients"
+   }
+]

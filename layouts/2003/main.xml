@@ -1,0 +1,60 @@
+<TEMPLATE ID="2003" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMDD" CREATOR="STAFF" IMAGES="3" PROPERTIES="1" SERIES="2002" SUBTYPE="D" FORMAT="LAYOUT" SHORT="Three 180x180 pictures show extra detail, along with a graph, extended description, and products." TYPE="CONFIG" TITLE="3 Picture" RELEASED="20021106"><SUMMARY><![CDATA[Counter Graph
+Extended Description
+IMAGE1 (180x180)
+IMAGE2 (180x180)
+IMAGE3 (180x180)
+Product Listing
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMDE" TYPE="OUTPUT"><HTML><![CDATA[<center>
+<table>
+  <tr>
+    <td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="180" HELP="Please select a picture." DATA="page:picture1" PROMPT="Small Picture" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMDF" TYPE="OUTPUT"><HTML><![CDATA[
+    </td>
+    <td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC2" HEIGHT="180" HELP="Please select a picture." DATA="page:picture2" PROMPT="Small Picture" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMDG" TYPE="OUTPUT"><HTML><![CDATA[
+    </td>
+    <td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PIC3" HEIGHT="180" HELP="Please select a picture." DATA="page:picture3" PROMPT="Small Picture" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMDH" TYPE="OUTPUT"><HTML><![CDATA[
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Extra information for bidders!" DATA="page:description" PROMPT="Extended Description" DEFAULT=" Here's a graph of this auction's views by hour!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMDI" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HITGRAPH1" HEIGHT="200" HELP="Auction Counter that tracks realtime traffic for this auction. " DATA="page:hitgraph" PROMPT="Counter Graph" WIDTH="560" DEFAULT="Graph of visitors by the hour" TYPE="HITGRAPH"></ELEMENT>
+<ELEMENT ID="CPUKMDJ" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" HELP="You can add related products to this, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKMDK" TYPE="OUTPUT"><HTML><![CDATA[
+</center>
+    </td>
+  </tr>
+</table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

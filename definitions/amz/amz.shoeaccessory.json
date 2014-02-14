@@ -1,0 +1,675 @@
+[
+   {
+      "catalog" : "SHOEACCESSORY",
+		"amz-catalog" : "Shoes",
+      "amz-subcat" : null,
+      "subcat" : null,
+      "type" : "config",
+		"variation-themes" : "Size+Color,SizeColor,Size,Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "type" : "default",
+      "id" : "amz:prod_cloth_cd_clothingtype",
+		"default" : "ShoeAccessory",
+      "xmlpath" : "Shoes.ClothingType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "amz_attrib" : "parentage",
+      "id" : "variation:parentage",
+      "type" : "variation",
+      "variation-type" : "parentage",
+      "xmlpath" : "Shoes.VariationData.Parentage"
+   },
+   {
+      "amz_attrib" : "Size",
+      "xmlpath" : "Shoes.VariationData.Size",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+      "id" : "variation:size",
+      "vkey" : "Size",
+      "variation-type" : "value"
+   },
+   {
+      "amz_attrib" : "Color",
+      "xmlpath" : "Shoes.VariationData.Color",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+      "id" : "variation:color",
+      "vkey" : "Color",
+      "variation-type" : "value"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "amz_attrib" : "VariationTheme",
+      "id" : "variation:theme",
+      "type" : "variation",
+      "variation-type" : "theme",
+      "xmlpath" : "Shoes.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-allow-blank" : "Y",
+      "data" : "product:amz:catalog",
+      "id" : "CRCQVVN",
+      "type" : "hidden",
+      "xmlpath" : "Shoes.ClassificationData.",
+      "prompt" : "SHOEACCESSORY"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "title" : "Search Terms",
+      "type" : "textlist"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_cloth_cd_itemtype",
+      "title" : "Item Type",
+      "type" : "textbox"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "beige",
+            "v" : "beige"
+         },
+         {
+            "p" : "black",
+            "v" : "black"
+         },
+         {
+            "p" : "blue",
+            "v" : "blue"
+         },
+         {
+            "p" : "bronze",
+            "v" : "bronze"
+         },
+         {
+            "p" : "brown",
+            "v" : "brown"
+         },
+         {
+            "p" : "gold",
+            "v" : "gold"
+         },
+         {
+            "p" : "green",
+            "v" : "green"
+         },
+         {
+            "p" : "grey",
+            "v" : "grey"
+         },
+         {
+            "p" : "metallic",
+            "v" : "metallic"
+         },
+         {
+            "p" : "multicoloured",
+            "v" : "multicoloured"
+         },
+         {
+            "p" : "off-white",
+            "v" : "off-white"
+         },
+         {
+            "p" : "orange",
+            "v" : "orange"
+         },
+         {
+            "p" : "pink",
+            "v" : "pink"
+         },
+         {
+            "p" : "purple",
+            "v" : "purple"
+         },
+         {
+            "p" : "red",
+            "v" : "red"
+         },
+         {
+            "p" : "silver",
+            "v" : "silver"
+         },
+         {
+            "p" : "transparent",
+            "v" : "transparent"
+         },
+         {
+            "p" : "turquoise",
+            "v" : "turquoise"
+         },
+         {
+            "p" : "white",
+            "v" : "white"
+         },
+         {
+            "p" : "yellow",
+            "v" : "yellow"
+         }
+      ],
+      "amz_attrib" : "ColorMap",
+      "xmlpath" : "Shoes.ClassificationData.ColorMap",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_colormap",
+      "type" : "select",
+      "title" : "Color Map",
+      "mandatory" : "Y"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "baby-boy",
+            "v" : "baby-boy"
+         },
+         {
+            "p" : "baby-girl",
+            "v" : "baby-girl"
+         },
+         {
+            "p" : "boys",
+            "v" : "boys"
+         },
+         {
+            "p" : "girls",
+            "v" : "girls"
+         }
+      ],
+      "amz_attrib" : "Department",
+      "xmlpath" : "Shoes.ClassificationData.Department",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_dpt",
+      "type" : "select",
+      "title" : "Department",
+      "mandatory" : "Y"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "100-percent-cotton",
+            "v" : "100-percent-cotton"
+         },
+         {
+            "p" : "acetate",
+            "v" : "acetate"
+         },
+         {
+            "p" : "acrylic",
+            "v" : "acrylic"
+         },
+         {
+            "p" : "alpaca",
+            "v" : "alpaca"
+         },
+         {
+            "p" : "angora",
+            "v" : "angora"
+         },
+         {
+            "p" : "blend",
+            "v" : "blend"
+         },
+         {
+            "p" : "buckskin",
+            "v" : "buckskin"
+         },
+         {
+            "p" : "calfskin",
+            "v" : "calfskin"
+         },
+         {
+            "p" : "cashmere",
+            "v" : "cashmere"
+         },
+         {
+            "p" : "cashmere-blend",
+            "v" : "cashmere-blend"
+         },
+         {
+            "p" : "chamois",
+            "v" : "chamois"
+         },
+         {
+            "p" : "cotton",
+            "v" : "cotton"
+         },
+         {
+            "p" : "cotton-blend",
+            "v" : "cotton-blend"
+         },
+         {
+            "p" : "cotton-rich",
+            "v" : "cotton-rich"
+         },
+         {
+            "p" : "crocodile",
+            "v" : "crocodile"
+         },
+         {
+            "p" : "dacron",
+            "v" : "dacron"
+         },
+         {
+            "p" : "down",
+            "v" : "down"
+         },
+         {
+            "p" : "egyptian-cotton",
+            "v" : "egyptian-cotton"
+         },
+         {
+            "p" : "faux-fur",
+            "v" : "faux-fur"
+         },
+         {
+            "p" : "fleece",
+            "v" : "fleece"
+         },
+         {
+            "p" : "fur",
+            "v" : "fur"
+         },
+         {
+            "p" : "gore-tex",
+            "v" : "gore-tex"
+         },
+         {
+            "p" : "kevlar",
+            "v" : "kevlar"
+         },
+         {
+            "p" : "leather",
+            "v" : "leather"
+         },
+         {
+            "p" : "linen",
+            "v" : "linen"
+         },
+         {
+            "p" : "linen-blend",
+            "v" : "linen-blend"
+         },
+         {
+            "p" : "lizard",
+            "v" : "lizard"
+         },
+         {
+            "p" : "lurex",
+            "v" : "lurex"
+         },
+         {
+            "p" : "lycra",
+            "v" : "lycra"
+         },
+         {
+            "p" : "lycra-blend",
+            "v" : "lycra-blend"
+         },
+         {
+            "p" : "mercerized-cotton",
+            "v" : "mercerized-cotton"
+         },
+         {
+            "p" : "merino-wool",
+            "v" : "merino-wool"
+         },
+         {
+            "p" : "microfiber",
+            "v" : "microfiber"
+         },
+         {
+            "p" : "microsuede",
+            "v" : "microsuede"
+         },
+         {
+            "p" : "mohair",
+            "v" : "mohair"
+         },
+         {
+            "p" : "nappa-leather",
+            "v" : "nappa-leather"
+         },
+         {
+            "p" : "neoprene",
+            "v" : "neoprene"
+         },
+         {
+            "p" : "nubuck",
+            "v" : "nubuck"
+         },
+         {
+            "p" : "nylon",
+            "v" : "nylon"
+         },
+         {
+            "p" : "ostrich",
+            "v" : "ostrich"
+         },
+         {
+            "p" : "patent-leather",
+            "v" : "patent-leather"
+         },
+         {
+            "p" : "pima-cotton",
+            "v" : "pima-cotton"
+         },
+         {
+            "p" : "plastic",
+            "v" : "plastic"
+         },
+         {
+            "p" : "pleather",
+            "v" : "pleather"
+         },
+         {
+            "p" : "polartec-fleece",
+            "v" : "polartec-fleece"
+         },
+         {
+            "p" : "poly-cotton",
+            "v" : "poly-cotton"
+         },
+         {
+            "p" : "polyester",
+            "v" : "polyester"
+         },
+         {
+            "p" : "polyester-blend",
+            "v" : "polyester-blend"
+         },
+         {
+            "p" : "polypropylene",
+            "v" : "polypropylene"
+         },
+         {
+            "p" : "poly-rayon",
+            "v" : "poly-rayon"
+         },
+         {
+            "p" : "pony",
+            "v" : "pony"
+         },
+         {
+            "p" : "rayon",
+            "v" : "rayon"
+         },
+         {
+            "p" : "rayon-blend",
+            "v" : "rayon-blend"
+         },
+         {
+            "p" : "rubber",
+            "v" : "rubber"
+         },
+         {
+            "p" : "shearling",
+            "v" : "shearling"
+         },
+         {
+            "p" : "sheepskin",
+            "v" : "sheepskin"
+         },
+         {
+            "p" : "shetland",
+            "v" : "shetland"
+         },
+         {
+            "p" : "silk",
+            "v" : "silk"
+         },
+         {
+            "p" : "silk-blend",
+            "v" : "silk-blend"
+         },
+         {
+            "p" : "snakeskin",
+            "v" : "snakeskin"
+         },
+         {
+            "p" : "spandex",
+            "v" : "spandex"
+         },
+         {
+            "p" : "straw",
+            "v" : "straw"
+         },
+         {
+            "p" : "suede",
+            "v" : "suede"
+         },
+         {
+            "p" : "synthetic",
+            "v" : "synthetic"
+         },
+         {
+            "p" : "tencel",
+            "v" : "tencel"
+         },
+         {
+            "p" : "thinsulate",
+            "v" : "thinsulate"
+         },
+         {
+            "p" : "ultrasuede",
+            "v" : "ultrasuede"
+         },
+         {
+            "p" : "urethane",
+            "v" : "urethane"
+         },
+         {
+            "p" : "velcro",
+            "v" : "velcro"
+         },
+         {
+            "p" : "vinyl",
+            "v" : "vinyl"
+         },
+         {
+            "p" : "viscose",
+            "v" : "viscose"
+         },
+         {
+            "p" : "viscose-rayon",
+            "v" : "viscose-rayon"
+         },
+         {
+            "p" : "water-snake",
+            "v" : "water-snake"
+         },
+         {
+            "p" : "wool",
+            "v" : "wool"
+         },
+         {
+            "p" : "wool-blend",
+            "v" : "wool-blend"
+         },
+         {
+            "p" : "worsted-wool",
+            "v" : "worsted-wool"
+         }
+      ],
+      "amz_attrib" : "FabricType",
+      "xmlpath" : "Shoes.ClassificationData.FabricType",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cloth_cd_matlandfabric",
+      "type" : "select",
+      "title" : "Material Fabric Type",
+      "mandatory" : "Y"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "all-weather",
+            "v" : "all-weather"
+         },
+         {
+            "p" : "athletic",
+            "v" : "athletic"
+         },
+         {
+            "p" : "bridal",
+            "v" : "bridal"
+         },
+         {
+            "p" : "casual",
+            "v" : "casual"
+         },
+         {
+            "p" : "cold-weather",
+            "v" : "cold-weather"
+         },
+         {
+            "p" : "dress",
+            "v" : "dress"
+         },
+         {
+            "p" : "fashion",
+            "v" : "fashion"
+         },
+         {
+            "p" : "formal",
+            "v" : "formal"
+         },
+         {
+            "p" : "hiking",
+            "v" : "hiking"
+         },
+         {
+            "p" : "indoor",
+            "v" : "indoor"
+         },
+         {
+            "p" : "outdoor",
+            "v" : "outdoor"
+         },
+         {
+            "p" : "performance",
+            "v" : "performance"
+         },
+         {
+            "p" : "rain",
+            "v" : "rain"
+         },
+         {
+            "p" : "snow",
+            "v" : "snow"
+         },
+         {
+            "p" : "work-utility",
+            "v" : "work-utility"
+         },
+         {
+            "p" : "yoga",
+            "v" : "yoga"
+         }
+      ],
+      "amz_attrib" : "OccasionAndLifestyle",
+      "xmlpath" : "Shoes.ClassificationData.OccasionAndLifestyle",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "select",
+      "title" : "Occasion and Lifestyle",
+      "id" : "amz:prod_cloth_cd_occandlife"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "checkered",
+            "v" : "checkered"
+         },
+         {
+            "p" : "paisley",
+            "v" : "paisley"
+         },
+         {
+            "p" : "fringed",
+            "v" : "fringed"
+         },
+         {
+            "p" : "polka-dots",
+            "v" : "polka-dots"
+         },
+         {
+            "p" : "solid",
+            "v" : "solid"
+         },
+         {
+            "p" : "stripes",
+            "v" : "stripes"
+         },
+         {
+            "p" : "plaid",
+            "v" : "plaid"
+         },
+         {
+            "p" : "studded",
+            "v" : "studded"
+         },
+         {
+            "p" : "floral",
+            "v" : "floral"
+         },
+         {
+            "p" : "herringbone",
+            "v" : "herringbone"
+         },
+         {
+            "p" : "hounds-tooth",
+            "v" : "hounds-tooth"
+         },
+         {
+            "p" : "ruched",
+            "v" : "ruched"
+         },
+         {
+            "p" : "woven",
+            "v" : "woven"
+         },
+         {
+            "p" : "animal-print",
+            "v" : "animal-print"
+         }
+      ],
+      "amz_attrib" : "PatternStyle",
+      "xmlpath" : "Shoes.ClassificationData.PatternStyle",
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "select",
+      "title" : "Pattern Style",
+      "id" : "amz:prod_cloth_cd_patternstyle"
+   }
+]

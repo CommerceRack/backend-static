@@ -1,0 +1,44 @@
+<TEMPLATE ID="5502" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMLA" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SUBTYPE="S" SERIES="2006" FORMAT="LAYOUT" TYPE="CONFIG" RELEASED="00000000"><SUMMARY><![CDATA[Search Box 1
+Search Hints
+Welcome Message
+]]></SUMMARY>
+<TITLE><![CDATA[This is a search results layout designed for the advanced search functionality in the Evolution layout.]]></TITLE>
+</ELEMENT>
+<ELEMENT ID="CSPFDBG" TYPE="TITLE"><PRETEXT><![CDATA[<div style="font-size:11px; margin-bottom:3px;">]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT SIZE="50000" ID="PRODUCTLIST" ALTERNATE="2" DATA="page:prodlist" COLS="1" FORMAT="CUSTOM" TYPE="PRODSEARCH"><HTML><![CDATA[
+<table BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td <% load($bg);  default("");  print(); %>>
+<table width="100%" BORDER="0" CELLPADDING="0" CELLSPACING="2">
+	<tr>
+		<td WIDTH="1%" VALIGN="top" HEIGHT="50"><A HREF="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"50",h=>"50",tag=>"1");  print(); %></A></td>
+		<td ALIGN="left" WIDTH="99%" VALIGN="top">
+		<DIV style="margin-bottom:1px; width:100%;"><A HREF="<% load($PROD_URL);  default("");  print(); %>" CLASS="search_list_text" STYLE="font-weight:bold; font-size:11px;"><% load($zoovy:prod_name);  default(""); strip(length=>"35",breaks=>"1",html=>"1");  print(); %></A></DIV>
+		<DIV style="width:100%"><A HREF="<% load($PROD_URL);  default("");  print(); %>" CLASS="search_list_text"><% load($zoovy:prod_desc);  default(""); format(wiki,title1=>"",/title1=>"",title2=>"",/title2=>"",title3=>"",/title3=>"",listitem=>"",/listitem=>"",list=>"",/list=>"",hardbreak=>""); strip(length=>"150");  print(); %></A></DIV>
+		<DIV style="padding-top:2px; width:100%">
+			<DIV ALIGN="RIGHT"><span class="search_list_price"><% load($zoovy:base_price);  default("");  format(money);  format(after=>"space",skipblank=>"1");  format(after=>"bar",skipblank=>"1");  print(); %>  <% load($ADD_LINK);  default("");  print(); %></span></DIV>
+		</DIV>
+		</td>
+	</tr>
+	</table>
+<!-- I don't think this is used.  Remove it and test on DEV sometime.  resultsCount is not called in evolution/main.xml -->
+<script type="text/javascript">
+var resultsCount = <% load($COUNT);  default("");  print(); %>;
+</script>
+<td>
+<!-- /PRODUCT -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

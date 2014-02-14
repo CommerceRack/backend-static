@@ -1,0 +1,40 @@
+<TEMPLATE ID="206" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLQY" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" SHORT="Focus on showcasing products only in this shopping-portal inspired design." TYPE="CONFIG" TITLE="Product1" RELEASED="20020618"><SUMMARY><![CDATA[Product Listing
+Welcome Message
+Welcome header
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKLQZ" TYPE="OUTPUT"><HTML><![CDATA[<table border="0" width="100%">
+	<tr>
+		<td valign="top" align="center">
+			<table cellpadding=6 cellspacing=6 width="600">
+			<tr><td colspan="2" valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME1" HELP="Please enter a message that will appear on your front page" DATA="page:welcome_message" PROMPT="Welcome header" HELPER="Remember to keep this text short and to the point." DEFAULT="Hello, welcome to our wonderful website!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKLRA" TYPE="OUTPUT"><HTML><![CDATA[
+			</td></tr>
+			<tr><td valign="top" width="400">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKLRB" TYPE="OUTPUT"><HTML><![CDATA[
+			</td><td valign="top" width="200">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME2" HELP="Please enter a Welcome message that will appear on your front page" DATA="page:welcome_message2" PROMPT="Welcome Message" DEFAULT="Hello, welcome to our wonderful website!" TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. This is to jot short descriptions and messages while keeping the focus on products.]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKLRC" TYPE="OUTPUT"><HTML><![CDATA[
+		</td></tr></table>
+
+		</td>
+	</tr>
+</table>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

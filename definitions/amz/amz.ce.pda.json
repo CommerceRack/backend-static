@@ -1,0 +1,152 @@
+[
+   {
+      "catalog" : "CE",
+		"amz-catalog" : "CE",
+      "amz-subcat" : "PDA",
+      "subcat" : "pda",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CE:PDA",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXWZ",
+      "xmlpath" : "CE.ProductType.PDA."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "mandatory" : "Y",
+      "title" : "Computer Memory Type",
+      "id" : "amz:prod_ce_pda_computermemorytype",
+      "xmlpath" : "CE.ProductType.PDA.ComputerMemoryType"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_ce_pda_computermemorytype_10",
+      "type" : "textbox",
+      "title" : "Computer Memory Type_10"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Memory",
+      "id" : "amz:prod_ce_pda_ramsize",
+      "type" : "textbox",
+      "title" : "R A M Size",
+      "xmlpath" : "CE.ProductType.PDA.RAMSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "Screen Resolution",
+      "id" : "amz:prod_ce_pda_screenresolution",
+      "xmlpath" : "CE.ProductType.PDA.ScreenResolution"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pda_colorscreen",
+      "type" : "checkbox",
+      "title" : "Color Screen",
+      "xmlpath" : "CE.ProductType.PDA.ColorScreen"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "mandatory" : "Y",
+      "title" : "Operating System",
+      "id" : "amz:prod_ce_pda_os",
+      "xmlpath" : "CE.ProductType.PDA.OperatingSystem"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pda_wrlstype",
+      "type" : "textlist",
+      "title" : "Wireless Type",
+      "xmlpath" : "CE.ProductType.PDA.WirelessType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Memory",
+      "id" : "amz:prod_ce_pda_harddrivesize",
+      "type" : "textbox",
+      "title" : "Hard Drive Size",
+      "xmlpath" : "CE.ProductType.PDA.HardDriveSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pda_softwareincluded",
+      "type" : "textbox",
+      "title" : "Software Included",
+      "xmlpath" : "CE.ProductType.PDA.SoftwareIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pda_memoryslotsavailable",
+      "type" : "textbox",
+      "title" : "Memory Slots Available",
+      "xmlpath" : "CE.ProductType.PDA.MemorySlotsAvailable"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pda_processorspeed",
+      "type" : "textbox",
+      "title" : "Processor Speed",
+      "xmlpath" : "CE.ProductType.PDA.ProcessorSpeed"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pda_processortype",
+      "type" : "textbox",
+      "title" : "Processor Type",
+      "xmlpath" : "CE.ProductType.PDA.ProcessorType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Memory",
+      "id" : "amz:prod_ce_pda_romsize",
+      "type" : "textbox",
+      "title" : "R O M Size",
+      "xmlpath" : "CE.ProductType.PDA.ROMSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Measurement",
+      "id" : "amz:prod_ce_pda_screensize",
+      "type" : "number",
+      "title" : "ScreenSize",
+      "xmlpath" : "CE.ProductType.PDA.ScreenSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pda_addlfeatures",
+      "type" : "textbox",
+      "title" : "Additional Features",
+      "xmlpath" : "CE.ProductType.PDA.AdditionalFeatures"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ce_pda_pdabasemdl",
+      "type" : "textlist",
+      "title" : "P D A Base Model",
+      "xmlpath" : "CE.ProductType.PDA.PDABaseModel"
+   }
+]

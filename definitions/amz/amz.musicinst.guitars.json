@@ -1,0 +1,249 @@
+[
+   {
+      "catalog" : "MUSICINST",
+      "amz-subcat" : "Guitars",
+      "subcat" : "guitars",
+      "type" : "config",
+		"variation-themes" : "Color"
+   },
+   {
+      "PROMPT" : "MusicalInstruments:Guitars",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYQU",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.VariationData.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_gtrs_addlspecs",
+      "type" : "textbox",
+      "title" : "Additional Specifications",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.AdditionalSpecifications"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_gtrs_clrspec",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_mus_clrmap",
+      "type" : "textbox",
+      "title" : "Color Map",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.ColorSpecification"
+   },   
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_gtrs_ctryprdin",
+      "type" : "textbox",
+      "title" : "Country Produced In",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.CountryProducedIn"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "dreadnought",
+            "v" : "dreadnought"
+         },
+         {
+            "p" : "fretless",
+            "v" : "fretless"
+         },
+         {
+            "p" : "grand-auditorium",
+            "v" : "grand-auditorium"
+         },
+         {
+            "p" : "grand-concert",
+            "v" : "grand-concert"
+         },
+         {
+            "p" : "jumbo",
+            "v" : "jumbo"
+         },
+         {
+            "p" : "mini",
+            "v" : "mini"
+         },
+         {
+            "p" : "nex",
+            "v" : "nex"
+         },
+         {
+            "p" : "shallow-body",
+            "v" : "shallow-body"
+         },
+         {
+            "p" : "short-scale",
+            "v" : "short-scale"
+         },
+         {
+            "p" : "travel",
+            "v" : "travel"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_gtrs_gtrattribute",
+      "title" : "Guitars Guitar Attribute",
+      "type" : "select",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.GuitarAttribute",
+      "list" : "LIST_MUSICINST_GUITARS_GUITARATTRIBUTE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "fixed",
+            "v" : "fixed"
+         },
+         {
+            "p" : "tremolo",
+            "v" : "tremolo"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_gtrs_gtrbridgesystem",
+      "title" : "Guitars Guitar Bridge System",
+      "type" : "select",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.GuitarBridgeSystem",
+      "list" : "LIST_MUSICINST_GUITARS_GUITARBRIDGESYSTEM"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "humbucker",
+            "v" : "humbucker"
+         },
+         {
+            "p" : "magnetic-combination",
+            "v" : "magnetic-combination"
+         },
+         {
+            "p" : "magnetic-double-coil",
+            "v" : "magnetic-double-coil"
+         },
+         {
+            "p" : "magnetic-single-coil",
+            "v" : "magnetic-single-coil"
+         },
+         {
+            "p" : "piezoelectric",
+            "v" : "piezoelectric"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_gtrs_gtrpickupconfiguration",
+      "title" : "Guitars Guitar Pickup Configuration",
+      "type" : "select",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.GuitarPickupConfiguration",
+      "list" : "LIST_MUSICINST_GUITARS_GUITARPICKUPCONFIGURATION"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_mus_gtrs_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_gtrs_matltype",
+      "type" : "textbox",
+      "title" : "Material Type",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.MaterialType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_gtrs_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_gtrs_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_gtrs_mdlyear",
+      "type" : "textbox",
+      "title" : "Model Year",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.ModelYear"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_gtrs_musicalstyle",
+      "type" : "textbox",
+      "title" : "Musical Style",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.MusicalStyle"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_mus_gtrs_nbrofstrings",
+      "type" : "number",
+      "title" : "NumberOfStrings",
+      "xmlpath" : "MusicalInstruments.ProductType.Guitars.NumberOfStrings"
+   }
+]

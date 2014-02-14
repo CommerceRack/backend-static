@@ -1,0 +1,28 @@
+<TEMPLATE ID="i_20050313" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNLB" IMAGES="0" CREATED="20050312" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" SHORT="Contains just an HTML editor followed by a product list." TYPE="CONFIG" TITLE="Simple HTML block and Product List" NEWSLETTER="1"><SUMMARY><![CDATA[Description
+Product Listing
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKNLC" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>%SUBJECT%</title>
+</head>
+
+<body>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this section of the newsletter" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Description" TYPE="HTML"></ELEMENT>
+<ELEMENT ID="PRODLIST1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist1" PROMPT="Product Listing" DEFAULT="&amp;FORMAT=THUMB&amp;COLS=3&amp;ALTERNATE=1" TYPE="PRODLIST" SRC="page:prodlist1stuff"></ELEMENT>
+<ELEMENT ID="CPUKNLD" TYPE="OUTPUT"><HTML><![CDATA[
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

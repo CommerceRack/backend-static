@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=l2_blueish
+SITEBUTTONS=l2_blueish
+-->
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+.title	{font-family: arial; font-size: 14px; color: #FFFFFF;font-weight:bold;}
+</style>
+</head>
+
+<body>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+	<tr>
+		<td colspan=3 height=75 background="<!-- WRAPPER_URL -->/logo_bg.gif" align="center"><!-- LOGO
+WIDTH=300
+HEIGHT=70
+--></td>
+	</tr><tr>
+		<td colspan=3 bgcolor="#003399" height=18 align="center"><span class="title"><!-- TITLE --></span></td>
+	</tr><tr>
+		<td width=16 height=24><img src="<!-- WRAPPER_URL -->/left_top.gif" width="16" height="24" alt="" border="0"></td>
+		<td background="<!-- WRAPPER_URL -->/top_bg.gif"></td>
+		<td width=16><img src="<!-- WRAPPER_URL -->/right_top.gif" width="16" height="24" alt="" border="0"></td>
+	</tr><tr>
+		<td background="<!-- WRAPPER_URL -->/left_bg.gif"></td>
+		<td valign="top" width=99%><!-- BODY -->
+		<!-- use a blank gif to force padding -->
+		<img src="http://www.zoovy.com/images/blank.gif" width="300" height="1">
+		</td>
+		<td background="<!-- WRAPPER_URL -->/right_bg.gif"></td>
+	</tr><tr>
+		<td height=18><img src="<!-- WRAPPER_URL -->/left_bottom.gif" width="16" height="18" alt="" border="0"></td>
+		<td background="<!-- WRAPPER_URL -->/bottom_bg.gif"></td>
+		<td><img src="<!-- WRAPPER_URL -->/right_bottom.gif" width="16" height="18" alt="" border="0"></td>
+	</tr>
+</table>
+</body>
+</html>

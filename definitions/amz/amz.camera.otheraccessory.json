@@ -1,0 +1,721 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "OtherAccessory",
+      "subcat" : "otheraccessory",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:OtherAccessory",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXEK",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "close-up-accessories",
+            "v" : "close-up-accessories"
+         },
+         {
+            "p" : "viewfinders",
+            "v" : "viewfinders"
+         },
+         {
+            "p" : "motor-drives",
+            "v" : "motor-drives"
+         },
+         {
+            "p" : "eye-cups",
+            "v" : "eye-cups"
+         },
+         {
+            "p" : "winders",
+            "v" : "winders"
+         },
+         {
+            "p" : "straps",
+            "v" : "straps"
+         },
+         {
+            "p" : "remote-controls",
+            "v" : "remote-controls"
+         },
+         {
+            "p" : "cables-and-cords",
+            "v" : "cables-and-cords"
+         },
+         {
+            "p" : "other-camera-accessories",
+            "v" : "other-camera-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_cameraaccs",
+      "title" : "Other Accessory Camera Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.CameraAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_CAMERAACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "straps",
+            "v" : "straps"
+         },
+         {
+            "p" : "remote-controls",
+            "v" : "remote-controls"
+         },
+         {
+            "p" : "cables-and-cords",
+            "v" : "cables-and-cords"
+         },
+         {
+            "p" : "other-camcorder-accessories",
+            "v" : "other-camcorder-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_camcorderaccs",
+      "title" : "Other Accessory Camcorder Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.CamcorderAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_CAMCORDERACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "barlow-lenses",
+            "v" : "barlow-lenses"
+         },
+         {
+            "p" : "collimators",
+            "v" : "collimators"
+         },
+         {
+            "p" : "remote-controls",
+            "v" : "remote-controls"
+         },
+         {
+            "p" : "electronic-drives",
+            "v" : "electronic-drives"
+         },
+         {
+            "p" : "photo-adapters",
+            "v" : "photo-adapters"
+         },
+         {
+            "p" : "finderscopes",
+            "v" : "finderscopes"
+         },
+         {
+            "p" : "diagonal-mirrors",
+            "v" : "diagonal-mirrors"
+         },
+         {
+            "p" : "erecting-prisms",
+            "v" : "erecting-prisms"
+         },
+         {
+            "p" : "motor-drives",
+            "v" : "motor-drives"
+         },
+         {
+            "p" : "illuminators",
+            "v" : "illuminators"
+         },
+         {
+            "p" : "guiders",
+            "v" : "guiders"
+         },
+         {
+            "p" : "binocular-viewers",
+            "v" : "binocular-viewers"
+         },
+         {
+            "p" : "wedges",
+            "v" : "wedges"
+         },
+         {
+            "p" : "mounts",
+            "v" : "mounts"
+         },
+         {
+            "p" : "viewfinders",
+            "v" : "viewfinders"
+         },
+         {
+            "p" : "sky-maps",
+            "v" : "sky-maps"
+         },
+         {
+            "p" : "filters",
+            "v" : "filters"
+         },
+         {
+            "p" : "dew-caps",
+            "v" : "dew-caps"
+         },
+         {
+            "p" : "other-telescope-accessories",
+            "v" : "other-telescope-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_telescopeaccs",
+      "title" : "Other Accessory Telescope Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.TelescopeAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_TELESCOPEACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "telescope-eyepieces-general",
+            "v" : "telescope-eyepieces-general"
+         },
+         {
+            "p" : "orthoscopic",
+            "v" : "orthoscopic"
+         },
+         {
+            "p" : "kellner-and-rke",
+            "v" : "kellner-and-rke"
+         },
+         {
+            "p" : "erfle",
+            "v" : "erfle"
+         },
+         {
+            "p" : "plossl",
+            "v" : "plossl"
+         },
+         {
+            "p" : "nagler",
+            "v" : "nagler"
+         },
+         {
+            "p" : "zoom",
+            "v" : "zoom"
+         },
+         {
+            "p" : "ultra-wide",
+            "v" : "ultra-wide"
+         },
+         {
+            "p" : "sma",
+            "v" : "sma"
+         },
+         {
+            "p" : "other-eyepieces",
+            "v" : "other-eyepieces"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_telescopeeyepiece",
+      "title" : "Other Accessory Telescope Eyepiece",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.TelescopeEyepiece",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_TELESCOPEEYEPIECE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "boom-stands",
+            "v" : "boom-stands"
+         },
+         {
+            "p" : "bulbs",
+            "v" : "bulbs"
+         },
+         {
+            "p" : "camera-adapters-and-mounts",
+            "v" : "camera-adapters-and-mounts"
+         },
+         {
+            "p" : "eyepieces",
+            "v" : "eyepieces"
+         },
+         {
+            "p" : "inspection-systems",
+            "v" : "inspection-systems"
+         },
+         {
+            "p" : "light-stands",
+            "v" : "light-stands"
+         },
+         {
+            "p" : "microscope-cases",
+            "v" : "microscope-cases"
+         },
+         {
+            "p" : "slides-and-slide-kits",
+            "v" : "slides-and-slide-kits"
+         },
+         {
+            "p" : "other-microscope-accessories",
+            "v" : "other-microscope-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_microscopeaccs",
+      "title" : "Other Accessory Microscope Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.MicroscopeAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_MICROSCOPEACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "adapter-rings",
+            "v" : "adapter-rings"
+         },
+         {
+            "p" : "filter-caps",
+            "v" : "filter-caps"
+         },
+         {
+            "p" : "filter-holders",
+            "v" : "filter-holders"
+         },
+         {
+            "p" : "filter-hoods",
+            "v" : "filter-hoods"
+         },
+         {
+            "p" : "gel-holder",
+            "v" : "gel-holder"
+         },
+         {
+            "p" : "step-down-ring",
+            "v" : "step-down-ring"
+         },
+         {
+            "p" : "step-up-ring",
+            "v" : "step-up-ring"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_filteraccs",
+      "title" : "Other Accessory Filter Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.FilterAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_FILTERACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "mounting-equipment-and-cutters",
+            "v" : "mounting-equipment-and-cutters"
+         },
+         {
+            "p" : "slide-mounts",
+            "v" : "slide-mounts"
+         },
+         {
+            "p" : "film-mailers",
+            "v" : "film-mailers"
+         },
+         {
+            "p" : "film-loaders",
+            "v" : "film-loaders"
+         },
+         {
+            "p" : "other-film-accessories",
+            "v" : "other-film-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_filmaccs",
+      "title" : "Other Accessory Film Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.FilmAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_FILMACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "adapter-rings",
+            "v" : "adapter-rings"
+         },
+         {
+            "p" : "battery-packs",
+            "v" : "battery-packs"
+         },
+         {
+            "p" : "camera-brackets",
+            "v" : "camera-brackets"
+         },
+         {
+            "p" : "flash-bouncers",
+            "v" : "flash-bouncers"
+         },
+         {
+            "p" : "flash-diffusers",
+            "v" : "flash-diffusers"
+         },
+         {
+            "p" : "flash-filters",
+            "v" : "flash-filters"
+         },
+         {
+            "p" : "flash-pouches",
+            "v" : "flash-pouches"
+         },
+         {
+            "p" : "flash-shoe-mounts",
+            "v" : "flash-shoe-mounts"
+         },
+         {
+            "p" : "synch-and-pc-cords",
+            "v" : "synch-and-pc-cords"
+         },
+         {
+            "p" : "other-flash-accessories",
+            "v" : "other-flash-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_flashaccs",
+      "title" : "Other Accessory Flash Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.FlashAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_FLASHACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "liners",
+            "v" : "liners"
+         },
+         {
+            "p" : "rain-covers",
+            "v" : "rain-covers"
+         },
+         {
+            "p" : "replacement-parts",
+            "v" : "replacement-parts"
+         },
+         {
+            "p" : "straps",
+            "v" : "straps"
+         },
+         {
+            "p" : "belts",
+            "v" : "belts"
+         },
+         {
+            "p" : "harnesses",
+            "v" : "harnesses"
+         },
+         {
+            "p" : "inserts",
+            "v" : "inserts"
+         },
+         {
+            "p" : "other-bag-and-case-accessories",
+            "v" : "other-bag-and-case-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_bagcaseaccs",
+      "title" : "Other Accessory Bag Case Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.BagCaseAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_BAGCASEACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "housings",
+            "v" : "housings"
+         },
+         {
+            "p" : "rainguards",
+            "v" : "rainguards"
+         },
+         {
+            "p" : "other-underwater-accessories",
+            "v" : "other-underwater-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_underwaterphotographyaccs",
+      "title" : "Other Accessory Underwater Photography Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.UnderwaterPhotographyAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_UNDERWATERPHOTOGRAPHYACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "caps",
+            "v" : "caps"
+         },
+         {
+            "p" : "gray-cards",
+            "v" : "gray-cards"
+         },
+         {
+            "p" : "probes",
+            "v" : "probes"
+         },
+         {
+            "p" : "straps",
+            "v" : "straps"
+         },
+         {
+            "p" : "other-light-meter-accessories",
+            "v" : "other-light-meter-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_lightmeteraccs",
+      "title" : "Other Accessory Light Meter Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.LightMeterAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_LIGHTMETERACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "monopad-accessories",
+            "v" : "monopad-accessories"
+         },
+         {
+            "p" : "camera-stand-accessories",
+            "v" : "camera-stand-accessories"
+         },
+         {
+            "p" : "tripod-head-accessories",
+            "v" : "tripod-head-accessories"
+         },
+         {
+            "p" : "tripod-leg-accessories",
+            "v" : "tripod-leg-accessories"
+         },
+         {
+            "p" : "center-columns",
+            "v" : "center-columns"
+         },
+         {
+            "p" : "tripod-adapters",
+            "v" : "tripod-adapters"
+         },
+         {
+            "p" : "tripod-straps",
+            "v" : "tripod-straps"
+         },
+         {
+            "p" : "camera-mounts-and-clamps",
+            "v" : "camera-mounts-and-clamps"
+         },
+         {
+            "p" : "plates",
+            "v" : "plates"
+         },
+         {
+            "p" : "other-tripod-accessories",
+            "v" : "other-tripod-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_tripodstandaccs",
+      "title" : "Other Accessory Tripod Stand Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.TripodStandAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_TRIPODSTANDACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "straps",
+            "v" : "straps"
+         },
+         {
+            "p" : "caps",
+            "v" : "caps"
+         },
+         {
+            "p" : "other-binocular-accessories",
+            "v" : "other-binocular-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_binocularaccs",
+      "title" : "Other Accessory Binocular Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.BinocularAccessories",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_BINOCULARACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "travel",
+            "v" : "travel"
+         },
+         {
+            "p" : "hiking-and-outdoors",
+            "v" : "hiking-and-outdoors"
+         },
+         {
+            "p" : "hunting-and-shooting",
+            "v" : "hunting-and-shooting"
+         },
+         {
+            "p" : "sports",
+            "v" : "sports"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_oa_specificuses",
+      "title" : "Other Accessory Specific Uses",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.OtherAccessory.SpecificUses",
+      "list" : "LIST_CAMERA_OTHERACCESSORY_SPECIFICUSES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

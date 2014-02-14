@@ -1,0 +1,6 @@
+# API: adminRSSDetail
+
+
+## ACCESS REQUIREMENTS: ##
+[[RSS|CONCEPT_rss]] - DELETE/REMOVE
+

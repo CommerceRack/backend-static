@@ -1,0 +1,191 @@
+<TEMPLATE ID="c-20090616" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CYVZOZP" CREATED="20090616" SUBTYPE="C" AUTHOR="Zoovy" TYPE="CONFIG" TITLE="Slideshow, banners and subcats" RELEASED="20090616"><SUMMARY><![CDATA[A slideshow and subcategories in the main column, with banners listed down the right.
+<br>Note - this layout is over 600 pixels wide.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT HEIGHT="220" ID="CZTZMWZ" DATA="page:dynimage1" SUB="PAGE_SLIDESHOW" WIDTH="500" PROMPT="SlideShow" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Link for right banner 1" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="BANNER1" EDITOR="INLINE" DATA="page:banner1" WIDTH="140" PROMPT="Right banner 1 (140 by X)" SUB="PAGE_BANNER1" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;" align='center'><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" PROMPT="Link for right banner 2" SUB="PAGE_BANNER2_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="BANNER2" EDITOR="INLINE" DATA="page:banner2" WIDTH="140" PROMPT="Right banner 2 (140 by X)" SUB="PAGE_BANNER2" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;" align='center'><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="BANNER3_LINK" EDITOR="INLINE" DATA="page:banner3_link" PROMPT="Link for right banner 3" SUB="PAGE_BANNER3_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="BANNER3" EDITOR="INLINE" DATA="page:banner3" WIDTH="140" PROMPT="Right banner 3 (140 by X)" SUB="PAGE_BANNER3" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;" align='center'><a href="%PAGE_BANNER3_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="BANNER4_LINK" EDITOR="INLINE" DATA="page:banner4_link" PROMPT="Link for right banner 4" SUB="PAGE_BANNER4_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="BANNER4" EDITOR="INLINE" DATA="page:banner4" WIDTH="140" PROMPT="Right banner 4 (140 by X)" SUB="PAGE_BANNER4" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;" align='center'><a href="%PAGE_BANNER4_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="BANNER5_LINK" EDITOR="INLINE" DATA="page:banner5_link" PROMPT="Link for right banner 5" SUB="PAGE_BANNER5_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="BANNER5" EDITOR="INLINE" DATA="page:banner5" WIDTH="140" PROMPT="Right banner 5 (140 by X)" SUB="PAGE_BANNER5" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;" align='center'><a href="%PAGE_BANNER5_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="LAYOUT_DUALMENU_MULTICOL_DISPLAYED_USES_STACK" MODE="LIST" SUB="PAGE_DUALCATS_MULTICOL" TYPE="SUBCAT" FORCECOLUMNS="3"><HTML><![CDATA[
+<table cellspacing='8' cellpadding='3' align='center'>
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+	<td valign='top' width='33%' class='zborder ztable_row' align='left'>
+
+<div align='center' style='height:110px;'><a href='<% print($cat_url); %>' title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>"><% load($cat_thumb); default(""); image(w=>"145",h=>"105",bg=>"ffffff",m=>"1",tag=>"1",alt=>$cat_pretty);  print(); %></a></div>
+
+<div class='ztable_row_title'><a href='<% print($cat_url); %>'><% print($cat_pretty); %></a></div>
+
+<div style='padding:0 4px;'>
+<%
+print("");
+
+/* subcats are in a stack that gets popped three times. If more than three subcats are present, a 'more' link is displayed. */
+
+load($cat_safe); default(""); format(pretext=>"NAVCAT::.");
+pull(stack=>>$CATSTACK,format=>"src",src=>$_);
+	count(stack=>>$CATSTACK);
+	set($STACKCOUNT=>$_);
+	
+:LOOP();
+
+/* only the first three categories are displayed */
+	count(stack=>>$CATSTACK);
+	math(op=>"subtract",var=>$STACKCOUNT);
+	math(op=>"multiply",var=>"-1");
+	goto(label=>"MORE",eq=>"3");
+	
+pop(stack=>>$CATSTACK,namespace=>"CAT");
+
+	load($CAT.safe);
+	stop(unless=>$_);
+	print("<a href='%CATEGORY_URL%/");
+	load($CAT.safe);
+	format(substring=>$_,pos=>"1",len=>"256");  /* strips out the preceding . from safe id */
+	print();
+	print("/'> &#187; ");
+	print($CAT.pretty);
+	print("</a><br>");
+
+
+/* keep looping till we have shown all the subcats */
+goto(nb=>$CATSTACK,label=>"LOOP"); 
+	stop(); /* this stops 'more' from getting output if less than the defined amount of subcats displayed are present */
+:MORE();
+	print("<a href='");
+	print($cat_url);
+	print("'> &#187; More</a>");
+%>
+</div>
+	</td>
+<!-- /CATEGORY -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CZTZMXA" TYPE="OUTPUT"><HTML><![CDATA[
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function iList () {
+	this.name = '';
+	this.img = new Array();
+	this.url = new Array();
+	this.zum = new Array();
+	this.pause = new Array();
+	this.last = null;
+	this.current = null;
+	this.defaultpause = 2000;
+	this.buttons = false;
+	this.stopped = false;
+	this.loaded = false;
+	this.startstop = false;
+}
+function iLoad (i) {
+	if (i.loaded == true) { return; }
+	i.loaded = true;
+	iRotate(i);
+}
+function iLink (i) {
+	if (!i.loaded) { return; }
+	if (typeof(i.url[i.current]) != "undefined") { window.location.href = i.url[i.current]; }
+	else if (typeof(i.zum[i.current]) != "undefined") { zoom(i.zum[i.current]); }
+	else if (i.startstop) { iSwitch(i); }
+}
+function iSwitch (i) {
+	if (!i.loaded) { return; }
+	if (i.stopped) { i.stopped = false; iRotate(i); }
+	else { i.stopped = true; }
+}
+function iRotate (i) {
+	if (i.stopped) { return; }
+	iNext(i);
+	var pause = i.defaultpause;
+	if (typeof(i.pause[i.current]) != "undefined") { pause = i.pause[i.current]; }
+	setTimeout("iRotate("+i.name+")",pause);
+}
+function iNext (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Loading..."; }
+	i.current++; if (i.current > i.last) { i.current = 0; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Next Image"; }
+}
+function iPrev (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Loading..."; }
+	i.current--; if (i.current < 0) { i.current = i.last; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Previous Image"; }
+}
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write("<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align=\"center\">\n<img src=\"" + url + "\"><br>\n<form><input type=\"button\" value=\"Close Window\" onClick=\"self.close(true)\"></form>\n</div>\n</body>\n</html>\n");
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script> 
+
+
+
+
+
+<table cellspacing='0' cellpadding='0' border='0'>
+<tr>
+	<td valign='top' align='left'>
+	<div style='margin-right:5px;'>
+
+%PAGE_SLIDESHOW%
+
+%PAGE_DUALCATS_MULTICOL%
+
+
+	</div>
+	</td>
+	<td valign='top' align='left'>
+
+
+
+%PAGE_BANNER1%
+%PAGE_BANNER2%
+%PAGE_BANNER3%
+%PAGE_BANNER4%
+%PAGE_BANNER5%
+
+	</td>
+</tr>
+</table>
+
+
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+</ELEMENT>
+
+</TEMPLATE>

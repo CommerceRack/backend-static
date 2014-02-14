@@ -1,0 +1,88 @@
+<TEMPLATE ID="pop_prod_video" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="MYCONFIG" V="3" CREATED="00000000" IMAGES="0" TYPE="CONFIG" TITLE="Popup Layout: Product Video"></ELEMENT>
+<ELEMENT ID="PUT_SKU_INTO_FOCUS" TYPE="SPECL"><HTML><![CDATA[<%
+/* legacy support is to link to the product detail page. however, if this is loaded in popup.cgi, product is passed on URI and needs to be put into focus */
+
+print("");
+loadurp("VAR::product"); default("");
+stop(unless=>$_);
+	set($FOCUSSKU=>$_);
+	element(TYPE=>"SET",SRC=>"SREF::PID",DATA=>$FOCUSSKU);
+	element(TYPE=>"SET",SRC=>"SREF::SKU",DATA=>$FOCUSSKU);
+	print("
+	
+	<!-- focus sku changed to: ");
+	print($FOCUSSKU);
+	print(" -->
+	
+	");
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ASDF" TYPE="SPECL"><HTML><![CDATA[
+
+
+
+<!-- product video -->
+
+
+<div align='center'>
+
+<%
+/* Multiple fields for youtube video exist.  Check them sequentially in the order they were added to the system. */
+
+
+loadurp("VAR::youtube_videoid");
+goto(label=>"YOUTUBE_BY_ID",ne=>"");
+
+loadurp("product:youtube:videohtml");
+goto(label=>"VIDEOID",eq=>"");
+	print();
+	stop();
+
+/* the videoid is at $_ from the URI. */
+:YOUTUBE_BY_ID();
+	set($VIDEOID=>$_);
+	goto(label=>"DISPLAY",ne=>"");
+	print("<!-- should not have gotten here -->");
+
+:VIDEOID();
+	loadurp("product:youtube:videoid"); default("");
+	goto(label=>"END",eq=>"");
+	set($VIDEOID=>$_);
+
+
+:DISPLAY();
+
+goto(label=>"END",eq=>"");
+	set($VIDEOID=>$_);
+	print("<object width='425' height='344'>
+<param name='movie' value='http://www.youtube.com/v/");
+	print($VIDEOID);
+	print("&hl=en&fs=1'></param>
+<param name='allowFullScreen' value='true'></param>
+<embed src='http://www.youtube.com/v/");
+	print($VIDEOID);
+	print("&hl=en&fs=1' type='application/x-shockwave-flash' allowfullscreen='true' width='425' height='344'></embed>
+</object>");
+	stop();
+	
+:END();
+	print("<!-- no video for this product -->");
+%>
+
+
+
+</div>
+
+
+
+<!-- /product video -->
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,448 @@
+/* CONFIG styles */
+
+.zbody { background-color: #ffffff; }
+.zborder { border: 1px solid #f0f5f9; }
+.zbox { border: 1px solid #cee1f2; }
+.zbox_body { background-color: #FFFFFF; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.zbox_head { background-color: #cee1f2; color: #333333; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 13px; }
+.zcolor { background-color: #cee1f2; color: #666666; }
+.zcolor_contrast { background-color: #FF6600; color: #FFFFFF; }
+.zcolor_dark { background-color: #2f7abb; color: #ffffff; }
+.zcolor_light { background-color: #ffffff; color: #666666; }
+.zform_button { border: 1px solid #cee1f2; background-color: #ffffff; color: #2f7abb; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zform_select { border: 1px solid #cee1f2; background-color: #FFFFFF; color: #666666; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zform_textarea { border: 1px solid #cee1f2; background-color: #FFFFFF; color: #666666; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zform_textbox { border: 1px solid #cee1f2; background-color: #FFFFFF; color: #666666; font-size: 11px; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; }
+.zhint { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.zlink { color: #2f7abb; }
+.zsmall { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.ztab0 { background-color: #cee1f2; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 11px; }
+.ztab1 { background-color: #ffffff; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 11px; font-weight: bold;}
+.ztabbody { background-color: #ffffff; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 11px; }
+.ztable_head { background-color: #cee1f2; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 13px; }
+.ztable_row {color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.ztable_row0 { background-color: #FFFFFF; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px;}
+.ztable_row1 { background-color: #f4f9ff; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px;}
+.ztable_row_small { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 10px; }
+.ztable_row_title { font-weight: bold; color: #333333; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 14px; }
+.ztitle { font-weight: bold; color: #000000; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 15px; }
+.ztitle2 { font-weight: bold; color: #333333; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 14px; }
+.ztxt { color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
+.zwarn { color: #FF0000; font-weight: bold; }
+
+
+
+
+body, html	{height:100%}
+
+body	{
+	
+	font-family: Calibri, "Helvetica Neue", helvetica, sans-serif;
+	color:#666666;
+	margin:0;
+	padding:0;
+	background:#ffffff;
+	font-size:12px;
+	
+	}
+
+a	{color:#2f7abb;}
+a:hover	{color:#333333;}
+
+img	{border:0px}
+
+/* removes bottom padding/margin from form in old browsers */
+form	{display:inline;}
+
+
+#accessories select	{font-size:11px;}
+
+
+
+/* form styles. */
+
+.zform_div	{padding-bottom:8px; clear:both;}
+.zform_div label	{width:200px; vertical-align: text-top; font-size:12px; display:block; float:left; margin-right:5px; text-align:right;}
+
+#customer_signup_form .zform_div .zform_textbox	{width:250px;}
+#customer_signup_form .zhint	{margin-bottom:8px;}
+
+#customer_signup_form .zform_button	{margin-left:155px; font-size:14px; font-weight:bold;}
+
+
+/* global styles for float and clear */
+div.floatLeft	{float:left;}
+div.floatRight	{float:right;}
+div.clearAll	{clear:both;}
+
+div.no_underline a	{text-decoration:none;} /* this should be left alone */
+
+.center	{text-align:center; vertical-align:middle;}
+
+h1  {font-size:15px; color:#727272; margin:0px 0px 2px 0px; font-weight:bold; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif} /* Used for the page title element */
+
+/* used for the wiki header 1 & 2 */
+h2	{font-size:12pt; color:#333333; margin:5px 0px 2px 0px; font-weight:bold; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif}
+h3	{font-size:11pt; color:#727272; margin:2px 0px 1px 0px; font-weight:bold; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif}
+
+
+.bold	{font-weight:bold;}
+.textAlignRight	{text-align:right;}
+
+/* used for section break on wiki */
+.wiki_section	{margin-bottom:25px; line-height:150%}
+
+
+.pointer	{cursor:pointer;} /* use on any div with an onClick for document.location. */
+
+.posRel	{position:relative;}
+
+
+#breadcrumb	{font-size:15px; line-height:15px; font-weight:bold; color:#666666; margin-bottom:5px;}
+#breadcrumb a	{font-size:12px; text-decoration:none; font-weight:normal;}
+
+
+/* ####################  sprite */
+
+.spritebg	{background:url(ava11_sprites-175x190.png) no-repeat;}
+
+
+
+
+/* ####################  containers */
+
+
+/* the width around content areas. */
+.usableWidth	{width:917px;	text-align:left;
+	margin-left: auto ;
+	margin-right: auto ;}
+
+.whiteness	{background:url(ava11_white_alpha65-75x75.png); padding:9px 0; width:1000px;	margin-left: auto ;	margin-right: auto ; z-index:10; position:relative;}
+
+/* the width around the entire theme, including the margins and shadows */
+.themeWidth	{width:982px; 	text-align:left; 
+	margin-left: auto ;
+	margin-right: auto ; z-index:100;}
+
+
+#bodyBgBottomRight, #bodyBgTopLeft, #bodyBgBottomLeft,#bodyBgTopRight	{ 
+	position:fixed;
+	top:0; left:0; right:0; bottom:0;
+	z-index:1;
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	}
+
+/* note - the png version of the bg graphics was twice as big as gif and we didn't lose much in the way of quality. pngs are in same folder. */
+#bodyBgTopRight	{
+	background:url(ava11_body_rightbg-1297x594.gif) top right no-repeat;
+	z-index:1;
+	}
+
+#bodyBgTopLeft	{
+	background:url(ava11_body_leftbg-974x456.gif) top left no-repeat;
+	z-index:1;
+	}
+
+/* the 'rotates' flip the entire div, so positioning is opposite (top right to position into bottom left corner */
+#bodyBgBottomRight	{
+	background:url(ava11_body_leftbg-974x456.gif) top left no-repeat;
+	/* for firefox, safari, chrome, etc. */
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	/* for ie */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	z-index:1;
+	}
+
+#bodyBgBottomLeft	{
+	background:url(ava11_body_rightbg-1297x594.gif) top right no-repeat;
+	/* for firefox, safari, chrome, etc. */
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	/* for ie */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	z-index:1;
+	}
+
+/* ####################  master header */
+
+#mastHead	{width:982px; height:110px; position:relative; z-index:60;}
+
+#mhLogo	{position:absolute; top:0; left:0; width:250px; height:100px;}
+
+#mhBigBanner	{position:absolute; top:0; left:263px; width:248px; height:100px; text-align:right; z-index:100; overflow:hidden;}
+
+#mhSmallBanner	{position:absolute; top:0; left:521px; width:175px; height:30px; text-align:left; z-index:100; overflow:hidden; }
+
+#mhDecal	{position:absolute; top:40px; left:521px; width:227px; height:60px; text-align:left; }
+
+#mhMenu		{position:absolute; top:-10px; right:120px; width:155px; height:34px; background:#ffffff; line-height:34px; text-align:center; font-size:12px;}
+
+#mhMiniCart		{position:absolute; top:-10px; right:1px; width:120px; height:34px; background-color:#2f7abb; line-height:34px; color:#ffffff; font-size:12px; text-align:center; }
+#mhMiniCartIcon	{background-position:0 0; height:16px; width:16px; margin:8px 8px 0 0;}
+
+#mhContact	{position:absolute; top:32px; right:1px; width:220px; height:34px; text-align:right;}
+#mhContact .phonePrompt	{font-size:11px; color:#85888d; display:inline; margin-right:5px;}
+#mhContact .phoneNumber	{font-size:14px; color:#3f4140; display:inline; font-weight:bold;}
+
+#mhSearch	{position:absolute; top:71px; right:1px; width:220px; height:26px; border:0; border-top:1px solid #b0b1b1; border-right:1px solid #b0b1b1; background:#ffffff;}
+
+#mhSearch .zform_textbox	{border:0; font-size:13px; padding:2px 0; width:190px; margin:3px 0 0 0;}
+#mhSearch .submit_arrow	{background-position: -23px 0; width:18px; height:18px; font-size:0px; border:0; display:inline; margin:4px 4px 0 0;}
+
+
+
+
+/* ####################  Horizontal Categories */
+
+#mhTopCats	{position:relative; height:31px; margin-bottom:8px;}
+
+#horCatCapLeft	{background-position:0 -26px; width:23px; height:31px;}
+#dualcats_horz_onhover	{background-position: 0 -109px; background-repeat:repeat-x; line-height:31px; width:958px; height:31px; font-size:14px;}
+#horCatCapRight	{background:#b4d2ec; width:1px; height:31px;}
+
+/* 
+found menu here:
+http://www.webdesignerwall.com/demo/css3-dropdown-menu/
+*/
+
+
+#nav {
+	margin: 0;
+	margin-left:5px; /* compensates for titlebox text indent on cats and recently viewed */
+	padding: 0;
+	}
+
+#nav li {
+	margin: 0px 10px 0 0px;
+	padding: 0 0 0 0 ; /* removing this bottom padding seems to break the menu. */
+	float: left;
+	position: relative;
+	list-style: none;
+	z-index:1000;
+
+	}
+
+
+/* main level link */
+#nav a {
+	color: #333333;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+	padding-right:10px;
+	background:url(ava11_topcat_bg-3x22.png) no-repeat right;
+	}
+
+/* main level link hover */
+#nav .current a, #nav li:hover > a {
+	color: #444;
+	}
+
+
+#nav li ul li a	{padding:0 5px; line-height:22px; background-image:none;}
+
+/* sub levels link */
+#nav ul li:hover a {
+	border: none;
+	
+	background:#ffffff;
+	}
+
+#nav ul a:hover {
+	color: #006 !important;
+	
+	}
+
+/* dropdown */
+#nav li:hover > ul {
+	display: block;
+	}
+
+/* level 2 list */
+#nav ul {
+	display: none;
+	background: #f0f5f9;
+	margin: 0;
+	padding: 0;
+	width: 185px;
+	position: absolute;
+	top: 30px;
+	left: -30px;
+	border: solid 1px #c7ddf2;
+	border-top-width:0px;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+	box-shadow: 0 1px 3px rgba(0,0,0, .3);
+	}
+
+#nav ul li {
+	float: none;
+	margin: 0px;
+	padding: 0;
+	}
+
+#nav ul a {
+	font-weight: normal;
+	text-shadow: 0 1px 0 #fff;
+	}
+
+/* level 3+ list */
+#nav ul ul {
+	left: 181px;
+	top: -3px;
+	}
+
+
+/* clearfix */
+#nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	}
+
+#nav {	display: inline-block;} 
+
+html[xmlns] #nav {	display: block;}
+ 
+* html #nav {height: 1%;}
+
+
+/* ####################  Left Column */
+
+
+
+#leftCol	{float:left; width:194px; z-index:14;}
+
+#tier2n3_dual_cats_displayed {border:1px solid #e6f0f9; background:#ffffff;}
+#tier2n3_dual_cats_displayed ul	{margin:0px; padding:0;}
+#tier2n3_dual_cats_displayed ul li	{display:block; font-size:13px;}
+#tier2n3_dual_cats_displayed ul li a		{color:#404143; display:block; text-decoration:none;}
+#tier2n3_dual_cats_displayed a:hover	{color:#2f7abb}
+
+#tier2n3_dual_cats_displayed ul.top_cats a	{padding:4px 4px; background:url(ava11_topcat_bg-1x26.png) repeat-x bottom #fefeff;}
+
+#tier2n3_dual_cats_displayed ul.sub_cats a	{padding:2px 2px 2px 12px; border-bottom:1px dashed #e3e3e3; background:#ffffff;}
+
+#leftCol div.elementMargin	{margin-bottom:8px;}
+
+
+
+#recentlyViewedItems .ztable_row	{padding-bottom:8px;}
+#recentlyViewedItems .ztable_row .prodListThumb	{margin-right:8px;}
+
+
+/* ####################  Main Column - content area */
+
+/* a class is used instead of an id, because on specific pages, an ID is output around this div to adjust the width for when the left column is not displayed */
+.bodyContent	{float:right; width:780px; text-align:left; z-index:100; min-height:300px;}
+
+/* overrides the bodyContent width for pages with no left column. div with id is only output when needed (outputskip) */
+#noLeftCol .bodyContent	{width:982px;}
+
+
+/* ####################  Master Footer */
+
+#bodyFooterSplitter	{padding-top:20px;} /* appears between close of body and begin of footer. splits content/left bar from footer */
+
+
+#mastFooter	{font-size:12px;}
+
+div.footSection	{float:left;}
+#mastFooter div.footSection div.header, #mfUserDefined h2	{font-size:16px; font-weight:bold; color:#666666; margin:0; padding:0; margin-bottom:10px;}
+#mastFooter div.footSection a	{float:left; display:block; padding:2px 0;}
+
+#mastFooter div.vertSplitter	{float:left; margin:5px 15px 0 0; padding:0; height:140px; width:1px; background:#cdcdcf;}
+
+#mastFooter .bookmarklet 	{float:left; margin:0 5px 5px 0; width:108px; text-indent:3px; line-height:23px;}
+#mastFooter div.icon	{width:23px; height:23px; float:left;}
+
+#mfSocialNetworks	{width:230px;}
+#mfCustomerService	{width:200px;}
+#mfUserDefined	{width:185px; height:120px; overflow:hidden;}
+#mfSubscribe	{width:300px;}
+
+#mfCustomerService a	{width:100px;}
+#mfUserDefined a	{width:200px;}
+
+#mfSocialNetworks .facebookicon	{background-position: -91px 0;}
+#mfSocialNetworks .twittericon	{background-position: -91px -28px;}
+#mfSocialNetworks .blogicon	{background-position: -116px 0;}
+#mfSocialNetworks .rssicon	{background-position: -116px -28px;}
+#mfSocialNetworks .podcasticon	{background-position: -141px -28px;}
+#mfSocialNetworks .youtubeicon	{background-position: -141px 0;}
+
+
+
+#mfSubscribe label	{display:block; font-size:12px; padding-bottom:2px;}
+#mfSubscribe .zform_textbox	{border:1px solid #666666; font-size:12px; width:150px; margin-bottom:4px; display:block;}
+#mfSubscribe .submitContainer	{text-align:right; margin-right:-6px;}
+#mfSubscribe .subscribe	{font-size:0; border:0; background-position: 0 -67px; width:109px; height:32px;}
+
+#mfSubscribeFrmContainer	{width:150px;}
+#phoneNumnDecal	{width:135px; text-align:right;}
+
+
+#horizontalSidebar	{padding:8px; margin:16px -9px 0 -9px; background:#ffffff; text-align:center; vertical-align:middle;}
+
+#zFooter	{clear:both; padding-top:8px; text-align:right; font-size:12px; color:#666666}
+
+
+#mfContact	{text-align:right;}
+#mfContact .phonePrompt	{font-size:12px; color:#85888d;}
+#mfContact .phoneNumber	{font-size:15px; color:#3f4140; font-weight:bold;}
+
+
+
+/* section header styles (could get used in a page layout. used for left col cats and recently viewed. */
+
+div.boxen	{margin-bottom:8px;}
+div.boxHead	{position:relative; height:33px;}
+
+div.boxHeadLeft	{background-position:-32px -26px; height:33px; width:22px; position:absolute; top:0; left:0;}
+div.boxHeadText	{position:absolute; top:0; left:22px; right:1px; background-position:0px -144px; background-repeat:repeat-x; line-height:33px; font-size:14px; font-weight:bold; text-indent:5px;}
+div.boxHeadRight	{height:33px; width:1px; position:absolute; top:0; right:0;background:#e6f0f9;}
+div.boxContent	{padding:5px; background:#ffffff;border:1px solid #e6f0f9; }
+
+
+
+
+/* class corrections for layouts */
+
+#cart_shipping_blurb small	{font-size:11px;}
+
+
+/* generic  layout styles */
+.pageLayout .elementMargin	{margin-bottom:25px;}
+.pageLayout section		{margin-bottom:25px;}
+.pageLayout img	{display:inline-block; vertical-align:top;}
+.pageLayout table {border-collapse:collapse; padding:0;}
+.pageLayout table td	{vertical-align:top;}
+.pageLayout #accessories div.ztable_head	{padding:5px; text-align:right;}
+
+/* generic product layout styles */
+#prodPageFocusImages {margin-right:25px;}
+#socialToolBar	{padding-bottom:10px;}
+#socialToolBar .socialTool	{float:left; margin-right:5px;}
+#prodQtyDiscount .zbox_head	{padding:3px;}
+#prodAttributes	{margin-bottom:10px;}
+.reviewRatingArticle	{padding-bottom:10px;}
+
+/* layout specific styles */
+#p20110912 .reviewSummaryTop	{float:right;}
+#p20110912 #prodQtyDiscount {float:right;}
+#p20110912 td.prodlistProdThumbContainer {width:100px}
+#p20110912 td.prodlistProdContentContainer	{min-width:220px; padding-bottom:10px}
+#p20110912 #reviews .zborder	{padding:4px; margin-bottom:5px;}
+#p20110912 #reviews .zborder img	{vertical-align:text-bottom}
+#p20110912 #relatedItemsProdlist	{margin-left:20px;}
+#p20110912 #relatedItemsProdlist .ztable_row	{padding-top:10px;}
+#p20110912 h4 {margin:0 0 4px 0;}
+#p20110912 .reviewThumb {padding-right:10px;}
+#p20110912 .reviewAddReviewLink	{float:right; font-weight:bold;}

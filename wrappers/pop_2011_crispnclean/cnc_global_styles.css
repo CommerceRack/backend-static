@@ -1,0 +1,90 @@
+/* styles for crisp and clean */
+
+body	{
+	
+	font-family: "Gill Sans MT Pro Medium", tahoma, arial, sans-serif;
+	color:#3b3b3b;
+	margin:0;
+	padding:0;
+	background:url(cnc_tilesprite-1x705.png) repeat-x 0 -292px #ffffff;
+	font-size:12px;
+	}
+
+a	{color:#535353;}
+a:hover	{color:#f46d0b;}
+
+img	{border:0px}
+
+/* removes bottom padding/margin from form in old browsers */
+form	{display:inline;}
+
+
+
+/* global styles for float and clear */
+div.floatLeft	{float:left;}
+div.floatRight	{float:right;}
+div.clearAll	{clear:both;}
+
+
+/* commonly used margins */
+.marginTop10	{margin-top:10px;}
+.marginTop20	{margin-top:20px;}
+.marginLeft10	{margin-left:10px;}
+
+.marginRight16	{margin-left:10px;}
+.marginBottom16	{margin-bottom:16px;}
+.paddingBottom16	{padding-bottom:16px;}
+
+div.no_underline a	{text-decoration:none;} /* this should be left alone */
+
+.center	{text-align:center; vertical-align:middle;}
+
+h1  {font-size:13px; color:#727272; margin:0px 0px 0px 0px; font-weight:bold; line-height:26px; font-family: "Gill Sans MT Pro Medium", tahoma, arial, sans-serif} /* Used for the page title element */
+
+/* used for the wiki header 1 & 2 */
+h2	{font-size:12pt; color:#666666; margin:5px 0px 2px 0px; font-weight:bold; font-family: "Gill Sans MT Pro Medium", tahoma, arial, sans-serif}
+h3	{font-size:11pt; color:#666666; margin:2px 0px 1px 0px; font-weight:bold; font-family: "Gill Sans MT Pro Medium", tahoma, arial, sans-serif}
+
+
+.bold	{font-weight:bold;}
+.orange	{color:#f46d0b;}
+
+.pointer	{cursor:pointer;} /* use on any div with an onClick for document.location. */
+
+.posRel	{position:relative;}
+
+
+
+
+#mastHead	{background:url(cnc_tilesprite-1x705.png) repeat-x 0 -51px; height:124px;  z-index:10; position:relative;}
+
+#mastHead .menu	{font-size:11px; font-weight:normal; color:#999999;}
+#mastHead .menu a	{; padding:0 3px;}
+
+#mastHead a, #footLinks a	{text-decoration:none; color:#666666} /* colors and behaviors for menu and wiki nav */
+#mastHead a:hover, #mastHead .minicart:hover, #footLinks a:hover	{color:#f46d0b; text-decoration:underline;}	
+
+#mastHead .minicart	{padding-left:25px; line-height:35px; background:url(cnc_sprites-181x157.png) no-repeat -160px -18px; text-align:right; padding-right:3px;} /* right padding is to compensate for padding in [menu a] */
+
+
+.leftCol	{float:left; width:164px; margin-left:16px; z-index:54;}
+.bodyContent	{float:right; width:780px; text-align:left; margin-right:16px; z-index:55;}
+
+/* use this in page layouts where the width needs to be fixed and the overflow needs to be hidden. width should ALWAYS match bodyContent */
+.bodyContentWidth	{width:780px; overflow:hidden;}
+
+/* div around very wide banner just below mast head. div is only rendered if banner is populated */
+#postMastHeadBanner	{background:#efefef; clear:both; height:35px;}
+
+
+
+/* around header decal, only appears if decal is set so that header links will shift right as needed */
+#mastHeadDecal	{height:58px; max-width:200px; overflow:hidden; margin-right:1px;} /* right margin is here to solve an issue with the right side shadow */
+
+
+#mastFooter	{background:url(cnc_tilesprite-1x705.png) repeat-x 0 -192px; min-height:40px;}
+
+
+/* wiki styles */
+
+div.wiki_section	{margin-bottom:15px; line-height:150%}

@@ -1,0 +1,35 @@
+<TEMPLATE ID="1017" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMLM" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG"></ELEMENT>
+<ELEMENT ID="CPUKMLN" TYPE="OUTPUT"><HTML><![CDATA[<center>
+<table> 
+        <tr>
+                <td align="center" width="560">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="180" HELP="Please enter the main picture for your homepage." DATA="merchant:zoovy:homepage_picture" PROMPT="Image1 180 x 180" WIDTH="180" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMLO" TYPE="OUTPUT"><HTML><![CDATA[
+<br><br>
+</td></tr>
+<tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" HELPER="Remember to keep this text short and to the point.  " DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMLP" TYPE="OUTPUT"><HTML><![CDATA[
+<p>
+ 
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing " DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKMLQ" TYPE="OUTPUT"><HTML><![CDATA[
+
+	</TD>
+</TR>
+
+</table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

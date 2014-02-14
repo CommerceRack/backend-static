@@ -1,0 +1,51 @@
+<TEMPLATE ID="7014" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNIT" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG"></ELEMENT>
+<ELEMENT ID="CPUKNIU" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNIV" TYPE="OUTPUT"><HTML><![CDATA[
+<br>
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKNIW" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="PRODGALLERY" HELP="When you launch channels from a product, they can appear here" DATA="product:prodgallery" FORMAT="CUSTOM" BLANKMESSAGE="There are no channels for this product currently" PROMPT="Product Marketplace Gallery" TYPE="PRODGALLERY"><HTML><![CDATA[<table border="0" width="100%" cellpadding="3" cellspacing="0">
+	<tr>
+		<td align="left"  bgcolor="#%head_bg_spec%"><font color="#%head_fg_spec%" face="%head_font%" size="%head_size%" width="20%"><b>Marketplace</b></font></td>
+		<td align="left"  bgcolor="#%head_bg_spec%"><font color="#%head_fg_spec%" face="%head_font%" size="%head_size%" width="20%"><b>Title</b></font></td>
+		<td align="right" bgcolor="#%head_bg_spec%"><font color="#%head_fg_spec%" face="%head_font%" size="%head_size%" width="10%"><b>Start Time</b></font></td>
+	</tr>
+	<!-- ITEM -->
+	<tr%bg%>
+		<td align="left"  valign="top"%bg%><a href="http://app2.zoovy.com/brian/tellme.cgi?channel=%gallery:channel%&starts=%gallery:starts%"><font color="#%fg_spec%" face="%font%"  size="%size%">%gallery:market%</font></a></td>
+		<td align="left"  valign="top"%bg%><a href="http://app2.zoovy.com/brian/tellme.cgi?channel=%gallery:channel%&starts=%gallery:starts%"><font color="#%fg_spec%" face="%font%"  size="%size%">%gallery:title/link-gallery:url%</font></a></td>
+		<td align="right" valign="top"%bg%><font color="#%fg_spec%" face="%font%" size="%size%"><b>%gallery:launchtime%</b></font></td>
+	</tr>
+	<!-- /ITEM -->
+</table>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,755 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "Camcorder",
+      "subcat" : "camcorder",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:Camcorder",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWEZ",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "general",
+            "v" : "general"
+         },
+         {
+            "p" : "8mm",
+            "v" : "8mm"
+         },
+         {
+            "p" : "betacam-sp",
+            "v" : "betacam-sp"
+         },
+         {
+            "p" : "hi-8",
+            "v" : "hi-8"
+         },
+         {
+            "p" : "s-vhs",
+            "v" : "s-vhs"
+         },
+         {
+            "p" : "s-vhs-c",
+            "v" : "s-vhs-c"
+         },
+         {
+            "p" : "vhs",
+            "v" : "vhs"
+         },
+         {
+            "p" : "vhs-c",
+            "v" : "vhs-c"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_analogformats",
+      "title" : "Camcorder Analog Formats",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.AnalogFormats",
+      "list" : "LIST_CAMERA_CAMCORDER_ANALOGFORMATS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "general",
+            "v" : "general"
+         },
+         {
+            "p" : "digital-betacam",
+            "v" : "digital-betacam"
+         },
+         {
+            "p" : "dv",
+            "v" : "dv"
+         },
+         {
+            "p" : "dvcam",
+            "v" : "dvcam"
+         },
+         {
+            "p" : "dvcpro",
+            "v" : "dvcpro"
+         },
+         {
+            "p" : "minidv",
+            "v" : "minidv"
+         },
+         {
+            "p" : "micromv",
+            "v" : "micromv"
+         },
+         {
+            "p" : "digital8",
+            "v" : "digital8"
+         },
+         {
+            "p" : "dvd",
+            "v" : "dvd"
+         },
+         {
+            "p" : "minidisc",
+            "v" : "minidisc"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_digitalformats",
+      "title" : "Camcorder Digital Formats",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.DigitalFormats",
+      "list" : "LIST_CAMERA_CAMCORDER_DIGITALFORMATS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "ccd",
+            "v" : "ccd"
+         },
+         {
+            "p" : "3-chip-ccd",
+            "v" : "3-chip-ccd"
+         },
+         {
+            "p" : "cmos",
+            "v" : "cmos"
+         },
+         {
+            "p" : "progressive-scan-ccd",
+            "v" : "progressive-scan-ccd"
+         },
+         {
+            "p" : "fixed-zoom-lens",
+            "v" : "fixed-zoom-lens"
+         },
+         {
+            "p" : "interchangeable-lens",
+            "v" : "interchangeable-lens"
+         },
+         {
+            "p" : "other-lens",
+            "v" : "other-lens"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_sensortype",
+      "title" : "Camcorder Sensor Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.SensorType",
+      "list" : "LIST_CAMERA_CAMCORDER_SENSORTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "general",
+            "v" : "general"
+         },
+         {
+            "p" : "8mm",
+            "v" : "8mm"
+         },
+         {
+            "p" : "16mm",
+            "v" : "16mm"
+         },
+         {
+            "p" : "35mm",
+            "v" : "35mm"
+         },
+         {
+            "p" : "65mm",
+            "v" : "65mm"
+         },
+         {
+            "p" : "70mm",
+            "v" : "70mm"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_filmformats",
+      "title" : "Camcorder Film Formats",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.FilmFormats",
+      "list" : "LIST_CAMERA_CAMCORDER_FILMFORMATS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "fixed-non-zoom",
+            "v" : "fixed-non-zoom"
+         },
+         {
+            "p" : "fixed-zoom",
+            "v" : "fixed-zoom"
+         },
+         {
+            "p" : "interchangeable",
+            "v" : "interchangeable"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_lenstype",
+      "title" : "Camcorder Lens Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.LensType",
+      "list" : "LIST_CAMERA_CAMCORDER_LENSTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_opticalzoom",
+      "type" : "textbox",
+      "title" : "Optical Zoom",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.OpticalZoom"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Unit",
+      "amz-units" : "x",
+      "id" : "amz:prod_cp_camcorder_digitalzoom",
+      "type" : "textbox",
+      "title" : "Digital Zoom",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.DigitalZoom"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_videoresolution",
+      "type" : "textbox",
+      "title" : "Video Resolution",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.VideoResolution"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "stereo",
+            "v" : "stereo"
+         },
+         {
+            "p" : "mono",
+            "v" : "mono"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_audio",
+      "title" : "Camcorder Audio",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.Audio",
+      "list" : "LIST_CAMERA_CAMCORDER_AUDIO"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_cp_camcorder_lcdscreensize",
+      "type" : "number",
+      "title" : "LCDScreenSize",
+		"amz-uom" : "IN",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.LCDScreenSize"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_lcdswivel",
+      "type" : "checkbox",
+      "title" : "L C D Swivel",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.LCDSwivel"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "black-and-white",
+            "v" : "black-and-white"
+         },
+         {
+            "p" : "color",
+            "v" : "color"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_viewfinder",
+      "title" : "Camcorder Viewfinder",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.Viewfinder",
+      "list" : "LIST_CAMERA_CAMCORDER_VIEWFINDER"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_minaperture",
+      "type" : "textbox",
+      "title" : "Min Aperture",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.MinAperture"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_maxaperture",
+      "type" : "textbox",
+      "title" : "Max Aperture",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.MaxAperture"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_imagestabilization",
+      "type" : "checkbox",
+      "title" : "Image Stabilization",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.ImageStabilization"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_infraredcapability",
+      "type" : "checkbox",
+      "title" : "Infrared Capability",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.InfraredCapability"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_firewireoutput",
+      "type" : "checkbox",
+      "title" : "Firewire Output",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.FirewireOutput"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_s-videooutput",
+      "type" : "checkbox",
+      "title" : "S - Video Output",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.S-VideoOutput"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "usb1.1",
+            "v" : "usb1.1"
+         },
+         {
+            "p" : "usb2.0",
+            "v" : "usb2.0"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_usboutput",
+      "title" : "Camcorder U S B Output",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.USBOutput",
+      "list" : "LIST_CAMERA_CAMCORDER_USBOUTPUT"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_avoutput",
+      "type" : "checkbox",
+      "title" : "A V Output",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.AVOutput"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_digitalstillcapability",
+      "type" : "checkbox",
+      "title" : "Digital Still Capability",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.DigitalStillCapability"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_digitalstillresolution",
+      "type" : "textbox",
+      "title" : "Digital Still Resolution",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.DigitalStillResolution"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "memory-stick",
+            "v" : "memory-stick"
+         },
+         {
+            "p" : "secure-digital",
+            "v" : "secure-digital"
+         },
+         {
+            "p" : "mmc",
+            "v" : "mmc"
+         },
+         {
+            "p" : "other",
+            "v" : "other"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_externalmemorytype",
+      "title" : "Camcorder External Memory Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.ExternalMemoryType",
+      "list" : "LIST_CAMERA_CAMCORDER_EXTERNALMEMORYTYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_externalmemoryincluded",
+      "type" : "checkbox",
+      "title" : "External Memory Included",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.ExternalMemoryIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_camcorder_externalmemorysize",
+      "type" : "textbox",
+      "title" : "External Memory Size",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.ExternalMemorySize"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "mpeg",
+            "v" : "mpeg"
+         },
+         {
+            "p" : "mpeg2",
+            "v" : "mpeg2"
+         },
+         {
+            "p" : "mpeg4",
+            "v" : "mpeg4"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_mpegmoviemode",
+      "title" : "Camcorder M P E G Movie Mode",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.MPEGMovieMode",
+      "list" : "LIST_CAMERA_CAMCORDER_MPEGMOVIEMODE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_usbstreaming",
+      "type" : "checkbox",
+      "title" : "U S B Streaming",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.USBStreaming"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_headphonejack",
+      "type" : "checkbox",
+      "title" : "Headphone Jack",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.HeadphoneJack"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_flyingeraseheads",
+      "type" : "checkbox",
+      "title" : "Flying Erase Heads",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.FlyingEraseHeads"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_autolight",
+      "type" : "checkbox",
+      "title" : "Autolight",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.Autolight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_hotshoe",
+      "type" : "checkbox",
+      "title" : "Hot Shoe",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.HotShoe"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "windows",
+            "v" : "windows"
+         },
+         {
+            "p" : "mac",
+            "v" : "mac"
+         },
+         {
+            "p" : "linux",
+            "v" : "linux"
+         }
+      ],
+      "amz-format" : "ComputerPlatform",
+      "id" : "amz:prod_cp_camcorder_computerplatform",
+      "title" : "Computer Platform Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.ComputerPlatform",
+      "list" : "LIST_BASE_COMPUTERPLATFORM_TYPE"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:prod_base_systemreqs",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "System Requirements"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_softwareincluded",
+      "type" : "textbox",
+      "title" : "Software Included",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.SoftwareIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_batterytype",
+      "type" : "textbox",
+      "title" : "Battery Type",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.BatteryType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_rechargeablebincld",
+      "type" : "checkbox",
+      "title" : "Rechargeable Battery Included",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.RechargeableBatteryIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_acadapterincluded",
+      "type" : "checkbox",
+      "title" : "A C Adapter Included",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.ACAdapterIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_remoteincluded",
+      "type" : "checkbox",
+      "title" : "Remote Included",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.RemoteIncluded"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "pal",
+            "v" : "pal"
+         },
+         {
+            "p" : "ntsc",
+            "v" : "ntsc"
+         },
+         {
+            "p" : "multisystem",
+            "v" : "multisystem"
+         },
+         {
+            "p" : "secam",
+            "v" : "secam"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_playbackformat",
+      "title" : "Camcorder Playback Format",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.PlaybackFormat",
+      "list" : "LIST_CAMERA_CAMCORDER_PLAYBACKFORMAT"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "lcd-screen",
+            "v" : "lcd-screen"
+         },
+         {
+            "p" : "mpeg",
+            "v" : "mpeg"
+         },
+         {
+            "p" : "digital-still",
+            "v" : "digital-still"
+         },
+         {
+            "p" : "memory-card-compatible",
+            "v" : "memory-card-compatible"
+         },
+         {
+            "p" : "image-stabilization",
+            "v" : "image-stabilization"
+         },
+         {
+            "p" : "insert-edit",
+            "v" : "insert-edit"
+         },
+         {
+            "p" : "underwater",
+            "v" : "underwater"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_camcorder_features",
+      "title" : "Camcorder Features",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Camcorder.Features",
+      "list" : "LIST_CAMERA_CAMCORDER_FEATURES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

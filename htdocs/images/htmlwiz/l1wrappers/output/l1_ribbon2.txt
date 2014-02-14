@@ -1,0 +1,14 @@
+<TEMPLATE NAME="l1_ribbon2">
+
+<DIV NAME="MAIN">
+<INPUT COLS="20" SUB="USERNAME" TYPE="TEXTBOX" NAME="channel:zoovy:username" PROMPT="Username Name"></INPUT>
+<INPUT COLS="100" SUB="COMPANY_NAME" TYPE="TEXTBOX" NAME="merchant:zoovy:company_name" PROMPT="Company Name"></INPUT>
+<INPUT SUB="IMAGE1" BGCOLOR="FFFFFF" HEIGHT="250" WIDTH="250" TYPE="IMAGE" NAME="product:zoovy:prod_image1" PROMPT="Image (250x250)"></INPUT>
+<INPUT COLS="100" SUB="TITLE" TYPE="TEXTBOX" NAME="product:zoovy:prod_name" PROMPT="Product Name"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="PRODUCT_DESCRIPTION" TYPE="TEXTAREA" NAME="product:zoovy:prod_desc" PROMPT="Product Description"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="PAYMENT_POLICY" TYPE="TEXTAREA" NAME="merchant:zoovy:payment_policy" PROMPT="Store Payment Policy"></INPUT>
+<INPUT COLS="80" ROWS="5"  SUB="RETURN_POLICY" TYPE="TEXTAREA" NAME="merchant:zoovy:return_policy" PROMPT="Store Return Policy"></INPUT>
+<INPUT SUB="COMPANY_LOGO" BGCOLOR="ffffff" HEIGHT="88" WIDTH="300" TYPE="IMAGE" NAME="merchant:zoovy:company_logo" PROMPT="Company Logo"></INPUT>
+</DIV>
+
+</TEMPLATE>

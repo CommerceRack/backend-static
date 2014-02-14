@@ -1,0 +1,38 @@
+<TEMPLATE ID="3001" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKLXA" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SERIES="2001" SUBTYPE="T" FORMAT="LAYOUT" SHORT="This layout includes a list of featured products." TYPE="CONFIG" TITLE="Product List" RELEASED="20011022"><SUMMARY><![CDATA[Featured Products Title
+Product Listing
+Shopping Cart
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKLXB" TYPE="OUTPUT"><HTML><![CDATA[<center>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CART1" HELP="This is the contents of the user's shopping cart." PROMPT="Shopping Cart" TYPE="CART"></ELEMENT>
+<ELEMENT ID="CPUKLXC" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+
+<b><font size="+2">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="FEATUREDTITLE" LENGTH="100" HELP="This is the title that appears above the featured products listing" DATA="page:featured" PROMPT="Featured Products Title" DEFAULT="Featured Products" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CPUKLXD" TYPE="OUTPUT"><HTML><![CDATA[
+</font></b>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT SIZE="50000" ID="PRODLIST1" HELP="You can add products to your shopping cart page" DATA="page:prodlist" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKLXE" TYPE="OUTPUT"><HTML><![CDATA[
+
+</center>
+
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

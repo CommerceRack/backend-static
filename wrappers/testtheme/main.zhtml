@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=gateway
+SITEBUTTONS=gateway
+-->
+<html>
+<head>
+<script language="JavaScript">
+<!--
+initialized = 0;
+<!-- MENU
+FORMAT=rollover_%NUM%_on = new Image;%BREAK%rollover_%NUM%_on.src = "%SRC%";%BREAK%
+BUTTONTYPE=gateway_on
+ONLYHOME=0
+NOHOME=1
+--><!-- MENU
+FORMAT=rollover_%NUM%_off = new Image;%BREAK%rollover_%NUM%_off.src = "%SRC%";%BREAK%
+BUTTONTYPE=gateway_off
+ONLYHOME=0
+NOHOME=1
+-->initialized = 1;
+function on(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_on.src");
+}
+function off(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_off.src");
+}
+// -->
+</script>
+<script language="JavaScript">
+<!--
+initialized = 0;
+
+<!-- MENU
+TYPE=SUBCAT
+FORMAT=subrollover_%NUM%_on = new Image;%BREAK%subrollover_%NUM%_on.src = "%SRC%";%BREAK%
+BUTTONTYPE=gateway2_on
+WIDTH=150
+NOHOME=1
+NOROOT=1
+DESCENDTREE=1
+PRODCAT=1
+-->
+<!-- MENU
+TYPE=SUBCAT
+FORMAT=subrollover_%NUM%_off = new Image;%BREAK%subrollover_%NUM%_off.src = "%SRC%";%BREAK%
+BUTTONTYPE=gateway2_off
+WIDTH=150
+NOHOME=1
+NOROOT=1
+DESCENDTREE=1
+PRODCAT=1
+-->
+
+initialized = 1;
+function sbon(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"subroll_"+imageNumber+"\"")].src = eval("subrollover_"+imageNumber+"_on.src");
+}
+
+function sboff(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"subroll_"+imageNumber+"\"")].src = eval("subrollover_"+imageNumber+"_off.src");
+}
+
+// -->
+</script>
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+form	{display: inline;}
+.formed 	{border-color:#000099; border-style: solid; background-color:#ffffff; color:#666666; font-family: sans-serif; font-size: 12px; width: 100px}
+td.yellow	{background-color: #FBC924;}
+td.blue	{background-color: #000099;}
+.title	{font-family: arial; font-size: 12px; font-weight: bold;}
+</style>
+</head>
+
+<body>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td height=28 width=30></td>
+		<td></td>
+		<td rowspan=2 valign="middle"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=200
+HEIGHT=50
+--></a></td>
+	</tr><tr>
+		<td class="blue"><table cellspacing=0 cellpadding=1 border=0><tr><!-- MENU
+BUTTONTYPE=gateway_off
+FORMAT=<td><a href="%URL%" OnMouseOver="on(%NUM%)" OnMouseOut="off(%NUM%)"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0" name="roll_%NUM%"></a></td>
+DIVIDER=<td valign="top"><span style="color: #ffffff; font-size: 12px;">%BREAK%|%BREAK%</span></td>
+NOHOME=1
+ONLYHOME=0
+--></tr></table></td>
+		<td><img src="<!-- WRAPPER_URL -->/cap.gif" width="11" height="22" alt="" border="0"></td>
+	</tr><tr>
+		<td class="blue" colspan=3 height=4></td>
+	</tr>
+</table>
+<form action="<!-- RESULTS_URL -->" method="get"><input type="hidden" name="catalog" value="">
+<table cellspacing=0 cellpadding=2 border=0 width=100%>
+	<tr>
+		<td width=5 class="yellow"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=5></td>
+		<td width=100 class="yellow"><input type="text" name="keywords" value="" size="10" maxlength="25" class="formed"></td>
+		<td width=100 class="yellow"><input type="image" src="<!-- WRAPPER_URL -->/search.gif" ></form></td>
+		<td class="yellow" width=500><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=5></td>
+		<td class="yellow" width=56><img src="<!-- WRAPPER_URL -->/home.gif" width="49" height="17" alt="" border="0"></td>
+		<td class="yellow" width=68><img src="<!-- WRAPPER_URL -->/contact.gif" width="61" height="17" alt="" border="0"></td>
+		<td class="yellow" width=75><img src="<!-- WRAPPER_URL -->/about.gif" width="68" height="17" alt="" border="0"></td>
+		<td class="yellow" width=48><img src="<!-- WRAPPER_URL -->/cart.gif" width="41" height="17" alt="" border="0"></td>
+		<td class="yellow" width=76><img src="<!-- WRAPPER_URL -->/checkout.gif" width="69" height="17" alt="" border="0"></td>
+		<td class="yellow" width=5><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=5></td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=5 border=0 width=100%>
+	<tr>
+		<td valign="top" width=150><!-- MENU
+TYPE=SUBCAT
+BUTTONTYPE=gateway2_off
+FORMAT=<a XXX href="%URL%" OnMouseOver="sbon(%NUM%)" OnMouseOut="sboff(%NUM%)"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0" name="subroll_%NUM%"></a><br>
+DIVIDER=<img src="%WRAPPER_URL%/divider.gif" height=2 width=150><br>
+WIDTH=150
+NOHOME=1
+NOROOT=1
+DESCENDTREE=1
+PRODCAT=1
+-->
+<br><!-- SIDEBAR --></td>
+		<td valign="top"><p class="title"><!-- TITLE --></p><!-- BODY --><p><!-- FOOTER --></p></td>
+	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+/* global styles */
+a	{color:#5499FE; text-decoration:none;}
+a:hover	{color:#FF860F;}
+
+h1	{font-size:10pt; color:#ffffff; margin:2px 0px 2px 0px;}
+h2	{font-size:9pt; color:#5499FE; margin:5px 0px 3px 0px;}
+h3	{font-size:9pt; color:#FF860F; margin:5px 0px 3px 0px;}
+h4	{font-size:8pt; color:#666666; margin:5px 0px 3px 0px; display:inline;}
+
+form	{display:inline;}
+
+div, html, textarea, select {scrollbar-base-color: #5499FE;}
+
+.pogprompt {  color: #656565; font-family: tahoma, arial, sans serif; font-size: 8pt; font-weight:bold;}
+
+/* setting lineheight for default txt size */
+.ztxt {line-height:150%;}
+
+/*These are the styles for the tabs on the product page */
+.shadetabs	{padding: 4px 0; font-size: 8pt; list-style-type: none; text-align: left; margin:0px;}
+.shadetabs li{display: inline;margin: 0; position: relative;top: 1px;}
+.shadetabs li a:hover{text-decoration: underline;color: #000000;}
+.shadetabs li.selected{position: relative;top: 1px;}
+.shadetabs li.selected a:hover{ text-decoration: none;}   /*selected main tab style */
+.tabcontentstyle{ width:auto; height:271px; padding:3px; overflow:auto; } /*style of tab content oontainer*/
+.tabcontent{display:none;}
+@media print {
+.tabcontent {
+display:block!important;
+}
+}
+.shadetabs li a{text-decoration: none; padding: 3px 7px; margin-right: 3px; border: 1px solid #BBDEFE; color: #075562;background: #E5F1FE;} /*selected main tab style */
+
+.shadetabs li.selected a {background:#ffffff; border-bottom-color: white; color:#075562; text-decoration:none;}
+
+#trailimageid {position: absolute; visibility: hidden; left: 0px; top: 0px; width: auto; height:auto; z-index: 1000;} /* this is the style for the floating product image. I don't think this is used. */
+
+
+/* These are the styles for the search autocompletion divs */
+div.keywords_auto_complete {width: 350px;}
+div.keywords_auto_complete ul {border:1px solid #888; margin:0; padding:0; width:100%; list-style-type:none; background-color:#FDFDFD; opacity:.85;filter: alpha(opacity=85); -moz-opacity: 0.85;}
+div.keywords_auto_complete ul li {margin:0; padding:1px 2px 1px 2px; font-size:11px;}
+div.keywords_auto_complete ul li.selected {background-color: #EFEFEF;}
+div.keywords_auto_complete ul strong.highlight {color: #FFFFFF;background-color:#666666; margin:0;padding:0;}

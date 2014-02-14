@@ -1,0 +1,299 @@
+<TEMPLATE ID="30000" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNGP" CREATOR="JT" IMAGES="0" CREATED="00000000" PROPERTIES="1" SUBTYPE="C" FORMAT="LAYOUT" SHORT="Contains textboxes for 25 questions and answers" TYPE="CONFIG" TITLE="FAQ - 25 question" OCREATED="20050311"><SUMMARY><![CDATA[
+This layout contains 25 Question and Answer text fields.  This set of FAQ is NOT tied into the profile.  
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DATA="page:subcat" MODE="CHOOSER" TYPE="SUBCAT"></ELEMENT>
+<ELEMENT ID="CPUKNGQ" TYPE="OUTPUT"><HTML><![CDATA[
+<div align="left">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="L1" TYPE="READONLY" LOAD="page:q1"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q1">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L2" TYPE="READONLY" LOAD="page:q2"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q2">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L3" TYPE="READONLY" LOAD="page:q3"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q3">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L4" TYPE="READONLY" LOAD="page:q4"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q4">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L5" TYPE="READONLY" LOAD="page:q5"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q5">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L6" TYPE="READONLY" LOAD="page:q6"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q6">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L7" TYPE="READONLY" LOAD="page:q7"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q7">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L8" TYPE="READONLY" LOAD="page:q8"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q8">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L9" TYPE="READONLY" LOAD="page:q9"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q9">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L10" TYPE="READONLY" LOAD="page:q10"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q10">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L11" TYPE="READONLY" LOAD="page:q11"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q11">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L12" TYPE="READONLY" LOAD="page:q12"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q12">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L13" TYPE="READONLY" LOAD="page:q13"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q13">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L14" TYPE="READONLY" LOAD="page:q14"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q14">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L15" TYPE="READONLY" LOAD="page:q15"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q15">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L16" TYPE="READONLY" LOAD="page:q16"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q16">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L17" TYPE="READONLY" LOAD="page:q17"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q17">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L18" TYPE="READONLY" LOAD="page:q18"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q18">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L19" TYPE="READONLY" LOAD="page:q19"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q19">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L20" TYPE="READONLY" LOAD="page:q20"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q20">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L21" TYPE="READONLY" LOAD="page:q21"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q21">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L22" TYPE="READONLY" LOAD="page:q22"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q22">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L23" TYPE="READONLY" LOAD="page:q23"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q23">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L24" TYPE="READONLY" LOAD="page:q24"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q24">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="L25" TYPE="READONLY" LOAD="page:q25"><PRETEXT><![CDATA[<span style="font-size: 12px">&#187; </span><a href="#q25">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a><br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNGR" TYPE="OUTPUT"><HTML><![CDATA[
+<p> </p>
+<table cellspacing=0 cellpadding=0 border=0>
+<tr><td width=25></td><td></td></tr>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="Q1" HELP="Please enter a question into this field" DATA="page:q1" PROMPT="Question #1" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q1"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A1" HELP="Please enter a question into this field" DATA="page:a1" PROMPT="Answer #1" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q2" HELP="Please enter a question into this field" DATA="page:q2" PROMPT="Question #2" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q2"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A2" HELP="Please enter a question into this field" DATA="page:a2" PROMPT="Answer #2" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q3" HELP="Please enter a question into this field" DATA="page:q3" PROMPT="Question #3" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q3"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A3" HELP="Please enter a question into this field" DATA="page:a3" PROMPT="Answer #3" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q4" HELP="Please enter a question into this field" DATA="page:q4" PROMPT="Question #4" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q4"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A4" HELP="Please enter a question into this field" DATA="page:a4" PROMPT="Answer #4" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q5" HELP="Please enter a question into this field" DATA="page:q5" PROMPT="Question #5" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q5"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A5" HELP="Please enter a question into this field" DATA="page:a5" PROMPT="Answer #5" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q6" HELP="Please enter a question into this field" DATA="page:q6" PROMPT="Question #6" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q6"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A6" HELP="Please enter a question into this field" DATA="page:a6" PROMPT="Answer #6" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q7" HELP="Please enter a question into this field" DATA="page:q7" PROMPT="Question #7" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q7"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A7" HELP="Please enter a question into this field" DATA="page:a7" PROMPT="Answer #7" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q8" HELP="Please enter a question into this field" DATA="page:q8" PROMPT="Question #8" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q8"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A8" HELP="Please enter a question into this field" DATA="page:a8" PROMPT="Answer #8" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q9" HELP="Please enter a question into this field" DATA="page:q9" PROMPT="Question #9" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q9"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A9" HELP="Please enter a question into this field" DATA="page:a9" PROMPT="Answer #9" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q10" HELP="Please enter a question into this field" DATA="page:q10" PROMPT="Question #10" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q10"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A10" HELP="Please enter a question into this field" DATA="page:a10" PROMPT="Answer #10" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q11" HELP="Please enter a question into this field" DATA="page:q11" PROMPT="Question #11" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q11"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A11" HELP="Please enter a question into this field" DATA="page:a11" PROMPT="Answer #11" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q12" HELP="Please enter a question into this field" DATA="page:q12" PROMPT="Question #12" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q12"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A12" HELP="Please enter a question into this field" DATA="page:a12" PROMPT="Answer #12" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q13" HELP="Please enter a question into this field" DATA="page:q13" PROMPT="Question #13" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q13"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A13" HELP="Please enter a question into this field" DATA="page:a13" PROMPT="Answer #13" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q14" HELP="Please enter a question into this field" DATA="page:q14" PROMPT="Question #14" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q14"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A14" HELP="Please enter a question into this field" DATA="page:a14" PROMPT="Answer #14" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q15" HELP="Please enter a question into this field" DATA="page:q15" PROMPT="Question #15" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q15"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A15" HELP="Please enter a question into this field" DATA="page:a15" PROMPT="Answer #15" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q16" HELP="Please enter a question into this field" DATA="page:q16" PROMPT="Question #16" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q16"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A16" HELP="Please enter a question into this field" DATA="page:a16" PROMPT="Answer #16" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q17" HELP="Please enter a question into this field" DATA="page:q17" PROMPT="Question #17" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q17"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A17" HELP="Please enter a question into this field" DATA="page:a17" PROMPT="Answer #17" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q18" HELP="Please enter a question into this field" DATA="page:q18" PROMPT="Question #18" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q18"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A18" HELP="Please enter a question into this field" DATA="page:a18" PROMPT="Answer #18" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q19" HELP="Please enter a question into this field" DATA="page:q19" PROMPT="Question #19" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q19"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A19" HELP="Please enter a question into this field" DATA="page:a19" PROMPT="Answer #19" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q20" HELP="Please enter a question into this field" DATA="page:q20" PROMPT="Question #20" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q20"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A20" HELP="Please enter a question into this field" DATA="page:a20" PROMPT="Answer #20" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q21" HELP="Please enter a question into this field" DATA="page:q21" PROMPT="Question #21" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q21"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A21" HELP="Please enter a question into this field" DATA="page:a21" PROMPT="Answer #21" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q22" HELP="Please enter a question into this field" DATA="page:q22" PROMPT="Question #22" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q22"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A22" HELP="Please enter a question into this field" DATA="page:a22" PROMPT="Answer #22" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q23" HELP="Please enter a question into this field" DATA="page:q23" PROMPT="Question #23" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q23"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A23" HELP="Please enter a question into this field" DATA="page:a23" PROMPT="Answer #23" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q24" HELP="Please enter a question into this field" DATA="page:q24" PROMPT="Question #24" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q24"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A24" HELP="Please enter a question into this field" DATA="page:a24" PROMPT="Answer #24" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="Q25" HELP="Please enter a question into this field" DATA="page:q25" PROMPT="Question #25" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter a question here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</b></a></td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td colspan=2><a name="q25"><b>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="A25" HELP="Please enter a question into this field" DATA="page:a25" PROMPT="Answer #25" DEFAULT="" TYPE="TEXT"><HELPER><![CDATA[Enter the answer here.  It will appear on the page once at the top and be hyper-referenced to the answer below.]]></HELPER>
+<POSTTEXT><![CDATA[</td></tr>]]></POSTTEXT>
+<PRETEXT><![CDATA[<tr><td></td><td>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CPUKNGS" TYPE="OUTPUT"><HTML><![CDATA[
+</table></div>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

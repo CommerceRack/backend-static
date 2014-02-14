@@ -1,0 +1,2486 @@
+
+
+
+
+<div id='productManagerLandingContentTemplate'>
+
+<h1>Online Product Manager</h1>
+
+<p>Welcome to our new app-based Product Manager which will keep you seamlessly connected to your product data. Here are some of the advantages:</p>
+
+<h2>Page Rendering</h2>
+<p>With our new app based solution, there are no frames to load and reload, it makes better use of your screen and browser capabilities. The app framework stays on the screen and only the information you want to view or manipulate changes. This makes for a smoother workflow and helps to increase productivity.</p>
+
+<h2>Extensible</h2>
+<p>Entering your product data is only the beginning. This interface will allow extensibility by developers so it is possible to create custom data input and management interfaces. From vendor management to drop shipping to complex supply chain strategies, our new Product Manager.</p>
+
+<h2>The World is Changing</h2>
+<p>The app-based structure is the future of technology. By providing an e-commerce solution that is better than the best traditional solution and providing it for less cost, we are convinced that this change will let our customers do more in less time. </p>
+
+</div>
+
+
+<div id='productManagerFilterTemplate' class='ui-widget-content ui-corner-bottom'>
+<div class='alignRight buttonset'>
+	<button>Cancel</button>
+	<button>Filter</button>
+</div>
+<table class='fullWidth'>
+<tr>
+	<td class='valignTop'>
+	<h3>Tags: </h3>
+	<ul class='tagFilterList listStyleNone'>
+		<li>IS_FRESH</li>
+		<li>IS_NEEDREVIEW</li>
+		<li>IS_HASERRORS</li>
+		<li>IS_CONFIGABLE</li>
+		<li>IS_COLORFUL</li>
+		<li>IS_SIZEABLE</li>
+		<li>IS_OPENBOX</li>
+		<li>IS_PREORDER</li>
+		<li>IS_DISCONTINUED</li>
+		<li>IS_SPECIALORDER</li>
+		<li>IS_BESTSELLER</li>
+		<li>IS_SALE</li>
+		<li>IS_SHIPFREE</li>
+		<li>IS_NEWARRIVAL</li>
+		<li>IS_CLEARANCE</li>
+		<li>IS_REFURB</li>
+		<li>IS_USER1</li>
+		<li>IS_USER2</li>
+		<li>IS_USER3</li>
+		<li>IS_USER4</li>
+		<li>IS_USER5</li>
+		<li>IS_USER6</li>
+		<li>IS_USER7</li>
+		<li>IS_USER8</li>
+		<li>IS_USER9</li>
+	</ul>	
+	</td>
+
+	<td class='valignTop'>
+	<h3>Marketplaces</h3>
+	<ul class='mktFilterList listStyleNone'>
+		<li data-mktid="GOO">Google</li>
+		<li data-mktid="EBS">eBay Store</li>
+		<li data-mktid="GOO">Google</li>
+		<li data-mktid="EBS">eBay Store</li>
+		<li data-mktid="GOO">Google</li>
+		<li data-mktid="EBS">eBay Store</li>
+		<li data-mktid="GOO">Google</li>
+		<li data-mktid="EBS">eBay Store</li>
+		<li data-mktid="GOO">Google</li>
+		<li data-mktid="EBS">eBay Store</li>
+		<li data-mktid="GOO">Google</li>
+		<li data-mktid="EBS">eBay Store</li>
+	</ul>
+	</td>
+
+	<td class='valignTop'>
+	<h3>Price Range</h3>
+<p>
+<label for="amount">Price range:</label>
+<input type="text" id="amount" />
+<div id="slider-range"></div>
+</p>
+	<br />	
+	<h3>Launch Profile</h3>
+	<ul>
+		<li>load launch profiles</li>
+	</ul>
+	</td>
+
+
+</tr>
+</table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id='productEditorTemplate' class='productEditor'>
+
+<table class='productEditorContainer'>
+<tr>
+	<td class='leftColNav'>
+	<div id='prodLeftCol'>
+
+<form action='#' onSubmit="app.ext.admin_prodEdit.u.handleProductKeywordSearch($(this).serializeJSON()); return false" class='marginBottom'>
+<fieldset>
+	<legend>Product Search</legend>
+	<input type='search' name='KEYWORDS' value='' />
+	<input type='submit' value='go' />
+</fieldset>
+</form>
+
+
+<ul>
+	<li><a href='#' onClick="app.ext.admin_prodEdit.a.showCreateProductDialog(); return false;">New Product</a></li>
+	<li><a href='#' onClick="$(this).parent().find('ul').toggle();  return false;">Filter Product</a>
+	<ul class='displayNone tagFilterList'>
+		<li>IS_FRESH</li>
+		<li>IS_NEEDREVIEW</li>
+		<li>IS_HASERRORS</li>
+		<li>IS_CONFIGABLE</li>
+		<li>IS_COLORFUL</li>
+		<li>IS_SIZEABLE</li>
+		<li>IS_OPENBOX</li>
+		<li>IS_PREORDER</li>
+		<li>IS_DISCONTINUED</li>
+		<li>IS_SPECIALORDER</li>
+		<li>IS_BESTSELLER</li>
+		<li>IS_SALE</li>
+		<li>IS_SHIPFREE</li>
+		<li>IS_NEWARRIVAL</li>
+		<li>IS_CLEARANCE</li>
+		<li>IS_REFURB</li>
+		<li>IS_USER1</li>
+		<li>IS_USER2</li>
+		<li>IS_USER3</li>
+		<li>IS_USER4</li>
+		<li>IS_USER5</li>
+		<li>IS_USER6</li>
+		<li>IS_USER7</li>
+		<li>IS_USER8</li>
+		<li>IS_USER9</li>
+	</ul>
+	</li>
+	<li><a href='#' onClick="$(this).parent().find('ul').toggle(); return false;">Syndication</a>
+	<ul class='displayNone mktFilterList'>
+		<li data-mktid="GOO">Google</li>
+		<li data-mktid="EBS">eBay Store</li>
+	</ul>
+	</li>
+<!--	<li><a href='#' onClick="return showUI('/biz/product/options2/index.cgi?product=',{'targetID':'productTabMainContent'});">Store Option Groups</a></li> -->
+	<li><a href='#' onClick="app.ext.admin_prodEdit.a.showStoreVariationsManager($('#productTabMainContent')); return false;">Global Variations</a></li>
+	<li class='displayNone' id='manCatsParent'><a href='#' onClick="$(this).parent().find('ul').toggle(); return false;">Management Categories:</a>
+		<ul id='manCats' class='displayNone'>
+		</ul>
+	</li>
+</ul>
+
+	</div>
+	</td>
+	<td class='mainColContent stackedPanels'>
+	<!-- do not change this ID. used a lot -->
+	<div class='productContentContainer' id='productTabMainContent'>
+
+<h1>Online Product Manager</h1>
+
+<p>Welcome to our new app-based Product Manager which will keep you seamlessly connected to your product data. Here are some of the advantages:</p>
+
+<h2>Page Rendering</h2>
+<p>With our new app based solution, there are no frames to load and reload, it makes better use of your screen and browser capabilities. The app framework stays on the screen and only the information you want to view or manipulate changes. This makes for a smoother workflow and helps to increase productivity.</p>
+
+<h2>Extensible</h2>
+<p>Entering your product data is only the beginning. This interface will allow extensibility by developers so it is possible to create custom data input and management interfaces. From vendor management to drop shipping to complex supply chain strategies, our new Product Manager.</p>
+
+<h2>The World is Changing</h2>
+<p>The app-based structure is the future of technology. By providing an e-commerce solution that is better than the best traditional solution and providing it for less cost, we are convinced that this change will let our customers do more in less time. </p>
+
+
+	</div>
+	
+	</td>
+</tr>
+</table>
+
+</div>
+
+
+
+<!-- used when a filter/search occurs to display the results -->
+<table>
+<tr id='productListTemplateTableResults'>
+		
+	<td>
+	<div class='prodThumbContainer'>
+	<img src='blank.gif' class='prodThumb' data-bind='var: product(images); format:imageURL;isElastic:1; bgcolor:ffffff;' width='45' height='45' />
+	</div>
+	</td>
+	<td data-bind='var: product(pid); defaultVar: product(_id); format:text;'></td>
+	<td class='hideInMinimalMode'><div data-bind='var: product(prod_name); format:text;'></div></td>
+	<td data-bind='var: product(base_price); format:money; isElastic:1; currencySign: $;  hideZero:false;'></td>
+	<td class='hideInMinimalMode' data-bind='var:product(pogs); format:showTrueIfSet; extension:admin;'></td>
+	<td class='hideInMinimalMode' data-bind='var:product(child_pids); format:arrayLength; extension:admin;'></td>
+	<td align='right'><button data-app-event='admin_prodEdit|showProductEditor'>Edit</button></td>
+</tr>
+
+
+<tr id='productListTableListTemplate' class='loadingBG'>
+		
+	<td>
+	<div class='prodThumbContainer'>
+	<img src='blank.gif' class='prodThumb' data-bind='var: product(zoovy:prod_image1); format:imageURL;' width='35' height='35' />
+	</div>
+	</td>
+	<td>
+	<div><span data-bind='var: product(pid); defaultVar: product(_id); format:text;'></span> - <span data-bind='var: product(zoovy:prod_name); format:text;'></span></div>
+	<div data-bind='var: product(zoovy:base_price); format:money; currencySign: $;  hideZero:false;'></div>
+	</td>
+	<td><button onClick="app.ext.admin_prodEdit.a.showPanelsFor($(this).closest('[data-pid]').attr('data-pid'));">Edit</button></td>
+</tr>
+
+</table>
+
+
+
+
+
+<div id='ProductCreateNewTemplate'>
+
+<div id='prodCreateMessaging'></div>
+
+<form name="createNewProductForm" action="#" method="POST" onSubmit="app.ext.admin_prodEdit.u.handleCreateNewProduct($(this).serializeJSON()); return false;">
+	
+<fieldset class='marginBottom labelsAsBreaks alignedLabels alignedInputs'>
+	<legend>Required Fields</legend>
+
+	<label><span>Product ID/SKU: </span><input type="text" name="pid" SIZE="20" MAXLENGTH="20" VALUE="" required='required' /></label>
+	<label ><span>Product Name: </span><INPUT TYPE="text" NAME="zoovy:prod_name"  maxlength="55" VALUE="" required='required' /></label>
+	<label ><span>Sell For Price: </span>$<INPUT TYPE="number" NAME="zoovy:base_price" VALUE="" SIZE="15" required='required' step='0.01' min='0'></label>
+			
+</fieldset>
+
+<fieldset class='marginBottom labelsAsBreaks alignedLabels'>
+	<legend>Recommended Data</legend>
+	<label ><span>Your Cost: </span>$<INPUT TYPE="number" NAME="zoovy:base_cost" VALUE="" SIZE="7" step='0.01' min='0'></label>
+	<label ><span>Product Description:</span><TEXTAREA NAME="zoovy:prod_desc" COLS=40 ROWS=5></TEXTAREA></label>
+	<label ><span>Base Weight:</span><INPUT TYPE="text" NAME="zoovy:base_weight" VALUE="" SIZE="8"> ounces (use # for pounds)</label>
+	<label ><span>Is product taxable?:</span></label> 
+		<INPUT TYPE='radio' NAME='zoovy:taxable' VALUE='1' checked>&nbsp;Yes
+        <INPUT TYPE='radio' NAME='zoovy:taxable' VALUE='0' >&nbsp;No
+	
+</fieldset>		
+		
+<input type="submit" value=" Save " class='savebutton' border='0' />
+
+</form>
+
+</div>
+
+
+
+<!-- this template can be used for elastic or traditional product lists. defaultVar should be used for the elastic inputs -->
+<li id='productListTemplateEditMe' class='loadingBG pointer editorProductListItem'  >
+	<a href='#' onClick="app.ext.admin_prodEdit.a.showPanelsFor($(this).parent().attr('data-pid')); return false;">
+	<span data-bind='var: product(pid); defaultVar: product(_id); format:text;'></span> - <span data-bind='var: product(zoovy:prod_name); defaultVar: product(prod_name); format:text;'></span>
+	</a>
+</li>
+
+
+<div class='productPanel' id='productEditorPanelTemplate'>
+	
+	<h3 class='panelHeader ui-widget-header ui-state-default ui-corner-top ui-accordion-icons pointer clearfix' onClick="app.ext.admin_prodEdit.a.handlePanel(this);">
+	
+	
+		<span class="ui-accordion-header-icon ui-icon ui-icon-circle-arrow-e"></span>
+		<span data-bind="var: panel(title); format:text;"></span>
+	
+	</h3>
+	<div class='panelContents displayNone ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active marginBottom'>
+	<form action="#" onSubmit="return false;" data-bind="var: panel(id); format:assignAttribute; attribute:name;">
+	<fieldset data-bind="var: panel(id); format:assignAttribute; attribute:id; valuePretext:panelContents_;" class='loadingBG'></fieldset>
+	</form>
+	</div>	
+	
+</div>
+
+
+
+
+<div id='productEditorPanelTemplate_reviews' class='productPanel'>
+	<h3 class='panelHeader ui-widget-header ui-state-default ui-corner-top ui-accordion-icons pointer clearfix' onClick="app.ext.admin_prodEdit.a.handlePanel(this);">
+		<span class="ui-accordion-header-icon ui-icon ui-icon-circle-arrow-e"></span>
+		<span>Reviews</span>
+	</h3>
+	<div class='panelContents displayNone ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active marginBottom'>
+<form action='#'>
+
+<fieldset class='labelsAsBreaks alignedLabels alignedInputs'>
+<table class='gridTable applyAnytable'>
+<tbody data-bind='var: users(@REVIEWS); format:processList; loadsTemplate:reviewsResultsRowTemplate;'></tbody>
+</table>
+</fieldset>
+</form>
+	</div>
+</div>
+
+
+
+<div id='productEditorPanelTemplate_xsell' class='productPanel'>
+	<h3 class='panelHeader ui-widget-header ui-state-default ui-corner-top ui-accordion-icons pointer clearfix' onClick="app.ext.admin_prodEdit.a.handlePanel(this);">
+		<span class="ui-accordion-header-icon ui-icon ui-icon-circle-arrow-e"></span>
+		<span>Cross Selling</span>
+	</h3>
+	<div class='panelContents displayNone ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active marginBottom'>
+<form action='#'>
+
+
+<table>
+<tbody>
+<tr>
+	<td class='valignTop'>
+<fieldset class='labelsAsBreaks alignedLabels alignedInputs'>
+	<legend>Merchandising</legend>
+
+	<label>
+		<span>Promotion Class</span>
+		<input type="textbox" value="" name="zoovy:prod_promoclass" size="8" data-bind='var:product(zoovy:prod_promoclass); format:popVal;' />
+	</label>
+<br />
+	<label><input name="is:preorder" type="checkbox" data-bind="var: product(is:preorder); format:popVal;" class='applyAnycb' /> Pre-order</label>
+	<label><input name="is:discontinued" type="checkbox" data-bind="var: product(is:discontinued); format:popVal;" class='applyAnycb' /> Discontinued</label>
+	<label><input name="is:specialorder" type="checkbox" data-bind="var: product(is:specialorder); format:popVal;" class='applyAnycb' /> Special Order</label>
+	<label><input name="is:bestseller" type="checkbox" data-bind="var: product(is:bestseller); format:popVal;" class='applyAnycb' /> Best Seller</label>
+	<label><input name="is:sale" type="checkbox" data-bind="var: product(is:sale); format:popVal;" class='applyAnycb' /> Sale Item</label>
+	<label><input name="is:shipfree" type="checkbox" data-bind="var: product(is:shipfree); format:popVal;" class='applyAnycb' /> Can Ship Free</label>
+	<label><input name="is:newarrival" type="checkbox" data-bind="var: product(is:newarrival); format:popVal;" class='applyAnycb' /> New Arrival</label>
+	<label><input name="is:clearance" type="checkbox" data-bind="var: product(is:clearance); format:popVal;" class='applyAnycb' /> Clearance </label>
+</fieldset>
+	</td>
+	
+	
+	<td class='valignTop'>
+	
+<fieldset>
+	<legend>Cross/Up Selling</legend>
+
+	<p><button onClick="app.ext.admin.a.showFinderInModal('PRODUCT','ASSEMBLY','zoovy:related_products'); return false;">Related Product</button> <span class='hint'>Similiar that would be purchased instead.</span></p>
+	
+	<p><button onClick="app.ext.admin.a.showFinderInModal('PRODUCT','ASSEMBLY','zoovy:accessory_products'); return false;">Accessories</button> <span class='hint'>Items that can/should be pruchased with this product (ex: batteries)</span></p>
+</fieldset>
+
+
+<fieldset data-app-role='assemblyContainer' class='displayNone'>
+	<legend>Assembly/Kit Components</legend>
+	<ul class='listStyleNone' data-bind="var: product(@inventory); format:assemblyList; extension:admin_prodEdit;">
+	</ul>
+</fieldset>
+
+	
+	</td>
+</tr>
+</tbody>
+</table>
+</fieldset>
+</form>
+	</div>
+</div>
+
+
+<div id='productEditorPanelTemplate_syndication' class='productPanel'>
+	<h3 class='panelHeader ui-widget-header ui-state-default ui-corner-top ui-accordion-icons pointer clearfix' onClick="app.ext.admin_prodEdit.a.handlePanel(this);">
+		<span class="ui-accordion-header-icon ui-icon ui-icon-circle-arrow-e"></span>
+		<span>Syndication</span>
+	</h3>
+	<div class='panelContents displayNone ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active marginBottom'>
+<form action='#'>
+
+<fieldset class='labelsAsBreaks alignedLabels alignedInputs'>
+
+<label><span>Manufacturer:</span><input type='text' name='zoovy:prod_mfg' value='' data-bind="var: product(zoovy:prod_mfg); format:popVal;" /></label>
+<label><span>Manufacturer ID:</span><input type='text' name='zoovy:prod_mfgid' value='' data-bind="var: product(zoovy:prod_mfgid); format:popVal;" /></label>
+<label><span>UPC:</span><input type='text' name='zoovy:prod_upc' value='' data-bind="var: product(zoovy:prod_upc); format:popVal;" /></label>
+<label><span>Condition:</span><input type='text' name='zoovy:prod_condition' value='' data-bind="var: product(zoovy:prod_condition); format:popVal;" /></label>
+
+</fieldset>
+
+<fieldset>		
+<table class='fullWidth marginBottom'>
+<thead>
+<tr>
+	<th>Syndication to</th>
+	<th>Configure</th>
+	<th></th>
+	<th>Note/Reason</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+	<td><label><input type="checkbox" name="gbase:ts" data-bind="var: product(gbase:ts); format:popVal;"> GoogleBase:</label></td>
+	<td><button data-app-event='admin_prodEdit|enterSyndicationSpecifics' data-ui-syndicateto='googlebase'>Enter Specifics</button></td>
+	<td></td>
+	<td><input type="textbox" value="" name="gbase:note" maxlength="60" size="60" data-bind="var: product(gbase:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="bizrate:ts" data-bind="var: product(bizrate:ts); format:popVal;"> BizRate:</label></td>
+	<td><button data-app-event='admin_prodEdit|enterSyndicationSpecifics' data-ui-syndicateto='bizrate'>Enter Specifics</button></td>
+	<td></td>
+	<td><input type="textbox" value="" name="bizrate:note" maxlength="60" size="60" data-bind="var: product(bizrate:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="ebay:ts" data-bind="var: product(ebay:ts); format:popVal;"> eBay:</label></td>
+	<td><button data-app-event='admin_prodEdit|enterSyndicationSpecifics' data-ui-syndicateto='ebay'>Enter Specifics</button></td>
+	<td></td>
+	<td><input type="textbox" value="" name="ebay:note" maxlength="60" size="60" data-bind="var: product(ebay:note); format:popVal;"></td>
+</tr>
+<!--
+<tr>
+	<td><label><input type="checkbox" name="yshop:ts" data-bind="var: product(yshop:ts); format:popVal;"> Yahoo Shopping:</label></td>
+	<td><button data-app-event='admin_prodEdit|enterSyndicationSpecifics' data-ui-syndicateto='yshop'>Enter Specifics</button></td>
+	<td></td>
+	<td><input type="textbox" value="" name="yshop:note" maxlength="60" size="60" data-bind="var: product(yshop:note); format:popVal;"></td>
+</tr>
+-->
+<tr>
+	<td><label><input type="checkbox" name="pricegrabber:ts" data-bind="var: product(pricegrabber:ts); format:popVal;"> PriceGrabber:</label></td>
+	<td><button data-app-event='admin_prodEdit|enterSyndicationSpecifics' data-ui-syndicateto='pricegrabber'>Enter Specifics</button></td>
+	<td>Qty: <input size=4 type="textbox" name="pricegrabber:quantity" data-bind="var: product(pricegrabber:quantity); format:popVal;"></td>
+	<td><input type="textbox" value="" name="pricegrabber:note" maxlength="60" size="60" data-bind="var: product(pricegrabber:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="shopping:ts" data-bind="var: product(shopping:ts); format:popVal;"> Shopping.com:</label></td>
+	<td><button data-app-event='admin_prodEdit|enterSyndicationSpecifics' data-ui-syndicateto='shopping'>Enter Specifics</button></td>
+	<td></td>
+	<td><input type="textbox" value="" name="shopping:note" maxlength="60" size="60" data-bind="var: product(shopping:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="nextag:ts" data-bind="var: product(nextag:ts); format:popVal;"> NextTag:</label></td>
+	<td><button data-app-event='admin_prodEdit|enterSyndicationSpecifics' data-ui-syndicateto='nextag'>Enter Specifics</button></td>
+	<td></td>
+	<td><input type="textbox" value="" name="nextag:note" maxlength="60" size="60" data-bind="var: product(nextag:note); format:popVal;"></td>
+</tr>
+<!--
+<tr>
+	<td><label><input type="checkbox" name="mysimon:ts" data-bind="var: product(mysimon:ts); format:popVal;"> MySimon:</label></td>
+	<td><button data-app-event='admin_prodEdit|enterSyndicationSpecifics' data-ui-syndicateto='mysimon'>Enter Specifics</button></td>
+	<td></td>
+	<td><input type="textbox" value="" name="mysimon:note" maxlength="60" size="60" data-bind="var: product(mysimon:note); format:popVal;"></td>
+</tr>
+-->
+<tr>
+	<td><label><input type="checkbox" name="pronto:ts" data-bind="var: product(pronto:ts); format:popVal;"> Pronto:</label></td>
+	<td><button data-app-event='admin_prodEdit|enterSyndicationSpecifics' data-ui-syndicateto='~pronto'>Enter Specifics</button></td>
+	<td></td>
+	<td><input type="textbox" value="" name="pronto:note" maxlength="60" size="60" data-bind="var: product(pronto:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="thefind:ts" data-bind="var: product(thefind:ts); format:popVal;"> theFind:</label></td>
+	<td></td>
+	<td></td>
+	<td><input type="textbox" value="" name="thefind:note" maxlength="60" size="60" data-bind="var: product(thefind:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="become:ts" data-bind="var: product(become:ts); format:popVal;"> Become:</label></td>
+	<td></td>
+	<td></td>
+	<td><input type="textbox" value="" name="become:note" maxlength="60" size="60" data-bind="var: product(become:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="smarter:ts" data-bind="var: product(smarter:ts); format:popVal;"> Smarter:</label></td>
+	<td></td>
+	<td></td>
+	<td><input type="textbox" value="" name="smarter:note" maxlength="60" size="60" data-bind="var: product(smarter:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="dijipop:ts" data-bind="var: product(dijipop:ts); format:popVal;"> DijiPop:</label></td>
+	<td></td>
+	<td></td>
+	<td><input type="textbox" value="" name="dijipop:note" maxlength="60" size="60" data-bind="var: product(dijipop:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="linkshare:ts" data-bind="var: product(linkshare:ts); format:popVal;"> LinkShare:</label></td>
+	<td></td>
+	<td></td>
+	<td><input type="textbox" value="" name="linkshare:note" maxlength="60" size="60" data-bind="var: product(linkshare:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="amzpa:ts" data-bind="var: product(amzpa:ts); format:popVal;"> Amazon Product Ads:</label></td>
+	<td></td>
+	<td></td>
+	<td><input type="textbox" value="" name="amzpa:note" maxlength="60" size="60" data-bind="var: product(amzpa:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="overstock:ts" data-bind="var: product(overstock:ts); format:popVal;"> OverStock:</label></td>
+	<td><button data-app-event='admin_prodEdit|enterSyndicationSpecifics' data-ui-syndicateto='overstock'>Enter Specifics</button></td>
+	<td><input size=4 type="hidden" name="overstock:quantity" value="1"></td>
+	<td><input type="textbox" value="" name="overstock:note" maxlength="60" size="60" data-bind="var: product(overstock:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="bing:ts" data-bind="var: product(bing:ts); format:popVal;"> Bing:</label></td>
+	<td></td>
+	<td>Commission: <input size=4 type="number" name="bing:commission" data-bind="var: product(bing:commission); format:popVal;" step='0.01' min='0'>%</td>
+	<td><input type="textbox" value="" name="bing:note" maxlength="60" size="60" data-bind="var: product(bing:note); format:popVal;"></td>
+</tr>
+
+
+<tr>
+	<td><label><input type="checkbox" name="sears:ts" data-bind="var: product(sears:ts); format:popVal;"> Sears:</label></td>
+	<td></td>
+	<td></td>
+	<td><input type="textbox" value="" name="sears:note" maxlength="60" size="60" data-bind="var: product(sears:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="newegg:ts" data-bind="var: product(newegg:ts); format:popVal;"> Newegg:</label></td>
+	<td></td>
+	<td></td>
+	<td><input type="textbox" value="" name="newegg:note" maxlength="60" size="60" data-bind="var: product(newegg:note); format:popVal;"></td>
+</tr>
+
+<tr>
+	<td><label><input type="checkbox" name="arp:ts" data-bind="var: product(arp:ts); format:popVal;"> Amazon Repricing:</label></td>
+	<td></td>
+	<td></td>
+	<td><input type="textbox" value="" name="arp:note" maxlength="60" size="60" data-bind="var: product(arp:note); format:popVal;"></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+<div class="ui-tabs ui-widget ui-widget-content ui-corner-all clearfix buttonBar">
+<button class='floatRight' data-app-event="admin_prodEdit|serializeAndAdminProductUpdate" title='Save the changes made within this panel'>Save <span class='changeCount'></span> Changes</button>
+</div>
+</fieldset>
+</form>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id='productEditorPanelTemplate_rss' class='productPanel'>
+	<h3 class='panelHeader ui-widget-header ui-state-default ui-corner-top ui-accordion-icons pointer clearfix' onClick="app.ext.admin_prodEdit.a.handlePanel(this);">
+		<span class="ui-accordion-header-icon ui-icon ui-icon-circle-arrow-e"></span>
+		<span>SEO and RSS Tools</span>
+	</h3>
+	<div class='panelContents displayNone ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active marginBottom'>
+<form action='#' class='labelsAsBreaks alignedLabels alignedInputs'>
+<fieldset>
+ 
+
+<label><span>SEO page title:</span><input type='text' name='zoovy:prod_seo_title' value='' data-bind="var: product(zoovy:prod_seo_title); format:popVal;" size='100' /></label>
+
+<label><span>RSS feed title:</span><input type='text' name='zoovy:prod_rss_title' value='' data-bind="var: product(zoovy:prod_rss_title); format:popVal;" size='100' /></label>
+
+<label><span>RSS/Meta short description:</span><textarea name='zoovy:meta_desc' data-bind="var: product(zoovy:meta_desc); format:popVal;" maxlength='256' rows='6' /></label>
+
+<label><span>RSS/SEO keywords:</span><textarea name='zoovy:keywords' data-bind="var: product(zoovy:keywords); format:popVal;" maxlength='256' rows='6' /></label>
+
+<p class='hint'>Many people feel the need to go overboard and put in as many keywords as possible. SEO professionals agree that is much more important to have <b>quality over quantity</b>. Put the most important words first, separated by commas. Avoid listing the same words repeatedly - it will hurt your ranking.</p>
+
+
+<div class="ui-tabs ui-widget ui-widget-content ui-corner-all clearfix buttonBar">
+<button class='floatRight' data-app-event="admin_prodEdit|serializeAndAdminProductUpdate" title='Save the changes made within this panel'>Save <span class='changeCount'></span> Changes</button>
+</div>
+</fieldset>
+</form>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id='productEditorPanelTemplate_shipping' class='productPanel'>
+	<h3 class='panelHeader ui-widget-header ui-state-default ui-corner-top ui-accordion-icons pointer clearfix' onClick="app.ext.admin_prodEdit.a.handlePanel(this);">
+		<span class="ui-accordion-header-icon ui-icon ui-icon-circle-arrow-e"></span>
+		<span>Shipping</span>
+	
+	</h3>
+	<div class='panelContents displayNone ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active marginBottom'>
+<form action='#' class='labelsAsBreaks'>
+<fieldset>
+<label><span>Base weight:</span><input type='text' name='zoovy:base_weight' value='' data-bind="var: product(zoovy:base_weight); format:popVal;  hideZero:false;" size='15' /> ounces (use # for pounds)</label>
+<!-- webdb:ship_fixed -->
+<label><span>Fixed shipping cost:</span><input type='number' name='zoovy:shipcost' value='' data-bind="var: product(zoovy:shipcost); format:popVal; hideZero:false;" size='15' step='0.01' min='0' /> only applies if fixed shipping is enabled</label>
+
+<label><input type='checkbox' name='zoovy:pkg_exclusive' data-bind="var: product(zoovy:pkg_exclusive); format:popVal;"> Do not combine with other packages <span class='experimental'>(experimental)</span></label>
+
+<div class='label clearfix'>
+<h4>Ship Dimensions</h4>
+
+<label class='floatLeft'><span>Length:</span><input type='number' step='0.01' min='0' name='zoovy:pkg_depth' value='' data-bind="var: product(zoovy:pkg_depth); format:popVal; hideZero:false;" size='15' /></label>
+<label class='floatLeft'><span>Height:</span><input type='number' step='0.01' min='0' name='zoovy:pkg_height' value='' data-bind="var: product(zoovy:pkg_height); format:popVal; hideZero:false;" size='15' /></label>
+<label class='floatLeft'><span>Width:</span><input type='number' step='0.01' min='0' name='zoovy:pkg_width' value='' data-bind="var: product(zoovy:pkg_width); format:popVal; hideZero:false;" size='15' /></label>
+</div>
+
+<div class='label clearfix'>
+<h4>Domestic Shipping</h4>
+
+<label class='floatLeft'><span>1st item:</span><input type='number' step='0.01' min='0' name='zoovy:ship_cost1' value='' data-bind="var: product(zoovy:ship_cost1); format:popVal; hideZero:false;" size='6' /></label>
+<label class='floatLeft'><span>2nd item:</span><input type='number' step='0.01' min='0' name='zoovy:ship_cost2' value='' data-bind="var: product(zoovy:ship_cost2); format:popVal; hideZero:false;" size='6' /></label>
+<label class='floatLeft'><span>Marketplace markup:</span><input type='number' step='0.01' min='0' name='zoovy:ship_markup' value='' data-bind="var: product(zoovy:ship_markup); format:popVal; hideZero:false;" size='6' /></label>
+</div>
+
+<div class='label clearfix'>
+<h4>Canadian Shipping</h4>
+
+<label class='floatLeft'><span>1st item:</span><input type='number' step='0.01' min='0' name='zoovy:ship_can_cost1' value='' data-bind="var: product(zoovy:ship_can_cost1); format:popVal; hideZero:false;" size='6' /></label>
+<label class='floatLeft'><span>2nd item:</span><input type='number' step='0.01' min='0' name='zoovy:ship_can_cost2' value='' data-bind="var: product(zoovy:ship_can_cost2); format:popVal; hideZero:false;" size='6' /></label>
+</div>
+
+<div class='label clearfix'>
+<h4>International Shipping</h4>
+
+<label class='floatLeft'><span>1st item:</span><input type='number' step='0.01' min='0' name='zoovy:ship_int_cost1' value='' data-bind="var: product(zoovy:ship_int_cost1); format:popVal; hideZero:false;" size='6' /></label>
+<label class='floatLeft'><span>2nd item:</span><input type='number' step='0.01' min='0' name='zoovy:ship_int_cost2' value='' data-bind="var: product(zoovy:ship_int_cost2); format:popVal; hideZero:false;" size='6' /></label>
+</div>
+
+
+
+<label><span>Insurance amount:</span><input type='number' step='0.01' min='0' name='zoovy:ship_insurance' value='' data-bind="var: product(zoovy:ship_insurance); format:popVal; hideZero:false;" size='6' /></label>
+
+<label><span>Fixed handling:</span><input type='number' step='0.01' min='0' name='zoovy:ship_handling' value='' data-bind="var: product(zoovy:ship_handling); format:popVal; hideZero:false;" size='6' /></label>
+
+<div class='label clearfix'>
+<h4>Export Declaration [SED]</h4>
+
+<label class='floatLeft'><span>Country of origin [ISO Code]:</span><input type='text' name='zoovy:ship_nmfccode' value='' data-bind="var: product(zoovy:ship_nmfccode); format:popVal;" size='6' /></label>
+<label class='floatLeft'><span>ATS/harmonized code:</span><input type='text' name='zoovy:ship_harmoncode' value='' data-bind="var: product(zoovy:ship_harmoncode); format:popVal;" size='6' /></label>
+</div>
+
+
+<div class='label clearfix'>
+<h4>Freight Options</h4>
+
+<label class='floatLeft'><span>NMFC commodity code:</span><input type='text' name='zoovy:ship_mfgcountry' value='' data-bind="var: product(zoovy:ship_mfgcountry); format:popVal;" size='6' /></label>
+<label class='floatLeft'><span>Sorting class:</span><input type='text' name='zoovy:ship_sortclass' value='' data-bind="var: product(zoovy:ship_sortclass); format:popVal;" size='6' /></label>
+</div>
+
+
+<div class="ui-tabs ui-widget ui-widget-content ui-corner-all clearfix buttonBar">
+<button class='floatRight' data-app-event="admin_prodEdit|serializeAndAdminProductUpdate" title='Save the changes made within this panel'>Save <span class='changeCount'></span> Changes</button>
+</div>
+</fieldset>
+</form>
+	</div>
+</div>
+
+
+
+
+<div id='productEditorPanelTemplate_flexedit' class='productPanel'>
+	<h3 class='panelHeader ui-widget-header ui-state-default ui-corner-top ui-accordion-icons pointer clearfix' onClick="app.ext.admin_prodEdit.a.handlePanel(this);">
+		<span class="ui-accordion-header-icon ui-icon ui-icon-circle-arrow-e"></span>
+		<span>Custom Fields/Flexedit</span>
+	</h3>
+	<div class='panelContents displayNone ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active marginBottom'>
+
+<form action='#' class='labelsAsBreaks alignedLabels alignedInputs'>
+<fieldset>
+ 
+<div class="ui-tabs ui-widget ui-widget-content ui-corner-all clearfix buttonBar">
+<button class='floatRight' data-app-event="admin_prodEdit|serializeAndAdminProductUpdate" title='Save the changes made within this panel'>Save <span class='changeCount'></span> Changes</button>
+</div>
+
+</fieldset>
+</form>
+
+	</div>
+</div>
+
+
+
+
+
+<div id='productEditorPanelTemplate_general' class='productPanel'>
+	<h3 class='panelHeader ui-widget-header ui-state-default ui-corner-top ui-accordion-icons pointer clearfix' onClick="app.ext.admin_prodEdit.a.handlePanel(this);">
+		<span class="ui-accordion-header-icon ui-icon ui-icon-circle-arrow-e"></span>
+		<span>General Product Information</span>
+	
+	</h3>
+	<div class='panelContents displayNone ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active marginBottom'>
+	<form action='#'>
+	<fieldset>
+	<table class='fullWidth'>
+	<tr>
+		
+		<td class='labelsAsBreaks prodEditGeneralPanelLeftCol'>
+
+<img src='blank.gif' width='150' height='150' alt='' data-bind='var: product(zoovy:prod_image1); format:imageURL;'  />
+
+<label><span>Cost:</span><input type='number' step='0.01' min='0' name='zoovy:base_cost' value='' data-bind="var: product(zoovy:base_cost); format:popVal; hideZero:false;" size='7' /></label>
+<label><span>MSRP:</span><input type='number' step='0.01' min='0' name='zoovy:prod_msrp' value='' data-bind="var: product(zoovy:prod_msrp); format:popVal; hideZero:false;" size='7' /></label>
+<label><span>Sale price:</span><input type='number' step='0.01' min='0' name='zoovy:base_price' value='' data-bind="var: product(zoovy:base_price); format:popVal; hideZero:false;" size='7' /></label>
+
+<label><input type='checkbox' name='zoovy:taxable' data-bind="var: product(zoovy:taxable); format:popVal;"> Taxable</label>
+<label><input type='checkbox' name='is:fresh' data-bind="var: product(is:fresh); format:popVal;"> Fresh</label>
+<label><input type='checkbox' name='is:needreview' data-bind="var: product(is:needreview); format:popVal;"> Need review</label>
+<label><input type='checkbox' name='is:openbox' data-bind="var: product(is:openbox); format:popVal;"> Open box</label>
+<label><input type='checkbox' name='is:refurb' data-bind="var: product(is:refurb); format:popVal;"> Refurbished</label>
+
+	</td>
+
+	<td class='labelsAsBreaks alignedLabels alignedInputs'>
+<h1 data-bind="var: product(pid); format:text; pretext:SKU: ;"></h1>
+
+<label><span>Product name:</span><input type='text' name='zoovy:prod_name' value='' data-bind="var: product(zoovy:prod_name); format:popVal;" /></label>
+
+
+<div id="html_you_have_been_warned" class="displayNone warning marginBottom">
+<b>***COMPATIBILITY ALERT*** HTML Editing is *NOT* Recommended</b>
+HTML Editors (such as this one) create HTML4 markup code which embed formatting with text content. 
+The Internet (collectively) is in the process of upgrading to HTML5 which uses a technology known as CSS3 
+(cascading style sheets) to control layout and formatting (and has been since mid 2007).
+Sites which use older style HTML4 markup will see slower pages (resulting in lower SEO rankings), 
+in addition most marketplaces such as Amazon explicitly prohibit any HTML4 markup code.
+HTML4 is not optimized for mobile and does not scale well to different screen sizes.
+As part of our ongoing commitment to our clients success Zoovy has (since 2009) 
+been recommending WikiCreole instead of HTML because of it's portability and ease to learn.
+If you continue - you are acknowledging that you understand that HTML4 is not compatible with any 
+shopping applications or any future technologies that will be introduced.  
+We strongly recommend you stop immediately, turn off HTML editing and use Wiki Creole formatting instead.
+This HTML Editor option will be removed altogether in the future. 
+
+</div>
+
+
+<label><span>Product description:</span><textarea name='zoovy:prod_desc' onFocus=" 	jQuery(this).prop('rows',25); 	if(jQuery().htmlarea && jQuery('#use_html').is(':checked')){	 		jQuery(this).htmlarea({ 			'toolbar':[ 		'bold', 'italic', 'p', '|','h1', 'h2', 'h3', 'h4', '|', 'indent', 'outdent', 'orderedList', 'unorderedList', '|',  		'justifyleft', 'justifycenter','justifyright','|', 		'forecolor','link', 'unlink', 'image'	 		]});	 		} 		" data-bind="var: product(zoovy:prod_desc); format:popVal;" rows='10'></textarea></label>
+<div class='alignRight'><input type='checkbox' onChange="$('#html_you_have_been_warned').show();" id='use_html'> Use HTML Editor</div>
+
+<!--
+<div class='clearfix alignRight'>
+	<div data-app-event="admin_prodEdit|textareaEditorMode" data-ui-target-name="zoovy:prod_desc" class='ui-corner-bottom floatRight'>
+		<h4 class='floatLeft marginRight paddingRight'>Editor: </h4>
+		<button data-ui-edit-mode='text' >Text</button>
+		<button data-ui-edit-mode='wiki' >Wiki</button>
+		<button data-ui-edit-mode='html' >HTML</button>
+	</div>
+</div>
+-->
+<label><span>Product detailed description:</span><textarea name='zoovy:prod_detail' data-bind="var: product(zoovy:prod_detail); format:popVal;" rows='10'></textarea></label>
+
+
+
+
+		</td>
+	</tr>
+	</table>
+	<div class="ui-tabs ui-widget ui-widget-content ui-corner-all clearfix ui-widget-buttonbar">
+	<button class='floatRight' data-app-event="admin_prodEdit|serializeAndAdminProductUpdate" title='Save the changes made within this panel'>Save <span class='changeCount'></span> Changes</button>
+<!--	<button data-app-event="admin_prodEdit|configOptions" class='floatLeft marginRight'>Config Options</button> -->
+	<button data-app-event="admin_prodEdit|productVariationsManagerShow" class='floatLeft marginRight'>Product Variations</button>
+	<button data-app-event="admin_prodEdit|webPageEditor" class='showForZoovyOnly floatLeft marginRight'>Web Page Editor</button>
+	<button data-app-event="admin_prodEdit|viewProductOnWebsite" class='floatLeft marginRight'>Preview</button>
+	</div>
+	</fieldset>
+	</form>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id='productEditorPanelTemplate_ebay' class='productPanel'>
+
+
+<label>
+	<input type='checkbox' name='Item.AutoPay' data-bind="var: product(ebay:Item.AutoPay); format:popVal;" />
+	Autopay
+	<span class='toolTip' title="If this feature is enabled for a listing, the buyer must pay immediately for the item through PayPal, and the buyer's funds are transferred instantly to the seller's PayPal account. The seller's item will remain available for purchase by other buyers until the buyer actually completes the payment.">?</span>
+</label>
+
+
+<fieldset>
+	<legend>Best Offer</legend>
+
+	<label>
+		<input type='checkbox' name='Item.BestOfferDetails.BestOfferEnabled' data-bind="var: product(ebay:Item.BestOfferDetails.BestOfferEnabled); format:popVal;" />
+		Enable
+		<span class='toolTip' title="This feature enables a buyer to make a lower-priced binding offer on that item.">?</span>
+	</label>
+	
+	<label>
+		<span>Max # policy violations</span>
+		<input type='number' step='1' min='0' name='Item.BestOfferDetails.MaximumBuyerPolicyViolations.Count' data-bind="var: product(ebay:Item.BestOfferDetails.MaximumBuyerPolicyViolations.Count); format:popVal;" />
+		<span class='toolTip' title="This integer value sets the maximum number of buyer policy violations that a prospective buyer is allowed to have during a specified time period (MaximumBuyerPolicyViolations.Period) before being blocked from buying/bidding on the item. ">?</span>
+	</label>
+	
+	<label>
+		<span>Policy violations period</span>
+		<select name='Item.BestOfferDetails.MaximumBuyerPolicyViolations.Period' data-bind="var: product(ebay:Item.BestOfferDetails.MaximumBuyerPolicyViolations.Period); format:popVal;">
+			<option value=''></option>
+			<option value='Days_30'>30</option>
+			<option value='Days_180'>180</option>
+			<option value='Days_360'>360</option>
+			<option value='Days_540'>540</option>
+		</select>
+		<span class='toolTip' title="The length of time over which a prospective buyer's buyer policy violations will be counted. If the prospective buyer's number of buyer policy violations during this defined period exceeds the value set in the Count field, that prospective buyer is blocked from buying/bidding on the item. ">?</span>
+	</label>
+
+</fieldset>
+
+
+
+
+<fieldset>
+	<legend>Buyer Requirements</legend>
+
+	<label>
+		<span>Max. item count</span>
+		<select name='Item.BuyerRequirementDetails.MaximumItemRequirements.MaximumItemCount' data-bind="var: product(ebay:Item.BuyerRequirementDetails.MaximumItemRequirements.MaximumItemCount); format:popVal;">
+			<option></option>
+			<option value='1'>1</option>
+			<option value='2'>2</option>
+			<option value='3'>3</option>
+			<option value='4'>4</option>
+			<option value='5'>5</option>
+			<option value='6'>6</option>
+			<option value='7'>7</option>
+			<option value='8'>8</option>
+			<option value='9'>9</option>
+			<option value='10'>10</option>
+			<option value='25'>25</option>
+			<option value='50'>50</option>
+			<option value='100'>100</option>
+		</select>
+		<span class='toolTip' title="The value of this field specifies the maximum number of items a prospective buyer can purchase from the seller during a 10-day period. The prospective buyer will be blocked from bidding/buying once this value is reached.">?</span>
+	</label>
+	<label>
+		<span>Min. feedback score</span>
+		<select name='Item.BuyerRequirementDetails.MaximumItemRequirements.MinimumFeedbackScore' data-bind="var: product(ebay:Item.BuyerRequirementDetails.MaximumItemRequirements.MinimumFeedbackScore); format:popVal;">
+			<option></option>
+			<option value='0'>0</option>
+			<option value='1'>1</option>
+			<option value='2'>2</option>
+			<option value='3'>3</option>
+			<option value='4'>4</option>
+			<option value='5'>5</option>
+		</select>
+		<span class='toolTip' title="The value of this field specifies the maximum number of items a prospective buyer can purchase from the seller during a 10-day period. The prospective buyer will be blocked from bidding/buying once this value is reached.">?</span>
+	</label>
+
+
+
+	<label>
+		<span>Max. unpaid item strikes count</span>
+		<input type='number' name='Item.BuyerRequirementDetails.MaximumItemRequirements.MinimumFeedbackScore.Count' data-bind="var: product(ebay:Item.BuyerRequirementDetails.MaximumItemRequirements.MinimumFeedbackScore.Count); format:popVal;" />
+		<span class='toolTip' title="This integer value sets the maximum number of unpaid item strikes that a prospective buyer is allowed to have during a specified time period (MaximumUnpaidItemStrikesInfo.Period) before being blocked from buying/bidding on the item. ">?</span>
+	</label>
+
+	<label>
+		<span>Max. unpaid item strikes Period</span>
+		<select name='Item.BuyerRequirementDetails.MaximumItemRequirements.MinimumFeedbackScore.Period' data-bind="var: product(ebay:Item.BuyerRequirementDetails.MaximumItemRequirements.MinimumFeedbackScore.Period); format:popVal;">
+			<option value=''></option>
+			<option value='Days_30'>30</option>
+			<option value='Days_180'>180</option>
+			<option value='Days_360'>360</option>
+		</select>
+		<span class='toolTip' title="This enumerated value defines the length of time over which a prospective buyer's unpaid item strikes will be counted. If the prospective buyer's number of unpaid item strikes during this defined period exceeds the value set in the Count field, that prospective buyer is blocked from buying/bidding on the item. ">?</span>
+	</label>
+
+
+	
+	<label>
+		<span>Min Feedback Score</span>
+		<input type='number' name='Item.BuyerRequirementDetails.MinimumFeedbackScore' data-bind="var: product(ebay:Item.BuyerRequirementDetails.MinimumFeedbackScore); format:popVal;" />
+		<span class='toolTip' title="Set this field as a mechanism to block bidders who have a Feedback Score less than the specified value.">?</span>
+	</label>
+	
+	
+	
+	<label>
+		<input type='checkbox' name='Item.BuyerRequirementDetails.ShipToRegistrationCountry' data-bind="var: product(ebay:Item.BuyerRequirementDetails.ShipToRegistrationCountry); format:popVal;" />
+		Ship to Reg. Country
+		<span class='toolTip' title="Enable to block bidders who reside (according to their eBay primary shipping address) in countries that are on the ship-to exclusion list..">?</span>
+	</label>
+	
+	
+	<label>
+		<input type='checkbox' name='Item.BuyerRequirementDetails.VerifiedUserRequirements.VerifiedUser' data-bind="var: product(ebay:Item.BuyerRequirementDetails.VerifiedUserRequirements.VerifiedUser); format:popVal;" />
+		Verified user
+		<span class='toolTip' title="To block non-verified users from buying/bidding on their items, the seller should include this field and set its value to on. The default value of this field is off, so, if it is not included, non-verified users on the Australia, France, India, Ireland, Spain, and UK will be able to buy/bid on the seller's items.">?</span>
+	</label>
+
+
+	
+	<label>
+		<span>Verified user min feedback score</span>
+		<input type='number' name='Item.BuyerRequirementDetails.VerifiedUserRequirements.MinimumFeedbackScore' data-bind="var: product(ebay:Item.BuyerRequirementDetails.VerifiedUserRequirements.MinimumFeedbackScore); format:popVal;" />
+		<span class='toolTip' title="Block verified users who have a feedback score less than the specified value. Ignored if 'verified user' is not enabled.">?</span>
+	</label>
+	
+	
+	
+	<label>
+		<input type='checkbox' name='Item.BuyerResponsibleForShipping' data-bind="var: product(ebay:Item.BuyerResponsibleForShipping); format:popVal;" />
+		Buyer Responsible For Shipping
+		<span class='toolTip' title="If on, the buyer is responsible for vehicle pickup or shipping. If off, specify vehicle shipping arrangements in the item description. Default is on. (The description can also include vehicle shipping arrangements when this value is true.) If the item has bids or ends within 12 hours, you cannot modify this flag. Do not specify ShippingDetails.ShippingServiceOptions for vehicle listings.">?</span>
+	</label>
+	<p class='hint'>
+ 	Applicable for listings in vehicle categories on the US eBay Motors site and eBay Canada site. (No business effect if specified for other categories or sites, as the Web site will not display the information to buyers.)
+	</p>
+
+
+</fieldset>
+
+
+
+
+<label>
+	<span>Buy it now price</span>
+	<input  name='Item.BuyItNowPric' data-bind="var: product(ebay:Item.BuyItNowPric); format:popVal;" />
+	<span class='toolTip' title="For auction listings, the Buy It Now feature allows a user to purchase the item at a Buy It Now price and end the auction immediately. Use this field to specify the Buy It Now price. Including and specifying a BuyItNowPrice value enables the Buy It Now feature for the auction listing. ">?</span>
+</label>
+
+
+
+<label>
+	<input type='checkbox' name='Item.CategoryBasedAttributesPrefil' data-bind="var: product(ebay:Item.CategoryBasedAttributesPrefil); format:popVal;" />
+	Category Mapping
+	<span class='toolTip' title="If this field is included in the request and set to 'true', eBay will auto-fill some of a listing's Item Specifics values based on the listing's category (or categories).">?</span>
+</label>
+
+
+
+
+<fieldset>
+	<legend>Charity</legend>
+	<label>
+		<span>ID</span>
+		<input type='text' name='Item.Charity.CharityID' data-bind="var: product(ebay:Item.Charity.CharityID); format:popVal;" />
+		<span class='toolTip' title="A unique identification number assigned by eBay to registered nonprofit charity organizations. Required input when listing Giving Works items.">?</span>
+	</label>
+
+	<label>
+		<span>Number</span>
+		<input type='number' name='Item.Charity.CharityNumber' data-bind="var: product(ebay:Item.Charity.CharityNumber); format:popVal;" />
+		<span class='toolTip' title="A unique identifier assigned to a nonprofit charity organization by the dedicated provider of eBay Giving Works. This value can contain up to 10 digits. This value is superseded by CharityID.">?</span>
+	</label>
+
+	<label>
+		<span>Percent</span>
+		<input type='number' step='.5' min='10.0' name='Item.Charity.DonationPercent' data-bind="var: product(ebay:Item.Charity.DonationPercent); format:popVal;" />
+		<span class='toolTip' title="The percentage of the purchase price that the seller chooses to donate to the selected nonprofit organization. This percentage is displayed in the Giving Works item listing. Possible values: 10.0 to 100.0. Percentages must increment by 5.0. ">?</span>
+	</label>
+
+
+</fieldset>
+
+
+
+
+
+<label>
+	<span>Condition Description</span>
+	<input type='text' name='Item.ConditionDescription' data-bind="var: product(ebay:Item.ConditionDescription); format:popVal;" />
+	<span class='toolTip' title="Used to more clearly describe the condition of items that are not brand new. ">?</span>
+</label>
+
+<label>
+	<span>Condition ID</span>
+	<input type='number' name='Item.ConditionID' data-bind="var: product(ebay:Item.ConditionID); format:popVal;" />
+	<span class='toolTip' title="The numeric ID (e.g., 1000) for the item condition. Sellers should also clarify the item's condition in their own item description. ">?</span>
+</label>
+
+<label>
+	<span>Country</span>
+	<input type='text' name='Item.Country' size='2' maxlength="2" data-bind="var: product(ebay:Item.Country); format:popVal;" />
+	<span class='toolTip' title="Set to a two character country code">?</span>
+</label>
+
+
+<label>
+	<span>Cross browser trade</span>
+	<input type='text' name='Item.CrossBorderTrade' data-bind="var: product(ebay:Item.CrossBorderTrade); format:popVal;" />
+	<span class='toolTip' title="Listing will be returned in the search results for other eBay sites. This feature is currently only supported by the US, UK, eBay Canada, and eBay Ireland sites. There is a small listing fee for each country specified as a Cross Border Trade country. ">?</span>
+</label>
+
+<label>
+	<span>Country</span>
+	<input type='text' name='Item.Currency' size='3' data-bind="var: product(ebay:Item.Currency); format:popVal;" />
+	<span class='toolTip' title="Currency associated with the item's price information. 3-letter ISO 4217 currency code that corresponds to the site specified in the listing request">?</span>
+</label>
+
+
+<label>
+	<input type='checkbox' name='Item.DisableBuyerRequirements' data-bind="var: product(ebay:Item.DisableBuyerRequirements); format:popVal;" />
+	Disable Buyer Requirements
+	<span class='toolTip' title="If on, all buyer requirements (from Item.BuyerRequirementDetails or Buyer requirements preferences in My eBay) are ignored. ">?</span>
+</label>
+
+
+<fieldset>
+	<legend>Discount Price Info</legend>
+
+	<label>
+		<span>Comparison price</span>
+		<input type='number' step='.01' name='Item.DiscountPriceInfo.MadeForOutletComparisonPrice' data-bind="var: product(ebay:tem.DiscountPriceInfo.MadeForOutletComparisonPrice); format:popVal;" />
+		<span class='toolTip' title="Applicable only if the item was specifically made for sale through dedicated eBay outlet pages. The comparison price is the price of a comparable product sold through non-outlet channels on eBay (or elsewhere), or not specifically made for the outlet.">?</span>
+	</label>
+
+	<label>
+		<span>MAP</span>
+		<input type='number' step='.01' name='Item.DiscountPriceInfo.MinimumAdvertisedPrice' data-bind="var: product(ebay:tem.DiscountPriceInfo.MinimumAdvertisedPrice); format:popVal;" />
+		<span class='toolTip' title="Minimum Advertised Price (MAP) is an agreement between suppliers (or manufacturers (OEM)) and the retailers (sellers) stipulating the lowest price an item is allowed to be advertised at. Sellers can offer prices below MAP by means of other discounts. This only applies to fixed-price listings and auction listings with the Buy It Now option.">?</span>
+	</label>
+
+
+	<label>
+		<span>MAP exposure</span>
+		<select name='Item.DiscountPriceInfo.MinimumAdvertisedPriceExposure' data-bind="var: product(ebay:tem.DiscountPriceInfo.MinimumAdvertisedPriceExposure); format:popVal;">
+			<option></option>
+			<option value='DuringCheckout'>Discounted price must be shown on the eBay checkout flow page</option>
+			<option value='None'>discount price is not shown via either PreCheckout nor DuringCheckout</option>
+			<option value='PreCheckout'>Buyer must click a link to a separate page/window that displays the discount price</option>
+		</select>
+		<span class='toolTip' title="">?</span>
+	</label>
+
+
+	<label>
+		<span>Original retail price</span>
+		<input type='number' step='.01' name='Item.DiscountPriceInfo.OriginalRetailPrice' data-bind="var: product(ebay:tem.DiscountPriceInfo.OriginalRetailPrice); format:popVal;" />
+		<span class='toolTip' title="The actual retail price set by the manufacturer (OEM). eBay does not maintain or validate the OriginalRetailPrice supplied by the seller. OriginalRetailPrice should always be more than StartPrice. ">?</span>
+	</label>
+	
+</fieldset>
+
+
+
+
+	<label>
+		<span>Dispatch Time Max</span>
+		<input type='number' step='1' name='Item.DispatchTimeMax' data-bind="var: product(ebay:Item.DispatchTimeMax); format:popVal;" />
+		<span class='toolTip' title="Specifies the maximum number of business days the seller commits to for preparing an item to be shipped after receiving a cleared payment. This time does not include the shipping time (the carrier's transit time). A value of 0 indicates same day handling for an item.  In this case, the seller's shipping commitment depends on the order cut off time set in the seller's user preferences.">?</span>
+	</label>
+
+
+<fieldset>
+	<legend>Contact Information/Availability</legend>
+
+	<label>
+		<input type='checkbox' name='Item.ExtendedSellerContactDetails.ContactHoursDetails.Hours1AnyTime' data-bind="var: product(ebay:Item.ExtendedSellerContactDetails.ContactHoursDetails.Hours1AnyTime); format:popVal;" />
+		Anytime Hours
+		<span class='toolTip' title="Indicates whether or not a user is available to be contacted 24 hours a day during the range of days specified using the Hours1Days element.">?</span>
+	</label>
+
+	<label>
+		<span>Days</span>
+		<select type='text' name='Item.ExtendedSellerContactDetails.ContactHoursDetails.Hours1Days' data-bind="var: product(ebay:Item.ExtendedSellerContactDetails.ContactHoursDetails.Hours1Days); format:popVal;">
+			<option value='None'>None</option>
+			<option value='EveryDay'>Every day</option>
+			<option value='Weekdays'>Weekdays</option>
+			<option value='Weekends'>Weekends</option>
+		</select>
+		<span class='toolTip' title="Indicates the range of days for which the primary contact hours specified by Hours1AnyTime or Hours1From and Hours1To apply. If a value of None is provided for this field, the values provided for Hours1AnyTime, Hours1From, Hours1To are ignored. ">?</span>
+	</label>
+
+	<label>
+		<span>Available From</span>
+		<input type='text' name='Item.ExtendedSellerContactDetails.ContactHoursDetails.Hours1From' data-bind="var: product(ebay:Item.ExtendedSellerContactDetails.ContactHoursDetails.Hours1From); format:popVal;" />
+		<span class='toolTip' title="Indicates the starting time of day this eBay user is available for other eBay members to contact for the range of days specified using Hours1Days. Enter times in 30 minute increments from the top of the hour. That is, enter values either on the hour (:00) or 30 minutes past the hour (:30). Other values will be will be rounded down to the next closest 30 minute increment. Times entered should be local to the value provided for TimeZoneID. ">?</span>
+	</label>
+
+	<label>
+		<span>Available To</span>
+		<input type='text' name='Item.ExtendedSellerContactDetails.ContactHoursDetails.Hours1To' data-bind="var: product(ebay:Item.ExtendedSellerContactDetails.ContactHoursDetails.Hours1To); format:popVal;" />
+		<span class='toolTip' title="Indicates the ending time of day this eBay user is available for other eBay members to contact them for the range of days specified using Hours1Days. Enter times in 30 minute increments from the top of the hour. That is, enter values either on the hour (:00) or 30 minutes past the hour (:30). Other values will be will be rounded down to the next closest 30 minute increment. Times entered should be local to the value provided for TimeZoneID. ">?</span>
+	</label>
+
+
+	
+</fieldset>
+
+
+<label>
+	<input type='checkbox' name='Item.GetItFast' data-bind="var: product(ebay:Item.GetItFast); format:popVal;" />
+	Get it fast
+	<span class='toolTip' title="Indicates whether the seller has committed to the GetItFast shipping rules for this listing.">?</span>
+</label>
+
+
+
+<label>
+	<span>Hit counter</span>
+	<select type='text' name='Item.HitCounter' data-bind="var: product(ebay:Item.HitCounter); format:popVal;" >
+		<option value='BasicStyle'>BasicStyle</option>
+		<option value='GreenLED'>GreenLED</option>
+		<option value='Hidden' selected='selected'>Hidden (faster)</option>
+		<option value='HiddenStyle'>HiddenStyle</option>
+		<option value='HonestyStyle'>HonestyStyle</option>
+		<option value='NoHitCounter'>NoHitCounter</option>
+		<option value='RetroStyle'>RetroStyle</option>
+	</select>
+	<span class='toolTip' title="Indicates whether an optional hit counter is displayed on the item's listing page and, if so, what type.">?</span>
+</label>
+
+<!--
+<label>
+	<input type='checkbox' name='Item.IncludeRecommendations' data-bind="var: product(ebay:Item.IncludeRecommendations); format:popVal;" />
+	Include Recommendations
+</label>
+-->
+
+<fieldset>
+	<legend>Item Compatibility</legend>
+
+
+
+	<label>
+		<span>Compatiblity notes</span>
+		<textarea name='Item.ItemCompatibilityList.Compatibility.CompatibilityNotes' data-bind="var: product(ebay:Item.ItemCompatibilityList.Compatibility.CompatibilityNotes); format:popVal;" />
+		<span class='toolTip' title="Optionally enter any notes pertaining to the compatibility being specified. Use this field to specify the placement of the part on a vehicle or the type of vehicle a part fits. ">?</span>
+	</label>
+
+	<label>
+		<span>Name/Value list</span>
+		<textarea name='Item.ItemCompatibilityList.Compatibility.NameValueList' data-bind="var: product(ebay:Item.ItemCompatibilityList.Compatibility.NameValueList); format:popVal;" />
+		<span class='toolTip' title="A name-value pair describing a single compatible application. The allowed names and values are specific to the primary category in which the item is listed. For example, when listing in a Parts & Accessories category, where the applications are vehicles, the allowed names might include Year, Make, and Model, and the values would correspond to specific vehicles in eBay's catalog.">?</span>
+	</label>
+
+</fieldset>
+
+<fieldset>
+	<legend>Listing Redirect</legend>
+
+	<label>
+		<span>ProStores name</span>
+		<input type='text' name='Item.ListingCheckoutRedirectPreference.ProStoresStoreName' data-bind="var: product(ebay:Item.ListingCheckoutRedirectPreference.ProStoresStoreName); format:popVal;" />
+	</label>
+
+	<label>
+		<span>Third party username</span>
+		<input type='text' name='Item.ListingCheckoutRedirectPreference.SellerThirdPartyUsername' data-bind="var: product(ebay:Item.ListingCheckoutRedirectPreference.SellerThirdPartyUsername); format:popVal;" />
+		<span class='toolTip' title="The user name of the ProStores store.">?</span>
+	</label>
+</fieldset>
+
+<fieldset>
+	<legend>Listing Details</legend>
+
+
+	<label>
+		<span>Auto accept price</span>
+		<input type='number' step='.01' name='Item.ListingDetails.BestOfferAutoAcceptPrice' data-bind="var: product(ebay:Item.ListingDetails.BestOfferAutoAcceptPrice); format:popVal;" />
+		<span class='toolTip' title="The price at which Best Offers are automatically accepted. Similar in use to MinimumBestOfferPrice. If a buyer submits a Best Offer that is above this value, the offer is automatically accepted by the seller. Applies only to items listed in categories that support the BestOfferAutoAcceptPrice feature.">?</span>
+	</label>
+
+
+	<label>
+		<span>Local listing distance</span>
+		<input type='text' name='Item.ListingDetails.LocalListingDistance' data-bind="var: product(ebay:Item.ListingDetails.LocalListingDistance); format:popVal;" />
+		<span class='toolTip' title="Specifies a distance (in miles) used as the radius of the area about the supplied postal code that constitutes the local market.">?</span>
+	</label>
+
+	<label>
+		<span>Min. best offer price</span>
+		<input type='number' step='.01' name='Item.ListingDetails.MinimumBestOfferPrice' data-bind="var: product(ebay:Item.ListingDetails.MinimumBestOfferPrice); format:popVal;" />
+		<span class='toolTip' title="Specifies the minimum acceptable Best Offer price. If a buyer submits a Best Offer that is below this value, the offer is automatically declined by the seller. Applies only to items listed in categories that support the Best Offer Auto-Decline feature.">?</span>
+	</label>
+
+</fieldset>
+
+
+<label>
+	<span>Listing enhancement</span>
+	<select type='text' name='Item.ListingEnhancement' data-bind="var: product(ebay:Item.ListingEnhancement); format:popVal;" >
+		<option></option>
+		<option value='BoldTitle'>title for the item's listing in boldface type</option>
+		<option value='Border'>add a border around the listing's pictures</option>
+		<option value='Featured'>display prominently in the Featured Items section</option>
+		<option value='Highlight'>listing is highlighted in a different color in lists</option>
+		<option value='HomePageFeatured'>rotate into a special display on eBay's Home page</option>
+		<option value='ProPackBundle'>ProPack Bundle*</option>
+		<option value='ProPackPlusBundle'>ProPackPlus Bundle**</option>
+		<option value='ValuePackBundle'>ValuePackBundle**</option>
+		<option value=''></option>
+		<option value=''></option>
+	</select>
+</label>
+<p class='hint'>
+Selecting a value to listing enhancement will affect listing fees<br />
+* eBay Motors only<br />
+** Support for this feature varies by site and category.
+</p>
+
+
+	<label>
+		<span>Location</span>
+		<input type='text' name='Item.Location' data-bind="var: product(ebay:Item.Location); format:popVal;" />
+		<span class='toolTip' title="Geographical location of the item (along with Country) to be displayed on eBay listing pages.">?</span>
+	</label>
+
+	<label>
+		<span>Lot size</span>
+		<input type='number' name='Item.LotSize' max='100000' data-bind="var: product(ebay:Item.LotSize); format:popVal;" />
+		<span class='toolTip' title="A lot is a set of two or more similar items included in a single listing that must be purchased together in a single order line item. The Item.LotSize value is the number of items in the lot. This field is required if two or more items are including in one listing.">?</span>
+	</label>
+
+<fieldset>
+	<legend>Payment Details (motors)</legend>
+	<label>
+		<span>Days to full payment</span>
+		<select name='Item.PaymentDetails.DaysToFullPayment' data-bind="var: product(ebay:Item.LotSize.DaysToFullPayment); format:popVal;">
+			<option value='3'>3</option>
+			<option value='7'>7</option>
+			<option value='10'>10</option>
+			<option value='14'>14</option>
+		</select>
+		<span class='toolTip' title="This integer value indicates the number of days that a buyer has (after he/she commits to buy) to make full payment to the seller and close the remaining balance on a motor vehicle.">?</span>
+	</label>
+
+	
+
+	<label>
+		<span>Deposit amount</span>
+		<input type='number' step='.01' max='2000' name='Item.PaymentDetails.DepositAmount' data-bind="var: product(ebay:Item.PaymentDetails.DepositAmount); format:popVal;" />
+		<span class='toolTip' title="This dollar value indicates the amount of the deposit that a buyer must make on a purchased motor vehicle (eBay Motors US and CA). The deposit amount can be as high as $2,000.00.">?</span>
+	</label>
+
+	<label>
+		<span>Deposit type</span>
+		<select name='Item.PaymentDetails.DepositType' data-bind="var: product(ebay:Item.PaymentDetails.DepositType); format:popVal;">
+			<option value=''></option>
+			<option value='None'>No deposit needed</option>
+			<option value='OtherMethod'>PayPal</option>
+		</select>
+		<span class='toolTip' title="This field applies to eBay Motors (US and CA) vehicles listings. If the seller is requiring that the buyer make a deposit on the vehicle, the DepositType value must be included and set to 'OtherMethod'. ">?</span>
+	</label>
+
+
+	<label>
+		<span>Hours to deposit</span>
+		<select name='Item.PaymentDetails.HoursToDeposit' data-bind="var: product(ebay:Item.PaymentDetails.HoursToDeposit); format:popVal;">
+			<option value=''></option>
+			<option value='24'>24</option>
+			<option value='48'>48</option>
+			<option value='72'>72</option>
+		</select>
+		<span class='toolTip' title="This integer value indicates the number of hours that a buyer has (after he/she commits to buy) to make a deposit to the seller as a down payment on a motor vehicle.">?</span>
+	</label>
+
+
+</fieldset>
+
+
+<label>
+	<span>Payment methods</span>
+NOT DONE.
+http://developer.ebay.com/DevZone/xml/docs/Reference/ebay/types/BuyerPaymentMethodCodeType.html
+	<span class='toolTip' title="This integer value indicates the number of hours that a buyer has (after he/she commits to buy) to make a deposit to the seller as a down payment on a motor vehicle.">?</span>
+</label>
+
+<label>
+	<span>PayPal email address</span>
+	<input type='number' step='.01' max='2000' name='Item.PayPalEmailAddress' data-bind="var: product(ebay:Item.PayPalEmailAddress); format:popVal;" />
+	<span class='toolTip' title="Valid PayPal email address for the PayPal account that the seller will use if they offer PayPal as a payment method for the listing.">?</span>
+</label>
+
+<!--
+<fieldset>
+	<legend>Picture Details</legend>
+not brought over yet. search GalleryType
+</fieldset>
+
+<fieldset>
+	<legend>Product Listing Details</legend>
+not brought over yet. search ProductListingDetails
+</fieldset>
+-->
+
+
+
+<label>
+	<input type='checkbox' name='Item.PrivateListing' data-bind="var: product(ebay:Item.PrivateListing); format:popVal;" />
+	<span>Private listing</span>
+	<span class='toolTip' title="The PrivateListing boolean field can be used by the seller in the Add/Relist/Revise family of calls to obscure item title, item ID, and item price from post-order Feedback comments left by buyers.">?</span>
+</label>
+
+
+<fieldset>
+	<legend>Return Policy</legend>
+
+	<label>
+		<span>Description</span>
+		<textarea name='Item.ReturnPolicy.Description' data-bind="var: product(ebay:Item.ReturnPolicy.Description); format:popVal;" />
+		<span class='toolTip' title="A detailed explanation of your return policy.">?</span>
+	</label>
+
+	<label>
+		<span>EAN</span>
+		<input type='text' name='Item.ReturnPolicy.EAN' data-bind="var: product(ebay:Item.ReturnPolicy.EAN); format:popVal;" />
+		<span class='toolTip' title="A detailed explanation of your return policy.">?</span>
+	</label>
+<!--
+the input value here is 'token'.?
+	<label>
+		<span>Refund option</span>
+		<input type='text' name='Item.ReturnPolicy.RefundOption' data-bind="var: product(ebay:Item.ReturnPolicy.RefundOption); format:popVal;" />
+		<span class='toolTip' title="A detailed explanation of your return policy.">?</span>
+	</label>
+
+	<label>
+		<span>Restocking fee</span>
+		<input type='text' name='Item.ReturnPolicy.RestockingFeeValueOption' data-bind="var: product(ebay:Item.ReturnPolicy.RestockingFeeValueOption); format:popVal;" />
+		<span class='toolTip' title="Indicates the restocking fee charged by the seller for returned items. In order to charge the buyer a restocking fee when an item is returned, a US seller must input a restocking fee value as part of the return policy. ">?</span>
+	</label>
+
+	<label>
+		<span>Returns Accepted</span>
+		<input type='text' name='Item.ReturnPolicy.ReturnsAcceptedOption' data-bind="var: product(ebay:Item.ReturnPolicy.ReturnsAcceptedOption); format:popVal;" />
+		<span class='toolTip' title="ndicates whether the seller allows the buyer to return the item. ">?</span>
+	</label>
+
+	<label>
+		<span>WarrantyDurationOption</span>
+		<input type='text' name='Item.ReturnPolicy.WarrantyDurationOption' data-bind="var: product(ebay:Item.ReturnPolicy.WarrantyDurationOption); format:popVal;" />
+	</label>
+
+	<label>
+		<span>WarrantyOfferedOption</span>
+		<input type='text' name='Item.ReturnPolicy.WarrantyTypeOption' data-bind="var: product(ebay:Item.ReturnPolicy.WarrantyTypeOption); format:popVal;" />
+	</label>
+
+	<label>
+		<span>WarrantyTypeOption</span>
+		<input type='text' name='Item.ReturnPolicy.WarrantyTypeOption' data-bind="var: product(ebay:Item.ReturnPolicy.WarrantyTypeOption); format:popVal;" />
+	</label>
+-->
+
+
+</fieldset>
+
+
+
+<fieldset>
+	<legend>Seller Details</legend>
+	
+	<label>	
+		<input type='checkbox' name='Item.PrivateListing' data-bind="var: product(ebay:Item.PrivateListing); format:popVal;" />
+		Motors Dealer
+		<span class='toolTip' title="Indicates if item is listed for sale by owner (FSBO) or listed by a dealer. Applies to eBay Motors Pro applications only.">?</span>
+	</label>
+
+	<label>
+		<span>Company name</span>
+		<input type='text' name='Item.SellerContactDetails.CompanyName' data-bind="var: product(ebay:Item.SellerContactDetails.CompanyName); format:popVal;" />
+	</label>
+
+	<label>
+		<span>County</span>
+		<input type='text' name='Item.SellerContactDetails.County' data-bind="var: product(ebay:Item.SellerContactDetails.County); format:popVal;" />
+	</label>
+
+	<label>
+		<span>Street</span>
+		<input type='text' name='Item.SellerContactDetails.Street' data-bind="var: product(ebay:Item.SellerContactDetails.Street); format:popVal;" />
+	</label>
+	<label>
+		<span>Street2</span>
+		<input type='text' name='Item.SellerContactDetails.Street2' data-bind="var: product(ebay:Item.SellerContactDetails.Street2); format:popVal;" />
+	</label>
+
+
+</fieldset>
+
+
+	<label>
+		<span></span>
+		<input type='text' name='' data-bind="var: product(ebay:); format:popVal;" />
+		<span class='toolTip' title="">?</span>
+	</label>
+
+
+
+</div>
+
+
+
+
+
+<!--
+a template for multipage controls
+after this is generated, actions for going to last and next page will be added by the extension.
+to any element with a class of paging and a data-role of either 'next' or 'previous'
+onclicks are recursive, so only add it to the parent element.
+.mpControlsPagination is used to 'hide' the pagination portion of the header if pagination is disabled.
+-->
+
+<div id='mpControlSpec' class='mpControlContainer'>
+	<div class='mpControls ui-widget ui-state-default ui-corner-top'>
+
+<span class="mpControlsPagination ui-state-active ui-corner-all floatRight paging pointer" data-role='next' title="next page">
+	<span class="ui-icon ui-icon-circle-triangle-e"></span>
+</span>
+
+<div class='floatRight ddUlMenu mpControlsPagination'>
+<ul>
+	<li>
+
+	<a href='#' onClick='return false;'>
+	<span data-bind='var:prodlistmeta(page_in_focus); format:text; pretext: page ;'></span>
+	<span data-bind='var:prodlistmeta(total_page_count); format:text; pretext: of ;'></span>	</a>
+	<ul data-bind='var:prodlistmeta(total_page_count); format:mpPagesAsListItems; extension:store_prodlist;' class='ui-widget-content ui-corner-bottom'></ul>
+	</li>
+</ul>
+</div>
+
+<span class="mpControlsPagination ui-state-active ui-corner-all floatRight paging pointer" data-role='previous' title="previous page">
+	<span class="ui-icon ui-icon-circle-triangle-w"></span>
+</span>	
+
+
+<span data-bind='var:prodlistmeta(page_start_point); format:text; pretext:items ;'></span>
+<span data-bind='var:prodlistmeta(page_end_point); format:text; pretext: - ;'></span>
+<span data-bind='var:prodlistmeta(total_product_count); format:text; pretext: of ;'></span>
+
+	</div><!-- /.mpControls -->
+</div><!-- /#mpControlSpec -->
+
+
+
+<!-- 
+**
+** welcome content
+**
+-->
+<div id='productEditorWelcome' class='productEditor'>
+
+<table width="600" height="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+<td valign="top" style="padding-left:20px;">
+<h1>Online Product Manager</h1>
+
+<p>
+Welcome to our new app-based Product Manager which will keep you seamlessly connected to your product data.
+Here are some of the advantages:
+</p>
+
+<p>
+<h2>Page Rendering</h2>  
+With our new app based solution, there are no frames to load and reload, it
+makes better use of your screen and browser capabilities. 
+The app framework stays on the screen and only the information you want to
+view or manipulate changes. This makes for a smoother workflow and helps to
+increase productivity.
+</p>
+
+<p>
+<h2>Extensible</h2>
+Entering your product data is only the beginning. 
+This interface will allow extensibility by developers so it is possible to
+create custom data input and management interfaces. 
+From vendor management to drop shipping to complex supply chain strategies, our
+new Product Manager.
+</p>
+
+<p>
+<h2>The World is Changing</h2>
+The app-based structure is the future of technology. 
+By providing an e-commerce solution that is better than the best traditional solution and providing it for less cost, 
+we are convinced that this change will let our customers do more in less
+time.
+</p>
+
+</td>
+</tr></table>
+
+</div>
+
+
+
+
+
+<div id='variationCreateUpdateTemplate'>
+
+<form action='#' onSubmit="return false;" class='labelsAsBreaks'>
+
+<table>
+<tr>
+	<td class='valignTop'>
+<fieldset>
+	<legend>Settings</legend>
+	
+	<label>
+		<span>Prompt</span>
+		<input type='text' name='PROMPT' data-bind="var: variation(PROMPT); format:popVal;" />
+		<span class='toolTip' title="This is what your users will be displayed e.g. Size, Color, Preference.">?</span>
+	</label>
+
+	<label>
+		<span>Hint</span>
+		<input type='text' name='GHINT' data-bind="var: variation(GHINT); format:popVal;" />
+		<span class='toolTip' title="Can be used by your app to display indicators to your customer (such as how this hint is displayed).">?</span>
+	</label>
+	
+	<label>
+		<span>Amazon keyword</span>
+		<select name="AMZ" data-bind="var: variation(AMZ); format:popVal;">
+<option value="">None</option>
+<option value="APPAREL: Color">APPAREL: Color</option>
+<option value="APPAREL: Size">APPAREL: Size</option>
+<option value="AUTO: Color">AUTO: Color</option>
+<option value="AUTO: Size">AUTO: Size</option>
+<option value="CAMERA: None">CAMERA: None</option>
+<option value="CE: None">CE: None</option>
+<option value="EYEWEAR: Color">EYEWEAR: Color</option>
+<option value="EYEWEAR: ColorName">EYEWEAR: ColorName</option>
+<option value="EYEWEAR: LensColor">EYEWEAR: LensColor</option>
+<option value="EYEWEAR: LensWidth">EYEWEAR: LensWidth</option>
+<option value="EYEWEAR: MagnificationStrength">EYEWEAR: MagnificationStrength</option>
+<option value="EYEWEAR: Size">EYEWEAR: Size</option>
+<option value="FOOD: Flavor">FOOD: Flavor</option>
+<option value="FOOD: Size">FOOD: Size</option>
+<option value="HANDBAG: Color">HANDBAG: Color</option>
+<option value="HEALTH: Color">HEALTH: Color</option>
+<option value="HEALTH: Count">HEALTH: Count</option>
+<option value="HEALTH: Flavor">HEALTH: Flavor</option>
+<option value="HEALTH: Size">HEALTH: Size</option>
+<option value="HOME: Color">HOME: Color</option>
+<option value="HOME: ItemPackageQuantity">HOME: ItemPackageQuantity</option>
+<option value="HOME: Material">HOME: Material</option>
+<option value="HOME: Scent">HOME: Scent</option>
+<option value="HOME: Size">HOME: Size</option>
+<option value="JEWELRY: Length">JEWELRY: Length</option>
+<option value="JEWELRY: MetalType">JEWELRY: MetalType</option>
+<option value="JEWELRY: RingSize">JEWELRY: RingSize</option>
+<option value="JEWELRY: SizePerPearl">JEWELRY: SizePerPearl</option>
+<option value="JEWELRY: TotalDiamondWeight">JEWELRY: TotalDiamondWeight</option>
+<option value="MUSIC: Color">MUSIC: Color</option>
+<option value="OFFICE: None">OFFICE: None</option>
+<option value="SHOEACCESSORY: Color">SHOEACCESSORY: Color</option>
+<option value="SHOEACCESSORY: Size">SHOEACCESSORY: Size</option>
+<option value="SHOES: Color">SHOES: Color</option>
+<option value="SHOES: Size">SHOES: Size</option>
+<option value="SOFTWARE: None">SOFTWARE: None</option>
+<option value="SPORTS: Color">SPORTS: Color</option>
+<option value="SPORTS: GolfFlex">SPORTS: GolfFlex</option>
+<option value="SPORTS: GolfLoft">SPORTS: GolfLoft</option>
+<option value="SPORTS: GripSize">SPORTS: GripSize</option>
+<option value="SPORTS: GripType">SPORTS: GripType</option>
+<option value="SPORTS: Hand">SPORTS: Hand</option>
+<option value="SPORTS: Length">SPORTS: Length</option>
+<option value="SPORTS: LensColor">SPORTS: LensColor</option>
+<option value="SPORTS: ShaftMaterial">SPORTS: ShaftMaterial</option>
+<option value="SPORTS: ShaftType">SPORTS: ShaftType</option>
+<option value="SPORTS: Size">SPORTS: Size</option>
+<option value="SPORTS: Style">SPORTS: Style</option>
+<option value="SPORTS: TensionLevel">SPORTS: TensionLevel</option>
+<option value="SPORTS: Weight">SPORTS: Weight</option>
+<option value="SPORTS: WeightSupported">SPORTS: WeightSupported</option>
+<option value="SPORTS: Width">SPORTS: Width</option>
+<option value="TOOLS: None">TOOLS: None</option>
+<option value="TOYSBABY: None">TOYSBABY: None</option>
+<option value="WIRELESS: None">WIRELESS: None</option>
+		</select>
+	</label>
+
+	<label>
+		<span>Google keyword</span>
+		<select name="GOO" data-bind="var: variation(GOO); format:popVal;">
+			<option value="">None</option>
+			<option value="Color">Color</option>
+			<option value="Size">Size</option>
+			<option value="Material">Material</option>
+			<option value="Pattern">Pattern</option>
+		</select>
+	</label>
+
+	<label>
+		<span>eBay specifics name</span>
+		<input type='text' name='EBAY' data-bind="var: variation(EBAY); format:popVal;" />
+		<span class='toolTip' title="Can be used by your app to display indicators to your customer (such as how this hint is displayed).">?</span>
+	</label>
+
+	<label>
+		<input type="checkbox" name="optional" class='applyAnycb' />
+		Optional <span class='toolTip' title="If enabled, the variation will not display in cart/order if it is not selected.">?</span>
+	</label>
+</fieldset>
+	</td>
+	<td class='valignTop'></td>
+</tr>
+</table>
+
+</form>
+
+
+</div>
+
+
+
+
+
+
+
+<!--
+///////////////////////// VARIATIONS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+
+<div id='variationsManagerTemplate' class='ui-widget ui-widget-content ui-corner-all stdPadding'>
+	<div class='clearfix marginBottom'>
+		<button class='floatRight' data-app-event='admin_prodEdit|variationCreateShow' data-variationmode="store">Add New</button>
+		<h1>Store Variations</h1>
+	</div>
+<table class='fullWidth gridTable applyAnytable'>
+<thead>
+<tr>
+	<th>ID</th>
+	<th>Name</th>
+	<th># options</th>
+	<th>Inv.</th>
+	<th>Global</th>
+	<th>Type</th>
+	<th></th>
+</tr>
+</thead>
+<tbody data-bind="var:variations(%SOGS); format:processList; loadsTemplate:variationsManagerRowTemplate;">
+	
+</tbody>
+</table>
+
+</div>
+
+<table>
+<tr id='variationsManagerRowTemplate'>
+	<td data-bind="var:variation(id); format:text;"></td>
+	<td data-bind="var:variation(prompt); format:text;"></td>
+	<td data-bind="var:variation(@options.length); format:text;"></td>
+	<td><span data-bind="var:variation(inv); format:showIfSet;" class='displayNone ui-icon ui-icon-check'></span></td>
+	<td><span data-bind="var:variation(global); format:showIfSet;" class='displayNone ui-icon ui-icon-check'></span></td>
+	<td data-bind="var:variation(type); format:text;"></td>
+	<td class='alignRight'>
+	
+		<button data-app-event='admin_prodEdit|adminSOGDeleteConfirm'>Delete</button>
+		<button data-app-event="admin_prodEdit|variationSearchByIDExec" title="Do a search for all product that use this variation.">find</button><!-- Do a search for all product that use this variation -->
+		<button data-variationmode="store" data-app-event='admin_prodEdit|variationUpdateShow'>Edit</button>
+	</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+<div id='variationsManagerCreateTemplate'>
+
+<form action='#' onSubmit='return false' class='labelsAsBreaks'>
+
+<fieldset>
+	<label>
+		<span>Prompt</span>
+		<input type='text' name='prompt' value='' required='required' />
+		<span class='toolTip' title="The prompt is displayed the customers so they know what they are choosing. E.g. 'Size', 'Color'.  You can edit/change the prompt later if you want to.">?</span>
+	</label>
+</fieldset>
+
+<fieldset class='clearfix'>
+	<legend>Type <span class='toolTip' title="Type impacts how the variation appears on the storefront as well as whether or not it can be inventory-able.">?</span></legend>
+
+<div class='threeColumn floatLeft'>
+
+	<label>
+	<input type="radio" value="select" name='type' required='required' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Select box (drop down)*
+	<span class='toolTip' title="A select list is also commonly known as a drop down list. A select list should be used when the number of options exceeds 5 or more. As a rule when designing options you should never use more than 25 options in a select list since it will make it difficult for the user to see all the choices and arrive at a decision.">?</span>
+	</label>
+
+
+	<label>
+	<input type="radio" value="radio" name='type' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Radio buttons*
+	<span class='toolTip' title="Used to display all the options available with a circle next to each option. The user chooses the appropriate option and the circle becomes filled in. Unlike select lists a radio button		always displays all options to the customer. Radio buttons should typically be used with 10 or less options since they consume a lot of screen space and make the customer need to scroll.">?</span>
+	</label>
+
+	<label>
+	<input type="radio" value="cb" name='type' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Checkbox*
+	<span class='toolTip' title="Have only two possible states, either ON or OFF. Checkboxes should be used whenever the user has only two possible choices. ">?</span>
+	</label>
+
+	<label>
+	<input type="radio" value="hidden" name='type' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Hidden Attributes
+	<span class='toolTip' title="A hidden attribute allows you to specify additional text which will appear in the product description. Such as a disclaimer or any text which you want to be printed in the product description to the customer and which is NOT editable by the customer.">?</span>
+	</label>
+
+
+	<label>
+	<input type="radio" value="assembly" name='type' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Base Assembly 
+	<span class='toolTip' title="A hidden attribute uses the option subsystem to set/store properties of an item (usually this is done through a custom javascript module).">?</span>
+	</label>
+
+</div>
+
+
+<div class='threeColumn floatLeft'>
+	<label>
+	<input type="radio" value="text" name='type' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Free-Form TextBox
+	<span class='toolTip' title="This is the simpliest form of customer input. A text input should be used for limited text entry. 	If you need multiple lines consider using a text area. 	You can assses additional fees per character or per line. Fees are additive and will be summed together to present a total.">?</span>
+	</label>
+
+	<label>
+	<input type="radio" value="number" name='type' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Free-Form Number
+	<span class='toolTip' title="Allows a customer to input a number. This is NOT the same as quantity, and should not be used for any sort of inventory control. You can restrict the number to a specific minimum and maximu value.">?</span>
+	</label>
+
+	<label>
+	<input type="radio" value="textarea" name='type' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Multi-Line Text Area
+	<span class='toolTip' title="Large format text box in which users can enter a block of text. You can also restrict the number of characters. Like a textbox you can assess fees per character (excluding spaces and punctuation), and per word.  The textarea also allows you assess fees per line. Fees are additive and can be used together.">?</span>
+	</label>
+
+	<label>
+	<input type="radio" value="readonly" name='type' />
+	Readonly Instructions	
+	<span class='toolTip' title="Displays contents to buyer but allows no interaction or input.">?</span>
+	</label>
+</div>
+
+<div class='threeColumn floatLeft'>
+
+
+	<label>
+	<input type="radio" value="biglist" name='type' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Dynamic "BIG" List
+	<span class='toolTip' title="Biglist lets you create a multi-stage select (drop down) list. When the first option is chosen, then the customer must make a second selection in another box which appears. The boxes may only go two deep. Use this when you have options which are tiered to reduce the number of decisions a customer needs to make. ">?</span>
+	</label>
+	
+
+	<label>
+	<input type="radio" value="imgselect" name='type' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Image Select List*
+	<span class='toolTip' title="When a customer chooses an option an image (if available) will be displayed adjacent to it. Image select lists are ideally suited for situations where there are 10 or more options and it is likely the customer will NOT want to look at all the pictures before making a choice. ">?</span>
+	</label>
+	
+
+	<label>
+	<input type="radio" value="imggrid" name='type' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Image Grid*
+	<span class='toolTip' title="Unlike an image select list which the user must manually choose each option in order to see the image associated with it - instead all images are displayed in a grid with a radio button below each option. The advantage of an image grid is it displays ALL the possible choices and their respective images to the customer, which is also it's disadvantage if you have a product with a lot of pictures it can consume a vast amount of real-estate and increase page load times. ">?</span>
+	</label>
+	
+
+	<label>
+	<input type="radio" value="calendar" name='type' data-app-event='admin_prodEdit|variationHandleTypeSelect' />
+	Calendar
+	<span class='toolTip' title="Allows the user to easily choose a date. The date is stored in a text field in YYYY/MM/DD format. The calendar has the ability to apply a rush fee if the date is within a certain number of days of today. This allows you to create additional revenue for speciality things like 'Rush Fees'. ">?</span>
+	</label>
+			
+</div>
+
+</fieldset>
+<p class='hint'>* is inventory-able</p>
+
+
+<fieldset data-app-role='variationInventorySettings' class='displayNone'>
+	<legend>Inventory</legend>
+	<label>
+		<input type='checkbox' name='inv' class='applyAnycb' data-app-event="admin_prodEdit|variationHandleInventoryChange" />
+		This option affects inventory.
+		<span class='toolTip' title="If you want to have price and/or weight modifiers or track inventory per variation, enable this.">?</span>
+	</label>
+
+</fieldset>
+
+<fieldset data-app-role='variationInventorySupplementals' class='displayNone' data-bind="format:loadsTemplate; loadsTemplate:variationsDSTInputsTemplate; useParentData:true;"></fieldset>
+
+<fieldset>
+	<legend>Variation Behavior</legend>
+
+	<label>
+	<input type="radio" value="0" name="global" checked="checked" />
+	Manual: Select options and customize modifiers on a product by product basis.
+	</label>
+	
+	<label>
+	<input type="radio" value="1" name="global" />
+	Automatic: Changes should automatically affect all products using this group.
+	</label>
+	
+</fieldset>
+<p class='hint'>Before saving please take a moment to review your choices as most of the settings on this page cannot be edited once the option group is saved.</p>
+
+<button data-app-event="admin_prodEdit|variationCreateExec" data-app-role='saveButton'>Save</button>
+</form>
+
+</div>
+
+
+
+
+
+<div id='variationsDSTInputsTemplate'>
+
+
+	<label>
+	<span>Amazon Variation Keyword:</span>
+	<select name="AMZ">
+	<option value="">None</option>
+	<option value="APPAREL: Color">APPAREL: Color</option>
+	<option value="APPAREL: Size">APPAREL: Size</option>
+	<option value="AUTO: Color">AUTO: Color</option>
+	<option value="AUTO: Size">AUTO: Size</option>
+	<option value="CAMERA: None">CAMERA: None</option>
+	<option value="CE: None">CE: None</option>
+	<option value="EYEWEAR: Color">EYEWEAR: Color</option>
+	<option value="EYEWEAR: ColorName">EYEWEAR: ColorName</option>
+	<option value="EYEWEAR: LensColor">EYEWEAR: LensColor</option>
+	<option value="EYEWEAR: LensWidth">EYEWEAR: LensWidth</option>
+	<option value="EYEWEAR: MagnificationStrength">EYEWEAR: MagnificationStrength</option>
+	<option value="EYEWEAR: Size">EYEWEAR: Size</option>
+	<option value="FOOD: Flavor">FOOD: Flavor</option>
+	<option value="FOOD: Size">FOOD: Size</option>
+	<option value="HANDBAG: Color">HANDBAG: Color</option>
+	<option value="HEALTH: Color">HEALTH: Color</option>
+	<option value="HEALTH: Count">HEALTH: Count</option>
+	<option value="HEALTH: Flavor">HEALTH: Flavor</option>
+	<option value="HEALTH: Size">HEALTH: Size</option>
+	<option value="HOME: Color">HOME: Color</option>
+	<option value="HOME: ItemPackageQuantity">HOME: ItemPackageQuantity</option>
+	<option value="HOME: Material">HOME: Material</option>
+	<option value="HOME: Scent">HOME: Scent</option>
+	<option value="HOME: Size">HOME: Size</option>
+	<option value="JEWELRY: Length">JEWELRY: Length</option>
+	<option value="JEWELRY: MetalType">JEWELRY: MetalType</option>
+	<option value="JEWELRY: RingSize">JEWELRY: RingSize</option>
+	<option value="JEWELRY: SizePerPearl">JEWELRY: SizePerPearl</option>
+	<option value="JEWELRY: TotalDiamondWeight">JEWELRY: TotalDiamondWeight</option>
+	<option value="MUSIC: Color">MUSIC: Color</option>
+	<option value="OFFICE: None">OFFICE: None</option>
+	<option value="SHOEACCESSORY: Color">SHOEACCESSORY: Color</option>
+	<option value="SHOEACCESSORY: Size">SHOEACCESSORY: Size</option>
+	<option value="SHOES: Color">SHOES: Color</option>
+	<option value="SHOES: Size">SHOES: Size</option>
+	<option value="SOFTWARE: None">SOFTWARE: None</option>
+	<option value="SPORTS: Color">SPORTS: Color</option>
+	<option value="SPORTS: GolfFlex">SPORTS: GolfFlex</option>
+	<option value="SPORTS: GolfLoft">SPORTS: GolfLoft</option>
+	<option value="SPORTS: GripSize">SPORTS: GripSize</option>
+	<option value="SPORTS: GripType">SPORTS: GripType</option>
+	<option value="SPORTS: Hand">SPORTS: Hand</option>
+	<option value="SPORTS: Length">SPORTS: Length</option>
+	<option value="SPORTS: LensColor">SPORTS: LensColor</option>
+	<option value="SPORTS: ShaftMaterial">SPORTS: ShaftMaterial</option>
+	<option value="SPORTS: ShaftType">SPORTS: ShaftType</option>
+	<option value="SPORTS: Size">SPORTS: Size</option>
+	<option value="SPORTS: Style">SPORTS: Style</option>
+	<option value="SPORTS: TensionLevel">SPORTS: TensionLevel</option>
+	<option value="SPORTS: Weight">SPORTS: Weight</option>
+	<option value="SPORTS: WeightSupported">SPORTS: WeightSupported</option>
+	<option value="SPORTS: Width">SPORTS: Width</option>
+	<option value="TOOLS: None">TOOLS: None</option>
+	<option value="TOYSBABY: None">TOYSBABY: None</option>
+	<option value="WIRELESS: None">WIRELESS: None</option>
+	</select>
+	</label>
+
+	<label>
+	<span>Google Variation Keyword</span>
+	<select name="GOO">
+		<option value="">None</option>
+		<option value="Color">Color</option>
+		<option value="Size">Size</option>
+		<option value="Material">Material</option>
+		<option value="Pattern">Pattern</option>
+	</select>
+	</label>
+
+	<label>
+	<span>eBay Variation Specifics Name: </span>
+	<input type="text" name="EBAY" />
+	</label>
+
+</div>
+
+
+
+
+
+
+<div id='variationEditorTemplate' class='ui-widget'>
+	<form action="#" onSubmit='return false' class='labelsAsBreaks'>
+	
+	<hgroup class='ui-widget-header stdPadding ui-corner-top'>
+		<h4 class='floatRight' data-bind="var:variation(pid); format:text; pretext:Product ID: ;"></h4>
+		<h3 data-bind="var:variation(id); format:text; pretext:Variation ID: ;"></h3>
+	</hgroup>
+	<section class='ui-widget-content ui-corner-bottom'>
+	
+<table class='fullWidth stdMargin'>
+<tbody>
+<tr>
+	<td class='column3' data-app-role='variationSettingsContainer'>
+<!-- high level settings -->
+	<fieldset class='stdPadding'>
+	
+		<input type='hidden' name='id' value='' data-bind="var: variation(id); format:popVal;" />
+		<input type='hidden' name='type' value='' data-bind="var: variation(type); format:popVal;" />
+		<input type='hidden' name='inv' value='0' data-bind="var: variation(inv); format:popVal;" />
+	
+		<legend>Variation Settings</legend>
+
+		<label>
+			<span>Prompt</span>
+			<input type='text' name='prompt' data-bind="var: variation(prompt); format:popVal;" />
+			<span class='toolTip' title="This is what your users will be displayed e.g. Size, Color, Preference.">?</span>
+		</label>
+	
+		<label>
+			<span>Hint <span class='toolTip' title="Can be used by your app to display indicators to your customer (such as how this hint is displayed).">?</span></span>
+			<textarea name='ghint' data-bind="var: variation(ghint); format:popVal;" class='fullWidth'></textarea>
+		</label>
+
+		<div data-bind="var:variation(inv); format:showIfSet;" class='displayNone'>
+			<fieldset data-app-role='variationInventorySupplementals' data-bind="format:loadsTemplate; loadsTemplate:variationsDSTInputsTemplate;  useParentData:true;"></fieldset>
+		</div>
+
+		<div>
+			<span data-bind="var:variation(inv); format:showIfSet;" class='displayNone'>This group affects inventory.</span>
+			<span data-bind="var:variation(global); format:showIfSet;" class='displayNone'>This group is globally managed.</span>
+		</div>
+
+	</fieldset>
+
+
+	<fieldset class='displayNone' data-app-role='variationImgInputs'>
+
+		<label>
+			<span>Thumbnail width</span>
+			<input type="number" min='25' step='1' value="" name="width" size="3" data-bind="var: variation(width); format:popVal;" />
+		</label>
+		
+		<label>
+			<span>Thumbnail height</span>
+			<input type="number" min='25' step='1' value="" name="height" size="3" data-bind="var: variation(height); format:popVal;" />
+		</label>
+		
+		<label>
+			<input type="checkbox" name="zoom"  data-bind="var: variation(height); format:popVal;" />
+			Enable click to zoom
+		</label>
+		
+		<label>
+			<span>Image type</span>
+			<select name="img_type" data-bind="var: variation(img_type); format:popVal;">
+				<option value="other">Other</option>
+				<option value="swatch">Color Swatch</option>
+				<option value="sku_image">SKU Image</option>
+			</select>
+		</label>
+
+
+	</fieldset>
+
+
+	</td>
+
+<!-- show this only for select/radio style editor. allows left side of editor to be minimized so there's more room for dataTable. -->
+	<td class='variationEditorSplitter smallButton'>
+	<div>
+	<button data-app-event="admin_prodEdit|variationSettingsToggle" class='displayNone'>Toggle Variations Settings Display</button>
+	</div>
+	</td>
+
+	<td class='valignTop'>
+<!-- variation specific template loaded into this div, based on 'type' -->
+<div data-app-role='variationsTypeSpecificsContainer' class='stdPadding'></div>
+
+<div class='buttonset alignRight clearfix'>
+<!--<button data-app-event='admin|execDialogClose'>Cancel Changes</button> -->
+<button data-app-event='admin_prodEdit|variationAdminProductMacroExec' data-app-role='saveButton'>Save Changes</button>
+</div>
+
+	</td>
+</tr>
+</tbody>
+</table>
+
+
+	</section>
+	</form>
+</div>
+
+
+
+
+
+
+
+<fieldset id='variationsEditor_select'>
+	<legend>Select Settings</legend>
+	<div data-bind='format:loadsTemplate; loadsTemplate:optionsEditor; useParentData:true;'>
+	
+	</div>
+</fieldset>
+
+
+<fieldset id='variationsEditor_radio'>
+	<legend>Radio Settings</legend>
+	<div data-bind='format:loadsTemplate; loadsTemplate:optionsEditor; useParentData:true;'>
+	
+	</div>
+</fieldset>
+
+
+<fieldset id='variationsEditor_cb'>
+	<legend>Checkbox Settings</legend>
+</fieldset>
+
+
+<fieldset id='variationsEditor_hidden'>
+	<legend>Hidden Settings</legend>
+
+	<label>
+		<span>Maximum length</span>
+		<input type="number" min='0' step='1' value="" size="2" name="maxlength" data-bind='var: variation(maxlength); format:popVal;' /> (in characters)
+	</label>
+	
+	<label>
+		<span>Default text</span>
+		<input type="text" value="" name="default" data-bind='var: variation(default); format:popVal;' />
+	</label>
+	
+	<label>
+		<span>Fee per character </span>
+		$<input type="number" value="" step='.01' size="6" name="fee_char" data-bind='var: variation(fee_char); format:popVal;'>
+	</label>
+	
+	<label>
+		<span>Fee per word </span>
+		$<input type="number" value="" step='.01' size="6" name="fee_word" data-bind='var: variation(fee_word); format:popVal;'>
+	</label>
+
+</fieldset>
+
+
+<fieldset id='variationsEditor_assembly'>
+	<legend>Assembly Settings</legend>
+	<div data-bind='format:loadsTemplate; loadsTemplate:optionsEditor; useParentData:true;'>
+	
+	</div>
+</fieldset>
+
+
+<fieldset id='variationsEditor_text'>
+	<legend>Text Settings</legend>
+
+
+	<label>
+		<span>Maximum length</span>
+		<input type="number" min='0' step='1' value="" size="2" name="maxlength" data-bind='var: variation(maxlength); format:popVal;' /> (in characters)
+	</label>
+	
+	<label>
+		<span>Default text</span>
+		<input type="text" value="25 char max" name="default" data-bind='var: variation(default); format:popVal;' />
+	</label>
+	
+	<label>
+		<span>Fee per character </span>
+		$<input type="number" value="" step='.01' size="6" name="fee_char" data-bind='var: variation(fee_char); format:popVal;'>
+	</label>
+	
+	<label>
+		<span>Fee per word </span>
+		$<input type="number" value="" step='.01' size="6" name="fee_word" data-bind='var: variation(fee_word); format:popVal;'>
+	</label>
+
+</fieldset>
+
+<fieldset id='variationsEditor_number'>
+	<legend>Number Settings</legend>
+
+	<label>
+		<span>Maximum Length</span>
+		<input type="number" min='0' step='1' value="" size="2" name="maxlength" data-bind='var: variation(maxlength); format:popVal;' /> (in characters)
+	</label>
+	
+	<label>
+		<span>Default Text</span>
+		<input type="text" value="25 char max" name="default" data-bind='var: variation(default); format:popVal;' />
+	</label>
+	
+	<label>
+		<span>Minimum Number</span>
+		<input size="10" name="min" value="3" type="number" data-bind='var: variation(min); format:popVal;' />
+	</label>
+	
+	<label>
+		<span>Maximum Number</span>
+		<input type="number" value="8" name="max" size="10" data-bind='var: variation(max); format:popVal;' />
+	</label>
+
+</fieldset>
+
+
+
+<fieldset id='variationsEditor_textarea'>
+	<legend>Textarea Settings</legend>
+	<label>
+		<span>Rows</span>
+		<input type="textbox" name="rows" size="3" value="" data-bind='var: variation(rows); format:popVal;' />
+	</label>
+	
+	<label>
+		<span>Columns</span>
+		<input type="textbox" name="cols" size="3" value="" data-bind='var: variation(cols); format:popVal;' />
+	</label>
+	
+	<label>
+		<span>Maximum length</span>
+		<input type="textbox" name="maxlength" size="4" value="" data-bind='var: variation(maxlength); format:popVal;' /> (in characters)
+	</label>
+	
+	<label>
+		<span>Default text</span>
+		<textarea name="default" cols="40" rows="4" data-bind='var: variation(default); format:popVal;' /></textarea>
+	</label>
+	
+	<label>
+		<span>Fee per character </span>
+		$<input type="number" value="" step='.01' size="6" name="fee_char" data-bind='var: variation(fee_char); format:popVal;' />
+	</label>
+	
+	<label>
+		<span>Fee per word </span>
+		$<input type="number" value="" step='.01' size="6" name="fee_word" data-bind='var: variation(fee_word); format:popVal;' />
+	</label>
+	
+	<label>
+		<span>Fee per line: </span>
+		$<input type="number" value="" step='.01' min='0' size="6" name="fee_line" data-bind='var: variation(fee_line); format:popVal;' />
+	</label>
+</fieldset>
+
+
+<fieldset id='variationsEditor_readonly'>
+	<legend>Readonly Settings</legend>
+
+	<label>
+		<span>Readonly text/HTML</span>
+		<textarea name="default" class='fullWidth' rows="20" data-bind="var:variations(default); format:popVal;"></textarea>
+	</label>
+	<p class='hint'>
+	The Readonly type simply outputs the text in the box above to the customers browser. You can use the readonly type to display messages to customers.
+	</p>
+</fieldset>
+
+
+<fieldset id='variationsEditor_attribs'>
+	<legend>Attribs Settings</legend>
+	
+	Attributes are a deprecated variation group type. An app with elastic search can be built for the purposes of layered search.
+	
+</fieldset>
+
+<fieldset id='variationsEditor_biglist'>
+	<legend>Big List Settings</legend>
+	
+	<p>A Big List is a dynamic, two level menu. A Big List may have a maximum of 1296 options. At this time - you may not have price and weight modifiers on Big Lists. </p>
+	<textarea rows="20" cols="50" name="biglist_contents" data-bind="var:variations(@options); format:bigListOptions; extension:admin_prodEdit;"></textarea>
+	<p>
+	<b>Example:</b><br />
+Drinks|Soda<br />
+Drinks|Beer<br />
+Drinks|Wine<br />
+<br />
+Snacks|Chips<br />
+Snacks|Pretzels<br />
+Snacks|Doughnuts<br />
+</p>
+<p>The list above would create a top level menu with two options: "Drinks" and "Snacks", If "Drinks" is selected the options would be "Soda", "Beer", and "Wine". If "Snacks" is selected the options would be "Chips", "Pretzels", "Doughnuts". </p>
+	
+</fieldset>
+
+
+<fieldset id='variationsEditor_imgselect'>
+	<legend>Image Select Settings</legend>
+	<div data-bind='format:loadsTemplate; loadsTemplate:optionsEditor; useParentData:true;'></div>
+</fieldset>
+
+
+<fieldset id='variationsEditor_imggrid'>
+	<legend>Image Grid Settings</legend>
+	<div data-bind='format:loadsTemplate; loadsTemplate:optionsEditor; useParentData:true;'></div>
+</fieldset>
+
+
+<fieldset id='variationsEditor_calendar'>
+	<legend>Calendar Settings</legend>
+	<label>
+		<span>Add a rush fee of</span>
+		<input type="number" step='.01' value="" name="fee_rush" size="6" data-bind="var: variation(fee_rush); format:popVal;" />
+		for orders within
+		<input type='number' step='1' value='' name='rush_days' size='6'  data-bind="var: variation(rush_days); format:popVal;" />
+	</label>
+	
+	<label>
+		<span>Rush prompt</span>
+		<input type="text" value="" name="rush_prompt" data-bind="var: variation(rush_prompt); format:popVal;" />
+		<span class='toolTip' title="In addition to showing up on the product page, this will be displayed on the cart and checkout pages as well as the invoice.">?</span>
+	</label>
+	<label>
+		<span>Rush message</span>
+		<textarea name="rush_msg" data-bind="var: variation(rush_msg); format:popVal;"></textarea>
+	</label>
+</fieldset>
+
+<!-- a shared template used by select and radio input variation types -->
+<div id='optionsEditor' data-app-role='variationOptionEditorContainer'>
+<table class='fullWidth'>
+<tbody>
+<tr>
+	<td class='valignTop'>
+	<table class='gridTable fullWidth' data-app-role='dataTable'>
+	<thead>
+	<tr>
+		<th></th>
+		<th></th>
+		<th>Prompt</th>
+		<th>Price</th>
+		<th>Weight</th>
+		<th>Assembly</th>
+		<th>ID/Value</th>
+		<th></th>
+	</tr>
+	</thead>
+<!-- sogs return @options, product return options. nice. -->	
+	<tbody data-app-role="variationsOptionsTbody" data-bind="var:variations(@options); defaultVar: variations(options); format:processList; loadsTemplate:optionsEditorRowTemplate;">
+	
+	</tbody>
+	</table>
+	</td>
+	
+	<td class='threeColumn valignTop' >
+	<!-- storeVariationsOptionsContainer is used when editing a product's store variation group. holds individual options for adding to group.
+	databind on tbody added w/ js later so that it isn't translated prematurely (wrong data was getting set) -->
+	<table data-app-role='storeVariationsOptionsContainer' class='displayNone gridTable'>
+	<thead>
+	<tr>
+		<th></th>
+		<th></th>
+		<th>Prompt</th>
+		<th>Price</th>
+		<th>Weight</th>
+		<th>Assembly</th>
+		<th>ID/Value</th>
+		<th></th>
+	</tr>
+	</thead>
+	<tbody></tbody>
+	</table>
+	
+	<div class='buttonset alignRight'>
+		<button data-app-role='addNewOptionButton' data-app-event='admin_prodEdit|variationOptionAddShow'>Add New Option</button>
+	</div>
+	
+	<div  data-app-role='varitionOptionAddUpdateContainer'>
+	<!-- gets populated w/ the input forms for either update or add option -->
+	</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+
+
+<!-- this is it's own template so that it can be easily cleared and repopulated w/ option specific data (for update and create) -->
+<div id='optionEditorInputsTemplate' class='alignedLabels'>
+	<input type='hidden' name='guid' value='' data-bind="var: variation(guid); format:popVal;" />
+	<input type='hidden' name='v' value='' data-bind="var: variation(v); format:popVal; hideZero:false;" />
+	<label>
+		<span>Text</span>
+		<input type="text" name="prompt" data-bind="var: variation(prompt); format:popVal;" />
+	</label>
+	
+	<label class='displayNone nonInvOnly'>
+		<span>Weight modifier</span>
+		<input type="text" size="3" name="w" data-bind="var: variation(w); format:popVal;" />
+	</label>
+	
+	<label class='displayNone nonInvOnly'>
+		<span>Price modifier</span>
+		<input type="text" size="5" name="p" data-bind="var: variation(p); format:popVal;" />
+	</label>
+	
+	<label class='displayNone nonInvOnly'>
+		<span>Assembly</span>
+		<input type="textbox" name="asm" value="" data-bind="var: variation(asm); format:popVal;" />
+	</label>
+	
+	<div class='displayNone marginBottom label  imgOnly'>
+		<span>Image <a data-app-event="admin_prodEdit|variationOptionImgLibShow" href="#"><b>[Edit]</b></a></span>
+
+		<img width="70" height="70" src="/images/blank.gif" data-app-role='variationImg'  data-bind='var: variation(img); format:imageURL;bgcolor:TTTTTT; defaultValue: i/imagenotfound;' >
+		
+		<input type='text' name='img' class='displayNone' /><!-- use text input cuz hidden inputs don't support change events -->
+
+
+	</div>
+
+
+	<label>
+		<span>RTF/HTML/Wiki detail text</span>
+		<textarea name="html" rows="5" class='fullWidth' data-bind="var: variation(html); format:popVal;"></textarea>
+	</label>
+</div>
+
+
+
+<table>
+<tr id='optionsEditorRowTemplate' class='pointer'>
+	<td><span class='ui-icon ui-icon-grip-dotted-vertical'></span></td>
+	<td><img src='' data-bind='var: variation(img); format:imageURL;' width='35' height='35' alt='' /></td>
+	<td data-bind="var:option(prompt); format:text;"></td>
+	<td data-bind="var:option(p); format:text;"></td>
+	<td data-bind="var:option(w); format:text;"></td>
+	<td data-bind="var:option(asm); format:text;"></td>
+	<td data-bind="var:option(v); format:text; hideZero:false;"></td>
+	<td class='alignRight'>
+	<button data-app-event="admin|tagRowForRemove">delete</button>
+	<button data-app-event="admin_prodEdit|variationOptionUpdateShow">edit</button><!-- there's not dataTable default for edit. use an app event to add form and pre-populate -->
+	</td>
+</tr>
+</table>
+
+
+
+
+
+
+<div id='productVariationManager' class='ui-widget'>
+	<div class='ui-widget-header ui-corner-top clearfix stdPadding'>
+		<h3 class='floatRight' data-bind="var:variation(pid); format:text; pretext:Product: ;"></h3>
+		<h1>Product Variation Manager</h1>
+	</div>
+	<section class='ui-widget-content stdPadding ui-corner-bottom' data-app-role='productVariationManagerContainer'>
+		<div class='buttonset ui-corner-all ui-widget-content smallPadding alignRight marginBottom clearfix'>
+		
+		<button title="Return to Product." data-app-event="admin_prodEdit|variationsBackToProductExec" data-bind="var:variation(pid); format:assignAttribute; attribute:data-pid;">Back to Product</button>
+		
+			<button title="Cancel any unsaved changes to these variations." data-app-event='admin_prodEdit|productVariationsManagerShow'>Cancel Changes</button>
+			<button title="Add a new product-specific variation group."  data-app-event='admin_prodEdit|variationCreateShow' data-variationmode="product">Add New Variation Group</button>
+			<button title="Save changes to the variations on this product." data-app-event="admin_prodEdit|productVariationsUpdateExec" data-app-role="saveButton">Save Changes</button>
+		</div>
+		<table>
+		<tr>
+			<td>
+			<div class='marginRight' data-app-role='productVariationManagerProductContainer'>
+		<h2>Product Variations</h2>
+		<table class='gridTable fullWidth marginTop'>
+		<thead>
+		<tr>
+			<th></th>
+			<th></th>
+			<th>Name/Prompt</th>
+			<th>Type</th>
+			<th># Options</th>
+			<th>Code</th>
+		</tr>
+		</thead>
+		<tbody data-bind="var: variations(@variations); format: processList; loadsTemplate:productVariationManagerProductRowTemplate;"  data-app-role='productVariationManagerProductTbody'></tbody>
+		</table>
+			</div>
+			</td>
+			<td>
+			<div class='marginLeft' data-app-role='productVariationManagerStoreContainer'>
+		<h2>Store Variations</h2>
+		<table class='gridTable fullWidth marginTop'>
+		<thead>
+		<tr>
+			<th>Name/Prompt</th>
+			<th>Type</th>
+			<th>Code</th>
+			<th></th>
+		</tr>
+		</thead>
+		<tbody data-bind="var: variations(%SOGS); format: processList; loadsTemplate:productVariationManagerStoreRowTemplate;"></tbody>
+		</table>
+			</div>
+			</td>
+		</tr>
+		</table>
+	</section>
+</div>
+
+
+<table>
+
+<!-- used when editing a non-global store variation on a product. -->
+<tr id='productVariationManagerOptionRowTemplate'>
+	<td><span class='ui-icon ui-icon-grip-dotted-vertical'></span></td>
+	<td><img src='' data-bind='var: variation(img); format:imageURL;' width='35' height='35' alt='' /></td>
+	<td data-bind="var: variation(prompt); format:text;"></td>
+	<td data-bind="var: variation(v); format:text;"></td>
+</tr>
+
+
+<tr id='productVariationManagerStoreRowTemplate'>
+	<td data-bind="var: variation(prompt); format:text;"></td>
+	<td data-bind="var: variation(type); format:text;"></td>
+	<td data-bind="var: variation(id); format:text;"></td>
+	<td><button title="Add store option group to product" data-app-event='admin_prodEdit|variationAddToProduct'>Add To Product</button></td>
+</tr>
+
+<tr id='productVariationManagerProductRowTemplate' class='pointer'>
+	<td><span class='ui-icon ui-icon-grip-dotted-vertical'></span></td>
+	<td>
+		<button data-app-event='admin_prodEdit|variationUpdateShow' data-variationmode='product'>Edit Variations</button>
+		<button data-app-event="admin|tagRowForRemove">Remove</button>
+	</td>
+	<td data-bind="var: variation(prompt); format:text;"></td>
+	<td>
+	<div data-bind="var: variation(type); format:text;"></div>
+	<div data-bind="var: variation(global); format:showIfSet;" class='displayNone'>Global</div>
+	<div data-bind="var: variation(inv); format:showIfSet;" class='displayNone'>Inventory-able</div>
+	</td>
+	<td data-bind="var: variation(options.length); format:text;"></td>
+	<td data-bind="var: variation(id); format:text;"></td>
+</tr>
+
+</td>

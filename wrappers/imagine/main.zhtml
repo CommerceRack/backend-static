@@ -1,0 +1,113 @@
+<!-- CONFIG
+THEME=l2_corporatered
+SITEBUTTONS=poweered
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- HEAD -->
+<style type="text/css">
+body	{margin: 8px; background-color:#620807; background-image:url(<!-- WRAPPER_URL -->/background.gif); background-repeat:repeat-x; background-position:top;}
+body, td, li, ol, ul, p	{font-family: tahoma, arial, sans serif; font-size: 11px; color: #000000;}
+
+h1	{margin: 0px; font-size: 14px; color: #ffffff;}
+a	{color:#CC0000}
+a:hover	{color:#FF0000;}
+ 
+.white	{color: #ffffff;}
+
+.stroke		{background-color: #956A6A;}
+.outline	{border-color: #333333; background-color: #f0f0f0; border-style: solid; border-width: 1px;}
+.gradient	{background-image:url(<!-- WRAPPER_URL -->/gradient.gif); background-repeat:repeat-x; background-position:top;}
+.dark_bg	{background-color: #333333;}
+.cat_image	{border-style: solid; border-color: #CC0000; border-width: 1px;}
+.cats		{font-size: 12px; font-weight: bold; color: #ffffff;}
+.formed		{border-style: solid; border-color: #CC0000; border-width: 1px; font-family:  tahoma, arial, sans-serif; font-size: 11px;}
+.button		{border-style: solid; border-color: #CC0000; background-color: #330000; color: #ffffff; border-width: 1px; font-family:  tahoma, arial, sans-serif; font-size: 9px;}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+	<td align="left"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=300
+HEIGHT=75
+BGCOLOR=200302
+--></a></td>
+	<td align="right" valign="middle"><span class="white"><a href="<!-- ABOUT_URL --->" class="white">About<!-- ELEMENT 
+TYPE=TEXT
+PRETEXT=&nbsp;
+SAVETO=merchant:zoovy:company_name
+FONT=0
+--></a> | <a href="<!-- LOGIN_URL --->" class="white">Login</a> | <a href="<!-- CONTACT_URL --->" class="white">Contact</a> | <a href="<!-- CART_URL --->" class="white">Cart</a>&nbsp;</span></td>
+</tr></table>
+<table bgcolor="#FFFFFF" cellspacing="4" cellpadding="0" border="0" width="100%"><tr>
+	<td colspan="2"><table width="100%" cellspacing="0" cellpadding="3"><tr>
+		<td class="dark_bg" height="18"><h1>&nbsp;<!-- TITLE --></h1></td>
+	</tr></table></td>
+</tr><tr>
+	<td valign="top" width="5%"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+		<td class="gradient" align="center"><table cellspacing="3" cellpadding="0" border="0" width="90%"><tr>
+			<td align="left"><span class="white">Subtotal:</span></td>
+			<td align="right"><span class="white"><!-- MINICART
+SUBTOTALONLY=1
+--></span></td>
+	</tr><tr>
+			<td align="left"><span class="white">Shipping:</span></td>
+			<td align="right"><span class="white"><!-- MINICART
+SHIPPINGONLY=1
+--></span></td>
+	</tr><tr><td colspan="2" class="stroke" height="1"></td></tr><tr>
+			<td align="left"><span class="white">Total:</span></td>
+			<td align="right"><span class="white"><!-- MINICART
+TOTALONLY=1
+--></span></td>
+	</tr></table></td>
+	</tr><tr><td height="4"></td></tr><tr>
+		<td class="dark_bg" align="left"><table width="100%" cellpadding="0" cellspacing="4">
+<!-- ELEMENT
+TYPE=SUBCAT
+MODE=LIST
+SRC=.
+FORCECOLUMNS=1
+<HTML>=
+&lt;!-- ROW --&gt;
+<tr>
+&lt;!-- CATEGORY --&gt;
+
+<td style="background-color:#333333; background-image:url(%image_url%/W40-H40-Bffffff/%cat_thumb%.jpg); background-repeat:no-repeat; background-position:top;" valign="top"><a href="%cat_url%"><img src="%wrapper_url%/unsquare.gif" height="40" width="40" alt="%cat_pretty%" border="0"></a></td>
+<td><a href="%cat_url%" class="cats">%cat_pretty%</a></td>
+&lt;!-- /CATEGORY --&gt;
+</tr>
+&lt;!-- /ROW --&gt;
+</HTML>=
+-->
+	<tr>
+			<td width="2%"></td><td width="98%"></td>
+		</tr></table><br><!-- SIDEBAR --><br><img src="<!-- GRAPHICS_URL -->/blank.gif" height="1" width="160"></td>
+	</tr><tr><td height="4"></td></tr><tr>
+		<td class="gradient" align="center" height="60"><table cellspacing="2" cellpadding="2"><tr><td colspan="2" align="left"><strong><span class="white">Product Search</span></strong></td>
+		</tr><form action="<!-- RESULTS_URL -->" method="get"><input type="hidden" name="catalog" value=""><tr>
+			<td><input type="text" name="keywords" value="" size="16" class="formed"></td>
+			<td><input type="submit" value="Search" class="button"></td>
+		</tr></form>
+</table></td>
+	</tr></table></td>
+	<td valign="top" width="95%"><table width="100%" cellspacing="0" cellpadding="3" ><tr>
+		<td class="outline" height="15">&nbsp;<!-- BREADCRUMB
+FORMAT=<a href="%URL%">%MESSAGE%</a>
+DIVIDER=&nbsp;&#187;&nbsp;
+-->&nbsp;</td>
+	</tr></table><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+		<td style="padding-top:4px; padding-bottom:4px;" align="left"><!-- BODY --></td>
+	</tr></table>
+	<table width="100%" cellspacing="0" cellpadding="3" ><tr>
+		<td class="outline" height="15">&nbsp;<a href="<!-- HOME_URL -->">Home</a>&nbsp;|&nbsp;<a href="<!-- SEARCH_URL -->">Advanced Search</a>&nbsp;|&nbsp;<a href="<!-- ABOUT_URL -->">About Us</a>&nbsp;|&nbsp;<a href="<!-- LOGIN_URL -->">My Account</a>&nbsp;|&nbsp;<a href="<!-- CONTACT_URL -->">Contact</a>&nbsp;|&nbsp;<a href="<!-- SUBSCRIBE_URL -->">Mailing list</a>&nbsp;|&nbsp;<a href="<!-- GALLERY_URL -->">Gallery</a>&nbsp;|&nbsp;<a href="<!-- CART_URL -->">Cart</a>&nbsp;|&nbsp;<a href="<!-- CHECKOUT_URL -->">Checkout</a></td>
+	</tr></table><!-- FOOTER
+TRANSPARENT=TRUE
+--></td>
+</tr></table>
+
+</body>
+</html>

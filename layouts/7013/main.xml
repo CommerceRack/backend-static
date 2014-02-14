@@ -1,0 +1,104 @@
+<TEMPLATE ID="7013" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNFL" CREATOR="JT" IMAGES="1" CREATED="00000000" CLASSIFICATION="BOOKS" PROPERTIES="1" SUBTYPE="P" SERIES="2003" FORMAT="LAYOUT" SHORT="Contains 1 100x100 images on the top with the default description below." TYPE="CONFIG" TITLE="1 Image at the top" RELEASED="20030109"><SUMMARY><![CDATA[
+Authors Name
+Book Title
+Default Description (shared)
+Format
+IMAGE1 (100x100)
+Number of Pages in the book
+Publisher/Publishing House
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKNFM" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+<table cellspacing=4 cellpadding=0 border=0 width=550>
+	<tr>
+		<td valign="top" width=100 align="center">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="100" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="100" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKNFN" TYPE="OUTPUT"><HTML><![CDATA[</td>
+		<td valign="top" align="left" width=450>
+		<table cellspacing=2 cellpadding=0 border=0>
+			<tr>
+				<td align="right" valign="top">Title:</td>
+				<td align="left" valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="TITLE" HELP="This is the books name that will appear on your website." FONTMODE="DISABLE" DATA="product:zoovy:prod_name" PROMPT="Book Title" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNFO" TYPE="OUTPUT"><HTML><![CDATA[</td>
+			</tr><tr>
+				<td width=120 align="right" valign="top">Author:</td>
+				<td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="AUTHOR" HELP="This is the authors name that will appear on your website." DATA="product:zoovy:prod_book_author" PROMPT="Authors Name" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNFP" TYPE="OUTPUT"><HTML><![CDATA[</td>
+			</tr><tr>
+				<td align="right" valign="top">Format:</td>
+				<td align="left" valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="FORMAT" HELP="This is the product format that will appear on your website - hardcover, paperback, etc." DATA="product:zoovy:prod_book_format" PROMPT="Format" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNFQ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+			</tr><tr>
+				<td align="right" valign="top">Publisher:</td>
+				<td align="left" valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PUBLISHER" HELP="This is the product Publisher or Publishing House that will appear on your website." DATA="product:zoovy:prod_book_publisher" PROMPT="Publisher/Publishing House" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNFR" TYPE="OUTPUT"><HTML><![CDATA[</td>
+			</tr><tr>
+				<td align="right" valign="top">Pages:</td>
+				<td align="left" valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PAGES" HELP="This is the products number of pages that will appear on your website." DATA="product:zoovy:prod_book_pages" PROMPT="Number of Pages in the book" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNFS" TYPE="OUTPUT"><HTML><![CDATA[</td>
+			</tr><tr>
+				<td align="right" valign="top">List Price:</td>
+				<td align="left" valign="top"><p style="text-decoration: line-through;">$
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="MSRP" ERROR="Not Set!" DATA="product:zoovy:prod_msrp" FORMAT="PLAINPRICE" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNFT" TYPE="OUTPUT"><HTML><![CDATA[</p></td>
+			</tr><tr>
+				<td align="right" valign="top">Your Price:</td>
+				<td align="left" valign="top">$
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FONTMODE="DISABLE" FORMAT="PLAINPRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKNFU" TYPE="OUTPUT"><HTML><![CDATA[</td>
+			</tr><tr>
+				<td align="right" valign="top">You Save:</td>
+				<td align="left" valign="top"></td>
+			</tr>
+		</table>
+		</td>
+	</tr><tr>
+		<td colspan=2><p>Synopsis:<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNFV" TYPE="OUTPUT"><HTML><![CDATA[		
+		</p></td>
+	</tr><tr>
+		<td colspan=2>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKNFW" TYPE="OUTPUT"><HTML><![CDATA[</td></tr>
+</table>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,18 @@
+# API: adminBatchJobParametersList
+
+
+## ACCESS REQUIREMENTS: ##
+[[JOB|CONCEPT_job]] - LIST
+
+
+
+
+## INPUT PARAMETERS: ##
+  * BATCH_EXEC: 
+
+## OUTPUT PARAMETERS: ##
+  * @PARAMETERS: 
+[
+{ UUID:"", TITLE:"", BATCH_EXEC:"", LASTRUN_TS:"", LASTJOB_ID:"", PRIVATE:1  }
+]
+

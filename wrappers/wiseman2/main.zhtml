@@ -1,0 +1,82 @@
+<!-- CONFIG
+THEME=l2_corporatered
+SITEBUTTONS=zing
+-->
+<head>
+<style rel="STYLESHEET" type="text/css">
+body	{background-color: #DFDFB9; font-family: verdana; font-size: 9px}
+form    {display: inline;}
+a        {text-decoration: none; color: #000000}
+a:hover    {text-decoration: underline; color: #666666;}
+.title	{font-family: verdana; font-size: 13px; color: #666666; font-weight: bold;}
+.menu	{font-family: verdana; font-size: 11px;}
+.cats	{font-family: verdana; font-size: 12px; color: #FFFFFF;}
+.dots	{background-image: url(<!-- WRAPPER_URL -->/dot.gif);}
+td.foo	{font-family: verdana; font-size: 14px; font-weight: bold; background-color: #660000;}
+td.goo	{background-color: #FFFFFF;}
+</style>
+<!-- HEAD -->
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td valign="top" height=65 class="hoo" width=425><div class="menu">
+<a href="<!--HOME_URL-->">Home</a>&nbsp;&nbsp;&nbsp;
+<a href="<!--CART_URL-->">Cart</a>&nbsp;&nbsp;&nbsp;
+<a href="<!--ABOUT_URL-->">About Us</a>&nbsp;&nbsp;&nbsp;
+<a href="<!--CONTACT_URL-->">Contact Us</a><br>
+<img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=425></td>
+		<td width="99%"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+		<td align="right"><a href="<!--HOME_URL-->"><!-- LOGO
+WIDTH=300
+HEIGHT=65
+--></a>
+</td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td class="dots" height=3 colspan=3><img src="<!-- GRAPHICS_URL -->/blank.gif" height=3 width=1></td>
+	</tr><tr>
+		<td colspan=3><img src="<!-- GRAPHICS_URL -->/blank.gif" height=2 width=1></td>
+	</tr><tr>
+		<td class="foo" height=29 nowrap><div class="cats">&nbsp;
+		<!-- MENU
+FORMAT=<a href="%URL%" target="%TARGET%"><span class="cats">%MESSAGE%</span></a>%BREAK%
+DIVIDER=|%BREAK%
+AFTER=</div>
+ONLYHOME=0
+NOHOME=1
+--></td>
+		<td class="foo" width=99%><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+		<td class="foo" nowrap align="right"><form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" size=12 name="keywords" value="">
+<input type="image" border=0 name="NAME" src="<!-- WRAPPER_URL -->/search.gif">
+</form>&nbsp;</td>
+	</tr><tr>
+		<td colspan=3><img src="<!-- GRAPHICS_URL -->/blank.gif" height=4 width=1></td>
+	</tr><tr>
+		<td colspan="3" class="goo" height=300 valign="top" align="center">
+			<table cellspacing=0 cellpadding=5 border=0 width=100%>
+				<tr>
+					<td><span class="title"><!-- TITLE --></span></td>
+				</tr><tr>
+					<td class="body"><!-- BODY --></td>
+				</tr>
+			</table>
+		</td>
+	</tr><tr>
+		<td colspan=3><img src="<!-- GRAPHICS_URL -->/blank.gif" height=2 width=1></td>
+	</tr><tr>
+		<td class="dots" height=3 colspan=3><img src="<!-- GRAPHICS_URL -->/blank.gif" height=3 width=1></td>
+	</tr><tr>
+		<td colspan=3><!-- FOOTER
+		TRANSPARENT=TRUE
+		--></td>
+	</tr>
+</table>
+
+
+</body>
+</html> 

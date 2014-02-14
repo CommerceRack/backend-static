@@ -1,0 +1,473 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "PhotoStudio",
+      "subcat" : "photostudio",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:PhotoStudio",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXHZ",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoStudio."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "hanging-bars",
+            "v" : "hanging-bars"
+         },
+         {
+            "p" : "pages-general",
+            "v" : "pages-general"
+         },
+         {
+            "p" : "negative-and-unmounted-slides-pages",
+            "v" : "negative-and-unmounted-slides-pages"
+         },
+         {
+            "p" : "mounted-slides-pages",
+            "v" : "mounted-slides-pages"
+         },
+         {
+            "p" : "prints-pages",
+            "v" : "prints-pages"
+         },
+         {
+            "p" : "other-media-pages",
+            "v" : "other-media-pages"
+         },
+         {
+            "p" : "sleeves-general",
+            "v" : "sleeves-general"
+         },
+         {
+            "p" : "negative-and-unmounted-slides-sleeves",
+            "v" : "negative-and-unmounted-slides-sleeves"
+         },
+         {
+            "p" : "mounted-slides-sleeves",
+            "v" : "mounted-slides-sleeves"
+         },
+         {
+            "p" : "prints-sleeves",
+            "v" : "prints-sleeves"
+         },
+         {
+            "p" : "other-media-sleeves",
+            "v" : "other-media-sleeves"
+         },
+         {
+            "p" : "storage-binders-general",
+            "v" : "storage-binders-general"
+         },
+         {
+            "p" : "storage-binders-with-rings",
+            "v" : "storage-binders-with-rings"
+         },
+         {
+            "p" : "storage-binders-without-rings",
+            "v" : "storage-binders-without-rings"
+         },
+         {
+            "p" : "negatives-boxes",
+            "v" : "negatives-boxes"
+         },
+         {
+            "p" : "slides-boxes",
+            "v" : "slides-boxes"
+         },
+         {
+            "p" : "prints-boxes",
+            "v" : "prints-boxes"
+         },
+         {
+            "p" : "other-boxes",
+            "v" : "other-boxes"
+         },
+         {
+            "p" : "portfolios",
+            "v" : "portfolios"
+         },
+         {
+            "p" : "presentation-boards",
+            "v" : "presentation-boards"
+         },
+         {
+            "p" : "glassine-envelopes",
+            "v" : "glassine-envelopes"
+         },
+         {
+            "p" : "kraft-envelopes",
+            "v" : "kraft-envelopes"
+         },
+         {
+            "p" : "mailers",
+            "v" : "mailers"
+         },
+         {
+            "p" : "professional-photo-albums",
+            "v" : "professional-photo-albums"
+         },
+         {
+            "p" : "other-professional-albums",
+            "v" : "other-professional-albums"
+         },
+         {
+            "p" : "sectional-frames",
+            "v" : "sectional-frames"
+         },
+         {
+            "p" : "digital-frames",
+            "v" : "digital-frames"
+         },
+         {
+            "p" : "other-professional-frames",
+            "v" : "other-professional-frames"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ps_storageandpresentationmatls",
+      "title" : "Photo Studio Storage And Presentation Materials",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoStudio.StorageAndPresentationMaterials",
+      "list" : "LIST_CAMERA_PHOTOSTUDIO_STORAGEANDPRESENTATIONMATERIALS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "laminating-machines",
+            "v" : "laminating-machines"
+         },
+         {
+            "p" : "mounting-press",
+            "v" : "mounting-press"
+         },
+         {
+            "p" : "mat-boards-general",
+            "v" : "mat-boards-general"
+         },
+         {
+            "p" : "pre-cut-mat-boards",
+            "v" : "pre-cut-mat-boards"
+         },
+         {
+            "p" : "heat-activated-boards",
+            "v" : "heat-activated-boards"
+         },
+         {
+            "p" : "pressure-sensitive-boards",
+            "v" : "pressure-sensitive-boards"
+         },
+         {
+            "p" : "slide-mounters",
+            "v" : "slide-mounters"
+         },
+         {
+            "p" : "copystands-general",
+            "v" : "copystands-general"
+         },
+         {
+            "p" : "tabletop-copystands",
+            "v" : "tabletop-copystands"
+         },
+         {
+            "p" : "instant-copystands",
+            "v" : "instant-copystands"
+         },
+         {
+            "p" : "other-copystands",
+            "v" : "other-copystands"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ps_studiosupplies",
+      "title" : "Photo Studio Studio Supplies",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoStudio.StudioSupplies",
+      "list" : "LIST_CAMERA_PHOTOSTUDIO_STUDIOSUPPLIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "ceiling-to-floor",
+            "v" : "ceiling-to-floor"
+         },
+         {
+            "p" : "collapsible-discs",
+            "v" : "collapsible-discs"
+         },
+         {
+            "p" : "free-standing",
+            "v" : "free-standing"
+         },
+         {
+            "p" : "graduated",
+            "v" : "graduated"
+         },
+         {
+            "p" : "wall-mounted",
+            "v" : "wall-mounted"
+         },
+         {
+            "p" : "other-background-styles",
+            "v" : "other-background-styles"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ps_photobackgrounds",
+      "title" : "Photo Studio Photo Backgrounds",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoStudio.PhotoBackgrounds",
+      "list" : "LIST_CAMERA_PHOTOSTUDIO_PHOTOBACKGROUNDS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "posing-props",
+            "v" : "posing-props"
+         },
+         {
+            "p" : "shooting-tables",
+            "v" : "shooting-tables"
+         },
+         {
+            "p" : "shooting-tents",
+            "v" : "shooting-tents"
+         },
+         {
+            "p" : "studio-accessories",
+            "v" : "studio-accessories"
+         },
+         {
+            "p" : "support-equipment",
+            "v" : "support-equipment"
+         },
+         {
+            "p" : "other-background-accessories",
+            "v" : "other-background-accessories"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ps_photobackgroundaccs",
+      "title" : "Photo Studio Photo Background Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoStudio.PhotoBackgroundAccessories",
+      "list" : "LIST_CAMERA_PHOTOSTUDIO_PHOTOBACKGROUNDACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "canvas",
+            "v" : "canvas"
+         },
+         {
+            "p" : "muslins",
+            "v" : "muslins"
+         },
+         {
+            "p" : "seamless-paper",
+            "v" : "seamless-paper"
+         },
+         {
+            "p" : "velour",
+            "v" : "velour"
+         },
+         {
+            "p" : "other-background-fabrics",
+            "v" : "other-background-fabrics"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ps_photobackgroundfabrics",
+      "title" : "Photo Studio Photo Background Fabrics",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoStudio.PhotoBackgroundFabrics",
+      "list" : "LIST_CAMERA_PHOTOSTUDIO_PHOTOBACKGROUNDFABRICS"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "mounting-corners",
+            "v" : "mounting-corners"
+         },
+         {
+            "p" : "mounting-squares",
+            "v" : "mounting-squares"
+         },
+         {
+            "p" : "photographic-tapes",
+            "v" : "photographic-tapes"
+         },
+         {
+            "p" : "wire",
+            "v" : "wire"
+         },
+         {
+            "p" : "picture-hangers",
+            "v" : "picture-hangers"
+         },
+         {
+            "p" : "mats",
+            "v" : "mats"
+         },
+         {
+            "p" : "mat-cutters",
+            "v" : "mat-cutters"
+         },
+         {
+            "p" : "trimmers",
+            "v" : "trimmers"
+         },
+         {
+            "p" : "replacement-blades",
+            "v" : "replacement-blades"
+         },
+         {
+            "p" : "other-framing-accessories",
+            "v" : "other-framing-accessories"
+         },
+         {
+            "p" : "mounts-general",
+            "v" : "mounts-general"
+         },
+         {
+            "p" : "slide-mounts",
+            "v" : "slide-mounts"
+         },
+         {
+            "p" : "other-mounts",
+            "v" : "other-mounts"
+         },
+         {
+            "p" : "dry-mount-press-accessories",
+            "v" : "dry-mount-press-accessories"
+         },
+         {
+            "p" : "mounting-adhesives-general",
+            "v" : "mounting-adhesives-general"
+         },
+         {
+            "p" : "dry-mount-tissue",
+            "v" : "dry-mount-tissue"
+         },
+         {
+            "p" : "laminating-film",
+            "v" : "laminating-film"
+         },
+         {
+            "p" : "print-finishing-lacquers",
+            "v" : "print-finishing-lacquers"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ps_photostudioaccs",
+      "title" : "Photo Studio Photo Studio Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.PhotoStudio.PhotoStudioAccessories",
+      "list" : "LIST_CAMERA_PHOTOSTUDIO_PHOTOSTUDIOACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

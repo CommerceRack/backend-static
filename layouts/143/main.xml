@@ -1,0 +1,85 @@
+<TEMPLATE ID="143" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNGH" CREATED="00000000" PROPERTIES="1" FORMAT="LAYOUT" TYPE="CONFIG"></ELEMENT>
+<ELEMENT ID="CPUKNGI" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+
+// get the true offset of anything on NS4, IE4/5 & NS6, even if it's in a table!
+function getAbsX(elt) { return (elt.x) ? elt.x : getAbsPos(elt,"Left"); }
+function getAbsY(elt) { return (elt.y) ? elt.y : getAbsPos(elt,"Top"); }
+function getAbsPos(elt,which) {
+ iPos = 0;
+ while (elt != null) {
+  iPos += elt["offset" + which];
+  elt = elt.offsetParent;
+ }
+ return iPos;
+}
+
+</script>
+
+<img id="tabPos" name="tabPos" src="//static.zoovy.com/graphics/general/blank.gif"><br><br>
+<script>
+document.write("<div id=\"contents\" style=\"position: absolute; height: 100%; left: "+getAbsX(tabPos)+"px; width: 530px; z-index:1; visibility: visible; overflow:visible; top: "+getAbsY(tabPos)+"\">");
+</script>
+<table cellspacing=0 cellpadding=2 border=0 width=100%>
+<tr>
+	<td class="togon" width=50%>&nbsp;<a href="javascript:; " onClick="MM_showHideLayers('contents','','show','features','','hide')" class="togfonton"><strong>Description</a></strong></td>
+	<td class="togoff" width=50%>&nbsp;<a href="javascript:; " onClick="MM_showHideLayers('contents','','hide','features','','show')" class="togfontoff"><strong>Detailed Description</a></strong></td>
+</tr>
+</table>
+<table cellspacing=0 cellpadding=2 border=1 width=100% bordercolor="#CCCCCC">
+<tr>
+	<td bgcolor="#FFFFFF">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNGJ" TYPE="OUTPUT"><HTML><![CDATA[ </td>
+</tr>
+</table>
+</div>
+<script>
+document.write("<div id=\"features\" style=\"position: absolute; left: "+getAbsX(tabPos)+"px; width: 530px; z-index:2; visibility: hidden; overflow:visible; height: 100%; top: "+getAbsY(tabPos)+"\">");
+</script>
+<table cellspacing=0 cellpadding=2 border=0 width=100%>
+<tr>
+	<td class="togoff" width=50%>&nbsp;<a href="javascript:;" onClick="MM_showHideLayers('contents','','show','features','','hide')" class="togfontoff" class="togfontoff"><strong>Description</a></strong></td>
+	<td class="togon" width=50%>&nbsp;<a href="javascript:;" onClick="MM_showHideLayers('contents','','hide','features','','show')" class="togfonton"><strong>Detailed Description</a></strong></td>
+</tr>
+</table>
+<table cellspacing=0 cellpadding=2 border=1 width=100% bordercolor="#CCCCCC">
+<tr>
+	<td bgcolor="#FFFFFF">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DETAIL" HELP="This is the detailed product description that will appear on your website." DATA="product:zoovy:prod_detail" PROMPT="Detailed Product Description" DEFAULT="More information about the product" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKNGK" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+</table>
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

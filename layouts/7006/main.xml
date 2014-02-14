@@ -1,0 +1,102 @@
+<TEMPLATE ID="7006" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMUX" CREATOR="JT" CREATED="00000000" CLASSIFICATION="BOOKS" IMAGES="2" PROPERTIES="1" SUBTYPE="P" SERIES="2003" FORMAT="LAYOUT" SHORT="Contains 2 200x200 images on the top with the default description below." TYPE="CONFIG" TITLE="2 Images on Top" RELEASED="20030109"><SUMMARY><![CDATA[
+Authors Name
+Default Description (shared)
+Format
+IMAGE1 (200x200)
+IMAGE2 (200x200)
+ISBN
+Number of Pages in the book
+Publisher/Publishing House
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMUY" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+<center>
+<table width="540" border='0' cellspacing='5' cellpadding='0'>
+	<tr>
+		<td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="200" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image1 200 x 200" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMUZ" TYPE="OUTPUT"><HTML><![CDATA[
+</td>
+<td align="right">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="200" HELP="Please enter the second picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image2 200 x 200" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMVA" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+	</tr><tr>
+		<td colspan=2><p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVB" TYPE="OUTPUT"><HTML><![CDATA[</p></td>
+	</tr><tr>
+		<td><!-- Specific Code Here --><table cellspacing=0 cellpadding=1 border=1 bordercolor="#CCCCCC" width=100%>
+	<tr>
+		<td align="left" valign="top">ISBN</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ISBN" HELP="This is the product isbn that will appear on your website." DATA="product:zoovy:isbn" PROMPT="ISBN" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVC" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Format</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="FORMAT" HELP="This is the product format that will appear on your website - hardcover, paperback, etc." DATA="product:zoovy:prod_book_format" PROMPT="Format" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVD" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Author</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="AUTHOR" HELP="This is the authors name that will appear on your website." DATA="product:zoovy:prod_book_author" PROMPT="Authors Name" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVE" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Publisher</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PUBLISHER" HELP="This is the product Publisher or Publishing House that will appear on your website." DATA="product:zoovy:prod_book_publisher" PROMPT="Publisher/Publishing House" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVF" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr><tr>
+		<td align="left" valign="top">Pages</td>
+		<td align="left" valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PAGES" HELP="This is the products number of pages that will appear on your website." DATA="product:zoovy:prod_book_pages" PROMPT="Number of Pages in the book" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMVG" TYPE="OUTPUT"><HTML><![CDATA[</td>
+	</tr>
+</table></td>
+		<td><p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKMVH" TYPE="OUTPUT"><HTML><![CDATA[
+
+<br>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKMVI" TYPE="OUTPUT"><HTML><![CDATA[</p></td>
+	</tr>
+</table>
+</center>
+
+
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,230 @@
+$VAR1 = bless( {
+                 '_DIGEST' => '6ZBoEfPX/rFQp+BkIvhDSQ',
+                 '_DIVS' => [],
+                 '_ID' => '3008',
+                 '_ELEMENTS' => [
+                                  {
+                                    'ID' => 'CQCSTLV',
+                                    'FORMAT' => 'LAYOUT',
+                                    'CREATOR' => 'STAFF',
+                                    'SHORT' => 'This layout features a two column image based cart, text block, a product list header and a product list.',
+                                    'TYPE' => 'CONFIG',
+                                    'EXPORT' => '0',
+                                    'CREATED' => '00000000',
+                                    'TITLE' => 'Simple Image Cart',
+                                    'IMAGES' => '0',
+                                    'PROPERTIES' => '1',
+                                    'SERIES' => '2006',
+                                    'SUBTYPE' => 'T'
+                                  },
+                                  {
+                                    'ID' => 'COUPON_CHECKBOX',
+                                    'TRUE' => 'On',
+                                    'PROMPT' => 'Display coupon entry form in cart',
+                                    'ON' => '1',
+                                    'TYPE' => 'CHECKBOX',
+                                    'FALSE' => 'Off',
+                                    'UNDEF' => '0',
+                                    'DATA' => 'profile:zoovy:enable_promocode',
+                                    'OUTPUTSKIP' => '4096',
+                                    'OFF' => '0'
+                                  },
+                                  {
+                                    'ID' => 'CARTHEAD',
+                                    'PROMPT' => 'Cart Header',
+                                    'LENGTH' => '50',
+                                    'DEFAULT' => 'Cart Contents:',
+                                    'TYPE' => 'TEXTBOX',
+                                    'POSTTEXT' => '</div>',
+                                    'HELP' => 'This header will appear right above the cart.  KEEP is short!',
+                                    'PRETEXT' => '<div style="font-weight:bold; margin-left:4px; font-size:14px;">',
+                                    'DATA' => 'page:cart_header'
+                                  },
+                                  {
+                                    'FORMAT' => 'CUSTOM',
+                                    'ID' => 'IMAGECART',
+                                    'HTML' => '
+
+<style type="text/css">
+.z_textbox	{text-align:center; font-size:11px;}
+.btn_margin	{margin-bottom:3px;}
+</style>
+<table cellspacing="0" cellpadding="0" width="100%"><% load($FORM);  default("");  print(); %>
+<tr>
+	<td style="padding-left:3px;" width="95%" valign="top">
+	<table cellspacing="0" cellpadding="3" width="100%">
+<!-- ROW -->
+	<tr>
+<!-- PRODUCT -->
+		<td <% load($bg);  default("");  print(); %> class="dot_bottom" width="1%" valign="top"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"70",h=>"70",tag=>"1");  print(); %></td>
+		<td <% load($bg);  default("");  print(); %> class="dot_bottom" width="98%" valign="top">
+<font  style="color:#<% load($fg_spec);  default("");  print(); %>; font-family:<% load($font);  default("");  print(); %>;" size="<% load($size);  default("");  print(); %>">
+<b><% load($prod_name);  default(""); strip(length=>"65",breaks=>"1",html=>"1");  print(); %></b><br>
+price: <% load($PRICE);  default("");  format(money);  print(); %> x <% load($QTY);  default("");  print(); %> = <% load($EXTENDED);  default("");  format(money);  print(); %><br>
+<strong>sku: </strong><% load($SKU_LINK);  default("");  print(); %>
+<% load($POGS);  default("");  print(); %>
+</font>
+		</td>
+		
+<%
+	print("");
+	stop(unless=>$BUYSAFE_ENABLED);
+	print("&lt;td valign=&quot;top&quot;");
+	print($bg);
+	print("&gt;");
+
+	print("<font color=\'#");
+	print($fg_spec);
+	print("\' face=\'");
+	print($font);
+	print("\'size=\'");
+	print($size);
+	print("\'>");	
+	
+	print($BOND_STATUS);
+	print("</font>");
+
+	print("&lt;/td&gt;");
+%>		
+		
+		<td <% load($bg);  default("");  print(); %> class="dot_bottom" NOWRAP width="1%" valign="top" style="height:100%;"><table style="height:100%;"><tr>
+			<td style="height:75%; vertical-align:top;"><font  style="color:#<% load($fg_spec);  default("");  print(); %>; font-family:<% load($font);  default("");  print(); %>;" size="<% load($size);  default("");  print(); %>">quantity:</font><br><% load($QTY_INPUT);  default("");  print(); %></td>
+		</tr>
+		<tr>
+			<td style="vertical-align:bottom;"><% load($REMOVE_LINK);  default("");  print(); %></td>
+		</tr>
+		</table></td>
+<!-- /PRODUCT -->
+	</tr>
+<!-- /ROW -->
+</table>
+	</td>
+	<td valign="top" style="padding-left:3px; padding-right:3px;">
+<div class="btn_margin"><% load($CHECKOUT_BUTTON);  default("");  print(); %></div>
+
+<div class="btn_margin"><% load($UPDATECART_BUTTON);  default("");  print(); %></div>
+<div class="btn_margin"><% load($EMPTYCART_BUTTON);  default("");  print(); %></div>
+<div class="btn_margin"><% load($CONTINUE_BUTTON);  default("");  print(); %></div>
+<div class="btn_margin"><% load($ADDTOSITE_BUTTON);  default("");  print(); %></div>
+<div class="btn_margin"><% load($GOOGLE_BUTTON);  default("");  print(); %></div>
+<div class="btn_margin"><% load($PAYPAL_BUTTON);  default("");  print(); %></div>
+<div class="btn_margin"><% load($AMZPAY_BUTTON);  default("");  print(); %></div>
+	
+	</td>
+</tr>
+</table>
+<table style="border-top:1px solid #<% load($head_bg_spec);  default("");  print(); %>; border-bottom:1px solid #<% load($head_bg_spec);  default("");  print(); %>; margin:3px;" cellspacing="0" cellpadding="2" width="100%">
+<%
+print("");
+/* if enable_promocode is not set to 1, the promotion textbox is not displayed. */
+loadurp("profile:zoovy:enable_promocode");
+stop(unless=>$_);
+	print("
+	<tr>
+		<td class=\'zcolor_light\' align=\'right\' colspan=\'2\' style=\'border:1px solid ");
+	loadurp("CSS::ztable_head.bgcolor"); print();
+	print("; border-top:none;\'>
+<div id=\'zpromocode\'>
+<table cellspacing=\'3\' cellpadding=\'0\'>
+<tr>
+	<td class=\'zcolor_light\'><span class=\'zpromocode_prompt\' style=\'font-size: ");
+	loadurp("CSS::ztable_row.font_size"); print();
+	print("\'>Coupon/Gift Certificate Code: </span></td>
+	<td><input type=\'text\' class=\'zform_textbox\' size=\'8\' name=\'promocode\'></td>
+	<td><input type=\'submit\' class=\'zform_button\' value=\'add\'></td>
+</tr>
+</table>
+</div>
+		</td>
+	</tr>");
+%>
+<tr>
+	<td width="50%"><% load($ZIP_INPUT);  default("");  print(); %><br><% load($DESTINATIONBLURB);  default("");  print(); %></td>
+	<td align="right">
+	<table cellspacing="0" cellpadding="2" width="100%">
+	<tr>
+		<td colspan="2" nowrap align="right" width="95%"><font color="#<% load($head_bg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>">Subtotal:</font></td>
+		<td nowrap align="right" style="padding-left:20px;"><font color="#<% load($head_bg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><% load($SUBTOTAL);  default("");  format(money);  print(); %></font></td>
+	</tr>
+		<% load($SURCHARGE_LINE);  default("");  print(); %>
+		<% load($TAX_LINE);  default("");  print(); %>
+	<tr>
+		<td colspan="2" nowrap align="right"><font color="#<% load($head_bg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><strong>Grand Total: </strong></font></td>
+		<td nowrap align="right" style="padding-left:20px;"><font color="#<% load($head_bg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><strong><% load($GRANDTOTAL);  default("");  format(money);  print(); %></strong></font></td>
+	</tr>
+	</table>
+	</td>
+</tr><% load($ENDFORM);  default("");  print(); %>
+</table>
+	
+<!-- POGS -->
+<div class="z_cartpogs" style="margin-left: 15px;">
+<table class="z_cartpogs" cellpadding=0 cellspacing=2>
+<!-- ROW -->
+<!-- OPTION -->
+<tr>
+	<td><% load($img);  default("");  image(w=>"22",h=>"22",tag=>"1");  stop(unless=>$img);  print(); %></td>
+	<td><font color="#<% load($head_bg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><% load($prompt);  default("");  print(); %>:</font></td>
+	<td><font color="#<% load($head_bg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><% load($value);  default("");  print(); %></font></td>
+</tr>
+<!-- /OPTION -->
+<!-- /ROW -->
+</table>
+</div>
+<!-- /POGS -->
+
+
+<!-- TAX -->
+<tr>
+	<td colspan="2" nowrap align="right"><font color="#<% load($head_bg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>">State Tax(<% load($TAXRATE);  default("");  print(); %>%):</font></td>
+	<td nowrap  align="right" style="padding-left:20px;"><font color="#<% load($head_bg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><% load($TAXTOTAL);  default("");  format(money);  print(); %></font></td>
+</tr>
+<!-- /TAX -->
+<!-- SURCHARGE -->
+<tr>
+	<td colspan="2" nowrap  align="right"><font color="#<% load($head_bg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><% load($SURCHARGE);  default("");  print(); %>:</font></td>
+	<td nowrap align="right" style="padding-left:20px;"><font color="#<% load($head_bg_spec);  default("");  print(); %>" face="<% load($font);  default("");  print(); %>" size="<% load($size);  default("");  print(); %>"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></font></td>
+</tr>
+<!-- /SURCHARGE -->
+
+',
+                                    'PROMPT' => 'Shopping Cart',
+                                    'TYPE' => 'CART',
+                                    'COLS' => '1',
+                                    'TABLECOLS' => '3'
+                                  },
+                                  {
+                                    'ID' => 'BOTTOMTEXT',
+                                    'HELP' => 'This text will appear below the shopping cart',
+                                    'PROMPT' => 'Bottom Text',
+                                    'DEFAULT' => '',
+                                    'DATA' => 'page:bottomtext',
+                                    'TYPE' => 'TEXT'
+                                  },
+                                  {
+                                    'ID' => 'FEATUREDTITLE',
+                                    'PROMPT' => 'Featured Products Title',
+                                    'LENGTH' => '50',
+                                    'DEFAULT' => 'Featured Products',
+                                    'TYPE' => 'TEXTBOX',
+                                    'POSTTEXT' => '</b><br>',
+                                    'HELP' => 'This is the title that appears above the featured products listing',
+                                    'PRETEXT' => '<br><br><b> ',
+                                    'DATA' => 'page:featured'
+                                  },
+                                  {
+                                    'SIZE' => '50000',
+                                    'ID' => 'PRODLIST1',
+                                    'SMARTSOURCE' => 'CHOOSE',
+                                    'PROMPT' => 'Product Listing',
+                                    'DEFAULT' => 'PLAIN,3,1,NONE',
+                                    'TYPE' => 'PRODLIST',
+                                    'HELP' => 'You can add products to your shopping cart page',
+                                    'DATA' => 'page:prodlist'
+                                  }
+                                ],
+                 '_FORMAT' => 'LAYOUT',
+                 '_LISTS' => [],
+                 '_V' => 2,
+                 '_SYSTEM' => 1
+               }, 'TOXML' );

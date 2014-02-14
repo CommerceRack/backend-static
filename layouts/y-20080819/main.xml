@@ -1,0 +1,15 @@
+<TEMPLATE ID="y-20080819" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMPU" FORMAT="LAYOUT" CREATOR="STAFF" TYPE="CONFIG" IMAGES="1" TITLE="Blank Privacy 2 Custom (blank) policy with a 560x100 header." PROPERTIES="1" SUBTYPE="Y" SERIES="2008" RELEASED="20080819"><SUMMARY><![CDATA[Custom Privacy Policy Amendment
+IMAGE (600x150)
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT HEIGHT="150" ID="CXOVZYM" PROMPT="Picture for top of privacy policy (not linked)" WIDTH="600" TYPE="IMAGE" DATA="page:picture"><PRETEXT><![CDATA[<div style='margin-bottom:20px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="POLICY" WIKI="3" PROMPT="Custom Privacy Policy Amendment (wiki only)" TYPE="TEXT" DATA="page:policy"><HELP><![CDATA[Please enter a Privacy Policy Amendment. Hint: you may want to copy from the default privacy policy to get started.]]></HELP>
+</ELEMENT>
+
+</TEMPLATE>

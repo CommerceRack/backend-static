@@ -1,0 +1,40 @@
+--- 
+"@conditions": 
+  - 
+    "{urn:ebay:apis:eBLBaseComponents}Condition": 
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'New'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 1000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'New other (see details)'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 1500
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Manufacturer refurbished'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 2000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Seller refurbished'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 2500
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Used'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 3000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'For parts or not working'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 7000
+    "{urn:ebay:apis:eBLBaseComponents}ConditionHelpURL": 
+      - 'http://pages.ebay.com/help/sell/contextual/condition_1.html'
+"CategoryID": 54968
+"GlobalShippingEnabled": 'false'
+"ItemSpecificsEnabled": 'Enabled'
+"MaxFlatShippingCost": '6.0'

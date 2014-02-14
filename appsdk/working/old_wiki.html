@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+<script type='text/javascript' src='../201205/wiki.js'></script>
+
+
+</head>
+<body>
+
+<h1>Converted HTML</h1>
+<div style='font-size:10px;' id='demo'></div>
+<br />
+
+
+<div class='prodDetail' id='prodDetail' style='display:none;'>
+
+[[model]]
+
+[[Linked phrase]:search=spork]
+
+[[visit a domain]:url=http://www.starwars.com]
+
+[[open a window]:popup=http://www.google.com]
+
+[[email us]:url=mailto:jt@zoovy.com]
+
+[[has dot no slash]:category=.subcategories.subcat_9]
+
+[[no dot no slash]:category=subcategories.subcat_9]
+
+[[has dot has slash]:category=.subcategories.subcat_9/]
+
+[[no dot has slash]:category=subcategories.subcat_9/]
+
+[[product]:product=OUTFIT]
+
+[[product with apostrophe de'lally]:product=OUTFIT]
+
+[[customer phrase]:customer=login]
+
+[[my Account]:customer=]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis felis elit. Nullam tempor adipiscing rutrum. Donec aliquet vulputate felis a pulvinar. Nunc sapien lorem, consequat in dictum et, sagittis ut velit. Vestibulum ornare, felis vitae fermentum pretium, orci turpis euismod diam, nec laoreet purus neque ut justo. 
+
+
+=Header 1=
+
+==header 2==
+Vestibulum aliquet dignissim orci sit amet placerat. Quisque orci elit, porta eu accumsan tincidunt, rutrum varius sem. Phasellus sed lorem libero, quis facilisis neque. 
+=== HEADER3===
+Vivamus tristique venenatis vestibulum. Curabitur feugiat elementum molestie. Fusce egestas leo sed nulla adipiscing commodo. Ut massa enim, rutrum et facilisis sed, mollis vitae justo.
+
+* Nam pulvinar commodo leo eget volutpat.
+*Pellentesque vel eros erat, eget hendrerit leo.
+*Morbi aliquam ante in nulla consectetur porttitor.
+*Ut nunc turpis, accumsan in dapibus eu.
+
+
+Oorper ac enim. Suspendisse tellus neque, vehicula at aliquet at, suscipit in risus. Curabitur consequat est vel mi faucibus eget egestas tortor suscipit. Sed in lectus sem. Curabitur enim urna, fermentum non venenatis id, adipiscing sit amet lacus. Aliquam erat volutpat. In feugiat arcu eget dui molestie vestibulum. 
+
+=wiki table to follow:=
+
+|=Heading A|=Heading B|=Heading C
+|1a|1b|1c
+|2a|2b|2c
+</div>
+
+<script type='text/javascript'>
+    var text = document.getElementById('prodDetail').innerHTML;
+    var demo = document.getElementById('demo');
+
+    var creole = new Parse.Simple.Creole( {
+//        forIE: document.all,
+        interwiki: {
+            WikiCreole: 'http://www.wikicreole.org/wiki/',
+            Wikipedia: 'http://en.wikipedia.org/wiki/'
+        },
+        linkFormat: ''
+    } );
+
+    var render = function() {
+        creole.parse(demo, text);
+    };
+ render();
+
+</script>
+</body>
+</html>

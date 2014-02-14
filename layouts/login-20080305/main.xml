@@ -1,0 +1,153 @@
+<TEMPLATE ID="login-20080305" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CWNLLOI" CREATED="20080501" SUBTYPE="L" EXPORT="0" TYPE="CONFIG" TITLE="Login Page"></ELEMENT>
+<ELEMENT ID="CWJICWZ" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL"></ELEMENT>
+<ELEMENT ID="CWJICXA" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_URL"></ELEMENT>
+<ELEMENT ID="CWJICXB" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL"></ELEMENT>
+<ELEMENT ID="XYZ" TYPE="SPECL"><HTML><![CDATA[
+
+<div id='login-20080305' style='text-align:left;'>
+
+<%
+
+/* NOTE: the login_handler automatically runs on the login.cgis page (with an ID of "LOGIN") 
+in the startup there is no need to call an exec! test */
+
+/* valid modes are: check */
+/*  claim_badlogin - trying to purchase a different claim  */
+/*  claim_purchased - already purchased, login to view order status.  */
+
+print("");
+loadurp("VAR::mode");
+set($mode=>$_);
+goto(nb=>$_,label=>"STEP1");
+set($mode=>"check");
+:STEP1();
+
+
+/* if the user is already logged in, we let them continue */
+
+print("");
+loadurp("FLOW::LOGIN");
+goto(eq=>"",label=>"STEP2");
+format(pretext=>"You are already logged in as: ",posttext=>"<br><br>");
+print($_);
+
+loadurp("VAR::url");
+format(pretext=>"Continue: ");
+print($_);
+:STEP2();
+
+
+/* cheesy backdoor hack for other pages which bounce the user here! */
+print("");
+loadurp("VAR::errmsg");
+format(pretext=>"<div class='zwarn' style='margin-left:2px;'>WARNING: ",posttext=>"</div>");
+print($_);
+
+/* if we got an error from the LOGIN element (only applies on the LOGIN page) */
+print("");
+loadurp("VAR::login_err");
+format(pretext=>"<div class='zwarn' style='margin-left:2px;'>ERROR:",posttext=>"</div>");
+print($_);
+
+load($mode);
+goto(eq=>"claim_badlogin",label=>"MODE_CLAIM_BADLOGIN");
+goto(eq=>"claim_mustlogin",label=>"MODE_CLAIM_MUSTLOGIN");
+goto(eq=>"claim_mustlogin",label=>"MODE_CLAIM_PURCHASED");
+goto(eq=>"check",label=>"MODE_CHECK");
+goto(label=>"MODE_CHECK");
+
+:MODE_CLAIM_BADLOGIN();
+print("That item doesn't belong to the user you are logged in as.  Please <a href='%LOGOUT_URL%'>Log Out</a> to claim it as a new user, or fill in the login information below if it belongs to an existing user.<br>");
+goto(if=>"1",label=>"STEP3");
+
+:MODE_CLAIM_PURCHASED();
+print("Welcome back! You have purchased this time, so for your security you must be logged in to view your orders.<br>");
+goto(if=>"1",label=>"STEP3");
+
+:MODE_CLAIM_MUSTLOGIN();
+print("Welcome back! You have a password on file, so for your security you must be logged in to claim your products.<br>");
+goto(if=>"1",label=>"STEP3");
+
+:MODE_CHECK();
+goto(if=>"1",label=>"STEP3");
+
+:STEP3();
+
+%>
+
+<%
+
+print("");
+
+/* detect if CGI email variable is passed (even if blank) before running validation code */
+loadurp("VAR::email");
+tfu(true=>"1",false=>"1",undef=>"0");
+stop(unless=>$_);
+
+format(pretext=>"<div class='zwarn'>",posttext=>"</div>");
+print($_);
+
+%>
+<!--
+<br>
+If you have forgotten your password, please check the 
+<a href="%FORGOT_URL%?url=<% loadurp("VAR::url"); default(""); format(encode=>"uri"); print(); %>" target="_top">reminder page</a>.<br>
+-->
+
+<div id='login_form' style='margin-bottom:10px;'>
+<form action="%LOGIN_URL%" method="post" target="_top">
+<input type="hidden" name="mode" value="check">
+<input type="hidden" name="url" value="<% loadurp("VAR::url"); default(""); format(encode=>"entity"); print(); %>">
+
+<table border="0" cellpadding="0" cellspacing="2">
+<tr>
+	<td class='ztxt'>Login: </td>
+	<td><input type="textbox" class="ztextbox zform_textbox" length="20" maxlength="60" name="login"
+value="<%
+
+print(""); 
+loadurp("VAR::login"); print(); stop(if=>$_);
+loadurp("FLOW::LAST_LOGIN"); print(); stop(if=>$_);
+
+%>"> <span class='zhint'>(this is usually your email address)</span>
+	</td>
+</tr>
+<tr>
+	<td class='ztxt'>Password: </td>
+	<td><input type="password" class="ztextbox zform_textbox" length="20" maxlength="50" name="password" value=""></td>
+</tr>
+<tr>
+	<td></td>
+	<td><input type="submit" class="zsubmit zform_button" name="submit" value="Login"></td>
+</tr>
+</table>
+</form>
+</div>
+<!-- all the 2px margins are to align with the login form, which has a cellspacing of 2 -->
+<div id='password_recovery_form' style='margin-bottom:10px; margin-left:2px;'>
+
+<div class='ztitle2'>Password Recovery</div>
+
+<form action="%FORGOT_URL%" method="post" target="_self">
+<input type="hidden" name="verb" value="question">
+<input type="hidden" name="url" value="<% loadurp("VAR::url"); default(""); format(encode=>"uri"); print(); %>">
+
+<div class='ztxt'>Login : <input type="text" length="30" maxlength="60" name="login" value="" class='zform_textbox'> <input type="submit" name="submit" value="Go" class='zform_button'></div>
+
+<div class='zhint'>(This is usually your email address)</div>
+
+</form>
+
+</div>
+
+
+
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

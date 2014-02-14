@@ -1,0 +1,151 @@
+<TEMPLATE ID="h-20071025" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="PAGE_CSPDWSN" CREATOR="Zoovy: JT" V="3" CREATED="20071025" SUBTYPE="H" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="5 Banners, product lists and text"><SUMMARY><![CDATA[This layout contains 5 vertical banners at the top, followed by a six item product list and a 3 item product list, each with a customizable header.  There is a text block at the bottom of the page.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="UIONLYINSTRUCTIONS" TYPE="HIDDEN" OUTPUTSKIP="4096"><DEFAULT><![CDATA[
+<p><b>Multiple Product Lists:</b><br>
+For instructions on how to select different product lists for each of the list elements, visit: 
+<ul  style='margin:0 10px;'><a href="http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361" target="webdoc">http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361</a></ul>
+</p>
+
+<p><b>Linking your images:</b><br>
+Next to each image element is a textbox for a corresponding 'link'. Use this to paste in the url of where you want the banner to link when clicked. Instructions on the proper format for linking can be found here:
+<ul style='margin:0 10px;'>
+<a href='http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50355' target='_webdoc'>http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50355</a><br>
+<span class='hint'>read section on %CART% and %SESSION% variables</span></ul>
+</p>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="PAGE_BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Link for banner 1" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="260" ID="PAGE_BANNER1" MINIMAL="0" EDITOR="INLINE" DATA="page:banner1" SUB="PAGE_BANNER1" WIDTH="119" PROMPT="Banner 1" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PAGE_BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" PROMPT="Link for banner 2" SUB="PAGE_BANNER2_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="260" ID="PAGE_BANNER2" MINIMAL="0" EDITOR="INLINE" DATA="page:banner2" SUB="PAGE_BANNER2" WIDTH="119" PROMPT="Banner 2" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PAGE_BANNER3_LINK" EDITOR="INLINE" DATA="page:banner3_link" PROMPT="Link for banner 3" SUB="PAGE_BANNER3_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="260" ID="PAGE_BANNER3" MINIMAL="0" EDITOR="INLINE" DATA="page:banner3" SUB="PAGE_BANNER3" WIDTH="119" PROMPT="Banner 3" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER3_LINK%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PAGE_BANNER4_LINK" EDITOR="INLINE" DATA="page:banner4_link" PROMPT="Link for banner 4" SUB="PAGE_BANNER4_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="260" ID="PAGE_BANNER4" MINIMAL="0" EDITOR="INLINE" DATA="page:banner4" SUB="PAGE_BANNER4" WIDTH="119" PROMPT="Banner 4" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER4_LINK%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PAGE_BANNER5_LINK" EDITOR="INLINE" DATA="page:banner5_link" PROMPT="Link for banner 5" SUB="PAGE_BANNER5_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="260" ID="PAGE_BANNER5" MINIMAL="0" EDITOR="INLINE" DATA="page:banner5" SUB="PAGE_BANNER5" WIDTH="119" PROMPT="Banner 5" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER5_LINK%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST1_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List 1 Header" DEFAULT="Best Sellers" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT SIZE="5000" ID="PAGE_PRODLIST1" MAX="6" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 1" SUB="PAGE_PRODLIST1" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<div  id='zprodlist1'>
+<div id='zprodlist1_header' class='zcolor'>
+	<div style='padding:3px 8px; text-align:left;' class='zprodlist1_header'><% loadurp("page:prodlist1_header"); default("Featured Items"); print(); %></div>
+</div>
+<div id='zprodlist1_content' class='zprodlist1_content'>
+<table border='0' cellpadding='0' cellspacing='5' width='100%'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td class='ztable_row no_underline' align='center' valign='top' width='33%'>
+	<div style='width:127px;'>
+	<div style='margin-bottom:3px;' class='zborder'><a href="<% print($PROD_URL); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"125",h=>"125",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a></div>
+	</div>
+
+	<div style='text-transform:capitalize;'><a href="<% print($PROD_URL); %>"><% load($zoovy:prod_name); strip(length=>"50"); format(convert=>"lowercase"); default(""); print(); %></a></div>
+	
+	<div class='ztable_row_title'><% load($zoovy:base_price); default(""); format(money); print(); %></div>
+	<div style='font-weight:bold;' class='zprodlist_details'><a href='<% print($PROD_URL); %>'>details</a></div>
+	</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td> </td>
+<!-- /BLANK -->
+</tr>
+<tr>
+	<td colspan='5' style='border-top: <% loadurp("CSS::zborder.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>
+</tr>
+<!-- /ROW -->
+</table>
+</div>
+</div>
+
+<!-- /product list -->
+]]></HTML>
+<DIVIDER><![CDATA[<td style='border-left: <% loadurp("CSS::zborder.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>]]></DIVIDER>
+</ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST2_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header" DEFAULT="Featured Items" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT SIZE="5000" ID="PAGE_PRODLIST2" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" SUB="PAGE_PRODLIST2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<div  id='zprodlist2'>
+<div id='zprodlist2_header' class='zcolor_dark'>
+	<div style='padding:3px 8px; text-align:left;' class='zprodlist2_header'><% loadurp("page:prodlist2_header"); default("Featured Items"); print(); %></div>
+</div>
+<div id='zprodlist2_content' class='zprodlist2_content'>
+<table border='0' cellpadding='0' cellspacing='5' width='100%'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+	<td class='ztable_row no_underline' align='center' valign='top' width='33%'>
+	<div style='width:127px;'>
+	<div style='margin-bottom:3px;' class='zborder'><a href="<% print($PROD_URL); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"125",h=>"125",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a></div>
+	</div>
+
+	<div style='text-transform:capitalize;'><a href="<% print($PROD_URL); %>"><% load($zoovy:prod_name); strip(length=>"50"); format(convert=>"lowercase"); default(""); print(); %></a></div>
+	
+	<div class='ztable_row_title'><% load($zoovy:base_price); default(""); format(money); print(); %></div>
+	<div style='font-weight:bold;' class=' zprodlist_details'><a href='<% print($PROD_URL); %>'>details</a></div>
+
+	</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td> </td>
+<!-- /BLANK -->
+</tr>
+<tr>
+	<td colspan='5' style='border-top: <% loadurp("CSS::zborder.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>
+</tr>
+<!-- /ROW -->
+</table>
+</div>
+</div>
+
+<!-- /product list -->
+]]></HTML>
+<DIVIDER><![CDATA[<td style='border-left: <% loadurp("CSS::zborder.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>]]></DIVIDER>
+</ELEMENT>
+<ELEMENT ID="PAGE_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="PAGE_DESC" PROMPT="Text Description" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:3px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="PAGE_CSPDWSO" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+<div align='center'  id='h_20071025'>
+	<div style='width:600px; text-align:left;'>
+
+<table cellspacing='0' cellpadding='0' style='margin-bottom:5px;'>
+<tr>
+	<td width='120' align='left' valign='top'>%PAGE_BANNER1%</td>
+	<td width='120' align='left' valign='top'>%PAGE_BANNER2%</td>
+	<td width='120' align='left' valign='top'>%PAGE_BANNER3%</td>
+	<td width='120' align='left' valign='top'>%PAGE_BANNER4%</td>
+	<td width='120' align='left' valign='top'>%PAGE_BANNER5%</td>
+</tr>
+</table>
+
+<div>%PAGE_PRODLIST1%</div>
+
+<div>%PAGE_PRODLIST2%</div>
+
+<div>%PAGE_DESC%</div>
+
+	</div>
+</div>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

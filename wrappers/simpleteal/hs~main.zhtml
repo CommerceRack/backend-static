@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<!-- HEAD -->
+</head>
+<style>
+p	{font-family: arial, verdana, sans-serif; font-size: 11pt; color: #000000;}
+li	{font-family: arial, verdana, sans-serif; font-size: 10pt; color: #669999;}
+body	{margins=5; font-family: arial, verdana, sans-serif; font-size: 11pt; color: #000000;}
+a	{color: #669999; text-decoration: none;}
+a:hover	{text-decoration: underline;color: #00CCCC;}
+</style>
+<body>
+<!-- LOGO
+WIDTH=750
+HEIGHT=100
+-->
+<table cellspacing=0 cellpadding=0 width=750 border=0>
+	<tr>
+		<td valign="top" width=145>
+<ul>
+	<li><a href="<!--HOME_URL-->">Store Home</a></li>
+	<li><a href="<!--ABOUT_URL-->">About Us</a></li>
+	<li><a href="<!--SEARCH_URL-->">Search</a></li>
+	<li><a href="<!--CART_URL-->">Cart</a></li>
+<!-- MENU
+FORMAT=<li><a href="%URL%" target="%TARGET%">%MESSAGE%</a></li>
+ONLYHOME=0
+NOHOME=1
+-->
+	<li><a href="<!--CONTACT_URL-->">Contact Us</a></li>
+	<li><a href="<!-- CHECKOUT_URL -->">Checkout</a></li>
+	
+	
+</ul>
+		</td>
+		<td width=5><img src="<!-- GRAPHICS_URL -->/blank.gif" width=5 height=1></td>
+		<td valign="top" width=600>
+		<span class="title"><!-- TITLE --></span>
+		<p><!-- BODY --></p></td>
+	</tr>
+</table>
+
+
+</body>
+</html>

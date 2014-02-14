@@ -1,0 +1,25 @@
+<TEMPLATE ID="5000" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMKX" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="S" FORMAT="LAYOUT" SHORT="This search form is available to all users, and performs a simple title search of the database." TYPE="CONFIG" TITLE="Generic Search" RELEASED="20020224"><SUMMARY><![CDATA[Search Box
+Welcome Message
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="WELCOME" HELP="Please enter a Welcome message that will appear on your search" DATA="page:message" PROMPT="Welcome Message" DEFAULT="Use the box below to search the titles of products." TYPE="TEXT"><HELPER><![CDATA[If you have a gold account, consider using the Advanced Site Search to offer your customers even more functionality.]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKMKY" TYPE="OUTPUT"><HTML><![CDATA[<br>
+<table>
+<tr>
+	<td><br>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SEARCH1" PROMPTATTRIB="page:prompt" PROMPT="Search Box" PROMPTDEFAULT="Keywords :  " TYPE="SEARCHBOX" BUTTONATTRIB="page:button" BUTTONDEFAULT=" Go " CATALOGATTRIB="page:catalog"></ELEMENT>
+<ELEMENT ID="CPUKMKZ" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+</table>
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

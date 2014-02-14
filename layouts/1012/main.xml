@@ -1,0 +1,111 @@
+<TEMPLATE ID="1012" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMGM" CREATOR="STAFF" IMAGES="0" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="A big picture, animated from images in your library." TYPE="CONFIG" TITLE="Animated" RELEASED="20020618"><SUMMARY><![CDATA[
+Animated Picture (200 x 400)
+Bold Welcome Message
+Category Description
+Product Listing
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="SUBCAT" DATA="page:subcat" MODE="CHOOSER" TYPE="SUBCAT"></ELEMENT>
+<ELEMENT ID="CPUKMGN" TYPE="OUTPUT"><HTML><![CDATA[
+<script language="JavaScript">
+<!--
+function iList () {
+	this.name = '';
+	this.img = new Array();
+	this.url = new Array();
+	this.zum = new Array();
+	this.pause = new Array();
+	this.last = null;
+	this.current = null;
+	this.defaultpause = 2000;
+	this.buttons = false;
+	this.stopped = false;
+	this.loaded = false;
+	this.startstop = false;
+}
+function iLoad (i) {
+	if (i.loaded == true) { return; }
+	i.loaded = true;
+	iRotate(i);
+}
+function iLink (i) {
+	if (!i.loaded) { return; }
+	if (typeof(i.url[i.current]) != "undefined") { window.location.href = i.url[i.current]; }
+	else if (typeof(i.zum[i.current]) != "undefined") { zoom(i.zum[i.current]); }
+	else if (i.startstop) { iSwitch(i); }
+}
+function iSwitch (i) {
+	if (!i.loaded) { return; }
+	if (i.stopped) { i.stopped = false; iRotate(i); }
+	else { i.stopped = true; }
+}
+function iRotate (i) {
+	if (i.stopped) { return; }
+	iNext(i);
+	var pause = i.defaultpause;
+	if (typeof(i.pause[i.current]) != "undefined") { pause = i.pause[i.current]; }
+	setTimeout("iRotate("+i.name+")",pause);
+}
+function iNext (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Loading..."; }
+	i.current++; if (i.current > i.last) { i.current = 0; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].nextButton.value = "Next Image"; }
+}
+function iPrev (i) {
+	if (!i.loaded||!document['image_'+i.name]) { return; }
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Loading..."; }
+	i.current--; if (i.current < 0) { i.current = i.last; }
+	document['image_'+i.name].src = i.img[i.current].src;
+	if (i.buttons) { document['form_'+i.name].prevButton.value = "Previous Image"; }
+}
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write("<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align=\"center\">\n<img src=\"" + url + "\"><br>\n<form><input type=\"button\" value=\"Close Window\" onClick=\"self.close(true)\"></form>\n</div>\n</body>\n</html>\n");
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+<center>
+<table border='0'>
+	<tr>
+		<td valign="middle" height="200" width="400" align="center">
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="200" ID="DYNIMAGE1" HELP="Animated picture composed of images in your image library." DATA="page:dynimage" WIDTH="400" PROMPT="Animated Picture (200 x 400)" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMGO" TYPE="OUTPUT"><HTML><![CDATA[
+<center>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" valign="middle">
+<b>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="TITLE" LENGTH="75" HELP="Please enter a single line greeting that will appear in bold." DATA="page:title" PROMPT="Bold Welcome Message" DEFAULT="" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CPUKMGP" TYPE="OUTPUT"><HTML><![CDATA[
+</b>
+		</td>
+	</tr>
+</table>
+</center>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CATDESC" HELP="Please enter a description for this category" DATA="page:catdesc" PROMPT="Category Description" DEFAULT="We sell many fine products!  Choose one of them below" TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long, or not helpful visitors probably won't read it.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKMGQ" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to this category, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+
+</TEMPLATE>

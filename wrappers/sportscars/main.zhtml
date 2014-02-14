@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=sportscars
+SITEBUTTONS=l2_watery
+-->
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px;}
+.menu {font-size: 11px; font-family: helvetica, arial}
+.title {font-size: 12px; color: #182F5F; font-weight: bold; font-family: helvetica, arial}
+a	{color: #B9DBF9}
+a:hover	{color: #FF0000}
+</style>
+</head>
+
+<body marginheight=0 marginwidth=0 text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!-- LINK_VISITED_TEXT_COLOR -->">
+
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+	<tr>
+		<td width=146 height=146 valign="top" bgcolor="#24478E"><a href="<!-- HOME_URL -->"><!-- LOGO
+WIDTH=126
+HEIGHT=126
+--></a><br>
+			<table cellspacing=0 cellpadding=5 border=0 width=100%>
+				<tr>
+					<td bgcolor="#182F5F"><span class="menu">
+					<a href="<!-- HOME_URL -->">Home</a><br>
+					<a href="<!-- CART_URL -->">Cart</a><br>
+					<a href="<!-- CONTACT_URL -->">Contact</a><br>
+					<a href="<!-- ABOUT_URL -->">Company Info</a><br>
+					<a href="<!-- LOGIN_URL -->">Customer Login</a><br></span></td>
+				</tr><tr>
+					<td background="<!-- WRAPPER_URL -->/cats_bg.gif" valign="top" height=246><span class="menu"><!-- MENU
+FORMAT=<a href="%URL%" target="%TARGET%">%MESSAGE%</a><br>
+ONLYHOME=0
+NOHOME=1
+--></span></td>
+				</tr>
+			</table>
+		</td>
+		<td width=2 bgcolor="#182F5F"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=2></td>
+		<td width=99% valign="top">
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td align="left" bgcolor="#CFCFCF"><img src="<!-- WRAPPER_URL -->/cars.jpg" width="580" height="68" alt="" border="0"></td>
+				</tr><tr>
+					<td height=1 bgcolor="#182F5F"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=2 width=1></td>
+				</tr><tr>
+					<td>				
+						<table cellspacing=0 cellpadding=5 border=0 width=100%>
+							<tr>
+								<td height=300 valign="top"><p class="title"><!-- TITLE --></p><!-- BODY --></td>
+							</tr><tr>
+								<td><!-- FOOTER --></td>
+							</tr>
+						</table>
+					</td>
+				</tr><tr>
+					<td></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

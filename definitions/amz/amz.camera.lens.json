@@ -1,0 +1,247 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "Lens",
+      "subcat" : "lens",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:Lens",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQWWO",
+      "xmlpath" : "CameraPhoto.ProductType.Lens."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "camcorder",
+            "v" : "camcorder"
+         },
+         {
+            "p" : "digital-camera",
+            "v" : "digital-camera"
+         },
+         {
+            "p" : "35mm-rangefinder",
+            "v" : "35mm-rangefinder"
+         },
+         {
+            "p" : "35mm-slr",
+            "v" : "35mm-slr"
+         },
+         {
+            "p" : "aps",
+            "v" : "aps"
+         },
+         {
+            "p" : "large-format",
+            "v" : "large-format"
+         },
+         {
+            "p" : "medium-format",
+            "v" : "medium-format"
+         },
+         {
+            "p" : "underwater",
+            "v" : "underwater"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lens_cameratype",
+      "title" : "Lens Camera Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Lens.CameraType",
+      "list" : "LIST_CAMERA_LENS_CAMERATYPE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_lens_minfocallength",
+      "type" : "number",
+      "title" : "MinFocalLength",
+      "xmlpath" : "CameraPhoto.ProductType.Lens.MinFocalLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "id" : "amz:prod_cp_lens_maxfocallength",
+      "type" : "number",
+      "title" : "MaxFocalLength",
+      "xmlpath" : "CameraPhoto.ProductType.Lens.MaxFocalLength"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "wide-angle",
+            "v" : "wide-angle"
+         },
+         {
+            "p" : "telephoto",
+            "v" : "telephoto"
+         },
+         {
+            "p" : "zoom",
+            "v" : "zoom"
+         },
+         {
+            "p" : "macro",
+            "v" : "macro"
+         },
+         {
+            "p" : "tilt-shift",
+            "v" : "tilt-shift"
+         },
+         {
+            "p" : "fisheye",
+            "v" : "fisheye"
+         },
+         {
+            "p" : "teleconverter",
+            "v" : "teleconverter"
+         },
+         {
+            "p" : "normal",
+            "v" : "normal"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lens_lenstype",
+      "title" : "Lens Lens Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Lens.LensType",
+      "list" : "LIST_CAMERA_LENS_LENSTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "manual-focus",
+            "v" : "manual-focus"
+         },
+         {
+            "p" : "auto-focus",
+            "v" : "auto-focus"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lens_focustype",
+      "title" : "Lens Focus Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Lens.FocusType",
+      "list" : "LIST_CAMERA_LENS_FOCUSTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "all-glass-optical",
+            "v" : "all-glass-optical"
+         },
+         {
+            "p" : "apochromatic",
+            "v" : "apochromatic"
+         },
+         {
+            "p" : "aspheric",
+            "v" : "aspheric"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_lens_features",
+      "title" : "Lens Features",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.Lens.Features",
+      "list" : "LIST_CAMERA_LENS_FEATURES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

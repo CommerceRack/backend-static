@@ -1,0 +1,148 @@
+<TEMPLATE ID="c-20111020" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="DGDFKPZ" CREATED="20111020" SUBTYPE="C" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Single column product list with quantity/add to carts (wholesale)" RELEASED="20111103"><SUMMARY><![CDATA[A layout designed for wholesale stores. It allows shoppers to purchase directly from the category page. Since the product list has a form, multipage is disabled and no sorting is present.
+<b>works best with 2011+ themes</b>]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
+<ELEMENT ID="DGDFKQA" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+<div id='c-20111020'  class='category pageLayout'>
+
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="RIGHT_SIDE1" HEIGHT="150" EDITOR="INLINE" DATA="page:banner_top" WIDTH="600" PROMPT="Banner: top" TYPE="BANNER" BGCOLOR="FFFFFF"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class='banner elementMargin'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description (keep this short)" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div class='ztxt elementMargin'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="DGDFKQB" SIZE="500" MAX="500" MULTIPAGE="0" SHOWQUANTITY="1" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" DEFAULT="&amp;ALTERNATE=1" TYPE="PRODLIST"><HTML><![CDATA[
+
+
+
+
+
+<% print($FORM); %>
+
+<div class='prodlist elementMargin'>
+<table>
+<tr>
+	<td colspan='2' class='ztable_head' align='right'><input type='submit' value='Add selected items to cart' class='zform_button zform_addtocart' name='add_button_top' id='add_button_top'></td>
+</tr>
+<!-- ROW -->
+<!-- PRODUCT -->
+<tr>
+
+	<td class='ztable_row ztable_row<% print($row.alt); %> prodlistProdThumbContainer'>
+<a href='<% print($PROD_URL); %>' title="<% load($zoovy:prod_name); default(""); format(encode=>"entity"); print(); %>"><%
+load($zoovy:prod_thumb); default(""); default($zoovy:prod_image1);
+image(w=>"120",h=>"102",tag=>"1",alt=>$zoovy:prod_name); 
+print(); %></a>
+	</td>
+	
+	<td class='ztable_row ztable_row<% print($row.alt); %> prodlistProdContentContainer' id='prodlistSku_<% print($PRODUCT_ID); %>'>
+
+<div class='ztable_row_title prodName'>
+<% load($zoovy:prod_name); default(""); print(); %>
+</div>
+
+<div class='prodAttribs'>
+
+	<% print(""); load($PRODUCT_ID); default(""); format(pretext=>"<div class='prodSku'><span class='prompt'>Sku: </span><span class='value'>",posttext=>"</span></div>"); print(); %>
+
+	<% print(""); load($zoovy:prod_mfg); default(""); stop(unless=>$_); format(pretext=>"<div class='prodMfg'><span class='prompt'>Mfg: </span><span class='value'>",posttext=>"</span></div>"); print(); %>
+
+	<% print(""); load($zoovy:prod_mfgid); default(""); stop(unless=>$_); format(pretext=>"<div class='prodMfgid'><span class='prompt'>Mfg Id: </span><span class='value'>",posttext=>"</span></div>"); print(); %>
+
+</div>
+
+
+<div class='ztable_row_small prodDesc'>
+<% load($zoovy:prod_desc);  default(""); format(wiki,title1=>"",/title1=>"",title2=>"",/title2=>"",title3=>"",/title3=>"",listitem=>"<li>",/listitem=>"</li>",list=>"<ul>",/list=>"</ul>",hardbreak=>"",softbreak=>"<br />"); strip(length=>"400"); print(); %>
+	<span class='prodlistMoreDetails'><a href=''>more details</a></span>
+</div>
+
+<div class='prodPricing'>
+<%
+print("");
+load($zoovy:base_price); default("");
+format(money,skipblank=>"1");
+format(pretext=>"<div class='basePrice'><span class='prompt'>price: </span><span class='ztable_row_title value'>",posttext=>"</span></div>");
+print();
+
+/* only show the msrp if it is more than the base price. this will also ensure a positive # on the 'you save' */
+load($zoovy:prod_msrp); 
+stop(unless=>$_);
+	goto(label=>"END",lt=>$zoovy:base_price);
+	goto(label=>"END",eq=>$zoovy:base_price);
+	format(hidezero);
+	format(money);
+	format(pretext=>"<div class='retailPrice'><span class='prompt'>retail price: </span><span class='value'>",posttext=>"</span></div>");
+	print();
+
+	load($zoovy:prod_msrp);
+	math(op=>"subtract",var=>$zoovy:base_price);
+	format(hidezero); 
+	format(money); 
+	format(pretext=>"<div class='savings'><span class='prompt'>save </span><span class='value'>",posttext=>"</span>");
+	print();
+	load($zoovy:base_price);
+	math(op=>"divide",var=>$zoovy:prod_msrp); 
+	math(op=>"subtract",var=>"1");
+	math(op=>"multiply",var=>"-100"); format(hidezero); format(convert=>"number",precision=>"0"); format(pretext=>"<span class='percentage'> ",posttext=>"%</span>");
+	print();
+	
+	print("</div>"); 
+
+:END();
+
+%>
+</div>
+
+<div class='prodlistPogs'><% load($POGS); print(); %></div>
+
+<div class='prodlistAddInput'>
+<input type='hidden' name='product_id:<% print($PRODUCT_ID); %>' value='1' />
+<span class='quantityInput'><input type='text' name='quantity:<% print($PRODUCT_ID); %>' size='2' maxlength='3' value='0' class='zform_textbox' /></span>
+</div>
+
+	</td>
+
+</tr>
+<!-- /PRODUCT -->
+<!-- /ROW -->
+<tr>
+	<td colspan='2' class='ztable_head' align='right'>
+	<input type='submit' value='Add selected items to cart' class='zform_button zform_addtocart' name='add_button_bottom' id='add_button_bottom'>
+	</td>
+</tr>
+</table>
+
+</div><!-- /prodlist -->
+
+</form>
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION2" WIKI="3" EDITOR="INLINE" DATA="page:description2" PROMPT="Text Description" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div class='ztxt elementMargin'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="DGDFKQC" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+</div>
+
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

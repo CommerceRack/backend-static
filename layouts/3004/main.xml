@@ -1,0 +1,14 @@
+<TEMPLATE ID="3004" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMDX" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SERIES="2001" SUBTYPE="T" FORMAT="LAYOUT" SHORT="This layout includes a place for your own custom text above and below the visitor's cart" TYPE="CONFIG" TITLE="Plain" RELEASED="20011022"><SUMMARY><![CDATA[Bottom Text
+Shopping Cart
+Top Text
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="TOPTEXT" HELP="This text will appear above the shopping cart" DATA="page:toptext" PROMPT="Top Text" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CART1" HELP="This is the contents of the user's shopping cart." PROMPT="Shopping Cart" TYPE="CART"></ELEMENT>
+<ELEMENT ID="BOTTOMTEXT" HELP="This text will appear below the shopping cart" DATA="page:bottomtext" PROMPT="Bottom Text" DEFAULT="" TYPE="TEXT"></ELEMENT>
+
+</TEMPLATE>

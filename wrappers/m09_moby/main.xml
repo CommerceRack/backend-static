@@ -1,0 +1,437 @@
+<TEMPLATE ID="m09_moby" FORMAT="WRAPPER">
+
+
+<!-- ******* -->
+<ELEMENT ID="DABTMOQ" FORMAT="WRAPPER" TYPE="CONFIG" SUBCLASS="M" EXPORT="0" V="2" TITLE="Mobile: Moby" CREATED="20090810" SUBTYPE="M"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+.zborder { border: 1px solid #b9d5e6; }
+.zbox { border: 1px solid #6b91b5; }
+.zbox_body { background-color: #ffffff; color: #000000; font-family: verdana, arial, helvetica; font-size: 12px; }
+.zbox_head { background-color: #6b91b5; color: #FFFFFF; font-family: verdana, arial, helvetica; font-size: 13px; }
+.zcolor { background-color: #a5bccf; color: #ffffff; }
+.zcolor_contrast { background-color: #FF6600; color: #FFFFFF; }
+.zcolor_dark { background-color: #6b91b5; color: #ffffff; }
+.zcolor_light { background-color: #ffffff; color: #000000; }
+.zform_button { border: 1px solid #FF6600; background-color: #FF6600; color: #ffffff; font-size: 13px; font-family: verdana, arial, helvetica; }
+.zform_select { border: 1px solid #6b91b5; background-color: #FFFFFF; color: #000000; font-size: 13px; font-family: verdana, arial, helvetica; }
+.zform_textarea { border: 1px solid #6b91b5; background-color: #FFFFFF; color: #000000; font-size: 13px; font-family: verdana, arial, helvetica; }
+.zform_textbox { border: 1px solid #6b91b5; background-color: #FFFFFF; color: #000000; font-size: 13px; font-family: verdana, arial, helvetica; }
+.zhint { color: #666666; font-family: verdana, arial, helvetica; font-size: 10px; }
+.zlink { color: #067ff1; }
+.zsmall { color: #666666; font-family: verdana, arial, helvetica; font-size: 10px; }
+.ztab0 { background-color: #d1e8f5; color: #ffffff; font-family: verdana, arial, helvetica; font-size: 10px; }
+.ztab1 { background-color: #ffffff; color: #666666; font-family: verdana, arial, helvetica; font-size: 10px; font-weight: bold;}
+.ztabbody { background-color: #ffffff; color: #000000; font-family: verdana, arial, helvetica; font-size: 11px; }
+.ztable_head { background-color: #ffffff; color: #000000; border-bottom:1px solid #000000; font-family: verdana, arial, helvetica; font-size: 12px; }
+.ztable_row {color: #000000; font-family: verdana, arial, helvetica; font-size: 11px; }
+.ztable_row0 { background-color: #FFFFFF; color: #000000; font-family: verdana, arial, helvetica; font-size: 11px;}
+.ztable_row1 { background-color: #EDF2FD; color: #000000; font-family: verdana, arial, helvetica; font-size: 11px;}
+.ztable_row_small { color: #666666; font-family: verdana, arial, helvetica; font-size: 10px; }
+.ztable_row_title { font-weight: bold; color: #ff6600; font-family: verdana, arial, helvetica; font-size: 14px; }
+.ztitle { font-weight: bold; color: #000000; font-family: verdana, arial, helvetica; font-size: 16px; }
+.ztitle2 { font-weight: bold; color: #FF6600; font-family: verdana, arial, helvetica; font-size: 15px; }
+.ztxt { color: #000000; font-family: verdana, arial, helvetica; font-size: 14px; }
+.zwarn { color: #FF0000; font-weight: bold; }]]></CSS>
+<THEME><![CDATA[alert_color=FF0000&content_background_color=ffffff&content_font_face=verdana%2c+arial%2c+helvetica&content_font_size=1&content_text_color=000000&disclaimer_background_color=ffffff&disclaimer_font_face=verdana%2c+arial%2c+helvetica&disclaimer_font_size=1&disclaimer_text_color=666666&link_active_text_color=067ff1&link_text_color=067ff1&link_visited_text_color=067ff1&name=&pretty_name=&table_heading_background_color=ffffff&table_heading_font_face=verdana%2c+arial%2c+helvetica&table_heading_font_size=1&table_heading_text_color=000000&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=EDF2FD&table_listing_font_face=verdana%2c+arial%2c+helvetica&table_listing_font_size=1&table_listing_text_color=000000]]></THEME>
+<SITEBUTTONS><![CDATA[forward=m09_moby|png|115|51&add_to_cart=m09_moby|png|132|51&back=m09_moby|png|115|51&default=m09_moby|png|115|51&add_to_site=m09_moby|png|1|1&checkout=m09_moby|png|115|51&continue_shopping=m09_moby|png|87|51&update_cart=m09_moby|png|104|51&empty_cart=m09_moby|png|1|1&cancel=m09_moby|png|87|51]]></SITEBUTTONS>
+<OVERLOAD><![CDATA[flow.homepage=m09_h_20090727&flow.c=m09_c_20090727&flow.results=m09_c_20090727&flow.product=m09_p_20090727&flow.r=r-20090113&flow.t=m09_t_20090727&flow.u=m09_u_20090727&flow.r=m09_r_20090727]]></OVERLOAD>
+</ELEMENT>
+<ELEMENT ID="CPVRQCT" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCU" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCV" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCW" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCX" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_FUNCTION_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCY" SUB="SHIPQUOTE_URL" TYPE="READONLY" LOAD="URL::SHIPQUOTE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCZ" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDA" SUB="SITEBUTTON_URL" TYPE="READONLY" LOAD="URL::SITEBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDD" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDI" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDM" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDQ" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDV" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDW" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEA" SUB="CONTACT_US_URL" TYPE="READONLY" LOAD="URL::CONTACT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEB" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEC" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQED" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEF" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEK" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEL" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEN" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEP" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEQ" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQER" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQHREXQ" SUB="title1" TYPE="HIDDEN"><DEFAULT><![CDATA[<h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXR" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[</h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXS" SUB="title2" TYPE="HIDDEN"><DEFAULT><![CDATA[<h4>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXT" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</h4>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXU" SUB="title3" TYPE="HIDDEN"><DEFAULT><![CDATA[<span style="font-weight:bold;">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXV" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</span>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILIST" SUB="list" TYPE="HIDDEN"><DEFAULT><![CDATA[<ul class="wiki_list">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLIST" SUB="/list" TYPE="HIDDEN"><DEFAULT><![CDATA[</ul>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILISTITEM" SUB="listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[<li class="wiki_listitem">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLISTITEM" SUB="/listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[</li>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKISECTION" SUB="section" TYPE="HIDDEN"><DEFAULT><![CDATA[<p class="wiki_section">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDSECTION" SUB="/section" TYPE="HIDDEN"><DEFAULT><![CDATA[</p>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIHARDBREAK" SUB="hardbreak" TYPE="SPECL"><HTML><![CDATA[<div style='border-top:<% loadurp("CSS:zborder.border"); print(); %>; margin:5px 0px;'></div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKISOFTBREAK" SUB="softbreak" TYPE="SPECL"><HTML><![CDATA[<br>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKITABLE" SUB="table" TYPE="HIDDEN"><DEFAULT><![CDATA[<table cellspacing="0" class="zborder">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLE" SUB="/table" TYPE="HIDDEN"><DEFAULT><![CDATA[</table>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEROW" SUB="tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[<tr class="ztablerow">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEROW" SUB="/tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[</tr>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLECELL" SUB="tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_row">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLECELL" SUB="/tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[</td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEHEAD" SUB="tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_head"><b>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="DAEJBAU" SUB="SEARCHCATALOG" TYPE="SPECL"><HTML><![CDATA[<%
+/* sets the search catalog to the same as what is used in their regular store */
+loadurp("profile:zoovy:wrap_catalog"); default(""); print();
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DAEJBAV" TRUE="Call button disabled" PROMPT="Disable 'call' buttons" ON="1" TYPE="CHECKBOX" FALSE="Call button enabled" DATA="profile:zoovy:wrap_disable_call" OUTPUTSKIP="2048" OFF="0"></ELEMENT>
+<ELEMENT ID="DABTMOR" HEIGHT="54" HELPER="The appearance of the logo will look best if a transparent png is used." PROMPT="Company Logo (mobile specific - 150x54)" MINIMAL="1" SUB="WRAP_LOGO" WIDTH="150" TYPE="IMAGE" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="profile:zoovy:company_logo_m"></ELEMENT>
+<ELEMENT ID="DAEJBAW" SUB="WRAP_LOGO" TYPE="SPECL"><HTML><![CDATA[
+<%
+print("<!-- company logo -->");
+/* set var to be used as alt tag */
+loadurp("profile:zoovy:company_name"); default("");
+set($COMPANY_NAME=>$_);
+
+loadurp("profile:zoovy:company_logo_m");
+goto(label=>"MOBILELOGO",ne=>"");
+	element(TYPE=>"LOGO",HEIGHT=>"54",WIDTH=>"150",BGCOLOR=>"TTTTTT",ID=>"WRAPPER_LOGO_FRM_SPECL",MINIMAL_MODE=>"1");
+	print();
+	stop();
+	
+:MOBILELOGO();
+image(h=>"54",w=>"150",bg=>"TTTTTT",tag=>"1",alt=>$COMPANY_NAME,m=>"1");
+print();	
+
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_BREADCRUMB" SUB="WRAP_BREADCRUMB" NOHOME="1" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C"><HTML><![CDATA[
+<div style='font-size:14px; margin-bottom:4px;'>
+<!-- CATEGORY -->
+<a href="<% load($cat_url);  default("");  print(); %>" class="zlink"><% load($cat_pretty);  default("");  print(); %></a>
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); runspec(" &#187; "); print(); %>
+<!-- /CATEGORY -->
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTSKIP="1" OUTPUTFILTER="FS=P"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
+<POSTTEXT><![CDATA[</h1>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="THEME_DOCTYPENSUCH" TYPE="HIDDEN" OUTPUTSKIP="32768"><DEFAULT><![CDATA[<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+
+<html>
+<head>
+
+
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0;"></meta>
+<meta name="apple-mobile-web-app-capable" content="yes"></meta>
+<meta name="apple-touch-fullscreen" content="YES"></meta>
+
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="DEFAULT_HEAD" TYPE="HEAD"></ELEMENT>
+<ELEMENT ID="THEME_CSS_N_JS" TYPE="HIDDEN" OUTPUTSKIP="32768"><DEFAULT><![CDATA[
+
+
+
+<style type='text/css'>
+<!--
+
+
+@import "%WRAPPER_URL%/m09_styles_20090805.css";
+
+div.arrowbar_off a		{background:url(%WRAPPER_URL%/m09_arw_right-12x12.png) no-repeat #ffffff; display:block; padding:5px; border:1px solid #999999; margin-top:3px; font-size:18px; text-decoration:none; background-position: 99% 50%; }
+
+div.arrowbar_on	a		{background:url(%WRAPPER_URL%/m09_arw_down-12x12.png) no-repeat #ffffff; display:block; padding:5px; border:1px solid #999999; margin-top:3px; font-size:18px; text-decoration:none; background-position: 99% 50%;}
+
+.button_container	{background:url(%WRAPPER_URL%/m09_button_bg-1x95.gif) repeat-x center;}
+
+/* will round the top/bottom of the content with beveled corners that match the panel bevel. sweet. */
+
+.round_top	{position: relative;
+    margin: 0;
+    padding: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px 10px 0px 0;
+    border: 0px solid #999999;
+	background:url(%WRAPPER_URL%/m09_button_bg-1x95.gif) repeat-x center;
+	}
+.round_bottom	{position: relative;
+    margin: 0;
+    padding: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border: 0px solid #999999;
+	background:url(%WRAPPER_URL%/m09_button_bg-1x95.gif) repeat-x center;
+	}
+
+
+
+
+/* for tall toolbars, like the header */
+.toolbar	{background:url(%WRAPPER_URL%/m09_toolbar-1x43.png) repeat-x #6d84a2 left top;}
+
+/* for shorter toolbars, like the search */
+.minibar	{background:url(%WRAPPER_URL%/m09_toolbar-1x43.png) repeat-x left center; border-top:1px solid #cdd5df; border-bottom:1px solid #2d3642; border-top:1px solid #2d3642;}
+
+table	{border:0px;}
+fieldset	{border:0px;}
+
+-->
+</style>
+
+
+<!-- these scripts can get moved to a .js file prior to going live. -->
+
+<script type='text/javascript'>
+<!--
+// jump to page header when page loads, effectively hides the location bar and gives more room for content 'above the fold'.
+// if #noMastHead is set, jump down to below the search
+
+window.addEventListener("load", function() { setTimeout(loaded, 100) }, false);  
+function loaded() { 
+	document.getElementById("page_wrapper").style.visibility = "visible";   
+	
+	if(location.href.indexOf('#noMastHead') > 0)	{
+		window.scrollTo(0, 93);
+		}
+	else	{
+		window.scrollTo(0, 1); // pan to the bottom, hides the location bar   
+		}
+//	alert(window.orientation);
+	}
+// -->
+</script>
+
+
+<script type="text/javascript">
+<!--
+function showHideiPanel(ID)	{
+
+	if(document.getElementById(ID+'Content').style.display == 'block')	{
+		document.getElementById(ID+'Content').style.display='none';
+		document.getElementById(ID+'Header').setAttribute("class", 'arrowbar_off');
+		}
+	else	{
+		document.getElementById(ID+'Content').style.display = 'block';
+		document.getElementById(ID+'Header').setAttribute("class", 'arrowbar_on');
+		
+		}
+	}
+// -->
+</script>
+
+<script type="text/javascript">
+<!--
+function toggleDisplay(ID)	{
+	if(document.getElementById(ID).style.display == 'block')
+		document.getElementById(ID).style.display='none';
+	else
+		document.getElementById(ID).style.display = 'block';
+	
+	}
+// -->
+</script>
+
+
+</head>
+
+<body style='font-family:Arial, Helvetica, sans-serif; color: #000000; margin:0;  font-size: 10px; background:#000000;'>
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="THEME_BEFORELAYOUT" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div style='background:url(%WRAPPER_URL%/m09_grate_bg-4x75.gif) repeat-x;'>
+<table cellspacing='0' cellpadding='0'  width='100%' id='page_wrapper'>
+<tr>
+
+	<td valign='middle' width='50%' style='height:58px;'><a href='%HOME_URL%'>%WRAP_LOGO%</a></td>
+
+
+	<td valign='middle' width='1%' class='zsmall' align='center'>
+	<div style='margin-left:5px;'>
+	<div><a href='%CART_URL%#noMastHead' title='Cart'><img src='%WRAPPER_URL%/m09_icon_cart-41x42.png' width='41' height='42' alt='Cart'></img></a></div>
+	<div class='no_underline headlink'><a href='%CART_URL%#noMastHead'>cart</a></div>
+	</div>
+	</td>
+
+	
+	<td valign='middle' width='1%' class='zsmall' align='center'>
+	<div style='margin-left:5px;'>
+	<div><a href='%CONTACT_URL%' title='Contact'><img src='%WRAPPER_URL%/m09_icon_contact-41x42.png' width='41' height='42' alt='Contact'></img></a></div>
+	<div class='no_underline headlink'><a href='%CONTACT_URL%'>contact</a></div>
+	</div>
+	</td>
+
+
+	<td valign='middle' width='1%' class='zsmall' align='center'>
+	<div style='margin-left:4px;'> <!-- slightly smaller margin, because 'contact' is a little wider than the rest -->
+	<div><a href='%CUSTOMER_MAIN_URL%' title='Order status'><img src='%WRAPPER_URL%/m09_icon_orders-41x42.png' width='41' height='42' alt='Order Status'></img></a></div>
+	<div class='no_underline headlink'><a href='%CUSTOMER_MAIN_URL%'>account</a></div>
+	</div>
+	</td>
+
+</tr>
+</table>
+</div>
+
+
+
+<!-- search bar -->
+
+<div class='minibar'>
+<form action='%RESULTS_URL%' method='get'>
+<fieldset>
+<input type='hidden' name='catalog' value='%SEARCHCATALOG%'></input>
+<table cellpadding='3' align='center'>
+<tr>
+	<td><input type='text' name='keywords' value='' class='zform_textbox' style='width:200px;'></input></td>
+	<td><input type='image' src='%WRAPPER_URL%/m09_btn_search-24x24.png' value='go'></input></td>
+</tr>
+</table>
+</fieldset>
+</form>
+</div>
+
+<!-- /search bar -->
+
+<!-- pinstriped content area -->
+
+<div style='background: url(%WRAPPER_URL%/m09_pinstripes-7x1.png); padding:5px;'>
+
+<a name='noheader'></a>
+<div style='margin-left:5px;' id='noheader'>
+%WRAP_TITLE%
+%WRAP_BREADCRUMB%
+</div>
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DAEJBAX" TYPE="HIDDEN" OUTPUTFILTER="FS=H,C,P,T,R" OUTPUTSKIP="1"><DEFAULT><![CDATA[
+
+<!-- gets skipped on pages that have a mobile-specific layout. This will add a panel around the content of non-specific pages -->
+
+<div class='mypanel paddedpanel'>
+	<div style='padding:0 10px;'>
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="THEBODY" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="DAEJBAY" TYPE="HIDDEN" OUTPUTFILTER="FS=H,C,P,T,R" OUTPUTSKIP="1"><DEFAULT><![CDATA[
+	</div>
+</div>
+
+]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="DABTMOU" TYPE="OUTPUT"><HTML><![CDATA[
+
+</div>
+
+<!-- /pinstriped content area -->
+
+<!-- search bar -->
+
+<div class='minibar'>
+<form action='%RESULTS_URL%' method='get'>
+<fieldset>
+<input type='hidden' name='catalog' value='%SEARCHCATALOG%'></input>
+<table cellpadding='3' align='center'>
+<tr>
+	<td><input type='text' name='keywords' value='' class='zform_textbox' style='width:200px;'></input></td>
+	<td><input type='image' src='%WRAPPER_URL%/m09_btn_search-24x24.png' value='go'></input></td>
+</tr>
+</table>
+</fieldset>
+</form>
+</div>
+
+<!-- /search bar -->
+
+
+<div id='footer' align='center'>
+
+<div class='footerIcon'>
+	<div><a href='%HOME_URL%' title='home'><img src='%WRAPPER_URL%/m09_icon_home-60x61.png' width='60' height='61' alt='home'></img></a></div>
+	<div class='no_underline'><a href='%HOME_URL%'>Home</a></div>
+</div>
+
+
+<div class='footerIcon'>
+	<div><a href='%SUBSCRIBE_URL%' title='policies'><img src='%WRAPPER_URL%/m09_icon_newsletter-60x61.png' width='60' height='61' alt='subscribe'></img></a></div>
+	<div class='no_underline'><a href='%SUBSCRIBE_URL%'>Subscribe</a></div>
+</div>
+
+
+
+<div class='footerIcon'>
+	<div><a href='%CART_URL%#noMastHead' title='cart'><img src='%WRAPPER_URL%/m09_icon_cart-60x61.png' width='60' height='61' alt='cart'></img></a></div>
+	<div class='no_underline'><a href='%CART_URL%#noMastHead'>Cart</a></div>
+</div>
+
+<div class='footerIcon'>
+	<div><a href='%CHECKOUT_URL%#noMastHead' title='checkout'><img src='%WRAPPER_URL%/m09_icon_checkout-60x61.png' width='60' height='61' alt='checkout'></img></a></div>
+	<div class='no_underline'><a href='%CHECKOUT_URL%#noMastHead'>Checkout</a></div>
+</div>
+
+<div class='footerIcon'>
+	<div><a href='%CONTACT_URL%' title='contact'><img src='%WRAPPER_URL%/m09_icon_contact-60x61.png' width='60' height='61' alt='contact'></img></a></div>
+	<div class='no_underline'><a href='%CONTACT_URL%'>Contact</a></div>
+</div>
+
+
+<div class='footerIcon'>
+	<div><a href='%CUSTOMER_MAIN_URL%' title='my account'><img src='%WRAPPER_URL%/m09_icon_orders-60x61.png' width='60' height='61' alt='my account'></img></a></div>
+	<div class='no_underline'><a href='%CUSTOMER_MAIN_URL%'>My Account</a></div>
+</div>
+
+
+<div class='footerIcon'>
+	<div><a href='%RETURNS_URL%' title='policies'><img src='%WRAPPER_URL%/m09_icon_policies-60x61.png' width='60' height='61' alt='policies'></img></a></div>
+	<div class='no_underline'><a href='%RETURNS_URL%'>Policies</a></div>
+</div>
+
+
+<div class='footerIcon'>
+	<div><a href='%ABOUT_URL%' title='company'><img src='%WRAPPER_URL%/m09_icon_company-60x61.png' width='60' height='61' alt='company'></img></a></div>
+	<div class='no_underline'><a href='%ABOUT_URL%'>Company</a></div>
+</div>
+
+</div>
+
+
+</body>
+</html>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

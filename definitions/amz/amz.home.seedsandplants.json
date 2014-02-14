@@ -1,0 +1,468 @@
+[
+   {
+      "catalog" : "HOME",
+		"amz-catalog" : "Home",
+      "amz-subcat" : "SeedsAndPlants",
+      "subcat" : "seedsandplants",
+      "type" : "config",
+		"variation-themes" : "Size+Color,Size,Color,ItemPackageQuantity",
+		"parentage-values" : "variation-parent,base-product,base-product"
+   },
+   {
+      "PROMPT" : "Home:SeedsAndPlants",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYCT",
+      "xmlpath" : "Home.ProductType.SeedsAndPlants."
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "theme",
+      "id" : "variation:theme",
+      "xmlpath" : "Home.ProductType.SeedsAndPlants.VariationData.VariationTheme"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:itempackagequantity",
+		"vkey" : "ItemPackageQuantity",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Home.ProductType.SeedsAndPlants.VariationData.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:size",
+		"vkey" : "Size",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Home.ProductType.SeedsAndPlants.VariationData.Size"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Verbatim",
+      "id" : "variation:color",
+		"vkey" : "Color",
+      "type" : "variation",
+		"variation-type" : "value",
+      "xmlpath" : "Home.ProductType.SeedsAndPlants.VariationData.Color"
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "black",
+            "v" : "black"
+         },
+         {
+            "p" : "blue",
+            "v" : "blue"
+         },
+         {
+            "p" : "bronze",
+            "v" : "bronze"
+         },
+         {
+            "p" : "brown",
+            "v" : "brown"
+         },
+         {
+            "p" : "gold",
+            "v" : "gold"
+         },
+         {
+            "p" : "gray",
+            "v" : "gray"
+         },
+         {
+            "p" : "green",
+            "v" : "green"
+         },
+         {
+            "p" : "metallic",
+            "v" : "metallic"
+         },
+         {
+            "p" : "off-white",
+            "v" : "off-white"
+         },
+         {
+            "p" : "orange",
+            "v" : "orange"
+         },
+         {
+            "p" : "pink",
+            "v" : "pink"
+         },
+         {
+            "p" : "purple",
+            "v" : "purple"
+         },
+         {
+            "p" : "red",
+            "v" : "red"
+         },
+         {
+            "p" : "silver",
+            "v" : "silver"
+         },
+         {
+            "p" : "white",
+            "v" : "white"
+         },
+         {
+            "p" : "yellow",
+            "v" : "yellow"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_home_snp_colormap",
+      "title" : "Color Map",
+      "type" : "select",
+      "xmlpath" : "Home.ProductType.SeedsAndPlants.ColorMap",
+      "list" : "LIST_BASE_COLORMAP"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "little-to-no-watering",
+            "v" : "little-to-no-watering"
+         },
+         {
+            "p" : "moderate-watering",
+            "v" : "moderate-watering"
+         },
+         {
+            "p" : "regular-watering",
+            "v" : "regular-watering"
+         },
+         {
+            "p" : "constant-watering",
+            "v" : "constant-watering"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_home_snp_moistureneeds",
+      "title" : "Seeds And Plants Moisture Needs",
+      "type" : "select",
+      "xmlpath" : "Home.ProductType.SeedsAndPlants.MoistureNeeds",
+      "list" : "LIST_HOME_SEEDSANDPLANTS_MOISTURENEEDS"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_home_snp_spread",
+      "type" : "number",
+      "title" : "Spread",
+      "xmlpath" : "Home.ProductType.SeedsAndPlants.Spread"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "shade",
+            "v" : "shade"
+         },
+         {
+            "p" : "partial-shade",
+            "v" : "partial-shade"
+         },
+         {
+            "p" : "partial-sun",
+            "v" : "partial-sun"
+         },
+         {
+            "p" : "full-sun",
+            "v" : "full-sun"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_home_snp_sunlightexposure",
+      "title" : "Seeds And Plants Sunlight Exposure",
+      "type" : "select",
+      "xmlpath" : "Home.ProductType.SeedsAndPlants.SunlightExposure",
+      "list" : "LIST_HOME_SEEDSANDPLANTS_SUNLIGHTEXPOSURE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "1",
+            "v" : "1"
+         },
+         {
+            "p" : "2",
+            "v" : "2"
+         },
+         {
+            "p" : "3",
+            "v" : "3"
+         },
+         {
+            "p" : "4",
+            "v" : "4"
+         },
+         {
+            "p" : "5",
+            "v" : "5"
+         },
+         {
+            "p" : "6",
+            "v" : "6"
+         },
+         {
+            "p" : "7",
+            "v" : "7"
+         },
+         {
+            "p" : "8",
+            "v" : "8"
+         },
+         {
+            "p" : "9",
+            "v" : "9"
+         },
+         {
+            "p" : "10",
+            "v" : "10"
+         },
+         {
+            "p" : "11",
+            "v" : "11"
+         },
+         {
+            "p" : "12",
+            "v" : "12"
+         },
+         {
+            "p" : "13",
+            "v" : "13"
+         },
+         {
+            "p" : "14",
+            "v" : "14"
+         },
+         {
+            "p" : "15",
+            "v" : "15"
+         },
+         {
+            "p" : "16",
+            "v" : "16"
+         },
+         {
+            "p" : "17",
+            "v" : "17"
+         },
+         {
+            "p" : "18",
+            "v" : "18"
+         },
+         {
+            "p" : "19",
+            "v" : "19"
+         },
+         {
+            "p" : "20",
+            "v" : "20"
+         },
+         {
+            "p" : "21",
+            "v" : "21"
+         },
+         {
+            "p" : "22",
+            "v" : "22"
+         },
+         {
+            "p" : "23",
+            "v" : "23"
+         },
+         {
+            "p" : "24",
+            "v" : "24"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_home_snp_sunsetclimatezone",
+      "title" : "Seeds And Plants Sunset Climate Zone",
+      "type" : "select",
+      "xmlpath" : "Home.ProductType.SeedsAndPlants.SunsetClimateZone",
+      "list" : "LIST_HOME_SEEDSANDPLANTS_SUNSETCLIMATEZONE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "1",
+            "v" : "1"
+         },
+         {
+            "p" : "2",
+            "v" : "2"
+         },
+         {
+            "p" : "3",
+            "v" : "3"
+         },
+         {
+            "p" : "4",
+            "v" : "4"
+         },
+         {
+            "p" : "5",
+            "v" : "5"
+         },
+         {
+            "p" : "6",
+            "v" : "6"
+         },
+         {
+            "p" : "7",
+            "v" : "7"
+         },
+         {
+            "p" : "8",
+            "v" : "8"
+         },
+         {
+            "p" : "9",
+            "v" : "9"
+         },
+         {
+            "p" : "10",
+            "v" : "10"
+         },
+         {
+            "p" : "11",
+            "v" : "11"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_home_snp_usdahardinesszone",
+      "title" : "Seeds And Plants U S D A Hardiness Zone",
+      "type" : "select",
+      "xmlpath" : "Home.ProductType.SeedsAndPlants.USDAHardinessZone",
+      "list" : "LIST_HOME_SEEDSANDPLANTS_USDAHARDINESSZONE"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "variation",
+		"variation-type" : "parentage",
+      "id" : "variation:parentage",
+      "xmlpath" : "Home.Parentage"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_home_ctryprdin",
+      "type" : "textbox",
+      "title" : "Country Produced In",
+      "xmlpath" : "Home.CountryProducedIn"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_home_displaylength",
+      "type" : "number",
+      "title" : "DisplayLength",
+      "xmlpath" : "Home.DisplayLength"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_home_displaywidth",
+      "type" : "number",
+      "title" : "DisplayWidth",
+      "xmlpath" : "Home.DisplayWidth"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_home_displayheight",
+      "type" : "number",
+      "title" : "DisplayHeight",
+      "xmlpath" : "Home.DisplayHeight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_home_displaydepth",
+      "type" : "number",
+      "title" : "DisplayDepth",
+      "xmlpath" : "Home.DisplayDepth"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Length",
+      "id" : "amz:prod_home_displaydiameter",
+      "type" : "number",
+      "title" : "DisplayDiameter",
+      "xmlpath" : "Home.DisplayDiameter"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Weight",
+      "id" : "amz:prod_home_displaywt",
+      "type" : "number",
+      "title" : "DisplayWeight",
+      "xmlpath" : "Home.DisplayWeight"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Number",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_home_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "Home.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_home_mnfgwarrantydscrpt",
+      "type" : "select",
+      "title" : "Home Manufacturer Warranty Description",
+      "xmlpath" : "Home.ManufacturerWarrantyDescription",
+      "list" : "LIST_HOME_MANUFACTURERWARRANTYDESCRIPTION"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Volume",
+      "id" : "amz:prod_home_volumecapacity",
+      "type" : "textbox",
+      "title" : "Volume Capacity",
+      "xmlpath" : "Home.VolumeCapacity"
+   }
+]

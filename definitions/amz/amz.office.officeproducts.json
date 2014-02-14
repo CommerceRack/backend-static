@@ -1,0 +1,40 @@
+[
+   {
+      "catalog" : "OFFICE",
+		"amz-catalog" : "Office",
+      "amz-subcat" : "OfficeProducts",
+      "subcat" : "officeproducts",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "Office:OfficeProducts",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYWO",
+      "xmlpath" : "Office.ProductType.OfficeProducts."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_ofc_ofcproducts_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "Office.ProductType.OfficeProducts.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ofc_ofcproducts_matltype",
+      "type" : "textlist",
+      "title" : "Material Type",
+      "xmlpath" : "Office.ProductType.OfficeProducts.MaterialType"
+   }
+]

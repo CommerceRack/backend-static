@@ -1,0 +1,66 @@
+[
+   {
+      "catalog" : "SOFTWARE",
+		"amz-catalog" : "SoftwareVideoGames",
+      "amz-subcat" : "HandheldSoftwareDownloads",
+      "subcat" : "handheldsoftwaredownloads",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "SoftwareVideoGames:HandheldSoftwareDownloads",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYXJ",
+      "xmlpath" : "SoftwareVideoGames.ProductType.HandheldSoftwareDownloads."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "Application Version",
+      "id" : "amz:prod_swvg_hhswdls_applnvrsn",
+      "xmlpath" : "SoftwareVideoGames.ProductType.HandheldSoftwareDownloads.ApplicationVersion"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_swvg_swpt_dofi",
+      "type" : "textbox",
+      "mandatory" : "Y",
+      "title" : "Downloadable File",
+      "xmlpath" : "SoftwareVideoGames.ProductType.HandheldSoftwareDownloads.DownloadableFile"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "textlist",
+      "mandatory" : "Y",
+      "title" : "Operating System",
+      "id" : "amz:prod_swvg_hhswdls_os",
+      "xmlpath" : "SoftwareVideoGames.ProductType.HandheldSoftwareDownloads.OperatingSystem"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_swvg_hhswdls_systemreqs",
+      "type" : "textbox",
+      "title" : "System Requirements",
+      "xmlpath" : "SoftwareVideoGames.ProductType.HandheldSoftwareDownloads.SystemRequirements"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_swvg_hhswdls_nbroflicenses",
+      "type" : "number",
+      "title" : "NumberOfLicenses",
+      "xmlpath" : "SoftwareVideoGames.ProductType.HandheldSoftwareDownloads.NumberOfLicenses"
+   }
+]

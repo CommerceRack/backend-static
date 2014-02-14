@@ -1,0 +1,139 @@
+[
+   {
+      "catalog" : "OFFICE",
+		"amz-catalog" : "Office",
+      "amz-subcat" : "ArtSupplies",
+      "subcat" : "artsupplies",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "Office:ArtSupplies",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQYVU",
+      "xmlpath" : "Office.ProductType.ArtSupplies."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_ofc_artsupplies_clrspec",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "Office.ProductType.ArtSupplies.ColorSpecification"
+   },
+   {
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+			{
+			    "p" : "black",
+			    "v" : "black"
+			},
+			{
+			    "p" : "blue",
+			    "v" : "blue"
+			},
+			{
+			    "p" : "bronze",
+			    "v" : "bronze"
+			},
+			{
+			    "p" : "brown",
+			    "v" : "brown"
+			},
+			{
+			    "p" : "gold",
+			    "v" : "gold"
+			},
+			{
+			    "p" : "gray",
+			    "v" : "gray"
+			},
+			{
+			    "p" : "green",
+			    "v" : "green"
+			},
+			{
+			    "p" : "metallic",
+			    "v" : "metallic"
+			},
+			{
+			    "p" : "multicolored",
+			    "v" : "multicolored"
+			},
+			{
+			    "p" : "off-white",
+			    "v" : "off-white"
+			},
+			{
+			    "p" : "orange",
+			    "v" : "orange"
+			},
+			{
+			    "p" : "pink",
+			    "v" : "pink"
+			},
+			{
+			    "p" : "purple",
+			    "v" : "purple"
+			},
+			{
+			    "p" : "red",
+			    "v" : "red"
+			},
+			{
+			    "p" : "silver",
+			    "v" : "silver"
+			},
+			{
+			    "p" : "white",
+			    "v" : "white"
+			},
+			{
+			    "p" : "yellow",
+			    "v" : "yellow"
+			}
+      ],
+      "ns" : "product",
+      "amz-format" : "ColorSpecification",
+      "id" : "amz:prod_ofc_clrmap",
+		"default-color" : "multicolored",
+      "type" : "select",
+      "title" : "Color Map",
+      "xmlpath" : "Office.ProductType.ArtSupplies.ColorSpecification"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "type" : "number",
+      "title" : "ItemPackageQuantity",
+      "id" : "amz:prod_ofc_artsupplies_itempkgqnty",
+      "default" : "1",
+      "xmlpath" : "Office.ProductType.ArtSupplies.ItemPackageQuantity"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ofc_artsupplies_matltype",
+      "type" : "textlist",
+      "title" : "Material Type",
+      "xmlpath" : "Office.ProductType.ArtSupplies.MaterialType"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_ofc_artsupplies_painttype",
+      "type" : "textlist",
+      "title" : "Paint Type",
+      "xmlpath" : "Office.ProductType.ArtSupplies.PaintType"
+   }
+]

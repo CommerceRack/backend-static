@@ -1,0 +1,261 @@
+<TEMPLATE ID="guitar" FORMAT="WRAPPER">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPULUHB" SUB="LINK_VISITED_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_VISITED_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHC" SUB="TABLE_HEADING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHD" SUB="DISCLAIMER_FONT_SIZE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHE" SUB="CONTENT_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHF" SUB="TABLE_LISTING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHG" SUB="CONTENT_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::CONTENT_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHH" SUB="TABLE_LISTING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHI" SUB="TABLE_LISTING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHJ" SUB="TABLE_LISTING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHK" SUB="CONTENT_FONT_FACE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHL" SUB="NAME" TYPE="READONLY" LOAD="THEME::NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHM" SUB="DISCLAIMER_FONT_FACE" TYPE="READONLY" LOAD="THEME::DISCLAIMER_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHN" SUB="PRETTY_NAME" TYPE="READONLY" LOAD="THEME::PRETTY_NAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHO" SUB="TABLE_HEADING_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHP" SUB="TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" TYPE="READONLY" LOAD="THEME::TABLE_LISTING_BACKGROUND_COLOR_ALTERNATE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHQ" SUB="LINK_ACTIVE_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_ACTIVE_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHR" SUB="CONTENT_FONT_SIZE" TYPE="READONLY" LOAD="THEME::CONTENT_FONT_SIZE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHS" SUB="ALERT_COLOR" TYPE="READONLY" LOAD="THEME::ALERT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHT" SUB="DISCLAIMER_BACKGROUND_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_BACKGROUND_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHU" SUB="TABLE_HEADING_FONT_FACE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_FACE" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHV" SUB="TABLE_HEADING_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHW" SUB="DISCLAIMER_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::DISCLAIMER_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHX" SUB="LINK_TEXT_COLOR" TYPE="READONLY" LOAD="THEME::LINK_TEXT_COLOR" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHY" SUB="HOMECATEGORY_URL" TYPE="READONLY" LOAD="URL::HOMECATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUHZ" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIA" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIB" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIC" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUID" SUB="LOGOUT_FUNCTION_URL" TYPE="READONLY" LOAD="URL::LOGOUT_FUNCTION_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIE" SUB="SHIPQUOTE_URL" TYPE="READONLY" LOAD="URL::SHIPQUOTE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIF" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIG" SUB="SITEBUTTON_URL" TYPE="READONLY" LOAD="URL::SITEBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIH" SUB="HOMEPAGE_URL" TYPE="READONLY" LOAD="URL::HOMEPAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUII" SUB="COUNTER_URL" TYPE="READONLY" LOAD="URL::COUNTER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIJ" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIK" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIL" SUB="UPDATE_PAYMENT_URL" TYPE="READONLY" LOAD="URL::UPDATE_PAYMENT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIM" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIN" SUB="NAVBUTTON_URL" TYPE="READONLY" LOAD="URL::NAVBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIO" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIP" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIQ" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIR" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIS" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIT" SUB="ABOUT_ZOOVY_URL" TYPE="READONLY" LOAD="URL::ABOUT_ZOOVY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIU" SUB="NEWS_URL" TYPE="READONLY" LOAD="URL::NEWS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIV" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIW" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIX" SUB="USERBUTTON_URL" TYPE="READONLY" LOAD="URL::USERBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIY" SUB="CLOSED_URL" TYPE="READONLY" LOAD="URL::CLOSED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUIZ" SUB="FASTORDER_URL" TYPE="READONLY" LOAD="URL::FASTORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJA" SUB="MAIL_FORM_URL" TYPE="READONLY" LOAD="URL::MAIL_FORM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJB" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJC" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJD" SUB="CONTACTUS_URL" TYPE="READONLY" LOAD="URL::CONTACTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJE" SUB="DYNAMIC_URL" TYPE="READONLY" LOAD="URL::DYNAMIC_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJF" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJG" SUB="CONTACT_US_URL" TYPE="READONLY" LOAD="URL::CONTACT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJH" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJI" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJJ" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJK" SUB="MERCHANT_LOGIN_URL" TYPE="READONLY" LOAD="URL::MERCHANT_LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJL" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJM" SUB="ADULT_URL" TYPE="READONLY" LOAD="URL::ADULT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJN" SUB="CLAIM_URL" TYPE="READONLY" LOAD="URL::CLAIM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJO" SUB="CLAIM_MULTI_URL" TYPE="READONLY" LOAD="URL::CLAIM_MULTI_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJP" SUB="ABOUT_US_URL" TYPE="READONLY" LOAD="URL::ABOUT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJQ" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJR" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJS" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJT" SUB="REDIR_URL" TYPE="READONLY" LOAD="URL::REDIR_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJU" SUB="KILL_COOKIES_URL" TYPE="READONLY" LOAD="URL::KILL_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJV" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJW" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJX" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJY" SUB="NO_COOKIES_URL" TYPE="READONLY" LOAD="URL::NO_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUJZ" SUB="PAYPAL_URL" TYPE="READONLY" LOAD="URL::PAYPAL_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUKA" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUKB" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUKC" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPULUKD" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKE" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Guitar" CREATED="20021023" PROPERTIES="12" OCREATED="20021023" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+.zborder {  border: 1px solid #CCCCCC; }
+.zbox {  border: 1px solid #990000; }
+.zbox_body {  background-color: #F0F0F0; color: #000000; font-family: arial; font-size: 9pt; }
+.zbox_head {  background-color: #990000; color: #FFFFFF; font-family: arial; font-size: 9pt; }
+.zcolor {  background-color: #990000; color: #ffffff; }
+.zcolor_contrast {  background-color: #997575; color: #101010; }
+.zcolor_dark {  background-color: #590000; color: #bfbfbf; }
+.zcolor_light {  background-color: #d94040; color: #ffffff; }
+.zform_button {  background-color: #d94040; border: 1px solid #590000; color: #590000; font-family: arial; font-size: 8pt; }
+.zform_select {  background-color: #FFFFFF; border: 1px solid #590000; color: #000000; font-family: arial; font-size: 8pt; }
+.zform_textarea {  background-color: #FFFFFF; border: 1px solid #590000; color: #000000; font-family: arial; font-size: 8pt; }
+.zform_textbox {  background-color: #FFFFFF; border: 1px solid #590000; color: #000000; font-family: arial; font-size: 8pt; }
+.zhint {  color: #000000; font-family: verdana; font-size: 8pt; }
+.zlink {  color: #990000; }
+.zsmall {  color: #000000; font-family: verdana; font-size: 8pt; }
+.ztab0 {  background-color: #ffffff; color: #404040; font-family: arial; font-size: 9pt; }
+.ztab1 {  background-color: #F0F0F0; color: #000000; font-family: arial; font-size: 9pt; font-weight: bold; }
+.ztabbody {  background-color: #990000; color: #FFFFFF; font-family: arial; font-size: 8pt; }
+.ztable_head {  background-color: #990000; color: #FFFFFF; font-family: arial; font-size: 9pt; }
+.ztable_row {  color: #000000; font-family: arial; font-size: 9pt; }
+.ztable_row0 {  background-color: #F0F0F0; color: #000000; font-family: arial; font-size: 9pt; }
+.ztable_row1 {  background-color: #FFFFFF; color: #000000; font-family: arial; font-size: 9pt; }
+.ztable_row_small {  color: #000000; font-family: arial; font-size: 8pt; }
+.ztable_row_title {  color: #000000; font-family: arial; font-size: 11pt; font-weight: bold; }
+.ztitle {  color: #000000; font-family: Arial; font-size: 10pt; font-weight: bold; }
+.ztitle2 {  color: #000000; font-family: Arial; font-size: 9pt; font-weight: bold; }
+.ztxt {  color: #000000; font-family: Arial; font-size: 9pt; }
+.zwarn {  color: #990000; font-weight: bold; }
+]]></CSS>
+<THEME><![CDATA[alert_color=990000&content_background_color=FFFFFF&content_font_face=Arial&content_font_size=2&content_text_color=000000&disclaimer_background_color=FFFFFF&disclaimer_font_face=Arial&disclaimer_font_size=1&disclaimer_text_color=000000&link_active_text_color=990000&link_text_color=990000&link_visited_text_color=990000&name=&pretty_name=&table_heading_background_color=990000&table_heading_font_face=Arial&table_heading_font_size=2&table_heading_text_color=FFFFFF&table_listing_background_color=F0F0F0&table_listing_background_color_alternate=FFFFFF&table_listing_font_face=Arial&table_listing_font_size=2&table_listing_text_color=000000]]></THEME>
+<SITEBUTTONS><![CDATA[forward=l2_schmoop|gif|53|24&add_to_cart=l2_schmoop|gif|71|24&back=l2_schmoop|gif|56|24&default=l2_schmoop|gif|68|24&add_to_site=l2_schmoop|gif|122|32&checkout=l2_schmoop|gif|60|24&continue_shopping=l2_schmoop|gif|114|24&update_cart=l2_schmoop|gif|74|24&cancel=l2_schmoop|gif|47|24]]></SITEBUTTONS>
+</ELEMENT>
+<ELEMENT ID="CPULUKF" TYPE="OUTPUT"><HTML><![CDATA[
+<html>
+<head>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKG" TYPE="HEAD"></ELEMENT>
+<ELEMENT ID="CPULUKH" TYPE="OUTPUT"><HTML><![CDATA[
+
+<style rel="STYLESHEET" type="text/css">
+body {margin: 0; background-color: #FFFFFF;}
+a	{text-decoration: none;}
+a:hover	{color: #CCCCCC; text-decoration: underline;}
+form	{display:	inline;}
+td.black	{background-color: #000000;}
+td.red	{background-color: #990000;}
+.title    {font-family: arial; color: #990000; font-size: 16px; font-weight: bold;}
+.menu	{font-family: arial; font-size: 12px; color: #FFFFFF;}
+</style>
+<script language="JavaScript">
+<!--
+initialized = 0;
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKI" WIDTH="140" NOHOME="1" TYPE="SUBCAT" DESCENDTREE="1" NOROOT="1" PRODCAT="1" BUTTONTYPE="l2_redgalaxy_on" STYLE="LEGACYMENU"><HTML><![CDATA[subrollover_<% load($NUM);  default("");  print(); %>_on = new Image;<% load($BREAK);  default("");  print(); %>subrollover_<% load($NUM);  default("");  print(); %>_on.src = "<% load($SRC);  default("");  print(); %>";<% load($BREAK);  default("");  print(); %>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKJ" WIDTH="140" NOHOME="1" TYPE="SUBCAT" DESCENDTREE="1" NOROOT="1" PRODCAT="1" BUTTONTYPE="l2_redgalaxy_off" STYLE="LEGACYMENU"><HTML><![CDATA[subrollover_<% load($NUM);  default("");  print(); %>_off = new Image;<% load($BREAK);  default("");  print(); %>subrollover_<% load($NUM);  default("");  print(); %>_off.src = "<% load($SRC);  default("");  print(); %>";<% load($BREAK);  default("");  print(); %>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKK" TYPE="OUTPUT"><HTML><![CDATA[
+
+initialized = 1;
+function sbon(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"subroll_"+imageNumber+"\"")].src = eval("subrollover_"+imageNumber+"_on.src");
+}
+
+function sboff(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"subroll_"+imageNumber+"\"")].src = eval("subrollover_"+imageNumber+"_off.src");
+}
+
+// -->
+</script>
+		</head>
+<body text="#%CONTENT_TEXT_COLOR%" link="#%LINK_TEXT_COLOR%" alink="#%LINK_ACTIVE_TEXT_COLOR%" vlink="#%LINK_VISITED_TEXT_COLOR%">
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+	<tr>
+		<td valign="top" class="red">
+		<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+			<tr>
+				<td width=165 height=120 class="black" valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKL" HEIGHT="120" WIDTH="165" TYPE="LOGO" BGCOLOR="000000"></ELEMENT>
+<ELEMENT ID="CPULUKM" TYPE="OUTPUT"><HTML><![CDATA[</td>	
+			</tr><tr>
+				<td height="4" class="black"><img src="%GRAPHICS_URL%/blank.gif" height=4 width=1></td>
+			</tr><tr>
+				<td height="25" class="black" align="center">
+<form action="%RESULTS_URL%" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" name="keywords" value="">
+<input type="image" src="%WRAPPER_URL%/search.jpg" border=0>
+</form></td>
+			</tr><tr>
+				<td height="4" class="black"><img src="%GRAPHICS_URL%/blank.gif" height=4 width=1></td>
+			</tr><tr>
+				<td class="black" height=99% valign="top" align="center">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKN" WIDTH="150" NOHOME="1" TYPE="SUBCAT" DESCENDTREE="1" NOROOT="1" PRODCAT="1" BUTTONTYPE="l2_redgalaxy_off" STYLE="LEGACYMENU"><HTML><![CDATA[<a XXX href="<% load($URL);  default("");  print(); %>" OnMouseOver="sbon(<% load($NUM);  default("");  print(); %>)" OnMouseOut="sboff(<% load($NUM);  default("");  print(); %>)"><img src="<% load($SRC);  default("");  print(); %>" width="<% load($WIDTH);  default("");  print(); %>" height="<% load($HEIGHT);  default("");  print(); %>" border="0" name="subroll_<% load($NUM);  default("");  print(); %>"></a><br>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKO" TYPE="OUTPUT"><HTML><![CDATA[</td>
+			</tr><tr>
+				<td height="4" class="black"><img src="%GRAPHICS_URL%/blank.gif" height=4 width=1></td>
+			</tr><tr>
+				<td height="113" valign="bottom" class="red"><img src="%WRAPPER_URL%/guitar.gif" width="165" height="113" alt="" border="0"></td>
+			</tr><tr>
+				<td height="100" class="red"><img src="%GRAPHICS_URL%/blank.gif" height=100 width=1></td>
+			</tr>		
+		</table>
+		</td>
+		<td width=99% valign="top">
+		<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+			<tr>
+				<td class="black"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=10></td>
+				<td class="black" width="99%"><span class="menu">
+<a href="%HOME_URL%"><span class="menu">Home</a>&nbsp;&nbsp;|&nbsp;
+<a href="%CART_URL%"><span class="menu">Cart</a>&nbsp;&nbsp;|&nbsp;
+<a href="%ABOUT_URL%"><span class="menu">About Us</a>&nbsp;&nbsp;|&nbsp;
+<a href="%LOGIN_URL%"><span class="menu">My Account</a>&nbsp;&nbsp;|&nbsp;
+<a href="%CONTACT_URL%"><span class="menu">Contact Us</a></span></td>
+				<td class="black"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=10></td>
+				<td class="black"><img src="%GRAPHICS_URL%/blank.gif" height=20 width=1></td>
+			</tr><tr>
+				<td class="red"><img src="%GRAPHICS_URL%/blank.gif" height=20 width=1></td>
+				<td class="red"><span class="menu">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKP" NOHOME="1" TYPE="MENU" ONLYHOME="0"><HTML><![CDATA[
+<!-- CATEGORY -->
+<a href="<% load($cat_url);  default("");  print(); %>" target="<% load($TARGET);  default("");  print(); %>"><font color="#FFFFFF"><% load($cat_pretty);  default("");  print(); %></font></a><% load("
+");  default("");  print(); %>
+
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); runspec("|&lt;% load("
+");  default(&quot;&quot;);  print(); %&gt;"); print(); %>
+
+<!-- /CATEGORY -->
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKQ" TYPE="OUTPUT"><HTML><![CDATA[				</span></td>
+				<td class="red"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+				<td class="red"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
+			</tr><tr>
+				<td><img src="%GRAPHICS_URL%/blank.gif" height=200 width=1></td>
+				<td valign="top" height=99%><br><p><span class="title">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKR" TYPE="TITLE"></ELEMENT>
+<ELEMENT ID="CPULUKS" TYPE="OUTPUT"><HTML><![CDATA[</span></span></p>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKT" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="CPULUKU" TYPE="OUTPUT"><HTML><![CDATA[</td>
+			</tr><tr>
+				<td></td>
+				<td height=20 valign="bottom">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CPULUKV" TYPE="FOOTER"></ELEMENT>
+<ELEMENT ID="CPULUKW" TYPE="OUTPUT"><HTML><![CDATA[</td></tr>
+		</table>
+		
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

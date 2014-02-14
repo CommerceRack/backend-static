@@ -1,0 +1,83 @@
+<TEMPLATE ID="c-20090113" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNJS" CREATOR="JT" IMAGES="1" CREATED="20090113" PROPERTIES="1" SUBTYPE="C" SERIES="2009" FORMAT="LAYOUT" SHORT="Banner, followed by a two column prodlist and then some text." TYPE="CONFIG" EXPORT="0" RELEASED="20090113"><SUMMARY><![CDATA[This layout features a wide banner, followed by the products in a two column format.  The product list has a good sized thumbnail and detailed product information, including name, manufacturer, price, msrp, savings and a portion of the description.  After the product list is a wiki friendly text box.]]></SUMMARY>
+<TITLE><![CDATA[Wide banner, followed by a two column product list that contains a good size thumbnail, plus detailed product info.  After that is a wiki friendly text block.]]></TITLE>
+</ELEMENT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for banner" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER1" HEIGHT="250" EDITOR="INLINE" DATA="page:banner1" PROMPT="Banner" WIDTH="600" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:15px;" align='center'><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+<POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CYQXUBQ" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="2" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
+
+<!-- product list -->
+
+<div style='margin-bottom:15px;'>
+<table border='0' cellpadding='0' cellspacing='0'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+
+<!-- product: <% print($COUNT); %> -->
+
+	<td valign='top' class='zborder ztable_row<% print($row.alt); %>' width='50%'>
+	<table cellspacing='0' cellpadding='4'>
+	<tr>
+		<td width='1%'><a href='<% load($PROD_URL);  default("");  print(); %>'><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"105",h=>"105",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a></td>
+		
+		<td class='ztable_row ztable_row<% print($row.alt); %>' width='99%' valign='middle'>
+
+<div class='no_underline' style='font-weight:bold;'><a href='<% print($PROD_URL); %>' class='zlink'><% load($zoovy:prod_name); default("");  format(encode=>"entity"); print(); %></a></div>
+
+<div class='ztable_row_small'><% load($zoovy:prod_mfg); default(""); format(pretext=>"by "); print(); %></div>
+
+
+<div style='margin-top:5px;'><%
+load($zoovy:prod_msrp); format(hidezero); format(money); format(pretext=>"<div>regular price: <span style='text-decoration:line-through;'>",posttext=>"</span></div>"); print();
+
+load($zoovy:base_price);
+set($price=>$_);
+format(hidezero); format(money); format(pretext=>"<div style='font-weight:bold;'>our price: ",posttext=>"</div>"); print();
+
+
+load($zoovy:prod_msrp);
+
+math(op=>"subtract",var=>$price); format(hidezero); format(money); format(pretext=>"<div>save ",posttext=>"</div>"); print();
+%>
+</div>
+
+<div class='no_underline' style='margin-top:5px;'><a href='<% print($PROD_URL); %>' class='zlink'>more details</a> | <span style='text-transform:lowercase; font-weight:bold;'><% print($ADD_LINK); %></span></div>
+		
+		</td>
+	</tr>
+	</table>
+
+<div style='border-top: <% loadurp("CSS::zborder.border"); default("#EFEFEF dotted 1px"); print(); %>; padding:4px;'>
+<% load($zoovy:prod_desc);  default(""); format(wiki,title1=>"",/title1=>"",title2=>"",/title2=>"",title3=>"",/title3=>"",listitem=>"",/listitem=>"",list=>"",/list=>"",hardbreak=>""); strip(length=>"150"); format(encode=>"entity"); print(); %>
+</div>	
+	
+	</td>
+<!-- /PRODUCT -->
+</tr>
+<tr>
+	<td colspan='3'><img src='<% loadurp("URL::GRAPHICS_URL"); default(""); print(); %>/blank.gif' height='10' width='1' alt=''></td>
+</tr>	
+<!-- /ROW -->
+</table>
+</div>
+]]></HTML>
+<DIVIDER><![CDATA[
+
+<td><img src='<% loadurp("URL::GRAPHICS_URL"); default(""); print(); %>/blank.gif' height='1' width='10' alt=''></td>
+
+]]></DIVIDER>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Use wiki text to format your content.<br>
+Go to <a href="http://www.zoovydocs.com/doc-50590" target="webdoc">http://www.zoovydocs.com/doc-50590</a> for more information on how to properly set up your links.<br>
+]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,299 @@
+[
+   {
+      "catalog" : "CAMERA",
+		"amz-catalog" : "CameraPhoto",
+      "amz-subcat" : "SurveillanceSystem",
+      "subcat" : "surveillancesystem",
+      "type" : "config",
+		"variation-themes" : "None"
+   },
+   {
+      "PROMPT" : "CameraPhoto:SurveillanceSystem",
+      "DATA" : "product:amz:catalog",
+      "type" : "hidden",
+      "id" : "CRCQXMV",
+      "xmlpath" : "CameraPhoto.ProductType.SurveillanceSystem."
+   },
+   {
+      "ns" : "product",
+      "id" : "amz:search_terms",
+      "type" : "textlist",
+      "title" : "Search Terms"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "cameras",
+            "v" : "cameras"
+         },
+         {
+            "p" : "complete-systems",
+            "v" : "complete-systems"
+         },
+         {
+            "p" : "monitors",
+            "v" : "monitors"
+         },
+         {
+            "p" : "network-systems",
+            "v" : "network-systems"
+         },
+         {
+            "p" : "multiplexer",
+            "v" : "multiplexer"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ss_surveillancesystemtype",
+      "title" : "Surveillance System Surveillance System Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.SurveillanceSystem.SurveillanceSystemType",
+      "list" : "LIST_CAMERA_SURVEILLANCESYSTEM_SURVEILLANCESYSTEMTYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "security-cameras",
+            "v" : "security-cameras"
+         },
+         {
+            "p" : "dummy-cameras",
+            "v" : "dummy-cameras"
+         },
+         {
+            "p" : "bullet-cameras",
+            "v" : "bullet-cameras"
+         },
+         {
+            "p" : "web-cameras",
+            "v" : "web-cameras"
+         },
+         {
+            "p" : "mirror-image-cameras",
+            "v" : "mirror-image-cameras"
+         },
+         {
+            "p" : "dome-cameras",
+            "v" : "dome-cameras"
+         },
+         {
+            "p" : "spy-cameras",
+            "v" : "spy-cameras"
+         },
+         {
+            "p" : "pinhole-cameras",
+            "v" : "pinhole-cameras"
+         },
+         {
+            "p" : "miniature-cameras",
+            "v" : "miniature-cameras"
+         },
+         {
+            "p" : "nanny-cameras",
+            "v" : "nanny-cameras"
+         },
+         {
+            "p" : "pen-cameras",
+            "v" : "pen-cameras"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ss_cameratype",
+      "title" : "Surveillance System Camera Type",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.SurveillanceSystem.CameraType",
+      "list" : "LIST_CAMERA_SURVEILLANCESYSTEM_CAMERATYPE"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "weatherproof",
+            "v" : "weatherproof"
+         },
+         {
+            "p" : "motion-detection",
+            "v" : "motion-detection"
+         },
+         {
+            "p" : "real-time",
+            "v" : "real-time"
+         },
+         {
+            "p" : "indoor",
+            "v" : "indoor"
+         },
+         {
+            "p" : "outdoor",
+            "v" : "outdoor"
+         },
+         {
+            "p" : "black-and-white",
+            "v" : "black-and-white"
+         },
+         {
+            "p" : "color",
+            "v" : "color"
+         },
+         {
+            "p" : "night-vision",
+            "v" : "night-vision"
+         },
+         {
+            "p" : "day-and-night-camera",
+            "v" : "day-and-night-camera"
+         },
+         {
+            "p" : "adjustable-panning",
+            "v" : "adjustable-panning"
+         },
+         {
+            "p" : "submersible",
+            "v" : "submersible"
+         },
+         {
+            "p" : "wireless",
+            "v" : "wireless"
+         },
+         {
+            "p" : "ptz-system",
+            "v" : "ptz-system"
+         },
+         {
+            "p" : "digital-spy-camera",
+            "v" : "digital-spy-camera"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ss_features",
+      "title" : "Surveillance System Features",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.SurveillanceSystem.Features",
+      "list" : "LIST_CAMERA_SURVEILLANCESYSTEM_FEATURES"
+   },
+   {
+      "ns" : "product",
+      "options" : [
+         {
+            "T" : "",
+            "V" : ""
+         },
+         {
+            "p" : "mounting-brackets",
+            "v" : "mounting-brackets"
+         },
+         {
+            "p" : "power-adapter",
+            "v" : "power-adapter"
+         },
+         {
+            "p" : "cable",
+            "v" : "cable"
+         },
+         {
+            "p" : "sun-shield",
+            "v" : "sun-shield"
+         },
+         {
+            "p" : "camera-controller",
+            "v" : "camera-controller"
+         },
+         {
+            "p" : "transmitters",
+            "v" : "transmitters"
+         },
+         {
+            "p" : "zoom-lens",
+            "v" : "zoom-lens"
+         },
+         {
+            "p" : "pinhole-lens",
+            "v" : "pinhole-lens"
+         }
+      ],
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_ss_cameraaccs",
+      "title" : "Surveillance System Camera Accessories",
+      "type" : "select",
+      "xmlpath" : "CameraPhoto.ProductType.SurveillanceSystem.CameraAccessories",
+      "list" : "LIST_CAMERA_SURVEILLANCESYSTEM_CAMERAACCESSORIES"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mnfg",
+      "type" : "textbox",
+      "title" : "Manufacturer",
+      "xmlpath" : "CameraPhoto.Manufacturer"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlname",
+      "type" : "textbox",
+      "title" : "Model Name",
+      "xmlpath" : "CameraPhoto.ModelName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mdlnbr",
+      "type" : "textbox",
+      "title" : "Model Number",
+      "xmlpath" : "CameraPhoto.ModelNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_mfrpartnbr",
+      "type" : "textbox",
+      "title" : "Mfr Part Number",
+      "xmlpath" : "CameraPhoto.MfrPartNumber"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_color",
+      "type" : "textbox",
+      "title" : "Color",
+      "xmlpath" : "CameraPhoto.Color"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_itemsincluded",
+      "type" : "textbox",
+      "title" : "Items Included",
+      "xmlpath" : "CameraPhoto.ItemsIncluded"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_kwords",
+      "type" : "textlist",
+      "title" : "Keywords",
+      "xmlpath" : "CameraPhoto.Keywords"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_cp_platinumkwords",
+      "type" : "textlist",
+      "title" : "Platinum Keywords",
+      "xmlpath" : "CameraPhoto.PlatinumKeywords"
+   }
+]

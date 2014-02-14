@@ -1,0 +1,417 @@
+<TEMPLATE ID="p-20061014" FORMAT="LAYOUT">
+<LIST ID="REVIEW_ICONS" TYPE="TEXT">
+<OPT T="Stars" V="stars"></OPT>
+<OPT T="Colored Stars" V="colored_stars"></OPT>
+<OPT T="Colored Glass" V="hal"></OPT>
+<OPT T="Smiley Faces" V="smiles"></OPT>
+</LIST>
+
+
+<!-- ******* -->
+<ELEMENT ID="CRNFWLQ" V="2" CREATED="0" SUBTYPE="P" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="6 Pics and Everything Else" OCREATED="20061014" RELEASED="20061018"><SUMMARY><![CDATA[
+<p>This layout (similar to evolution, without the ajax) features six product images on the left and on the right has; price, reviews (optional), sku, manufacturer, mfg id, price (again), msrp and 'you save', followed by the add to cart button with a quantity box, and then the quantity discount pricing.  Below those are the 'tell a friend' button (optional) and the 'printer friendly version' button.  Below all that is the description, specifications, review summaries and accessories product list (max of 20) on the left, with a related items product list on the right (max of 10).</p>
+<p>Colors - The colors used in the layout are determined by the wrapper.  If you do not like the colors used, you can either select a different layout, or choose a different theme. The newer themes are more likely to have a better color pallette.</p>
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPXKZXR" RAW="1" SUB="ZBOX_BORDER" TYPE="READONLY" LOAD="CSS::zbox.border"></ELEMENT>
+<ELEMENT ID="VAR_HOMEURL" DATA="URL::HOME_URL" SUB="HOME_URL" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="VAR_PRODURL" DATA="URL::PRODUCT_URL" SUB="PRODUCT_URL" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="VAR_USERNAME" DATA="FLOW::USERNAME" SUB="USERNAME" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="VAR_POPUPWRAPPER" RAW="1" SUB="POPUP_WRAPPER" TYPE="READONLY" LOAD="profile:zoovy:popup_wrapper"></ELEMENT>
+<ELEMENT ID="VAR_SKU" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
+<ELEMENT ID="VAR_PROD_URL" RAW="1" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL"></ELEMENT>
+<ELEMENT ID="CZVIFIT" SUB="PROD_WISHPOT_BUTTON" TYPE="SPECL"><HTML><![CDATA[<%
+
+
+print("<!-- Wishpot button, if enabled -->");
+
+loadurp("profile:wishpot:merchantid"); default("");
+stop(unless=>$_);
+	set($WISHPOT_MID=>$_);
+print("
+<div style='margin:5px 0;'>
+<div class='wishpot_form'>
+<form method='post' action='http://www.wishpot.com/my/wishes/add.aspx' onSubmit='return false;'>
+<!--the partner key-->
+<input name='pkey' value='zoovy' type='hidden'>
+<!--optionally specify a channel for reporting purposes. 32 character limit -->
+<input name='pchannel' value='"); print($WISHPOT_MID); print("' type='hidden'>
+<input name='WishUrl' value='%PRODUCT_URL%/%SKU%' type='hidden'>
+<input name='WishTitle' value=&quot;");
+
+loadurp("product:zoovy:prod_name"); default(""); format(encode=>"entity"); print();
+
+print("&quot; type='hidden'>
+<input name='Price' value='");
+
+loadurp("product:zoovy:base_price"); default(""); format(money); print();
+
+print("' type='hidden'>
+
+<input name='Notes' value='' type='hidden'>
+
+<!-- Display the image source and size for the product (size required) -->
+
+<input name='ImgSrc' value='");
+
+loadurp("product:zoovy:prod_image1"); default("");
+image(h=>"200",w=>"200",bg=>"ffffff",tag=>"0"); print();
+
+print("' type='hidden'>
+<input name='ImgWidth' value='200' type='hidden'>
+<input name='ImgHeight' value='200' type='hidden'>
+
+<!--Specific to certain items -->
+<input name='Isbn' value='");
+
+loadurp("product:zoovy:prod_isbn"); default(""); print();
+
+print("' type='hidden'>
+<input name='Upc' value='");
+
+loadurp("product:zoovy:prod_upc"); default(""); print();
+print("' type='hidden'>
+
+<!-- There are a few buttong to choose from. Simply replace the src attribute -->
+<input type='image' title='Add to Wishlist at Wishpot' src='%GRAPHICS_URL%/wishpot_addbutton2-134x26.png' alt='Add to Wishpot' onClick=&quot;if(document.getElementById){window.WISHPOT_FORM=this.parentNode;var x=document.getElementsByTagName('head').item(0);var o=document.createElement('script');if(typeof(o)!='object') o=document.standardCreateElement('script');o.setAttribute('src','http://www.wishpot.com/scripts/bm.js?v=100');o.setAttribute('type','text/javascript');x.appendChild(o);} return false;&quot; />
+</form>
+</div>
+</div>
+
+<!-- /wishpot code -->
+
+
+");
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="REVIEWS_ICON_CHOOSER" DATA="profile:zoovy:prod_reviews_icon" RAW="1" VALUE="colored_stars" SUB="NOT_USED" PROMPT="Reviews Icon (global)" DEFAULT="colored_stars" TYPE="SELECT" FONT="0" LIST="REVIEW_ICONS"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages.  'colored' implies that the icons adopt color properties from your store.]]></HELP>
+</ELEMENT>
+<ELEMENT ID="REVIEWSUMMARY" DATA="product:zoovy:prod_reviews" SUB="REVIEW_SUMMARY" TYPE="REVIEWS"><HTML><![CDATA[
+<!-- SUMMARY -->
+<!-- rating -->
+<table cellspacing="2" cellpadding="0" width="100%" style="background-color:#FFFFFF; border:1px dotted <% loadurp("CSS::zcolor_light.bgcolor"); print(); %>;">
+<tr>
+	
+<%
+load($TOTAL_REVIEWS); default("");
+goto(ne=>"0",label=>"MULTIPLE");	
+	print("<td colspan='2'><span class="zsmall"><a href='javascript:openWindow(&quot;");
+	loadurp("URL::HOME_URL"); print();
+	print("popup.pl?verb=INIT_REVIEWS&pg=*taf&fl=pop_reviews_ajax&product=");
+	loadurp("FLOW::PROD"); print();
+	print("&quot;);' class='zlink'>Be the first person to review this product</a></span></td>");
+	stop();
+:MULTIPLE();
+	print("<td width='85%' class='zsmall'><a href='#reviews' class='zlink'>Reviewed ");
+	print($TOTAL_REVIEWS);
+	print(" times</a></td><td NOWRAP align='right' class='zsmall';>Average Rating: </td>");
+	%>	
+	
+	
+	<td align="left"><%
+/* load the profile review icon that is selected.  If not set, use default instead. */
+loadurp("CSS::zcolor.bgcolor");
+set($bgcolor=>$_);
+loadurp("profile:zoovy:prod_reviews_icon"); default("colored_stars"); format(pretext=>"stock/reviews/",posttext=>"/");
+set($image_loc=>$_);
+load($AVG_RATING); format(pretext=>$image_loc);
+image(src=>$_,library=>"proshop",h=>"25",w=>"110",bg=>$bgcolor,tag=>"1");
+print();	
+
+%></td>
+</tr>
+</table>
+<!-- /rating -->	
+<!-- /SUMMARY -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="REVIEWOPTION" TRUE="%REVIEW_SUMMARY%" FALSE="" DATA="profile:zoovy:wrap_reviews" SUB="ENABLE_REVIEWS" PROMPT="Product Reviews" ON="1" DEFAULT="1" TYPE="CHECKBOX" OFF="0"><HELP><![CDATA[
+Product Reviews allows your customers to add their personal input about a specific product.  Once their review is submitted, it is entered into a queue for your approval.  You have the ability to add/remove/edit any specific review through the product editor.
+<br>Enabling/disabling this feature is profile-wide. 
+<br>This feature requires the CRM bundle.
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="TAFOPTION" FALSE="" DATA="profile:zoovy:wrap_tellafriend" SUB="ENABLE_TAF" PROMPT="Tell a friend" ON="1" DEFAULT="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[
+<input type="button" onclick="openWindow('%HOME_URL%/popup.pl?verb=INIT_TAF&pg=*taf&fl=pop_taf1&product=%SKU%&wrapper=%POPUP_WRAPPER%');" value="Tell a Friend" class="zform_button">
+]]></TRUE>
+<HELP><![CDATA[Tell a Friend or TAF is a feature that puts a contact form on your product pages so that your customers can send product specific information directly to an associate of theirs.  Your branding and product specific information are in the email sent, as well as a custom message set by your customer.<br>
+Enabling/disabling this feature is profile-wide.
+<br>This feature requires the XSELL bundle.
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CRNFWMB" TYPE="OUTPUT"><HTML><![CDATA[
+
+<script>
+<!--
+
+
+//The is the default zoovy image zoom function.
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+	}
+
+function openWindow(url) {
+	adviceWin = window.open(url,'advice','status=no,width=400,height=430,menubar=no,scrollbars=yes');
+	adviceWin.focus(true);
+	}
+//-->
+</script>
+
+<style type="text/css">
+/* this is the style for the floating product image. */
+#trailimageid {position: absolute; visibility: hidden; left: 0px; top: 0px; width: 300px; height: 1px; z-index: 1000;}
+</style>
+
+<div align="center">
+<div style="margin:5px; width:590px; text-align:left;">
+<table cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td width="1%" valign="top">
+<div id="containment">
+<div id="prod_imageHolder">
+<!-- begin images -->
+<table cellspacing="3" cellpadding="0" class="prod_images">
+<tr>
+<!-- IMAGE 1 -->
+	<td colspan="2" rowspan="2">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="145" ID="CQFJSMG" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="145" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="zborder" style="width:145px;">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMB" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<!-- IMAGE 2 -->
+	<td>]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="70" ID="CRGULCF1" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image4" PROMPT="Image 4" WIDTH="70" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="zborder" style="width:70px;">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMC" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+<tr>
+<!-- IMAGE 3 -->
+	<td>]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="70" ID="CRGULCF2" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image5" PROMPT="Image 5" WIDTH="70" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="zborder" style="width:70px;">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMD" TYPE="OUTPUT"><HTML><![CDATA[</td>
+</tr>
+<tr>
+<!-- IMAGE 4 -->
+	<td width="70">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="70" ID="CRGULCF3" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image 2" WIDTH="70" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="zborder" style="width:70px;">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWME" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<!-- IMAGE 5 -->
+	<td width="70">]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="70" ID="CRGULCF5" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image 3" WIDTH="70" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="zborder" style="width:70px;">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMF" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<!-- IMAGE 6 -->
+	<td>]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="70" ID="CRGULCF6" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image6" PROMPT="Image 6" WIDTH="70" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div class="zborder" style="width:70px;">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CRNFWMG" TYPE="OUTPUT"><HTML><![CDATA[</td>
+<tr>
+<tr>
+	<td colspan="3" align="center"><div id="imageText" class="zhint">click images to enlarge</div></td>
+</tr>
+</table>
+<!-- /end images -->
+
+</div></td>
+	<td valign="top"><div align="right"><span class="ztitle">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFWLX" PRETEXT="only $" RAW="1" FORMAT="PLAINPRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CSRZQPG" TYPE="OUTPUT"><HTML><![CDATA[</span>
+</div>
+
+%ENABLE_REVIEWS%
+
+	<table cellspacing="0" cellpadding="0" width="100%" style="border-bottom: %ZBOX_BORDER%; margin-bottom:4px; margin-top:4px;">
+	<tr>
+		<td style="line-height:130%; padding-top:3px; padding-bottom:3px;" valign="top" width="50%" class="ztxt">Item #: %SKU%<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PROD_MFG" PRETEXT="Manufacturer: " DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" TYPE="TEXTBOX"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PROD_MFGID" PRETEXT="Mfg ID: " DATA="product:zoovy:prod_mfgid" PROMPT="Manufacturer's ID" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CSRZQPH" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+		<td style="line-height:130%; padding-top:3px; padding-bottom:3px;" valign="top" width="50%" align="right" class="ztxt">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSRZQPI" TYPE="SPECL"><HTML><![CDATA[
+<%
+loadurp("product:zoovy:base_price");
+	set($price=>$_);
+
+	format(hidezero); format(money); format(pretext=>"Our Price: ",posttext=>"<br>"); print();
+	loadurp("product:zoovy:prod_msrp"); format(hidezero); format(money); format(pretext=>"Retail Price: ",posttext=>"<br>"); print();
+	
+	loadurp("product:zoovy:prod_msrp");
+	math(op=>"subtract",var=>$price); format(hidezero); format(money); format(pretext=>"You Save: "); print();
+%>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSRZQPJ" TYPE="OUTPUT"><HTML><![CDATA[		
+		</td>
+	</tr>
+	</table>
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+		<td align='right' style="border-bottom: %ZBOX_BORDER%;" class="ztxt">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" SHOWQUANTITY="Quantity: " TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CZVIFIU" HTML="%PROD_WISHPOT_BUTTON%" TYPE="OUTPUT"></ELEMENT>
+<ELEMENT ID="QTYPRICE" DATA="product:zoovy:qty_price" MIDLINE=" for " PRELINE="Buy " PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
+<PRETEXT><![CDATA[<table class="zborder" style="width:200px; margin-bottom:3px;">
+<tr>
+	<td class="ztable_head">Quantity Discount Pricing</td>
+</tr>
+<tr>
+	<td class="ztable_row">]]></PRETEXT>
+<POSTTEXT><![CDATA[</td></tr></table>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CSRZQPK" TYPE="OUTPUT"><HTML><![CDATA[			
+		</td>
+	</tr>
+	<tr>
+		<td align='right'><div style="margin-top:4px;">
+		%ENABLE_TAF%
+		<form target="_blank" method="get" action="%PRODUCT_URL%/%SKU%" style="display:inline;margin:0px;">
+		<input type="hidden" name="fl" value="prod_info"><input type="hidden" name="wrapper" value="plain">
+		<input type="submit" value="Printer Friendly Version" class="zform_button">
+		</form>
+		</div>
+		</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="3" width="100%" style="margin-top:3px;">
+<tr>
+	<td valign="top">]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PROD_DESC" DATA="product:zoovy:prod_desc" PROMPT="Product Description" TYPE="TEXT"><HELP><![CDATA[Your product description should contain a brief, yet colorful, description of the product.  Run this text through a spell checker because typo's and grammatical errors will not help your credibility.  You should not type in all uppercase, as it looks unprofessional and is hard to read.  In most cases, if a product description is present in a list (such as on a category, search results or homepage) the first 100-200 characters from this description will be used.]]></HELP>
+<PRETEXT><![CDATA[<div style="width:120px; padding:3px;" class="ztable_head">Description</div>
+<table cellspacing="1" cellpadding="4" class="ztabbody" width="100%" style="margin-bottom:3px;">
+<tr>
+	<td class="zbody ztxt">]]></PRETEXT>
+<POSTTEXT><![CDATA[</td>
+</tr>
+</table>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="PROD_DETAIL" DATA="product:zoovy:prod_detail" PROMPT="Product Specifications (detailed description)" TYPE="TEXT"><PRETEXT><![CDATA[<div style="width:120px; padding:3px;" class="ztable_head">Specifications</div>
+<table cellspacing="1" cellpadding="4" class="ztabbody" width="100%" style="margin-bottom:3px;">
+<tr>
+	<td class="zbody ztxt">]]></PRETEXT>
+<POSTTEXT><![CDATA[</td>
+</tr>
+</table>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="REVIEWDETAILS" DATA="product:zoovy:prod_reviews" SUB="REVIEWS" TYPE="REVIEWS"><HTML><![CDATA[
+<!-- product reviews -->
+<!-- DETAIL -->
+
+<a name="reviews"></a>
+<div style="width:120px; padding:3px;" class="ztable_head">Reviews</div>
+<table cellspacing="1" cellpadding="4" class="ztabbody" width="100%" style="margin-bottom:3px;">
+<tr>
+	<td class="zbody ztxt">
+<div style="margin-top:3px; margin-bottom:3px;"><a href="#reviews" onclick="openWindow('%HOME_URL%popup.pl?verb=INIT_REVIEWS&pg=*taf&fl=pop_reviews_ajax&product=%SKU%&wrapper=%POPUP_WRAPPER%');" class="zlink">Write a Review</a></div><table cellspacing="0" cellpadding="2">
+<!-- ROW -->
+<!-- REVIEW -->
+<tr>
+	<td style="border-top:1px dotted <% loadurp("CSS::zcolor_light.bgcolor"); print(); %>;" width="99%" class="ztable_row"><strong><% load($CUSTOMER_NAME);  default("");  print(); %></strong> of <% load($LOCATION);  default("");  print(); %>
+	<div><% load($SUBJECT);  default("");  print(); %></div></td>
+	<td valign="top" class="ztable_row" style="border-top:1px dotted <% loadurp("CSS::zcolor_light.bgcolor"); print(); %>;">
+<%
+/* load the profile review icon that is selected.  If not set, use default instead. */
+loadurp("CSS::zcolor.bgcolor");
+set($bgcolor=>$_);
+loadurp("profile:zoovy:prod_reviews_icon"); default("colored_stars"); format(pretext=>"stock/reviews/",posttext=>"/");
+set($image_loc=>$_);
+load($RATING); format(pretext=>$image_loc);
+image(src=>$_,library=>"proshop",h=>"25",w=>"110",bg=>$bgcolor,tag=>"1");
+print();	
+%>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" class="ztable_row"><div><% load($MESSAGE);  default(""); strip(html=>"1"); print(); %></div></td>
+</tr>
+<!-- /REVIEW -->
+<!-- /ROW -->
+</table></td>
+</tr>
+</table>
+<!-- /DETAIL -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNEEWH" TRUE="%REVIEWS%" TYPE="TRISTATE" LOAD="profile:zoovy:wrap_reviews" UNDEF="%REVIEWS%"><FALSE><![CDATA[<!-- reviews are turned off -->]]></FALSE>
+</ELEMENT>
+<ELEMENT ID="PRODLIST" SIZE="5000" MAX="20" SHOWDEFAULT="0" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="PRODUCT:zoovy:accessory_products"><HTML><![CDATA[
+<div style="width:120px; padding:3px;" class="ztable_head">Accessories</div>
+<table cellspacing="1" cellpadding="0" class="ztabbody" width="100%" style="margin-bottom:3px;">
+<tr>
+	<td class="zbody ztxt">
+<table cellspacing="0" cellpadding="3" width="100%">
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<td class="ztable_row ztable_row<% print($row.alt); %>"><a href="<% load($PROD_URL);  default("");  print(); %>" class="zlink"><% load($zoovy:prod_name);  default(""); strip(length=>"55",breaks=>"1",html=>"1");  print(); %></a></td>
+<td  class="ztable_row ztable_row<% print($row.alt); %>" align="right"><% load($zoovy:base_price); default("");  format(money);  print(); %></td>
+<td NOWRAP class="ztable_row ztable_row<% print($row.alt); %>" align="right"><% print($ADD_LINK); %></td>
+<!-- /PRODUCT -->
+</tr>
+<!-- /ROW -->
+</table></td></tr></table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSRZQPL" TYPE="OUTPUT"><HTML><![CDATA[	
+	</td>
+	
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST_RELATED" SIZE="5000" MAX="10" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<td width="10%" class="zcolor_light" valign="top" align="center">
+<div class="ztitle2" style="margin:3px 0px 3px 0px; border-bottom:%ZBOX_BORDER%; width:150px;">Related Items<b></div>
+
+<!-- ROW -->
+<!-- PRODUCT -->
+<a href="<% load($PROD_URL);  default("");  print(); %>"><% 
+loadurp("CSS::zcolor_light.bgcolor");
+set($bgcolor=>$_);
+load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"70",h=>"70",bg=>$bgcolor,tag=>"1");  print(); %></a><br>
+<div class="ztable_row" style='margin-bottom:3px;'>
+<a href="<% load($PROD_URL);  default("");  print(); %>" class="zlink"><% load($zoovy:prod_name);  default(""); strip(length=>"55",breaks=>"1",html=>"1");  print(); %></a><br>
+<% load($zoovy:base_price);  default("");  format(money);  print(); %>
+</div>
+<!-- /PRODUCT -->
+<!-- /ROW -->
+
+</td>
+
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSRZQPM" TYPE="OUTPUT"><HTML><![CDATA[	
+	
+</tr>
+</table>
+</div>
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

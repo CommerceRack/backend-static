@@ -1,0 +1,40 @@
+<TEMPLATE ID="2001" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMCR" CREATOR="STAFF" IMAGES="1" PROPERTIES="1" SUBTYPE="D" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Single Picture" RELEASED="20021106"><SUMMARY><![CDATA[Counter Graph
+Extended Description
+IMAGE1 (400x200)
+Product Listing
+]]></SUMMARY>
+<SHORT><![CDATA[A 200x400 picture sits at the top of this page, with an extended description, more products, and counter graph.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKMCS" TYPE="OUTPUT"><HTML><![CDATA[<center>
+<table cellpadding="10"><tr><td align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="200" ID="PIC1" HELP="Please select a picture for this category." DATA="page:picture1" WIDTH="400" PROMPT="Large Picture" DEFAULT="https://static.zoovy.com/img/H100-W100-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMCT" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr>
+<tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Here's a graph of this auction's views by hour!" DATA="page:description" PROMPT="Extended Description" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMCU" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+<center>
+]]></HTML>
+</ELEMENT>
+<ELEMENT HEIGHT="200" ID="HITGRAPH1" HELP="Auction Counter that tracks realtime traffic for this auction. " DATA="page:hitgraph" WIDTH="560" PROMPT="Counter Graph" DEFAULT="Graph of visitors by the hour" TYPE="HITGRAPH"></ELEMENT>
+<ELEMENT ID="CPUKMCV" TYPE="OUTPUT"><HTML><![CDATA[
+<P>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" HELP="You can add related products to this, when you do they will appear below." DATA="page:prodlist" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKMCW" TYPE="OUTPUT"><HTML><![CDATA[
+</td></tr></table>
+</center>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

@@ -1,0 +1,11 @@
+# API: adminKPIDBCollectionList
+
+
+## ACCESS REQUIREMENTS: ##
+[[DASHBOARD|CONCEPT_dashboard]] - LIST
+
+
+
+
+## OUTPUT PARAMETERS: ##
+  * @COLLECTIONS: 

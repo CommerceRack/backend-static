@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=tropics
+SITEBUTTONS=l2_sharpsepia
+-->
+<html>
+<head>
+<!-- HEAD -->
+</head>
+<MAP NAME="menu">
+<AREA SHAPE="rect" ALT="cart" COORDS="61,74,119,90" HREF="<!-- CART_URL -->">
+<AREA SHAPE="rect" ALT="contact" COORDS="48,58,128,73" HREF="<!-- CONTACT_URL -->">
+<AREA SHAPE="rect" ALT="about us" COORDS="45,41,130,57" HREF="<!-- ABOUT_URL -->">
+<AREA SHAPE="rect" ALT="search" COORDS="51,25,125,40" HREF="<!-- SEARCH_URL -->">
+<AREA SHAPE="rect" ALT="home" COORDS="55,8,120,24" HREF="<!-- HOME_URL -->">
+</MAP>
+<script language="JavaScript">
+<!--
+initialized = 0;
+<!-- MENU
+FORMAT=rollover_%NUM%_on = new Image;%BREAK%rollover_%NUM%_on.src = "%SRC%";%BREAK%
+BUTTONTYPE=tropics_on
+WIDTH=121
+NOHOME=1
+--><!-- MENU
+FORMAT=rollover_%NUM%_off = new Image;%BREAK%rollover_%NUM%_off.src = "%SRC%";%BREAK%
+BUTTONTYPE=tropics_off
+WIDTH=121
+NOHOME=1
+-->initialized = 1;
+function on(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_on.src");
+}
+function off(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_off.src");
+}
+// -->
+</script>
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px}
+.title	{font-size: 13px; font-family: arial; color: #FFFFFF; font-weight: bold;}
+.foo	{background-color: #009900;}
+</style>
+<body>
+
+
+<table cellspacing=0 cellpadding=0 width=100% border=0>	
+	<tr>
+		<td width=135><img src="<!-- WRAPPER_URL -->/parrothead.gif" width="135" height="96" alt="" border="0"></td>
+		<td width=99% valign="middle" align="center"><!-- LOGO
+WIDTH=400
+HEIGHT=90
+--></td>
+		<td width=96><img src="<!-- WRAPPER_URL -->/menu.gif" width="180" height="96" alt="" border="0" USEMAP="#menu"></td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=0 width=100% border=0>	
+	<tr>
+		<td width=135 valign="top" height=16><img src="<!-- WRAPPER_URL -->/parrotneck.gif" width="135" height="16" alt="" border="0"></td>
+		<td width=99% class="foo"><span class="title"><!-- TITLE --></span></td>
+	</tr>
+</table>
+<table cellspacing=0 cellpadding=0 width=100% border=0>
+	<tr>
+		<td valign="top" align="center"><img src="<!-- WRAPPER_URL -->/parrotbody.gif" width="135" height="73" alt="" border="0"><BR>
+		<!-- MENU
+BUTTONTYPE=tropics_off
+FORMAT=<a href="%URL%" OnMouseOver="on(%NUM%)" OnMouseOut="off(%NUM%)"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0" name="roll_%NUM%"></a><br>
+WIDTH=121
+NOHOME=1
+-->
+<img src="<!-- WRAPPER_URL -->/cats_bottom.gif" width="135" height="35" alt="" border="0">
+
+</td>
+		<td width=12 valign="top"><img src="<!-- WRAPPER_URL -->/parrotfeather.gif" width="12" height="73" alt="" border="0"></td>
+		<td width=99% valign="top" align="left"><br><p><!-- BODY --></p><!-- FOOTER --></td>
+		<td width=12><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=12></td>
+	</tr>
+</table>
+</body>
+</html>

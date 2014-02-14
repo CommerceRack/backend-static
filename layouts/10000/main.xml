@@ -1,0 +1,100 @@
+<TEMPLATE ID="10000" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMJH" CREATOR="STAFF" IMAGES="4" PROPERTIES="1" SUBTYPE="M" SERIES="2001" FORMAT="LAYOUT" SHORT="This contains a row of 4 pictures on the right hand side." TYPE="CONFIG" TITLE="4 Right Pictures" RELEASED="20010824"><SUMMARY><![CDATA[Detailed Description Contents
+IMAGE (100x100)
+Payment Information Contents
+Return Policy Contents
+Shipping Information Contents
+Short Description
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMJI" TYPE="OUTPUT"><HTML><![CDATA[<html>
+<font face='arial'>
+<table bgcolor="%BGCOLOR%" width='95%'>
+<tr>
+	<td width="60%" valign="top" align="center">
+		<table width="90%" bgcolor="%HEAD_BGCOLOR%" border='0' cellpadding='1' cellspacing='0'>
+		<tr><td bgcolor="%HEAD_BGCOLOR%"><font color="%HEAD_FGCOLOR%"><b>Short Description</b></font></td></tr>
+<tr><td bgcolor="%BGCOLOR%"><font color='%FGCOLOR%'>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="NAME" HELP="Please enter something" DATA="product:prod_desc" PROMPT="Short Description" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMJJ" TYPE="OUTPUT"><HTML><![CDATA[
+
+</font></td></tr>
+		<tr><td bgcolor="%BGCOLOR%"><br></td></tr>
+		<tr><td bgcolor="%HEAD_BGCOLOR%"><font color="%HEAD_FGCOLOR%"><b>Detailed Description</b></font></td></tr>
+<tr><td bgcolor="%BGCOLOR%"><font color='%FGCOLOR%'>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="NAME" HELP="Please enter something" DATA="product:prod_detail" PROMPT="Detailed Description Contents" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMJK" TYPE="OUTPUT"><HTML><![CDATA[
+
+</font></td></tr>
+		<tr><td bgcolor="%BGCOLOR%"><br></td></tr>
+		<tr><td bgcolor="%HEAD_BGCOLOR%"><font color="%HEAD_FGCOLOR%"><b>Payment Information</b></font></td></tr>
+<tr><td bgcolor="%BGCOLOR%"><font color='%FGCOLOR%'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="NAME" HELP="Please enter something" DATA="merchant:zoovy:payment_explanation" PROMPT="Payment Information Contents" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMJL" TYPE="OUTPUT"><HTML><![CDATA[
+</font></td></tr>
+
+		<tr><td bgcolor="%BGCOLOR%"><br></td></tr>
+		<tr><td bgcolor="%HEAD_BGCOLOR%"><font color="%HEAD_FGCOLOR%"><b>Shipping Information</b></font></td></tr>
+<tr><td bgcolor="%BGCOLOR%"><font color='%FGCOLOR%'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="NAME" HELP="Please enter something" DATA="merchant:zoovy:shipping_explanation" PROMPT="Shipping Information Contents" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMJM" TYPE="OUTPUT"><HTML><![CDATA[
+</font></td></tr>
+
+		<tr><td bgcolor="%BGCOLOR%"><br></td></tr>
+		<tr><td bgcolor="%HEAD_BGCOLOR%"><font color="%HEAD_FGCOLOR%"><b>Return Policy</b></font></td></tr>
+<tr><td bgcolor="%BGCOLOR%"><font color='%FGCOLOR%'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="NAME" HELP="Please enter something" DATA="merchant:zoovy:shipping_explanation" PROMPT="Return Policy Contents" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMJN" TYPE="OUTPUT"><HTML><![CDATA[
+</font></td></tr>
+		</table>
+
+	</td><td width="40%" align="center" valign="top">
+		<table>
+		<tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="100" WIDTH="100" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMJO" TYPE="OUTPUT"><HTML><![CDATA[
+		</td></tr>
+		<tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="100" WIDTH="100" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMJP" TYPE="OUTPUT"><HTML><![CDATA[
+		</td></tr>
+		<tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE3" HEIGHT="100" WIDTH="100" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMJQ" TYPE="OUTPUT"><HTML><![CDATA[
+		</td></tr>
+		<tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE4" HEIGHT="100" WIDTH="100" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMJR" TYPE="OUTPUT"><HTML><![CDATA[
+		</td></tr>
+		</table>
+	</td>
+</tr>
+</table>
+</font>
+</html>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

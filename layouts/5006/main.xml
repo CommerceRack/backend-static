@@ -1,0 +1,159 @@
+<TEMPLATE ID="5006" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMLX" CREATOR="JT" IMAGES="0" PROPERTIES="1" SERIES="2007" SUBTYPE="S" FORMAT="LAYOUT" TYPE="CONFIG" RELEASED="20070816"><SUMMARY><![CDATA[This search layout contains up to 4 keyword searches, each of which can specify it's own catalog and prompt.  There is also two finders, each of which can have a header and separate finder forms.  Each search section contains a customizable header and there is a text block at the top of the page.
+]]></SUMMARY>
+<TITLE><![CDATA[This form includes the ability to add search hints, and specify up to four catalogs to be searched.  It also allows up to two finders to be added.]]></TITLE>
+</ELEMENT>
+<ELEMENT ID="CUXBKOZ" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
+<div class="hint-box">
+	<div class='hint-head'>WebDoc Help Files</div>
+	<div class='hint-content'>
+This layout supports up to four search catalogs and two finders.<br>
+Advanced Search: <a href='http://webdoc.zoovy.com/doc/50345' target='webdoc'>http://webdoc.zoovy.com/doc/50345</a><br>
+Finder: <a href='http://webdoc.zoovy.com/doc/50900' target='webdoc'>http://webdoc.zoovy.com/doc/50900</a>
+
+	</div>
+</div>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" EDITOR="INLINE" DATA="page:message" PROMPT="Welcome Message" HELPER="Please enter a Welcome message that will appear on your search" TYPE="TEXT"><PRETEXT><![CDATA[<div class='ztxt' style='margin:3px 3px 10px 3px;'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CUWIQUO" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+<div class='zbox' style='margin:0px 3px 10px 3px; padding:1px;'>
+	<div class='zbox_head' style='padding:2px; font-weight:bold;'>
+	]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CUWIQUP" LENGTH="35" EDITOR="INLINE" DATA="page:header" PROMPT="Heading for keyword searches" DEFAULT="Keyword Search" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="CUWIQUQ" TYPE="OUTPUT"><HTML><![CDATA[
+	</div>
+	<div class='zbox_body' style='padding:5px;'>
+<div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SEARCH1" PROMPTATTRIB="page:prompt" EDITOR="INLINE" PROMPT="Search Box 1" PROMPTDEFAULT="Keywords : " TYPE="SEARCHBOX" POSTTEXT="" BUTTONDEFAULT=" Go " BUTTONATTRIB="page:button" CATALOGATTRIB="page:catalog"></ELEMENT>
+<ELEMENT ID="CUWIQUR" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+
+<div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CUWIQUS" PROMPTATTRIB="page:prompt2" EDITOR="INLINE" PROMPT="Search Box" PROMPTDEFAULT="Keywords : " TYPE="SEARCHBOX" BUTTONATTRIB="page:button2" BUTTONDEFAULT=" Go " CATALOGATTRIB="page:catalog2"></ELEMENT>
+<ELEMENT ID="CUWIQUT" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+
+<div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SEARCH3" PROMPTATTRIB="page:prompt3" EDITOR="INLINE" PROMPT="Search Box 3" PROMPTDEFAULT="Keywords : " TYPE="SEARCHBOX" BUTTONDEFAULT=" Go " BUTTONATTRIB="page:button3" CATALOGATTRIB="page:catalog3"></ELEMENT>
+<ELEMENT ID="CUWIQUU" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+
+<div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="SEARCH4" PROMPTATTRIB="page:prompt4" EDITOR="INLINE" PROMPT="Search Box 4" PROMPTDEFAULT="Keywords : " TYPE="SEARCHBOX" BUTTONDEFAULT=" Go " BUTTONATTRIB="page:button4" CATALOGATTRIB="page:catalog4"></ELEMENT>
+<ELEMENT ID="CUWIQUV" TYPE="OUTPUT"><HTML><![CDATA[
+</div>
+
+	</div>
+</div>
+
+<div class='zbox' style='margin:0px 3px 10px 3px; padding:1px;'>
+	<div class='zbox_head' style='padding:2px; font-weight:bold;'>
+	]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CUWIQUW" LENGTH="35" EDITOR="INLINE" DATA="page:header2" PROMPT="Heading for Finder search" DEFAULT="Advanced Product Finder" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="CUWIQUX" TYPE="OUTPUT"><HTML><![CDATA[
+	</div>
+	<div class='zbox_body' style='padding:5px;'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CUWIQUW" LENGTH="35" EDITOR="INLINE" DATA="page:finder_header" PROMPT="Heading for Finder 1" TYPE="TEXTBOX" FONT="0"><PRETEXT><![CDATA[<div class='ztitle' style='margin-bottom:5px'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="FINDER" EDITOR="INLINE" DATA="page:finder" PROMPT="Finder" TYPE="FINDER"><HTML><![CDATA[
+<!-- Here starts the finder -->
+<% load($FORM); default(""); print(); %>
+<table>
+<% load($FINDERS); default(""); print(); %>
+</table>
+<input type="submit" value=" Find it! " class="zform_button">
+</form>
+<!-- end of finder -->]]></HTML>
+<SPEC_CHECKBOX><![CDATA[
+<tr>
+	<td class='ztxt'><strong><% load($prompt); default(""); print(); %></strong></td>
+</tr>
+<!-- OPTIONS -->
+<tr>
+	<td style='padding-left:5px;' colspan='2' class='ztxt'>
+	<input type='checkbox' name='<% load($id); default(""); print(); %>'  value=':<% load($id); default(""); print(); %><% load($v); default(""); print(); %>'> <% load($prompt); default(""); print(); %>
+	</td>
+</tr>
+<!-- /OPTIONS -->
+]]></SPEC_CHECKBOX>
+<SPEC_SELECT><![CDATA[
+<tr>
+	<td class='ztxt'><strong><% load($prompt); default(""); print(); %></strong></td>
+	<td><select name="<% load($id); default(""); print(); %>" class='zform_select'>
+<!-- OPTIONS -->
+	<option value=":<% load($id); default(""); print(); %><% load($v); default(""); print(); %>"><% load($prompt); default(""); print(); %></option>
+<!-- /OPTIONS -->
+	</select>
+	</td>
+</tr>
+]]></SPEC_SELECT>
+</ELEMENT>
+<ELEMENT ID="CUWIQUW2" LENGTH="35" EDITOR="INLINE" DATA="page:finder2_header" PROMPT="Heading for Finder 2" TYPE="TEXTBOX" FONT="0"><PRETEXT><![CDATA[<hr><div class='ztitle' style='margin-bottom:5px'>]]></PRETEXT>
+<POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="FINDER2" EDITOR="INLINE" DATA="page:finder2" PROMPT="Finder 2" TYPE="FINDER"><HTML><![CDATA[
+
+<!-- Here starts the finder -->
+<% load($FORM); default(""); print(); %>
+<table>
+<% load($FINDERS); default(""); print(); %>
+</table>
+<input type="submit" value=" Find it! " class="zform_button">
+</form>
+<!-- end of finder -->]]></HTML>
+<SPEC_CHECKBOX><![CDATA[
+<tr>
+	<td class='ztxt'><strong><% load($prompt); default(""); print(); %></strong></td>
+</tr>
+<!-- OPTIONS -->
+<tr>
+	<td style='padding-left:5px;' colspan='2' class='ztxt'>
+	<input type='checkbox' name='<% load($id); default(""); print(); %>'  value=':<% load($id); default(""); print(); %><% load($v); default(""); print(); %>'> <% load($prompt); default(""); print(); %>
+	</td>
+</tr>
+<!-- /OPTIONS -->
+]]></SPEC_CHECKBOX>
+<SPEC_SELECT><![CDATA[
+<tr>
+	<td class='ztxt'><strong><% load($prompt); default(""); print(); %></strong></td>
+	<td><select name="<% load($id); default(""); print(); %>" class='zform_select'>
+<!-- OPTIONS -->
+	<option value=":<% load($id); default(""); print(); %><% load($v); default(""); print(); %>"><% load($prompt); default(""); print(); %></option>
+<!-- /OPTIONS -->
+	</select>
+	</td>
+</tr>
+]]></SPEC_SELECT>
+</ELEMENT>
+<ELEMENT ID="CUWIQUY" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+
+	</div>
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

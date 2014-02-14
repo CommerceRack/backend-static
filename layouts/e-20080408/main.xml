@@ -1,0 +1,53 @@
+<TEMPLATE ID="e-20080408" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CVXYRTM" CREATED="20080408" SUBTYPE="E" TYPE="CONFIG" TITLE="Picture, name, description, and price (wiki friendly)" BPP="1"><SUMMARY><![CDATA[
+A search results layout which displays 1 item per row with extended details for that item, such as description and price
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CWPTHVR" ALTERNATE="4" DATA="page:results_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Search Results" TYPE="PRODSEARCH"><HTML><![CDATA[
+
+<table cellspacing='0' cellpadding='5' width='100%'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+
+	<td valign='top' width='1%' class='ztable_row'>
+<a href="<% print($PROD_URL); %>"><%
+load($zoovy:prod_thumb); default(""); default($zoovy:prod_image1);
+image(w=>"75",h=>"75",tag=>"1",alt=>$zoovy:prod_name); 
+print(); %></a>
+	</td>
+	
+	<td valign='top' width='99%' class='ztable_row'>
+
+<div style='margin-bottom:5px; font-weight:bold;'>
+<% load($zoovy:prod_name); default(""); print(); %>
+</div>
+
+<div style='margin-bottom:5px;'>
+<% load($zoovy:prod_desc);  default(""); format(wiki,title1=>"",/title1=>"",title2=>"",/title2=>"",title3=>"",/title3=>"",listitem=>"<li>",/listitem=>"</li>",list=>"",/list=>"",hardbreak=>"",softbreak=>"<br>"); strip(length=>"350"); format(encode=>"entity"); print(); %>
+</div>
+
+<div style='float:right; margin-right:5px;'><a href='<% print($PROD_URL); %>' class='zlink'>More Information</a> | <% print($ADD_LINK); %></div>
+
+<div class='ztable_row_title' style='margin-bottom:5px;'><% load($zoovy:base_price); default(""); format(money); format(pretext=>"only "); print(); %></div>
+
+
+	</td>
+
+
+<!-- /PRODUCT -->
+</tr>
+<tr>
+	<td colspan='2'></td>
+</tr>
+<!-- /ROW -->
+
+</table>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

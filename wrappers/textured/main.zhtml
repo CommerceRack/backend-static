@@ -1,0 +1,54 @@
+<!-- CONFIG
+THEME=textured
+SITEBUTTONS=textured
+--><html>
+<head>
+	<!-- HEAD --><link rel="STYLESHEET" type="text/css" href="<!-- WRAPPER_URL -->/textured.css">
+</head>
+
+<body leftmargin=0 topmargin=0 marginheight=0 marginwidth=0 text="#000000" background="<!-- WRAPPER_URL -->/background.gif">  
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td height=20 width=10><img src="<!-- WRAPPER_URL -->/blank.gif" width="10"  height="1"></td>
+		<td width=200><img src="<!-- WRAPPER_URL -->/blank.gif" width="200"  height="1"></td>
+		<td width=50 rowspan=10><img src="<!-- WRAPPER_URL -->/blank.gif" width="50"  height="1"></td>
+		<td width="99%"></td>
+	</tr>
+<tr>
+	<td><img src="<!-- WRAPPER_URL -->/blank.gif" width="1"  height="90"></td>
+	<td><a href="<!-- HOME_URL -->" border="0"><!-- LOGO
+	WIDTH=200
+	HEIGHT=150
+	--></a></td>
+	<td><p><span class="bold"><!-- TITLE --></p></td>
+</tr><tr>
+	<td><img src="" height=1 width=25></td>
+	<td valign="top">
+	<a href="<!-- CART_URL -->" class="menu"><span class="menu">Shopping Cart</span></a><br>
+	<a href="<!-- ABOUT_URL -->" class="menu"><span class="menu">About Us</span></a><br>
+	<a href="<!-- CONTACT_URL -->" class="menu"><span class="menu">Contact Us</span></a><br>
+	<a href="<!-- SEARCH_URL -->" class="menu"><span class="menu">Search</span></a>
+	<br><!-- MENU 
+FORMAT=<a href="%URL%" class="menu">%MESSAGE%</a><br> 
+--></td>
+	<td valign="top"><!-- BODY --></td>
+</tr>
+
+
+</table>
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td width=260><img src="<!-- WRAPPER_URL -->/blank.gif" width="275"  height="1"></td>
+		<td align="left" width="99%">
+<br>
+<br>
+<!-- DISCLAIMER -->
+<!-- BRANDMESSAGE -->
+<!-- FOOTER
+TRANSPARENT=TRUE
+-->
+</td></tr></table>
+
+</body>
+</html>

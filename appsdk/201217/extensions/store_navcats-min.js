@@ -1,0 +1,25 @@
+var store_navcats=function(){var r={vars:{},calls:{appCategoryList:{init:function(tagObj,Q){var r=0;if(myControl.model.fetchData('appCategoryList')==false){r=1;this.dispatch(tagObj,Q);}
+else{myControl.util.handleCallback(tagObj)}
+return r;},dispatch:function(tagObj,Q){obj={};obj['_cmd']="appCategoryList";obj['_tag']=typeof tagObj=='object'?tagObj:{};obj['_tag'].datapointer='appCategoryList';obj['_tag'].extension=obj['_tag'].extension?obj['_tag'].extension:'store_navcats';myControl.model.addDispatchToQ(obj,Q);}},appPageGet:{init:function(obj,tagObj,Q){obj['_tag']=typeof tagObj=='object'?tagObj:{};obj['_tag'].datapointer='appPageGet|'+obj.PATH;var r=0;var hasAllLocal=true;if(myControl.model.fetchData('appPageGet|'+obj.PATH)==false){hasAllLocal=false;}
+else{var L=obj['@get'].length;for(var i=0;i<L;i+=1){if(!myControl.data['appPageGet|'+obj.PATH]['%page'][obj['@get'][i]]){hasAllLocal=false;break;}}}
+if(hasAllLocal){myControl.util.handleCallback(tagObj);}
+else{this.dispatch(obj,tagObj,Q);r=1;}
+return r;},dispatch:function(obj,tagObj,Q){obj['_cmd']="appPageGet";myControl.model.addDispatchToQ(obj,Q);}},appCategoryDetail:{init:function(catSafeID,tagObj,Q){var r=0;tagObj=typeof tagObj!=='object'?{}:tagObj;tagObj.datapointer='appCategoryDetail|'+catSafeID;if(myControl.model.fetchData(tagObj.datapointer)==false){r+=1;this.dispatch(catSafeID,tagObj,Q);}
+else{myControl.util.handleCallback(tagObj)}
+return r;},dispatch:function(catSafeID,tagObj,Q){var catSafeID;myControl.model.addDispatchToQ({"_cmd":"appCategoryDetail","safe":catSafeID,"detail":"fast","_tag":tagObj},Q);}},appCategoryDetailMore:{init:function(catSafeID,tagObj,Q){var r=0;tagObj=typeof tagObj!=='object'?{}:tagObj;tagObj.datapointer='appCategoryDetail|'+catSafeID;if(myControl.model.fetchData(tagObj.datapointer)==false){this.dispatch(catSafeID,tagObj,Q);r+=1;}
+else{if(myControl.data[tagObj.datapointer].detail=='max'||myControl.data[tagObj.datapointer].detail=='more'){myControl.util.handleCallback(tagObj)}
+else{this.dispatch(catSafeID,tagObj,Q);r+=1;}}
+return r;},dispatch:function(catSafeID,tagObj,Q){var catSafeID;tagObj.datapointer='appCategoryDetail|'+catSafeID;tagObj.detail='more';myControl.model.addDispatchToQ({"_cmd":"appCategoryDetail","safe":catSafeID,"detail":"more","_tag":tagObj},Q);}},appCategoryDetailMax:{init:function(catSafeID,tagObj,Q){var r=0;tagObj=typeof tagObj!=='object'?{}:tagObj;tagObj.datapointer='appCategoryDetail|'+catSafeID;if(myControl.model.fetchData(tagObj.datapointer)==false){r+=1;this.dispatch(catSafeID,tagObj,Q);}
+else{if(myControl.data[tagObj.datapointer].detail=='max'){myControl.util.handleCallback(tagObj);}
+else{r+=1;this.dispatch(catSafeID,tagObj,Q);}}
+return r;},dispatch:function(catSafeID,tagObj,Q){tagObj.detail='max';myControl.model.addDispatchToQ({"_cmd":"appCategoryDetail","safe":catSafeID,"detail":"max","_tag":tagObj},Q);}}},callbacks:{init:{onSuccess:function(){return true;},onError:function(){myControl.util.dump('BEGIN myControl.ext.store_navcats.callbacks.init.onError');}},getRootCatsData:{onSuccess:function(tagObj){myControl.ext.store_navcats.util.getRootCatsData(tagObj);},onError:function(responseData,uuid){myControl.util.handleErrors(responseData,uuid)}},addCatToDom:{onSuccess:function(tagObj){if(myControl.data[tagObj.datapointer].pretty&&myControl.data[tagObj.datapointer].pretty.charAt(0)!=='!'){myControl.renderFunctions.translateTemplate(myControl.data[tagObj.datapointer],tagObj.parentID+"_"+tagObj.datapointer.split('|')[1]);}
+else{$('#'+myControl.util.makeSafeHTMLId(tagObj.parentID+"_"+tagObj.datapointer.split('|')[1])).empty().remove();}},onError:function(d){$('#globalMessaging').append(myControl.util.getResponseErrors(d)).toggle(true);}}},renderFormats:{},util:{getRootCats:function(){var L=myControl.data.appCategoryList['@paths'].length;var r=new Array();for(var i=0;i<L;i+=1){if(myControl.data.appCategoryList['@paths'][i].split('.').length==2){r.push({"id":myControl.data.appCategoryList['@paths'][i]});}}
+return r;},getChildDataOf:function(catSafeID,tagObj,call){var numRequests=0;var catsArray=[];if(catSafeID=='.')
+catsArray=this.getRootCats();else if(typeof myControl.data['appCategoryDetail|'+catSafeID]['@subcategoryDetail']=='object')
+catsArray=myControl.data['appCategoryDetail|'+catSafeID]['@subcategoryDetail'];else{}
+var L=catsArray.length;var call=call?call:"categoryDetailFast"
+renderTemplate=false;if(tagObj.templateID&&tagObj.parentID){var $parent=$('#'+tagObj.parentID);var renderTemplate=true;}
+for(var i=0;i<L;i+=1){if(renderTemplate){if(catsArray[i].id!='.'){$parent.append(myControl.renderFunctions.createTemplateInstance(tagObj.templateID,{"id":tagObj.parentID+"_"+catsArray[i].id,"catsafeid":catsArray[i].id}));}}
+numRequests+=myControl.ext.store_navcats.calls[call].init(catsArray[i].id,$.extend({},tagObj));}
+return numRequests;}}}
+return r;}

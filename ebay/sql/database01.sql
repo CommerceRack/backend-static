@@ -1,0 +1,16 @@
+--- last 10 categories for user/subuser pair
+---DROP TABLE IF EXISTS `users`;
+---CREATE TABLE `users` (
+---  `id` int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+---  `username` varchar(64) NOT NULL default '',
+---  `subuser` varchar(64) NOT NULL default '',
+---  `create_timestamp` TIMESTAMP NULL
+---) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+---DROP TABLE IF EXISTS `last_categories`;
+---CREATE TABLE `last_categories` (
+---  `user_id` int(10) unsigned NOT NULL default '0',
+---  `category_id` int(10) unsigned NOT NULL default '0',
+---  `create_timestamp` TIMESTAMP NULL,
+---  PRIMARY KEY (`user_id`, `category_id`)
+---) ENGINE=MyISAM DEFAULT CHARSET=utf8;

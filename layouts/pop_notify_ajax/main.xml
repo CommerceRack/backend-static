@@ -1,0 +1,156 @@
+<TEMPLATE ID="pop_notify_ajax" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="MYCONFIG" V="3" IMAGES="0" CREATED="00000000" TYPE="CONFIG" TITLE="Popup Layout: s"><SUMMARY><![CDATA[This is a popup page layout with ajax 'inventory notification' built into it.  It's ajax because currently there is no non-ajax way to do this.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPVRQDV" RAW="1" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL"></ELEMENT>
+<ELEMENT ID="VARCUSTOMEREMAIL" RAW="1" SUB="PAGE_CUSTOMER_EMAIL" TYPE="READONLY" LOAD="CART::LOGIN"></ELEMENT>
+<ELEMENT ID="SESSIONID" RAW="1" SUB="SESSION_ID" TYPE="READONLY" LOAD="CART::ID"></ELEMENT>
+<ELEMENT ID="CQFJSOP" DATA="FLOW::USERNAME" SUB="STORENAME" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CPZWXCU" RAW="0" SUB="PAGE_SUPPORT_EMAIL" TYPE="READONLY" LOAD="profile:zoovy:support_email"></ELEMENT>
+<ELEMENT ID="CRNFWLT" RAW="1" SUB="FL_ID" TYPE="READONLY" LOAD="FLOW::FL"></ELEMENT>
+<ELEMENT ID="SKU" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="VAR::product"></ELEMENT>
+<ELEMENT ID="CSPFDBF" TYPE="OUTPUT"><HTML><![CDATA[
+<!--
+
+<a href="openWindow('%HOME_URL%popup.pl?verb=NOTIFY_INSTOCK&pg=*notify&fl=pop_notify_ajax&product=%SKU%');">notify me</a>
+-->
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/zoovy.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.7.1/lib/prototype.js"></script>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.7.1/src/scriptaculous.js"></script>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous-js-1.7.1/src/effects.js"></script>
+
+<script type="text/javascript">
+<!--
+
+//Set vars needed for ajax
+var session_id = '%SESSION_ID%';
+var store = '%STORENAME%';
+var SKU = '%SKU%';
+
+//This var is used for the ajax s form.  It appears when the  is successfully submitted.
+var notifyConfirm = '<div id="Success" class="ztxt">Thank you, you will be notified when this item becomes available.  To ensure our message does not get flagged as spam, be sure to add %PAGE_SUPPORT_EMAIL% to your address book.<br><br><a href="#" onclick="window.close(); return false;" class="zlink">close</a></div>';
+
+
+
+function echeck(str) {
+
+		var at="@"
+		var dot="."
+		var lat=str.indexOf(at)
+		var lstr=str.length
+		var ldot=str.indexOf(dot)
+		if (str.indexOf(at)==-1){
+		   return false
+		}
+
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+		   return false
+		}
+
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+		    return false
+		}
+
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    return false
+		 }
+
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    return false
+		 }
+
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    return false
+		 }
+		
+		 if (str.indexOf(" ")!=-1){
+		    return false
+		 }
+
+ 		 return true					
+	}
+
+
+
+
+// ##### once all this is verified to work, move it in to the forms.js file 
+
+
+function submitNotify()	{
+	var alerts = '';
+
+//these validate the form, making sure the email is set.  
+	if(document.notifyForm.email.value == '')	{
+		alerts += '<div>please enter your email address</div>';
+		document.notifyForm.email.focus();
+		}
+	else if (echeck(document.notifyForm.email.value)==false){
+		document.notifyForm.email.focus();
+		alerts += '<div>The email address you entered is not valid.</div>';
+	}
+//If alerts isn't blank, then the customer didn't fill in the entire form.  Display alerts in the alerts div.
+	if(alerts != '')	{
+		$('alertsNotify').innerHTML = alerts;
+		}
+//Looks like they filled everything in, upload the notification then reload the notification elements.
+	else	{
+		var params = Form.serialize($('notifyForm'));
+//	alert(params);
+		var postBody = 'm=addNotify&PID='+SKU+'&'+params;
+		new Ajax.Request('/ajax/addNotify', { 
+			postBody: postBody, 
+			asynchronous: 1,
+//		onComplete: function(request){handleResponse(request.responseText)},
+		  	onComplete: $('contentNotify').innerHTML = notifyConfirm
+			} );
+		}
+	}
+
+
+
+//-->
+</script>
+
+<div id="notifyFormContent">
+<div id="contentNotify">
+
+
+<div class='ztxt' style='margin:5px 0px;' id='textNotify'>Please enter your e-mail below and we will notify you when this product re-stocks.</div>
+
+
+
+<div id='alertsNotify' class='zwarn'></div>
+
+
+
+<form name="notifyForm" id="notifyForm" onSubmit="submitNotify(); return false;">
+<input type='hidden' value='%SKU%' name='sku' id='sku'>
+<input type='hidden' value='PINSTOCK' name='msgid' id='msgid'>
+
+<!-- if you ever want to do this without ajax, set a hidden element here with verb=INIT_EXEC -->
+
+<table cellspacing="3" cellpadding="0" border="0" class="notify_table" align='center'>
+<tr>
+	<td colspan='2'><div id="notifyAlerts" style="text-align:right;" class='zsmall zwarn'></div></td>
+</tr>
+<tr>
+	<td align="right" class='ztxt'>Your Email:</td>
+	<td align="left"><input type="text" name="email" value="%PAGE_CUSTOMER_EMAIL%" class='zform_textbox' MAXLENGTH="100" style="width:180px;"></td>
+</tr>
+<tr>
+	<td align="left"><input type="button" value="cancel" onclick="window.close();" class="pop_button zform_button zform_button0" /></td>
+	<td align="right"><input type="submit" value="submit " class="zform_button" /></td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+
+
+	
+	]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

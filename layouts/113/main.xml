@@ -1,0 +1,85 @@
+<TEMPLATE ID="113" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMKK" CREATOR="STAFF" IMAGES="3" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Stacked Custom" RELEASED="20020510"><SUMMARY><![CDATA[
+Detailed Description
+IMAGE1 (310x310)
+IMAGE2 (150x150)
+IMAGE3 (150x150)
+Title Text For Categories
+Website Categories this Product belongs to
+]]></SUMMARY>
+<SHORT><![CDATA[(1) 310 x 310 large picture, with (2) 150 x 150 smaller pictures to the right, and a detailed description, and categories below.]]></SHORT>
+</ELEMENT>
+<ELEMENT ID="CPUKMKL" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
+<!--
+function zoom (url) {
+	z = window.open('','zoom_popUp','status=0,directories=0,toolbar=0,menubar=0,resizable=1,scrollbars=1,location=0');
+	z.document.write('<html>\n<head>\n<title>Picture Zoom</title>\n</head>\n<body>\n<div align="center">\n<img src="' + url + '"><br>\n<form><input type="button" value="Close Window" onClick="self.close(true)"></form>\n</div>\n</body>\n</html>\n');
+	z.document.close();
+	z.focus(true);
+}
+//-->
+</script>
+
+<table width="560" cellpadding="3" align="center">
+	<tr>
+		<td width="350" align="right" rowspan="2">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="310" HELP="Please enter the first picture." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1 " WIDTH="310" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMKM" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+		<td width="210" align="left">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="150" HELP="Please enter the second picture " ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image 2" WIDTH="150" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMKN" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+	</tr>
+	<tr>
+		<td width="210" align="left">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="IMAGE3" HEIGHT="150" HELP="Please enter the third picture " ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image 3" WIDTH="150" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMKO" TYPE="OUTPUT"><HTML><![CDATA[
+		</td>
+	</tr>
+</table>
+
+<table width='90%'>
+<tr><td>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ABOUT" HELP="This is the detailed product description that will appear on your website." DATA="product:zoovy:prod_detail" PROMPT="Detailed Description" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CPUKMKP" TYPE="OUTPUT"><HTML><![CDATA[
+<BR>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT ID="CPUKMKQ" TYPE="OUTPUT"><HTML><![CDATA[
+
+</td></tr>
+</table>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
+<ELEMENT ID="CPUKMKR" TYPE="OUTPUT"><HTML><![CDATA[
+
+<BR>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODCATSTITLE" LENGTH="100" HELP="This is the title that appears above the listing of categories for this product" DATA="product:prodcatstitle" PROMPT="Title Text For Categories" DEFAULT="Product Categories" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CPUKMKS" TYPE="OUTPUT"><HTML><![CDATA[
+</b>
+<br>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODCATS" HELP="This is a list of categories that this product appears in" DATA="page:prodcats" PROMPT="Website Categories this Product belongs to" DEFAULT="" TYPE="PRODCATS"></ELEMENT>
+
+</TEMPLATE>

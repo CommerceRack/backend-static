@@ -1,0 +1,31 @@
+--- 
+"@conditions": 
+  - 
+    "{urn:ebay:apis:eBLBaseComponents}Condition": 
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'New'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 1000
+      - 
+        "{urn:ebay:apis:eBLBaseComponents}DisplayName": 
+          - 'Used'
+        "{urn:ebay:apis:eBLBaseComponents}ID": 
+          - 3000
+    "{urn:ebay:apis:eBLBaseComponents}ConditionHelpURL": 
+      - 'http://pages.ebay.com/help/sell/contextual/condition_5.html'
+"CategoryID": 173520
+"ClassifiedAdAutoAcceptEnabled": 'true'
+"ClassifiedAdAutoDeclineEnabled": 'true'
+"ClassifiedAdBestOfferEnabled": 'Enabled'
+"ClassifiedAdContactByEmailEnabled": 'true'
+"ClassifiedAdContactByPhoneEnabled": 'true'
+"ClassifiedAdPaymentMethodEnabled": 'EnabledWithoutCheckout'
+"ClassifiedAdPhoneCount": 2
+"ConditionEnabled": 'Required'
+"GlobalShippingEnabled": 'false'
+"ItemSpecificsEnabled": 'Enabled'
+"LocalMarketBestOfferEnabled": 'Enabled'
+"LocalMarketPaymentMethodCheckOutEnabled": 'EnabledWithoutCheckout'
+"eBayMotorsProBestOfferEnabled": 'Enabled'
+"eBayMotorsProPaymentMethodCheckOutEnabled": 'EnabledWithoutCheckout'

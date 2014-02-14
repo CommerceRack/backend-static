@@ -1,0 +1,105 @@
+<TEMPLATE ID="c-20081223" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNJU" CREATOR="JT" IMAGES="0" CREATED="20081223" PROPERTIES="1" SUBTYPE="C" FORMAT="LAYOUT" SHORT="A wide banner, 3 Columns of categories and subcategories and then a text block." EXPORT="1" TYPE="CONFIG" TITLE="3 Columns of categories with subcategories" RELEASED="20081223"><SUMMARY><![CDATA[This layout features a wide banner at the top, followed by a three column dual-level list of catgories/subcategories. Three subcats from each category are displayed and, if more are present, a 'more' link.  The subcat list is followed by a text block. No product list is present in this layout.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Link for wide banner" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="BANNER1" EDITOR="INLINE" DATA="page:banner1" SUB="PAGE_WIDEBANNER" WIDTH="600" PROMPT="Wide Banner" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<PRETEXT><![CDATA[<div style="margin-bottom:15px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="LAYOUT_DUALMENU_DISPLAYED_USES_STACK" MODE="LIST" SUB="PAGE_DUALCATS_DISPLAYED" TYPE="SUBCAT" FORCECOLUMNS="3"><HTML><![CDATA[
+
+<table cellspacing='15' cellpadding='5'>
+<!-- ROW -->
+<tr>
+<!-- CATEGORY -->
+	<td valign='top' width='33%' class='zborder ztable_row' align='left'>
+
+<div style='margin:5px 0px;' align='center'><a href='<% print($cat_url); %>'><%
+print("");
+loadurp("CSS::zbody.bgcolor"); default("#ffffff");
+set($BGCOLOR=>$_);
+
+load($cat_thumb); default(""); 
+image(w=>"145",h=>"145",bg=>$BGCOLOR,tag=>"1",alt=>$cat_pretty);
+print();
+%></a></div>
+
+<div class='no_underline'><a href='<% print($cat_url); %>' class='ztable_row_title'><% print($cat_pretty); %></a></div>
+
+<div style='margin-top:5px;' class='ztable_row_small'>
+<%
+print("");
+
+/* subcats are in a stack that gets popped three times. If more than three subcats are present, a 'more' link is displayed. */
+
+load($cat_safe); default(""); format(pretext=>"NAVCAT::.");
+pull(stack=>>$CATSTACK,format=>"src",src=>$_);
+	count(stack=>>$CATSTACK);
+	set($STACKCOUNT=>$_);
+	
+:LOOP();
+
+/* only the first three categories are displayed */
+	count(stack=>>$CATSTACK);
+	math(op=>"subtract",var=>$STACKCOUNT);
+	math(op=>"multiply",var=>"-1");
+	goto(label=>"MORE",eq=>"3");
+	
+pop(stack=>>$CATSTACK,namespace=>"CAT");
+
+	load($CAT.safe);
+	stop(unless=>$_);
+	print("<div><a href='");
+	loadurp("URL::CATEGORY_URL"); print();
+	print("/");
+	print($CAT.safe);
+	print("'> &#187; ");
+	print($CAT.pretty);
+	print("</a></div>");
+
+
+/* keep looping through the subcats */
+goto(nb=>$CATSTACK,label=>"LOOP"); 
+/* if we get past the goto above, there are no cats left to display and we are under 4 total. stop with no 'more' link */
+	stop();
+
+
+/* this should only be reached at cat 3 (fourth cat in the loop) */
+:MORE();
+	print("<div style='margin-top:5px;' class='c_subcat_morelink'><a href='");
+	print($cat_url);
+	print("'>All ");
+	print($cat_pretty);
+	print("</a></div>");
+%>
+</div>
+	</td>
+<!-- /CATEGORY -->
+</tr>
+<!-- /ROW -->
+</table>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="PAGE_DESC" PROMPT="Text Description" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Use wiki text to format your content.<br>
+Go to <a href="http://www.zoovydocs.com/doc-50590" target="webdoc">http://www.zoovydocs.com/doc-50590</a> for more information on how to properly set up your links.<br>
+]]></HELPER>
+<POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='margin-top:15px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="CONTENT" TYPE="OUTPUT"><HTML><![CDATA[
+
+<div id='c-20081223'>
+
+%PAGE_WIDEBANNER%
+
+<div id='page_dual_cats_displayed'>%PAGE_DUALCATS_DISPLAYED%</div>
+
+%PAGE_DESC%
+
+</div>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

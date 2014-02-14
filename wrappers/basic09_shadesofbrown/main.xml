@@ -1,0 +1,297 @@
+<TEMPLATE ID="basic09_shadesofbrown" FORMAT="WRAPPER">
+
+
+<!-- ******* -->
+<ELEMENT ID="CZCIQWJ" FORMAT="WRAPPER" AUTHOR="Zoovy:Sandip" PROJECT="184500" TYPE="CONFIG" THUMBNAIL="" V="2" CREATED="20090316" TITLE="Theme: Shades of Brown" SITEBUTTONS="default=l9_brown|gif|172|31" SUBTYPE="C"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+.zborder { border: 1px solid #DADADA; }
+.zbox { border: 1px solid #cacaca; }
+.zbox_body { background-color: #FFF5E8; color: #1A1A1A; font-family: Arial, verdana, arial, helvetica; font-size: 8pt; }
+.zbox_head { background-color: #332411; color: #FFFFFF; font-family: Arial, Verdana, helvetica; font-size: 10pt; }
+.zcolor { background-color: #B38750; color: #FFFFFF; }
+.zcolor_contrast { background-color: #FB5104; color: #FFFFFF; }
+.zcolor_dark { background-color: #332411; color: #ffffff; }
+.zcolor_light { background-color: #F9DAB4; color: #1A1A1A; }
+.zform_button { border: 1px solid #212121; background-color: #3A3A3A; color: #FFFFFF; font-size: 8pt; font-family: Arial, verdana, arial, helvetica; }
+.zform_select { border: 1px solid #999999; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, verdana, arial, helvetica; }
+.zform_textarea { border: 1px solid #999999; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, verdana, arial, helvetica; }
+.zform_textbox { border: 1px solid #999999; background-color: #FFFFFF; color: #000000; font-size: 8pt; font-family: Arial, verdana, arial, helvetica; }
+.zhint { color: #1A1A1A; font-family: Arial, helvetica; font-size: 8pt; }
+.zlink { color: #332411; }
+.zsmall { color: #1A1A1A; font-family: Arial, helvetica; font-size: 8pt; }
+.ztab0 { background-color: #3A3A3A; color: #FFFFFF; font-family: Arial, helvetica; font-size: 9pt; }
+.ztab1 { background-color: #F5F5F5; color: #1A1A1A; font-family: Arial, helvetica; font-size: 9pt; font-weight: bold;}
+.ztabbody { background-color: #F5F5F5; color: #1A1A1A; font-family: Arial, helvetica; font-size: 9pt; }
+.ztable_head { background-color: #3A3A3A; color: #FFFFFF; font-family: Arial, verdana, arial, helvetica; font-size: 9pt; }
+.ztable_row {color: #1A1A1A; font-family: Arial, helvetica; font-size: 9pt; }
+.ztable_row0 { background-color: #FFFFFF; color: #1A1A1A; font-family: Arial, helvetica; font-size: 9pt;}
+.ztable_row1 { background-color: #E7E7E7; color: #1A1A1A; font-family: Aarial, helvetica; font-size: 9pt;}
+.ztable_row_small { color: #666666; font-family: Arial, helvetica; font-size: 8pt; }
+.ztable_row_title { font-weight: bold; color: #1A1A1A; font-family: Arial, helvetica; font-size: 9pt; }
+.ztitle { font-weight: bold; color: #332411; font-family: Arial, verdana, arial, helvetica; font-size: 11pt; }
+.ztitle2 { font-weight: bold; color: #1A1A1A; font-family: Arial, verdana, arial, helvetica; font-size: 9pt; }
+.ztxt { color: #1A1A1A; font-family: Arial, verdana, arial, helvetica; font-size: 9pt; }
+.zwarn { color: #FF0000; font-weight: bold; }]]></CSS>
+<THEME><![CDATA[alert_color=FF0000&content_background_color=ffffff&content_font_face=Arial%2c+verdana%2c+arial%2c+helvetica&content_font_size=2&content_text_color=1A1A1A&disclaimer_background_color=ffffff&disclaimer_font_face=Arial%2c+verdana%2c+arial%2c+helvetica&disclaimer_font_size=1&disclaimer_text_color=1A1A1A&link_active_text_color=332411&link_text_color=332411&link_visited_text_color=332411&name=&pretty_name=&table_heading_background_color=3A3A3A&table_heading_font_face=Arial%2c+verdana%2c+arial%2c+helvetica&table_heading_font_size=2&table_heading_text_color=FFFFFF&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=E7E7E7&table_listing_font_face=Arial%2c+verdana%2c+arial%2c+helvetica&table_listing_font_size=2&table_listing_text_color=1A1A1A]]></THEME>
+</ELEMENT>
+<ELEMENT ID="CPVRQCS" SUB="HOMECATEGORY_URL" TYPE="READONLY" LOAD="URL::HOMECATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCT" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCU" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCV" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCW" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCX" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_FUNCTION_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCY" SUB="SHIPQUOTE_URL" TYPE="READONLY" LOAD="URL::SHIPQUOTE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQCZ" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDA" SUB="SITEBUTTON_URL" TYPE="READONLY" LOAD="URL::SITEBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDB" SUB="HOMEPAGE_URL" TYPE="READONLY" LOAD="URL::HOMEPAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDC" SUB="COUNTER_URL" TYPE="READONLY" LOAD="URL::COUNTER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDD" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDE" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDF" SUB="UPDATE_PAYMENT_URL" TYPE="READONLY" LOAD="URL::UPDATE_PAYMENT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDG" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDH" SUB="NAVBUTTON_URL" TYPE="READONLY" LOAD="URL::NAVBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDI" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDK" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDL" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDM" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDN" SUB="ABOUT_ZOOVY_URL" TYPE="READONLY" LOAD="URL::ABOUT_ZOOVY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDO" SUB="NEWS_URL" TYPE="READONLY" LOAD="URL::NEWS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDP" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDQ" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDR" SUB="USERBUTTON_URL" TYPE="READONLY" LOAD="URL::USERBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDS" SUB="FASTORDER_URL" TYPE="READONLY" LOAD="URL::FASTORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDT" SUB="CLOSED_URL" TYPE="READONLY" LOAD="URL::CLOSED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDU" SUB="MAIL_FORM_URL" TYPE="READONLY" LOAD="URL::MAIL_FORM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDV" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDW" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDX" SUB="CONTACTUS_URL" TYPE="READONLY" LOAD="URL::CONTACTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDY" SUB="DYNAMIC_URL" TYPE="READONLY" LOAD="URL::DYNAMIC_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQDZ" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEA" SUB="CONTACT_US_URL" TYPE="READONLY" LOAD="URL::CONTACT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEB" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEC" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQED" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEE" SUB="MERCHANT_LOGIN_URL" TYPE="READONLY" LOAD="URL::MERCHANT_LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEF" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEG" SUB="ADULT_URL" TYPE="READONLY" LOAD="URL::ADULT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEH" SUB="CLAIM_URL" TYPE="READONLY" LOAD="URL::CLAIM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEI" SUB="CLAIM_MULTI_URL" TYPE="READONLY" LOAD="URL::CLAIM_MULTI_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEJ" SUB="ABOUT_US_URL" TYPE="READONLY" LOAD="URL::ABOUT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEK" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEL" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEM" SUB="REDIR_URL" TYPE="READONLY" LOAD="URL::REDIR_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEN" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEO" SUB="KILL_COOKIES_URL" TYPE="READONLY" LOAD="URL::KILL_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEP" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEQ" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQER" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQES" SUB="NO_COOKIES_URL" TYPE="READONLY" LOAD="URL::NO_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQET" SUB="PAYPAL_URL" TYPE="READONLY" LOAD="URL::PAYPAL_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEU" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEV" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CPVRQEW" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CZCIQWL" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- WIKI text subs --> 
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CQHREXQ" SUB="title1" TYPE="HIDDEN"><DEFAULT><![CDATA[<h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXR" SUB="/title1" TYPE="HIDDEN"><DEFAULT><![CDATA[</h2>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXS" SUB="title2" TYPE="HIDDEN"><DEFAULT><![CDATA[<h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXT" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</h3>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXU" SUB="title3" TYPE="HIDDEN"><DEFAULT><![CDATA[<span style="font-weight:bold;">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CQHREXV" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</span>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CZCIQWM" TYPE="OUTPUT"><HTML><![CDATA[
+<!-- WIKI list subs -->
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKILIST" SUB="list" TYPE="HIDDEN"><DEFAULT><![CDATA[<ul class="wiki_list">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLIST" SUB="/list" TYPE="HIDDEN"><DEFAULT><![CDATA[</ul>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKILISTITEM" SUB="listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[<li class="wiki_listitem">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDLISTITEM" SUB="/listitem" TYPE="HIDDEN"><DEFAULT><![CDATA[</li>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CZCIQWN" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- These tags are not supported yet in wiki but will/may be some day. -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKISECTION" SUB="section" TYPE="HIDDEN"><DEFAULT><![CDATA[<p class="wiki_section">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDSECTION" SUB="/section" TYPE="HIDDEN"><DEFAULT><![CDATA[</p>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CZCIQWO" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- browsers all read styling on HR's differently so a div is used instead. -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKIHARDBREAK" SUB="hardbreak" TYPE="SPECL"><HTML><![CDATA[<div style='border-top:<% loadurp("CSS:zborder.border"); print(); %>; margin:5px 0px;'></div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKISOFTBREAK" SUB="softbreak" TYPE="SPECL"><HTML><![CDATA[<br>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CZCIQWP" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- WIKI table subs -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WIKITABLE" SUB="table" TYPE="HIDDEN"><DEFAULT><![CDATA[<table cellspacing="0" class="zborder">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLE" SUB="/table" TYPE="HIDDEN"><DEFAULT><![CDATA[</table>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEROW" SUB="tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[<tr class="ztablerow">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEROW" SUB="/tablerow" TYPE="HIDDEN"><DEFAULT><![CDATA[</tr>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLECELL" SUB="tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_row">]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLECELL" SUB="/tabledata" TYPE="HIDDEN"><DEFAULT><![CDATA[</td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKITABLEHEAD" SUB="tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[<td class="ztable_head"><b>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
+</ELEMENT>
+<ELEMENT ID="CZCIQWQ" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- ELEMENT STARTS HERE -->
+<!-- LOGO ELEMENT -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_LOGO" HEIGHT="80" MINIMAL_MODE="1" WIDTH="500" SUB="WRAP_LOGO" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="WRAPPER_BREADCRUMB" SUB="WRAP_BREADCRUMB" NOHOME="0" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTFILTER="!FS=C" OUTPUTSKIP="1"><HTML><![CDATA[
+<div style='margin-bottom:5px; font-size:8pt;'>
+<!-- CATEGORY -->
+<a href="<% load($cat_url);  default("");  print(); %>" class="zlink"><% load($cat_pretty);  default("");  print(); %></a>
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); runspec(" &#187; "); print(); %>
+<!-- /CATEGORY -->
+</div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTSKIP="1" OUTPUTFILTER="FS=C,H"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
+<POSTTEXT><![CDATA[</h1>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CZCIQWR" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- FOOTER ELEMENT -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_DEFAULT_FOOTER" SUB="WRAP_FOOTER" TYPE="FOOTER"></ELEMENT>
+<ELEMENT ID="CZCIQWS" TYPE="OUTPUT"><HTML><![CDATA[
+
+<!-- HORIZONTAL SIDEBAR -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WRAPPER_SIDEBAR_CUSTOM" SUB="WRAP_SIDEBAR" TYPE="SIDEBAR"><LINEPRETEXT><![CDATA[<td align='center'>]]></LINEPRETEXT>
+<LINEPOSTTEXT><![CDATA[</td>]]></LINEPOSTTEXT>
+<PRETEXT><![CDATA[<table align='center'><tr>]]></PRETEXT>
+<POSTTEXT><![CDATA[</tr></table>]]></POSTTEXT>
+</ELEMENT>
+<ELEMENT ID="CZCIQWT" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+
+
+<!-- ELEMENT ENDS HERE -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DEFAULT_HEAD" TYPE="HEAD"></ELEMENT>
+<ELEMENT ID="CZCIQWU" TYPE="OUTPUT"><HTML><![CDATA[
+<style type='text/css'>
+
+.topnav{font-size:12pt; color:#FFFFFF; text-align:center; line-height:37px;}
+.topnav a:link, .topnav a:visited{ color:#FFFFFF; text-decoration:none; padding:0px 10px;}
+.topnav a:hover{color:#FFFFFF; text-decoration:underline;}
+
+.footer{font-size:8pt; color:#FFFFFF; line-height:29px; text-align:center; background:url(%WRAPPER_URL%/basic09_shadesofbrown_footernav_bg-1x29.gif) repeat-x;}
+.footer a:link, .footer a:visited{color:#FFFFFF; text-decoration:none; padding:0px 5px;}
+.footer a:hover{ color:#FFFFFF; text-decoration:underline;}
+
+/* should match the family and color set in the ztxt class */
+body	{font-family:Arial, Helvetica, sans-serif; color: #1A1A1A;}
+
+/* removes bottom padding/margin from form in old browsers */
+form	{display:inline;}
+
+a	{color:#332411;} /* this color should match the color set in zlink */
+a:hover	{color:#332411;}
+
+
+h1  {font-size:12pt; color:#1A1A1A; margin:5px 0px 2px 0px; font-weight:bold;} /* Used for the page title element */
+
+/* used for the wiki header 1 & 2 */
+h2	{font-size:12pt; color:#1A1A1A; margin:5px 0px 2px 0px; font-weight:bold;}
+h3	{font-size:11pt; color:#1A1A1A; margin:2px 0px 1px 0px; font-weight:bold;}
+
+div.no_underline a	{text-decoration:none;} /* this should be left alone */
+
+#addtocart select, #accessories select	{font-size:11px;}
+
+</style>
+<script language="JavaScript" type="text/javascript">
+function clearText(thefield)	{
+	if (thefield.defaultValue == thefield.value)
+		thefield.value = "";
+}
+</script>
+</head>
+
+<body style="background:#61421C url(%WRAPPER_URL%/basic09_shadesofbrown_body_bg-1x828.gif) repeat-x top; margin:9px 0px; font-family:Arial, Helvetica, sans-serif; color:#1A1A1A; padding:0px;">
+<table width="800" cellspacing="3" cellpadding="0" border="0" align="center" bgcolor="#FFFFFF">
+<tr>
+	<td style="height:135px; background:#ffffff">
+    	<div style="height:95px;">
+        	<div style="float:left; padding-top:4px; padding-left:17px;"><a href="%HOME_URL%">%WRAP_LOGO%</a></div>
+            <div style="float:right; padding-top:34px; padding-right:15px;">
+<form action='%RESULTS_URL%' method='get' style='margin:0px;'>
+<input type='hidden' name='catalog' value=''>
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+	<td height="34"><input name="keywords" type="text" style="border:1px solid #332411; color:#999999; font-size:7pt; padding:4px; width:140px;" value="enter your keyword here" onFocus="clearText(this)"></td>
+    <td><input type="image" value="search" src="%WRAPPER_URL%/basic09_shadesofbrown_btn_search-47x22.gif"></td>
+</tr>
+</table>
+</form>
+            </div>
+            <div style="clear:both; height:0; font-size:0; line-height:0;"></div>
+		</div>
+		<div class="topnav" style='background: url(%WRAPPER_URL%/basic09_shadesofbrown_head_bg-1x135.gif) repeat-x bottom;'><a href="%HOME_URL%">Home</a>     |     <a href="%CONTACT_URL%">Contact</a>     |     <a href="%RETURNS_URL%#policies">Policies</a>     |     <a href="%PRIVACY_URL%">Privacy</a>     |     <a href="%CART_URL%">View Cart</a>     |   <a href="%CHECKOUT_URL%">Check Out</a></div>
+        </div>
+  
+    </td>
+</tr>
+<tr>
+	<td align="left">
+    	<div>%WRAP_BREADCRUMB%%WRAP_TITLE%</div>
+        <div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="THEBODY" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="CZCIQWV" TYPE="OUTPUT"><HTML><![CDATA[</div>
+    </td>
+</tr>
+<tr>
+	<td align="center">
+
+		<div class="topnav" style='background: url(%WRAPPER_URL%/basic09_shadesofbrown_head_bg-1x135.gif) repeat-x bottom;'><a href="%HOME_URL%">Home</a>     |     <a href="%CONTACT_URL%">Contact</a>     |     <a href="%RETURNS_URL%#policies">Policies</a>     |     <a href="%PRIVACY_URL%">Privacy</a>     |     <a href="%CART_URL%">View Cart</a>     |   <a href="%CHECKOUT_URL%">Check Out</a></div>
+        </div>
+
+
+        <div style="padding:5px 0px; text-align:center; color:#FFFFFF;">%WRAP_FOOTER%</div>
+		<div style="text-align:center;">%WRAP_SIDEBAR%</div>
+    </td>
+</tr>
+</table>
+</body>
+</html>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

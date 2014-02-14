@@ -1,0 +1,53 @@
+<TEMPLATE ID="c-20070815" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKNJS" FORMAT="LAYOUT" CREATOR="JT" SHORT="Big thumbnail product list" TYPE="CONFIG" TITLE="Big thumbnails for products" IMAGES="1" CREATED="20070815" PROPERTIES="1" SUBTYPE="C" SERIES="2007" RELEASED="20070815"><SUMMARY><![CDATA[This layout offers a product list at the top of the page with 120x180 thumbnails in a four column format, followed by an editable text area. At the bottom of the page is a simple list of categories/subcategories.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CUWISQW" TYPE="OUTPUT"><HTML><![CDATA[
+<div align='center'>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="4"><HTML><![CDATA[<!-- product list -->
+<table border='0' cellpadding='4' cellspacing='2' style='margin-bottom:5px;'>
+<!-- ROW -->
+<tr>
+<!-- PRODUCT -->
+<!-- product: <% print($COUNT); %> -->
+<td class='ztable_row ztable_row<% print($row.alt); %>' align='left' valign='top' style='padding-bottom:5px;' width='120'>
+<div style='margin-bottom:3px;'><a href="<% load($PROD_URL); default(""); print(); %>"><% load($zoovy:prod_thumb); default(""); default($zoovy:prod_image1); image(w=>"120",h=>"180",tag=>"1",m=>"0",alt=>$zoovy:prod_name); print(); %></a></div>
+
+<div><a href="<% load($PROD_URL); default(""); print(); %>" class='zlink'><% load($zoovy:prod_name); strip(length=>"60"); default(""); print(); %></a></div>
+
+<div><% load($zoovy:base_price); default(""); format(money); print(); %></div>
+</td>
+<!-- /PRODUCT -->
+<!-- BLANK -->
+<td class='ztable_row ztable_row<% print($row.alt); %>'> </td>
+<!-- /BLANK -->
+</tr>
+<!-- /ROW -->
+</table>
+<!-- /product list -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" PROMPT="Text Description" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="page:description"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<HELP><![CDATA[When setting up links inside text or text boxes, be sure to use the proper linking syntax. Failure to do so can cause your customers cart to mysteriously empty.<br><br />
+Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
+]]></HELP>
+<PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left; width:518px;' class='ztxt'>]]></PRETEXT>
+</ELEMENT>
+<ELEMENT ID="SUBCATEGORIES" TYPE="SUBCAT" DESCENDTREE="1" MODE="LIST"><HTML><![CDATA[
+<div style='margin-bottom:5px;'>
+<!-- CATEGORY -->
+<a href='<% print($cat_url); %>' class='cats'><% print($cat_pretty); %></a>
+<% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); print(" | "); %>
+<!-- /CATEGORY -->
+</div>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CUWISQX" TYPE="OUTPUT"><HTML><![CDATA[
+</div>]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

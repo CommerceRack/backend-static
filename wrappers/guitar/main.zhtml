@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- CONFIG
+THEME=guitar
+SITEBUTTONS=l2_schmoop
+-->
+<html>
+<head>
+<!-- HEAD -->
+
+<style rel="STYLESHEET" type="text/css">
+body {margin: 0; background-color: #FFFFFF;}
+a	{text-decoration: none;}
+a:hover	{color: #CCCCCC; text-decoration: underline;}
+form	{display:	inline;}
+td.black	{background-color: #000000;}
+td.red	{background-color: #990000;}
+.title    {font-family: arial; color: #990000; font-size: 16px; font-weight: bold;}
+.menu	{font-family: arial; font-size: 12px; color: #FFFFFF;}
+</style>
+<script language="JavaScript">
+<!--
+initialized = 0;
+
+<!-- MENU
+TYPE=SUBCAT
+FORMAT=subrollover_%NUM%_on = new Image;%BREAK%subrollover_%NUM%_on.src = "%SRC%";%BREAK%
+BUTTONTYPE=l2_redgalaxy_on
+WIDTH=140
+NOHOME=1
+NOROOT=1
+DESCENDTREE=1
+PRODCAT=1
+-->
+<!-- MENU
+TYPE=SUBCAT
+FORMAT=subrollover_%NUM%_off = new Image;%BREAK%subrollover_%NUM%_off.src = "%SRC%";%BREAK%
+BUTTONTYPE=l2_redgalaxy_off
+WIDTH=140
+NOHOME=1
+NOROOT=1
+DESCENDTREE=1
+PRODCAT=1
+-->
+
+initialized = 1;
+function sbon(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"subroll_"+imageNumber+"\"")].src = eval("subrollover_"+imageNumber+"_on.src");
+}
+
+function sboff(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"subroll_"+imageNumber+"\"")].src = eval("subrollover_"+imageNumber+"_off.src");
+}
+
+// -->
+</script>
+		</head>
+<body text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!-- LINK_VISITED_TEXT_COLOR -->">
+<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+	<tr>
+		<td valign="top" class="red">
+		<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+			<tr>
+				<td width=165 height=120 class="black" valign="top">
+<!-- LOGO
+WIDTH=165
+HEIGHT=120
+--></td>	
+			</tr><tr>
+				<td height="4" class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=4 width=1></td>
+			</tr><tr>
+				<td height="25" class="black" align="center">
+<form action="<!-- RESULTS_URL -->" method="get">
+<input type="hidden" name="catalog" value="">
+<input type="text" name="keywords" value="">
+<input type="image" src="<!-- WRAPPER_URL -->/search.jpg" border=0>
+</form></td>
+			</tr><tr>
+				<td height="4" class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=4 width=1></td>
+			</tr><tr>
+				<td class="black" height=99% valign="top" align="center"><!-- MENU
+TYPE=SUBCAT
+BUTTONTYPE=l2_redgalaxy_off
+FORMAT=<a XXX href="%URL%" OnMouseOver="sbon(%NUM%)" OnMouseOut="sboff(%NUM%)"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0" name="subroll_%NUM%"></a><br>
+WIDTH=150
+NOHOME=1
+NOROOT=1
+DESCENDTREE=1
+PRODCAT=1
+--></td>
+			</tr><tr>
+				<td height="4" class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=4 width=1></td>
+			</tr><tr>
+				<td height="113" valign="bottom" class="red"><img src="<!-- WRAPPER_URL -->/guitar.gif" width="165" height="113" alt="" border="0"></td>
+			</tr><tr>
+				<td height="100" class="red"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=100 width=1></td>
+			</tr>		
+		</table>
+		</td>
+		<td width=99% valign="top">
+		<table cellspacing=0 cellpadding=0 border=0 width=100% height=100%>
+			<tr>
+				<td class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=10></td>
+				<td class="black" width="99%"><span class="menu">
+<a href="<!-- HOME_URL -->"><span class="menu">Home</a>&nbsp;&nbsp;|&nbsp;
+<a href="<!--CART_URL-->"><span class="menu">Cart</a>&nbsp;&nbsp;|&nbsp;
+<a href="<!--ABOUT_URL-->"><span class="menu">About Us</a>&nbsp;&nbsp;|&nbsp;
+<a href="<!-- LOGIN_URL -->"><span class="menu">My Account</a>&nbsp;&nbsp;|&nbsp;
+<a href="<!--CONTACT_URL-->"><span class="menu">Contact Us</a></span></td>
+				<td class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=10></td>
+				<td class="black"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=20 width=1></td>
+			</tr><tr>
+				<td class="red"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=20 width=1></td>
+				<td class="red"><span class="menu">
+<!-- MENU
+FORMAT=<a href="%URL%" target="%TARGET%"><font color="#FFFFFF">%MESSAGE%</font></a>%BREAK%
+DIVIDER=|%BREAK%
+AFTER=</div>
+ONLYHOME=0
+NOHOME=1
+-->				</span></td>
+				<td class="red"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+				<td class="red"><img src="<!-- GRAPHICS_URL -->/blank.gif" height=1 width=1></td>
+			</tr><tr>
+				<td><img src="<!-- GRAPHICS_URL -->/blank.gif" height=200 width=1></td>
+				<td valign="top" height=99%><br><p><span class="title"><!-- TITLE --></span></span></p><!-- BODY --></td>
+			</tr><tr>
+				<td></td>
+				<td height=20 valign="bottom"><!-- FOOTER --></td></tr>
+		</table>
+		
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

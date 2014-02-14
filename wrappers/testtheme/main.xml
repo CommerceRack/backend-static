@@ -1,0 +1,368 @@
+<TEMPLATE ID="testtheme" FORMAT="WRAPPER">
+<LIST ID="MODE" TYPE="TEXT">
+<OPT T="Or" V="or"></OPT>
+<OPT T="And" V="and"></OPT>
+<OPT T="Exact" V="EXACT"></OPT>
+</LIST>
+
+
+<!-- ******* -->
+<ELEMENT ID="CRNFLTZ" TYPE="OUTPUT"><HTML><![CDATA[<!-- Loose HTML created Mon 8-May-2006 14:10 PDT -->
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="testtheme" FORMAT="WRAPPER" CART="persist" COLORS="120" TYPE="CONFIG" V="2" CATEGORIES="65537" CREATED="00000000" TITLE="Evolution (Web 2.0)" PROPERTIES="315" SITEBUTTONS="default=reflectgel_grey|gif|110|33" OVERLOAD="flow.product=p-evolution&amp;site.css=1&amp;dev.search_bounce=0"><SUMMARY><![CDATA[This is the next generation Ajax theme. It offers: 
+<li>Your choice of 6 colors.</li>
+<li>Advanced search</li>
+<ol>
+	<li>Prompts the customer with likely search phrases as they type. (must have dictionary catalog specified)</li>
+	<li>Displays a list of the customers recently searched words.</li>
+	<li>Displays search results within an ajax layer in the body of the page.</li>
+</ol>
+<li>Gen2 minicart which keeps your customer on the product page when add to cart is pushed.</li>
+<li>FORCES your product pages to a next generation ajax product layout.</li>
+	<ol>
+		<li>Product reviews (optional - requires CRM bundle)</li>
+		<li>Ajax tell a friend (optional - requires XSELL bundle)</li>
+		<li>Printer friendly version of page (it's seo friendly too)</li>
+		<li>Description and specifications (detailed description)</li>
+		<li>Accessories product list with ajax product info</li>
+		<li>Related items product list (max of 3)</li>
+		<li>On-hover effect for product images that loads larger version (still click to see original)</li>
+		<li>Manufacturer, manufacturer's id and product id</li>
+		<li>Retail price and 'a savings of'</li>
+		<li>Support for WikiText</li>
+		<li>Strips HTML from all product fields on product page (to ensure ajax compliance)</li>
+	</ol>
+<li>468x60 linkable image element in the header.</li>
+<li>Ajax login which only appears if customer is NOT logged in, otherwise it displays their username.</li>
+<li>Newsletter subscription box</li>
+<li>Optimized for high resolution monitors (1000 pixels wide).</li>
+]]></SUMMARY>
+<CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+.zborder {  border: 1px solid #CCCCCC; }
+.zbox {  border: 1px solid #666666; }
+.zbox_body {  background-color: #EFEFEF; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.zbox_head {  background-color: #666666; color: #FFFFFF; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.zcolor {  background-color: #666666; color: #ffffff; }
+.zcolor_contrast {  background-color: #e5e5e5; color: #101010; }
+.zcolor_dark {  background-color: #262626; color: #bfbfbf; }
+.zcolor_light {  background-color: #a6a6a6; color: #ffffff; }
+.zform_button {  background-color: #a6a6a6; border: 1px solid #262626; color: #262626; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.zform_select {  background-color: #FFFFFF; border: 1px solid #262626; color: #000000; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.zform_textarea {  background-color: #FFFFFF; border: 1px solid #262626; color: #000000; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.zform_textbox {  background-color: #FFFFFF; border: 1px solid #262626; color: #000000; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.zhint {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.zlink {  color: #333333; }
+.zsmall {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.ztab0 {  background-color: #ffffff; color: #737373; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztab1 {  background-color: #EFEFEF; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; font-weight: bold; }
+.ztabbody {  background-color: #666666; color: #FFFFFF; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.ztable_head {  background-color: #666666; color: #FFFFFF; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztable_row {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztable_row0 {  background-color: #EFEFEF; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztable_row1 {  background-color: #FFFFFF; color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.ztable_row_small {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 8pt; }
+.ztable_row_title {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 11pt; font-weight: bold; }
+.ztitle {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 10pt; font-weight: bold; }
+.ztitle2 {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; font-weight: bold; }
+.ztxt {  color: #333333; font-family: verdana, sans serif, helvetica; font-size: 9pt; }
+.zwarn {  color: #990000; font-weight: bold; }
+]]></CSS>
+<THEME><![CDATA[alert_color=990000&content_background_color=FFFFFF&content_font_face=verdana%2c+sans+serif%2c+helvetica&content_font_size=2&content_text_color=333333&disclaimer_background_color=FFFFFF&disclaimer_font_face=verdana%2c+sans+serif%2c+helvetica&disclaimer_font_size=1&disclaimer_text_color=333333&link_active_text_color=333333&link_text_color=333333&link_visited_text_color=333333&name=&pretty_name=&table_heading_background_color=666666&table_heading_font_face=verdana%2c+sans+serif%2c+helvetica&table_heading_font_size=2&table_heading_text_color=FFFFFF&table_listing_background_color=EFEFEF&table_listing_background_color_alternate=FFFFFF&table_listing_font_face=verdana%2c+sans+serif%2c+helvetica&table_listing_font_size=2&table_listing_text_color=333333]]></THEME>
+</ELEMENT>
+<ELEMENT ID="ADDOVERLOAD" LINK="javascript:addToCart('%ID%','%SKU%');" BUTTON="add_to_cart" TYPE="OVERLOAD"></ELEMENT>
+<ELEMENT ID="CRUEGLS" SUB="COLOR1" DEFAULT="5E8ED0" TYPE="HIDDEN"></ELEMENT>
+<ELEMENT ID="COLOR_CHOOSER" VALUE="5E8ED0" SUB="COLOR1" PROMPT="Color" DEFAULT="5E8ED0" TYPE="SELECT" FONT="0" HELP="Choose a color from the list above to select the aesthetic to your store" LIST="COLOR1" DATA="merchant:zoovy:wrap_evolution_color" RAW="1"></ELEMENT>
+<ELEMENT ID="CATALOGCHOOSER" SUB="CATALOG" PROMPT="Search Catalog" TYPE="SELECT" FONT="0" LIST="@SYSTEM.SEARCHCATALOGS" DATA="merchant:zoovy:wrap_catalog"><HELP><![CDATA[
+The search catalog feature allows you to set which fields in the zoovy system are searchable.  By default, DEFAULT is created and selected, which searches your product ID and name.  You can create and modify search catalogs from the 'search catalogs' page off of setup.  A 'dictionary' search is required for the text autocomplete feature. If you have questions, please schedule time with a trainer.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="SEARCHMODE_CHOOSER" SUB="SEARCHMODE" PROMPT="Search Mode" DEFAULT="and" TYPE="SELECT" FONT="0" LIST="MODE" DATA="merchant:zoovy:wrap_searchmode" RAW="1"><HELP><![CDATA[
+Search mode has three options:
+<li>'and' which will do a search and return results for product with BOTH words that are searched (X and Y) - system default</li>
+<li>'or' which will do a search and return results for product with EITHER words that are searched (X or Y) - returns most results</li>
+<li>'exact' which will do a search and return results for product with exact word(s) that are searched - returns least results</li>
+If you have questions, please schedule time with a trainer.<br>
+]]></HELP>
+</ELEMENT>
+<ELEMENT ID="CQLVLDA" SUB="HOMECATEGORY_URL" TYPE="READONLY" LOAD="URL::HOMECATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDB" SUB="WRAPPER_URL" TYPE="READONLY" LOAD="URL::WRAPPER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDC" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDD" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDE" SUB="FEEDBACK_URL" TYPE="READONLY" LOAD="URL::FEEDBACK_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDF" SUB="LOGOUT_FUNCTION_URL" TYPE="READONLY" LOAD="URL::LOGOUT_FUNCTION_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDG" SUB="SHIPQUOTE_URL" TYPE="READONLY" LOAD="URL::SHIPQUOTE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDH" SUB="PRIVACY_URL" TYPE="READONLY" LOAD="URL::PRIVACY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDI" SUB="SITEBUTTON_URL" TYPE="READONLY" LOAD="URL::SITEBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDJ" SUB="HOMEPAGE_URL" TYPE="READONLY" LOAD="URL::HOMEPAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDK" SUB="COUNTER_URL" TYPE="READONLY" LOAD="URL::COUNTER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDL" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDM" SUB="PASSWORD_URL" TYPE="READONLY" LOAD="URL::PASSWORD_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDN" SUB="UPDATE_PAYMENT_URL" TYPE="READONLY" LOAD="URL::UPDATE_PAYMENT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDO" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDP" SUB="NAVBUTTON_URL" TYPE="READONLY" LOAD="URL::NAVBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDQ" SUB="CONTACT_URL" TYPE="READONLY" LOAD="URL::CONTACT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDR" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDS" SUB="GALLERY_URL" TYPE="READONLY" LOAD="URL::GALLERY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDT" SUB="REMOVE_URL" TYPE="READONLY" LOAD="URL::REMOVE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDU" SUB="HOME_URL" TYPE="READONLY" LOAD="URL::HOME_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDV" SUB="ABOUT_ZOOVY_URL" TYPE="READONLY" LOAD="URL::ABOUT_ZOOVY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDW" SUB="NEWS_URL" TYPE="READONLY" LOAD="URL::NEWS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDX" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDY" SUB="ABOUT_URL" TYPE="READONLY" LOAD="URL::ABOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLDZ" SUB="USERBUTTON_URL" TYPE="READONLY" LOAD="URL::USERBUTTON_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEA" SUB="CLOSED_URL" TYPE="READONLY" LOAD="URL::CLOSED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEB" SUB="FASTORDER_URL" TYPE="READONLY" LOAD="URL::FASTORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEC" SUB="MAIL_FORM_URL" TYPE="READONLY" LOAD="URL::MAIL_FORM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLED" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEE" SUB="IMAGE_URL" TYPE="READONLY" LOAD="URL::IMAGE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEF" SUB="CONTACTUS_URL" TYPE="READONLY" LOAD="URL::CONTACTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEG" SUB="DYNAMIC_URL" TYPE="READONLY" LOAD="URL::DYNAMIC_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEH" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEI" SUB="CONTACT_US_URL" TYPE="READONLY" LOAD="URL::CONTACT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEJ" SUB="SEARCH_URL" TYPE="READONLY" LOAD="URL::SEARCH_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEK" SUB="ABOUTUS_URL" TYPE="READONLY" LOAD="URL::ABOUTUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEL" SUB="CUSTOMER_MAIN_URL" TYPE="READONLY" LOAD="URL::CUSTOMER_MAIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEM" SUB="MERCHANT_LOGIN_URL" TYPE="READONLY" LOAD="URL::MERCHANT_LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEN" SUB="CATEGORY_URL" TYPE="READONLY" LOAD="URL::CATEGORY_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEO" SUB="ADULT_URL" TYPE="READONLY" LOAD="URL::ADULT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEP" SUB="CLAIM_URL" TYPE="READONLY" LOAD="URL::CLAIM_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEQ" SUB="CLAIM_MULTI_URL" TYPE="READONLY" LOAD="URL::CLAIM_MULTI_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLER" SUB="ABOUT_US_URL" TYPE="READONLY" LOAD="URL::ABOUT_US_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLES" SUB="RESULTS_URL" TYPE="READONLY" LOAD="URL::RESULTS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLET" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEU" SUB="CONTINUE_URL" TYPE="READONLY" LOAD="URL::CONTINUE_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEV" SUB="REDIR_URL" TYPE="READONLY" LOAD="URL::REDIR_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEW" SUB="KILL_COOKIES_URL" TYPE="READONLY" LOAD="URL::KILL_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEX" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEY" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLEZ" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLFA" SUB="NO_COOKIES_URL" TYPE="READONLY" LOAD="URL::NO_COOKIES_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLFB" SUB="PAYPAL_URL" TYPE="READONLY" LOAD="URL::PAYPAL_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLFC" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLFD" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CQLVLFE" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="CRNEEWD" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD" RAW="1"></ELEMENT>
+<ELEMENT ID="SESSIONID" SUB="SESSION_ID" TYPE="READONLY" LOAD="CART::ID" RAW="1"></ELEMENT>
+<ELEMENT ID="STORENAME" SUB="STORENAME" TYPE="READONLY" LOAD="FLOW::USERNAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CRNEEWE" SUB="WRAPPER_ID" TYPE="READONLY" LOAD="FLOW::WRAPPER" RAW="1"></ELEMENT>
+<ELEMENT ID="VARKEYWORDS" SUB="SEARCH_KEYWORDS" TYPE="READONLY" LOAD="CART::SEARCH_KEYWORDLIST" RAW="1"></ELEMENT>
+<ELEMENT ID="CRNEEWF" SUB="CUSTOMER_EMAIL" TYPE="READONLY" LOAD="CART::LOGIN" RAW="1"></ELEMENT>
+<ELEMENT ID="CRLXBDG" SUB="CUSTOMER_FULLNAME" TYPE="READONLY" LOAD="CART::customer::INFO.FULLNAME" RAW="1"></ELEMENT>
+<ELEMENT ID="CRLXBDG" SUB="CUSTOMER_NEWSLETTER" TYPE="READONLY" LOAD="CART::customer::INFO.NEWSLETTER" RAW="1"></ELEMENT>
+<ELEMENT ID="CRNFLUB" TYPE="OUTPUT" OUTPUTSKIP="32768"><HTML><![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Transitional//EN" />
+<HTML>
+<head>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="STYLESHEET" TYPE="OUTPUT"><HTML><![CDATA[
+<link rel="stylesheet" type="text/css" href="%WRAPPER_URL%/style.css">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRGOZAG" TYPE="HEAD" OUTPUTSKIP="32768"></ELEMENT>
+<ELEMENT ID="CRNFLUC" TYPE="OUTPUT" OUTPUTSKIP="32768"><HTML><![CDATA[
+
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/prototype.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/zoovy.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous/scriptaculous.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous/effects.js"></SCRIPT>
+<script type="text/javascript" src="%GRAPHICS_URL%/jslib/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript">
+<!--
+
+var session_id = '%SESSION_ID%';
+var store = '%STORENAME%';
+var DOCID = '%WRAPPER_ID%';
+
+//-->
+</script>
+
+<script type="text/javascript" language="javascript">
+<!-- 
+/*
+get the list of keywords and if present, display them. If not, forget about it...
+If a word is searched, prepend it to the keyword variable separated by a pipe - | and save it back to the cart.
+redisplay list of keywords with the newest word at the top, do NOT retrieve again from cart.
+display the search results in appropriate div.
+*/
+
+var myKeywords = '%SEARCH_KEYWORDS%';
+var session_id = '%SESSION_ID%';
+
+
+//Set this var to the maximum number of results you want shown in the recent searches.
+var maxWords = 6;
+
+/* ##### this is the master function to display the updated list of keywords and the search results.
+1. look to see if myKeywords has a value.
+  	if so: append myKeywords to the new word as update var.
+ 		if no: set new word to update var.
+2. update CART with the list of keywords.
+3. Update display of keywords with latest edition.
+4. Load the search results into the magically appearing div.
+*/
+
+function updateKeywordList(newWord) {
+//if myKeywords isn't blank, postpend them onto value, separated by a pipe.
+	if(myKeywords != '')
+		var update = newWord+'|'+myKeywords;
+	else
+		var update = newWord;
+//zap out the last search results.
+	$('edresults').innerHTML = 'Updating - please wait!';
+
+//Set the postbody var.
+	var postBody = 'm=set&data='+update+'&src=CART::SEARCH_KEYWORDLIST&cart='+session_id;
+//Update the cart with the pipe separated list of keywords.
+//onComplete, load the results of the new Word and update the list of keywords that are displayed.
+	new Ajax.Request('/ajax/set', { postBody: postBody, asynchronous: 1, onComplete: function(request){
+		displayKeywords(update);
+		loadResults(newWord);
+	}});
+	return update;
+	}
+
+/*	##### This functions will display the keywords that have been searched.
+1.  check to see if the passed in var keywordList has a value.
+		if so: Proceed.
+		if no: nothing happens.
+2.	split the keywordList var into an array, separated at the pipes.
+3.	look to see if there are more keywords in the array than the value set in maxWords
+		if so: set display to maxWords.
+ 		if no: set display to number of items in array.
+## this is done so that only the number of loops necessary are done.
+4.	loop through the array DISPLAY number of times and generate the HTML to be displayed.
+5.	update keywordsDisplay div with content generated in step 4.
+*/
+function displayKeywords(keywordList) {
+//if a search has been run before, saved correctly and the readonly loaded properly, myKeywords will have a value and you should proceed.
+	if(keywordList != ''){
+//initialize the keywords array and then saved the value from the cart keyword list, splitting at a | into the array
+		var keywords_array = new Array();
+		var display;
+		keywords_array = keywordList.split('|');			
+//if the number of values in the keywords_array is LESS than maxWords, reset maxWords to the length so that no extra loops occur.
+		if(keywords_array.length < maxWords)
+			display = keywords_array.length;
+		else
+			display = maxWords;
+		var keywords = '<div id="keywordsHeader">Recent Searches:</div>';
+		for (var i = 0; i < display; i++)	{
+			keywords += '<div id="keyword'+i+'"><a href="javascript:loadResults(\''+keywords_array[i]+'\');" class="searchKeywords" >'+keywords_array[i]+'</a></div>';
+			}
+		$('keywordsDisplay').innerHTML = keywords;
+		}
+	}
+
+/*  ##### THis function will load the results into a div.
+1. check style of edsubpanel div and slide up if needed.
+2. check style of edwarning div and slide up if needed.
+3.  slide down the edresultscontainer div.
+4.  set url to the results url.  - NOTE: UPDATE CATALOG TO LOAD IN THE VAR!
+5.  set the paramaters var.  Not currenlty used.
+6.  update the edresults div with the URL var.
+*/
+function loadResults(keywords){
+	if($("edsubpanel").style.display=="") 
+		Effect.SlideUp("edsubpanel");
+	if($("edwarning").style.display=="")
+		Effect.Fade("edwarning");
+	Effect.SlideDown("edresultscontainer");
+//set the URL to be loaded in the div
+	var url = '%RESULTS_URL%?fl=5502&wrapper=evolution_searchresults&CATALOG=%CATALOG%&keywords='+keywords;
+//	alert(url);
+//use this to set any parameters.
+	var pars = '';
+//Ajax update div.  first parameter is the div ID.
+	new Ajax.Updater('edresults', url, {method: 'get', parameters: pars});
+	}
+
+//-->
+</script>
+
+</head>
+
+<body >
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CSGBJDC" TYPE="OUTPUT"><HTML><![CDATA[
+
+<table width='700'>
+<tr>
+	<td valign='top'><div style="position:relative">
+<form method="get" action="" id="searchFrm" name="searchFrm">
+<input type="hidden" name="CATALOG" value="%CATALOG%">
+<input type="hidden" name="mode" value="%SEARCHMODE%">
+<table>
+<tr>
+	<td><input class="box" name="keywords" id="keywords" type="text" style="font-size:11px; width:130px;" /><span style="display:none" id="keywords_stat"></span></td>
+	<td><input type="image" src="%WRAPPER_URL%/search_butt-21x21.gif" /></td>
+</tr>
+</table>
+</form>
+	</div>
+
+<div>Recent Searches</div>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CUDBNAJ" TYPE="SPECL"><HTML><![CDATA[<%
+print("");
+loadurp("VAR::keywords"); default("");
+
+/* everytime a keyword is searched, we're adding it to a list (cart var) to be output later for site stats */
+
+/* keyword isn't set so we output some default text and stop */
+goto(nb=>$_,label=>"UPDATE_KEYWORDS");
+	print("keyword search");
+	stop();
+
+/* if we get here, that means keyword IS set and we're likely on a results page. print out the keyword so that it appears in the search field and then append it to the list of keywords in the cart var so it can be fed into a javascript var for stats. */
+:UPDATE_KEYWORDS();
+	set($keyword=>$_);
+	print();
+
+	loadurp("CART::SEARCH_KEYWORDLIST"); default("");
+/* this is the first keyword, so just add it and don't worry about commas */
+	goto(nb=>$_,label=>"ADDWORD");
+		element(TYPE=>"SET",SRC=>"CART::SEARCH_KEYWORDLIST",DATA=>$keyword);	
+		stop();
+		
+/* this is not the first word, so we need to add commas */
+:ADDWORD();
+	format(posttext=>"|");
+	format(posttext=>$keyword);
+	element(TYPE=>"SET",SRC=>"CART::SEARCH_KEYWORDLIST",DATA=>$_);
+	
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="CRNFLUH2" TYPE="OUTPUT"><HTML><![CDATA[	
+	</td>
+	<td>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="BODY" TYPE="BODY"></ELEMENT>
+<ELEMENT ID="CRNFLUH" TYPE="OUTPUT"><HTML><![CDATA[	
+	</td>
+</tr>
+</table>
+
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="FOOTER" TYPE="FOOTER" TRANSPARENT="1"></ELEMENT>
+<ELEMENT ID="CRNFLUM" TYPE="OUTPUT"><HTML><![CDATA[
+ 
+troubleshooting:
+color 1 = %COLOR1%
+cart id: %SESSION_ID%
+storename: %STORENAME%
+wrapper id: %WRAPPER_ID%
+keywords: %SEARCH_KEYWORDS%
+catalog = %CATALOG%
+
+</body>
+</html>
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

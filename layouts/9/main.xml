@@ -1,0 +1,52 @@
+<TEMPLATE ID="9" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="CPUKMBF" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" SHORT="This page uses boxes to encapsulate site data. Very purpleish." TYPE="CONFIG" TITLE="Boxed Columns" RELEASED="20020618"><SUMMARY><![CDATA[Company Name
+IMAGEe (450x250)
+Product Listing
+Welcome Message
+]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="CPUKMBG" TYPE="OUTPUT"><HTML><![CDATA[<table border='0' width="100%">
+	<tr>
+		<td valign="top" align="center">
+			<table border="3" bordercolor="#663366" cellpadding=0 cellspacing=0 width="450">
+			<tr bgcolor="#CC99CC"><td align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="COMPANYNAME" LENGTH="75 " HELP="Please enter your company name as it should appear throughout your site" DATA="merchant:zoovy:company_name" PROMPT="Company Name" DEFAULT="Northwind Traders" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CPUKMBH" TYPE="OUTPUT"><HTML><![CDATA[
+			</td></tr>
+			<tr bgcolor="#CCCCFF"><td align="center">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="HOMEPAGE_PIC" HEIGHT="250" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" PROMPT="Front Page Picture" WIDTH="450" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CPUKMBI" TYPE="OUTPUT"><HTML><![CDATA[
+			</td></tr>
+			<tr bgcolor="#CCCCFF">
+			<td colspan="2" cellpadding=5 cellspacing=5 valign="top">
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="WELCOME" HELP="Please enter a Welcome message that will appear on your front page" DATA="page:welcome_message" PROMPT="Welcome Message" DEFAULT="Hello, welcome to our wonderful website!" TYPE="TEXT"><HELPER><![CDATA[Remember to keep this text short and to the point. If this is too long, or not helpful visitors probably won't go any further. A lot of businesses talk about what makes their products unique, or their excellent customer service. If you have neither of those, then consider simply welcoming the customer.<br>]]></HELPER>
+</ELEMENT>
+<ELEMENT ID="CPUKMBJ" TYPE="OUTPUT"><HTML><![CDATA[
+
+			</td></tr></table>
+		</td>
+		<td valign="top" align="center" width="100">
+			<table border="3" bordercolor="#663366" cellpadding=0 cellspacing=0 width="100"><tr><td>
+]]></HTML>
+</ELEMENT>
+<ELEMENT ID="PRODLIST1" SIZE="500" MAX="15" HELP="Your Products" DATA="page:prodlist" COLS="1" FORMAT="THUMB" PROMPT="Product Listing" DEFAULT="&amp;ALTERNATE=0" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="CPUKMBK" TYPE="OUTPUT"><HTML><![CDATA[
+			</td></tr></table>
+
+		</td>
+	</tr>
+</table>
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>

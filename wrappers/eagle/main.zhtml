@@ -1,0 +1,103 @@
+<!-- CONFIG
+THEME=eagle2
+SITEBUTTONS=l2_fashion2
+--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+
+<html>
+<head>
+
+<!-- HEAD -->
+<style rel="STYLESHEET" type="text/css">
+body	{margin: 0px; background-color: #FFF3E7;}
+td.orange	{background-color: #EDBD6C;}
+.title	{color: #261C15; font-family: arial, sans serif; font-weight: bold; font-size: 13px;}
+.menu	{color: #261C15; font-family: arial, sans serif; font-size: 12px;}
+</style>
+<script language="JavaScript">
+<!--
+initialized = 0;
+<!-- MENU
+FORMAT=rollover_%NUM%_on = new Image;%BREAK%rollover_%NUM%_on.src = "%SRC%";%BREAK%
+BUTTONTYPE=eagle_on
+WIDTH=135
+NOHOME=1
+--><!-- MENU
+FORMAT=rollover_%NUM%_off = new Image;%BREAK%rollover_%NUM%_off.src = "%SRC%";%BREAK%
+BUTTONTYPE=eagle_off
+WIDTH=135
+NOHOME=1
+-->initialized = 1;
+function on(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_on.src");
+}
+function off(imageNumber) {
+if (!initialized || !document.images) return;
+document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNumber+"_off.src");
+}
+// -->
+</script>
+</head>
+
+<body text="#<!-- CONTENT_TEXT_COLOR -->" link="#<!-- LINK_TEXT_COLOR -->" alink="#<!-- LINK_ACTIVE_TEXT_COLOR -->" vlink="#<!-- LINK_VISITED_TEXT_COLOR -->" onload="document.search.keywords.focus();" marginheight=0 marginwidth=0>
+
+<table cellspacing=0 cellpadding=0 border=0 width=100%>
+	<tr>
+		<td valign="top">
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td><img src="<!-- WRAPPER_URL -->/top.jpg" width="163" height="229" alt="" border="0"></td>
+				</tr><tr>
+					<td background="<!-- WRAPPER_URL -->/cats_bg.gif"><!-- MENU
+BUTTONTYPE=eagle_off
+FORMAT=<a href="%URL%" OnMouseOver="on(%NUM%)" OnMouseOut="off(%NUM%)"><img src="%SRC%" width="%WIDTH%" height="%HEIGHT%" border="0" name="roll_%NUM%"></a><br>
+WIDTH=135
+NOHOME=1
+--></td>
+				</tr><tr>
+					<td><img src="<!-- WRAPPER_URL -->/bottom.gif" width="162" height="123" alt="" border="0"></td>
+				</tr><tr>
+					<td><!-- SIDEBAR --></td>
+				</tr>
+			</table>
+		</td>
+		<td valign="top" width=99%>
+			<table cellspacing=0 cellpadding=0 border=0 width=100%>
+				<tr>
+					<td background="<!-- WRAPPER_URL -->/header_left.gif"><!-- LOGO
+WIDTH=151
+HEIGHT=103
+--></td>
+					<td width=99% valign="top">
+						<table cellspacing=0 cellpadding=0 border=0 width=100%>
+							<tr>
+								<td background="<!-- WRAPPER_URL -->/menutop_bg.gif"><img src="<!-- WRAPPER_URL -->/menutop_bg.gif" width="355" height="17" alt="" border="0"></td>
+							</tr><tr>
+								<td nowrap class="orange" height=24 align="right"><span class="menu"><a href="<!-- HOME_URL -->" class="menu">Home</a>&nbsp;|&nbsp;<a href="<!--CART_URL-->" class="menu">Cart</a>&nbsp;|&nbsp;<a href="<!--ABOUT_URL-->" class="menu">About Us</a>&nbsp;|&nbsp;<a href="<!-- LOGIN_URL -->" class="menu">My Account</a>&nbsp;|&nbsp;<a href="<!--CONTACT_URL-->" class="menu">Contact Us</a>&nbsp;|&nbsp;<a href="<!-- SUBSCRIBE_URL -->" class="menu">Mailing list</a></span>&nbsp;&nbsp;</td>
+							</tr><tr>
+								<td height=62 align="right" valign="top">
+								<table width=100% cellspacing=0 celpadding=0 border=0 height=62>
+									<tr>
+										<td width=99% background="<!-- WRAPPER_URL -->/search_bg.gif" align="right"><form action="<!-- RESULTS_URL -->" method="get" name="search"><input type="hidden" name="catalog" value=""><input type="text" name="keywords" value="" size="10" maxlength="25" style="border-color:#956B52; background-color:#EDBD6C; color:#000000; font-family: sans-serif; font-size: 12px; width: 100px"></td><td valign="bottom" background="<!-- WRAPPER_URL -->/search_bg.gif"><input type="image" src="<!-- WRAPPER_URL -->/search.gif" border=0></form></td></tr></table></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=100% cellpadding=0 cellspacing=0 border=0>
+				<tr>
+					<td><span class="title"><!-- TITLE --></span><br><!-- BODY --><p><!-- FOOTER --></p></td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+
+
+
+
+</body>
+</html>
