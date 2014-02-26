@@ -149,6 +149,7 @@ function model(_app) {
 			QID = (QID === undefined) ? 'mutable' : QID; //default to the mutable Q, but allow for PDQ to be passed in.
 			var r; // return value.
 			if(dispatch && !dispatch['_cmd'])	{
+				_app.u.dump("in model.addDispatchToQ, no _cmd was set in dispatch. dispatch follows: ","warn"); dump(dispatch);
 				r = false;
 				}
 // if QID was not a string, a catastropic JS error occured. could (and did) happen if call has bug in it.
@@ -221,7 +222,9 @@ function model(_app) {
 //* 201338 -> moved the c increment to below the comparison and changed from c > to c >=. that way if numRequestsPP = 1, this will work correctly.
 //					if(c > _app.globalAjax.numRequestsPerPipe){
 					if(c >= _app.globalAjax.numRequestsPerPipe){
-						setTimeout("this.dispatchThis('"+QID+"');",500); //will fire off the remaining items in the q shortly.
+						setTimeout(function(){
+							_app.model.dispatchThis(QID);
+							},500); //will fire off the remaining items in the q shortly.
 						break //max of 100 dispatches at a time.
 						}
 					c++;
@@ -646,7 +649,8 @@ QID is the dispatchQ ID (either passive, mutable or immutable. required for the 
 			var r = false;
 			switch(cmd)	{
 				case 'authAdminLogin':
-//				case 'appBuyerLogin':
+//				case 'appBuyerLogin': //necessary for buyer login to be persistant
+//				case 'whoAmI': //necessary for buyer login to be persistant
 				r = true;
 				}
 			return r;

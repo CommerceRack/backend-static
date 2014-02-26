@@ -154,11 +154,10 @@ var store_product = function(_app) {
 //this'll change going forward.
 
 addToCart : function (pid,$form){
-	_app.u.dump("BEGIN store_product.validate.addToCart");
-	_app.u.dump(" -> pid: "+pid);
+	_app.u.dump("BEGIN store_product.validate.addToCart. pid: "+pid);
 	var valid = true; //what is returned.
 	if(pid && $form instanceof jQuery)	{
-		_app.u.dump(" -> have a pid and a valid $form.");
+//		_app.u.dump(" -> have a pid and a valid $form.");
 		//copied locally for quick reference.
 		var
 			sogJSON = _app.u.thisNestedExists("data.appProductGet|"+pid+".@variations",_app) ? _app.data['appProductGet|'+pid]['@variations'] : {},
@@ -167,7 +166,7 @@ addToCart : function (pid,$form){
 	//	_app.u.dump('BEGIN validate_pogs. Formid ='+formId);
 	
 		if($.isEmptyObject(sogJSON))	{
-			_app.u.dump('no sogs present (or empty object)'); //valid. product may not have sogs.
+//			_app.u.dump('no sogs present (or empty object). this is valid, product may not have variations.');
 			}
 		else if($.isEmptyObject(formJSON))	{
 			_app.u.throwGMessage("In store_product.validate.addToCart, formJSON is empty.");
@@ -455,11 +454,11 @@ it has no inventory AND inventory matters to merchant
 					r = false;
 					}
 				else if(_app.data['appProductGet|'+pid]['%attribs']['zoovy:base_price'] == '')	{
-//					_app.u.dump(" -> base price not set: "+pid);
+					_app.u.dump(" -> base price not set: "+pid);
 					r = false;
 					}
 				else if(_app.data['appProductGet|'+pid]['%attribs']['zoovy:grp_type'] == 'PARENT')	{
-//					_app.u.dump(" -> product is a parent: "+pid);
+					_app.u.dump(" -> product is a parent: "+pid);
 					r = false;
 					}
 //inventory mode of 1 will allow selling more than what's in stock, so skip any inv validating if == 1.
@@ -617,6 +616,7 @@ NOTES
 - if you pass a parentID, it is your responsibility to empty that parent, if needed.
 */
 			prodDataInModal : function(P)	{
+//				dump("BEGIN prodDataInModal");
 				if(P.pid && P.templateID)	{
 					var $parent = $("#product-modal");
 					
@@ -626,10 +626,16 @@ NOTES
 						$parent = $("<div \/>").attr({"id":'product-modal',"title":""}).appendTo('body');
 						$parent.dialog({modal: true,width:'86%',height:$(window).height() - 100,autoOpen:false});
 						}
-					
+//In the handleTemplateEvents execution, the template instance is 'found'. The init, complete and depart events are NOT on $parent, they're on the template instance.
+					$parent.dialog('option','close',function(){
+//						dump(" -> GOT into the option close callback."); dump(P);
+						P.state = 'depart';
+						_app.renderFunctions.handleTemplateEvents($parent.find("[data-templateid='"+P.templateID+"']:first"),P);
+						});
 					
 					$parent.dialog('open').append(_app.renderFunctions.createTemplateInstance(P.templateID,P));
-
+					P.state = 'init';
+					_app.renderFunctions.handleTemplateEvents($parent.find("[data-templateid='"+P.templateID+"']:first"),P);
 					_app.ext.store_product.calls.appProductGet.init(P.pid,{'callback': function(rd){
 						if(_app.model.responseHasErrors(rd)){
 							$parent.anymessage({'message':rd});
@@ -637,6 +643,8 @@ NOTES
 						else	{
 							$parent.dialog( "option", "title", _app.data["appProductGet|"+P.pid]['%attribs']['zoovy:prod_name'] );
 							$parent.anycontent({'templateID':P.templateID,'translateOnly':true,'datapointer':"appProductGet|"+P.pid});
+							P.state = 'complete';
+							_app.renderFunctions.handleTemplateEvents($parent.find("[data-templateid='"+P.templateID+"']:first"),P);
 							}
 						}});
 					_app.ext.store_product.calls.appReviewsList.init(P.pid); //
@@ -691,6 +699,16 @@ NOTES
 						if(obj.price == "")	{delete obj.price; _app.u.dump("Deleting price");}
 						else{}
 
+//The sku could be a fully qualified sku (ex: PRODUCTID:AOOO:A112:ABThis is the value).
+//just add these to the obj and the loop a little further down will format them properly into the %variations object.
+						if(sku.indexOf(':') >= -1)	{
+							var skuArr = sku.split(':');
+							obj.sku = skuArr[0];
+							for(var i = 1; i < skuArr.length; i += 1)	{
+								obj[skuArr[i].substring(0,2)] = skuArr[i].substr(2);
+								}
+							}
+
 //There are use cases for skipping validation, such as admin, quick order, etc.
 						if($form.data('skipvalidation') || _app.ext.store_product.validate.addToCart(sku,$form))	{
 							
@@ -732,20 +750,14 @@ NOTES
 //a no frills add to cart. returns false unless a dispatch occurs, then true.
 			handleAddToCart : function($form,_tag)	{
 				var r = false; //what is returned. True if a dispatch occurs.
-				_app.u.dump("BEGIN store_product.u.handleAddToCart");
+//				_app.u.dump("BEGIN store_product.u.handleAddToCart");
 // SANITY -> don't 'require' $form to be a form. It could be a fieldset or some other container as part of a bigger form (such as order create).
 				if($form instanceof jQuery)	{
 					var cartObj = _app.ext.store_product.u.buildCartItemAppendObj($form);
-					
-//					_app.u.dump("cartObj from store_product:"); _app.u.dump(cartObj);
-//					_app.u.dump("cartObj from cco"); _app.u.dump(_app.ext.cco.u.buildCartItemAppendObj($form.serializeJSON(),_app.model.fetchCartID()));
-					
-					
 					if(cartObj)	{
 //						_app.u.dump(" -> have a valid cart object"); _app.u.dump(cartObj);
 						if(cartObj)	{
 							r = true;
-							
 							_app.ext.cco.calls.cartItemAppend.init(cartObj,_tag || {},'immutable');
 							_app.model.dispatchThis('immutable');
 							}

@@ -851,14 +851,16 @@ has to be within the fieldset to for data-table to work right.
 				<label>
 					<span>Type</span>
 					<select name='type' data-bind='var: flexedit(type); format:popVal;' data-panel-selector=".flexEditTypeInputs" data-input-change='show-panel'>
+						<option value='boolean'>Boolean (checkbox)</option>
 						<option value='checkbox'>Checkbox</option>
 						<option value='currency'>Currency</option>
 						<option value='image'>Image</option>
 						<option value='keyword'>Keyword</option>
+						<option value='keywordlist'>Keyword list</option>
 						<option value='number'>Number</option>
 						<option value='select' data-show-panel='flexEditOptionsInput'>Select</option>
-						<option value='textbox'>Text (small block)</option>
-						<option value='textarea'>Text (big block)</option>
+						<option value='textbox'>Text (single line)</option>
+						<option value='textarea'>Text (multi line)</option>
 						<option value='weight'>Weight</option>
 					</select>
 				</label>
@@ -884,12 +886,15 @@ has to be within the fieldset to for data-table to work right.
 	</div>
 	
 	
-	<section class='ui-widget twoColumn column2'>
+	<section class='ui-widget twoColumn column2' data-tablefilter-role='container'>
 		<h3 class='stdPadding ui-widget-header ui-corner-top'>Popular Attributes</h3>
 		<div class='ui-widget-content ui-corner-bottom stdPadding flexeditMasterListContainer' data-app-role='flexeditMasterListContainer'>
-			<div class='buttonset alignRight'><button data-app-click="admin_tools|flexeditAttributesFullListShow" class='applyButton'>Full Attribute List</button></div>
+			<div class='buttonset'>
+				<input name='tableSearchQuery' type='search' placeholder='filter attributes' x-webkit-speech="x-webkit-speech" data-app-keyup="admin|tableFilter" />
+				<button data-app-click="admin_tools|flexeditAttributesFullListShow" class='applyButton floatRight'>Full Attribute List</button>
+				</div>
 			<p>To enable a new attribute, simply drag it to the 'enabled' list on the left</p>
-			<table class='fullWidth gridTable'>
+			<table class='fullWidth gridTable' data-tablefilter-role='table' data-tablefilter-selector='tr'>
 				<tbody data-bind="var: flexedit(contents); format:processList; loadsTemplate:flexeditAttributeRowTemplate;" data-app-role='flexeditAttributeListTbody'>
 				</tbody>
 			</table>
@@ -907,7 +912,7 @@ has to be within the fieldset to for data-table to work right.
 <table>
 <tr id='flexeditAttributeRowTemplate'>
 	<td class='width1 hideInMasterList'><span class="ui-icon ui-icon-arrowthick-2-n-s"></span></td>
-	<td class='alignLeft'>
+	<td class='alignLeft isSearchable'>
 		<div data-bind='var:flexedit(id); format:text;'></div>
 		<div>
 			<span data-bind='var:flexedit(title); defaultVar:flexedit(tag); format:text;'></span>
@@ -1024,5 +1029,8 @@ has to be within the fieldset to for data-table to work right.
 	<button data-app-click="admin_tools|siteDebugExec" data-icon-primary='ui-icon-wrench' class='applyButton'>Go</button>
 	</div>
 
+	<div data-app-role='siteDebugContent'></div>
 </form>
+
+
 </div>

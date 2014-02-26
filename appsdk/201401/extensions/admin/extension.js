@@ -65,8 +65,8 @@ var admin = function(_app) {
 			tab : 'home',
 			// YOUTUBE RELEASE VIDEO:
 			versionData : [
-				{'branch' : '201401','youtubeVideoID' : ''},
-				{'branch' : '201352','youtubeVideoID' : ''},
+				{'branch' : '201401','youtubeVideoID' : 'NHRNhI2AmG8'},
+//				{'branch' : '201352','youtubeVideoID' : ''},
 				{'branch' : '201346','youtubeVideoID' : 'cW_DvZ2HOy8'},
 				{'branch' : '201344','youtubeVideoID' : 'cW_DvZ2HOy8'},
 				{'branch' : '201338','youtubeVideoID' : 'A8TNbpQtgas'},
@@ -1345,7 +1345,7 @@ _app.model.addDispatchToQ({"_cmd":"adminMessagesList","msgid":_app.ext.admin.u.g
 
 //Here for legacy support.  All it does is change the hash, adding opts as key value pairs AFTER the hash.
 			navigateTo : function(path,opts){
-//				dump("BEGIN navigateTo");
+//				dump("BEGIN navigateTo "+path);
 				opts = opts || {};
 				var newHash = path;
 //sometimes you need to refresh the page you're on. if the hash doesn't change, the onHashChange code doesn't get run so this is a solution to that.
@@ -1354,7 +1354,7 @@ _app.model.addDispatchToQ({"_cmd":"adminMessagesList","msgid":_app.ext.admin.u.g
 					}
 				else	{
 					if(path.indexOf('#!') == 0)	{newHash = path;}
-	//if/when vstore compat is gone, the next to if/else won't be necessary.
+	//if/when vstore compat is gone, the next two if/else won't be necessary.
 					else if(path.indexOf('/biz/') == 0)	{
 						newHash = "#!"+path;
 						}
@@ -1365,6 +1365,7 @@ _app.model.addDispatchToQ({"_cmd":"adminMessagesList","msgid":_app.ext.admin.u.g
 	
 						}
 					if(newHash)	{
+						dump(" -> new hash: "+newHash);
 						if($.isEmptyObject(opts))	{}
 						else	{
 							newHash += "?"+$.param(opts)
@@ -1375,6 +1376,7 @@ _app.model.addDispatchToQ({"_cmd":"adminMessagesList","msgid":_app.ext.admin.u.g
 						$('#globalMessaging').anymessage({'message':'In navigateTo, the path provided ['+path+'] does not start w/ a #! or is not an acceptable legacy compatibility mode link.','gMessage':true});
 						}
 					}
+				return false; //return false so that a href='#' onclick='return navigateTo... works properly (hash doesn't update to #);
 				},
 //executed after the hashChange, as part of the route callback.
 			handleTabClick : function(tab,opts)	{
@@ -2010,6 +2012,7 @@ vars.findertype is required. acceptable values are:
 //attribute - ex: zoovy:accessory_products
 //vars is for variables. eventually, path and attrib should be move into the vars object.
 //vars will be used to contain all the 'chooser' variables.
+//className in vars can be used to apply instance specific classes to the finder (hide/show things as necessary).
 			showFinderInModal : function(findertype,path,attrib,vars)	{
 				_app.u.dump("BEGIN showFinderInModal. findertype: "+findertype+" and path: "+path);
 				if(findertype)	{
@@ -2017,7 +2020,7 @@ vars.findertype is required. acceptable values are:
 					vars = vars || {};
 //a finder has already been opened. empty it.
 					if($finderModal.length > 0)	{
-						$finderModal.empty();
+						$finderModal.empty().removeClass(); //remove all classes from any previous instances. use vars.classname to add newones.
 						$finderModal.attr({'data-findertype':'','data-path':'','data-attrib':''}); //make sure settings from last product are not used.
 						}
 					else	{
@@ -2027,6 +2030,7 @@ vars.findertype is required. acceptable values are:
 					if(path && !vars.path)	{vars.path = path} else {}
 					if(attrib && !vars.attrib)	{vars.attrib = attrib} else {}
 					if(findertype && !vars.findertype)	{vars.findertype = findertype} else {}
+					$finderModal.addClass(vars.classname);
 
 //set the following vars as attributes. at the time the finder was built, didn't have a good understanding of .data().
 //eventually, everything will get moved over to .data();
@@ -2250,12 +2254,14 @@ Changing the domain in the chooser will set three vars in localStorage so they'l
 					}
 //used to ensure the domain selected (either from document.domain or dpsGet) is valid for this account.
 				function validateDomain(domain)	{
+					dump(" -> begin validateDoman: "+domain);
 					_app.ext.admin.calls.adminDomainList.init({'callback':function(rd){
 						if(_app.model.responseHasErrors(rd)){
 							$('#globalMessaging').anymessage({'message':rd});
 							}
 						else	{
 							var domObj = _app.ext.admin.u.getValueByKeyFromArray(_app.data[rd.datapointer]['@DOMAINS'],'DOMAINNAME',domain) || {};
+							dump(' -> domObj: '); dump(domObj,'debug');
 							if(!$.isEmptyObject(domObj))	{
 								_app.ext.admin.a.changeDomain(domObj.DOMAINNAME,domObj.PRT);
 								}
@@ -4461,6 +4467,7 @@ dataAttribs -> an object that will be set as data- on the panel.
 					}
 				else	{
 					//there are no td's tagged as searchable. what to do here?
+					dump(" -> tableFilter was run on a table with no searchable td's. Add the isSearchable class to at least one td.");
 					}
 				},
 

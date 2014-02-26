@@ -848,7 +848,7 @@ ex: whoAmI call executed during app init. Don't want "we have no idea who you ar
 				location : document.location,
 				hash : location.hash,
 				uriParams : _app.router.getURIParams(),
-				hashParams : (location.hash.indexOf('?') >= 0 ? _app.u.kvp2Array(location.hash.split("?")[1]) : {})
+				hashParams : (location.hash.indexOf('?') >= 0 ? _app.u.kvp2Array(decodeURIComponent(location.hash.split("?")[1])) : {})
 				});
 			var routeObj = _app.router._getRouteObj(document.location.href,'init'); //strips out the #! and trailing slash, if present.
 			if(routeObj)	{
@@ -1289,6 +1289,7 @@ will load everything in the RQ will a pass <= [pass]. so pass of 10 loads everyt
 
 						for(var i = 0; i < supportedEvents.length; i += 1)	{
 							$t.on(supportedEvents[i]+".app","[data-app-"+supportedEvents[i]+"]",function(e,p){
+//								dump(" -> executing event. p: "); dump(p);
 								return _app.u._executeEvent($(e.currentTarget),$.extend(p,e));
 								});
 							}	
@@ -1307,7 +1308,9 @@ will load everything in the RQ will a pass <= [pass]. so pass of 10 loads everyt
 				if(ep.handleObj && ep.handleObj.origType)	{
 					type = ep.handleObj.origType; //use this if available. ep.type could be 'focusOut' instead of 'blur'.
 					}
+				
 				dump(" -> type: "+type);
+				
 				var r, actionsArray = $CT.attr('data-app-'+type).split(","), L = actionsArray.length; // ex: admin|something or admin|something, admin|something_else
 				for(var i = 0; i < L; i += 1)	{
 					var	AEF = $.trim(actionsArray[i]).split('|'); //Action Extension Function.  [0] is extension. [1] is Function.
@@ -1574,11 +1577,12 @@ AUTHENTICATION/USER
 				_app.model.destroy('cartDetail|'+_app.model.fetchCartID()); //need the cart object to update again w/out customer details.
 				_app.model.destroy('whoAmI'); //need this nuked too.
 				_app.vars.cid = null; //used in soft-auth.
-				window.localStorage.clear(); //clear everything from localStorage.
-				
 				_app.calls.buyerLogout.init({'callback':'showMessaging','message':'Thank you, you are now logged out'});
-				_app.calls.refreshCart.init({},'immutable');
+//				_app.calls.refreshCart.init({},'immutable');
 				_app.model.dispatchThis('immutable');
+				if($.support.localStorage)	{
+					window.localStorage.clear(); //clear everything from localStorage.
+					}
 				}, //logBuyerOut
 
 			thisIsAnAdminSession : function()	{
@@ -1833,9 +1837,7 @@ VALIDATION
 						required = ($input.attr('required') == 'required') ? true : false;
 					
 					$input.removeClass('ui-state-error'); //remove previous error class
-					
-					_app.u.dump(" -> $input.data('minlength'): "+$input.data('minlength'));
-					
+				
 					function removeClass($t){
 						$t.off('focus.removeClass').on('focus.removeClass',function(){$t.removeClass('ui-state-error')});
 						}
@@ -2829,7 +2831,7 @@ return $r;
 								}						
 
 							}
-						$ele.trigger(infoObj.state,infoObj);
+						$ele.trigger(infoObj.state,[$ele,infoObj]);
 						}
 					else	{
 						$ele.anymessage({'message':'_app.templateFunctions.handleTemplateEvents, infoObj.state ['+infoObj.state+'] is not valid. Only init, complete and depart are acceptable values.','gMessage':true});
