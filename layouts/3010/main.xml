@@ -142,7 +142,7 @@ stop(unless=>$_);
 	loadurp("CSS::ztable_row.font_size"); print();
 	print("; color: ");
 	loadurp("CSS::zcolor_light.color"); print();
-	print(";'>Coupon/Gift Certificate Code: </label></td>
+	print(";'>Coupon Code: </label></td>
 	<td><input type='text' class='zform_textbox' size='8' name='promocode' id='promocode'></td>
 	<td><input type='submit' class='zform_button' value='add'></td>
 </tr>

@@ -94,7 +94,7 @@ stop(unless=>$_);
 <tr>
 	<td class='zcolor_light'><span class='zpromocode_prompt' style='font-size: ");
 	loadurp("CSS::ztable_row.font_size"); print();
-	print("'>Coupon/Gift Certificate Code: </span></td>
+	print("'>Coupon Code: </span></td>
 	<td><input type='text' class='zform_textbox' size='8' name='promocode'></td>
 	<td><input type='submit' class='zform_button' value='add'></td>
 </tr>
