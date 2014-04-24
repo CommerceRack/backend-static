@@ -75,6 +75,7 @@ myApp.u.appInitComplete = function()	{
 		else	{$('.ocmFacebookComment').hide()}
 		});
 		//init checkout here.
-		$('#appPreView').slideUp();
+		$('#appPreView').slideUp('fast');
+		$('#appView').slideDown();
 		myApp.ext.order_create.a.startCheckout($('#mainContentArea'),myApp.vars.cartID);
 	}
