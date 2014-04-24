@@ -1,4 +1,3 @@
-
 myApp.rq.push(['script',0,'/jsonapi/config.js',function(){
 	myApp.vars.username = zGlobals.appSettings.username.toLowerCase(); //used w/ image URL's.
 	myApp.vars.secureURL = zGlobals.appSettings.https_app_url;
@@ -76,5 +75,5 @@ myApp.u.appInitComplete = function()	{
 		else	{$('.ocmFacebookComment').hide()}
 		});
 		//init checkout here.
-		_app.ext.order_create.a.startCheckout($checkoutContainer,_app.model.fetchCartID());
+		_app.ext.order_create.a.startCheckout($('#mainContentArea'),_app.model.fetchCartID());
 	}
