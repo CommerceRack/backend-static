@@ -84,11 +84,51 @@ print("");
 </div>
 
 
-<div id='appTemplates'></div><!-- /appTemplates -->
+<div id='appTemplates'>
+	
+	
+
+<div id="reviewFrmTemplate" class='alignedForm'>
+
+<form name="reviewFrm" action="#" data-app-submit="store_crm|productReviewSubmit">
+<input data-tlc="bind $var '.pid'; apply --select=$var; if (is $var --notblank;) {{apply --append;}};" name="pid" id="reviewsPid" value="" type="hidden">
+
+
+<label><span class="prompt">Your Name</span><input name="CUSTOMER_NAME" value="" maxlength="30" required type="text" class='alignInput'></label>
+
+<label><span class="prompt">Location</span><input maxlength="30" name="LOCATION" value="" type="text" class='alignInput'></label>
+
+<label><span class="prompt">Subject</span><input maxlength="60" name="SUBJECT" type="text" class='alignInput'></label>
+
+<label><span class="prompt">Review</span><textarea required name="MESSAGE" class='alignInput'></textarea></label>
+
+<label>
+	<span class="prompt">Score</span>
+	<select name="RATING" id="reviewsRating">
+		<option value="10">5</option>
+		<option value="9">4.5</option>
+		<option value="8">4</option>
+		<option value="7">3.5</option>
+		<option value="6">3</option>
+		<option value="5">2.5</option>
+		<option value="4">2</option>
+		<option value="3">1.5</option>
+		<option value="2">1</option>
+		<option value="1">.5</option>
+	</select>
+</label>
+
+<button class="applyButton floatRight marginTop">Submit Review</button>
+
+</form>
+</div>
+	
+	
+</div><!-- /appTemplates -->
 
 <!-- jquery and jquery ui are pivotal to the functionality of the app. load them early -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="%BASE_URL%controller.js"></script>
 <script src="%BASE_URL%model.js"></script>
 <script src="%BASE_URL%resources/jquery.ui.anyplugins.js"></script>
