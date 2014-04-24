@@ -6,9 +6,9 @@ myApp.rq.push(['script',0,'/jsonapi/config.js',function(){
 	}]); //The config.js is dynamically generated.
 
 
-myApp.rq.push(['extension',0,'order_create','extensions/checkout/extension.js']);
-myApp.rq.push(['extension',0,'cco','extensions/cart_checkout_order.js']);
-myApp.rq.push(['extension',0,'store_crm','extensions/store_crm.js']);
+myApp.rq.push(['extension',0,'order_create',myApp.vars.baseURL+'extensions/checkout/extension.js']);
+myApp.rq.push(['extension',0,'cco',myApp.vars.baseURL+'extensions/cart_checkout_order.js']);
+myApp.rq.push(['extension',0,'store_crm',myApp.vars.baseURL+'extensions/store_crm.js']);
 
 myApp.rq.push(['script',0,myApp.vars.baseURL+'resources/jquery.showloading-v1.0.jt.js']); //used pretty early in process..
 myApp.rq.push(['script',0,myApp.vars.baseURL+'resources/jquery.ui.anyplugins.js']); //in zero pass in case product page is first page.
