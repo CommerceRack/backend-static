@@ -1,0 +1,130 @@
+<TEMPLATE ID="checkout-201403r" FORMAT="LAYOUT">
+
+
+<!-- ******* -->
+<ELEMENT ID="DGBSYGG" CREATED="00000000" CHEESE="1" SUBTYPE="" FORMAT="LAYOUT" TYPE="CONFIG" EXPORT="0" TITLE="Checkout: one page (required)" RELEASED="00000000">
+<SUMMARY><![CDATA[A one page checkout layout specifically designed for retail customerson stores with 'nice' or 'active' as the checkout setting.]]></SUMMARY>
+</ELEMENT>
+<ELEMENT ID="VAR_RELEASE" HELPER="release # =  YYYYMMDDHHMMSS when deployed." SUB="MVC_RELEASE" DEFAULT="20140423162500" TYPE="HIDDEN"></ELEMENT>
+<ELEMENT ID="VAR_BASE_URL" SUB="BASE_URL" DEFAULT="/media/graphics/general/jslib/zmvc/201403/" TYPE="HIDDEN"></ELEMENT>
+<ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
+<ELEMENT ID="VAR_SECURE_URL" RAW="1" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL"></ELEMENT>
+<ELEMENT ID="VAR_NONSECURE_URL" RAW="1" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL"></ELEMENT>
+<ELEMENT ID="CQPOIJP" RAW="1" SUB="CART_ID" TYPE="READONLY" LOAD="CART::ID"></ELEMENT>
+<ELEMENT ID="DGYFWVN" TYPE="SPECL"><HTML><![CDATA[<%
+loadurp("CONFIG::IHAVEJQUERYUICSS"); default("");
+goto(label=>"END",ne=>"");
+        print("<link rel='stylesheet' type='text/css' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/cupertino/jquery-ui.css' />");
+:END();
+print("");
+%>]]></HTML>
+</ELEMENT>
+<ELEMENT ID="1PC_CONTENT" TYPE="OUTPUT"><HTML><![CDATA[
+
+
+<!--
+/* **************************************************************
+
+   Copyright 2011 Zoovy, Inc.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+************************************************************** */
+
+
+
+
+
+-->
+
+
+
+
+
+<!-- what is displayed onLoad until the view is loaded -->
+<div id='appPreView'>
+<table>
+<tr>
+	<td><!-- put logo here --></td>
+	<td>
+
+	<div id="loader">
+		<h3>One moment please.</h3>
+
+		<div class='alignCenter'>
+		<progress id="appPreViewProgressBar" max="100" value="0"></progress><br>
+		</div>
+		<div id='appPreViewProgressText'>0% Complete</div>
+	</div>
+	<div id="clickToLoad" class="displayNone pointer">
+		Click here to load your shopping experience!
+	</div>
+	<div class='appMessaging'></div>
+	</td>
+</tr>
+</table>
+</div>
+
+
+
+
+
+<div id='appView' class='displayNone'>
+	<div id='globalMessaging' class='appMessaging'></div><!-- DO NOT REMOVE - used for some high level error handling (usually appears below breadcrumb nav or top bar) -->
+	<div id='mainContentArea'></div><!-- DO NOT REMOVE - this is where the specific page (ex: homepage, product, category) content is going to go -->
+</div>
+
+
+<div id='appTemplates'></div><!-- /appTemplates -->
+
+<!-- jquery and jquery ui are pivotal to the functionality of the app. load them early -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script src="%BASE_URL%controller.js"></script>
+<script src="%BASE_URL%model.js"></script>
+<script src="%BASE_URL%resources/jquery.ui.anyplugins.js"></script>
+<script src="%BASE_URL%includes.js"></script><!-- contains some polyfills and should be loaded early -->
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	window.myApp = new initApp({
+		"release":"%MVC_RELEASE%",  //increment this with each change. should solve caching issues. format: YYYYMMDDHHMMSS
+        "baseURL":"%BASE_URL%", //where MVC files are loaded from.
+        "cartID":"%CART_ID%",
+        "_clientid":"1pc",
+        "layoutURL":"%LAYOUT_URL%/",
+        "httpsURL":"%SECURE_URL%",
+        "checkoutAuthMode":"required",//can be passive, active or required
+        "httpURL":"%NONSECURE_URL%",
+		"addjQueryPointer" : true,
+		"initComplete" : function(){
+			dump(" -> init is complete");
+			myApp.u.loadScript('%LAYOUT_URL%/checkout-init.js',function(){
+				var progress = myApp.u.loadResources(); //the object returns by loadResources will get updated as the resources finish loading.
+				myApp.u.showProgress(progress);
+				});
+			$('#appversion').text(myApp.vars.release);
+			}
+		});
+	myApp.vars.initComplete();
+	myCreole = new Parse.Simple.Creole();
+	});
+</script>
+
+
+]]></HTML>
+</ELEMENT>
+
+</TEMPLATE>
