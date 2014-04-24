@@ -45,8 +45,10 @@ print("");
 
 
 -->
-
-
+<!-- here to avoid the review template from being visible, then hidden (popping) -->
+<style>
+.displayNone, #appTemplates {display:none;}
+</style>
 
 
 
