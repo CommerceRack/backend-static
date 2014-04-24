@@ -7,6 +7,7 @@ use Data::Dumper;
 use Storable;
 use strict;
 use Image::Magick;
+use JSON::XS;
 
 my $FORMAT = uc($ARGV[0]);
 if ($FORMAT eq '') {
@@ -74,24 +75,78 @@ if (1) {
 		$DOCID = substr($dir,0,-1);
 
 		my ($toxml) = TOXML::COMPILE::fromXML($FORMAT,$DOCID,$xml);
-#		next if (not defined $toxml);
-#		next if ($toxml->{'_HASERRORS'});
+		if (not defined $toxml) {
+			die("$PATH/$dir$file appears to be corrupted");
+			}
 		if ($toxml->{'_HASERRORS'}) {
 			die("Document has errors - cannot compile");
 			}
 
+		delete $toxml->{'_USERNAME'};
+		delete $toxml->{'_MID'};
+		if ($toxml->{'_SYSTEM'} != 1) { 
+			die("not a system file"); 
+			}
+		my $DOCID = $toxml->{'_ID'};
 
-		$toxml->MaSTerSaVE('preservexml'=>1);
-		Storable::nstore $toxml, "$PATH/$dir/$binfile";
-		print "!!!!!!!!!!!!!!!!!!!!!!!!!!! WROTE: $PATH/$dir/$binfile\n";
+		my $srcfile = '';
+		my $binfile = '';
+		my $jsonfile = '';
+		if ($toxml->{'_FORMAT'} eq 'LAYOUT') {
+			# /httpd/static/layouts/$FILE.bin and $FILE.xml	
+			$srcfile = "/httpd/static/layouts/$DOCID/main.xml";
+			$binfile = "/httpd/static/layouts/$DOCID/main.bin";
+			$jsonfile = "/httpd/static/layouts/$DOCID/main.json";
+			}
+		elsif ($toxml->{'_FORMAT'} eq 'WRAPPER') {
+			# /httpd/static/layouts/$FILE.bin and $FILE.xml	
+			$toxml->compile();
+			$srcfile = "/httpd/static/wrappers/$DOCID/main.xml";
+			$binfile = "/httpd/static/wrappers/$DOCID/main.bin";
+			$jsonfile = "/httpd/static/wrappers/$DOCID/main.json";
+			}
 
-		chmod 0666, "$PATH/$dir/$binfile";
-		chown 65534,65534, "$PATH/$dir/$binfile";
-		chmod 0666, "$PATH/$file";
-		chown 65534,65534, "$PATH/$file";
+		my $WRITE_FILES = 0;
+		if ($srcfile) {
+			my ($srcdev,$srcino,$srcmode,$srcnlink,$srcuid,$srcgid,$srcrdev,$srcsize,$srcatime,$srcmtime,$srcctime,$srcblksize,$srcblocks) = stat($srcfile);
+			my ($bindev,$binino,$binmode,$binnlink,$binuid,$bingid,$binrdev,$binsize,$binatime,$binmtime,$binctime,$binblksize,$binblocks) = stat($binfile);
+			if ($srcmtime > $binmtime) {
+				print "!!!!!!!!!!!!!!!!!!!!!!!!!!! WROTE: $binfile\n"; 
+				Storable::nstore $toxml, $binfile; 
+				chmod 0666, $binfile; chown $ZOOVY::EUID,$ZOOVY::EGID, $binfile; 
+				chmod 0666, "$binfile";
+				chown 65534,65534, "$binfile";
+				&TOXML::UTIL::updateFILE($toxml);
+				}
+			}
+
+		if ($srcfile) {
+			my ($srcdev,$srcino,$srcmode,$srcnlink,$srcuid,$srcgid,$srcrdev,$srcsize,$srcatime,$srcmtime,$srcctime,$srcblksize,$srcblocks) = stat($srcfile);
+			my ($jsondev,$jsonino,$jsonmode,$jsonnlink,$jsonuid,$jsongid,$jsonrdev,$jsonsize,$jsonatime,$jsonmtime,$jsonctime,$jsonblksize,$jsonblocks) = stat($jsonfile);
+			if ($srcmtime > $jsonmtime) {
+				print "!!!!!!!!!!!!!!!!!!!!!!!!!!! WROTE: $jsonfile\n"; 
+				open F, ">$jsonfile";
+				print F JSON::XS->new->ascii->pretty->allow_nonref->convert_blessed->encode($toxml);
+				close F;
+				}
+			}
 	
 
-		&TOXML::UTIL::updateFILE($toxml);
+		if ($WRITE_FILES) {		
+			## this really cheeses things in git.
+			#if ($xmlfile ne '') { 
+			#	print STDERR "TOXML->MaSTerSaVE Wrote: $xmlfile\n";
+			#	open F, ">$xmlfile"; print F $toxml->as_xml();  close F; chmod 0666, $xmlfile; chown $ZOOVY::EUID,$ZOOVY::EGID, $xmlfile; 
+			#	}
+
+	
+			if ($binfile ne '') { 
+				}
+
+			#if ($jsonfile ne '') {
+			#	}
+
+			}
 
 		# TOXML::UTIL::updateDB($toxml); 
 		}
