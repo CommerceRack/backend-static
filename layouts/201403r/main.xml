@@ -111,7 +111,7 @@ $(document).ready(function(){
 		"addjQueryPointer" : true,
 		"initComplete" : function(){
 			dump(" -> init is complete");
-			myApp.u.loadScript('%LAYOUT_URL%/checkout-init.js',function(){
+			myApp.u.loadScript('%LAYOUT_URL%/init.js',function(){
 				var progress = myApp.u.loadResources(); //the object returns by loadResources will get updated as the resources finish loading.
 				myApp.u.showProgress(progress);
 				});
