@@ -1,6 +1,0 @@
-# API: adminEBAYTemplateDetail
-
-
-## ACCESS REQUIREMENTS: ##
-[[SYNDICATION|CONCEPT_syndication]] - DELETE/REMOVE
-

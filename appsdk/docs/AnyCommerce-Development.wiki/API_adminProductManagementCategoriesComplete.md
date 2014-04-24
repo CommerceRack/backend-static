@@ -1,7 +1,0 @@
-# API: adminProductManagementCategoriesComplete
-
-
-
-
-## RESPONSE: ##
-  * %CATEGORIES: 
