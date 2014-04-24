@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CVXYRTM" CREATED="20080616" SUBTYPE="E" TYPE="CONFIG" EXPORT="0" TITLE="Picture, price, retail and you save, but customer sort/items per page settings (experimental)" BPP="1"><SUMMARY><![CDATA[
+<ELEMENT ID="CVXYRTM" CREATED="20080616" SUBTYPE="E" EXPORT="0" TYPE="CONFIG" TITLE="Picture, price, retail and you save, but customer sort/items per page settings (experimental)" BPP="1"><SUMMARY><![CDATA[
 A search results layout which displays 2 items per row with extended pricing information.  This layout also features a user-defined sorting and items per page feature which is currently experimental.
 ]]></SUMMARY>
 </ELEMENT>
@@ -29,16 +29,7 @@ A search results layout which displays 2 items per row with extended pricing inf
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST_GEN3_MPHEAD" SIZE="24" MAX="2500" MULTIPAGE="1" ALTERNATE="0" DATA="page:prodlist_custom" COLS="2" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODSEARCH" ROOT="." EMPTY_MESSAGE="0 items were found" SORTBY="zoovy:prod_name"><INIT><![CDATA[<%
-
-/* override the default INI values here. this gets preprocessed.  */
-
-loadurp("VAR::size"); default($SIZE); initset(SIZE=>$_);
-loadurp("VAR::sortby"); default($SORTBY); initset(SORTBY=>$_);
-loadurp("VAR::root"); default($ROOT); initset(ROOT=>$_); 
-
-%>]]></INIT>
-<MULTIPAGE_FOOTER><![CDATA[
+<ELEMENT SIZE="24" ID="PRODLIST_GEN3_MPHEAD" MAX="2500" MULTIPAGE="1" ALTERNATE="0" DATA="page:prodlist_custom" COLS="2" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODSEARCH" ROOT="." EMPTY_MESSAGE="0 items were found" SORTBY="zoovy:prod_name"><MULTIPAGE_FOOTER><![CDATA[
 
 
 <div class='ztable_row no_underline' style='margin:2px 20px 0px 20px; text-align:right;' >
@@ -145,6 +136,15 @@ load($TOTALPAGES); default("1");
 
 
 ]]></MULTIPAGE_FOOTER>
+<INIT><![CDATA[<%
+
+/* override the default INI values here. this gets preprocessed.  */
+
+loadurp("VAR::size"); default($SIZE); initset(SIZE=>$_);
+loadurp("VAR::sortby"); default($SORTBY); initset(SORTBY=>$_);
+loadurp("VAR::root"); default($ROOT); initset(ROOT=>$_); 
+
+%>]]></INIT>
 <HTML><![CDATA[ 
 <table border="0" cellpadding="0" cellspacing="20" align='center' width='100%'>
 <!-- ROW -->

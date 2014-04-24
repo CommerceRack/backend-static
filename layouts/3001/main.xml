@@ -25,7 +25,7 @@ Shopping Cart
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="50000" ID="PRODLIST1" HELP="You can add products to your shopping cart page" DATA="page:prodlist" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="PRODLIST1" SIZE="50000" HELP="You can add products to your shopping cart page" DATA="page:prodlist" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
 <ELEMENT ID="CPUKLXE" TYPE="OUTPUT"><HTML><![CDATA[
 
 </center>

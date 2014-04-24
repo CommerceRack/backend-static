@@ -2,9 +2,9 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="DGBSYGG" FORMAT="LAYOUT" EXPORT="0" TYPE="CONFIG" CREATED="00000000" TITLE="Checkout: one page (mandatory)" CHEESE="1" RELEASED="00000000" SUBTYPE=""><SUMMARY><![CDATA[A one page checkout layout specifically designed for retail customerson stores with 'passive' as the checkout setting.]]></SUMMARY>
+<ELEMENT FORMAT="LAYOUT" ID="DGBSYGG" TYPE="CONFIG" EXPORT="0" TITLE="Checkout: one page (mandatory)" CREATED="00000000" CHEESE="1" SUBTYPE="" RELEASED="00000000"><SUMMARY><![CDATA[A one page checkout layout specifically designed for retail customerson stores with 'passive' as the checkout setting.]]></SUMMARY>
 </ELEMENT>
-<ELEMENT ID="VAR_RELEASE" SUB="MVC_RELEASE" HELPER="release # =  YYYYMMDDHHMMSS when deployed." DEFAULT="20130422055200" TYPE="HIDDEN"></ELEMENT>
+<ELEMENT ID="VAR_RELEASE" HELPER="release # =  YYYYMMDDHHMMSS when deployed." SUB="MVC_RELEASE" DEFAULT="20130422055200" TYPE="HIDDEN"></ELEMENT>
 <ELEMENT ID="VAR_LAYOUT_URL" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="VAR_SECURE_URL" SUB="SECURE_URL" TYPE="READONLY" LOAD="URL::SECURE_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="VAR_GRAPHICS_URL" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL" RAW="1"></ELEMENT>

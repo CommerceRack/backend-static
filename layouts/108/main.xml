@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMDY" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" SHORT="(1) 300 x 300 Slide Show series, has the default description below." TYPE="CONFIG" TITLE="Slide Show" RELEASED="20020520"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMDY" CREATOR="STAFF" IMAGES="0" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" SHORT="(1) 300 x 300 Slide Show series, has the default description below." TYPE="CONFIG" TITLE="Slide Show" RELEASED="20020520"><SUMMARY><![CDATA[
 Default Description (shared)
 Slide Show
 ]]></SUMMARY>
@@ -73,7 +73,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="300" ID="SLIDE1" HELP="Rotates through several pictures" WIDTH="300" PROMPT="Slide Show" TYPE="SLIDE"></ELEMENT>
+<ELEMENT ID="SLIDE1" HEIGHT="300" HELP="Rotates through several pictures" PROMPT="Slide Show" WIDTH="300" TYPE="SLIDE"></ELEMENT>
 <ELEMENT ID="CPUKMEA" TYPE="OUTPUT"><HTML><![CDATA[
 <br>
 

@@ -23,12 +23,12 @@
 <!-- Image sub elements for javascript -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULBZ" DATA="product:zoovy:prod_image1" RAW="1" SUB="IMAGE1" FONT="0" TYPE="READONLY"></ELEMENT>
-<ELEMENT ID="CRGULCD" DATA="product:zoovy:prod_image2" RAW="1" SUB="IMAGE2" FONT="0" TYPE="READONLY"></ELEMENT>
-<ELEMENT ID="CRGULB4" DATA="product:zoovy:prod_image3" RAW="1" SUB="IMAGE3" FONT="0" TYPE="READONLY"></ELEMENT>
-<ELEMENT ID="CRGULC5" DATA="product:zoovy:prod_image4" RAW="1" SUB="IMAGE4" FONT="0" TYPE="READONLY"></ELEMENT>
-<ELEMENT ID="CRGULB6" DATA="product:zoovy:prod_image5" RAW="1" SUB="IMAGE5" FONT="0" TYPE="READONLY"></ELEMENT>
-<ELEMENT ID="CRGULC9" DATA="product:zoovy:prod_image6" RAW="1" SUB="IMAGE6" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRGULBZ" DATA="product:zoovy:prod_image1" RAW="1" SUB="IMAGE1" TYPE="READONLY" FONT="0"></ELEMENT>
+<ELEMENT ID="CRGULCD" DATA="product:zoovy:prod_image2" RAW="1" SUB="IMAGE2" TYPE="READONLY" FONT="0"></ELEMENT>
+<ELEMENT ID="CRGULB4" DATA="product:zoovy:prod_image3" RAW="1" SUB="IMAGE3" TYPE="READONLY" FONT="0"></ELEMENT>
+<ELEMENT ID="CRGULC5" DATA="product:zoovy:prod_image4" RAW="1" SUB="IMAGE4" TYPE="READONLY" FONT="0"></ELEMENT>
+<ELEMENT ID="CRGULB6" DATA="product:zoovy:prod_image5" RAW="1" SUB="IMAGE5" TYPE="READONLY" FONT="0"></ELEMENT>
+<ELEMENT ID="CRGULC9" DATA="product:zoovy:prod_image6" RAW="1" SUB="IMAGE6" TYPE="READONLY" FONT="0"></ELEMENT>
 <ELEMENT ID="CRNENFP" TYPE="OUTPUT"><HTML><![CDATA[
 
 <script type="text/javascript">
@@ -92,10 +92,10 @@ function youSave(price,msrp)	{
 		<div id="prod_topData_sku">Item #: %SKU%</div> 
 		]]></HTML>
 </ELEMENT>
-<ELEMENT ID="MANUFACTURER" DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div id="prod_topData_mfg">Manufacturer: ]]></PRETEXT>
+<ELEMENT ID="MANUFACTURER" DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" TYPE="TEXTBOX" FONT="0"><PRETEXT><![CDATA[<div id="prod_topData_mfg">Manufacturer: ]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="MANUFACTURERID" DATA="product:zoovy:prod_mfgid" PROMPT="Manufacturer's ID" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div id="prod_topData_mfgid">Mfg. ID: ]]></PRETEXT>
+<ELEMENT ID="MANUFACTURERID" DATA="product:zoovy:prod_mfgid" PROMPT="Manufacturer's ID" TYPE="TEXTBOX" FONT="0"><PRETEXT><![CDATA[<div id="prod_topData_mfgid">Mfg. ID: ]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CRNENFW" TYPE="OUTPUT"><HTML><![CDATA[
@@ -130,10 +130,10 @@ youSave('%PRICE%','%MSRP%');
 	
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRNENGA" DATA="product:zoovy:prod_desc" PROMPT="Product Description" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-bottom:15px;' class='ztxt'><div><b>Description:</b></div>]]></PRETEXT>
+<ELEMENT ID="CRNENGA" DATA="product:zoovy:prod_desc" PROMPT="Product Description" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<div style='margin-bottom:15px;' class='ztxt'><div><b>Description:</b></div>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="CRNENGB" DATA="product:zoovy:prod_detail" PROMPT="Product Specs (detailed description)" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-bottom:15px;' class='ztxt'><div><b>Specifications:</b></div>]]></PRETEXT>
+<ELEMENT ID="CRNENGB" DATA="product:zoovy:prod_detail" PROMPT="Product Specs (detailed description)" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<div style='margin-bottom:15px;' class='ztxt'><div><b>Specifications:</b></div>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CRNENGC" RAW="1" TYPE="TEXTLIST" LOAD="product:zoovy:prod_features"><POSTTEXT><![CDATA[ </ul></p>]]></POSTTEXT>
@@ -186,7 +186,7 @@ youSave('%PRICE%','%MSRP%');
 <!-- /DETAIL -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="QTYPRICE" MIDLINE=" for " DATA="product:zoovy:qty_price" PRELINE="Buy " PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
+<ELEMENT ID="QTYPRICE" DATA="product:zoovy:qty_price" MIDLINE=" for " PRELINE="Buy " PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
 <PRETEXT><![CDATA[<div style='margin:15px 0px;' class='ztxt'><b>Quantity Discount Pricing:</b><br>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>

@@ -2,10 +2,10 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNJS" CREATOR="JT" IMAGES="1" CREATED="20070925" PROPERTIES="1" SUBTYPE="C" SERIES="2007" FORMAT="LAYOUT" SHORT="2 Column subcats with small thumbs" TYPE="CONFIG" TITLE="2 Column subcats with small thumbs" RELEASED="20070925"><SUMMARY><![CDATA[This layout features a wide banner, followed by the subcategories in a two column format with small thumbnails and the name to the right.  Following the subcategories is a text block  To the right of the categories is a single column product list.]]></SUMMARY>
+<ELEMENT ID="CPUKNJS" CREATOR="JT" CREATED="20070925" IMAGES="1" PROPERTIES="1" SUBTYPE="C" SERIES="2007" FORMAT="LAYOUT" SHORT="2 Column subcats with small thumbs" TYPE="CONFIG" TITLE="2 Column subcats with small thumbs" RELEASED="20070925"><SUMMARY><![CDATA[This layout features a wide banner, followed by the subcategories in a two column format with small thumbnails and the name to the right.  Following the subcategories is a text block  To the right of the categories is a single column product list.]]></SUMMARY>
 </ELEMENT>
-<ELEMENT ID="BANNER1_LINK" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for wide image" FONT="0" TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="BANNER1" HEIGHT="225" DATA="page:banner1" PROMPT="Wide Image" WIDTH="475" SUB="PAGE_BANNER1" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:5px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+<ELEMENT ID="BANNER1_LINK" DATA="page:banner1_link" PROMPT="Link for wide image" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="225" ID="BANNER1" DATA="page:banner1" SUB="PAGE_BANNER1" WIDTH="475" PROMPT="Wide Image" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:5px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="SUBCATEGORIES" MODE="LIST" SUB="PAGE_SUBCATS" TYPE="SUBCAT" FORCECOLUMNS="2"><HTML><![CDATA[
@@ -26,10 +26,10 @@ load($cat_thumb); default(""); image(w=>"40",h=>"40",bg=>$BODYBG,tag=>"1",alt=>$
 </table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" SUB="PAGE_DESC" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="PAGE_DESC" PROMPT="Text Description" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left;' class='ztxt'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PRODUCTS" SIZE="500" MAX="8" ALTERNATE="3" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" SUB="PAGE_PRODLIST" TYPE="PRODLIST"><HTML><![CDATA[
+<ELEMENT SIZE="500" ID="PRODUCTS" MAX="8" ALTERNATE="3" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" SUB="PAGE_PRODLIST" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
 <td valign='top' width='20%' style='padding-left:5px;' class='zcolor_light'>
 <table style='margin-bottom:15px;' cellspacing='0' cellpadding='3' width='100%'>
 <!-- ROW -->

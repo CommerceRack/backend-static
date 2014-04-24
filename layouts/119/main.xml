@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLYI" CREATOR="STAFF" IMAGES="28" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="P" FORMAT="LAYOUT" SHORT="(27) 180 x 180 images, listed below the price, and (1) 640x480 on the top" TYPE="CONFIG" TITLE="Super-Mini Detail Picture" RELEASED="20020510"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKLYI" CREATOR="STAFF" CREATED="00000000" IMAGES="28" PROPERTIES="1" SERIES="2002" SUBTYPE="P" FORMAT="LAYOUT" SHORT="(27) 180 x 180 images, listed below the price, and (1) 640x480 on the top" TYPE="CONFIG" TITLE="Super-Mini Detail Picture" RELEASED="20020510"><SUMMARY><![CDATA[
 Default Description (shared)
 IMAGE0 (180x180)
 IMAGE1 (180x180)
@@ -32,7 +32,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="480" ID="IMAGE1" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="640" PROMPT="Image 1" DEFAULT="https://static.zoovy.com/img/H640-W480-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="480" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="640" DEFAULT="https://static.zoovy.com/img/H640-W480-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYK" TYPE="OUTPUT"><HTML><![CDATA[
 <br>
 
@@ -63,7 +63,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE2" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="180" PROMPT="Image 2" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image 2" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYO" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -71,7 +71,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE3" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" WIDTH="180" PROMPT="Image 3" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE3" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image 3" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYP" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -79,7 +79,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE4" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image4" WIDTH="180" PROMPT="Image 4" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE4" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image4" PROMPT="Image 4" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYQ" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -89,7 +89,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE5" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image5" WIDTH="180" PROMPT="Image 5" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE5" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image5" PROMPT="Image 5" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYR" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -97,7 +97,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE6" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image6" WIDTH="180" PROMPT="Image 6" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE6" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image6" PROMPT="Image 6" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYS" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -105,7 +105,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE7" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image7" WIDTH="180" PROMPT="Image 7" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE7" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image7" PROMPT="Image 7" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYT" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -115,7 +115,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE8" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image8" WIDTH="180" PROMPT="Image 8" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE8" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image8" PROMPT="Image 8" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYU" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -123,7 +123,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE9" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image9" WIDTH="180" PROMPT="Image 9" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE9" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image9" PROMPT="Image 9" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYV" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -131,7 +131,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE10" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image10" WIDTH="180" PROMPT="Image 10" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE10" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image10" PROMPT="Image 10" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYW" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -141,7 +141,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE11" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image11" WIDTH="180" PROMPT="Image 11" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE11" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image11" PROMPT="Image 11" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYX" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -149,7 +149,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE12" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image12" WIDTH="180" PROMPT="Image 12" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE12" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image12" PROMPT="Image 12" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYY" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -157,7 +157,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE13" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image13" WIDTH="180" PROMPT="Image 13" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE13" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image13" PROMPT="Image 13" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYZ" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -167,7 +167,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE14" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image14" WIDTH="180" PROMPT="Image 14" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE14" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image14" PROMPT="Image 14" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZA" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -175,7 +175,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE15" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image15" WIDTH="180" PROMPT="Image 15" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE15" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image15" PROMPT="Image 15" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZB" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -183,7 +183,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE16" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image16" WIDTH="180" PROMPT="Image 16" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE16" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image16" PROMPT="Image 16" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZC" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -193,7 +193,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE17" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image17" WIDTH="180" PROMPT="Image 17" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE17" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image17" PROMPT="Image 17" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZD" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -201,7 +201,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE18" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image18" WIDTH="180" PROMPT="Image 18" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE18" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image18" PROMPT="Image 18" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZE" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -209,7 +209,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE19" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image19" WIDTH="180" PROMPT="Image 19" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE19" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image19" PROMPT="Image 19" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZF" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -219,7 +219,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE20" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image20" WIDTH="180" PROMPT="Image 20" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE20" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image20" PROMPT="Image 20" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZG" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -227,7 +227,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE21" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image21" WIDTH="180" PROMPT="Image 21" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE21" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image21" PROMPT="Image 21" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZH" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -235,7 +235,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE22" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image22" WIDTH="180" PROMPT="Image 22" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE22" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image22" PROMPT="Image 22" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZI" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -245,7 +245,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE23" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image23" WIDTH="180" PROMPT="Image 23" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE23" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image23" PROMPT="Image 23" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZJ" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -253,7 +253,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE24" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image24" WIDTH="180" PROMPT="Image 24" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE24" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image24" PROMPT="Image 24" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZK" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -261,7 +261,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE25" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image25" WIDTH="180" PROMPT="Image 25" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE25" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image25" PROMPT="Image 25" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZL" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -271,7 +271,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE26" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image26" WIDTH="180" PROMPT="Image 26" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE26" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image26" PROMPT="Image 26" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZM" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -279,7 +279,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE27" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image27" WIDTH="180" PROMPT="Image 27" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE27" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image27" PROMPT="Image 27" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZN" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -287,7 +287,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE28" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image28" WIDTH="180" PROMPT="Image 28" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE28" HEIGHT="180" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image28" PROMPT="Image 28" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZO" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>

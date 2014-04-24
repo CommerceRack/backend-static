@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMRC" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Two Button Left Picture" RELEASED="20020716"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMRC" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Two Button Left Picture" RELEASED="20020716"><SUMMARY><![CDATA[
 Default Description (shared)
 Detailed Product Description
 IMAGE1 (300x300)
@@ -28,7 +28,7 @@ function zoom (url) {
       <td valign=top width="300" align="left">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="300" ID="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="300" PROMPT="Image 1" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE" HEIGHT="300" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="300" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMRF" TYPE="OUTPUT"><HTML><![CDATA[ 
     </td>
     <td valign="top"> 

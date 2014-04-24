@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMIZ" FORMAT="LAYOUT" CREATOR="STAFF" SHORT="(4) 75 x 75 Animated pictures at the top, with the default description below." TYPE="CONFIG" TITLE="Slide Show " IMAGES="0" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2002" RELEASED="20020520"><SUMMARY><![CDATA[
+<ELEMENT FORMAT="LAYOUT" ID="CPUKMIZ" CREATOR="STAFF" SHORT="(4) 75 x 75 Animated pictures at the top, with the default description below." TYPE="CONFIG" CREATED="00000000" IMAGES="0" TITLE="Slide Show " PROPERTIES="1" RELEASED="20020520" SERIES="2002" SUBTYPE="P"><SUMMARY><![CDATA[
 Animated Picture 1 (75 x 75)
 Animated Picture 2 (75 x 75)
 Animated Picture 3 (75 x 75)
@@ -77,16 +77,16 @@ function zoom (url) {
 	<tr>
 		<td width=100 align="center" valign="center">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="75" ID="DYNIMAGE1" WIDTH="75" PROMPT="Animated Picture 1 (75 x 75)" TYPE="DYNIMAGE" HELP="Animated picture composed of images in your image library." DATA="product:dynimage1"></ELEMENT>
+<ELEMENT ID="DYNIMAGE1" HEIGHT="75" PROMPT="Animated Picture 1 (75 x 75)" WIDTH="75" TYPE="DYNIMAGE" HELP="Animated picture composed of images in your image library." DATA="product:dynimage1"></ELEMENT>
 <ELEMENT ID="CPUKMJB" TYPE="OUTPUT"><HTML><![CDATA[</td><td width=100 align="center" valign="center">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="75" ID="DYNIMAGE2" WIDTH="75" PROMPT="Animated Picture 2 (75 x 75)" TYPE="DYNIMAGE" HELP="Animated picture composed of images in your image library." DATA="product:dynimage2"></ELEMENT>
+<ELEMENT ID="DYNIMAGE2" HEIGHT="75" PROMPT="Animated Picture 2 (75 x 75)" WIDTH="75" TYPE="DYNIMAGE" HELP="Animated picture composed of images in your image library." DATA="product:dynimage2"></ELEMENT>
 <ELEMENT ID="CPUKMJC" TYPE="OUTPUT"><HTML><![CDATA[</td><td width=100 align="center" valign="center">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="75" ID="DYNIMAGE3" WIDTH="75" PROMPT="Animated Picture 3 (75 x 75)" TYPE="DYNIMAGE" HELP="Animated picture composed of images in your image library." DATA="product:dynimage3"></ELEMENT>
+<ELEMENT ID="DYNIMAGE3" HEIGHT="75" PROMPT="Animated Picture 3 (75 x 75)" WIDTH="75" TYPE="DYNIMAGE" HELP="Animated picture composed of images in your image library." DATA="product:dynimage3"></ELEMENT>
 <ELEMENT ID="CPUKMJD" TYPE="OUTPUT"><HTML><![CDATA[</td><td width=100 align="center" valign="center">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="75" ID="DYNIMAGE4" WIDTH="75" PROMPT="Animated Picture 4 (75 x 75)" TYPE="DYNIMAGE" HELP="Animated picture composed of images in your image library." DATA="product:dynimage4"></ELEMENT>
+<ELEMENT ID="DYNIMAGE4" HEIGHT="75" PROMPT="Animated Picture 4 (75 x 75)" WIDTH="75" TYPE="DYNIMAGE" HELP="Animated picture composed of images in your image library." DATA="product:dynimage4"></ELEMENT>
 <ELEMENT ID="CPUKMJE" TYPE="OUTPUT"><HTML><![CDATA[</td>
 </tr>
 </table>
@@ -104,7 +104,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRICE" FORMAT="PRICE" TYPE="READONLY" ERROR="Not Set!" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT FORMAT="PRICE" ID="PRICE" TYPE="READONLY" ERROR="Not Set!" LOAD="product:zoovy:base_price"></ELEMENT>
 <ELEMENT ID="CPUKMJG" TYPE="OUTPUT"><HTML><![CDATA[
 
 <br>

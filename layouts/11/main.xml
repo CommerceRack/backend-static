@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLRY" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="A" FORMAT="LAYOUT" SHORT="This about us page features a giant picture." TYPE="CONFIG" TITLE="About Us with Picture" RELEASED="20020305"><SUMMARY><![CDATA[About Us Blurb
+<ELEMENT ID="CPUKLRY" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SERIES="2002" SUBTYPE="A" FORMAT="LAYOUT" SHORT="This about us page features a giant picture." TYPE="CONFIG" TITLE="About Us with Picture" RELEASED="20020305"><SUMMARY><![CDATA[About Us Blurb
 IMAGE1 (400x200)
 Page Title
 ]]></SUMMARY>
@@ -11,7 +11,7 @@ Page Title
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="BIGIMAGE" HELP="Please select a graphic that represents your company and will appear on the About Us page." DATA="merchant:zoovy:aboutus_image1" WIDTH="400" PROMPT="Company Picture 400x200" DEFAULT="https://static.zoovy.com/img/H200-W400-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="BIGIMAGE" HEIGHT="200" HELP="Please select a graphic that represents your company and will appear on the About Us page." DATA="merchant:zoovy:aboutus_image1" PROMPT="Company Picture 400x200" WIDTH="400" DEFAULT="https://static.zoovy.com/img/H200-W400-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLSA" TYPE="OUTPUT"><HTML><![CDATA[
 
 <table border='0' width='100%'>

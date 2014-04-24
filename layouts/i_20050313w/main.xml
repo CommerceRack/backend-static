@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNLB" IMAGES="0" CREATED="20050312" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" SHORT="Contains just an HTML editor followed by a product list." TYPE="CONFIG" TITLE="Simple text block and Product List (wiki friendly)" NEWSLETTER="1"><SUMMARY><![CDATA[Description
+<ELEMENT ID="CPUKNLB" CREATED="20050312" IMAGES="0" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" SHORT="Contains just an HTML editor followed by a product list." TYPE="CONFIG" TITLE="Simple text block and Product List (wiki friendly)" NEWSLETTER="1"><SUMMARY><![CDATA[Description
 Product Listing
 ]]></SUMMARY>
 </ELEMENT>
@@ -18,7 +18,7 @@ Product Listing
 ]]></HTML>
 </ELEMENT>
 <ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Description" TYPE="TEXT"></ELEMENT>
-<ELEMENT ID="PRODLIST2" SIZE="500" EDITOR="INLINE" DATA="page:prodlist1" COLS="3" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" SRC="page:prodlist1stuff"><HTML><![CDATA[<!-- product list -->
+<ELEMENT SIZE="500" ID="PRODLIST2" EDITOR="INLINE" DATA="page:prodlist1" COLS="3" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" SRC="page:prodlist1stuff"><HTML><![CDATA[<!-- product list -->
 <table border='0' cellpadding='0' cellspacing='10' width='100%'>
 <!-- ROW -->
 <tr>

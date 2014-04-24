@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMAR" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SERIES="2002" SUBTYPE="H" FORMAT="LAYOUT" SHORT="Featured products appear on the righthand side." TYPE="CONFIG" TITLE="Side Featured" RELEASED="20020618"><SUMMARY><![CDATA[IMAGEe (250x250)
+<ELEMENT ID="CPUKMAR" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="H" FORMAT="LAYOUT" SHORT="Featured products appear on the righthand side." TYPE="CONFIG" TITLE="Side Featured" RELEASED="20020618"><SUMMARY><![CDATA[IMAGEe (250x250)
 Product Listing
 Welcome Message
 ]]></SUMMARY>
@@ -13,7 +13,7 @@ Welcome Message
 <center>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="HOMEPAGE_PIC" HEIGHT="250" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" PROMPT="Front Page Picture" WIDTH="250" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="250" ID="HOMEPAGE_PIC" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" WIDTH="250" PROMPT="Front Page Picture" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMAT" TYPE="OUTPUT"><HTML><![CDATA[
 </center>
 <hr>
@@ -26,7 +26,7 @@ Welcome Message
 		<td valign="top" align="right" width="100">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST1" SIZE="500" MAX="15" HELP="Your Products" DATA="page:prodlist" COLS="1" FORMAT="THUMB" PROMPT="Product Listing" DEFAULT="&amp;ALTERNATE=0" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT SIZE="500" ID="PRODLIST1" MAX="15" HELP="Your Products" DATA="page:prodlist" COLS="1" FORMAT="THUMB" PROMPT="Product Listing" DEFAULT="&amp;ALTERNATE=0" TYPE="PRODLIST"></ELEMENT>
 <ELEMENT ID="CPUKMAV" TYPE="OUTPUT"><HTML><![CDATA[
 		</td>
 	</tr>

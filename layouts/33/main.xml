@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMPU" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="Y" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Blank Privacy 2 Custom (blank) policy with a 560x100 header." RELEASED="20020716"><SUMMARY><![CDATA[Custom Privacy Policy Amendment
+<ELEMENT ID="CPUKMPU" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="Y" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Blank Privacy 2 Custom (blank) policy with a 560x100 header." RELEASED="20020716"><SUMMARY><![CDATA[Custom Privacy Policy Amendment
 IMAGEe (560x100)
 ]]></SUMMARY>
 </ELEMENT>
@@ -12,7 +12,7 @@ IMAGEe (560x100)
                 <td align=center width="560">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100" ID="HOMEPAGE_PIC" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" WIDTH="560" PROMPT="Front Page Picture" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="HOMEPAGE_PIC" HEIGHT="100" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" PROMPT="Front Page Picture" WIDTH="560" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMPW" TYPE="OUTPUT"><HTML><![CDATA[
  
                 </td>

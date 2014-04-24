@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLXY" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" SHORT="This uses a 250x200 picture on the righthand side of the page." TYPE="CONFIG" TITLE="Side Picture 2" RELEASED="20020618"><SUMMARY><![CDATA[Bold Welcome Message
+<ELEMENT ID="CPUKLXY" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" SHORT="This uses a 250x200 picture on the righthand side of the page." TYPE="CONFIG" TITLE="Side Picture 2" RELEASED="20020618"><SUMMARY><![CDATA[Bold Welcome Message
 IMAGEe (200x250)
 Product Listing
 Welcome Message 
@@ -30,7 +30,7 @@ Welcome Message
 <center>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="250" ID="HOMEPAGE_PIC" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" WIDTH="200" PROMPT="Front Page Picture" DEFAULT="https://www.zoovy.com/images/samples/flows-default/greybg-logo.gif" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="HOMEPAGE_PIC" HEIGHT="250" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" PROMPT="Front Page Picture" WIDTH="200" DEFAULT="https://www.zoovy.com/images/samples/flows-default/greybg-logo.gif" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLYC" TYPE="OUTPUT"><HTML><![CDATA[
 		</td>
 	</tr>

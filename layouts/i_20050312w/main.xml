@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNKU" CREATED="20050312" IMAGES="0" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Multiple Product List (wiki friendly)" NEWSLETTER="1"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKNKU" IMAGES="0" CREATED="20050312" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Multiple Product List (wiki friendly)" NEWSLETTER="1"><SUMMARY><![CDATA[
 Description
 Description2
 Email Header
@@ -35,7 +35,7 @@ Product Listing 3
 <ELEMENT ID="CPVRQEQ" RAW="1" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL"></ELEMENT>
 <ELEMENT ID="CPVRQER" RAW="1" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL"></ELEMENT>
 <ELEMENT ID="CPVRQEV" RAW="1" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL"></ELEMENT>
-<ELEMENT HEIGHT="120" ID="CVPKKKQ" MINIMAL_MODE="1" WIDTH="200" SUB="NEWS_LOGO" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CVPKKKQ" HEIGHT="120" MINIMAL_MODE="1" SUB="NEWS_LOGO" WIDTH="200" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="CPUKNKV" TYPE="OUTPUT"><HTML><![CDATA[
 <html>
 <head>
@@ -63,7 +63,7 @@ background-color: #FFFFFF; ' link='#660000' vlink='#660000' alink='#660000'>
 	<td align="left" valign="middle"><a href='%HOME_URL%?%TRACKING%'>%NEWS_LOGO%</a></td>
 	<td>]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="500" ID="PRODLIST" MAX="1" EDITOR="INLINE" DATA="page:prodlist1" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" SHOWDETAILS="1" TYPE="PRODLIST" SRC="page:prodlist1stuff"><HTML><![CDATA[<!-- product list -->
+<ELEMENT ID="PRODLIST" SIZE="500" MAX="1" EDITOR="INLINE" DATA="page:prodlist1" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" SHOWDETAILS="1" TYPE="PRODLIST" SRC="page:prodlist1stuff"><HTML><![CDATA[<!-- product list -->
 <table border='0' cellpadding='2' cellspacing='0' width='100%'>
 <!-- ROW -->
 <tr>
@@ -110,7 +110,7 @@ More Details</a> |
 </tr><tr>
 	<td colspan="2">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="WELCOME" LENGTH="35" HELP="Please enter a header that will appear at the top of the email content" EDITOR="INLINE" DATA="page:email_header" PROMPT="Email Header" HELPER="Remember to keep this text short and to the point." TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[</span></td></tr></table>]]></POSTTEXT>
+<ELEMENT ID="WELCOME" LENGTH="35" HELP="Please enter a header that will appear at the top of the email content" EDITOR="INLINE" DATA="page:email_header" HELPER="Remember to keep this text short and to the point." PROMPT="Email Header" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</span></td></tr></table>]]></POSTTEXT>
 <PRETEXT><![CDATA[<table cellspacing="0" cellpadding="3"><tr>
 <td class="head_bg_color"><span class="list_head">]]></PRETEXT>
 </ELEMENT>
@@ -123,8 +123,8 @@ More Details</a> |
 		
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" HELP="Please describe this section of the newsletter" EDITOR="INLINE" DATA="page:description" PROMPT="Description" HELPER="Remember to keep this text short and to the point.  " TYPE="TEXT"></ELEMENT>
-<ELEMENT SIZE="500" ID="PRODLIST2" EDITOR="INLINE" DATA="page:prodlist2" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" TYPE="PRODLIST" SRC="page:prodlist1stuff2"><HTML><![CDATA[<!-- product list -->
+<ELEMENT ID="DESCRIPTION" WIKI="3" HELP="Please describe this section of the newsletter" EDITOR="INLINE" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Description" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="PRODLIST2" SIZE="500" EDITOR="INLINE" DATA="page:prodlist2" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" TYPE="PRODLIST" SRC="page:prodlist1stuff2"><HTML><![CDATA[<!-- product list -->
 <table border='0' cellpadding='0' cellspacing='10' width='100%'>
 <!-- ROW -->
 <tr>
@@ -150,8 +150,8 @@ href='<% load($PROD_URL); default(""); print(); %>?%TRACKING%'><% load($zoovy:pr
 </table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION2" WIKI="3" HELP="Please describe this section of the newsletter" EDITOR="INLINE" DATA="page:description2" PROMPT="Description2" HELPER="Remember to keep this text short and to the point.  " TYPE="TEXT"></ELEMENT>
-<ELEMENT SIZE="500" ID="PRODLIST3" EDITOR="INLINE" DATA="page:prodlist3" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 3" TYPE="PRODLIST" SRC="page:prodlist1stuff3"><HTML><![CDATA[<!-- product list -->
+<ELEMENT ID="DESCRIPTION2" WIKI="3" HELP="Please describe this section of the newsletter" EDITOR="INLINE" DATA="page:description2" HELPER="Remember to keep this text short and to the point.  " PROMPT="Description2" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="PRODLIST3" SIZE="500" EDITOR="INLINE" DATA="page:prodlist3" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 3" TYPE="PRODLIST" SRC="page:prodlist1stuff3"><HTML><![CDATA[<!-- product list -->
 <table border='0' cellpadding='0' cellspacing='10' width='100%'>
 <!-- ROW -->
 <tr>

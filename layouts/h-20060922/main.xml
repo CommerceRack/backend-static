@@ -24,24 +24,24 @@
 <div align="center">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPDXOL" DATA="page:link_5x1" ZOOVYDOCID="50355" SUB="5X1_LINK" PROMPT="Link for 5 x 1 image" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+<ELEMENT ID="CSPDXOL" DATA="page:link_5x1" ZOOVYDOCID="50355" PROMPT="Link for 5 x 1 image" SUB="5X1_LINK" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="CSPDXOM" HEIGHT="110" DATA="page:image_5x1" PROMPT="Image 1: 550 x 110 [5 x 1]" WIDTH="550" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:3px;"><a href="%5X1_LINK%">]]></PRETEXT>
+<ELEMENT HEIGHT="110" ID="CSPDXOM" DATA="page:image_5x1" WIDTH="550" PROMPT="Image 1: 550 x 110 [5 x 1]" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:3px;"><a href="%5X1_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CSPDXON" TYPE="OUTPUT"><HTML><![CDATA[</div>
 	<div style="width:auto; border-top:1px solid #CCCCCC; padding:5px;" class="ztitle zcolor_light">
 	]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPDXOO" WIKI="3" LENGTH="50" DATA="page:prodlist_header" PROMPT="Product List 1 Header" DEFAULT="Featured Items" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CSPDXOO" WIKI="3" LENGTH="50" DATA="page:prodlist_header" PROMPT="Product List 1 Header" DEFAULT="Featured Items" TYPE="TEXTBOX" FONT="0"></ELEMENT>
 <ELEMENT ID="CSPDXOP" TYPE="OUTPUT"><HTML><![CDATA[	
 	</div>
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="LIST1" MAX="8" DATA="page:prodlist" COLS="4" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
+<ELEMENT ID="LIST1" SIZE="5000" MAX="8" DATA="page:prodlist" COLS="4" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
 <!-- begin product list 1 -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 <!-- ROW -->
@@ -78,22 +78,22 @@ Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zo
 	<td width="295" valign="top" align="left">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPDXOR" DATA="page:link_3x1" ZOOVYDOCID="50355" SUB="3X1_LINK" PROMPT="Link for Banner A" DEFAULT="%CART%/search.cgi" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+<ELEMENT ID="CSPDXOR" DATA="page:link_3x1" ZOOVYDOCID="50355" PROMPT="Link for Banner A" SUB="3X1_LINK" DEFAULT="%CART%/search.cgi" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="CSPDXOS" HEIGHT="97" MINIMAL="0" DATA="page:image_3x1" PROMPT="Banner A (3 x 1)" WIDTH="291" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%3X1_LINK%">]]></PRETEXT>
+<ELEMENT HEIGHT="97" ID="CSPDXOS" MINIMAL="0" DATA="page:image_3x1" WIDTH="291" PROMPT="Banner A (3 x 1)" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%3X1_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CSPDXOT" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	<td valign="top" align="left">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPDXOU" DATA="page:link_3x1b" ZOOVYDOCID="50355" SUB="3X1B_LINK" PROMPT="Link for Banner B (3 x 1)" DEFAULT="%CART%/search.cgi" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+<ELEMENT ID="CSPDXOU" DATA="page:link_3x1b" ZOOVYDOCID="50355" PROMPT="Link for Banner B (3 x 1)" SUB="3X1B_LINK" DEFAULT="%CART%/search.cgi" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="CSPDXOV" HEIGHT="97" MINIMAL="0" DATA="page:image_3x1b" PROMPT="Banner B (3 x 1)" WIDTH="291" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%3X1B_LINK%">]]></PRETEXT>
+<ELEMENT HEIGHT="97" ID="CSPDXOV" MINIMAL="0" DATA="page:image_3x1b" WIDTH="291" PROMPT="Banner B (3 x 1)" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%3X1B_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CSPDXOW" TYPE="OUTPUT"><HTML><![CDATA[</td>

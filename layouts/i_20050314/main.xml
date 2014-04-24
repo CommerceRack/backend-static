@@ -16,10 +16,10 @@
 	<td align="left" valign="top"><p>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="WELCOME" LENGTH="35" HELP="Please enter the header for your rewards program description" DATA="page:email_header" PROMPT="Rewards Program Header" TYPE="TEXTBOX" FONT="0"><PRETEXT><![CDATA[<span class="header">]]></PRETEXT>
+<ELEMENT ID="WELCOME" LENGTH="35" HELP="Please enter the header for your rewards program description" DATA="page:email_header" PROMPT="Rewards Program Header" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[<span class="header">]]></PRETEXT>
 <POSTTEXT><![CDATA[</span><br>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="REWARDSDESCRIPTION" HELP="Please describe this section of the newsletter" DATA="page:rewards_description" PROMPT="Description of your rewards program" HELPER="Remember to keep this text short and to the point.  " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="REWARDSDESCRIPTION" HELP="Please describe this section of the newsletter" DATA="page:rewards_description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Description of your rewards program" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKNLG" TYPE="OUTPUT"><HTML><![CDATA[
 </p></td>
 	<td align="right" valign="top" width="5%"><a href="http://]]></HTML>
@@ -31,7 +31,7 @@
 	
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Please describe this section of the newsletter" DATA="page:description" PROMPT="Description" HELPER="Remember to keep this text short and to the point.  " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this section of the newsletter" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Description" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="PRODLIST1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist1" PROMPT="Product Listing" DEFAULT="&amp;FORMAT=THUMB&amp;COLS=3&amp;ALTERNATE=1" TYPE="PRODLIST" SRC="page:prodlist1stuff"></ELEMENT>
 <ELEMENT ID="CPUKNLI" TYPE="OUTPUT"><HTML><![CDATA[
 

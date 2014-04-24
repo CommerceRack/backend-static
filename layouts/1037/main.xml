@@ -20,7 +20,7 @@
 </table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="10" ID="COLOR" HELP="Map background color (use HEX: #990000 or simple colors: red)" DATA="page:color" PROMPT="Map background color (use HEX: #990000 or simple colors: red)" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[ <!--]]></PRETEXT>
+<ELEMENT ID="COLOR" SIZE="10" HELP="Map background color (use HEX: #990000 or simple colors: red)" DATA="page:color" PROMPT="Map background color (use HEX: #990000 or simple colors: red)" TYPE="TEXTBOX" FONT="0"><PRETEXT><![CDATA[ <!--]]></PRETEXT>
 <POSTTEXT><![CDATA[ -->]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CPUKNKI" TYPE="OUTPUT"><HTML><![CDATA[

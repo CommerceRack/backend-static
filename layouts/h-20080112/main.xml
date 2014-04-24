@@ -4,21 +4,21 @@
 <!-- ******* -->
 <ELEMENT ID="H_20080112" CREATOR="Zoovy: JT" V="3" CREATED="20070917" SUBTYPE="H" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="1 big pic, product list, banners and some text" BPP="1"><SUMMARY><![CDATA[At the top of this layout is a 600 by 250 animated banner followed by three banners.  After that is a three column (six item max) product list with 150x150 thumbnails, name and price, details button and a customizable header.  Beneath the product list is a customizable text block with an optional wide banner above and below.]]></SUMMARY>
 </ELEMENT>
-<ELEMENT ID="CVDJCCG" HEIGHT="250" DATA="page:dynimage1" PROMPT="SlideShow" WIDTH="600" SUB="PAGE_SLIDESHOW" TYPE="DYNIMAGE"></ELEMENT>
-<ELEMENT ID="PRODLIST1_HEADER" WIKI="3" MAXLENGTH="25" DATA="page:prodlist1_header" PROMPT="Product List Header" DEFAULT="Featured Items" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT ID="BANNER1_LINK" DATA="page:banner1_link" PROMPT="Banner 1 link" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT HEIGHT="70" ID="BANNER1" DATA="page:banner1" SUB="PAGE_BANNER1" WIDTH="198" PROMPT="Banner 1" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+<ELEMENT HEIGHT="250" ID="CVDJCCG" DATA="page:dynimage1" SUB="PAGE_SLIDESHOW" WIDTH="600" PROMPT="SlideShow" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="PRODLIST1_HEADER" WIKI="3" MAXLENGTH="25" DATA="page:prodlist1_header" PROMPT="Product List Header" DEFAULT="Featured Items" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="BANNER1_LINK" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Banner 1 link" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER1" HEIGHT="70" DATA="page:banner1" PROMPT="Banner 1" WIDTH="198" SUB="PAGE_BANNER1" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="BANNER2_LINK" DATA="page:banner2_link" PROMPT="Banner 2 link" SUB="PAGE_BANNER2_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT HEIGHT="70" ID="BANNER2" DATA="page:banner2" SUB="PAGE_BANNER2" WIDTH="198" PROMPT="Banner 2" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
+<ELEMENT ID="BANNER2_LINK" DATA="page:banner2_link" SUB="PAGE_BANNER2_LINK" PROMPT="Banner 2 link" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER2" HEIGHT="70" DATA="page:banner2" PROMPT="Banner 2" WIDTH="198" SUB="PAGE_BANNER2" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="BANNER3_LINK" DATA="page:banner3_link" PROMPT="Banner 3 link" SUB="PAGE_BANNER3_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT HEIGHT="70" ID="BANNER3" DATA="page:banner3" SUB="PAGE_BANNER3" WIDTH="198" PROMPT="Banner 3" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER3_LINK%">]]></PRETEXT>
+<ELEMENT ID="BANNER3_LINK" DATA="page:banner3_link" SUB="PAGE_BANNER3_LINK" PROMPT="Banner 3 link" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER3" HEIGHT="70" DATA="page:banner3" PROMPT="Banner 3" WIDTH="198" SUB="PAGE_BANNER3" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER3_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST" SIZE="5000" MAX="6" ALTERNATE="4" DATA="page:prodlist_custom" COLS="3" FORMAT="CUSTOM" SUB="PAGE_PRODLIST" PROMPT="Product List" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<ELEMENT SIZE="5000" ID="PRODLIST" MAX="6" ALTERNATE="4" DATA="page:prodlist_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List" SUB="PAGE_PRODLIST" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
 <table border='0' cellpadding='4' cellspacing='0' width='100%' style='margin-bottom:5px;'>
 <tr>
 	<td class='ztitle zcolor_light zhome_prodlist1_head' valign='top'><div class='zprodlist1_title'><% loadurp("page:prodlist1_header"); default("Featured Items"); format(wiki); print(); %></div></td>
@@ -58,18 +58,18 @@ image(w=>"150",h=>"150",tag=>"1",alt=>$zoovy:prod_name);  print(); %></a></div>
 <!-- /product list -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="BANNER4_LINK" DATA="page:banner4_link" PROMPT="Banner 4 link" SUB="PAGE_BANNER4_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT HEIGHT="70" ID="BANNER4" DATA="page:banner4" SUB="PAGE_BANNER4" WIDTH="600" PROMPT="Banner 4 (wide)" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER4_LINK%">]]></PRETEXT>
+<ELEMENT ID="BANNER4_LINK" DATA="page:banner4_link" SUB="PAGE_BANNER4_LINK" PROMPT="Banner 4 link" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER4" HEIGHT="70" DATA="page:banner4" PROMPT="Banner 4 (wide)" WIDTH="600" SUB="PAGE_BANNER4" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER4_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" SUB="PAGE_DESC" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="PAGE_DESC" PROMPT="Text Description" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <HELP><![CDATA[When setting up links inside text or text boxes, be sure to use the proper linking syntax.  Failure to do so can cause your customers cart to mysteriously empty.<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 <PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="BANNER5_LINK" DATA="page:banner5_link" PROMPT="Banner 5 link" SUB="PAGE_BANNER5_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT HEIGHT="70" ID="BANNER5" DATA="page:banner5" SUB="PAGE_BANNER5" WIDTH="600" PROMPT="Banner 5 (wide)" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER5_LINK%">]]></PRETEXT>
+<ELEMENT ID="BANNER5_LINK" DATA="page:banner5_link" SUB="PAGE_BANNER5_LINK" PROMPT="Banner 5 link" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER5" HEIGHT="70" DATA="page:banner5" PROMPT="Banner 5 (wide)" WIDTH="600" SUB="PAGE_BANNER5" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER5_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CVDERIB" TYPE="OUTPUT"><HTML><![CDATA[

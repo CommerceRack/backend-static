@@ -17,21 +17,21 @@
 <tr>
 	<td style="padding-right:3px; box-sizing: border-box; -moz-box-sizing: border-box;" rowspan="2" width="400" align="left" valign="top">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPISQM" DATA="page:link_4x3" SUB="4X3_LINK" PROMPT="Link for image 1" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+<ELEMENT ID="CSPISQM" DATA="page:link_4x3" PROMPT="Link for image 1" SUB="4X3_LINK" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="CSPISQN" HEIGHT="300" MINIMAL="0" DATA="page:image_4x3" PROMPT="Image 1 ( 4 x 3 )" WIDTH="400" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%4X3_LINK%">]]></PRETEXT>
+<ELEMENT HEIGHT="300" ID="CSPISQN" MINIMAL="0" DATA="page:image_4x3" WIDTH="400" PROMPT="Image 1 ( 4 x 3 )" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%4X3_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CSPISQO" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	<td style="padding-bottom:3px; height:150px; box-sizing: border-box; -moz-box-sizing: border-box;" align="left" valign="top">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPISQP" DATA="page:link_1x1" SUB="1X1_LINK" PROMPT="Link for image 2" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+<ELEMENT ID="CSPISQP" DATA="page:link_1x1" PROMPT="Link for image 2" SUB="1X1_LINK" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="CSPISQQ" HEIGHT="150" MINIMAL="0" DATA="page:image_1x1" PROMPT="Image 2 ( 1 x 1 )" WIDTH="150" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%1X1_LINK%">]]></PRETEXT>
+<ELEMENT HEIGHT="150" ID="CSPISQQ" MINIMAL="0" DATA="page:image_1x1" WIDTH="150" PROMPT="Image 2 ( 1 x 1 )" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%1X1_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CSPISQR" TYPE="OUTPUT"><HTML><![CDATA[</td>
@@ -111,7 +111,7 @@ print();
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="50000" ID="LIST2" MAX="6" ALTERNATE="0" DATA="page:prodlist2" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 2 -->
+<ELEMENT ID="LIST2" SIZE="50000" MAX="6" ALTERNATE="0" DATA="page:prodlist2" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 2 -->
 <table cellspacing="0" cellpadding="0" width="100%">
 <!-- ROW -->
 <tr>
@@ -136,12 +136,12 @@ print();
 	<div class="zcolor_light" style="padding-left:3px;">
 	<div class="ztitle zcolor_light">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPISQV" WIKI="3" LENGTH="50" DATA="page:prodlist3_header" PROMPT="Product List 3 Header" DEFAULT="Best Sellers" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CSPISQV" WIKI="3" LENGTH="50" DATA="page:prodlist3_header" PROMPT="Product List 3 Header" DEFAULT="Best Sellers" TYPE="TEXTBOX" FONT="0"></ELEMENT>
 <ELEMENT ID="CSPISQW" TYPE="OUTPUT"><HTML><![CDATA[
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="LIST3" MAX="10" ALTERNATE="3" DATA="page:prodlist3" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 3" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 3 -->
+<ELEMENT ID="LIST3" SIZE="5000" MAX="10" ALTERNATE="3" DATA="page:prodlist3" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 3" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 3 -->
 <table cellspacing="2" cellpadding="0" width="100%">
 <!-- PRODUCT -->
 <tr>

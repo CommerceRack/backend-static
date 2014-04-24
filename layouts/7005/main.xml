@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMZY" CREATOR="JT" CREATED="00000000" CLASSIFICATION="BOOKS" IMAGES="0" PROPERTIES="1" SUBTYPE="P" SERIES="2003" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Slide Show" RELEASED="20030109"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMZY" CREATOR="JT" IMAGES="0" CLASSIFICATION="BOOKS" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2003" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Slide Show" RELEASED="20030109"><SUMMARY><![CDATA[
 Authors Name
 Default Description (shared)
 Format
@@ -80,7 +80,7 @@ function zoom (url) {
 	<tr>
 		<td width=200>]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="SLIDE1" HELP="Rotates through several pictures" WIDTH="200" PROMPT="Slide Show" TYPE="SLIDE"></ELEMENT>
+<ELEMENT ID="SLIDE1" HEIGHT="200" HELP="Rotates through several pictures" PROMPT="Slide Show" WIDTH="200" TYPE="SLIDE"></ELEMENT>
 <ELEMENT ID="CPUKNAA" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td align="left" width=99%><!-- Specific Code Here --><table cellspacing=0 cellpadding=1 border=1 bordercolor="#CCCCCC" width=100%>
 	<tr>

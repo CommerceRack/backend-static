@@ -16,7 +16,7 @@
 			<tr bgcolor="#CCCCFF"><td align="center">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="250" ID="HOMEPAGE_PIC" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" WIDTH="450" PROMPT="Front Page Picture" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="HOMEPAGE_PIC" HEIGHT="250" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" PROMPT="Front Page Picture" WIDTH="450" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNAS" TYPE="OUTPUT"><HTML><![CDATA[
 			</td></tr>
 			<tr bgcolor="#CCCCFF">

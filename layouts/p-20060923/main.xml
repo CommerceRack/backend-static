@@ -21,9 +21,9 @@
 <ELEMENT ID="VAR_POPUPWRAPPER" RAW="1" SUB="POPUP_WRAPPER" TYPE="READONLY" LOAD="profile:zoovy:popup_wrapper"></ELEMENT>
 <ELEMENT ID="VAR_SKU" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
 <ELEMENT ID="VAR_DARK" RAW="1" SUB="ZTABLE_DARK_BG" TYPE="READONLY" LOAD="CSS::zcolor_dark.bgcolor"></ELEMENT>
-<ELEMENT ID="REVIEWS_ICON_CHOOSER" DATA="profile:zoovy:prod_reviews_icon" RAW="1" VALUE="colored_stars" PROMPT="Reviews Icon (global)" SUB="NOT_USED" DEFAULT="colored_stars" FONT="0" TYPE="SELECT" LIST="REVIEW_ICONS"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages.  'colored' implies that the icons adopt color properties from your store.]]></HELP>
+<ELEMENT ID="REVIEWS_ICON_CHOOSER" DATA="profile:zoovy:prod_reviews_icon" RAW="1" VALUE="colored_stars" SUB="NOT_USED" PROMPT="Reviews Icon (global)" DEFAULT="colored_stars" TYPE="SELECT" FONT="0" LIST="REVIEW_ICONS"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages.  'colored' implies that the icons adopt color properties from your store.]]></HELP>
 </ELEMENT>
-<ELEMENT ID="TAFOPTION" TRUE="On" FALSE="Off" DATA="profile:zoovy:wrap_tellafriend" SUB="ENABLE_TAF" PROMPT="Tell a friend" ON="1" DEFAULT="1" TYPE="CHECKBOX" OFF="0"><HELP><![CDATA[
+<ELEMENT ID="TAFOPTION" TRUE="On" FALSE="Off" DATA="profile:zoovy:wrap_tellafriend" PROMPT="Tell a friend" SUB="ENABLE_TAF" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"><HELP><![CDATA[
 Tell a Friend or TAF is a feature that puts a contact form on your product pages so that your customers can send product specific information directly to an associate of theirs.  Your branding and product specific information are in the email sent, as well as a custom message set by your customer.<br>
 Enabling/disabling this feature is profile-wide.
 <br>This feature requires the XSELL bundle.
@@ -69,14 +69,14 @@ print();
 <!-- /SUMMARY -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="REVIEWOPTION" TRUE="%REVIEW_SUMMARY%" FALSE="" DATA="profile:zoovy:wrap_reviews" SUB="ENABLE_REVIEWS" PROMPT="Product Reviews" ON="1" DEFAULT="1" TYPE="CHECKBOX" OFF="0"><HELP><![CDATA[
+<ELEMENT ID="REVIEWOPTION" TRUE="%REVIEW_SUMMARY%" FALSE="" DATA="profile:zoovy:wrap_reviews" PROMPT="Product Reviews" SUB="ENABLE_REVIEWS" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"><HELP><![CDATA[
 Product Reviews allows your customers to add their personal input about a specific product.  Once their review is submitted, it is entered into a queue for your approval.  You have the ability to add/remove/edit any specific review through the product editor.
 <br>Enabling/disabling this feature is profile-wide. 
 <br>This feature requires the CRM bundle.
 ]]></HELP>
 </ELEMENT>
 <ELEMENT ID="PRICE" HIDEZERO="1" ERROR="" PRETEXT="$" RAW="1" FORMAT="PLAINPRICE" SUB="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
-<ELEMENT ID="IMAGE1" ZOOM="1" DATA="product:zoovy:prod_image1" SUB="IMAGE1" WIDTH="150" PROMPT="Main image" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Main image" WIDTH="150" SUB="IMAGE1" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CSRQNGR" TYPE="OUTPUT"><HTML><![CDATA[
 
 <script type="text/javascript" language="javascript">
@@ -324,7 +324,7 @@ print();
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="LIST_RELATED" MAX="7" SHOWDEFAULT="0" ALTERNATE="3" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List - Related Items" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[<!-- related items column -->
+<ELEMENT ID="LIST_RELATED" SIZE="5000" MAX="7" SHOWDEFAULT="0" ALTERNATE="3" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List - Related Items" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[<!-- related items column -->
 <div class="zcolor_light" style="padding:7px; width:160px;">
 	<div class="ztitle zcolor_light"><%
 loadurp("CSS::zcolor_light.bgcolor");
@@ -354,7 +354,7 @@ load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"45",h=>"45",tag=
 <!-- end related items column -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="LIST_ACCESSORIES" MAX="7" ALTERNATE="3" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List - Accessories" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[<!-- related items column -->
+<ELEMENT ID="LIST_ACCESSORIES" SIZE="5000" MAX="7" ALTERNATE="3" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List - Accessories" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[<!-- related items column -->
 <div class="zcolor_light" style="padding:7px; width:160px; margin-bottom:7px;">
 	<div class="ztitle zcolor_light"><%
 loadurp("CSS::zcolor_light.bgcolor");

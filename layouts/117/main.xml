@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLTN" CREATOR="STAFF" CREATED="00000000" IMAGES="21" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" SHORT="(20) 320 x 240 images, listed below the price, and (1) 640x480 on the top" TYPE="CONFIG" TITLE="Super-Multi Picture" RELEASED="20020510"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKLTN" CREATOR="STAFF" IMAGES="21" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" SHORT="(20) 320 x 240 images, listed below the price, and (1) 640x480 on the top" TYPE="CONFIG" TITLE="Super-Multi Picture" RELEASED="20020510"><SUMMARY><![CDATA[
 Default Description (shared)
 IMAGE0 (320x240)
 IMAGE1 (320x240)
@@ -32,7 +32,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="480" ID="IMAGE1" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="640" PROMPT="Image 1" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="480" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="640" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLTP" TYPE="OUTPUT"><HTML><![CDATA[
 <br>
 
@@ -64,7 +64,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE2" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="320" PROMPT="Image 2" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image 2" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLTT" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -72,7 +72,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE3" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" WIDTH="320" PROMPT="Image 3" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE3" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image 3" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLTU" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -81,7 +81,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE4" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image4" WIDTH="320" PROMPT="Image 4" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE4" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image4" PROMPT="Image 4" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLTV" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -89,7 +89,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE5" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image5" WIDTH="320" PROMPT="Image 5" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE5" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image5" PROMPT="Image 5" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLTW" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -98,7 +98,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE6" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image6" WIDTH="320" PROMPT="Image 6" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE6" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image6" PROMPT="Image 6" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLTX" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -106,7 +106,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE7" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image7" WIDTH="320" PROMPT="Image 7" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE7" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image7" PROMPT="Image 7" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLTY" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -115,7 +115,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE8" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image8" WIDTH="320" PROMPT="Image 8" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE8" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image8" PROMPT="Image 8" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLTZ" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -123,7 +123,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE9" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image9" WIDTH="320" PROMPT="Image 9" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE9" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image9" PROMPT="Image 9" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUA" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -132,7 +132,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE10" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image10" WIDTH="320" PROMPT="Image 10" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE10" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image10" PROMPT="Image 10" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUB" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -140,7 +140,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE11" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image11" WIDTH="320" PROMPT="Image 11" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE11" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image11" PROMPT="Image 11" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUC" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -149,7 +149,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE12" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image12" WIDTH="320" PROMPT="Image 12" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE12" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image12" PROMPT="Image 12" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUD" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -157,7 +157,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE13" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image13" WIDTH="320" PROMPT="Image 13" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE13" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image13" PROMPT="Image 13" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUE" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -166,7 +166,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE14" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image14" WIDTH="320" PROMPT="Image 14" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE14" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image14" PROMPT="Image 14" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUF" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -174,7 +174,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE15" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image15" WIDTH="320" PROMPT="Image 15" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE15" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image15" PROMPT="Image 15" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUG" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -183,7 +183,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE16" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image16" WIDTH="320" PROMPT="Image 16" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE16" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image16" PROMPT="Image 16" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUH" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -191,7 +191,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE17" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image17" WIDTH="320" PROMPT="Image 17" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE17" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image17" PROMPT="Image 17" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUI" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -200,7 +200,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE18" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image18" WIDTH="320" PROMPT="Image 18" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE18" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image18" PROMPT="Image 18" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUJ" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -208,7 +208,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE19" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image19" WIDTH="320" PROMPT="Image 19" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE19" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image19" PROMPT="Image 19" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUK" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -217,7 +217,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE20" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image20" WIDTH="320" PROMPT="Image 20" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE20" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image20" PROMPT="Image 20" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUL" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -225,7 +225,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="IMAGE21" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image21" WIDTH="320" PROMPT="Image 21" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE21" HEIGHT="240" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image21" PROMPT="Image 21" WIDTH="320" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUM" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>

@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNLS" CREATOR="JT" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="Image Categories" FORMAT="LAYOUT" SHORT="Categories as images with a single image" TYPE="CONFIG" TITLE="Categories as images (vertical)" RELEASED="20050525"><SUMMARY><![CDATA[This layout starts with a text block, followed by a large static image.  After that is a custom product list of 'featured items' that shows the price, msrp and you save fields.  Following the product list is another text block.  Down the right side of the page is the category list shown as thumbnails and text.]]></SUMMARY>
+<ELEMENT ID="CPUKNLS" CREATOR="JT" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="H" SERIES="Image Categories" FORMAT="LAYOUT" SHORT="Categories as images with a single image" TYPE="CONFIG" TITLE="Categories as images (vertical)" RELEASED="20050525"><SUMMARY><![CDATA[This layout starts with a text block, followed by a large static image.  After that is a custom product list of 'featured items' that shows the price, msrp and you save fields.  Following the product list is another text block.  Down the right side of the page is the category list shown as thumbnails and text.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CPUKNLT" TYPE="OUTPUT"><HTML><![CDATA[<table width="100%" border='0' cellspacing='5' cellpadding='0'><tr>
 	<td align="left" valign="top">]]></HTML>
@@ -15,12 +15,12 @@
 <div align="center">
 	]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="250" HELP="Please enter the first picture for your homepage." DATA="merchant:zoovy:homepage_picture" PROMPT="Image1 (no zoom)" WIDTH="400" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="250" ID="IMAGE1" HELP="Please enter the first picture for your homepage." DATA="merchant:zoovy:homepage_picture" WIDTH="400" PROMPT="Image1 (no zoom)" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNLV" TYPE="OUTPUT"><HTML><![CDATA[</div>
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST1" HELP="You can add products to your homepage, when you do they will appear below." MSRPHEAD="MSRP: " DATA="page:prodlist" COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing" SAVEHEAD="A Savings of " TYPE="PRODLIST" PRICEHEAD="Price: " LOADFLOW="1"><HTML><![CDATA[<br><table border="0" cellpadding="0" cellspacing="1" width=100%  bgcolor="#<% load($head_bg_spec);  default("");  print(); %>"><tr><td colspan="2"><font color="#<% load($head_fg_spec);  default("");  print(); %>" face="<% load($head_font);  default("");  print(); %>" size="<% load($head_size);  default("");  print(); %>"><b>Featured Items</b></font></td></tr>
+<ELEMENT ID="PRODLIST1" HELP="You can add products to your homepage, when you do they will appear below." MSRPHEAD="MSRP: " DATA="page:prodlist" COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing" SAVEHEAD="A Savings of " PRICEHEAD="Price: " TYPE="PRODLIST" LOADFLOW="1"><HTML><![CDATA[<br><table border="0" cellpadding="0" cellspacing="1" width=100%  bgcolor="#<% load($head_bg_spec);  default("");  print(); %>"><tr><td colspan="2"><font color="#<% load($head_fg_spec);  default("");  print(); %>" face="<% load($head_font);  default("");  print(); %>" size="<% load($head_size);  default("");  print(); %>"><b>Featured Items</b></font></td></tr>
 <!-- ROW -->
 <tr>
 <!-- PRODUCT -->
@@ -44,7 +44,7 @@
 </table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DETAIL" HELP="The detail message will typically describe the pictures above." DATA="page:detail" PROMPT="Detail Message (optional)" HELPER="Extra information if you need it." TYPE="TEXT"><PRETEXT><![CDATA[<p>]]></PRETEXT>
+<ELEMENT ID="DETAIL" HELP="The detail message will typically describe the pictures above." DATA="page:detail" HELPER="Extra information if you need it." PROMPT="Detail Message (optional)" TYPE="TEXT"><PRETEXT><![CDATA[<p>]]></PRETEXT>
 <POSTTEXT><![CDATA[</p>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CPUKNLW" TYPE="OUTPUT"><HTML><![CDATA[

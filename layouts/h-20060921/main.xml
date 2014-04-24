@@ -15,7 +15,7 @@
 <div style="margin:5px; text-align:left; width:590px;">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="LIST1" MAX="4" ALTERNATE="0" DATA="page:prodlist" COLS="4" FORMAT="CUSTOM" PROMPT="Product List 1" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 1 -->
+<ELEMENT ID="LIST1" SIZE="5000" MAX="4" ALTERNATE="0" DATA="page:prodlist" COLS="4" FORMAT="CUSTOM" PROMPT="Product List 1" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 1 -->
 <table cellpadding="0" cellspacing="2">
 <tr>
 	<td width="145" class="zcolor_dark" align="right" valign="top"><img src="//static.zoovy.com/graphics/layouts/h-20060921/h_angled_topleft-75x5.gif" height="5" width="74" alt=""></td>
@@ -39,7 +39,7 @@
 	<td valign="top" align="left" width="50%">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="LIST2" MAX="1" ALTERNATE="3" DATA="page:prodlist2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- begin product list 2 -->
+<ELEMENT ID="LIST2" SIZE="5000" MAX="1" ALTERNATE="3" DATA="page:prodlist2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- begin product list 2 -->
 <div class="zcolor_dark" style="width:292px; height:22px;"><%
 loadurp("CSS::zcolor_dark.bgcolor");
 set($zcolor_dark_bgcolor=>$_);
@@ -78,7 +78,7 @@ stop(unless=>$_);
 	<td>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="LIST3" MAX="1" ALTERNATE="3" DATA="page:prodlist3" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 3" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- begin product list 3 -->
+<ELEMENT ID="LIST3" SIZE="5000" MAX="1" ALTERNATE="3" DATA="page:prodlist3" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 3" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- begin product list 3 -->
 <div class="zcolor_dark" style="width:292px; height:22px;"><%
 loadurp("CSS::zcolor_dark.bgcolor");
 set($zcolor_dark_bgcolor=>$_);
@@ -117,11 +117,11 @@ stop(unless=>$_);
 </table>
 <div align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPDWSS" DATA="page:link_5x1" ZOOVYDOCID="50355" SUB="5X1_LINK" PROMPT="Link for 5 x 1 image" DEFAULT="%CART%/search.cgi" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+<ELEMENT ID="CSPDWSS" DATA="page:link_5x1" ZOOVYDOCID="50355" PROMPT="Link for 5 x 1 image" SUB="5X1_LINK" DEFAULT="%CART%/search.cgi" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="CSPDWST" HEIGHT="117" DATA="page:image_5x1" PROMPT="Image 1 ( 5 x 1 )" WIDTH="585" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-top:5px;"><a href="%5X1_LINK%">]]></PRETEXT>
+<ELEMENT HEIGHT="117" ID="CSPDWST" DATA="page:image_5x1" WIDTH="585" PROMPT="Image 1 ( 5 x 1 )" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-top:5px;"><a href="%5X1_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CSPDWSU" TYPE="OUTPUT"><HTML><![CDATA[
@@ -143,7 +143,7 @@ Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zo
 	
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="LIST4" MAX="4" ALTERNATE="3" DATA="page:prodlist4" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 4" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 4 -->
+<ELEMENT ID="LIST4" SIZE="5000" MAX="4" ALTERNATE="3" DATA="page:prodlist4" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 4" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 4 -->
 <table cellspacing="0" cellpadding="2" width="100%">
 <!-- ROW -->
 <tr>

@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLVO" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="A" SERIES="2001" FORMAT="LAYOUT" SHORT="This layout uses a 560x100 header." TYPE="CONFIG" TITLE="About Us Spacious Lines" RELEASED="20010806"><SUMMARY><![CDATA[About Us Blurb
+<ELEMENT ID="CPUKLVO" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="A" SERIES="2001" FORMAT="LAYOUT" SHORT="This layout uses a 560x100 header." TYPE="CONFIG" TITLE="About Us Spacious Lines" RELEASED="20010806"><SUMMARY><![CDATA[About Us Blurb
 IMAGE1 (560x100)
 ]]></SUMMARY>
 </ELEMENT>
@@ -13,7 +13,7 @@ IMAGE1 (560x100)
 <center>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="LONG_PIC" HEIGHT="100" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:aboutus_image1" PROMPT="Front Page Picture" WIDTH="560" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="LONG_PIC" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:aboutus_image1" WIDTH="560" PROMPT="Front Page Picture" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLVQ" TYPE="OUTPUT"><HTML><![CDATA[
 </center> 
                 </td>

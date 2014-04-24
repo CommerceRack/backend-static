@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNHA" CREATED="20021001" IMAGES="0" PROPERTIES="1" SUBTYPE="N" FORMAT="LAYOUT" SHORT="contains text at the top and bottom of the page" TYPE="CONFIG" EXPORT="0" TITLE="Basic shipping calculator page"><SUMMARY><![CDATA[Bottom Textbar
+<ELEMENT ID="CPUKNHA" IMAGES="0" CREATED="20021001" PROPERTIES="1" SUBTYPE="N" FORMAT="LAYOUT" SHORT="contains text at the top and bottom of the page" EXPORT="0" TYPE="CONFIG" TITLE="Basic shipping calculator page"><SUMMARY><![CDATA[Bottom Textbar
 Mini Cart
 Upper Text
 ]]></SUMMARY>
@@ -15,7 +15,7 @@ Upper Text
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="MINICART3" HELP="Blah blah blah" PROMPT="Mini Cart" TYPE="MINICART" TITLE="Shipping Quote" SHIPQUOTE="1" SELECTOR="RADIO" NOGO="1"></ELEMENT>
+<ELEMENT ID="MINICART3" HELP="Blah blah blah" PROMPT="Mini Cart" TYPE="MINICART" TITLE="Shipping Quote" SHIPQUOTE="1" NOGO="1" SELECTOR="RADIO"></ELEMENT>
 <ELEMENT ID="LOWERTEXT" HELP="This text appears below the shipping calculator" DATA="page:lowertxt" PROMPT="Bottom Textbar" TYPE="TEXT"></ELEMENT>
 
 </TEMPLATE>

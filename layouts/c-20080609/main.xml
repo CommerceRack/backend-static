@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNJU" CREATOR="JT" IMAGES="0" CREATED="20080609" PROPERTIES="1" SERIES="Subcat Images" SUBTYPE="C" FORMAT="LAYOUT" SHORT="A 5 column list of subcategories, followed by a text block.  No product list present." TYPE="CONFIG" TITLE="5 Column Category Images (No Products)" RELEASED="20080609"><SUMMARY><![CDATA[This layout features a five column list of subcategories with a thumbnail and the name, followed by a short text block below the list. There is no product list present in this layout.]]></SUMMARY>
+<ELEMENT ID="CPUKNJU" CREATOR="JT" CREATED="20080609" IMAGES="0" PROPERTIES="1" SERIES="Subcat Images" SUBTYPE="C" FORMAT="LAYOUT" SHORT="A 5 column list of subcategories, followed by a text block.  No product list present." TYPE="CONFIG" TITLE="5 Column Category Images (No Products)" RELEASED="20080609"><SUMMARY><![CDATA[This layout features a five column list of subcategories with a thumbnail and the name, followed by a short text block below the list. There is no product list present in this layout.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CXBKXZD" TYPE="OUTPUT"><HTML><![CDATA[
 
@@ -35,7 +35,7 @@ image(w=>"105",h=>"105",bg=>$bgcolor,tag=>"1",alt=>$cat_pretty);  print(); %></a
 </table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Page Description" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Use wiki text to format your content.<br>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Page Description" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Use wiki text to format your content.<br>
 Go to <a href="http://www.zoovydocs.com/doc-50590" target="webdoc">http://www.zoovydocs.com/doc-50590</a> for more information on how to properly set up your links.<br>
 ]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>

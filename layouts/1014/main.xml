@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMGG" CREATOR="STAFF" IMAGES="0" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="Three pictures animated from images in your library.  Very flashy!" TYPE="CONFIG" TITLE="Triple Animated" RELEASED="20020618"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMGG" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="Three pictures animated from images in your library.  Very flashy!" TYPE="CONFIG" TITLE="Triple Animated" RELEASED="20020618"><SUMMARY><![CDATA[
 Animated Picture 1 (180 x 180)
 Animated Picture 2 (180 x 180)
 Animated Picture 3 (180 x 180)
@@ -78,16 +78,16 @@ function zoom (url) {
 <table width="540" height="180" border='0' cellspacing='0' cellpadding='0'>
 <tr><td>]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="DYNIMAGE1" HELP="Animated picture composed of images in your image library." DATA="page:dynimage1" WIDTH="180" PROMPT="Animated Picture 1 (180 x 180)" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="DYNIMAGE1" HEIGHT="180" HELP="Animated picture composed of images in your image library." DATA="page:dynimage1" PROMPT="Animated Picture 1 (180 x 180)" WIDTH="180" TYPE="DYNIMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMGI" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <td>]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="DYNIMAGE2" HELP="Animated picture composed of images in your image library." DATA="page:dynimage2" WIDTH="180" PROMPT="Animated Picture 2 (180 x 180)" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="DYNIMAGE2" HEIGHT="180" HELP="Animated picture composed of images in your image library." DATA="page:dynimage2" PROMPT="Animated Picture 2 (180 x 180)" WIDTH="180" TYPE="DYNIMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMGJ" TYPE="OUTPUT"><HTML><![CDATA[
 </td>
 <td>]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="DYNIMAGE3" HELP="Animated picture composed of images in your image library." DATA="page:dynimage3" WIDTH="180" PROMPT="Animated Picture 3 (180 x 180)" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="DYNIMAGE3" HEIGHT="180" HELP="Animated picture composed of images in your image library." DATA="page:dynimage3" PROMPT="Animated Picture 3 (180 x 180)" WIDTH="180" TYPE="DYNIMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMGK" TYPE="OUTPUT"><HTML><![CDATA[
 </td>
 </tr></table>

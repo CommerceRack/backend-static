@@ -92,12 +92,12 @@
 </ELEMENT>
 <ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_LOGO" HEIGHT="107" MINIMAL_MODE="0" WIDTH="276" SUB="NEWS_LOGO" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="107" ID="WRAPPER_LOGO" MINIMAL_MODE="0" SUB="NEWS_LOGO" WIDTH="276" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="CPZWXCS" RAW="1" SUB="NEWS_PHONE" TYPE="READONLY" LOAD="profile:zoovy:support_phone"><PRETEXT><![CDATA[<div style='color:#808184; font-size:12px;'>Questions? Call</div><div style='color:#231f20; font-size:14px;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="DATE" EDITOR="INLINE" DATA="page:send_date" PROMPT="Newsletter send date (03/02/2011 for example)" SUB="NEWS_DATE" FONT="0" TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="TWITTER_LINK" EDITOR="INLINE" DATA="profile:twitter:userid" PROMPT="Twitter ID (shared)" SUB="UI_ONLY" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="DATE" EDITOR="INLINE" DATA="page:send_date" SUB="NEWS_DATE" PROMPT="Newsletter send date (03/02/2011 for example)" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="TWITTER_LINK" EDITOR="INLINE" DATA="profile:twitter:userid" SUB="UI_ONLY" PROMPT="Twitter ID (shared)" TYPE="TEXTBOX" FONT="0"></ELEMENT>
 <ELEMENT ID="DEHTRJK" SUB="NEWS_LINK_TWITTER" TYPE="SPECL"><HTML><![CDATA[
 <%
 print("");
@@ -112,7 +112,7 @@ stop(unless=>$_);
 %>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="FACEBOOK_LINK" EDITOR="INLINE" DATA="profile:facebook:url" PROMPT="Facebook URL (shared)" SUB="UI_ONLY" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="FACEBOOK_LINK" EDITOR="INLINE" DATA="profile:facebook:url" SUB="UI_ONLY" PROMPT="Facebook URL (shared)" TYPE="TEXTBOX" FONT="0"></ELEMENT>
 <ELEMENT ID="DEHTRJL" SUB="NEWS_LINK_FACEBOOK" TYPE="SPECL"><HTML><![CDATA[
 <%
 print("");
@@ -127,19 +127,19 @@ stop(unless=>$_);
 %>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DEHTRJM" EDITOR="INLINE" FALSE="" DATA="merchant:zoovy:news_amex" PROMPT="American Express Logo" SUB="AMEX_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_amex_tiny.gif' border='0'></div>]]></TRUE>
+<ELEMENT ID="DEHTRJM" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_amex" SUB="AMEX_LOGO" PROMPT="American Express Logo" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_amex_tiny.gif' border='0'></div>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="DEHTRJN" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_visa" PROMPT="Visa Logo" SUB="VISA_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_visa_tiny.gif' border='0'></div>]]></TRUE>
+<ELEMENT ID="DEHTRJN" EDITOR="INLINE" FALSE="" DATA="merchant:zoovy:news_visa" SUB="VISA_LOGO" PROMPT="Visa Logo" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_visa_tiny.gif' border='0'></div>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="DEHTRJO" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_mastercard" PROMPT="Mastercard Logo" SUB="MCARD_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_mc_tiny.gif' border='0'></div>]]></TRUE>
+<ELEMENT ID="DEHTRJO" EDITOR="INLINE" FALSE="" DATA="merchant:zoovy:news_mastercard" SUB="MCARD_LOGO" PROMPT="Mastercard Logo" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_mc_tiny.gif' border='0'></div>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="DEHTRJP" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_discover" PROMPT="Discover Logo" SUB="DISCOVER_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_novus_tiny.gif' border='0'></div>]]></TRUE>
+<ELEMENT ID="DEHTRJP" EDITOR="INLINE" FALSE="" DATA="merchant:zoovy:news_discover" SUB="DISCOVER_LOGO" PROMPT="Discover Logo" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/cc_novus_tiny.gif' border='0'></div>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="DEHTRJQ" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_paypal" PROMPT="PayPal Logo" SUB="PAYPAL_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/paypal-33x21.gif' border='0'></div>]]></TRUE>
+<ELEMENT ID="DEHTRJQ" EDITOR="INLINE" FALSE="" DATA="merchant:zoovy:news_paypal" SUB="PAYPAL_LOGO" PROMPT="PayPal Logo" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/paypal-33x21.gif' border='0'></div>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="DEHTRJR" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_googlecheckout" PROMPT="Google Checkout Logo" SUB="GOOGLE_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/google_checkout-33x21.gif' border='0'></div>]]></TRUE>
+<ELEMENT ID="DEHTRJR" EDITOR="INLINE" FALSE="" DATA="merchant:zoovy:news_googlecheckout" SUB="GOOGLE_LOGO" PROMPT="Google Checkout Logo" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/google_checkout-33x21.gif' border='0'></div>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="DEHTRJS" FALSE="" EDITOR="INLINE" DATA="merchant:zoovy:news_amazonpayments" PROMPT="Amazon Payments Logo" SUB="AMAZON_LOGO" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/amazon_payments-33x21.gif'></div>]]></TRUE>
+<ELEMENT ID="DEHTRJS" EDITOR="INLINE" FALSE="" DATA="merchant:zoovy:news_amazonpayments" SUB="AMAZON_LOGO" PROMPT="Amazon Payments Logo" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[<div style='float:right; margin-left:3px;'><img src='%GRAPHICS_URL%/amazon_payments-33x21.gif'></div>]]></TRUE>
 </ELEMENT>
 <ELEMENT ID="DEHTRJT" TYPE="OUTPUT"><HTML><![CDATA[
 
@@ -185,7 +185,7 @@ a	{text-decoration:none; color:#404041;}
 		
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="HEADER_BANNER" HEIGHT="60" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_top" PROMPT="Banner: in header (294x60)" WIDTH="294" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<ELEMENT HEIGHT="60" ID="HEADER_BANNER" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_top" WIDTH="294" PROMPT="Banner: in header (294x60)" TYPE="BANNER" BGCOLOR="FFFFFF"><HTML><![CDATA[
 <!-- BANNER: <% print($ID); %> --><% load($PRETEXT); default(""); print(); %><a id="<% print($ID); %>_href" title="<% 
 load($ALT); default(""); format(encode=>"entity"); print(); 
 %>" href="<%
@@ -213,7 +213,7 @@ print($IMGURL);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="TOP_NAV" WIKI="3" EDITOR="INLINE" DATA="page:wiki_links_header" PROMPT="Wiki based links for top nav" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Use wiki to add some links to the top of the newsletter. Putting a pipe between each link will help create nice separation.  A limited amount of horizontal space is available. If more links/text is added then space available, cropping will occur.]]></HELPER>
+<ELEMENT ID="TOP_NAV" WIKI="3" EDITOR="INLINE" DATA="page:wiki_links_header" PROMPT="Wiki based links for top nav" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Use wiki to add some links to the top of the newsletter. Putting a pipe between each link will help create nice separation.  A limited amount of horizontal space is available. If more links/text is added then space available, cropping will occur.]]></HELPER>
 <POSTTEXT><![CDATA[
 	
 	</span></div>
@@ -247,7 +247,7 @@ print($IMGURL);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="MAIN_BANNER" HEIGHT="580" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_main" PROMPT="Banner: main (580x580)" WIDTH="580" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<ELEMENT HEIGHT="580" ID="MAIN_BANNER" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_main" WIDTH="580" PROMPT="Banner: main (580x580)" TYPE="BANNER" BGCOLOR="FFFFFF"><HTML><![CDATA[
 <!-- BANNER: <% print($ID); %> -->
 <div style='padding-bottom:10px;' align='center'>
 <a id="<% print($ID); %>_href" title="<% 
@@ -263,7 +263,7 @@ print($IMGURL);
 <!-- /BANNER: <% print($ID); %> -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="BANNER_TRIO_LEFT" HEIGHT="112" MINIMAL="0" EDITOR="INLINE" DATA="page:banner_trioleft" PROMPT="Banner: trio on left (186x112)" WIDTH="186" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<ELEMENT HEIGHT="112" ID="BANNER_TRIO_LEFT" MINIMAL="0" EDITOR="INLINE" DATA="page:banner_trioleft" WIDTH="186" PROMPT="Banner: trio on left (186x112)" TYPE="BANNER" BGCOLOR="FFFFFF"><HTML><![CDATA[
 <!-- BANNER: <% print($ID); %> -->
 <div style='padding-bottom:10px; float:left; padding-left:10px;'>
 <a id="<% print($ID); %>_href" title="<% 
@@ -279,7 +279,7 @@ print($IMGURL);
 <!-- /BANNER: <% print($ID); %> -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="BANNER_TRIO_CENTER" HEIGHT="112" MINIMAL="0" EDITOR="INLINE" DATA="page:banner_triocenter" PROMPT="Banner: trio on left (187x112)" WIDTH="187" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<ELEMENT HEIGHT="112" ID="BANNER_TRIO_CENTER" MINIMAL="0" EDITOR="INLINE" DATA="page:banner_triocenter" WIDTH="187" PROMPT="Banner: trio on left (187x112)" TYPE="BANNER" BGCOLOR="FFFFFF"><HTML><![CDATA[
 <!-- BANNER: <% print($ID); %> -->
 <div style='padding-bottom:10px; float:left; padding-left:10px;'>
 <a id="<% print($ID); %>_href" title="<% 
@@ -295,7 +295,7 @@ print($IMGURL);
 <!-- /BANNER: <% print($ID); %> -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="BANNER_TRIO_RIGHT" HEIGHT="112" MINIMAL="0" EDITOR="INLINE" DATA="page:banner_trioright" PROMPT="Banner: trio on right (186x112)" WIDTH="186" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<ELEMENT HEIGHT="112" ID="BANNER_TRIO_RIGHT" MINIMAL="0" EDITOR="INLINE" DATA="page:banner_trioright" WIDTH="186" PROMPT="Banner: trio on right (186x112)" TYPE="BANNER" BGCOLOR="FFFFFF"><HTML><![CDATA[
 <!-- BANNER: <% print($ID); %> -->
 <div style='padding-bottom:10px; float:right; padding-right:10px;'>
 <a id="<% print($ID); %>_href" title="<% 
@@ -311,7 +311,7 @@ print($IMGURL);
 <!-- /BANNER: <% print($ID); %> -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text block" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
 
 <div style='clear:both;'></div>
 <div style='margin-bottom:10px; width:auto; padding:10px;'>]]></PRETEXT>
@@ -325,7 +325,7 @@ print($IMGURL);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SECTION1BANNER" HEIGHT="133" MINIMAL="0" EDITOR="INLINE" DATA="page:section1_banner" PROMPT="Section 1: banner (186x133)" WIDTH="186" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<ELEMENT HEIGHT="133" ID="SECTION1BANNER" MINIMAL="0" EDITOR="INLINE" DATA="page:section1_banner" WIDTH="186" PROMPT="Section 1: banner (186x133)" TYPE="BANNER" BGCOLOR="FFFFFF"><HTML><![CDATA[
 <!-- BANNER: <% print($ID); %> -->
 <div style='padding:0 10px 10px 10px; float:left;'>
 <a id="<% print($ID); %>_href" title="<% 
@@ -341,7 +341,7 @@ print($IMGURL);
 <!-- /BANNER: <% print($ID); %> -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SECTION1_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section1_description" PROMPT="Section 1: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<ELEMENT ID="SECTION1_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section1_description" PROMPT="Section 1: text block" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
 <div style='padding:0 10px 10px 10px;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
@@ -354,7 +354,7 @@ print($IMGURL);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DEHTRJY" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section2_header" PROMPT="Section 2: title" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[
+<ELEMENT ID="DEHTRJY" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section2_header" PROMPT="Section 2: title" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[
 	</div>
 	<div><img src='%LAYOUT_URL%/s11a_headerbot-1x5.gif' width='600' height='5' alt='' /></div>
 </div>
@@ -367,11 +367,11 @@ print($IMGURL);
 	
 ]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="SECTION2_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section2_description" PROMPT="Section 2: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<ELEMENT ID="SECTION2_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section2_description" PROMPT="Section 2: text block" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
 <div style='padding:0 10px 10px 10px; width:auto;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="SECTION2_BANNER1" HEIGHT="185" MINIMAL="0" EDITOR="INLINE" DATA="page:section2_banner1" PROMPT="Section 2: banner 1 (185x185)" WIDTH="185" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<ELEMENT HEIGHT="185" ID="SECTION2_BANNER1" MINIMAL="0" EDITOR="INLINE" DATA="page:section2_banner1" WIDTH="185" PROMPT="Section 2: banner 1 (185x185)" TYPE="BANNER" BGCOLOR="FFFFFF"><HTML><![CDATA[
 <!-- BANNER: <% print($ID); %> -->
 <div style='float:left; padding:0 0 10px 10px;'>
 	<div style='border:1px solid #919293;'><div style='width:<% print($WIDTH); %>px ;'>
@@ -392,7 +392,7 @@ print($IMGURL);
 <!-- /BANNER: <% print($ID); %> -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SECTION2_BANNER2" HEIGHT="185" MINIMAL="0" EDITOR="INLINE" DATA="page:section2_banner2" PROMPT="Section 2: banner 2 (185x185)" WIDTH="185" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<ELEMENT HEIGHT="185" ID="SECTION2_BANNER2" MINIMAL="0" EDITOR="INLINE" DATA="page:section2_banner2" WIDTH="185" PROMPT="Section 2: banner 2 (185x185)" TYPE="BANNER" BGCOLOR="FFFFFF"><HTML><![CDATA[
 <!-- BANNER: <% print($ID); %> -->
 <div style='float:left; padding:0 0 10px 10px;'>
 	<div style='border:1px solid #919293;'><div style='width:<% print($WIDTH); %>px ;'>
@@ -413,7 +413,7 @@ print($IMGURL);
 <!-- /BANNER: <% print($ID); %> -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SECTION2_BANNER3" HEIGHT="185" MINIMAL="0" EDITOR="INLINE" DATA="page:section2_banner3" PROMPT="Section 2: banner 3 (185x185)" WIDTH="185" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<ELEMENT HEIGHT="185" ID="SECTION2_BANNER3" MINIMAL="0" EDITOR="INLINE" DATA="page:section2_banner3" WIDTH="185" PROMPT="Section 2: banner 3 (185x185)" TYPE="BANNER" BGCOLOR="FFFFFF"><HTML><![CDATA[
 <!-- BANNER: <% print($ID); %> -->
 <div style='float:left; padding:0 0 10px 10px;'>
 	<div style='border:1px solid #919293;'><div style='width:<% print($WIDTH); %>px ;'>
@@ -450,7 +450,7 @@ print($IMGURL);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DEHTRKA" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section3_header" PROMPT="Section 3: title" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[
+<ELEMENT ID="DEHTRKA" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section3_header" PROMPT="Section 3: title" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[
 	</div>
 	<div><img src='%LAYOUT_URL%/s11a_headerbot-1x5.gif' width='600' height='5' alt='' /></div>
 </div>
@@ -463,11 +463,11 @@ print($IMGURL);
 	
 ]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="SECTION3_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section3_description" PROMPT="Section 3: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<ELEMENT ID="SECTION3_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section3_description" PROMPT="Section 3: text block" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
 <div style='padding:0 10px 10px 10px; width:auto;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST_SECTION3" SIZE="9" MAX="9" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="page:section3_prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Section 3: product list (nine item max)" TYPE="PRODLIST" SRC="page:section3_prodlist_stuff"><HTML><![CDATA[
+<ELEMENT SIZE="9" ID="PRODLIST_SECTION3" MAX="9" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="page:section3_prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Section 3: product list (nine item max)" TYPE="PRODLIST" SRC="page:section3_prodlist_stuff"><HTML><![CDATA[
 <table border='0' cellpadding='5' cellspacing='10' align='center'>
 <!-- ROW -->
 <tr>
@@ -496,7 +496,7 @@ print($IMGURL);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DEHTRKC" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section4_header" PROMPT="Section 4: title" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[
+<ELEMENT ID="DEHTRKC" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section4_header" PROMPT="Section 4: title" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[
 	</div>
 	<div><img src='%LAYOUT_URL%/s11a_headerbot-1x5.gif' width='600' height='5' alt='' /></div>
 </div>
@@ -509,11 +509,11 @@ print($IMGURL);
 	
 ]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="SECTION4_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section4_description" PROMPT="Section 4: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<ELEMENT ID="SECTION4_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section4_description" PROMPT="Section 4: text block" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
 <div style='padding:0 10px 10px 10px; width:auto;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST_SECTION4" SIZE="9" MAX="9" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="page:section4_prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Section 4: product list (nine item max)" TYPE="PRODLIST" SRC="page:section4_prodlist_stuff"><HTML><![CDATA[
+<ELEMENT SIZE="9" ID="PRODLIST_SECTION4" MAX="9" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="page:section4_prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Section 4: product list (nine item max)" TYPE="PRODLIST" SRC="page:section4_prodlist_stuff"><HTML><![CDATA[
 <table border='0' cellpadding='5' cellspacing='10' align='center'>
 <!-- ROW -->
 <tr>
@@ -542,7 +542,7 @@ print($IMGURL);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DEHTRKE" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section5_header" PROMPT="Section 5: title" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[
+<ELEMENT ID="DEHTRKE" WIKI="3" MAXLENGTH="45" EDITOR="INLINE" DATA="page:section5_header" PROMPT="Section 5: title" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[
 	</div>
 	<div><img src='%LAYOUT_URL%/s11a_headerbot-1x5.gif' width='600' height='5' alt='' /></div>
 </div>
@@ -555,11 +555,11 @@ print($IMGURL);
 	
 ]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="SECTION5_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section5_description" PROMPT="Section 5: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<ELEMENT ID="SECTION5_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section5_description" PROMPT="Section 5: text block" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
 <div style='padding:0 10px 10px 10px; width:auto;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST_SECTION5" SIZE="9" MAX="9" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="page:section5_prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Section 5: product list (nine item max)" TYPE="PRODLIST" SRC="page:section5_prodlist_stuff"><HTML><![CDATA[
+<ELEMENT SIZE="9" ID="PRODLIST_SECTION5" MAX="9" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="page:section5_prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Section 5: product list (nine item max)" TYPE="PRODLIST" SRC="page:section5_prodlist_stuff"><HTML><![CDATA[
 <table border='0' cellpadding='5' cellspacing='10' align='center'>
 <!-- ROW -->
 <tr>
@@ -590,7 +590,7 @@ print($IMGURL);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="BANNER_SECTION1" HEIGHT="133" MINIMAL="0" EDITOR="INLINE" DATA="page:section7_banner" PROMPT="Section 7: banner (186x133)" WIDTH="186" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<ELEMENT HEIGHT="133" ID="BANNER_SECTION1" MINIMAL="0" EDITOR="INLINE" DATA="page:section7_banner" WIDTH="186" PROMPT="Section 7: banner (186x133)" TYPE="BANNER" BGCOLOR="FFFFFF"><HTML><![CDATA[
 <!-- BANNER: <% print($ID); %> -->
 <div style='padding:0 10px 10px 10px; float:left;'>
 <a id="<% print($ID); %>_href" title="<% 
@@ -606,7 +606,7 @@ print($IMGURL);
 <!-- /BANNER: <% print($ID); %> -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SECTION7_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section7_description" PROMPT="Section 7: text block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<ELEMENT ID="SECTION7_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:section7_description" PROMPT="Section 7: text block" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
 <div style='padding:0 10px 10px 10px;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
@@ -618,7 +618,7 @@ print($IMGURL);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="BOTTOM_WIDE_BANNER" HEIGHT="250" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_bottomwide" PROMPT="wide banner for bottom (580x250)" WIDTH="580" BGCOLOR="FFFFFF" TYPE="BANNER"><HTML><![CDATA[
+<ELEMENT HEIGHT="250" ID="BOTTOM_WIDE_BANNER" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_bottomwide" WIDTH="580" PROMPT="wide banner for bottom (580x250)" TYPE="BANNER" BGCOLOR="FFFFFF"><HTML><![CDATA[
 <!-- BANNER: <% print($ID); %> -->
 <div style='padding-bottom:10px;' align='center'>
 <a id="<% print($ID); %>_href" title="<% 
@@ -634,7 +634,7 @@ print($IMGURL);
 <!-- /BANNER: <% print($ID); %> -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="FOOTER_NAV" WIKI="3" EDITOR="INLINE" DATA="page:wiki_links_footer" PROMPT="Wiki based links for top nav" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Use wiki to add some links to the bottom of the newsletter. Putting a pipe between each link will help create nice separation.  A limited amount of horizontal space is available. If more links/text is added then space available, cropping will occur.]]></HELPER>
+<ELEMENT ID="FOOTER_NAV" WIKI="3" EDITOR="INLINE" DATA="page:wiki_links_footer" PROMPT="Wiki based links for top nav" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Use wiki to add some links to the bottom of the newsletter. Putting a pipe between each link will help create nice separation.  A limited amount of horizontal space is available. If more links/text is added then space available, cropping will occur.]]></HELPER>
 <POSTTEXT><![CDATA[
 	
 	</span></div>

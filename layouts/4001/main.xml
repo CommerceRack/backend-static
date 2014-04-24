@@ -13,7 +13,7 @@ Product Listing
 <table cellpadding="10"><tr><td align="center">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="PIC1" HELP="Please select a picture for this category." DATA="page:picture1" WIDTH="400" PROMPT="Large Picture" DEFAULT="https://static.zoovy.com/img/H100-W100-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="200" HELP="Please select a picture for this category." DATA="page:picture1" PROMPT="Large Picture" WIDTH="400" DEFAULT="https://static.zoovy.com/img/H100-W100-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMIJ" TYPE="OUTPUT"><HTML><![CDATA[
 </td></tr>
 <tr><td>

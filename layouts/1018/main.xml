@@ -11,7 +11,7 @@
 ]]></HTML>
 </ELEMENT>
 <ELEMENT ID="SUBCAT" PROMPT="Sub Categories" TYPE="SUBCAT"></ELEMENT>
-<ELEMENT ID="PIC1" HEIGHT="100" HELP="Please select a picture for this category." DATA="page:picture1" PROMPT="Small Picture" WIDTH="100" DEFAULT="https://static.zoovy.com/img/H100-W100-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="PIC1" HELP="Please select a picture for this category." DATA="page:picture1" WIDTH="100" PROMPT="Small Picture" DEFAULT="https://static.zoovy.com/img/H100-W100-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMTY" TYPE="OUTPUT"><HTML><![CDATA[
 </center>
 		</td>

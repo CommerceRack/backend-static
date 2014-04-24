@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMLF" CREATOR="JT" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="P" FORMAT="LAYOUT" SHORT="Contains default description (HTML Editor), 1 images (500 x 180) MSRP, Price and a prodlist." TYPE="CONFIG" TITLE="Wide Image with prodlist" RELEASED="20041103"><SUMMARY><![CDATA[1 images across the top followed by the description, msrp, price and add to cart.  beneath that is a prodlist.]]></SUMMARY>
+<ELEMENT ID="CPUKMLF" CREATOR="JT" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" FORMAT="LAYOUT" SHORT="Contains default description (HTML Editor), 1 images (500 x 180) MSRP, Price and a prodlist." TYPE="CONFIG" TITLE="Wide Image with prodlist" RELEASED="20041103"><SUMMARY><![CDATA[1 images across the top followed by the description, msrp, price and add to cart.  beneath that is a prodlist.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CPUKMLG" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
 <!--
@@ -19,7 +19,7 @@ function zoom (url) {
 	<Td valign="top" width="100%" align="left"><div align="center">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE1" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="500" PROMPT="Image1" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="180" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image1" WIDTH="500" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMLH" TYPE="OUTPUT"><HTML><![CDATA[</div>
 	
 ]]></HTML>

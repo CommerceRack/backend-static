@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="DADBTEP" CREATED="00000000" SUBTYPE="T" EXPORT="0" TYPE="CONFIG" TITLE="Mobile: Cart"></ELEMENT>
+<ELEMENT ID="DADBTEP" CREATED="00000000" SUBTYPE="T" TYPE="CONFIG" EXPORT="0" TITLE="Mobile: Cart"></ELEMENT>
 <ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
 <ELEMENT ID="DADBTEQ" TYPE="OUTPUT"><HTML><![CDATA[
 
@@ -161,15 +161,15 @@ stop(unless=>$_);
 <!-- /SURCHARGE -->
 
 ]]></HTML>
+<REMOVE_LINK_SPEC><![CDATA[<div style='margin:0 5px;'><a href="<% print($CART_URL); %>?delete_item=<% print($SAFESTID); %>" title='remove item from cart'><img src='<% loadurp("URL::LAYOUT_URL"); default(""); print(); %>/m09_btn_remove-25x25.jpg' height='25' width='25' alt='remove item from cart'></a></div>]]></REMOVE_LINK_SPEC>
 <SURCHARGE_SHP_SPEC><![CDATA[<!-- shipping spec -->
 <tr>
 	<td class='ztable_row' colspan="2" align='right' NOWRAP><div id='shipSelect'><% load($SURCHARGE);  default("");  print(); %></div></td>
 	<td align='right' class='ztable_row'><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></td>
 </tr><!-- shipping spec -->
 ]]></SURCHARGE_SHP_SPEC>
-<REMOVE_LINK_SPEC><![CDATA[<div style='margin:0 5px;'><a href="<% print($CART_URL); %>?delete_item=<% print($SAFESTID); %>" title='remove item from cart'><img src='<% loadurp("URL::LAYOUT_URL"); default(""); print(); %>/m09_btn_remove-25x25.jpg' height='25' width='25' alt='remove item from cart'></a></div>]]></REMOVE_LINK_SPEC>
 </ELEMENT>
-<ELEMENT SIZE="7" ID="DADBTES" MAX="5" ALTERNATE="0" MULTIPAGE="0" SHOWDEFAULT="0" EDITOR="INLINE" INVENTORY="1" DATA="page:prodlist_mobile" COLS="8" FORMAT="CUSTOM" SMARTSOURCE="SMART:ACCESSORIES" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
+<ELEMENT ID="DADBTES" SIZE="7" MAX="5" ALTERNATE="0" MULTIPAGE="0" SHOWDEFAULT="0" EDITOR="INLINE" INVENTORY="1" DATA="page:prodlist_mobile" COLS="8" FORMAT="CUSTOM" SMARTSOURCE="SMART:ACCESSORIES" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
 <!-- cols is set to 'trick' divider into working. -->
 
 
@@ -271,7 +271,7 @@ load($zoovy:base_price);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<!-- begin text area --><div style='text-align:left; padding:5px;' class='ztxt mypanel'>]]></PRETEXT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[<!-- begin text area --><div style='text-align:left; padding:5px;' class='ztxt mypanel'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 </ELEMENT>
 

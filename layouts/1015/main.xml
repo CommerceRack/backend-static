@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMGR" CREATOR="STAFF" IMAGES="0" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="A smallish picture animated from images in your library, along with a page title." TYPE="CONFIG" TITLE="Small Animated" RELEASED="20020618"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMGR" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="A smallish picture animated from images in your library, along with a page title." TYPE="CONFIG" TITLE="Small Animated" RELEASED="20020618"><SUMMARY><![CDATA[
 Animated Picture (128 x 128)
 Bold Welcome Message
 Category Description
@@ -79,7 +79,7 @@ function zoom (url) {
 		<td valign="middle" height="128" width="128" align="center">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DYNIMAGE1" HEIGHT="128" HELP="Animated picture composed of images in your image library." DATA="page:dynimage" PROMPT="Animated Picture (128 x 128)" WIDTH="128" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT HEIGHT="128" ID="DYNIMAGE1" HELP="Animated picture composed of images in your image library." DATA="page:dynimage" WIDTH="128" PROMPT="Animated Picture (128 x 128)" TYPE="DYNIMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMGT" TYPE="OUTPUT"><HTML><![CDATA[
 		</td>
 		<td valign="middle">

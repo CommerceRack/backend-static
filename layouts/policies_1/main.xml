@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="MYCONFIG" V="3" CREATED="00000000" IMAGES="0" SUBTYPE="R" PROMPT="Policies 1" TYPE="CONFIG" TITLE="Policies Page: 3 policies and 25 faq" OCREATED="20060801"><SUMMARY><![CDATA[This layout contains three policies; payment, shipping and returns.  The policies can be set to not display, so you can disable those you do not need or want on the website/auction.  Below the three policies is a list of FAQ.  Up to 25 questions and answers can be set.]]></SUMMARY>
+<ELEMENT ID="MYCONFIG" V="3" IMAGES="0" CREATED="00000000" SUBTYPE="R" PROMPT="Policies 1" TYPE="CONFIG" TITLE="Policies Page: 3 policies and 25 faq" OCREATED="20060801"><SUMMARY><![CDATA[This layout contains three policies; payment, shipping and returns.  The policies can be set to not display, so you can disable those you do not need or want on the website/auction.  Below the three policies is a list of FAQ.  Up to 25 questions and answers can be set.]]></SUMMARY>
 <SHORT><![CDATA[This layout displays your profile shipping, return and payment policy, as well as a FAQ list of up to 25 Questions and Answers.]]></SHORT>
 </ELEMENT>
 <ELEMENT ID="CPXKZXE" RAW="1" SUB="TABLE_HEADING_FONT_SIZE" TYPE="READONLY" LOAD="THEME::TABLE_HEADING_FONT_SIZE"></ELEMENT>
@@ -46,22 +46,22 @@
 </td></tr></table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="RETURNPOLICY" SUB="RETURN_POLICY" PROMPT="Return Policy " TYPE="READONLY" LOAD="profile:zoovy:return_policy"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<ELEMENT ID="RETURNPOLICY" PROMPT="Return Policy " SUB="RETURN_POLICY" TYPE="READONLY" LOAD="profile:zoovy:return_policy"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
 <PRETEXT><![CDATA[<div style="margin-bottom:10px;"><b>Return Policy:</b><br />]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="PAYMENTPOLICY" SUB="PAYMENT_POLICY" PROMPT="Payment Policy " TYPE="READONLY" LOAD="profile:zoovy:payment_policy"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<ELEMENT ID="PAYMENTPOLICY" PROMPT="Payment Policy " SUB="PAYMENT_POLICY" TYPE="READONLY" LOAD="profile:zoovy:payment_policy"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
 <PRETEXT><![CDATA[<div style="margin-bottom:10px;"><b>Payment Policy:</b><br />]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="SHIPPINGPOLICY" SUB="SHIPPING_POLICY" PROMPT="Shipping Policy " TYPE="READONLY" LOAD="profile:zoovy:shipping_policy"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<ELEMENT ID="SHIPPINGPOLICY" PROMPT="Shipping Policy " SUB="SHIPPING_POLICY" TYPE="READONLY" LOAD="profile:zoovy:shipping_policy"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
 <PRETEXT><![CDATA[<div style="margin-bottom:10px;"><b>Shipping Policy:</b><br />]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="RETURNCHECK" TRUE="%RETURN_POLICY%" FALSE="" DATA="profile:show_returns" PROMPT="Show Returns Policy" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"></ELEMENT>
-<ELEMENT ID="PAYMENTCHECK" TRUE="%PAYMENT_POLICY%" FALSE="" DATA="profile:show_payment" PROMPT="Show Payment Policy" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"></ELEMENT>
-<ELEMENT ID="SHIPPINGCHECK" TRUE="%SHIPPING_POLICY%" FALSE="" DATA="profile:show_shipping" PROMPT="Show Shipping Policy" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"></ELEMENT>
-<ELEMENT ID="CVBUUTD" DATA="page:faq_title" SUB="FAQ_TITLE" PROMPT="Header for the FAQ" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div style='margin-bottom:5px;'><b>]]></PRETEXT>
+<ELEMENT ID="RETURNCHECK" TRUE="%RETURN_POLICY%" FALSE="" DATA="profile:show_returns" PROMPT="Show Returns Policy" ON="1" DEFAULT="1" TYPE="CHECKBOX" OFF="0"></ELEMENT>
+<ELEMENT ID="PAYMENTCHECK" TRUE="%PAYMENT_POLICY%" FALSE="" DATA="profile:show_payment" PROMPT="Show Payment Policy" ON="1" DEFAULT="1" TYPE="CHECKBOX" OFF="0"></ELEMENT>
+<ELEMENT ID="SHIPPINGCHECK" TRUE="%SHIPPING_POLICY%" FALSE="" DATA="profile:show_shipping" PROMPT="Show Shipping Policy" ON="1" DEFAULT="1" TYPE="CHECKBOX" OFF="0"></ELEMENT>
+<ELEMENT ID="CVBUUTD" DATA="page:faq_title" PROMPT="Header for the FAQ" SUB="FAQ_TITLE" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div style='margin-bottom:5px;'><b>]]></PRETEXT>
 <POSTTEXT><![CDATA[</b></div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CPUKNGR" TYPE="OUTPUT"><HTML><![CDATA[

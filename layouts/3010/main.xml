@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CQCSTLV" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SERIES="2007" SUBTYPE="T" FORMAT="LAYOUT" EXPORT="0" TYPE="CONFIG" TITLE="Image Cart with checkout prompts" OCREATED="20070207" RELEASED="20081014"><SUMMARY><![CDATA[This layout features a single column image based cart with a text block, a product list header and a product list.]]></SUMMARY>
+<ELEMENT ID="CQCSTLV" CREATOR="STAFF" IMAGES="0" CREATED="00000000" PROPERTIES="1" SERIES="2007" SUBTYPE="T" FORMAT="LAYOUT" TYPE="CONFIG" EXPORT="0" TITLE="Image Cart with checkout prompts" OCREATED="20070207" RELEASED="20081014"><SUMMARY><![CDATA[This layout features a single column image based cart with a text block, a product list header and a product list.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CPVRQDA" SUB="CHECKOUT_BUTTON" TYPE="SPECL"><HTML><![CDATA[<%
 element(TYPE=>"SITEBUTTON",BUTTON=>"checkout"); print();
@@ -11,7 +11,7 @@ element(TYPE=>"SITEBUTTON",BUTTON=>"checkout"); print();
 <ELEMENT ID="CPVRQD2" RAW="1" SUB="ZBORDER" TYPE="READONLY" LOAD="CSS::zborder.border"></ELEMENT>
 <ELEMENT ID="CPVRQD2" RAW="1" SUB="ZBOX_BORDER" TYPE="READONLY" LOAD="CSS::zbox.border"></ELEMENT>
 <ELEMENT ID="CPVRQD3" RAW="1" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL"></ELEMENT>
-<ELEMENT ID="COUPON_CHECKBOX" TRUE="On" FALSE="Off" EDITOR="INLINE" DATA="profile:zoovy:enable_promocode" PROMPT="Display coupon entry form in cart" ON="1" TYPE="CHECKBOX" UNDEF="0" OUTPUTSKIP="4096" OFF="0"></ELEMENT>
+<ELEMENT ID="COUPON_CHECKBOX" TRUE="On" EDITOR="INLINE" FALSE="Off" DATA="profile:zoovy:enable_promocode" PROMPT="Display coupon entry form in cart" ON="1" TYPE="CHECKBOX" UNDEF="0" OUTPUTSKIP="4096" OFF="0"></ELEMENT>
 <ELEMENT ID="SPECL_GOOGLE_BUTTON" SUB="GOOGLE_BUTTON" TYPE="SPECL"><HTML><![CDATA[<%
 /* outputs the google button inside a div.  By default, the sitebutton outputs <!-- GOOGLE_BUTTON --> if it is not enabled, so that has to be checked for and also blank (as a redundancy). */
 
@@ -51,7 +51,7 @@ goto(label=>"NOOUTPUT",eq=>"");
 
 %>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGECART" CREATED="20070801" COLS="1" FORMAT="CUSTOM" PROMPT="Shopping Cart" SUB="PAGE_CART" TYPE="CART" TABLECOLS="4" RELEASED="20080930"><HTML><![CDATA[
+<ELEMENT ID="IMAGECART" CREATED="20070801" COLS="1" FORMAT="CUSTOM" SUB="PAGE_CART" PROMPT="Shopping Cart" TYPE="CART" RELEASED="20080930" TABLECOLS="4"><HTML><![CDATA[
 <% load($FORM);  default("");  print(); %>
 
 <div style='width:auto; text-align:right; margin-bottom:1px;'>
@@ -214,12 +214,12 @@ stop(unless=>$_);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="NEWCUSTOMERTEXT" WIKI="3" LENGTH="10" EDITOR="INLINE" DATA="page:new_customer_text" PROMPT="Text that appears just above the new customer checkout button" SUB="PAGE_NEWCUSTOMER_TEXT" TYPE="TEXTBOX"><DEFAULT><![CDATA[If you have never made a purchase at this web site and have never subscribed to this store's mailing list, please choose this option.]]></DEFAULT>
+<ELEMENT ID="NEWCUSTOMERTEXT" WIKI="3" LENGTH="10" EDITOR="INLINE" DATA="page:new_customer_text" SUB="PAGE_NEWCUSTOMER_TEXT" PROMPT="Text that appears just above the new customer checkout button" TYPE="TEXTBOX"><DEFAULT><![CDATA[If you have never made a purchase at this web site and have never subscribed to this store's mailing list, please choose this option.]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="OLDCUSTOMERTEXT" WIKI="3" LENGTH="10" EDITOR="INLINE" DATA="page:old_customer_text" PROMPT="Text that appears just above the registered customer checkout button" SUB="PAGE_REGCUSTOMER_TEXT" TYPE="TEXTBOX"><DEFAULT><![CDATA[If you have made a purchase at this web site or have subscribed to this store's mailing list, please choose this option]]></DEFAULT>
+<ELEMENT ID="OLDCUSTOMERTEXT" WIKI="3" LENGTH="10" EDITOR="INLINE" DATA="page:old_customer_text" SUB="PAGE_REGCUSTOMER_TEXT" PROMPT="Text that appears just above the registered customer checkout button" TYPE="TEXTBOX"><DEFAULT><![CDATA[If you have made a purchase at this web site or have subscribed to this store's mailing list, please choose this option]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="FEATUREDTITLE" WIKI="3" MAXLENGTH="40" EDITOR="INLINE" DATA="page:featured" PROMPT="Product list 1 header" SUB="PAGE_PRODLIST_TITLE" DEFAULT="You may also like " TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="PRODLIST1" SIZE="20" MAX="4" ALTERNATE="3" MULTIPAGE="0" EDITOR="INLINE" DATA="page:prodlist" COLS="4" FORMAT="CUSTOM" SMARTSOURCE="CHOOSE" PROMPT="Product List 1" SUB="PAGE_PRODLIST" TYPE="PRODLIST"><HTML><![CDATA[
+<ELEMENT ID="FEATUREDTITLE" WIKI="3" MAXLENGTH="40" EDITOR="INLINE" DATA="page:featured" SUB="PAGE_PRODLIST_TITLE" PROMPT="Product list 1 header" DEFAULT="You may also like " TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT SIZE="20" ID="PRODLIST1" MAX="4" ALTERNATE="3" MULTIPAGE="0" EDITOR="INLINE" DATA="page:prodlist" COLS="4" FORMAT="CUSTOM" SMARTSOURCE="CHOOSE" SUB="PAGE_PRODLIST" PROMPT="Product List 1" TYPE="PRODLIST"><HTML><![CDATA[
 
 <div style='margin-top:20px;'>
 <%
@@ -256,11 +256,11 @@ print(); %></a></div>
 ]]></HTML>
 <BLANK><![CDATA[<td width='25%'></td>]]></BLANK>
 </ELEMENT>
-<ELEMENT ID="BOTTOMTEXT" WIKI="3" EDITOR="INLINE" DATA="page:bottomtext" PROMPT="Bottom Text" SUB="PAGE_BOTTOMTEXT" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="BOTTOMTEXT" WIKI="3" EDITOR="INLINE" DATA="page:bottomtext" SUB="PAGE_BOTTOMTEXT" PROMPT="Bottom Text" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='zborder' style='margin-top:10px; padding-top:10px; border-left:0px; border-right:0px; border-bottom:0px;' class='ztxt' >]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="FEATUREDTITLE2" WIKI="3" MAXLENGTH="40" EDITOR="INLINE" DATA="page:featured2" PROMPT="Product list 2 header" SUB="PAGE_PRODLIST_TITLE2" DEFAULT="These items go great " TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="PRODLIST2" SIZE="20" MAX="4" SHOWDEFAULT="0" MULTIPAGE="0" ALTERNATE="3" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="4" FORMAT="CUSTOM" SMARTSOURCE="CHOOSE" PROMPT="Product List 2" SUB="PAGE_PRODLIST2" TYPE="PRODLIST" DISABLEPRODUCTS="1"><BLANK><![CDATA[<td width='25%'></td>]]></BLANK>
+<ELEMENT ID="FEATUREDTITLE2" WIKI="3" MAXLENGTH="40" EDITOR="INLINE" DATA="page:featured2" SUB="PAGE_PRODLIST_TITLE2" PROMPT="Product list 2 header" DEFAULT="These items go great " TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT SIZE="20" ID="PRODLIST2" MAX="4" SHOWDEFAULT="0" MULTIPAGE="0" ALTERNATE="3" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="4" FORMAT="CUSTOM" SMARTSOURCE="CHOOSE" PROMPT="Product List 2" SUB="PAGE_PRODLIST2" TYPE="PRODLIST" DISABLEPRODUCTS="1"><BLANK><![CDATA[<td width='25%'></td>]]></BLANK>
 <HTML><![CDATA[
 
 <div style='margin-top:20px;'>
@@ -297,8 +297,8 @@ print(); %></a></div>
 <!-- /product list -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="FEATUREDTITLE3" WIKI="3" MAXLENGTH="40" EDITOR="INLINE" DATA="page:featured3" PROMPT="Product list 3 header" SUB="PAGE_PRODLIST_TITLE3" DEFAULT="Similar Items" TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="PRODLIST3" SIZE="20" MAX="4" SHOWDEFAULT="0" MULTIPAGE="0" ALTERNATE="3" EDITOR="INLINE" DATA="page:prodlist3_custom" COLS="4" FORMAT="CUSTOM" SMARTSOURCE="CHOOSE" SUB="PAGE_PRODLIST3" PROMPT="Product List 3" TYPE="PRODLIST" DISABLEPRODUCTS="1"><BLANK><![CDATA[<td width='25%'></td>]]></BLANK>
+<ELEMENT ID="FEATUREDTITLE3" WIKI="3" MAXLENGTH="40" EDITOR="INLINE" DATA="page:featured3" SUB="PAGE_PRODLIST_TITLE3" PROMPT="Product list 3 header" DEFAULT="Similar Items" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT SIZE="20" ID="PRODLIST3" MAX="4" SHOWDEFAULT="0" MULTIPAGE="0" ALTERNATE="3" EDITOR="INLINE" DATA="page:prodlist3_custom" COLS="4" FORMAT="CUSTOM" SMARTSOURCE="CHOOSE" SUB="PAGE_PRODLIST3" PROMPT="Product List 3" TYPE="PRODLIST" DISABLEPRODUCTS="1"><BLANK><![CDATA[<td width='25%'></td>]]></BLANK>
 <HTML><![CDATA[
 
 <div style='margin-top:20px;'>
@@ -335,12 +335,12 @@ print(); %></a></div>
 <!-- /product list -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Link for right side banner #1" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT ID="BANNER1" EDITOR="INLINE" DATA="page:banner1" WIDTH="170" PROMPT="Right side banner #1" SUB="PAGE_BANNER1" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for right side banner #1" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER1" EDITOR="INLINE" DATA="page:banner1" SUB="PAGE_BANNER1" PROMPT="Right side banner #1" WIDTH="170" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" PROMPT="Link for right side banner #2" SUB="PAGE_BANNER2_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT ID="BANNER2" EDITOR="INLINE" DATA="page:banner2" WIDTH="170" PROMPT="Right side banner #2" SUB="PAGE_BANNER2" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
+<ELEMENT ID="BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" SUB="PAGE_BANNER2_LINK" PROMPT="Link for right side banner #2" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER2" EDITOR="INLINE" DATA="page:banner2" SUB="PAGE_BANNER2" PROMPT="Right side banner #2" WIDTH="170" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CUWUNZJ" TYPE="SPECL"><HTML><![CDATA[

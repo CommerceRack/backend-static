@@ -15,14 +15,14 @@
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="RIGHT_SIDE1" HEIGHT="150" EDITOR="INLINE" DATA="page:banner_top" WIDTH="600" PROMPT="Banner: top" TYPE="BANNER" BGCOLOR="FFFFFF"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT HEIGHT="150" ID="RIGHT_SIDE1" EDITOR="INLINE" DATA="page:banner_top" PROMPT="Banner: top" WIDTH="600" BGCOLOR="FFFFFF" TYPE="BANNER"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='banner elementMargin'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description (keep this short)" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description (keep this short)" TYPE="TEXT" FONT="0"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div class='ztxt elementMargin'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="DGDFKQB" SIZE="500" MAX="500" MULTIPAGE="0" SHOWQUANTITY="1" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" DEFAULT="&amp;ALTERNATE=1" TYPE="PRODLIST"><HTML><![CDATA[
+<ELEMENT SIZE="500" ID="DGDFKQB" MAX="500" MULTIPAGE="0" SHOWQUANTITY="1" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" DEFAULT="&amp;ALTERNATE=1" TYPE="PRODLIST"><HTML><![CDATA[
 
 
 
@@ -131,7 +131,7 @@ stop(unless=>$_);
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION2" WIKI="3" EDITOR="INLINE" DATA="page:description2" PROMPT="Text Description" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<ELEMENT ID="DESCRIPTION2" WIKI="3" EDITOR="INLINE" DATA="page:description2" PROMPT="Text Description" TYPE="TEXT" FONT="0"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div class='ztxt elementMargin'>]]></PRETEXT>
 </ELEMENT>

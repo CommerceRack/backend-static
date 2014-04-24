@@ -160,8 +160,8 @@ Privacy Statement
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DAEIORY" EDITOR="INLINE" DATA="page:banner1_link" SUB="NEWS_BANNER1_LINK" PROMPT="Destination url for banner (when clicked)" DEFAULT="%HOME_URL%" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT ID="DAEIORZ" HEIGHT="600" EDITOR="INLINE" DATA="page:banner1" WIDTH="600" PROMPT="Banner (600 x 600)" TYPE="IMAGE" BGCOLOR="FFFFFF"><POSTTEXT><![CDATA[
+<ELEMENT ID="DAEIORY" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Destination url for banner (when clicked)" SUB="NEWS_BANNER1_LINK" DEFAULT="%HOME_URL%" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT HEIGHT="600" ID="DAEIORZ" EDITOR="INLINE" DATA="page:banner1" PROMPT="Banner (600 x 600)" WIDTH="600" BGCOLOR="FFFFFF" TYPE="IMAGE"><POSTTEXT><![CDATA[
 </a>
 </div>]]></POSTTEXT>
 <PRETEXT><![CDATA[
@@ -169,7 +169,7 @@ Privacy Statement
 <a href="%NEWS_BANNER1_LINK%?%TRACKING%">
 ]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Block" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Block" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
 
 <div style='margin:3px 0 1px 0; border-bottom:2px solid #EFEFEF; padding-bottom:3px; font-size:13px;'>
 

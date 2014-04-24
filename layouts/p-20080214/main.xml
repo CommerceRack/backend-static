@@ -81,12 +81,12 @@ print("' type='hidden'>
 ");
 %>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SEARCH_CATALOG_CHOOSER" EDITOR="INLINE" DATA="profile:zoovy:layout_p_mfg_catalog" HELPER="Be sure to set your catalog to all upper case.  Set to DEFAULT if you don't know what this is." PROMPT="Search Catalog" SUB="SEARCHCATALOG" FONT="0" TYPE="SELECT" LIST="@SYSTEM.SEARCHCATALOGS"></ELEMENT>
-<ELEMENT ID="REVIEWS_ICON_CHOOSER" EDITOR="INLINE" DATA="profile:zoovy:prod_reviews_icon" RAW="1" VALUE="colored_stars" PROMPT="Reviews Icon (global)" SUB="NOT_USED" DEFAULT="colored_stars" FONT="0" TYPE="SELECT" LIST="REVIEW_ICONS"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages. 'colored' implies that the icons adopt color properties from your store.]]></HELP>
+<ELEMENT ID="SEARCH_CATALOG_CHOOSER" EDITOR="INLINE" DATA="profile:zoovy:layout_p_mfg_catalog" SUB="SEARCHCATALOG" PROMPT="Search Catalog" HELPER="Be sure to set your catalog to all upper case.  Set to DEFAULT if you don't know what this is." TYPE="SELECT" FONT="0" LIST="@SYSTEM.SEARCHCATALOGS"></ELEMENT>
+<ELEMENT ID="REVIEWS_ICON_CHOOSER" EDITOR="INLINE" DATA="profile:zoovy:prod_reviews_icon" RAW="1" VALUE="colored_stars" SUB="NOT_USED" PROMPT="Reviews Icon (global)" DEFAULT="colored_stars" TYPE="SELECT" FONT="0" LIST="REVIEW_ICONS"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages. 'colored' implies that the icons adopt color properties from your store.]]></HELP>
 </ELEMENT>
-<ELEMENT ID="PROD_DESC" EDITOR="INLINE" DATA="product:zoovy:prod_desc" SUB="PROD_DESC" PROMPT="Product Description" FONT="0" TYPE="TEXT"></ELEMENT>
-<ELEMENT ID="PROD_DETAIL" EDITOR="INLINE" DATA="product:zoovy:prod_detail" SUB="PROD_SPECS" PROMPT="Product Specifications" FONT="0" TYPE="TEXT"></ELEMENT>
-<ELEMENT ID="PROD_FEATURES" EDITOR="INLINE" DATA="product:zoovy:prod_features" SUB="PROD_FEATURES" PROMPT="Product Features" FONT="0" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="PROD_DESC" EDITOR="INLINE" DATA="product:zoovy:prod_desc" PROMPT="Product Description" SUB="PROD_DESC" TYPE="TEXT" FONT="0"></ELEMENT>
+<ELEMENT ID="PROD_DETAIL" EDITOR="INLINE" DATA="product:zoovy:prod_detail" PROMPT="Product Specifications" SUB="PROD_SPECS" TYPE="TEXT" FONT="0"></ELEMENT>
+<ELEMENT ID="PROD_FEATURES" EDITOR="INLINE" DATA="product:zoovy:prod_features" PROMPT="Product Features" SUB="PROD_FEATURES" TYPE="TEXT" FONT="0"></ELEMENT>
 <ELEMENT ID="CVZLSWK" SUB="PROD_TABS" TYPE="SPECL"><HTML><![CDATA[
 <%
 /* This code will generate the tabs for each section ONLY if that data field has content */
@@ -335,7 +335,7 @@ load($RATINGDECIMAL); format(posttext=>"/5"); print();
 <!-- /DETAIL -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST1" SIZE="5000" MAX="25" ALTERNATE="1" MULTIPAGE="0" SHOWDEFAULT="0" EDITOR="INLINE" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Accessories" SUB="PROD_ACCESSORIES" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<ELEMENT SIZE="5000" ID="PRODLIST1" MAX="25" ALTERNATE="1" MULTIPAGE="0" SHOWDEFAULT="0" EDITOR="INLINE" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Accessories" SUB="PROD_ACCESSORIES" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[
 <div style='margin-bottom:10px;'>
 <table border="0" cellpadding="2" cellspacing="0" width="100%">
 <tr>
@@ -367,8 +367,8 @@ load($zoovy:base_price); format(hidezero); format(money); format(pretext=>"<div 
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CWFNFET" MAXLENGTH="25" EDITOR="INLINE" DATA="profile:zoovy:layout_p_related_header" PROMPT="Related Items Header (short - no html - global - 25 character max)" DEFAULT="You May Also Like" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT ID="PRODLIST_RELATED" SIZE="5000" MAX="4" ALTERNATE="0" EDITOR="INLINE" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List: related items" SUB="PROD_PRODLIST_RELATED" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<ELEMENT ID="CWFNFET" MAXLENGTH="25" EDITOR="INLINE" DATA="profile:zoovy:layout_p_related_header" PROMPT="Related Items Header (short - no html - global - 25 character max)" DEFAULT="You May Also Like" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT SIZE="5000" ID="PRODLIST_RELATED" MAX="4" ALTERNATE="0" EDITOR="INLINE" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" SUB="PROD_PRODLIST_RELATED" PROMPT="Product List: related items" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
 
 	<td valign='top' class='ztable_row' width='20%'>
 <div style='margin-left:10px;' class='no_underline'>

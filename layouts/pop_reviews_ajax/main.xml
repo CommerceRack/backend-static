@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="MYCONFIG" V="3" CREATED="00000000" IMAGES="0" EXPORT="0" TYPE="CONFIG" TITLE="Popup Layout: Reviews"><SUMMARY><![CDATA[This is a popup page layout with ajax 'product reviews' built into it.  It's ajax because currently there is no non-ajax way to do this.]]></SUMMARY>
+<ELEMENT ID="MYCONFIG" V="3" CREATED="00000000" IMAGES="0" TYPE="CONFIG" EXPORT="0" TITLE="Popup Layout: Reviews"><SUMMARY><![CDATA[This is a popup page layout with ajax 'product reviews' built into it.  It's ajax because currently there is no non-ajax way to do this.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CPVRQDV" RAW="1" SUB="GRAPHICS_URL" TYPE="READONLY" LOAD="URL::GRAPHICS_URL"></ELEMENT>
 <ELEMENT ID="CRLXBDG" RAW="1" SUB="CUSTOMER_FIRSTNAME" TYPE="READONLY" POSTTEXT=" " LOAD="CART::data.bill_firstname"></ELEMENT>

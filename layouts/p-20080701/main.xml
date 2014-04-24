@@ -81,10 +81,10 @@ print("' type='hidden'>
 ");
 %>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SEARCH_CATALOG_CHOOSER" HELPER="Be sure to set your catalog to all upper case.  Set to DEFAULT if you don't know what this is." PROMPT="Search Catalog" FONT="0" TYPE="SELECT" EDITOR="INLINE" LIST="@SYSTEM.SEARCHCATALOGS" DATA="profile:zoovy:layout_p_mfg_catalog" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT ID="REVIEWS_ICON_CHOOSER" VALUE="colored_stars" PROMPT="Reviews Icon (global)" SUB="NOT_USED" DEFAULT="colored_stars" FONT="0" TYPE="SELECT" EDITOR="INLINE" LIST="REVIEW_ICONS" DATA="profile:zoovy:prod_reviews_icon" RAW="1"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages. 'colored' implies that the icons adopt color properties from your store.]]></HELP>
+<ELEMENT ID="SEARCH_CATALOG_CHOOSER" PROMPT="Search Catalog" HELPER="Be sure to set your catalog to all upper case.  Set to DEFAULT if you don't know what this is." TYPE="SELECT" FONT="0" EDITOR="INLINE" LIST="@SYSTEM.SEARCHCATALOGS" DATA="profile:zoovy:layout_p_mfg_catalog" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="REVIEWS_ICON_CHOOSER" VALUE="colored_stars" SUB="NOT_USED" PROMPT="Reviews Icon (global)" DEFAULT="colored_stars" TYPE="SELECT" FONT="0" EDITOR="INLINE" LIST="REVIEW_ICONS" DATA="profile:zoovy:prod_reviews_icon" RAW="1"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages. 'colored' implies that the icons adopt color properties from your store.]]></HELP>
 </ELEMENT>
-<ELEMENT ID="PROD_DESC" WIKI="3" SUB="PROD_DESC" PROMPT="Product Description" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="product:zoovy:prod_desc"><POSTTEXT><![CDATA[</div>
+<ELEMENT ID="PROD_DESC" WIKI="3" PROMPT="Product Description" SUB="PROD_DESC" TYPE="TEXT" FONT="0" EDITOR="INLINE" DATA="product:zoovy:prod_desc"><POSTTEXT><![CDATA[</div>
 </div>
 
 ]]></POSTTEXT>
@@ -94,7 +94,7 @@ print("' type='hidden'>
 	<div class='ztitle2'>Product Description</div>
 	<div class='ztxt' style='margin-top:3px;'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PROD_DETAIL" WIKI="3" SUB="PROD_SPECS" PROMPT="Product Specifications" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="product:zoovy:prod_detail"><POSTTEXT><![CDATA[</div>
+<ELEMENT ID="PROD_DETAIL" WIKI="3" PROMPT="Product Specifications" SUB="PROD_SPECS" TYPE="TEXT" FONT="0" EDITOR="INLINE" DATA="product:zoovy:prod_detail"><POSTTEXT><![CDATA[</div>
 </div>
 
 ]]></POSTTEXT>
@@ -104,7 +104,7 @@ print("' type='hidden'>
 	<div class='ztitle2'>Product Specifications</div>
 	<div class='ztxt' style='margin-top:3px;'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PROD_FEATURES" WIKI="3" SUB="PROD_FEATURES" PROMPT="Product Features" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="product:zoovy:prod_features"><POSTTEXT><![CDATA[</div>
+<ELEMENT ID="PROD_FEATURES" WIKI="3" PROMPT="Product Features" SUB="PROD_FEATURES" TYPE="TEXT" FONT="0" EDITOR="INLINE" DATA="product:zoovy:prod_features"><POSTTEXT><![CDATA[</div>
 </div>
 
 ]]></POSTTEXT>
@@ -258,7 +258,7 @@ goto(label=>"BLANK",eq=>"");
 %>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRICE" FORMAT="PLAINPRICE" SUB="PROD_PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price" RAW="1"><PRETEXT><![CDATA[<div id='prodPriceElement' class='ztxt' style='margin-top:10px;'>only: <span class='ztitle2'>$]]></PRETEXT>
+<ELEMENT FORMAT="PLAINPRICE" ID="PRICE" SUB="PROD_PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price" RAW="1"><PRETEXT><![CDATA[<div id='prodPriceElement' class='ztxt' style='margin-top:10px;'>only: <span class='ztitle2'>$]]></PRETEXT>
 <POSTTEXT><![CDATA[</span></div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CVZLSWM" SUB="PROD_ADDTOCART" TYPE="ADDTOCART" SHOWQUANTITY="Qty: " FORM="0"></ELEMENT>
@@ -298,7 +298,7 @@ load($RATINGDECIMAL); format(posttext=>"/5"); print();
 <!-- /DETAIL -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST1" SIZE="5000" MAX="10" ALTERNATE="1" MULTIPAGE="0" SHOWDEFAULT="0" EDITOR="INLINE" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" SUB="PROD_PRODLIST_ACCESSORIES" PROMPT="Accessories" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="PRODUCT:zoovy:accessory_products"><HTML><![CDATA[
+<ELEMENT SIZE="5000" ID="PRODLIST1" MAX="10" ALTERNATE="1" MULTIPAGE="0" SHOWDEFAULT="0" EDITOR="INLINE" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Accessories" SUB="PROD_PRODLIST_ACCESSORIES" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[
 <div style='margin-top:10px;'>
 <div class='ztitle2'>These Items Go Great</div>
 <table border="0" cellpadding="5" cellspacing="0" width="100%">
@@ -335,8 +335,8 @@ load($zoovy:base_price); format(hidezero); format(money); format(pretext=>"<div 
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CWFNFET" MAXLENGTH="35" EDITOR="INLINE" DATA="profile:zoovy:layout_p_related_header" PROMPT="Related Items Header (short - no html - global - 35 character max)" DEFAULT="You May Also Like" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT ID="PRODLIST_RELATED" SIZE="5000" MAX="4" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="product:zoovy:prod_prodlist_style" COLS="4" FORMAT="CUSTOM" PROMPT="Product List: related items" SUB="PROD_PRODLIST_RELATED" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<ELEMENT ID="CWFNFET" MAXLENGTH="35" EDITOR="INLINE" DATA="profile:zoovy:layout_p_related_header" PROMPT="Related Items Header (short - no html - global - 35 character max)" DEFAULT="You May Also Like" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT SIZE="5000" ID="PRODLIST_RELATED" MAX="4" MULTIPAGE="0" ALTERNATE="0" EDITOR="INLINE" DATA="product:zoovy:prod_prodlist_style" COLS="4" FORMAT="CUSTOM" SUB="PROD_PRODLIST_RELATED" PROMPT="Product List: related items" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
 
 <div style='margin-top:10px;'>
 <div style='text-transform:capitalize; margin-bottom:3px;' class='ztitle2'>

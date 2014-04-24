@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMRW" FORMAT="LAYOUT" CREATOR="STAFF" TYPE="CONFIG" TITLE="Customizable Fields" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="P" SERIES="2002" RELEASED="20021205"><SUMMARY><![CDATA[
+<ELEMENT FORMAT="LAYOUT" ID="CPUKMRW" CREATOR="STAFF" TYPE="CONFIG" IMAGES="1" CREATED="00000000" TITLE="Customizable Fields" PROPERTIES="1" SUBTYPE="P" RELEASED="20021205" SERIES="2002"><SUMMARY><![CDATA[
  MSRP
 Default Description (shared)
 Detailed Product Description
@@ -36,7 +36,7 @@ function zoom (url) {
       <td valign=top width="220">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="IMAGE" WIDTH="200" PROMPT="Image 1" DEFAULT="" TYPE="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1"></ELEMENT>
+<ELEMENT ID="IMAGE" HEIGHT="200" PROMPT="Image 1" WIDTH="200" DEFAULT="" TYPE="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1"></ELEMENT>
 <ELEMENT ID="CPUKMRZ" TYPE="OUTPUT"><HTML><![CDATA[ 
     </td>
     <td valign="top"> 
@@ -69,7 +69,7 @@ function zoom (url) {
 </strong>  &nbsp;&nbsp;
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRICE" FORMAT="PLAINPRICE" TYPE="READONLY" ERROR="Not Set!" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT FORMAT="PLAINPRICE" ID="PRICE" TYPE="READONLY" ERROR="Not Set!" LOAD="product:zoovy:base_price"></ELEMENT>
 <ELEMENT ID="CPUKMSF" TYPE="OUTPUT"><HTML><![CDATA[<br>
     </td>
 

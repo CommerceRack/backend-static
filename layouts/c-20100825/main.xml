@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CYVZOZP" CREATED="20100825" SUBTYPE="C" AUTHOR="Zoovy" EXPORT="0" TYPE="CONFIG" TITLE="Big category thumbs and some featured products" RELEASED="20100825"><SUMMARY><![CDATA[This layout is intended to feature categories and display some featured product. It contains a banner at the top followed by category thumbnails and names in a three column format.  Below that is a text block, then some featured items, followed by another text block. Note - the product list has multipage disabled.]]></SUMMARY>
+<ELEMENT ID="CYVZOZP" CREATED="20100825" SUBTYPE="C" AUTHOR="Zoovy" TYPE="CONFIG" EXPORT="0" TITLE="Big category thumbs and some featured products" RELEASED="20100825"><SUMMARY><![CDATA[This layout is intended to feature categories and display some featured product. It contains a banner at the top followed by category thumbnails and names in a three column format.  Below that is a text block, then some featured items, followed by another text block. Note - the product list has multipage disabled.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
 <ELEMENT ID="DCYFJGB" TYPE="HIDDEN" OUTPUTSKIP="4096"><DEFAULT><![CDATA[
@@ -19,7 +19,7 @@
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="TOP_WIDE_BANNER1" HEIGHT="100" EDITOR="INLINE" DATA="page:widebanner_top1" PROMPT="Banner: wide at top of page" WIDTH="600" TYPE="BANNER"><PRETEXT><![CDATA[<div style='margin-bottom:15px;' align='center'>]]></PRETEXT>
+<ELEMENT HEIGHT="100" ID="TOP_WIDE_BANNER1" EDITOR="INLINE" DATA="page:widebanner_top1" WIDTH="600" PROMPT="Banner: wide at top of page" TYPE="BANNER"><PRETEXT><![CDATA[<div style='margin-bottom:15px;' align='center'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="SUBCATEGORIES" DESCENDTREE="0" DATA="page:subcat" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="3"><HTML><![CDATA[
@@ -45,11 +45,11 @@
 </table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" TYPE="TEXT" FONT="0"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:15px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST1_HEADER" WIKI="3" MAXLENGTH="35" EDITOR="INLINE" DATA="page:prodlist1_header" SUB="PAGE_PRODLIST_HEADER" PROMPT="Product List 1 Header" DEFAULT="Featured Items" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="PRODLIST1_HEADER" WIKI="3" MAXLENGTH="35" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List 1 Header" SUB="PAGE_PRODLIST_HEADER" DEFAULT="Featured Items" FONT="0" TYPE="TEXTBOX"></ELEMENT>
 <ELEMENT ID="PRODLIST" MAX="30" MULTIPAGE="0" DATA="page:prodlist_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
 
 <!-- product list -->
@@ -95,7 +95,7 @@ print();
 <!-- /product list -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION2" WIKI="3" EDITOR="INLINE" DATA="page:description2" PROMPT="Text Description (bottom)" TYPE="TEXT" FONT="0"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<ELEMENT ID="DESCRIPTION2" WIKI="3" EDITOR="INLINE" DATA="page:description2" PROMPT="Text Description (bottom)" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:15px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
 </ELEMENT>

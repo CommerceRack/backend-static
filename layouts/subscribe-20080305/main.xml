@@ -2,9 +2,9 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CWJIBPI" TYPE="CONFIG" EXPORT="0" TITLE="Subscribe: Text and form"></ELEMENT>
+<ELEMENT ID="CWJIBPI" EXPORT="0" TYPE="CONFIG" TITLE="Subscribe: Text and form"></ELEMENT>
 <ELEMENT ID="CWJIBPJ" SUB="SUBSCRIBE_URL" TYPE="READONLY" LOAD="URL::SUBSCRIBE_URL"></ELEMENT>
-<ELEMENT ID="CWJIBPK" WIKI="3" DATA="page:description" PROMPT="Newsletter Message" SUB="PAGE_SUBSCRIBE_WELCOME" DEFAULT="To get updates about our store, please subscribe to our mailing list below." TYPE="TEXT" FONT="0"></ELEMENT>
+<ELEMENT ID="CWJIBPK" WIKI="3" DATA="page:description" SUB="PAGE_SUBSCRIBE_WELCOME" PROMPT="Newsletter Message" DEFAULT="To get updates about our store, please subscribe to our mailing list below." FONT="0" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CWJIBPL" SUB="SUBSCRIBE_BODY" TYPE="SPECL"><HTML><![CDATA[
 
 <div id='subscribe-20080305' style='text-align:left;'>

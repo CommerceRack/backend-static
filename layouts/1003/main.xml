@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLXN" CREATOR="STAFF" CREATED="00000000" IMAGES="3" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" SHORT="This layout features three 180x180 pictures, along with a short description. " TYPE="CONFIG" TITLE="Triple Picture" RELEASED="20020618"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKLXN" CREATOR="STAFF" IMAGES="3" CREATED="00000000" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" SHORT="This layout features three 180x180 pictures, along with a short description. " TYPE="CONFIG" TITLE="Triple Picture" RELEASED="20020618"><SUMMARY><![CDATA[
 Category Description
 IMAGE1 (180  x180 )
 IMAGE2 (180  x180 )
@@ -28,21 +28,21 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180 " ID="IMAGE1" HELP="Please enter the first picture." ZOOM="1 " DATA="page:picture1" WIDTH="180  " PROMPT="Image1 180 x 180 " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="180 " HELP="Please enter the first picture." ZOOM="1 " DATA="page:picture1" PROMPT="Image1 180 x 180 " WIDTH="180  " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLXP" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td><td align=center width="180">
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180 " ID="IMAGE2" HELP="Please enter a second picture." ZOOM="1 " DATA="page:picture2" WIDTH="180  " PROMPT="Image2 180 x 180 " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="180 " HELP="Please enter a second picture." ZOOM="1 " DATA="page:picture2" PROMPT="Image2 180 x 180 " WIDTH="180  " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLXQ" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td><td align=center width="180">
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180 " ID="IMAGE3" HELP="Please enter a third picture." ZOOM="1 " DATA="page:picture3" WIDTH="180  " PROMPT="Image3 180 x 180 " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE3" HEIGHT="180 " HELP="Please enter a third picture." ZOOM="1 " DATA="page:picture3" PROMPT="Image3 180 x 180 " WIDTH="180  " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLXR" TYPE="OUTPUT"><HTML><![CDATA[
 
 
@@ -53,7 +53,7 @@ function zoom (url) {
 <p>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Category Description" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" HELPER="Remember to keep this text short and to the point.  " DEFAULT="" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKLXS" TYPE="OUTPUT"><HTML><![CDATA[
  
 <p>

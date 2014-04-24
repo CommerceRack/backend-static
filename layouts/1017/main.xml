@@ -8,14 +8,14 @@
         <tr>
                 <td align="center" width="560">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="180" HELP="Please enter the main picture for your homepage." DATA="merchant:zoovy:homepage_picture" PROMPT="Image1 180 x 180" WIDTH="180" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="180" ID="IMAGE1" HELP="Please enter the main picture for your homepage." DATA="merchant:zoovy:homepage_picture" WIDTH="180" PROMPT="Image1 180 x 180" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMLO" TYPE="OUTPUT"><HTML><![CDATA[
 <br><br>
 </td></tr>
 <tr><td>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" HELPER="Remember to keep this text short and to the point.  " DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Category Description" DEFAULT="" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKMLP" TYPE="OUTPUT"><HTML><![CDATA[
 <p>
  

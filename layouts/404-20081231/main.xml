@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLTI" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Big Picture" RELEASED="20020618"><SUMMARY><![CDATA[Bold Welcome Message
+<ELEMENT ID="CPUKLTI" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Big Picture" RELEASED="20020618"><SUMMARY><![CDATA[Bold Welcome Message
 IMAGEe (400x200)
 Product Listing
 Welcome Message
@@ -16,7 +16,7 @@ Welcome Message
 <center>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="HOMEPAGE_PIC" HEIGHT="200" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" PROMPT="Front Page Picture" WIDTH="400" DEFAULT="https://static.zoovy.com/img/H200-W400-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="HOMEPAGE_PIC" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" WIDTH="400" PROMPT="Front Page Picture" DEFAULT="https://static.zoovy.com/img/H200-W400-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLTK" TYPE="OUTPUT"><HTML><![CDATA[
 <center>
 		</td>

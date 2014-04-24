@@ -151,14 +151,14 @@ stop(unless=>$_);
 <!-- /ROW -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="MIDDLE_OF_PAGE" HEIGHT="150" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_top" WIDTH="780" PROMPT="Banner: below featured item" TYPE="BANNER" BGCOLOR="TTTTTT"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT HEIGHT="150" ID="MIDDLE_OF_PAGE" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_top" PROMPT="Banner: below featured item" WIDTH="780" BGCOLOR="TTTTTT" TYPE="BANNER"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='banner elementMargin center'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description (keep this short)" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description (keep this short)" TYPE="TEXT" FONT="0"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div class='ztxt elementMargin'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST_CONT" MAX="12" MULTIPAGE="0" DATA="page:prodlist_custom" COLS="4" FORMAT="CUSTOM" PROMPT="Product List" HELPER="Multipage is disabled for this product list. A max of 12 items will show up." PRODUCTS_SKIP="1" DEFAULT="&amp;ALTERNATE=3" TYPE="PRODLIST"><HTML><![CDATA[
+<ELEMENT ID="PRODLIST_CONT" MAX="12" MULTIPAGE="0" DATA="page:prodlist_custom" COLS="4" FORMAT="CUSTOM" HELPER="Multipage is disabled for this product list. A max of 12 items will show up." PROMPT="Product List" DEFAULT="&amp;ALTERNATE=3" PRODUCTS_SKIP="1" TYPE="PRODLIST"><HTML><![CDATA[
 
 <div id='prodlistMoreItems' class='prodlist4Columns elementMargin'>
 
@@ -234,7 +234,7 @@ goto(label=>"HASPOGSORCHILDREN",eq=>"PARENT");
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION2" WIKI="3" EDITOR="INLINE" DATA="page:description2" PROMPT="Text Description" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<ELEMENT ID="DESCRIPTION2" WIKI="3" EDITOR="INLINE" DATA="page:description2" PROMPT="Text Description" TYPE="TEXT" FONT="0"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div class='ztxt elementMargin'>]]></PRETEXT>
 </ELEMENT>

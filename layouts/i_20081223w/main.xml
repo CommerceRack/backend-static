@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNKN" IMAGES="1" CREATED="20081223" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" SHORT="A simple email template with one big banner, followed by a product list, then text" TYPE="CONFIG" TITLE="Big banner and product list  (wiki friendly)" NEWSLETTER="1" RELEASED="20081223"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKNKN" CREATED="20081223" IMAGES="1" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" SHORT="A simple email template with one big banner, followed by a product list, then text" TYPE="CONFIG" TITLE="Big banner and product list  (wiki friendly)" NEWSLETTER="1" RELEASED="20081223"><SUMMARY><![CDATA[
 Header
 Banner
 Product List with custom header
@@ -41,15 +41,15 @@ Text
 </ELEMENT>
 <ELEMENT ID="CQHREXT" SUB="/title2" TYPE="HIDDEN"><DEFAULT><![CDATA[</div>]]></DEFAULT>
 </ELEMENT>
-<ELEMENT HEIGHT="85" ID="CVPKKKP" MINIMAL_MODE="1" WIDTH="300" SUB="NEWS_LOGO" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
-<ELEMENT ID="CYMRFOG" EDITOR="INLINE" DATA="page:banner1_link" SUB="NEWS_BANNER1_LINK" PROMPT="Link for main banner" DEFAULT="%CART%/" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT ID="CYMRFOH" HEIGHT="400" EDITOR="INLINE" DATA="page:banner1" WIDTH="600" PROMPT="Main banner (600 x 400)" SUB="NEWS_BANNER1" TYPE="IMAGE" BGCOLOR="FFFFFF"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<ELEMENT ID="CVPKKKP" HEIGHT="85" MINIMAL_MODE="1" SUB="NEWS_LOGO" WIDTH="300" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="CYMRFOG" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Link for main banner" SUB="NEWS_BANNER1_LINK" DEFAULT="%CART%/" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT HEIGHT="400" ID="CYMRFOH" EDITOR="INLINE" DATA="page:banner1" SUB="NEWS_BANNER1" PROMPT="Main banner (600 x 400)" WIDTH="600" BGCOLOR="FFFFFF" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div align='center'><a href="%NEWS_BANNER1_LINK%?%TRACKING%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PL_HEADER" MAXLENGTH="45" EDITOR="INLINE" DATA="page:email_header" PROMPT="Product list header (only shows up if products are present)" SUB="NEWS_PL_HEADER" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="PL_HEADER" MAXLENGTH="45" EDITOR="INLINE" DATA="page:email_header" SUB="NEWS_PL_HEADER" PROMPT="Product list header (only shows up if products are present)" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style='font-size:18px; margin-bottom:4px; color:#CC6600;' align='center'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST" MAX="40" ALTERNATE="0" MULTIPAGE="0" EDITOR="INLINE" DATA="page:prodlist1" COLS="4" FORMAT="CUSTOM" SUB="NEWS_PRODLIST" PROMPT="Product List" TYPE="PRODLIST" SRC="page:prodlist1_stuff"><HTML><![CDATA[<!-- product list -->
+<ELEMENT ID="PRODLIST" MAX="40" ALTERNATE="0" MULTIPAGE="0" EDITOR="INLINE" DATA="page:prodlist1" COLS="4" FORMAT="CUSTOM" PROMPT="Product List" SUB="NEWS_PRODLIST" TYPE="PRODLIST" SRC="page:prodlist1_stuff"><HTML><![CDATA[<!-- product list -->
 <div style='margin-top:20px;'>
 %NEWS_PL_HEADER%
 <table border='0' cellpadding='0' cellspacing='0' align='center'>
@@ -88,7 +88,7 @@ height='1' width='20' alt=''></td>
 
 ]]></DIVIDER>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Block" SUB="NEWS_TEXT" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="NEWS_TEXT" PROMPT="Text Block" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area -->
 <div style='margin:20px 0px; font-size:11px; color:#333333; width:auto;'>]]></PRETEXT>
 </ELEMENT>

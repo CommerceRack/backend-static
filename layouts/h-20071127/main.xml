@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT SUMMARY="" ID="PAGE_CSPDWSN" CREATOR="Zoovy: JT" V="3" CREATED="20071127" SUBTYPE="H" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Banners, finder, 2 product lists and text"></ELEMENT>
+<ELEMENT ID="PAGE_CSPDWSN" SUMMARY="" CREATOR="Zoovy: JT" V="3" CREATED="20071127" SUBTYPE="H" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Banners, finder, 2 product lists and text"></ELEMENT>
 <ELEMENT ID="UIONLYINSTRUCTIONS" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
 <p><b>Multiple Product Lists:</b>  For instructions on how to select different product lists for each of the list elements, visit: <ul style="margin-top:4px;"> <a href="http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361" target="webdoc">http://www.zoovy.com/webdoc/index.cgi?VERB=DOC&DOCID=50361</a></ul></p>
 
@@ -10,10 +10,10 @@
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CVQTPAD" HEIGHT="250" EDITOR="INLINE" DATA="page:dynimage1" PROMPT="SlideShow" WIDTH="600" SUB="PAGE_SLIDESHOW" TYPE="DYNIMAGE"></ELEMENT>
-<ELEMENT ID="FINDER_HEAD" MAXLENGTH="35" EDITOR="INLINE" DATA="page:finder_header" PROMPT="Short heading for the finder form (will only appear if finder is enabled)" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"><SUMMARY><![CDATA[This layout features a slideshow element at the top, followed by a finder (advanced search). Below that is a two item product list and a newsletter subscription box.  To the right is a set of three linkable banners.  Next is 6 item product list followed by a text block.]]></SUMMARY>
+<ELEMENT HEIGHT="250" ID="CVQTPAD" EDITOR="INLINE" DATA="page:dynimage1" SUB="PAGE_SLIDESHOW" WIDTH="600" PROMPT="SlideShow" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="FINDER_HEAD" MAXLENGTH="35" EDITOR="INLINE" DATA="page:finder_header" PROMPT="Short heading for the finder form (will only appear if finder is enabled)" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"><SUMMARY><![CDATA[This layout features a slideshow element at the top, followed by a finder (advanced search). Below that is a two item product list and a newsletter subscription box.  To the right is a set of three linkable banners.  Next is 6 item product list followed by a text block.]]></SUMMARY>
 </ELEMENT>
-<ELEMENT ID="FINDER" EDITOR="INLINE" DATA="page:finder" PROMPT="Product Finder" SUB="PAGE_FINDER" TYPE="FINDER"><HTML><![CDATA[
+<ELEMENT ID="FINDER" EDITOR="INLINE" DATA="page:finder" SUB="PAGE_FINDER" PROMPT="Product Finder" TYPE="FINDER"><HTML><![CDATA[
 <!-- Here starts the finder -->
 <% load($FORM); default(""); print(); %>
 <div id='finder' style='margin-bottom:5px;'>
@@ -44,7 +44,7 @@
 	</td>
 ]]></SPEC_DEFAULT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST" SIZE="5000" MAX="2" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="2" FORMAT="CUSTOM" PROMPT="Product List" SUB="PAGE_PRODLIST" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<ELEMENT SIZE="5000" ID="PRODLIST" MAX="2" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="2" FORMAT="CUSTOM" SUB="PAGE_PRODLIST" PROMPT="Product List" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
 <div id='zprodlist1' style='margin-bottom:3px; padding-right:3px;'>
 	<div id='zprodlist1_content' class='zprodlist1_content zborder no_underline' align='center'>
 <table border='0' cellpadding='0' cellspacing='0'>
@@ -72,22 +72,22 @@
 ]]></HTML>
 <DIVIDER><![CDATA[<td style='border-right: <% loadurp("CSS::zborder.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>]]></DIVIDER>
 </ELEMENT>
-<ELEMENT ID="NEWS_HEAD" MAXLENGTH="35" EDITOR="INLINE" DATA="page:newsletter_header" PROMPT="Short heading for the newsletter form" SUB="PAGE_NEWS_HEADER" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT ID="NEWS_TEXT" WIKI="3" EDITOR="INLINE" DATA="page:newsletter_desc" PROMPT="Short marketing text for newsletter (no html)" SUB="PAGE_NEWS_DESC" TYPE="TEXT" FONT="0"></ELEMENT>
-<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for right side banner (top)" FONT="0" TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="BANNER1" HEIGHT="95" EDITOR="INLINE" DATA="page:banner1" PROMPT="Right side banner (top)" WIDTH="195" SUB="PAGE_BANNER1" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<ELEMENT ID="NEWS_HEAD" MAXLENGTH="35" EDITOR="INLINE" DATA="page:newsletter_header" SUB="PAGE_NEWS_HEADER" PROMPT="Short heading for the newsletter form" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="NEWS_TEXT" WIKI="3" EDITOR="INLINE" DATA="page:newsletter_desc" SUB="PAGE_NEWS_DESC" PROMPT="Short marketing text for newsletter (no html)" FONT="0" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Link for right side banner (top)" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="95" ID="BANNER1" EDITOR="INLINE" DATA="page:banner1" SUB="PAGE_BANNER1" WIDTH="195" PROMPT="Right side banner (top)" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style="margin-bottom:3px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" SUB="PAGE_BANNER2_LINK" PROMPT="Link for right side banner (middle)" FONT="0" TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="BANNER2" HEIGHT="95" EDITOR="INLINE" DATA="page:banner2" PROMPT="Right side banner (top)" WIDTH="195" SUB="PAGE_BANNER2" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<ELEMENT ID="BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" PROMPT="Link for right side banner (middle)" SUB="PAGE_BANNER2_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="95" ID="BANNER2" EDITOR="INLINE" DATA="page:banner2" SUB="PAGE_BANNER2" WIDTH="195" PROMPT="Right side banner (top)" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style="margin-bottom:3px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="BANNER3_LINK" EDITOR="INLINE" DATA="page:banner3_link" SUB="PAGE_BANNER3_LINK" PROMPT="Link for right side banner (bottom)" FONT="0" TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="BANNER3" HEIGHT="95" EDITOR="INLINE" DATA="page:banner3" PROMPT="Right side banner (top)" WIDTH="195" SUB="PAGE_BANNER3" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<ELEMENT ID="BANNER3_LINK" EDITOR="INLINE" DATA="page:banner3_link" PROMPT="Link for right side banner (bottom)" SUB="PAGE_BANNER3_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="95" ID="BANNER3" EDITOR="INLINE" DATA="page:banner3" SUB="PAGE_BANNER3" WIDTH="195" PROMPT="Right side banner (top)" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style="margin-bottom:3px;"><a href="%PAGE_BANNER3_LINK%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PAGE_PRODLIST2_HEADER" WIKI="3" MAXLENGTH="20" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header (optional)" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT ID="PRODLIST2" SIZE="5000" MAX="6" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" SUB="PAGE_PRODLIST2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<ELEMENT ID="PAGE_PRODLIST2_HEADER" WIKI="3" MAXLENGTH="20" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header (optional)" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT SIZE="5000" ID="PRODLIST2" MAX="6" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="3" FORMAT="CUSTOM" SUB="PAGE_PRODLIST2" PROMPT="Product List 2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
 <div id='zprodlist2' style='margin-bottom:5px;' class='zbox zbox_body'>
 
 	<% loadurp("page:prodlist2_header"); stop(unless=>$_); format(pretext=>"<div id='zprodlist2_header' class='zbox_head'><div style='padding:3px 8px; text-align:left;' class='zprodlist2_header'>",posttext=>"</div></div>"); print(); %>
@@ -124,7 +124,7 @@
 ]]></HTML>
 <DIVIDER><![CDATA[<td style='border-right: <% loadurp("CSS::zbox.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>]]></DIVIDER>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" SUB="PAGE_DESC" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="PAGE_DESC" PROMPT="Text Description" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CVQTPAE" TYPE="OUTPUT"><HTML><![CDATA[

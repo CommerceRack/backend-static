@@ -20,11 +20,11 @@
 <tr><td width="50%" valign="top" align="right">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="250" ID="IMAGE1" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="profile:zoovy:about_image1" WIDTH="250" PROMPT="Company Picture 1" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="250" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="profile:zoovy:about_image1" PROMPT="Company Picture 1" WIDTH="250" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMZJ" TYPE="OUTPUT"><HTML><![CDATA[
 </td><td align="left" width=50%>]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="250" ID="IMAGE2" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="profile:zoovy:about_image2" WIDTH="250" PROMPT="Company Picture 2" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="250" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="profile:zoovy:about_image2" PROMPT="Company Picture 2" WIDTH="250" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMZK" TYPE="OUTPUT"><HTML><![CDATA[</td>
 </tr>
 <tr><td colspan=2 align="left"><div style="line-height:130%;" class='ztxt'>
@@ -36,7 +36,7 @@
 <tr><td colspan=2 align="center">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE3" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="profile:zoovy:about_image3" WIDTH="500" PROMPT="Company Picture 3" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE3" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="profile:zoovy:about_image3" PROMPT="Company Picture 3" WIDTH="500" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMZM" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td></tr>

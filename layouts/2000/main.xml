@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMCN" FORMAT="LAYOUT" CREATOR="STAFF" SHORT="This layout has the basic elements to create a counter page." TYPE="CONFIG" IMAGES="0" TITLE="Plain" PROPERTIES="1" SERIES="2002" SUBTYPE="D" RELEASED="20021106"><SUMMARY><![CDATA[Counter Graph
+<ELEMENT FORMAT="LAYOUT" ID="CPUKMCN" CREATOR="STAFF" SHORT="This layout has the basic elements to create a counter page." TYPE="CONFIG" TITLE="Plain" IMAGES="0" PROPERTIES="1" SERIES="2002" RELEASED="20021106" SUBTYPE="D"><SUMMARY><![CDATA[Counter Graph
 Extended Description
 ]]></SUMMARY>
 </ELEMENT>
@@ -16,7 +16,7 @@ Extended Description
 <P>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="HITGRAPH1" WIDTH="560" PROMPT="Counter Graph" DEFAULT="Graph of visitors by the hour" TYPE="HITGRAPH" HELP="Auction Counter that tracks realtime traffic for this auction. " DATA="page:hitgraph"></ELEMENT>
+<ELEMENT ID="HITGRAPH1" HEIGHT="200" PROMPT="Counter Graph" WIDTH="560" DEFAULT="Graph of visitors by the hour" TYPE="HITGRAPH" HELP="Auction Counter that tracks realtime traffic for this auction. " DATA="page:hitgraph"></ELEMENT>
 <ELEMENT ID="CPUKMCQ" TYPE="OUTPUT"><HTML><![CDATA[
 </td></tr></table>
 </center>

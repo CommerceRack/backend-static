@@ -14,23 +14,14 @@ if ($FORMAT eq '') {
 	}
 
 my $PATH = '';
-if ($FORMAT eq  'WIZARD') {
-	$PATH = "/httpd/static/wizards";
-	}
-elsif ($FORMAT eq 'WRAPPER') {
+if ($FORMAT eq 'WRAPPER') {
 	$PATH = "/httpd/static/wrappers";
 	}
 elsif ($FORMAT eq 'LAYOUT') {
 	$PATH = "/httpd/static/layouts";
 	}
-elsif ($FORMAT eq 'EMAIL') {
-	$PATH = "/httpd/static/emails";
-	}
 elsif ($FORMAT eq 'DEFINITION') {
 	$PATH = "/httpd/static/definitions";
-	}
-elsif ($FORMAT eq 'ORDER') {
-	$PATH = "/httpd/static/orders";
 	}
 elsif ($FORMAT eq 'USER') {
 	$PATH = &ZOOVY::resolve_userpath($ARGV[1]);
@@ -89,9 +80,6 @@ if (1) {
 			die("Document has errors - cannot compile");
 			}
 
-		if ($FORMAT eq 'EMAIL') {
-			&findThumbs($FORMAT,$DOCID,$toxml);
-			}
 
 		$toxml->MaSTerSaVE('preservexml'=>1);
 		Storable::nstore $toxml, "$PATH/$dir/$binfile";
@@ -135,95 +123,6 @@ if (0) {
 	chown 65534, 65534, "/httpd/htdocs/webapi/$FORMAT.zip";
 	}
 
-
-
-if ($FORMAT eq 'WIZARD') {
-	my $dbh = &DBINFO::db_zoovy_connect();
-	my $qtFORMAT = $dbh->quote($FORMAT);
-	my $pstmt = "select DOCID,count(*) X,sum(SELECTED) Y from TOXML_RANKS where FORMAT=$qtFORMAT group by DOCID";
-	print STDERR $pstmt."\n";
-	my $sth = $dbh->prepare($pstmt);
-	$sth->execute();
-	while ( my ($DOCID,$REMEMBER,$SELECTED) = $sth->fetchrow() ) {
-		my $qtDOCID = $dbh->quote($DOCID);
-		$pstmt = "update TOXML set RANK_REMEMBER=$REMEMBER,RANK_SELECTED=$SELECTED where FORMAT=$qtFORMAT and DOCID=$qtDOCID";
-		print $pstmt."\n";
-		$dbh->do($pstmt);
-		}
-	$sth->finish();
-
-	$pstmt = "select DOCID,RANK_REMEMBER,RANK_SELECTED,date_format(from_unixtime(CREATED_GMT),'%Y,%j') AGE from TOXML where FORMAT=$qtFORMAT and MID=0 and STARS>=0";
-	$sth = $dbh->prepare($pstmt);
-	$sth->execute();
-	my %SCORES = ();
-	while ( my ($DOCID,$REMEMBER,$SELECTED,$AGE) = $sth->fetchrow() ) {
-		my ($year,$jday) = split(',',$AGE);
-		$year -= 2000;	
-		if ($year<0) { $year = 0; } # NOTE: 1970 themes get 0 
-		my $SCORE = ($REMEMBER * 6) + ($SELECTED * 25) + ($year*6) + ( $jday / 60 );
-		$SCORES{$DOCID} = $SCORE;
-		}
-	$sth->finish();
-
-	my $step = scalar(keys %SCORES)/10;
-	my $i = 0;
-	my $stars = 10;
-	foreach my $docid (reverse ZTOOLKIT::value_sort(\%SCORES,'numerically')) {
-		if ($i++>=$step) { $stars--; $i=0; }
-		$SCORES{$docid} = $stars;
-		}
-
-	foreach my $docid (keys %SCORES) {
-		$pstmt = "update TOXML set STARS=$SCORES{$docid} where FORMAT=$qtFORMAT and DOCID=".$dbh->quote($docid);
-		print $pstmt."\n";
-		$dbh->do($pstmt);
-		}
-	
-	&DBINFO::db_zoovy_close();
-	}
-
-##
-## findThumbs
-##
-sub findThumbs {
-	my ($FORMAT,$DOCID,$toxml) = @_;
-
-	my $dir = '';
-	if ($FORMAT eq 'WIZARD') {
-		$dir = "/httpd/static/wizards";
-		}
-	elsif ($FORMAT eq 'EMAIL') {
-		$dir = "/httpd/static/emails";
-		}
-
-	my @IMAGES = ();
-	opendir my $D, $dir;
-	while ( my $file = readdir($D) ) {
-		next if (substr($file,0,1) eq '~');
-		if ($file =~ /^($DOCID.*?)\.png$/) {
-			push @IMAGES, $1;
-			}
-		}
-	closedir $D;
-
-	my ($config) = $toxml->findElements('CONFIG');
-	$config->{'THUMBNAIL_COUNT'} = scalar(@IMAGES);
-	$config->{'THUMBNAIL'} = $IMAGES[0];	
-	$config->{'THUMBNAILS'} = join(',',@IMAGES);
-
-	foreach my $IMG (sort @IMAGES) {
-		my $p = new Image::Magick;
-		my $filename = "$dir/$IMG.png";
-		print "Reading $filename\n";
-		$p->Read($filename);
-		createImage($FORMAT,$IMG,$p,0,0);
-		createImage($FORMAT,$IMG,$p,180,180);
-		createImage($FORMAT,$IMG,$p,75,75);
-		createImage($FORMAT,$IMG,$p,32,32);
-		undef $p;
-		}
-
-	}
 
 
 
@@ -299,6 +198,5 @@ sub createImage {
 		}
 	chown(65534,65534,$filename);
 	chmod 0666, $filename;
-	
 
 	}

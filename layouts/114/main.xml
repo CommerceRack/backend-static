@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMMT" CREATOR="STAFF" IMAGES="3" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Stacked Custom" RELEASED="20020510"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMMT" CREATOR="STAFF" CREATED="00000000" IMAGES="3" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Stacked Custom" RELEASED="20020510"><SUMMARY><![CDATA[
 Detailed Description
 IMAGE1 (310x310)
 IMAGE2 (150x150)
@@ -26,13 +26,13 @@ function zoom (url) {
 		<td width="350" align="right" rowspan="2">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="310" HELP="Please enter the first picture." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1 " WIDTH="310" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="310" ID="IMAGE1" HELP="Please enter the first picture." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="310" PROMPT="Image 1 " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMMV" TYPE="OUTPUT"><HTML><![CDATA[
 		</td>
 		<td width="210" align="left">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE2" HEIGHT="150" HELP="Please enter the second picture " ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image 2" WIDTH="150" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE2" HELP="Please enter the second picture " ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="150" PROMPT="Image 2" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMMW" TYPE="OUTPUT"><HTML><![CDATA[
 		</td>
 	</tr>
@@ -40,7 +40,7 @@ function zoom (url) {
 		<td width="210" align="left">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE3" HEIGHT="150" HELP="Please enter the third picture " ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image 3" WIDTH="150" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE3" HELP="Please enter the third picture " ZOOM="1" DATA="product:zoovy:prod_image3" WIDTH="150" PROMPT="Image 3" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMMX" TYPE="OUTPUT"><HTML><![CDATA[
 		</td>
 	</tr>

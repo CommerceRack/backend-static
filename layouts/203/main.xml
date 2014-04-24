@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMEI" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" SHORT="This layout is the same as &quot;Big Picture&quot; but with extra space for text under products." TYPE="CONFIG" TITLE="Wordy Intro" RELEASED="20020618"><SUMMARY><![CDATA[Bold Welcome Message
+<ELEMENT ID="CPUKMEI" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" SHORT="This layout is the same as &quot;Big Picture&quot; but with extra space for text under products." TYPE="CONFIG" TITLE="Wordy Intro" RELEASED="20020618"><SUMMARY><![CDATA[Bold Welcome Message
 Extended Text 
 IMAGEe (400x200)
 Product Listing
@@ -16,7 +16,7 @@ Welcome Message
 <center>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="HOMEPAGE_PIC" HEIGHT="200" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" PROMPT="Front Page Picture" WIDTH="400" DEFAULT="https://static.zoovy.com/img/H200-W400-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="HOMEPAGE_PIC" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" WIDTH="400" PROMPT="Front Page Picture" DEFAULT="https://static.zoovy.com/img/H200-W400-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMEK" TYPE="OUTPUT"><HTML><![CDATA[
 <center>
 		</td>
@@ -47,6 +47,6 @@ Welcome Message
 <P>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="EXTRATEXT" HELP="Here is some extra space for text, if you need it!" DATA="page:extratext" PROMPT="Extended Text " HELPER="Many stores do not need this field." DEFAULT="Thank you for visiting our store!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="EXTRATEXT" HELP="Here is some extra space for text, if you need it!" DATA="page:extratext" HELPER="Many stores do not need this field." PROMPT="Extended Text " DEFAULT="Thank you for visiting our store!" TYPE="TEXT"></ELEMENT>
 
 </TEMPLATE>

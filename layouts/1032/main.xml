@@ -18,7 +18,7 @@
 <ELEMENT ID="CPUKNIY" TYPE="OUTPUT"><HTML><![CDATA[<table width="100%" cellspacing=2 cellpadding=2><tr>
 	<td valign="top" align="left" colspan=2><div align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PIC1" HEIGHT="200" URL_SAVETO="page:prod_pic1_url" HELP="Please select a picture for this category." DATA="page:picture1" PROMPT="Main Picture" WIDTH="500" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="PIC1" URL_SAVETO="page:prod_pic1_url" HELP="Please select a picture for this category." DATA="page:picture1" WIDTH="500" PROMPT="Main Picture" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNIZ" TYPE="OUTPUT"><HTML><![CDATA[</div>]]></HTML>
 </ELEMENT>
 <ELEMENT ID="DESCRIPTION" HELP="Please enter a message that will appear on this page" DATA="page:description" PROMPT="Message" TYPE="HTML"></ELEMENT>

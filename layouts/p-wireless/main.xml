@@ -3,12 +3,12 @@
 
 <!-- ******* -->
 <ELEMENT ID="~p-wireless" V="2" CREATED="00000000" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Wireless Product Layout"></ELEMENT>
-<ELEMENT ID="CRORZGU" DATA="product:zoovy:prod_name" TYPE="TEXT" FONT="0"></ELEMENT>
-<ELEMENT ID="CRORZGV" HEIGHT="160" DATA="product:zoovy:prod_image1" WIDTH="160" TYPE="IMAGE" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="CRORZGU" DATA="product:zoovy:prod_name" FONT="0" TYPE="TEXT"></ELEMENT>
+<ELEMENT HEIGHT="160" ID="CRORZGV" DATA="product:zoovy:prod_image1" WIDTH="160" BGCOLOR="FFFFFF" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CRORZGW" RAW="1" FORMAT="PLAINPRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"><PRETEXT><![CDATA[<div align="center">$]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CRORZGX" TYPE="ADDTOCART"></ELEMENT>
-<ELEMENT ID="CRORZGY" DATA="product:zoovy:prod_desc" TYPE="TEXT" FONT="0"></ELEMENT>
+<ELEMENT ID="CRORZGY" DATA="product:zoovy:prod_desc" FONT="0" TYPE="TEXT"></ELEMENT>
 
 </TEMPLATE>

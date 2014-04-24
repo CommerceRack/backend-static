@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMPP" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Single Picture3" RELEASED="20020716"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMPP" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Single Picture3" RELEASED="20020716"><SUMMARY><![CDATA[
 Category Description
 IMAGE1 (200x200)
 Product Listing
@@ -18,7 +18,7 @@ Product Listing
 <center>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="PIC1" HELP="Please select a picture for this category." DATA="page:picture1" WIDTH="200" PROMPT="Small Picture" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="200" HELP="Please select a picture for this category." DATA="page:picture1" PROMPT="Small Picture" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMPR" TYPE="OUTPUT"><HTML><![CDATA[
 </center>
 		</td>

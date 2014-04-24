@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMAG" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="H" FORMAT="LAYOUT" SHORT="Featured products appear on the righthand side and an animated top picture. " TYPE="CONFIG" TITLE="Animated Featured" RELEASED="20020618"><SUMMARY><![CDATA[Animated Picture (250 x 250)
+<ELEMENT ID="CPUKMAG" CREATOR="STAFF" IMAGES="0" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="H" FORMAT="LAYOUT" SHORT="Featured products appear on the righthand side and an animated top picture. " TYPE="CONFIG" TITLE="Animated Featured" RELEASED="20020618"><SUMMARY><![CDATA[Animated Picture (250 x 250)
 Product Listing
 Welcome Message
 ]]></SUMMARY>
@@ -79,7 +79,7 @@ function zoom (url) {
 <center>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="250" ID="DYNIMAGE1" HELP="Animated homepage picture composed of images in your image library." DATA="page:dynimage1" WIDTH="250" PROMPT="Animated Picture (250 x 250)" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="DYNIMAGE1" HEIGHT="250" HELP="Animated homepage picture composed of images in your image library." DATA="page:dynimage1" PROMPT="Animated Picture (250 x 250)" WIDTH="250" TYPE="DYNIMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMAI" TYPE="OUTPUT"><HTML><![CDATA[</center>
 		</td>
 	</tr>
@@ -99,7 +99,7 @@ function zoom (url) {
 <table width='100'><tr><td>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="500" ID="PRODLIST1" MAX="15" HELP="Your Products" DATA="page:prodlist" COLS="1" FORMAT="THUMB" PROMPT="Product Listing" DEFAULT="&amp;ALTERNATE=0" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="PRODLIST1" SIZE="500" MAX="15" HELP="Your Products" DATA="page:prodlist" COLS="1" FORMAT="THUMB" PROMPT="Product Listing" DEFAULT="&amp;ALTERNATE=0" TYPE="PRODLIST"></ELEMENT>
 <ELEMENT ID="CPUKMAK" TYPE="OUTPUT"><HTML><![CDATA[
 </td></tr></table>
 </td>

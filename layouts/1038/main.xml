@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="MYCONFIG" CREATOR="JT" IMAGES="1" CREATED="20060809" PROPERTIES="260" SUBTYPE="C" SERIES="2006" FORMAT="LAYOUT" SHORT="Contains 2 text boxes, a 5x1 image and detailed product list." TYPE="CONFIG" TITLE="Detailed Product List"><SUMMARY><![CDATA[Contains two WIKI text boxes, one at the top and one at the bottom, plus a 550 by 110 pixel (5x1 aspect ratio) image near the top of the page.  <br><br>
+<ELEMENT ID="MYCONFIG" CREATOR="JT" CREATED="20060809" IMAGES="1" PROPERTIES="260" SUBTYPE="C" SERIES="2006" FORMAT="LAYOUT" SHORT="Contains 2 text boxes, a 5x1 image and detailed product list." TYPE="CONFIG" TITLE="Detailed Product List"><SUMMARY><![CDATA[Contains two WIKI text boxes, one at the top and one at the bottom, plus a 550 by 110 pixel (5x1 aspect ratio) image near the top of the page.  <br><br>
 
 The product list features a 150 x 150 pixel image on the left, with the product name, price, description to the left, with a more info and add to cart link below that.  Wiki formatting will be stripped.  This product list is NOT friendly towards HTML. <br><br>
 
@@ -25,7 +25,7 @@ Subcategories on pages using this layout will be displayed in a three column for
 </table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="110" MINIMAL="0" DATA="page:picture1" WIDTH="550" PROMPT="Category Image ( 5 by 1 ) - optional" TYPE="IMAGE"><PRETEXT><![CDATA[</div>]]></PRETEXT>
+<ELEMENT HEIGHT="110" ID="IMAGE1" MINIMAL="0" DATA="page:picture1" PROMPT="Category Image ( 5 by 1 ) - optional" WIDTH="550" TYPE="IMAGE"><PRETEXT><![CDATA[</div>]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="TEXT1" WIKI="3" DATA="page:desc" PROMPT="Category Description - optional" TYPE="TEXT"><HELPER><![CDATA[This is an optional text block that you can use to describe the product below.  Remember that if this text is too long, your customer will not see the product below.  Keep this short and to the point.]]></HELPER>
 <PRETEXT><![CDATA[<div style="margin-bottom:10px; width:auto; text-align:left;" class="zcat_image_5x1 zcat_image">]]></PRETEXT>

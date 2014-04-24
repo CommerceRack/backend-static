@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMPK" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="This layout features a 560x300 graphic and short description (left justified)." TYPE="CONFIG" TITLE="Big Picture2" RELEASED="20020716"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMPK" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="This layout features a 560x300 graphic and short description (left justified)." TYPE="CONFIG" TITLE="Big Picture2" RELEASED="20020716"><SUMMARY><![CDATA[
 Category Description
 IMAGE1 (560x300)
 Product Listing 
@@ -16,12 +16,12 @@ Product Listing
                 <td align=left width="560">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="300" ID="PIC1" HELP="Please select a wide picture for your site." DATA="page:picture1" WIDTH="560" PROMPT="Wide Picture" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="300" HELP="Please select a wide picture for your site." DATA="page:picture1" PROMPT="Wide Picture" WIDTH="560" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMPM" TYPE="OUTPUT"><HTML><![CDATA[
 <p>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Category Description" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" HELPER="Remember to keep this text short and to the point.  " DEFAULT="" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKMPN" TYPE="OUTPUT"><HTML><![CDATA[
 <p>
  

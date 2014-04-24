@@ -9,9 +9,9 @@
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="240" ID="PAGE_CVKEIZI" EDITOR="INLINE" DATA="page:dynimage1" SUB="PAGE_SLIDESHOW" WIDTH="600" PROMPT="SlideShow" TYPE="DYNIMAGE"></ELEMENT>
-<ELEMENT ID="PAGE_PRODLIST1_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List 1 Header" DEFAULT="Best Sellers" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT SIZE="5000" ID="PAGE_PRODLIST1" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 1 (1 column)" SUB="PAGE_PRODLIST1" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list 1 -->
+<ELEMENT ID="PAGE_CVKEIZI" HEIGHT="240" EDITOR="INLINE" DATA="page:dynimage1" PROMPT="SlideShow" WIDTH="600" SUB="PAGE_SLIDESHOW" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST1_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List 1 Header" DEFAULT="Best Sellers" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST1" SIZE="5000" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" SUB="PAGE_PRODLIST1" PROMPT="Product List 1 (1 column)" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list 1 -->
 <div class='zbox zbox_body' id='zprodlist1'>
 	<div id='zprodlist1_header' class='zbox_head '>
 		<div style='padding:3px 8px; width:auto; text-align:left;' class='zprodlist1_header'><% loadurp("page:prodlist_header"); default("Best Sellers"); print(); %></div>
@@ -58,16 +58,16 @@ print();
 ]]></HTML>
 <DIVIDER><![CDATA[<td><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>]]></DIVIDER>
 </ELEMENT>
-<ELEMENT ID="PAGE_BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Link for right-top banner" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT HEIGHT="120" ID="PAGE_BANNER1" EDITOR="INLINE" DATA="page:banner1" SUB="PAGE_BANNER1" WIDTH="295" PROMPT="Right-top banner" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<ELEMENT ID="PAGE_BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for right-top banner" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="PAGE_BANNER1" HEIGHT="120" EDITOR="INLINE" DATA="page:banner1" PROMPT="Right-top banner" WIDTH="295" SUB="PAGE_BANNER1" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PAGE_PAGE_BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" PROMPT="Link for right-bottom banner" SUB="PAGE_BANNER2_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT HEIGHT="120" ID="PAGE_BANNER2" EDITOR="INLINE" DATA="page:banner2" SUB="PAGE_BANNER2" WIDTH="295" PROMPT="Right-bottom banner" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<ELEMENT ID="PAGE_PAGE_BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" SUB="PAGE_BANNER2_LINK" PROMPT="Link for right-bottom banner" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="PAGE_BANNER2" HEIGHT="120" EDITOR="INLINE" DATA="page:banner2" PROMPT="Right-bottom banner" WIDTH="295" SUB="PAGE_BANNER2" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style="margin-bottom:4px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PAGE_PRODLIST2_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header" DEFAULT="Featured Items" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT SIZE="5000" ID="PAGE_PRODLIST" MAX="9" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List" SUB="PAGE_PRODLIST2" TYPE="PRODLIST" DISABLEPRODUCTS="1" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<ELEMENT ID="PAGE_PRODLIST2_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header" DEFAULT="Featured Items" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST" SIZE="5000" MAX="9" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="3" FORMAT="CUSTOM" SUB="PAGE_PRODLIST2" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
 <div  id='zprodlist2'>
 <div id='zprodlist2_header' class='zcolor'>
 	<div style='padding:3px 8px; text-align:left;' class='zprodlist2_header'><% loadurp("page:prodlist2_header"); default("Featured Items"); print(); %></div>
@@ -105,7 +105,7 @@ print();
 ]]></HTML>
 <DIVIDER><![CDATA[<td style='border-left: <% loadurp("CSS::zborder.border"); print(); %>'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>]]></DIVIDER>
 </ELEMENT>
-<ELEMENT ID="PAGE_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="PAGE_DESC" PROMPT="Text Description" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<ELEMENT ID="PAGE_DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" SUB="PAGE_DESC" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:3px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="PAGE_CSPDWSO" TYPE="OUTPUT"><HTML><![CDATA[
