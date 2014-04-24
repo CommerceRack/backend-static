@@ -15,18 +15,18 @@
 <tr>
 	<td valign="top" width="400">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPADRM" DATA="page:link_4x3" ZOOVYDOCID="50355" SUB="4X3_LINK" PROMPT="Link for 4 x 3 image" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+<ELEMENT ID="CSPADRM" DATA="page:link_4x3" ZOOVYDOCID="50355" PROMPT="Link for 4 x 3 image" SUB="4X3_LINK" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="CSPADRN" HEIGHT="300" DATA="page:image_4x3" PROMPT="Image 1 ( 4 x 3 )" WIDTH="400" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%4X3_LINK%">]]></PRETEXT>
+<ELEMENT HEIGHT="300" ID="CSPADRN" DATA="page:image_4x3" WIDTH="400" PROMPT="Image 1 ( 4 x 3 )" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%4X3_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CSPADRO" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	<td valign="top" style="padding-left:5px" class="ztable_row">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="LIST1" MAX="1" ALTERNATE="1" DATA="page:prodlist" COLS="1" ZOOVYDOCID="50325" FORMAT="CUSTOM" PROMPT="Product List 1" SHOWDETAILS="0" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- begin product list 1 -->
+<ELEMENT ID="LIST1" SIZE="5000" MAX="1" ALTERNATE="1" DATA="page:prodlist" COLS="1" ZOOVYDOCID="50325" FORMAT="CUSTOM" PROMPT="Product List 1" SHOWDETAILS="0" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- begin product list 1 -->
 <!-- PRODUCT -->
 <div style="padding:1px; width:183px;" class="zcolor_dark">
 <a href="<% load($PROD_URL); print(); %>"><% load($zoovy:prod_thumb); default($zoovy:prod_image1); image(w=>"183",h=>"225",bg=>"ffffff",tag=>"1",alt=>$zoovy:prod_name); print(); %></a></div>
@@ -61,11 +61,11 @@ Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zo
 <tr>
 	<td colspan="2">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPADRQ" DATA="page:link_5x1" ZOOVYDOCID="50355" SUB="5X1_LINK" PROMPT="Link for 5 x 1 image" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+<ELEMENT ID="CSPADRQ" DATA="page:link_5x1" ZOOVYDOCID="50355" PROMPT="Link for 5 x 1 image" SUB="5X1_LINK" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="CSPADRR" HEIGHT="118" DATA="page:image_5x1" PROMPT="Image 1 ( 5 x 1 )" WIDTH="590" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="padding-top:5px;"><a href="%5X1_LINK%">]]></PRETEXT>
+<ELEMENT HEIGHT="118" ID="CSPADRR" DATA="page:image_5x1" WIDTH="590" PROMPT="Image 1 ( 5 x 1 )" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="padding-top:5px;"><a href="%5X1_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CSPADRS" TYPE="OUTPUT"><HTML><![CDATA[</td>
@@ -74,7 +74,7 @@ Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zo
 	<td valign="top">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="LIST2" MAX="6" ALTERNATE="3" DATA="page:prodlist2" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 2 -->
+<ELEMENT ID="LIST2" SIZE="5000" MAX="6" ALTERNATE="3" DATA="page:prodlist2" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 2 -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top:5px;">
 <!-- ROW -->
 <tr>
@@ -106,13 +106,13 @@ Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zo
 		<td class="zbox_head">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPADRU" WIKI="3" MAXLENGTH="25" DATA="page:prodlist3_header" PROMPT="Product List 3 Header" DEFAULT="Best Sellers" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="CSPADRU" WIKI="3" MAXLENGTH="25" DATA="page:prodlist3_header" PROMPT="Product List 3 Header" DEFAULT="Best Sellers" TYPE="TEXTBOX" FONT="0"></ELEMENT>
 <ELEMENT ID="CSPADRV" TYPE="OUTPUT"><HTML><![CDATA[		
 		</td>
 	</tr>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="LIST3" MAX="10" DATA="page:prodlist3" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 3" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 3 -->
+<ELEMENT ID="LIST3" SIZE="5000" MAX="10" DATA="page:prodlist3" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 3" TYPE="PRODLIST"><HTML><![CDATA[<!-- begin product list 3 -->
 <!-- PRODUCT -->
 <tr>
 	<td class="ztable_row<% load($row.alt); print(); %>" ><span class="ztable_row_small">
@@ -135,7 +135,7 @@ Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zo
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPADRX" WIKI="3" MAXLENGTH="40" DATA="page:cats_header" PROMPT="Header for Subcategories" DEFAULT="Shop our Store" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="CSPADRX" WIKI="3" MAXLENGTH="40" DATA="page:cats_header" PROMPT="Header for Subcategories" DEFAULT="Shop our Store" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="ztitle" style="margin-top:5px;">]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="SUBCAT" DESCENDTREE="0" ALTERNATE="0" DATA="page:subcat" MODE="LIST" TYPE="SUBCAT" SRC="." FORCECOLUMNS="4"><HTML><![CDATA[<!-- top level categories -->

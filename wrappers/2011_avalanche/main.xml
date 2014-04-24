@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT FORMAT="WRAPPER" ID="DENBYMM" TYPE="CONFIG" EXPORT="0" CREATED="20110314" TITLE="Avalanche" SITEBUTTONS="default=2011_avalanche|png|140|45&amp;checkout=2011_avalanche|png|171|55" RELEASED="20110330"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+<ELEMENT ID="DENBYMM" FORMAT="WRAPPER" EXPORT="0" TYPE="CONFIG" CREATED="20110314" TITLE="Avalanche" SITEBUTTONS="default=2011_avalanche|png|140|45&amp;checkout=2011_avalanche|png|171|55" RELEASED="20110330"><CSS><![CDATA[.zbody { background-color: #ffffff; }
 .zborder { border: 1px solid #f0f5f9; }
 .zbox { border: 1px solid #cee1f2; }
 .zbox_body { background-color: #FFFFFF; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
@@ -111,7 +111,7 @@
 
 ]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="SET_CART_TIER_1AND2_CAT_VAR" TYPE="SPECL" OUTPUTFILTER="!FS=C,H,E" OUTPUTSKIP="1" MODE="LIST"><HTML><![CDATA[<%
+<ELEMENT ID="SET_CART_TIER_1AND2_CAT_VAR" TYPE="SPECL" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C,H,E" MODE="LIST"><HTML><![CDATA[<%
 /* the subcategories listed on the left show tier 2 and, when appropriate, tier 3 for the tier 2 in focus. */
 /* specialty stores get handled slightly differently to take into account their root level categories are typically tier 2. */
 /* gets run on H and E pages to 'reset' the menu (will set to blank). on C pages, it actually sets the vars. */
@@ -228,12 +228,12 @@ pop(stack=>>$CATSTACK,namespace=>"CAT");
 loadurp("CART::RECENT_CATEGORY_TIER1"); default($SRC); initset(SRC=>$_);
 %>]]></INIT>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_LOGO" HEIGHT="100" MINIMAL_MODE="0" WIDTH="250" SUB="WRAP_LOGO" BGCOLOR="TTTTTT" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="WRAPPER_LOGO" MINIMAL_MODE="0" SUB="WRAP_LOGO" WIDTH="250" TYPE="LOGO" BGCOLOR="TTTTTT"></ELEMENT>
 <ELEMENT ID="SEARCHED_KEYWORD" SUB="WRAP_KEYWORD" TYPE="READONLY" LOAD="VAR::keywords" RAW="1"></ELEMENT>
-<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTFILTER="FS=H,P" OUTPUTSKIP="1"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTSKIP="1" OUTPUTFILTER="FS=H,P"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
 <POSTTEXT><![CDATA[</h1>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="SET_CART_VAR_RECENTCATEGORY" TYPE="SPECL" OUTPUTFILTER="FS=P" OUTPUTSKIP="1" MODE="LIST"><HTML><![CDATA[<%
+<ELEMENT ID="SET_CART_VAR_RECENTCATEGORY" TYPE="SPECL" OUTPUTSKIP="1" OUTPUTFILTER="FS=P" MODE="LIST"><HTML><![CDATA[<%
 print("");
 loadurp("SREF::_CWPATH"); default(""); 
 element(TYPE=>"SET",SRC=>"CART::RECENT_CATEGORY_PATH",DATA=>$_);
@@ -256,37 +256,37 @@ loadurp("CART::RECENT_CATEGORY_PATH"); default($PATH); initset(PATH=>$_);
 <ELEMENT ID="STORE_PHONE" SUB="WRAP_PHONE" TYPE="READONLY" LOAD="profile:zoovy:support_phone" RAW="1"><PRETEXT><![CDATA[<div class='phonePrompt'>Questions? Call</div><div class='phoneNumber'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="DENBYMO" PROMPT="Store Hours" SUB="WRAP_STORE_HOURS" FONT="0" TYPE="TEXTBOX" DATA="profile:zoovy:store_hours"><PRETEXT><![CDATA[<div id='mhStoreHours'>]]></PRETEXT>
+<ELEMENT ID="DENBYMO" SUB="WRAP_STORE_HOURS" PROMPT="Store Hours" TYPE="TEXTBOX" FONT="0" DATA="profile:zoovy:store_hours"><PRETEXT><![CDATA[<div id='mhStoreHours'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT HEIGHT="60" ID="TOPRIGHT_HEADER_DECAL1" WIDTH="227" PROMPT="Header on right" SUB="WRAP_HEADER_DECAL" TYPE="DECAL" DATA="wrapper:ava_decal_header1"></ELEMENT>
-<ELEMENT ID="TOP_RIGHT_CORNER1" HEIGHT="100" MINIMAL="1" SUB="WRAP_HEADER_BANNER1" PROMPT="Banner: top next to logo (270x100)" WIDTH="248" BGCOLOR="TTTTTT" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:ava_banner_header1"></ELEMENT>
-<ELEMENT ID="TOP_RIGHT_CORNER2" HEIGHT="30" MINIMAL="1" SUB="WRAP_HEADER_BANNER2" PROMPT="Banner: top next to menu and minicart (180 x 30)" WIDTH="175" BGCOLOR="TTTTTT" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:ava_banner_header2"></ELEMENT>
-<ELEMENT ID="FACEBOOK_LINK" SUB="WRAP_LINK_FACEBOOK" PROMPT="URL: Facebook" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:facebook:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='visit us on facebook' onClick="window.open (']]></PRETEXT>
+<ELEMENT ID="TOPRIGHT_HEADER_DECAL1" HEIGHT="60" SUB="WRAP_HEADER_DECAL" PROMPT="Header on right" WIDTH="227" TYPE="DECAL" DATA="wrapper:ava_decal_header1"></ELEMENT>
+<ELEMENT HEIGHT="100" ID="TOP_RIGHT_CORNER1" WIDTH="248" PROMPT="Banner: top next to logo (270x100)" SUB="WRAP_HEADER_BANNER1" MINIMAL="1" TYPE="BANNER" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="wrapper:ava_banner_header1"></ELEMENT>
+<ELEMENT HEIGHT="30" ID="TOP_RIGHT_CORNER2" WIDTH="175" PROMPT="Banner: top next to menu and minicart (180 x 30)" SUB="WRAP_HEADER_BANNER2" MINIMAL="1" TYPE="BANNER" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="wrapper:ava_banner_header2"></ELEMENT>
+<ELEMENT ID="FACEBOOK_LINK" PROMPT="URL: Facebook" SUB="WRAP_LINK_FACEBOOK" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:facebook:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='visit us on facebook' onClick="window.open (']]></PRETEXT>
 <POSTTEXT><![CDATA[', 'facebooklet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-facebook','gfxloc: mastfoot | doc: 2011_avalanche | from: '+document.location.href); };">
 	<div class='icon facebookicon spritebg'></div>
 	<div class='bmPrompt'>Facebook</div>
 </div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="TWITTER_LINK" SUB="WRAP_LINK_TWITTER" PROMPT="User Id: Twitter" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:twitter:userid"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='visit us on twitter' onClick="window.open ('http://twitter.com/]]></PRETEXT>
+<ELEMENT ID="TWITTER_LINK" PROMPT="User Id: Twitter" SUB="WRAP_LINK_TWITTER" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:twitter:userid"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='visit us on twitter' onClick="window.open ('http://twitter.com/]]></PRETEXT>
 <POSTTEXT><![CDATA[', 'twitter'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-twitter','gfxloc: mastfoot | doc: 2011_avalanche | from: '+document.location.href); };">
 	<div class='icon twittericon spritebg'></div>
 	<div class='bmPrompt'>Twitter</div>
 </div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="BLOG_LINK" SUB="WRAP_LINK_BLOG" PROMPT="URL: Blog" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:blog:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='read our blog' onClick="window.open (']]></PRETEXT>
+<ELEMENT ID="BLOG_LINK" PROMPT="URL: Blog" SUB="WRAP_LINK_BLOG" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:blog:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='read our blog' onClick="window.open (']]></PRETEXT>
 <POSTTEXT><![CDATA[', 'bloglet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-blog','gfxloc: mastfoot | doc: 2011_avalanche | from: '+document.location.href); };">
 	<div class='icon blogicon spritebg'></div>
 	<div class='bmPrompt'>Blog</div>
 </div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="RSS_LINK" SUB="WRAP_LINK_RSS" PROMPT="URL: RSS Feed" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:rss:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='subscribe to our rss feed' onClick="window.open (']]></PRETEXT>
+<ELEMENT ID="RSS_LINK" PROMPT="URL: RSS Feed" SUB="WRAP_LINK_RSS" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:rss:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='subscribe to our rss feed' onClick="window.open (']]></PRETEXT>
 <POSTTEXT><![CDATA[', 'rsslet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-rss','gfxloc: mastfoot | doc: 2011_avalanche | from: '+document.location.href); };">
 	<div class='icon rssicon spritebg'></div>
 	<div class='bmPrompt'>RSS</div>
 </div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="YOUTUBE_LINK" SUB="WRAP_LINK_YOUTUBE" PROMPT="URL: YouTube" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:youtube:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='visit our youtube page' onClick="window.open (']]></PRETEXT>
+<ELEMENT ID="YOUTUBE_LINK" PROMPT="URL: YouTube" SUB="WRAP_LINK_YOUTUBE" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:youtube:url"><PRETEXT><![CDATA[<div class='bookmarklet pointer' title='visit our youtube page' onClick="window.open (']]></PRETEXT>
 <POSTTEXT><![CDATA[', 'youtubelet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-youtube','gfxloc: mastfoot | doc: 2011_avalanche | from: '+document.location.href); };">
 	<div class='icon youtubeicon spritebg'></div>
 	<div class='bmPrompt'>YouTube</div>
@@ -302,7 +302,7 @@ loadurp("CART::RECENT_CATEGORY_PATH"); default($PATH); initset(PATH=>$_);
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="MINICART" SUB="WRAP_MINICART" PROMPT="Shopping Cart" TYPE="CART" NOITEMS_SPEC="0"><HTML><![CDATA[<!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW --><% load($TOTALCOUNT);  default("");  print(); %>]]></HTML>
+<ELEMENT ID="MINICART" FORMAT="CUSTOM" PROMPT="Shopping Cart" SUB="WRAP_MINICART" TYPE="CART" NOITEMS_SPEC="0"><HTML><![CDATA[<!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW --><% load($TOTALCOUNT);  default("");  print(); %>]]></HTML>
 </ELEMENT>
 <ELEMENT ID="DUALMENU_ONHOVER_USES_STACK" SUB="WRAP_DUALCATS_ONHOVER" TYPE="SUBCAT" SRC="." FORCECOLUMNS="15" OUTPUTSKIP="32768" MODE="LIST"><HTML><![CDATA[
 <ul id='nav'>
@@ -350,7 +350,7 @@ print("
 </ul><!-- /nav -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="PRODLIST" PROMPT="Product List: Recently Viewed Items" SUB="WRAP_PRODLIST_RECENT" MAX="3" TYPE="PRODLIST" SHOWDEFAULT="0" SRC="SMART:VISITED" ALTERNATE="1" DATA="profile:zoovy:wrap_prodlist_recent" OUTPUTFILTER="FS=E" OUTPUTSKIP="32769" COLS="1"><HTML><![CDATA[
+<ELEMENT ID="PRODLIST" FORMAT="CUSTOM" SUB="WRAP_PRODLIST_RECENT" PROMPT="Product List: Recently Viewed Items" MAX="3" TYPE="PRODLIST" SHOWDEFAULT="0" ALTERNATE="1" SRC="SMART:VISITED" DATA="profile:zoovy:wrap_prodlist_recent" COLS="1" OUTPUTSKIP="32769" OUTPUTFILTER="FS=E"><HTML><![CDATA[
 
 
 <div class='boxen'>
@@ -391,26 +391,26 @@ print("
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="LEFT_SIDE_1" WIDTH="194" PROMPT="Banner: left side 1 [194 by X]" SUB="WRAP_LEFTBANNER1" TYPE="BANNER" BGCOLOR="FFFFFF" EDITOR="INLINE" DATA="wrapper:ava_banner_left1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="LEFT_SIDE_1" SUB="WRAP_LEFTBANNER1" PROMPT="Banner: left side 1 [194 by X]" WIDTH="194" BGCOLOR="FFFFFF" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:ava_banner_left1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='elementMargin'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="LEFT_SIDE_2" WIDTH="194" PROMPT="Banner: left side 2 [194 by X]" SUB="WRAP_LEFTBANNER2" TYPE="BANNER" BGCOLOR="FFFFFF" EDITOR="INLINE" DATA="wrapper:ava_banner_left2"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="LEFT_SIDE_2" SUB="WRAP_LEFTBANNER2" PROMPT="Banner: left side 2 [194 by X]" WIDTH="194" BGCOLOR="FFFFFF" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:ava_banner_left2"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='elementMargin'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="LEFT_SIDE_3" WIDTH="194" PROMPT="Banner: left side 3 [194 by X]" SUB="WRAP_LEFTBANNER3" TYPE="BANNER" BGCOLOR="FFFFFF" EDITOR="INLINE" DATA="wrapper:ava_banner_left3"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="LEFT_SIDE_3" SUB="WRAP_LEFTBANNER3" PROMPT="Banner: left side 3 [194 by X]" WIDTH="194" BGCOLOR="FFFFFF" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:ava_banner_left3"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='elementMargin'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="LEFT_SIDE_DECAL1" SUB="WRAP_LEFTDECAL1" PROMPT="Left side between banners" WIDTH="194" TYPE="DECAL" DATA="wrapper:ava_decal_left1"><PRETEXT><![CDATA[<div class='elementMargin leftSideDecal center' >]]></PRETEXT>
+<ELEMENT ID="LEFT_SIDE_DECAL1" WIDTH="194" PROMPT="Left side between banners" SUB="WRAP_LEFTDECAL1" TYPE="DECAL" DATA="wrapper:ava_decal_left1"><PRETEXT><![CDATA[<div class='elementMargin leftSideDecal center' >]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_WIKINAV_FOOTER" WIKI="3" PROMPT="Wiki for footer nav links" SUB="WRAP_WIKIFOOTLINKS" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="profile:zoovy:wrap_nav_footlinks"><HELPER><![CDATA[
+<ELEMENT ID="WRAPPER_WIKINAV_FOOTER" WIKI="3" SUB="WRAP_WIKIFOOTLINKS" PROMPT="Wiki for footer nav links" TYPE="TEXT" FONT="0" EDITOR="INLINE" DATA="profile:zoovy:wrap_nav_footlinks"><HELPER><![CDATA[
 Add up to eight wiki based links that will appear in the customer service section of the footer. A finite amount of space is allocated for each link and adding more text than what is allowed will result in cropping (text being cut off). HTML is not allowed. Each link will automatically be put on it's own line.
 ]]></HELPER>
 </ELEMENT>
-<ELEMENT HEIGHT="100" ID="BOTTOMRIGHT_HEADER_DECAL1" WIDTH="100" PROMPT="Right side of footer" SUB="WRAP_FOOTER_DECAL1" TYPE="DECAL" DATA="wrapper:ava_decal_bottomright1"><PRETEXT><![CDATA[<div id='wrap_decal_1' style='overflow:hidden; height:100px; width:125px; margin-bottom:10px;'>]]></PRETEXT>
+<ELEMENT ID="BOTTOMRIGHT_HEADER_DECAL1" HEIGHT="100" SUB="WRAP_FOOTER_DECAL1" PROMPT="Right side of footer" WIDTH="100" TYPE="DECAL" DATA="wrapper:ava_decal_bottomright1"><PRETEXT><![CDATA[<div id='wrap_decal_1' style='overflow:hidden; height:100px; width:125px; margin-bottom:10px;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_SIDEBAR_HORIZONTAL" PROMPT="Horizontal across bottom" SUB="WRAP_SIDEBAR_HORIZONTAL" TYPE="SIDEBAR" LINEPRETEXT=" " LINEPOSTTEXT=" " DATA="wrapper:sidebar_horizontal"><PRETEXT><![CDATA[<div id='horizontalSidebar'>]]></PRETEXT>
+<ELEMENT ID="WRAPPER_SIDEBAR_HORIZONTAL" SUB="WRAP_SIDEBAR_HORIZONTAL" PROMPT="Horizontal across bottom" TYPE="SIDEBAR" LINEPRETEXT=" " LINEPOSTTEXT=" " DATA="wrapper:sidebar_horizontal"><PRETEXT><![CDATA[<div id='horizontalSidebar'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="DOCTYPE" TYPE="HIDDEN"><DEFAULT><![CDATA[
@@ -498,7 +498,7 @@ My Goods (%WRAP_MINICART%)
 
 ]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="NO_LEFT_COLUMN_DIV" TYPE="HIDDEN" OUTPUTFILTER="!PG=homepage,cart,*checkout" OUTPUTSKIP="1"><DEFAULT><![CDATA[
+<ELEMENT ID="NO_LEFT_COLUMN_DIV" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="!PG=homepage,cart,*checkout"><DEFAULT><![CDATA[
 
 <!--
 only gets output on pages with no left column.
@@ -538,14 +538,14 @@ is used to override width on bodyContent div
 
 ]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="CLOSE_NO_LEFT_COLUMN_DIV" TYPE="HIDDEN" OUTPUTFILTER="!PG=homepage,cart,*checkout" OUTPUTSKIP="1"><DEFAULT><![CDATA[
+<ELEMENT ID="CLOSE_NO_LEFT_COLUMN_DIV" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="!PG=homepage,cart,*checkout"><DEFAULT><![CDATA[
 
 
 </div><!-- /noLeftCol -->
 
 ]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="LEFT_COLUMN_HTML" TYPE="HIDDEN" OUTPUTFILTER="PG=homepage,cart,*checkout" OUTPUTSKIP="1"><DEFAULT><![CDATA[
+<ELEMENT ID="LEFT_COLUMN_HTML" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="PG=homepage,cart,*checkout"><DEFAULT><![CDATA[
 
 
 

@@ -82,7 +82,7 @@
 <ELEMENT ID="CPUMIUY" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPUMIUZ" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPUMIVA" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CPUMIVB" COLORS="0" TYPE="CONFIG" CATEGORIES="0" TITLE="golfball" CREATED="0" PROPERTIES="0" OCREATED="20050224"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
+<ELEMENT ID="CPUMIVB" COLORS="0" TYPE="CONFIG" CATEGORIES="0" CREATED="0" TITLE="golfball" OCREATED="20050224" PROPERTIES="0"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #006600; }
 .zbox_body {  background-color: #F0F0F0; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -246,7 +246,7 @@ function MM_swapImage() { //v3.0
 				<tr>
 				<td class="minicart" align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
+<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <table><tr>    
     <td align="left"><span class="small">Items: </span></td>

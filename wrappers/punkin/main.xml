@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULTCS" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULTCT" COLORS="128" TYPE="CONFIG" CATEGORIES="32776" CREATED="20020926" TITLE="Punkin" PROPERTIES="0" OCREATED="20020926" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULTCT" COLORS="128" TYPE="CONFIG" CATEGORIES="32776" TITLE="Punkin" CREATED="20020926" OCREATED="20020926" PROPERTIES="0" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #FF9900; }
 .zbox_body {  background-color: #F4E500; color: #000000; font-family: verdana; font-size: 9pt; }
@@ -178,7 +178,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 		<td bgcolor="#000000" width=99%><img src="%GRAPHICS_URL%/blank.gif" width="10" height="1" alt="" border="0"></td>
 		<td align="right" valign="middle" bgcolor="#000000">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="97" ID="CPULTDA" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPULTDA" HEIGHT="97" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULTDB" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td bgcolor="#000000"><img src="%GRAPHICS_URL%/blank.gif" width="10" height="1" alt="" border="0"></td>
 	</tr>

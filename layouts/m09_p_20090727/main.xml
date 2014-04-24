@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="DADBTEG" CREATED="00000000" OVERLOAD="dev.no_continue=1" SUBTYPE="P" EXPORT="0" TYPE="CONFIG" TITLE="Product: for Moby"></ELEMENT>
+<ELEMENT ID="DADBTEG" CREATED="00000000" OVERLOAD="dev.no_continue=1" SUBTYPE="P" TYPE="CONFIG" EXPORT="0" TITLE="Product: for Moby"></ELEMENT>
 <ELEMENT ID="VAR_USERNAME" DATA="FLOW::USERNAME" SUB="USERNAME" TYPE="READONLY"></ELEMENT>
 <ELEMENT ID="VAR_POPUPTHEME" RAW="1" SUB="POPUP_THEME" TYPE="READONLY" LOAD="profile:zoovy:popup_wrapper"></ELEMENT>
 <ELEMENT ID="VAR_SKU" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
@@ -58,7 +58,7 @@ print();
 <!-- /SUMMARY -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PROD_IMAGE1" EDITOR="INLINE" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="140" SUB="PROD_IMAGE1" BGCOLOR="FFFFFF" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PROD_IMAGE1" EDITOR="INLINE" DATA="product:zoovy:prod_image1" SUB="PROD_IMAGE1" WIDTH="140" PROMPT="Image 1" TYPE="IMAGE" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="SPECL_PROD_PRICING" SUB="PROD_PRICING" TYPE="SPECL"><HTML><![CDATA[
 <%
 print("");
@@ -238,13 +238,13 @@ print("");
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PROD_DESC" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_desc" PROMPT="Product Description" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
+<ELEMENT ID="PROD_DESC" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_desc" PROMPT="Product Description" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
 <div id="prodDescHeader" class='arrowbar_off'><a href='#' onclick='showHideiPanel("prodDesc"); return false;'>Product Description</a></div>
 <div id="prodDescContent" class='ztxt arrowbar_content' style='display:none;'>
 ]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST1" SIZE="5000" MAX="10" MULTIPAGE="0" SHOWDEFAULT="0" ALTERNATE="1" DATA="product:zoovy:prod_prodlist_style2" INVENTORY="1" COLS="1" FORMAT="CUSTOM" PROMPT="Accessories" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<ELEMENT SIZE="5000" ID="PRODLIST1" MAX="10" MULTIPAGE="0" SHOWDEFAULT="0" ALTERNATE="1" DATA="product:zoovy:prod_prodlist_style2" INVENTORY="1" COLS="1" FORMAT="CUSTOM" PROMPT="Accessories" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[
 <div id="prodAccessoriesHeader" class='arrowbar_off'><a href='#' onclick='showHideiPanel("prodAccessories"); return false;'>Accessories</a></div>
 <div id="prodAccessoriesContent" class='ztxt arrowbar_content' style='display:none;'>
 
@@ -331,13 +331,13 @@ print();
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PROD_DETAIL" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_detail" PROMPT="Product Details" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
+<ELEMENT ID="PROD_DETAIL" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_detail" PROMPT="Product Details" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
 <div id="prodDetailHeader" class='arrowbar_off'><a href='#' onclick='showHideiPanel("prodDetail"); return false;'>Specifications</a></div>
 <div id="prodDetailContent" class='ztxt arrowbar_content' style='display:none;'>
 ]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="PROD_DETAIL" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_features" PROMPT="Product Details" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
+<ELEMENT ID="PROD_DETAIL" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_features" PROMPT="Product Details" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
 <div id="prodFeaturesHeader" class='arrowbar_off'><a href='#' onclick='showHideiPanel("prodFeatures"); return false;'>Features</a></div>
 <div id="prodFeaturesContent" class='ztxt arrowbar_content' style='display:none;'>
 ]]></PRETEXT>

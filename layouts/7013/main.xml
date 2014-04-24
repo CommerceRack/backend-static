@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNFL" CREATOR="JT" CREATED="00000000" IMAGES="1" CLASSIFICATION="BOOKS" PROPERTIES="1" SUBTYPE="P" SERIES="2003" FORMAT="LAYOUT" SHORT="Contains 1 100x100 images on the top with the default description below." TYPE="CONFIG" TITLE="1 Image at the top" RELEASED="20030109"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKNFL" CREATOR="JT" IMAGES="1" CREATED="00000000" CLASSIFICATION="BOOKS" PROPERTIES="1" SUBTYPE="P" SERIES="2003" FORMAT="LAYOUT" SHORT="Contains 1 100x100 images on the top with the default description below." TYPE="CONFIG" TITLE="1 Image at the top" RELEASED="20030109"><SUMMARY><![CDATA[
 Authors Name
 Book Title
 Default Description (shared)
@@ -26,7 +26,7 @@ function zoom (url) {
 	<tr>
 		<td valign="top" width=100 align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100" ID="IMAGE1" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="100" PROMPT="Image 1" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="100" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="100" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="ADDTOCART" TYPE="ADDTOCART"></ELEMENT>
 <ELEMENT ID="CPUKNFN" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td valign="top" align="left" width=450>
@@ -36,7 +36,7 @@ function zoom (url) {
 				<td align="left" valign="top">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="TITLE" FONTMODE="DISABLE" HELP="This is the books name that will appear on your website." DATA="product:zoovy:prod_name" PROMPT="Book Title" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="TITLE" HELP="This is the books name that will appear on your website." FONTMODE="DISABLE" DATA="product:zoovy:prod_name" PROMPT="Book Title" DEFAULT="" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKNFO" TYPE="OUTPUT"><HTML><![CDATA[</td>
 			</tr><tr>
 				<td width=120 align="right" valign="top">Author:</td>

@@ -82,7 +82,7 @@
 <ELEMENT ID="CPULSGS" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULSGT" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULSGU" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CPULSGV" COLORS="8" TYPE="CONFIG" CATEGORIES="32768" CREATED="20020918" TITLE="Wiseman3" PROPERTIES="8" OCREATED="20020918" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULSGV" COLORS="8" TYPE="CONFIG" CATEGORIES="32768" TITLE="Wiseman3" CREATED="20020918" OCREATED="20020918" PROPERTIES="8" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #666666; }
 .zbox_body {  background-color: #f0f0f0; color: #000000; font-family: TIMES; font-size: 11pt; }
@@ -146,7 +146,7 @@ td.goo	{background-color: #FFFFFF;}
 		<td width="99%"></td>
 		<td align="right"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULSGZ" HEIGHT="65" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="65" ID="CPULSGZ" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULSHA" TYPE="OUTPUT"><HTML><![CDATA[</a>
 </td>
 	</tr>

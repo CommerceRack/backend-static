@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CQCSTLV" CREATOR="STAFF" IMAGES="0" CREATED="20070207" PROPERTIES="1" SUBTYPE="T" SERIES="2007" FORMAT="LAYOUT" TYPE="CONFIG" EXPORT="0" TITLE="Simple Image Cart"><SHORT><![CDATA[This layout features a single column image based cart with a text block, a product list header and a product list.]]></SHORT>
+<ELEMENT ID="CQCSTLV" CREATOR="STAFF" CREATED="20070207" IMAGES="0" PROPERTIES="1" SUBTYPE="T" SERIES="2007" FORMAT="LAYOUT" EXPORT="0" TYPE="CONFIG" TITLE="Simple Image Cart"><SHORT><![CDATA[This layout features a single column image based cart with a text block, a product list header and a product list.]]></SHORT>
 </ELEMENT>
 <ELEMENT ID="CUKUTUF" TYPE="OUTPUT"><HTML><![CDATA[<div style='width:98%;'>]]></HTML>
 </ELEMENT>
@@ -153,7 +153,7 @@ stop(unless=>$_);
 <ELEMENT ID="FEATUREDTITLE" LENGTH="50" HELP="This is the title that appears above the featured products listing" DATA="page:featured" PROMPT="Featured Products Title" DEFAULT="Featured Products" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</b><br>]]></POSTTEXT>
 <PRETEXT><![CDATA[<br><br><b> ]]></PRETEXT>
 </ELEMENT>
-<ELEMENT SIZE="50000" ID="PRODLIST1" HELP="You can add products to your shopping cart page" DATA="page:prodlist" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="PRODLIST1" SIZE="50000" HELP="You can add products to your shopping cart page" DATA="page:prodlist" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
 <ELEMENT ID="CUKUTUG" TYPE="OUTPUT"><HTML><![CDATA[</div>]]></HTML>
 </ELEMENT>
 

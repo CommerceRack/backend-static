@@ -84,7 +84,7 @@ print("' type='hidden'>
 ");
 %>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="REVIEWS_ICON_CHOOSER" DATA="profile:zoovy:prod_reviews_icon" RAW="1" VALUE="colored_stars" PROMPT="Reviews Icon (global)" SUB="NOT_USED" DEFAULT="colored_stars" FONT="0" TYPE="SELECT" LIST="REVIEW_ICONS"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages.  'colored' implies that the icons adopt color properties from your store.]]></HELP>
+<ELEMENT ID="REVIEWS_ICON_CHOOSER" DATA="profile:zoovy:prod_reviews_icon" RAW="1" VALUE="colored_stars" SUB="NOT_USED" PROMPT="Reviews Icon (global)" DEFAULT="colored_stars" TYPE="SELECT" FONT="0" LIST="REVIEW_ICONS"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages.  'colored' implies that the icons adopt color properties from your store.]]></HELP>
 </ELEMENT>
 <ELEMENT ID="REVIEWSUMMARY" DATA="product:zoovy:prod_reviews" SUB="REVIEW_SUMMARY" TYPE="REVIEWS"><HTML><![CDATA[
 <!-- SUMMARY -->
@@ -125,13 +125,13 @@ print();
 <!-- /SUMMARY -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="REVIEWOPTION" TRUE="%REVIEW_SUMMARY%" FALSE="" DATA="profile:zoovy:wrap_reviews" PROMPT="Product Reviews" SUB="ENABLE_REVIEWS" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"><HELP><![CDATA[
+<ELEMENT ID="REVIEWOPTION" TRUE="%REVIEW_SUMMARY%" FALSE="" DATA="profile:zoovy:wrap_reviews" SUB="ENABLE_REVIEWS" PROMPT="Product Reviews" ON="1" DEFAULT="1" TYPE="CHECKBOX" OFF="0"><HELP><![CDATA[
 Product Reviews allows your customers to add their personal input about a specific product.  Once their review is submitted, it is entered into a queue for your approval.  You have the ability to add/remove/edit any specific review through the product editor.
 <br>Enabling/disabling this feature is profile-wide. 
 <br>This feature requires the CRM bundle.
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="TAFOPTION" FALSE="" DATA="profile:zoovy:wrap_tellafriend" PROMPT="Tell a friend" SUB="ENABLE_TAF" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="TAFOPTION" FALSE="" DATA="profile:zoovy:wrap_tellafriend" SUB="ENABLE_TAF" PROMPT="Tell a friend" ON="1" DEFAULT="1" TYPE="CHECKBOX" OFF="0"><TRUE><![CDATA[
 <input type="button" onclick="openWindow('%HOME_URL%/popup.pl?verb=INIT_TAF&pg=*taf&fl=pop_taf1&product=%SKU%&wrapper=%POPUP_WRAPPER%');" value="Tell a Friend" class="zform_button">
 ]]></TRUE>
 <HELP><![CDATA[Tell a Friend or TAF is a feature that puts a contact form on your product pages so that your customers can send product specific information directly to an associate of theirs.  Your branding and product specific information are in the email sent, as well as a custom message set by your customer.<br>
@@ -178,14 +178,14 @@ function openWindow(url) {
 <!-- IMAGE 1 -->
 	<td colspan="2" rowspan="2">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQFJSMG" HEIGHT="145" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="145" PROMPT="Image 1" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT HEIGHT="145" ID="CQFJSMG" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="145" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="zborder" style="width:145px;">]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWMB" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <!-- IMAGE 2 -->
 	<td>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULCF1" HEIGHT="70" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image4" WIDTH="70" PROMPT="Image 4" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT HEIGHT="70" ID="CRGULCF1" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image4" PROMPT="Image 4" WIDTH="70" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="zborder" style="width:70px;">]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWMC" TYPE="OUTPUT"><HTML><![CDATA[</td>
@@ -194,7 +194,7 @@ function openWindow(url) {
 <!-- IMAGE 3 -->
 	<td>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULCF2" HEIGHT="70" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image5" WIDTH="70" PROMPT="Image 5" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT HEIGHT="70" ID="CRGULCF2" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image5" PROMPT="Image 5" WIDTH="70" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="zborder" style="width:70px;">]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWMD" TYPE="OUTPUT"><HTML><![CDATA[</td>
@@ -203,21 +203,21 @@ function openWindow(url) {
 <!-- IMAGE 4 -->
 	<td width="70">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULCF3" HEIGHT="70" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="70" PROMPT="Image 2" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT HEIGHT="70" ID="CRGULCF3" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image 2" WIDTH="70" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="zborder" style="width:70px;">]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWME" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <!-- IMAGE 5 -->
 	<td width="70">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULCF5" HEIGHT="70" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image3" WIDTH="70" PROMPT="Image 3" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT HEIGHT="70" ID="CRGULCF5" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image 3" WIDTH="70" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="zborder" style="width:70px;">]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWMF" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <!-- IMAGE 6 -->
 	<td>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULCF6" HEIGHT="70" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image6" WIDTH="70" PROMPT="Image 6" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT HEIGHT="70" ID="CRGULCF6" MINIMAL="0" ZOOM="1" DATA="product:zoovy:prod_image6" PROMPT="Image 6" WIDTH="70" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="zborder" style="width:70px;">]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWMG" TYPE="OUTPUT"><HTML><![CDATA[</td>
@@ -272,7 +272,7 @@ loadurp("product:zoovy:base_price");
 </ELEMENT>
 <ELEMENT ID="ADDTOCART" SHOWQUANTITY="Quantity: " TYPE="ADDTOCART"></ELEMENT>
 <ELEMENT ID="CZVIFIU" HTML="%PROD_WISHPOT_BUTTON%" TYPE="OUTPUT"></ELEMENT>
-<ELEMENT ID="QTYPRICE" MIDLINE=" for " DATA="product:zoovy:qty_price" PRELINE="Buy " PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
+<ELEMENT ID="QTYPRICE" DATA="product:zoovy:qty_price" MIDLINE=" for " PRELINE="Buy " PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
 <PRETEXT><![CDATA[<table class="zborder" style="width:200px; margin-bottom:3px;">
 <tr>
 	<td class="ztable_head">Quantity Discount Pricing</td>
@@ -360,7 +360,7 @@ print();
 </ELEMENT>
 <ELEMENT ID="CRNEEWH" TRUE="%REVIEWS%" TYPE="TRISTATE" LOAD="profile:zoovy:wrap_reviews" UNDEF="%REVIEWS%"><FALSE><![CDATA[<!-- reviews are turned off -->]]></FALSE>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="PRODLIST" MAX="20" SHOWDEFAULT="0" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="PRODUCT:zoovy:accessory_products"><HTML><![CDATA[
+<ELEMENT ID="PRODLIST" SIZE="5000" MAX="20" SHOWDEFAULT="0" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="PRODUCT:zoovy:accessory_products"><HTML><![CDATA[
 <div style="width:120px; padding:3px;" class="ztable_head">Accessories</div>
 <table cellspacing="1" cellpadding="0" class="ztabbody" width="100%" style="margin-bottom:3px;">
 <tr>
@@ -383,7 +383,7 @@ print();
 	
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="PRODLIST_RELATED" MAX="10" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<ELEMENT ID="PRODLIST_RELATED" SIZE="5000" MAX="10" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
 <td width="10%" class="zcolor_light" valign="top" align="center">
 <div class="ztitle2" style="margin:3px 0px 3px 0px; border-bottom:%ZBOX_BORDER%; width:150px;">Related Items<b></div>
 

@@ -85,7 +85,7 @@
 <ELEMENT ID="CPUMEPC" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMEPD" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Popup - Green Powee" CREATED="20030529" PROPERTIES="0" OCREATED="20030529" SITEBUTTONS="default=poweegreen|gif|112|32&amp;add_to_site=poweegreen|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPUMEPD" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20030529" TITLE="Popup - Green Powee" OCREATED="20030529" PROPERTIES="0" SITEBUTTONS="default=poweegreen|gif|112|32&amp;add_to_site=poweegreen|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #CCCCCC; }
 .zbox_body {  background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -145,7 +145,7 @@ body	{margin: 10px;}
 	<table cellspacing=0 cellpadding=0 border=0 width=170><tr>
 		<td height=154 background="%WRAPPER_URL%/logo_bg.gif"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMEPH" HEIGHT="154" WIDTH="170" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="154" ID="CPUMEPH" WIDTH="170" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPUMEPI" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 	</tr></table></td>
 	<td width=555 valign="top">

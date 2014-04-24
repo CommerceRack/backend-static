@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="MYCONFIG" V="3" IMAGES="0" CREATED="00000000" TYPE="CONFIG" TITLE="Popup Layout: Product Video"></ELEMENT>
+<ELEMENT ID="MYCONFIG" V="3" CREATED="00000000" IMAGES="0" TYPE="CONFIG" TITLE="Popup Layout: Product Video"></ELEMENT>
 <ELEMENT ID="PUT_SKU_INTO_FOCUS" TYPE="SPECL"><HTML><![CDATA[<%
 /* legacy support is to link to the product detail page. however, if this is loaded in popup.cgi, product is passed on URI and needs to be put into focus */
 

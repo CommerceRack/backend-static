@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULORU" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULORV" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20020724" TITLE="Tricolor2 07-24-02" OCREATED="20020724" PROPERTIES="10" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
+<ELEMENT ID="CPULORV" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Tricolor2 07-24-02" CREATED="20020724" PROPERTIES="10" OCREATED="20020724" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #660000; }
 .zbox_body {  background-color: #CCCCCC; color: #000000; font-family: verdana; font-size: 11pt; }
@@ -152,7 +152,7 @@ a:hover	{text-decoration: underline;
 		<td background="%WRAPPER_URL%/bar_top.gif" height=72><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
 		<td background="%WRAPPER_URL%/bar_top.gif" valign="middle" align="left">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="72" ID="CPULORZ" WIDTH="400" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPULORZ" HEIGHT="72" WIDTH="400" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULOSA" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td background="%WRAPPER_URL%/bar_top.gif"><img src="%WRAPPER_URL%/triangle_top.gif" width="154" height="72" alt="" border="0"></td>
 		<td background="%WRAPPER_URL%/bar_top.gif"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>

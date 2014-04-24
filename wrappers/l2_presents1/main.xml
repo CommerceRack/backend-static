@@ -83,7 +83,7 @@
 <ELEMENT ID="CQQZLMJ" SUB="WISHLIST_URL" TYPE="READONLY" LOAD="URL::WISHLIST_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQZLMK" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQZLML" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CQQZLMM" COLORS="128" TYPE="CONFIG" CATEGORIES="16386" CREATED="20020328" TITLE="Presents" PROPERTIES="2" OCREATED="20020328" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CQQZLMM" COLORS="128" TYPE="CONFIG" CATEGORIES="16386" TITLE="Presents" CREATED="20020328" OCREATED="20020328" PROPERTIES="2" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #336600; }
 .zbox_body {  background-color: #669966; color: #FFFFFF; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -178,7 +178,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 							<tr>
 								<td background="%WRAPPER_URL%/logo_background.gif" width="250" height="98" align="left" valign="top"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="80" ID="CQQZLMT" WIDTH="250" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CQQZLMT" HEIGHT="80" WIDTH="250" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQQZLMU" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 							</tr>
 						</table>

@@ -2,10 +2,10 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="MYCONFIG" V="3" IMAGES="0" CREATED="20090114" SUBTYPE="R" TYPE="CONFIG" TITLE="Policies Page: 3 policies and faq" RELEASED="20090114"><SUMMARY><![CDATA[This layout contains three policies; payment, shipping and returns.  Below the three policies is a list of FAQ.]]></SUMMARY>
+<ELEMENT ID="MYCONFIG" V="3" CREATED="20090114" IMAGES="0" SUBTYPE="R" TYPE="CONFIG" TITLE="Policies Page: 3 policies and faq" RELEASED="20090114"><SUMMARY><![CDATA[This layout contains three policies; payment, shipping and returns.  Below the three policies is a list of FAQ.]]></SUMMARY>
 <SHORT><![CDATA[This layout displays your profile shipping, return and payment policy, as well as a searchable FAQ interface and a list of your q &amp; a.  This faq element has the list of questions and answers displayed, instead of hidden and revealed 'on click'. Makes the page longer, but is easier to use.]]></SHORT>
 </ELEMENT>
-<ELEMENT ID="RETURNPOLICY" DATA="profile:zoovy:return_policy" PROMPT="Return Policy " TYPE="TEXT" FONT="0"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<ELEMENT ID="RETURNPOLICY" DATA="profile:zoovy:return_policy" PROMPT="Return Policy " FONT="0" TYPE="TEXT"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
 <PRETEXT><![CDATA[
 <div id='returns' style="margin-bottom:10px;">
 	<div class="ztitle">
@@ -16,7 +16,7 @@
 	</div>
 </div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="PAYMENTPOLICY" DATA="profile:zoovy:payment_policy" PROMPT="Payment Policy " TYPE="TEXT" FONT="0"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<ELEMENT ID="PAYMENTPOLICY" DATA="profile:zoovy:payment_policy" PROMPT="Payment Policy " FONT="0" TYPE="TEXT"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
 <PRETEXT><![CDATA[
 <div id='payment' style="margin-bottom:10px;">
 	<div class="ztitle">
@@ -27,7 +27,7 @@
 	</div>
 </div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="SHIPPINGPOLICY" DATA="profile:zoovy:shipping_policy" PROMPT="Shipping Policy " TYPE="TEXT" FONT="0"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<ELEMENT ID="SHIPPINGPOLICY" DATA="profile:zoovy:shipping_policy" PROMPT="Shipping Policy " FONT="0" TYPE="TEXT"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
 <PRETEXT><![CDATA[
 <div id='shipping' style="margin-bottom:10px;">
 	<div class="ztitle">

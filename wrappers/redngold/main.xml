@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULZIC" TYPE="OUTPUT"><HTML><![CDATA[	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULZID" COLORS="32" TYPE="CONFIG" CATEGORIES="32768" CREATED="20030121" TITLE="Red n Gold" PROPERTIES="10" OCREATED="20030121" SITEBUTTONS="default=dark|gif|120|22&amp;add_to_site_height=32&amp;update_cart=dark|gif|120|22Add+To+Site+Width" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULZID" COLORS="32" TYPE="CONFIG" CATEGORIES="32768" TITLE="Red n Gold" CREATED="20030121" OCREATED="20030121" PROPERTIES="10" SITEBUTTONS="default=dark|gif|120|22&amp;add_to_site_height=32&amp;update_cart=dark|gif|120|22Add+To+Site+Width" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #660000; }
 .zbox_body {  background-color: #F0F0F0; color: #000000; font-family: Arial, Helvetica; font-size: 9pt; }
@@ -181,7 +181,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 		<td width=28 valign="top"><img src="%WRAPPER_URL%/left.gif" width="28" height="71" alt="" border="0"></td>
 		<td width=200 background="%WRAPPER_URL%/logo_bg.gif">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULZIK" HEIGHT="95" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="95" ID="CPULZIK" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULZIL" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td background="%WRAPPER_URL%/logo_bg.gif" width=99%><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
 		<td background="%WRAPPER_URL%/logo_bg.gif" align="right"><br><img src="%WRAPPER_URL%/menu.gif" width="361" height="23" alt="" border="0" USEMAP="#menu_Map"><form action="%RESULTS_URL%" method="get"><input type="hidden" name="catalog" value=""><input type="text" name="keywords" value="" size="10" maxlength="25" style="border-color:#990000; background-color:#ffffff; color:#666666; font-family: sans-serif; font-size: 12px; width: 100px"><input type="image" src="%WRAPPER_URL%/search.gif" border=0></form></td>

@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMFD" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="This page uses boxes to encapsulate site data. Very purpleish." TYPE="CONFIG" TITLE="Boxed Columns" RELEASED="20021205"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMFD" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="This page uses boxes to encapsulate site data. Very purpleish." TYPE="CONFIG" TITLE="Boxed Columns" RELEASED="20021205"><SUMMARY><![CDATA[
 Company Name
 IMAGEe (450x250)
 Product Listing
@@ -24,7 +24,7 @@ Welcome Message
 			<tr bgcolor="#CCCCFF"><td align="center">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PICTURE" HEIGHT="250" HELP="Please select a front page picture for your site." DATA="page:picture" PROMPT="Front Page Picture" WIDTH="450" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="250" ID="PICTURE" HELP="Please select a front page picture for your site." DATA="page:picture" WIDTH="450" PROMPT="Front Page Picture" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMFG" TYPE="OUTPUT"><HTML><![CDATA[
 			</td></tr>
 			<tr bgcolor="#CCCCFF">
@@ -40,7 +40,7 @@ Welcome Message
 			<table border="3" bordercolor="#663366" cellpadding=0 cellspacing=0 width="100"><tr><td>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST1" SIZE="500" MAX="15" HELP="Your Products" DATA="page:prodlist" COLS="1" FORMAT="THUMB" PROMPT="Product Listing" DEFAULT="&amp;ALTERNATE=0" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT SIZE="500" ID="PRODLIST1" MAX="15" HELP="Your Products" DATA="page:prodlist" COLS="1" FORMAT="THUMB" PROMPT="Product Listing" DEFAULT="&amp;ALTERNATE=0" TYPE="PRODLIST"></ELEMENT>
 <ELEMENT ID="CPUKMFI" TYPE="OUTPUT"><HTML><![CDATA[
 			</td></tr></table>
 

@@ -14,13 +14,13 @@
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="260" ID="TOP_WIDE_BANNER" EDITOR="INLINE" DATA="page:banner_topwide" WIDTH="980" PROMPT="Banner: main (980x260)" TYPE="BANNER" BGCOLOR="TTTTTT"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="TOP_WIDE_BANNER" HEIGHT="260" EDITOR="INLINE" DATA="page:banner_topwide" PROMPT="Banner: main (980x260)" WIDTH="980" BGCOLOR="TTTTTT" TYPE="BANNER"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='elementMargin'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST1_HEADER" MAXLENGTH="45" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List Header" HELPER="A short heading for the product list (will appear in an H1 tag)" DEFAULT="Featured Items" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</h1></div>]]></POSTTEXT>
+<ELEMENT ID="PRODLIST1_HEADER" MAXLENGTH="45" EDITOR="INLINE" DATA="page:prodlist1_header" HELPER="A short heading for the product list (will appear in an H1 tag)" PROMPT="Product List Header" DEFAULT="Featured Items" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[</h1></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='prodlistHeader elementMargin'><h1>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST" MAX="8" MULTIPAGE="0" DATA="page:prodlist_custom" COLS="4" FORMAT="CUSTOM" PROMPT="Product List" HELPER="Multipage is disabled for this product list. A max of 8 items will show up, sorted randomly" DEFAULT="&amp;ALTERNATE=3" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[
+<ELEMENT ID="PRODLIST" MAX="8" MULTIPAGE="0" DATA="page:prodlist_custom" COLS="4" FORMAT="CUSTOM" HELPER="Multipage is disabled for this product list. A max of 8 items will show up, sorted randomly" PROMPT="Product List" DEFAULT="&amp;ALTERNATE=3" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[
 <div id='prodlist4Columns' class='prodlist4Columns elementMargin'>
 	<div class='prodlist'>
 <table>
@@ -77,10 +77,10 @@ print($PROD_URL);
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="130" ID="BOTTOM_WIDE_BANNER" EDITOR="INLINE" DATA="page:banner_bottomwide" WIDTH="980" PROMPT="Banner: bottom (980x130)" TYPE="BANNER" BGCOLOR="TTTTTT"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="BOTTOM_WIDE_BANNER" HEIGHT="130" EDITOR="INLINE" DATA="page:banner_bottomwide" PROMPT="Banner: bottom (980x130)" WIDTH="980" BGCOLOR="TTTTTT" TYPE="BANNER"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='elementMargin'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" FONT="0" TYPE="TEXT"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" TYPE="TEXT" FONT="0"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
 </ELEMENT>

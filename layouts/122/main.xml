@@ -18,7 +18,7 @@ function zoom (url) {
 <table width="540" border='0' cellspacing='0' cellpadding='0'>
 <tr><td width="180" align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="180" ID="IMAGE1" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="180" PROMPT="Image1 180 x 180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="180" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image1 180 x 180" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMOP" TYPE="OUTPUT"><HTML><![CDATA[</td>
 </tr>
 <tr><td colspan="3" valign="top"><font size=4>

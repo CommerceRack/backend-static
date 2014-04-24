@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT FORMAT="LAYOUT" ID="CPUKMCN" CREATOR="STAFF" SHORT="This layout has the basic elements to create a counter page." TYPE="CONFIG" TITLE="Plain" IMAGES="0" PROPERTIES="1" SERIES="2002" RELEASED="20021106" SUBTYPE="D"><SUMMARY><![CDATA[Counter Graph
+<ELEMENT ID="CPUKMCN" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="D" FORMAT="LAYOUT" SHORT="This layout has the basic elements to create a counter page." TYPE="CONFIG" TITLE="Plain" RELEASED="20021106"><SUMMARY><![CDATA[Counter Graph
 Extended Description
 ]]></SUMMARY>
 </ELEMENT>
@@ -10,13 +10,13 @@ Extended Description
 <table><tr><td>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" PROMPT="Extended Description" DEFAULT=" Here's a graph of this auction's views by hour!" TYPE="TEXT" HELP=" Extra information for your bidders." DATA="page:description"></ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP=" Extra information for your bidders." DATA="page:description" PROMPT="Extended Description" DEFAULT=" Here's a graph of this auction's views by hour!" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKMCP" TYPE="OUTPUT"><HTML><![CDATA[
 
 <P>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="HITGRAPH1" HEIGHT="200" PROMPT="Counter Graph" WIDTH="560" DEFAULT="Graph of visitors by the hour" TYPE="HITGRAPH" HELP="Auction Counter that tracks realtime traffic for this auction. " DATA="page:hitgraph"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="HITGRAPH1" HELP="Auction Counter that tracks realtime traffic for this auction. " DATA="page:hitgraph" WIDTH="560" PROMPT="Counter Graph" DEFAULT="Graph of visitors by the hour" TYPE="HITGRAPH"></ELEMENT>
 <ELEMENT ID="CPUKMCQ" TYPE="OUTPUT"><HTML><![CDATA[
 </td></tr></table>
 </center>

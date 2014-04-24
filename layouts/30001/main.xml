@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNGT" CREATOR="JT" CREATED="00000000" IMAGES="0" PROPERTIES="1" SUBTYPE="C" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="FAQ - 2 Topics / 10/15 question per topic" OCREATED="20050311"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKNGT" CREATOR="JT" IMAGES="0" CREATED="00000000" PROPERTIES="1" SUBTYPE="C" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="FAQ - 2 Topics / 10/15 question per topic" OCREATED="20050311"><SUMMARY><![CDATA[
 This layout contains 25 Question and Answer text fields, broken out into a group of 10 and a group of 15 with topic headers for each of the two groups of faq.  This set of FAQ is NOT tied into the profile.  
 ]]></SUMMARY>
 <SHORT><![CDATA[Contains textboxes for 2 top level topics, and room for 25 questions and answers, 10 under one topic and 15 under the other.]]></SHORT>
@@ -97,7 +97,7 @@ This layout contains 25 Question and Answer text fields, broken out into a group
 <p> </p>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="HEAD1" HELP="Please enter a question into this field" DATA="page:head1" PROMPT="Header 1" HELPER="This is the first header to divide the FAQ" DEFAULT="" TYPE="TEXT"><POSTTEXT><![CDATA[</b><br><ul>]]></POSTTEXT>
+<ELEMENT ID="HEAD1" HELP="Please enter a question into this field" DATA="page:head1" HELPER="This is the first header to divide the FAQ" PROMPT="Header 1" DEFAULT="" TYPE="TEXT"><POSTTEXT><![CDATA[</b><br><ul>]]></POSTTEXT>
 <PRETEXT><![CDATA[<a name="head1"></a><b>]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CPUKNGW" TYPE="OUTPUT"><HTML><![CDATA[
@@ -229,7 +229,7 @@ This layout contains 25 Question and Answer text fields, broken out into a group
 </td></tr></table></ul>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="HEAD2" HELP="Please enter a question into this field" DATA="page:head2" PROMPT="Header 2" HELPER="This is the second header to divide the FAQ" DEFAULT="" TYPE="TEXT"><POSTTEXT><![CDATA[</b><br><ul>]]></POSTTEXT>
+<ELEMENT ID="HEAD2" HELP="Please enter a question into this field" DATA="page:head2" HELPER="This is the second header to divide the FAQ" PROMPT="Header 2" DEFAULT="" TYPE="TEXT"><POSTTEXT><![CDATA[</b><br><ul>]]></POSTTEXT>
 <PRETEXT><![CDATA[<a name="head2"></a><b>]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CPUKNGY" TYPE="OUTPUT"><HTML><![CDATA[

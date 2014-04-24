@@ -8,18 +8,18 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="P_20060921" CREATOR="Zoovy: JT" V="3" CREATED="0" SUBTYPE="P" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Angled Headers" OCREATED="20060921" RELEASED="20061018"><SUMMARY><![CDATA[
+<ELEMENT FORMAT="LAYOUT" ID="P_20060921" CREATOR="Zoovy: JT" TYPE="CONFIG" V="3" CREATED="0" TITLE="Angled Headers" OCREATED="20060921" RELEASED="20061018" SUBTYPE="P"><SUMMARY><![CDATA[
 <p>This layout features product images on the left, with: sku, manufacturer, mgf id, reviews (optional), price, tell a friend (optional), add to cart and description to the right.</p>
 <p>Below that are two product lists.  On the left is accessories in a text format with a max of 20 and on the right is an image based related items product list with a max of 4.  Following that is the reviews section, which spans the width of the two product lists.</p>
 
 <p>Colors - The colors used in the layout are determined by the wrapper.  If you do not like the colors used, you can either select a different layout, or choose a different theme. The newer themes are more likely to have a better color pallette.</p>
 ]]></SUMMARY>
 </ELEMENT>
-<ELEMENT ID="VAR_USERNAME" DATA="FLOW::USERNAME" SUB="USERNAME" TYPE="READONLY"></ELEMENT>
-<ELEMENT ID="VAR_HOMEURL" DATA="URL::HOME_URL" SUB="HOME_URL" TYPE="READONLY"></ELEMENT>
-<ELEMENT ID="VAR_POPUPWRAPPER" RAW="1" SUB="POPUP_WRAPPER" TYPE="READONLY" LOAD="profile:zoovy:popup_wrapper"></ELEMENT>
-<ELEMENT ID="VAR_SKU" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
-<ELEMENT ID="VAR_PROD_URL" RAW="1" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL"></ELEMENT>
+<ELEMENT ID="VAR_USERNAME" SUB="USERNAME" TYPE="READONLY" DATA="FLOW::USERNAME"></ELEMENT>
+<ELEMENT ID="VAR_HOMEURL" SUB="HOME_URL" TYPE="READONLY" DATA="URL::HOME_URL"></ELEMENT>
+<ELEMENT ID="VAR_POPUPWRAPPER" SUB="POPUP_WRAPPER" TYPE="READONLY" LOAD="profile:zoovy:popup_wrapper" RAW="1"></ELEMENT>
+<ELEMENT ID="VAR_SKU" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD" RAW="1"></ELEMENT>
+<ELEMENT ID="VAR_PROD_URL" SUB="PRODUCT_URL" TYPE="READONLY" LOAD="URL::PRODUCT_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CZVHYAW" SUB="PROD_WISHPOT_BUTTON" TYPE="SPECL"><HTML><![CDATA[<%
 
 
@@ -84,16 +84,16 @@ print("' type='hidden'>
 ");
 %>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPXKZXR" RAW="1" SUB="ZTABLE_DARK_BG" TYPE="READONLY" LOAD="CSS::zcolor_dark.bgcolor"></ELEMENT>
-<ELEMENT ID="REVIEWS_ICON_CHOOSER" DATA="profile:zoovy:prod_reviews_icon" RAW="1" VALUE="stars" PROMPT="Reviews Icon (global)" SUB="NOT_USED" DEFAULT="stars" FONT="0" TYPE="SELECT" LIST="REVIEW_ICONS"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages.  'colored' implies that the icons adopt color properties from your store.]]></HELP>
+<ELEMENT ID="CPXKZXR" SUB="ZTABLE_DARK_BG" TYPE="READONLY" LOAD="CSS::zcolor_dark.bgcolor" RAW="1"></ELEMENT>
+<ELEMENT ID="REVIEWS_ICON_CHOOSER" VALUE="stars" SUB="NOT_USED" PROMPT="Reviews Icon (global)" DEFAULT="stars" TYPE="SELECT" FONT="0" LIST="REVIEW_ICONS" DATA="profile:zoovy:prod_reviews_icon" RAW="1"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages.  'colored' implies that the icons adopt color properties from your store.]]></HELP>
 </ELEMENT>
-<ELEMENT ID="TAFOPTION" TRUE="On" FALSE="Off" DATA="profile:zoovy:wrap_tellafriend" PROMPT="Tell a friend" SUB="ENABLE_TAF" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"><HELP><![CDATA[
+<ELEMENT ID="TAFOPTION" TRUE="On" SUB="ENABLE_TAF" PROMPT="Tell a friend" ON="1" DEFAULT="1" TYPE="CHECKBOX" FALSE="Off" DATA="profile:zoovy:wrap_tellafriend" OFF="0"><HELP><![CDATA[
 Tell a Friend or TAF is a feature that puts a contact form on your product pages so that your customers can send product specific information directly to an associate of theirs.  Your branding and product specific information are in the email sent, as well as a custom message set by your customer.<br>
 Enabling/disabling this feature is profile-wide.
 <br>This feature requires the XSELL bundle.
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="REVIEWSUMMARY" DATA="product:zoovy:prod_reviews" SUB="REVIEW_SUMMARY" TYPE="REVIEWS"><HTML><![CDATA[ <!-- Product review summary -->
+<ELEMENT ID="REVIEWSUMMARY" SUB="REVIEW_SUMMARY" TYPE="REVIEWS" DATA="product:zoovy:prod_reviews"><HTML><![CDATA[ <!-- Product review summary -->
 <!-- SUMMARY -->
 <!-- rating -->
 <div id="REVIEWSUMMARY" style="border-bottom:1px dotted <% loadurp("CSS::zcolor_light.bgcolor"); print(); %>; margin:3px 0px 10px 0px;">
@@ -135,7 +135,7 @@ print();
 <!-- /SUMMARY -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="REVIEWOPTION" TRUE="%REVIEW_SUMMARY%" FALSE="" DATA="profile:zoovy:wrap_reviews" PROMPT="Product Reviews" SUB="ENABLE_REVIEWS" DEFAULT="1" ON="1" TYPE="CHECKBOX" OFF="0"><HELP><![CDATA[
+<ELEMENT ID="REVIEWOPTION" TRUE="%REVIEW_SUMMARY%" SUB="ENABLE_REVIEWS" PROMPT="Product Reviews" ON="1" DEFAULT="1" TYPE="CHECKBOX" FALSE="" DATA="profile:zoovy:wrap_reviews" OFF="0"><HELP><![CDATA[
 Product Reviews allows your customers to add their personal input about a specific product.  Once their review is submitted, it is entered into a queue for your approval.  You have the ability to add/remove/edit any specific review through the product editor.
 <br>Enabling/disabling this feature is profile-wide. 
 <br>This feature requires the CRM bundle.
@@ -171,18 +171,18 @@ function openWindow(url) {
 <tr>
 	<td valign="top">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSQSQEP1" ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="146" PROMPT="Image 1" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CSQSQEP1" PROMPT="Image 1" WIDTH="146" TYPE="IMAGE" ZOOM="1" DATA="product:zoovy:prod_image1"></ELEMENT>
 <ELEMENT ID="CSQSQEQ" TYPE="OUTPUT"><HTML><![CDATA[
 <table cellspacing="0" cellpadding="0" border="0" width="146">
 <tr>
 	<td valign="top" width="50%" align="left" style="padding-top:2px;">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSQSQEP2" ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="72" PROMPT="Image 2" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CSQSQEP2" PROMPT="Image 2" WIDTH="72" TYPE="IMAGE" ZOOM="1" DATA="product:zoovy:prod_image2"></ELEMENT>
 <ELEMENT ID="CSQSQEQ2" TYPE="OUTPUT"><HTML><![CDATA[
 </td>
 	<td valign="top" width="50%" align="right" style="padding-top:2px;">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSQSQEP3" ZOOM="1" DATA="product:zoovy:prod_image3" WIDTH="72" PROMPT="Image 3" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="CSQSQEP3" PROMPT="Image 3" WIDTH="72" TYPE="IMAGE" ZOOM="1" DATA="product:zoovy:prod_image3"></ELEMENT>
 <ELEMENT ID="CSQSQEQ2" TYPE="OUTPUT"><HTML><![CDATA[
 </td>
 </tr>
@@ -207,9 +207,9 @@ function openWindow(url) {
 Sku: %SKU%<br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSQSQET" PRETEXT="Manufacturer: " DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+<ELEMENT ID="CSQSQET" PROMPT="Manufacturer" FONT="0" TYPE="TEXTBOX" PRETEXT="Manufacturer: " DATA="product:zoovy:prod_mfg"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="CSQSQEU" PRETEXT="Mfg ID: " DATA="product:zoovy:prod_mfgid" PROMPT="Manufacturer's ID" TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+<ELEMENT ID="CSQSQEU" PROMPT="Manufacturer's ID" FONT="0" TYPE="TEXTBOX" PRETEXT="Mfg ID: " DATA="product:zoovy:prod_mfgid"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CSQSQEV" TYPE="OUTPUT"><HTML><![CDATA[
 	</div>
@@ -220,7 +220,7 @@ Sku: %SKU%<br>
 	<td align="right"><div id="prodPriceElement" class="ztitle" style="margin-right:4px;">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSQSQER" HIDEZERO="1" ERROR="Not Set!" PRETEXT="only $" RAW="1" FORMAT="PLAINPRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT FORMAT="PLAINPRICE" ID="CSQSQER" TYPE="READONLY" HIDEZERO="1" ERROR="Not Set!" PRETEXT="only $" LOAD="product:zoovy:base_price" RAW="1"></ELEMENT>
 <ELEMENT ID="CSQSQEV2" TYPE="OUTPUT"><HTML><![CDATA[
 	</div>
 ]]></HTML>
@@ -261,7 +261,7 @@ stop(unless=>$_);
 <div id="prodDescElement">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PROD_DESC" DATA="product:zoovy:prod_desc" PROMPT="Product Description" TYPE="TEXT"><HELP><![CDATA[Your product description should contain a brief, yet colorful, description of the product.  Run this text through a spell checker because typo's and grammatical errors will not help your credibility.  You should not type in all uppercase, as it looks unprofessional and is hard to read.  In most cases, if a product description is present in a list (such as on a category, search results or homepage) the first 100-200 characters from this description will be used.]]></HELP>
+<ELEMENT ID="PROD_DESC" PROMPT="Product Description" TYPE="TEXT" DATA="product:zoovy:prod_desc"><HELP><![CDATA[Your product description should contain a brief, yet colorful, description of the product.  Run this text through a spell checker because typo's and grammatical errors will not help your credibility.  You should not type in all uppercase, as it looks unprofessional and is hard to read.  In most cases, if a product description is present in a list (such as on a category, search results or homepage) the first 100-200 characters from this description will be used.]]></HELP>
 </ELEMENT>
 <ELEMENT ID="CSQSQFA" TYPE="OUTPUT"><HTML><![CDATA[
 </div>
@@ -273,7 +273,7 @@ stop(unless=>$_);
 <tr>
 	<td valign="top" width="50%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="LIST_ACCESSORIES" SIZE="5000" MAX="20" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List - Accessories" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="PRODUCT:zoovy:accessory_products"><HTML><![CDATA[
+<ELEMENT FORMAT="CUSTOM" SIZE="5000" ID="LIST_ACCESSORIES" PROMPT="Product List - Accessories" MAX="20" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="PRODUCT:zoovy:accessory_products" DATA="product:zoovy:prod_prodlist_style2" COLS="1"><HTML><![CDATA[
 <!-- begin Accessories -->
 <div class="zcolor_dark" style="width:292px; height:22px;"><%
 loadurp("CSS::zcolor_dark.bgcolor");
@@ -307,7 +307,7 @@ print();
 	<td valign="top" width="50%" style="padding-left:4px;">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="LIST_RELATED" SIZE="5000" MAX="4" ALTERNATE="3" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List - Related Items" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[<!-- begin related items -->
+<ELEMENT FORMAT="CUSTOM" SIZE="5000" ID="LIST_RELATED" PROMPT="Product List - Related Items" MAX="4" TYPE="PRODLIST" ALTERNATE="3" DISABLEPRODUCTS="1" DATA="product:zoovy:prod_prodlist_style" COLS="1"><HTML><![CDATA[<!-- begin related items -->
 <div class="zcolor_dark" style="width:292px; height:22px;"><%
 loadurp("CSS::zcolor_dark.bgcolor");
 set($zcolor_dark_bgcolor=>$_);
@@ -351,7 +351,7 @@ stop(unless=>$_);
 </tr>
 </table>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="REVIEWDETAILS" DATA="product:zoovy:prod_reviews" SUB="REVIEWS" TYPE="REVIEWS"><HTML><![CDATA[<!-- product reviews -->
+<ELEMENT ID="REVIEWDETAILS" SUB="REVIEWS" TYPE="REVIEWS" DATA="product:zoovy:prod_reviews"><HTML><![CDATA[<!-- product reviews -->
 
 <!-- DETAIL -->
 <a name="reviews"></a>

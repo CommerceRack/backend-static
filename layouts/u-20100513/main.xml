@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="DCFMFDD" CREATED="20100518" IMAGES="0" PROPERTIES="1" SUBTYPE="U" EXPORT="0" TYPE="CONFIG" TITLE="Company contact info (address, mail, etc) and form" RELEASED="20100513"></ELEMENT>
+<ELEMENT ID="DCFMFDD" IMAGES="0" CREATED="20100518" PROPERTIES="1" SUBTYPE="U" TYPE="CONFIG" EXPORT="0" TITLE="Company contact info (address, mail, etc) and form" RELEASED="20100513"></ELEMENT>
 <ELEMENT ID="PAGE_URLSUB_LAYOUT" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
 <ELEMENT ID="PAGE_URLSUB_MAILCONFIG" RAW="1" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL"></ELEMENT>
 <ELEMENT ID="PAGE_URLSUB_RETURNS" RAW="1" SUB="RETURNS_URL" TYPE="READONLY" LOAD="URL::RETURNS_URL"></ELEMENT>
@@ -15,9 +15,9 @@
 <ELEMENT ID="VAR_FULLNAME" RAW="1" SUB="VAR_FORM_FULLNAME" TYPE="READONLY" LOAD="VAR::fullname"></ELEMENT>
 <ELEMENT ID="VAR_PHONE" RAW="1" SUB="VAR_FORM_PHONE" TYPE="READONLY" LOAD="VAR::phone"></ELEMENT>
 <ELEMENT ID="VAR_MESSAGE" RAW="1" SUB="VAR_FORM_MESSAGE" TYPE="READONLY" LOAD="VAR::message"></ELEMENT>
-<ELEMENT ID="DESCRIPTION_TOP" DATA="page:description" SUB="PAGE_DESC" PROMPT="Contact us text (top of page)" TYPE="TEXT"><DEFAULT><![CDATA[Here you can send a message regarding this site or a particular order. Below the contact information are links to some commonly requested pages.  The contact form is the best way to reach us electronically.]]></DEFAULT>
+<ELEMENT ID="DESCRIPTION_TOP" DATA="page:description" PROMPT="Contact us text (top of page)" SUB="PAGE_DESC" TYPE="TEXT"><DEFAULT><![CDATA[Here you can send a message regarding this site or a particular order. Below the contact information are links to some commonly requested pages.  The contact form is the best way to reach us electronically.]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION_BOTTOM" DATA="page:description2" SUB="PAGE_DESC_BOTTOM" PROMPT="Additional contact information (bottom of page)" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="DESCRIPTION_BOTTOM" DATA="page:description2" PROMPT="Additional contact information (bottom of page)" SUB="PAGE_DESC_BOTTOM" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="DCFMFDE" TYPE="OUTPUT"><HTML><![CDATA[
 
 <style type='text/css'>

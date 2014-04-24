@@ -23,12 +23,12 @@
 <!-- Image sub elements for javascript -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULBZ" DATA="product:zoovy:prod_image1" RAW="1" SUB="IMAGE1" TYPE="READONLY" FONT="0"></ELEMENT>
-<ELEMENT ID="CRGULCD" DATA="product:zoovy:prod_image2" RAW="1" SUB="IMAGE2" TYPE="READONLY" FONT="0"></ELEMENT>
-<ELEMENT ID="CRGULB4" DATA="product:zoovy:prod_image3" RAW="1" SUB="IMAGE3" TYPE="READONLY" FONT="0"></ELEMENT>
-<ELEMENT ID="CRGULC5" DATA="product:zoovy:prod_image4" RAW="1" SUB="IMAGE4" TYPE="READONLY" FONT="0"></ELEMENT>
-<ELEMENT ID="CRGULB6" DATA="product:zoovy:prod_image5" RAW="1" SUB="IMAGE5" TYPE="READONLY" FONT="0"></ELEMENT>
-<ELEMENT ID="CRGULC9" DATA="product:zoovy:prod_image6" RAW="1" SUB="IMAGE6" TYPE="READONLY" FONT="0"></ELEMENT>
+<ELEMENT ID="CRGULBZ" DATA="product:zoovy:prod_image1" RAW="1" SUB="IMAGE1" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRGULCD" DATA="product:zoovy:prod_image2" RAW="1" SUB="IMAGE2" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRGULB4" DATA="product:zoovy:prod_image3" RAW="1" SUB="IMAGE3" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRGULC5" DATA="product:zoovy:prod_image4" RAW="1" SUB="IMAGE4" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRGULB6" DATA="product:zoovy:prod_image5" RAW="1" SUB="IMAGE5" FONT="0" TYPE="READONLY"></ELEMENT>
+<ELEMENT ID="CRGULC9" DATA="product:zoovy:prod_image6" RAW="1" SUB="IMAGE6" FONT="0" TYPE="READONLY"></ELEMENT>
 <ELEMENT ID="CRNENFP" TYPE="OUTPUT"><HTML><![CDATA[
 
 <table cellspacing="4" cellpadding="0">
@@ -61,10 +61,10 @@
 		<div id="prod_topData_sku">Item #: %SKU%</div> 
 		]]></HTML>
 </ELEMENT>
-<ELEMENT ID="MANUFACTURER" DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" TYPE="TEXTBOX" FONT="0"><PRETEXT><![CDATA[<div id="prod_topData_mfg">Manufacturer: ]]></PRETEXT>
+<ELEMENT ID="MANUFACTURER" DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div id="prod_topData_mfg">Manufacturer: ]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="MANUFACTURERID" DATA="product:zoovy:prod_mfgid" PROMPT="Manufacturer's ID" TYPE="TEXTBOX" FONT="0"><PRETEXT><![CDATA[<div id="prod_topData_mfgid">Mfg. ID: ]]></PRETEXT>
+<ELEMENT ID="MANUFACTURERID" DATA="product:zoovy:prod_mfgid" PROMPT="Manufacturer's ID" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div id="prod_topData_mfgid">Mfg. ID: ]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CRNENFW" TYPE="OUTPUT"><HTML><![CDATA[
@@ -92,10 +92,10 @@
 	
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRNENGA" DATA="product:zoovy:prod_desc" PROMPT="Product Description" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<p>Description:<br>]]></PRETEXT>
+<ELEMENT ID="CRNENGA" DATA="product:zoovy:prod_desc" PROMPT="Product Description" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[<p>Description:<br>]]></PRETEXT>
 <POSTTEXT><![CDATA[</p>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="CRNENGB" DATA="product:zoovy:prod_detail" PROMPT="Product Specs (detailed description)" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<p>Specifications:<br>]]></PRETEXT>
+<ELEMENT ID="CRNENGB" DATA="product:zoovy:prod_detail" PROMPT="Product Specs (detailed description)" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[<p>Specifications:<br>]]></PRETEXT>
 <POSTTEXT><![CDATA[</p>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CRNENGC" RAW="1" TYPE="TEXTLIST" LOAD="product:zoovy:prod_features"><POSTTEXT><![CDATA[ </ul></p>]]></POSTTEXT>
@@ -149,7 +149,7 @@
 <!-- /DETAIL -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST_ACCESSORIES" SIZE="50000" MAX="15" COLS="1" FORMAT="CUSTOM" PROMPT="Accessory Products - set through product editor" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="PRODUCT:zoovy:accessory_products"><HTML><![CDATA[<!-- Accessories -->
+<ELEMENT SIZE="50000" ID="PRODLIST_ACCESSORIES" MAX="15" COLS="1" FORMAT="CUSTOM" PROMPT="Accessory Products - set through product editor" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="PRODUCT:zoovy:accessory_products"><HTML><![CDATA[<!-- Accessories -->
 <p>Accessories:<br>
 <!-- ROW -->
 <!-- PRODUCT -->
@@ -159,11 +159,11 @@
 </p>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="QTYPRICE" MIDLINE=" for " DATA="product:zoovy:qty_price" PRELINE="Buy " PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
+<ELEMENT ID="QTYPRICE" DATA="product:zoovy:qty_price" MIDLINE=" for " PRELINE="Buy " PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
 <PRETEXT><![CDATA[<p>Quantity Discount Pricing:<br>]]></PRETEXT>
 <POSTTEXT><![CDATA[</p>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="PRODLIST" MAX="3" DATA="page:prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[<table>
+<ELEMENT ID="PRODLIST" SIZE="5000" MAX="3" DATA="page:prodlist" COLS="3" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[<table>
 <!-- ROW -->
 <tr>
 <!-- PRODUCT -->

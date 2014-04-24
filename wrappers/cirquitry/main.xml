@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULYLG" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULYLH" COLORS="128" TYPE="CONFIG" CATEGORIES="33024" TITLE="Cirquitry" CREATED="20030102" PROPERTIES="0" OCREATED="20030102" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
+<ELEMENT ID="CPULYLH" COLORS="128" TYPE="CONFIG" CATEGORIES="33024" CREATED="20030102" TITLE="Cirquitry" OCREATED="20030102" PROPERTIES="0" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #006600; }
 .zbox_body {  background-color: #F0F0F0; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -193,7 +193,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 		<td width=227 align="left"><img src="%WRAPPER_URL%/fade.jpg" width="227" height="42" alt="" border="0"></td>
 		<td width=99%>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULYLO" HEIGHT="42" WIDTH="300" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT HEIGHT="42" ID="CPULYLO" WIDTH="300" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULYLP" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td width=10><img src="%GRAPHICS_URL%/blank.gif" width=10 height=1></td>
 	</tr>

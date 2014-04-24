@@ -85,7 +85,7 @@
 <ELEMENT ID="CPUMBJQ" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMBJR" COLORS="128" TYPE="CONFIG" CATEGORIES="32784" TITLE="Wildlife 02-24-03" CREATED="20030224" OCREATED="20030224" PROPERTIES="10" SITEBUTTONS="default=wildlife|gif|105|30&amp;add_to_site=wildlife|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPUMBJR" COLORS="128" TYPE="CONFIG" CATEGORIES="32784" CREATED="20030224" TITLE="Wildlife 02-24-03" PROPERTIES="10" OCREATED="20030224" SITEBUTTONS="default=wildlife|gif|105|30&amp;add_to_site=wildlife|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #F68924; }
 .zbox_body {  background-color: #FBFEC3; color: #000000; font-family: ARIAL; font-size: 9pt; }
@@ -125,7 +125,7 @@
 initialized = 0;
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMBJT" WIDTH="122" NOHOME="0" TYPE="MENU" BUTTONTYPE="wildlife_on" ONLYHOME="0"><HTML><![CDATA[
+<ELEMENT ID="CPUMBJT" WIDTH="122" NOHOME="0" TYPE="MENU" ONLYHOME="0" BUTTONTYPE="wildlife_on"><HTML><![CDATA[
 <!-- CATEGORY -->
 rollover_<% load($cat_num);  default("");  print(); %>_on = new Image;<% load("
 ");  default("");  print(); %>rollover_<% load($cat_num);  default("");  print(); %>_on.src = "<% load($button_imgsrc);  default("");  print(); %>";<% load("
@@ -135,7 +135,7 @@ rollover_<% load($cat_num);  default("");  print(); %>_on = new Image;<% load("
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMBJU" WIDTH="122" NOHOME="0" TYPE="MENU" BUTTONTYPE="wildlife_off" ONLYHOME="0"><HTML><![CDATA[
+<ELEMENT ID="CPUMBJU" WIDTH="122" NOHOME="0" TYPE="MENU" ONLYHOME="0" BUTTONTYPE="wildlife_off"><HTML><![CDATA[
 <!-- CATEGORY -->
 rollover_<% load($cat_num);  default("");  print(); %>_off = new Image;<% load("
 ");  default("");  print(); %>rollover_<% load($cat_num);  default("");  print(); %>_off.src = "<% load($button_imgsrc);  default("");  print(); %>";<% load("
@@ -177,7 +177,7 @@ body	{margin: 4px;}
 	<tr>
 		<td background="%WRAPPER_URL%/logo_bg.gif" width=213><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="95" ID="CPUMBJY" WIDTH="213" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPUMBJY" HEIGHT="95" WIDTH="213" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPUMBJZ" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 		<td align="left" valign="top"><img src="%WRAPPER_URL%/menu.jpg" width="545" height="99" alt="" border="0" USEMAP="#Untitled_1_Map"></td>
 	</tr>
@@ -191,7 +191,7 @@ body	{margin: 4px;}
 </form><br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMBKA" WIDTH="122" NOHOME="0" TYPE="MENU" BUTTONTYPE="wildlife_off" ONLYHOME="0"><HTML><![CDATA[
+<ELEMENT ID="CPUMBKA" WIDTH="122" NOHOME="0" TYPE="MENU" ONLYHOME="0" BUTTONTYPE="wildlife_off"><HTML><![CDATA[
 <!-- CATEGORY -->
 <a href="<% load($cat_url);  default("");  print(); %>" OnMouseOver="on(<% load($cat_num);  default("");  print(); %>)" OnMouseOut="off(<% load($cat_num);  default("");  print(); %>)"><img src="<% load($button_imgsrc);  default("");  print(); %>" width="<% load($button_width);  default("");  print(); %>" height="<% load($button_height);  default("");  print(); %>" border="0" name="roll_<% load($cat_num);  default("");  print(); %>"></a><br>
 

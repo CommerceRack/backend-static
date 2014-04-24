@@ -85,7 +85,7 @@
 <ELEMENT ID="CPUMFDR" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMFDS" COLORS="128" TYPE="CONFIG" CATEGORIES="32784" CREATED="20030805" TITLE="Widescreen5" PROPERTIES="2" OCREATED="20030805" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #E7BDBE; }
+<ELEMENT ID="CPUMFDS" COLORS="128" TYPE="CONFIG" CATEGORIES="32784" TITLE="Widescreen5" CREATED="20030805" OCREATED="20030805" PROPERTIES="2" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #E7BDBE; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #684040; }
 .zbox_body {  background-color: #F5E1E0; color: #000000; font-family: verdana; font-size: 9pt; }
@@ -176,7 +176,7 @@ a:hover	{text-decoration: underline;}
 <body text="#%CONTENT_TEXT_COLOR%" link="#%LINK_TEXT_COLOR%" alink="#%LINK_ACTIVE_TEXT_COLOR%" vlink="#%LINK_VISITED_TEXT_COLOR%">
 <div align="right">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="80" ID="CPUMFDZ" WIDTH="400" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPUMFDZ" HEIGHT="80" WIDTH="400" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="CPUMFEA" TYPE="OUTPUT"><HTML><![CDATA[
 </div>
 <div align="center">

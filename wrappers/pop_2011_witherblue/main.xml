@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT FORMAT="WRAPPER" ID="CONFIGELEMENT" TYPE="CONFIG" EXPORT="0" TITLE="Popup Theme: Wither Blue" CREATED="20110405" RELEASED="20110405" SUBTYPE="P"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+<ELEMENT ID="CONFIGELEMENT" FORMAT="WRAPPER" EXPORT="0" TYPE="CONFIG" CREATED="20110405" TITLE="Popup Theme: Wither Blue" SUBTYPE="P" RELEASED="20110405"><CSS><![CDATA[.zbody { background-color: #ffffff; }
 .zborder { border: 1px solid #cccccc; }
 .zbox { border: 1px solid #5f8aa8; }
 .zbox_body { background-color: #ffffff; color: #333333; font-family: Arial, Helvetica, sans-serif;; font-size: 11px; }
@@ -98,14 +98,14 @@
 </ELEMENT>
 <ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_LOGO" HEIGHT="50" MINIMAL_MODE="0" WIDTH="200" SUB="WRAP_LOGO" BGCOLOR="TTTTTT" TYPE="LOGO"></ELEMENT>
-<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTFILTER="!FS=C,P" OUTPUTSKIP="1"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
+<ELEMENT HEIGHT="50" ID="WRAPPER_LOGO" MINIMAL_MODE="0" SUB="WRAP_LOGO" WIDTH="200" TYPE="LOGO" BGCOLOR="TTTTTT"></ELEMENT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C,P"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
 <POSTTEXT><![CDATA[</h1>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="STORE_PHONE" SUB="WRAP_PHONE" TYPE="READONLY" LOAD="profile:zoovy:support_phone" RAW="1"><PRETEXT><![CDATA[<div class='phonePrompt'>Questions? Call</div><div class='phoneNumber'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="STORE_HOURS" PROMPT="Store Hours" SUB="WRAP_STORE_HOURS" FONT="0" TYPE="TEXTBOX" DATA="profile:zoovy:store_hours"><PRETEXT><![CDATA[<div id='mhStoreHours'>]]></PRETEXT>
+<ELEMENT ID="STORE_HOURS" SUB="WRAP_STORE_HOURS" PROMPT="Store Hours" TYPE="TEXTBOX" FONT="0" DATA="profile:zoovy:store_hours"><PRETEXT><![CDATA[<div id='mhStoreHours'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="WRAPPER_CUSTOM_FOOTER" SUB="WRAP_FOOTER" TYPE="FOOTER"><HTML><![CDATA[

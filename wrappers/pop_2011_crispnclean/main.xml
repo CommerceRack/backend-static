@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT FORMAT="WRAPPER" ID="DEKFGOP" TYPE="CONFIG" CREATED="20110315" TITLE="Popup Theme: Crisp-n-Clean" SITEBUTTONS="default=2011_crispnclean|gif|102|30&amp;checkout=2011_crispnclean|png|130|43" SUBTYPE="P" RELEASED="20110315"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+<ELEMENT ID="DEKFGOP" FORMAT="WRAPPER" TYPE="CONFIG" TITLE="Popup Theme: Crisp-n-Clean" CREATED="20110315" SITEBUTTONS="default=2011_crispnclean|gif|102|30&amp;checkout=2011_crispnclean|png|130|43" RELEASED="20110315" SUBTYPE="P"><CSS><![CDATA[.zbody { background-color: #ffffff; }
 .zborder { border: 1px solid #EDF2FD; }
 .zbox { border: 1px solid #f2f2f2; }
 .zbox_body { background-color: #ffffff; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 11px; }
@@ -82,15 +82,15 @@
 </ELEMENT>
 <ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_LOGO" HEIGHT="58" MINIMAL_MODE="1" WIDTH="300" SUB="WRAP_LOGO" BGCOLOR="TTTTTT" TYPE="LOGO"></ELEMENT>
-<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C,P"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
+<ELEMENT HEIGHT="58" ID="WRAPPER_LOGO" MINIMAL_MODE="1" SUB="WRAP_LOGO" WIDTH="300" TYPE="LOGO" BGCOLOR="TTTTTT"></ELEMENT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTFILTER="!FS=C,P" OUTPUTSKIP="1"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
 <POSTTEXT><![CDATA[</h1>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="WRAPPER_CUSTOM_FOOTER" SUB="WRAP_FOOTER" TYPE="FOOTER"><HTML><![CDATA[
 <div>Copyright &copy; <% load($year);  print(); %>.  All Rights Reserved.</div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="58" ID="TOPRIGHT_HEADER_DECAL1" WIDTH="200" PROMPT="Top right corner of header" SUB="WRAP_DECAL_HEADER1" TYPE="DECAL" DATA="wrapper:cnc_decal_topright1"><PRETEXT><![CDATA[<div class='floatRight marginLeft10 marginTop10' id='mastHeadDecal'>]]></PRETEXT>
+<ELEMENT ID="TOPRIGHT_HEADER_DECAL1" HEIGHT="58" SUB="WRAP_DECAL_HEADER1" PROMPT="Top right corner of header" WIDTH="200" TYPE="DECAL" DATA="wrapper:cnc_decal_topright1"><PRETEXT><![CDATA[<div class='floatRight marginLeft10 marginTop10' id='mastHeadDecal'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="DOCTYPE_N_HEAD" TYPE="HIDDEN"><DEFAULT><![CDATA[

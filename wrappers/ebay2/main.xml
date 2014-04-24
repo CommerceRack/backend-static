@@ -150,7 +150,7 @@ a	{color: #0000CC;}
 		</tr></table></form></td>
 		<td rowspan="2" style="border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #0000CC;"><a href="">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="55" ID="CQDPNXB" WIDTH="200" TYPE="LOGO" BGCOLOR="EEEEEE"></ELEMENT>
+<ELEMENT ID="CQDPNXB" HEIGHT="55" WIDTH="200" BGCOLOR="EEEEEE" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQDPNXC" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 		<td width="1%" align="right" valign="top"><img src="%WRAPPER_URL%/menu_right.gif" width="11" height="11"></td>
 	</tr><tr class="tab_bg">
@@ -158,7 +158,7 @@ a	{color: #0000CC;}
 			<td class="white_bg"  style="border-left-style: solid; border-left-width: 1px; border-left-color: #0000CC;"><a href="%HOME_URL%" class="menu">Home</a></td>
 			<td class="white_bg"><a href="%ABOUT_URL%" class="menu">About]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQDPNXD" TYPE="TEXT" FONT="0" PRETEXT="&amp;nbsp;" DATA="merchant:ebay:username"></ELEMENT>
+<ELEMENT ID="CQDPNXD" FONT="0" TYPE="TEXT" PRETEXT="&amp;nbsp;" DATA="merchant:ebay:username"></ELEMENT>
 <ELEMENT ID="CQDPNXE" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 			<td class="white_bg"><a href="%LOGIN_URL%" class="menu">Sign In</a></td>
 			<td class="white_bg"><a href="%CHECKOUT_URL%" class="menu">Checkout</a></td>
@@ -178,7 +178,7 @@ a	{color: #0000CC;}
 	<td NOWRAP align="right" width="10%"><span style="font-size: 12px;">Items in Cart: ]]></HTML>
 </ELEMENT>
 <ELEMENT ID="CQDPNXH" TYPE="MINICART" ITEMSONLY="1"></ELEMENT>
-<ELEMENT HTML=" | Subtotal: " ID="CQDPNXI" TYPE="OUTPUT"></ELEMENT>
+<ELEMENT ID="CQDPNXI" HTML=" | Subtotal: " TYPE="OUTPUT"></ELEMENT>
 <ELEMENT ID="CQDPNXJ" SUBTOTALONLY="1" TYPE="MINICART"></ELEMENT>
 <ELEMENT ID="CQDPNXK" TYPE="OUTPUT"><HTML><![CDATA[&nbsp;</span></td>
 </tr><tr>

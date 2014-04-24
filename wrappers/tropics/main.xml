@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULVKW" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULVKX" COLORS="128" TYPE="CONFIG" CATEGORIES="32800" CREATED="20021125" TITLE="Tropics" OCREATED="20021125" PROPERTIES="0" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULVKX" COLORS="128" TYPE="CONFIG" CATEGORIES="32800" TITLE="Tropics" CREATED="20021125" PROPERTIES="0" OCREATED="20021125" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #009900; }
 .zbox_body {  background-color: #CCCC99; color: #000000; font-family: ARIAL; font-size: 9pt; }
@@ -182,7 +182,7 @@ body	{margin: 0px}
 		<td width=135><img src="%WRAPPER_URL%/parrothead.gif" width="135" height="96" alt="" border="0"></td>
 		<td width=99% valign="middle" align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULVLE" HEIGHT="90" WIDTH="400" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="90" ID="CPULVLE" WIDTH="400" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="CPULVLF" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td width=96><img src="%WRAPPER_URL%/menu.gif" width="180" height="96" alt="" border="0" USEMAP="#menu"></td>
 	</tr>

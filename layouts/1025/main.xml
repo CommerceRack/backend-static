@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMXQ" CREATOR="STAFF" CREATED="00000000" IMAGES="3" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" SHORT="This layout features two images (200x200) with captions, followed by a 400x400 image." TYPE="CONFIG" TITLE="Information Page 1" RELEASED="20021205"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMXQ" CREATOR="STAFF" IMAGES="3" CREATED="00000000" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" SHORT="This layout features two images (200x200) with captions, followed by a 400x400 image." TYPE="CONFIG" TITLE="Information Page 1" RELEASED="20021205"><SUMMARY><![CDATA[
 Category Description
 IMAGE1 (200x200)
 IMAGE2 (200x200)
@@ -28,7 +28,7 @@ Product Listing
 <center>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="PIC1" HELP="Please select a picture for this category." DATA="page:picture1" WIDTH="200" PROMPT="Small Picture" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="200" HELP="Please select a picture for this category." DATA="page:picture1" PROMPT="Small Picture" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMXT" TYPE="OUTPUT"><HTML><![CDATA[
 </center>
 		</td>
@@ -36,7 +36,7 @@ Product Listing
 <center>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="PIC2" HELP="Please select a picture for this category." DATA="page:picture2" WIDTH="200" PROMPT="Small Picture" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PIC2" HEIGHT="200" HELP="Please select a picture for this category." DATA="page:picture2" PROMPT="Small Picture" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMXU" TYPE="OUTPUT"><HTML><![CDATA[
 </center>
 		</td>
@@ -45,13 +45,13 @@ Product Listing
 		<p>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CAPTION" HELP="Please input image caption here." DATA="page:caption" HELPER="Remember to keep this text short and to the point." PROMPT="Image Caption" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CAPTION" HELP="Please input image caption here." DATA="page:caption" PROMPT="Image Caption" HELPER="Remember to keep this text short and to the point." DEFAULT="" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKMXV" TYPE="OUTPUT"><HTML><![CDATA[
 </p></td>
 		<td align="center"><p>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CAPTION2" HELP="Please input image 2 caption here." DATA="page:caption2" HELPER="Remember to keep this text short and to the point." PROMPT="Image 2 Caption" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="CAPTION2" HELP="Please input image 2 caption here." DATA="page:caption2" PROMPT="Image 2 Caption" HELPER="Remember to keep this text short and to the point." DEFAULT="" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKMXW" TYPE="OUTPUT"><HTML><![CDATA[
 </p></td></tr><tr>	
 		<td colspan=2 align="center">]]></HTML>
@@ -63,7 +63,7 @@ Product Listing
 	<td colspan=2 align="center">
 	]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="250" ID="PIC3" HELP="Please select a picture for this category." DATA="page:picture3" WIDTH="450" PROMPT="Big Picture 3" DEFAULT="https://static.zoovy.com/img/H250-W450-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PIC3" HEIGHT="250" HELP="Please select a picture for this category." DATA="page:picture3" PROMPT="Big Picture 3" WIDTH="450" DEFAULT="https://static.zoovy.com/img/H250-W450-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMXY" TYPE="OUTPUT"><HTML><![CDATA[
 </td></tr>
 	<tr>

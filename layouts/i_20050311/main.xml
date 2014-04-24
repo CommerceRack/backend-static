@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNKN" IMAGES="0" CREATED="20050311" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" SHORT="A simple email template with a featured product and a second product list." TYPE="CONFIG" TITLE="Featured Product and Product List" NEWSLETTER="1"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKNKN" CREATED="20050311" IMAGES="0" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" SHORT="A simple email template with a featured product and a second product list." TYPE="CONFIG" TITLE="Featured Product and Product List" NEWSLETTER="1"><SUMMARY><![CDATA[
 Header
 Message
 Product Listing
@@ -32,7 +32,7 @@ Subheading
 <ELEMENT ID="CPVRQEQ" RAW="1" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL"></ELEMENT>
 <ELEMENT ID="CPVRQER" RAW="1" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL"></ELEMENT>
 <ELEMENT ID="CPVRQEV" RAW="1" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL"></ELEMENT>
-<ELEMENT HEIGHT="150" ID="CVPKKKP" MINIMAL_MODE="1" WIDTH="150" SUB="NEWS_LOGO" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CVPKKKP" HEIGHT="150" MINIMAL_MODE="1" SUB="NEWS_LOGO" WIDTH="150" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="CPUKNKO" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -68,7 +68,7 @@ width="100%" class="light_bg"><tr>
 	</tr><tr>
 		<td style="background-color: #ffffff">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="WELCOME" LENGTH="45" HELP="Please enter a header for this email" DATA="page:email_header" PROMPT="Header" HELPER="Remember to keep this text short and to the point." TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[</span></td></tr></table><br>]]></POSTTEXT>
+<ELEMENT ID="WELCOME" LENGTH="45" HELP="Please enter a header for this email" DATA="page:email_header" HELPER="Remember to keep this text short and to the point." PROMPT="Header" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</span></td></tr></table><br>]]></POSTTEXT>
 <PRETEXT><![CDATA[<table cellspacing="0" cellpadding="2" width="100%">
 <tr><td class="dark_bg"><span class="header">]]></PRETEXT>
 </ELEMENT>
@@ -80,10 +80,10 @@ width="100%" class="light_bg"><tr>
 	<td colspan="2"><p>	
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="WELCOME2" LENGTH="55" HELP="Please enter a Subheading" DATA="page:welcome_message" PROMPT="Subheading" HELPER="Remember to keep this text short and to the point." TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[</span><br>]]></POSTTEXT>
+<ELEMENT ID="WELCOME2" LENGTH="55" HELP="Please enter a Subheading" DATA="page:welcome_message" HELPER="Remember to keep this text short and to the point." PROMPT="Subheading" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</span><br>]]></POSTTEXT>
 <PRETEXT><![CDATA[<span class="subhead">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Please enter a message that will appear on this page" DATA="page:description" PROMPT="Message" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Type a short note here to remind yourself about this element.<br>]]></HELPER>
+<ELEMENT ID="DESCRIPTION" HELP="Please enter a message that will appear on this page" DATA="page:description" PROMPT="Message" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Type a short note here to remind yourself about this element.<br>]]></HELPER>
 </ELEMENT>
 <ELEMENT ID="CPUKNKS" TYPE="OUTPUT"><HTML><![CDATA[
 </p></td>

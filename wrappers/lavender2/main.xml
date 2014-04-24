@@ -82,7 +82,7 @@
 <ELEMENT ID="CPULLHI" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULLHJ" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULLHK" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CPULLHL" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20020612" TITLE="" PROPERTIES="2" OCREATED="20020612" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #C6A4C7; }
+<ELEMENT ID="CPULLHL" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="" CREATED="20020612" OCREATED="20020612" PROPERTIES="2" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #C6A4C7; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #cc99cc; }
 .zbox_body {  background-color: #FFCCFF; color: #800080; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -128,7 +128,7 @@
 <tr><td colspan="2" background="%WRAPPER_URL%/top.gif" height="100">
 <a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULLHP" HEIGHT="80" WIDTH="160" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="80" ID="CPULLHP" WIDTH="160" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULLHQ" TYPE="OUTPUT"><HTML><![CDATA[</a>&nbsp;
 </td></tr>
 <tr><td background="%WRAPPER_URL%/topmenu.gif" height="20" colspan="2" align="right">

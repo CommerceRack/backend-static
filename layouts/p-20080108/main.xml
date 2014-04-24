@@ -108,9 +108,9 @@ print("' type='hidden'>
 ");
 %>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="REVIEWS_ICON_CHOOSER" DATA="profile:zoovy:prod_reviews_icon" RAW="1" VALUE="colored_stars" SUB="NOT_USED" PROMPT="Reviews Icon (global)" DEFAULT="colored_stars" TYPE="SELECT" FONT="0" LIST="REVIEW_ICONS"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages. 'colored' implies that the icons adopt color properties from your store.]]></HELP>
+<ELEMENT ID="REVIEWS_ICON_CHOOSER" DATA="profile:zoovy:prod_reviews_icon" RAW="1" VALUE="colored_stars" PROMPT="Reviews Icon (global)" SUB="NOT_USED" DEFAULT="colored_stars" FONT="0" TYPE="SELECT" LIST="REVIEW_ICONS"><HELP><![CDATA[Choose a icon set for the reviews icons on your product pages. 'colored' implies that the icons adopt color properties from your store.]]></HELP>
 </ELEMENT>
-<ELEMENT ID="PROD_IMAGE1" HEIGHT="220" EDITOR="INLINE" DATA="product:zoovy:prod_image1" SUB="PROD_IMAGE1" WIDTH="250" PROMPT="Image 1" TYPE="IMAGE" BGCOLOR="FFFFFF"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT HEIGHT="220" ID="PROD_IMAGE1" EDITOR="INLINE" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="250" SUB="PROD_IMAGE1" BGCOLOR="FFFFFF" TYPE="IMAGE"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style='margin-bottom:3px;'>]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CSRPRZC" SUB="PROD_IMAGE_TEXT" TYPE="SPECL"><HTML><![CDATA[<!-- SpecL image element -->
@@ -211,7 +211,7 @@ math(op=>"subtract",var=>$price); format(hidezero); format(money); format(pretex
 %>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="QTYPRICE" DATA="product:zoovy:qty_price" MIDLINE=" for " PRELINE="Buy " SUB="PROD_QTY_DISCOUNT" PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
+<ELEMENT ID="QTYPRICE" MIDLINE=" for " DATA="product:zoovy:qty_price" PRELINE="Buy " PROMPT="Quantity Discount" SUB="PROD_QTY_DISCOUNT" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
 <PRETEXT><![CDATA[<table class="zborder" style="width:200px; margin:5px 0px;">
 <tr>
 	<td class="ztable_head">Quantity Discount Pricing</td>
@@ -221,7 +221,7 @@ math(op=>"subtract",var=>$price); format(hidezero); format(money); format(pretex
 <POSTTEXT><![CDATA[</td></tr></table>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CVXYRTP" SUB="PROD_ADDTOCART" TYPE="ADDTOCART" FORM="0"></ELEMENT>
-<ELEMENT ID="PROD_DESC" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_desc" PROMPT="Product Description" SUB="PROD_DESC" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Your product description should contain a brief, yet colorful, description of the product.  Run this text through a spell checker because typo's and grammatical errors will not help your credibility.  You should not type in all uppercase, as it looks unprofessional and is hard to read.  In most cases, if a product description is present in a list (such as on a category, search results or homepage) the first 100-200 characters from this description will be used.]]></HELPER>
+<ELEMENT ID="PROD_DESC" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_desc" SUB="PROD_DESC" PROMPT="Product Description" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Your product description should contain a brief, yet colorful, description of the product.  Run this text through a spell checker because typo's and grammatical errors will not help your credibility.  You should not type in all uppercase, as it looks unprofessional and is hard to read.  In most cases, if a product description is present in a list (such as on a category, search results or homepage) the first 100-200 characters from this description will be used.]]></HELPER>
 <POSTTEXT><![CDATA[</div>
 	<div class='zsmall no_underline' align='right'><a href='#top' class='zlink'>back to top</a></div>
 </div>]]></POSTTEXT>
@@ -231,7 +231,7 @@ math(op=>"subtract",var=>$price); format(hidezero); format(money); format(pretex
 ]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CVXYRTQ" MAXLENGTH="45" DATA="profile:zoovy:layout_accessories_heading" PROMPT="Heading for Accessories List (45 char max. Will only show if accessories are populated)" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT SIZE="5000" ID="PRODLIST_ACCESSORIES" MAX="10" SHOWDEFAULT="0" MULTIPAGE="0" ALTERNATE="1" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List: Accessories" SUB="PROD_PRODLIST_ACCESSORIES" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<ELEMENT ID="PRODLIST_ACCESSORIES" SIZE="5000" MAX="10" SHOWDEFAULT="0" MULTIPAGE="0" ALTERNATE="1" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" SUB="PROD_PRODLIST_ACCESSORIES" PROMPT="Product List: Accessories" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="PRODUCT:zoovy:accessory_products"><HTML><![CDATA[
 <div class='zborder ztxt' style='border-left:0px; border-right:0px; border-bottom:0px; margin-bottom:15px; padding-top:4px;'>
 	<div class='ztitle2' style='margin-bottom:2px;'><% loadurp("profile:zoovy:layout_accessories_heading"); default("These items go great");  format(encode=>"entity"); print(); %></div>
 	<div>
@@ -278,7 +278,7 @@ load($zoovy:base_price); format(hidezero); format(money); print();
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PROD_DETAIL" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_detail" PROMPT="Product Specifications (shared - prod_details)" SUB="PROD_DETAIL" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Use wiki text to format your content.<br>
+<ELEMENT ID="PROD_DETAIL" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_detail" SUB="PROD_DETAIL" PROMPT="Product Specifications (shared - prod_details)" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Use wiki text to format your content.<br>
 Go to <a href="http://www.zoovydocs.com/doc-50590" target="webdoc">http://www.zoovydocs.com/doc-50590</a> for more information on how to properly set up your links.<br>
 ]]></HELPER>
 <POSTTEXT><![CDATA[</div>
@@ -289,7 +289,7 @@ Go to <a href="http://www.zoovydocs.com/doc-50590" target="webdoc">http://www.zo
 	<div style='line-height:140%;'>]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CVXYRTR" MAXLENGTH="45" DATA="profile:zoovy:layout_relateditems_heading" PROMPT="Heading for related items list (45 char max. Will only show if related items are populated)" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT SIZE="5000" ID="PRODLIST_RELATED" MAX="15" ALTERNATE="0" DATA="product:zoovy:prod_prodlist_style" COLS="5" FORMAT="CUSTOM" SUB="PROD_PRODLIST_RELATED" PROMPT="Product List: related items" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<ELEMENT ID="PRODLIST_RELATED" SIZE="5000" MAX="15" ALTERNATE="0" DATA="product:zoovy:prod_prodlist_style" COLS="5" FORMAT="CUSTOM" PROMPT="Product List: related items" SUB="PROD_PRODLIST_RELATED" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
 <div class='ztxt' style='margin-bottom:15px; padding-top:4px;'>
 	<div class='ztitle'><div class='zcolor_light' style='margin-bottom:0px; padding:4px;'>
 	<% loadurp("profile:zoovy:layout_relateditems_heading"); default("May we also suggest..."); format(encode=>"entity"); print(); %>

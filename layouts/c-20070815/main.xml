@@ -2,13 +2,13 @@
 
 
 <!-- ******* -->
-<ELEMENT FORMAT="LAYOUT" ID="CPUKNJS" CREATOR="JT" SHORT="Big thumbnail product list" TYPE="CONFIG" CREATED="20070815" IMAGES="1" TITLE="Big thumbnails for products" PROPERTIES="1" RELEASED="20070815" SERIES="2007" SUBTYPE="C"><SUMMARY><![CDATA[This layout offers a product list at the top of the page with 120x180 thumbnails in a four column format, followed by an editable text area. At the bottom of the page is a simple list of categories/subcategories.]]></SUMMARY>
+<ELEMENT ID="CPUKNJS" CREATOR="JT" IMAGES="1" CREATED="20070815" PROPERTIES="1" SUBTYPE="C" SERIES="2007" FORMAT="LAYOUT" SHORT="Big thumbnail product list" TYPE="CONFIG" TITLE="Big thumbnails for products" RELEASED="20070815"><SUMMARY><![CDATA[This layout offers a product list at the top of the page with 120x180 thumbnails in a four column format, followed by an editable text area. At the bottom of the page is a simple list of categories/subcategories.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CUWISQW" TYPE="OUTPUT"><HTML><![CDATA[
 <div align='center'>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="PRODLIST" PROMPT="Product List" TYPE="PRODLIST" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="4"><HTML><![CDATA[<!-- product list -->
+<ELEMENT ID="PRODLIST" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="4" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[<!-- product list -->
 <table border='0' cellpadding='4' cellspacing='2' style='margin-bottom:5px;'>
 <!-- ROW -->
 <tr>
@@ -31,13 +31,13 @@
 <!-- /product list -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" PROMPT="Text Description" TYPE="TEXT" FONT="0" EDITOR="INLINE" DATA="page:description"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <HELP><![CDATA[When setting up links inside text or text boxes, be sure to use the proper linking syntax. Failure to do so can cause your customers cart to mysteriously empty.<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 <PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left; width:518px;' class='ztxt'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="SUBCATEGORIES" TYPE="SUBCAT" DESCENDTREE="1" MODE="LIST"><HTML><![CDATA[
+<ELEMENT ID="SUBCATEGORIES" DESCENDTREE="1" MODE="LIST" TYPE="SUBCAT"><HTML><![CDATA[
 <div style='margin-bottom:5px;'>
 <!-- CATEGORY -->
 <a href='<% print($cat_url); %>' class='cats'><% print($cat_pretty); %></a>

@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNFX" CREATOR="JT" IMAGES="3" CLASSIFICATION="GENERIC" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2003" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="3 Top Images and Toggled Descriptions" RELEASED="20030303"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKNFX" CREATOR="JT" CREATED="00000000" CLASSIFICATION="GENERIC" IMAGES="3" PROPERTIES="1" SUBTYPE="P" SERIES="2003" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="3 Top Images and Toggled Descriptions" RELEASED="20030303"><SUMMARY><![CDATA[
 Default Description (shared)
 Detailed Product Description
 IMAGE1 (120x120)
@@ -81,15 +81,15 @@ function getAbsPos(elt,which) {
 <table cellspacing=2 cellpadding=0 border=0>
 <tr><td width="120" align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="120" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image1 120 x 120" WIDTH="120" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="120" ID="IMAGE1" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="120" PROMPT="Image1 120 x 120" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNFZ" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <td align="center" width="120">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE2" HEIGHT="120" HELP="Please enter the second picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image2 120 x 120" WIDTH="120" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="120" ID="IMAGE2" HELP="Please enter the second picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="120" PROMPT="Image2 120 x 120" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNGA" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <td align="center" width="180">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE3" HEIGHT="120" HELP="Please enter the third picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image3 120 x 120" WIDTH="120" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="120" ID="IMAGE3" HELP="Please enter the third picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" WIDTH="120" PROMPT="Image3 120 x 120" DEFAULT="https://static.zoovy.com/img/H1-W1-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNGB" TYPE="OUTPUT"><HTML><![CDATA[</td>
 </tr><tr>
 <td>]]></HTML>

@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULPGQ" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULPGR" COLORS="129" TYPE="CONFIG" CATEGORIES="32768" TITLE="Swift Tunnel 3" CREATED="20020729" PROPERTIES="10" OCREATED="20020729" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #000000; }
+<ELEMENT ID="CPULPGR" COLORS="129" TYPE="CONFIG" CATEGORIES="32768" CREATED="20020729" TITLE="Swift Tunnel 3" OCREATED="20020729" PROPERTIES="10" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #000000; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #99CCFF; }
 .zbox_body {  background-color: #003399; color: #FFFFFF; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -156,7 +156,7 @@ form {display: inline; }
 		<td width="99%"></td>
 		<td>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULPGV" HEIGHT="68" WIDTH="200" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="68" ID="CPULPGV" WIDTH="200" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULPGW" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td width="5"><img src="%GRAPHICS_URL%/blank.gif" height="1" width="5"></td>
 	</tr>

@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNJU" CREATOR="JT" IMAGES="0" CREATED="20080609" PROPERTIES="1" SUBTYPE="C" FORMAT="LAYOUT" SHORT="3 Column product list with big thumbs" TYPE="CONFIG" TITLE="3 Column Product List" RELEASED="20080608"><SUMMARY><![CDATA[This layout features a three column list of products with a thumbnail, name and price, followed by a short text block.]]></SUMMARY>
+<ELEMENT ID="CPUKNJU" CREATOR="JT" CREATED="20080609" IMAGES="0" PROPERTIES="1" SUBTYPE="C" FORMAT="LAYOUT" SHORT="3 Column product list with big thumbs" TYPE="CONFIG" TITLE="3 Column Product List" RELEASED="20080608"><SUMMARY><![CDATA[This layout features a three column list of products with a thumbnail, name and price, followed by a short text block.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CXBLANB" TYPE="OUTPUT"><HTML><![CDATA[
 
@@ -10,8 +10,8 @@
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for main banner" FONT="0" TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="BANNER1" HEIGHT="150" EDITOR="INLINE" DATA="page:banner1" PROMPT="Main Banner" WIDTH="600" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:10px;" align='center'><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Link for main banner" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT HEIGHT="150" ID="BANNER1" EDITOR="INLINE" DATA="page:banner1" WIDTH="600" PROMPT="Main Banner" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="margin-bottom:10px;" align='center'><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="PRODLIST" MAX="500" ALTERNATE="0" DATA="page:prodlist_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[<!-- product list -->
@@ -41,7 +41,7 @@
 <!-- /product list -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Page Description" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Use wiki text to format your content.<br>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Page Description" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Use wiki text to format your content.<br>
 Go to <a href="http://www.zoovydocs.com/doc-50590" target="webdoc">http://www.zoovydocs.com/doc-50590</a> for more information on how to properly set up your links.<br>
 ]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>

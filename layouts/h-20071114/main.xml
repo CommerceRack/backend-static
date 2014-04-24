@@ -9,9 +9,9 @@
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CVOHUFT" HEIGHT="260" DATA="page:dynimage1" PROMPT="SlideShow" WIDTH="600" SUB="PAGE_SLIDESHOW" TYPE="DYNIMAGE"></ELEMENT>
-<ELEMENT ID="PAGE_PRODLIST1_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List 1 Header" DEFAULT="Best Sellers" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT SIZE="5000" ID="PAGE_PRODLIST1" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 1" SUB="PAGE_PRODLIST1" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<ELEMENT HEIGHT="260" ID="CVOHUFT" DATA="page:dynimage1" SUB="PAGE_SLIDESHOW" WIDTH="600" PROMPT="SlideShow" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST1_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List 1 Header" DEFAULT="Best Sellers" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST1" SIZE="5000" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="3" FORMAT="CUSTOM" SUB="PAGE_PRODLIST1" PROMPT="Product List 1" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
 <div id='zprodlist1' style='margin-bottom:5px;'>
 	<div id='zprodlist1_header' class='zcolor'>
 		<div style='padding:3px 8px; text-align:left; margin-bottom:3px;' class='zprodlist1_header'><% loadurp("page:prodlist1_header"); default("New Arrivals"); print(); %></div>
@@ -66,8 +66,8 @@ load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"9
 <!-- /product list -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PAGE_PRODLIST2_HEADER" WIKI="3" MAXLENGTH="20" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header" DEFAULT="Featured Items" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT SIZE="5000" ID="PAGE_PRODLIST2" MAX="6" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" SUB="PAGE_PRODLIST2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<ELEMENT ID="PAGE_PRODLIST2_HEADER" WIKI="3" MAXLENGTH="20" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header" DEFAULT="Featured Items" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST2" SIZE="5000" MAX="6" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="3" FORMAT="CUSTOM" SUB="PAGE_PRODLIST2" PROMPT="Product List 2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
 <div id='zprodlist2' style='margin-bottom:5px;'>
 <div id='zprodlist2_header' class='zcolor_dark'>
 	<div style='padding:3px 8px; text-align:left; margin-bottom:3px;' class='zprodlist2_header'><% loadurp("page:prodlist2_header"); default("Featured Items"); print(); %></div>
@@ -106,7 +106,7 @@ load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"9
 ]]></HTML>
 <DIVIDER><![CDATA[<td class='zprodlist2_celldivider'><img src='<% print($graphics_url); %>/blank.gif' height='1' width='5' alt='' border='0'></td>]]></DIVIDER>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="PAGE_DESC" PROMPT="Text Description" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Use wiki text to format your content.<br>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" SUB="PAGE_DESC" FONT="0" TYPE="TEXT"><HELPER><![CDATA[Use wiki text to format your content.<br>
 Go to <a href="http://www.zoovydocs.com/doc-50590" target="webdoc">http://www.zoovydocs.com/doc-50590</a> for more information on how to properly set up your links.<br>
 ]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>

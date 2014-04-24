@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMGM" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="A big picture, animated from images in your library." TYPE="CONFIG" TITLE="Animated" RELEASED="20020618"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMGM" CREATOR="STAFF" IMAGES="0" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="A big picture, animated from images in your library." TYPE="CONFIG" TITLE="Animated" RELEASED="20020618"><SUMMARY><![CDATA[
 Animated Picture (200 x 400)
 Bold Welcome Message
 Category Description
@@ -80,7 +80,7 @@ function zoom (url) {
 <center>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DYNIMAGE1" HEIGHT="200" HELP="Animated picture composed of images in your image library." DATA="page:dynimage" PROMPT="Animated Picture (200 x 400)" WIDTH="400" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="DYNIMAGE1" HELP="Animated picture composed of images in your image library." DATA="page:dynimage" WIDTH="400" PROMPT="Animated Picture (200 x 400)" TYPE="DYNIMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMGO" TYPE="OUTPUT"><HTML><![CDATA[
 <center>
 		</td>

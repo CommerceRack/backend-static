@@ -82,7 +82,7 @@
 <ELEMENT ID="CQDPNTC" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPNTD" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPNTE" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CQDPNTF" COLORS="0" TYPE="CONFIG" CATEGORIES="0" TITLE="ebay" CREATED="00000000" PROPERTIES="0" SITEBUTTONS="default=ebay|gif|101|23&amp;add_to_site=ebay|gif|122|32"><CSS><![CDATA[.zbody { background-color: #FFFFFF; }
+<ELEMENT ID="CQDPNTF" COLORS="0" TYPE="CONFIG" CATEGORIES="0" CREATED="00000000" TITLE="ebay" PROPERTIES="0" SITEBUTTONS="default=ebay|gif|101|23&amp;add_to_site=ebay|gif|122|32"><CSS><![CDATA[.zbody { background-color: #FFFFFF; }
 .zborder { border: 1px solid #CCCCCC; }
 .zbox { border: 1px solid #CCCCCC; }
 .zbox_body { background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -145,7 +145,7 @@ a	{color: #0000CC;}
 		<td width="98%" align="right">&nbsp;</td>
 		<td rowspan="2">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="55" ID="CQDPNTJ" WIDTH="200" TYPE="LOGO" BGCOLOR="EEEEEE"></ELEMENT>
+<ELEMENT ID="CQDPNTJ" HEIGHT="55" WIDTH="200" BGCOLOR="EEEEEE" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQDPNTK" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td width="1%" align="right" valign="top"><img src="%WRAPPER_URL%/menu_right.gif" width="11" height="11"></td>
 	</tr><tr class="tab_bg">
@@ -165,7 +165,7 @@ a	{color: #0000CC;}
 	<td NOWRAP align="right" width="10%"><span style="font-size: 12px;">Items in Cart: ]]></HTML>
 </ELEMENT>
 <ELEMENT ID="CQDPNTN" TYPE="MINICART" ITEMSONLY="1"></ELEMENT>
-<ELEMENT HTML=" | Subtotal: " ID="CQDPNTO" TYPE="OUTPUT"></ELEMENT>
+<ELEMENT ID="CQDPNTO" HTML=" | Subtotal: " TYPE="OUTPUT"></ELEMENT>
 <ELEMENT ID="CQDPNTP" SUBTOTALONLY="1" TYPE="MINICART"></ELEMENT>
 <ELEMENT ID="CQDPNTQ" TYPE="OUTPUT"><HTML><![CDATA[</span></td>
 </tr><tr>

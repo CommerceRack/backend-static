@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULUVM" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULUVN" COLORS="8" TYPE="CONFIG" CATEGORIES="32768" TITLE="Widescreen2" CREATED="20021121" OCREATED="20021121" PROPERTIES="2" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULUVN" COLORS="8" TYPE="CONFIG" CATEGORIES="32768" CREATED="20021121" TITLE="Widescreen2" PROPERTIES="2" OCREATED="20021121" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #333333; }
 .zbox_body {  background-color: #F0F0F0; color: #000000; font-family: verdana; font-size: 9pt; }
@@ -176,7 +176,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 <body>
 <div align="right">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="85" ID="CPULUVU" WIDTH="400" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPULUVU" HEIGHT="85" WIDTH="400" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULUVV" TYPE="OUTPUT"><HTML><![CDATA[
 </div>
 <div align="center">

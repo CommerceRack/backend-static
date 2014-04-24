@@ -2,11 +2,11 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CWNLLOI" EXPORT="0" TYPE="CONFIG" TITLE="Login Page" CREATED="20080501" SUBTYPE="L"></ELEMENT>
+<ELEMENT ID="CWNLLOI" CREATED="20080501" SUBTYPE="L" TYPE="CONFIG" EXPORT="0" TITLE="Login Page"></ELEMENT>
 <ELEMENT ID="CWJICWZ" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL"></ELEMENT>
 <ELEMENT ID="CWJICXA" SUB="LOGOUT_URL" TYPE="READONLY" LOAD="URL::LOGOUT_URL"></ELEMENT>
 <ELEMENT ID="CWJICXB" SUB="FORGOT_URL" TYPE="READONLY" LOAD="URL::FORGOT_URL"></ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" PROMPT="Text Description" SUB="PAGE_DESC" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="page:description"><HELPER><![CDATA[Use wiki text to format your content.<br>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="PAGE_DESC" PROMPT="Text Description" TYPE="TEXT" FONT="0"><HELPER><![CDATA[Use wiki text to format your content.<br>
 Go to <a href="http://www.zoovydocs.com/doc-50590" target="webdoc">http://www.zoovydocs.com/doc-50590</a> for more information on how to properly set up your links.<br>
 ]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>

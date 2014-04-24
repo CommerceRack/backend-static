@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULXHL" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULXHM" COLORS="16" TYPE="CONFIG" CATEGORIES="32769" CREATED="20021223" TITLE="Interface" OCREATED="20021223" PROPERTIES="0" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULXHM" COLORS="16" TYPE="CONFIG" CATEGORIES="32769" TITLE="Interface" CREATED="20021223" PROPERTIES="0" OCREATED="20021223" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #0047BF; }
 .zbox_body {  background-color: #CCDAF2; color: #000000; font-family: ARIAL; font-size: 11pt; }
@@ -185,7 +185,7 @@ body	{margin: 0px;}
 		<td valign="top" background="%WRAPPER_URL%/top_bg.gif"><img src="%WRAPPER_URL%/menu.gif" USEMAP="#Untitled_1_Map" width="308" height="32" alt="" border="0"></td>
 		<td valign="bottom" align="right" background="%WRAPPER_URL%/top_bg.gif">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULXHT" HEIGHT="63" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="63" ID="CPULXHT" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULXHU" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	</tr>
 </table>

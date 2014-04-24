@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLXI" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="This layout features a 560x100 graphic and short description." TYPE="CONFIG" TITLE="Wide Picture" RELEASED="20020618"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKLXI" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="C" FORMAT="LAYOUT" SHORT="This layout features a 560x100 graphic and short description." TYPE="CONFIG" TITLE="Wide Picture" RELEASED="20020618"><SUMMARY><![CDATA[
 Category Description
 IMAGE1 (560x100)
 Product Listing 
@@ -16,12 +16,12 @@ Product Listing
                 <td align=center width="560">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100" ID="PIC1" HELP="Please select a wide picture for your site." DATA="page:picture1" WIDTH="560" PROMPT="Wide Picture" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="100" HELP="Please select a wide picture for your site." DATA="page:picture1" PROMPT="Wide Picture" WIDTH="560" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLXK" TYPE="OUTPUT"><HTML><![CDATA[
 <p>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Category Description" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" HELPER="Remember to keep this text short and to the point.  " DEFAULT="" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKLXL" TYPE="OUTPUT"><HTML><![CDATA[
  
 <p>

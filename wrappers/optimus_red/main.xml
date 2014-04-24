@@ -82,7 +82,7 @@
 <ELEMENT ID="CQDPMZF" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPMZG" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPMZH" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CQDPMZI" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20041110" TITLE="Optimus red" PROPERTIES="11" OCREATED="20041110" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CQDPMZI" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Optimus red" CREATED="20041110" OCREATED="20041110" PROPERTIES="11" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #660000; }
 .zbox_body {  background-color: #F0F0F0; color: #000000; font-family: Arial, Helvetica; font-size: 9pt; }
@@ -156,7 +156,7 @@ a:hover	{color: #7C94CA; text-decoration: underline;}
 <table cellspacing="0" cellpadding="0" border="0" width="100%" class="outline"><tr>
 	<td height="60"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="60" ID="CQDPMZO" WIDTH="300" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="CQDPMZO" HEIGHT="60" WIDTH="300" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQDPMZP" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 	<td></td>
 </tr><tr>
@@ -170,7 +170,7 @@ a:hover	{color: #7C94CA; text-decoration: underline;}
 		<td><table cellspacing="0" cellpadding="0" width="100%"><tr>
 			<td align="left">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
+<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <table cellspacing="3" border="0" cellpadding="0" style="margin-left:4px;"><tr>	
 	<td align="right" valign="bottom"><span class="minicart">Items: </span></td>
@@ -273,7 +273,7 @@ a:hover	{color: #7C94CA; text-decoration: underline;}
 <ELEMENT ID="CQDPNAD" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	<td align="right"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="40" ID="CQDPNAE" WIDTH="200" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="CQDPNAE" HEIGHT="40" WIDTH="200" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQDPNAF" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 	
 </tr></table>

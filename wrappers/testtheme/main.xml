@@ -10,7 +10,7 @@
 <ELEMENT ID="CRNFLTZ" TYPE="OUTPUT"><HTML><![CDATA[<!-- Loose HTML created Mon 8-May-2006 14:10 PDT -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="testtheme" FORMAT="WRAPPER" CART="persist" COLORS="120" TYPE="CONFIG" V="2" CATEGORIES="65537" CREATED="00000000" TITLE="Evolution (Web 2.0)" PROPERTIES="315" SITEBUTTONS="default=reflectgel_grey|gif|110|33" OVERLOAD="flow.product=p-evolution&amp;site.css=1&amp;dev.search_bounce=0"><SUMMARY><![CDATA[This is the next generation Ajax theme. It offers: 
+<ELEMENT FORMAT="WRAPPER" ID="testtheme" COLORS="120" CART="persist" TYPE="CONFIG" CATEGORIES="65537" V="2" TITLE="Evolution (Web 2.0)" CREATED="00000000" PROPERTIES="315" SITEBUTTONS="default=reflectgel_grey|gif|110|33" OVERLOAD="flow.product=p-evolution&amp;site.css=1&amp;dev.search_bounce=0"><SUMMARY><![CDATA[This is the next generation Ajax theme. It offers: 
 <li>Your choice of 6 colors.</li>
 <li>Advanced search</li>
 <ol>
@@ -72,12 +72,12 @@
 </ELEMENT>
 <ELEMENT ID="ADDOVERLOAD" LINK="javascript:addToCart('%ID%','%SKU%');" BUTTON="add_to_cart" TYPE="OVERLOAD"></ELEMENT>
 <ELEMENT ID="CRUEGLS" SUB="COLOR1" DEFAULT="5E8ED0" TYPE="HIDDEN"></ELEMENT>
-<ELEMENT ID="COLOR_CHOOSER" VALUE="5E8ED0" SUB="COLOR1" PROMPT="Color" DEFAULT="5E8ED0" TYPE="SELECT" FONT="0" HELP="Choose a color from the list above to select the aesthetic to your store" LIST="COLOR1" DATA="merchant:zoovy:wrap_evolution_color" RAW="1"></ELEMENT>
-<ELEMENT ID="CATALOGCHOOSER" SUB="CATALOG" PROMPT="Search Catalog" TYPE="SELECT" FONT="0" LIST="@SYSTEM.SEARCHCATALOGS" DATA="merchant:zoovy:wrap_catalog"><HELP><![CDATA[
+<ELEMENT ID="COLOR_CHOOSER" VALUE="5E8ED0" PROMPT="Color" SUB="COLOR1" DEFAULT="5E8ED0" FONT="0" TYPE="SELECT" HELP="Choose a color from the list above to select the aesthetic to your store" LIST="COLOR1" DATA="merchant:zoovy:wrap_evolution_color" RAW="1"></ELEMENT>
+<ELEMENT ID="CATALOGCHOOSER" PROMPT="Search Catalog" SUB="CATALOG" FONT="0" TYPE="SELECT" LIST="@SYSTEM.SEARCHCATALOGS" DATA="merchant:zoovy:wrap_catalog"><HELP><![CDATA[
 The search catalog feature allows you to set which fields in the zoovy system are searchable.  By default, DEFAULT is created and selected, which searches your product ID and name.  You can create and modify search catalogs from the 'search catalogs' page off of setup.  A 'dictionary' search is required for the text autocomplete feature. If you have questions, please schedule time with a trainer.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="SEARCHMODE_CHOOSER" SUB="SEARCHMODE" PROMPT="Search Mode" DEFAULT="and" TYPE="SELECT" FONT="0" LIST="MODE" DATA="merchant:zoovy:wrap_searchmode" RAW="1"><HELP><![CDATA[
+<ELEMENT ID="SEARCHMODE_CHOOSER" PROMPT="Search Mode" SUB="SEARCHMODE" DEFAULT="and" FONT="0" TYPE="SELECT" LIST="MODE" DATA="merchant:zoovy:wrap_searchmode" RAW="1"><HELP><![CDATA[
 Search mode has three options:
 <li>'and' which will do a search and return results for product with BOTH words that are searched (X and Y) - system default</li>
 <li>'or' which will do a search and return results for product with EITHER words that are searched (X or Y) - returns most results</li>

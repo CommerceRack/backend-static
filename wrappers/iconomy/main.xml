@@ -82,7 +82,7 @@
 <ELEMENT ID="CQDPLXV" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPLXW" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPLXX" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CQDPLXY" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Iconomy" CREATED="20041014" PROPERTIES="11" SITEBUTTONS="default=iconomy|gif|100|70&amp;add_to_site=iconomy|gif|122|32"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CQDPLXY" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20041014" TITLE="Iconomy" PROPERTIES="11" SITEBUTTONS="default=iconomy|gif|100|70&amp;add_to_site=iconomy|gif|122|32"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #3C7B42; }
 .zbox_body {  background-color: #ffffff; color: #546451; font-family: arial, helvetica, sans serif; font-size: 9pt; }
@@ -147,7 +147,7 @@ h1	{margin: 0px; font-size: 14pt; color: #FF6600;}
 	<td valign="top"><table cellspacing=6 cellpadding=0 border=0 width="175"><tr>
 		<td valign="center" align="center"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQDPLYC" WIDTH="165" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CQDPLYC" WIDTH="165" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="CQDPLYD" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 	</tr><tr><td height=5></td></tr><tr>
 		<td class="light"><table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
@@ -246,7 +246,7 @@ print("&lt;/td&gt;&lt;/tr&gt;");
 <ELEMENT ID="CQDPLYJ" TYPE="OUTPUT"><HTML><![CDATA[</span></td>
 		<td align="right" NOWRAP>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
+<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <div class="minicart" style="margin-right:8px;">Items in Cart: <% load($TOTALCOUNT);  default("");  print(); %>
 <span style="word-spacing:10px;"> | </span>

@@ -27,7 +27,7 @@ function zoom (url) {
       <td valign=top width="200">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="200" PROMPT="Image 1" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE" HEIGHT="200" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="200" DEFAULT="" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMDO" TYPE="OUTPUT"><HTML><![CDATA[ 
     </td>
     <td valign="top"> 

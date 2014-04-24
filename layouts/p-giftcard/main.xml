@@ -2,10 +2,10 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CTJKLXZ" V="1" CREATED="20091130" OVERLOAD="dev.no_continue=1" SUBTYPE="P" FORMAT="LAYOUT" TYPE="CONFIG" EXPORT="0" TITLE="Gift Card (experimental)" RELEASED="20091130"><SUMMARY><![CDATA[A simple layout designed specifically for gift cards (should NOT be used with any other product). A default gift card graphic is diplayed if image1 is not set for the item (allowing you to easily override the default graphic).  The product default and detailed description are both present.  Default should be VERY short, as it appears above the add to cart button.  Use the detailed description for longer text, like legal mumbo-jumbo. A redepmtions/login prompt also appears below the add to cart. Both descriptions are wiki only.]]></SUMMARY>
+<ELEMENT ID="CTJKLXZ" V="1" CREATED="20091130" OVERLOAD="dev.no_continue=1" SUBTYPE="P" FORMAT="LAYOUT" EXPORT="0" TYPE="CONFIG" TITLE="Gift Card (experimental)" RELEASED="20091130"><SUMMARY><![CDATA[A simple layout designed specifically for gift cards (should NOT be used with any other product). A default gift card graphic is diplayed if image1 is not set for the item (allowing you to easily override the default graphic).  The product default and detailed description are both present.  Default should be VERY short, as it appears above the add to cart button.  Use the detailed description for longer text, like legal mumbo-jumbo. A redepmtions/login prompt also appears below the add to cart. Both descriptions are wiki only.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="VAR_SKU" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
-<ELEMENT ID="CPVRQCU" RAW="1" SUB="CART_URL" PROMPT="Product name" TYPE="READONLY" LOAD="URL::CART_URL"></ELEMENT>
+<ELEMENT ID="CPVRQCU" RAW="1" PROMPT="Product name" SUB="CART_URL" TYPE="READONLY" LOAD="URL::CART_URL"></ELEMENT>
 <ELEMENT ID="CPVRQCU2" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
 <ELEMENT ID="CPVRQCU3" RAW="1" SUB="LOGIN_URL" TYPE="READONLY" LOAD="URL::LOGIN_URL"></ELEMENT>
 <ELEMENT ID="DAZKBUI" BUTTON="add_to_cart" RAW="1" SUB="PROD_ADDTOCART_BTN" TYPE="SITEBUTTON"></ELEMENT>
@@ -22,9 +22,9 @@ goto(label=>"SHOWDEFAULT",eq=>"");
 
 %>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODNAME" WIKI="3" DATA="product:zoovy:prod_name" RAW="1" PROMPT="Name" SUB="PROD_NAME" TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="PRODDESC" WIKI="3" DATA="product:zoovy:prod_desc" RAW="1" PROMPT="Description" SUB="PROD_DESC" TYPE="TEXT"></ELEMENT>
-<ELEMENT ID="PRODDETAIL" WIKI="3" DATA="product:zoovy:prod_detail" RAW="1" PROMPT="Detailed description" SUB="PROD_DETAIL" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="PRODNAME" WIKI="3" DATA="product:zoovy:prod_name" RAW="1" SUB="PROD_NAME" PROMPT="Name" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="PRODDESC" WIKI="3" DATA="product:zoovy:prod_desc" RAW="1" SUB="PROD_DESC" PROMPT="Description" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="PRODDETAIL" WIKI="3" DATA="product:zoovy:prod_detail" RAW="1" SUB="PROD_DETAIL" PROMPT="Detailed description" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="MYADD2CART" TYPE="ADDTOCART" JAVASCRIPT="v2" OUTPUTSKIP="32768"><HTML><![CDATA[
 
 

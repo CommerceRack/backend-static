@@ -140,7 +140,7 @@ a:hover	{color: #6D903E;}
 		<td NOWRAP><span class="minicart">Items in Cart: ]]></HTML>
 </ELEMENT>
 <ELEMENT ID="CQDPKYX" TYPE="MINICART" ITEMSONLY="1"></ELEMENT>
-<ELEMENT HTML="&amp;nbsp;|&amp;nbsp;Subtotal: " ID="CQDPKYY" TYPE="OUTPUT"></ELEMENT>
+<ELEMENT ID="CQDPKYY" HTML="&amp;nbsp;|&amp;nbsp;Subtotal: " TYPE="OUTPUT"></ELEMENT>
 <ELEMENT ID="CQDPKYZ" SUBTOTALONLY="1" TYPE="MINICART"></ELEMENT>
 <ELEMENT ID="CQDPKZA" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	</tr></table></td>
@@ -201,7 +201,7 @@ a:hover	{color: #6D903E;}
 						<td width="1%"><img src="%GRAPHICS_URL%/blank.gif" width="5" height="5"></td>
 						<td width="9%"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="50" ID="CQDPKZF" WIDTH="200" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CQDPKZF" HEIGHT="50" WIDTH="200" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQDPKZG" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 			</tr></table><br>]]></HTML>
 </ELEMENT>

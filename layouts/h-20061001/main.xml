@@ -16,11 +16,11 @@
 	<td align="center">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CSPITCV" DATA="page:link_5x1" PROMPT="Link for 5 x 1 image" SUB="5X1_LINK" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+<ELEMENT ID="CSPITCV" DATA="page:link_5x1" SUB="5X1_LINK" PROMPT="Link for 5 x 1 image" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT HEIGHT="89" ID="CSPITCW" DATA="page:image_5x1" WIDTH="445" PROMPT="Image 1 ( 5 x 1 )" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="padding-top:5px;"><a href="%5X1_LINK%">]]></PRETEXT>
+<ELEMENT ID="CSPITCW" HEIGHT="89" DATA="page:image_5x1" PROMPT="Image 1 ( 5 x 1 )" WIDTH="445" TYPE="IMAGE"><PRETEXT><![CDATA[<div style="padding-top:5px;"><a href="%5X1_LINK%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CSPITCX" TYPE="OUTPUT"><HTML><![CDATA[

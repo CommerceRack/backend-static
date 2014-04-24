@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CZWVJPF" FORMAT="WRAPPER" AUTHOR="Zoovy: JT" TYPE="CONFIG" V="2" TITLE="Beige Box (wide)" CREATED="00000000" RELEASED="00000000"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+<ELEMENT FORMAT="WRAPPER" ID="CZWVJPF" AUTHOR="Zoovy: JT" TYPE="CONFIG" V="2" CREATED="00000000" TITLE="Beige Box (wide)" RELEASED="00000000"><CSS><![CDATA[.zbody { background-color: #ffffff; }
 .zborder { border: 1px solid #e9e7e3; }
 .zbox { border: 1px solid #fbf8f1; } 
 .zbox_body { background-color: #FFFFFF; color: #6d6d6d; font-family: helvetica, tahoma, arial; font-size: 11px; }
@@ -135,7 +135,7 @@
 </ELEMENT>
 <ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
 </ELEMENT>
-<ELEMENT HEIGHT="350" ID="PROD_IMAGE1" WIDTH="350" SUB="WRAP_PRODIMAGE_META" BGCOLOR="FFFFFF" TYPE="IMAGE" READONLY="1" EDITOR="INLINE" DATA="product:zoovy:prod_image1" OUTPUTSKIP="1" OUTPUTFILTER="!FS=P" RAW="1"><POSTTEXT><![CDATA[" />]]></POSTTEXT>
+<ELEMENT ID="PROD_IMAGE1" HEIGHT="350" SUB="WRAP_PRODIMAGE_META" WIDTH="350" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1" EDITOR="INLINE" DATA="product:zoovy:prod_image1" OUTPUTFILTER="!FS=P" OUTPUTSKIP="1" RAW="1"><POSTTEXT><![CDATA[" />]]></POSTTEXT>
 <PRETEXT><![CDATA[<link rel="image_src" href="]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNEEWE" SUB="THEME_DOCID" TYPE="READONLY" LOAD="FLOW::WRAPPER" RAW="1"></ELEMENT>
@@ -143,9 +143,9 @@
 <ELEMENT ID="CQPOIJP" SUB="SESSION_ID" TYPE="READONLY" LOAD="CART::ID" RAW="1"></ELEMENT>
 <ELEMENT ID="CRNEEWD" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD" RAW="1"></ELEMENT>
 <ELEMENT ID="ADDOVERLOAD" LINK="javascript:addToCart('%ID%','%SKU%');" BUTTON="add_to_cart" TYPE="OVERLOAD"></ELEMENT>
-<ELEMENT HEIGHT="70" ID="WRAPPER_LOGO" MINIMAL_MODE="1" SUB="WRAP_LOGO" WIDTH="300" TYPE="LOGO" BGCOLOR="TTTTTT"></ELEMENT>
+<ELEMENT ID="WRAPPER_LOGO" HEIGHT="70" MINIMAL_MODE="1" WIDTH="300" SUB="WRAP_LOGO" BGCOLOR="TTTTTT" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE"></ELEMENT>
-<ELEMENT ID="SEARCH_CATALOG_CHOOSER" SUB="SEARCHCATALOG" PROMPT="Search Catalog" HELPER="Be sure to set your catalog to all upper case.  Set to DEFAULT if you don't know what this is." TYPE="SELECT" FONT="0" EDITOR="INLINE" LIST="@SYSTEM.SEARCHCATALOGS" DATA="profile:zoovy:wrap_catalog"></ELEMENT>
+<ELEMENT ID="SEARCH_CATALOG_CHOOSER" HELPER="Be sure to set your catalog to all upper case.  Set to DEFAULT if you don't know what this is." PROMPT="Search Catalog" SUB="SEARCHCATALOG" FONT="0" TYPE="SELECT" EDITOR="INLINE" LIST="@SYSTEM.SEARCHCATALOGS" DATA="profile:zoovy:wrap_catalog"></ELEMENT>
 <ELEMENT ID="WRAPPER_BREADCRUMB" SUB="WRAP_BREADCRUMB" NOHOME="0" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C"><HTML><![CDATA[
 <div style='margin-bottom:4px; font-size:11px; color:#a5a399' class='breadcrumb'>
 <!-- CATEGORY -->
@@ -155,11 +155,11 @@
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="VISIBLE_CART_ELEMENT" FORMAT="CUSTOM" PROMPT="Shopping Cart" SUB="WRAP_MINICART" TYPE="CART" NOITEMS_SPEC="0 Items"><HTML><![CDATA[<!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
+<ELEMENT FORMAT="CUSTOM" ID="VISIBLE_CART_ELEMENT" SUB="WRAP_MINICART" PROMPT="Shopping Cart" TYPE="CART" NOITEMS_SPEC="0 Items"><HTML><![CDATA[<!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <% load($TOTALCOUNT);  default("");  print(); %> Items: <% load($SUBTOTAL);  default("");  format(money);  print(); %>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" SUB="WRAP_AJAX_MINICART" TYPE="CART" NOITEMS_SPEC="This cart is empty" OUTPUTSKIP="1" COLS="1" OUTPUTFILTER="FS=T"><HTML><![CDATA[
+<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" SUB="WRAP_AJAX_MINICART" PROMPT="Shopping Cart" TYPE="CART" NOITEMS_SPEC="This cart is empty" OUTPUTSKIP="1" OUTPUTFILTER="FS=T" COLS="1"><HTML><![CDATA[
 <div style='height:320px; overflow:auto;'>
 <table cellpadding="2" cellspacing="0" width='100%'>
 <!-- ROW -->
@@ -224,7 +224,7 @@ Sku: <% load($SKU_LINK);  default("");  print(); %>
 </tr>
 ]]></SURCHARGE_SHP_SPEC>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="PRODLIST_SMART_ACCESSORIES" SIZE="5000" SUB="WRAP_PRODLIST_SMARTACCESSORIES" PROMPT="Smart Accessories" MAX="6" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="SMART:ACCESSORIES" ALTERNATE="0" MULTIPAGE="0" SHOWDEFAULT="0" DATA="page:prod_prodlist_style2" COLS="3"><HTML><![CDATA[
+<ELEMENT SIZE="5000" ID="PRODLIST_SMART_ACCESSORIES" FORMAT="CUSTOM" PROMPT="Smart Accessories" SUB="WRAP_PRODLIST_SMARTACCESSORIES" MAX="6" TYPE="PRODLIST" SHOWDEFAULT="0" MULTIPAGE="0" ALTERNATE="0" SRC="SMART:ACCESSORIES" DISABLEPRODUCTS="1" DATA="page:prod_prodlist_style2" COLS="3"><HTML><![CDATA[
 
 <table border='0' cellpadding='0' cellspacing='5' align='center'>
 <!-- ROW -->
@@ -259,19 +259,19 @@ Sku: <% load($SKU_LINK);  default("");  print(); %>
 
 ]]></DIVIDER>
 </ELEMENT>
-<ELEMENT HEIGHT="75" ID="TOP_RIGHT_CORNER1" WIDTH="300" PROMPT="Banner: top right corner" SUB="WRAP_BANNER_TOPRIGHT1" TYPE="BANNER" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="wrapper:l9bb_banner_topright1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="TOP_RIGHT_CORNER1" HEIGHT="75" SUB="WRAP_BANNER_TOPRIGHT1" PROMPT="Banner: top right corner" WIDTH="300" BGCOLOR="TTTTTT" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:l9bb_banner_topright1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style='margin-bottom:4px;'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT HEIGHT="75" ID="BOTTOM_LEFT1" WIDTH="488" PROMPT="Banner: below content on left" SUB="WRAP_BANNER_BOTTOMLEFT1" TYPE="BANNER" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="wrapper:l9bb_banner_bottomleft1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="BOTTOM_LEFT1" HEIGHT="75" SUB="WRAP_BANNER_BOTTOMLEFT1" PROMPT="Banner: below content on left" WIDTH="488" BGCOLOR="TTTTTT" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:l9bb_banner_bottomleft1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style='float:left; width:488px; text-align:left; margin:4px 0;'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT HEIGHT="75" ID="BOTTOM_LEFT1" WIDTH="488" PROMPT="Banner: below content on right" SUB="WRAP_BANNER_BOTTOMRIGHT1" TYPE="BANNER" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="wrapper:l9bb_banner_bottomright1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="BOTTOM_LEFT1" HEIGHT="75" SUB="WRAP_BANNER_BOTTOMRIGHT1" PROMPT="Banner: below content on right" WIDTH="488" BGCOLOR="TTTTTT" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:l9bb_banner_bottomright1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style='float:left; width:488px; text-align:left; margin:4px 0;'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="WRAPPERS_NEWSTEXT" WIKI="3" PROMPT="Short marketing text for newsletter (no html)" SUB="WRAP_NEWS_TEXT" TYPE="TEXT" FONT="0" DATA="profile:zoovy:wrap_newstext"><PRETEXT><![CDATA[<div style='width:200px;'>]]></PRETEXT>
+<ELEMENT ID="WRAPPERS_NEWSTEXT" WIKI="3" SUB="WRAP_NEWS_TEXT" PROMPT="Short marketing text for newsletter (no html)" FONT="0" TYPE="TEXT" DATA="profile:zoovy:wrap_newstext"><PRETEXT><![CDATA[<div style='width:200px;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="SUBCATEGORIES" HOME="0" SUB="WRAP_CATEGORIES" TYPE="SUBCAT" SRC="." MODE="LIST"><HTML><![CDATA[
+<ELEMENT HOME="0" ID="SUBCATEGORIES" SUB="WRAP_CATEGORIES" TYPE="SUBCAT" SRC="." MODE="LIST"><HTML><![CDATA[
 <div class='top_cats'>
 <!-- CATEGORY -->
 <a href='<% print($cat_url); %>' title="<% load($cat_pretty); default(""); format(encode=>"entity"); print(); %>"><% print($cat_pretty); %></a>
@@ -352,8 +352,8 @@ load($PATH.TOPCAT);
 
 ]]></KITTENHTML>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_DECAL1" HEIGHT="70" PROMPT="Header Decal Numero Uno" WIDTH="100" SUB="WRAP_DECAL1" TYPE="DECAL" HELP="This is the help text.  Isn't it helpful" DATA="wrapper:l9_beigebox_top_decal"></ELEMENT>
-<ELEMENT ID="WRAPPER_DECAL2" HEIGHT="200" PROMPT="Header Decal Numero Two" WIDTH="100" SUB="WRAP_DECAL2" TYPE="DECAL" HELP="This is the help text.  Isn't it helpful" DATA="wrapper:l9_beigebox_top_decal2"></ELEMENT>
+<ELEMENT HEIGHT="70" ID="WRAPPER_DECAL1" SUB="WRAP_DECAL1" WIDTH="100" PROMPT="Header Decal Numero Uno" TYPE="DECAL" HELP="This is the help text.  Isn't it helpful" DATA="wrapper:l9_beigebox_top_decal"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="WRAPPER_DECAL2" SUB="WRAP_DECAL2" WIDTH="100" PROMPT="Header Decal Numero Two" TYPE="DECAL" HELP="This is the help text.  Isn't it helpful" DATA="wrapper:l9_beigebox_top_decal2"></ELEMENT>
 <ELEMENT ID="CZWVJPM" TYPE="OUTPUT"><HTML><![CDATA[
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -491,7 +491,7 @@ var DOCID = '%THEME_DOCID%';
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CZWVJPQ" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C"><DEFAULT><![CDATA[
+<ELEMENT ID="CZWVJPQ" TYPE="HIDDEN" OUTPUTFILTER="!FS=C" OUTPUTSKIP="1"><DEFAULT><![CDATA[
 
 <!-- left column hides on non-category pages -->
 

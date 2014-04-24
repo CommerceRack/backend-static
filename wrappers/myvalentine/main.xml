@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULYAB" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULYAC" COLORS="128" TYPE="CONFIG" CATEGORIES="32776" TITLE="My Valentine" CREATED="20021230" PROPERTIES="8" OCREATED="20021230" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULYAC" COLORS="128" TYPE="CONFIG" CATEGORIES="32776" CREATED="20021230" TITLE="My Valentine" OCREATED="20021230" PROPERTIES="8" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #990000; }
 .zbox_body {  background-color: #FFFFFF; color: #000000; font-family: ARIAL; font-size: 11pt; }
@@ -148,7 +148,7 @@ p	{font-family: verdana; font-size: 10px;}
 		<td></td>
 		<td width=99% align="center"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULYAG" HEIGHT="107" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="107" ID="CPULYAG" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULYAH" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 		<td></td>
 		<td><img src="%WRAPPER_URL%/hearts.gif" width="127" height="84" alt="" border="0"></td>

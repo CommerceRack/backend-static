@@ -24,7 +24,7 @@ stop(unless=>$_);
 </ELEMENT>
 <ELEMENT ID="WRAP_NONSECURE_URL" RAW="1" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL"></ELEMENT>
 <ELEMENT ID="CRNENFL" RAW="1" SUB="SKU" TYPE="READONLY" LOAD="FLOW::PROD"></ELEMENT>
-<ELEMENT ID="CXIBSKV" HEIGHT="65" SUB="PAGE_LOGO" WIDTH="250" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT HEIGHT="65" ID="CXIBSKV" WIDTH="250" SUB="PAGE_LOGO" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPZWXCM" RAW="0" SUB="PAGE_COMPANY" TYPE="READONLY" LOAD="profile:zoovy:company_name"><PRETEXT><![CDATA[<strong>]]></PRETEXT>
 <POSTTEXT><![CDATA[</strong><br>]]></POSTTEXT>
 </ELEMENT>
@@ -75,13 +75,13 @@ stop(unless=>$_);
 <ELEMENT ID="PRODNAME" RAW="1" SUB="PROD_NAME" TYPE="READONLY" LOAD="product:zoovy:prod_name"></ELEMENT>
 <ELEMENT ID="CXIBSKW" PRETEXT="Manufacturer: " RAW="1" SUB="PROD_MFG" TYPE="READONLY" LOAD="product:zoovy:prod_mfg"></ELEMENT>
 <ELEMENT ID="CXIBSKX" PRETEXT="Mfg ID: " RAW="1" SUB="PROD_MFGID" TYPE="READONLY" LOAD="product:zoovy:prod_mfgid"></ELEMENT>
-<ELEMENT ID="CXIBSKY" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_desc" PROMPT="Product Description" SUB="PROD_DESC" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-top:5px; border-top:1px solid #cccccc; padding-top:5px;'>]]></PRETEXT>
+<ELEMENT ID="CXIBSKY" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_desc" SUB="PROD_DESC" PROMPT="Product Description" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-top:5px; border-top:1px solid #cccccc; padding-top:5px;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="CXIBSKZ" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_detail" PROMPT="Product Details" SUB="PROD_DETAIL" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-top:5px; border-top:1px solid #cccccc; padding-top:5px;'>]]></PRETEXT>
+<ELEMENT ID="CXIBSKZ" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_detail" SUB="PROD_DETAIL" PROMPT="Product Details" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-top:5px; border-top:1px solid #cccccc; padding-top:5px;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="CXIBSLA" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_features" PROMPT="Product Features" SUB="PROD_FEATURES" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-top:5px; border-top:1px solid #cccccc; padding-top:5px;'>]]></PRETEXT>
+<ELEMENT ID="CXIBSLA" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_features" SUB="PROD_FEATURES" PROMPT="Product Features" TYPE="TEXT"><PRETEXT><![CDATA[<div style='margin-top:5px; border-top:1px solid #cccccc; padding-top:5px;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="REVIEWDETAILS" DATA="product:zoovy:prod_reviews" SUB="PROD_REVIEWS" TYPE="REVIEWS"><HTML><![CDATA[<!-- product reviews -->

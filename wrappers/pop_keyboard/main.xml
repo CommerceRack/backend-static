@@ -85,7 +85,7 @@
 <ELEMENT ID="CPUMCMT" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMCMU" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Popup - Keyboard" CREATED="20030520" PROPERTIES="0" SUBTYPE="P"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPUMCMU" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20030520" TITLE="Popup - Keyboard" PROPERTIES="0" SUBTYPE="P"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #CCCCCC; }
 .zbox_body {  background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -144,7 +144,7 @@ body	{margin: 0px;}
 	<tr>
 		<td>]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="65" ID="CPUMCMY" WIDTH="167" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="CPUMCMY" HEIGHT="65" WIDTH="167" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPUMCMZ" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td align="right" width=233><img src="%WRAPPER_URL%/middle.jpg" width="233" height="69" alt="" border="0"></td>
 	</tr>

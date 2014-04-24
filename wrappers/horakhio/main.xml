@@ -84,7 +84,7 @@
 <ELEMENT ID="CPULMCX" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULMCY" TYPE="OUTPUT"><HTML><![CDATA[<html>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULMCZ" COLORS="129" TYPE="CONFIG" CATEGORIES="32768" TITLE="Metal Theory" CREATED="20020528" PROPERTIES="0" OCREATED="20020528" SITEBUTTONS="default=horakhio|gif|132|29&amp;add_to_site=horakhio|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #000000; }
+<ELEMENT ID="CPULMCZ" COLORS="129" TYPE="CONFIG" CATEGORIES="32768" CREATED="20020528" TITLE="Metal Theory" OCREATED="20020528" PROPERTIES="0" SITEBUTTONS="default=horakhio|gif|132|29&amp;add_to_site=horakhio|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #000000; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #33CC00; }
 .zbox_body {  background-color: #999999; color: #000000; font-family: Arial; font-size: 11pt; }
@@ -165,7 +165,7 @@ A:hover { color: yellow; }
 		<td><!-- SPACER --></td>
 		<td align=center valign="middle">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="90" ID="CPULMDD" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPULMDD" HEIGHT="90" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULMDE" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td></td>
 	</tr><tr>

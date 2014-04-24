@@ -9,11 +9,11 @@
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CVHDKNV" HEIGHT="245" DATA="page:dynimage1" PROMPT="SlideShow" WIDTH="600" SUB="PAGE_SLIDESHOW" TYPE="DYNIMAGE"></ELEMENT>
-<ELEMENT ID="CSPIUKX" WIKI="3" LENGTH="20" EDITOR="INLINE" DATA="page:prodlist_header" SUB="PAGE_PRODLIST1_HEADER" PROMPT="Product List Header" FONT="0" TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="CSPIULB" WIKI="3" LENGTH="20" EDITOR="INLINE" DATA="page:prodlist2_header" SUB="PAGE_PRODLIST2_HEADER" PROMPT="Product List 2 Header" FONT="0" TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT ID="CSPIULC" WIKI="3" LENGTH="20" EDITOR="INLINE" DATA="page:prodlist3_header" SUB="PAGE_PRODLIST3_HEADER" PROMPT="Product List 3 Header" FONT="0" TYPE="TEXTBOX"></ELEMENT>
-<ELEMENT SIZE="5000" ID="PRODLIST1" MAX="9" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 1 (3 column)" SUB="PAGE_PRODLIST1" TYPE="PRODLIST"><HTML><![CDATA[<!-- product list 1 -->
+<ELEMENT HEIGHT="245" ID="CVHDKNV" DATA="page:dynimage1" SUB="PAGE_SLIDESHOW" WIDTH="600" PROMPT="SlideShow" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="CSPIUKX" WIKI="3" LENGTH="20" EDITOR="INLINE" DATA="page:prodlist_header" PROMPT="Product List Header" SUB="PAGE_PRODLIST1_HEADER" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="CSPIULB" WIKI="3" LENGTH="20" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header" SUB="PAGE_PRODLIST2_HEADER" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="CSPIULC" WIKI="3" LENGTH="20" EDITOR="INLINE" DATA="page:prodlist3_header" PROMPT="Product List 3 Header" SUB="PAGE_PRODLIST3_HEADER" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="PRODLIST1" SIZE="5000" MAX="9" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="3" FORMAT="CUSTOM" SUB="PAGE_PRODLIST1" PROMPT="Product List 1 (3 column)" TYPE="PRODLIST"><HTML><![CDATA[<!-- product list 1 -->
 
 <div id='zprodlist1_header' class='zcolor'>
 	<div style='padding:3px 8px; text-align:left;' class='zprodlist1_header'><% loadurp("page:prodlist_header"); default("Featured Products"); print(); %></div>
@@ -68,10 +68,10 @@ goto(nb=>$_,label=>"POGS");
 ]]></HTML>
 <DIVIDER><![CDATA[<td><img src='<% print($graphics_url); %>/blank.gif' height='1' width='1' alt='' border='0'></td>]]></DIVIDER>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" SUB="PAGE_DESC" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="PAGE_DESC" PROMPT="Text Description" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST2" SIZE="5000" MAX="2" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 2 (right side top)" SUB="PAGE_PRODLIST2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list 2 -->
+<ELEMENT SIZE="5000" ID="PRODLIST2" MAX="2" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="1" FORMAT="CUSTOM" SUB="PAGE_PRODLIST2" PROMPT="Product List 2 (right side top)" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list 2 -->
 
 <div id='zprodlist2_header' class='zcolor_dark'>
 	<div  style='padding:3px 8px; text-align:left;' class='zprodlist2_header'><% loadurp("page:prodlist2_header"); default("New Arrivals"); print(); %></div>
@@ -127,7 +127,7 @@ goto(nb=>$_,label=>"POGS");
 <!-- /product list -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST3" SIZE="5000" MAX="2" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist3_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List 3 (right side bottom)" SUB="PAGE_PRODLIST3" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list 3 -->
+<ELEMENT SIZE="5000" ID="PRODLIST3" MAX="2" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist3_custom" COLS="1" FORMAT="CUSTOM" SUB="PAGE_PRODLIST3" PROMPT="Product List 3 (right side bottom)" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list 3 -->
 
 <div id='zprodlist3_header' class='zcolor'>
 	<div style='padding:3px 8px; text-align:left;'  class='zprodlist3_header'><% loadurp("page:prodlist3_header"); default("Best Sellers"); print(); %></div>

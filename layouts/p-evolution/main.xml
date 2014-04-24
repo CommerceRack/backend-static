@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CRNFWLQ" V="2" CREATED="00000000" FORMAT="LAYOUT" EXPORT="0" TYPE="CONFIG" TITLE="Evolution Product Layout"><SUMMARY><![CDATA[This product layout is designed to work in conjunction with Web 2.0/Ajax themes.  If you do not have an Web 2.0 enabled theme, do not select this layout.]]></SUMMARY>
+<ELEMENT ID="CRNFWLQ" V="2" CREATED="00000000" FORMAT="LAYOUT" TYPE="CONFIG" EXPORT="0" TITLE="Evolution Product Layout"><SUMMARY><![CDATA[This product layout is designed to work in conjunction with Web 2.0/Ajax themes.  If you do not have an Web 2.0 enabled theme, do not select this layout.]]></SUMMARY>
 <UPDATES><![CDATA[2006-08-16: Modified the Image Elements so that they play 'more' friendly with products that have externally referenced images.]]></UPDATES>
 </ELEMENT>
 <ELEMENT ID="CRNFWLR" TYPE="OUTPUT"><HTML><![CDATA[
@@ -670,19 +670,19 @@ div#pop_window	{border:1px solid #000000; height:350px; width:600px; overflow:sc
 <!-- IMAGE 1 -->
 	<td colspan="2" rowspan="2" class="prod_tdImage">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULBZ" DATA="product:zoovy:prod_image1" RAW="1" SUB="IMAGE1" TYPE="IMAGE" FONT="0" READONLY="1"></ELEMENT>
-<ELEMENT ID="CRGULCD" DATA="product:zoovy:prod_image2" RAW="1" SUB="IMAGE2" TYPE="IMAGE" FONT="0" READONLY="1"></ELEMENT>
-<ELEMENT ID="CRGULB4" DATA="product:zoovy:prod_image3" RAW="1" SUB="IMAGE3" TYPE="IMAGE" FONT="0" READONLY="1"></ELEMENT>
-<ELEMENT ID="CRGULC5" DATA="product:zoovy:prod_image4" RAW="1" SUB="IMAGE4" TYPE="IMAGE" FONT="0" READONLY="1"></ELEMENT>
-<ELEMENT ID="CRGULB6" DATA="product:zoovy:prod_image5" RAW="1" SUB="IMAGE5" TYPE="IMAGE" FONT="0" READONLY="1"></ELEMENT>
-<ELEMENT ID="CRGULC9" DATA="product:zoovy:prod_image6" RAW="1" SUB="IMAGE6" TYPE="IMAGE" FONT="0" READONLY="1"></ELEMENT>
-<ELEMENT ID="CQFJSMG1" HEIGHT="280" MINIMAL="0" DATA="product:zoovy:prod_image1" RAW="1" PROMPT="Image" SUB="IMAGE1_280_URL" WIDTH="280" BGCOLOR="FFFFFF" TYPE="IMAGE" READONLY="1"></ELEMENT>
-<ELEMENT ID="CQFJSMG2" HEIGHT="280" MINIMAL="0" DATA="product:zoovy:prod_image2" RAW="1" PROMPT="Image" SUB="IMAGE2_280_URL" WIDTH="280" BGCOLOR="FFFFFF" TYPE="IMAGE" READONLY="1"></ELEMENT>
-<ELEMENT ID="CQFJSMG3" HEIGHT="280" MINIMAL="0" DATA="product:zoovy:prod_image3" RAW="1" PROMPT="Image" SUB="IMAGE3_280_URL" WIDTH="280" BGCOLOR="FFFFFF" TYPE="IMAGE" READONLY="1"></ELEMENT>
-<ELEMENT ID="CQFJSMG4" HEIGHT="280" MINIMAL="0" DATA="product:zoovy:prod_image4" RAW="1" PROMPT="Image" SUB="IMAGE4_280_URL" WIDTH="280" BGCOLOR="FFFFFF" TYPE="IMAGE" READONLY="1"></ELEMENT>
-<ELEMENT ID="CQFJSMG5" HEIGHT="280" MINIMAL="0" DATA="product:zoovy:prod_image5" RAW="1" PROMPT="Image" SUB="IMAGE5_280_URL" WIDTH="280" BGCOLOR="FFFFFF" TYPE="IMAGE" READONLY="1"></ELEMENT>
-<ELEMENT ID="CQFJSMG6" HEIGHT="280" MINIMAL="0" DATA="product:zoovy:prod_image6" RAW="1" PROMPT="Image" SUB="IMAGE6_280_URL" WIDTH="280" BGCOLOR="FFFFFF" TYPE="IMAGE" READONLY="1"></ELEMENT>
-<ELEMENT ID="CQFJSMG" HEIGHT="145" MINIMAL="0" DATA="product:zoovy:prod_image1" RAW="1" WIDTH="145" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="145" width="145" border="0" alt="%PROD_NAME%"></a></div>]]></POSTTEXT>
+<ELEMENT ID="CRGULBZ" DATA="product:zoovy:prod_image1" RAW="1" SUB="IMAGE1" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT ID="CRGULCD" DATA="product:zoovy:prod_image2" RAW="1" SUB="IMAGE2" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT ID="CRGULB4" DATA="product:zoovy:prod_image3" RAW="1" SUB="IMAGE3" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT ID="CRGULC5" DATA="product:zoovy:prod_image4" RAW="1" SUB="IMAGE4" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT ID="CRGULB6" DATA="product:zoovy:prod_image5" RAW="1" SUB="IMAGE5" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT ID="CRGULC9" DATA="product:zoovy:prod_image6" RAW="1" SUB="IMAGE6" FONT="0" TYPE="IMAGE" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG1" MINIMAL="0" DATA="product:zoovy:prod_image1" RAW="1" WIDTH="280" SUB="IMAGE1_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG2" MINIMAL="0" DATA="product:zoovy:prod_image2" RAW="1" WIDTH="280" SUB="IMAGE2_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG3" MINIMAL="0" DATA="product:zoovy:prod_image3" RAW="1" WIDTH="280" SUB="IMAGE3_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG4" MINIMAL="0" DATA="product:zoovy:prod_image4" RAW="1" WIDTH="280" SUB="IMAGE4_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG5" MINIMAL="0" DATA="product:zoovy:prod_image5" RAW="1" WIDTH="280" SUB="IMAGE5_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="280" ID="CQFJSMG6" MINIMAL="0" DATA="product:zoovy:prod_image6" RAW="1" WIDTH="280" SUB="IMAGE6_280_URL" PROMPT="Image" TYPE="IMAGE" BGCOLOR="FFFFFF" READONLY="1"></ELEMENT>
+<ELEMENT HEIGHT="145" ID="CQFJSMG" MINIMAL="0" DATA="product:zoovy:prod_image1" RAW="1" WIDTH="145" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="145" width="145" border="0" alt="%PROD_NAME%"></a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE1%')" onmouseover="showtrail('%IMAGE1_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWMB" TYPE="OUTPUT"><HTML><![CDATA[</td>
@@ -690,7 +690,7 @@ div#pop_window	{border:1px solid #000000; height:350px; width:600px; overflow:sc
 <!-- IMAGE 2 -->
 	<td class="prod_tdImage" width="70">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULCF" HEIGHT="70" MINIMAL="0" DATA="product:zoovy:prod_image2" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
+<ELEMENT HEIGHT="70" ID="CRGULCF" MINIMAL="0" DATA="product:zoovy:prod_image2" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE2%');"  onmouseover="showtrail('%IMAGE2_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWMC" TYPE="OUTPUT"><HTML><![CDATA[</td>
@@ -699,7 +699,7 @@ div#pop_window	{border:1px solid #000000; height:350px; width:600px; overflow:sc
 <!-- IMAGE 3 -->
 	<td class="prod_tdImage" width="70">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULCF" HEIGHT="70" MINIMAL="0" DATA="product:zoovy:prod_image3" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
+<ELEMENT HEIGHT="70" ID="CRGULCF" MINIMAL="0" DATA="product:zoovy:prod_image3" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE3%');"  onmouseover="showtrail('%IMAGE3_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWMD" TYPE="OUTPUT"><HTML><![CDATA[</td>
@@ -708,21 +708,21 @@ div#pop_window	{border:1px solid #000000; height:350px; width:600px; overflow:sc
 <!-- IMAGE 4 -->
 	<td class="prod_tdImage" width="70">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULCF" HEIGHT="70" MINIMAL="0" DATA="product:zoovy:prod_image4" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
+<ELEMENT HEIGHT="70" ID="CRGULCF" MINIMAL="0" DATA="product:zoovy:prod_image4" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE4%');"  onmouseover="showtrail('%IMAGE4_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWME" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <!-- IMAGE 5 -->
 	<td class="prod_tdImage" width="70">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULCF" HEIGHT="70" MINIMAL="0" DATA="product:zoovy:prod_image5" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
+<ELEMENT HEIGHT="70" ID="CRGULCF" MINIMAL="0" DATA="product:zoovy:prod_image5" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE5%');"  onmouseover="showtrail('%IMAGE5_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWMF" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <!-- IMAGE 6 -->
 	<td class="prod_tdImage" width="70">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRGULCF" HEIGHT="70" MINIMAL="0" DATA="product:zoovy:prod_image6" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
+<ELEMENT HEIGHT="70" ID="CRGULCF" MINIMAL="0" DATA="product:zoovy:prod_image6" RAW="1" WIDTH="70" TYPE="IMAGE" READONLY="1"><POSTTEXT><![CDATA[" height="70" width="70" border="0"></a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class="prod_divImage"><a href="javascript:zoom('%IMAGE6%');"  onmouseover="showtrail('%IMAGE6_280_URL%','Image test','Image test','3.0000','0','1',203);" onmouseout="hidetrail();"><img src="]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWMG" TYPE="OUTPUT"><HTML><![CDATA[</td>
@@ -775,10 +775,10 @@ print();
 		<div id="prod_topData_sku">Item #: %SKU%</div> 
 		]]></HTML>
 </ELEMENT>
-<ELEMENT ID="MANUFACTURER" DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" TYPE="TEXTBOX" FONT="0"><PRETEXT><![CDATA[<div id="prod_topData_mfg">Manufacturer: ]]></PRETEXT>
+<ELEMENT ID="MANUFACTURER" DATA="product:zoovy:prod_mfg" PROMPT="Manufacturer" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div id="prod_topData_mfg">Manufacturer: ]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="MANUFACTURERID" DATA="product:zoovy:prod_mfgid" PROMPT="Manufacturer's ID" TYPE="TEXTBOX" FONT="0"><PRETEXT><![CDATA[<div id="prod_topData_mfgid">Mfg. ID: ]]></PRETEXT>
+<ELEMENT ID="MANUFACTURERID" DATA="product:zoovy:prod_mfgid" PROMPT="Manufacturer's ID" FONT="0" TYPE="TEXTBOX"><PRETEXT><![CDATA[<div id="prod_topData_mfgid">Mfg. ID: ]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFWMI" TYPE="OUTPUT"><HTML><![CDATA[
@@ -1006,14 +1006,14 @@ print("");
 	<div id="prod_name">%PROD_NAME%</div>
 	]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRNFWMN" WIKI="3" DATA="product:zoovy:prod_desc" PROMPT="Product Description" TYPE="TEXT" FONT="0"></ELEMENT>
+<ELEMENT ID="CRNFWMN" WIKI="3" DATA="product:zoovy:prod_desc" PROMPT="Product Description" FONT="0" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CRNFWMO" TYPE="OUTPUT"><HTML><![CDATA[
 	</div>
 <!-- specifications content -->
 	<div id="specs_content" class="tabset_content" style="display: none;">
 	]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRNFWMP" WIKI="3" DATA="product:zoovy:prod_detail" PROMPT="Product Specifications (shared field - details)" TYPE="TEXT" FONT="0"></ELEMENT>
+<ELEMENT ID="CRNFWMP" WIKI="3" DATA="product:zoovy:prod_detail" PROMPT="Product Specifications (shared field - details)" FONT="0" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CRNFWMQ" TYPE="OUTPUT"><HTML><![CDATA[
 	</div>
 <!-- Features content -->
@@ -1122,7 +1122,7 @@ Write a review:<br>
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="PRODLIST" MAX="35" SHOWDEFAULT="0" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<ELEMENT ID="PRODLIST" SIZE="5000" MAX="35" SHOWDEFAULT="0" DATA="product:zoovy:prod_prodlist_style2" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[
 <table cellspacing="0" cellpadding="2" width="100%">
 <!-- ROW -->
 <tr>
@@ -1144,7 +1144,7 @@ Write a review:<br>
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="QTYPRICE" MIDLINE=" for " DATA="product:zoovy:qty_price" PRELINE="Buy " PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
+<ELEMENT ID="QTYPRICE" DATA="product:zoovy:qty_price" MIDLINE=" for " PRELINE="Buy " PROMPT="Quantity Discount" TYPE="QTYPRICE"><POSTLINE><![CDATA[<br>]]></POSTLINE>
 </ELEMENT>
 <ELEMENT ID="CRNFWMZ" TYPE="OUTPUT"><HTML><![CDATA[
 
@@ -1159,7 +1159,7 @@ Write a review:<br>
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="PRODLIST" MAX="3" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<ELEMENT ID="PRODLIST" SIZE="5000" MAX="3" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
 <!-- ROW -->
 <!-- PRODUCT --><div class="prod_prodlist_holder">
 <div class="prod_prodlist_image"><a href="<% load($PROD_URL);  default("");  print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"70",h=>"70",bg=>"efefef",tag=>"1");  print(); %></a></div>
@@ -1190,6 +1190,6 @@ Write a review:<br>
 <!-- This element is here for the UI so the user can edit the field. -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRNFWND" DATA="product:zoovy:prod_detail" PROMPT="Product Detailed Description" HELPER="This field will appear in a different spot in the actual layout.  It is here for edit only purposes." SUB="NOTUSED_FEATURES" TYPE="TEXT" FONT="0"></ELEMENT>
+<ELEMENT ID="CRNFWND" DATA="product:zoovy:prod_detail" SUB="NOTUSED_FEATURES" HELPER="This field will appear in a different spot in the actual layout.  It is here for edit only purposes." PROMPT="Product Detailed Description" FONT="0" TYPE="TEXT"></ELEMENT>
 
 </TEMPLATE>

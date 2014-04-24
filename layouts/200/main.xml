@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMBL" CREATOR="STAFF" CREATED="00000000" IMAGES="3" PROPERTIES="1" SERIES="2002" SUBTYPE="H" FORMAT="LAYOUT" SHORT="This is a simple three picture page, with text and a product listing below it." TYPE="CONFIG" TITLE="3 Picture" RELEASED="20021112"><SUMMARY><![CDATA[IMAGE2 (180x180)
+<ELEMENT ID="CPUKMBL" CREATOR="STAFF" IMAGES="3" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="H" FORMAT="LAYOUT" SHORT="This is a simple three picture page, with text and a product listing below it." TYPE="CONFIG" TITLE="3 Picture" RELEASED="20021112"><SUMMARY><![CDATA[IMAGE2 (180x180)
 IMAGE3 (180x180)
 IMAGEe (180x180)
 Product Listing
@@ -25,17 +25,17 @@ function zoom (url) {
 <tr><td align="center" width="180">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="180" HELP="Please enter the first picture for your homepage." ZOOM="1" DATA="merchant:zoovy:homepage_picture" PROMPT="Image1 180 x 180" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="180" ID="IMAGE1" HELP="Please enter the first picture for your homepage." ZOOM="1" DATA="merchant:zoovy:homepage_picture" WIDTH="180" PROMPT="Image1 180 x 180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMBN" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <td align="center" width="180">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE2" HEIGHT="180" HELP="Please enter the first picture for your homepage." ZOOM="1" DATA="page:image2" PROMPT="Image2 180 x 180" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="180" ID="IMAGE2" HELP="Please enter the first picture for your homepage." ZOOM="1" DATA="page:image2" WIDTH="180" PROMPT="Image2 180 x 180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMBO" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <td align="center" width="180">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE3" HEIGHT="180" HELP="Please enter the first picture for your homepage." ZOOM="1" DATA="page:image3" PROMPT="Image3 180 x 180" WIDTH="180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="180" ID="IMAGE3" HELP="Please enter the first picture for your homepage." ZOOM="1" DATA="page:image3" WIDTH="180" PROMPT="Image3 180 x 180" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMBP" TYPE="OUTPUT"><HTML><![CDATA[</td>
 </tr></table>
 </center>

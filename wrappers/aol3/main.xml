@@ -162,19 +162,19 @@ adviceWin.focus(true);
 		<td bgcolor="#ffffff"><p><strong><span style="font-size: 13px;">Place Your Order with:</span><br><br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQDPLGH" FONT="0" TYPE="TEXTBOX" PRETEXT="AOL Screen Name:" DATA="merchant:zoovy:aol_screen_name"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+<ELEMENT ID="CQDPLGH" TYPE="TEXTBOX" FONT="0" PRETEXT="AOL Screen Name:" DATA="merchant:zoovy:aol_screen_name"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CQDPLGI" TYPE="OUTPUT"><HTML><![CDATA[</strong>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQDPLGJ" FONT="0" TYPE="TEXTBOX" POSTTEXT="" DATA="merchant:zoovy:address1"></ELEMENT>
-<ELEMENT ID="CQDPLGK" FONT="0" TYPE="TEXTBOX" POSTTEXT="" DATA="merchant:zoovy:address2"></ELEMENT>
+<ELEMENT ID="CQDPLGJ" TYPE="TEXTBOX" FONT="0" POSTTEXT="" DATA="merchant:zoovy:address1"></ELEMENT>
+<ELEMENT ID="CQDPLGK" TYPE="TEXTBOX" FONT="0" POSTTEXT="" DATA="merchant:zoovy:address2"></ELEMENT>
 <ELEMENT ID="CQDPLGL" TYPE="OUTPUT"><HTML><![CDATA[, 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQDPLGM" FONT="0" TYPE="TEXTBOX" POSTTEXT="," DATA="merchant:zoovy:city"></ELEMENT>
-<ELEMENT ID="CQDPLGN" FONT="0" TYPE="TEXTBOX" DATA="merchant:zoovy:state"></ELEMENT>
-<ELEMENT ID="CQDPLGO" FONT="0" TYPE="TEXTBOX" DATA="merchant:zoovy:zip"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
+<ELEMENT ID="CQDPLGM" TYPE="TEXTBOX" FONT="0" POSTTEXT="," DATA="merchant:zoovy:city"></ELEMENT>
+<ELEMENT ID="CQDPLGN" TYPE="TEXTBOX" FONT="0" DATA="merchant:zoovy:state"></ELEMENT>
+<ELEMENT ID="CQDPLGO" TYPE="TEXTBOX" FONT="0" DATA="merchant:zoovy:zip"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CQDPLGP" TYPE="OUTPUT"><HTML><![CDATA[
 <a href="javascript:openWindow('%RETURNS_URL%?wrapper=pop_aol&fl=14');">Terms &amp; Conditions</a> | <a href="javascript:openWindow('%PRIVACY_URL%?wrapper=pop_aol&fl=14');">Privacy Policy</a>

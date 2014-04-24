@@ -89,7 +89,7 @@
 <head>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQQYTGW" COLORS="16" TYPE="CONFIG" CATEGORIES="32769" TITLE="Lucido" CREATED="20020911" OCREATED="20020911" PROPERTIES="8" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CQQYTGW" COLORS="16" TYPE="CONFIG" CATEGORIES="32769" CREATED="20020911" TITLE="Lucido" PROPERTIES="8" OCREATED="20020911" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #6699FF; }
 .zbox_body {  background-color: #CCCCCC; color: #343434; font-family: verdana; font-size: 9pt; }
@@ -182,7 +182,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 		<td class="foo" width=10><img src="%GRAPHICS_URL%/blank.gif" width=10 height=1></td>
 		<td class="foo" width=200 align="left" valign="bottom">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQQYTHC" HEIGHT="45" WIDTH="200" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="45" ID="CQQYTHC" WIDTH="200" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQQYTHD" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td class="foo" width=1><img src="%GRAPHICS_URL%/blank.gif" width=1 height=26></td>
 		<td class="foo" width=99% align="right" valign="bottom"><span class="small">
@@ -212,7 +212,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 		<td class="hoo" width=10><img src="%GRAPHICS_URL%/blank.gif" width=1 height=17></td>
 		<td class="hoo" align="right" colspan=3 valign="bottom"><span class="small">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQQYTHE" NOHOME="0" TYPE="MENU" ONLYHOME="0" BUTTONTYPE="lucido_off"><HTML><![CDATA[
+<ELEMENT ID="CQQYTHE" NOHOME="0" TYPE="MENU" BUTTONTYPE="lucido_off" ONLYHOME="0"><HTML><![CDATA[
 <!-- CATEGORY -->
 &nbsp;<a href="<% load($cat_url);  default("");  print(); %>" OnMouseOver="on(<% load($cat_num);  default("");  print(); %>)" OnMouseOut="off(<% load($cat_num);  default("");  print(); %>)"><img src="<% load($button_imgsrc);  default("");  print(); %>" width="<% load($button_width);  default("");  print(); %>" height="<% load($button_height);  default("");  print(); %>" border="0" name="roll_<% load($cat_num);  default("");  print(); %>"></a>
 

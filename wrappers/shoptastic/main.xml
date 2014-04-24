@@ -13,7 +13,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CQLVLCC" PROMPT="Shoptastic" COLORS="240" CART="persist" EXPORT="0" TYPE="CONFIG" CATEGORIES="65537" CREATED="00000000" TITLE="Shoptastic (Web 2.0)" OCREATED="20051214" PROPERTIES="511" SITEBUTTONS="default=reflectgel_grey|gif|110|33"><SUMMARY><![CDATA[
+<ELEMENT ID="CQLVLCC" PROMPT="Shoptastic" CART="persist" COLORS="240" TYPE="CONFIG" EXPORT="0" CATEGORIES="65537" TITLE="Shoptastic (Web 2.0)" CREATED="00000000" PROPERTIES="511" OCREATED="20051214" SITEBUTTONS="default=reflectgel_grey|gif|110|33"><SUMMARY><![CDATA[
 This Theme offers four different colors and optional payment & shipping icons, plus you choose from which menu items appear.  Also offers the newsletter login and account login forms as options for the left side.  Right side includes a Generation 2 minicart and recently viewed items.  The Gen2 minicart doesn't take the user from the page when add to cart is clicked, in most cases.
 	]]></SUMMARY>
 <CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
@@ -51,9 +51,9 @@ This Theme offers four different colors and optional payment & shipping icons, p
 </ELEMENT>
 <ELEMENT ID="CQLVLDX" SUB="SECURE_ROOT" TYPE="READONLY" LOAD="URL::SECURE_URL" OUTPUTSKIP="4" RAW="1"></ELEMENT>
 <ELEMENT ID="CQHUPZE" SUB="COLOR1" DEFAULT="6583F8" TYPE="HIDDEN" DATA="merchant:zoovy:wrap_shoptastic_color"></ELEMENT>
-<ELEMENT ID="COLOR_CHOOSER" VALUE="6583F8" PROMPT="Color" SUB="COLOR1" DEFAULT="6583F8" FONT="0" TYPE="SELECT" LIST="COLOR1" DATA="merchant:zoovy:wrap_shoptastic_color" RAW="1"></ELEMENT>
-<ELEMENT ID="CQPOIJN" HELPER="Be sure to set your catalog to all upper case.  Set to DEFAULT if you don't know what this is." PROMPT="Search Catalog" SUB="SEARCHCATALOG" DEFAULT="DEFAULT" FONT="0" TYPE="SELECT" LIST="@SYSTEM.SEARCHCATALOGS" DATA="merchant:zoovy:wrap_catalog"></ELEMENT>
-<ELEMENT ID="SEARCHMODE_CHOOSER" SUB="SEARCHMODE" PROMPT="Search Mode" DEFAULT="and" TYPE="SELECT" FONT="0" LIST="MODE" DATA="merchant:zoovy:wrap_searchmode" RAW="1"><HELP><![CDATA[
+<ELEMENT ID="COLOR_CHOOSER" VALUE="6583F8" SUB="COLOR1" PROMPT="Color" DEFAULT="6583F8" TYPE="SELECT" FONT="0" LIST="COLOR1" DATA="merchant:zoovy:wrap_shoptastic_color" RAW="1"></ELEMENT>
+<ELEMENT ID="CQPOIJN" SUB="SEARCHCATALOG" PROMPT="Search Catalog" HELPER="Be sure to set your catalog to all upper case.  Set to DEFAULT if you don't know what this is." DEFAULT="DEFAULT" TYPE="SELECT" FONT="0" LIST="@SYSTEM.SEARCHCATALOGS" DATA="merchant:zoovy:wrap_catalog"></ELEMENT>
+<ELEMENT ID="SEARCHMODE_CHOOSER" PROMPT="Search Mode" SUB="SEARCHMODE" DEFAULT="and" FONT="0" TYPE="SELECT" LIST="MODE" DATA="merchant:zoovy:wrap_searchmode" RAW="1"><HELP><![CDATA[
 Search mode has three options:
 <li>'and' which will do a search and return results for product with BOTH words that are searched (X and Y) - system default</li>
 <li>'or' which will do a search and return results for product with EITHER words that are searched (X or Y) - returns most results</li>
@@ -157,23 +157,23 @@ If you have questions, please schedule time with a trainer.<br>
 <tr><td style="height:8px;"></td></tr></table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQHLBGD" SUB="AMEX" PROMPT="American Express Logo" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_amex" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/cc_amex_small.gif'></td>]]></TRUE>
+<ELEMENT ID="CQHLBGD" PROMPT="American Express Logo" SUB="AMEX" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_amex" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/cc_amex_small.gif'></td>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQHLBGE" SUB="VISA" PROMPT="Visa Logo" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_visa" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/cc_visa_small.gif'></td>]]></TRUE>
+<ELEMENT ID="CQHLBGE" PROMPT="Visa Logo" SUB="VISA" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_visa" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/cc_visa_small.gif'></td>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQHLBGF" SUB="MCARD" PROMPT="Mastercard Logo" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_mastercard" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/cc_mc_small.gif'></td>]]></TRUE>
+<ELEMENT ID="CQHLBGF" PROMPT="Mastercard Logo" SUB="MCARD" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_mastercard" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/cc_mc_small.gif'></td>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQHLBGG" SUB="DISCOVER" PROMPT="Discover Logo" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_discover" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/cc_discover_small.gif'></td>]]></TRUE>
+<ELEMENT ID="CQHLBGG" PROMPT="Discover Logo" SUB="DISCOVER" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_discover" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/cc_discover_small.gif'></td>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQHLBGI" SUB="PAYPAL" PROMPT="PayPal Logo" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_paypal" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/paypal_small.gif'></td>]]></TRUE>
+<ELEMENT ID="CQHLBGI" PROMPT="PayPal Logo" SUB="PAYPAL" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_paypal" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/paypal_small.gif'></td>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQHLBGJ" SUB="FEDEX" PROMPT="Fedex Logo" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_fedex" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/fedex.gif'></td>]]></TRUE>
+<ELEMENT ID="CQHLBGJ" PROMPT="Fedex Logo" SUB="FEDEX" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_fedex" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/fedex.gif'></td>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQHLBGK" SUB="UPS" PROMPT="UPS Logo" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_ups" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/ups_small.gif'></td>]]></TRUE>
+<ELEMENT ID="CQHLBGK" PROMPT="UPS Logo" SUB="UPS" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_ups" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/ups_small.gif'></td>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQHLBGL" SUB="USPS" PROMPT="USPS Logo" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_usps" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/usps.gif'></td>]]></TRUE>
+<ELEMENT ID="CQHLBGL" PROMPT="USPS Logo" SUB="USPS" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_usps" OFF="0"><TRUE><![CDATA[<td><img src='%GRAPHICS_URL%/usps.gif'></td>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="NEWSLETTERFORM" SUB="NEWSLETTER_FORM" PROMPT="Display newsletter subscription form on left" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_shoptastic_newsform" OFF="0"><TRUE><![CDATA[<!-- Newsletter subscription form -->
+<ELEMENT ID="NEWSLETTERFORM" PROMPT="Display newsletter subscription form on left" SUB="NEWSLETTER_FORM" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_shoptastic_newsform" OFF="0"><TRUE><![CDATA[<!-- Newsletter subscription form -->
 
 <table cellspacing="0" cellpadding="0" border="0" width="180" style="margin-bottom:4px;"><tr>
 		<td><img src="%WRAPPER_URL%/header_left.gif" width="10" height="28"></td>
@@ -202,7 +202,7 @@ If you have questions, please schedule time with a trainer.<br>
 <!-- /Newsletter subscription form -->
 ]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="LOGINFORM" SUB="LOGIN_FORM" PROMPT="Display Login form on left" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_shoptastic_loginform" OFF="0"><TRUE><![CDATA[<!-- Login form -->
+<ELEMENT ID="LOGINFORM" PROMPT="Display Login form on left" SUB="LOGIN_FORM" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_shoptastic_loginform" OFF="0"><TRUE><![CDATA[<!-- Login form -->
 
 <table cellspacing="0" cellpadding="0" border="0" width="180" style="margin-bottom:4px;"><tr>
 		<td><img src="%WRAPPER_URL%/header_left.gif" width="10" height="28"></td>
@@ -236,40 +236,40 @@ If you have questions, please schedule time with a trainer.<br>
 <!-- /login subscription form -->
 ]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="GALLERYBTNPROMPT" SUB="GALLERY_BTN" PROMPT="Show Gallery (auctions) Button" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_gallery" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="GALLERYBTNPROMPT" PROMPT="Show Gallery (auctions) Button" SUB="GALLERY_BTN" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_gallery" OFF="0"><TRUE><![CDATA[
 <td><a href="%GALLERY_URL%"><img src='%WRAPPER_URL%/%COLOR1%_menu_auctions.gif' height="65" width="70" border="0" alt="Auctions"></a></td>
 ]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CARTBTNPRMPT" SUB="CART_BTN" PROMPT="Show Cart Button" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_cart" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="CARTBTNPRMPT" PROMPT="Show Cart Button" SUB="CART_BTN" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_cart" OFF="0"><TRUE><![CDATA[
 <td><a href="%CART_URL%"><img src='%WRAPPER_URL%/%COLOR1%_menu_cart.gif' height="65" width="70" border="0" alt="Home"></a></td>
 ]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CHECKOUTBTNPROMPT" TRUE=" on " SUB="CHECKOUT_BTN" PROMPT="Show Checkout Button (will not work if Google Checkout is enabled)" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_checkout" OFF="0"></ELEMENT>
-<ELEMENT ID="ABOUTBTNPRMPT" SUB="ABOUT_BTN" PROMPT="Show Company Button" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_about" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="CHECKOUTBTNPROMPT" TRUE=" on " PROMPT="Show Checkout Button (will not work if Google Checkout is enabled)" SUB="CHECKOUT_BTN" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_checkout" OFF="0"></ELEMENT>
+<ELEMENT ID="ABOUTBTNPRMPT" PROMPT="Show Company Button" SUB="ABOUT_BTN" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_about" OFF="0"><TRUE><![CDATA[
 <td><a href="%ABOUT_URL%"><img src='%WRAPPER_URL%/%COLOR1%_menu_company.gif' height="65" width="70" border="0" alt="About"></a></td>
 ]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CONTACTBTNPROPMT" SUB="CONTACT_BTN" PROMPT="Show Contact Button" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_contact" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="CONTACTBTNPROPMT" PROMPT="Show Contact Button" SUB="CONTACT_BTN" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_contact" OFF="0"><TRUE><![CDATA[
 <td><a href="%CONTACT_URL%"><img src='%WRAPPER_URL%/%COLOR1%_menu_contact.gif' height="65" width="70" border="0" alt="Contact"></a></td>
 ]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQLVLFG" SUB="HOME_BTN" PROMPT="Show Home Button" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_home" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="CQLVLFG" PROMPT="Show Home Button" SUB="HOME_BTN" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_home" OFF="0"><TRUE><![CDATA[
 <td><a href="%HOME_URL%"><img src='%WRAPPER_URL%/%COLOR1%_menu_home.gif' height="65" width="70" border="0" alt="Home"></a></td>
 ]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="LOGINBTNPROMPT" SUB="LOGIN_BTN" PROMPT="Show Login Button" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_login" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="LOGINBTNPROMPT" PROMPT="Show Login Button" SUB="LOGIN_BTN" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_login" OFF="0"><TRUE><![CDATA[
 <td><a href="%LOGIN_URL%"><img src='%WRAPPER_URL%/%COLOR1%_menu_login.gif' height="65" width="70" border="0" alt="Account Login"></a></td>
 ]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQLVLFI" HELPER="If you have the newsletter form enabled on the left, it is redundant to enable it here as well." SUB="NEWSLETTER_BTN" PROMPT="Show Newsletter Button" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_newsletter" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="CQLVLFI" PROMPT="Show Newsletter Button" SUB="NEWSLETTER_BTN" HELPER="If you have the newsletter form enabled on the left, it is redundant to enable it here as well." ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_newsletter" OFF="0"><TRUE><![CDATA[
 <td><a href="%SUBSCRIBE_URL%"><img src='%WRAPPER_URL%/%COLOR1%_menu_newsletter.gif' height="65" width="70" border="0" alt="Newsletter"></a></td>
 ]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQLVLFJ" SUB="RETURNS_BTN" PROMPT="Show Returns Button" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_returns" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="CQLVLFJ" PROMPT="Show Returns Button" SUB="RETURNS_BTN" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_returns" OFF="0"><TRUE><![CDATA[
 <td><a href="%RETURNS_URL%"><img src='%WRAPPER_URL%/%COLOR1%_menu_returns.gif' height="65" width="70" border="0" alt="Returns"></a></td>
 ]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="SEARCHBTNPRMPT" SUB="SEARCH_BTN" PROMPT="Show Search Button" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_search" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="SEARCHBTNPRMPT" PROMPT="Show Search Button" SUB="SEARCH_BTN" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_menu_search" OFF="0"><TRUE><![CDATA[
 <td><a href="%SEARCH_URL%"><img src='%WRAPPER_URL%/%COLOR1%_menu_search.gif' height="65" width="70" border="0" alt="Search"></a></td>
 ]]></TRUE>
 <HELP><![CDATA[In Most Cases, you don't need this.  If you have an advanced search page setup, then it is more applicable]]></HELP>
@@ -371,7 +371,7 @@ function emptyCart(btn) {
 <table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
 	<td style="padding:3px;" class="leftborder topborder bottomborder"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="65" ID="CQLVLFQ" WIDTH="300" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="CQLVLFQ" HEIGHT="65" WIDTH="300" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQLVLFR" TYPE="SPECL"><HTML><![CDATA[</a></td>
 	<td width="99%" align="right" class="rightborder topborder bottomborder"><table cellspacing="0" cellpadding="0"><tr>
 <!-- Begin menu buttons -->		
@@ -415,7 +415,7 @@ goto(eq=>"1",label=>"PRINTBUTTON");
 	<td colspan="2" style="height:31px; background-image:url(%WRAPPER_URL%/search_bg.gif); background-repeat:repeat-x;" class="leftborder rightborder bottomborder"><table cellspacing="1" cellpadding="0" width="100%"><tr>
 		<td width="99%" style="padding-left:4px;"><span class="listies">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQLVLFS" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTSKIP="4" OUTPUTFILTER="PG=home"><HTML><![CDATA[
+<ELEMENT ID="CQLVLFS" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTFILTER="PG=home" OUTPUTSKIP="4"><HTML><![CDATA[
 <!-- CATEGORY -->
 
 <a href="<% load($cat_url);  default("");  print(); %>"><% load($cat_pretty);  default("");  print(); %></a>
@@ -505,12 +505,12 @@ goto(eq=>"1",label=>"PRINTBUTTON");
 <!-- /main content cell -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="BEGINRIGHTCELL" TYPE="OUTPUT" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><HTML><![CDATA[
+<ELEMENT ID="BEGINRIGHTCELL" TYPE="OUTPUT" OUTPUTSKIP="1" OUTPUTFILTER="PG=cart"><HTML><![CDATA[
 <!-- right column.  Should only appear on non-secure pages. -->
 	<td valign="top">		
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="FINDER" TYPE="FINDER" DATA="merchant:zoovy:wrap_finder" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><HTML><![CDATA[
+<ELEMENT ID="FINDER" TYPE="FINDER" DATA="merchant:zoovy:wrap_finder" OUTPUTSKIP="1" OUTPUTFILTER="PG=cart"><HTML><![CDATA[
 <!-- Here starts the finder -->
 <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:4px;"><tr>
 		<td><img src="<% load($wrapper_url);  default("");  print(); %>/header_left.gif" width="10" height="28"></td>
@@ -543,7 +543,7 @@ goto(eq=>"1",label=>"PRINTBUTTON");
 </tr>
 ]]></SPEC_DEFAULT>
 </ELEMENT>
-<ELEMENT ID="CQLVLGC" TYPE="OUTPUT" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><HTML><![CDATA[		<!-- MINICART -->
+<ELEMENT ID="CQLVLGC" TYPE="OUTPUT" OUTPUTSKIP="1" OUTPUTFILTER="PG=cart"><HTML><![CDATA[		<!-- MINICART -->
 <table cellspacing="0" cellpadding="0" border="0" width="180" style="margin-bottom:4px;"><tr>
 		<td><img src="%WRAPPER_URL%/header_left.gif" width="10" height="28"></td>
 		<td style="background-image:url(%WRAPPER_URL%/header_bg.gif);" width="99%"><span class="header">Your Cart</span></td>
@@ -554,10 +554,7 @@ goto(eq=>"1",label=>"PRINTBUTTON");
 		<div id="PUTCARTHERE">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><SURCHARGE_BND_SPEC><![CDATA[
-<tr><td><span class="minicart">Bonding: </span></td><td align="right"><span class="minicart"><% load($BUYSAFE_SURCHARGETXT); default("");  format(money); print(); %></span></td></tr>
-]]></SURCHARGE_BND_SPEC>
-<HTML><![CDATA[
+<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><HTML><![CDATA[
 <table width="100%" cellpadding="0" cellspacing="2">
 <!-- ROW -->
 <tr>
@@ -599,20 +596,23 @@ goto(eq=>"1",label=>"PRINTBUTTON");
 </tr>
 <!-- /SURCHARGE -->
 ]]></HTML>
-<SURCHARGE_SHP_SPEC><![CDATA[
-<tr>
-	<td><span class="minicart">Shipping:</span></td>
-	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
-</tr>
-]]></SURCHARGE_SHP_SPEC>
+<SURCHARGE_BND_SPEC><![CDATA[
+<tr><td><span class="minicart">Bonding: </span></td><td align="right"><span class="minicart"><% load($BUYSAFE_SURCHARGETXT); default("");  format(money); print(); %></span></td></tr>
+]]></SURCHARGE_BND_SPEC>
 <SURCHARGE_GFC_SPEC><![CDATA[
 <tr>
 	<td><span class="minicart">Gift Card(s):</span></td>
 	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
 </tr>
 ]]></SURCHARGE_GFC_SPEC>
+<SURCHARGE_SHP_SPEC><![CDATA[
+<tr>
+	<td><span class="minicart">Shipping:</span></td>
+	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
+</tr>
+]]></SURCHARGE_SHP_SPEC>
 </ELEMENT>
-<ELEMENT ID="CQLVLGD" TYPE="OUTPUT" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><HTML><![CDATA[		</div>
+<ELEMENT ID="CQLVLGD" TYPE="OUTPUT" OUTPUTSKIP="1" OUTPUTFILTER="PG=cart"><HTML><![CDATA[		</div>
 
 		
 		</td>
@@ -625,7 +625,7 @@ goto(eq=>"1",label=>"PRINTBUTTON");
 <!-- /MINICART -->
 	]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="PRODUCTLIST" SIZE="50000" MAX="6" TYPE="PRODLIST" SHOWDEFAULT="0" ALTERNATE="1" SRC="SMART:VISITED" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1" COLS="1"><HTML><![CDATA[
+<ELEMENT SIZE="50000" ID="PRODUCTLIST" FORMAT="CUSTOM" MAX="6" TYPE="PRODLIST" SRC="SMART:VISITED" ALTERNATE="1" SHOWDEFAULT="0" COLS="1" OUTPUTSKIP="1" OUTPUTFILTER="PG=cart"><HTML><![CDATA[
 <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:4px;"><tr>
 		<td><img src="<% load($wrapper_url);  default("");  print(); %>/header_left.gif" width="10" height="28"></td>
 		<td style="background-image:url(<% load($wrapper_url);  default("");  print(); %>/header_bg.gif);" width="99%"><span class="header">Recently Viewed</span></td>
@@ -648,7 +648,7 @@ goto(eq=>"1",label=>"PRINTBUTTON");
 		<td colspan="2"  align="right" valign="bottom" class="shadow"><img src="<% load($wrapper_url);  default("");  print(); %>/bottom_right.gif" width="7" height="8"></td>
 </tr></table>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="ENDOFRIGHTCELL" TYPE="OUTPUT" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><HTML><![CDATA[
+<ELEMENT ID="ENDOFRIGHTCELL" TYPE="OUTPUT" OUTPUTSKIP="1" OUTPUTFILTER="PG=cart"><HTML><![CDATA[
 	</td>
 <!-- /right column -->	
 	]]></HTML>

@@ -88,7 +88,7 @@
 <head>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULROO" COLORS="128" TYPE="CONFIG" CATEGORIES="32769" TITLE="Vertical Lucido 2" CREATED="20020918" OCREATED="20020918" PROPERTIES="10" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULROO" COLORS="128" TYPE="CONFIG" CATEGORIES="32769" CREATED="20020918" TITLE="Vertical Lucido 2" PROPERTIES="10" OCREATED="20020918" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #666666; }
 .zbox_body {  background-color: #f0f0f0; color: #000000; font-family: TIMES; font-size: 11pt; }
@@ -152,7 +152,7 @@ p	{font-family: verdana; color: #999999; font-size: 10px;}
         <td class="foo" width=99% align="right" valign="bottom"><img src="%GRAPHICS_URL%/blank.gif" width=1 height=45></td>
 		<td class="foo" width=200 align="left" valign="bottom">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="45" ID="CPULROR" WIDTH="200" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPULROR" HEIGHT="45" WIDTH="200" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULROS" TYPE="OUTPUT"><HTML><![CDATA[</td>     
         <td class="foo" width=5><img src="%GRAPHICS_URL%/blank.gif" width=5 height=1></td>
     </tr><tr>

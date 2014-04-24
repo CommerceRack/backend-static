@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLQY" CREATOR="STAFF" IMAGES="0" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" SHORT="Focus on showcasing products only in this shopping-portal inspired design." TYPE="CONFIG" TITLE="Product1" RELEASED="20020618"><SUMMARY><![CDATA[Product Listing
+<ELEMENT ID="CPUKLQY" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" SHORT="Focus on showcasing products only in this shopping-portal inspired design." TYPE="CONFIG" TITLE="Product1" RELEASED="20020618"><SUMMARY><![CDATA[Product Listing
 Welcome Message
 Welcome header
 ]]></SUMMARY>
@@ -14,7 +14,7 @@ Welcome header
 			<tr><td colspan="2" valign="top">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="WELCOME1" HELP="Please enter a message that will appear on your front page" DATA="page:welcome_message" HELPER="Remember to keep this text short and to the point." PROMPT="Welcome header" DEFAULT="Hello, welcome to our wonderful website!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="WELCOME1" HELP="Please enter a message that will appear on your front page" DATA="page:welcome_message" PROMPT="Welcome header" HELPER="Remember to keep this text short and to the point." DEFAULT="Hello, welcome to our wonderful website!" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKLRA" TYPE="OUTPUT"><HTML><![CDATA[
 			</td></tr>
 			<tr><td valign="top" width="400">

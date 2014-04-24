@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNLJ" CREATOR="JT" CREATED="00000000" IMAGES="3" PROPERTIES="1" SUBTYPE="H" SERIES="Image Categories" FORMAT="LAYOUT" SHORT="Categories as images with 3 main images." TYPE="CONFIG" TITLE="Categories as images (horizontal)" RELEASED="20050525"><SUMMARY><![CDATA[This layout features 1 big and two smaller images at the top of the layout, followed by a text area.  Below that is your top level categories displayed as thumbnails and text, then a default product list with customizable header.  Lastly, there's another text block.]]></SUMMARY>
+<ELEMENT ID="CPUKNLJ" CREATOR="JT" IMAGES="3" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="Image Categories" FORMAT="LAYOUT" SHORT="Categories as images with 3 main images." TYPE="CONFIG" TITLE="Categories as images (horizontal)" RELEASED="20050525"><SUMMARY><![CDATA[This layout features 1 big and two smaller images at the top of the layout, followed by a text area.  Below that is your top level categories displayed as thumbnails and text, then a default product list with customizable header.  Lastly, there's another text block.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CPUKNLK" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
 <!--
@@ -20,16 +20,16 @@ function zoom (url) {
 <tr>
 	<td rowspan="2" align="right">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="305" HELP="Please enter the first picture for your homepage." ZOOM="1" DATA="merchant:zoovy:homepage_picture" PROMPT="Image1 " WIDTH="305" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="305" ID="IMAGE1" HELP="Please enter the first picture for your homepage." ZOOM="1" DATA="merchant:zoovy:homepage_picture" WIDTH="305" PROMPT="Image1 " TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNLL" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <td valign="bottom" align="left">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE2" HEIGHT="150" HELP="Please enter the second picture for your homepage." ZOOM="1" DATA="page:image2" PROMPT="Image2" WIDTH="150" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE2" HELP="Please enter the second picture for your homepage." ZOOM="1" DATA="page:image2" WIDTH="150" PROMPT="Image2" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNLM" TYPE="OUTPUT"><HTML><![CDATA[</td>
 </tr><tr>
 <td valign="top" align="left">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE3" HEIGHT="150" HELP="Please enter the third picture for your homepage." ZOOM="1" DATA="page:image3" PROMPT="Image3" WIDTH="150" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE3" HELP="Please enter the third picture for your homepage." ZOOM="1" DATA="page:image3" WIDTH="150" PROMPT="Image3" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNLN" TYPE="OUTPUT"><HTML><![CDATA[</td>
 </tr></table>
 </div>
@@ -75,7 +75,7 @@ function zoom (url) {
 ]]></HTML>
 </ELEMENT>
 <ELEMENT ID="PRODLIST1" MULTIPAGE="1" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist  " PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
-<ELEMENT ID="DETAIL" HELP="The detail message will typically describe the pictures above." DATA="page:detail" PROMPT="Detail Message (optional)" HELPER="Extra information if you need it." TYPE="TEXT"><PRETEXT><![CDATA[<p>]]></PRETEXT>
+<ELEMENT ID="DETAIL" HELP="The detail message will typically describe the pictures above." DATA="page:detail" HELPER="Extra information if you need it." PROMPT="Detail Message (optional)" TYPE="TEXT"><PRETEXT><![CDATA[<p>]]></PRETEXT>
 <POSTTEXT><![CDATA[</p>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CPUKNLR" TYPE="OUTPUT"><HTML><![CDATA[

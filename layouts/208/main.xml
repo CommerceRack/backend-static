@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLTC" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Giant Picture" RELEASED="20021218"><SUMMARY><![CDATA[Bold Welcome Message
+<ELEMENT ID="CPUKLTC" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Giant Picture" RELEASED="20021218"><SUMMARY><![CDATA[Bold Welcome Message
 IMAGEe (500x300)
 Product Listing
 Welcome Message
@@ -16,7 +16,7 @@ Welcome Message
 <center>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="HOMEPAGE_PIC" HEIGHT="300" MINIMAL="1" HELP="Please select a picture for the homepage of your site." DATA="merchant:zoovy:homepage_picture" PROMPT="Giant Picture" WIDTH="500" DEFAULT="https://static.zoovy.com/img/H300-W500-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="300" ID="HOMEPAGE_PIC" MINIMAL="1" HELP="Please select a picture for the homepage of your site." DATA="merchant:zoovy:homepage_picture" WIDTH="500" PROMPT="Giant Picture" DEFAULT="https://static.zoovy.com/img/H300-W500-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLTE" TYPE="OUTPUT"><HTML><![CDATA[
 <center>
 		</td>
@@ -50,6 +50,6 @@ Welcome Message
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="BOTTOM" HELP="Please enter an optional footer message that will appear at the bottom of your page" DATA="page:footer_message" PROMPT="Welcome Message" HELPER="This is an excellent place to post additional logos, etc." DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="BOTTOM" HELP="Please enter an optional footer message that will appear at the bottom of your page" DATA="page:footer_message" HELPER="This is an excellent place to post additional logos, etc." PROMPT="Welcome Message" DEFAULT="" TYPE="TEXT"></ELEMENT>
 
 </TEMPLATE>

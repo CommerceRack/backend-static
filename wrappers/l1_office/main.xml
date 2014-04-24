@@ -83,7 +83,7 @@
 <ELEMENT ID="CQQYXGT" SUB="WISHLIST_URL" TYPE="READONLY" LOAD="URL::WISHLIST_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQYXGU" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQYXGV" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CQQYXGW" COLORS="128" TYPE="CONFIG" CATEGORIES="8208" TITLE="Office" CREATED="20020328" PROPERTIES="0" OCREATED="20020328" SITEBUTTONS="default=l1_office|gif|139|70&amp;add_to_site=l1_office|gif|122|32" NARROW="TRUE" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CQQYXGW" COLORS="128" TYPE="CONFIG" CATEGORIES="8208" CREATED="20020328" TITLE="Office" OCREATED="20020328" PROPERTIES="0" SITEBUTTONS="default=l1_office|gif|139|70&amp;add_to_site=l1_office|gif|122|32" NARROW="TRUE" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #AEA997; }
 .zbox_body {  background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -143,7 +143,7 @@
 				<tr>
 					<td width="300" height="88" align="center" valign="middle"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="88" ID="CQQYXHA" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CQQYXHA" HEIGHT="88" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQQYXHB" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 				</tr>
 				<tr>

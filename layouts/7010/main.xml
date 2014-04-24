@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNEB" CREATOR="JT" IMAGES="0" CREATED="00000000" CLASSIFICATION="BOOKS" PROPERTIES="1" SERIES="2003" SUBTYPE="P" FORMAT="LAYOUT" SHORT="Contains 2 200x200 slideshow images on the top with the default description below." TYPE="CONFIG" TITLE="2 slideshows across the top" RELEASED="20030109"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKNEB" CREATOR="JT" CREATED="00000000" IMAGES="0" CLASSIFICATION="BOOKS" PROPERTIES="1" SERIES="2003" SUBTYPE="P" FORMAT="LAYOUT" SHORT="Contains 2 200x200 slideshow images on the top with the default description below." TYPE="CONFIG" TITLE="2 slideshows across the top" RELEASED="20030109"><SUMMARY><![CDATA[
 Authors Name
 Detailed Description
 Format
@@ -77,11 +77,11 @@ function zoom (url) {
 <table width="560" border='0' cellspacing='4' cellpadding='0'>
 <tr><td width=50%>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SLIDE1" HEIGHT="200" HELP="Rotates through several pictures" PROMPT="Slide Show" WIDTH="200" TYPE="SLIDE"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="SLIDE1" HELP="Rotates through several pictures" WIDTH="200" PROMPT="Slide Show" TYPE="SLIDE"></ELEMENT>
 <ELEMENT ID="CPUKNED" TYPE="OUTPUT"><HTML><![CDATA[</td>
 <td width=50%>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SLIDE2" HEIGHT="200" HELP="Rotates through several pictures" PROMPT="Slide Show" WIDTH="200" TYPE="SLIDE"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="SLIDE2" HELP="Rotates through several pictures" WIDTH="200" PROMPT="Slide Show" TYPE="SLIDE"></ELEMENT>
 <ELEMENT ID="CPUKNEE" TYPE="OUTPUT"><HTML><![CDATA[
 </td>
 </tr></table>

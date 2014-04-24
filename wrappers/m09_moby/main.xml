@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="DABTMOQ" FORMAT="WRAPPER" TYPE="CONFIG" SUBCLASS="M" EXPORT="0" V="2" TITLE="Mobile: Moby" CREATED="20090810" SUBTYPE="M"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+<ELEMENT FORMAT="WRAPPER" ID="DABTMOQ" EXPORT="0" SUBCLASS="M" TYPE="CONFIG" V="2" CREATED="20090810" TITLE="Mobile: Moby" SUBTYPE="M"><CSS><![CDATA[.zbody { background-color: #ffffff; }
 .zborder { border: 1px solid #b9d5e6; }
 .zbox { border: 1px solid #6b91b5; }
 .zbox_body { background-color: #ffffff; color: #000000; font-family: verdana, arial, helvetica; font-size: 12px; }
@@ -110,7 +110,7 @@ loadurp("profile:zoovy:wrap_catalog"); default(""); print();
 %>]]></HTML>
 </ELEMENT>
 <ELEMENT ID="DAEJBAV" TRUE="Call button disabled" PROMPT="Disable 'call' buttons" ON="1" TYPE="CHECKBOX" FALSE="Call button enabled" DATA="profile:zoovy:wrap_disable_call" OUTPUTSKIP="2048" OFF="0"></ELEMENT>
-<ELEMENT ID="DABTMOR" HEIGHT="54" HELPER="The appearance of the logo will look best if a transparent png is used." PROMPT="Company Logo (mobile specific - 150x54)" MINIMAL="1" SUB="WRAP_LOGO" WIDTH="150" TYPE="IMAGE" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="profile:zoovy:company_logo_m"></ELEMENT>
+<ELEMENT HEIGHT="54" ID="DABTMOR" WIDTH="150" SUB="WRAP_LOGO" MINIMAL="1" PROMPT="Company Logo (mobile specific - 150x54)" HELPER="The appearance of the logo will look best if a transparent png is used." BGCOLOR="TTTTTT" TYPE="IMAGE" EDITOR="INLINE" DATA="profile:zoovy:company_logo_m"></ELEMENT>
 <ELEMENT ID="DAEJBAW" SUB="WRAP_LOGO" TYPE="SPECL"><HTML><![CDATA[
 <%
 print("<!-- company logo -->");
@@ -140,7 +140,7 @@ print();
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTSKIP="1" OUTPUTFILTER="FS=P"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTFILTER="FS=P" OUTPUTSKIP="1"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
 <POSTTEXT><![CDATA[</h1>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="THEME_DOCTYPENSUCH" TYPE="HIDDEN" OUTPUTSKIP="32768"><DEFAULT><![CDATA[<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
@@ -337,7 +337,7 @@ function toggleDisplay(ID)	{
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DAEJBAX" TYPE="HIDDEN" OUTPUTFILTER="FS=H,C,P,T,R" OUTPUTSKIP="1"><DEFAULT><![CDATA[
+<ELEMENT ID="DAEJBAX" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="FS=H,C,P,T,R"><DEFAULT><![CDATA[
 
 <!-- gets skipped on pages that have a mobile-specific layout. This will add a panel around the content of non-specific pages -->
 
@@ -346,7 +346,7 @@ function toggleDisplay(ID)	{
 ]]></DEFAULT>
 </ELEMENT>
 <ELEMENT ID="THEBODY" TYPE="BODY"></ELEMENT>
-<ELEMENT ID="DAEJBAY" TYPE="HIDDEN" OUTPUTFILTER="FS=H,C,P,T,R" OUTPUTSKIP="1"><DEFAULT><![CDATA[
+<ELEMENT ID="DAEJBAY" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="FS=H,C,P,T,R"><DEFAULT><![CDATA[
 	</div>
 </div>
 

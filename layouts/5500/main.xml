@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT SUMMARY="Results Listing" ID="CPUKLUQ" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SUBTYPE="E" SERIES="2002" FORMAT="LAYOUT" SHORT="Just a plain old search results page, nothing fancy." TYPE="CONFIG" ORELEASED="20020605" TITLE="Search Results" RELEASED="0000000000"></ELEMENT>
+<ELEMENT ID="CPUKLUQ" SUMMARY="Results Listing" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SUBTYPE="E" SERIES="2002" FORMAT="LAYOUT" SHORT="Just a plain old search results page, nothing fancy." ORELEASED="20020605" TYPE="CONFIG" TITLE="Search Results" RELEASED="0000000000"></ELEMENT>
 <ELEMENT ID="PRODLIST1" HELP="These are the search results your customer requested" DATA="page:prodlist" PROMPT="Results Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODSEARCH" DISABLEPRODUCTS="1"></ELEMENT>
 
 </TEMPLATE>

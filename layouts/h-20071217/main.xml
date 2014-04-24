@@ -9,17 +9,17 @@
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="300" ID="CVQTPAD" EDITOR="INLINE" DATA="page:dynimage1" SUB="PAGE_SLIDESHOW" WIDTH="414" PROMPT="SlideShow" TYPE="DYNIMAGE"></ELEMENT>
-<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" PROMPT="Link for right side banner (top)" SUB="PAGE_BANNER1_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT HEIGHT="149" ID="BANNER1" EDITOR="INLINE" DATA="page:banner1" SUB="PAGE_BANNER1" WIDTH="184" PROMPT="Right side banner (top)" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<ELEMENT ID="CVQTPAD" HEIGHT="300" EDITOR="INLINE" DATA="page:dynimage1" PROMPT="SlideShow" WIDTH="414" SUB="PAGE_SLIDESHOW" TYPE="DYNIMAGE"></ELEMENT>
+<ELEMENT ID="BANNER1_LINK" EDITOR="INLINE" DATA="page:banner1_link" SUB="PAGE_BANNER1_LINK" PROMPT="Link for right side banner (top)" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER1" HEIGHT="149" EDITOR="INLINE" DATA="page:banner1" PROMPT="Right side banner (top)" WIDTH="184" SUB="PAGE_BANNER1" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style="margin-bottom:3px;"><a href="%PAGE_BANNER1_LINK%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" PROMPT="Link for right side banner (bottom)" SUB="PAGE_BANNER2_LINK" TYPE="TEXTBOX" FONT="0"></ELEMENT>
-<ELEMENT HEIGHT="149" ID="BANNER2" EDITOR="INLINE" DATA="page:banner2" SUB="PAGE_BANNER2" WIDTH="184" PROMPT="Right side banner (bottom)" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<ELEMENT ID="BANNER2_LINK" EDITOR="INLINE" DATA="page:banner2_link" SUB="PAGE_BANNER2_LINK" PROMPT="Link for right side banner (bottom)" FONT="0" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="BANNER2" HEIGHT="149" EDITOR="INLINE" DATA="page:banner2" PROMPT="Right side banner (bottom)" WIDTH="184" SUB="PAGE_BANNER2" TYPE="IMAGE"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style="margin-bottom:3px;"><a href="%PAGE_BANNER2_LINK%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PAGE_PRODLIST1_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List 1 Header" DEFAULT="Best Sellers" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT SIZE="5000" ID="PAGE_PRODLIST1" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 1" SUB="PAGE_PRODLIST1" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<ELEMENT ID="PAGE_PRODLIST1_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist1_header" PROMPT="Product List 1 Header" DEFAULT="Best Sellers" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST1" SIZE="5000" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="3" FORMAT="CUSTOM" SUB="PAGE_PRODLIST1" PROMPT="Product List 1" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
 <div id='zprodlist1' style='margin-bottom:2px;' class='zcolor_light'>
 	<div id='zprodlist1_header' style='font-size:<% loadurp("CSS::ztitle.font_size"); default("10pt"); print(); %>;'>
 		<div style='padding:3px; text-align:left;' class='zprodlist1_header'><b><% loadurp("page:prodlist1_header"); default("Best Sellers"); print(); %></b></div>
@@ -77,8 +77,8 @@ load($zoovy:base_price); format(hidezero); format(money); format(pretext=>"<div 
 <!-- /product list -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PAGE_PRODLIST2_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header" DEFAULT="New Arrivals" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT SIZE="5000" ID="PAGE_PRODLIST2" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 2" SUB="PAGE_PRODLIST2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<ELEMENT ID="PAGE_PRODLIST2_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist2_header" PROMPT="Product List 2 Header" DEFAULT="New Arrivals" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST2" SIZE="5000" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist2_custom" COLS="3" FORMAT="CUSTOM" SUB="PAGE_PRODLIST2" PROMPT="Product List 2" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
 <div id='zprodlist2' style='margin-bottom:2px;' class='zcolor'>
 	<div id='zprodlist2_header' style='font-size:<% loadurp("CSS::ztitle.font_size"); default("10pt"); print(); %>;'>
 		<div style='padding:3px; text-align:left;' class='zprodlist2_header'><b><% loadurp("page:prodlist2_header"); default("New Arrivals"); print(); %></b></div>
@@ -136,8 +136,8 @@ load($zoovy:base_price); format(hidezero); format(money); format(pretext=>"<div 
 <!-- /product list -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PAGE_PRODLIST3_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist3_header" PROMPT="Product List 3 Header" DEFAULT="Featured Items" TYPE="TEXTBOX" FONT="0" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT SIZE="5000" ID="PAGE_PRODLIST3" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist3_custom" COLS="3" FORMAT="CUSTOM" PROMPT="Product List 3" SUB="PAGE_PRODLIST3" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
+<ELEMENT ID="PAGE_PRODLIST3_HEADER" WIKI="3" MAXLENGTH="25" EDITOR="INLINE" DATA="page:prodlist3_header" PROMPT="Product List 3 Header" DEFAULT="Featured Items" FONT="0" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT ID="PAGE_PRODLIST3" SIZE="5000" MAX="3" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist3_custom" COLS="3" FORMAT="CUSTOM" SUB="PAGE_PRODLIST3" PROMPT="Product List 3" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<!-- product list -->
 <div id='zprodlist3' style='margin-bottom:2px;' class='zcolor_dark'>
 	<div id='zprodlist3_header' style='font-size:<% loadurp("CSS::ztitle.font_size"); default("10pt"); print(); %>;'>
 		<div style='padding:3px; text-align:left;' class='zprodlist3_header'><b><% loadurp("page:prodlist3_header"); default("Featured Items"); print(); %></b></div>
@@ -195,7 +195,7 @@ load($zoovy:base_price); format(hidezero); format(money); format(pretext=>"<div 
 <!-- /product list -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" SUB="PAGE_DESC" PROMPT="Text Description" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" SUB="PAGE_DESC" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div style='margin-bottom:5px; text-align:left; width:auto;' class='ztxt'>]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CVQTPAE" TYPE="OUTPUT"><HTML><![CDATA[

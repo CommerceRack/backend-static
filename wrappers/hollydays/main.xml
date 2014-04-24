@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULWHL" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULWHM" COLORS="128" TYPE="CONFIG" CATEGORIES="32770" TITLE="Hollydays" CREATED="20021126" OCREATED="20021126" PROPERTIES="8" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULWHM" COLORS="128" TYPE="CONFIG" CATEGORIES="32770" CREATED="20021126" TITLE="Hollydays" PROPERTIES="8" OCREATED="20021126" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #9F0011; }
 .zbox_body {  background-color: #f0f0f0; color: #000000; font-family: comic sans ms, arial; font-size: 11pt; }
@@ -147,7 +147,7 @@ a:hover	{text-decoration: underline; color: #990000;}
 				<tr>
 					<td align="center" valign="top" class="red">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100" ID="CPULWHQ" WIDTH="165" BGCOLOR="9F0011" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPULWHQ" HEIGHT="100" WIDTH="165" TYPE="LOGO" BGCOLOR="9F0011"></ELEMENT>
 <ELEMENT ID="CPULWHR" TYPE="OUTPUT"><HTML><![CDATA[</td>
 				</tr><tr>
 					<td align="right" class="red">

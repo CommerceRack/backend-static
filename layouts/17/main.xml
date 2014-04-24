@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMZG" CREATOR="STAFF" CREATED="00000000" IMAGES="3" PROPERTIES="1" SERIES="2002" SUBTYPE="A" FORMAT="LAYOUT" SHORT="(2) 250x250 with preceding text.  More text than a 500x500 image." TYPE="CONFIG" TITLE="About Us Pictures" RELEASED="20021205"><SUMMARY><![CDATA[About Us Blurb
+<ELEMENT ID="CPUKMZG" CREATOR="STAFF" IMAGES="3" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="A" FORMAT="LAYOUT" SHORT="(2) 250x250 with preceding text.  More text than a 500x500 image." TYPE="CONFIG" TITLE="About Us Pictures" RELEASED="20021205"><SUMMARY><![CDATA[About Us Blurb
 IMAGE1 (250x250)
 IMAGE2 (250x250)
 IMAGE3 (500x500)
@@ -21,22 +21,22 @@ IMAGE3 (500x500)
 <tr><td width="50%" valign="top" align="right">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="250" ID="IMAGE1" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="merchant:zoovy:aboutus_image1" WIDTH="250" PROMPT="Company Picture 250x250" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="250" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="merchant:zoovy:aboutus_image1" PROMPT="Company Picture 250x250" WIDTH="250" DEFAULT="" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMZJ" TYPE="OUTPUT"><HTML><![CDATA[
 </td><td align="left" width=50%>]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="250" ID="IMAGE2" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="merchant:zoovy:aboutus_image2" WIDTH="250" PROMPT="Company Picture 250x250" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="250" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="merchant:zoovy:aboutus_image2" PROMPT="Company Picture 250x250" WIDTH="250" DEFAULT="" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMZK" TYPE="OUTPUT"><HTML><![CDATA[</td>
 </tr>
 <tr><td colspan=2 align="center"><p>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="BLURB2" HELP="Please enter another About Us Blurb that will appear on your website" DATA="page:blurb2" HELPER="&amp;nbsp;&amp;nbsp;&amp;nbsp;Add some text that described the picture below, if necessary." PROMPT="About Us Blurb" DEFAULT="We are a really great company, you should buy stuff from us and tell your friends! " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="BLURB2" HELP="Please enter another About Us Blurb that will appear on your website" DATA="page:blurb2" PROMPT="About Us Blurb" HELPER="&amp;nbsp;&amp;nbsp;&amp;nbsp;Add some text that described the picture below, if necessary." DEFAULT="We are a really great company, you should buy stuff from us and tell your friends! " TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKMZL" TYPE="OUTPUT"><HTML><![CDATA[</p></td></tr>
 <tr><td colspan=2 align="center">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="500" ID="IMAGE3" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="merchant:zoovy:aboutus_image3" WIDTH="500" PROMPT="Company Picture 500x500" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE3" HEIGHT="500" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="merchant:zoovy:aboutus_image3" PROMPT="Company Picture 500x500" WIDTH="500" DEFAULT="" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMZM" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td></tr>

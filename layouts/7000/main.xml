@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNCA" CREATOR="JT" IMAGES="1" CREATED="00000000" CLASSIFICATION="BOOKS" PROPERTIES="1" SERIES="2003" SUBTYPE="P" FORMAT="LAYOUT" SHORT="Contains 1 500x200 image across the top with the default description." TYPE="CONFIG" TITLE="1 Long Horizontal Picture" RELEASED="20030109"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKNCA" CREATOR="JT" CREATED="00000000" IMAGES="1" CLASSIFICATION="BOOKS" PROPERTIES="1" SERIES="2003" SUBTYPE="P" FORMAT="LAYOUT" SHORT="Contains 1 500x200 image across the top with the default description." TYPE="CONFIG" TITLE="1 Long Horizontal Picture" RELEASED="20030109"><SUMMARY><![CDATA[
 Authors Name
 Default Description (shared)
 Format
@@ -18,7 +18,7 @@ Publisher/Publishing House
 		<td align="center" colspan=2>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="200" HELP="Please enter a picture for your product." ZOOM="0" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="500" DEFAULT="https://static.zoovy.com/img/H2-W500-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="IMAGE1" HELP="Please enter a picture for your product." ZOOM="0" DATA="product:zoovy:prod_image1" WIDTH="500" PROMPT="Image 1" DEFAULT="https://static.zoovy.com/img/H2-W500-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNCC" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	</tr><tr>
 		<td colspan=2><p>

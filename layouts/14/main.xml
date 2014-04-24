@@ -2,9 +2,9 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMIC" CREATOR="STAFF" IMAGES="0" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="A" FORMAT="LAYOUT" SHORT="Text-only field for your company description." TYPE="CONFIG" TITLE="About Us Plain" RELEASED="20020129"><SUMMARY><![CDATA[About Us Blurb
+<ELEMENT ID="CPUKMIC" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="A" FORMAT="LAYOUT" SHORT="Text-only field for your company description." TYPE="CONFIG" TITLE="About Us Plain" RELEASED="20020129"><SUMMARY><![CDATA[About Us Blurb
 ]]></SUMMARY>
 </ELEMENT>
-<ELEMENT ID="BLURB" HELP="Please enter an About Us Blurb that will appear on your website" DATA="page:blurb" PROMPT="About Us Blurb" HELPER="Custom HTML can be entered here, as well as plaintext." DEFAULT="We are a really great company, you should buy stuff from us and tell your friends! " TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="BLURB" HELP="Please enter an About Us Blurb that will appear on your website" DATA="page:blurb" HELPER="Custom HTML can be entered here, as well as plaintext." PROMPT="About Us Blurb" DEFAULT="We are a really great company, you should buy stuff from us and tell your friends! " TYPE="TEXT"></ELEMENT>
 
 </TEMPLATE>

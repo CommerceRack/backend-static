@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLRU" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="A" FORMAT="LAYOUT" SHORT="This is the generic about us page. Nothing fancy." TYPE="CONFIG" TITLE="About Us" RELEASED="20020807"><SUMMARY><![CDATA[About Us Blurb
+<ELEMENT ID="CPUKLRU" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SERIES="2002" SUBTYPE="A" FORMAT="LAYOUT" SHORT="This is the generic about us page. Nothing fancy." TYPE="CONFIG" TITLE="About Us" RELEASED="20020807"><SUMMARY><![CDATA[About Us Blurb
 IMAGE1 (250x250)
 ]]></SUMMARY>
 </ELEMENT>
@@ -10,7 +10,7 @@ IMAGE1 (250x250)
 <tr><td width="250" valign="top">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="250" ID="IMAGE1" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="merchant:zoovy:aboutus_image1" WIDTH="250" PROMPT="Company Picture 250x250" DEFAULT="https://static.zoovy.com/img/H250-W450-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="250" HELP="Please select a graphic that represents your company and will appear on the About Us page" DATA="merchant:zoovy:aboutus_image1" PROMPT="Company Picture 250x250" WIDTH="250" DEFAULT="https://static.zoovy.com/img/H250-W450-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLRW" TYPE="OUTPUT"><HTML><![CDATA[
 </td><td valign="top">
 

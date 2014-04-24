@@ -85,7 +85,7 @@
 <ELEMENT ID="CPUMDHT" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMDHU" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="0" TITLE="Popup - Purple" OCREATED="20030520" PROPERTIES="0" SUBTYPE="P"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPUMDHU" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Popup - Purple" CREATED="0" PROPERTIES="0" OCREATED="20030520" SUBTYPE="P"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #CCCCCC; }
 .zbox_body {  background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -141,7 +141,7 @@ body	{margin: 0px;}
 		<td width=5></td>
 		<td width=220>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMDHY" HEIGHT="65" WIDTH="220" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="65" ID="CPUMDHY" WIDTH="220" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="CPUMDHZ" TYPE="OUTPUT"><HTML><![CDATA[</td>		
 		<td class="color" width=64><img src="%WRAPPER_URL%/corner.gif" width="64" height="69" alt="" border="0"></td>
 		<td class="color" background="%WRAPPER_URL%/cover.gif"><img src="%WRAPPER_URL%/cover.gif" width="1" height="69" alt="" border="0"></td>

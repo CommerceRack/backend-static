@@ -84,6 +84,7 @@
 <ELEMENT ID="CQQYTHB" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQYTHC" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQYTHD" TYPE="CONFIG" CREATED="00000000" SITEBUTTONS=""><THEME><![CDATA[alert_color=FF0000&content_background_color=FFFFFF&content_font_face=Arial%2c+Helvetica&content_font_size=3&content_text_color=000000&disclaimer_background_color=FFFFFF&disclaimer_font_face=Arial%2c+Helvetica&disclaimer_font_size=1&disclaimer_text_color=000000&link_active_text_color=000066&link_text_color=000066&link_visited_text_color=000066&name=&pretty_name=&table_heading_background_color=CCCCCC&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_heading_text_color=000000&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=EEEEEE&table_listing_font_face=Arial%2c+Helvetica&table_listing_font_size=3&table_listing_text_color=000000]]></THEME>
+<THEME_OLD><![CDATA[disclaimer_text_color=000000&content_font_face=Arial%2c+Helvetica&table_listing_background_color_alternate=EEEEEE&table_heading_text_color=000000&pretty_name=Default&link_visited_text_color=000000&content_background_color=FFFFFF&table_heading_background_color=CCCCCC&link_text_color=000066&link_active_text_color=000033&table_listing_font_face=Arial%2c+Helvetica&content_text_color=000000&content_font_size=3&disclaimer_font_face=Arial%2c+Helvetica&name=default&table_listing_background_color=FFFFFF&disclaimer_background_color=999999&alert_color=FF0000&disclaimer_font_size=1&table_listing_text_color=000000&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_listing_font_size=3]]></THEME_OLD>
 <CSS><![CDATA[.zbody { background-color: #FFFFFF; }
 .zborder { border: 1px solid #CCCCCC; }
 .zbox { border: 1px solid #CCCCCC; }
@@ -113,7 +114,6 @@
 .ztitle2 { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
 .ztxt { color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
 .zwarn { color: #FF0000; font-weight: bold; }]]></CSS>
-<THEME_OLD><![CDATA[disclaimer_text_color=000000&content_font_face=Arial%2c+Helvetica&table_listing_background_color_alternate=EEEEEE&table_heading_text_color=000000&pretty_name=Default&link_visited_text_color=000000&content_background_color=FFFFFF&table_heading_background_color=CCCCCC&link_text_color=000066&link_active_text_color=000033&table_listing_font_face=Arial%2c+Helvetica&content_text_color=000000&content_font_size=3&disclaimer_font_face=Arial%2c+Helvetica&name=default&table_listing_background_color=FFFFFF&disclaimer_background_color=999999&alert_color=FF0000&disclaimer_font_size=1&table_listing_text_color=000000&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_listing_font_size=3]]></THEME_OLD>
 </ELEMENT>
 <ELEMENT ID="CQQYTHE" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
@@ -177,7 +177,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 							<tr>
 								<td background="%WRAPPER_URL%/logo_background.gif" width="462" height="78" align="right" valign="bottom"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="78" ID="CQQYTHK" WIDTH="462" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CQQYTHK" HEIGHT="78" WIDTH="462" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQQYTHL" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 							</tr>
 						</table>

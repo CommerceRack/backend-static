@@ -85,7 +85,7 @@
 <ELEMENT ID="CPUMABO" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMABP" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20030217" TITLE="Daisies" OCREATED="20030217" PROPERTIES="2" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPUMABP" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Daisies" CREATED="20030217" PROPERTIES="2" OCREATED="20030217" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #FFCC33; }
 .zbox_body {  background-color: #F0F0F0; color: #000000; font-family: arial, Helvetica; font-size: 9pt; }
@@ -181,7 +181,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 				<tr>
 					<td background="%WRAPPER_URL%/top.jpg" width=130 height=112>]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="112" ID="CPUMABW" WIDTH="130" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPUMABW" HEIGHT="112" WIDTH="130" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPUMABX" TYPE="OUTPUT"><HTML><![CDATA[</td>
 				</tr><tr>
 					<td>]]></HTML>

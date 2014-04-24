@@ -82,7 +82,7 @@
 <ELEMENT ID="CQDPMFR" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPMFS" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPMFT" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CQDPMFU" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20041103" TITLE="Rings" PROPERTIES="9" OCREATED="20041103" SITEBUTTONS="default=aqua_orange|gif|75|24&amp;add_to_site=aqua_orange|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CQDPMFU" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Rings" CREATED="20041103" OCREATED="20041103" PROPERTIES="9" SITEBUTTONS="default=aqua_orange|gif|75|24&amp;add_to_site=aqua_orange|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #CC6600; }
 .zbox_body {  background-color: #FFFFFF; color: #333333; font-family: arial; font-size: 8pt; }
@@ -138,7 +138,7 @@ a	{color: #CC6633;}
 <table cellspacing=0 cellpadding=0 border=0 width="100%" style="border-style: solid; border-color: #999999; border-width: 1px; background-color: #ffffff;"><tr>
 	<td width="90%"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="81" ID="CQDPMFY" WIDTH="260" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="CQDPMFY" HEIGHT="81" WIDTH="260" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQDPMFZ" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 	<td align="right" width="10%"><img src="%WRAPPER_URL%/graphic.jpg" height=81 width=441 alt="" border="0"></td>
 </tr><tr>
@@ -157,7 +157,7 @@ a	{color: #CC6633;}
 	</table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
+<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <table cellspacing=1 border=0 width='150' cellpadding=1>
 <tr><td colspan=2><hr color="#CCCCCC" style="height: 1px;"></td></tr>

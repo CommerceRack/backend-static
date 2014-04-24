@@ -82,7 +82,7 @@
 <ELEMENT ID="CQDPOAS" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPOAT" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPOAU" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CQDPOAV" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20050126" TITLE="Golf Clubbin" OCREATED="20050126" PROPERTIES="11" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CQDPOAV" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Golf Clubbin" CREATED="20050126" PROPERTIES="11" OCREATED="20050126" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #DFDFDF; }
 .zbox_body {  background-color: #F4F4F4; color: #666666; font-family: tahoma, arial, helvetica, sans serif; font-size: 9pt; }
@@ -148,7 +148,7 @@ h4	{font-size: 12px; font-weight: bold; color: #666666; margin: 0px;}
 <table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
 	<td valign="bottom" style="height: 66px;"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="66" ID="CQDPOAZ" WIDTH="200" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="CQDPOAZ" HEIGHT="66" WIDTH="200" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQDPOBA" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 	<td valign="bottom" width="1%" rowspan="2" align="right" style="background-image:url(%WRAPPER_URL%/clb_logo_bottom_bg.gif); background-repeat:repeat-x; background-position:bottom;"><img src="%WRAPPER_URL%/clb_logo_right.jpg" width="111" height="68"></td>
 	<td width="1%" rowspan="4"><img src="%WRAPPER_URL%/clb_clubs.jpg" width="330" height="176"></td>
@@ -179,7 +179,7 @@ h4	{font-size: 12px; font-weight: bold; color: #666666; margin: 0px;}
 </tr><tr>
 	<td align="left" colspan="2" NOWRAP style="background-image:url(%WRAPPER_URL%/clb_title_bg.gif); background-repeat:repeat-x; height: 33px;">]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
+<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <div class="minicart" style="margin-left:10px;">Items in Cart: <% load($TOTALCOUNT);  default("");  print(); %>
 <span style="word-spacing:10px;"> | </span>

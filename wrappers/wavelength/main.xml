@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULTKD" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULTKE" COLORS="8" TYPE="CONFIG" CATEGORIES="32769" TITLE="Wavelength" CREATED="20021223" OCREATED="20021223" PROPERTIES="0" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULTKE" COLORS="8" TYPE="CONFIG" CATEGORIES="32769" CREATED="20021223" TITLE="Wavelength" PROPERTIES="0" OCREATED="20021223" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #666666; }
 .zbox_body {  background-color: #f0f0f0; color: #000000; font-family: TIMES; font-size: 11pt; }
@@ -161,7 +161,7 @@ td.hoo	{background-color: #CCCCCC;}
 		</td>
 		<td valign="middle" align="right" class="goo"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULTKI" HEIGHT="71" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="71" ID="CPULTKI" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULTKJ" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 		<td class="goo"><img src="%GRAPHICS_URL%/blank.gif" width=8 height=1></td>
 	</tr><tr>

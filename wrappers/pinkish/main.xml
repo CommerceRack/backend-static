@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULMRN" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULMRO" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Think Pink" CREATED="20020530" PROPERTIES="2" OCREATED="20020530" SITEBUTTONS="default=pink|gif|120|35&amp;add_to_site=pink|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULMRO" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20020530" TITLE="Think Pink" OCREATED="20020530" PROPERTIES="2" SITEBUTTONS="default=pink|gif|120|35&amp;add_to_site=pink|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #FF66CC; }
 .zbox_body {  background-color: #FFCCFF; color: #000000; font-family: Arial; font-size: 11pt; }
@@ -143,7 +143,7 @@ src="%WRAPPER_URL%light.gif" height=8 width=1></td>
 		<td background="%WRAPPER_URL%/light.gif"><img src="%WRAPPER_URL%/light.gif" height=75 width=1></td>
 		<td background="%WRAPPER_URL%/light.gif" align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULMRS" HEIGHT="75" WIDTH="400" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="75" ID="CPULMRS" WIDTH="400" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULMRT" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td background="%WRAPPER_URL%/light.gif"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
 	</tr><tr>	

@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="DEOEUDK" FORMAT="WRAPPER" TYPE="CONFIG" TITLE="Popup Theme: Avalanche" CREATED="20110330" SITEBUTTONS="default=2011_avalanche|png|140|45&amp;checkout=2011_avalanche|png|171|55" RELEASED="20110330" SUBTYPE="P"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+<ELEMENT FORMAT="WRAPPER" ID="DEOEUDK" TYPE="CONFIG" CREATED="20110330" TITLE="Popup Theme: Avalanche" SITEBUTTONS="default=2011_avalanche|png|140|45&amp;checkout=2011_avalanche|png|171|55" SUBTYPE="P" RELEASED="20110330"><CSS><![CDATA[.zbody { background-color: #ffffff; }
 .zborder { border: 1px solid #f0f5f9; }
 .zbox { border: 1px solid #cee1f2; }
 .zbox_body { background-color: #FFFFFF; color: #666666; font-family: Calibri, "Helvetica Neue", helvetica, sans-serif; font-size: 12px; }
@@ -97,14 +97,14 @@
 </ELEMENT>
 <ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
 </ELEMENT>
-<ELEMENT HEIGHT="80" ID="WRAPPER_LOGO" MINIMAL_MODE="1" SUB="WRAP_LOGO" WIDTH="200" TYPE="LOGO" BGCOLOR="TTTTTT"></ELEMENT>
-<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C,P"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
+<ELEMENT ID="WRAPPER_LOGO" HEIGHT="80" MINIMAL_MODE="1" WIDTH="200" SUB="WRAP_LOGO" BGCOLOR="TTTTTT" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTFILTER="!FS=C,P" OUTPUTSKIP="1"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
 <POSTTEXT><![CDATA[</h1>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="STORE_PHONE" SUB="WRAP_PHONE" TYPE="READONLY" LOAD="profile:zoovy:support_phone" RAW="1"><PRETEXT><![CDATA[<div class='phonePrompt'>Questions? Call</div><div class='phoneNumber'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="DEOEUDL" SUB="WRAP_STORE_HOURS" PROMPT="Store Hours" TYPE="TEXTBOX" FONT="0" DATA="profile:zoovy:store_hours"><PRETEXT><![CDATA[<div id='mhStoreHours'>]]></PRETEXT>
+<ELEMENT ID="DEOEUDL" PROMPT="Store Hours" SUB="WRAP_STORE_HOURS" FONT="0" TYPE="TEXTBOX" DATA="profile:zoovy:store_hours"><PRETEXT><![CDATA[<div id='mhStoreHours'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="WRAPPER_CUSTOM_FOOTER" SUB="WRAP_FOOTER" TYPE="FOOTER"><HTML><![CDATA[

@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLZZ" CREATOR="STAFF" IMAGES="1" CREATED="00000000" FORMAT="LAYOUT" SHORT="Do not use this layout. It has no add to cart button." TYPE="CONFIG" TITLE="No Add"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKLZZ" CREATOR="STAFF" CREATED="00000000" IMAGES="1" FORMAT="LAYOUT" SHORT="Do not use this layout. It has no add to cart button." TYPE="CONFIG" TITLE="No Add"><SUMMARY><![CDATA[
 Do not use this layout, it has no add to cart button.  It is designed to show up in a popup or ajax window.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CPUKMAA" TYPE="OUTPUT"><HTML><![CDATA[
@@ -24,7 +24,7 @@ Do not use this layout, it has no add to cart button.  It is designed to show up
     <td valign="top" width="100">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="IMAGE1" DATA="product:zoovy:prod_image1" WIDTH="100" PROMPT="Image1" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="200" DATA="product:zoovy:prod_image1" PROMPT="Image1" WIDTH="100" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMAF" TYPE="OUTPUT"><HTML><![CDATA[
     </td>
   </tr>

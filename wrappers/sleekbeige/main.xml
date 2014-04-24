@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULXOO" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULXOP" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Sleek Beige" CREATED="20030415" OCREATED="20030415" PROPERTIES="3" SITEBUTTONS="default=sleekbeige|gif|80|16&amp;add_to_site_height=32&amp;update_cart=sleekbeige|gif|80|16Add+To+Site+Width" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
+<ELEMENT ID="CPULXOP" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20030415" TITLE="Sleek Beige" PROPERTIES="3" OCREATED="20030415" SITEBUTTONS="default=sleekbeige|gif|80|16&amp;add_to_site_height=32&amp;update_cart=sleekbeige|gif|80|16Add+To+Site+Width" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #B2B391; }
 .zbox_body {  background-color: #FFFFFF; color: #3C464E; font-family: Arial, sans serif; font-size: 9pt; }
@@ -199,7 +199,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 		<td class="black"><img src="%WRAPPER_URL%/circle_bot.gif" width="205" height="25" alt="" border="0"></td>
 		<td class="black" align="right">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULXOW" HEIGHT="25" WIDTH="140" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="25" ID="CPULXOW" WIDTH="140" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULXOX" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td class="black"><img src="%GRAPHICS_URL%/blank.gif" width=1 height=1></td>
 	</tr>
@@ -210,7 +210,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 		
 		]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
+<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <table border=0 cellspacing=1 cellpadding=0 width=100% style="margin-bottom:3px;">
 <tr>	

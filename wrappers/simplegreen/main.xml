@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULTRU" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULTRV" COLORS="32" TYPE="CONFIG" CATEGORIES="32768" CREATED="20021014" TITLE="Simple Green" OCREATED="20021014" PROPERTIES="0" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
+<ELEMENT ID="CPULTRV" COLORS="32" TYPE="CONFIG" CATEGORIES="32768" TITLE="Simple Green" CREATED="20021014" PROPERTIES="0" OCREATED="20021014" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid ##006600; }
 .zbox_body {  background-color: #FFFFFF; color: #000000; font-family: ARIAL; font-size: 11pt; }
@@ -138,7 +138,7 @@ a:hover	{text-decoration: underline;color: #33CC00;}
 	<tr>
 		<td colspan=3 align="left" height=100>]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100" ID="CPULTRZ" WIDTH="750" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPULTRZ" HEIGHT="100" WIDTH="750" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULTSA" TYPE="OUTPUT"><HTML><![CDATA[</td></tr>
 <tr><td><img src="%GRAPHICS_URL%/blank.gif" width=1 height=10></td></tr>
 	<tr>

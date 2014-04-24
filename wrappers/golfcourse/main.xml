@@ -85,7 +85,7 @@
 <ELEMENT ID="CPUMBFW" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMBFX" COLORS="128" TYPE="CONFIG" CATEGORIES="33280" TITLE="Golf Course" CREATED="20030218" PROPERTIES="8" OCREATED="20030218" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPUMBFX" COLORS="128" TYPE="CONFIG" CATEGORIES="33280" CREATED="20030218" TITLE="Golf Course" OCREATED="20030218" PROPERTIES="8" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #000000; }
 .zbox_body {  background-color: #f0f0f0; color: #000000; font-family: ARIAL; font-size: 9pt; }
@@ -130,7 +130,7 @@
 initialized = 0;
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMBGB" WIDTH="140" NOHOME="1" TYPE="MENU" BUTTONTYPE="golfcourse_on" ONLYHOME="0"><HTML><![CDATA[
+<ELEMENT ID="CPUMBGB" WIDTH="140" NOHOME="1" TYPE="MENU" ONLYHOME="0" BUTTONTYPE="golfcourse_on"><HTML><![CDATA[
 <!-- CATEGORY -->
 rollover_<% load($cat_num);  default("");  print(); %>_on = new Image;<% load("
 ");  default("");  print(); %>rollover_<% load($cat_num);  default("");  print(); %>_on.src = "<% load($button_imgsrc);  default("");  print(); %>";<% load("
@@ -140,7 +140,7 @@ rollover_<% load($cat_num);  default("");  print(); %>_on = new Image;<% load("
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMBGC" WIDTH="140" NOHOME="1" TYPE="MENU" BUTTONTYPE="golfcourse_off" ONLYHOME="0"><HTML><![CDATA[
+<ELEMENT ID="CPUMBGC" WIDTH="140" NOHOME="1" TYPE="MENU" ONLYHOME="0" BUTTONTYPE="golfcourse_off"><HTML><![CDATA[
 <!-- CATEGORY -->
 rollover_<% load($cat_num);  default("");  print(); %>_off = new Image;<% load("
 ");  default("");  print(); %>rollover_<% load($cat_num);  default("");  print(); %>_off.src = "<% load($button_imgsrc);  default("");  print(); %>";<% load("
@@ -203,7 +203,7 @@ form	{display: inline;}
 	</tr><tr>
 		<td align="center" bgcolor="#638DC8">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="130" ID="CPUMBGI" WIDTH="186" TYPE="LOGO" BGCOLOR="638DC8"></ELEMENT>
+<ELEMENT ID="CPUMBGI" HEIGHT="130" WIDTH="186" BGCOLOR="638DC8" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPUMBGJ" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	</tr><tr>
 		<td background="%WRAPPER_URL%/hordot.gif"><img src="%GRAPHICS_URL%/blank.gif" width=1 height=3></td>
@@ -226,7 +226,7 @@ form	{display: inline;}
 		<table cellpadding="1" cellspacing="1">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMBGK" WIDTH="140" NOHOME="1" TYPE="MENU" BUTTONTYPE="golfcourse_off" ONLYHOME="0"><HTML><![CDATA[
+<ELEMENT ID="CPUMBGK" WIDTH="140" NOHOME="1" TYPE="MENU" ONLYHOME="0" BUTTONTYPE="golfcourse_off"><HTML><![CDATA[
 <!-- CATEGORY -->
 <tr><td><a href="<% load($cat_url);  default("");  print(); %>" OnMouseOver="on(<% load($cat_num);  default("");  print(); %>)" OnMouseOut="off(<% load($cat_num);  default("");  print(); %>)"><img src="<% load($button_imgsrc);  default("");  print(); %>" width="<% load($button_width);  default("");  print(); %>" height="<% load($button_height);  default("");  print(); %>" border="0" name="roll_<% load($cat_num);  default("");  print(); %>"></a></td></tr>
 

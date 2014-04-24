@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMNL" CREATOR="STAFF" CREATED="00000000" IMAGES="5" PROPERTIES="1" SERIES="2002" SUBTYPE="P" FORMAT="LAYOUT" SHORT="(5) pics, (4) 125 x 125 and (1) 250 x 250 uses the detailed description below." TYPE="CONFIG" TITLE="Slide Show " RELEASED="20020510"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMNL" CREATOR="STAFF" IMAGES="5" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="P" FORMAT="LAYOUT" SHORT="(5) pics, (4) 125 x 125 and (1) 250 x 250 uses the detailed description below." TYPE="CONFIG" TITLE="Slide Show " RELEASED="20020510"><SUMMARY><![CDATA[
 Detailed Description
 IMAGE1 (250x275)
 IMAGE2 (125x125)
@@ -32,7 +32,7 @@ function zoom (url) {
 				<td valign='top'>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE2" HEIGHT="125" HELP="Please enter the second picture " ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image 2" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="125" ID="IMAGE2" HELP="Please enter the second picture " ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="125" PROMPT="Image 2" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMNN" TYPE="OUTPUT"><HTML><![CDATA[
 				</td>
 			</tr>
@@ -40,7 +40,7 @@ function zoom (url) {
 				<td valign='bottom'>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE3" HEIGHT="125" HELP="Please enter the second picture " ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image 2" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="125" ID="IMAGE3" HELP="Please enter the second picture " ZOOM="1" DATA="product:zoovy:prod_image3" WIDTH="125" PROMPT="Image 2" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMNO" TYPE="OUTPUT"><HTML><![CDATA[
 				</td>
 			</tr>
@@ -52,7 +52,7 @@ function zoom (url) {
 		<td width="250" align="center" valign='middle' rowspan="0">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="275" HELP="Please enter the first picture." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1 " WIDTH="250" DEFAULT="https://static.zoovy.com/img/H250-W275-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="275" ID="IMAGE1" HELP="Please enter the first picture." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="250" PROMPT="Image 1 " DEFAULT="https://static.zoovy.com/img/H250-W275-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMNP" TYPE="OUTPUT"><HTML><![CDATA[
 		</td>
 		<td>
@@ -62,7 +62,7 @@ function zoom (url) {
 				<td valign='top'>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE4" HEIGHT="125" HELP="Please enter the second picture " ZOOM="1" DATA="product:zoovy:prod_image4" PROMPT="Image 2" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="125" ID="IMAGE4" HELP="Please enter the second picture " ZOOM="1" DATA="product:zoovy:prod_image4" WIDTH="125" PROMPT="Image 2" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMNQ" TYPE="OUTPUT"><HTML><![CDATA[
 				</td>
 			</tr>
@@ -70,7 +70,7 @@ function zoom (url) {
 				<td valign='bottom'>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE5" HEIGHT="125" HELP="Please enter the second picture " ZOOM="1" DATA="product:zoovy:prod_image5" PROMPT="Image 2" WIDTH="125" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="125" ID="IMAGE5" HELP="Please enter the second picture " ZOOM="1" DATA="product:zoovy:prod_image5" WIDTH="125" PROMPT="Image 2" DEFAULT="https://static.zoovy.com/img/H125-W125-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMNR" TYPE="OUTPUT"><HTML><![CDATA[
 				</td>
 			</tr>

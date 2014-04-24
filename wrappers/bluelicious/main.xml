@@ -13,7 +13,7 @@
 
 
 <!-- ******* -->
-<ELEMENT FORMAT="WRAPPER" ID="BLUELICIOUS" COLORS="120" CART="persist" TYPE="CONFIG" EXPORT="0" CATEGORIES="65537" V="3" TITLE="Bluelicious (Web 2.0)" CREATED="00000000" OCREATED="20070116" PROPERTIES="315" SITEBUTTONS="default=bluelicious|gif|105|22" OVERLOAD="flow.return=r-20061003&amp;flow.product=p-bluelicious"><SUMMARY><![CDATA[
+<ELEMENT FORMAT="WRAPPER" ID="BLUELICIOUS" CART="persist" COLORS="120" TYPE="CONFIG" EXPORT="0" CATEGORIES="65537" V="3" TITLE="Bluelicious (Web 2.0)" CREATED="00000000" OCREATED="20070116" PROPERTIES="315" SITEBUTTONS="default=bluelicious|gif|105|22" OVERLOAD="flow.return=r-20061003&amp;flow.product=p-bluelicious"><SUMMARY><![CDATA[
 This is an Ajax (Web 2.0) enabled theme which features an add to cart button which leaves your buyer on the product page.  It features:
 <li>Two linkable banners (240 x 40) at the top</li>
 <li>Ability to enable small CC icons in the upper right corner (profile specific).</li>
@@ -185,8 +185,8 @@ The search catalog will default to blank.  You can select a search catalog by cl
 </ul>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQPOIJN" HELPER="Be sure to set your catalog to all upper case.  Set to DEFAULT if you don't know what this is." PROMPT="Search Catalog" SUB="SEARCHCATALOG" DEFAULT="" FONT="0" TYPE="SELECT" EDITOR="INLINE" LIST="@SYSTEM.SEARCHCATALOGS" DATA="profile:zoovy:wrap_catalog"></ELEMENT>
-<ELEMENT ID="SEARCHMODE_CHOOSER" PROMPT="Search Mode" SUB="SEARCHMODE" DEFAULT="and" FONT="0" TYPE="SELECT" EDITOR="INLINE" LIST="MODE" DATA="profile:zoovy:wrap_searchmode" RAW="1"><HELP><![CDATA[
+<ELEMENT ID="CQPOIJN" SUB="SEARCHCATALOG" PROMPT="Search Catalog" HELPER="Be sure to set your catalog to all upper case.  Set to DEFAULT if you don't know what this is." DEFAULT="" TYPE="SELECT" FONT="0" EDITOR="INLINE" LIST="@SYSTEM.SEARCHCATALOGS" DATA="profile:zoovy:wrap_catalog"></ELEMENT>
+<ELEMENT ID="SEARCHMODE_CHOOSER" SUB="SEARCHMODE" PROMPT="Search Mode" DEFAULT="and" TYPE="SELECT" FONT="0" EDITOR="INLINE" LIST="MODE" DATA="profile:zoovy:wrap_searchmode" RAW="1"><HELP><![CDATA[
 Search mode has three options:
 <li>'and' which will do a search and return results for product with BOTH words that are searched (X and Y) - system default</li>
 <li>'or' which will do a search and return results for product with EITHER words that are searched (X or Y) - returns most results</li>
@@ -202,11 +202,11 @@ The product layout that is forced on by this theme has some editable options.  U
 </ul>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="TAFOPTION" TRUE="Enabled" SUB="NOT_USED" PROMPT="Tell a friend" ON="1" DEFAULT="1" TYPE="CHECKBOX" FALSE="Disabled" EDITOR="INLINE" DATA="merchant:zoovy:wrap_tellafriend" OFF="0"><HELP><![CDATA[
+<ELEMENT ID="TAFOPTION" TRUE="Enabled" PROMPT="Tell a friend" SUB="NOT_USED" DEFAULT="1" ON="1" TYPE="CHECKBOX" EDITOR="INLINE" FALSE="Disabled" DATA="merchant:zoovy:wrap_tellafriend" OFF="0"><HELP><![CDATA[
 Tell a Friend or TAF is a feature that puts a contact form on your product pages so that your customers can send product specific information directly to an associate of theirs.  Your branding and product specific information are in the email sent, as well as a custom message set by your customer.  <br>This feature requires the XSELL bundle.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="REVIEWOPTION" TRUE="Enabled" SUB="NOT_USED" PROMPT="Product Reviews" ON="1" DEFAULT="1" TYPE="CHECKBOX" FALSE="Disabled" EDITOR="INLINE" DATA="merchant:zoovy:wrap_reviews" OFF="0"><HELP><![CDATA[
+<ELEMENT ID="REVIEWOPTION" TRUE="Enabled" PROMPT="Product Reviews" SUB="NOT_USED" DEFAULT="1" ON="1" TYPE="CHECKBOX" EDITOR="INLINE" FALSE="Disabled" DATA="merchant:zoovy:wrap_reviews" OFF="0"><HELP><![CDATA[
 Product Reviews allows your customers to add their personal input about a specific product.  Once their review is submitted, it is entered into a queue for your approval.  You have the ability to add/remove/edit any specific review through the product editor.  <br>This feature requires the CRM bundle.<br>
 ]]></HELP>
 </ELEMENT>
@@ -221,31 +221,31 @@ One shipping logo can be selected for the lower right corner.
 </ul>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CTADVZX" SUB="BANNER_LINK" PROMPT="Link for top banner 1" DEFAULT="%CART%/" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:zoovy:wrap_bannerlink"></ELEMENT>
-<ELEMENT HEIGHT="40" ID="CTADVZY" WIDTH="240" SUB="WRAP_BANNER" PROMPT="Top banner 1 (left)" TYPE="IMAGE" BGCOLOR="CDE2FE" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner"><POSTTEXT><![CDATA[</a>]]></POSTTEXT>
+<ELEMENT ID="CTADVZX" PROMPT="Link for top banner 1" SUB="BANNER_LINK" DEFAULT="%CART%/" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:zoovy:wrap_bannerlink"></ELEMENT>
+<ELEMENT ID="CTADVZY" HEIGHT="40" PROMPT="Top banner 1 (left)" SUB="WRAP_BANNER" WIDTH="240" BGCOLOR="CDE2FE" TYPE="IMAGE" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner"><POSTTEXT><![CDATA[</a>]]></POSTTEXT>
 <PRETEXT><![CDATA[<a href="%BANNER_LINK%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="CTADVZZ" SUB="BANNER2_LINK" PROMPT="Link for top banner 2" DEFAULT="%CART%/" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner2link"></ELEMENT>
-<ELEMENT HEIGHT="40" ID="CTADWAA" WIDTH="240" SUB="WRAP_BANNER2" PROMPT="Top banner 2 (right)" TYPE="IMAGE" BGCOLOR="CDE2FE" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner2"><POSTTEXT><![CDATA[</a>]]></POSTTEXT>
+<ELEMENT ID="CTADVZZ" PROMPT="Link for top banner 2" SUB="BANNER2_LINK" DEFAULT="%CART%/" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner2link"></ELEMENT>
+<ELEMENT ID="CTADWAA" HEIGHT="40" PROMPT="Top banner 2 (right)" SUB="WRAP_BANNER2" WIDTH="240" BGCOLOR="CDE2FE" TYPE="IMAGE" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner2"><POSTTEXT><![CDATA[</a>]]></POSTTEXT>
 <PRETEXT><![CDATA[<a href="%BANNER2_LINK%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="CTADVZZ423" SUB="BANNER3_LINK" PROMPT="Link for side banner 1" DEFAULT="%CART%/" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner3link"></ELEMENT>
-<ELEMENT HEIGHT="173" ID="CTADWAA2124" WIDTH="173" SUB="WRAP_BANNER3" PROMPT="Side banner 1 (top)" TYPE="IMAGE" BGCOLOR="CDE2FE" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner3"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<ELEMENT ID="CTADVZZ423" PROMPT="Link for side banner 1" SUB="BANNER3_LINK" DEFAULT="%CART%/" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner3link"></ELEMENT>
+<ELEMENT ID="CTADWAA2124" HEIGHT="173" PROMPT="Side banner 1 (top)" SUB="WRAP_BANNER3" WIDTH="173" BGCOLOR="CDE2FE" TYPE="IMAGE" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner3"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style='margin-top:3px;'><a href="%BANNER3_LINK%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="CTADVZZ6543" SUB="BANNER4_LINK" PROMPT="Link for side banner 2" DEFAULT="%CART%/" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner4link"></ELEMENT>
-<ELEMENT HEIGHT="173" ID="CTADWAA56484" WIDTH="173" SUB="WRAP_BANNER4" PROMPT="Side banner 2 (bottom)" TYPE="IMAGE" BGCOLOR="CDE2FE" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner4"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
+<ELEMENT ID="CTADVZZ6543" PROMPT="Link for side banner 2" SUB="BANNER4_LINK" DEFAULT="%CART%/" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner4link"></ELEMENT>
+<ELEMENT ID="CTADWAA56484" HEIGHT="173" PROMPT="Side banner 2 (bottom)" SUB="WRAP_BANNER4" WIDTH="173" BGCOLOR="CDE2FE" TYPE="IMAGE" EDITOR="INLINE" DATA="profile:zoovy:wrap_banner4"><POSTTEXT><![CDATA[</a></div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div style='margin-top:3px;'><a href="%BANNER4_LINK%">]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="CQHLBGD" PROMPT="American Express Logo" SUB="AMEX" ON="1" TYPE="CHECKBOX" FALSE="" EDITOR="INLINE" DATA="profile:zoovy:wrap_amex" OFF="0"><TRUE><![CDATA[<img src='%GRAPHICS_URL%/cc_amex_tiny.gif' alt='American Express' border='0' height='14' width='25' style='margin-left:2px; border:1px solid #686868;'>]]></TRUE>
+<ELEMENT ID="CQHLBGD" SUB="AMEX" PROMPT="American Express Logo" ON="1" TYPE="CHECKBOX" EDITOR="INLINE" FALSE="" DATA="profile:zoovy:wrap_amex" OFF="0"><TRUE><![CDATA[<img src='%GRAPHICS_URL%/cc_amex_tiny.gif' alt='American Express' border='0' height='14' width='25' style='margin-left:2px; border:1px solid #686868;'>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQHLBGE" PROMPT="Visa Logo" SUB="VISA" ON="1" TYPE="CHECKBOX" FALSE="" EDITOR="INLINE" DATA="profile:zoovy:wrap_visa" OFF="0"><TRUE><![CDATA[<img src='%GRAPHICS_URL%/cc_visa_tiny.gif' alt='Visa' border='0' height='14' width='25' style='margin-left:2px; border:1px solid #686868;'>]]></TRUE>
+<ELEMENT ID="CQHLBGE" SUB="VISA" PROMPT="Visa Logo" ON="1" TYPE="CHECKBOX" EDITOR="INLINE" FALSE="" DATA="profile:zoovy:wrap_visa" OFF="0"><TRUE><![CDATA[<img src='%GRAPHICS_URL%/cc_visa_tiny.gif' alt='Visa' border='0' height='14' width='25' style='margin-left:2px; border:1px solid #686868;'>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQHLBGF" PROMPT="Mastercard Logo" SUB="MCARD" ON="1" TYPE="CHECKBOX" FALSE="" EDITOR="INLINE" DATA="profile:zoovy:wrap_mastercard" OFF="0"><TRUE><![CDATA[<img src='%GRAPHICS_URL%/cc_mc_tiny.gif' alt='Mastercard' border='0' height='14' width='25' style='margin-left:2px; border:1px solid #686868;'>]]></TRUE>
+<ELEMENT ID="CQHLBGF" SUB="MCARD" PROMPT="Mastercard Logo" ON="1" TYPE="CHECKBOX" EDITOR="INLINE" FALSE="" DATA="profile:zoovy:wrap_mastercard" OFF="0"><TRUE><![CDATA[<img src='%GRAPHICS_URL%/cc_mc_tiny.gif' alt='Mastercard' border='0' height='14' width='25' style='margin-left:2px; border:1px solid #686868;'>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="CQHLBGG" PROMPT="Discover Logo" SUB="DISCOVER" ON="1" TYPE="CHECKBOX" FALSE="" EDITOR="INLINE" DATA="profile:zoovy:wrap_discover" OFF="0"><TRUE><![CDATA[<img src='%GRAPHICS_URL%/cc_novus_tiny.gif' alt='Discover' border='0' height='14' width='25' style='margin-left:2px; border:1px solid #686868;'>]]></TRUE>
+<ELEMENT ID="CQHLBGG" SUB="DISCOVER" PROMPT="Discover Logo" ON="1" TYPE="CHECKBOX" EDITOR="INLINE" FALSE="" DATA="profile:zoovy:wrap_discover" OFF="0"><TRUE><![CDATA[<img src='%GRAPHICS_URL%/cc_novus_tiny.gif' alt='Discover' border='0' height='14' width='25' style='margin-left:2px; border:1px solid #686868;'>]]></TRUE>
 </ELEMENT>
-<ELEMENT ID="SHIPLOGO_CHOOSER" PROMPT="Primary Shipping Partner (there's only room for one)" SUB="SHIP_LOGO" DEFAULT="" FONT="0" TYPE="SELECT" EDITOR="INLINE" LIST="SHIPPERS" DATA="profile:zoovy:wrap_shiplogo" RAW="1"><POSTTEXT><![CDATA[.gif' alt='' border='0'>]]></POSTTEXT>
+<ELEMENT ID="SHIPLOGO_CHOOSER" SUB="SHIP_LOGO" PROMPT="Primary Shipping Partner (there's only room for one)" DEFAULT="" TYPE="SELECT" FONT="0" EDITOR="INLINE" LIST="SHIPPERS" DATA="profile:zoovy:wrap_shiplogo" RAW="1"><POSTTEXT><![CDATA[.gif' alt='' border='0'>]]></POSTTEXT>
 <HELP><![CDATA[
 Please select your primary shipping partner.  This theme has only enough room for one graphic in the footer.  If you need additional shipping icons, use the sidebar feature instead.
 ]]></HELP>
@@ -265,8 +265,8 @@ Please select your primary shipping partner.  This theme has only enough room fo
 </ELEMENT>
 <ELEMENT ID="CTJKLEV" WIKI="3" PROMPT="Custom text for top level pages (wiki only)" TYPE="TEXT" EDITOR="INLINE" DATA="profile:zoovy:wrap_sidebartext_root" OUTPUTSKIP="2048"><HELPER><![CDATA[This text will appear on all your top level pages (home, about, returns, etc) but NOT on product or Category pages or on secure pages (login or checkout). ]]></HELPER>
 </ELEMENT>
-<ELEMENT ID="CTJKLEW" WIKI="3" PROMPT="Custom text for category pages (wiki only)" HELPER="This text will appear on all your category pages." TYPE="TEXT" EDITOR="INLINE" DATA="profile:zoovy:wrap_sidebartext_cats" OUTPUTSKIP="2048"></ELEMENT>
-<ELEMENT ID="CTJKLEX" WIKI="3" PROMPT="Custom text for product pages (wiki only)" HELPER="This text will appear on all your product pages." TYPE="TEXT" EDITOR="INLINE" DATA="profile:zoovy:wrap_sidebartext_prod" OUTPUTSKIP="2048"></ELEMENT>
+<ELEMENT ID="CTJKLEW" WIKI="3" HELPER="This text will appear on all your category pages." PROMPT="Custom text for category pages (wiki only)" TYPE="TEXT" EDITOR="INLINE" DATA="profile:zoovy:wrap_sidebartext_cats" OUTPUTSKIP="2048"></ELEMENT>
+<ELEMENT ID="CTJKLEX" WIKI="3" HELPER="This text will appear on all your product pages." PROMPT="Custom text for product pages (wiki only)" TYPE="TEXT" EDITOR="INLINE" DATA="profile:zoovy:wrap_sidebartext_prod" OUTPUTSKIP="2048"></ELEMENT>
 <ELEMENT ID="CTJKLEY" WIKI="3" PROMPT="Custom text for secure pages (wiki only)" TYPE="TEXT" EDITOR="INLINE" DATA="profile:zoovy:wrap_sidebartext_secure" OUTPUTSKIP="2048"><HELPER><![CDATA[This text will appear on all your secure pages (login, checkout, etc) and does NOT support HTML.  Use wiki for formatting.  HTML is not supported to ensure no SSL errors are caused due to improperly referenced files.]]></HELPER>
 </ELEMENT>
 <ELEMENT ID="HELP_SEARCH" TYPE="OUTPUT" OUTPUTSKIP="2048"><HTML><![CDATA[
@@ -279,7 +279,7 @@ The newsletter prompt allows you to enter a short piece of text that will appear
 ]]></HTML>
 </ELEMENT>
 <ELEMENT ID="NEWSTEXT" PROMPT="Newsletter text (No HTML or WIKI | optional)" MAX="100" TYPE="TEXT" EDITOR="INLINE" DATA="profile:zoovy:wrap_newstext" OUTPUTSKIP="2048"></ELEMENT>
-<ELEMENT ID="NEWSLETTERFORM" TRUE="Enabled" PROMPT="Display newsletter subscription form on left" ON="1" DEFAULT="1" TYPE="CHECKBOX" FALSE="Disabled" EDITOR="INLINE" DATA="profile:zoovy:wrap_newsform" OUTPUTSKIP="2048" OFF="0"></ELEMENT>
+<ELEMENT ID="NEWSLETTERFORM" TRUE="Enabled" PROMPT="Display newsletter subscription form on left" DEFAULT="1" ON="1" TYPE="CHECKBOX" EDITOR="INLINE" FALSE="Disabled" DATA="profile:zoovy:wrap_newsform" OUTPUTSKIP="2048" OFF="0"></ELEMENT>
 <ELEMENT ID="NEWSLETTERSPECL" SUB="NEWSLETTER_FORM" TYPE="SPECL"><HTML><![CDATA[
 <%
 print("<!-- Newsletter subscription form -->");
@@ -457,7 +457,7 @@ welcome %CUSTOMER_EMAIL% | <a href="%CUSTOMER_MAIN_URL%">my account</a> | <a hre
 	<td valign='top' style="text-align:left; padding-right:2px;">
 <div style='height:78px; width:173px;'><a href='%HOME_URL%'>]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="68" ID="CTADWAE" WIDTH="173" TYPE="LOGO" BGCOLOR="CDE2FE"></ELEMENT>
+<ELEMENT ID="CTADWAE" HEIGHT="68" WIDTH="173" BGCOLOR="CDE2FE" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CTADWAF" TYPE="OUTPUT"><HTML><![CDATA[</a></div>
 	
 ]]></HTML>
@@ -476,7 +476,7 @@ welcome %CUSTOMER_EMAIL% | <a href="%CUSTOMER_MAIN_URL%">my account</a> | <a hre
 </table></div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST" FORMAT="CUSTOM" PROMPT="Product List: Recently Viewed Items" MAX="3" TYPE="PRODLIST" SHOWDEFAULT="0" ALTERNATE="1" SRC="SMART:VISITED" DATA="profile:zoovy:wrap_prodlist_recent" COLS="1" OUTPUTSKIP="32769" OUTPUTFILTER="FS=E"><HTML><![CDATA[
+<ELEMENT FORMAT="CUSTOM" ID="PRODLIST" PROMPT="Product List: Recently Viewed Items" MAX="3" TYPE="PRODLIST" SRC="SMART:VISITED" ALTERNATE="1" SHOWDEFAULT="0" DATA="profile:zoovy:wrap_prodlist_recent" OUTPUTFILTER="FS=E" OUTPUTSKIP="32769" COLS="1"><HTML><![CDATA[
 <div style='margin-top:3px; background-color:#FFFFFF; width:173px; background-image:url(<% print($wrapper_url); %>/box_bg-173x1.gif); background-repeat:repeat-y; border-bottom:1px solid #4A7A9F;'><img src='<% print($wrapper_url); %>/head_recent-173x26.gif' height='26' width='173' alt='Recently Viewed Items' border='0'>
 <table border="0" cellpadding="1" cellspacing="3" width="100%">
 <!-- ROW -->
@@ -539,7 +539,7 @@ load($COUNT); print(); print(" -->");
 %WRAP_BANNER4%
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SPECL_ROOT_SIDE_TEXT" TYPE="SPECL" OUTPUTSKIP="32771" OUTPUTFILTER="FS=C,P"><HTML><![CDATA[<%
+<ELEMENT ID="SPECL_ROOT_SIDE_TEXT" TYPE="SPECL" OUTPUTFILTER="FS=C,P" OUTPUTSKIP="32771"><HTML><![CDATA[<%
 print("");
 loadurp("profile:zoovy:wrap_sidebartext_root"); default("");
 stop(unless=>$_);
@@ -557,7 +557,7 @@ stop(unless=>$_);
 %>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SPECL_CATS_SIDE_TEXT" TYPE="SPECL" OUTPUTSKIP="32771" OUTPUTFILTER="!FS=C"><HTML><![CDATA[<%
+<ELEMENT ID="SPECL_CATS_SIDE_TEXT" TYPE="SPECL" OUTPUTFILTER="!FS=C" OUTPUTSKIP="32771"><HTML><![CDATA[<%
 print("");
 loadurp("profile:zoovy:wrap_sidebartext_cats"); default("");
 stop(unless=>$_);
@@ -575,7 +575,7 @@ stop(unless=>$_);
 %>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SPECL_PROD_SIDE_TEXT" TYPE="SPECL" OUTPUTSKIP="32771" OUTPUTFILTER="!FS=P"><HTML><![CDATA[<%
+<ELEMENT ID="SPECL_PROD_SIDE_TEXT" TYPE="SPECL" OUTPUTFILTER="!FS=P" OUTPUTSKIP="32771"><HTML><![CDATA[<%
 print("");
 loadurp("profile:zoovy:wrap_sidebartext_prod"); default("");
 stop(unless=>$_);
@@ -673,7 +673,7 @@ stop(unless=>$_);
 
 <div style='position:absolute; left:104px; top:8px; height:35px; width:103px;' id='VISIBLE_CART'>]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="VISIBLE_CART_ELEMENT" PROMPT="Shopping Cart" TYPE="CART" OUTPUTFILTER="FS=T" OUTPUTSKIP="1"><HTML><![CDATA[
+<ELEMENT ID="VISIBLE_CART_ELEMENT" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART" OUTPUTSKIP="1" OUTPUTFILTER="FS=T"><HTML><![CDATA[
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <table width="100" cellspacing="1" cellpadding="0"><tr>
 	<td class="ztable_row_small"><span style="color:#ffffff;"><% load($TOTALCOUNT);  default("");  print(); %> item(s): </span></td>
@@ -727,13 +727,13 @@ print();
 <div style='position:absolute; left:2px; top:1px;'><img src='%GRAPHICS_URL%/blank.gif' height='37' width='97' alt='View Cart' border='0'></div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CTJGKYZ" TYPE="OUTPUT" OUTPUTFILTER="FS=T" OUTPUTSKIP="1"><HTML><![CDATA[
+<ELEMENT ID="CTJGKYZ" TYPE="OUTPUT" OUTPUTSKIP="1" OUTPUTFILTER="FS=T"><HTML><![CDATA[
 <div style='position:absolute; left:207px; top:4px;'><a href='#' onClick="new Effect.Appear('cartHolder');return false;"><img src='%GRAPHICS_URL%/blank.gif' height='15' width='65' alt='View Cart' border='0'></a></div>
 
 <div style='position:absolute; left:207px; top:21px;'><a href="%CART_URL%"><img src='%GRAPHICS_URL%/blank.gif' height='16' width='65' alt='Edit Cart' border='0'></a></div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CTJGKZA" TYPE="OUTPUT" OUTPUTFILTER="FG=checkout" OUTPUTSKIP="33"><HTML><![CDATA[
+<ELEMENT ID="CTJGKZA" TYPE="OUTPUT" OUTPUTSKIP="33" OUTPUTFILTER="FG=checkout"><HTML><![CDATA[
 <div style='position:absolute; left:285px; top:8px;'><a href="%CHECKOUT_URL%"><img src='%WRAPPER_URL%/checkout_now-101x28.gif' height='28' width='101' alt='Proceed to Checkout' border='0'></a></div>	
 ]]></HTML>
 </ELEMENT>
@@ -745,10 +745,10 @@ print();
 	<td colspan='3' style="background-color:#5499FE; background-image:url(%WRAPPER_URL%/title_corner-8x8.gif); background-repeat:no-repeat; background-position: top left; ">
 	]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CTADWAH" TYPE="TITLE" OUTPUTSKIP="1" OUTPUTFILTER="FS=C"><PRETEXT><![CDATA[<H1 style='margin-left:10px;'>]]></PRETEXT>
+<ELEMENT ID="CTADWAH" TYPE="TITLE" OUTPUTFILTER="FS=C" OUTPUTSKIP="1"><PRETEXT><![CDATA[<H1 style='margin-left:10px;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</H1>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="BREADCRUMB" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C"><HTML><![CDATA[
+<ELEMENT ID="BREADCRUMB" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTFILTER="!FS=C" OUTPUTSKIP="1"><HTML><![CDATA[
 <div style='margin-left:8px; color:#ffffff; font-size:8pt; padding:3px; text-transform:lowercase;'>
 <!-- CATEGORY -->
 <a href="<% load($cat_url);  default("");  print(); %>" style='color:#ffffff;'><% load($cat_pretty);  default("");  print(); %></a>
@@ -765,7 +765,7 @@ print();
 	
 	<div id="bodyDiv" style='margin-top:2px; margin-bottom: 4px; ]]></HTML>
 </ELEMENT>
-<ELEMENT HTML="margin-left:3px; margin-right:3px; " ID="CUALCPZ" TYPE="OUTPUT" OUTPUTSKIP="4"></ELEMENT>
+<ELEMENT ID="CUALCPZ" HTML="margin-left:3px; margin-right:3px; " TYPE="OUTPUT" OUTPUTSKIP="4"></ELEMENT>
 <ELEMENT ID="CTAD345WAK" TYPE="OUTPUT"><HTML><![CDATA[' class='ztxt'>]]></HTML>
 </ELEMENT>
 <ELEMENT ID="CTADWAJ" TYPE="BODY"></ELEMENT>
@@ -829,7 +829,7 @@ print($buysafe_tandc_html);
 	<div id="PUTCARTHERE" >
 ]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART" NOITEMS_SPEC="This cart is empty" OUTPUTSKIP="1" OUTPUTFILTER="FS=T"><HTML><![CDATA[
+<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART" NOITEMS_SPEC="This cart is empty" OUTPUTSKIP="1" OUTPUTFILTER="FS=T"><HTML><![CDATA[
 
 <div style='height:190px; overflow:scroll; border-bottom:2px solid #6F86ED; background-color:#CDE2FE;'>
 <table width="100%" cellpadding="2" cellspacing="0">

@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNJI" CREATOR="JT" IMAGES="0" PROPERTIES="1" SUBTYPE="C" SERIES="Multiple Prodlists" FORMAT="LAYOUT" SHORT="Contains 3 text boxes and 3 separate product lists." TYPE="CONFIG" TITLE="Multi-prodlist (pricing)"><SUMMARY><![CDATA[Three custom product lists with the name on top, then  price, MSRP, 'you save' field, optional 'view details' link and and add to cart link to the right of the image.  Each product list is separated by an HTML editor. The 'mutliple page' feature is disabled on this layout. Subcategories on pages using this layout will be displayed in a three column layout and will display on the subcategory pages (that use this flow) if no subcats are present there.]]></SUMMARY>
+<ELEMENT ID="CPUKNJI" CREATOR="JT" IMAGES="0" PROPERTIES="1" SERIES="Multiple Prodlists" SUBTYPE="C" FORMAT="LAYOUT" SHORT="Contains 3 text boxes and 3 separate product lists." TYPE="CONFIG" TITLE="Multi-prodlist (pricing)"><SUMMARY><![CDATA[Three custom product lists with the name on top, then  price, MSRP, 'you save' field, optional 'view details' link and and add to cart link to the right of the image.  Each product list is separated by an HTML editor. The 'mutliple page' feature is disabled on this layout. Subcategories on pages using this layout will be displayed in a three column layout and will display on the subcategory pages (that use this flow) if no subcats are present there.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="SUBCAT" DESCENDTREE="1" NOROOT="1" MODE="LIST" TYPE="SUBCAT" FORCECOLUMNS="3"><HTML><![CDATA[<table cellspacing=2 cellpadding=0 border=0 width="100%">
 <!-- ROW -->
@@ -19,7 +19,7 @@
 <ELEMENT ID="CPUKNJJ" TYPE="OUTPUT"><HTML><![CDATA[<br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST1" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" MSRPHEAD="MSRP: " COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing" SAVEHEAD="A Savings of " PRICEHEAD="Price: " TYPE="PRODLIST" LOADFLOW="1"><HTML><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<ELEMENT ID="PRODLIST1" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" MSRPHEAD="MSRP: " COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing" SAVEHEAD="A Savings of " TYPE="PRODLIST" PRICEHEAD="Price: " LOADFLOW="1"><HTML><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <!-- ROW -->
 <tr>
 <!-- PRODUCT -->
@@ -50,7 +50,7 @@
 <ELEMENT ID="CPUKNJL" TYPE="OUTPUT"><HTML><![CDATA[<br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST2" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist2" MSRPHEAD="MSRP: " COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing 2" SAVEHEAD="A Savings of " PRICEHEAD="Price: " TYPE="PRODLIST" LOADFLOW="1"><HTML><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<ELEMENT ID="PRODLIST2" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist2" MSRPHEAD="MSRP: " COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing 2" SAVEHEAD="A Savings of " TYPE="PRODLIST" PRICEHEAD="Price: " LOADFLOW="1"><HTML><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <!-- ROW -->
 <tr>
 <!-- PRODUCT -->
@@ -81,7 +81,7 @@
 <ELEMENT ID="CPUKNJN" TYPE="OUTPUT"><HTML><![CDATA[<br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST3" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist3" MSRPHEAD="MSRP: " COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing 3" SAVEHEAD="A Savings of " PRICEHEAD="Price: " TYPE="PRODLIST" LOADFLOW="1"><HTML><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<ELEMENT ID="PRODLIST3" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist3" MSRPHEAD="MSRP: " COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing 3" SAVEHEAD="A Savings of " TYPE="PRODLIST" PRICEHEAD="Price: " LOADFLOW="1"><HTML><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <!-- ROW -->
 <tr>
 <!-- PRODUCT -->

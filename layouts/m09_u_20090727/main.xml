@@ -2,9 +2,9 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="DADBPFD" CREATED="000000000" SUBTYPE="U" TYPE="CONFIG" EXPORT="0" TITLE="Mobile Contact: Contact info and form"></ELEMENT>
+<ELEMENT ID="DADBPFD" CREATED="000000000" SUBTYPE="U" EXPORT="0" TYPE="CONFIG" TITLE="Mobile Contact: Contact info and form"></ELEMENT>
 <ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
-<ELEMENT ID="CONTACT_INFO" WIKI="3" DATA="profile:zoovy:contact" PROMPT="Contact Information" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[
+<ELEMENT ID="CONTACT_INFO" WIKI="3" DATA="profile:zoovy:contact" PROMPT="Contact Information" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[
 <div class='ztxt' style='margin-bottom:20px;'>
 ]]></PRETEXT>
 <POSTTEXT><![CDATA[
@@ -47,7 +47,7 @@ goto(label=>"NOCALL",eq=>"1");
 </ELEMENT>
 <ELEMENT ID="CPZWXCT" PRETEXT="Fax: " RAW="1" TYPE="READONLY" LOAD="profile:zoovy:facsimile"><POSTTEXT><![CDATA[<br>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="DADBPFF" DATA="profile:zoovy:store_hours" PROMPT="Store Hours" TYPE="TEXTBOX" FONT="0"></ELEMENT>
+<ELEMENT ID="DADBPFF" DATA="profile:zoovy:store_hours" PROMPT="Store Hours" FONT="0" TYPE="TEXTBOX"></ELEMENT>
 <ELEMENT ID="DADBPFG" TYPE="OUTPUT"><HTML><![CDATA[
 
 </div>

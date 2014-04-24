@@ -2,12 +2,12 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNKE" CREATOR="JT" IMAGES="0" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="Multiple Prodlists" FORMAT="LAYOUT" SHORT="Has 1 a customized product list at the top with with a border and another product list below" TYPE="CONFIG" TITLE="Featured Product &amp; Second List" RELEASED="20041123"><SUMMARY><![CDATA[This layout has a single item product list at the top for a 'featured' item (use a small LIST as it will sort randomly) followed by an HTML editor and another customized product list]]></SUMMARY>
+<ELEMENT ID="CPUKNKE" CREATOR="JT" CREATED="00000000" IMAGES="0" PROPERTIES="1" SUBTYPE="H" SERIES="Multiple Prodlists" FORMAT="LAYOUT" SHORT="Has 1 a customized product list at the top with with a border and another product list below" TYPE="CONFIG" TITLE="Featured Product &amp; Second List" RELEASED="20041123"><SUMMARY><![CDATA[This layout has a single item product list at the top for a 'featured' item (use a small LIST as it will sort randomly) followed by an HTML editor and another customized product list]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CPUKNKF" TYPE="OUTPUT"><HTML><![CDATA[<table cellspacing=4 cellpadding=0 border=0 width="100%"><tr>
 	<td  valign="top" align="left">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST" MAX="1" ALTERNATE="0" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" COLS="1" FORMAT="CUSTOM" PROMPT="Product Listing" PRICEHEAD="only " TYPE="PRODLIST" SORTBY="RANDOM" LOADFLOW="1"><HTML><![CDATA[<table border="0" cellpadding="3" cellspacing="0" width="100%" style="border-style:dashed; border-color: #<% load($head_bg_spec);  default("");  print(); %>; border-width: 1px;">
+<ELEMENT ID="PRODLIST" MAX="1" MULTIPAGE="0" ALTERNATE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" COLS="1" FORMAT="CUSTOM" PROMPT="Product Listing" TYPE="PRODLIST" PRICEHEAD="only " SORTBY="RANDOM" LOADFLOW="1"><HTML><![CDATA[<table border="0" cellpadding="3" cellspacing="0" width="100%" style="border-style:dashed; border-color: #<% load($head_bg_spec);  default("");  print(); %>; border-width: 1px;">
 <!-- ROW -->
 <tr>
 <!-- PRODUCT -->
@@ -28,8 +28,8 @@
 </table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Category Description" TYPE="HTML"></ELEMENT>
-<ELEMENT SIZE="500" ID="PRODLIST2" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist2" COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing 2" PRICEHEAD="only " TYPE="PRODLIST" LOADFLOW="1"><HTML><![CDATA[<table border="0" cellpadding="5" cellspacing="0" width=100%>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" HELPER="Remember to keep this text short and to the point.  " TYPE="HTML"></ELEMENT>
+<ELEMENT ID="PRODLIST2" SIZE="500" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist2" COLS="2" FORMAT="CUSTOM" PROMPT="Product Listing 2" TYPE="PRODLIST" PRICEHEAD="only " LOADFLOW="1"><HTML><![CDATA[<table border="0" cellpadding="5" cellspacing="0" width=100%>
 <!-- ROW -->
 <tr>
 <!-- PRODUCT -->

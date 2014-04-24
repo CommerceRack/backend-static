@@ -56,11 +56,11 @@
 <ELEMENT ID="CPUKMQK" TYPE="OUTPUT"><HTML><![CDATA[</span><br><br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="200" PROMPT="Image 1" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE" HEIGHT="200" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMQL" TYPE="OUTPUT"><HTML><![CDATA[ <br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="200" ID="IMAGE2" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="200" PROMPT="Image 2" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="200" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image 2" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMQM" TYPE="OUTPUT"><HTML><![CDATA[ 
 </tr></table>]]></HTML>
 </ELEMENT>

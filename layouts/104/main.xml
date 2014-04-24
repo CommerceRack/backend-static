@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLZP" CREATOR="STAFF" IMAGES="6" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="P" FORMAT="LAYOUT" SHORT="(6) 100 x 100 images, three on each side, with the default description in the middle." TYPE="CONFIG" TITLE="Multi Picture" RELEASED="20020510"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKLZP" CREATOR="STAFF" CREATED="00000000" IMAGES="6" PROPERTIES="1" SERIES="2002" SUBTYPE="P" FORMAT="LAYOUT" SHORT="(6) 100 x 100 images, three on each side, with the default description in the middle." TYPE="CONFIG" TITLE="Multi Picture" RELEASED="20020510"><SUMMARY><![CDATA[
 Default Description (shared)
 IMAGE1 (100  x100 )
 IMAGE2 (100  x100 )
@@ -28,17 +28,17 @@ function zoom (url) {
     <td valign="top" width="100">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100 " ID="IMAGE1" HELP="Please enter a picture for your product." ZOOM="1 " DATA="product:zoovy:prod_image1" WIDTH="100  " PROMPT="Image 1" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE1" HEIGHT="100 " HELP="Please enter a picture for your product." ZOOM="1 " DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="100  " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZR" TYPE="OUTPUT"><HTML><![CDATA[
 <br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100 " ID="IMAGE2" HELP="Please enter a picture for your product." ZOOM="1    " DATA="product:zoovy:prod_image2" WIDTH="100  " PROMPT="Image 2" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE2" HEIGHT="100 " HELP="Please enter a picture for your product." ZOOM="1    " DATA="product:zoovy:prod_image2" PROMPT="Image 2" WIDTH="100  " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZS" TYPE="OUTPUT"><HTML><![CDATA[
 <br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100 " ID="IMAGE3" HELP="Please enter a picture for your product." ZOOM="1    " DATA="product:zoovy:prod_image3" WIDTH="100  " PROMPT="Image 3" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE3" HEIGHT="100 " HELP="Please enter a picture for your product." ZOOM="1    " DATA="product:zoovy:prod_image3" PROMPT="Image 3" WIDTH="100  " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZT" TYPE="OUTPUT"><HTML><![CDATA[
     </td>
     <td valign="middle" width="360">
@@ -56,17 +56,17 @@ function zoom (url) {
     <td valign="top" width="100">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100 " ID="IMAGE4" HELP="Please enter a picture for your product." ZOOM="1    " DATA="product:zoovy:prod_image4" WIDTH="100  " PROMPT="Image 4" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE4" HEIGHT="100 " HELP="Please enter a picture for your product." ZOOM="1    " DATA="product:zoovy:prod_image4" PROMPT="Image 4" WIDTH="100  " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZW" TYPE="OUTPUT"><HTML><![CDATA[
 <br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100 " ID="IMAGE5" HELP="Please enter a picture for your product." ZOOM="1    " DATA="product:zoovy:prod_image5" WIDTH="100  " PROMPT="Image 5" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE5" HEIGHT="100 " HELP="Please enter a picture for your product." ZOOM="1    " DATA="product:zoovy:prod_image5" PROMPT="Image 5" WIDTH="100  " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZX" TYPE="OUTPUT"><HTML><![CDATA[
 <br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100 " ID="IMAGE6" HELP="Please enter a picture for your product." ZOOM="1    " DATA="product:zoovy:prod_image6" WIDTH="100  " PROMPT="Image 6" DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="IMAGE6" HEIGHT="100 " HELP="Please enter a picture for your product." ZOOM="1    " DATA="product:zoovy:prod_image6" PROMPT="Image 6" WIDTH="100  " DEFAULT="https://static.zoovy.com/img/H180-W180-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLZY" TYPE="OUTPUT"><HTML><![CDATA[
     </td>
   </tr>

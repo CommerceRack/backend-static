@@ -2,11 +2,11 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="DGEJNXK" CREATED="20111107" SUBTYPE="C" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Featured Item" RELEASED="20111114"><SUMMARY><![CDATA[A layout featuring a single product at the top of the page, followed by a banner, text, product list and another text block. 
+<ELEMENT FORMAT="LAYOUT" ID="DGEJNXK" TYPE="CONFIG" CREATED="20111107" TITLE="Featured Item" SUBTYPE="C" RELEASED="20111114"><SUMMARY><![CDATA[A layout featuring a single product at the top of the page, followed by a banner, text, product list and another text block. 
 <b>works best with 2011+ themes</b>]]></SUMMARY>
 </ELEMENT>
-<ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
-<ELEMENT ID="VAR_NONSECURE_URL" RAW="1" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL"></ELEMENT>
+<ELEMENT ID="VAR_LAYOUT_URL" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL" RAW="1"></ELEMENT>
+<ELEMENT ID="VAR_NONSECURE_URL" SUB="NONSECURE_URL" TYPE="READONLY" LOAD="URL::NONSECURE_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="DGEJNXL" TYPE="HIDDEN" OUTPUTSKIP="4096"><DEFAULT><![CDATA[
 
 
@@ -23,7 +23,7 @@ The product list at the top will load the first item from the page. The secondar
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DGEJNXN" MMULTIPAGE="0" MAX="1" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
+<ELEMENT FORMAT="CUSTOM" ID="DGEJNXN" MMULTIPAGE="0" PROMPT="Product List" MAX="1" TYPE="PRODLIST" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist_custom" COLS="1"><HTML><![CDATA[
 
 <!-- ROW -->
 <!-- PRODUCT -->
@@ -151,14 +151,14 @@ stop(unless=>$_);
 <!-- /ROW -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="150" ID="MIDDLE_OF_PAGE" MINIMAL="1" EDITOR="INLINE" DATA="page:banner_top" PROMPT="Banner: below featured item" WIDTH="780" BGCOLOR="TTTTTT" TYPE="BANNER"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="MIDDLE_OF_PAGE" HEIGHT="150" WIDTH="780" PROMPT="Banner: below featured item" MINIMAL="1" TYPE="BANNER" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="page:banner_top"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='banner elementMargin center'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description (keep this short)" TYPE="TEXT" FONT="0"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<ELEMENT ID="DESCRIPTION" WIKI="3" PROMPT="Text Description (keep this short)" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="page:description"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div class='ztxt elementMargin'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PRODLIST_CONT" MAX="12" MULTIPAGE="0" DATA="page:prodlist_custom" COLS="4" FORMAT="CUSTOM" HELPER="Multipage is disabled for this product list. A max of 12 items will show up." PROMPT="Product List" DEFAULT="&amp;ALTERNATE=3" PRODUCTS_SKIP="1" TYPE="PRODLIST"><HTML><![CDATA[
+<ELEMENT FORMAT="CUSTOM" ID="PRODLIST_CONT" PROMPT="Product List" HELPER="Multipage is disabled for this product list. A max of 12 items will show up." PRODUCTS_SKIP="1" DEFAULT="&amp;ALTERNATE=3" MAX="12" TYPE="PRODLIST" MULTIPAGE="0" DATA="page:prodlist_custom" COLS="4"><HTML><![CDATA[
 
 <div id='prodlistMoreItems' class='prodlist4Columns elementMargin'>
 
@@ -234,7 +234,7 @@ goto(label=>"HASPOGSORCHILDREN",eq=>"PARENT");
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION2" WIKI="3" EDITOR="INLINE" DATA="page:description2" PROMPT="Text Description" TYPE="TEXT" FONT="0"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
+<ELEMENT ID="DESCRIPTION2" WIKI="3" PROMPT="Text Description" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="page:description2"><HELPER><![CDATA[<!-- template specific help -->]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 <PRETEXT><![CDATA[<!-- begin text area --><div class='ztxt elementMargin'>]]></PRETEXT>
 </ELEMENT>

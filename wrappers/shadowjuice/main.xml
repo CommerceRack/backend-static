@@ -82,7 +82,7 @@
 <ELEMENT ID="CPULOGR" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULOGS" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULOGT" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CPULOGU" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20020722" TITLE="Shadow Juice" PROPERTIES="10" OCREATED="20020722" SITEBUTTONS="default=shadowjuice|gif|130|35&amp;add_to_site=shadowjuice|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULOGU" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Shadow Juice" CREATED="20020722" OCREATED="20020722" PROPERTIES="10" SITEBUTTONS="default=shadowjuice|gif|130|35&amp;add_to_site=shadowjuice|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #FFCC33; }
 .zbox_body {  background-color: #FFFF66; color: #000000; font-family: VERDANA; font-size: 11pt; }
@@ -141,7 +141,7 @@ a:hover    {text-decoration: underline;
     <td height=98 background="%WRAPPER_URL%/color.jpg" bgcolor="#F0BE1F"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
     <td background="%WRAPPER_URL%/color.jpg" valign="middle" align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULOGY" HEIGHT="90" WIDTH="320" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="90" ID="CPULOGY" WIDTH="320" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULOGZ" TYPE="OUTPUT"><HTML><![CDATA[</td>
     <td><img src="%WRAPPER_URL%/middle.jpg" height=98 width=210></td>
     <td background="%WRAPPER_URL%/lines.jpg" nowrap align="right"><img src="%GRAPHICS_URL%/blank.gif" height=25 width=1>

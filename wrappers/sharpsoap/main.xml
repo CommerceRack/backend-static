@@ -82,7 +82,7 @@
 <ELEMENT ID="CPULKPM" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULKPN" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULKPO" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CPULKPP" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20020513" TITLE="Sharp Soap" PROPERTIES="2" OCREATED="20020513" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULKPP" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Sharp Soap" CREATED="20020513" OCREATED="20020513" PROPERTIES="2" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid ##80484F; }
 .zbox_body {  background-color: #E0D0C0; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -143,7 +143,7 @@
 							<tr>
 								<td background="%WRAPPER_URL%/logo_background.gif" width="400" height="154" align="center" valign="middle"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULKPT" HEIGHT="114" WIDTH="380" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT HEIGHT="114" ID="CPULKPT" WIDTH="380" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULKPU" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 							</tr>
 						</table>

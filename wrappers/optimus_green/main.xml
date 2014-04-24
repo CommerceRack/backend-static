@@ -82,7 +82,7 @@
 <ELEMENT ID="CQDPMVF" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPMVG" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPMVH" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CQDPMVI" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Optimus green" CREATED="20041110" OCREATED="20041110" PROPERTIES="11" SITEBUTTONS="default=green_gel|gif|104|33&amp;add_to_site=green_gel|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CQDPMVI" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20041110" TITLE="Optimus green" PROPERTIES="11" OCREATED="20041110" SITEBUTTONS="default=green_gel|gif|104|33&amp;add_to_site=green_gel|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #339900; }
 .zbox_body {  background-color: #FFFFFF; color: #000000; font-family: Arial; font-size: 9pt; }
@@ -155,7 +155,7 @@ a:hover	{color: #333333; text-decoration: underline;}
 <table cellspacing="0" cellpadding="0" border="0" width="100%" class="outline"><tr>
 	<td height="60"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQDPMVO" HEIGHT="60" WIDTH="300" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="60" ID="CQDPMVO" WIDTH="300" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="CQDPMVP" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 	<td></td>
 </tr><tr>
@@ -169,7 +169,7 @@ a:hover	{color: #333333; text-decoration: underline;}
 		<td><table cellspacing="0" cellpadding="0" width="100%"><tr>
 			<td align="left">]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
+<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <table cellspacing="3" border="0" cellpadding="0" style="margin-left:4px;"><tr>	
 	<td align="right" valign="bottom"><span class="minicart">Items: </span></td>
@@ -272,7 +272,7 @@ a:hover	{color: #333333; text-decoration: underline;}
 <ELEMENT ID="CQDPMWD" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	<td align="right"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQDPMWE" HEIGHT="40" WIDTH="200" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="40" ID="CQDPMWE" WIDTH="200" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="CQDPMWF" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 	
 </tr></table>

@@ -84,7 +84,6 @@
 <ELEMENT ID="CQQYTEC" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQYTED" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQYTEE" TYPE="CONFIG" CREATED="00000000"><THEME><![CDATA[alert_color=003399&content_background_color=99CCFF&content_font_face=Arial%2c+Helvetica&content_font_size=3&content_text_color=000000&disclaimer_background_color=99CCFF&disclaimer_font_face=Arial%2c+Helvetica&disclaimer_font_size=1&disclaimer_text_color=000000&link_active_text_color=003399&link_text_color=003399&link_visited_text_color=003399&name=&pretty_name=&table_heading_background_color=003399&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_heading_text_color=FFFFFF&table_listing_background_color=FFFFFF&table_listing_background_color_alternate=6699FF&table_listing_font_face=Arial%2c+Helvetica&table_listing_font_size=2&table_listing_text_color=000000]]></THEME>
-<THEME_OLD><![CDATA[disclaimer_text_color=000000&content_font_face=Arial%2c+Helvetica&table_listing_background_color_alternate=6699FF&table_heading_text_color=FFFFFF&pretty_name=Corporate+Blue2&link_visited_text_color=003399&content_background_color=99CCFF&table_heading_background_color=003399&link_text_color=003399&link_active_text_color=660000&table_listing_font_face=Arial%2c+Helvetica&content_text_color=000000&content_font_size=3&disclaimer_font_face=Arial%2c+Helvetica&name=corporateblu2&table_listing_background_color=FFFFFF&disclaimer_background_color=FFFFFF&alert_color=003399&disclaimer_font_size=1&table_listing_text_color=000000&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_listing_font_size=2]]></THEME_OLD>
 <CSS><![CDATA[.zbody { background-color: #99CCFF; }
 .zborder { border: 1px solid #CCCCCC; }
 .zbox { border: 1px solid #003399; }
@@ -114,6 +113,7 @@
 .ztitle2 { font-weight: bold; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
 .ztxt { color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
 .zwarn { color: #003399; font-weight: bold; }]]></CSS>
+<THEME_OLD><![CDATA[disclaimer_text_color=000000&content_font_face=Arial%2c+Helvetica&table_listing_background_color_alternate=6699FF&table_heading_text_color=FFFFFF&pretty_name=Corporate+Blue2&link_visited_text_color=003399&content_background_color=99CCFF&table_heading_background_color=003399&link_text_color=003399&link_active_text_color=660000&table_listing_font_face=Arial%2c+Helvetica&content_text_color=000000&content_font_size=3&disclaimer_font_face=Arial%2c+Helvetica&name=corporateblu2&table_listing_background_color=FFFFFF&disclaimer_background_color=FFFFFF&alert_color=003399&disclaimer_font_size=1&table_listing_text_color=000000&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_listing_font_size=2]]></THEME_OLD>
 <SITEBUTTONS><![CDATA[forward=l2_corporateblu2|gif|53|24&add_to_cart=l2_corporateblu2|gif|71|24&back=l2_corporateblu2|gif|56|24&default=l2_corporateblu2|gif|68|24&add_to_site=l2_corporateblu2|gif|122|32&checkout=l2_corporateblu2|gif|60|24&continue_shopping=l2_corporateblu2|gif|114|24&update_cart=l2_corporateblu2|gif|74|24&cancel=l2_corporateblu2|gif|47|24]]></SITEBUTTONS>
 </ELEMENT>
 <ELEMENT ID="CQQYTEF" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
@@ -178,7 +178,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 							<tr>
 								<td background="%WRAPPER_URL%/logo_background.gif" width="400" height="90" align="left" valign="top"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQQYTEL" HEIGHT="88" WIDTH="400" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="88" ID="CQQYTEL" WIDTH="400" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQQYTEM" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 							</tr>
 						</table>

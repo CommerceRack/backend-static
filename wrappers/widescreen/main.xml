@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULUZI" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULUZJ" COLORS="16" TYPE="CONFIG" CATEGORIES="32768" TITLE="Widescreen" CREATED="20021121" PROPERTIES="2" OCREATED="20021121" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULUZJ" COLORS="16" TYPE="CONFIG" CATEGORIES="32768" CREATED="20021121" TITLE="Widescreen" OCREATED="20021121" PROPERTIES="2" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #C952BA; }
 .zbox_body {  background-color: #FFCCFF; color: #000000; font-family: verdana; font-size: 9pt; }
@@ -176,7 +176,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 <body>
 <div align="right">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULUZQ" HEIGHT="85" WIDTH="400" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="85" ID="CPULUZQ" WIDTH="400" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULUZR" TYPE="OUTPUT"><HTML><![CDATA[
 </div>
 <div align="center">

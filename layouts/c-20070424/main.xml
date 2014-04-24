@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNJS" CREATOR="JT" IMAGES="1" CREATED="20070424" PROPERTIES="1" SERIES="2007" SUBTYPE="C" FORMAT="LAYOUT" SHORT="Text, image, subcategories and products that fill the width of variable width themes" TYPE="CONFIG" TITLE="Variable width subcategories, products and text" RELEASED="20070501"><SUMMARY><![CDATA[This layout has a text area and linkable image at the top, as well as an additional text area at the bottom.  The subcategory list will show the thumbnail (90x90) and name (truncated) in a variable column format that will position the subcategories to take up as much width as is available.  The product list works in the same manner.]]></SUMMARY>
+<ELEMENT ID="CPUKNJS" CREATOR="JT" CREATED="20070424" IMAGES="1" PROPERTIES="1" SERIES="2007" SUBTYPE="C" FORMAT="LAYOUT" SHORT="Text, image, subcategories and products that fill the width of variable width themes" TYPE="CONFIG" TITLE="Variable width subcategories, products and text" RELEASED="20070501"><SUMMARY><![CDATA[This layout has a text area and linkable image at the top, as well as an additional text area at the bottom.  The subcategory list will show the thumbnail (90x90) and name (truncated) in a variable column format that will position the subcategories to take up as much width as is available.  The product list works in the same manner.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CUBEZEH" TYPE="OUTPUT" OUTPUTSKIP="4096"><HTML><![CDATA[
 <p><b>About this layout:</b><br>
@@ -25,11 +25,11 @@ The product list on this layout behaves in a similar fashion to the subcategorie
 <tr>
 	<td align='top' width='1%'>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE_LINK" EDITOR="INLINE" DATA="page:link1" ZOOVYDOCID="50355" SUB="LINK1" PROMPT="Link for image 1" FONT="0" TYPE="TEXTBOX"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
+<ELEMENT ID="IMAGE_LINK" EDITOR="INLINE" DATA="page:link1" ZOOVYDOCID="50355" PROMPT="Link for image 1" SUB="LINK1" TYPE="TEXTBOX" FONT="0"><HELP><![CDATA[The URL you paste in here will be linked to on the corresponding image.  You need only to put the destination URL and use the proper Zoovy linking syntax.  (%SESSION%/category/category.safe.name)<br><br />
 Go to <a href="http://www.zoovydocs.com/doc-50355" target="webdoc">http://www.zoovydocs.com/doc-50355</a> for more information on how to properly set up your links.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="125" EDITOR="INLINE" DATA="page:picture1" PROMPT="Image 1 ( 125 x 125 )" WIDTH="125" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%LINK1%">]]></PRETEXT>
+<ELEMENT HEIGHT="125" ID="IMAGE1" EDITOR="INLINE" DATA="page:picture1" WIDTH="125" PROMPT="Image 1 ( 125 x 125 )" TYPE="IMAGE"><PRETEXT><![CDATA[<a href="%LINK1%">]]></PRETEXT>
 <POSTTEXT><![CDATA[</a>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CUBEZEJ" TYPE="OUTPUT"><HTML><![CDATA[</td>
@@ -73,8 +73,8 @@ print(); %></a></div>
 	<td colspan='2'>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="HEADER1" WIKI="3" MAXLENGTH="35" HELP="Please enter a message that will appear on this page" EDITOR="INLINE" DATA="page:header1" PROMPT="Product List Header (optional)" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
-<ELEMENT ID="PRODUCTS" SIZE="5000" MAX="500" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
+<ELEMENT ID="HEADER1" WIKI="3" HELP="Please enter a message that will appear on this page" MAXLENGTH="35" EDITOR="INLINE" DATA="page:header1" PROMPT="Product List Header (optional)" TYPE="TEXTBOX" OUTPUTSKIP="4096"></ELEMENT>
+<ELEMENT SIZE="5000" ID="PRODUCTS" MAX="500" ALTERNATE="0" EDITOR="INLINE" DATA="page:prodlist1" FORMAT="CUSTOM" PROMPT="Product List" TYPE="PRODLIST"><HTML><![CDATA[
 <div class='ztitle' style='margin-bottom:10px; border-top:1px solid <% loadurp("CSS::zcolor_light.bgcolor"); default("#EFEFEF"); print(); %>; padding-top:10px;'>
 <%
 loadurp("page:header1"); default("&nbsp;"); print();

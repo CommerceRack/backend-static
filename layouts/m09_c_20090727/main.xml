@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="DADBLER" CREATED="00000000" EXPORT="0" TYPE="CONFIG" TITLE="Mobile product list (iphone 3.0 optimized)"></ELEMENT>
+<ELEMENT ID="DADBLER" CREATED="00000000" TYPE="CONFIG" EXPORT="0" TITLE="Mobile product list (iphone 3.0 optimized)"></ELEMENT>
 <ELEMENT ID="VAR_LAYOUT_URL" RAW="1" SUB="LAYOUT_URL" TYPE="READONLY" LOAD="URL::LAYOUT_URL"></ELEMENT>
 <ELEMENT ID="SUBCAT_SELECTLIST" MODE="LIST" SUB="NOTUSED" TYPE="SUBCAT" OUTPUSKIP="4096"><HTML><![CDATA[
 
@@ -29,7 +29,7 @@
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SUBCATEGORIES" MODE="LIST" TYPE="SUBCAT" OUTPUTFILTER="PG=results" OUTPUTSKIP="1"><HTML><![CDATA[
+<ELEMENT ID="SUBCATEGORIES" MODE="LIST" TYPE="SUBCAT" OUTPUTSKIP="1" OUTPUTFILTER="PG=results"><HTML><![CDATA[
 <div class='mypanel paddedpanel'>
 <table cellspacing='0' cellpadding='0' width='100%'>
 
@@ -107,6 +107,91 @@ print();
 
 %>
 ]]></HTML>
+<PRODLIST_STYLE><![CDATA[
+<table cellspacing='0' cellpadding='0' style='margin-bottom:10px; ' width='100%'>
+<!-- ROW -->
+<!-- PRODUCT -->
+<tr>
+
+<td width='1%'><a href='<% print($PROD_URL); %>#noMastHead' title="<% load($zoovy:prod_name); default(""); format(encode=>"entity"); print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"90",h=>"90",tag=>"1",bg=>"ffffff",alt=>$zoovy:prod_name);  print(); %></a></td>
+
+	<td class='ztable_row' width='98%'>
+	<a href='<% print($PROD_URL); %>#noMastHead' style='display:block; text-decoration:none;'>
+	<div style='margin-left:5px;' class='no_underline ztable_row'>
+
+
+<div style='font-weight:bold; margin-bottom:3px;' class='zlink'><% load($zoovy:prod_seo_title); default($zoovy:prod_name);  default(""); print(); %></div>
+<div><% print(""); load($zoovy:prod_mfg); default(""); stop(unless=>$_); format(pretext=>"by "); print(); %></div>
+
+<%
+print("");
+	
+/* if the msrp is greater than the price, compute the savings percentage. Otherwise, just show price */	
+load($zoovy:prod_msrp);
+goto(label=>"DISPLAY_SAVINGS",gt=>$zoovy:base_price);
+	load($zoovy:base_price);
+	format(hidezero);
+	format(money);
+	format(pretext=>"<div class='ztable_row_title'>",posttext=>"</div>");
+	print();
+	stop();
+
+:DISPLAY_SAVINGS();
+	load($zoovy:base_price);
+/* stop has to be here to handle products with a blank or 0 price */
+	stop(unless=>$_);
+	format(money);
+	format(pretext=>"<div class='ztable_row_title'>");
+	print();
+/* compute the savings and display it after the price. no need to check msrp because we did that above */
+	load($zoovy:base_price);
+	math(op=>"divide",var=>$zoovy:prod_msrp); 
+	math(op=>"subtract",var=>"1");
+	math(op=>"multiply",var=>"-100"); format(hidezero); format(convert=>"number",precision=>"0"); 
+	format(pretext=>"<span class='ztable_row'> (",posttext=>"%)</span></div>");
+	print();
+
+	load($zoovy:prod_msrp);
+	format(hidezero);
+	format(money);
+	format(pretext=>"<div>regular price: <span style='text-decoration:line-through;'>",posttext=>"</span></div>");
+	print();
+
+%>
+
+<div style='margin-top:3px;'>In Stock</div>
+	
+	</div>
+	</a>
+	</td>
+	
+	<td valign='middle' width='1%'>
+	<div style='margin-left:5px;'>
+
+<div><a href='<% print($PROD_URL); %>'><img src='%LAYOUT_URL%/m09_btn_details-25x25.jpg' width='25' height='25' alt='more details'></a></div>
+
+<%
+print("");
+/* if the item has pogs or no price set, don't show add to cart button. should default to some other button later. */
+load($zoovy:pogs);
+	stop(if=>$_);
+load($zoovy:base_price);
+	stop(unless=>$_);
+	print("<div style='margin-top:25px;'><a href='");
+	print($ADD_URL);
+	print("'><img src='%LAYOUT_URL%/m09_btn_add-25x25.jpg' width='25' height='25' alt='add to cart'></a></div>");
+%>
+	</div>
+	</td>
+</tr>
+<tr>
+	<td colspan='3'><div style='height:1px; background:#cccccc;'></div></td>
+</tr>
+<!-- /PRODUCT -->
+<!-- /ROW -->
+</table>
+
+]]></PRODLIST_STYLE>
 <MY_MULTIPAGE_FOOTER><![CDATA[
 
 <div class='round_bottom'>
@@ -221,91 +306,6 @@ It was opened/closed in this manner becuase that's the only way to get it to app
 'around' the product list AND have it appear conditionally only if the prodlist is 
 populated -->
 ]]></MY_MULTIPAGE_FOOTER>
-<PRODLIST_STYLE><![CDATA[
-<table cellspacing='0' cellpadding='0' style='margin-bottom:10px; ' width='100%'>
-<!-- ROW -->
-<!-- PRODUCT -->
-<tr>
-
-<td width='1%'><a href='<% print($PROD_URL); %>#noMastHead' title="<% load($zoovy:prod_name); default(""); format(encode=>"entity"); print(); %>"><% load($zoovy:prod_thumb);  default("");  default($zoovy:prod_image1); image(w=>"90",h=>"90",tag=>"1",bg=>"ffffff",alt=>$zoovy:prod_name);  print(); %></a></td>
-
-	<td class='ztable_row' width='98%'>
-	<a href='<% print($PROD_URL); %>#noMastHead' style='display:block; text-decoration:none;'>
-	<div style='margin-left:5px;' class='no_underline ztable_row'>
-
-
-<div style='font-weight:bold; margin-bottom:3px;' class='zlink'><% load($zoovy:prod_seo_title); default($zoovy:prod_name);  default(""); print(); %></div>
-<div><% print(""); load($zoovy:prod_mfg); default(""); stop(unless=>$_); format(pretext=>"by "); print(); %></div>
-
-<%
-print("");
-	
-/* if the msrp is greater than the price, compute the savings percentage. Otherwise, just show price */	
-load($zoovy:prod_msrp);
-goto(label=>"DISPLAY_SAVINGS",gt=>$zoovy:base_price);
-	load($zoovy:base_price);
-	format(hidezero);
-	format(money);
-	format(pretext=>"<div class='ztable_row_title'>",posttext=>"</div>");
-	print();
-	stop();
-
-:DISPLAY_SAVINGS();
-	load($zoovy:base_price);
-/* stop has to be here to handle products with a blank or 0 price */
-	stop(unless=>$_);
-	format(money);
-	format(pretext=>"<div class='ztable_row_title'>");
-	print();
-/* compute the savings and display it after the price. no need to check msrp because we did that above */
-	load($zoovy:base_price);
-	math(op=>"divide",var=>$zoovy:prod_msrp); 
-	math(op=>"subtract",var=>"1");
-	math(op=>"multiply",var=>"-100"); format(hidezero); format(convert=>"number",precision=>"0"); 
-	format(pretext=>"<span class='ztable_row'> (",posttext=>"%)</span></div>");
-	print();
-
-	load($zoovy:prod_msrp);
-	format(hidezero);
-	format(money);
-	format(pretext=>"<div>regular price: <span style='text-decoration:line-through;'>",posttext=>"</span></div>");
-	print();
-
-%>
-
-<div style='margin-top:3px;'>In Stock</div>
-	
-	</div>
-	</a>
-	</td>
-	
-	<td valign='middle' width='1%'>
-	<div style='margin-left:5px;'>
-
-<div><a href='<% print($PROD_URL); %>'><img src='%LAYOUT_URL%/m09_btn_details-25x25.jpg' width='25' height='25' alt='more details'></a></div>
-
-<%
-print("");
-/* if the item has pogs or no price set, don't show add to cart button. should default to some other button later. */
-load($zoovy:pogs);
-	stop(if=>$_);
-load($zoovy:base_price);
-	stop(unless=>$_);
-	print("<div style='margin-top:25px;'><a href='");
-	print($ADD_URL);
-	print("'><img src='%LAYOUT_URL%/m09_btn_add-25x25.jpg' width='25' height='25' alt='add to cart'></a></div>");
-%>
-	</div>
-	</td>
-</tr>
-<tr>
-	<td colspan='3'><div style='height:1px; background:#cccccc;'></div></td>
-</tr>
-<!-- /PRODUCT -->
-<!-- /ROW -->
-</table>
-
-]]></PRODLIST_STYLE>
 <MY_MULTIPAGE_HEADER><![CDATA[
 
 
@@ -470,7 +470,7 @@ PreselectMyItem("<% loadurp("VAR::sortby"); default("zoovy:prod_name"); print();
 
 ]]></MY_MULTIPAGE_HEADER>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<!-- begin text area --><div style='text-align:left; padding:5px;' class='ztxt mypanel'>]]></PRETEXT>
+<ELEMENT ID="DESCRIPTION" WIKI="3" EDITOR="INLINE" DATA="page:description" PROMPT="Text Description" FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[<!-- begin text area --><div style='text-align:left; padding:5px;' class='ztxt mypanel'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div><!-- end text area -->]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="DADBLES" TYPE="OUTPUT"><HTML><![CDATA[

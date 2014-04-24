@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULYSU" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULYSV" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Packaged" CREATED="20030107" PROPERTIES="14" SITEBUTTONS="default=bubblered|gif|77|17&amp;add_to_site=bubblered|gif|122|32"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULYSV" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20030107" TITLE="Packaged" PROPERTIES="14" SITEBUTTONS="default=bubblered|gif|77|17&amp;add_to_site=bubblered|gif|122|32"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #990000; }
 .zbox_body {  background-color: #e5e5e5; color: #000000; font-family: Arial, Helvetica; font-size: 8pt; }
@@ -167,7 +167,7 @@ a:hover	{text-decoration: underline; color: #990000;}
 	<tr>
 		<td align="left" width=300><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULYTC" HEIGHT="50" WIDTH="300" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="50" ID="CPULYTC" WIDTH="300" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="CPULYTD" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 		<td width=5000></td>
 		<td nowrap align="right" width=300><span class="menu"><a href="%HOME_URL%" class="menu">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="%ABOUT_URL%" class="menu">Company Information</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="%CONTACT_URL%" class="menu">Contact Us</a></td>

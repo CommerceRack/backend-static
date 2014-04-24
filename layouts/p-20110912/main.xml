@@ -237,7 +237,7 @@ print("");
 <ELEMENT ID="DFVQTYN" RAW="1" SUB="PROD_CONDITION" TYPE="READONLY" LOAD="product:zoovy:prod_condition"><PRETEXT><![CDATA[<div id="prodConditionTxt"><span class='prompt'>Condition: </span><span class='value'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</span></div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="QTYPRICE" DATA="product:zoovy:qty_price" RAW="1" PROMPT="Quantity Discount" SUB="PROD_QTY_PRICING" FONT="0" TYPE="QTYPRICE" READONLY="1"><PRELINE><![CDATA[<div><span class='prompt'>Buy</span> ]]></PRELINE>
+<ELEMENT ID="QTYPRICE" DATA="product:zoovy:qty_price" RAW="1" SUB="PROD_QTY_PRICING" PROMPT="Quantity Discount" TYPE="QTYPRICE" FONT="0" READONLY="1"><PRELINE><![CDATA[<div><span class='prompt'>Buy</span> ]]></PRELINE>
 <POSTTEXT><![CDATA[
 	</div>
 </div>
@@ -252,7 +252,7 @@ print("");
 ]]></PRETEXT>
 <MIDLINE><![CDATA[<span class='divider'> for </span><span class='value'>]]></MIDLINE>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="PRODLIST1" MAX="8" ALTERNATE="0" MULTIPAGE="0" SHOWDEFAULT="0" DATA="product:zoovy:prod_prodlist_style2" COLS="2" FORMAT="CUSTOM" PROMPT="Accessories" SUB="PROD_PRODLIST_ACCESSORIES" TYPE="PRODLIST" SRC="PRODUCT:zoovy:accessory_products" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<ELEMENT ID="PRODLIST1" SIZE="5000" MAX="8" ALTERNATE="0" MULTIPAGE="0" SHOWDEFAULT="0" DATA="product:zoovy:prod_prodlist_style2" COLS="2" FORMAT="CUSTOM" SUB="PROD_PRODLIST_ACCESSORIES" PROMPT="Accessories" TYPE="PRODLIST" DISABLEPRODUCTS="1" SRC="PRODUCT:zoovy:accessory_products"><HTML><![CDATA[
 <div id='accessories' class='elementMargin accessoriesContainer'>
 
 	<div class='ztitle2'>Accessories</div>
@@ -296,14 +296,14 @@ format(money,skipblank=>"1"); print();
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PROD_DESC" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_desc" PROMPT="Default Description" SUB="PROD_DESC" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[
+<ELEMENT ID="PROD_DESC" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_desc" SUB="PROD_DESC" PROMPT="Default Description" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[
 </div>
 ]]></POSTTEXT>
 <PRETEXT><![CDATA[
 <div id="prodDescTxt" class='elementMargin descContainer '>
 ]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PROD_DETAIL" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_detail" PROMPT="Detailed Description (specifications)" SUB="PROD_DETAIL" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[
+<ELEMENT ID="PROD_DETAIL" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_detail" SUB="PROD_DETAIL" PROMPT="Detailed Description (specifications)" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[
 </div>
 ]]></POSTTEXT>
 <PRETEXT><![CDATA[
@@ -311,7 +311,7 @@ format(money,skipblank=>"1"); print();
 	<div class='ztitle2'>Specifications</div>
 	]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="PROD_FEATURES" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_features" SUB="PROD_FEATURES" PROMPT="Features" TYPE="TEXT" FONT="0"><POSTTEXT><![CDATA[
+<ELEMENT ID="PROD_FEATURES" WIKI="3" EDITOR="INLINE" DATA="product:zoovy:prod_features" PROMPT="Features" SUB="PROD_FEATURES" FONT="0" TYPE="TEXT"><POSTTEXT><![CDATA[
 </div>
 ]]></POSTTEXT>
 <PRETEXT><![CDATA[
@@ -329,7 +329,7 @@ format(money,skipblank=>"1"); print();
 ]]></HTML>
 <DELIMITER><![CDATA[ > ]]></DELIMITER>
 </ELEMENT>
-<ELEMENT SIZE="5000" ID="PRODLIST_RELATED" MAX="12" MULTIPAGE="0" ALTERNATE="0" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" SUB="PROD_PRODLIST_RELATED" PROMPT="Product List: related items" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
+<ELEMENT ID="PRODLIST_RELATED" SIZE="5000" MAX="12" MULTIPAGE="0" ALTERNATE="0" DATA="product:zoovy:prod_prodlist_style" COLS="1" FORMAT="CUSTOM" PROMPT="Product List: related items" SUB="PROD_PRODLIST_RELATED" TYPE="PRODLIST" DISABLEPRODUCTS="1"><HTML><![CDATA[
 <div id="relatedItemsProdlist" class='elementMargin prodCatsContainer ztable_row'>
 	<div class='ztitle2'>You may also like</div>
 <!-- ROW -->

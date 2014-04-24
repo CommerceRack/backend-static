@@ -2,26 +2,26 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="MYCONFIG" V="3" IMAGES="0" CREATED="00000000" SUBTYPE="R" EXPORT="0" TYPE="CONFIG" TITLE="Mobile Policies: 3 policies and faq"></ELEMENT>
+<ELEMENT ID="MYCONFIG" V="3" CREATED="00000000" IMAGES="0" SUBTYPE="R" TYPE="CONFIG" EXPORT="0" TITLE="Mobile Policies: 3 policies and faq"></ELEMENT>
 <ELEMENT ID="DADBENL" TYPE="OUTPUT"><HTML><![CDATA[
 
 <div class='mypanel' style='padding:10px;'>
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="RETURNPOLICY" DATA="profile:zoovy:return_policy" PROMPT="Return Policy " FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[<div id='returns' style="margin-bottom:20px;">
+<ELEMENT ID="RETURNPOLICY" DATA="profile:zoovy:return_policy" PROMPT="Return Policy " TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<div id='returns' style="margin-bottom:20px;">
 <h2>Return Policy:</h2>
 <div class='ztxt'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>
 </div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="PAYMENTPOLICY" DATA="profile:zoovy:payment_policy" PROMPT="Payment Policy " FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[<div id='payment' style="margin-bottom:20px;">
+<ELEMENT ID="PAYMENTPOLICY" DATA="profile:zoovy:payment_policy" PROMPT="Payment Policy " TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<div id='payment' style="margin-bottom:20px;">
 <h2>Payment Policy:</h2>
 <div class='ztxt'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>
 </div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="SHIPPINGPOLICY" DATA="profile:zoovy:shipping_policy" PROMPT="Shipping Policy " FONT="0" TYPE="TEXT"><PRETEXT><![CDATA[<div id='shipping'>
+<ELEMENT ID="SHIPPINGPOLICY" DATA="profile:zoovy:shipping_policy" PROMPT="Shipping Policy " TYPE="TEXT" FONT="0"><PRETEXT><![CDATA[<div id='shipping'>
 <h2>Shipping Policy:</h2>
 <div class='ztxt'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>

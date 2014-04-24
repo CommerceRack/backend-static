@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULTNU" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULTNV" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20021014" TITLE="" PROPERTIES="14" OCREATED="20021014" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULTNV" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="" CREATED="20021014" OCREATED="20021014" PROPERTIES="14" SITEBUTTONS="default=zing|gif|121|22&amp;add_to_site=zing|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #600060; }
 .zbox_body {  background-color: #EFE7EF; color: #600060; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -204,7 +204,7 @@ document.images[eval("\"subroll_"+imageNumber+"\"")].src = eval("subrollover_"+i
 		</td>
 		<td align="right" width=99% class="goo"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULTOE" HEIGHT="94" WIDTH="405" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="94" ID="CPULTOE" WIDTH="405" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULTOF" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 <td width=5 class="goo"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=5></td>
 	</tr>
@@ -222,7 +222,7 @@ document.images[eval("\"subroll_"+imageNumber+"\"")].src = eval("subrollover_"+i
 					<td width=2><img src="%WRAPPER_URL%/spacer.gif" width="2" height="28" alt="" border="0"></td>
 					]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULTOG" NOHOME="1" TYPE="MENU" ONLYHOME="0" BUTTONTYPE="sascat_off"><HTML><![CDATA[
+<ELEMENT ID="CPULTOG" NOHOME="1" TYPE="MENU" BUTTONTYPE="sascat_off" ONLYHOME="0"><HTML><![CDATA[
 <!-- CATEGORY -->
 <td><a href="<% load($cat_url);  default("");  print(); %>" OnMouseOver="on(<% load($cat_num);  default("");  print(); %>)" OnMouseOut="off(<% load($cat_num);  default("");  print(); %>)"><img src="<% load($button_imgsrc);  default("");  print(); %>" width="<% load($button_width);  default("");  print(); %>" height="<% load($button_height);  default("");  print(); %>" border="0" name="roll_<% load($cat_num);  default("");  print(); %>"></a></td><td><img src="<% load($WRAPPER_URL);  default("");  print(); %>/spacer.gif" width="2" height="28" alt="" border="0"></td>
 

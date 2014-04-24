@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULRKU" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULRKV" COLORS="16" TYPE="CONFIG" CATEGORIES="32768" CREATED="20020912" TITLE="Tricolor4" OCREATED="20020912" PROPERTIES="2" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULRKV" COLORS="16" TYPE="CONFIG" CATEGORIES="32768" TITLE="Tricolor4" CREATED="20020912" PROPERTIES="2" OCREATED="20020912" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #003399; }
 .zbox_body {  background-color: #F0F0F0; color: #000000; font-family: Arial, Helvetica; font-size: 9pt; }
@@ -152,7 +152,7 @@ a:hover	{text-decoration: underline;
 		<td background="%WRAPPER_URL%/bar_top.gif" height=72><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>
 		<td background="%WRAPPER_URL%/bar_top.gif" valign="middle" align="left"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="72" ID="CPULRKZ" WIDTH="400" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPULRKZ" HEIGHT="72" WIDTH="400" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULRLA" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 		<td background="%WRAPPER_URL%/bar_top.gif"><img src="%WRAPPER_URL%/triangle_top.gif" width="154" height="72" alt="" border="0"></td>
 		<td background="%WRAPPER_URL%/bar_top.gif"><img src="%GRAPHICS_URL%/blank.gif" height=1 width=1></td>

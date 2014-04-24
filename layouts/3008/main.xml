@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CQCSTLV" CREATOR="STAFF" IMAGES="0" CREATED="00000000" PROPERTIES="1" SUBTYPE="T" SERIES="2006" FORMAT="LAYOUT" TYPE="CONFIG" EXPORT="0" TITLE="Simple Image Cart"><SHORT><![CDATA[This layout features a two column image based cart, text block, a product list header and a product list.]]></SHORT>
+<ELEMENT ID="CQCSTLV" CREATOR="STAFF" CREATED="00000000" IMAGES="0" PROPERTIES="1" SUBTYPE="T" SERIES="2006" FORMAT="LAYOUT" EXPORT="0" TYPE="CONFIG" TITLE="Simple Image Cart"><SHORT><![CDATA[This layout features a two column image based cart, text block, a product list header and a product list.]]></SHORT>
 </ELEMENT>
 <ELEMENT ID="COUPON_CHECKBOX" TRUE="On" FALSE="Off" DATA="profile:zoovy:enable_promocode" PROMPT="Display coupon entry form in cart" ON="1" TYPE="CHECKBOX" UNDEF="0" OUTPUTSKIP="4096" OFF="0"></ELEMENT>
 <ELEMENT ID="CARTHEAD" LENGTH="50" HELP="This header will appear right above the cart.  KEEP is short!" DATA="page:cart_header" PROMPT="Cart Header" DEFAULT="Cart Contents:" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
@@ -158,6 +158,6 @@ stop(unless=>$_);
 <ELEMENT ID="FEATUREDTITLE" LENGTH="50" HELP="This is the title that appears above the featured products listing" DATA="page:featured" PROMPT="Featured Products Title" DEFAULT="Featured Products" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</b><br>]]></POSTTEXT>
 <PRETEXT><![CDATA[<br><br><b> ]]></PRETEXT>
 </ELEMENT>
-<ELEMENT SIZE="50000" ID="PRODLIST1" HELP="You can add products to your shopping cart page" DATA="page:prodlist" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="PRODLIST1" SIZE="50000" HELP="You can add products to your shopping cart page" DATA="page:prodlist" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
 
 </TEMPLATE>

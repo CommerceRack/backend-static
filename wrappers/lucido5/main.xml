@@ -88,7 +88,7 @@
 <head>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULURV" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20021108" TITLE="" PROPERTIES="8" OCREATED="20021108" SITEBUTTONS="default=bluedual|gif|120|22&amp;add_to_site=bluedual|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULURV" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="" CREATED="20021108" OCREATED="20021108" PROPERTIES="8" SITEBUTTONS="default=bluedual|gif|120|22&amp;add_to_site=bluedual|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #666666; }
 .zbox_body {  background-color: #f0f0f0; color: #000000; font-family: TIMES; font-size: 11pt; }
@@ -144,7 +144,7 @@ td	{font-family: verdana; color: #000000; font-size: 11px;}
 		<td class="foo" width=10><img src="%GRAPHICS_URL%/blank.gif" width=10 height=1></td>
 		<td class="foo" width=200 align="left" valign="middle">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULURY" HEIGHT="45" WIDTH="200" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="45" ID="CPULURY" WIDTH="200" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULURZ" TYPE="OUTPUT"><HTML><![CDATA[</td>
 		<td class="foo" width=1><img src="%GRAPHICS_URL%/blank.gif" width=1 height=26></td>
 		<td class="foo" width=99% align="right" valign="bottom"><span class="small">

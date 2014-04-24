@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMSS" CREATOR="STAFF" CREATED="00000000" IMAGES="7" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Big n Small" RELEASED="20021205"><SUMMARY><![CDATA[
+<ELEMENT FORMAT="LAYOUT" ID="CPUKMSS" CREATOR="STAFF" TYPE="CONFIG" IMAGES="7" CREATED="00000000" TITLE="Big n Small" PROPERTIES="1" SUBTYPE="P" RELEASED="20021205" SERIES="2002"><SUMMARY><![CDATA[
 Default Description (shared)
 IMAGE1 (500x200)
 IMAGE2 (150x150)
@@ -35,34 +35,34 @@ function zoom (url) {
       <td valign=top width="500" colspan=2>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE" HEIGHT="200" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="500" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="IMAGE" WIDTH="500" PROMPT="Image 1" DEFAULT="" TYPE="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1"></ELEMENT>
 <ELEMENT ID="CPUKMSU" TYPE="OUTPUT"><HTML><![CDATA[ 
     </td>
 </tr><tr>
 	<td align="right" width=150>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE2" HEIGHT="150" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image 2" WIDTH="150" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE2" WIDTH="150" PROMPT="Image 2" DEFAULT="" TYPE="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2"></ELEMENT>
 <ELEMENT ID="CPUKMSV" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE3" HEIGHT="150" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image 3" WIDTH="150" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE3" WIDTH="150" PROMPT="Image 3" DEFAULT="" TYPE="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3"></ELEMENT>
 <ELEMENT ID="CPUKMSW" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>	
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE4" HEIGHT="150" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image4" PROMPT="Image 4" WIDTH="150" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE4" WIDTH="150" PROMPT="Image 4" DEFAULT="" TYPE="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image4"></ELEMENT>
 <ELEMENT ID="CPUKMSX" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE5" HEIGHT="150" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image5" PROMPT="Image 5" WIDTH="150" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE5" WIDTH="150" PROMPT="Image 5" DEFAULT="" TYPE="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image5"></ELEMENT>
 <ELEMENT ID="CPUKMSY" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE6" HEIGHT="150" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image6" PROMPT="Image 6" WIDTH="150" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE6" WIDTH="150" PROMPT="Image 6" DEFAULT="" TYPE="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image6"></ELEMENT>
 <ELEMENT ID="CPUKMSZ" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE7" HEIGHT="150" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image7" PROMPT="Image 7" WIDTH="150" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="150" ID="IMAGE7" WIDTH="150" PROMPT="Image 7" DEFAULT="" TYPE="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image7"></ELEMENT>
 <ELEMENT ID="CPUKMTA" TYPE="OUTPUT"><HTML><![CDATA[	<br><br>
 	
 	
@@ -70,13 +70,13 @@ function zoom (url) {
     <td align="left" valign="top" width=350> 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="ABOUT" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc"></ELEMENT>
 <ELEMENT ID="CPUKMTB" TYPE="OUTPUT"><HTML><![CDATA[ 
 <br>
 <br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRICE" ERROR="Not Set!" FORMAT="PRICE" TYPE="READONLY" LOAD="product:zoovy:base_price"></ELEMENT>
+<ELEMENT FORMAT="PRICE" ID="PRICE" TYPE="READONLY" ERROR="Not Set!" LOAD="product:zoovy:base_price"></ELEMENT>
 <ELEMENT ID="CPUKMTC" TYPE="OUTPUT"><HTML><![CDATA[<br><br>
 ]]></HTML>
 </ELEMENT>

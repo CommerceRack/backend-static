@@ -85,7 +85,7 @@
 <ELEMENT ID="CPUMAYI" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMAYJ" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20030217" TITLE="" OCREATED="20030217" PROPERTIES="8" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
+<ELEMENT ID="CPUMAYJ" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="" CREATED="20030217" PROPERTIES="8" OCREATED="20030217" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #F0F0F0; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #006600; }
 .zbox_body {  background-color: #F0F0F0; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -126,7 +126,7 @@
 initialized = 0;
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMAYL" WIDTH="146" NOHOME="1" TYPE="MENU" ONLYHOME="0" BUTTONTYPE="greenfade_on"><HTML><![CDATA[
+<ELEMENT ID="CPUMAYL" WIDTH="146" NOHOME="1" TYPE="MENU" BUTTONTYPE="greenfade_on" ONLYHOME="0"><HTML><![CDATA[
 <!-- CATEGORY -->
 rollover_<% load($cat_num);  default("");  print(); %>_on = new Image;<% load("
 ");  default("");  print(); %>rollover_<% load($cat_num);  default("");  print(); %>_on.src = "<% load($button_imgsrc);  default("");  print(); %>";<% load("
@@ -136,7 +136,7 @@ rollover_<% load($cat_num);  default("");  print(); %>_on = new Image;<% load("
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMAYM" WIDTH="146" NOHOME="1" TYPE="MENU" ONLYHOME="0" BUTTONTYPE="greenfade_off"><HTML><![CDATA[
+<ELEMENT ID="CPUMAYM" WIDTH="146" NOHOME="1" TYPE="MENU" BUTTONTYPE="greenfade_off" ONLYHOME="0"><HTML><![CDATA[
 <!-- CATEGORY -->
 rollover_<% load($cat_num);  default("");  print(); %>_off = new Image;<% load("
 ");  default("");  print(); %>rollover_<% load($cat_num);  default("");  print(); %>_off.src = "<% load($button_imgsrc);  default("");  print(); %>";<% load("
@@ -177,7 +177,7 @@ body	{margin: 0px;}
 	<td width=3 bgcolor="#003400"><img src="%GRAPHICS_URL%/blank.gif" width=3 height=1></td>
 	<td width=146 align="right" background="%WRAPPER_URL%/menu_bg.gif" valign="top"><img src="%GRAPHICS_URL%/blank.gif" width=1 height=1>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMAYQ" HEIGHT="146" WIDTH="146" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="146" ID="CPUMAYQ" WIDTH="146" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPUMAYR" TYPE="OUTPUT"><HTML><![CDATA[
 <form action="%RESULTS_URL%" method="get">
 <input type="hidden" name="catalog" value="">
@@ -186,7 +186,7 @@ body	{margin: 0px;}
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMAYS" WIDTH="146" NOHOME="1" TYPE="MENU" ONLYHOME="0" BUTTONTYPE="greenfade_off"><HTML><![CDATA[
+<ELEMENT ID="CPUMAYS" WIDTH="146" NOHOME="1" TYPE="MENU" BUTTONTYPE="greenfade_off" ONLYHOME="0"><HTML><![CDATA[
 <!-- CATEGORY -->
 <a href="<% load($cat_url);  default("");  print(); %>" OnMouseOver="on(<% load($cat_num);  default("");  print(); %>)" OnMouseOut="off(<% load($cat_num);  default("");  print(); %>)"><img src="<% load($button_imgsrc);  default("");  print(); %>" width="<% load($button_width);  default("");  print(); %>" height="<% load($button_height);  default("");  print(); %>" border="0" name="roll_<% load($cat_num);  default("");  print(); %>"></a>
 

@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULTGM" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULTGN" COLORS="128" TYPE="CONFIG" CATEGORIES="32776" CREATED="20020926" TITLE="Blinking Cat" PROPERTIES="8" OCREATED="20020926" SITEBUTTONS="default=blinky|gif|110|20&amp;add_to_site=blinky|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #000000; }
+<ELEMENT ID="CPULTGN" COLORS="128" TYPE="CONFIG" CATEGORIES="32776" TITLE="Blinking Cat" CREATED="20020926" OCREATED="20020926" PROPERTIES="8" SITEBUTTONS="default=blinky|gif|110|20&amp;add_to_site=blinky|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #000000; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #000000; }
 .zbox_body {  background-color: #00CC66; color: #000000; font-family: verdana; font-size: 9pt; }
@@ -170,7 +170,7 @@ form	{display:	inline;}
 				</tr><tr>
 					<td align="right" valign="middle" height="68"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULTGR" HEIGHT="68" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="68" ID="CPULTGR" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULTGS" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 				</tr><tr>
 					<td align="right" valign="bottom">

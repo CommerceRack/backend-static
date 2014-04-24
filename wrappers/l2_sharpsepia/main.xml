@@ -82,7 +82,7 @@
 <ELEMENT ID="CPULHCM" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULHCN" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULHCO" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CPULHCP" COLORS="8" TYPE="CONFIG" CATEGORIES="16384" CREATED="20020328" TITLE="Sharp Sepia" PROPERTIES="2" OCREATED="20020328" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULHCP" COLORS="8" TYPE="CONFIG" CATEGORIES="16384" TITLE="Sharp Sepia" CREATED="20020328" OCREATED="20020328" PROPERTIES="2" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #989865; }
 .zbox_body {  background-color: #D2D29F; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -177,7 +177,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 							<tr>
 								<td background="%WRAPPER_URL%/logo_background.gif" width="400" height="154" align="center" valign="middle"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULHCW" HEIGHT="114" WIDTH="380" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="114" ID="CPULHCW" WIDTH="380" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULHCX" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 							</tr>
 						</table>

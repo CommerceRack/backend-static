@@ -85,7 +85,7 @@
 <ELEMENT ID="CPUMEHQ" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPUMEHR" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20030529" TITLE="Red Powee!" PROPERTIES="11" OCREATED="20030529" SITEBUTTONS="default=poweered|gif|112|32&amp;add_to_site=poweered|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPUMEHR" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Red Powee!" CREATED="20030529" OCREATED="20030529" PROPERTIES="11" SITEBUTTONS="default=poweered|gif|112|32&amp;add_to_site=poweered|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #990000; }
 .zbox_body {  background-color: #FFFFFF; color: #000000; font-family: Arial; font-size: 9pt; }
@@ -145,7 +145,7 @@ body	{margin: 10px;}
 	<table cellspacing=0 cellpadding=0 border=0 width=171><tr>
 		<td height=154 background="%WRAPPER_URL%/logo_bg.gif"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="154" ID="CPUMEHV" WIDTH="171" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPUMEHV" HEIGHT="154" WIDTH="171" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPUMEHW" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 	</tr><tr>
 		<td align="center"><table cellspacing=0 cellpadding=0 border=0 width=150><tr><td bgcolor="#FFFFFF"><form action="%RESULTS_URL%" method="get">
@@ -181,7 +181,7 @@ body	{margin: 10px;}
 <ELEMENT ID="CPUMEIB" TYPE="TITLE"></ELEMENT>
 <ELEMENT ID="CPUMEIC" TYPE="OUTPUT"><HTML><![CDATA[</p></td><td width=100 valign="top">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
+<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <table cellspacing="0" border="0" cellpadding="1"><tr>	
 	<td align="left" valign="bottom"><span class="mc">Items: </span></td>

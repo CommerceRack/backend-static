@@ -83,7 +83,6 @@
 <ELEMENT ID="CPULHNY" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULHNZ" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CPULHOA" TYPE="CONFIG"><THEME><![CDATA[alert_color=012F65&content_background_color=FFFFFF&content_font_face=Arial%2c+Helvetica&content_font_size=3&content_text_color=336699&disclaimer_background_color=FFFFFF&disclaimer_font_face=Arial%2c+Helvetica&disclaimer_font_size=1&disclaimer_text_color=336699&link_active_text_color=3366CC&link_text_color=3366CC&link_visited_text_color=3366CC&name=&pretty_name=&table_heading_background_color=336699&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_heading_text_color=FFFFFF&table_listing_background_color=F0F0F0&table_listing_background_color_alternate=E5F3FF&table_listing_font_face=Arial%2c+Helvetica&table_listing_font_size=2&table_listing_text_color=336699]]></THEME>
-<THEME_OLD><![CDATA[disclaimer_text_color=336699&content_font_face=Arial%2c+Helvetica&table_listing_background_color_alternate=E5F3FF&table_heading_text_color=FFFFFF&pretty_name=Simple+White+Blue+3&link_visited_text_color=3366CC&content_background_color=FFFFFF&table_heading_background_color=336699&link_text_color=3366CC&link_active_text_color=3366CC&table_listing_font_face=Arial%2c+Helvetica&content_text_color=336699&content_font_size=3&disclaimer_font_face=Arial%2c+Helvetica&name=l2_simplewhiteblue3&table_listing_background_color=F0F0F0&disclaimer_background_color=FFFFFF&alert_color=012F65&disclaimer_font_size=1&table_listing_text_color=336699&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_listing_font_size=2]]></THEME_OLD>
 <CSS><![CDATA[.zbody { background-color: #FFFFFF; }
 .zborder { border: 1px solid #CCCCCC; }
 .zbox { border: 1px solid #336699; }
@@ -113,6 +112,7 @@
 .ztitle2 { font-weight: bold; color: #336699; font-family: Arial, Helvetica; font-size: 11pt; }
 .ztxt { color: #336699; font-family: Arial, Helvetica; font-size: 11pt; }
 .zwarn { color: #012F65; font-weight: bold; }]]></CSS>
+<THEME_OLD><![CDATA[disclaimer_text_color=336699&content_font_face=Arial%2c+Helvetica&table_listing_background_color_alternate=E5F3FF&table_heading_text_color=FFFFFF&pretty_name=Simple+White+Blue+3&link_visited_text_color=3366CC&content_background_color=FFFFFF&table_heading_background_color=336699&link_text_color=3366CC&link_active_text_color=3366CC&table_listing_font_face=Arial%2c+Helvetica&content_text_color=336699&content_font_size=3&disclaimer_font_face=Arial%2c+Helvetica&name=l2_simplewhiteblue3&table_listing_background_color=F0F0F0&disclaimer_background_color=FFFFFF&alert_color=012F65&disclaimer_font_size=1&table_listing_text_color=336699&table_heading_font_face=Arial%2c+Helvetica&table_heading_font_size=3&table_listing_font_size=2]]></THEME_OLD>
 <SITEBUTTONS><![CDATA[forward=l2_simplewhiteblue3|gif|66|24&add_to_cart=l2_simplewhiteblue3|gif|91|24&back=l2_simplewhiteblue3|gif|69|24&default=l2_simplewhiteblue3|gif|86|24&add_to_site=l2_simplewhiteblue3|gif|122|32&checkout=l2_simplewhiteblue3|gif|74|24&continue_shopping=l2_simplewhiteblue3|gif|141|24&update_cart=l2_simplewhiteblue3|gif|93|24&cancel=l2_simplewhiteblue3|gif|57|24]]></SITEBUTTONS>
 </ELEMENT>
 <ELEMENT ID="CPULHOB" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
@@ -177,7 +177,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 							<tr>
 								<td background="%WRAPPER_URL%/logo_background.gif" width="350" height="116" align="left" valign="top"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="116" ID="CPULHOH" WIDTH="350" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPULHOH" HEIGHT="116" WIDTH="350" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULHOI" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 							</tr>
 						</table>

@@ -83,7 +83,7 @@
 <ELEMENT ID="CQQYVTL" SUB="WISHLIST_URL" TYPE="READONLY" LOAD="URL::WISHLIST_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQYVTM" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQYVTN" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CQQYVTO" COLORS="128" TYPE="CONFIG" CATEGORIES="8194" CREATED="20020328" TITLE="Icicle Lights" PROPERTIES="0" OCREATED="20020328" SITEBUTTONS="default=l1_iciclelights|gif|175|59&amp;add_to_site=l1_iciclelights|gif|122|32" NARROW="TRUE" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CQQYVTO" COLORS="128" TYPE="CONFIG" CATEGORIES="8194" TITLE="Icicle Lights" CREATED="20020328" OCREATED="20020328" PROPERTIES="0" SITEBUTTONS="default=l1_iciclelights|gif|175|59&amp;add_to_site=l1_iciclelights|gif|122|32" NARROW="TRUE" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #2E2E50; }
 .zbox_body {  background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -143,7 +143,7 @@
 				<tr>
 					<td width="300" height="88" align="center" valign="middle"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQQYVTS" HEIGHT="88" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="88" ID="CQQYVTS" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQQYVTT" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 				</tr>
 				<tr>

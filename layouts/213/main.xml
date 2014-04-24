@@ -2,16 +2,16 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNJW" CREATOR="JT" IMAGES="2" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="Multiple Prodlists" FORMAT="LAYOUT" SHORT="Has 1 big pic at the top with two different more customized product lists on the page" TYPE="CONFIG" TITLE="Big Pic, 2 Product Lists" RELEASED="20041124"><SUMMARY><![CDATA[This layout has a big picture at the top (400 x 300) with a single column, 2 product max customized list just to the right (use a short LIST on this one, as it is set to order randomly).  Below that is a header and then another customized product list.  At the bottom of the page is an HTML editor with an image to the right.]]></SUMMARY>
+<ELEMENT ID="CPUKNJW" CREATOR="JT" CREATED="00000000" IMAGES="2" PROPERTIES="1" SUBTYPE="H" SERIES="Multiple Prodlists" FORMAT="LAYOUT" SHORT="Has 1 big pic at the top with two different more customized product lists on the page" TYPE="CONFIG" TITLE="Big Pic, 2 Product Lists" RELEASED="20041124"><SUMMARY><![CDATA[This layout has a big picture at the top (400 x 300) with a single column, 2 product max customized list just to the right (use a short LIST on this one, as it is set to order randomly).  Below that is a header and then another customized product list.  At the bottom of the page is an HTML editor with an image to the right.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CPUKNJX" TYPE="OUTPUT"><HTML><![CDATA[<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
 	<td width="40%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="300" ID="PIC1" HELP="Please select a picture for this category." DATA="page:picture1" WIDTH="400" PROMPT="Big Picture" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="300" HELP="Please select a picture for this category." DATA="page:picture1" PROMPT="Big Picture" WIDTH="400" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNJY" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	<td width="60%">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODLIST" MAX="2" ALTERNATE="0" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" COLS="1" FORMAT="CUSTOM" PROMPT="Product Listing" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<ELEMENT ID="PRODLIST" MAX="2" MULTIPAGE="0" ALTERNATE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist" COLS="1" FORMAT="CUSTOM" PROMPT="Product Listing" TYPE="PRODLIST" SORTBY="RANDOM"><HTML><![CDATA[<table border="0" cellpadding="5" cellspacing="0" width="100%">
 <!-- ROW -->
 <tr>
 <!-- PRODUCT -->
@@ -35,7 +35,7 @@
 </tr><tr>
 	<td colspan="2"><strong>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="HEADER" LENGTH="15" HELP="Please enter a Header for the product list" DATA="page:header" HELPER="Remember to keep this text short and to the point." PROMPT="Product List Header" DEFAULT="Featured Products" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</font></strong><br>]]></POSTTEXT>
+<ELEMENT ID="HEADER" LENGTH="15" HELP="Please enter a Header for the product list" DATA="page:header" PROMPT="Product List Header" HELPER="Remember to keep this text short and to the point." DEFAULT="Featured Products" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</font></strong><br>]]></POSTTEXT>
 <PRETEXT><![CDATA[<strong><font size="+1">]]></PRETEXT>
 </ELEMENT>
 <ELEMENT ID="CPUKNKA" TYPE="OUTPUT"><HTML><![CDATA[</strong>
@@ -43,7 +43,7 @@
 </tr><tr>
 	<td colspan="2">]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="500" ID="PRODLIST2" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist2" FORMAT="CUSTOM" PROMPT="Product Listing 2" TYPE="PRODLIST"><HTML><![CDATA[<table border="0" cellpadding="5" cellspacing="0" width=100%>
+<ELEMENT ID="PRODLIST2" SIZE="500" MULTIPAGE="0" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist2" FORMAT="CUSTOM" PROMPT="Product Listing 2" TYPE="PRODLIST"><HTML><![CDATA[<table border="0" cellpadding="5" cellspacing="0" width=100%>
 <!-- ROW -->
 <tr>
 <!-- PRODUCT -->
@@ -69,11 +69,11 @@
 </tr><tr>
 	<td align="left">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Category Description" TYPE="HTML"></ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" HELPER="Remember to keep this text short and to the point.  " TYPE="HTML"></ELEMENT>
 <ELEMENT ID="CPUKNKC" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	<td align="right">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="100" ID="PIC2" HELP="Please select a picture for this category." DATA="page:picture2" WIDTH="200" PROMPT="Small Picture 2" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PIC2" HEIGHT="100" HELP="Please select a picture for this category." DATA="page:picture2" PROMPT="Small Picture 2" WIDTH="200" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKNKD" TYPE="OUTPUT"><HTML><![CDATA[</td>
 </tr></table>]]></HTML>
 </ELEMENT>

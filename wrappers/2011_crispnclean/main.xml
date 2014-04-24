@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="DEKFGOP" FORMAT="WRAPPER" TYPE="CONFIG" EXPORT="0" CREATED="20110307" TITLE="Crisp-n-Clean" SITEBUTTONS="default=2011_crispnclean|gif|102|30&amp;checkout=2011_crispnclean|png|130|43" RELEASED="20110315"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+<ELEMENT FORMAT="WRAPPER" ID="DEKFGOP" EXPORT="0" TYPE="CONFIG" CREATED="20110307" TITLE="Crisp-n-Clean" SITEBUTTONS="default=2011_crispnclean|gif|102|30&amp;checkout=2011_crispnclean|png|130|43" RELEASED="20110315"><CSS><![CDATA[.zbody { background-color: #ffffff; }
 .zborder { border: 1px solid #EDF2FD; }
 .zbox { border: 1px solid #f2f2f2; }
 .zbox_body { background-color: #ffffff; color: #3b3b3b; font-family: "Gill Sans MT", tahoma, arial, sans-serif; font-size: 11px; }
@@ -96,9 +96,9 @@
 <ELEMENT ID="WIKIENDTABLEHEAD" SUB="/tablehead" TYPE="HIDDEN"><DEFAULT><![CDATA[</b></td>]]></DEFAULT>
 </ELEMENT>
 <ELEMENT ID="CRNEEWE" SUB="WRAP_THEME_DOCID" TYPE="READONLY" LOAD="FLOW::WRAPPER" RAW="1"></ELEMENT>
-<ELEMENT HEIGHT="58" ID="WRAPPER_LOGO" MINIMAL_MODE="1" SUB="WRAP_LOGO" WIDTH="400" TYPE="LOGO" BGCOLOR="TTTTTT"></ELEMENT>
+<ELEMENT ID="WRAPPER_LOGO" HEIGHT="58" MINIMAL_MODE="1" WIDTH="400" SUB="WRAP_LOGO" BGCOLOR="TTTTTT" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE"></ELEMENT>
-<ELEMENT ID="MINICART" FORMAT="CUSTOM" PROMPT="Shopping Cart" SUB="WRAP_MINICART" TYPE="CART" NOITEMS_SPEC="your cart is empty"><HTML><![CDATA[
+<ELEMENT FORMAT="CUSTOM" ID="MINICART" SUB="WRAP_MINICART" PROMPT="Shopping Cart" TYPE="CART" NOITEMS_SPEC="your cart is empty"><HTML><![CDATA[
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW --><% load($TOTALCOUNT);  default("");  print(); %> Item(s) in your <span class='bold orange'>Cart</span>]]></HTML>
 </ELEMENT>
 <ELEMENT ID="WRAPPER_CUSTOM_FOOTER" SUB="WRAP_FOOTER" TYPE="FOOTER"><HTML><![CDATA[
@@ -107,45 +107,45 @@
 <div><% load($buysafe_seal_html); print(); %></div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="TWITTER_LINK" SUB="WRAP_LINK_TWITTER" PROMPT="User Id: Twitter" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:twitter:userid"><PRETEXT><![CDATA[<div class='bookmarklet twitterlet' onClick="window.open ('http://twitter.com/]]></PRETEXT>
+<ELEMENT ID="TWITTER_LINK" PROMPT="User Id: Twitter" SUB="WRAP_LINK_TWITTER" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:twitter:userid"><PRETEXT><![CDATA[<div class='bookmarklet twitterlet' onClick="window.open ('http://twitter.com/]]></PRETEXT>
 <POSTTEXT><![CDATA[', 'twitterlet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-twitter','gfxloc: masthead | doc: '+ theme_id +' | from: '+document.location.href); };"></div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="BLOG_LINK" SUB="WRAP_LINK_BLOG" PROMPT="URL: Blog" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:blog:url"><PRETEXT><![CDATA[<div class='bookmarklet bloglet' onClick="window.open (']]></PRETEXT>
+<ELEMENT ID="BLOG_LINK" PROMPT="URL: Blog" SUB="WRAP_LINK_BLOG" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:blog:url"><PRETEXT><![CDATA[<div class='bookmarklet bloglet' onClick="window.open (']]></PRETEXT>
 <POSTTEXT><![CDATA[', 'bloglet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-blog','gfxloc: masthead | doc: '+ theme_id +' | from: '+document.location.href); };"></div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="FACEBOOK_LINK" SUB="WRAP_LINK_FACEBOOK" PROMPT="URL: Facebook" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:facebook:url"><PRETEXT><![CDATA[<div class='bookmarklet facebooklet' onClick="window.open (']]></PRETEXT>
+<ELEMENT ID="FACEBOOK_LINK" PROMPT="URL: Facebook" SUB="WRAP_LINK_FACEBOOK" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:facebook:url"><PRETEXT><![CDATA[<div class='bookmarklet facebooklet' onClick="window.open (']]></PRETEXT>
 <POSTTEXT><![CDATA[', 'facebooklet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-facebook','gfxloc: masthead | doc: '+ theme_id +' | from: '+document.location.href); };"></div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="RSS_LINK" SUB="WRAP_LINK_RSS" PROMPT="URL: RSS Feed" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:rss:url"><PRETEXT><![CDATA[<div class='bookmarklet rsslet' onClick="window.open (']]></PRETEXT>
+<ELEMENT ID="RSS_LINK" PROMPT="URL: RSS Feed" SUB="WRAP_LINK_RSS" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:rss:url"><PRETEXT><![CDATA[<div class='bookmarklet rsslet' onClick="window.open (']]></PRETEXT>
 <POSTTEXT><![CDATA[', 'rsslet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-rss','gfxloc: masthead | doc: '+ theme_id +' | from: '+document.location.href); };"></div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="YOUTUBE_LINK" SUB="WRAP_LINK_YOUTUBE" PROMPT="URL: YouTube" TYPE="TEXTBOX" FONT="0" EDITOR="INLINE" DATA="profile:youtube:url"><PRETEXT><![CDATA[<div class='bookmarklet youtubelet' onClick="window.open (']]></PRETEXT>
+<ELEMENT ID="YOUTUBE_LINK" PROMPT="URL: YouTube" SUB="WRAP_LINK_YOUTUBE" FONT="0" TYPE="TEXTBOX" EDITOR="INLINE" DATA="profile:youtube:url"><PRETEXT><![CDATA[<div class='bookmarklet youtubelet' onClick="window.open (']]></PRETEXT>
 <POSTTEXT><![CDATA[', 'youtubelet'); if(typeof PleaseTrackClick == 'function') { PleaseTrackClick('bookmarklet-youtube','gfxloc: masthead | doc: '+ theme_id +' | from: '+document.location.href); };"></div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="TOPRIGHT_HEADER_DECAL1" HEIGHT="58" SUB="WRAP_DECAL_HEADER1" PROMPT="Top right corner of header" WIDTH="200" TYPE="DECAL" DATA="wrapper:cnc_decal_topright1"><PRETEXT><![CDATA[<div class='floatRight marginLeft10 marginTop10' id='mastHeadDecal'>]]></PRETEXT>
+<ELEMENT HEIGHT="58" ID="TOPRIGHT_HEADER_DECAL1" WIDTH="200" PROMPT="Top right corner of header" SUB="WRAP_DECAL_HEADER1" TYPE="DECAL" DATA="wrapper:cnc_decal_topright1"><PRETEXT><![CDATA[<div class='floatRight marginLeft10 marginTop10' id='mastHeadDecal'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_WIKINAV" WIKI="3" PROMPT="Wiki for top nav links" SUB="WRAP_TOP_WIKI_NAV" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="profile:zoovy:wrap_nav_toplinks"><HELPER><![CDATA[
+<ELEMENT ID="WRAPPER_WIKINAV" WIKI="3" SUB="WRAP_TOP_WIKI_NAV" PROMPT="Wiki for top nav links" TYPE="TEXT" FONT="0" EDITOR="INLINE" DATA="profile:zoovy:wrap_nav_toplinks"><HELPER><![CDATA[
 Add three to four wiki based links that will appear in the header to the right of the search bar. A finite amount of space is allocated and adding more text than what is allowed will result in cropping (text being cut off). HTML is not allowed. Adding any wiki besides links will end badly.
 <br />
 No need to separate each link with a pipe ( | ) or any other splitter, it's handled.
 ]]></HELPER>
 </ELEMENT>
-<ELEMENT HEIGHT="35" ID="TOP_WIDE1_FOR_SIDE_A" WIDTH="959" PROMPT="Banner: very wide across top of content (A of A/B test) [959 by 35]" SUB="WRAP_POSTMASTHEAD_WIDE_BANNER_A" TYPE="BANNER" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="wrapper:cnc_banner_top_wide1_a" OUTPUTSKIP="513" OUTPUTFILTER="PG=*checkout"><HELPER><![CDATA[
+<ELEMENT ID="TOP_WIDE1_FOR_SIDE_A" HEIGHT="35" SUB="WRAP_POSTMASTHEAD_WIDE_BANNER_A" PROMPT="Banner: very wide across top of content (A of A/B test) [959 by 35]" WIDTH="959" BGCOLOR="TTTTTT" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:cnc_banner_top_wide1_a" OUTPUTFILTER="PG=*checkout" OUTPUTSKIP="513"><HELPER><![CDATA[
 This banner will NOT show up during checkout<br />
 This banner is set up for an A/B test.  This banner will show up on the A side.<br />
 ]]></HELPER>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='usableWidth marginBottom16' id='postMastHeadBanner'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT HEIGHT="35" ID="TOP_WIDE1_FOR_SIDE_B" WIDTH="959" PROMPT="Banner: very wide across top of content (B of A/B test) [959 by 35]" SUB="WRAP_POSTMASTHEAD_WIDE_BANNER_B" TYPE="BANNER" BGCOLOR="TTTTTT" EDITOR="INLINE" DATA="wrapper:cnc_banner_top_wide1_b" OUTPUTSKIP="257" OUTPUTFILTER="PG=*checkout"><HELPER><![CDATA[
+<ELEMENT ID="TOP_WIDE1_FOR_SIDE_B" HEIGHT="35" SUB="WRAP_POSTMASTHEAD_WIDE_BANNER_B" PROMPT="Banner: very wide across top of content (B of A/B test) [959 by 35]" WIDTH="959" BGCOLOR="TTTTTT" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:cnc_banner_top_wide1_b" OUTPUTFILTER="PG=*checkout" OUTPUTSKIP="257"><HELPER><![CDATA[
 This banner will NOT show up during checkout<br />
 This banner is set up for an A/B test.  This banner will show up on the B side.<br />
 ]]></HELPER>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='usableWidth marginBottom16' id='postMastHeadBanner'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="SET_CART_VAR" TYPE="SPECL" OUTPUTSKIP="1" OUTPUTFILTER="!FS=C,H,E" MODE="LIST"><HTML><![CDATA[<%
+<ELEMENT ID="SET_CART_VAR" TYPE="SPECL" OUTPUTFILTER="!FS=C,H,E" OUTPUTSKIP="1" MODE="LIST"><HTML><![CDATA[<%
 /* create a cart var for recent category path.  Used to compare against focus cat safe id to determine what set of subcats should be displayed in the dualmenu_display_focus_subcats SUBCAT element below.  This element needs to be before that one in the TOXML doc. */
 
 print("");
@@ -259,36 +259,36 @@ print("&quot;>&#187; ");
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="LEFT_SIZE_1" WIDTH="164" PROMPT="Banner: left side 1 [164 by X]" SUB="WRAP_LEFTBANNER1" TYPE="BANNER" BGCOLOR="FFFFFF" EDITOR="INLINE" DATA="wrapper:cnc_banner_left1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="LEFT_SIZE_1" SUB="WRAP_LEFTBANNER1" PROMPT="Banner: left side 1 [164 by X]" WIDTH="164" BGCOLOR="FFFFFF" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:cnc_banner_left1"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='marginBottom16'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="LEFT_SIZE_2" WIDTH="164" PROMPT="Banner: left side 2 [164 by X]" SUB="WRAP_LEFTBANNER2" TYPE="BANNER" BGCOLOR="FFFFFF" EDITOR="INLINE" DATA="wrapper:cnc_banner_left2"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="LEFT_SIZE_2" SUB="WRAP_LEFTBANNER2" PROMPT="Banner: left side 2 [164 by X]" WIDTH="164" BGCOLOR="FFFFFF" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:cnc_banner_left2"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='marginBottom16'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="LEFT_SIZE_3" WIDTH="164" PROMPT="Banner: left side 3 [164 by X]" SUB="WRAP_LEFTBANNER3" TYPE="BANNER" BGCOLOR="FFFFFF" EDITOR="INLINE" DATA="wrapper:cnc_banner_left3"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
+<ELEMENT ID="LEFT_SIZE_3" SUB="WRAP_LEFTBANNER3" PROMPT="Banner: left side 3 [164 by X]" WIDTH="164" BGCOLOR="FFFFFF" TYPE="BANNER" EDITOR="INLINE" DATA="wrapper:cnc_banner_left3"><POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 <PRETEXT><![CDATA[<div class='marginBottom16'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="LEFT_SIDE_DECAL1" SUB="WRAP_DECAL_LEFT1" PROMPT="Left side between banners" WIDTH="164" TYPE="DECAL" DATA="wrapper:cnc_decal_left1"><PRETEXT><![CDATA[<div class='marginBottom16 leftSideDecal' >]]></PRETEXT>
+<ELEMENT ID="LEFT_SIDE_DECAL1" WIDTH="164" PROMPT="Left side between banners" SUB="WRAP_DECAL_LEFT1" TYPE="DECAL" DATA="wrapper:cnc_decal_left1"><PRETEXT><![CDATA[<div class='marginBottom16 leftSideDecal' >]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_WIKINAV_FOOTER" WIKI="3" PROMPT="Wiki for footer nav links" SUB="WRAP_WIKIFOOTLINKS" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="profile:zoovy:wrap_nav_footlinks"><HELPER><![CDATA[
+<ELEMENT ID="WRAPPER_WIKINAV_FOOTER" WIKI="3" SUB="WRAP_WIKIFOOTLINKS" PROMPT="Wiki for footer nav links" TYPE="TEXT" FONT="0" EDITOR="INLINE" DATA="profile:zoovy:wrap_nav_footlinks"><HELPER><![CDATA[
 Add up to three wiki based links that will appear in the customer service section of the footer. A finite amount of space is allocated and adding more text than what is allowed will result in cropping (text being cut off). HTML is not allowed. Each link will automatically be put on it's own line.
 ]]></HELPER>
 </ELEMENT>
-<ELEMENT ID="WRAPPERS_NEWSTEXT" WIKI="3" PROMPT="Short marketing text for newsletter (no html or wiki)" TYPE="TEXT" FONT="0" DATA="profile:zoovy:wrap_newstext" OUTPUTSKIP="2048"><HELPER><![CDATA[
+<ELEMENT ID="WRAPPERS_NEWSTEXT" WIKI="3" PROMPT="Short marketing text for newsletter (no html or wiki)" FONT="0" TYPE="TEXT" DATA="profile:zoovy:wrap_newstext" OUTPUTSKIP="2048"><HELPER><![CDATA[
 A short piece of text that will appear above the newsletter subscription form in the footer of the website. only 150 characters will be displayed.
 ]]></HELPER>
 </ELEMENT>
-<ELEMENT ID="SIDEBAR_FOOTER" HEIGHT="34" SUB="WRAP_PAYCONS_SIDEBAR" PROMPT="Payment icons for footer" TYPE="SIDEBAR" SLOTS="8" DATA="wrapper:sidebar_footer_paycons"><HELPER><![CDATA[This section is designed for payment icons. It has 34px of height allocated and a max of 350px. Adding a user-defined html block here may have negative results.]]></HELPER>
+<ELEMENT HEIGHT="34" ID="SIDEBAR_FOOTER" PROMPT="Payment icons for footer" SUB="WRAP_PAYCONS_SIDEBAR" TYPE="SIDEBAR" SLOTS="8" DATA="wrapper:sidebar_footer_paycons"><HELPER><![CDATA[This section is designed for payment icons. It has 34px of height allocated and a max of 350px. Adding a user-defined html block here may have negative results.]]></HELPER>
 <POSTTEXT><![CDATA[</div><!-- /payment icons sidebar -->]]></POSTTEXT>
 <LINEPRETEXT><![CDATA[<div class='floatRight paycon'>]]></LINEPRETEXT>
 <LINEPOSTTEXT><![CDATA[</div>]]></LINEPOSTTEXT>
 <PRETEXT><![CDATA[<!-- payment icons sidebar --><div id='paycons' class='floatRight'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_SIDEBAR_BOTTOM" SUB="WRAP_HORIZONTAL_SIDEBAR" PROMPT="Horizontal across bottom" TYPE="SIDEBAR" LINEPRETEXT=" " LINEPOSTTEXT=" " DATA="wrapper:sidebar_bottom"><PRETEXT><![CDATA[<div class='center' id='bottomSidebar'>]]></PRETEXT>
+<ELEMENT ID="WRAPPER_SIDEBAR_BOTTOM" PROMPT="Horizontal across bottom" SUB="WRAP_HORIZONTAL_SIDEBAR" TYPE="SIDEBAR" LINEPRETEXT=" " LINEPOSTTEXT=" " DATA="wrapper:sidebar_bottom"><PRETEXT><![CDATA[<div class='center' id='bottomSidebar'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="SET_CART_VAR_RECENTCATEGORY" TYPE="SPECL" OUTPUTSKIP="1" OUTPUTFILTER="FS=P" MODE="LIST"><HTML><![CDATA[<%
+<ELEMENT ID="SET_CART_VAR_RECENTCATEGORY" TYPE="SPECL" OUTPUTFILTER="FS=P" OUTPUTSKIP="1" MODE="LIST"><HTML><![CDATA[<%
 print("");
 loadurp("SREF::_CWPATH"); default(""); 
 element(TYPE=>"SET",SRC=>"CART::RECENT_CATEGORY_PATH",DATA=>$_);
@@ -308,7 +308,7 @@ element(TYPE=>"SET",SRC=>"CART::RECENT_CATEGORY_PATH",DATA=>$_);
 loadurp("CART::RECENT_CATEGORY_PATH"); default($PATH); initset(PATH=>$_);
 %>]]></INIT>
 </ELEMENT>
-<ELEMENT ID="PAGETYPEVAR" HELPER="used to set an id on a div to override page width in CSS" SUB="WRAP_PAGETYPE" DEFAULT="Checkout" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="!PG=*checkout"></ELEMENT>
+<ELEMENT ID="PAGETYPEVAR" SUB="WRAP_PAGETYPE" HELPER="used to set an id on a div to override page width in CSS" DEFAULT="Checkout" TYPE="HIDDEN" OUTPUTFILTER="!PG=*checkout" OUTPUTSKIP="1"></ELEMENT>
 <ELEMENT ID="SEARCHED_KEYWORD" SUB="WRAP_KEYWORD" TYPE="READONLY" LOAD="VAR::keywords" RAW="1"></ELEMENT>
 <ELEMENT ID="DOCTYPE_N_HEAD" TYPE="HIDDEN"><DEFAULT><![CDATA[
 
@@ -443,7 +443,7 @@ function clearText(thefield)	{
 
 ]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="TITLE_FOR_CART_N_CHECKOUT" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="FS=H,C,P"><DEFAULT><![CDATA[
+<ELEMENT ID="TITLE_FOR_CART_N_CHECKOUT" TYPE="HIDDEN" OUTPUTFILTER="FS=H,C,P" OUTPUTSKIP="1"><DEFAULT><![CDATA[
 <div class='ztitle' id='secondBodyTitle'>%WRAP_TITLE%</div>
 ]]></DEFAULT>
 </ELEMENT>
@@ -464,7 +464,7 @@ function clearText(thefield)	{
 
 ]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="LEFT_COLUMN" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="PG=*CHECKOUT"><DEFAULT><![CDATA[
+<ELEMENT ID="LEFT_COLUMN" TYPE="HIDDEN" OUTPUTFILTER="PG=*CHECKOUT" OUTPUTSKIP="1"><DEFAULT><![CDATA[
 	
 	<div class='leftCol'>
 
@@ -502,7 +502,7 @@ function clearText(thefield)	{
 
 ]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="FOOTER_LINKS_N_SUBSCRIBE" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="PG=*CHECKOUT"><DEFAULT><![CDATA[
+<ELEMENT ID="FOOTER_LINKS_N_SUBSCRIBE" TYPE="HIDDEN" OUTPUTFILTER="PG=*CHECKOUT" OUTPUTSKIP="1"><DEFAULT><![CDATA[
 
 <div class='clearAll'></div>
 <div class='paddingBottom16'></div>
@@ -549,7 +549,7 @@ function clearText(thefield)	{
 <div class='zsmall'>
 ]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="DEKFGOQ" TYPE="SPECL" OUTPUTSKIP="1" OUTPUTFILTER="PG=*CHECKOUT"><HTML><![CDATA[
+<ELEMENT ID="DEKFGOQ" TYPE="SPECL" OUTPUTFILTER="PG=*CHECKOUT" OUTPUTSKIP="1"><HTML><![CDATA[
 <% 
 /* the following code will output the text which is set in the TEXT element above */
 print("");
@@ -561,7 +561,7 @@ print();
 %>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="SUBSCRIBE_FORM" TYPE="HIDDEN" OUTPUTSKIP="1" OUTPUTFILTER="PG=*CHECKOUT"><DEFAULT><![CDATA[
+<ELEMENT ID="SUBSCRIBE_FORM" TYPE="HIDDEN" OUTPUTFILTER="PG=*CHECKOUT" OUTPUTSKIP="1"><DEFAULT><![CDATA[
 
 </div>
 

@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULZXS" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULZXT" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20030123" TITLE="Clock" PROPERTIES="2" OCREATED="20030123" SITEBUTTONS="default=verdana_p_w_000000|gif|120|20&amp;add_to_site=verdana_p_w_000000|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULZXT" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Clock" CREATED="20030123" OCREATED="20030123" PROPERTIES="2" SITEBUTTONS="default=verdana_p_w_000000|gif|120|20&amp;add_to_site=verdana_p_w_000000|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #666666; }
 .zbox_body {  background-color: #9A9999; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -182,7 +182,7 @@ document.images[eval("\"roll_"+imageNumber+"\"")].src = eval("rollover_"+imageNu
 				<tr>
 					<td background="%WRAPPER_URL%/logo_bg.jpg" width=134 height=114><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="114" ID="CPULZYA" WIDTH="134" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPULZYA" HEIGHT="114" WIDTH="134" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULZYB" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 				</tr><tr>
 					<td><img src="%WRAPPER_URL%/menu.jpg" width="134" height="116" alt="" border="0" USEMAP="#Untitled_2_Map"></td>

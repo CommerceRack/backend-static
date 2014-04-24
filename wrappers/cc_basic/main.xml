@@ -3,7 +3,7 @@
 
 <!-- ******* -->
 <DIV  ID="FAQ"  TITLE="Frequently Asked Questions" >
-<ELEMENT ID="FAQ_NOANSWER" PROMPT="FAQ Text for call center when no question/answer can be found" TYPE="TEXT" FONT="0" EDITOR="INLINE" DATA="profile:callcenter:faq_noanswers"><DEFAULT><![CDATA[I don't know the answer to that paticular question.  If you would like, I would be happy to create a trouble ticket and escalate it to the appropriate person.  Would that be satisfactory?]]></DEFAULT>
+<ELEMENT ID="FAQ_NOANSWER" PROMPT="FAQ Text for call center when no question/answer can be found" FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="profile:callcenter:faq_noanswers"><DEFAULT><![CDATA[I don't know the answer to that paticular question.  If you would like, I would be happy to create a trouble ticket and escalate it to the appropriate person.  Would that be satisfactory?]]></DEFAULT>
 </ELEMENT>
 <ELEMENT ID="FAQELEMENT" TYPE="FAQ"><HTML><![CDATA[<!-- faqs start here --><a name="faq"></a>
 <span class="ztitle">Frequently Asked Questions</span><br>
@@ -100,7 +100,7 @@ goto(nb=>$FAQSTACK,label=>"LOOP");
 
 <!-- ******* -->
 <DIV  ID="ORDER_ASSIST"  TITLE="Order Assist" >
-<ELEMENT ID="FAQ_NOANSWER" PROMPT="Prompt for callcenter tech to request order id." TYPE="TEXT" FONT="0" EDITOR="INLINE" DATA="profile:callcenter:assist_orderid_request"><DEFAULT><![CDATA[I can help you track the status of your order.  Please provide your order ID number.  It will start with 200X (where X is the year).]]></DEFAULT>
+<ELEMENT ID="FAQ_NOANSWER" PROMPT="Prompt for callcenter tech to request order id." FONT="0" TYPE="TEXT" EDITOR="INLINE" DATA="profile:callcenter:assist_orderid_request"><DEFAULT><![CDATA[I can help you track the status of your order.  Please provide your order ID number.  It will start with 200X (where X is the year).]]></DEFAULT>
 </ELEMENT>
 </DIV>
 
@@ -109,7 +109,7 @@ goto(nb=>$FAQSTACK,label=>"LOOP");
 
 <!-- ******* -->
 <ELEMENT ID="CQQZKPG" TYPE="CONFIG"></ELEMENT>
-<ELEMENT ID="CTXJVAB" HEIGHT="35" MINIMAL_MODE="1" WIDTH="150" SUB="LOGO" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT HEIGHT="35" ID="CTXJVAB" MINIMAL_MODE="1" SUB="LOGO" WIDTH="150" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQQZKPI" TYPE="SPECL"><HTML><![CDATA[
 <html>
 <head>

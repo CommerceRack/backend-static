@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMEO" CREATOR="JT" CREATED="00000000" IMAGES="3" PROPERTIES="1" SUBTYPE="P" FORMAT="LAYOUT" SHORT="Contains default description (HTML Editor), 3 images (180 x 180) MSRP, Price and a prodlist." TYPE="CONFIG" TITLE="3 Image with prodlist" RELEASED="20041103"><SUMMARY><![CDATA[3 images across the top followed by the description, msrp, price and add to cart.  beneath that is a prodlist.]]></SUMMARY>
+<ELEMENT ID="CPUKMEO" CREATOR="JT" IMAGES="3" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" FORMAT="LAYOUT" SHORT="Contains default description (HTML Editor), 3 images (180 x 180) MSRP, Price and a prodlist." TYPE="CONFIG" TITLE="3 Image with prodlist" RELEASED="20041103"><SUMMARY><![CDATA[3 images across the top followed by the description, msrp, price and add to cart.  beneath that is a prodlist.]]></SUMMARY>
 </ELEMENT>
 <ELEMENT ID="CPUKMEP" TYPE="OUTPUT"><HTML><![CDATA[<script language="JavaScript">
 <!--
@@ -20,15 +20,15 @@ function zoom (url) {
 <table width="100%"><tr>
 	<td width="33%" align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="180" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image1" WIDTH="180" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="180" ID="IMAGE1" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="180" PROMPT="Image1" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMEQ" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	<td width="33%" align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE2" HEIGHT="180" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image2" WIDTH="180" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="180" ID="IMAGE2" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="180" PROMPT="Image2" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMER" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	<td width="33%" align="center">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE3" HEIGHT="180" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" PROMPT="Image3" WIDTH="180" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="180" ID="IMAGE3" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image3" WIDTH="180" PROMPT="Image3" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMES" TYPE="OUTPUT"><HTML><![CDATA[</td>
 </tr></table></div>
 	

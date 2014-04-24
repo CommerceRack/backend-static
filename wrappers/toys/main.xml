@@ -82,7 +82,7 @@
 <ELEMENT ID="CQDPMJP" SUB="CANCEL_ORDER_URL" TYPE="READONLY" LOAD="URL::CANCEL_ORDER_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPMJQ" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQDPMJR" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CQDPMJS" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" CREATED="20041103" TITLE="Kids" PROPERTIES="9" OCREATED="20041103" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CQDPMJS" COLORS="128" TYPE="CONFIG" CATEGORIES="32768" TITLE="Kids" CREATED="20041103" OCREATED="20041103" PROPERTIES="9" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #003399; }
 .zbox_body {  background-color: #F0F0F0; color: #000000; font-family: Arial, Helvetica; font-size: 9pt; }
@@ -140,7 +140,7 @@ a	{color: #003399;}
 <table cellspacing=0 cellpadding=0 border=0 width="100%" style="border-style: solid; border-color: #999999; border-width: 1px; background-color: #ffffff;"><tr>
 	<td width="90%"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="117" ID="CQDPMJW" WIDTH="400" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
+<ELEMENT ID="CQDPMJW" HEIGHT="117" WIDTH="400" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQDPMJX" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 	<td align="right" width="10%"><img src="%WRAPPER_URL%/kids.jpg" height=117 width=222 alt="Kids!" border="0"></td>
 </tr><tr>
@@ -159,7 +159,7 @@ a	{color: #003399;}
 	</table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
+<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <table cellspacing=1 border=0 width='150' cellpadding=1>
 <tr><td colspan=2><hr color="#CCCCCC" style="height: 1px;"></td></tr>

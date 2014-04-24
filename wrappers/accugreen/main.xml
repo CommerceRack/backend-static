@@ -85,7 +85,7 @@
 <ELEMENT ID="CPULNRP" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CPULNRQ" COLORS="32" TYPE="CONFIG" CATEGORIES="32768" CREATED="20020620" TITLE="Accu Green" PROPERTIES="2" OCREATED="20020620" SITEBUTTONS="default=accu|gif|120|19&amp;add_to_site=accu|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CPULNRQ" COLORS="32" TYPE="CONFIG" CATEGORIES="32768" TITLE="Accu Green" CREATED="20020620" OCREATED="20020620" PROPERTIES="2" SITEBUTTONS="default=accu|gif|120|19&amp;add_to_site=accu|gif|122|32" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #666666; }
 .zbox_body {  background-color: #f0f0f0; color: #000000; font-family: TIMES; font-size: 11pt; }
@@ -219,7 +219,7 @@ onMouseOut="document.login.src='%WRAPPER_URL%/login_off.gif';"><img src="%WRAPPE
 					<td background="%WRAPPER_URL%/highlight.gif" height=81></td>
 					<td background="%WRAPPER_URL%/highlight.gif">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="77" ID="CPULNSB" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CPULNSB" HEIGHT="77" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CPULNSC" TYPE="OUTPUT"><HTML><![CDATA[</td>
 					<td background="%WRAPPER_URL%/right.gif"></td>
 				</tr><tr>

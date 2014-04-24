@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CZCIIAI" FORMAT="WRAPPER" AUTHOR="Zoovy:Sandip" PROJECT="184500" TYPE="CONFIG" THUMBNAIL="" V="2" CREATED="00000000" TITLE="Theme:basic09_splashred" SITEBUTTONS="default=l9_splashred|gif|172|31" SUBTYPE="C"><CSS><![CDATA[.zbody { background-color: #ffffff; }
+<ELEMENT FORMAT="WRAPPER" ID="CZCIIAI" AUTHOR="Zoovy:Sandip" TYPE="CONFIG" PROJECT="184500" THUMBNAIL="" V="2" TITLE="Theme:basic09_splashred" CREATED="00000000" SITEBUTTONS="default=l9_splashred|gif|172|31" SUBTYPE="C"><CSS><![CDATA[.zbody { background-color: #ffffff; }
 .zborder { border: 1px solid #DADADA; }
 .zbox { border: 1px solid #cacaca; }
 .zbox_body { background-color: #E4FCFF; color: #1A1A1A; font-family: Arial, verdana, arial, helvetica; font-size: 8pt; }
@@ -169,7 +169,7 @@
 <!-- LOGO ELEMENT -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_LOGO" HEIGHT="26" MINIMAL_MODE="0" WIDTH="179" SUB="WRAP_LOGO" BGCOLOR="ffffff" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="26" ID="WRAPPER_LOGO" MINIMAL_MODE="0" SUB="WRAP_LOGO" WIDTH="179" TYPE="LOGO" BGCOLOR="ffffff"></ELEMENT>
 <ELEMENT ID="WRAPPER_BREADCRUMB" SUB="WRAP_BREADCRUMB" NOHOME="0" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTFILTER="!FS=C" OUTPUTSKIP="1"><HTML><![CDATA[
 <div style='margin-bottom:5px; font-size:8pt;'>
 <!-- CATEGORY -->
@@ -178,7 +178,7 @@
 <!-- /CATEGORY -->
 </div>]]></HTML>
 </ELEMENT>
-<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTSKIP="1" OUTPUTFILTER="FS=C,H"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
+<ELEMENT ID="WRAPPER_TITLE" SUB="WRAP_TITLE" TYPE="TITLE" OUTPUTFILTER="FS=C,H" OUTPUTSKIP="1"><PRETEXT><![CDATA[<h1>]]></PRETEXT>
 <POSTTEXT><![CDATA[</h1>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CZCIIAQ" TYPE="OUTPUT"><HTML><![CDATA[

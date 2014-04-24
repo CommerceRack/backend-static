@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMUB" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" SHORT="This layout features a centered 560x600 graphic and short description." TYPE="CONFIG" TITLE="Bigger Picture2" OCREATED="20021205"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMUB" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" SHORT="This layout features a centered 560x600 graphic and short description." TYPE="CONFIG" TITLE="Bigger Picture2" OCREATED="20021205"><SUMMARY><![CDATA[
 Category Description
 IMAGE1 (560x600)
 Product Listing 
@@ -17,7 +17,7 @@ Product Listing
                 <td align="center" width="560"><div align="center">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="600" ID="PIC1" HELP="Please select a very large picture for your site." DATA="page:picture1" WIDTH="560" PROMPT="large Picture" DEFAULT="" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="600" HELP="Please select a very large picture for your site." DATA="page:picture1" PROMPT="large Picture" WIDTH="560" DEFAULT="" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMUD" TYPE="OUTPUT"><HTML><![CDATA[
 <br><br>
 </td>
@@ -26,7 +26,7 @@ Product Listing
 <tr><td colspan=3>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Category Description" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" HELPER="Remember to keep this text short and to the point.  " DEFAULT="" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKMUE" TYPE="OUTPUT"><HTML><![CDATA[
 <p>
  

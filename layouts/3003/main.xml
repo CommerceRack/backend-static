@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMBR" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SUBTYPE="T" SERIES="2001" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Product List + Categories" RELEASED="20011022"><SUMMARY><![CDATA[Featured Products Title
+<ELEMENT FORMAT="LAYOUT" ID="CPUKMBR" CREATOR="STAFF" TYPE="CONFIG" TITLE="Product List + Categories" IMAGES="0" PROPERTIES="1" SUBTYPE="T" RELEASED="20011022" SERIES="2001"><SUMMARY><![CDATA[Featured Products Title
 Product Categories Listing
 Product Categories Title
 Product Listing
@@ -18,13 +18,13 @@ Shopping Cart
 			<b><font size="+2">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="PRODCATSTITLE" LENGTH="100" HELP="This is the title that appears above the listing of categories for the items in the user's cart" DATA="page:prodcatstitle" PROMPT="Product Categories Title" DEFAULT="Featured Categories" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="PRODCATSTITLE" PROMPT="Product Categories Title" LENGTH="100" DEFAULT="Featured Categories" TYPE="TEXTBOX" HELP="This is the title that appears above the listing of categories for the items in the user's cart" DATA="page:prodcatstitle"></ELEMENT>
 <ELEMENT ID="CPUKMBT" TYPE="OUTPUT"><HTML><![CDATA[
 			</font></b>
 			<br>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CARTPRODCATS" HELP="This is a list of categories for all the products in the user's cart" DATA="page:prodcats" PROMPT="Product Categories Listing" DEFAULT="" TYPE="CARTPRODCATS"></ELEMENT>
+<ELEMENT ID="CARTPRODCATS" PROMPT="Product Categories Listing" DEFAULT="" TYPE="CARTPRODCATS" HELP="This is a list of categories for all the products in the user's cart" DATA="page:prodcats"></ELEMENT>
 <ELEMENT ID="CPUKMBU" TYPE="OUTPUT"><HTML><![CDATA[
 		</td>
 	</tr>
@@ -34,7 +34,7 @@ Shopping Cart
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CART1" HELP="This is the contents of the user's shopping cart." PROMPT="Shopping Cart" TYPE="CART"></ELEMENT>
+<ELEMENT ID="CART1" PROMPT="Shopping Cart" TYPE="CART" HELP="This is the contents of the user's shopping cart."></ELEMENT>
 <ELEMENT ID="CPUKMBV" TYPE="OUTPUT"><HTML><![CDATA[
 
 <br>
@@ -42,13 +42,13 @@ Shopping Cart
 <b><font size="+2">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="FEATUREDTITLE" LENGTH="100" HELP="This is the title that appears above the featured products listing" DATA="page:featured" PROMPT="Featured Products Title" DEFAULT="Featured Products" TYPE="TEXTBOX"></ELEMENT>
+<ELEMENT ID="FEATUREDTITLE" PROMPT="Featured Products Title" LENGTH="100" DEFAULT="Featured Products" TYPE="TEXTBOX" HELP="This is the title that appears above the featured products listing" DATA="page:featured"></ELEMENT>
 <ELEMENT ID="CPUKMBW" TYPE="OUTPUT"><HTML><![CDATA[
 </font></b>
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT SIZE="50000" ID="PRODLIST1" HELP="You can add products to your shopping cart page" DATA="page:prodlist" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="PRODLIST1" SIZE="50000" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST" HELP="You can add products to your shopping cart page" DATA="page:prodlist"></ELEMENT>
 <ELEMENT ID="CPUKMBX" TYPE="OUTPUT"><HTML><![CDATA[
 
 </center>

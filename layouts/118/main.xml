@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLUW" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Single Left Picture" RELEASED="20020620"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKLUW" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="P" SERIES="2002" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Single Left Picture" RELEASED="20020620"><SUMMARY><![CDATA[
 Default Description (shared)
 Detailed Product Description
 IMAGE1 (250x350)
@@ -25,13 +25,13 @@ function zoom (url) {
     <td valign="top" width="260"> 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE" HEIGHT="350" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image 1" WIDTH="250" DEFAULT="https://static.zoovy.com/img/H350-W250-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="350" ID="IMAGE" HELP="Please enter a picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="250" PROMPT="Image 1" DEFAULT="https://static.zoovy.com/img/H350-W250-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLUY" TYPE="OUTPUT"><HTML><![CDATA[ 
     </td>
     <td valign=top width="300">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="ABOUT" HEIGHT="350" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" PROMPT="Default Description (shared)" WIDTH="290" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
+<ELEMENT HEIGHT="350" ID="ABOUT" HELP="This is the product description that will appear on your website." DATA="product:zoovy:prod_desc" WIDTH="290" PROMPT="Default Description (shared)" DEFAULT="This is a great product, you really MUST buy at least one!" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKLUZ" TYPE="OUTPUT"><HTML><![CDATA[ 
     </td>
   </tr>

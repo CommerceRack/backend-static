@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMIT" CREATOR="STAFF" CREATED="00000000" IMAGES="2" PROPERTIES="1" SERIES="2002" SUBTYPE="P" FORMAT="LAYOUT" SHORT="(2) 200 x 200 pictures with default description below them." TYPE="CONFIG" TITLE="Two Picture" RELEASED="20020510"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMIT" CREATOR="STAFF" IMAGES="2" CREATED="00000000" PROPERTIES="1" SERIES="2002" SUBTYPE="P" FORMAT="LAYOUT" SHORT="(2) 200 x 200 pictures with default description below them." TYPE="CONFIG" TITLE="Two Picture" RELEASED="20020510"><SUMMARY><![CDATA[
 Default Description (shared)
 IMAGE1 (200x200)
 IMAGE2 (200x200)
@@ -25,7 +25,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE1" HEIGHT="200" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" PROMPT="Image1 200 x 200" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="IMAGE1" HELP="Please enter the first picture for your product." ZOOM="1" DATA="product:zoovy:prod_image1" WIDTH="200" PROMPT="Image1 200 x 200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMIV" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td>
@@ -33,7 +33,7 @@ function zoom (url) {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="IMAGE2" HEIGHT="200" HELP="Please enter the second picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" PROMPT="Image2 200 x 200" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="200" ID="IMAGE2" HELP="Please enter the second picture for your product." ZOOM="1" DATA="product:zoovy:prod_image2" WIDTH="200" PROMPT="Image2 200 x 200" DEFAULT="https://static.zoovy.com/img/H200-W200-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMIW" TYPE="OUTPUT"><HTML><![CDATA[
 
 </td></tr></table>

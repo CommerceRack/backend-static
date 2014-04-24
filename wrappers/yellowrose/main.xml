@@ -154,7 +154,7 @@ h1	{margin: 0px; font-size: 14pt; color: #D88B3D;}
 <table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
 	<td width="50%" align="left">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CQDPLUI" HEIGHT="85" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT HEIGHT="85" ID="CQDPLUI" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQDPLUJ" TYPE="OUTPUT"><HTML><![CDATA[</td>
 	<td width="50%" align="right"><img src="%WRAPPER_URL%/graphic.jpg" width="482" height="93"></td>
 </tr><tr>
@@ -191,7 +191,7 @@ h1	{margin: 0px; font-size: 14pt; color: #D88B3D;}
 <table cellspacing=0 cellpadding=0 border=0 width="100%"><tr>
 	<td background="%WRAPPER_URL%/menu_bg.gif" height=32 width="99%" NOWRAP><span class="menu">]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
+<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART"><HTML><![CDATA[
 Items in Cart: <% load($TOTALCOUNT);  default("");  print(); %>
 <!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <span style="word-spacing:10px;"> | </span>

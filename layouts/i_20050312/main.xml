@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKNKU" CREATED="20050312" IMAGES="0" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Multiple Product List" NEWSLETTER="1"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKNKU" IMAGES="0" CREATED="20050312" PROPERTIES="1" SUBTYPE="I" FORMAT="LAYOUT" TYPE="CONFIG" TITLE="Multiple Product List" NEWSLETTER="1"><SUMMARY><![CDATA[
 Description
 Description2
 Email Header
@@ -35,7 +35,7 @@ Product Listing 3
 <ELEMENT ID="CPVRQEQ" RAW="1" SUB="CHECKOUT_URL" TYPE="READONLY" LOAD="URL::CHECKOUT_URL"></ELEMENT>
 <ELEMENT ID="CPVRQER" RAW="1" SUB="ORDER_STATUS_URL" TYPE="READONLY" LOAD="URL::ORDER_STATUS_URL"></ELEMENT>
 <ELEMENT ID="CPVRQEV" RAW="1" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL"></ELEMENT>
-<ELEMENT HEIGHT="120" ID="CVPKKKQ" MINIMAL_MODE="1" WIDTH="200" SUB="NEWS_LOGO" BGCOLOR="FFFFFF" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CVPKKKQ" HEIGHT="120" MINIMAL_MODE="1" SUB="NEWS_LOGO" WIDTH="200" TYPE="LOGO" BGCOLOR="FFFFFF"></ELEMENT>
 <ELEMENT ID="CPUKNKV" TYPE="OUTPUT"><HTML><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -76,7 +76,7 @@ href='%HOME_URL%?%TRACKING%'>
 </tr><tr>
 	<td colspan="2">]]></HTML>
 </ELEMENT>
-<ELEMENT ID="WELCOME" LENGTH="35" HELP="Please enter a header that will appear at the top of the email content" DATA="page:email_header" HELPER="Remember to keep this text short and to the point." PROMPT="Email Header" FONT="0" TYPE="TEXTBOX"><POSTTEXT><![CDATA[</span></td></tr></table>]]></POSTTEXT>
+<ELEMENT ID="WELCOME" LENGTH="35" HELP="Please enter a header that will appear at the top of the email content" DATA="page:email_header" PROMPT="Email Header" HELPER="Remember to keep this text short and to the point." TYPE="TEXTBOX" FONT="0"><POSTTEXT><![CDATA[</span></td></tr></table>]]></POSTTEXT>
 <PRETEXT><![CDATA[<table cellspacing="0" cellpadding="3">
 <tr><td class="head_bg_color"><span class="list_head">]]></PRETEXT>
 </ELEMENT>
@@ -89,9 +89,9 @@ href='%HOME_URL%?%TRACKING%'>
 		
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Please describe this section of the newsletter" DATA="page:description" HELPER="Remember to keep this text short and to the point.  " PROMPT="Description" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this section of the newsletter" DATA="page:description" PROMPT="Description" HELPER="Remember to keep this text short and to the point.  " TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="PRODLIST2" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist2" PROMPT="Product Listing 2" DEFAULT="&amp;FORMAT=THUMB&amp;COLS=3&amp;ALTERNATE=1" TYPE="PRODLIST" SRC="page:prodlist2stuff"></ELEMENT>
-<ELEMENT ID="DESCRIPTION2" HELP="Please describe this section of the newsletter" DATA="page:description2" HELPER="Remember to keep this text short and to the point.  " PROMPT="Description2" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="DESCRIPTION2" HELP="Please describe this section of the newsletter" DATA="page:description2" PROMPT="Description2" HELPER="Remember to keep this text short and to the point.  " TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="PRODLIST3" HELP="You can add products to your homepage, when you do they will appear below." DATA="page:prodlist3" PROMPT="Product Listing 3" DEFAULT="&amp;FORMAT=THUMB&amp;COLS=3&amp;ALTERNATE=1" TYPE="PRODLIST" SRC="page:prodlist3stuff"></ELEMENT>
 <ELEMENT ID="CPUKNLA" TYPE="OUTPUT"><HTML><![CDATA[
 		

@@ -83,7 +83,7 @@
 <ELEMENT ID="CQQYVLA" SUB="WISHLIST_URL" TYPE="READONLY" LOAD="URL::WISHLIST_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQYVLB" SUB="MAIL_CONFIG_URL" TYPE="READONLY" LOAD="URL::MAIL_CONFIG_URL" RAW="1"></ELEMENT>
 <ELEMENT ID="CQQYVLC" SUB="DISABLED_URL" TYPE="READONLY" LOAD="URL::DISABLED_URL" RAW="1"></ELEMENT>
-<ELEMENT ID="CQQYVLD" COLORS="128" TYPE="CONFIG" CATEGORIES="8208" CREATED="20020328" TITLE="Green Etch" PROPERTIES="0" OCREATED="20020328" SITEBUTTONS="default=l1_green|gif|144|30&amp;add_to_site=l1_green|gif|122|32&amp;continue_shopping=l1_green|gif|182|30" NARROW="TRUE" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
+<ELEMENT ID="CQQYVLD" COLORS="128" TYPE="CONFIG" CATEGORIES="8208" TITLE="Green Etch" CREATED="20020328" OCREATED="20020328" PROPERTIES="0" SITEBUTTONS="default=l1_green|gif|144|30&amp;add_to_site=l1_green|gif|122|32&amp;continue_shopping=l1_green|gif|182|30" NARROW="TRUE" SUBTYPE="C"><CSS><![CDATA[.zbody {  background-color: #FFFFFF; }
 .zborder {  border: 1px solid #CCCCCC; }
 .zbox {  border: 1px solid #525B54; }
 .zbox_body {  background-color: #FFFFFF; color: #000000; font-family: Arial, Helvetica; font-size: 11pt; }
@@ -144,7 +144,7 @@
 				<tr>
 					<td width="300" height="88" align="center" valign="middle"><a href="%HOME_URL%">]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="88" ID="CQQYVLH" WIDTH="300" TYPE="LOGO"></ELEMENT>
+<ELEMENT ID="CQQYVLH" HEIGHT="88" WIDTH="300" TYPE="LOGO"></ELEMENT>
 <ELEMENT ID="CQQYVLI" TYPE="OUTPUT"><HTML><![CDATA[</a></td>
 				</tr>
 				<tr>

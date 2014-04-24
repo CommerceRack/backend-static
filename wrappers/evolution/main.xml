@@ -25,7 +25,7 @@
 
 
 <!-- ******* -->
-<ELEMENT FORMAT="WRAPPER" ID="evolution" COLORS="120" CART="persist" EXPORT="0" TYPE="CONFIG" CATEGORIES="65537" V="2" TITLE="Evolution (Web 2.0)" CREATED="00000000" OCREATED="20060510" PROPERTIES="315" SITEBUTTONS="default=reflectgel_grey|gif|110|33" OVERLOAD="flow.product=p-evolution&amp;site.css=1&amp;dev.search_bounce=0"><SUMMARY><![CDATA[This is the next generation Ajax theme. It offers: 
+<ELEMENT FORMAT="WRAPPER" ID="evolution" CART="persist" COLORS="120" EXPORT="0" TYPE="CONFIG" CATEGORIES="65537" V="2" TITLE="Evolution (Web 2.0)" CREATED="00000000" OCREATED="20060510" PROPERTIES="315" SITEBUTTONS="default=reflectgel_grey|gif|110|33" OVERLOAD="flow.product=p-evolution&amp;site.css=1&amp;dev.search_bounce=0"><SUMMARY><![CDATA[This is the next generation Ajax theme. It offers: 
 <li>Your choice of 6 colors.</li>
 <li>Advanced search</li>
 <ol>
@@ -87,12 +87,12 @@
 </ELEMENT>
 <ELEMENT ID="ADDOVERLOAD" LINK="javascript:addToCart('%ID%','%SKU%');" BUTTON="add_to_cart" TYPE="OVERLOAD"></ELEMENT>
 <ELEMENT ID="CRUEGLS" SUB="COLOR1" DEFAULT="5E8ED0" TYPE="HIDDEN"></ELEMENT>
-<ELEMENT ID="COLOR_CHOOSER" VALUE="5E8ED0" PROMPT="Color" SUB="COLOR1" DEFAULT="5E8ED0" FONT="0" TYPE="SELECT" HELP="Choose a color from the list above to select the aesthetic to your store" LIST="COLOR1" DATA="merchant:zoovy:wrap_evolution_color" RAW="1"></ELEMENT>
-<ELEMENT ID="CATALOGCHOOSER" PROMPT="Search Catalog" SUB="CATALOG" FONT="0" TYPE="SELECT" LIST="@SYSTEM.SEARCHCATALOGS" DATA="merchant:zoovy:wrap_catalog"><HELP><![CDATA[
+<ELEMENT ID="COLOR_CHOOSER" VALUE="5E8ED0" SUB="COLOR1" PROMPT="Color" DEFAULT="5E8ED0" TYPE="SELECT" FONT="0" HELP="Choose a color from the list above to select the aesthetic to your store" LIST="COLOR1" DATA="merchant:zoovy:wrap_evolution_color" RAW="1"></ELEMENT>
+<ELEMENT ID="CATALOGCHOOSER" SUB="CATALOG" PROMPT="Search Catalog" TYPE="SELECT" FONT="0" LIST="@SYSTEM.SEARCHCATALOGS" DATA="merchant:zoovy:wrap_catalog"><HELP><![CDATA[
 The search catalog feature allows you to set which fields in the zoovy system are searchable.  By default, DEFAULT is created and selected, which searches your product ID and name.  You can create and modify search catalogs from the 'search catalogs' page off of setup.  A 'dictionary' search is required for the text autocomplete feature. If you have questions, please schedule time with a trainer.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="SEARCHMODE_CHOOSER" PROMPT="Search Mode" SUB="SEARCHMODE" DEFAULT="and" FONT="0" TYPE="SELECT" LIST="MODE" DATA="merchant:zoovy:wrap_searchmode" RAW="1"><HELP><![CDATA[
+<ELEMENT ID="SEARCHMODE_CHOOSER" SUB="SEARCHMODE" PROMPT="Search Mode" DEFAULT="and" TYPE="SELECT" FONT="0" LIST="MODE" DATA="merchant:zoovy:wrap_searchmode" RAW="1"><HELP><![CDATA[
 Search mode has three options:
 <li>'and' which will do a search and return results for product with BOTH words that are searched (X and Y) - system default</li>
 <li>'or' which will do a search and return results for product with EITHER words that are searched (X or Y) - returns most results</li>
@@ -100,14 +100,14 @@ Search mode has three options:
 If you have questions, please schedule time with a trainer.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="TAFOPTION" SUB="ENABLE_TAF" PROMPT="Tell a friend" ON="1" DEFAULT="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_tellafriend" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="TAFOPTION" PROMPT="Tell a friend" SUB="ENABLE_TAF" DEFAULT="1" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_tellafriend" OFF="0"><TRUE><![CDATA[
 <div id="prod_links_tell"><a href="#" onclick="Effect.BlindDown('tellafriend'); return false;">Tell a Friend</a></div>
 ]]></TRUE>
 <HELP><![CDATA[
 Tell a Friend or TAF is a feature that puts a contact form on your product pages so that your customers can send product specific information directly to an associate of theirs.  Your branding and product specific information are in the email sent, as well as a custom message set by your customer.  <br>This feature requires the XSELL bundle.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT ID="REVIEWOPTION" SUB="ENABLE_REVIEWS" PROMPT="Product Reviews" ON="1" DEFAULT="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_reviews" OFF="0"><TRUE><![CDATA[
+<ELEMENT ID="REVIEWOPTION" PROMPT="Product Reviews" SUB="ENABLE_REVIEWS" DEFAULT="1" ON="1" TYPE="CHECKBOX" FALSE="" DATA="merchant:zoovy:wrap_reviews" OFF="0"><TRUE><![CDATA[
 <li><a href="#reviews_content" onClick="new TabToggle(this); return false;">Reviews</a></li>
 ]]></TRUE>
 <HELP><![CDATA[
@@ -228,17 +228,17 @@ this element is skipped on non-secure pages.  On secure pages, the sub is placed
 </ELEMENT>
 <ELEMENT ID="CQHREXV" SUB="/title3" TYPE="HIDDEN"><DEFAULT><![CDATA[</h4>]]></DEFAULT>
 </ELEMENT>
-<ELEMENT ID="CRNEEWG" PROMPT="Link for Banner" SUB="BANNER_LINK" DEFAULT="%CART%/search.cgi" FONT="0" TYPE="TEXTBOX" DATA="merchant:zoovy:wrap_bannerlink"><HELP><![CDATA[WARNING:  linking within your Zoovy store requires you to use a special syntax in order to avoid cart/cookie issues.  When setting up links, use this variable to ensure the cart id is passed in the URL and that users don't bounce between domains.<br>
+<ELEMENT ID="CRNEEWG" SUB="BANNER_LINK" PROMPT="Link for Banner" DEFAULT="%CART%/search.cgi" TYPE="TEXTBOX" FONT="0" DATA="merchant:zoovy:wrap_bannerlink"><HELP><![CDATA[WARNING:  linking within your Zoovy store requires you to use a special syntax in order to avoid cart/cookie issues.  When setting up links, use this variable to ensure the cart id is passed in the URL and that users don't bounce between domains.<br>
 Links should look like this: %CART%/category/cat.safe.name<br>
 Links should NOT look like this:  http://yourdomain.com/c=54654SD6546SDF4656/category/cat.safe.name<br>
 The c= is the cart id.  If you paste that in as your link, all your customers will share the same cart id.  This would be bad.<br>
 If you have questions, schedule time with your trainer or contact support.<br>
 ]]></HELP>
 </ELEMENT>
-<ELEMENT HEIGHT="60" ID="CRGOZAM" MINIMAL_MODE="1" WIDTH="468" PROMPT="Choose the banner image you would like to use" SUB="BANNER_IMAGE" TYPE="IMAGE" DATA="merchant:zoovy:wrap_banner"><POSTTEXT><![CDATA[</a>]]></POSTTEXT>
+<ELEMENT ID="CRGOZAM" HEIGHT="60" MINIMAL_MODE="1" SUB="BANNER_IMAGE" PROMPT="Choose the banner image you would like to use" WIDTH="468" TYPE="IMAGE" DATA="merchant:zoovy:wrap_banner"><POSTTEXT><![CDATA[</a>]]></POSTTEXT>
 <PRETEXT><![CDATA[<a href='%BANNER_LINK%'>]]></PRETEXT>
 </ELEMENT>
-<ELEMENT ID="CUWSXSQ" WIKI="3" PROMPT="Warning for users that have javascript disabled" SUB="WRAP_NOSCRIPT_TEXT" TYPE="TEXTBOX" FONT="1" DATA="profile:zoovy:wrap_noscript_text"><DEFAULT><![CDATA[This store relies heavily on JavaScript, which your browser does not support or has disabled.  Please enable it or use another browser.]]></DEFAULT>
+<ELEMENT ID="CUWSXSQ" WIKI="3" SUB="WRAP_NOSCRIPT_TEXT" PROMPT="Warning for users that have javascript disabled" FONT="1" TYPE="TEXTBOX" DATA="profile:zoovy:wrap_noscript_text"><DEFAULT><![CDATA[This store relies heavily on JavaScript, which your browser does not support or has disabled.  Please enable it or use another browser.]]></DEFAULT>
 <POSTTEXT><![CDATA[</div></NOSCRIPT>]]></POSTTEXT>
 <HELP><![CDATA[Enter a short piece of text to be displayed to users that have javascript disabled.  This theme uses ajax for several features and will not play well with browsers that do not support javascript (or have it disabled).]]></HELP>
 <PRETEXT><![CDATA[<NOSCRIPT><div class='ztxt zwarn'>]]></PRETEXT>
@@ -300,8 +300,8 @@ Password: <input type="password" class="zform_textbox" maxlength="50" name="pass
 		</div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="60" ID="COMPANY_LOGO" WIDTH="400" SUB="LOGO" BGCOLOR="ffffff" TYPE="LOGO"></ELEMENT>
-<ELEMENT ID="BREADCRUMB" SUB="BREADCRUMB" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTFILTER="FS=H,P" OUTPUTSKIP="1"><HTML><![CDATA[
+<ELEMENT ID="COMPANY_LOGO" HEIGHT="60" SUB="LOGO" WIDTH="400" TYPE="LOGO" BGCOLOR="ffffff"></ELEMENT>
+<ELEMENT ID="BREADCRUMB" SUB="BREADCRUMB" TYPE="BREADCRUMB" STYLE="LEGACYBREADCRUMB" OUTPUTSKIP="1" OUTPUTFILTER="FS=H,P"><HTML><![CDATA[
 <!-- CATEGORY -->
 <a href="<% load($cat_url);  default("");  print(); %>" class="breadcrumb"><% load($cat_pretty);  default("");  print(); %></a>
 <% load($TOTALCOUNT); math(op=>"subtract",var=>$COUNT); math(op=>"subtract",var=>"1"); stop(unless=>$_); runspec(" &#187; "); print(); %>
@@ -517,7 +517,7 @@ function loadResults(keywords){
 <!-- This element gets skipped both in the UI and on all pages (used 2 & 4).  It gets rerendered using ajax for the search results -->
 ]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="WRAPRESULTS" SIZE="50000" TYPE="PRODSEARCH" ALTERNATE="0" AJAX="1" DATA="profile:zoovy:wrap_results_style" OUTPUTSKIP="32774" COLS="1"><HTML><![CDATA[
+<ELEMENT SIZE="50000" ID="WRAPRESULTS" FORMAT="CUSTOM" TYPE="PRODSEARCH" ALTERNATE="0" AJAX="1" DATA="profile:zoovy:wrap_results_style" COLS="1" OUTPUTSKIP="32774"><HTML><![CDATA[
 <div><% load($TOTAL_PRODUCTS); print(); %> results found for <% loadurp("VAR::keywords"); print(); %></div>
 <table BORDER="0" CELLPADDING="3" CELLSPACING="0">
 <!-- ROW -->
@@ -573,7 +573,7 @@ function loadResults(keywords){
 	<div id="keywordsDisplay">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="RECENTSEARCHES" FONT="0" TYPE="SCRIPT" RAW="1"><HTML><![CDATA[
+<ELEMENT ID="RECENTSEARCHES" TYPE="SCRIPT" FONT="0" RAW="1"><HTML><![CDATA[
 
 // display a list of up to 6 recently searched words.
 
@@ -630,10 +630,10 @@ if (keywordlist != "") {
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="LEFTSIDE_DECAL1" PROMPT="Left column - after categories" WIDTH="176" TYPE="DECAL" DATA="wrapper:evolution_leftcol"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
+<ELEMENT ID="LEFTSIDE_DECAL1" WIDTH="176" PROMPT="Left column - after categories" TYPE="DECAL" DATA="wrapper:evolution_leftcol"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="LEFTSIDE_DECAL2" PROMPT="Left column - after categories #2" WIDTH="176" TYPE="DECAL" DATA="wrapper:evolution_leftcol2"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
+<ELEMENT ID="LEFTSIDE_DECAL2" WIDTH="176" PROMPT="Left column - after categories #2" TYPE="DECAL" DATA="wrapper:evolution_leftcol2"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="DAUPVSY" TYPE="OUTPUT"><HTML><![CDATA[
@@ -664,7 +664,7 @@ if (keywordlist != "") {
 	<div style='width:176px; overflow:hidden;'>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="CRNFLUJ456" TYPE="OUTPUT" OUTPUTSKIP="1" OUTPUTFILTER="PG=cart"><HTML><![CDATA[
+<ELEMENT ID="CRNFLUJ456" TYPE="OUTPUT" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><HTML><![CDATA[
 <!-- minicart -->
 <div class='box_padbottom'>
 	<div class='box_border'>
@@ -677,7 +677,10 @@ if (keywordlist != "") {
 	
 	]]></HTML>
 </ELEMENT>
-<ELEMENT FORMAT="CUSTOM" ID="IMAGECART" PROMPT="Shopping Cart" TYPE="CART" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><HTML><![CDATA[
+<ELEMENT ID="IMAGECART" FORMAT="CUSTOM" PROMPT="Shopping Cart" TYPE="CART" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><SURCHARGE_BND_SPEC><![CDATA[
+<tr><td><span class="minicart">Bonding: </span></td><td align="right"><span class="minicart"><% load($BUYSAFE_SURCHARGETXT); default("");  format(money); print(); %></span></td></tr>
+]]></SURCHARGE_BND_SPEC>
+<HTML><![CDATA[
 
 <!-- MINICART --><table width="160" cellpadding="0" cellspacing="2">
 <!-- ROW -->
@@ -715,9 +718,6 @@ if (keywordlist != "") {
 	
 
 ]]></HTML>
-<SURCHARGE_BND_SPEC><![CDATA[
-<tr><td><span class="minicart">Bonding: </span></td><td align="right"><span class="minicart"><% load($BUYSAFE_SURCHARGETXT); default("");  format(money); print(); %></span></td></tr>
-]]></SURCHARGE_BND_SPEC>
 <SURCHARGE_SPEC><![CDATA[
 <tr>
 	<td><span class="minicart"><% load($SURCHARGE); default(""); print(); %>:</span></td>
@@ -733,24 +733,24 @@ if (keywordlist != "") {
 <NOITEMS_SPEC><![CDATA[<!-- ROW --><!-- PRODUCT --><!-- /PRODUCT --><!-- /ROW -->
 <div class='zsmall' align='center' style='margin:4px;'><b>There are no items in your shopping cart</b></div>
 ]]></NOITEMS_SPEC>
-<SURCHARGE_GFC_SPEC><![CDATA[
-<tr>
-	<td><span class="minicart">Gift Card(s):</span></td>
-	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
-</tr>
-]]></SURCHARGE_GFC_SPEC>
-<SURCHARGE_SHP_SPEC><![CDATA[
-<tr>
-	<td><span class="minicart">Shipping:</span></td>
-	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
-</tr>
-]]></SURCHARGE_SHP_SPEC>
 <SURCHARGE_SPC_SPEC><![CDATA[
 <tr>
 	<td><span class="minicart">Special Charge:</span></td>
 	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
 </tr>
 ]]></SURCHARGE_SPC_SPEC>
+<SURCHARGE_SHP_SPEC><![CDATA[
+<tr>
+	<td><span class="minicart">Shipping:</span></td>
+	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
+</tr>
+]]></SURCHARGE_SHP_SPEC>
+<SURCHARGE_GFC_SPEC><![CDATA[
+<tr>
+	<td><span class="minicart">Gift Card(s):</span></td>
+	<td align="right"><span class="minicart"><% load($SURCHARGEVALUE);  default("");  format(money);  print(); %></span></td>
+</tr>
+]]></SURCHARGE_GFC_SPEC>
 <SURCHARGE_HND_SPEC><![CDATA[
 <tr>
 	<td><span class="minicart"><% load($SURCHARGE); default(""); print(); %>:</span></td>
@@ -758,7 +758,7 @@ if (keywordlist != "") {
 </tr>
 ]]></SURCHARGE_HND_SPEC>
 </ELEMENT>
-<ELEMENT ID="CRNFLUJ" TYPE="OUTPUT" OUTPUTSKIP="1" OUTPUTFILTER="PG=cart"><HTML><![CDATA[
+<ELEMENT ID="CRNFLUJ" TYPE="OUTPUT" OUTPUTFILTER="PG=cart" OUTPUTSKIP="1"><HTML><![CDATA[
 	
 
 
@@ -773,7 +773,7 @@ if (keywordlist != "") {
 </div>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="RIGHTSIDE_DECAL1" PROMPT="Right column - between minicart and newsletter" WIDTH="176" TYPE="DECAL" DATA="wrapper:evolution_rightcol"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
+<ELEMENT ID="RIGHTSIDE_DECAL1" WIDTH="176" PROMPT="Right column - between minicart and newsletter" TYPE="DECAL" DATA="wrapper:evolution_rightcol"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CRNEEWH" TYPE="TRISTATE" LOAD="CART::customer::INFO.NEWSLETTER"><TRUE><![CDATA[<!-- Subscribed: True -->]]></TRUE>
@@ -786,7 +786,7 @@ if (keywordlist != "") {
 <!-- /newsletter form -->
 ]]></UNDEF>
 </ELEMENT>
-<ELEMENT ID="RIGHTSIDE_DECAL2" PROMPT="Right column - between newsletter and sidebar" WIDTH="176" TYPE="DECAL" DATA="wrapper:evolution_rightcol2"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
+<ELEMENT ID="RIGHTSIDE_DECAL2" WIDTH="176" PROMPT="Right column - between newsletter and sidebar" TYPE="DECAL" DATA="wrapper:evolution_rightcol2"><PRETEXT><![CDATA[<div style='background:#ffffff; padding-bottom:2px; text-align:center;'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>]]></POSTTEXT>
 </ELEMENT>
 <ELEMENT ID="CRNFLUK" TYPE="OUTPUT"><HTML><![CDATA[

@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMFO" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" SHORT="A long, narrow picture." TYPE="CONFIG" TITLE="Narrow Picture" OCREATED="20020716"><SUMMARY><![CDATA[
+<ELEMENT ID="CPUKMFO" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="C" SERIES="2002" FORMAT="LAYOUT" SHORT="A long, narrow picture." TYPE="CONFIG" TITLE="Narrow Picture" OCREATED="20020716"><SUMMARY><![CDATA[
 Category Description
 IMAGE1 (250x400)
 Product Listing 
@@ -16,13 +16,13 @@ Product Listing
                 <td align=left width="300">
 ]]></HTML>
 </ELEMENT>
-<ELEMENT HEIGHT="400" ID="PIC1" HELP="Please select a very large picture for your site." DATA="page:picture1" WIDTH="250" PROMPT="large Picture" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE"></ELEMENT>
+<ELEMENT ID="PIC1" HEIGHT="400" HELP="Please select a very large picture for your site." DATA="page:picture1" PROMPT="large Picture" WIDTH="250" DEFAULT="https://www.zoovy.com/images/samples/flows-default/starrylogo.gif" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKMFQ" TYPE="OUTPUT"><HTML><![CDATA[
 <br><br>
 </td><td width=300>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" HELPER="The image in this flow is very tall, so the text can be a bit longer" PROMPT="Category Description" DEFAULT="" TYPE="TEXT"></ELEMENT>
+<ELEMENT ID="DESCRIPTION" HELP="Please describe this category and why it is unique" DATA="page:description" PROMPT="Category Description" HELPER="The image in this flow is very tall, so the text can be a bit longer" DEFAULT="" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CPUKMFR" TYPE="OUTPUT"><HTML><![CDATA[
 <p>
 </td></tr>

@@ -12,6 +12,6 @@ Top Text
 <ELEMENT ID="TOPTEXT" HELP="This text will appear above the shopping cart" DATA="page:toptext" PROMPT="Top Text" DEFAULT="" TYPE="TEXT"></ELEMENT>
 <ELEMENT ID="CART1" HELP="This is the contents of the user's shopping cart." PROMPT="Shopping Cart" TYPE="CART"></ELEMENT>
 <ELEMENT ID="BOTTOMTEXT" HELP="This text will appear below the shopping cart" DATA="page:bottomtext" PROMPT="Bottom Text" DEFAULT="" TYPE="TEXT"></ELEMENT>
-<ELEMENT SIZE="50000" ID="PRODLIST1" HELP="You can add products to your shopping cart page" DATA="page:prodlist" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
+<ELEMENT ID="PRODLIST1" SIZE="50000" HELP="You can add products to your shopping cart page" DATA="page:prodlist" SMARTSOURCE="CHOOSE" PROMPT="Product Listing" DEFAULT="PLAIN,3,1,NONE" TYPE="PRODLIST"></ELEMENT>
 
 </TEMPLATE>

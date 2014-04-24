@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKMID" CREATOR="STAFF" IMAGES="0" PROPERTIES="1" SERIES="2002" SUBTYPE="G" FORMAT="LAYOUT" SHORT="This layout has the basic elements to create a gallery page." TYPE="CONFIG" TITLE="Plain" RELEASED="20020129"><SUMMARY><![CDATA[
+<ELEMENT FORMAT="LAYOUT" ID="CPUKMID" CREATOR="STAFF" SHORT="This layout has the basic elements to create a gallery page." TYPE="CONFIG" TITLE="Plain" IMAGES="0" PROPERTIES="1" SERIES="2002" RELEASED="20020129" SUBTYPE="G"><SUMMARY><![CDATA[
 Extended Description
 Gallery Listing
 ]]></SUMMARY>
@@ -11,7 +11,7 @@ Gallery Listing
 <table><tr><td>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="DESCRIPTION" HELP="Extra information for bidders" DATA="page:description" PROMPT="Extended Description" TYPE="TEXT"><DEFAULT><![CDATA[Thank you for visiting our website!  Here's a list of our other auctions, feel free to browse around and see what we have to buy.]]></DEFAULT>
+<ELEMENT ID="DESCRIPTION" PROMPT="Extended Description" TYPE="TEXT" HELP="Extra information for bidders" DATA="page:description"><DEFAULT><![CDATA[Thank you for visiting our website!  Here's a list of our other auctions, feel free to browse around and see what we have to buy.]]></DEFAULT>
 </ELEMENT>
 <ELEMENT ID="CPUKMIF" TYPE="OUTPUT"><HTML><![CDATA[
 
@@ -19,7 +19,7 @@ Gallery Listing
 ]]></HTML>
 </ELEMENT>
 <ELEMENT ID="GALLERYSELECT1" TYPE="GALLERYSELECT"></ELEMENT>
-<ELEMENT ID="GALLERY1" HELP="These are all of the products in this marketplace" DATA="page:gallery" PROMPT="Gallery Listing" DEFAULT="THUMB,3,1,NONE,SHOWPRICE=1" TYPE="GALLERY"></ELEMENT>
+<ELEMENT ID="GALLERY1" PROMPT="Gallery Listing" DEFAULT="THUMB,3,1,NONE,SHOWPRICE=1" TYPE="GALLERY" HELP="These are all of the products in this marketplace" DATA="page:gallery"></ELEMENT>
 <ELEMENT ID="CPUKMIG" TYPE="OUTPUT"><HTML><![CDATA[
 </td></tr></table>
 </center>

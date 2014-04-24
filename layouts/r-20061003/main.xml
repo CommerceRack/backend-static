@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="MYCONFIG" V="3" IMAGES="0" CREATED="20061003" SUBTYPE="R" TYPE="CONFIG" TITLE="Policies Page: 3 policies and faq" RELEASED="20061010"><SUMMARY><![CDATA[This layout contains your company contact information, followed by three policies; payment, shipping and returns.  Below the three policies is a list of FAQ. The FAQ are condensed by Topic. Clicking a topic reveals the q &amp; a in that section.  The question must then be clicked to reveal the answer. This is done keep the page compact and should be used if you have a LOT of topics and questions.]]></SUMMARY>
+<ELEMENT ID="MYCONFIG" V="3" CREATED="20061003" IMAGES="0" SUBTYPE="R" TYPE="CONFIG" TITLE="Policies Page: 3 policies and faq" RELEASED="20061010"><SUMMARY><![CDATA[This layout contains your company contact information, followed by three policies; payment, shipping and returns.  Below the three policies is a list of FAQ. The FAQ are condensed by Topic. Clicking a topic reveals the q &amp; a in that section.  The question must then be clicked to reveal the answer. This is done keep the page compact and should be used if you have a LOT of topics and questions.]]></SUMMARY>
 <SHORT><![CDATA[This layout displays your profile shipping, return and payment policy, as well as a searchable FAQ interface and a list of your q &amp; a]]></SHORT>
 </ELEMENT>
 <ELEMENT ID="COMPANYNAME" RAW="1" SUB="COMPANY_NAME" TYPE="READONLY" LOAD="profile:zoovy:company_name"></ELEMENT>
@@ -46,21 +46,21 @@
 </table>
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="RETURNPOLICY" DATA="profile:zoovy:return_policy" PROMPT="Return Policy " FONT="0" TYPE="TEXT"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<ELEMENT ID="RETURNPOLICY" DATA="profile:zoovy:return_policy" PROMPT="Return Policy " TYPE="TEXT" FONT="0"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
 <PRETEXT><![CDATA[<div id='returns' style="margin-bottom:10px;">
 <div class="ztitle">Return Policy:</div>
 <div style="margin-left:30px;" class='ztxt'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>
 </div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="PAYMENTPOLICY" DATA="profile:zoovy:payment_policy" PROMPT="Payment Policy " FONT="0" TYPE="TEXT"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<ELEMENT ID="PAYMENTPOLICY" DATA="profile:zoovy:payment_policy" PROMPT="Payment Policy " TYPE="TEXT" FONT="0"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
 <PRETEXT><![CDATA[<div id='payment' style="margin-bottom:10px;">
 <div class="ztitle">Payment Policy:</div>
 <div style="margin-left:30px;" class='ztxt'>]]></PRETEXT>
 <POSTTEXT><![CDATA[</div>
 </div>]]></POSTTEXT>
 </ELEMENT>
-<ELEMENT ID="SHIPPINGPOLICY" DATA="profile:zoovy:shipping_policy" PROMPT="Shipping Policy " FONT="0" TYPE="TEXT"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
+<ELEMENT ID="SHIPPINGPOLICY" DATA="profile:zoovy:shipping_policy" PROMPT="Shipping Policy " TYPE="TEXT" FONT="0"><HELP><![CDATA[The policy that you enter here is shared across the entire profile.  That means if this profile is shared across a store and auctions, the policy will be the same.]]></HELP>
 <PRETEXT><![CDATA[<div id='shipping' style="margin-bottom:10px;">
 <div class="ztitle">Shipping Policy:</div>
 <div style="margin-left:30px;" class='ztxt'>]]></PRETEXT>

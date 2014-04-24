@@ -2,7 +2,7 @@
 
 
 <!-- ******* -->
-<ELEMENT ID="CPUKLWO" CREATOR="STAFF" IMAGES="1" CREATED="00000000" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" SHORT="This page layout has a 250x200 box on the left, text in the middle, and boxed columns on the right." TYPE="CONFIG" TITLE="Boxed Left Pic" RELEASED="20020618"><SUMMARY><![CDATA[IMAGEe (200x250)
+<ELEMENT ID="CPUKLWO" CREATOR="STAFF" CREATED="00000000" IMAGES="1" PROPERTIES="1" SUBTYPE="H" SERIES="2002" FORMAT="LAYOUT" SHORT="This page layout has a 250x200 box on the left, text in the middle, and boxed columns on the right." TYPE="CONFIG" TITLE="Boxed Left Pic" RELEASED="20020618"><SUMMARY><![CDATA[IMAGEe (200x250)
 Product Listing
 Welcome Message
 ]]></SUMMARY>
@@ -16,7 +16,7 @@ Welcome Message
 
 ]]></HTML>
 </ELEMENT>
-<ELEMENT ID="HOMEPAGE_PIC" HEIGHT="250" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" PROMPT="Front Page Picture" WIDTH="200" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
+<ELEMENT HEIGHT="250" ID="HOMEPAGE_PIC" HELP="Please select a front page picture for your site." DATA="merchant:zoovy:homepage_picture" WIDTH="200" PROMPT="Front Page Picture" DEFAULT="https://static.zoovy.com/img/H300-W300-Z1/zoovy_logo" TYPE="IMAGE"></ELEMENT>
 <ELEMENT ID="CPUKLWQ" TYPE="OUTPUT"><HTML><![CDATA[
 
 			</td>
