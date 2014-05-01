@@ -147,7 +147,7 @@ $(document).ready(function(){
         "_clientid":"1pc",
         "layoutURL":"%LAYOUT_URL%/",
         "httpsURL":"%SECURE_URL%",
-        "checkoutAuthMode":"active",//can be passive, active or required
+        "checkoutAuthMode":"passive",//can be passive, active or required
         "httpURL":"%NONSECURE_URL%",
 		"addjQueryPointer" : true,
 		"initComplete" : function(){
