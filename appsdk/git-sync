@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export VERSION=201342
+export VERSION=201404
 
 rm -Rf /httpd/static/zmvc/$VERSION
 git clone -b $VERSION git@github.com:zoovy/AnyCommerce-Development.git /httpd/static/zmvc/$VERSION
