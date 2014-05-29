@@ -75,6 +75,23 @@
 		<td>Release: 201403r</td>
 	</tr>
 
+	<!-- 201405 -->
+	<tr>
+		<td><input type='radio' name='checkout' <!-- CHECKOUT_201405A --> value='checkout-201405a'></td>
+		<td>One Page Checkout w/Active Customer Accounts</td>
+		<td>Release: 201405a</td>
+	</tr>
+	<tr>
+		<td><input type='radio' name='checkout' <!-- CHECKOUT_201405P --> value='checkout-201405p'></td>
+		<td>One Page Checkout w/Passive Customer Accounts</td>
+		<td>Release: 201405p</td>
+	</tr>
+	<tr>
+		<td><input type='radio' name='checkout' <!-- CHECKOUT_201405R --> value='checkout-201405r'></td>
+		<td>One Page Checkout Private - Customer Account Required</td>
+		<td>Release: 201405r</td>
+	</tr>
+
 	</table>
 	
 	
