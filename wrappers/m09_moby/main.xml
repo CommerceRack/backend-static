@@ -216,17 +216,19 @@ fieldset	{border:0px;}
 // jump to page header when page loads, effectively hides the location bar and gives more room for content 'above the fold'.
 // if #noMastHead is set, jump down to below the search
 
-window.addEventListener("load", function() { setTimeout(loaded, 100) }, false);  
-function loaded() { 
-	document.getElementById("page_wrapper").style.visibility = "visible";   
+if('addEventListener' in window)	{
+	window.addEventListener("load", function() { setTimeout(loaded, 100) }, false);  
+	function loaded() { 
+		document.getElementById("page_wrapper").style.visibility = "visible";   
 	
-	if(location.href.indexOf('#noMastHead') > 0)	{
-		window.scrollTo(0, 93);
-		}
-	else	{
-		window.scrollTo(0, 1); // pan to the bottom, hides the location bar   
-		}
+		if(location.href.indexOf('#noMastHead') > 0)	{
+			window.scrollTo(0, 93);
+			}
+		else	{
+			window.scrollTo(0, 1); // pan to the bottom, hides the location bar   
+			}
 //	alert(window.orientation);
+		}
 	}
 // -->
 </script>
