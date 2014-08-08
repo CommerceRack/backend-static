@@ -1,0 +1,74 @@
+{
+   "_DIGEST" : "GSDFl1acBRFeR8ojRSvP8g",
+   "_DIVS" : [],
+   "_ID" : "checkout-201405r",
+   "_ELEMENTS" : [
+      {
+         "SUMMARY" : "A one page checkout layout specifically designed for retail customerson stores with 'nice' or 'active' as the checkout setting.",
+         "ID" : "DGBSYGG",
+         "FORMAT" : "LAYOUT",
+         "TYPE" : "CONFIG",
+         "EXPORT" : "0",
+         "CREATED" : "00000000",
+         "TITLE" : "Checkout: one page (required)",
+         "CHEESE" : "1",
+         "RELEASED" : "00000000",
+         "SUBTYPE" : ""
+      },
+      {
+         "ID" : "VAR_RELEASE",
+         "SUB" : "MVC_RELEASE",
+         "HELPER" : "release # =  YYYYMMDDHHMMSS when deployed.",
+         "DEFAULT" : "20140525124100",
+         "TYPE" : "HIDDEN"
+      },
+      {
+         "ID" : "VAR_BASE_URL",
+         "SUB" : "BASE_URL",
+         "DEFAULT" : "/media/graphics/general/jslib/zmvc/201405/",
+         "TYPE" : "HIDDEN"
+      },
+      {
+         "ID" : "VAR_LAYOUT_URL",
+         "SUB" : "LAYOUT_URL",
+         "LOAD" : "URL::LAYOUT_URL",
+         "TYPE" : "READONLY",
+         "RAW" : "1"
+      },
+      {
+         "ID" : "VAR_SECURE_URL",
+         "SUB" : "SECURE_URL",
+         "LOAD" : "URL::SECURE_URL",
+         "TYPE" : "READONLY",
+         "RAW" : "1"
+      },
+      {
+         "ID" : "VAR_NONSECURE_URL",
+         "SUB" : "NONSECURE_URL",
+         "LOAD" : "URL::NONSECURE_URL",
+         "TYPE" : "READONLY",
+         "RAW" : "1"
+      },
+      {
+         "ID" : "CQPOIJP",
+         "SUB" : "CART_ID",
+         "LOAD" : "CART::ID",
+         "TYPE" : "READONLY",
+         "RAW" : "1"
+      },
+      {
+         "HTML" : "<%\nloadurp(\"CONFIG::IHAVEJQUERYUICSS\"); default(\"\");\ngoto(label=>\"END\",ne=>\"\");\n        print(\"<link rel='stylesheet' type='text/css' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/cupertino/jquery-ui.css' />\");\n:END();\nprint(\"\");\n%>",
+         "ID" : "DGYFWVN",
+         "TYPE" : "SPECL"
+      },
+      {
+         "HTML" : "\n\n\n<!--\n/* **************************************************************\n\n   Copyright 2011 Zoovy, Inc.\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n     http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n\n************************************************************** */\n\n\n\n\n\n-->\n<!-- here to avoid the review template from being visible, then hidden (popping) -->\n<style type=\"text/css\">\n.displayNone, #appTemplates {display:none;}\n</style>\n\n\n\n<!-- what is displayed onLoad until the view is loaded -->\n<div id='appPreView'>\n<table>\n<tr>\n\t<td><!-- put logo here --></td>\n\t<td>\n\n\t<div id=\"loader\">\n\t\t<h3>One moment please.</h3>\n\n\t\t<div class='alignCenter'>\n\t\t<progress id=\"appPreViewProgressBar\" max=\"100\" value=\"0\"></progress><br>\n\t\t</div>\n\t\t<div id='appPreViewProgressText'>0% Complete</div>\n\t</div>\n\t<div id=\"clickToLoad\" class=\"displayNone pointer\">\n\t\tClick here to load your shopping experience!\n\t</div>\n\t<div class='appMessaging'></div>\n\t</td>\n</tr>\n</table>\n</div>\n\n\n\n\n\n<div id='appView' class='displayNone'>\n\t<div id='globalMessaging' class='appMessaging'></div><!-- DO NOT REMOVE - used for some high level error handling (usually appears below breadcrumb nav or top bar) -->\n\t<div id='mainContentArea'></div><!-- DO NOT REMOVE - this is where the specific page (ex: homepage, product, category) content is going to go -->\n</div>\n\n\n<div id='appTemplates'>\n\t\n\t\n\n<div id=\"reviewFrmTemplate\" class='alignedForm'>\n\n<form name=\"reviewFrm\" action=\"#\" data-app-submit=\"store_crm|productReviewSubmit\">\n<input data-tlc=\"bind $var '.pid'; apply --select=$var; if (is $var --notblank;) {{apply --append;}};\" name=\"pid\" id=\"reviewsPid\" value=\"\" type=\"hidden\">\n\n\n<label><span class=\"prompt\">Your Name</span><input name=\"CUSTOMER_NAME\" value=\"\" maxlength=\"30\" required type=\"text\" class='alignInput'></label>\n\n<label><span class=\"prompt\">Location</span><input maxlength=\"30\" name=\"LOCATION\" value=\"\" type=\"text\" class='alignInput'></label>\n\n<label><span class=\"prompt\">Subject</span><input maxlength=\"60\" name=\"SUBJECT\" type=\"text\" class='alignInput'></label>\n\n<label><span class=\"prompt\">Review</span><textarea required name=\"MESSAGE\" class='alignInput'></textarea></label>\n\n<label>\n\t<span class=\"prompt\">Score</span>\n\t<select name=\"RATING\" id=\"reviewsRating\">\n\t\t<option value=\"10\">5</option>\n\t\t<option value=\"9\">4.5</option>\n\t\t<option value=\"8\">4</option>\n\t\t<option value=\"7\">3.5</option>\n\t\t<option value=\"6\">3</option>\n\t\t<option value=\"5\">2.5</option>\n\t\t<option value=\"4\">2</option>\n\t\t<option value=\"3\">1.5</option>\n\t\t<option value=\"2\">1</option>\n\t\t<option value=\"1\">.5</option>\n\t</select>\n</label>\n\n<button class=\"applyButton floatRight marginTop\">Submit Review</button>\n\n</form>\n</div>\n\t\n\t\n</div><!-- /appTemplates -->\n\n<!-- jquery and jquery ui are pivotal to the functionality of the app. load them early -->\n<script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></script>\n<script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js\"></script>\n<script type=\"text/javascript\" src=\"%BASE_URL%controller.js\"></script>\n<script type=\"text/javascript\" src=\"%BASE_URL%model.js\"></script>\n<script type=\"text/javascript\" src=\"%BASE_URL%resources/jquery.ui.anyplugins.js\"></script>\n<script type=\"text/javascript\" src=\"%BASE_URL%includes.js\"></script><!-- contains some polyfills and should be loaded early -->\n\n\n<script type=\"text/javascript\">\n$(document).ready(function(){\n\n\twindow.myApp = new initApp({\n\t\t\"release\":\"%MVC_RELEASE%\",  //increment this with each change. should solve caching issues. format: YYYYMMDDHHMMSS\n        \"baseURL\":\"%BASE_URL%\", //where MVC files are loaded from.\n        \"cartID\":\"%CART_ID%\",\n        \"_clientid\":\"1pc\",\n        \"layoutURL\":\"%LAYOUT_URL%/\",\n        \"httpsURL\":\"%SECURE_URL%\",\n        \"checkoutAuthMode\":\"required\",//can be passive, active or required\n        \"httpURL\":\"%NONSECURE_URL%\",\n\t\t\"addjQueryPointer\" : true,\n\t\t\"initComplete\" : function(){\n\t\t\tdump(\" -> init is complete\");\n\t\t\tmyApp.u.loadScript('%LAYOUT_URL%/init.js',function(){\n\t\t\t\tvar progress = myApp.u.loadResources(); //the object returns by loadResources will get updated as the resources finish loading.\n\t\t\t\tmyApp.u.showProgress(progress);\n\t\t\t\t});\n\t\t\t$('#appversion').text(myApp.vars.release);\n\t\t\t}\n\t\t});\n\tmyApp.vars.initComplete();\n\tmyCreole = new Parse.Simple.Creole();\n\t});\n</script>\n\n\n",
+         "ID" : "1PC_CONTENT",
+         "TYPE" : "OUTPUT"
+      }
+   ],
+   "_FORMAT" : "LAYOUT",
+   "_LISTS" : [],
+   "_V" : 2,
+   "_SYSTEM" : 1
+}
