@@ -45,7 +45,7 @@ print("");
 
 -->
 <!-- here to avoid the review template from being visible, then hidden (popping) -->
-<style>
+<style type="text/css">
 .displayNone, #appTemplates {display:none;}
 </style>
 
@@ -128,12 +128,12 @@ print("");
 </div><!-- /appTemplates -->
 
 <!-- jquery and jquery ui are pivotal to the functionality of the app. load them early -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script src="%BASE_URL%controller.js"></script>
-<script src="%BASE_URL%model.js"></script>
-<script src="%BASE_URL%resources/jquery.ui.anyplugins.js"></script>
-<script src="%BASE_URL%includes.js"></script><!-- contains some polyfills and should be loaded early -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="%BASE_URL%controller.js"></script>
+<script type="text/javascript" src="%BASE_URL%model.js"></script>
+<script type="text/javascript" src="%BASE_URL%resources/jquery.ui.anyplugins.js"></script>
+<script type="text/javascript" src="%BASE_URL%includes.js"></script><!-- contains some polyfills and should be loaded early -->
 
 
 <script type="text/javascript">

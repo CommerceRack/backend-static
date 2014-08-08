@@ -134,5 +134,21 @@
       "type" : "textbox",
       "title" : "Estate Period",
       "xmlpath" : "Jewelry.ProductType.FashionNecklaceBraceletAnklet.EstatePeriod"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnnba_departmentname",
+      "type" : "textbox",
+      "title" : "DepartmentName",
+      "xmlpath" : "Jewelry.ProductType.FashionNecklaceBraceletAnklet.DepartmentName"
+   },
+   {
+      "ns" : "product",
+      "amz-format" : "Text",
+      "id" : "amz:prod_jly_fsnnba_gemtype",
+      "type" : "textbox",
+      "title" : "GemType",
+      "xmlpath" : "Jewelry.ProductType.FashionNecklaceBraceletAnklet.GemType"
    }
 ]

@@ -64,18 +64,18 @@ sub parse_line {
 my %DUP = ();
 my @LINES = ();
 
-my ($zdbh) = &DBINFO::db_zoovy_connect();
-my $pstmt = "select ID,IP,SERVER,DOMAIN,STATS,count(*) INFRACTIONS from SITE_THRESHOLD_VIOLATIONS where CREATED_TS>date_sub(now(),interval 24 hour) group by IP having INFRACTIONS>10 order by IP;";
-my $sth = $zdbh->prepare($pstmt);
-$sth->execute();
-while ( my ($ID,$IP,$SERVER,$DOMAIN,$STATS,$COUNT) = $sth->fetchrow() ) {
-	if (not &SITE::whatis($IP)) {
-		my $line = "BOT|$IP|INFRACTIONS:$COUNT ($DOMAIN) $STATS";
-		push @LINES, &parse_line($line);
-		}
-	}
-$sth->finish();
-&DBINFO::db_zoovy_close();
+#my ($zdbh) = &DBINFO::db_zoovy_connect();
+#my $pstmt = "select ID,IP,SERVER,DOMAIN,STATS,count(*) INFRACTIONS from SITE_THRESHOLD_VIOLATIONS where CREATED_TS>date_sub(now(),interval 24 hour) group by IP having INFRACTIONS>10 order by IP;";
+#my $sth = $zdbh->prepare($pstmt);
+#$sth->execute();
+#while ( my ($ID,$IP,$SERVER,$DOMAIN,$STATS,$COUNT) = $sth->fetchrow() ) {
+#	if (not &SITE::whatis($IP)) {
+#		my $line = "BOT|$IP|INFRACTIONS:$COUNT ($DOMAIN) $STATS";
+#		push @LINES, &parse_line($line);
+#		}
+#	}
+#$sth->finish();
+#&DBINFO::db_zoovy_close();
 
 while (<DATA>) {
 	chomp($_);
@@ -185,6 +185,8 @@ foreach my $test (@TESTS) {
 # http://www.botslist.ca/
 
 __DATA__
+KILL|209.159.1.158|RESAON: scanner
+KILL|203.190.1.158|REASON: scanner
 SAFE|99.125.201.118|REASON: beachmart
 SAFE|71.199.73.121|REASON: h2oguru
 BOT|208.115.113.87|REASON: hitting naboo4
@@ -629,6 +631,7 @@ BOT|85.17.73.171|REASON:3630 hits
 #facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
 BOT-POSITIVE|UA:facebookexternalhit
 KILL|UA:baidu
+KILL|UA:spotbot
 KILL|UA:80legs
 KILL|UA:Scooter
 KILL|UA:WebStripper

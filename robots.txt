@@ -6,6 +6,9 @@ Request-rate: 1/4*
 User-agent: 008
 Disallow: /
 
+User-agent: spotbot@indix.com
+Disallow: /
+
 User-agent: aranhabot
 Crawl-delay: 60 
 Disallow: /media/
