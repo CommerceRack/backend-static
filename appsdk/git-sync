@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export VERSION=201408
+export VERSION=201409
 
 rm -Rf /httpd/static/zmvc/$VERSION
 git clone -b $VERSION git@github.com:CommerceRack/anycommerce.git /httpd/static/zmvc/$VERSION

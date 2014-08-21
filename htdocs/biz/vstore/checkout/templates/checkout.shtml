@@ -77,6 +77,9 @@
 
 	<!-- 201405 -->
 	<tr>
+		<td colspan=3><b>VERSIONS 201405 IS CURRENTLY CONSIDERED **LATEST**</b></td>
+	</tr>
+	<tr>
 		<td><input type='radio' name='checkout' <!-- CHECKOUT_201405A --> value='checkout-201405a'></td>
 		<td>One Page Checkout w/Active Customer Accounts</td>
 		<td>Release: 201405a</td>
@@ -90,6 +93,26 @@
 		<td><input type='radio' name='checkout' <!-- CHECKOUT_201405R --> value='checkout-201405r'></td>
 		<td>One Page Checkout Private - Customer Account Required</td>
 		<td>Release: 201405r</td>
+	</tr>
+
+	<!-- 201408 -->
+	<tr>
+		<td colspan=3><b>VERSIONS 201408+ *REQUIRES* GOOGLE UNIVERSAL ANALYTICS</b></td>
+	</tr>
+	<tr>
+		<td><input type='radio' name='checkout' <!-- CHECKOUT_201408A --> value='checkout-201408a'></td>
+		<td>One Page Checkout w/Active Customer Accounts</td>
+		<td>Release: 201408a</td>
+	</tr>
+	<tr>
+		<td><input type='radio' name='checkout' <!-- CHECKOUT_201408P --> value='checkout-201408p'></td>
+		<td>One Page Checkout w/Passive Customer Accounts</td>
+		<td>Release: 201408p</td>
+	</tr>
+	<tr>
+		<td><input type='radio' name='checkout' <!-- CHECKOUT_201408R --> value='checkout-201408r'></td>
+		<td>One Page Checkout Private - Customer Account Required</td>
+		<td>Release: 201408r</td>
 	</tr>
 
 	</table>
